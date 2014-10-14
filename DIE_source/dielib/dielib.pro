@@ -37,6 +37,7 @@ SOURCES += dielib.cpp \
     ../scripttext.cpp \
     ../scan.cpp \
     ../utils.cpp \
+    ../../pluginsscript.cpp \
     ../../versionresource.cpp \
     ../../pefile.cpp \
     ../../msdosfile.cpp \
@@ -56,6 +57,7 @@ HEADERS += dielib.h \
     ../scripttext.h \
     ../scan.h \
     ../utils.h \
+    ../../pluginsscript.h \
     ../../versionresource.h \
     ../../pefile.h \
     ../../msdosfile.h \
