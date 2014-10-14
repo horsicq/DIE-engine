@@ -12,9 +12,9 @@ del Makefile.Release
 del Makefile.Debug
 cd debug
 del *.obj
-del *.cpp
+del moc_*
 cd ..
 cd release
 del *.obj
-del *.cpp
+del moc_*
 cd ..

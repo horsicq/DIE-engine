@@ -14,3 +14,10 @@ How to build:
 * run build_console_win.bat
 * run build_diedll_win.bat
 * run build_dielib_win.bat
+
+## Linux:
+
+* Install QT 4.8.6: http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tar.gz
+* Edit build_console_lin.sh: Set PATH for QMAKE
+
+* run build_console_lin.sh ( bash -x build_console_lin.sh )
