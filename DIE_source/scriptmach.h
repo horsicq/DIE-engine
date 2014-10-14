@@ -2,9 +2,7 @@
 #define SCRIPTMACH_H
 
 #include "scriptgeneric.h"
-//#include "scriptbinary.h"
 #include "../machfile.h"
-//#include "dialogoptions.h"
 
 class scriptMACH : public scriptGeneric
 {

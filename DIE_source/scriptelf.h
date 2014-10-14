@@ -2,9 +2,7 @@
 #define SCRIPTELF_H
 
 #include "scriptgeneric.h"
-//#include "scriptbinary.h"
 #include "../elffile.h"
-//#include "dialogoptions.h"
 
 class scriptELF : public scriptGeneric
 {

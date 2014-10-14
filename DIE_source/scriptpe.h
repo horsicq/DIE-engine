@@ -3,9 +3,6 @@
 
 #include "scriptgeneric.h"
 #include "scriptbinary.h"
-#include "../_pe.h"
-#include "../_pe.h"
-//#include "dialogoptions.h"
 #include "../pefile.h"
 
 class scriptPE : public scriptGeneric

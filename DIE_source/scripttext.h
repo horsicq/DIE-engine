@@ -2,9 +2,7 @@
 #define SCRIPTTEXT_H
 
 #include "scriptgeneric.h"
-
 #include "../textfile.h"
-//#include <dialogoptions.h>
 
 class scriptText : public scriptGeneric
 {
@@ -16,15 +14,11 @@ public:
 signals:
 //    void appendError(QString sString);
 
-    
 public slots:
 //    void _log(QString sString);
 //    unsigned int swapBytes(unsigned int nValue);
 //    QString upperCase(QString sString);
-
-
     bool isPlainText();
-
 
     bool compare(QString sSignature,unsigned int nOffset=0);
 //    bool compareHeader(QString sSignature);

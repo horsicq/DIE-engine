@@ -2,9 +2,7 @@
 #define SCRIPTMSDOS_H
 
 #include "scriptgeneric.h"
-//#include "scriptbinary.h"
 #include "../msdosfile.h"
-//#include "dialogoptions.h"
 
 class scriptMSDOS : public scriptGeneric
 {

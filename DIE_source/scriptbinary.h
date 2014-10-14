@@ -4,7 +4,6 @@
 #include "scriptgeneric.h"
 
 #include "../binary.h"
-//#include <dialogoptions.h>
 
 class scriptBinary : public scriptGeneric
 {
