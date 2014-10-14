@@ -2,7 +2,7 @@
 
 QMAKE=/home/hors/QT/4.8.6/bin/qmake
 
-$QMAKE DIE_source/console.pro -r -spec linux-g++
+$QMAKE DIE_source/console/console.pro -r -spec linux-g++
 make clean
 make
 

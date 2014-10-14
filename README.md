@@ -21,3 +21,13 @@ How to build:
 * Edit build_console_lin.sh: Set PATH for QMAKE
 
 * run build_console_lin.sh ( bash -x build_console_lin.sh )
+
+## Mac:
+
+* instal XCODE: https://developer.apple.com/xcode/downloads/
+* Install QT 4.8.6: http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-opensource-mac-4.8.6-1.dmg
+
+* run build_console_mac.sh ( bash -x build_console_mac.sh )
+
+
+Don't forget to get signatures from https://github.com/horsicq/Detect-It-Easy (folder "db").
