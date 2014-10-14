@@ -12,7 +12,6 @@
 #include <windows.h>
 #else
 #include "__windows.h"
-
 #endif
 //#if  defined(_WIN32)
 #include "__unix.h"
