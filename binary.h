@@ -28,9 +28,9 @@
 #include <QTime>
 #include <QCryptographicHash>
 
-#define BEA_ENGINE_STATIC
-#define BEA_USE_STDCALL
-#include "../../../cpp/_lib/beaengine-win32/headers/BeaEngine.h"
+//#define BEA_ENGINE_STATIC
+//#define BEA_USE_STDCALL
+//#include "../../../cpp/_lib/beaengine-win32/headers/BeaEngine.h"
 
 struct __MEMSTRUCT
 {
