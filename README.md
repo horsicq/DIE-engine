@@ -30,4 +30,5 @@ How to build:
 * run build_console_mac.sh ( bash -x build_console_mac.sh )
 
 
-Don't forget to get signatures from https://github.com/horsicq/Detect-It-Easy (folder "db").
+Don't forget after compilation to get signatures from https://github.com/horsicq/Detect-It-Easy (folder "db").
+Just place signatures to project's folder.
