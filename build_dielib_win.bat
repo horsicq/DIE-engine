@@ -10,4 +10,11 @@ set QMAKE="C:\Qt\4.8.6\bin\qmake.exe"
 del Makefile
 del Makefile.Release
 del Makefile.Debug
-
+cd debug
+del *.obj
+del *.cpp
+cd ..
+cd release
+del *.obj
+del *.cpp
+cd ..
