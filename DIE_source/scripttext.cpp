@@ -1,0 +1,129 @@
+#include "scripttext.h"
+
+scriptText::scriptText(QObject *parent) :
+    scriptGeneric(parent)
+{
+}
+
+void scriptText::setData(Binary *binary)
+{
+    this->binary=binary;
+}
+bool scriptText::isPlainText()
+{
+    return binary->isPlainText();
+}
+
+bool scriptText::compare(QString sSignature,unsigned int nOffset)
+{
+    return binary->_compare(sSignature,nOffset);
+}
+
+//bool scriptText::compareHeader(QString sSignature)
+//{
+//    return binary->compareHeader(sSignature);
+//}
+
+bool scriptText::compareEP(QString sSignature,unsigned int nOffset)
+{
+    return binary->compareEP(sSignature,nOffset);
+}
+
+//bool scriptText::compareEPn(QString sSignature,unsigned int nOffset)
+//{
+//    return binary->compare(sSignature,nOffset);
+//}
+//void scriptText::_log(QString sString)
+//{
+//    emit appendError(sString);
+//}
+
+QString scriptText::getString(unsigned int nOffset, unsigned int nSize)
+{
+    return binary->getString(nOffset,nSize);
+}
+
+unsigned int scriptText::readDword(unsigned int nOffset)
+{
+    return binary->readDword(nOffset);
+}
+
+unsigned short scriptText::readWord(unsigned int nOffset)
+{
+    return binary->readWord(nOffset);
+}
+
+unsigned char scriptText::readByte(unsigned int nOffset)
+{
+    return binary->readByte(nOffset);
+}
+
+unsigned int scriptText::getSize()
+{
+    return binary->size();
+}
+
+QString scriptText::getFileDirectory()
+{
+    return binary->getFileDirectory();
+}
+
+QString scriptText::getFileBaseName()
+{
+    return binary->getFileBaseName();
+}
+
+QString scriptText::getFileSuffix()
+{
+    return binary->getFileSuffix();
+}
+
+QString scriptText::getFileCompleteSuffix()
+{
+    return binary->getFileCompleteSuffix();
+}
+
+int scriptText::findByte(unsigned int nOffset, unsigned int nSize, unsigned char cValue)
+{
+    return binary->findByte(nOffset,nSize,cValue);
+}
+
+int scriptText::findWord(unsigned int nOffset, unsigned int nSize, unsigned short sValue)
+{
+    return binary->findWord(nOffset,nSize,sValue);
+}
+
+int scriptText::findDword(unsigned int nOffset, unsigned int nSize, unsigned int nValue)
+{
+    return binary->findDword(nOffset,nSize,nValue);
+}
+
+int scriptText::findString(unsigned int nOffset, unsigned int nSize, QString sValue)
+{
+    return binary->findString(nOffset,nSize,sValue);
+}
+
+int scriptText::findSignature(unsigned int nOffset, unsigned int nSize, QString sSignature)
+{
+    return binary->findSignature(nOffset,nSize,sSignature);
+}
+
+bool scriptText::isSignaturePresent(unsigned int nOffset, unsigned int nSize, QString sSignature)
+{
+    return binary->isSignaturePresent(nOffset,nSize,sSignature);
+}
+
+float scriptText::calculateEntropy(unsigned int nOffset, unsigned int nSize)
+{
+    return binary->calculateEntropy(nOffset,nSize);
+}
+
+QString scriptText::getSignature(unsigned int nOffset, unsigned int nSize)
+{
+    return binary->getSignature(nOffset,nSize);
+}
+
+QString scriptText::calculateMD5(unsigned int nOffset, unsigned int nSize)
+{
+    return binary->calculateMD5(nOffset,nSize);
+}
