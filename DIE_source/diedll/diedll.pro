@@ -12,7 +12,6 @@ TEMPLATE = lib
 DEFINES += DIEDLL_LIBRARY
 
 SOURCES += diedll.cpp \
-    ../scriptdie.cpp \
     ../scriptpe.cpp \
     ../scriptmsdos.cpp \
     ../scriptelf.cpp \
@@ -33,7 +32,6 @@ SOURCES += diedll.cpp \
     ../singlefilescan.cpp
 
 HEADERS += diedll.h \
-    ../scriptdie.h \
     ../scriptpe.h \
     ../scriptmsdos.h \
     ../scriptelf.h \
