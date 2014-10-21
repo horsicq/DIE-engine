@@ -5,7 +5,7 @@
 #include <QByteArray>
 #include <QFile>
 #include <QDir>
-#include "../utils.h"
+#include "DIE_source/utils.h"
 //#include "../_pe.h"
 //#include "scriptpe.h"
 //#include "scriptbinary.h"

@@ -13,6 +13,83 @@ PEFile::~PEFile()
 {
 
 }
+
+QByteArray PEFile::createHeader32()
+{
+    QByteArray baResult;
+
+    baResult.resize(0x200);
+    baResult.fill(0);
+
+    char *pOffset=baResult.data();
+
+    // MS DOS HEADER
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_magic))     =0x5A4D;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_cblp))      =0x0090;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_cp))        =0x0003;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_crlc))      =0x0000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_cparhdr))   =0x0004;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_minalloc))  =0x0000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_maxalloc))  =0xFFFF;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_ss))        =0x0000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_sp))        =0x00B8;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_csum))      =0x0000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_ip))        =0x0000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_cs))        =0x0000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_lfarlc))    =0x0040;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_DOS_HEADER,e_lfanew))    =sizeof(IMAGE_DOS_HEADER);
+
+    // No MS Dos Stub!
+
+    // NT Headers
+    pOffset+=sizeof(IMAGE_DOS_HEADER);
+    *(unsigned int *)pOffset=IMAGE_NT_SIGNATURE;
+
+    // File Header
+    pOffset+=4;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_FILE_HEADER,Machine))                =0x014C;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_FILE_HEADER,NumberOfSections))       =0x0000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_FILE_HEADER,TimeDateStamp))          =QDateTime::currentDateTime().toTime_t();
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_FILE_HEADER,PointerToSymbolTable))   =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_FILE_HEADER,NumberOfSymbols))        =0x00000000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_FILE_HEADER,SizeOfOptionalHeader))   =0x00E0;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_FILE_HEADER,Characteristics))        =0x10F;
+
+    // Optional Header
+    pOffset+=sizeof(IMAGE_FILE_HEADER);
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,Magic))                        =0x010B;
+    *(unsigned char  *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,MajorLinkerVersion))           =0x00;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,MinorLinkerVersion))           =0x00;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfCode))                   =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfInitializedData))        =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfUninitializedData))      =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,AddressOfEntryPoint))          =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,BaseOfCode))                   =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,BaseOfData))                   =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,ImageBase))                    =0x00400000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SectionAlignment))             =0x00001000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,FileAlignment))                =0x00000200;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,MajorOperatingSystemVersion))  =0x0004;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,MinorOperatingSystemVersion))  =0x0000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,MajorImageVersion))            =0x0004;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,MinorImageVersion))            =0x0000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,MajorSubsystemVersion))        =0x0004;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,MinorSubsystemVersion))        =0x0000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,Win32VersionValue))            =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfImage))                  =0x00001000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfHeaders))                =0x00000200;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,CheckSum))                     =0x00000000;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,Subsystem))                    =0x0002;
+    *(unsigned short *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,DllCharacteristics))           =0x0000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfStackReserve))           =0x00100000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfStackCommit))            =0x00001000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfHeapReserve))            =0x00100000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,SizeOfHeapCommit))             =0x00001000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,LoaderFlags))                  =0x00000000;
+    *(unsigned int   *)(pOffset+offsetof(IMAGE_OPTIONAL_HEADER32,NumberOfRvaAndSizes))          =0x00000010;
+
+    return baResult;
+}
 unsigned int PEFile::getDosHeaderOffset()
 {
     return 0;
@@ -867,6 +944,11 @@ bool PEFile::isRVAValid(unsigned int nRVA)
 bool PEFile::isVAValid(unsigned int nVA)
 {
     return isRVAValid(VAToRVA(nVA));
+}
+
+int PEFile::getNumberOfSections()
+{
+    return getFileHeader_NumberOfSections();
 }
 
 
@@ -4540,11 +4622,21 @@ QByteArray PEFile::ImportAsXMLToBin(QByteArray baXML,IMAGE_DATA_DIRECTORY *pddIm
     return baResult;
 }
 
-void PEFile::addImportSectionFromXML(IMAGE_SECTION_HEADER *pISH,QByteArray baXML)
+bool PEFile::addImportSectionFromXML(IMAGE_SECTION_HEADER *pISH,QByteArray baXML)
 {
     IMAGE_DATA_DIRECTORY iddImportTable,iddIAT;
 
-    addImportSection(pISH,ImportAsXMLToBin(baXML,&iddImportTable,&iddIAT),&iddImportTable,&iddIAT);
+    return addImportSection(pISH,ImportAsXMLToBin(baXML,&iddImportTable,&iddIAT),&iddImportTable,&iddIAT);
+}
+
+bool PEFile::addImportSectionFromMap(IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long, QString> &mapIAT)
+{
+    IMAGE_DATA_DIRECTORY iddImportTable,iddIAT;
+    ZeroMemory(&iddIAT,sizeof(iddIAT));
+
+    QByteArray binImport;
+
+    return addImportSection(pISH,binImport,&iddImportTable,&iddIAT);
 }
 
 bool PEFile::addImportSection(IMAGE_SECTION_HEADER *pISH, QByteArray baData, IMAGE_DATA_DIRECTORY *pddImportTable, IMAGE_DATA_DIRECTORY *pddIAT)
