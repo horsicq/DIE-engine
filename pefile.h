@@ -149,7 +149,7 @@ public:
     bool addImportSection(IMAGE_SECTION_HEADER *pISH, char *pData, int nDataSize, IMAGE_DATA_DIRECTORY *pddImportTable, IMAGE_DATA_DIRECTORY *pddIAT);
     void FixImportBin(unsigned int nOffset, unsigned int nImportTableOffset, int nDelta);
     bool addImportSectionFromXML(IMAGE_SECTION_HEADER *pISH, QByteArray baXML);
-    bool addImportSectionFromMap(IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long,QString> &mapIAT);
+//    bool addImportSectionFromMap(IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long,QString> &mapIAT);
 private:
     bool bIsNETEntryPontLoad;
 private slots:

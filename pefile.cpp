@@ -4629,15 +4629,15 @@ bool PEFile::addImportSectionFromXML(IMAGE_SECTION_HEADER *pISH,QByteArray baXML
     return addImportSection(pISH,ImportAsXMLToBin(baXML,&iddImportTable,&iddIAT),&iddImportTable,&iddIAT);
 }
 
-bool PEFile::addImportSectionFromMap(IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long, QString> &mapIAT)
-{
-    IMAGE_DATA_DIRECTORY iddImportTable,iddIAT;
-    ZeroMemory(&iddIAT,sizeof(iddIAT));
+//bool PEFile::addImportSectionFromMap(IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long, QString> &mapIAT)
+//{
+//    IMAGE_DATA_DIRECTORY iddImportTable,iddIAT;
+//    ZeroMemory(&iddIAT,sizeof(iddIAT));
 
-    QByteArray binImport;
+//    QByteArray binImport;
 
-    return addImportSection(pISH,binImport,&iddImportTable,&iddIAT);
-}
+//    return addImportSection(pISH,binImport,&iddImportTable,&iddIAT);
+//}
 
 bool PEFile::addImportSection(IMAGE_SECTION_HEADER *pISH, QByteArray baData, IMAGE_DATA_DIRECTORY *pddImportTable, IMAGE_DATA_DIRECTORY *pddIAT)
 {
