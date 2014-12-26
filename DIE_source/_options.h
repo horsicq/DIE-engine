@@ -5,7 +5,7 @@
 #include <QList>
 
 #define __DIE "Detect It Easy"
-#define __VERSION "0.93"
+#define __VERSION "0.94"
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
 #define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"
@@ -56,6 +56,7 @@ struct __DIE_OPTIONS
     QString sStyleSheet;
     bool bEnableLanguage;
     QString sLanguage;
+    bool bEnableFont;
     QString sFont;
     QString sFontHEX;
     unsigned int nAddressWidth;
@@ -92,6 +93,7 @@ struct __DIE_OPTIONS
 #define __Style "Appearance/Style"
 #define __StyleSheet "Appearance/StyleSheet"
 #define __Codec "Appearance/Codec"
+#define __EnableFont "Appearance/FontEnable"
 #define __Font "Appearance/Font"
 #define __EnableLanguage "Appearance/EnableLanguage"
 #define __Language "Appearance/Language"

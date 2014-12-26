@@ -416,6 +416,13 @@ int main(int argc, char *argv[])
 //    // fill scripts
     Scan::loadScripts(&SingleFileScan::options);
 
+    bool bInvalidBase=(SingleFileScan::options.listBinaryScripts.count()==0)
+                        &&(SingleFileScan::options.listELFScripts.count()==0)
+                        &&(SingleFileScan::options.listMACHScripts.count()==0)
+                        &&(SingleFileScan::options.listMSDOSScripts.count()==0)
+                        &&(SingleFileScan::options.listPEScripts.count()==0)
+                        &&(SingleFileScan::options.listTextScripts.count()==0);
+
 
     if(arguments.count()==1)
     {
@@ -424,7 +431,7 @@ int main(int argc, char *argv[])
         printf(__VERSION);
         printf(" console\n");
         printf("\n");
-        printf("Copyright(C) 2006-2008 Hellsp@wn 2012-2014 Hors\n");
+        printf("Copyright(C) 2006-2008 Hellsp@wn 2012-2015 Hors\n");
         printf("Website: http://ntinfo.biz\n");
         printf("Bugreports: horsicq@gmail.com\n");
         printf("\n");
@@ -503,6 +510,11 @@ int main(int argc, char *argv[])
                 printf("\n");
             }
         }
+    }
+
+    if(bInvalidBase)
+    {
+        printf("Invalid signatures database! Please download signatures from https://github.com/horsicq/Detect-It-Easy/tree/master/db and put it to the application path.\n");
     }
 
     return 0;

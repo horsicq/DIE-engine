@@ -100,3 +100,9 @@ QString Utils::getSearchPath(__DIE_OPTIONS *pOptions)
 {
     return convertPath(pOptions->sSearchPath);
 }
+
+QString Utils::getDefaultFont()
+{
+
+    return "";
+}

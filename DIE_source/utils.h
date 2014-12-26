@@ -25,6 +25,8 @@ public:
     static QString getLangsPath(__DIE_OPTIONS *pOptions);
     static QString getScriptsPath(__DIE_OPTIONS *pOptions);
     static QString getSearchPath(__DIE_OPTIONS *pOptions);
+
+    static QString getDefaultFont();
 };
 
 #endif // UTILS_H
