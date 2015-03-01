@@ -67,21 +67,20 @@ void Scan::process()
 
     if(sScanFileName!="")
     {
-        analize(sScanFileName);
+        analize(sScanFileName,pOptions->bFullScan);
     }
     else if(dirContent)
     {
         emit setProgressBar2(1,0);
         for(int i=0;(i<dirContent->count())&&(bIsRun);i++)
         {
-            analize(dirContent->at(i));
+            analize(dirContent->at(i),pOptions->bFullScan);
             emit appendSignature("");
 
             emit setProgressBar2(dirContent->count(),i+1);
         }
 
         emit setProgressBar2(1,1);
-
     }
 
     emit _finished();
@@ -90,53 +89,24 @@ void Scan::process()
     bIsRun=false;
 }
 
-bool Scan::analize(QString sFileName)
+bool Scan::analize(QString sFileName,bool bFullScan)
 {
     pOptions->nNumberOfResults=0;
 
     emit appendFileName(sFileName);
-    QList<QString> listSignatures;
-    QList<QString> listSignaturesNames;
-    QString s_Init;
 
     Binary file;
 
     PluginsScript engine;
-    int k=0;
 
     connect(&file,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
     connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
     connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
 
-    PEFile _pefile;
-    connect(&_pefile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    scriptPE scriptpe;
-    connect(&scriptpe,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    ELFFile _elfile;
-    connect(&_elfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    scriptELF scriptelf;
-    connect(&scriptelf,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    MSDOSFile _msdosfile;
-    connect(&_msdosfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    scriptMSDOS scriptmsdos;
-    connect(&scriptmsdos,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    MACHFile _machfile;
-    connect(&_machfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    scriptMACH scriptmach;
-    connect(&scriptmach,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    Binary _binary;
-    connect(&_binary,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    scriptBinary scriptbinary;
-    connect(&scriptbinary,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    TextFile _text;
-    connect(&_text,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    scriptText scripttext;
-    connect(&scripttext,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-
-    sType="";
+    QList<QString> listTypes;
     if(file.setFileName(sFileName))
     {
-        sType=file.getType();
+        listTypes=file.getTypes();
         //qDebug(sType.toAscii().data());
         file.close();
     }
@@ -147,14 +117,58 @@ bool Scan::analize(QString sFileName)
         return false;
     }
 
-    bResult=false;
+    int nCount=listTypes.count();
 
-    QList<__SIGNATURE> *pListSignatures;
-
-    if((sType=="PE")||(sType=="PE+(64)"))
+    if(!bFullScan)
     {
-        if(_pefile.setFileName(sFileName))
+        nCount=1;
+    }
+
+    for(int i=0;i<nCount;i++)
+    {
+        QString sType=listTypes.at(i);
+        if((sType=="PE")||(sType=="PE+(64)"))
         {
+            scanPE(sFileName,sType);
+        }
+        else if((sType=="ELF")||(sType=="ELF64"))
+        {
+            scanELF(sFileName,sType);
+        }
+        else if(sType=="MSDOS")
+        {
+            scanMSDOS(sFileName,sType);
+        }
+        else if((sType=="MACH")||(sType=="MACH64"))
+        {
+            scanMACH(sFileName,sType);
+        }
+        else if(sType=="Text")
+        {
+            scanText(sFileName,sType);
+        }
+        else if(sType=="Binary")
+        {
+            scanBinary(sFileName,sType);
+        }
+    }
+
+
+}
+
+bool Scan::scanPE(QString sFileName,QString sPrefix)
+{
+    PluginsScript engine;
+    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+
+    PEFile _pefile;
+    connect(&_pefile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    scriptPE scriptpe;
+    connect(&scriptpe,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+
+    if(_pefile.setFileName(sFileName))
+    {
 //            if(!_pefile.completeCheck())
 //            {
 //                emit setProgressBar(1,1);
@@ -163,191 +177,195 @@ bool Scan::analize(QString sFileName)
 
 //            emit appendError(QString("Number of signatures: %1").arg(nNumberOfSignatures));
 
-            _pefile.entryPointLoad();
+        _pefile.entryPointLoad();
 
-            if(_pefile.isNETPresent())
-            {
-                _pefile.entryPointLoad_NET();
-            }
-
-            scriptpe.setData(&_pefile);
-
-            engine.setData(&scriptpe,"PE",Utils::getDataBasePath(pOptions));
-
-//            nNumberOfSignatures=pOptions->listPEScripts.count();
-//            for(int i=0;i<nNumberOfSignatures;i++)
-//            {
-//                listSignaturesNames.append(pOptions->listPEScripts.at(i).sName);
-//                listSignatures.append(pOptions->listPEScripts.at(i).sText);
-//            }
-            pListSignatures=&(pOptions->listPEScripts);
-        }
-        else
+        if(_pefile.isNETPresent())
         {
-            emit setProgressBar(1,1);
-            return false;
+            _pefile.entryPointLoad_NET();
         }
 
+        scriptpe.setData(&_pefile);
+
+        engine.setData(&scriptpe,"PE",Utils::getDataBasePath(pOptions));
+
+        handleSignatures(&engine,&(pOptions->listPEScripts),sPrefix);
+
+        return true;
     }
-    else if((sType=="ELF")||(sType=="ELF64"))
+    else
     {
-        if(_elfile.setFileName(sFileName))
-        {
-            _elfile.entryPointLoad();
-
-            scriptelf.setData(&_elfile);
-
-            engine.setData(&scriptelf,"ELF",Utils::getDataBasePath(pOptions));
-//            emit appendError("Test");
-
-//            nNumberOfSignatures=pOptions->listELFScripts.count();
-//            for(int i=0;i<nNumberOfSignatures;i++)
-//            {
-////                listSignatures.append(pOptions->listELFScripts.at(i));
-//                listSignaturesNames.append(pOptions->listELFScripts.at(i).sName);
-//                listSignatures.append(pOptions->listELFScripts.at(i).sText);
-//            }
-            pListSignatures=&(pOptions->listELFScripts);
-        }
-        else
-        {
-            emit setProgressBar(1,1);
-            return false;
-        }
-
+        emit setProgressBar(1,1);
+        return false;
     }
-    else if(sType=="MSDOS")
+}
+
+bool Scan::scanELF(QString sFileName,QString sPrefix)
+{
+    PluginsScript engine;
+    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+
+    ELFFile _elfile;
+    connect(&_elfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    scriptELF scriptelf;
+    connect(&scriptelf,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+
+    if(_elfile.setFileName(sFileName))
     {
-        if(_msdosfile.setFileName(sFileName))
-        {
-            _msdosfile.entryPointLoad();
+        _elfile.entryPointLoad();
 
-            scriptmsdos.setData(&_msdosfile);
+        scriptelf.setData(&_elfile);
 
-            engine.setData(&scriptmsdos,"MSDOS",Utils::getDataBasePath(pOptions));
-//            emit appendError("Test");
+        engine.setData(&scriptelf,"ELF",Utils::getDataBasePath(pOptions));
 
+        handleSignatures(&engine,&(pOptions->listELFScripts),sPrefix);
 
-//            nNumberOfSignatures=pOptions->listMSDOSScripts.count();
-//            for(int i=0;i<nNumberOfSignatures;i++)
-//            {
-////                listSignatures.append(pOptions->listMSDOSScripts.at(i));
-//                listSignaturesNames.append(pOptions->listMSDOSScripts.at(i).sName);
-//                listSignatures.append(pOptions->listMSDOSScripts.at(i).sText);
-//            }
-            pListSignatures=&(pOptions->listMSDOSScripts);
-        }
-        else
-        {
-            emit setProgressBar(1,1);
-            return false;
-        }
-
+        return true;
     }
-    else if((sType=="MACH")||(sType=="MACH64"))
+    else
     {
-        if(_machfile.setFileName(sFileName))
-        {
-            _machfile.entryPointLoad();
-
-            scriptmach.setData(&_machfile);
-
-            engine.setData(&scriptmach,"MACH",Utils::getDataBasePath(pOptions));
-//            emit appendError("Test");
-
-//            nNumberOfSignatures=pOptions->listMACHScripts.count();
-//            for(int i=0;i<nNumberOfSignatures;i++)
-//            {
-//                listSignaturesNames.append(pOptions->listMACHScripts.at(i).sName);
-//                listSignatures.append(pOptions->listMACHScripts.at(i).sText);
-//            }
-            pListSignatures=&(pOptions->listMACHScripts);
-        }
-        else
-        {
-            emit setProgressBar(1,1);
-            return false;
-        }
-
+        emit setProgressBar(1,1);
+        return false;
     }
-    else if(sType=="Text")
+
+}
+
+bool Scan::scanMACH(QString sFileName,QString sPrefix)
+{
+    PluginsScript engine;
+    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+
+    MACHFile _machfile;
+    connect(&_machfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    scriptMACH scriptmach;
+    connect(&scriptmach,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+
+    if(_machfile.setFileName(sFileName))
     {
-        if(_text.setFileName(sFileName))
-        {
-            scripttext.setData(&_text);
+        _machfile.entryPointLoad();
 
-            engine.setData(&scripttext,"Text",Utils::getDataBasePath(pOptions));
+        scriptmach.setData(&_machfile);
 
-//            nNumberOfSignatures=pOptions->listTextScripts.count();
-//            for(int i=0;i<nNumberOfSignatures;i++)
-//            {
-////                listSignatures.append(pOptions->listBinaryScripts.at(i));
-//                listSignaturesNames.append(pOptions->listTextScripts.at(i).sName);
-//                listSignatures.append(pOptions->listTextScripts.at(i).sText);
-//            }
-            pListSignatures=&(pOptions->listTextScripts);
-        }
-        else
-        {
-            emit setProgressBar(1,1);
-            return false;
-        }
+        engine.setData(&scriptmach,"MACH",Utils::getDataBasePath(pOptions));
+
+        handleSignatures(&engine,&(pOptions->listMACHScripts),sPrefix);
+
+        return true;
     }
-    else if(sType=="Binary")
+    else
     {
-        if(_binary.setFileName(sFileName))
-        {
-            scriptbinary.setData(&_binary);
-
-            engine.setData(&scriptbinary,"Binary",Utils::getDataBasePath(pOptions));
-
-//            nNumberOfSignatures=pOptions->listBinaryScripts.count();
-//            for(int i=0;i<nNumberOfSignatures;i++)
-//            {
-////                listSignatures.append(pOptions->listBinaryScripts.at(i));
-//                listSignaturesNames.append(pOptions->listBinaryScripts.at(i).sName);
-//                listSignatures.append(pOptions->listBinaryScripts.at(i).sText);
-//            }
-            pListSignatures=&(pOptions->listBinaryScripts);
-        }
-        else
-        {
-            emit setProgressBar(1,1);
-            return false;
-        }
+        emit setProgressBar(1,1);
+        return false;
     }
+}
 
+bool Scan::scanMSDOS(QString sFileName, QString sPrefix)
+{
+    PluginsScript engine;
+    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
 
-    nNumberOfSignatures=pListSignatures->count();
+    MSDOSFile _msdosfile;
+    connect(&_msdosfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    scriptMSDOS scriptmsdos;
+    connect(&scriptmsdos,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
 
-    for(int i=0;i<nNumberOfSignatures;i++)
+    if(_msdosfile.setFileName(sFileName))
+    {
+        _msdosfile.entryPointLoad();
+
+        scriptmsdos.setData(&_msdosfile);
+
+        engine.setData(&scriptmsdos,"MSDOS",Utils::getDataBasePath(pOptions));
+
+        handleSignatures(&engine,&(pOptions->listMSDOSScripts),sPrefix);
+
+        return true;
+    }
+    else
+    {
+        emit setProgressBar(1,1);
+        return false;
+    }
+}
+
+bool Scan::scanText(QString sFileName,QString sPrefix)
+{
+    PluginsScript engine;
+    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+
+    TextFile _text;
+    connect(&_text,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    scriptText scripttext;
+    connect(&scripttext,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+
+    if(_text.setFileName(sFileName))
+    {
+        scripttext.setData(&_text);
+
+        engine.setData(&scripttext,"Text",Utils::getDataBasePath(pOptions));
+
+        handleSignatures(&engine,&(pOptions->listTextScripts),sPrefix);
+
+        return true;
+    }
+    else
+    {
+        emit setProgressBar(1,1);
+        return false;
+    }
+}
+
+bool Scan::scanBinary(QString sFileName,QString sPrefix)
+{
+    PluginsScript engine;
+    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+
+    Binary _binary;
+    connect(&_binary,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    scriptBinary scriptbinary;
+    connect(&scriptbinary,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+
+    if(_binary.setFileName(sFileName))
+    {
+        scriptbinary.setData(&_binary);
+
+        engine.setData(&scriptbinary,"Binary",Utils::getDataBasePath(pOptions));
+
+        handleSignatures(&engine,&(pOptions->listBinaryScripts),sPrefix);
+
+        return true;
+    }
+    else
+    {
+        emit setProgressBar(1,1);
+        return false;
+    }
+}
+
+void Scan::handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> *pListSignatures, QString sType)
+{
+    int _nNumberOfSignatures=pListSignatures->count();
+
+    for(int i=0;i<_nNumberOfSignatures;i++)
     {
 //                listSignatures.append(pOptions->listBinaryScripts.at(i));
         if(pListSignatures->at(i).sName=="_init")
         {
-            s_Init=pListSignatures->at(i).sText;
+            pluginScript->evaluate (pListSignatures->at(i).sText,"_init");
+            break;
         }
-        else
-        {
-            listSignaturesNames.append(pListSignatures->at(i).sName);
-            listSignatures.append(pListSignatures->at(i).sText);
-        }
-
     }
 
+    int k=0;
+    bResult=false;
 
-
-    if(s_Init!="")
+    for(int i=0;(i<_nNumberOfSignatures)&&(bIsRun);i++)
     {
-//        engine.currentContext()->setActivationObject(engine.currentContext()->parentContext()->activationObject());
-        engine.evaluate (s_Init,"_init");
-    }
-
-    nNumberOfSignatures=listSignatures.count();
-
-    for(int i=0;(i<nNumberOfSignatures)&&(bIsRun);i++)
-    {
-        if(listSignaturesNames.at(i)!="_init")
+        if(pListSignatures->at(i).sName!="_init")
         {
             QTime scanTime;
             if(pOptions->bShowScanTime)
@@ -355,18 +373,18 @@ bool Scan::analize(QString sFileName)
                 scanTime=QTime::currentTime();
             }
 
-            compareFile(&engine,listSignatures.at(i),listSignaturesNames.at(i));
+            compareFile(pluginScript,pListSignatures->at(i).sText,pListSignatures->at(i).sName,sType);
 
 
             if(pOptions->bShowScanTime)
             {
-                emit appendError(QString("%1: %2 ms").arg(listSignaturesNames.at(i)).arg(scanTime.msecsTo(QTime::currentTime())));
+                emit appendError(QString("%1: %2 ms").arg(pListSignatures->at(i).sName).arg(scanTime.msecsTo(QTime::currentTime())));
             }
 
 
-            if(i+1>(nNumberOfSignatures/30)*k)
+            if(i+1>(_nNumberOfSignatures/30)*k)
             {
-                emit setProgressBar(nNumberOfSignatures,i+1);
+                emit setProgressBar(_nNumberOfSignatures,i+1);
                 k++;
             }
         }
@@ -379,9 +397,6 @@ bool Scan::analize(QString sFileName)
     {
         emit appendSignature(sType+": Nothing found");
     }
-
-
-    return bResult;
 }
 
 void Scan::loadTypeScripts(QList<__SIGNATURE> *pList, QString sType,__DIE_OPTIONS *pOptions)
@@ -481,7 +496,7 @@ void Scan::loadScripts(__DIE_OPTIONS *pOptions)
     loadTypeScripts(&pOptions->listMACHScripts,"MACH",pOptions);
 }
 
-QString Scan::compareFile(PluginsScript *pScript,QString sScript,QString sScriptName)
+QString Scan::compareFile(PluginsScript *pScript,QString sScript,QString sScriptName,QString sType)
 {
     QScriptValueList args;
     QString sResult="";

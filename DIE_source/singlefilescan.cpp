@@ -25,6 +25,7 @@ void SingleFileScan::flagsToOptions(unsigned int nFlags, __DIE_OPTIONS *pOptions
     pOptions->bShowEntropy=nFlags&DIE_SHOWENTROPY;
     pOptions->bSingleLineOutput=nFlags&DIE_SINGLELINEOUTPUT;
     pOptions->bShowFileFormatOnce=nFlags&DIE_SHOWFILEFORMATONCE;
+    pOptions->bFullScan=nFlags&DIE_FULLSCAN;
     pOptions->bShowScanTime=false;
 }
 
@@ -44,7 +45,7 @@ QString SingleFileScan::process(QString sFileName)
     scan.setData(&options);
     scan.setRun(true);
 
-    scan.analize(sFileName);
+    scan.analize(sFileName,options.bFullScan);
 
     if(options.bShowEntropy)
     {
@@ -162,9 +163,14 @@ void SingleFileScan::appendMessage(QString sMessage)
 
 void SingleFileScan::appendSignature(QString sMessage)
 {
-    if((options.bShowFileFormatOnce)&&(options.nNumberOfResults>1))
+    QString sType=sMessage.section(": ",0,0);
+    if((options.bShowFileFormatOnce)&&(sType==sCurrentType))
     {
         sMessage=sMessage.section(": ",1,-1);
+    }
+    else
+    {
+        sCurrentType=sType;
     }
 
     appendMessage(sMessage);

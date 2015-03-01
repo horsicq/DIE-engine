@@ -172,6 +172,7 @@ public slots:
     bool isSizeValid(unsigned int nSize);
     bool isOffsetAndSizeValid(unsigned int nOffset,unsigned int nSize);
 
+    QList<QString> getTypes();
     QString getType();
     QString getDisasmMode();
     bool dump(QString sFileName,unsigned int nOffset,unsigned int nSize);

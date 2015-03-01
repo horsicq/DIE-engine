@@ -23,15 +23,17 @@ void _MainClass::handleMessage(QString szMessage)
     }
 }
 
-void _MainClass::appendSignature(QString szMessage)
-{
-    if((pOptions->bShowFileFormatOnce)&&(pOptions->nNumberOfResults>1))
-    {
-        szMessage=szMessage.section(": ",1,-1);
-    }
+//void _MainClass::appendSignature(QString szMessage)
+//{
+//    QString sType=szMessage.section(": ",0,0);
+//    if((pOptions->bShowFileFormatOnce)&&(sType!=sCurrentType))
+//    {
+//        szMessage=szMessage.section(": ",1,-1);
+//        sCurrentType=sType;
+//    }
 
-    handleMessage(szMessage);
-}
+//    handleMessage(szMessage);
+//}
 
 void _MainClass::appendError(QString szMessage)
 {

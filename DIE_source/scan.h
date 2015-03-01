@@ -28,6 +28,7 @@
 #define DIE_SHOWENTROPY             0x00000008
 #define DIE_SINGLELINEOUTPUT        0x00000010
 #define DIE_SHOWFILEFORMATONCE      0x00000020
+#define DIE_FULLSCAN                0x00000040
 
 class Scan : public QObject
 {
@@ -43,7 +44,16 @@ public:
     bool isCompleted();
     void setRun(bool bIsRun);
 
-    bool analize(QString sFileName);
+    bool analize(QString sFileName,bool bFullScan);
+    bool scanPE(QString sFileName,QString sPrefix);
+    bool scanELF(QString sFileName,QString sPrefix);
+    bool scanMACH(QString sFileName,QString sPrefix);
+    bool scanMSDOS(QString sFileName,QString sPrefix);
+    bool scanText(QString sFileName,QString sPrefix);
+    bool scanBinary(QString sFileName,QString sPrefix);
+
+    void handleSignatures(PluginsScript *pluginScript,QList<__SIGNATURE> *pListSignatures,QString sType);
+
     static void loadTypeScripts(QList<__SIGNATURE> *pList,QString sType,__DIE_OPTIONS *pOptions);
     static void loadScripts(__DIE_OPTIONS *pOptions);
 //    void _compareFile(QString sScript);
@@ -69,10 +79,10 @@ private:
     bool bIsRun;
     bool bIsCompleted;
     bool bResult;
-    QString sType;
+
 //    PluginsScript *pScript;
     QString sFileName;
-    QString compareFile(PluginsScript *pScript,QString sScript,QString sScriptName);
+    QString compareFile(PluginsScript *pScript,QString sScript,QString sScriptName,QString sType);
 };
 
 #endif // SCAN_H

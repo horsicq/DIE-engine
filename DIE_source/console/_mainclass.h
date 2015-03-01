@@ -15,14 +15,14 @@ signals:
     
 public slots:
     void handleMessage(QString szMessage);
-    void appendSignature(QString szMessage);
+//    void appendSignature(QString szMessage);
     void appendError(QString szMessage);
     void appendFileName(QString szMessage);
 
 private:
     bool bSingleLineOutput;
     __DIE_OPTIONS *pOptions;
-
+    QString sCurrentType;
 };
 
 #endif // _MAINCLASS_H

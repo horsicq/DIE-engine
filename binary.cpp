@@ -2417,8 +2417,10 @@ bool Binary::isOffsetAndSizeValid(unsigned int nOffset, unsigned int nSize)
     return true;
 }
 
-QString Binary::getType()
+QList<QString> Binary::getTypes()
 {
+    QList<QString> listResult;
+
     QByteArray baHeader;
     baHeader=readArray(0,BUFFER_SIZE);
     char *pOffset=baHeader.data();
@@ -2426,7 +2428,7 @@ QString Binary::getType()
 
     if(nSize>=(int)sizeof(IMAGE_DOS_HEADER))
     {
-        if(((IMAGE_DOS_HEADER *)pOffset)->e_magic==IMAGE_DOS_SIGNATURE)
+        if((((IMAGE_DOS_HEADER *)pOffset)->e_magic==IMAGE_DOS_SIGNATURE)||(((IMAGE_DOS_HEADER *)pOffset)->e_magic==0x4D5A))
         {
             unsigned int nLfanew=0;
             nLfanew=((IMAGE_DOS_HEADER *)pOffset)->e_lfanew;
@@ -2456,22 +2458,18 @@ QString Binary::getType()
                 {
                     if((((IMAGE_NT_HEADERS *)pOffset)->FileHeader.Machine)==IMAGE_FILE_MACHINE_AMD64)
                     {
-                        return QString("PE+(64)");
+                        listResult.append(QString("PE+(64)"));
                     }
                     else if((((IMAGE_NT_HEADERS *)pOffset)->FileHeader.Machine)==IMAGE_FILE_MACHINE_IA64)
                     {
-                        return QString("PE+(64)");
+                        listResult.append(QString("PE+(64)"));
                     }
 
-                    return QString("PE");
+                    listResult.append(QString("PE"));
                 }
             }
 
-            return QString("MSDOS");
-        }
-        else if(((IMAGE_DOS_HEADER *)pOffset)->e_magic==0x4D5A)
-        {
-            return QString("MSDOS");
+            listResult.append(QString("MSDOS"));
         }
     }
 
@@ -2484,11 +2482,11 @@ QString Binary::getType()
         {
             if(((Elf32_Ehdr *)pOffset)->e_ident[4] == 1)
             {
-                return QString("ELF");
+                listResult.append(QString("ELF"));
             }
             else if(((Elf32_Ehdr *)pOffset)->e_ident[4] == 2)
             {
-                return QString("ELF64");
+                listResult.append(QString("ELF64"));
             }
         }
     }
@@ -2496,19 +2494,26 @@ QString Binary::getType()
     {
         if((((mach_header *)pOffset)->magic == MH_MAGIC)||(((mach_header *)pOffset)->magic == MH_CIGAM))
         {
-            return QString("MACH");
+            listResult.append(QString("MACH"));
         }
         else if((((mach_header *)pOffset)->magic == MH_MAGIC_64)||(((mach_header *)pOffset)->magic == MH_CIGAM_64))
         {
-            return QString("MACH64");
+            listResult.append(QString("MACH64"));
         }
     }
     if(isPlainText())
     {
-       return QString("Text");
+       listResult.append(QString("Text"));
     }
 
-    return QString("Binary");
+    listResult.append(QString("Binary"));
+
+    return listResult;
+}
+
+QString Binary::getType()
+{
+    return getTypes().at(0);
 }
 QString Binary::getDisasmMode()
 {
