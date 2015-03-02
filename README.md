@@ -31,4 +31,4 @@ How to build:
 
 
 Don't forget after compilation to get signatures from https://github.com/horsicq/Detect-It-Easy (folder "db").
-Just place signatures to project's folder.
+Just place the signatures to project's folder.
