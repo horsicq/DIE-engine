@@ -12,7 +12,7 @@
 #define DIE_SHOWFILEFORMATONCE      0x00000020
 
 #ifdef Q_OS_WIN
-    typedef unsigned short wchar_t;
+typedef unsigned short wchar_t;
 #endif
 
 

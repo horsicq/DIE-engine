@@ -12,10 +12,10 @@ public:
     explicit _MainClass(QObject *parent = 0);
     void setOptions(__DIE_OPTIONS *pOptions);
 signals:
-    
+
 public slots:
     void handleMessage(QString szMessage);
-//    void appendSignature(QString szMessage);
+    //    void appendSignature(QString szMessage);
     void appendError(QString szMessage);
     void appendFileName(QString szMessage);
 

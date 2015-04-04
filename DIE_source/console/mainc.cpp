@@ -12,12 +12,13 @@ void FindFiles(QString sDirectoryName,QStringList *pList,bool bSubDirs)
 
     QFileInfoList fi=dir.entryInfoList();
 
-    for(int i=0;i<fi.count();i++)
+    for(int i=0; i<fi.count(); i++)
     {
         if(fi.at(i).fileName()==".")
         {
             continue;
         }
+
         if(fi.at(i).fileName()=="..")
         {
             continue;
@@ -41,7 +42,7 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
 
     QStringList listTemp1;
 
-    for(int i=1;i<pListArguments->count();i++)
+    for(int i=1; i<pListArguments->count(); i++)
     {
         sParam=pListArguments->at(i);
 
@@ -221,15 +222,17 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
 
     QFile file;
     QDir dir;
-//    QDir dir2;
-//    int nNumberOfSlash=0;
-//    QStringList listTemp2;
-//    QFileInfoList fil;
-//    QString sBaseName;
-    for(int i=0;i<listTemp1.count();i++)
+
+    //    QDir dir2;
+    //    int nNumberOfSlash=0;
+    //    QStringList listTemp2;
+    //    QFileInfoList fil;
+    //    QString sBaseName;
+    for(int i=0; i<listTemp1.count(); i++)
     {
         file.setFileName(listTemp1.at(i));
         dir.setPath(listTemp1.at(i));
+
         if(listTemp1.at(i)==".")
         {
             continue;
@@ -254,7 +257,7 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
             QFileInfoList listFI=_dir.entryInfoList(nameFilters);
 
 
-            for(int j=0;j<listFI.count();j++)
+            for(int j=0; j<listFI.count(); j++)
             {
                 if(listFI.at(j).isDir())
                 {
@@ -272,68 +275,68 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
             return false;
         }
 
-//        if(listTemp1.at(i).contains("*")||listTemp1.at(i).contains("?"))
-//        {
-//            sTemp=listTemp1.at(i);
-//            sTemp.replace("/",QDir::separator());
-//            sTemp.replace("\\",QDir::separator());
+        //        if(listTemp1.at(i).contains("*")||listTemp1.at(i).contains("?"))
+        //        {
+        //            sTemp=listTemp1.at(i);
+        //            sTemp.replace("/",QDir::separator());
+        //            sTemp.replace("\\",QDir::separator());
 
-//            nNumberOfSlash=sTemp.count(QDir::separator());
+        //            nNumberOfSlash=sTemp.count(QDir::separator());
 
-//            if(nNumberOfSlash)
-//            {
-//                dir2.setPath(sTemp.section(QDir::separator(),0,nNumberOfSlash-1)+QDir::separator());
-//                sTemp=sTemp.section(QDir::separator(),nNumberOfSlash);
-//            }
-//            fil=dir2.entryInfoList(QStringList()<<sTemp);
+        //            if(nNumberOfSlash)
+        //            {
+        //                dir2.setPath(sTemp.section(QDir::separator(),0,nNumberOfSlash-1)+QDir::separator());
+        //                sTemp=sTemp.section(QDir::separator(),nNumberOfSlash);
+        //            }
+        //            fil=dir2.entryInfoList(QStringList()<<sTemp);
 
-//            for(int j=0;j<fil.count();j++)
-//            {
-//                sBaseName=fil.at(j).baseName();
-//                if((sBaseName!=".")&&(sBaseName!="..")&&(sBaseName!=""))
-//                {
-//                    listTemp2.append(fil.at(j).absoluteFilePath());
-//                }
-//            }
-//        }
-//        else
-//        {
-//            listTemp2.append(listTemp1.at(i));
-//        }
+        //            for(int j=0;j<fil.count();j++)
+        //            {
+        //                sBaseName=fil.at(j).baseName();
+        //                if((sBaseName!=".")&&(sBaseName!="..")&&(sBaseName!=""))
+        //                {
+        //                    listTemp2.append(fil.at(j).absoluteFilePath());
+        //                }
+        //            }
+        //        }
+        //        else
+        //        {
+        //            listTemp2.append(listTemp1.at(i));
+        //        }
     }
 
-//    QDir _dir;
-//    QFileInfoList listFI=_dir.entryInfoList(nameFilters);
+    //    QDir _dir;
+    //    QFileInfoList listFI=_dir.entryInfoList(nameFilters);
 
 
-////    listAnother2.append(dir2.entryList(listFilters));
-//    for(int i=0;i<listTemp2.count();i++)
-//    {
-//        file.setFileName(listTemp2.at(i));
-//        dir.setPath(listTemp2.at(i));
+    ////    listAnother2.append(dir2.entryList(listFilters));
+    //    for(int i=0;i<listTemp2.count();i++)
+    //    {
+    //        file.setFileName(listTemp2.at(i));
+    //        dir.setPath(listTemp2.at(i));
 
-//        if(listTemp2.at(i)==".")
-//        {
-//            continue;
-//        }
-//        else if(listTemp2.at(i)=="..")
-//        {
-//            continue;
-//        }
-//        else if(dir.exists())
-//        {
-//            FindFiles(listTemp2.at(i),pListFiles,pOptions->bScanSubfolders);
-//        }
-//        else if(file.exists())
-//        {
-//            pListFiles->append(listTemp2.at(i));
-//        }
-//        else
-//        {
-//            printf("Invalid parameter or file name: %s",listTemp2.at(i).toAscii().data());
-//            return false;
-//        }
-//    }
+    //        if(listTemp2.at(i)==".")
+    //        {
+    //            continue;
+    //        }
+    //        else if(listTemp2.at(i)=="..")
+    //        {
+    //            continue;
+    //        }
+    //        else if(dir.exists())
+    //        {
+    //            FindFiles(listTemp2.at(i),pListFiles,pOptions->bScanSubfolders);
+    //        }
+    //        else if(file.exists())
+    //        {
+    //            pListFiles->append(listTemp2.at(i));
+    //        }
+    //        else
+    //        {
+    //            printf("Invalid parameter or file name: %s",listTemp2.at(i).toAscii().data());
+    //            return false;
+    //        }
+    //    }
 
     return true;
 }
@@ -358,7 +361,7 @@ int getNumberOfScripts(QList<__SIGNATURE> *pList)
 {
     int nResult=0;
 
-    for(int i=0;i<pList->count();i++)
+    for(int i=0; i<pList->count(); i++)
     {
         if(pList->at(i).sName!="_init")
         {
@@ -373,14 +376,16 @@ QMap<QString,int> getSubTypes(QList<__SIGNATURE> *pList)
 {
     QMap<QString,int> mapResult;
 
-    for(int i=0;i<pList->count();i++)
+    for(int i=0; i<pList->count(); i++)
     {
         if(pList->at(i).sName!="_init")
         {
             QString sName=pList->at(i).sName;
+
             if(sName.count(".")>=3)
             {
                 QString sType=sName.section(".",0,0);
+
                 if((sType!="")&&(!sType.contains(' ')))
                 {
                     mapResult.insert(sType,mapResult.value(sType)+1);
@@ -400,7 +405,8 @@ int printSignatures(QString sType,QList<__SIGNATURE> *pList)
     QMap<QString,int> mapSubtypes=getSubTypes(pList);
 
     QMapIterator<QString, int> i(mapSubtypes);
-    while (i.hasNext())
+
+    while(i.hasNext())
     {
         i.next();
         printf("\tNumber of %s signatures: %d\n",i.key().toAscii().data(),i.value());
@@ -414,34 +420,34 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-//    __DIE_OPTIONS options;
+    //    __DIE_OPTIONS options;
     QStringList arguments=QCoreApplication::arguments();
     // Default options
-//    options.bShowErrors=true;
-//    options.bShowOptions=true;
-//    options.bShowVersion=true;
-//    options.bScanSubfolders=true;
-//    options.bShowEntropy=false;
-//    options.bShowScanTime=false;
+    //    options.bShowErrors=true;
+    //    options.bShowOptions=true;
+    //    options.bShowVersion=true;
+    //    options.bScanSubfolders=true;
+    //    options.bShowEntropy=false;
+    //    options.bShowScanTime=false;
 #ifdef QT_DEBUG
-//    arguments.append("/home/trix/progs/xntsv32/xntsv32.exe");
-////    arguments.append("-database:$app/help");
-//////    arguments.append("-singlelineoutput:yes");
-//   // arguments.append("-showfileformatonce:no");
-//    arguments.append("-showentropy:yes");
-//   // arguments.append("-fullscan:yes");
+    //    arguments.append("/home/trix/progs/xntsv32/xntsv32.exe");
+    ////    arguments.append("-database:$app/help");
+    //////    arguments.append("-singlelineoutput:yes");
+    //   // arguments.append("-showfileformatonce:no");
+    //    arguments.append("-showentropy:yes");
+    //   // arguments.append("-fullscan:yes");
 #endif
 
     loadOptions(&SingleFileScan::options);
-//    // fill scripts
+    //    // fill scripts
     Scan::loadScripts(&SingleFileScan::options);
 
     bool bInvalidBase=(SingleFileScan::options.listBinaryScripts.count()==0)
-                        &&(SingleFileScan::options.listELFScripts.count()==0)
-                        &&(SingleFileScan::options.listMACHScripts.count()==0)
-                        &&(SingleFileScan::options.listMSDOSScripts.count()==0)
-                        &&(SingleFileScan::options.listPEScripts.count()==0)
-                        &&(SingleFileScan::options.listTextScripts.count()==0);
+                      &&(SingleFileScan::options.listELFScripts.count()==0)
+                      &&(SingleFileScan::options.listMACHScripts.count()==0)
+                      &&(SingleFileScan::options.listMSDOSScripts.count()==0)
+                      &&(SingleFileScan::options.listPEScripts.count()==0)
+                      &&(SingleFileScan::options.listTextScripts.count()==0);
 
 
     if(arguments.count()==1)
@@ -463,12 +469,12 @@ int main(int argc, char *argv[])
         nTotal+=printSignatures("ELF/ELF64",&SingleFileScan::options.listELFScripts);
         nTotal+=printSignatures("MACH/MACH64",&SingleFileScan::options.listMACHScripts);
         printf("Total signatures: %d\n",nTotal);
-//        printf("Number of Binary signatures: %d\n",getNumberOfScripts(&options.listBinaryScripts));
-//        printf("Number of Text signatures: %d\n",getNumberOfScripts(&options.listTextScripts));
-//        printf("Number of MSDOS signatures: %d\n",getNumberOfScripts(&options.listMSDOSScripts));
-//        printf("Number of PE/PE+ signatures: %d\n",getNumberOfScripts(&options.listPEScripts));
-//        printf("Number of ELF/ELF64 signatures: %d\n",getNumberOfScripts(&options.listELFScripts));
-//        printf("Number of MACH/MACH64 signatures: %d\n",getNumberOfScripts(&options.listMACHScripts));
+        //        printf("Number of Binary signatures: %d\n",getNumberOfScripts(&options.listBinaryScripts));
+        //        printf("Number of Text signatures: %d\n",getNumberOfScripts(&options.listTextScripts));
+        //        printf("Number of MSDOS signatures: %d\n",getNumberOfScripts(&options.listMSDOSScripts));
+        //        printf("Number of PE/PE+ signatures: %d\n",getNumberOfScripts(&options.listPEScripts));
+        //        printf("Number of ELF/ELF64 signatures: %d\n",getNumberOfScripts(&options.listELFScripts));
+        //        printf("Number of MACH/MACH64 signatures: %d\n",getNumberOfScripts(&options.listMACHScripts));
         printf("\n");
         printf("Usage: DIEC file/directory [options]\n");
         printf("\n");
@@ -504,9 +510,9 @@ int main(int argc, char *argv[])
 
         SingleFileScan sfs;
 
-//        sfs.setOptions(&options);
+        //        sfs.setOptions(&options);
 
-        for(int i=0;i<listFiles.count();i++)
+        for(int i=0; i<listFiles.count(); i++)
         {
             if(listFiles.count()!=1)
             {
@@ -539,5 +545,5 @@ int main(int argc, char *argv[])
     }
 
     return 0;
-//    return a.exec();
+    //    return a.exec();
 }
