@@ -9,7 +9,7 @@ void scriptMSDOS::setData(MSDOSFile *msdosfile)
 {
     this->msdosfile=msdosfile;
 
-//    emit appendError("Test2");
+    //    emit appendError("Test2");
 }
 
 //bool scriptMSDOS::compareHeader(QString sSignature)

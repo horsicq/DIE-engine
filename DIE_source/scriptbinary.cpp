@@ -70,7 +70,7 @@ QString scriptBinary::getFileDirectory()
 
 QString scriptBinary::getFileBaseName()
 {
-   return binary->getFileBaseName();
+    return binary->getFileBaseName();
 }
 
 QString scriptBinary::getFileSuffix()

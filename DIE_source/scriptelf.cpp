@@ -9,7 +9,7 @@ void scriptELF::setData(ELFFile *elffile)
 {
     this->elffile=elffile;
 
-//    emit appendError("Test2");
+    //    emit appendError("Test2");
 }
 QString scriptELF::getGeneralOptions()
 {
@@ -146,7 +146,7 @@ bool scriptELF::compare(QString sSignature,unsigned int nOffset)
 }
 bool scriptELF::compareEP(QString sSignature,unsigned int nOffset)
 {
-//    return elffile->compareEPfast(sSignature);
+    //    return elffile->compareEPfast(sSignature);
     return elffile->compareEP(sSignature,nOffset);
 }
 

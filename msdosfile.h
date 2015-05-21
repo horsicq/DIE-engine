@@ -13,7 +13,7 @@ signals:
 
 private slots:
 
-    
+
 public slots:
     bool compareEPfast(QString sSignature);
     bool isValid();
@@ -61,17 +61,17 @@ public slots:
 
     unsigned int getDosHeader_lfanew();
     void setDosHeader_lfanew(unsigned int nValue);
-	
+
 
     virtual unsigned long long OffsetToRVA(unsigned long long nOffset);
     virtual unsigned long long RVAToOffset(unsigned long long nRVA);
     virtual unsigned long long VAToOffset(unsigned long long nVA);
     virtual unsigned long long VAToOffset32(unsigned long long nVA);
     virtual unsigned long long OffsetToVA(unsigned long long nOffset);
-	
-	unsigned int getOverlayOffset();
-	unsigned int getOverlaySize();
-	bool isOverlayPresent();
+
+    unsigned int getOverlayOffset();
+    unsigned int getOverlaySize();
+    bool isOverlayPresent();
     bool compareOverlay(QString sSignature,unsigned int nOffset=0);
 
     unsigned int getEntryPointOffset();

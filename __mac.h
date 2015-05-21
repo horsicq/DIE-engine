@@ -15,7 +15,8 @@ typedef int		vm_prot_t;
  * The 32-bit mach header appears at the very beginning of the object file for
  * 32-bit architectures.
  */
-struct mach_header {
+struct mach_header
+{
     uint32_t	magic;		/* mach magic number identifier */
     cpu_type_t	cputype;	/* cpu specifier */
     cpu_subtype_t	cpusubtype;	/* machine specifier */
@@ -33,7 +34,8 @@ struct mach_header {
  * The 64-bit mach header appears at the very beginning of object files for
  * 64-bit architectures.
  */
-struct mach_header_64 {
+struct mach_header_64
+{
     uint32_t	magic;		/* mach magic number identifier */
     cpu_type_t	cputype;	/* cpu specifier */
     cpu_subtype_t	cpusubtype;	/* machine specifier */
@@ -54,10 +56,10 @@ struct mach_header_64 {
  * boundary for efficient demand pageing.  The MH_EXECUTE, MH_FVMLIB, MH_DYLIB,
  * MH_DYLINKER and MH_BUNDLE file types also have the headers included as part
  * of their first segment.
- * 
+ *
  * The file type MH_OBJECT is a compact format intended as output of the
  * assembler and input (and possibly output) of the link editor (the .o
- * format).  All sections are in one unnamed segment with no segment padding. 
+ * format).  All sections are in one unnamed segment with no segment padding.
  * This format is used as an executable format when the file is so small the
  * segment padding greatly increases its size.
  *
@@ -80,9 +82,9 @@ struct mach_header_64 {
 #define	MH_DYLINKER	0x7		/* dynamic link editor */
 #define	MH_BUNDLE	0x8		/* dynamically bound bundle file */
 #define	MH_DYLIB_STUB	0x9		/* shared library stub for static */
-					/*  linking only, no section contents */
+/*  linking only, no section contents */
 #define	MH_DSYM		0xa		/* companion file with only debug */
-					/*  sections */
+/*  sections */
 #define	MH_KEXT_BUNDLE	0xb		/* x86_64 kexts */
 
 /* Constants for the flags field of the mach_header */
@@ -123,7 +125,7 @@ struct mach_header_64 {
                                            all two-level namespace modules of
 					   its dependent libraries. only used
 					   when MH_PREBINDABLE and MH_TWOLEVEL
-					   are both set. */ 
+					   are both set. */
 #define MH_SUBSECTIONS_VIA_SYMBOLS 0x2000/* safe to divide up the sections into
 					    sub-sections via symbols for dead
 					    code stripping */
@@ -148,7 +150,7 @@ struct mach_header_64 {
 #define MH_ROOT_SAFE 0x40000           /* When this bit is set, the binary 
 					  declares it is safe for use in
 					  processes with uid zero */
-                                         
+
 #define MH_SETUID_SAFE 0x80000         /* When this bit is set, the binary 
 					  declares it is safe for use in
 					  processes when issetugid() is true */
@@ -179,9 +181,10 @@ struct mach_header_64 {
  * to these tables will not work well or at all on some machines.  With all
  * padding zeroed like objects will compare byte for byte.
  */
-struct load_command {
-	uint32_t cmd;		/* type of load command */
-	uint32_t cmdsize;	/* total size of command in bytes */
+struct load_command
+{
+    uint32_t cmd;		/* type of load command */
+    uint32_t cmdsize;	/* total size of command in bytes */
 };
 /*
  * After MacOS X 10.1 when a new load command is added that is required to be
@@ -211,7 +214,7 @@ struct load_command {
 #define LC_LOAD_DYLINKER 0xe	/* load a dynamic linker */
 #define LC_ID_DYLINKER	0xf	/* dynamic linker identification */
 #define	LC_PREBOUND_DYLIB 0x10	/* modules prebound for a dynamically */
-                /*  linked shared library */
+/*  linked shared library */
 #define	LC_ROUTINES	0x11	/* image routines */
 #define	LC_SUB_FRAMEWORK 0x12	/* sub framework */
 #define	LC_SUB_UMBRELLA 0x13	/* sub umbrella */
@@ -247,11 +250,12 @@ struct load_command {
  * Once again any padded bytes to bring the cmdsize field to a multiple
  * of 4 bytes must be zero.
  */
-union lc_str {
-	uint32_t	offset;	/* offset to the string */
+union lc_str
+{
+    uint32_t	offset;	/* offset to the string */
 #ifndef __LP64__
-	char		*ptr;	/* pointer to the string */
-#endif 
+    char		*ptr;	/* pointer to the string */
+#endif
 };
 
 /*
@@ -266,18 +270,19 @@ union lc_str {
  * section structures directly follow the segment command and their size is
  * reflected in cmdsize.
  */
-struct segment_command { /* for 32-bit architectures */
-	uint32_t	cmd;		/* LC_SEGMENT */
-	uint32_t	cmdsize;	/* includes sizeof section structs */
-	char		segname[16];	/* segment name */
-	uint32_t	vmaddr;		/* memory address of this segment */
-	uint32_t	vmsize;		/* memory size of this segment */
-	uint32_t	fileoff;	/* file offset of this segment */
-	uint32_t	filesize;	/* amount to map from the file */
-	vm_prot_t	maxprot;	/* maximum VM protection */
-	vm_prot_t	initprot;	/* initial VM protection */
-	uint32_t	nsects;		/* number of sections in segment */
-	uint32_t	flags;		/* flags */
+struct segment_command   /* for 32-bit architectures */
+{
+    uint32_t	cmd;		/* LC_SEGMENT */
+    uint32_t	cmdsize;	/* includes sizeof section structs */
+    char		segname[16];	/* segment name */
+    uint32_t	vmaddr;		/* memory address of this segment */
+    uint32_t	vmsize;		/* memory size of this segment */
+    uint32_t	fileoff;	/* file offset of this segment */
+    uint32_t	filesize;	/* amount to map from the file */
+    vm_prot_t	maxprot;	/* maximum VM protection */
+    vm_prot_t	initprot;	/* initial VM protection */
+    uint32_t	nsects;		/* number of sections in segment */
+    uint32_t	flags;		/* flags */
 };
 
 /*
@@ -286,18 +291,19 @@ struct segment_command { /* for 32-bit architectures */
  * sections then section_64 structures directly follow the 64-bit segment
  * command and their size is reflected in cmdsize.
  */
-struct segment_command_64 { /* for 64-bit architectures */
-	uint32_t	cmd;		/* LC_SEGMENT_64 */
-	uint32_t	cmdsize;	/* includes sizeof section_64 structs */
-	char		segname[16];	/* segment name */
+struct segment_command_64   /* for 64-bit architectures */
+{
+    uint32_t	cmd;		/* LC_SEGMENT_64 */
+    uint32_t	cmdsize;	/* includes sizeof section_64 structs */
+    char		segname[16];	/* segment name */
     fuint64_t	vmaddr;		/* memory address of this segment */
     fuint64_t	vmsize;		/* memory size of this segment */
     fuint64_t	fileoff;	/* file offset of this segment */
     fuint64_t	filesize;	/* amount to map from the file */
-	vm_prot_t	maxprot;	/* maximum VM protection */
-	vm_prot_t	initprot;	/* initial VM protection */
-	uint32_t	nsects;		/* number of sections in segment */
-	uint32_t	flags;		/* flags */
+    vm_prot_t	maxprot;	/* maximum VM protection */
+    vm_prot_t	initprot;	/* initial VM protection */
+    uint32_t	nsects;		/* number of sections in segment */
+    uint32_t	flags;		/* flags */
 };
 
 /* Constants for the flags field of the segment_command */
@@ -343,33 +349,35 @@ struct segment_command_64 { /* for 64-bit architectures */
  * fields of the section structure for mach object files is described in the
  * header file <reloc.h>.
  */
-struct section { /* for 32-bit architectures */
-	char		sectname[16];	/* name of this section */
-	char		segname[16];	/* segment this section goes in */
-	uint32_t	addr;		/* memory address of this section */
-	uint32_t	size;		/* size in bytes of this section */
-	uint32_t	offset;		/* file offset of this section */
-	uint32_t	align;		/* section alignment (power of 2) */
-	uint32_t	reloff;		/* file offset of relocation entries */
-	uint32_t	nreloc;		/* number of relocation entries */
-	uint32_t	flags;		/* flags (section type and attributes)*/
-	uint32_t	reserved1;	/* reserved (for offset or index) */
-	uint32_t	reserved2;	/* reserved (for count or sizeof) */
+struct section   /* for 32-bit architectures */
+{
+    char		sectname[16];	/* name of this section */
+    char		segname[16];	/* segment this section goes in */
+    uint32_t	addr;		/* memory address of this section */
+    uint32_t	size;		/* size in bytes of this section */
+    uint32_t	offset;		/* file offset of this section */
+    uint32_t	align;		/* section alignment (power of 2) */
+    uint32_t	reloff;		/* file offset of relocation entries */
+    uint32_t	nreloc;		/* number of relocation entries */
+    uint32_t	flags;		/* flags (section type and attributes)*/
+    uint32_t	reserved1;	/* reserved (for offset or index) */
+    uint32_t	reserved2;	/* reserved (for count or sizeof) */
 };
 
-struct section_64 { /* for 64-bit architectures */
-	char		sectname[16];	/* name of this section */
-	char		segname[16];	/* segment this section goes in */
+struct section_64   /* for 64-bit architectures */
+{
+    char		sectname[16];	/* name of this section */
+    char		segname[16];	/* segment this section goes in */
     fuint64_t	addr;		/* memory address of this section */
     fuint64_t	size;		/* size in bytes of this section */
-	uint32_t	offset;		/* file offset of this section */
-	uint32_t	align;		/* section alignment (power of 2) */
-	uint32_t	reloff;		/* file offset of relocation entries */
-	uint32_t	nreloc;		/* number of relocation entries */
-	uint32_t	flags;		/* flags (section type and attributes)*/
-	uint32_t	reserved1;	/* reserved (for offset or index) */
-	uint32_t	reserved2;	/* reserved (for count or sizeof) */
-	uint32_t	reserved3;	/* reserved */
+    uint32_t	offset;		/* file offset of this section */
+    uint32_t	align;		/* section alignment (power of 2) */
+    uint32_t	reloff;		/* file offset of relocation entries */
+    uint32_t	nreloc;		/* number of relocation entries */
+    uint32_t	flags;		/* flags (section type and attributes)*/
+    uint32_t	reserved1;	/* reserved (for offset or index) */
+    uint32_t	reserved2;	/* reserved (for count or sizeof) */
+    uint32_t	reserved3;	/* reserved */
 };
 
 /*
@@ -388,7 +396,7 @@ struct section_64 { /* for 64-bit architectures */
 #define	S_4BYTE_LITERALS	0x3	/* section with only 4 byte literals */
 #define	S_8BYTE_LITERALS	0x4	/* section with only 8 byte literals */
 #define	S_LITERAL_POINTERS	0x5	/* section with only pointers to */
-					/*  literals */
+/*  literals */
 /*
  * For the two types of symbol pointers sections and the symbol stubs section
  * they have indirect symbol table entries.  For each of the entries in the
@@ -454,7 +462,7 @@ struct section_64 { /* for 64-bit architectures */
  * a section type S_REGULAR.  The static linker will not copy section contents
  * from sections with this attribute into its output file.  These sections
  * generally contain DWARF debugging info.
- */ 
+ */
 #define	S_ATTR_DEBUG		 0x02000000	/* a debug section */
 #define SECTION_ATTRIBUTES_SYS	 0x00ffff00	/* system setable attributes */
 #define S_ATTR_SOME_INSTRUCTIONS 0x00000400	/* section contains some
@@ -482,26 +490,26 @@ struct section_64 { /* for 64-bit architectures */
 /* The currently known segment names and the section names in those segments */
 
 #define	SEG_PAGEZERO	"__PAGEZERO"	/* the pagezero segment which has no */
-					/* protections and catches NULL */
-					/* references for MH_EXECUTE files */
+/* protections and catches NULL */
+/* references for MH_EXECUTE files */
 
 
 #define	SEG_TEXT	"__TEXT"	/* the tradition UNIX text segment */
 #define	SECT_TEXT	"__text"	/* the real text part of the text */
-					/* section no headers, and no padding */
+/* section no headers, and no padding */
 #define SECT_FVMLIB_INIT0 "__fvmlib_init0"	/* the fvmlib initialization */
-						/*  section */
+/*  section */
 #define SECT_FVMLIB_INIT1 "__fvmlib_init1"	/* the section following the */
-					        /*  fvmlib initialization */
-						/*  section */
+/*  fvmlib initialization */
+/*  section */
 
 #define	SEG_DATA	"__DATA"	/* the tradition UNIX data segment */
 #define	SECT_DATA	"__data"	/* the real initialized data section */
-					/* no padding, no bss overlap */
+/* no padding, no bss overlap */
 #define	SECT_BSS	"__bss"		/* the real uninitialized data section*/
-					/* no padding */
+/* no padding */
 #define SECT_COMMON	"__common"	/* the section common symbols are */
-					/* allocated in by the link editor */
+/* allocated in by the link editor */
 
 #define	SEG_OBJC	"__OBJC"	/* objective-C runtime segment */
 #define SECT_OBJC_SYMBOLS "__symbol_table"	/* symbol table */
@@ -514,16 +522,16 @@ struct section_64 { /* for 64-bit architectures */
 #define	SECT_ICON_TIFF   "__tiff"	/* the icons in tiff format */
 
 #define	SEG_LINKEDIT	"__LINKEDIT"	/* the segment containing all structs */
-					/* created and maintained by the link */
-					/* editor.  Created with -seglinkedit */
-					/* option to ld(1) for MH_EXECUTE and */
-					/* FVMLIB file types only */
+/* created and maintained by the link */
+/* editor.  Created with -seglinkedit */
+/* option to ld(1) for MH_EXECUTE and */
+/* FVMLIB file types only */
 
 #define SEG_UNIXSTACK	"__UNIXSTACK"	/* the unix stack segment */
 
 #define SEG_IMPORT	"__IMPORT"	/* the segment for the self (dyld) */
-					/* modifing code stubs that has read, */
-					/* write and execute permissions */
+/* modifing code stubs that has read, */
+/* write and execute permissions */
 
 #define x86_THREAD_STATE32 1
 #define x86_FLOAT_STATE32 2

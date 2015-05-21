@@ -33,7 +33,7 @@ private:
 
 signals:
 private slots:
-//    bool compareEPfast(char *pszSignature);
+    //    bool compareEPfast(char *pszSignature);
 public slots:
 
     bool compareEPfast(QString sSignature);

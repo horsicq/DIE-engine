@@ -62,6 +62,7 @@ void Scan::process()
     {
         return;
     }
+
     bIsRun=true;
     bIsCompleted=false;
 
@@ -72,7 +73,8 @@ void Scan::process()
     else if(dirContent)
     {
         emit setProgressBar2(1,0);
-        for(int i=0;(i<dirContent->count())&&(bIsRun);i++)
+
+        for(int i=0; (i<dirContent->count())&&(bIsRun); i++)
         {
             analize(dirContent->at(i),pOptions->bFullScan);
             emit appendSignature("");
@@ -104,6 +106,7 @@ bool Scan::analize(QString sFileName,bool bFullScan)
     connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
 
     QList<QString> listTypes;
+
     if(file.setFileName(sFileName))
     {
         listTypes=file.getTypes();
@@ -124,9 +127,10 @@ bool Scan::analize(QString sFileName,bool bFullScan)
         nCount=1;
     }
 
-    for(int i=0;i<nCount;i++)
+    for(int i=0; i<nCount; i++)
     {
         QString sType=listTypes.at(i);
+
         if((sType=="PE")||(sType=="PE+(64)"))
         {
             scanPE(sFileName,sType);
@@ -169,13 +173,13 @@ bool Scan::scanPE(QString sFileName,QString sPrefix)
 
     if(_pefile.setFileName(sFileName))
     {
-//            if(!_pefile.completeCheck())
-//            {
-//                emit setProgressBar(1,1);
-//                return false;
-//            }
+        //            if(!_pefile.completeCheck())
+        //            {
+        //                emit setProgressBar(1,1);
+        //                return false;
+        //            }
 
-//            emit appendError(QString("Number of signatures: %1").arg(nNumberOfSignatures));
+        //            emit appendError(QString("Number of signatures: %1").arg(nNumberOfSignatures));
 
         _pefile.entryPointLoad();
 
@@ -350,12 +354,12 @@ void Scan::handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> *pLi
 {
     int _nNumberOfSignatures=pListSignatures->count();
 
-    for(int i=0;i<_nNumberOfSignatures;i++)
+    for(int i=0; i<_nNumberOfSignatures; i++)
     {
-//                listSignatures.append(pOptions->listBinaryScripts.at(i));
+        //                listSignatures.append(pOptions->listBinaryScripts.at(i));
         if(pListSignatures->at(i).sName=="_init")
         {
-            pluginScript->evaluate (pListSignatures->at(i).sText,"_init");
+            pluginScript->evaluate(pListSignatures->at(i).sText,"_init");
             break;
         }
     }
@@ -363,11 +367,12 @@ void Scan::handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> *pLi
     int k=0;
     bResult=false;
 
-    for(int i=0;(i<_nNumberOfSignatures)&&(bIsRun);i++)
+    for(int i=0; (i<_nNumberOfSignatures)&&(bIsRun); i++)
     {
         if(pListSignatures->at(i).sName!="_init")
         {
             QTime scanTime;
+
             if(pOptions->bShowScanTime)
             {
                 scanTime=QTime::currentTime();
@@ -407,18 +412,19 @@ void Scan::loadTypeScripts(QList<__SIGNATURE> *pList, QString sType,__DIE_OPTION
 
     pList->clear();
 
-//    QString sPath=Utils::getApplicationPath();
+    //    QString sPath=Utils::getApplicationPath();
 
     QDir dir(Utils::getDataBasePath(pOptions)+QDir::separator()+sType);
     QFileInfoList dircontent=dir.entryInfoList(QStringList()<<"*.sg"<<"_init");
     QFile file;
     QString sScript;
 
-    for(int i=0;i<dircontent.count();i++)
+    for(int i=0; i<dircontent.count(); i++)
     {
         file.setFileName(dircontent.at(i).absoluteFilePath());
 
         sScript.clear();
+
         if(file.open(QIODevice::ReadOnly))
         {
             sScript.append(file.readAll());
@@ -433,7 +439,7 @@ void Scan::loadTypeScripts(QList<__SIGNATURE> *pList, QString sType,__DIE_OPTION
         file.close();
     }
 
-    for(int i=0;i<listSignatures.count();i++)
+    for(int i=0; i<listSignatures.count(); i++)
     {
         if(listSignatures.at(i).sName=="_init")
         {
@@ -449,10 +455,11 @@ void Scan::loadTypeScripts(QList<__SIGNATURE> *pList, QString sType,__DIE_OPTION
 
     QSet<QString> set;
 
-    for(int i=0;i<listSignatures.count();i++)
+    for(int i=0; i<listSignatures.count(); i++)
     {
         sName=listSignatures.at(i).sName;
         nCount=sName.count(".");
+
         if(nCount>1)
         {
             sPriority=sName.section(".",nCount-1,nCount-1);
@@ -463,12 +470,13 @@ void Scan::loadTypeScripts(QList<__SIGNATURE> *pList, QString sType,__DIE_OPTION
     QList<QString> values = set.values();
     qSort(values);
 
-    for(int j=0;j<values.count();j++)
+    for(int j=0; j<values.count(); j++)
     {
-        for(int i=0;i<listSignatures.count();i++)
+        for(int i=0; i<listSignatures.count(); i++)
         {
             sName=listSignatures.at(i).sName;
             nCount=sName.count(".");
+
             if(nCount>1)
             {
                 sPriority=sName.section(".",nCount-1,nCount-1);
@@ -509,10 +517,12 @@ QString Scan::compareFile(PluginsScript *pScript,QString sScript,QString sScript
     {
         pOptions->nNumberOfResults++;
         QString sSignature;
+
         if(bShowSource)
         {
             sSignature=sScriptName+";";
         }
+
         sSignature+=sType+": "+result.toString();
 
         emit appendSignature(sSignature);

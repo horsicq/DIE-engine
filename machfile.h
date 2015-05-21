@@ -3,7 +3,8 @@
 
 #include "binary.h"
 
-struct load_command_offset {
+struct load_command_offset
+{
     uint32_t cmd;		/* type of load command */
     uint32_t cmdsize;	/* total size of command in bytes */
     uint32_t offset;
@@ -24,7 +25,7 @@ class MACHFile : public Binary
 public:
     explicit MACHFile(QObject *parent = 0);
 signals:
-    
+
 private slots:
 
 public slots:

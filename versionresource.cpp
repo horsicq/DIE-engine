@@ -22,6 +22,7 @@ bool VersionResource::isValid()
             }
         }
     }
+
     emit appendError("Invalid version resource");
     return false;
 }
@@ -81,11 +82,14 @@ QString VersionResource::getStringFileInfo(QString sKey)
             {
                 break;
             }
+
             nSize2=getLength(nOffset);
+
             if(nSize2==0)
             {
                 break;
             }
+
             if(getKey(nOffset)=="StringFileInfo")
             {
                 nOffset=getNextHeaderOffset(nOffset);
@@ -94,9 +98,11 @@ QString VersionResource::getStringFileInfo(QString sKey)
                 nOffset2=getNextHeaderOffset(nOffset);
                 nSize=nSize-(nOffset2-nOffset);
                 nOffset=nOffset2;
+
                 while((int)nSize>0)
                 {
                     nTemp=ALIGN_UP(getLength(nOffset),4);
+
                     if(nTemp==0)
                     {
                         break;
@@ -111,6 +117,7 @@ QString VersionResource::getStringFileInfo(QString sKey)
                     nOffset+=nTemp;
                 }
             }
+
             nLength-=nSize2;
             nOffset+=nSize2;
         }
@@ -139,46 +146,57 @@ QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
         {
             sResult+="|";
         }
+
         sResult+="VS_FF_DEBUG";
     }
+
     if(nFileFlags&VS_FF_INFOINFERRED)
     {
         if(sResult!="")
         {
             sResult+="|";
         }
+
         sResult+="VS_FF_INFOINFERRED";
     }
+
     if(nFileFlags&VS_FF_PATCHED)
     {
         if(sResult!="")
         {
             sResult+="|";
         }
+
         sResult+="VS_FF_PATCHED";
     }
+
     if(nFileFlags&VS_FF_PRERELEASE)
     {
         if(sResult!="")
         {
             sResult+="|";
         }
+
         sResult+="VS_FF_PRERELEASE";
     }
+
     if(nFileFlags&VS_FF_PRIVATEBUILD)
     {
         if(sResult!="")
         {
             sResult+="|";
         }
+
         sResult+="VS_FF_PRIVATEBUILD";
     }
+
     if(nFileFlags&VS_FF_SPECIALBUILD)
     {
         if(sResult!="")
         {
             sResult+="|";
         }
+
         sResult+="VS_FF_SPECIALBUILD";
     }
 
@@ -201,22 +219,27 @@ QString VersionResource::fileOSToString(unsigned int nFileOS)
         {
             sResult+="|";
         }
+
         sResult+="VOS_DOS";
     }
+
     if(nFileOS&VOS_NT)
     {
         if(sResult!="")
         {
             sResult+="|";
         }
+
         sResult+="VOS_NT";
     }
+
     if(nFileOS&VOS__WINDOWS32)
     {
         if(sResult!="")
         {
             sResult+="|";
         }
+
         sResult+="VOS__WINDOWS32";
     }
 
@@ -257,7 +280,7 @@ unsigned int VersionResource::getNextHeaderOffset(unsigned int nOffset)
 {
     unsigned int nSize=nOffset+sizeof(_VS_VERSION_INFO);
     QString sString=QString::fromUtf16((ushort *)(pbaData->data()+nSize));
-//    nSize+=(wcslen((ushort *)(pbaData->data()+nSize))+1)*sizeof(short);
+    //    nSize+=(wcslen((ushort *)(pbaData->data()+nSize))+1)*sizeof(short);
     nSize+=(sString.length()+1)*sizeof(short);
     nSize=ALIGN_UP(nSize,4);
     return nSize;

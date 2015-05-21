@@ -41,7 +41,7 @@ signals:
     void appendMessage(QString sText);
 public slots:
 private:
-    void addFunction(FunctionSignature function,QString sFunctionName);   
+    void addFunction(FunctionSignature function,QString sFunctionName);
     QString sDefaultPath;
 };
 

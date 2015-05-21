@@ -56,7 +56,7 @@ public:
 
     static void loadTypeScripts(QList<__SIGNATURE> *pList,QString sType,__DIE_OPTIONS *pOptions);
     static void loadScripts(__DIE_OPTIONS *pOptions);
-//    void _compareFile(QString sScript);
+    //    void _compareFile(QString sScript);
 signals:
     void appendSignature(const QString &sString);
     void setProgressBar(int nMax,int nValue);
@@ -80,7 +80,7 @@ private:
     bool bIsCompleted;
     bool bResult;
 
-//    PluginsScript *pScript;
+    //    PluginsScript *pScript;
     QString sFileName;
     QString compareFile(PluginsScript *pScript,QString sScript,QString sScriptName,QString sType);
 };

@@ -160,6 +160,7 @@ unsigned short PEFile::getDosHeader_res(int nIndex)
     {
         return readWord(offsetof(IMAGE_DOS_HEADER,e_res)+sizeof(unsigned short)*nIndex);
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nIndex));
     return 0;
 }
@@ -177,6 +178,7 @@ unsigned short PEFile::getDosHeader_res2(int nIndex)
     {
         return readWord(offsetof(IMAGE_DOS_HEADER,e_res2)+sizeof(unsigned short)*nIndex);
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nIndex));
     return 0;
 }
@@ -243,6 +245,7 @@ void PEFile::setDosHeader_res(short sValue,int nIndex)
         writeWord(offsetof(IMAGE_DOS_HEADER,e_res)+sizeof(unsigned short)*nIndex,sValue);
         return;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nIndex));
 }
 void PEFile::setDosHeader_oemid(unsigned short sValue)
@@ -260,6 +263,7 @@ void PEFile::setDosHeader_res2(short sValue,int nIndex)
         writeWord(offsetof(IMAGE_DOS_HEADER,e_res2)+sizeof(unsigned short)*nIndex,sValue);
         return;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nIndex));
 }
 
@@ -455,6 +459,7 @@ unsigned int PEFile::getOptionalHeader_ImageBase()
     {
         return (unsigned int)readQword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.ImageBase));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.ImageBase));
 }
 
@@ -469,6 +474,7 @@ unsigned int PEFile::getOptionalHeader_SectionAlignment()
     {
         return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SectionAlignment));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SectionAlignment));
 }
 
@@ -478,6 +484,7 @@ unsigned int PEFile::getOptionalHeader_FileAlignment()
     {
         return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.FileAlignment));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.FileAlignment));
 }
 
@@ -487,6 +494,7 @@ unsigned short PEFile::getOptionalHeader_MajorOperatingSystemVersion()
     {
         return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MajorOperatingSystemVersion));
     }
+
     return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MajorOperatingSystemVersion));
 }
 
@@ -496,6 +504,7 @@ unsigned short PEFile::getOptionalHeader_MinorOperatingSystemVersion()
     {
         return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MinorOperatingSystemVersion));
     }
+
     return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MinorOperatingSystemVersion));
 }
 
@@ -505,6 +514,7 @@ unsigned short PEFile::getOptionalHeader_MajorImageVersion()
     {
         return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MajorImageVersion));
     }
+
     return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MajorImageVersion));
 }
 
@@ -514,6 +524,7 @@ unsigned short PEFile::getOptionalHeader_MinorImageVersion()
     {
         return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MinorImageVersion));
     }
+
     return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MinorImageVersion));
 }
 
@@ -523,6 +534,7 @@ unsigned short PEFile::getOptionalHeader_MajorSubsystemVersion()
     {
         return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MajorSubsystemVersion));
     }
+
     return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MajorSubsystemVersion));
 }
 
@@ -532,6 +544,7 @@ unsigned short PEFile::getOptionalHeader_MinorSubsystemVersion()
     {
         return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MinorSubsystemVersion));
     }
+
     return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MinorSubsystemVersion));
 }
 
@@ -541,6 +554,7 @@ unsigned int PEFile::getOptionalHeader_Win32VersionValue()
     {
         return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.Win32VersionValue));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.Win32VersionValue));
 }
 
@@ -550,6 +564,7 @@ unsigned int PEFile::getOptionalHeader_SizeOfImage()
     {
         return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SizeOfImage));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SizeOfImage));
 }
 
@@ -559,6 +574,7 @@ unsigned int PEFile::getOptionalHeader_SizeOfHeaders()
     {
         return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SizeOfHeaders));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SizeOfHeaders));
 }
 
@@ -568,6 +584,7 @@ unsigned int PEFile::getOptionalHeader_CheckSum()
     {
         return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.CheckSum));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.CheckSum));
 }
 
@@ -577,6 +594,7 @@ unsigned short PEFile::getOptionalHeader_Subsystem()
     {
         return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.Subsystem));
     }
+
     return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.Subsystem));
 }
 
@@ -586,6 +604,7 @@ unsigned short PEFile::getOptionalHeader_DllCharacteristics()
     {
         return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.DllCharacteristics));
     }
+
     return readWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.DllCharacteristics));
 }
 
@@ -595,6 +614,7 @@ unsigned int PEFile::getOptionalHeader_SizeOfStackReserve()
     {
         return (unsigned int)readQword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SizeOfStackReserve));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SizeOfStackReserve));
 }
 
@@ -604,6 +624,7 @@ unsigned int PEFile::getOptionalHeader_SizeOfStackCommit()
     {
         return (unsigned int)readQword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SizeOfStackCommit));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SizeOfStackCommit));
 }
 
@@ -613,6 +634,7 @@ unsigned int PEFile::getOptionalHeader_SizeOfHeapReserve()
     {
         return (unsigned int)readQword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SizeOfHeapReserve));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SizeOfHeapReserve));
 }
 
@@ -622,6 +644,7 @@ unsigned int PEFile::getOptionalHeader_SizeOfHeapCommit()
     {
         return (unsigned int)readQword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SizeOfHeapCommit));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SizeOfHeapCommit));
 }
 
@@ -651,6 +674,7 @@ unsigned int PEFile::getOptionalHeader_LoaderFlags()
     {
         return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.LoaderFlags));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.LoaderFlags));
 }
 
@@ -660,6 +684,7 @@ unsigned int PEFile::getOptionalHeader_NumberOfRvaAndSizes()
     {
         return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.NumberOfRvaAndSizes));
     }
+
     return readDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.NumberOfRvaAndSizes));
 }
 
@@ -680,6 +705,7 @@ void PEFile::setOptionalHeader_SectionAlignment(unsigned int nValue)
         writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SectionAlignment),nValue);
         return;
     }
+
     writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SectionAlignment),nValue);
 }
 
@@ -690,6 +716,7 @@ void PEFile::setOptionalHeader_FileAlignment(unsigned int nValue)
         writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.FileAlignment),nValue);
         return;
     }
+
     writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.FileAlignment),nValue);
 }
 
@@ -700,6 +727,7 @@ void PEFile::setOptionalHeader_MajorOperatingSystemVersion(unsigned short sValue
         writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MajorOperatingSystemVersion),sValue);
         return;
     }
+
     writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MajorOperatingSystemVersion),sValue);
 }
 
@@ -710,6 +738,7 @@ void PEFile::setOptionalHeader_MinorOperatingSystemVersion(unsigned short sValue
         writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MinorOperatingSystemVersion),sValue);
         return;
     }
+
     writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MinorOperatingSystemVersion),sValue);
 }
 
@@ -720,6 +749,7 @@ void PEFile::setOptionalHeader_MajorImageVersion(unsigned short sValue)
         writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MajorImageVersion),sValue);
         return;
     }
+
     writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MajorImageVersion),sValue);
 }
 
@@ -730,6 +760,7 @@ void PEFile::setOptionalHeader_MinorImageVersion(unsigned short sValue)
         writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MinorImageVersion),sValue);
         return;
     }
+
     writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MinorImageVersion),sValue);
 }
 
@@ -740,6 +771,7 @@ void PEFile::setOptionalHeader_MajorSubsystemVersion(unsigned short sValue)
         writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MajorSubsystemVersion),sValue);
         return;
     }
+
     writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MajorSubsystemVersion),sValue);
 }
 
@@ -750,6 +782,7 @@ void PEFile::setOptionalHeader_MinorSubsystemVersion(unsigned short sValue)
         writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.MinorSubsystemVersion),sValue);
         return;
     }
+
     writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.MinorSubsystemVersion),sValue);
 }
 
@@ -760,6 +793,7 @@ void PEFile::setOptionalHeader_Win32VersionValue(unsigned int nValue)
         writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.Win32VersionValue),nValue);
         return;
     }
+
     writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.Win32VersionValue),nValue);
 }
 
@@ -770,6 +804,7 @@ void PEFile::setOptionalHeader_SizeOfImage(unsigned int nValue)
         writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SizeOfImage),nValue);
         return;
     }
+
     writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SizeOfImage),nValue);
 }
 
@@ -780,6 +815,7 @@ void PEFile::setOptionalHeader_SizeOfHeaders(unsigned int nValue)
         writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.SizeOfHeaders),nValue);
         return;
     }
+
     writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.SizeOfHeaders),nValue);
 }
 
@@ -790,6 +826,7 @@ void PEFile::setOptionalHeader_CheckSum(unsigned int nValue)
         writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.CheckSum),nValue);
         return;
     }
+
     writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.CheckSum),nValue);
 }
 
@@ -800,6 +837,7 @@ void PEFile::setOptionalHeader_Subsystem(unsigned short sValue)
         writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.Subsystem),sValue);
         return;
     }
+
     writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.Subsystem),sValue);
 }
 
@@ -810,6 +848,7 @@ void PEFile::setOptionalHeader_DllCharacteristics(unsigned short sValue)
         writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.DllCharacteristics),sValue);
         return;
     }
+
     writeWord(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.DllCharacteristics),sValue);
 }
 
@@ -860,6 +899,7 @@ void PEFile::setOptionalHeader_LoaderFlags(unsigned int nValue)
         writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.LoaderFlags),nValue);
         return;
     }
+
     writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.LoaderFlags),nValue);
 }
 
@@ -870,6 +910,7 @@ void PEFile::setOptionalHeader_NumberOfRvaAndSizes(unsigned int nValue)
         writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.NumberOfRvaAndSizes),nValue);
         return;
     }
+
     writeDword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.NumberOfRvaAndSizes),nValue);
 }
 
@@ -888,6 +929,7 @@ void PEFile::getOptionalHeader_DataDirectory(int nDirectory, IMAGE_DATA_DIRECTOR
         readArray(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.DataDirectory)+sizeof(IMAGE_DATA_DIRECTORY)*nDirectory,(char *)pDataDirectory,sizeof(IMAGE_DATA_DIRECTORY));
         return;
     }
+
     readArray(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.DataDirectory)+sizeof(IMAGE_DATA_DIRECTORY)*nDirectory,(char *)pDataDirectory,sizeof(IMAGE_DATA_DIRECTORY));
 }
 
@@ -906,6 +948,7 @@ void PEFile::setOptionalHeader_DataDirectory(int nDirectory, IMAGE_DATA_DIRECTOR
         writeArray(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.DataDirectory)+sizeof(IMAGE_DATA_DIRECTORY)*nDirectory,(char *)pDataDirectory,sizeof(IMAGE_DATA_DIRECTORY));
         return;
     }
+
     writeArray(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS32,OptionalHeader.DataDirectory)+sizeof(IMAGE_DATA_DIRECTORY)*nDirectory,(char *)pDataDirectory,sizeof(IMAGE_DATA_DIRECTORY));
 }
 
@@ -921,7 +964,7 @@ bool PEFile::isDirectoryPresent(int nDirectory)
     IMAGE_DATA_DIRECTORY idd;
     getOptionalHeader_DataDirectory(nDirectory,&idd);
 
-//    return (isRVAValid(idd.VirtualAddress)&&idd.Size);
+    //    return (isRVAValid(idd.VirtualAddress)&&idd.Size);
 
     return (idd.VirtualAddress&&isRVAPresentInFile(idd.VirtualAddress));
 }
@@ -959,6 +1002,7 @@ bool PEFile::isSectionPresent(int nSection)
     {
         return true;
     }
+
     emit appendError(QString("Invalid section number: %1").arg(nSection));
 
     return false;
@@ -1048,6 +1092,7 @@ bool PEFile::isValid()
             }
         }
     }
+
     emit appendError("Invalid PE file");
 
     return false;
@@ -1132,7 +1177,7 @@ unsigned int PEFile::getSectionNumber(QString sSectionName)
     unsigned int nSectionsTableOffset=getSectionsTableOffset();
     unsigned int nSections=getFileHeader_NumberOfSections();
 
-    for(int i=0;i<nSections;i++)
+    for(int i=0; i<nSections; i++)
     {
         if(getSectionNameAsString(i,nSectionsTableOffset)==sSectionName)
         {
@@ -1158,7 +1203,7 @@ QList<IMAGE_SECTION_HEADER> PEFile::getSections()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nOffset=getSectionsTableOffset();
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         if(!readArray(nOffset,(char *)&section,sizeof(section)))
         {
@@ -1197,6 +1242,7 @@ bool PEFile::addSection(IMAGE_SECTION_HEADER *pISH, char *pData, int nDataSize)
     {
         pISH->SizeOfRawData=ALIGN_UP(nDataSize,getOptionalHeader_FileAlignment());
     }
+
     if(!pISH->Misc.VirtualSize)
     {
         pISH->Misc.VirtualSize=nDataSize;
@@ -1206,6 +1252,7 @@ bool PEFile::addSection(IMAGE_SECTION_HEADER *pISH, char *pData, int nDataSize)
     unsigned int nHeadersSize=CalculateHeadersSize(getDosStubSize(),getFileHeader_SizeOfOptionalHeader(),getFileHeader_NumberOfSections()+1,getOptionalHeader_FileAlignment());
 
     nDelta=nHeadersSize-getOptionalHeader_SizeOfHeaders();
+
     if(nDelta<0)
     {
         nDelta=0;
@@ -1222,6 +1269,7 @@ bool PEFile::addSection(IMAGE_SECTION_HEADER *pISH, char *pData, int nDataSize)
     {
         return false;
     }
+
     if(!tempfile.writeArrayToFile(getSectionsTableOffset()+getSectionsTableSize(),(char *)pISH,sizeof(IMAGE_SECTION_HEADER)))
     {
         return false;
@@ -1281,6 +1329,7 @@ bool PEFile::addSection(IMAGE_SECTION_HEADER *pISH, QString sFileName)
     {
         pISH->SizeOfRawData=ALIGN_UP(sectionfile.size(),getOptionalHeader_FileAlignment());
     }
+
     if(!pISH->Misc.VirtualSize)
     {
         pISH->Misc.VirtualSize=sectionfile.size();
@@ -1289,7 +1338,7 @@ bool PEFile::addSection(IMAGE_SECTION_HEADER *pISH, QString sFileName)
     fixSizeOfHeaders();
     unsigned int nHeadersSize=CalculateHeadersSize(getDosStubSize(),getFileHeader_SizeOfOptionalHeader(),getFileHeader_NumberOfSections()+1,getOptionalHeader_FileAlignment());
 
-//    int nTest=getOptionalHeader_SizeOfHeaders();
+    //    int nTest=getOptionalHeader_SizeOfHeaders();
     nDelta=nHeadersSize-getOptionalHeader_SizeOfHeaders();
 
     if(nDelta<0)
@@ -1308,6 +1357,7 @@ bool PEFile::addSection(IMAGE_SECTION_HEADER *pISH, QString sFileName)
     {
         return false;
     }
+
     if(!tempfile.writeArrayToFile(getSectionsTableOffset()+getSectionsTableSize(),(char *)pISH,sizeof(IMAGE_SECTION_HEADER)))
     {
         return false;
@@ -1355,17 +1405,17 @@ bool PEFile::addSection(IMAGE_SECTION_HEADER *pISH, QString sFileName)
 bool PEFile::rebuild()
 {
 
-//    _____SECTIONRECORD *pListSections;
-//    pListSections=new _____SECTIONRECORD[getFileHeader_NumberOfSections()];
+    //    _____SECTIONRECORD *pListSections;
+    //    pListSections=new _____SECTIONRECORD[getFileHeader_NumberOfSections()];
 
     _____SECTIONRECORD pListSections[50];
 
-//    QList<_____SECTIONRECORD> listSections;
-//    _____SECTIONRECORD record;
+    //    QList<_____SECTIONRECORD> listSections;
+    //    _____SECTIONRECORD record;
 
 
 
-    for(int i=0;i<getFileHeader_NumberOfSections();i++)
+    for(int i=0; i<getFileHeader_NumberOfSections(); i++)
     {
         pListSections[i].nOldOffset=getSection_PointerToRawData(i);
         pListSections[i].nOldSize=getSection_SizeOfRawData(i);
@@ -1380,22 +1430,22 @@ bool PEFile::rebuild()
 
     setOptionalHeader_SizeOfHeaders(nMaxSize);
 
-    for(int i=0;i<getFileHeader_NumberOfSections();i++)
+    for(int i=0; i<getFileHeader_NumberOfSections(); i++)
     {
-//        if(i==0)
-//        {
-//           pListSections[i].nNewOffset=nSizeOfHeaders;
-//        }
-//        else
-//        {
-//            pListSections[i].nNewOffset+=nDelta;
-//        }
+        //        if(i==0)
+        //        {
+        //           pListSections[i].nNewOffset=nSizeOfHeaders;
+        //        }
+        //        else
+        //        {
+        //            pListSections[i].nNewOffset+=nDelta;
+        //        }
 
         pListSections[i].nNewOffset=nMaxSize;
 
         pListSections[i].nNewSize=getSectionRealSize(pListSections[i].nOldOffset,pListSections[i].nOldSize,nFileAlignment);
 
-//        nDelta=(int)ALIGN_UP(pListSections[i].nNewSize,nFileAlignment)-(int)ALIGN_UP(pListSections[i].nOldSize,nFileAlignment);
+        //        nDelta=(int)ALIGN_UP(pListSections[i].nNewSize,nFileAlignment)-(int)ALIGN_UP(pListSections[i].nOldSize,nFileAlignment);
 
         nMaxSize=qMax(nMaxSize,pListSections[i].nNewOffset+pListSections[i].nNewSize);
     }
@@ -1404,17 +1454,17 @@ bool PEFile::rebuild()
 
     if(!tempfile.createFile(file.fileName()+".tmp",nMaxSize+getOverlaySize()))
     {
-//        delete [] pListSections;
+        //        delete [] pListSections;
         return false;
     }
 
     if(!copy(&tempfile,0,this,0,qMin(nSizeOfHeaders,pListSections[0].nOldOffset)))
     {
-//        delete [] pListSections;
+        //        delete [] pListSections;
         return false;
     }
 
-    for(int i=0;i<getFileHeader_NumberOfSections();i++)
+    for(int i=0; i<getFileHeader_NumberOfSections(); i++)
     {
         if(!copy(&tempfile,pListSections[i].nNewOffset,this,pListSections[i].nOldOffset,qMin(pListSections[i].nOldSize,pListSections[i].nNewSize)))
         {
@@ -1422,7 +1472,7 @@ bool PEFile::rebuild()
         }
     }
 
-    for(int i=0;i<getFileHeader_NumberOfSections();i++)
+    for(int i=0; i<getFileHeader_NumberOfSections(); i++)
     {
         tempfile.setSection_PointerToRawData(i,pListSections[i].nNewOffset);
         tempfile.setSection_SizeOfRawData(i,pListSections[i].nNewSize);
@@ -1442,17 +1492,17 @@ bool PEFile::rebuild()
 
     if(!copy(&tempfile))
     {
-//        delete [] pListSections;
+        //        delete [] pListSections;
         return false;
     }
 
     if(!tempfile.deleteFile())
     {
-//        delete [] pListSections;
+        //        delete [] pListSections;
         return false;
     }
 
-//    delete [] pListSections;
+    //    delete [] pListSections;
 
     return reopen();
 
@@ -1471,7 +1521,7 @@ unsigned int PEFile::getSectionRealSize(unsigned int nOffset, unsigned int nSize
     QByteArray baTemp;
     unsigned int nTemp;
 
-    for(int i=nAlignedSize-nAlignment;i>=0;i-=nAlignment)
+    for(int i=nAlignedSize-nAlignment; i>=0; i-=nAlignment)
     {
         if(i<nSize)
         {
@@ -1479,7 +1529,7 @@ unsigned int PEFile::getSectionRealSize(unsigned int nOffset, unsigned int nSize
 
             baTemp=readArray(nOffset+i,nTemp);
 
-            for(int j=0;j<nTemp;j++)
+            for(int j=0; j<nTemp; j++)
             {
                 if(*(baTemp.data()+j))
                 {
@@ -1511,6 +1561,7 @@ bool PEFile::deleteLastSection()
 
 
     int nTemp=ALIGN_UP(getSection_SizeOfRawData(getFileHeader_NumberOfSections()-1),getOptionalHeader_FileAlignment());
+
     if(!tempfile.createFile(file.fileName()+".tmp",size()+nDelta-nTemp))
     {
         return false;
@@ -1555,10 +1606,11 @@ bool PEFile::deleteLastSection()
 
 unsigned long long PEFile::OffsetToRVA(unsigned long long nOffset)
 {
-//#ifdef QT_DEBUG
-//    qDebug("PEFile::OffsetToRVA");
-//#endif
+    //#ifdef QT_DEBUG
+    //    qDebug("PEFile::OffsetToRVA");
+    //#endif
     unsigned long long nResult=-1;
+
     if(nOffset<=calculateRawSize())
     {
         if(nOffset<getOptionalHeader_SizeOfHeaders())
@@ -1567,9 +1619,10 @@ unsigned long long PEFile::OffsetToRVA(unsigned long long nOffset)
         }
         else
         {
-            for(int i=0;i<getFileHeader_NumberOfSections();i++)
+            for(int i=0; i<getFileHeader_NumberOfSections(); i++)
             {
                 int nPointerToRawData=getSection_PointerToRawData(i);
+
                 if(nPointerToRawData)
                 {
                     if((nPointerToRawData<=nOffset)&&(nOffset<nPointerToRawData+getSection_SizeOfRawData(i)))
@@ -1585,6 +1638,7 @@ unsigned long long PEFile::OffsetToRVA(unsigned long long nOffset)
             }
         }
     }
+
     emit appendWarning(QString("Invalid offset: %1").arg(nOffset,8,16,QChar('0')));
     return -1;
 }
@@ -1615,9 +1669,9 @@ unsigned long long PEFile::OffsetToVA64(unsigned int nOffset)
 
 unsigned long long PEFile::RVAToOffset(unsigned long long nRVA)
 {
-//#ifdef QT_DEBUG
-//    qDebug("PEFile::RVAToOffset");
-//#endif
+    //#ifdef QT_DEBUG
+    //    qDebug("PEFile::RVAToOffset");
+    //#endif
     unsigned int nFileAlignment=0;
 
     if(getOptionalHeader_FileAlignment()==getOptionalHeader_SectionAlignment())
@@ -1637,16 +1691,17 @@ unsigned long long PEFile::RVAToOffset(unsigned long long nRVA)
         }
         else
         {
-            for(int i=0;i<getFileHeader_NumberOfSections();i++)
+            for(int i=0; i<getFileHeader_NumberOfSections(); i++)
             {
                 int nPointerToRawData=getSection_PointerToRawData(i);
+
                 if(nPointerToRawData)
                 {
                     if((getSection_VirtualAddress(i)<=nRVA)&&(nRVA<getSection_VirtualAddress(i)+getSection_SizeOfRawData(i)))
                     {
-    //                    int nTest=nRVA-getSection_VirtualAddress(i);
-    //                    int nTest2=getSection_PointerToRawData(i);
-    //                    int nTest3=ALIGN_DOWN(getSection_PointerToRawData(i),nFileAlignment)+nRVA-getSection_VirtualAddress(i);
+                        //                    int nTest=nRVA-getSection_VirtualAddress(i);
+                        //                    int nTest2=getSection_PointerToRawData(i);
+                        //                    int nTest3=ALIGN_DOWN(getSection_PointerToRawData(i),nFileAlignment)+nRVA-getSection_VirtualAddress(i);
                         return ALIGN_DOWN(nPointerToRawData,nFileAlignment)+nRVA-getSection_VirtualAddress(i);
                     }
                 }
@@ -1654,6 +1709,7 @@ unsigned long long PEFile::RVAToOffset(unsigned long long nRVA)
             }
         }
     }
+
     emit appendWarning(QString("Invalid RVA: %1").arg(nRVA,8,16,QChar('0')));
     return -1;
 }
@@ -1671,6 +1727,7 @@ unsigned int PEFile::VAToOffset64(unsigned long long nVA)
 unsigned long long PEFile::VAToOffset(unsigned long long nVA)
 {
     unsigned long long nResult=0;
+
     if(isPEPlus())
     {
         nResult=VAToOffset64(nVA);
@@ -1712,6 +1769,7 @@ unsigned long long PEFile::OffsetToVA(unsigned long long nOffset)
 unsigned long long PEFile::VAToRVA(unsigned long long nVA)
 {
     unsigned long long nRVA=0;
+
     if(isPEPlus())
     {
         nRVA=nVA-getOptionalHeader_ImageBase64();
@@ -1720,6 +1778,7 @@ unsigned long long PEFile::VAToRVA(unsigned long long nVA)
     {
         nRVA=nVA-getOptionalHeader_ImageBase();
     }
+
     if(!isRVAValid(nRVA))
     {
         return -1;
@@ -1772,13 +1831,14 @@ unsigned long long PEFile::getMaximalVA()
 unsigned int PEFile::RVAToSection(unsigned int nRVA)
 {
 
-    for(int i=0;i<getFileHeader_NumberOfSections();i++)
+    for(int i=0; i<getFileHeader_NumberOfSections(); i++)
     {
         if((getSection_VirtualAddress(i)<=nRVA)&&(nRVA<getSection_VirtualAddress(i)+(getSection_VirtualSize(i)?getSection_VirtualSize(i):getSection_SizeOfRawData(i))))
         {
             return i;
         }
     }
+
     emit appendWarning(QString("Invalid RVA: %1").arg(nRVA,8,16,QChar('0')));
     return -1;
 }
@@ -1790,21 +1850,23 @@ unsigned int PEFile::getEntryPointSection()
 
 unsigned int PEFile::calculateRawSize()
 {
-//    unsigned int nSize=getOptionalHeader_SizeOfHeaders();
+    //    unsigned int nSize=getOptionalHeader_SizeOfHeaders();
     unsigned int nSize=calculateSizeOfHeaders();
+
     if((int)nSize>0)
     {
         unsigned int nSectionOffset=0;
         unsigned int nSectionSize=0;
 
-        for(int i=0;i<getFileHeader_NumberOfSections();i++)
+        for(int i=0; i<getFileHeader_NumberOfSections(); i++)
         {
             nSectionOffset=getSection_PointerToRawData(i);
             nSectionSize=getSection_SizeOfRawData(i);
-    //        nSize=MAXIMAL(nSize,getSection_PointerToRawData(i)+ALIGN_UP(getSection_SizeOfRawData(i),getOptionalHeader_FileAlignment()));
+
+            //        nSize=MAXIMAL(nSize,getSection_PointerToRawData(i)+ALIGN_UP(getSection_SizeOfRawData(i),getOptionalHeader_FileAlignment()));
             if(nSectionSize&&Binary::isOffsetValid(nSectionOffset))
             {
-               nSize=MAXIMAL(nSize,nSectionOffset+nSectionSize);
+                nSize=MAXIMAL(nSize,nSectionOffset+nSectionSize);
             }
         }
     }
@@ -1824,6 +1886,7 @@ unsigned int PEFile::getDataDirectoriesOffset()
     {
         return (getNtHeadersOffset()+sizeof(IMAGE_NT_HEADERS64)-16*sizeof(IMAGE_DATA_DIRECTORY));
     }
+
     return (getNtHeadersOffset()+sizeof(IMAGE_NT_HEADERS)-16*sizeof(IMAGE_DATA_DIRECTORY));
 }
 
@@ -1873,42 +1936,43 @@ QList<PEFile::RICH_RECORD> PEFile::getRichSignatureRecords()
 
     if(isRichSignaturePresent())
     {
-//       QByteArray baRich=readArray(getDosStubOffset(),getDosStubSize());
+        //       QByteArray baRich=readArray(getDosStubOffset(),getDosStubSize());
 
-       unsigned int nOffset=findString(getDosStubOffset(),getDosStubSize(),"Rich");
-       if(nOffset!=-1)
-       {
-           unsigned int nXORkey=readDword(nOffset+4);
+        unsigned int nOffset=findString(getDosStubOffset(),getDosStubSize(),"Rich");
 
-           unsigned int nCurrentOffset=nOffset-4;
+        if(nOffset!=-1)
+        {
+            unsigned int nXORkey=readDword(nOffset+4);
 
-           while(nCurrentOffset>getDosStubOffset())
-           {
-               unsigned int nTemp=readDword(nCurrentOffset)^nXORkey;
+            unsigned int nCurrentOffset=nOffset-4;
 
-               if(nTemp==0x536e6144)
-               {
-                   nCurrentOffset+=16;
+            while(nCurrentOffset>getDosStubOffset())
+            {
+                unsigned int nTemp=readDword(nCurrentOffset)^nXORkey;
 
-                   for(;nCurrentOffset<nOffset;nCurrentOffset+=8)
-                   {
-                       PEFile::RICH_RECORD record;
+                if(nTemp==0x536e6144)
+                {
+                    nCurrentOffset+=16;
 
-                       nTemp=readDword(nCurrentOffset)^nXORkey;
-                       record.nId=nTemp>>16;
-                       record.nVersion=nTemp&0xFFFF;
-                       nTemp=readDword(nCurrentOffset+4)^nXORkey;
-                       record.nCount=nTemp;
+                    for(; nCurrentOffset<nOffset; nCurrentOffset+=8)
+                    {
+                        PEFile::RICH_RECORD record;
 
-                       listResult.append(record);
-                   }
+                        nTemp=readDword(nCurrentOffset)^nXORkey;
+                        record.nId=nTemp>>16;
+                        record.nVersion=nTemp&0xFFFF;
+                        nTemp=readDword(nCurrentOffset+4)^nXORkey;
+                        record.nCount=nTemp;
 
-                   break;
-               }
+                        listResult.append(record);
+                    }
 
-               nCurrentOffset-=4;
-           }
-       }
+                    break;
+                }
+
+                nCurrentOffset-=4;
+            }
+        }
     }
 
     return listResult;
@@ -1919,7 +1983,7 @@ unsigned int PEFile::getNumberOfRichIDs()
     unsigned int nResult=0;
     QList<PEFile::RICH_RECORD> list=getRichSignatureRecords();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).nId)
         {
@@ -1934,7 +1998,7 @@ bool PEFile::isRichVersionPresent(unsigned int nVersion)
 {
     QList<PEFile::RICH_RECORD> list=getRichSignatureRecords();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).nVersion==nVersion)
         {
@@ -1971,18 +2035,22 @@ bool PEFile::addDosStub(char *pData, int nDataSize)
     {
         return false;
     }
+
     if(!tempfile.writeArrayToFile(tempfile.getDosStubOffset(),pData,nDataSize))
     {
         return false;
     }
+
     if(!copy(&tempfile,ALIGN_UP((tempfile.getDosHeaderSize()+nDataSize),4),this,this->getNtHeadersOffset(),this->getSectionsTableOffset()+this->getSectionsTableSize()-this->getNtHeadersOffset()))
     {
         return false;
     }
+
     if(!copy(&tempfile,nHeadersSize,this,this->getOptionalHeader_SizeOfHeaders(),size()-this->getOptionalHeader_SizeOfHeaders()))
     {
         return false;
     }
+
     nLfanew=ALIGN_UP((tempfile.getDosHeaderSize()+nDataSize),4);
     //emit appendError(QString("nLfanew=%1").arg(nLfanew));
     tempfile.setDosHeader_lfanew(nLfanew);
@@ -2029,22 +2097,26 @@ bool PEFile::addDosStub(QString sFileName)
     {
         return false;
     }
-//    if(!tempfile.writeArrayToFile(tempfile.getDosStubOffset(),pData,nDataSize))
-//    {
-//        return false;
-//    }
+
+    //    if(!tempfile.writeArrayToFile(tempfile.getDosStubOffset(),pData,nDataSize))
+    //    {
+    //        return false;
+    //    }
     if(!copy(&tempfile,tempfile.getDosStubOffset(),&stubfile,0,stubfile.size()))
     {
         return false;
     }
+
     if(!copy(&tempfile,ALIGN_UP((tempfile.getDosHeaderSize()+stubfile.size()),4),this,this->getNtHeadersOffset(),this->getSectionsTableOffset()+this->getSectionsTableSize()-this->getNtHeadersOffset()))
     {
         return false;
     }
+
     if(!copy(&tempfile,nHeadersSize,this,this->getOptionalHeader_SizeOfHeaders(),size()-this->getOptionalHeader_SizeOfHeaders()))
     {
         return false;
     }
+
     nLfanew=ALIGN_UP((tempfile.getDosHeaderSize()+stubfile.size()),4);
     //emit appendError(QString("nLfanew=%1").arg(nLfanew));
     tempfile.setDosHeader_lfanew(nLfanew);
@@ -2091,6 +2163,7 @@ unsigned int PEFile::CalculateCheckSum()
     {
         nCalcSum=((LOWORD(nCalcSum)-LOWORD(nHdrSum))&0xFFFF)-1;
     }
+
     if(LOWORD(nCalcSum)>=HIWORD(nHdrSum)) //!!!!!
     {
         nCalcSum-=HIWORD(nHdrSum);
@@ -2127,9 +2200,10 @@ unsigned short PEFile::CheckSum(int nStartValue,int nDataSize)
 
         pOffset=pBuffer;
 
-        for(int i=0;i<(nTemp+1)/2;i++)
+        for(int i=0; i<(nTemp+1)/2; i++)
         {
             nSum+=*((unsigned short *)pOffset);
+
             if(HIWORD(nSum)!=0)
             {
                 nSum=LOWORD(nSum)+HIWORD(nSum);
@@ -2197,10 +2271,12 @@ bool PEFile::addOverlay(char *pData, int nDataSize)
         {
             return false;
         }
+
         FixCheckSum();
 
         return reopen();
     }
+
     emit appendError("Cannot resize file");
     return false;
 }
@@ -2213,11 +2289,14 @@ bool PEFile::addOverlay(QString sFileName)
     {
         return false;
     }
+
     resize(calculateRawSize()+overlayfile.size());
+
     if(!copy(this,calculateRawSize(),&overlayfile,0,overlayfile.size()))
     {
         return false;
     }
+
     FixCheckSum();
 
     return reopen();
@@ -2243,6 +2322,7 @@ unsigned int PEFile::getExportTableOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendError("Export is not present");
     return 0;
 }
@@ -2306,6 +2386,7 @@ unsigned int PEFile::getImportSection()
         emit appendWarning("Import is not present");
         return 0;
     }
+
     IMAGE_DATA_DIRECTORY idd;
     getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_IMPORT,&idd);
 
@@ -2319,6 +2400,7 @@ unsigned int PEFile::getExportSection()
         emit appendError("Export is not present");
         return 0;
     }
+
     IMAGE_DATA_DIRECTORY idd;
     getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_EXPORT,&idd);
 
@@ -2335,6 +2417,7 @@ unsigned int PEFile::getImportTableOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendWarning("Import is not present");
     return 0;
 }
@@ -2348,6 +2431,7 @@ unsigned int PEFile::getResourceOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendError("Resource is not present");
     return 0;
 }
@@ -2355,6 +2439,7 @@ unsigned int PEFile::getNumberOfImports()
 {
     unsigned int nOffset;
     unsigned int nResult=0;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2369,14 +2454,15 @@ unsigned int PEFile::getNumberOfImports()
     if((nOffset!=-1)&&(nOffset!=0))
     {
         nThunk=readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,OriginalFirstThunk));
-//        if(readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,OriginalFirstThunk)))
+
+        //        if(readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,OriginalFirstThunk)))
         if((nThunk)&&(isRVAPresentInFile(nThunk)))
         {
-//            while(readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,OriginalFirstThunk))&&readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,Name)))
-//            {
-//                nResult++;
-//                nOffset+=sizeof(IMAGE_IMPORT_DESCRIPTOR);
-//            }
+            //            while(readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,OriginalFirstThunk))&&readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,Name)))
+            //            {
+            //                nResult++;
+            //                nOffset+=sizeof(IMAGE_IMPORT_DESCRIPTOR);
+            //            }
 
             while(true)
             {
@@ -2384,6 +2470,7 @@ unsigned int PEFile::getNumberOfImports()
                 {
                     break;
                 }
+
                 nThunk=readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,OriginalFirstThunk));
                 nName=readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,Name));
 
@@ -2391,14 +2478,17 @@ unsigned int PEFile::getNumberOfImports()
                 {
                     break;
                 }
+
                 if(!nName)
                 {
                     break;
                 }
+
                 if(!isRVAPresentInFile(nThunk))
                 {
                     break;
                 }
+
                 if(!isRVAPresentInFile(nName))
                 {
                     break;
@@ -2422,6 +2512,7 @@ unsigned int PEFile::getNumberOfImports()
                 {
                     break;
                 }
+
                 nThunk=readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,FirstThunk));
                 nName=readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,Name));
 
@@ -2429,14 +2520,17 @@ unsigned int PEFile::getNumberOfImports()
                 {
                     break;
                 }
+
                 if(!nName)
                 {
                     break;
                 }
+
                 if(!isRVAPresentInFile(nThunk))
                 {
                     break;
                 }
+
                 if(!isRVAPresentInFile(nName))
                 {
                     break;
@@ -2448,17 +2542,20 @@ unsigned int PEFile::getNumberOfImports()
                 {
                     break;
                 }
+
                 nOffset+=sizeof(IMAGE_IMPORT_DESCRIPTOR);
             }
 
-//            while(readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,FirstThunk))&&readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,Name)))
-//            {
-//                nResult++;
-//                nOffset+=sizeof(IMAGE_IMPORT_DESCRIPTOR);
-//            }
+            //            while(readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,FirstThunk))&&readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,Name)))
+            //            {
+            //                nResult++;
+            //                nOffset+=sizeof(IMAGE_IMPORT_DESCRIPTOR);
+            //            }
         }
+
         return nResult;
     }
+
     emit appendWarning("Import is not present");
     return 0;
 }
@@ -2472,7 +2569,7 @@ QList<IMAGE_IMPORT_DESCRIPTOR> PEFile::getImports()
     unsigned int nNumberOfImports=getNumberOfImports();
     unsigned int nOffset=getImportTableOffset();
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         if(!readArray(nOffset,(char *)&import,sizeof(import)))
         {
@@ -2496,7 +2593,7 @@ QList<QString> PEFile::getImportLibraiesAsNames()
 
     unsigned int nNumberOfImports=getNumberOfImports();
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         sRecord=getImport_NameAsString(i).toLower();
 
@@ -2520,15 +2617,16 @@ QList<QString> PEFile::getImportFunctionsAsNames()
     unsigned int nNumberOfImports=getNumberOfImports();
     unsigned int nNumberOfFunctions=0;
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         sRecord=QString("[%1]").arg(getImport_NameAsString(i).toLower());
 
         nNumberOfFunctions=getNumberOfImportThunks(i);
 
-        for(int j=0;j<nNumberOfFunctions;j++)
+        for(int j=0; j<nNumberOfFunctions; j++)
         {
             sFunction=getImportFunctionName(i,j);
+
             if(sFunction=="")
             {
                 if(isPEPlus())
@@ -2563,15 +2661,16 @@ QList<PEFile::IMPORT_LIST> PEFile::getImportFunctionsAsList()
 
     IMPORT_LIST record;
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         sRecord=QString("[%1]").arg(getImport_NameAsString(i).toLower());
 
         nNumberOfFunctions=getNumberOfImportThunks(i);
 
-        for(int j=0;j<nNumberOfFunctions;j++)
+        for(int j=0; j<nNumberOfFunctions; j++)
         {
             sFunction=getImportFunctionName(i,j);
+
             if(sFunction=="")
             {
                 if(isPEPlus())
@@ -2585,6 +2684,7 @@ QList<PEFile::IMPORT_LIST> PEFile::getImportFunctionsAsList()
             }
 
             record.sName=sRecord+sFunction;
+
             if(isPEPlus())
             {
                 record.nThunkRelAddress=getImportThunkAddress64(i,j);
@@ -2613,15 +2713,16 @@ QList<QString> PEFile::getImportLibraryFunctionsAsNames(QString sLibraryName)
     unsigned int nNumberOfImports=getNumberOfImports();
     unsigned int nNumberOfFunctions=0;
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         if(getImport_NameAsString(i).toLower()==sLibraryName)
         {
             nNumberOfFunctions=getNumberOfImportThunks(i);
 
-            for(int j=0;j<nNumberOfFunctions;j++)
+            for(int j=0; j<nNumberOfFunctions; j++)
             {
                 sFunction=getImportFunctionName(i,j);
+
                 if(sFunction=="")
                 {
                     if(isPEPlus())
@@ -2653,6 +2754,7 @@ QList<QString> PEFile::getImportLibraryFunctionsAsNames(QString sLibraryName)
 unsigned int PEFile::getImport_OriginalFirstThunk(unsigned int nImport)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2679,6 +2781,7 @@ unsigned int PEFile::getImport_OriginalFirstThunk(unsigned int nImport,unsigned 
 unsigned int PEFile::getImport_TimeDateStamp(unsigned int nImport)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2705,6 +2808,7 @@ unsigned int PEFile::getImport_TimeDateStamp(unsigned int nImport,unsigned int n
 unsigned int PEFile::getImport_ForwarderChain(unsigned int nImport)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2731,6 +2835,7 @@ unsigned int PEFile::getImport_ForwarderChain(unsigned int nImport,unsigned int 
 unsigned int PEFile::getImport_Name(unsigned int nImport)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2757,6 +2862,7 @@ unsigned int PEFile::getImport_Name(unsigned int nImport,unsigned int nImportTab
 unsigned int PEFile::getImport_FirstThunk(unsigned int nImport)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2783,6 +2889,7 @@ unsigned int PEFile::getImport_FirstThunk(unsigned int nImport,unsigned int nImp
 void PEFile::setImport_OriginalFirstThunk(unsigned int nImport, unsigned int nValue)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2805,6 +2912,7 @@ void PEFile::setImport_OriginalFirstThunk(unsigned int nImport, unsigned int nVa
 void PEFile::setImport_TimeDateStamp(unsigned int nImport, unsigned int nValue)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2827,6 +2935,7 @@ void PEFile::setImport_TimeDateStamp(unsigned int nImport, unsigned int nValue)
 void PEFile::setImport_ForwarderChain(unsigned int nImport, unsigned int nValue)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2849,6 +2958,7 @@ void PEFile::setImport_ForwarderChain(unsigned int nImport, unsigned int nValue)
 void PEFile::setImport_Name(unsigned int nImport, unsigned int nValue)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2871,6 +2981,7 @@ void PEFile::setImport_Name(unsigned int nImport, unsigned int nValue)
 void PEFile::setImport_FirstThunk(unsigned int nImport, unsigned int nValue)
 {
     unsigned int nOffset;
+
     if(!isImportPresent())
     {
         emit appendWarning("Import is not present");
@@ -2909,7 +3020,7 @@ bool PEFile::isLibraryPresent(QString sLibraryName)
     nImportTableOffset=getImportTableOffset();
     sTemp=sLibraryName.toLower();
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         if(getImport_NameAsString(i,nImportTableOffset).toLower()==sTemp)
         {
@@ -2934,7 +3045,7 @@ bool PEFile::isSectionNamePresent(QString sSectionName)
     unsigned int nSectionsTableOffset=getSectionsTableOffset();
     QString sTemp=sSectionName.toLower();
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         if(getSectionNameAsString(i,nSectionsTableOffset).toLower()==sTemp)
         {
@@ -2946,9 +3057,9 @@ bool PEFile::isSectionNamePresent(QString sSectionName)
 }
 unsigned int PEFile::getNumberOfImportThunks(unsigned int nImport)
 {
-//#ifndef QT_NO_DEBUG
-//    QTime scanTime=QTime::currentTime();
-//#endif
+    //#ifndef QT_NO_DEBUG
+    //    QTime scanTime=QTime::currentTime();
+    //#endif
 
 
 
@@ -2966,9 +3077,9 @@ unsigned int PEFile::getNumberOfImportThunks(unsigned int nImport)
     {
         nRVA=getImport_OriginalFirstThunk(nImport);
 
-//#ifndef QT_NO_DEBUG
-//   qDebug("getNumberOfImportThunks1: %d msec",scanTime.msecsTo(QTime::currentTime()));
-//#endif
+        //#ifndef QT_NO_DEBUG
+        //   qDebug("getNumberOfImportThunks1: %d msec",scanTime.msecsTo(QTime::currentTime()));
+        //#endif
 
 
         if(!nRVA)
@@ -2977,6 +3088,7 @@ unsigned int PEFile::getNumberOfImportThunks(unsigned int nImport)
         }
 
         nOffset=RVAToOffset(nRVA);
+
         if(isPEPlus())
         {
             while(readQword(nOffset))
@@ -2994,12 +3106,13 @@ unsigned int PEFile::getNumberOfImportThunks(unsigned int nImport)
             }
         }
 
-//#ifndef QT_NO_DEBUG
-//   qDebug("getNumberOfImportThunks2: %d msec",scanTime.msecsTo(QTime::currentTime()));
-//#endif
+        //#ifndef QT_NO_DEBUG
+        //   qDebug("getNumberOfImportThunks2: %d msec",scanTime.msecsTo(QTime::currentTime()));
+        //#endif
 
         return nResult;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
 
     return 0;
@@ -3015,13 +3128,14 @@ unsigned int PEFile::getNumberOfImportThunks(QString sLibraryName)
 
     int nNumberOfImports=getNumberOfImports();
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         if(getImport_NameAsString(i)==sLibraryName)
         {
             return getNumberOfImportThunks(i);
         }
     }
+
     emit appendError(QString("Invalid string: %1").arg(sLibraryName));
 
     return 0;
@@ -3048,9 +3162,11 @@ unsigned int PEFile::getImportThunk(unsigned int nImport,unsigned int nFunctionN
                 return readDword(RVAToOffset(getImport_FirstThunk(nImport))+4*nFunctionNumber);
             }
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nFunctionNumber));
         return 0;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
     return 0;
 }
@@ -3094,9 +3210,11 @@ unsigned long long PEFile::getImportThunk64(unsigned int nImport,unsigned int nF
                 return readQword(RVAToOffset(getImport_FirstThunk(nImport))+8*nFunctionNumber);
             }
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nFunctionNumber));
         return 0;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
     return 0;
 }
@@ -3157,9 +3275,11 @@ unsigned int PEFile::getImportThunkAddress(unsigned int nImport, unsigned int nF
         {
             return getImport_FirstThunk(nImport)+4*nFunctionNumber;
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nFunctionNumber));
         return 0;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
     return 0;
 }
@@ -3178,9 +3298,11 @@ unsigned long long PEFile::getImportThunkAddress64(unsigned int nImport, unsigne
         {
             return getImport_FirstThunk(nImport)+8*nFunctionNumber;
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nFunctionNumber));
         return 0;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
     return 0;
 }
@@ -3194,6 +3316,7 @@ QString PEFile::getImportFunctionName(unsigned int nImport,unsigned int nFunctio
     if(isPEPlus())
     {
         nThunk64=getImportThunk64(nImport,nFunctionNumber);
+
         if(nThunk64)
         {
             if(!(nThunk64&0x8000000000000000))
@@ -3208,6 +3331,7 @@ QString PEFile::getImportFunctionName(unsigned int nImport,unsigned int nFunctio
     else
     {
         nThunk=getImportThunk(nImport,nFunctionNumber);
+
         if(nThunk)
         {
             if(!(nThunk&0x80000000))
@@ -3308,14 +3432,14 @@ unsigned int PEFile::calculateBaseOfCode()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
 
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
         if(nCharacteristics&IMAGE_SCN_MEM_EXECUTE)
         {
-//            int nTemp=nCharacteristics&IMAGE_SCN_CNT_UNINITIALIZED_DATA;
-//            nTemp=0;
+            //            int nTemp=nCharacteristics&IMAGE_SCN_CNT_UNINITIALIZED_DATA;
+            //            nTemp=0;
             if((nCharacteristics&IMAGE_SCN_CNT_UNINITIALIZED_DATA)==0)
             {
                 return getSection_VirtualAddress(i);
@@ -3332,7 +3456,7 @@ unsigned int PEFile::calculateBaseOfData()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
 
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3355,7 +3479,7 @@ unsigned int PEFile::calculateSizeOfInitializedData()
     unsigned int nResult=0;
 
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3375,7 +3499,7 @@ unsigned int PEFile::calculateSizeOfInitializedData2()
     unsigned int nResult=0;
 
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3395,7 +3519,7 @@ unsigned int PEFile::calculateSizeOfUninitializedData()
     unsigned int nResult=0;
 
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3415,7 +3539,7 @@ unsigned int PEFile::calculateSizeOfCode()
     unsigned int nResult=0;
 
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3482,7 +3606,7 @@ QByteArray PEFile::getEntryPointCode()
 
 bool PEFile::compareEP(QString sSignature,unsigned int nOffset)
 {
-//    return compareEP(convertSignature(sSignature).toAscii().data(),nOffset);
+    //    return compareEP(convertSignature(sSignature).toAscii().data(),nOffset);
     return compare(sSignature,getEntryPointOffset()+nOffset);
 }
 
@@ -3519,7 +3643,7 @@ bool PEFile::compareEP(QString sSignature,unsigned int nOffset)
 
 bool PEFile::compareOverlay(QString sSignature,unsigned int nOffset)
 {
-//    return compareOverlay(convertSignature(sSignature).toAscii().data(),nOffset);
+    //    return compareOverlay(convertSignature(sSignature).toAscii().data(),nOffset);
     return compare(sSignature,getOverlayOffset()+nOffset);
 }
 
@@ -3545,6 +3669,7 @@ QString PEFile::getImportFunctionName(QString sLibraryName,unsigned int nFunctio
     {
         return getImportFunctionName(nImport,nFunctionNumber);
     }
+
     emit appendError(QString("Invalid string: %1").arg(sLibraryName));
     return "";
 
@@ -3571,11 +3696,14 @@ void PEFile::setImportThunk(unsigned int nImport,unsigned int nFunctionNumber, u
             {
                 return writeDword(RVAToOffset(getImport_FirstThunk(nImport))+4*nFunctionNumber,nValue);
             }
+
             return;
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nFunctionNumber));
         return;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
     return;
 }
@@ -3601,11 +3729,14 @@ void PEFile::setImportThunk64(unsigned int nImport,unsigned int nFunctionNumber,
             {
                 return writeQword(RVAToOffset(getImport_FirstThunk(nImport))+8*nFunctionNumber,nValue);
             }
+
             return;
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nFunctionNumber));
         return;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
     return;
 }
@@ -3624,6 +3755,7 @@ unsigned int PEFile::getNumberOfImportOriginalThunks(unsigned int nImport)
     if(nImport<getNumberOfImports())
     {
         nOffset=RVAToOffset(getImport_OriginalFirstThunk(nImport));
+
         if(isPEPlus())
         {
             while(readQword(nOffset))
@@ -3643,6 +3775,7 @@ unsigned int PEFile::getNumberOfImportOriginalThunks(unsigned int nImport)
 
         return nResult;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
 
     return 0;
@@ -3658,13 +3791,14 @@ unsigned int PEFile::getNumberOfImportOriginalThunks(QString sLibraryName)
 
     int nNumberOfImports=getNumberOfImports();
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         if(getImport_NameAsString(i)==sLibraryName)
         {
             return getNumberOfImportOriginalThunks(i);
         }
     }
+
     emit appendError(QString("Invalid string: %1").arg(sLibraryName));
 
     return 0;
@@ -3684,9 +3818,11 @@ unsigned int PEFile::getImportOriginalThunk(unsigned int nImport,unsigned int nF
         {
             return readDword(RVAToOffset(getImport_FirstThunk(nImport))+4*nFunctionNumber);
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nFunctionNumber));
         return 0;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
     return 0;
 }
@@ -3716,16 +3852,18 @@ unsigned int PEFile::getImportLibraryNumber(QString sLibraryName)
         emit appendWarning("Import is not present");
         return 0;
     }
+
     int nNumberOfImports=getNumberOfImports();
 
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         if(getImport_NameAsString(i)==sLibraryName)
         {
             return i;
         }
     }
+
     emit appendError(QString("Invalid string: %1").arg(sLibraryName));
 
     return -1;
@@ -3746,6 +3884,7 @@ unsigned int PEFile::getNewSection_VirtualAddress()
         {
             return getSection_VirtualAddress(nSections-1)+ALIGN_UP(getSection_VirtualSize(nSections-1),getOptionalHeader_SectionAlignment());
         }
+
         nSections--;
     }
 
@@ -3762,6 +3901,7 @@ unsigned int PEFile::getNewSection_PointerToRawData()
         {
             return getSection_PointerToRawData(nSections-1)+ALIGN_UP(getSection_SizeOfRawData(nSections-1),getOptionalHeader_FileAlignment());
         }
+
         nSections--;
     }
 
@@ -4040,6 +4180,7 @@ unsigned int PEFile::getExport_FunctionAddress(int nNumber)
 
         return readDword(nOffset);
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nNumber));
 
     return 0;
@@ -4060,6 +4201,7 @@ unsigned short PEFile::getExport_FunctionNameOrdinal(int nNumber)
 
         return readWord(nOffset)+getExport_Base();
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nNumber));
 
     return 0;
@@ -4080,6 +4222,7 @@ unsigned int PEFile::getExport_FunctionName(int nNumber)
 
         return readDword(nOffset);
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nNumber));
 
     return 0;
@@ -4098,6 +4241,7 @@ void PEFile::setExport_FunctionAddress(int nNumber, unsigned int nValue)
 
         return;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nNumber));
 }
 
@@ -4114,6 +4258,7 @@ void PEFile::setExport_FunctionNameOrdinal(int nNumber, unsigned short sValue)
 
         return;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nNumber));
 
 }
@@ -4131,6 +4276,7 @@ void PEFile::setExport_FunctionName(int nNumber, unsigned int nValue)
 
         return;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nNumber));
 
 }
@@ -4141,9 +4287,10 @@ QString PEFile::getExport_FunctionNameAsString(int nNumber)
     {
         unsigned int nRVA=getExport_FunctionName(nNumber);
         unsigned int nOffset=RVAToOffset(nRVA);
-//        qDebug("RVA=%X Offset=%X",nRVA,nOffset);
+        //        qDebug("RVA=%X Offset=%X",nRVA,nOffset);
         return getAnsiString(nOffset,140);
     }
+
     return "";
 }
 
@@ -4159,9 +4306,9 @@ void PEFile::FixRawOffsets(int nDelta)
 {
     setOptionalHeader_SizeOfHeaders(getOptionalHeader_SizeOfHeaders()+nDelta);
 
-    for(int i=0;i<getFileHeader_NumberOfSections();i++)
+    for(int i=0; i<getFileHeader_NumberOfSections(); i++)
     {
-//        int nh=(int)getSection_PointerToRawData(i)+nDelta;
+        //        int nh=(int)getSection_PointerToRawData(i)+nDelta;
         setSection_PointerToRawData(i,(int)getSection_PointerToRawData(i)+nDelta);
     }
 }
@@ -4178,7 +4325,7 @@ bool PEFile::isSectionNamePresentExp(QString sSectionName)
     QRegExp exp;
     exp.setPattern(sSectionName);
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         if(getSectionNameAsString(i,nSectionsTableOffset).toLower().contains(exp))
         {
@@ -4195,7 +4342,7 @@ unsigned int PEFile::getSectionNumberExp(QString sSectionName)
     QRegExp exp;
     exp.setPattern(sSectionName);
 
-    for(int i=0;i<nSections;i++)
+    for(int i=0; i<nSections; i++)
     {
         if(getSectionNameAsString(i,nSectionsTableOffset).contains(exp))
         {
@@ -4219,9 +4366,10 @@ QString PEFile::getSectionNameCollision(QString sString1,QString sString2)
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nSectionsTableOffset=getSectionsTableOffset();
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         list.append(getSectionNameAsString(i,nSectionsTableOffset));
+
         if(list.at(i).contains(sString1))
         {
             bFlag1=true;
@@ -4238,13 +4386,14 @@ QString PEFile::getSectionNameCollision(QString sString1,QString sString2)
     {
         sResult=sSecondSection.section(sString2,0,0);
 
-        for(int i=0;i<list.count();i++)
+        for(int i=0; i<list.count(); i++)
         {
             if(sResult+sString1==list.at(i))
             {
                 return sResult;
             }
         }
+
         sResult="";
     }
 
@@ -4259,6 +4408,7 @@ int PEFile::getResourceSection()
         emit appendWarning("Resource is not present");
         return 0;
     }
+
     IMAGE_DATA_DIRECTORY idd;
     getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_RESOURCE,&idd);
 
@@ -4331,7 +4481,7 @@ void PEFile::resourceToXML(unsigned int nResourceOffset,unsigned int nResourceDi
 
     nOffset=nResourceDirectory+sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<(nNumberOfNamedEntries+nNumberOfIdEntries);i++)
+    for(int i=0; i<(nNumberOfNamedEntries+nNumberOfIdEntries); i++)
     {
         if(!readArray(nOffset,(char *)&ImageResDirEntry,sizeof(ImageResDirEntry)))
         {
@@ -4345,11 +4495,13 @@ void PEFile::resourceToXML(unsigned int nResourceOffset,unsigned int nResourceDi
         {
             nStringLength=readWord(nResourceOffset+((ImageResDirEntry.Name)&0x7FFFFFFF));
             baTemp.resize(nStringLength*sizeof(short));
+
             if(!readArray(nResourceOffset+((ImageResDirEntry.Name)&0x7FFFFFFF)+sizeof(short),baTemp.data(),baTemp.size()))
             {
                 pXml->writeEndElement();
                 return;
             }
+
             sName.setUnicode((QChar *)baTemp.data(),nStringLength);
 
             pXml->writeAttribute("Name",sName);
@@ -4369,12 +4521,14 @@ void PEFile::resourceToXML(unsigned int nResourceOffset,unsigned int nResourceDi
         else
         {
             nTemp=nResourceOffset+ImageResDirEntry.OffsetToData;
+
             if(!readArray(nTemp,(char *)&ImageResDataEntry,sizeof(ImageResDataEntry)))
             {
                 pXml->writeEndElement();
                 pXml->writeEndElement();
                 return;
             }
+
             pXml->writeStartElement("DataEntry");
             pXml->writeAttribute("Reserved",QString::number(ImageResDataEntry.Reserved));
             pXml->writeAttribute("CodePage",QString::number(ImageResDataEntry.CodePage));
@@ -4383,10 +4537,12 @@ void PEFile::resourceToXML(unsigned int nResourceOffset,unsigned int nResourceDi
 
             nTemp=RVAToOffset(ImageResDataEntry.OffsetToData);
             pXml->writeAttribute("Offset",QString::number(nTemp));
+
             if(nTemp==-1)
             {
                 emit appendWarning(QString("Invalid resource RVA: %1 (may be packed)").arg(ImageResDataEntry.OffsetToData,8,16,QChar('0')));
             }
+
             pXml->writeAttribute("Size",QString::number(ImageResDataEntry.Size));
 
             pXml->writeEndElement();
@@ -4424,15 +4580,15 @@ QByteArray PEFile::getImportAsXML()
     {
         int nNumberOfImports=getNumberOfImports();
 
-        for(int i=0;i<nNumberOfImports;i++)
+        for(int i=0; i<nNumberOfImports; i++)
         {
             xml.writeStartElement("Library");
 
             xml.writeAttribute("Name",getImport_NameAsString(i,nImportTableOffset));
-//            xml.writeAttribute("OriginalFirstThunk",QString::number(getImport_OriginalFirstThunk(i,nImportTableOffset)));
+            //            xml.writeAttribute("OriginalFirstThunk",QString::number(getImport_OriginalFirstThunk(i,nImportTableOffset)));
             xml.writeAttribute("TimeDateStamp",QString::number(getImport_TimeDateStamp(i,nImportTableOffset)));
             xml.writeAttribute("ForwarderChain",QString::number(getImport_ForwarderChain(i,nImportTableOffset)));
-//            xml.writeAttribute("FirstThunk",QString::number(getImport_FirstThunk(i,nImportTableOffset)));
+            //            xml.writeAttribute("FirstThunk",QString::number(getImport_FirstThunk(i,nImportTableOffset)));
 
             int nNumberOfImportThunks=getNumberOfImportThunks(i);
 
@@ -4445,7 +4601,7 @@ QByteArray PEFile::getImportAsXML()
             unsigned int nFirstThunk=RVAToOffset(getImport_FirstThunk(i));
 
 
-            for(int j=0;j<nNumberOfImportThunks;j++)
+            for(int j=0; j<nNumberOfImportThunks; j++)
             {
                 xml.writeStartElement("Function");
 
@@ -4481,6 +4637,7 @@ QByteArray PEFile::getImportAsXML()
                         xml.writeAttribute("Name",getImportFunctionName(nThunk));
                     }
                 }
+
                 xml.writeEndElement();
             }
 
@@ -4512,12 +4669,18 @@ QByteArray PEFile::ImportAsXMLToBin(QByteArray baXML,IMAGE_DATA_DIRECTORY *pddIm
 
     while(!xml.atEnd())
     {
-            xml.readNextStartElement();
-            // do processing
-            if(xml.name()=="Library")
-                nDll++;
-            if(xml.name()=="Function")
-                nFuncs++;
+        xml.readNextStartElement();
+
+        // do processing
+        if(xml.name()=="Library")
+        {
+            nDll++;
+        }
+
+        if(xml.name()=="Function")
+        {
+            nFuncs++;
+        }
     }
 
     xml.clear();
@@ -4544,6 +4707,7 @@ QByteArray PEFile::ImportAsXMLToBin(QByteArray baXML,IMAGE_DATA_DIRECTORY *pddIm
     while(!xml.atEnd())
     {
         xml.readNextStartElement();
+
         // do processing
         if(xml.name()=="Library")
         {
@@ -4593,6 +4757,7 @@ QByteArray PEFile::ImportAsXMLToBin(QByteArray baXML,IMAGE_DATA_DIRECTORY *pddIm
                         break;
                     }
                 }
+
                 pIID->Name=(int)(pNames-baResult.data());
 
                 *pnFirstThunk=0;
@@ -4608,9 +4773,10 @@ QByteArray PEFile::ImportAsXMLToBin(QByteArray baXML,IMAGE_DATA_DIRECTORY *pddIm
 
         }
 
-//        xml.readNextStartElement();
+        //        xml.readNextStartElement();
 
     }
+
     pIID->FirstThunk=0;
     pIID->OriginalFirstThunk=0;
     pIID->ForwarderChain=0;
@@ -4655,6 +4821,7 @@ bool PEFile::addImportSection(IMAGE_SECTION_HEADER *pISH, char *pData,int nDataS
     {
         pISH->Characteristics=0x40000020;
     }
+
     if(addSection(pISH,pData,nDataSize))
     {
         pddImportTable->VirtualAddress+=pISH->VirtualAddress;
@@ -4667,6 +4834,7 @@ bool PEFile::addImportSection(IMAGE_SECTION_HEADER *pISH, char *pData,int nDataS
         {
             setOptionalHeader_BaseOfData(pISH->VirtualAddress);
         }
+
         setOptionalHeader_SizeOfInitializedData(getOptionalHeader_SizeOfInitializedData()+pISH->SizeOfRawData);
 
         FixImportBin(pISH->PointerToRawData,getImportTableOffset(),pISH->VirtualAddress);
@@ -4684,12 +4852,14 @@ void PEFile::FixImportBin(unsigned int nOffset,unsigned int nImportTableOffset, 
 
     int nNumberOfImports=getNumberOfImports();
 
-    for(int i=0;i<nNumberOfImports;i++)
+    for(int i=0; i<nNumberOfImports; i++)
     {
         nTempOffset=nOffset+getImport_FirstThunk(i,nImportTableOffset);
+
         while(true)
         {
             nTemp=readDword(nTempOffset);
+
             if(!nTemp)
             {
                 break;
@@ -4702,10 +4872,13 @@ void PEFile::FixImportBin(unsigned int nOffset,unsigned int nImportTableOffset, 
 
             nTempOffset+=4;
         }
+
         nTempOffset=nOffset+getImport_OriginalFirstThunk(i,nImportTableOffset);
+
         while(true)
         {
             nTemp=readDword(nTempOffset);
+
             if(!nTemp)
             {
                 break;
@@ -4821,6 +4994,7 @@ bool PEFile::isResourceNamePresent(QString sName)
     {
         return false;
     }
+
     QByteArray baData=getResourceAsXML();
     QXmlStreamReader xml(baData);
 
@@ -4833,15 +5007,15 @@ bool PEFile::isResourceNamePresent(QString sName)
         {
             if(xml.name()=="Entry")
             {
-//                qDebug(xml.attributes().value("Name").toString().toAscii().data());
-//                if(xml.attributes().value("Level").toString()=="0")
-//                {
-////                    qDebug(xml.attributes().value("Name").toString().toAscii().data());
-//                    if(xml.attributes().value("Name").toString()==sName)
-//                    {
-//                        return true;
-//                    }
-//                }
+                //                qDebug(xml.attributes().value("Name").toString().toAscii().data());
+                //                if(xml.attributes().value("Level").toString()=="0")
+                //                {
+                ////                    qDebug(xml.attributes().value("Name").toString().toAscii().data());
+                //                    if(xml.attributes().value("Name").toString()==sName)
+                //                    {
+                //                        return true;
+                //                    }
+                //                }
                 if(xml.attributes().value("Name").toString()==sName)
                 {
                     return true;
@@ -4869,36 +5043,41 @@ bool PEFile::isResourceNamePresentFast(QString sName)
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         //&0x7FFFFFFF
-//        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToData);
+        //        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToData);
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
             return false;
         }
-//        unsigned int nNameEntries2=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nDirectoryEntryOffset))->NumberOfNamedEntries;
+
+        //        unsigned int nNameEntries2=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nDirectoryEntryOffset))->NumberOfNamedEntries;
         unsigned int nNameEntries2=readWord(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
+
         if(nNameEntries2)
         {
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-            for(int j=0;j<nNameEntries2;j++)
+            for(int j=0; j<nNameEntries2; j++)
             {
                 unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
                 nTemp+=nResourceOffset;
-//                nTemp=RVAToOffset(nTemp);
-//                qDebug(getResourceString(___pMemory+nTemp).toAscii().data());
+                //                nTemp=RVAToOffset(nTemp);
+                //                qDebug(getResourceString(___pMemory+nTemp).toAscii().data());
                 unsigned int nStringLength=readWord(nTemp);
+
                 if(!isOffsetAndSizeValid(nTemp+2,nStringLength*2))
                 {
                     return false;
                 }
+
                 QByteArray baName=readArray(nTemp+2,nStringLength*2);
+
                 if(QString::fromUtf16((ushort *)(baName.data()),nStringLength)==sName)
-//                if(getResourceString(___pMemory+nTemp)==sName)
+                    //                if(getResourceString(___pMemory+nTemp)==sName)
                 {
                     return true;
                 }
@@ -4919,8 +5098,9 @@ unsigned int PEFile::getResourceNameOffset(QString sName)
     {
         return false;
     }
+
     QByteArray baData=getResourceAsXML();
-//    qDebug(baData.data());
+    //    qDebug(baData.data());
     QXmlStreamReader xml(baData);
 
 
@@ -4950,6 +5130,7 @@ unsigned int PEFile::getResourceNameSize(QString sName)
     {
         return false;
     }
+
     QByteArray baData=getResourceAsXML();
     QXmlStreamReader xml(baData);
 
@@ -4985,46 +5166,53 @@ unsigned int PEFile::getResourceNameOffsetFast(QString sName)
     unsigned int nOffset=nResourceOffset;
     unsigned int nDirectoryEntryOffset=0;
 
-//    unsigned int nNameEntries=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfNamedEntries;
-//    unsigned int nIDEntries=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfIdEntries;
+    //    unsigned int nNameEntries=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfNamedEntries;
+    //    unsigned int nIDEntries=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfIdEntries;
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         //&0x7FFFFFFF
-//        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
-//        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        //        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
+        //        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
             return -1;
         }
-//        unsigned int nNameEntries2=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nDirectoryEntryOffset))->NumberOfNamedEntries;
+
+        //        unsigned int nNameEntries2=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nDirectoryEntryOffset))->NumberOfNamedEntries;
         unsigned int nNameEntries2=readWord(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
+
         if(nNameEntries2)
         {
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-            for(int j=0;j<nNameEntries2;j++)
+            for(int j=0; j<nNameEntries2; j++)
             {
                 unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
                 nTemp+=nResourceOffset;
-//                nTemp=RVAToOffset(nTemp);
-//                qDebug(getResourceString(___pMemory+nTemp).toAscii().data());
+                //                nTemp=RVAToOffset(nTemp);
+                //                qDebug(getResourceString(___pMemory+nTemp).toAscii().data());
                 unsigned int nStringLength=readWord(nTemp);
+
                 if(!isOffsetAndSizeValid(nTemp+2,nStringLength*2))
                 {
                     return -1;
                 }
+
                 QByteArray baName=readArray(nTemp+2,nStringLength*2);
+
                 if(QString::fromUtf16((ushort *)(baName.data()),nStringLength)==sName)
                 {
 
-//                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
+                    //                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
                     nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
                         return -1;
@@ -5036,13 +5224,16 @@ unsigned int PEFile::getResourceNameOffsetFast(QString sName)
                     {
                         return -1;
                     }
-//                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
+
+                    //                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
                     nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
                         return -1;
                     }
-//                    unsigned int nRVA=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
+
+                    //                    unsigned int nRVA=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
                     unsigned int nRVA=readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DATA_ENTRY,OffsetToData));
 
                     return RVAToOffset(nRVA);
@@ -5071,62 +5262,73 @@ unsigned int PEFile::getResourceNameSizeFast(QString sName)
     unsigned int nOffset=nResourceOffset;
     unsigned int nDirectoryEntryOffset=0;
 
-//    unsigned int nNameEntries=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfNamedEntries;
-//    unsigned int nIDEntries=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfIdEntries;
+    //    unsigned int nNameEntries=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfNamedEntries;
+    //    unsigned int nIDEntries=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfIdEntries;
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         //&0x7FFFFFFF
-//        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
+        //        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
             return 0;
         }
 
-//        unsigned int nNameEntries2=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nDirectoryEntryOffset))->NumberOfNamedEntries;
+        //        unsigned int nNameEntries2=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nDirectoryEntryOffset))->NumberOfNamedEntries;
         unsigned int nNameEntries2=readWord(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
+
         if(nNameEntries2)
         {
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-            for(int j=0;j<nNameEntries2;j++)
+            for(int j=0; j<nNameEntries2; j++)
             {
                 unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
                 nTemp+=nResourceOffset;
-//                nTemp=RVAToOffset(nTemp);
-//                qDebug(getResourceString(___pMemory+nTemp).toAscii().data());
+                //                nTemp=RVAToOffset(nTemp);
+                //                qDebug(getResourceString(___pMemory+nTemp).toAscii().data());
                 unsigned int nStringLength=readWord(nTemp);
+
                 if(!isOffsetAndSizeValid(nTemp+2,nStringLength*2))
                 {
                     return 0;
                 }
+
                 QByteArray baName=readArray(nTemp+2,nStringLength*2);
+
                 if(QString::fromUtf16((ushort *)(baName.data()),nStringLength)==sName)
                 {
 
-//                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
+                    //                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
                     nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
                         return 0;
                     }
+
                     nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
+
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
                         return 0;
                     }
-//                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
+
+                    //                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
                     nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
                         return 0;
                     }
-//                    unsigned int nSize=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->Size);
+
+                    //                    unsigned int nSize=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->Size);
                     unsigned int nSize=readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DATA_ENTRY,Size));
 
                     return nSize;
@@ -5153,6 +5355,7 @@ QByteArray PEFile::getResourceIdData(unsigned int nID1,unsigned int nID2,unsigne
     {
         return 0;
     }
+
     QByteArray baResult;
     QByteArray baData=getResourceAsXML();
     QXmlStreamReader xml(baData);
@@ -5189,12 +5392,13 @@ QByteArray PEFile::getResourceIdData(unsigned int nID1,unsigned int nID2,unsigne
                 }
                 else if(xml.attributes().value("Level").toString()=="2")
                 {
-//                    QString sTemp=xml.attributes().value("Id").toString();
+                    //                    QString sTemp=xml.attributes().value("Id").toString();
                     if((xml.attributes().value("Id").toString().toInt()==nID3)||(nID3==-1))
                     {
                         if(bFlag1&&bFlag2)
                         {
                             xml.readNextStartElement();
+
                             if(xml.name()=="DataEntry")
                             {
                                 nOffset=xml.attributes().value("Offset").toString().toInt();
@@ -5232,45 +5436,51 @@ QByteArray PEFile::getResourceIdDataFast(unsigned int nID1)
     unsigned int nOffset=nResourceOffset;
     unsigned int nDirectoryEntryOffset=0;
 
-//    unsigned int nNameEntries4=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfNamedEntries;
-//    unsigned int nIDEntries4=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfIdEntries;
+    //    unsigned int nNameEntries4=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfNamedEntries;
+    //    unsigned int nIDEntries4=((IMAGE_RESOURCE_DIRECTORY *)(___pMemory+nOffset))->NumberOfIdEntries;
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY_ENTRY)*nNameEntries;
 
-    for(int i=0;i<nIDEntries;i++)
+    for(int i=0; i<nIDEntries; i++)
     {
         //&0x7FFFFFFF
 
-//        unsigned int _nID=(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->Id);
+        //        unsigned int _nID=(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->Id);
         unsigned int _nID=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,Id));
 
         if(nID1==_nID)
         {
-//            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
+            //            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
             nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
+
             if(!isOffsetValid(nDirectoryEntryOffset))
             {
                 return false;
             }
-//            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
+
+            //            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
             nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
+
             if(!isOffsetValid(nDirectoryEntryOffset))
             {
                 return false;
             }
-//            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
+
+            //            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
             nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData));
+
             if(!isOffsetValid(nDirectoryEntryOffset))
             {
                 return false;
             }
-//            unsigned int nRVA=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
-//            unsigned int nSize=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->Size);
+
+            //            unsigned int nRVA=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
+            //            unsigned int nSize=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->Size);
             unsigned int nRVA=readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DATA_ENTRY,OffsetToData));
             unsigned int nSize=readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DATA_ENTRY,Size));
 
@@ -5308,7 +5518,7 @@ bool PEFile::isResourceIdPresent(unsigned int nID1, unsigned int nID2, unsigned 
             {
                 if(xml.attributes().value("Level").toString()=="0")
                 {
-//                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
+                    //                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
                     if(xml.attributes().value("Id").toString().toInt()==nID1)
                     {
                         bFlag1=true;
@@ -5320,7 +5530,7 @@ bool PEFile::isResourceIdPresent(unsigned int nID1, unsigned int nID2, unsigned 
                 }
                 else if(xml.attributes().value("Level").toString()=="1")
                 {
-//                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
+                    //                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
                     if((xml.attributes().value("Id").toString().toInt()==nID2)||(nID2==-1))
                     {
                         bFlag2=true;
@@ -5332,7 +5542,7 @@ bool PEFile::isResourceIdPresent(unsigned int nID1, unsigned int nID2, unsigned 
                 }
                 else if(xml.attributes().value("Level").toString()=="2")
                 {
-//                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
+                    //                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
                     if((xml.attributes().value("Id").toString().toInt()==nID3)||(nID3==-1))
                     {
                         if(bFlag1&&bFlag2)
@@ -5467,23 +5677,28 @@ unsigned int PEFile::getNumberOfResources()
         return 0;
     }
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         if(!isOffsetValid(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData)))
         {
             return 0;
         }
+
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
             return 0;
         }
+
         unsigned int nCharacteristics=readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,Characteristics));
+
         if(nCharacteristics!=0)
         {
             // Corrupted resource
             break;
         }
+
         nResult+=readWord(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
         nResult+=readWord(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
@@ -5496,6 +5711,7 @@ unsigned int PEFile::getNumberOfResources()
 unsigned int PEFile::getResourceOffsetByNumber(unsigned int nNumber)
 {
     unsigned int nCurrentNumber=0;
+
     if(!isResourcePresent())
     {
         return -1;
@@ -5515,9 +5731,10 @@ unsigned int PEFile::getResourceOffsetByNumber(unsigned int nNumber)
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
             return -1;
@@ -5528,32 +5745,39 @@ unsigned int PEFile::getResourceOffsetByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0;j<nNameEntries2+nIDEntries2;j++)
+        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
-//                unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
-//                nTemp+=nResourceOffset;
+                //                unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
+                //                nTemp+=nResourceOffset;
                 nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
                     return -1;
                 }
+
                 nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
+
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
                     return -1;
                 }
+
                 nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
                     return -1;
                 }
+
                 unsigned int nRVA=readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DATA_ENTRY,OffsetToData));
 
                 return RVAToOffset(nRVA);
 
             }
+
             nCurrentNumber++;
 
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY_ENTRY);
@@ -5569,6 +5793,7 @@ unsigned int PEFile::getResourceOffsetByNumber(unsigned int nNumber)
 unsigned int PEFile::getResourceSizeByNumber(unsigned int nNumber)
 {
     unsigned int nCurrentNumber=0;
+
     if(!isResourcePresent())
     {
         return 0;
@@ -5588,9 +5813,10 @@ unsigned int PEFile::getResourceSizeByNumber(unsigned int nNumber)
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
             return 0;
@@ -5601,32 +5827,39 @@ unsigned int PEFile::getResourceSizeByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0;j<nNameEntries2+nIDEntries2;j++)
+        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
-//                unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
-//                nTemp+=nResourceOffset;
+                //                unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
+                //                nTemp+=nResourceOffset;
                 nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
                     return 0;
                 }
+
                 nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
+
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
                     return 0;
                 }
+
                 nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
                     return 0;
                 }
+
                 unsigned int nSize=readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DATA_ENTRY,Size));
 
                 return nSize;
 
             }
+
             nCurrentNumber++;
 
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY_ENTRY);
@@ -5642,6 +5875,7 @@ unsigned int PEFile::getResourceSizeByNumber(unsigned int nNumber)
 unsigned int PEFile::getResourceIdByNumber(unsigned int nNumber)
 {
     unsigned int nCurrentNumber=0;
+
     if(!isResourcePresent())
     {
         return 0;
@@ -5661,9 +5895,10 @@ unsigned int PEFile::getResourceIdByNumber(unsigned int nNumber)
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
             return 0;
@@ -5674,7 +5909,7 @@ unsigned int PEFile::getResourceIdByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0;j<nNameEntries2+nIDEntries2;j++)
+        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
@@ -5688,6 +5923,7 @@ unsigned int PEFile::getResourceIdByNumber(unsigned int nNumber)
                 return 0;
 
             }
+
             nCurrentNumber++;
 
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY_ENTRY);
@@ -5703,6 +5939,7 @@ unsigned int PEFile::getResourceIdByNumber(unsigned int nNumber)
 QString PEFile::getResourceNameByNumber(unsigned int nNumber)
 {
     unsigned int nCurrentNumber=0;
+
     if(!isResourcePresent())
     {
         return "";
@@ -5722,9 +5959,10 @@ QString PEFile::getResourceNameByNumber(unsigned int nNumber)
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
             return "";
@@ -5735,7 +5973,7 @@ QString PEFile::getResourceNameByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0;j<nNameEntries2+nIDEntries2;j++)
+        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
@@ -5747,10 +5985,12 @@ QString PEFile::getResourceNameByNumber(unsigned int nNumber)
                     nTemp+=nResourceOffset;
 
                     unsigned int nStringLength=readWord(nTemp);
+
                     if(!isOffsetAndSizeValid(nTemp+2,nStringLength*2))
                     {
                         return "";
                     }
+
                     QByteArray baName=readArray(nTemp+2,nStringLength*2);
 
                     return QString::fromUtf16((ushort *)(baName.data()),nStringLength);
@@ -5760,6 +6000,7 @@ QString PEFile::getResourceNameByNumber(unsigned int nNumber)
                 return "";
 
             }
+
             nCurrentNumber++;
 
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY_ENTRY);
@@ -5776,6 +6017,7 @@ QString PEFile::getResourceTypeByNumber(unsigned int nNumber)
 {
     QString sType="";
     unsigned int nCurrentNumber=0;
+
     if(!isResourcePresent())
     {
         return "";
@@ -5795,7 +6037,7 @@ QString PEFile::getResourceTypeByNumber(unsigned int nNumber)
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0;i<nNameEntries+nIDEntries;i++)
+    for(int i=0; i<nNameEntries+nIDEntries; i++)
     {
         nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
         sType=resourceIdToString(readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,Id)));
@@ -5810,12 +6052,13 @@ QString PEFile::getResourceTypeByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0;j<nNameEntries2+nIDEntries2;j++)
+        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
                 return sType;
             }
+
             nCurrentNumber++;
 
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY_ENTRY);
@@ -5843,6 +6086,7 @@ unsigned int PEFile::getNETOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendError(".NET is not present");
     return 0;
 }
@@ -5925,7 +6169,7 @@ bool PEFile::initCLI()
             CLI_Section.nCLI_MetaData_Tables_Sorted=0;
             CLI_Section.nCLI_MetaData_Tables_Valid_NumberOfRows=0;
 
-            for(int i=0;i<64;i++)
+            for(int i=0; i<64; i++)
             {
                 CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[i]=0;
                 CLI_Section.CLI_MetaData_Tables_TablesOffsets[i]=0;
@@ -5937,6 +6181,7 @@ bool PEFile::initCLI()
             {
                 CLI_Section.nCLI_MetaDataOffset=RVAToOffset(CLI_Section.CLI_MetaData.VirtualAddress);
                 CLI_Section.nCLI_MetaData_Signature=readDword(CLI_Section.nCLI_MetaDataOffset);
+
                 if(CLI_Section.nCLI_MetaData_Signature==0x424a5342)
                 {
                     CLI_Section.sCLI_MetaData_MajorVersion=readWord(CLI_Section.nCLI_MetaDataOffset+4);
@@ -5950,7 +6195,8 @@ bool PEFile::initCLI()
 
 
                     nOffset=CLI_Section.nCLI_MetaDataOffset+20+CLI_Section.nCLI_MetaData_VersionStringLength;
-                    for(int i=0;i<CLI_Section.sCLI_MetaData_Streams;i++)
+
+                    for(int i=0; i<CLI_Section.sCLI_MetaData_Streams; i++)
                     {
                         CLI_Section.listCLI_MetaData_Stream_Offsets.append(readDword(nOffset));
                         CLI_Section.listCLI_MetaData_Stream_Sizes.append(readDword(nOffset+4));
@@ -6001,7 +6247,8 @@ bool PEFile::initCLI()
 
 
                         unsigned int nTemp=0;
-                        for (nTemp = 0; nValid; nTemp++)
+
+                        for(nTemp = 0; nValid; nTemp++)
                         {
                             nValid &= nValid - 1;
                         }
@@ -6011,7 +6258,7 @@ bool PEFile::initCLI()
 
                         nOffset=CLI_Section.nCLI_MetaData_TablesHeaderOffset+24;
 
-                        for(int i=0;i<64;i++)
+                        for(int i=0; i<64; i++)
                         {
                             if(CLI_Section.nCLI_MetaData_Tables_Valid&((unsigned long long)1<<i))
                             {
@@ -6053,14 +6300,17 @@ bool PEFile::initCLI()
                         {
                             nResolutionScope=4;
                         }
+
                         if(CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[26]>0x3FFF)
                         {
                             nResolutionScope=4;
                         }
+
                         if(CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[35]>0x3FFF)
                         {
                             nResolutionScope=4;
                         }
+
                         if(CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[1]>0x3FFF)
                         {
                             nResolutionScope=4;
@@ -6070,10 +6320,12 @@ bool PEFile::initCLI()
                         {
                             nTypeDefOrRef=4;
                         }
+
                         if(CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[2]>0x3FFF)
                         {
                             nTypeDefOrRef=4;
                         }
+
                         if(CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[27]>0x3FFF)
                         {
                             nTypeDefOrRef=4;
@@ -6084,14 +6336,17 @@ bool PEFile::initCLI()
                         {
                             nField=4;
                         }
+
                         if(CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[6]>0xFFFF)
                         {
                             nMethodDef=4;
                         }
+
                         if(CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[8]>0xFFFF)
                         {
                             nParamList=4;
                         }
+
                         nSize=0;
                         nSize+=2;
                         nSize+=nStringIndexSize;
@@ -6131,7 +6386,7 @@ bool PEFile::initCLI()
                         CLI_Section.CLI_MetaData_Tables_TablesSizes[6]=nSize;
 
 
-                        for(int i=0;i<64;i++)
+                        for(int i=0; i<64; i++)
                         {
                             if(CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[i])
                             {
@@ -6194,7 +6449,7 @@ bool PEFile::initCLI()
         return true;
     }
 
-//    emit appendError(".NET is not present");
+    //    emit appendError(".NET is not present");
 
     return false;
 }
@@ -6414,6 +6669,7 @@ unsigned int PEFile::getCLI_MetaData_Reserved()
 QString PEFile::getCLI_MetaData_Version()
 {
     QString sResult;
+
     if(initCLI())
     {
         return CLI_Section.sCLI_MetaData_Version;
@@ -6450,6 +6706,7 @@ unsigned int PEFile::getCLI_MetaData_Stream_Offset(int nStream)
         {
             return CLI_Section.listCLI_MetaData_Stream_Offsets.at(nStream);
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nStream));
     }
 
@@ -6465,6 +6722,7 @@ unsigned int PEFile::getCLI_MetaData_Stream_Size(int nStream)
         {
             return CLI_Section.listCLI_MetaData_Stream_Sizes.at(nStream);
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nStream));
     }
 
@@ -6479,6 +6737,7 @@ QString PEFile::getCLI_MetaData_Stream_Name(int nStream)
         {
             return CLI_Section.listCLI_MetaData_Stream_Names.at(nStream);
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nStream));
     }
 
@@ -6488,10 +6747,10 @@ QString PEFile::getCLI_MetaData_Stream_Name(int nStream)
 unsigned int PEFile::getCLI_MetaDataOffset()
 {
 
-//    IMAGE_DATA_DIRECTORY idd;
-//    getCLI_MetaData(&idd);
+    //    IMAGE_DATA_DIRECTORY idd;
+    //    getCLI_MetaData(&idd);
 
-//    return RVAToOffset(idd.VirtualAddress);
+    //    return RVAToOffset(idd.VirtualAddress);
 
     if(initCLI())
     {
@@ -6504,7 +6763,7 @@ unsigned int PEFile::getCLI_MetaDataOffset()
 unsigned int PEFile::getCLI_MetaData_TablesHeaderOffset()
 {
     // TODO
-//    return getCLI_MetaDataStreamOffset("#~");
+    //    return getCLI_MetaDataStreamOffset("#~");
     if(initCLI())
     {
         return CLI_Section.nCLI_MetaData_TablesHeaderOffset;
@@ -6518,7 +6777,8 @@ unsigned int PEFile::getCLI_MetaDataStreamOffset(QString sStream)
     unsigned int nResult=0;
 
     unsigned int nNumberOfStreams=getCLI_MetaData_Streams();
-    for(int i=0;i<nNumberOfStreams;i++)
+
+    for(int i=0; i<nNumberOfStreams; i++)
     {
         if(getCLI_MetaData_Stream_Name(i)==sStream)
         {
@@ -6531,7 +6791,7 @@ unsigned int PEFile::getCLI_MetaDataStreamOffset(QString sStream)
 }
 
 unsigned int PEFile::getCLI_MetaData_Tables_Reserved1()
-{  
+{
     if(initCLI())
     {
         return CLI_Section.nCLI_MetaData_Tables_Reserved1;
@@ -6612,8 +6872,8 @@ unsigned int PEFile::getCLI_MetaData_Tables_Valid_NumberOfRows()
 
 bool PEFile::isCLI_MetaData_Tables_TablePresent(int nTable)
 {
-//    unsigned long long nTest=(unsigned long long)1<<43;
-//    nTest=getCLI_MetaData_Tables_Valid()&((unsigned long long)1<<43);
+    //    unsigned long long nTest=(unsigned long long)1<<43;
+    //    nTest=getCLI_MetaData_Tables_Valid()&((unsigned long long)1<<43);
     return ((getCLI_MetaData_Tables_Valid()&((unsigned long long)1<<nTable))!=0);
 }
 
@@ -6627,234 +6887,298 @@ QString PEFile::CLI_MetaData_Tables_TableToString(int nTable)
 
     switch(nTable)
     {
-    case 0:
-        return "Module";
-        break;
-    case 1:
-        return "TypeRef";
-        break;
-    case 2:
-        return "TypeDef";
-        break;
-    case 3:
-        return "unknown3";
-        break;
-    case 4:
-        return "Field";
-        break;
-    case 5:
-        return "unknown5";
-        break;
-    case 6:
-        return "MethodDef";
-        break;
-    case 7:
-        return "unknown7";
-        break;
-    case 8:
-        return "Param";
-        break;
-    case 9:
-        return "InterfaceImpl";
-        break;
-    case 10:
-        return "MemberRef";
-        break;
-    case 11:
-        return "Constant";
-        break;
-    case 12:
-        return "CustomAttribute";
-        break;
-    case 13:
-        return "FieldMarshal";
-        break;
-    case 14:
-        return "DeclSecurity";
-        break;
-    case 15:
-        return "ClassLayout";
-        break;
-    case 16:
-        return "FieldLayout";
-        break;
-    case 17:
-        return "StandAloneSig";
-        break;
-    case 18:
-        return "EventMap";
-        break;
-    case 19:
-        return "unknown19";
-        break;
-    case 20:
-        return "Event";
-        break;
-    case 21:
-        return "PropertyMap";
-        break;
-    case 22:
-        return "unknown22";
-        break;
-    case 23:
-        return "Property";
-        break;
-    case 24:
-        return "MethodSemantics";
-        break;
-    case 25:
-        return "MethodImpl";
-        break;
-    case 26:
-        return "ModuleRef";
-        break;
-    case 27:
-        return "TypeSpec";
-        break;
-    case 28:
-        return "ImplMap";
-        break;
-    case 29:
-        return "FieldRVA";
-        break;
-    case 30:
-        return "unknown30";
-        break;
-    case 31:
-        return "unknown31";
-        break;
-    case 32:
-        return "Assembly";
-        break;
-    case 33:
-        return "AssemblyProcessor";
-        break;
-    case 34:
-        return "AssemblyOS";
-        break;
-    case 35:
-        return "AssemblyRef";
-        break;
-    case 36:
-        return "AssemblyRefProcessor";
-        break;
-    case 37:
-        return "AssemblyRefOS";
-        break;
-    case 38:
-        return "File";
-        break;
-    case 39:
-        return "ExportedType";
-        break;
-    case 40:
-        return "ManifestResource";
-        break;
-    case 41:
-        return "NestedClass";
-        break;
-    case 42:
-        return "GenericParam";
-        break;
-    case 43:
-        return "unknown43";
-        break;
-    case 44:
-        return "GenericParamConstraint";
-        break;
-    case 45:
-        return "unknown45";
-        break;
-    case 46:
-        return "unknown46";
-        break;
-    case 47:
-        return "unknown47";
-        break;
-    case 48:
-        return "unknown48";
-        break;
-    case 49:
-        return "unknown49";
-        break;
-    case 50:
-        return "unknown50";
-        break;
-    case 51:
-        return "unknown51";
-        break;
-    case 52:
-        return "unknown52";
-        break;
-    case 53:
-        return "unknown53";
-        break;
-    case 54:
-        return "unknown54";
-        break;
-    case 55:
-        return "unknown55";
-        break;
-    case 56:
-        return "unknown56";
-        break;
-    case 57:
-        return "unknown57";
-        break;
-    case 58:
-        return "unknown58";
-        break;
-    case 59:
-        return "unknown59";
-        break;
-    case 60:
-        return "unknown60";
-        break;
-    case 61:
-        return "unknown61";
-        break;
-    case 62:
-        return "unknown62 ";
-        break;
-    case 63:
-        return "unknown63";
-        break;
-    default:
-        return "unknownXXX";
+        case 0:
+            return "Module";
+            break;
+
+        case 1:
+            return "TypeRef";
+            break;
+
+        case 2:
+            return "TypeDef";
+            break;
+
+        case 3:
+            return "unknown3";
+            break;
+
+        case 4:
+            return "Field";
+            break;
+
+        case 5:
+            return "unknown5";
+            break;
+
+        case 6:
+            return "MethodDef";
+            break;
+
+        case 7:
+            return "unknown7";
+            break;
+
+        case 8:
+            return "Param";
+            break;
+
+        case 9:
+            return "InterfaceImpl";
+            break;
+
+        case 10:
+            return "MemberRef";
+            break;
+
+        case 11:
+            return "Constant";
+            break;
+
+        case 12:
+            return "CustomAttribute";
+            break;
+
+        case 13:
+            return "FieldMarshal";
+            break;
+
+        case 14:
+            return "DeclSecurity";
+            break;
+
+        case 15:
+            return "ClassLayout";
+            break;
+
+        case 16:
+            return "FieldLayout";
+            break;
+
+        case 17:
+            return "StandAloneSig";
+            break;
+
+        case 18:
+            return "EventMap";
+            break;
+
+        case 19:
+            return "unknown19";
+            break;
+
+        case 20:
+            return "Event";
+            break;
+
+        case 21:
+            return "PropertyMap";
+            break;
+
+        case 22:
+            return "unknown22";
+            break;
+
+        case 23:
+            return "Property";
+            break;
+
+        case 24:
+            return "MethodSemantics";
+            break;
+
+        case 25:
+            return "MethodImpl";
+            break;
+
+        case 26:
+            return "ModuleRef";
+            break;
+
+        case 27:
+            return "TypeSpec";
+            break;
+
+        case 28:
+            return "ImplMap";
+            break;
+
+        case 29:
+            return "FieldRVA";
+            break;
+
+        case 30:
+            return "unknown30";
+            break;
+
+        case 31:
+            return "unknown31";
+            break;
+
+        case 32:
+            return "Assembly";
+            break;
+
+        case 33:
+            return "AssemblyProcessor";
+            break;
+
+        case 34:
+            return "AssemblyOS";
+            break;
+
+        case 35:
+            return "AssemblyRef";
+            break;
+
+        case 36:
+            return "AssemblyRefProcessor";
+            break;
+
+        case 37:
+            return "AssemblyRefOS";
+            break;
+
+        case 38:
+            return "File";
+            break;
+
+        case 39:
+            return "ExportedType";
+            break;
+
+        case 40:
+            return "ManifestResource";
+            break;
+
+        case 41:
+            return "NestedClass";
+            break;
+
+        case 42:
+            return "GenericParam";
+            break;
+
+        case 43:
+            return "unknown43";
+            break;
+
+        case 44:
+            return "GenericParamConstraint";
+            break;
+
+        case 45:
+            return "unknown45";
+            break;
+
+        case 46:
+            return "unknown46";
+            break;
+
+        case 47:
+            return "unknown47";
+            break;
+
+        case 48:
+            return "unknown48";
+            break;
+
+        case 49:
+            return "unknown49";
+            break;
+
+        case 50:
+            return "unknown50";
+            break;
+
+        case 51:
+            return "unknown51";
+            break;
+
+        case 52:
+            return "unknown52";
+            break;
+
+        case 53:
+            return "unknown53";
+            break;
+
+        case 54:
+            return "unknown54";
+            break;
+
+        case 55:
+            return "unknown55";
+            break;
+
+        case 56:
+            return "unknown56";
+            break;
+
+        case 57:
+            return "unknown57";
+            break;
+
+        case 58:
+            return "unknown58";
+            break;
+
+        case 59:
+            return "unknown59";
+            break;
+
+        case 60:
+            return "unknown60";
+            break;
+
+        case 61:
+            return "unknown61";
+            break;
+
+        case 62:
+            return "unknown62 ";
+            break;
+
+        case 63:
+            return "unknown63";
+            break;
+
+        default:
+            return "unknownXXX";
     }
 }
 
 unsigned int PEFile::getCLI_MetaData_Tables_TablesNumberOfIndexes(int nTable)
 {
-//    unsigned int nOffset=0;
-//    unsigned int nOffset2=0;
-//    unsigned int nResult;
-//    unsigned long long nValid;
+    //    unsigned int nOffset=0;
+    //    unsigned int nOffset2=0;
+    //    unsigned int nResult;
+    //    unsigned long long nValid;
 
-//    nOffset=getCLI_MetaData_TablesHeaderOffset();
+    //    nOffset=getCLI_MetaData_TablesHeaderOffset();
 
-//    if((nOffset!=-1)&&(nOffset!=0))
-//    {
-//        nValid=getCLI_MetaData_Tables_Valid();
-
-
-//        if((nValid&((unsigned long long)1<<nTable))!=0)
-//        {
-//            for(int i=0;i<nTable;i++)
-//            {
-//                if((nValid&((unsigned long long)1<<i))!=0)
-//                {
-//                    nOffset2+=4;
-//                }
-//            }
-//            nResult=readDword(nOffset+nOffset2+24);;
-//            return nResult;
-//        }
-
-//    }
+    //    if((nOffset!=-1)&&(nOffset!=0))
+    //    {
+    //        nValid=getCLI_MetaData_Tables_Valid();
 
 
-//    return 0;
+    //        if((nValid&((unsigned long long)1<<nTable))!=0)
+    //        {
+    //            for(int i=0;i<nTable;i++)
+    //            {
+    //                if((nValid&((unsigned long long)1<<i))!=0)
+    //                {
+    //                    nOffset2+=4;
+    //                }
+    //            }
+    //            nResult=readDword(nOffset+nOffset2+24);;
+    //            return nResult;
+    //        }
+
+    //    }
+
+
+    //    return 0;
 
     if(initCLI())
     {
@@ -6862,6 +7186,7 @@ unsigned int PEFile::getCLI_MetaData_Tables_TablesNumberOfIndexes(int nTable)
         {
             return CLI_Section.CLI_MetaData_Tables_TablesNumberOfIndexes[nTable];
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nTable));
     }
 
@@ -6876,141 +7201,142 @@ unsigned int PEFile::getCLI_MetaData_Tables_SizeOfHeader(int nTable)
         {
             return CLI_Section.CLI_MetaData_Tables_TablesSizes[nTable];
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nTable));
     }
 
     return 0;
-//    unsigned int nResult=0;
-//    int nStringIndexSize=2;
-//    int nGUIDIndexSize=2;
-//    int nBLOBIndexSize=2;
-//    int nResolutionScope=2;
-//    int nTypeDefOrRef=2;
-//    int nField=2;
-//    int nMethodDef=2;
-//    int nParamList=2;
+    //    unsigned int nResult=0;
+    //    int nStringIndexSize=2;
+    //    int nGUIDIndexSize=2;
+    //    int nBLOBIndexSize=2;
+    //    int nResolutionScope=2;
+    //    int nTypeDefOrRef=2;
+    //    int nField=2;
+    //    int nMethodDef=2;
+    //    int nParamList=2;
 
-//    unsigned char cHeapOffsetSizes=0;
+    //    unsigned char cHeapOffsetSizes=0;
 
-//    cHeapOffsetSizes=getCLI_MetaData_Tables_HeapOffsetSizes();
+    //    cHeapOffsetSizes=getCLI_MetaData_Tables_HeapOffsetSizes();
 
-//    if(cHeapOffsetSizes&0x01)
-//    {
-//        nStringIndexSize=4;
-//    }
+    //    if(cHeapOffsetSizes&0x01)
+    //    {
+    //        nStringIndexSize=4;
+    //    }
 
-//    if(cHeapOffsetSizes&0x02)
-//    {
-//        nGUIDIndexSize=4;
-//    }
+    //    if(cHeapOffsetSizes&0x02)
+    //    {
+    //        nGUIDIndexSize=4;
+    //    }
 
-//    if(cHeapOffsetSizes&0x04)
-//    {
-//        nBLOBIndexSize=4;
-//    }
+    //    if(cHeapOffsetSizes&0x04)
+    //    {
+    //        nBLOBIndexSize=4;
+    //    }
 
-//    if(getCLI_MetaData_Tables_NumberOfRows(0)>0x3FFF)
-//    {
-//        nResolutionScope=4;
-//    }
-//    if(getCLI_MetaData_Tables_NumberOfRows(26)>0x3FFF)
-//    {
-//        nResolutionScope=4;
-//    }
-//    if(getCLI_MetaData_Tables_NumberOfRows(35)>0x3FFF)
-//    {
-//        nResolutionScope=4;
-//    }
-//    if(getCLI_MetaData_Tables_NumberOfRows(1)>0x3FFF)
-//    {
-//        nResolutionScope=4;
-//    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(0)>0x3FFF)
+    //    {
+    //        nResolutionScope=4;
+    //    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(26)>0x3FFF)
+    //    {
+    //        nResolutionScope=4;
+    //    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(35)>0x3FFF)
+    //    {
+    //        nResolutionScope=4;
+    //    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(1)>0x3FFF)
+    //    {
+    //        nResolutionScope=4;
+    //    }
 
-//    if(getCLI_MetaData_Tables_NumberOfRows(1)>0x3FFF)
-//    {
-//        nTypeDefOrRef=4;
-//    }
-//    if(getCLI_MetaData_Tables_NumberOfRows(2)>0x3FFF)
-//    {
-//        nTypeDefOrRef=4;
-//    }
-//    if(getCLI_MetaData_Tables_NumberOfRows(27)>0x3FFF)
-//    {
-//        nTypeDefOrRef=4;
-//    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(1)>0x3FFF)
+    //    {
+    //        nTypeDefOrRef=4;
+    //    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(2)>0x3FFF)
+    //    {
+    //        nTypeDefOrRef=4;
+    //    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(27)>0x3FFF)
+    //    {
+    //        nTypeDefOrRef=4;
+    //    }
 
 
-//    if(getCLI_MetaData_Tables_NumberOfRows(4)>0xFFFF)
-//    {
-//        nField=4;
-//    }
-//    if(getCLI_MetaData_Tables_NumberOfRows(6)>0xFFFF)
-//    {
-//        nMethodDef=4;
-//    }
-//    if(getCLI_MetaData_Tables_NumberOfRows(8)>0xFFFF)
-//    {
-//        nParamList=4;
-//    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(4)>0xFFFF)
+    //    {
+    //        nField=4;
+    //    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(6)>0xFFFF)
+    //    {
+    //        nMethodDef=4;
+    //    }
+    //    if(getCLI_MetaData_Tables_NumberOfRows(8)>0xFFFF)
+    //    {
+    //        nParamList=4;
+    //    }
 
-//    switch(nTable)
-//    {
-//    case 0:
-//        nResult+=2;
-//        nResult+=nStringIndexSize;
-//        nResult+=nGUIDIndexSize;
-//        nResult+=nGUIDIndexSize;
-//        nResult+=nGUIDIndexSize;
-//        break;
-//    case 1:
-//        nResult+=nResolutionScope;
-//        nResult+=nStringIndexSize;
-//        nResult+=nStringIndexSize;
-//        break;
-//    case 2:
-//        nResult+=4;
-//        nResult+=nStringIndexSize;
-//        nResult+=nStringIndexSize;
-//        nResult+=nTypeDefOrRef;
-//        nResult+=nField;
-//        nResult+=nMethodDef;
-//        break;
-//    case 3:
-//        nResult=0;
-//    case 4:
-//        nResult+=2;
-//        nResult+=nStringIndexSize;
-//        nResult+=nBLOBIndexSize;
-//        break;
-//    case 5:
-//        nResult=0;
-//        break;
-//    case 6:
-//        nResult+=4;
-//        nResult+=2;
-//        nResult+=2;
-//        nResult+=nStringIndexSize;
-//        nResult+=nBLOBIndexSize;
-//        nResult+=nParamList;
-//        break;
+    //    switch(nTable)
+    //    {
+    //    case 0:
+    //        nResult+=2;
+    //        nResult+=nStringIndexSize;
+    //        nResult+=nGUIDIndexSize;
+    //        nResult+=nGUIDIndexSize;
+    //        nResult+=nGUIDIndexSize;
+    //        break;
+    //    case 1:
+    //        nResult+=nResolutionScope;
+    //        nResult+=nStringIndexSize;
+    //        nResult+=nStringIndexSize;
+    //        break;
+    //    case 2:
+    //        nResult+=4;
+    //        nResult+=nStringIndexSize;
+    //        nResult+=nStringIndexSize;
+    //        nResult+=nTypeDefOrRef;
+    //        nResult+=nField;
+    //        nResult+=nMethodDef;
+    //        break;
+    //    case 3:
+    //        nResult=0;
+    //    case 4:
+    //        nResult+=2;
+    //        nResult+=nStringIndexSize;
+    //        nResult+=nBLOBIndexSize;
+    //        break;
+    //    case 5:
+    //        nResult=0;
+    //        break;
+    //    case 6:
+    //        nResult+=4;
+    //        nResult+=2;
+    //        nResult+=2;
+    //        nResult+=nStringIndexSize;
+    //        nResult+=nBLOBIndexSize;
+    //        nResult+=nParamList;
+    //        break;
 
-//    default:
-//        nResult=0;
-//    }
+    //    default:
+    //        nResult=0;
+    //    }
 
-//    return nResult;
+    //    return nResult;
 }
 
 unsigned int PEFile::getCLI_MetaData_Tables_HeadersOffset(int nTable)
 {
-//    unsigned int nOffset=getCLI_MetaData_TablesHeaderOffset()+24+4*getCLI_MetaData_Tables_Valid_NumberOfRows();
+    //    unsigned int nOffset=getCLI_MetaData_TablesHeaderOffset()+24+4*getCLI_MetaData_Tables_Valid_NumberOfRows();
 
-//    for(int i=0;i<nTable;i++)
-//    {
-//        nOffset+=getCLI_MetaData_Tables_TablesNumberOfIndexes(i)*getCLI_MetaData_Tables_SizeOfHeader(i);
-//    }
+    //    for(int i=0;i<nTable;i++)
+    //    {
+    //        nOffset+=getCLI_MetaData_Tables_TablesNumberOfIndexes(i)*getCLI_MetaData_Tables_SizeOfHeader(i);
+    //    }
 
-//    return nOffset;
+    //    return nOffset;
 
     if(initCLI())
     {
@@ -7018,6 +7344,7 @@ unsigned int PEFile::getCLI_MetaData_Tables_HeadersOffset(int nTable)
         {
             return CLI_Section.CLI_MetaData_Tables_TablesOffsets[nTable];
         }
+
         emit appendError(QString("Value out of range: n=%1").arg(nTable));
     }
 
@@ -7052,38 +7379,38 @@ unsigned int PEFile::getCLIEntryPoint()
     }
 
     return 0;
-//    unsigned int nOffset=0;
-//    unsigned int nEntryPoint=0;
-//    unsigned int nFlags=0;
+    //    unsigned int nOffset=0;
+    //    unsigned int nEntryPoint=0;
+    //    unsigned int nFlags=0;
 
-//    nOffset=getCLIHeaderOffset();
+    //    nOffset=getCLIHeaderOffset();
 
-//    if((nOffset!=-1)&&(nOffset!=0))
-//    {
-//        nEntryPoint=readDword(nOffset+offsetof(IMAGE_COR20_HEADER,EntryPointRVA));
-//        nFlags=readDword(nOffset+offsetof(IMAGE_COR20_HEADER,Flags));
+    //    if((nOffset!=-1)&&(nOffset!=0))
+    //    {
+    //        nEntryPoint=readDword(nOffset+offsetof(IMAGE_COR20_HEADER,EntryPointRVA));
+    //        nFlags=readDword(nOffset+offsetof(IMAGE_COR20_HEADER,Flags));
 
-//        if(!(nFlags&COMIMAGE_FLAGS_NATIVE_ENTRYPOINT))
-//        {
-////            unsigned int nNumberOfSreams=0;
-////            unsigned int nMetaDataOffset=0;
-////            IMAGE_DATA_DIRECTORY idd;
-////            getCLI_MetaData(&idd);
-////            nMetaDataOffset=RVAToOffset(idd.VirtualAddress);
-////            nNumberOfSreams=readWord(nMetaDataOffset+18+readDword(nMetaDataOffset+12));
+    //        if(!(nFlags&COMIMAGE_FLAGS_NATIVE_ENTRYPOINT))
+    //        {
+    ////            unsigned int nNumberOfSreams=0;
+    ////            unsigned int nMetaDataOffset=0;
+    ////            IMAGE_DATA_DIRECTORY idd;
+    ////            getCLI_MetaData(&idd);
+    ////            nMetaDataOffset=RVAToOffset(idd.VirtualAddress);
+    ////            nNumberOfSreams=readWord(nMetaDataOffset+18+readDword(nMetaDataOffset+12));
 
 
-//            if(((nEntryPoint&0xFF000000)>>24)==6)
-//            {
-//                nEntryPoint=getCLI_MetaData_Tables_MethodDef_RVA(nEntryPoint&0xFFFFFF);
-//            }
-//            else
-//            {
-//                nEntryPoint=0;
-//            }
+    //            if(((nEntryPoint&0xFF000000)>>24)==6)
+    //            {
+    //                nEntryPoint=getCLI_MetaData_Tables_MethodDef_RVA(nEntryPoint&0xFFFFFF);
+    //            }
+    //            else
+    //            {
+    //                nEntryPoint=0;
+    //            }
 
-//        }
-//    }
+    //        }
+    //    }
 
     //    return nEntryPoint;
 }
@@ -7201,7 +7528,7 @@ QList<QString> PEFile::getCLI_MetaData_StringsAsList()
     char *pOffset=baStrings.data();
     int nSize=baStrings.size();
 
-    for(int i=1;i<nSize;i++)
+    for(int i=1; i<nSize; i++)
     {
         pOffset++;
         sTemp=pOffset;
@@ -7226,7 +7553,8 @@ QList<QString> PEFile::getCLI_MetaData_USAsList()
     int nSize=baStrings.size();
 
     pOffset++;
-    for(int i=1;i<nSize;i++)
+
+    for(int i=1; i<nSize; i++)
     {
 
         nStringSize=(*((unsigned char *)pOffset));
@@ -7235,6 +7563,7 @@ QList<QString> PEFile::getCLI_MetaData_USAsList()
         {
             nStringSize=0;
         }
+
         pOffset++;
         sTemp=QString::fromUtf16((ushort *)pOffset,nStringSize/2);
         listResult.append(sTemp);
@@ -7251,7 +7580,7 @@ bool PEFile::isCLI_MetaData_StringPresent(QString sString)
 {
     QList<QString> list=getCLI_MetaData_StringsAsList();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i)==sString)
         {
@@ -7266,7 +7595,7 @@ bool PEFile::isCLI_MetaData_UnicodeStringPresent(QString sString)
 {
     QList<QString> list=getCLI_MetaData_USAsList();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i)==sString)
         {
@@ -7303,7 +7632,7 @@ QByteArray PEFile::getRelocsAsXML()
 
     if(nRelocsOffset)
     {
-//        resourceToXML(nResourceOffset,nResourceOffset,&xml,0);
+        //        resourceToXML(nResourceOffset,nResourceOffset,&xml,0);
         while(true)
         {
             nRVA=readDword(nRelocsOffset);
@@ -7318,7 +7647,7 @@ QByteArray PEFile::getRelocsAsXML()
             xml.writeAttribute("Address",QString::number(nRVA));
             xml.writeAttribute("NumberOfRelocs",QString::number((nSize-8)/2));
 
-            for(int i=0;i<(nSize-8)/2;i++)
+            for(int i=0; i<(nSize-8)/2; i++)
             {
                 sTypeOffset=readWord(nRelocsOffset+8+i*2);
 
@@ -7334,9 +7663,9 @@ QByteArray PEFile::getRelocsAsXML()
         }
 
 
-//        xml.writeAttribute("NumberOfRelocs",QString::number(ird.Characteristics));
-//        pXml->writeAttribute("MajorVersion",QString::number(ird.MajorVersion));
-//        pXml->writeAttribute("MinorVersion",QString::number(ird.MinorVersion));
+        //        xml.writeAttribute("NumberOfRelocs",QString::number(ird.Characteristics));
+        //        pXml->writeAttribute("MajorVersion",QString::number(ird.MajorVersion));
+        //        pXml->writeAttribute("MinorVersion",QString::number(ird.MinorVersion));
 
 
 
@@ -7377,7 +7706,7 @@ QList<unsigned int> PEFile::getRelocsAsList()
                 }
 
 
-                for(int i=0;i<(nSize-8)/2;i++)
+                for(int i=0; i<(nSize-8)/2; i++)
                 {
                     sTypeOffset=readWord(nRelocsOffset+8+i*2);
 
@@ -7395,21 +7724,21 @@ QList<unsigned int> PEFile::getRelocsAsList()
 
 bool PEFile::addRelocsSectionFromList(QList<unsigned int> *pList, QString sSectionName)
 {
-    IMAGE_SECTION_HEADER ish={0};
+    IMAGE_SECTION_HEADER ish= {0};
 
     QByteArray baSection;
 
     IMAGE_BASE_RELOCATION *pIBR=(IMAGE_BASE_RELOCATION *)baSection.data();
-    IMAGE_BASE_RELOCATION IBR={0};
+    IMAGE_BASE_RELOCATION IBR= {0};
 
 
 
-//    QList<unsigned int> listPageAddresses;
-//    QList<unsigned int> listPages;
+    //    QList<unsigned int> listPageAddresses;
+    //    QList<unsigned int> listPages;
     unsigned int nPageAddress=0;
     unsigned int nCount=0;
 
-    for(int i=0;i<pList->count();i++)
+    for(int i=0; i<pList->count(); i++)
     {
         if(0!=ALIGN_UP(pList->at(i),0x1000))
         {
@@ -7430,6 +7759,7 @@ unsigned int PEFile::getNumberOfRelocs()
     unsigned int nResult=0;
     unsigned int nAddress;
     unsigned int nSize;
+
     if(!isRelocsPresent())
     {
         emit appendError("Relocs is not present");
@@ -7447,8 +7777,8 @@ unsigned int PEFile::getNumberOfRelocs()
 
             if(nAddress&&nSize)
             {
-                 nResult+=(nSize-sizeof(IMAGE_BASE_RELOCATION))/2;
-                 nOffset+=nSize;
+                nResult+=(nSize-sizeof(IMAGE_BASE_RELOCATION))/2;
+                nOffset+=nSize;
             }
 
         }
@@ -7456,6 +7786,7 @@ unsigned int PEFile::getNumberOfRelocs()
 
         return nResult;
     }
+
     emit appendError("Relocs is not present");
     return 0;
 }
@@ -7467,6 +7798,7 @@ unsigned int PEFile::getNumberOfRelocsPages()
     unsigned int nTemp;
     unsigned int nAddress;
     unsigned int nSize;
+
     if(!isRelocsPresent())
     {
         emit appendError("Relocs is not present");
@@ -7491,6 +7823,7 @@ unsigned int PEFile::getNumberOfRelocsPages()
 
         return nResult-1;
     }
+
     emit appendError("Relocs is not present");
     return 0;
 }
@@ -7505,6 +7838,7 @@ unsigned int PEFile::getRelocsTableOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendError("Relocs is not present");
     return 0;
 }
@@ -7516,6 +7850,7 @@ int PEFile::getRelocsSection()
         emit appendWarning("Relocs is not present");
         return 0;
     }
+
     IMAGE_DATA_DIRECTORY idd;
     getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_BASERELOC,&idd);
 
@@ -7529,6 +7864,7 @@ unsigned int PEFile::getTLSSection()
         emit appendWarning("TLS is not present");
         return 0;
     }
+
     IMAGE_DATA_DIRECTORY idd;
     getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_TLS,&idd);
 
@@ -7545,16 +7881,17 @@ unsigned int PEFile::getTLSTableOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendError("TLS is not present");
     return 0;
 }
 
 unsigned int PEFile::getTLS_StartAddressOfRawData()
 {
-//    if(isPEPlus())
-//    {
-//        return (unsigned int)readQword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.ImageBase));
-//    }
+    //    if(isPEPlus())
+    //    {
+    //        return (unsigned int)readQword(getNtHeadersOffset()+offsetof(IMAGE_NT_HEADERS64,OptionalHeader.ImageBase));
+    //    }
     return readDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY32,StartAddressOfRawData));
 }
 
@@ -7599,6 +7936,7 @@ unsigned int PEFile::getTLS_SizeOfZeroFill()
     {
         return (unsigned int)readDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY64,SizeOfZeroFill));
     }
+
     return readDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY32,SizeOfZeroFill));
 }
 
@@ -7608,6 +7946,7 @@ unsigned int PEFile::getTLS_Characteristics()
     {
         return (unsigned int)readDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY64,Characteristics));
     }
+
     return readDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY32,Characteristics));
 }
 
@@ -7658,6 +7997,7 @@ void PEFile::setTLS_SizeOfZeroFill(unsigned int nValue)
         writeDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY64,SizeOfZeroFill),nValue);
         return;
     }
+
     writeDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY32,SizeOfZeroFill),nValue);
 }
 
@@ -7668,6 +8008,7 @@ void PEFile::setTLS_Characteristics(unsigned int nValue)
         writeDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY64,Characteristics),nValue);
         return;
     }
+
     writeDword(getTLSTableOffset()+offsetof(IMAGE_TLS_DIRECTORY32,Characteristics),nValue);
 }
 
@@ -7681,6 +8022,7 @@ unsigned int PEFile::getLoadConfigTableOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendError("Load Config is not present");
     return 0;
 }
@@ -7691,6 +8033,7 @@ unsigned int PEFile::getLoadConfig_Size()
     {
         return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,Size));
     }
+
     return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,Size));
 }
 
@@ -7700,6 +8043,7 @@ unsigned int PEFile::getLoadConfig_TimeDateStamp()
     {
         return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,TimeDateStamp));
     }
+
     return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,TimeDateStamp));
 }
 
@@ -7709,6 +8053,7 @@ unsigned short PEFile::getLoadConfig_MajorVersion()
     {
         return readWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,MajorVersion));
     }
+
     return readWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,MajorVersion));
 }
 
@@ -7718,6 +8063,7 @@ unsigned short PEFile::getLoadConfig_MinorVersion()
     {
         return readWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,MinorVersion));
     }
+
     return readWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,MinorVersion));
 }
 
@@ -7727,6 +8073,7 @@ unsigned int PEFile::getLoadConfig_GlobalFlagsClear()
     {
         return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,GlobalFlagsClear));
     }
+
     return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,GlobalFlagsClear));
 }
 
@@ -7736,6 +8083,7 @@ unsigned int PEFile::getLoadConfig_GlobalFlagsSet()
     {
         return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,GlobalFlagsSet));
     }
+
     return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,GlobalFlagsSet));
 }
 
@@ -7745,6 +8093,7 @@ unsigned int PEFile::getLoadConfig_CriticalSectionDefaultTimeout()
     {
         return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,CriticalSectionDefaultTimeout));
     }
+
     return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,CriticalSectionDefaultTimeout));
 }
 
@@ -7755,6 +8104,7 @@ void PEFile::setLoadConfig_Size(unsigned int nValue)
         writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,Size),nValue);
         return;
     }
+
     writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,Size),nValue);
 }
 
@@ -7765,6 +8115,7 @@ void PEFile::setLoadConfig_TimeDateStamp(unsigned int nValue)
         writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,TimeDateStamp),nValue);
         return;
     }
+
     writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,TimeDateStamp),nValue);
 }
 
@@ -7775,6 +8126,7 @@ void PEFile::setLoadConfig_MajorVersion(unsigned short sValue)
         writeWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,MajorVersion),sValue);
         return;
     }
+
     writeWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,MajorVersion),sValue);
 }
 
@@ -7785,6 +8137,7 @@ void PEFile::setLoadConfig_MinorVersion(unsigned short sValue)
         writeWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,MinorVersion),sValue);
         return;
     }
+
     writeWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,MinorVersion),sValue);
 }
 
@@ -7795,6 +8148,7 @@ void PEFile::setLoadConfig_GlobalFlagsClear(unsigned int nValue)
         writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,GlobalFlagsClear),nValue);
         return;
     }
+
     writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,GlobalFlagsClear),nValue);
 }
 
@@ -7805,6 +8159,7 @@ void PEFile::setLoadConfig_GlobalFlagsSet(unsigned int nValue)
         writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,GlobalFlagsSet),nValue);
         return;
     }
+
     writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,GlobalFlagsSet),nValue);
 }
 
@@ -7815,6 +8170,7 @@ void PEFile::setLoadConfig_CriticalSectionDefaultTimeout(unsigned int nValue)
         writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,CriticalSectionDefaultTimeout),nValue);
         return;
     }
+
     writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,CriticalSectionDefaultTimeout),nValue);
 }
 
@@ -7944,6 +8300,7 @@ unsigned int PEFile::getLoadConfig_ProcessHeapFlags()
     {
         return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,ProcessHeapFlags));
     }
+
     return readDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,ProcessHeapFlags));
 }
 
@@ -7953,6 +8310,7 @@ unsigned short PEFile::getLoadConfig_CSDVersion()
     {
         return readWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,CSDVersion));
     }
+
     return readWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,CSDVersion));
 }
 
@@ -7962,6 +8320,7 @@ unsigned short PEFile::getLoadConfig_Reserved1()
     {
         return readWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,Reserved1));
     }
+
     return readWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,Reserved1));
 }
 
@@ -7972,6 +8331,7 @@ void PEFile::setLoadConfig_ProcessHeapFlags(unsigned int nValue)
         writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,ProcessHeapFlags),nValue);
         return;
     }
+
     writeDword(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,ProcessHeapFlags),nValue);
 }
 
@@ -7982,6 +8342,7 @@ void PEFile::setLoadConfig_CSDVersion(unsigned short sValue)
         writeWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,CSDVersion),sValue);
         return;
     }
+
     writeWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,CSDVersion),sValue);
 }
 
@@ -7992,6 +8353,7 @@ void PEFile::setLoadConfig_Reserved1(unsigned short sValue)
         writeWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY64,Reserved1),sValue);
         return;
     }
+
     writeWord(getLoadConfigTableOffset()+offsetof(IMAGE_LOAD_CONFIG_DIRECTORY32,Reserved1),sValue);
 }
 
@@ -8085,6 +8447,7 @@ unsigned int PEFile::getBoundImportTableOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendError("Bound Import is not present");
     return 0;
 }
@@ -8127,6 +8490,7 @@ unsigned int PEFile::getBoundImport_TimeDateStamp(unsigned int nImport)
 
         return readDword(nOffset+offsetof(IMAGE_BOUND_IMPORT_DESCRIPTOR,TimeDateStamp));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
 
     return 0;
@@ -8143,6 +8507,7 @@ unsigned short PEFile::getBoundImport_OffsetModuleName(unsigned int nImport)
 
         return readWord(nOffset+offsetof(IMAGE_BOUND_IMPORT_DESCRIPTOR,OffsetModuleName));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
 
     return 0;
@@ -8159,6 +8524,7 @@ unsigned short PEFile::getBoundImport_NumberOfModuleForwarderRefs(unsigned int n
 
         return readWord(nOffset+offsetof(IMAGE_BOUND_IMPORT_DESCRIPTOR,NumberOfModuleForwarderRefs));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
 
     return 0;
@@ -8175,6 +8541,7 @@ QString PEFile::getBoundImport_ModuleNameAsString(unsigned int nImport)
 
         return getString(getBoundImportTableOffset()+readWord(nOffset+offsetof(IMAGE_BOUND_IMPORT_DESCRIPTOR,OffsetModuleName)));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nImport));
 
     return 0;
@@ -8190,6 +8557,7 @@ unsigned int PEFile::getDebugTableOffset()
     {
         return RVAToOffset(idd.VirtualAddress);
     }
+
     emit appendError("Debug directory is not present");
     return 0;
 }
@@ -8204,6 +8572,7 @@ unsigned int PEFile::getDebugTableSize()
     {
         return idd.Size;
     }
+
     emit appendError("Debug directory is not present");
     return 0;
 }
@@ -8233,6 +8602,7 @@ unsigned int PEFile::getDebug_Characteristics(unsigned int nDebug)
 
         return readDword(nOffset+offsetof(IMAGE_DEBUG_DIRECTORY,Characteristics));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nDebug));
 
     return 0;
@@ -8249,6 +8619,7 @@ unsigned int PEFile::getDebug_TimeDateStamp(unsigned int nDebug)
 
         return readDword(nOffset+offsetof(IMAGE_DEBUG_DIRECTORY,TimeDateStamp));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nDebug));
 
     return 0;
@@ -8265,6 +8636,7 @@ unsigned short PEFile::getDebug_MajorVersion(unsigned int nDebug)
 
         return readWord(nOffset+offsetof(IMAGE_DEBUG_DIRECTORY,MajorVersion));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nDebug));
 
     return 0;
@@ -8281,6 +8653,7 @@ unsigned short PEFile::getDebug_MinorVersion(unsigned int nDebug)
 
         return readWord(nOffset+offsetof(IMAGE_DEBUG_DIRECTORY,MinorVersion));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nDebug));
 
     return 0;
@@ -8297,6 +8670,7 @@ unsigned int PEFile::getDebug_Type(unsigned int nDebug)
 
         return readDword(nOffset+offsetof(IMAGE_DEBUG_DIRECTORY,Type));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nDebug));
 
     return 0;
@@ -8313,6 +8687,7 @@ unsigned int PEFile::getDebug_SizeOfData(unsigned int nDebug)
 
         return readDword(nOffset+offsetof(IMAGE_DEBUG_DIRECTORY,SizeOfData));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nDebug));
 
     return 0;
@@ -8329,6 +8704,7 @@ unsigned int PEFile::getDebug_AddressOfRawData(unsigned int nDebug)
 
         return readDword(nOffset+offsetof(IMAGE_DEBUG_DIRECTORY,AddressOfRawData));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nDebug));
 
     return 0;
@@ -8345,6 +8721,7 @@ unsigned int PEFile::getDebug_PointerToRawData(unsigned int nDebug)
 
         return readDword(nOffset+offsetof(IMAGE_DEBUG_DIRECTORY,PointerToRawData));
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nDebug));
 
     return 0;

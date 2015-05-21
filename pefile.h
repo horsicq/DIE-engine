@@ -30,70 +30,70 @@ private:
         unsigned int nNewSize;
     };
 
-    #define CLI_METADATA_Module                 0x0000000000000001 //0
-    #define CLI_METADATA_TypeRef                0x0000000000000002 //1
-    #define CLI_METADATA_TypeDef                0x0000000000000004 //2
-    #define CLI_METADATA_unknown3               0x0000000000000008 //3
-    #define CLI_METADATA_Field                  0x0000000000000010 //4
-    #define CLI_METADATA_unknown5               0x0000000000000020 //5
-    #define CLI_METADATA_MethodDef              0x0000000000000040 //6
-    #define CLI_METADATA_unknown7               0x0000000000000080 //7
-    #define CLI_METADATA_Param                  0x0000000000000100 //8
-    #define CLI_METADATA_InterfaceImpl          0x0000000000000200 //9
-    #define CLI_METADATA_MemberRef              0x0000000000000400 //10
-    #define CLI_METADATA_Constant               0x0000000000000800 //11
-    #define CLI_METADATA_CustomAttribute        0x0000000000001000 //12
-    #define CLI_METADATA_FieldMarshal           0x0000000000002000 //13
-    #define CLI_METADATA_DeclSecurity           0x0000000000004000 //14
-    #define CLI_METADATA_ClassLayout            0x0000000000008000 //15
-    #define CLI_METADATA_FieldLayout            0x0000000000010000 //16
-    #define CLI_METADATA_StandAloneSig          0x0000000000020000 //17
-    #define CLI_METADATA_EventMap               0x0000000000040000 //18
-    #define CLI_METADATA_unknown19              0x0000000000080000 //19
-    #define CLI_METADATA_Event                  0x0000000000100000 //20
-    #define CLI_METADATA_PropertyMap            0x0000000000200000 //21
-    #define CLI_METADATA_unknown22              0x0000000000400000 //22
-    #define CLI_METADATA_Property               0x0000000000800000 //23
-    #define CLI_METADATA_MethodSemantics        0x0000000001000000 //24
-    #define CLI_METADATA_MethodImpl             0x0000000002000000 //25
-    #define CLI_METADATA_ModuleRef              0x0000000004000000 //26
-    #define CLI_METADATA_TypeSpec               0x0000000008000000 //27
-    #define CLI_METADATA_ImplMap                0x0000000010000000 //28
-    #define CLI_METADATA_FieldRVA               0x0000000020000000 //29
-    #define CLI_METADATA_unknown30              0x0000000040000000 //30
-    #define CLI_METADATA_unknown31              0x0000000080000000 //31
-    #define CLI_METADATA_Assembly               0x0000000100000000 //32
-    #define CLI_METADATA_AssemblyProcessor      0x0000000200000000 //33
-    #define CLI_METADATA_AssemblyOS             0x0000000400000000 //34
-    #define CLI_METADATA_AssemblyRef            0x0000000800000000 //35
-    #define CLI_METADATA_AssemblyRefProcessor   0x0000001000000000 //36
-    #define CLI_METADATA_AssemblyRefOS          0x0000002000000000 //37
-    #define CLI_METADATA_File                   0x0000004000000000 //38
-    #define CLI_METADATA_ExportedType           0x0000008000000000 //39
-    #define CLI_METADATA_ManifestResource       0x0000010000000000 //40
-    #define CLI_METADATA_NestedClass            0x0000020000000000 //41
-    #define CLI_METADATA_GenericParam           0x0000040000000000 //42
-    #define CLI_METADATA_unknown43              0x0000080000000000 //43
-    #define CLI_METADATA_GenericParamConstraint 0x0000100000000000 //44
-    #define CLI_METADATA_unknown45              0x0000200000000000 //45
-    #define CLI_METADATA_unknown46              0x0000400000000000 //46
-    #define CLI_METADATA_unknown47              0x0000800000000000 //47
-    #define CLI_METADATA_unknown48              0x0001000000000000 //48
-    #define CLI_METADATA_unknown49              0x0002000000000000 //49
-    #define CLI_METADATA_unknown50              0x0004000000000000 //50
-    #define CLI_METADATA_unknown51              0x0008000000000000 //51
-    #define CLI_METADATA_unknown52              0x0000000000000000 //52
-    #define CLI_METADATA_unknown53              0x0000000000000000 //53
-    #define CLI_METADATA_unknown54              0x0000000000000000 //54
-    #define CLI_METADATA_unknown55              0x0000000000000000 //55
-    #define CLI_METADATA_unknown56              0x0000000000000000 //56
-    #define CLI_METADATA_unknown57              0x0000000000000000 //57
-    #define CLI_METADATA_unknown58              0x0000000000000000 //58
-    #define CLI_METADATA_unknown59              0x0000000000000000 //59
-    #define CLI_METADATA_unknown60              0x0000000000000000 //60
-    #define CLI_METADATA_unknown61              0x0000000000000000 //61
-    #define CLI_METADATA_unknown62              0x0000000000000000 //62
-    #define CLI_METADATA_unknown63              0x0000000000000000 //63
+#define CLI_METADATA_Module                 0x0000000000000001 //0
+#define CLI_METADATA_TypeRef                0x0000000000000002 //1
+#define CLI_METADATA_TypeDef                0x0000000000000004 //2
+#define CLI_METADATA_unknown3               0x0000000000000008 //3
+#define CLI_METADATA_Field                  0x0000000000000010 //4
+#define CLI_METADATA_unknown5               0x0000000000000020 //5
+#define CLI_METADATA_MethodDef              0x0000000000000040 //6
+#define CLI_METADATA_unknown7               0x0000000000000080 //7
+#define CLI_METADATA_Param                  0x0000000000000100 //8
+#define CLI_METADATA_InterfaceImpl          0x0000000000000200 //9
+#define CLI_METADATA_MemberRef              0x0000000000000400 //10
+#define CLI_METADATA_Constant               0x0000000000000800 //11
+#define CLI_METADATA_CustomAttribute        0x0000000000001000 //12
+#define CLI_METADATA_FieldMarshal           0x0000000000002000 //13
+#define CLI_METADATA_DeclSecurity           0x0000000000004000 //14
+#define CLI_METADATA_ClassLayout            0x0000000000008000 //15
+#define CLI_METADATA_FieldLayout            0x0000000000010000 //16
+#define CLI_METADATA_StandAloneSig          0x0000000000020000 //17
+#define CLI_METADATA_EventMap               0x0000000000040000 //18
+#define CLI_METADATA_unknown19              0x0000000000080000 //19
+#define CLI_METADATA_Event                  0x0000000000100000 //20
+#define CLI_METADATA_PropertyMap            0x0000000000200000 //21
+#define CLI_METADATA_unknown22              0x0000000000400000 //22
+#define CLI_METADATA_Property               0x0000000000800000 //23
+#define CLI_METADATA_MethodSemantics        0x0000000001000000 //24
+#define CLI_METADATA_MethodImpl             0x0000000002000000 //25
+#define CLI_METADATA_ModuleRef              0x0000000004000000 //26
+#define CLI_METADATA_TypeSpec               0x0000000008000000 //27
+#define CLI_METADATA_ImplMap                0x0000000010000000 //28
+#define CLI_METADATA_FieldRVA               0x0000000020000000 //29
+#define CLI_METADATA_unknown30              0x0000000040000000 //30
+#define CLI_METADATA_unknown31              0x0000000080000000 //31
+#define CLI_METADATA_Assembly               0x0000000100000000 //32
+#define CLI_METADATA_AssemblyProcessor      0x0000000200000000 //33
+#define CLI_METADATA_AssemblyOS             0x0000000400000000 //34
+#define CLI_METADATA_AssemblyRef            0x0000000800000000 //35
+#define CLI_METADATA_AssemblyRefProcessor   0x0000001000000000 //36
+#define CLI_METADATA_AssemblyRefOS          0x0000002000000000 //37
+#define CLI_METADATA_File                   0x0000004000000000 //38
+#define CLI_METADATA_ExportedType           0x0000008000000000 //39
+#define CLI_METADATA_ManifestResource       0x0000010000000000 //40
+#define CLI_METADATA_NestedClass            0x0000020000000000 //41
+#define CLI_METADATA_GenericParam           0x0000040000000000 //42
+#define CLI_METADATA_unknown43              0x0000080000000000 //43
+#define CLI_METADATA_GenericParamConstraint 0x0000100000000000 //44
+#define CLI_METADATA_unknown45              0x0000200000000000 //45
+#define CLI_METADATA_unknown46              0x0000400000000000 //46
+#define CLI_METADATA_unknown47              0x0000800000000000 //47
+#define CLI_METADATA_unknown48              0x0001000000000000 //48
+#define CLI_METADATA_unknown49              0x0002000000000000 //49
+#define CLI_METADATA_unknown50              0x0004000000000000 //50
+#define CLI_METADATA_unknown51              0x0008000000000000 //51
+#define CLI_METADATA_unknown52              0x0000000000000000 //52
+#define CLI_METADATA_unknown53              0x0000000000000000 //53
+#define CLI_METADATA_unknown54              0x0000000000000000 //54
+#define CLI_METADATA_unknown55              0x0000000000000000 //55
+#define CLI_METADATA_unknown56              0x0000000000000000 //56
+#define CLI_METADATA_unknown57              0x0000000000000000 //57
+#define CLI_METADATA_unknown58              0x0000000000000000 //58
+#define CLI_METADATA_unknown59              0x0000000000000000 //59
+#define CLI_METADATA_unknown60              0x0000000000000000 //60
+#define CLI_METADATA_unknown61              0x0000000000000000 //61
+#define CLI_METADATA_unknown62              0x0000000000000000 //62
+#define CLI_METADATA_unknown63              0x0000000000000000 //63
 
 
     Q_OBJECT
@@ -149,14 +149,14 @@ public:
     bool addImportSection(IMAGE_SECTION_HEADER *pISH, char *pData, int nDataSize, IMAGE_DATA_DIRECTORY *pddImportTable, IMAGE_DATA_DIRECTORY *pddIAT);
     void FixImportBin(unsigned int nOffset, unsigned int nImportTableOffset, int nDelta);
     bool addImportSectionFromXML(IMAGE_SECTION_HEADER *pISH, QByteArray baXML);
-//    bool addImportSectionFromMap(IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long,QString> &mapIAT);
+    //    bool addImportSectionFromMap(IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long,QString> &mapIAT);
 private:
     bool bIsNETEntryPontLoad;
 private slots:
     bool compareEP_NETfast(char *pszSignature);
-//    bool compareEPfast(QString sSignature);
-//    bool compareEP(char *pszSignature,unsigned int nOffset=0);
-//    bool compareOverlay(char *pszSignature,unsigned int nOffset=0);
+    //    bool compareEPfast(QString sSignature);
+    //    bool compareEP(char *pszSignature,unsigned int nOffset=0);
+    //    bool compareOverlay(char *pszSignature,unsigned int nOffset=0);
 public slots:
 
     bool compareEP_NETfast(QString sSignature);
@@ -328,7 +328,7 @@ public slots:
     unsigned int getSectionsTableOffset();
     unsigned int getSectionsTableSize();
 
-   // char *getSection_Name(int nSection);
+    // char *getSection_Name(int nSection);
     unsigned int getSection_VirtualSize(int nSection);
     unsigned int getSection_VirtualAddress(int nSection);
     unsigned int getSection_SizeOfRawData(int nSection);
@@ -826,7 +826,7 @@ private:
         unsigned int nEntryPoint;
         char pEntryPoint[EPCODE];
         unsigned int nEntryPointSize;
-    }CLI_Section;
+    } CLI_Section;
 };
 
 #endif // PEFILE_H

@@ -6,7 +6,7 @@ static int argc = 0;
 SingleFileScan::SingleFileScan(QObject *parent):
     QObject(parent)
 {
-//    sDataBase="###[unknown]###";
+    //    sDataBase="###[unknown]###";
 }
 
 //void SingleFileScan::setOptions(__DIE_OPTIONS *pOptions)
@@ -124,6 +124,7 @@ void SingleFileScan::setDataBase(QString sDataBase)
     {
         sDataBase=__DefaultDataBasePath;
     }
+
     if(options.sDataBasePath!=sDataBase)
     {
         options.sDataBasePath=sDataBase;
@@ -140,7 +141,7 @@ void SingleFileScan::setDataBase(QString sDataBase)
     }
 }
 
-__DIE_OPTIONS SingleFileScan::options={0};
+__DIE_OPTIONS SingleFileScan::options= {0};
 
 void SingleFileScan::appendMessage(QString sMessage)
 {
@@ -164,6 +165,7 @@ void SingleFileScan::appendMessage(QString sMessage)
 void SingleFileScan::appendSignature(QString sMessage)
 {
     QString sType=sMessage.section(": ",0,0);
+
     if((options.bShowFileFormatOnce)&&(sType==sCurrentType))
     {
         sMessage=sMessage.section(": ",1,-1);
@@ -184,7 +186,7 @@ void SingleFileScan::appendError(QString sMessage)
 #ifdef Q_WS_WIN
 bool  WINAPI  _DllMain(_In_  HINSTANCE hinstDLL,_In_  DWORD fdwReason,_In_  LPVOID lpvReserved)
 {
-    switch (fdwReason)
+    switch(fdwReason)
     {
         case DLL_PROCESS_ATTACH:
         {
@@ -201,6 +203,7 @@ bool  WINAPI  _DllMain(_In_  HINSTANCE hinstDLL,_In_  DWORD fdwReason,_In_  LPVO
             break;
         }
     }
+
     return(TRUE);
 }
 #endif
@@ -209,12 +212,12 @@ int __DIE_scan(QString szFileName,char *pszOutBuffer,int nOutBufferSize,unsigned
 {
     SingleFileScan sfs;
 
-//    __DIE_OPTIONS options;
+    //    __DIE_OPTIONS options;
 
-//    options.sDataBasePath=sDataBase;
+    //    options.sDataBasePath=sDataBase;
     sfs.flagsToOptions(nFlags,&sfs.options);
     sfs.setDataBase(sDataBase);
-//    sfs.setOptions(&options);
+    //    sfs.setOptions(&options);
 
     QString sResult=sfs.process(szFileName);
 
@@ -276,7 +279,7 @@ char *__DIE_versionA(void)
 
 wchar_t *__DIE_versionW(void)
 {
-    #define WIDEN2(x) L ## x
-    #define WIDEN(x) WIDEN2(x)
+#define WIDEN2(x) L ## x
+#define WIDEN(x) WIDEN2(x)
     return WIDEN(__VERSION);
 }

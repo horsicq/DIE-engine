@@ -21,10 +21,10 @@ public slots:
     QString upperCase(QString sString);
 
     virtual bool compare(QString sSignature,unsigned int nOffset)=0;
-//    virtual bool compareReg(QString sSignature,unsigned int nOffset)=0;
-//    virtual bool compareHeader(QString sSignature)=0;
+    //    virtual bool compareReg(QString sSignature,unsigned int nOffset)=0;
+    //    virtual bool compareHeader(QString sSignature)=0;
     virtual bool compareEP(QString sSignature,unsigned int nOffset)=0;
-//    virtual bool compareEP(unsigned int nOffset,QString sSignature)=0;
+    //    virtual bool compareEP(unsigned int nOffset,QString sSignature)=0;
 
     virtual QString getString(unsigned int nOffset,unsigned int nSize=50)=0;
     virtual unsigned int readDword(unsigned int nOffset)=0;

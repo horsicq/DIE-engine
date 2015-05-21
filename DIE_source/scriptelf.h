@@ -11,7 +11,7 @@ public:
     explicit scriptELF(QObject *parent = 0);
     void setData(ELFFile *elffile);
 
-    
+
 public slots:
     QString getGeneralOptions();
 
@@ -33,8 +33,8 @@ public slots:
     unsigned short getElfHeader_shstrndx();
 
     bool compareEP(QString sSignature,unsigned int nOffset=0);
-//    bool compareEPn(QString sSignature,unsigned int nOffset);
-//    bool compareHeader(QString sSignature);
+    //    bool compareEPn(QString sSignature,unsigned int nOffset);
+    //    bool compareHeader(QString sSignature);
     bool compare(QString sSignature,unsigned int nOffset=0);
     QString getFileDirectory();
     QString getFileBaseName();
@@ -52,7 +52,7 @@ public slots:
     int findSignature(unsigned int nOffset, unsigned int nSize, QString sSignature);
     bool isSignaturePresent(unsigned int nOffset, unsigned int nSize, QString sSignature);
 
-//    bool compareReg(QString sSignature,unsigned int nOffset);
+    //    bool compareReg(QString sSignature,unsigned int nOffset);
 
     bool isSectionNamePresent(QString sSectionName);
     bool isStringInTablePresent(QString sSectionName, QString sString);

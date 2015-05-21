@@ -9,7 +9,7 @@ void scriptMACH::setData(MACHFile *machfile)
 {
     this->machfile=machfile;
 
-//    emit appendError("Test2");
+    //    emit appendError("Test2");
 }
 
 
@@ -24,7 +24,7 @@ bool scriptMACH::compare(QString sSignature,unsigned int nOffset)
 }
 bool scriptMACH::compareEP(QString sSignature,unsigned int nOffset)
 {
-//    return machfile->compareEPfast(sSignature);
+    //    return machfile->compareEPfast(sSignature);
 
     return machfile->compareEP(sSignature,nOffset);
 }

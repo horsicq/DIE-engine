@@ -27,7 +27,7 @@ QString Utils::getPath(QString sFileName)
 {
     QFileInfo fi;
     fi.setFile(sFileName);
-//    fi.path();
+    //    fi.path();
     return fi.path();
 }
 

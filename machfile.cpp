@@ -18,6 +18,7 @@ bool MACHFile::isValid()
         }
 
     }
+
     emit appendError("Invalid MACH file");
 
     return false;
@@ -57,7 +58,7 @@ bool MACHFile::isReverse()
 }
 void MACHFile::entryPointLoad()
 {
-//    nEntryPointOffset=getAddressOfEntryPoint();
+    //    nEntryPointOffset=getAddressOfEntryPoint();
 
     //    _loadEntryPoint();
 
@@ -175,7 +176,8 @@ unsigned int MACHFile::getMachHeaderSize()
     }
     else
     {
-        return sizeof(mach_header);    }
+        return sizeof(mach_header);
+    }
 }
 
 bool MACHFile::isLoadCommandPresent(unsigned int nLoadCommand)
@@ -378,11 +380,16 @@ unsigned int MACHFile::getNumberOfSegments()
     unsigned int nNumberOfCommands=getHeader_ncmds();
 
     unsigned int nResult=0;
-    for(int i=0;i<nNumberOfCommands;i++)
+
+    for(int i=0; i<nNumberOfCommands; i++)
     {
         if((getLoadCommand_type(i)==LC_SEGMENT)||(getLoadCommand_type(i)==LC_SEGMENT_64))
         {
             nResult++;
+            if(nResult>1000)
+            {
+                break;
+            }
         }
     }
 
@@ -393,7 +400,8 @@ unsigned int MACHFile::getSegmentHeaderOffset(unsigned int nSegment)
 {
     unsigned int nNumberOfCommands=getHeader_ncmds();
     unsigned int nResult=0;
-    for(int i=0;i<nNumberOfCommands;i++)
+
+    for(int i=0; i<nNumberOfCommands; i++)
     {
         if((getLoadCommand_type(i)==LC_SEGMENT)||(getLoadCommand_type(i)==LC_SEGMENT_64))
         {
@@ -517,7 +525,8 @@ unsigned int MACHFile::getNumberOfSections()
 {
     unsigned int nResult=0;
     unsigned int nNumberOfSegments=getNumberOfSegments();
-    for(int i=0;i<nNumberOfSegments;i++)
+
+    for(int i=0; i<nNumberOfSegments; i++)
     {
         nResult+=getSegment_nsects(i);
     }
@@ -530,12 +539,13 @@ unsigned int MACHFile::getSectionHeaderOffset(unsigned int nSection)
     unsigned int nNumberOfSegments=getNumberOfSegments();
     unsigned int nResult=0;
     unsigned int nCurrentSection=0;
-    for(int i=0;i<nNumberOfSegments;i++)
+
+    for(int i=0; i<nNumberOfSegments; i++)
     {
         nResult=getSegmentHeaderOffset(i);
         nResult+=getSegmentHeaderSize();
 
-        for(int j=0;j<getSegment_nsects(i);j++)
+        for(int j=0; j<getSegment_nsects(i); j++)
         {
 
 
@@ -653,7 +663,8 @@ unsigned int MACHFile::getSection_flags64(unsigned int nSection)
 unsigned int MACHFile::RVAToOffset32(unsigned int nRVA)
 {
     unsigned int nNumberOfSegments=getNumberOfSegments();
-    for(int i=0;i<nNumberOfSegments;i++)
+
+    for(int i=0; i<nNumberOfSegments; i++)
     {
         if((getSegment_vmaddr32(i)<=nRVA)&&(nRVA<getSegment_vmaddr32(i)+getSegment_vmsize32(i)))
         {
@@ -668,7 +679,8 @@ unsigned int MACHFile::RVAToOffset32(unsigned int nRVA)
 unsigned int MACHFile::OffsetToRVA32(unsigned int nOffset)
 {
     unsigned int nNumberOfSegments=getNumberOfSegments();
-    for(int i=0;i<nNumberOfSegments;i++)
+
+    for(int i=0; i<nNumberOfSegments; i++)
     {
         if((getSegment_fileoff32(i)<=nOffset)&&(nOffset<getSegment_fileoff32(i)+getSegment_filesize32(i)))
         {
@@ -683,7 +695,8 @@ unsigned int MACHFile::OffsetToRVA32(unsigned int nOffset)
 unsigned long long MACHFile::OffsetToRVA64(unsigned long long nOffset)
 {
     unsigned int nNumberOfSegments=getNumberOfSegments();
-    for(int i=0;i<nNumberOfSegments;i++)
+
+    for(int i=0; i<nNumberOfSegments; i++)
     {
         if((getSegment_fileoff64(i)<=nOffset)&&(nOffset<getSegment_fileoff64(i)+getSegment_filesize64(i)))
         {
@@ -698,7 +711,8 @@ unsigned long long MACHFile::OffsetToRVA64(unsigned long long nOffset)
 unsigned long long MACHFile::RVAToOffset64(unsigned long long nRVA)
 {
     unsigned int nNumberOfSegments=getNumberOfSegments();
-    for(int i=0;i<nNumberOfSegments;i++)
+
+    for(int i=0; i<nNumberOfSegments; i++)
     {
         if((getSegment_vmaddr64(i)<=nRVA)&&(nRVA<getSegment_vmaddr64(i)+getSegment_vmsize64(i)))
         {
@@ -747,6 +761,7 @@ unsigned long long MACHFile::VAToOffset64(unsigned long long nVA)
 unsigned long long MACHFile::VAToOffset(unsigned long long nVA)
 {
     unsigned long long nResult=0;
+
     if(isMACH64())
     {
         nResult=VAToOffset64(nVA);
@@ -777,6 +792,7 @@ unsigned long long MACHFile::OffsetToVA64(unsigned long long nOffset)
 unsigned long long MACHFile::OffsetToVA(unsigned long long nOffset)
 {
     unsigned long long nResult=0;
+
     if(isMACH64())
     {
         nResult=OffsetToVA64(nOffset);
@@ -805,7 +821,7 @@ unsigned long long MACHFile::getEntryPoint()
         nNumberOfCommands=0xFF;
     }
 
-    for(int i=0;i<nNumberOfCommands;i++)
+    for(int i=0; i<nNumberOfCommands; i++)
     {
         if((getLoadCommand_type(i)==LC_THREAD)||(getLoadCommand_type(i)==LC_UNIXTHREAD))
         {
@@ -842,7 +858,7 @@ QList<load_command> MACHFile::getLoadCommands()
 
     unsigned int nOffset=getMachHeaderSize();
 
-    for(int i=0;i<nNumberOfCommands;i++)
+    for(int i=0; i<nNumberOfCommands; i++)
     {
         record.cmd=readDword(nOffset+offsetof(load_command,cmd),isReverse());
         record.cmdsize=readDword(nOffset+offsetof(load_command,cmdsize),isReverse());
@@ -872,7 +888,7 @@ QList<load_command_offset> MACHFile::getLoadCommands_offset()
 
     unsigned int nOffset=getMachHeaderSize();
 
-    for(int i=0;i<nNumberOfCommands;i++)
+    for(int i=0; i<nNumberOfCommands; i++)
     {
         record.cmd=readDword(nOffset+offsetof(load_command,cmd),isReverse());
         record.cmdsize=readDword(nOffset+offsetof(load_command,cmdsize),isReverse());
@@ -896,23 +912,24 @@ QList<segment_command> MACHFile::getSegmentsList32()
     QList<segment_command> listResult;
 
     segment_command record;
-    for(int i=0;i<list.count();i++)
+
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).cmd==LC_SEGMENT)
         {
             nOffset=list.at(i).offset;
 
-//            uint32_t cmd;
-//            uint32_t cmdsize;
-//            char segname[16];
-//            uint32_t vmaddr;
-//            uint32_t vmsize;
-//            uint32_t fileoff;
-//            uint32_t filesize;
-//            vm_prot_t maxprot;
-//            vm_prot_t initprot;
-//            uint32_t nsects;
-//            uint32_t flags;
+            //            uint32_t cmd;
+            //            uint32_t cmdsize;
+            //            char segname[16];
+            //            uint32_t vmaddr;
+            //            uint32_t vmsize;
+            //            uint32_t fileoff;
+            //            uint32_t filesize;
+            //            vm_prot_t maxprot;
+            //            vm_prot_t initprot;
+            //            uint32_t nsects;
+            //            uint32_t flags;
 
 
             record.cmd=readDword(nOffset+offsetof(segment_command,cmd),isReverse());
@@ -942,7 +959,8 @@ QList<segment_command_64> MACHFile::getSegmentsList64()
     QList<segment_command_64> listResult;
 
     segment_command_64 record;
-    for(int i=0;i<list.count();i++)
+
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).cmd==LC_SEGMENT_64)
         {
@@ -972,7 +990,7 @@ QList<section> MACHFile::getSectionsList32()
 {
     QList<section> listResult;
 
-//    return listResult;
+    //    return listResult;
     QList<load_command_offset> list=getLoadCommands_offset();
     unsigned int nOffset=0;
 
@@ -980,7 +998,7 @@ QList<section> MACHFile::getSectionsList32()
 
     unsigned int nNumberOfSections=0;
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).cmd==LC_SEGMENT)
         {
@@ -990,7 +1008,7 @@ QList<section> MACHFile::getSectionsList32()
 
             nOffset+=sizeof(segment_command);
 
-            for(int j=0;j<nNumberOfSections;j++)
+            for(int j=0; j<nNumberOfSections; j++)
             {
                 readArray(nOffset+offsetof(section,sectname),record.sectname,16);
                 readArray(nOffset+offsetof(section,segname),record.segname,16);
@@ -1028,7 +1046,7 @@ QList<section_64> MACHFile::getSectionsList64()
 
     unsigned int nNumberOfSections=0;
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).cmd==LC_SEGMENT_64)
         {
@@ -1038,7 +1056,7 @@ QList<section_64> MACHFile::getSectionsList64()
 
             nOffset+=sizeof(segment_command_64);
 
-            for(int j=0;j<nNumberOfSections;j++)
+            for(int j=0; j<nNumberOfSections; j++)
             {
                 readArray(nOffset+offsetof(section_64,sectname),record.sectname,16);
                 readArray(nOffset+offsetof(section_64,segname),record.segname,16);
@@ -1079,6 +1097,7 @@ bool MACHFile::dumpSegment(QString sFileName, int nSegment)
         nOffset=getSegment_fileoff32(nSegment);
         nSize=getSegment_filesize32(nSegment);
     }
+
     return dump(sFileName,nOffset,nSize);
 }
 
@@ -1097,17 +1116,19 @@ bool MACHFile::dumpSection(QString sFileName, int nSection)
         nOffset=getSection_offset32(nSection);
         nSize=getSection_size32(nSection);
     }
+
     return dump(sFileName,nOffset,nSize);
 }
 
 bool MACHFile::isSectionNamePresent(QString sSectionName)
 {
     QString sTemp;
+
     if(isMACH64())
     {
         QList<section_64> list64=getSectionsList64();
 
-        for(int i=0;i<list64.count();i++)
+        for(int i=0; i<list64.count(); i++)
         {
             sTemp=list64.at(i).sectname;
 
@@ -1126,7 +1147,7 @@ bool MACHFile::isSectionNamePresent(QString sSectionName)
     {
         QList<section> list32=getSectionsList32();
 
-        for(int i=0;i<list32.count();i++)
+        for(int i=0; i<list32.count(); i++)
         {
             sTemp=list32.at(i).sectname;
 
@@ -1148,11 +1169,12 @@ bool MACHFile::isSectionNamePresent(QString sSectionName)
 unsigned int MACHFile::getSectionNumber(QString sSectionName)
 {
     QString sTemp;
+
     if(isMACH64())
     {
         QList<section_64> list64=getSectionsList64();
 
-        for(int i=0;i<list64.count();i++)
+        for(int i=0; i<list64.count(); i++)
         {
             sTemp=list64.at(i).sectname;
 
@@ -1166,7 +1188,7 @@ unsigned int MACHFile::getSectionNumber(QString sSectionName)
     {
         QList<section> list32=getSectionsList32();
 
-        for(int i=0;i<list32.count();i++)
+        for(int i=0; i<list32.count(); i++)
         {
             sTemp=list32.at(i).sectname;
 
@@ -1184,7 +1206,7 @@ bool MACHFile::isUUIDPresent()
 {
     QList<load_command> list=getLoadCommands();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).cmd==LC_UUID)
         {
@@ -1200,7 +1222,7 @@ QByteArray MACHFile::getUUID()
     QByteArray baResult;
     QList<load_command_offset> list=getLoadCommands_offset();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).cmd==LC_UUID)
         {
@@ -1228,7 +1250,7 @@ bool MACHFile::setUUID(QByteArray baUUID)
 {
     QList<load_command_offset> list=getLoadCommands_offset();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).cmd==LC_UUID)
         {
@@ -1260,7 +1282,7 @@ QList<DYLIB_FULL> MACHFile::getLibs()
 
     QList<load_command_offset> list=getLoadCommands_offset();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if((list.at(i).cmd==LC_LOAD_DYLIB)||(list.at(i).cmd==LC_LOAD_WEAK_DYLIB)||(list.at(i).cmd==LC_ID_DYLIB))
         {
@@ -1292,7 +1314,7 @@ bool MACHFile::isLibraryPresent(QString sLibrary)
 {
     QList<DYLIB_FULL> list=getLibs();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).sShortName==sLibrary)
         {
@@ -1307,7 +1329,7 @@ unsigned int MACHFile::getLibraryCurrentVersion(QString sLibrary)
 {
     QList<DYLIB_FULL> list=getLibs();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).sShortName==sLibrary)
         {
@@ -1405,7 +1427,7 @@ unsigned int MACHFile::calculateRawSize()
 {
     unsigned int nResult=getMachHeaderSize();
 
-    for(int i=0;i<getNumberOfSegments();i++)
+    for(int i=0; i<getNumberOfSegments(); i++)
     {
         nResult=qMax(nResult,getSegmentFileOffset(i)+getSegmentFileSize(i));
     }
@@ -1450,7 +1472,7 @@ unsigned int MACHFile::getLoadCommand_offset(unsigned int nLoadCommand)
     {
         unsigned int nOffset=getMachHeaderSize();
 
-        for(int i=0;i<nLoadCommand;i++)
+        for(int i=0; i<nLoadCommand; i++)
         {
             nOffset+=readDword(nOffset+offsetof(load_command,cmdsize),isReverse());
         }

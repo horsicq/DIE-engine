@@ -11,7 +11,7 @@ class scriptPE : public scriptGeneric
 public:
     explicit scriptPE(QObject *parent = 0);
     void setData(PEFile *pefile);
-    
+
 public slots:
     unsigned short getMachineType();
 
@@ -20,7 +20,7 @@ public slots:
     QString getGeneralOptions();
 
     bool compareEP(QString sSignature,unsigned int nOffset=0);
-//    bool compareEPn(QString sSignature,unsigned int nOffset);
+    //    bool compareEPn(QString sSignature,unsigned int nOffset);
     bool compareOverlay(QString sSignature,unsigned int nOffset=0);
     bool isSectionNamePresent(QString sSectionName);
     bool isSectionNamePresentExp(QString sSectionName);
@@ -80,9 +80,9 @@ public slots:
 
     long long getEntryPointOffset();
 
-//    bool compareHeader(QString sSignature);
+    //    bool compareHeader(QString sSignature);
     bool compare(QString sSignature,unsigned int nOffset=0);
-//    bool compareReg(QString sSignature,unsigned int nOffset);
+    //    bool compareReg(QString sSignature,unsigned int nOffset);
     QString getFileDirectory();
     QString getFileBaseName();
     QString getFileSuffix();
@@ -132,9 +132,9 @@ public slots:
     bool isSignedFile();
 private:
     PEFile *pefile;
-//    int nEPOffset;
-//    int nFileSize;
-    
+    //    int nEPOffset;
+    //    int nFileSize;
+
 };
 
 #endif // SCRIPTPE_H

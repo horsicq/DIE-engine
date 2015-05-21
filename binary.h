@@ -36,15 +36,15 @@ struct __MEMSTRUCT
 {
     bool bIsChanged;
     unsigned int nOffset;
-//    unsigned int nSize;
+    //    unsigned int nSize;
     QByteArray baData;
 };
 
 class Binary : public QObject
 {
-    #define EPCODE 0x400
-    #define BUFFER_SIZE 0x1000
-    #define MEMORYCOUNT 10
+#define EPCODE 0x400
+#define BUFFER_SIZE 0x1000
+#define MEMORYCOUNT 10
     Q_OBJECT
 public:
 
@@ -56,32 +56,32 @@ public:
     unsigned int readDwordFromFile(unsigned int nOffset);
     unsigned long long readQwordFromFile(unsigned int nOffset);
 
-//    unsigned char readByteFromMemory(unsigned int nOffset);
-//    unsigned short readWordFromMemory(unsigned int nOffset);
-//    unsigned int readDwordFromMemory(unsigned int nOffset);
-//    unsigned long long readQwordFromMemory(unsigned int nOffset);
+    //    unsigned char readByteFromMemory(unsigned int nOffset);
+    //    unsigned short readWordFromMemory(unsigned int nOffset);
+    //    unsigned int readDwordFromMemory(unsigned int nOffset);
+    //    unsigned long long readQwordFromMemory(unsigned int nOffset);
 
     void writeByteToFile(unsigned int nOffset,unsigned char cValue);
     void writeWordToFile(unsigned int nOffset,unsigned short sValue);
     void writeDwordToFile(unsigned int nOffset,unsigned int nValue);
     void writeQwordToFile(unsigned int nOffset,unsigned long long qValue);
 
-//    void writeByteToMemory(unsigned int nOffset,unsigned char cValue);
-//    void writeWordToMemory(unsigned int nOffset,unsigned short sValue);
-//    void writeDwordToMemory(unsigned int nOffset,unsigned int nValue);
-//    void writeQwordToMemory(unsigned int nOffset,unsigned long long qValue);
-//    bool isArrayInMemory(unsigned int nOffset,unsigned int nSize);
+    //    void writeByteToMemory(unsigned int nOffset,unsigned char cValue);
+    //    void writeWordToMemory(unsigned int nOffset,unsigned short sValue);
+    //    void writeDwordToMemory(unsigned int nOffset,unsigned int nValue);
+    //    void writeQwordToMemory(unsigned int nOffset,unsigned long long qValue);
+    //    bool isArrayInMemory(unsigned int nOffset,unsigned int nSize);
     bool readArrayFromFile(unsigned int nOffset,char *pBuffer,unsigned int nSize);
     bool writeArrayToFile(unsigned int nOffset,char *pBuffer,unsigned int nSize);
     bool readArray(unsigned int nOffset,char *pBuffer,unsigned int nSize);
     QByteArray readArray(unsigned int nOffset,unsigned int nSize);
     bool writeArray(unsigned int nOffset,char *pBuffer,unsigned int nSize);
-//    bool readArrayFromMemory(unsigned int nOffset,char *pBuffer,unsigned int nSize);
-//    bool writeArrayToMemory(unsigned int nOffset,char *pBuffer,unsigned int nSize);
+    //    bool readArrayFromMemory(unsigned int nOffset,char *pBuffer,unsigned int nSize);
+    //    bool writeArrayToMemory(unsigned int nOffset,char *pBuffer,unsigned int nSize);
 
     QByteArray readArrayFromEntryPoint(unsigned int nSize);
 
-//    void updateFile();
+    //    void updateFile();
 
     void remap();
 
@@ -90,9 +90,9 @@ public:
     static bool copy(Binary *pFileDest,unsigned int nOffsetDest,Binary *pFileSource,unsigned int nOffsetSource,unsigned int nSize);
     bool copy(Binary *pFileSource);
 
-//    void memoryReload();
-//    bool addMemory(unsigned int nOffset,unsigned int nSize=0x1000);
-//    void clearMemory();
+    //    void memoryReload();
+    //    bool addMemory(unsigned int nOffset,unsigned int nSize=0x1000);
+    //    void clearMemory();
     void close();
     static bool dataToHex(char *pData,unsigned int nDataSize,char *pOut);
 
@@ -122,9 +122,9 @@ signals:
 
 private slots:
 
-//    bool compare(char *pszSignature,unsigned int nOffset=0);
-//    bool compareHeader(char *pszSignature);
-//    bool compareEPfast(char *pszSignature);
+    //    bool compare(char *pszSignature,unsigned int nOffset=0);
+    //    bool compareHeader(char *pszSignature);
+    //    bool compareEPfast(char *pszSignature);
 
 public slots:
     bool setFileName(QString sFileName,bool bReadHeader=true);
@@ -159,8 +159,8 @@ public slots:
     bool compareEPfast(QString sSignature,int nOffset);
     bool compareEP(QString sSignature,unsigned int nOffset);
     bool _compare(QString sSignature,unsigned int nOffset);
-//    bool compareFast(QString sSignature,unsigned int nOffset);
-//    bool compareHeader(QString sSignature);
+    //    bool compareFast(QString sSignature,unsigned int nOffset);
+    //    bool compareHeader(QString sSignature);
 
     static QString convertSignature(QString sSignature);
 
@@ -192,23 +192,23 @@ public slots:
 
     bool isSignaturePresent(unsigned int nOffset,unsigned int nSize,QString sSignature);
 
-//    unsigned int intelDisasm(DISASM *pDisasm,unsigned int nOffset,unsigned int nSize);
-//    QByteArray intelDisasmByteArray(unsigned int nMode,unsigned int nOffset,unsigned int nSize);
-//    QString intelDisasmString(unsigned int nMode,unsigned int nOffset,unsigned int nSize);
+    //    unsigned int intelDisasm(DISASM *pDisasm,unsigned int nOffset,unsigned int nSize);
+    //    QByteArray intelDisasmByteArray(unsigned int nMode,unsigned int nOffset,unsigned int nSize);
+    //    QString intelDisasmString(unsigned int nMode,unsigned int nOffset,unsigned int nSize);
 protected:
     QFile file;
-//    QByteArray baHeader;
-//    QList<__MEMSTRUCT> memorylist;
-//    unsigned int nMemoryPosition;
-//    __MEMSTRUCT _memorylist[MEMORYCOUNT];
+    //    QByteArray baHeader;
+    //    QList<__MEMSTRUCT> memorylist;
+    //    unsigned int nMemoryPosition;
+    //    __MEMSTRUCT _memorylist[MEMORYCOUNT];
     bool bIsReadOnly;
     QString sFileName;
     bool bReadHeader;
     bool bIsEntryPontLoad;
     unsigned int nEntryPointOffset;
     QByteArray baEntryPoint;
-//    char pEntryPoint[EPCODE];
-//    unsigned int nEntryPointSize;
+    //    char pEntryPoint[EPCODE];
+    //    unsigned int nEntryPointSize;
     unsigned long long ___nSize;
 
     unsigned char *___pMemory;
@@ -216,9 +216,9 @@ protected:
     int nIsReverse;
 
 private:
-//    void _clearMemory();
-//    void addMemory(unsigned int nOffset,unsigned int nSize);
-    
+    //    void _clearMemory();
+    //    void addMemory(unsigned int nOffset,unsigned int nSize);
+
 
 };
 

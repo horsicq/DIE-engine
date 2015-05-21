@@ -13,19 +13,19 @@ public:
     void setData(Binary *binary);
 
 signals:
-//    void appendError(QString sString);
-    
-public slots:
-//    void _log(QString sString);
-//    unsigned int swapBytes(unsigned int nValue);
-//    QString upperCase(QString sString);
+    //    void appendError(QString sString);
 
-//    bool isPlainText();
+public slots:
+    //    void _log(QString sString);
+    //    unsigned int swapBytes(unsigned int nValue);
+    //    QString upperCase(QString sString);
+
+    //    bool isPlainText();
 
     bool compare(QString sSignature,unsigned int nOffset=0);
-//    bool compareHeader(QString sSignature);
+    //    bool compareHeader(QString sSignature);
     bool compareEP(QString sSignature,unsigned int nOffset=0);
-//    bool compareEPn(QString sSignature,unsigned int nOffset);
+    //    bool compareEPn(QString sSignature,unsigned int nOffset);
 
     QString getString(unsigned int nOffset,unsigned int nSize=50);
     unsigned int readDword(unsigned int nOffset);
@@ -48,7 +48,7 @@ public slots:
     QString calculateMD5(unsigned int nOffset, unsigned int nSize);
 
 private:
-    Binary *binary; 
+    Binary *binary;
 };
 
 #endif // SCRIPTBINARY_H

@@ -8,11 +8,11 @@
 
 class SingleFileScan : public QObject
 {
-Q_OBJECT
+    Q_OBJECT
 public:
     SingleFileScan(QObject *parent = 0);
 
-//    void setOptions(__DIE_OPTIONS *pOptions);
+    //    void setOptions(__DIE_OPTIONS *pOptions);
     static void flagsToOptions(unsigned int nFlags,__DIE_OPTIONS *pOptions);
     QString process(QString sFileName);
     static QString firstBytes(QString sFileName,unsigned int nSize);
@@ -27,7 +27,7 @@ private slots:
     void appendSignature(QString sMessage);
     void appendError(QString sMessage);
 private:
-//    __DIE_OPTIONS *pOptions;
+    //    __DIE_OPTIONS *pOptions;
     QString sResult;
     QString sCurrentType;
 };

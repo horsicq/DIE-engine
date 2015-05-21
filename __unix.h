@@ -20,7 +20,8 @@ typedef unsigned int Elf32_Size;
 
 #define EI_NIDENT 16
 
-typedef struct {
+typedef struct
+{
     unsigned char	e_ident[EI_NIDENT];	/* File identification. */
     Elf32_Half	e_type;		/* File type. */
     Elf32_Half	e_machine;	/* Machine architecture. */
@@ -41,7 +42,8 @@ typedef struct {
  * Section header.
  */
 
-typedef struct {
+typedef struct
+{
     Elf32_Word	sh_name;	/* Section name (index into the
                        section header string table). */
     Elf32_Word	sh_type;	/* Section type. */
@@ -59,7 +61,8 @@ typedef struct {
  * Program header.
  */
 
-typedef struct {
+typedef struct
+{
     Elf32_Word	p_type;		/* Entry type. */
     Elf32_Off	p_offset;	/* File offset of contents. */
     Elf32_Addr	p_vaddr;	/* Virtual address in memory image. */
@@ -74,9 +77,11 @@ typedef struct {
  * Dynamic structure.  The ".dynamic" section contains an array of them.
  */
 
-typedef struct {
+typedef struct
+{
     Elf32_Sword	d_tag;		/* Entry type. */
-    union {
+    union
+    {
         Elf32_Size	d_val;	/* Integer value. */
         Elf32_Addr	d_ptr;	/* Address value. */
     } d_un;
@@ -87,13 +92,15 @@ typedef struct {
  */
 
 /* Relocations that don't need an addend field. */
-typedef struct {
+typedef struct
+{
     Elf32_Addr	r_offset;	/* Location to be relocated. */
     Elf32_Word	r_info;		/* Relocation type and symbol index. */
 } Elf32_Rel;
 
 /* Relocations that need an addend field. */
-typedef struct {
+typedef struct
+{
     Elf32_Addr	r_offset;	/* Location to be relocated. */
     Elf32_Word	r_info;		/* Relocation type and symbol index. */
     Elf32_Sword	r_addend;	/* Addend. */
@@ -110,7 +117,8 @@ typedef struct {
  * Symbol table entries.
  */
 
-typedef struct {
+typedef struct
+{
     Elf32_Word	st_name;	/* String table index of name. */
     Elf32_Addr	st_value;	/* Symbol value. */
     Elf32_Size	st_size;	/* Size of associated object. */
@@ -142,7 +150,8 @@ typedef unsigned short Elf64_Quarter;
  * ELF header.
  */
 
-typedef struct {
+typedef struct
+{
     unsigned char	e_ident[EI_NIDENT];	/* File identification. */
     Elf64_Quarter	e_type;		/* File type. */
     Elf64_Quarter	e_machine;	/* Machine architecture. */
@@ -163,7 +172,8 @@ typedef struct {
  * Section header.
  */
 
-typedef struct {
+typedef struct
+{
     Elf64_Half	sh_name;	/* Section name (index into the
                        section header string table). */
     Elf64_Half	sh_type;	/* Section type. */
@@ -181,7 +191,8 @@ typedef struct {
  * Program header.
  */
 
-typedef struct {
+typedef struct
+{
     Elf64_Half	p_type;		/* Entry type. */
     Elf64_Half	p_flags;	/* Access permission flags. */
     Elf64_Off	p_offset;	/* File offset of contents. */
@@ -196,9 +207,11 @@ typedef struct {
  * Dynamic structure.  The ".dynamic" section contains an array of them.
  */
 
-typedef struct {
+typedef struct
+{
     Elf64_Size	d_tag;		/* Entry type. */
-    union {
+    union
+    {
         Elf64_Size	d_val;	/* Integer value. */
         Elf64_Addr	d_ptr;	/* Address value. */
     } d_un;
@@ -209,13 +222,15 @@ typedef struct {
  */
 
 /* Relocations that don't need an addend field. */
-typedef struct {
+typedef struct
+{
     Elf64_Addr	r_offset;	/* Location to be relocated. */
     Elf64_Size	r_info;		/* Relocation type and symbol index. */
 } Elf64_Rel;
 
 /* Relocations that need an addend field. */
-typedef struct {
+typedef struct
+{
     Elf64_Addr	r_offset;	/* Location to be relocated. */
     Elf64_Size	r_info;		/* Relocation type and symbol index. */
     Elf64_Off	r_addend;	/* Addend. */
@@ -232,7 +247,8 @@ typedef struct {
  * Symbol table entries.
  */
 
-typedef struct {
+typedef struct
+{
     Elf64_Half	st_name;	/* String table index of name. */
     unsigned char	st_info;	/* Type and binding information. */
     unsigned char	st_other;	/* Reserved (not used). */

@@ -10,27 +10,29 @@
 #include "__windows.h"
 #endif
 
-struct _VS_VERSION_INFO {
+struct _VS_VERSION_INFO
+{
     unsigned short wLength;             /* Length of the version resource */
     unsigned short wValueLength;        /* Length of the value field for this block */
     unsigned short wType;
 };
 
-typedef struct __tagVS_FIXEDFILEINFO {
-  unsigned int dwSignature;        // e.g.  0xfeef04bd
-  unsigned int dwStrucVersion;     // e.g.  0x00000042 = "0.42"
-  unsigned int dwFileVersionMS;    // e.g.  0x00030075 = "3.75"
-  unsigned int dwFileVersionLS;    // e.g.  0x00000031 = "0.31"
-  unsigned int dwProductVersionMS; // e.g.  0x00030010 = "3.10"
-  unsigned int dwProductVersionLS; // e.g.  0x00000031 = "0.31"
-  unsigned int dwFileFlagsMask;    // = 0x3F for version "0.42"
-  unsigned int dwFileFlags;        // e.g.  VFF_DEBUG | VFF_PRERELEASE
-  unsigned int dwFileOS;           // e.g.  VOS_DOS_WINDOWS16
-  unsigned int dwFileType;         // e.g.  VFT_DRIVER
-  unsigned int dwFileSubtype;      // e.g.  VFT2_DRV_KEYBOARD
-  unsigned int dwFileDateMS;       // e.g.  0
-  unsigned int dwFileDateLS;       // e.g.  0
-  } __VS_FIXEDFILEINFO;
+typedef struct __tagVS_FIXEDFILEINFO
+{
+    unsigned int dwSignature;        // e.g.  0xfeef04bd
+    unsigned int dwStrucVersion;     // e.g.  0x00000042 = "0.42"
+    unsigned int dwFileVersionMS;    // e.g.  0x00030075 = "3.75"
+    unsigned int dwFileVersionLS;    // e.g.  0x00000031 = "0.31"
+    unsigned int dwProductVersionMS; // e.g.  0x00030010 = "3.10"
+    unsigned int dwProductVersionLS; // e.g.  0x00000031 = "0.31"
+    unsigned int dwFileFlagsMask;    // = 0x3F for version "0.42"
+    unsigned int dwFileFlags;        // e.g.  VFF_DEBUG | VFF_PRERELEASE
+    unsigned int dwFileOS;           // e.g.  VOS_DOS_WINDOWS16
+    unsigned int dwFileType;         // e.g.  VFT_DRIVER
+    unsigned int dwFileSubtype;      // e.g.  VFT2_DRV_KEYBOARD
+    unsigned int dwFileDateMS;       // e.g.  0
+    unsigned int dwFileDateLS;       // e.g.  0
+} __VS_FIXEDFILEINFO;
 
 #define VS_FF_DEBUG 0x00000001
 #define VS_FF_INFOINFERRED 0x00000010

@@ -17,7 +17,8 @@
 #define IMAGE_NT_SIGNATURE                  0x00004550  // PE00
 
 
-typedef struct _IMAGE_DOS_HEADER {      // DOS .EXE header
+typedef struct _IMAGE_DOS_HEADER        // DOS .EXE header
+{
     WORD   e_magic;                     // Magic number
     WORD   e_cblp;                      // Bytes on last page of file
     WORD   e_cp;                        // Pages in file
@@ -37,10 +38,11 @@ typedef struct _IMAGE_DOS_HEADER {      // DOS .EXE header
     WORD   e_oeminfo;                   // OEM information; e_oemid specific
     WORD   e_res2[10];                  // Reserved words
     unsigned int   e_lfanew;                    // File address of new exe header
-  } IMAGE_DOS_HEADER, *PIMAGE_DOS_HEADER;
+} IMAGE_DOS_HEADER, *PIMAGE_DOS_HEADER;
 
 
-typedef struct _IMAGE_VXD_HEADER {      // Windows VXD header
+typedef struct _IMAGE_VXD_HEADER        // Windows VXD header
+{
     WORD   e32_magic;                   // Magic number
     BYTE   e32_border;                  // The byte ordering for the VXD
     BYTE   e32_worder;                  // The word ordering for the VXD
@@ -92,13 +94,14 @@ typedef struct _IMAGE_VXD_HEADER {      // Windows VXD header
     unsigned int  e32_winreslen;
     WORD   e32_devid;                   // Device ID for VxD
     WORD   e32_ddkver;                  // DDK version for VxD
-  } IMAGE_VXD_HEADER, *PIMAGE_VXD_HEADER;
+} IMAGE_VXD_HEADER, *PIMAGE_VXD_HEADER;
 
 //
 // File header format.
 //
 
-typedef struct _IMAGE_FILE_HEADER {
+typedef struct _IMAGE_FILE_HEADER
+{
     WORD    Machine;
     WORD    NumberOfSections;
     unsigned int   TimeDateStamp;
@@ -161,7 +164,8 @@ typedef struct _IMAGE_FILE_HEADER {
 // Directory format.
 //
 
-typedef struct _IMAGE_DATA_DIRECTORY {
+typedef struct _IMAGE_DATA_DIRECTORY
+{
     unsigned int   VirtualAddress;
     unsigned int   Size;
 } IMAGE_DATA_DIRECTORY, *PIMAGE_DATA_DIRECTORY;
@@ -172,7 +176,8 @@ typedef struct _IMAGE_DATA_DIRECTORY {
 // Optional header format.
 //
 
-typedef struct _IMAGE_OPTIONAL_HEADER {
+typedef struct _IMAGE_OPTIONAL_HEADER
+{
     //
     // Standard fields.
     //
@@ -215,7 +220,8 @@ typedef struct _IMAGE_OPTIONAL_HEADER {
     IMAGE_DATA_DIRECTORY DataDirectory[IMAGE_NUMBEROF_DIRECTORY_ENTRIES];
 } IMAGE_OPTIONAL_HEADER32, *PIMAGE_OPTIONAL_HEADER32;
 
-typedef struct _IMAGE_OPTIONAL_HEADER64 {
+typedef struct _IMAGE_OPTIONAL_HEADER64
+{
     WORD        Magic;
     BYTE        MajorLinkerVersion;
     BYTE        MinorLinkerVersion;
@@ -248,7 +254,8 @@ typedef struct _IMAGE_OPTIONAL_HEADER64 {
     IMAGE_DATA_DIRECTORY DataDirectory[IMAGE_NUMBEROF_DIRECTORY_ENTRIES];
 } IMAGE_OPTIONAL_HEADER64, *PIMAGE_OPTIONAL_HEADER64;
 
-typedef struct _IMAGE_ROM_OPTIONAL_HEADER {
+typedef struct _IMAGE_ROM_OPTIONAL_HEADER
+{
     WORD   Magic;
     BYTE   MajorLinkerVersion;
     BYTE   MinorLinkerVersion;
@@ -281,13 +288,15 @@ typedef PIMAGE_OPTIONAL_HEADER32            PIMAGE_OPTIONAL_HEADER;
 #define IMAGE_NT_OPTIONAL_HDR_MAGIC         IMAGE_NT_OPTIONAL_HDR32_MAGIC
 
 
-typedef struct _IMAGE_NT_HEADERS {
+typedef struct _IMAGE_NT_HEADERS
+{
     unsigned int Signature;
     IMAGE_FILE_HEADER FileHeader;
     IMAGE_OPTIONAL_HEADER32 OptionalHeader;
 } IMAGE_NT_HEADERS32, *PIMAGE_NT_HEADERS32;
 
-typedef struct _IMAGE_ROM_HEADERS {
+typedef struct _IMAGE_ROM_HEADERS
+{
     IMAGE_FILE_HEADER FileHeader;
     IMAGE_ROM_OPTIONAL_HEADER OptionalHeader;
 } IMAGE_ROM_HEADERS, *PIMAGE_ROM_HEADERS;
@@ -353,11 +362,13 @@ typedef PIMAGE_NT_HEADERS32                 PIMAGE_NT_HEADERS;
 
 #define IMAGE_SIZEOF_SHORT_NAME              8
 
-typedef struct _IMAGE_SECTION_HEADER {
+typedef struct _IMAGE_SECTION_HEADER
+{
     BYTE    Name[IMAGE_SIZEOF_SHORT_NAME];
-    union {
-            unsigned int   PhysicalAddress;
-            unsigned int   VirtualSize;
+    union
+    {
+        unsigned int   PhysicalAddress;
+        unsigned int   VirtualSize;
     } Misc;
     unsigned int   VirtualAddress;
     unsigned int   SizeOfRawData;
@@ -427,15 +438,17 @@ typedef struct _IMAGE_SECTION_HEADER {
 #define IMAGE_SCN_MEM_READ                   0x40000000  // Section is readable.
 #define IMAGE_SCN_MEM_WRITE                  0x80000000  // Section is writeable.
 
-typedef struct _IMAGE_IMPORT_DESCRIPTOR {
-    union {
+typedef struct _IMAGE_IMPORT_DESCRIPTOR
+{
+    union
+    {
         unsigned int   Characteristics;            // 0 for terminating null import descriptor
         unsigned int   OriginalFirstThunk;         // RVA to original unbound IAT (PIMAGE_THUNK_DATA)
     };
     unsigned int   TimeDateStamp;                  // 0 if not bound,
-                                            // -1 if bound, and real date\time stamp
-                                            //     in IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT (new BIND)
-                                            // O.W. date/time stamp of DLL bound to (Old BIND)
+    // -1 if bound, and real date\time stamp
+    //     in IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT (new BIND)
+    // O.W. date/time stamp of DLL bound to (Old BIND)
 
     unsigned int   ForwarderChain;                 // -1 if no forwarders
     unsigned int   Name;
@@ -480,14 +493,15 @@ typedef struct _IMAGE_IMPORT_DESCRIPTOR {
 // This is consistant with the syntax of the .RC file and the .RES file.
 //
 
-typedef struct _IMAGE_RESOURCE_DIRECTORY {
+typedef struct _IMAGE_RESOURCE_DIRECTORY
+{
     unsigned int   Characteristics;
     unsigned int   TimeDateStamp;
     WORD    MajorVersion;
     WORD    MinorVersion;
     WORD    NumberOfNamedEntries;
     WORD    NumberOfIdEntries;
-//  IMAGE_RESOURCE_DIRECTORY_ENTRY DirectoryEntries[];
+    //  IMAGE_RESOURCE_DIRECTORY_ENTRY DirectoryEntries[];
 } IMAGE_RESOURCE_DIRECTORY, *PIMAGE_RESOURCE_DIRECTORY;
 
 #define IMAGE_RESOURCE_NAME_IS_STRING        0x80000000
@@ -507,18 +521,23 @@ typedef struct _IMAGE_RESOURCE_DIRECTORY {
 // field points to a resource data entry.
 //
 
-typedef struct _IMAGE_RESOURCE_DIRECTORY_ENTRY {
-    union {
-        struct {
+typedef struct _IMAGE_RESOURCE_DIRECTORY_ENTRY
+{
+    union
+    {
+        struct
+        {
             unsigned int NameOffset:31;
             unsigned int NameIsString:1;
         };
         unsigned int   Name;
         WORD    Id;
     };
-    union {
+    union
+    {
         unsigned int   OffsetToData;
-        struct {
+        struct
+        {
             unsigned int   OffsetToDirectory:31;
             unsigned int   DataIsDirectory:1;
         };
@@ -534,13 +553,15 @@ typedef struct _IMAGE_RESOURCE_DIRECTORY_ENTRY {
 // size directory entry objects.
 //
 
-typedef struct _IMAGE_RESOURCE_DIRECTORY_STRING {
+typedef struct _IMAGE_RESOURCE_DIRECTORY_STRING
+{
     WORD    Length;
     CHAR    NameString[ 1 ];
 } IMAGE_RESOURCE_DIRECTORY_STRING, *PIMAGE_RESOURCE_DIRECTORY_STRING;
 
 
-typedef struct _IMAGE_RESOURCE_DIR_STRING_U {
+typedef struct _IMAGE_RESOURCE_DIR_STRING_U
+{
     WORD    Length;
     WCHAR   NameString[ 1 ];
 } IMAGE_RESOURCE_DIR_STRING_U, *PIMAGE_RESOURCE_DIR_STRING_U;
@@ -555,7 +576,8 @@ typedef struct _IMAGE_RESOURCE_DIR_STRING_U {
 // applications the code page would be the unicode code page.
 //
 
-typedef struct _IMAGE_RESOURCE_DATA_ENTRY {
+typedef struct _IMAGE_RESOURCE_DATA_ENTRY
+{
     unsigned int   OffsetToData;
     unsigned int   Size;
     unsigned int   CodePage;
@@ -567,10 +589,11 @@ typedef struct _IMAGE_RESOURCE_DATA_ENTRY {
 // Based relocation format.
 //
 
-typedef struct _IMAGE_BASE_RELOCATION {
+typedef struct _IMAGE_BASE_RELOCATION
+{
     unsigned int   VirtualAddress;
     unsigned int   SizeOfBlock;
-//  WORD    TypeOffset[1];
+    //  WORD    TypeOffset[1];
 } IMAGE_BASE_RELOCATION;
 
 #define IMAGE_SIZEOF_BASE_RELOCATION         8
@@ -589,7 +612,8 @@ typedef struct _IMAGE_BASE_RELOCATION {
 #define IMAGE_REL_BASED_IA64_IMM64            9
 #define IMAGE_REL_BASED_DIR64                 10
 
-typedef struct _IMAGE_EXPORT_DIRECTORY {
+typedef struct _IMAGE_EXPORT_DIRECTORY
+{
     unsigned int   Characteristics;
     unsigned int   TimeDateStamp;
     WORD    MajorVersion;
@@ -620,7 +644,8 @@ typedef struct _IMAGE_EXPORT_DIRECTORY {
 //                                            0x4000     // Reserved.
 #define IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE     0x8000
 
-typedef struct _IMAGE_NT_HEADERS64 {
+typedef struct _IMAGE_NT_HEADERS64
+{
     unsigned int Signature;
     IMAGE_FILE_HEADER FileHeader;
     IMAGE_OPTIONAL_HEADER64 OptionalHeader;
@@ -632,13 +657,13 @@ typedef struct IMAGE_COR20_HEADER
 {
     // Header versioning
 
-   unsigned int                   cb;
-   WORD                    MajorRuntimeVersion;
-   WORD                    MinorRuntimeVersion;
+    unsigned int                   cb;
+    WORD                    MajorRuntimeVersion;
+    WORD                    MinorRuntimeVersion;
     // Symbol table and startup information
 
-   IMAGE_DATA_DIRECTORY    MetaData;
-   unsigned int                   Flags;
+    IMAGE_DATA_DIRECTORY    MetaData;
+    unsigned int                   Flags;
     // DDBLD - Added next section to replace following lin
 
     // DDBLD - Still verifying, since not in NT SDK
@@ -653,49 +678,51 @@ typedef struct IMAGE_COR20_HEADER
 
     // EntryPointRVA represents an RVA to a native entrypoint.
 
-   union {
-      unsigned int               EntryPointToken;
-      unsigned int               EntryPointRVA;
-   };
+    union
+    {
+        unsigned int               EntryPointToken;
+        unsigned int               EntryPointRVA;
+    };
     // DDBLD - End of Added Area
 
 
     // Binding information
 
-   IMAGE_DATA_DIRECTORY    Resources;
-   IMAGE_DATA_DIRECTORY    StrongNameSignature;
+    IMAGE_DATA_DIRECTORY    Resources;
+    IMAGE_DATA_DIRECTORY    StrongNameSignature;
 
     // Regular fixup and binding information
 
-   IMAGE_DATA_DIRECTORY    CodeManagerTable;
-   IMAGE_DATA_DIRECTORY    VTableFixups;
-   IMAGE_DATA_DIRECTORY    ExportAddressTableJumps;
+    IMAGE_DATA_DIRECTORY    CodeManagerTable;
+    IMAGE_DATA_DIRECTORY    VTableFixups;
+    IMAGE_DATA_DIRECTORY    ExportAddressTableJumps;
 
     // Precompiled image info (internal use only - set to zero)
 
-   IMAGE_DATA_DIRECTORY    ManagedNativeHeader;
+    IMAGE_DATA_DIRECTORY    ManagedNativeHeader;
 
-}IMAGE_COR20_HEADER, *PIMAGE_COR20_HEADER;
+} IMAGE_COR20_HEADER, *PIMAGE_COR20_HEADER;
 
 typedef enum ReplacesCorHdrNumericDefines
 {
     // COM+ Header entry point flags.
 
-   COMIMAGE_FLAGS_ILONLY               =0x00000001,
-   COMIMAGE_FLAGS_32BITREQUIRED        =0x00000002,
-   COMIMAGE_FLAGS_IL_LIBRARY           =0x00000004,
-   COMIMAGE_FLAGS_STRONGNAMESIGNED     =0x00000008,
+    COMIMAGE_FLAGS_ILONLY               =0x00000001,
+    COMIMAGE_FLAGS_32BITREQUIRED        =0x00000002,
+    COMIMAGE_FLAGS_IL_LIBRARY           =0x00000004,
+    COMIMAGE_FLAGS_STRONGNAMESIGNED     =0x00000008,
     // DDBLD - Added Next Line - Still verifying general usage
 
-   COMIMAGE_FLAGS_NATIVE_ENTRYPOINT    =0x00000010,
+    COMIMAGE_FLAGS_NATIVE_ENTRYPOINT    =0x00000010,
     // DDBLD - End of Add
 
-   COMIMAGE_FLAGS_TRACKDEBUGDATA       =0x00010000
-    // Other kinds of flags follow
+    COMIMAGE_FLAGS_TRACKDEBUGDATA       =0x00010000
+                                         // Other kinds of flags follow
 
 } ReplacesCorHdrNumericDefines;
 
-typedef struct _IMAGE_TLS_DIRECTORY32 {
+typedef struct _IMAGE_TLS_DIRECTORY32
+{
     unsigned int StartAddressOfRawData;
     unsigned int EndAddressOfRawData;
     unsigned int AddressOfIndex;
@@ -703,7 +730,8 @@ typedef struct _IMAGE_TLS_DIRECTORY32 {
     unsigned int SizeOfZeroFill;
     unsigned int Characteristics;
 } IMAGE_TLS_DIRECTORY32,*PIMAGE_TLS_DIRECTORY32;
-typedef struct _IMAGE_TLS_DIRECTORY64 {
+typedef struct _IMAGE_TLS_DIRECTORY64
+{
     unsigned long long StartAddressOfRawData;
     unsigned long long EndAddressOfRawData;
     unsigned long long AddressOfIndex;
@@ -712,47 +740,51 @@ typedef struct _IMAGE_TLS_DIRECTORY64 {
     unsigned int Characteristics;
 } IMAGE_TLS_DIRECTORY64, *PIMAGE_TLS_DIRECTORY64;
 
-typedef struct _IMAGE_BOUND_IMPORT_DESCRIPTOR {
+typedef struct _IMAGE_BOUND_IMPORT_DESCRIPTOR
+{
     unsigned int TimeDateStamp;
     WORD OffsetModuleName;
     WORD NumberOfModuleForwarderRefs;
 } IMAGE_BOUND_IMPORT_DESCRIPTOR,*PIMAGE_BOUND_IMPORT_DESCRIPTOR;
 
-typedef struct _IMAGE_DEBUG_DIRECTORY {
-  unsigned int Characteristics;
-  unsigned int TimeDateStamp;
-  WORD  MajorVersion;
-  WORD  MinorVersion;
-  unsigned int Type;
-  unsigned int SizeOfData;
-  unsigned int AddressOfRawData;
-  unsigned int PointerToRawData;
+typedef struct _IMAGE_DEBUG_DIRECTORY
+{
+    unsigned int Characteristics;
+    unsigned int TimeDateStamp;
+    WORD  MajorVersion;
+    WORD  MinorVersion;
+    unsigned int Type;
+    unsigned int SizeOfData;
+    unsigned int AddressOfRawData;
+    unsigned int PointerToRawData;
 } IMAGE_DEBUG_DIRECTORY, *PIMAGE_DEBUG_DIRECTORY;
 
-typedef struct {
-  unsigned int     Size;
-  unsigned int     TimeDateStamp;
-  WORD      MajorVersion;
-  WORD      MinorVersion;
-  unsigned int     GlobalFlagsClear;
-  unsigned int     GlobalFlagsSet;
-  unsigned int     CriticalSectionDefaultTimeout;
-  unsigned long long DeCommitFreeBlockThreshold;
-  unsigned long long DeCommitTotalFreeThreshold;
-  unsigned long long LockPrefixTable;
-  unsigned long long MaximumAllocationSize;
-  unsigned long long VirtualMemoryThreshold;
-  unsigned long long ProcessAffinityMask;
-  unsigned int     ProcessHeapFlags;
-  WORD      CSDVersion;
-  WORD      Reserved1;
-  unsigned long long EditList;
-  unsigned long long SecurityCookie;
-  unsigned long long SEHandlerTable;
-  unsigned long long SEHandlerCount;
+typedef struct
+{
+    unsigned int     Size;
+    unsigned int     TimeDateStamp;
+    WORD      MajorVersion;
+    WORD      MinorVersion;
+    unsigned int     GlobalFlagsClear;
+    unsigned int     GlobalFlagsSet;
+    unsigned int     CriticalSectionDefaultTimeout;
+    unsigned long long DeCommitFreeBlockThreshold;
+    unsigned long long DeCommitTotalFreeThreshold;
+    unsigned long long LockPrefixTable;
+    unsigned long long MaximumAllocationSize;
+    unsigned long long VirtualMemoryThreshold;
+    unsigned long long ProcessAffinityMask;
+    unsigned int     ProcessHeapFlags;
+    WORD      CSDVersion;
+    WORD      Reserved1;
+    unsigned long long EditList;
+    unsigned long long SecurityCookie;
+    unsigned long long SEHandlerTable;
+    unsigned long long SEHandlerCount;
 } IMAGE_LOAD_CONFIG_DIRECTORY64, *PIMAGE_LOAD_CONFIG_DIRECTORY64;
 
-typedef struct {
+typedef struct
+{
     unsigned int   Size;
     unsigned int   TimeDateStamp;
     WORD    MajorVersion;

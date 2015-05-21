@@ -61,6 +61,7 @@ unsigned int ELFFile::getElfHeaderSize()
     {
         return sizeof(Elf64_Ehdr);
     }
+
     return sizeof(Elf32_Ehdr);
 }
 
@@ -90,6 +91,7 @@ unsigned char ELFFile::getElfHeader_pad(int nIndex)
     {
         return readByte(7+nIndex);
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nIndex));
     return 0;
 }
@@ -130,6 +132,7 @@ void ELFFile::setElfHeader_pad(unsigned char cValue, int nIndex)
         writeByte(7+nIndex,cValue);
         return;
     }
+
     emit appendError(QString("Value out of range: n=%1").arg(nIndex));
 }
 
@@ -148,7 +151,7 @@ QString ELFFile::getMachineAsString()
     unsigned short sMachine=getElfHeader_machine();
     QList<MACHINE> list=getMachineList();
 
-    for(int i=0;i<list.count();i++)
+    for(int i=0; i<list.count(); i++)
     {
         if(list.at(i).nMachine==sMachine)
         {
@@ -200,6 +203,7 @@ unsigned int ELFFile::getElfHeader_flags()
     {
         return readDword(offsetof(Elf64_Ehdr,e_flags),isReverse());
     }
+
     return readDword(offsetof(Elf32_Ehdr,e_flags),isReverse());
 }
 
@@ -209,6 +213,7 @@ unsigned short ELFFile::getElfHeader_ehsize()
     {
         return readWord(offsetof(Elf64_Ehdr,e_ehsize),isReverse());
     }
+
     return readWord(offsetof(Elf32_Ehdr,e_ehsize),isReverse());
 }
 
@@ -218,6 +223,7 @@ unsigned short ELFFile::getElfHeader_phentsize()
     {
         return readWord(offsetof(Elf64_Ehdr,e_phentsize),isReverse());
     }
+
     return readWord(offsetof(Elf32_Ehdr,e_phentsize),isReverse());
 }
 
@@ -227,6 +233,7 @@ unsigned short ELFFile::getElfHeader_phnum()
     {
         return readWord(offsetof(Elf64_Ehdr,e_phnum),isReverse());
     }
+
     return readWord(offsetof(Elf32_Ehdr,e_phnum),isReverse());
 }
 
@@ -236,6 +243,7 @@ unsigned short ELFFile::getElfHeader_shentsize()
     {
         return readWord(offsetof(Elf64_Ehdr,e_shentsize),isReverse());
     }
+
     return readWord(offsetof(Elf32_Ehdr,e_shentsize),isReverse());
 }
 
@@ -245,6 +253,7 @@ unsigned short ELFFile::getElfHeader_shnum()
     {
         return readWord(offsetof(Elf64_Ehdr,e_shnum),isReverse());
     }
+
     return readWord(offsetof(Elf32_Ehdr,e_shnum),isReverse());
 }
 
@@ -254,6 +263,7 @@ unsigned short ELFFile::getElfHeader_shstrndx()
     {
         return readWord(offsetof(Elf64_Ehdr,e_shstrndx),isReverse());
     }
+
     return readWord(offsetof(Elf32_Ehdr,e_shstrndx),isReverse());
 }
 
@@ -309,6 +319,7 @@ void ELFFile::setElfHeader_flags(unsigned int nValue)
         writeDword(offsetof(Elf64_Ehdr,e_flags),nValue,isReverse());
         return;
     }
+
     writeDword(offsetof(Elf32_Ehdr,e_flags),nValue,isReverse());
 }
 
@@ -319,6 +330,7 @@ void ELFFile::setElfHeader_ehsize(unsigned short sValue)
         writeWord(offsetof(Elf64_Ehdr,e_ehsize),sValue,isReverse());
         return;
     }
+
     writeWord(offsetof(Elf32_Ehdr,e_ehsize),sValue,isReverse());
 }
 
@@ -329,6 +341,7 @@ void ELFFile::setElfHeader_phentsize(unsigned short sValue)
         writeWord(offsetof(Elf64_Ehdr,e_phentsize),sValue,isReverse());
         return;
     }
+
     writeWord(offsetof(Elf32_Ehdr,e_phentsize),sValue,isReverse());
 }
 
@@ -339,6 +352,7 @@ void ELFFile::setElfHeader_phnum(unsigned short sValue)
         writeWord(offsetof(Elf64_Ehdr,e_phnum),sValue,isReverse());
         return;
     }
+
     writeWord(offsetof(Elf32_Ehdr,e_phnum),sValue,isReverse());
 }
 
@@ -349,6 +363,7 @@ void ELFFile::setElfHeader_shentsize(unsigned short sValue)
         writeWord(offsetof(Elf64_Ehdr,e_shentsize),sValue,isReverse());
         return;
     }
+
     writeWord(offsetof(Elf32_Ehdr,e_shentsize),sValue,isReverse());
 }
 
@@ -359,6 +374,7 @@ void ELFFile::setElfHeader_shnum(unsigned short sValue)
         writeWord(offsetof(Elf64_Ehdr,e_shnum),sValue,isReverse());
         return;
     }
+
     writeWord(offsetof(Elf32_Ehdr,e_shnum),sValue,isReverse());
 }
 
@@ -369,6 +385,7 @@ void ELFFile::setElfHeader_shstrndx(unsigned short sValue)
         writeWord(offsetof(Elf64_Ehdr,e_shstrndx),sValue,isReverse());
         return;
     }
+
     writeWord(offsetof(Elf32_Ehdr,e_shstrndx),sValue,isReverse());
 }
 bool ELFFile::isSectionPresent(int nSection)
@@ -377,6 +394,7 @@ bool ELFFile::isSectionPresent(int nSection)
     {
         return true;
     }
+
     emit appendError(QString("Invalid section number: %1").arg(nSection));
 
     return false;
@@ -406,6 +424,7 @@ bool ELFFile::isProgramPresent(int nProgram)
     {
         return true;
     }
+
     emit appendError(QString("Invalid nProgram number: %1").arg(nProgram));
 
     return false;
@@ -465,6 +484,7 @@ bool ELFFile::dumpProgram(QString sFileName, int nProgram)
         nOffset=getProgramHeader32_offset(nProgram);
         nSize=getProgramHeader32_filesz(nProgram);
     }
+
     return dump(sFileName,nOffset,nSize);
 }
 unsigned int ELFFile::getSectionHeader32_name(unsigned int nSection)
@@ -830,7 +850,7 @@ void ELFFile::setProgramHeader64_align(unsigned int nProgram, unsigned long long
 unsigned int ELFFile::OffsetToRVA32(unsigned int nOffset)
 {
 
-    for(int i=0;i<getElfHeader_phnum();i++)
+    for(int i=0; i<getElfHeader_phnum(); i++)
     {
         if((getProgramHeader32_offset(i)<=nOffset)&&(nOffset<getProgramHeader32_offset(i)+getProgramHeader32_filesz(i)))
         {
@@ -844,7 +864,7 @@ unsigned int ELFFile::OffsetToRVA32(unsigned int nOffset)
 unsigned long long ELFFile::OffsetToRVA64(unsigned long long nOffset)
 {
 
-    for(int i=0;i<getElfHeader_phnum();i++)
+    for(int i=0; i<getElfHeader_phnum(); i++)
     {
         if((getProgramHeader64_offset(i)<=nOffset)&&(nOffset<getProgramHeader64_offset(i)+getProgramHeader64_filesz(i)))
         {
@@ -858,7 +878,7 @@ unsigned long long ELFFile::OffsetToRVA64(unsigned long long nOffset)
 
 unsigned int ELFFile::RVAToOffset32(unsigned int nRVA)
 {
-    for(int i=0;i<getElfHeader_phnum();i++)
+    for(int i=0; i<getElfHeader_phnum(); i++)
     {
         if((getProgramHeader32_vaddr(i)<=nRVA)&&(nRVA<getProgramHeader32_vaddr(i)+getProgramHeader32_memsz(i)))
         {
@@ -872,7 +892,7 @@ unsigned int ELFFile::RVAToOffset32(unsigned int nRVA)
 
 unsigned long long ELFFile::RVAToOffset64(unsigned long long nRVA)
 {
-    for(int i=0;i<getElfHeader_phnum();i++)
+    for(int i=0; i<getElfHeader_phnum(); i++)
     {
         if((getProgramHeader64_vaddr(i)<=nRVA)&&(nRVA<getProgramHeader64_vaddr(i)+getProgramHeader64_memsz(i)))
         {
@@ -887,6 +907,7 @@ unsigned long long ELFFile::RVAToOffset64(unsigned long long nRVA)
 unsigned long long ELFFile::OffsetToRVA(unsigned long long nOffset)
 {
     unsigned long long nResult=0;
+
     if(isELF64())
     {
         nResult=OffsetToRVA64(nOffset);
@@ -907,6 +928,7 @@ unsigned long long ELFFile::OffsetToRVA(unsigned long long nOffset)
 unsigned long long ELFFile::RVAToOffset(unsigned long long nRVA)
 {
     unsigned long long nResult=0;
+
     if(isELF64())
     {
         nResult=RVAToOffset64(nRVA);
@@ -972,6 +994,7 @@ QByteArray ELFFile::getSectionNamesTable()
 {
     QByteArray baResult;
     unsigned int nShstrndx=getElfHeader_shstrndx();
+
     if(nShstrndx)
     {
         if(nShstrndx<getElfHeader_shnum())
@@ -989,6 +1012,7 @@ QByteArray ELFFile::getSection(int nSection)
     QByteArray baResult;
     unsigned int nSize=0;
     unsigned int nOffset=0;
+
     if(isSectionPresent(nSection))
     {
         if(isELF64())
@@ -1061,7 +1085,7 @@ unsigned int ELFFile::getSectionNumber(QString sSectionName)
 {
     int nSections=getElfHeader_shnum();
 
-    for(int i=0;i<nSections;i++)
+    for(int i=0; i<nSections; i++)
     {
         if(getSectionName(i)==sSectionName)
         {
@@ -1101,7 +1125,7 @@ bool ELFFile::isSectionNamePresent(QString sSectionName)
 {
     unsigned int nNumberOfSections=getElfHeader_shnum();
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         if(getSectionName(i)==sSectionName)
         {
@@ -1260,32 +1284,32 @@ QString ELFFile::sectionHeaderTypeToString(unsigned int nType)
 
 QList<ELFFile::STRING_TABLE_RECORD> ELFFile::getStringTableAsList()
 {
-//    QList<STRING_TABLE_RECORD> listResult;
+    //    QList<STRING_TABLE_RECORD> listResult;
 
-//    if(getElfHeader_shstrndx())
-//    {
-//        QByteArray baStringTable=getSectionNamesTable();
+    //    if(getElfHeader_shstrndx())
+    //    {
+    //        QByteArray baStringTable=getSectionNamesTable();
 
-//        unsigned int nSize=baStringTable.size();
-//        char *pOffset=baStringTable.data();
+    //        unsigned int nSize=baStringTable.size();
+    //        char *pOffset=baStringTable.data();
 
-//        STRING_TABLE_RECORD record;
-//        unsigned int nStringSize=0;
+    //        STRING_TABLE_RECORD record;
+    //        unsigned int nStringSize=0;
 
-//        record.nIndex=0;
+    //        record.nIndex=0;
 
-//        while(nSize>0)
-//        {
-//            record.sString=pOffset;
-//            listResult.append(record);
+    //        while(nSize>0)
+    //        {
+    //            record.sString=pOffset;
+    //            listResult.append(record);
 
-//            nStringSize=record.sString.size()+1;
-//            pOffset+=nStringSize;
-//            record.nIndex+=nStringSize;
+    //            nStringSize=record.sString.size()+1;
+    //            pOffset+=nStringSize;
+    //            record.nIndex+=nStringSize;
 
-//            nSize-=nStringSize;
-//        }
-//    }
+    //            nSize-=nStringSize;
+    //        }
+    //    }
 
     return getStringTableAsList(getElfHeader_shstrndx());
 }
@@ -1331,16 +1355,16 @@ bool ELFFile::isStringInTablePresent(QString sSectionName, QString sString)
         return false;
     }
 
-    for(int i=0;i<nNumberOfSections;i++)
+    for(int i=0; i<nNumberOfSections; i++)
     {
         if(getSectionName(i)==sSectionName)
         {
             QList<STRING_TABLE_RECORD> listResult=getStringTableAsList(i);
 
-            for(int j=0;j<listResult.count();j++)
+            for(int j=0; j<listResult.count(); j++)
             {
-//                qDebug(listResult.at(j).sString.toAscii().data());
-//                qDebug(sString.toAscii().data());
+                //                qDebug(listResult.at(j).sString.toAscii().data());
+                //                qDebug(sString.toAscii().data());
                 if(listResult.at(j).sString==sString)
                 {
                     return true;
@@ -1500,7 +1524,7 @@ unsigned int ELFFile::calculateRawSize()
 {
     unsigned int nResult=getSizeOfHeader();
 
-    for(int i=0;i<getNumberOfPrograms();i++)
+    for(int i=0; i<getNumberOfPrograms(); i++)
     {
         nResult=qMax(nResult,getProgramFileOffset(i)+getProgramFileSize(i));
     }

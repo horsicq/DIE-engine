@@ -8,7 +8,7 @@ class TextFile : public Binary
     Q_OBJECT
 public:
     explicit TextFile(QObject *parent = 0);
-    
+
 public slots:
     bool isValid();
 };

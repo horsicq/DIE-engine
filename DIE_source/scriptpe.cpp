@@ -190,25 +190,25 @@ bool scriptPE::compare(QString sSignature,unsigned int nOffset)
 bool scriptPE::compareEP(QString sSignature,unsigned int nOffset)
 {
     return pefile->compareEP(sSignature,nOffset);
-//    sSignature=pefile->convertSignature(sSignature);
+    //    sSignature=pefile->convertSignature(sSignature);
 
-//    if((sSignature.contains("$"))||(sSignature.contains("#")))
-//    {
-//        unsigned int nEP=pefile->getEntryPointOffset();
-//        return compareReg(sSignature,nEP+nOffset);
-//    }
-//    else
-//    {
-//        if(nOffset)
-//        {
-//            return compareReg(sSignature,pefile->getEntryPointOffset()+nOffset);
-//        }
-//        else
-//        {
-//            return pefile->compareEPfast(sSignature);
-//        }
+    //    if((sSignature.contains("$"))||(sSignature.contains("#")))
+    //    {
+    //        unsigned int nEP=pefile->getEntryPointOffset();
+    //        return compareReg(sSignature,nEP+nOffset);
+    //    }
+    //    else
+    //    {
+    //        if(nOffset)
+    //        {
+    //            return compareReg(sSignature,pefile->getEntryPointOffset()+nOffset);
+    //        }
+    //        else
+    //        {
+    //            return pefile->compareEPfast(sSignature);
+    //        }
 
-//    }
+    //    }
 }
 
 //bool scriptPE::compareEPn(QString sSignature,unsigned int nOffset)
@@ -255,23 +255,23 @@ unsigned int scriptPE::getMinorLinkerVersion()
 
 QString scriptPE::getImportFunctionName(unsigned int nImport, unsigned int nFunctionNumber)
 {
-//#ifndef QT_NO_DEBUG
-//    QTime scanTime=QTime::currentTime();
-//#endif
+    //#ifndef QT_NO_DEBUG
+    //    QTime scanTime=QTime::currentTime();
+    //#endif
 
     QString sResult=pefile->getImportFunctionName(nImport,nFunctionNumber);
 
-//#ifndef QT_NO_DEBUG
-//   qDebug("getImportFunctionName: %d msec",scanTime.msecsTo(QTime::currentTime()));
-//#endif
+    //#ifndef QT_NO_DEBUG
+    //   qDebug("getImportFunctionName: %d msec",scanTime.msecsTo(QTime::currentTime()));
+    //#endif
 
     return sResult;
 }
 unsigned int scriptPE::getNumberOfImportThunks(unsigned int nImport)
 {
-//#ifndef QT_NO_DEBUG
-//    QTime scanTime=QTime::currentTime();
-//#endif
+    //#ifndef QT_NO_DEBUG
+    //    QTime scanTime=QTime::currentTime();
+    //#endif
 
     //#ifndef QT_NO_DEBUG
     //   qDebug("getNumberOfImportThunks: %d msec",scanTime.msecsTo(QTime::currentTime()));

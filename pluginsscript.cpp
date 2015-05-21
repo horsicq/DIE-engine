@@ -6,26 +6,26 @@
 
 QScriptValue includeScript(QScriptContext *context, QScriptEngine *engine)
 {
-    QScriptValue ret ( false );
+    QScriptValue ret(false);
 
-
-
-    if ( engine == 0 )
-       return ret;
+    if(engine == 0)
+    {
+        return ret;
+    }
 
     QString fileName = context->argument(0).toString();
 
     fileName=((PluginsScript *)engine)->getDefaultPath()+QDir::separator()+fileName;
 
-    QFile file ( fileName );
+    QFile file(fileName);
 
-    if ( file.open ( QFile::ReadOnly ) )
+    if(file.open(QFile::ReadOnly))
     {
         QByteArray line = file.readAll();
         file.close();
-        QString contents = QString::fromUtf8 ( line );
-        engine->currentContext()->setActivationObject ( engine->currentContext()->parentContext()->activationObject() );
-        ret = engine->evaluate ( contents, fileName );
+        QString contents = QString::fromUtf8(line);
+        engine->currentContext()->setActivationObject(engine->currentContext()->parentContext()->activationObject());
+        ret = engine->evaluate(contents, fileName);
     }
     else
     {
@@ -37,7 +37,7 @@ QScriptValue includeScript(QScriptContext *context, QScriptEngine *engine)
 
 QScriptValue _log(QScriptContext *context, QScriptEngine *engine)
 {
-    QScriptValue ret ( true );
+    QScriptValue ret(true);
 
     ((PluginsScript *)engine)->_appendError(context->argument(0).toString());
 
@@ -46,7 +46,7 @@ QScriptValue _log(QScriptContext *context, QScriptEngine *engine)
 
 QScriptValue _message(QScriptContext *context, QScriptEngine *engine)
 {
-    QScriptValue ret ( true );
+    QScriptValue ret(true);
 
     ((PluginsScript *)engine)->_appendMessage(context->argument(0).toString());
 
@@ -702,17 +702,17 @@ PluginsScript::PluginsScript(QObject *parent) :
     addFunction(includeScript,"includeScript");
     addFunction(_log,"_log");
     addFunction(_message,"_message");
-//    binary=0;
+    //    binary=0;
 
-//    addClass(&scriptpe,"PE");
-//    connect(&scriptpe,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+    //    addClass(&scriptpe,"PE");
+    //    connect(&scriptpe,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
 }
 
 void PluginsScript::setData(QObject *pClass,QString sClassName,QString sDefaultPath)
 {
-//    this->sDefaultPath=sDefaultPath;
+    //    this->sDefaultPath=sDefaultPath;
     addClass(pClass,sClassName,sDefaultPath);
-//    emit appendError(sClassName);
+    //    emit appendError(sClassName);
 }
 
 QScriptValue PluginsScript::callFromFile(QString sScriptFile, QString sFunctionName, QScriptValueList valuelist)
@@ -739,15 +739,15 @@ QScriptValue PluginsScript::callFromFile(QString sScriptFile, QString sFunctionN
 
 QScriptValue PluginsScript::evalFromFile(QString sScriptFile)
 {
-    QFile file (sScriptFile);
+    QFile file(sScriptFile);
     QScriptValue ret;
 
-    if(file.open( QFile::ReadOnly ) )
+    if(file.open(QFile::ReadOnly))
     {
         QByteArray line = file.readAll();
         file.close();
-        QString contents = QString::fromUtf8 ( line );
-        ret = evaluate ( contents, sScriptFile );
+        QString contents = QString::fromUtf8(line);
+        ret = evaluate(contents, sScriptFile);
     }
     else
     {
@@ -761,13 +761,16 @@ QScriptValue PluginsScript::call(QString sScript, QString sFunctionName, QScript
 {
     // TODO check if function
     QScriptValue script = evaluate(sScript);
+
     if(!script.isError())
     {
         QScriptValue detect=globalObject().property(sFunctionName);
+
         if(!detect.isError())
         {
 
             QScriptValue result=detect.call(script,valuelist);
+
             if(!result.isError())
             {
                 return result;
@@ -836,9 +839,11 @@ bool PluginsScript::isFunctionPresentInFile(QString sScriptFile, QString sFuncti
 bool PluginsScript::isFunctionPresent(QString sScript, QString sFunctionName)
 {
     QScriptValue script = evaluate(sScript);
+
     if(!script.isError())
     {
         QScriptValue detect=globalObject().property(sFunctionName);
+
         if(!detect.isError())
         {
             return detect.isFunction();

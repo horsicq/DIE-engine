@@ -11,6 +11,7 @@ bool TextFile::isValid()
     {
         return true;
     }
+
     emit appendError("Invalid Text file");
 
     return false;
