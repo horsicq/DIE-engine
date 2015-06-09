@@ -6093,6 +6093,10 @@ unsigned int PEFile::getNETOffset()
 
 bool PEFile::initCLI()
 {
+//    #ifdef QT_DEBUG
+//        qDebug("bool PEFile::initCLI()");
+//    #endif
+
     IMAGE_DATA_DIRECTORY idd;
     unsigned int nOffset;
 
@@ -6100,6 +6104,9 @@ bool PEFile::initCLI()
     {
         if(!CLI_Section.bIsInit)
         {
+//            #ifdef QT_DEBUG
+//                qDebug("CLI_Section.bIsInit=0");
+//            #endif
 
             CLI_Section.nEntryPointSize=0;
 
@@ -6438,9 +6445,6 @@ bool PEFile::initCLI()
             {
                 emit appendError(".NET MetaData is not present");
             }
-
-
-
 
             CLI_Section.bIsInit=true;
 
@@ -7485,6 +7489,10 @@ QByteArray PEFile::getCLI_MetaData_Strings()
 
 QByteArray PEFile::getCLI_MetaData_US()
 {
+//#ifdef QT_DEBUG
+//    qDebug("QByteArray PEFile::getCLI_MetaData_US()");
+//#endif
+
     QByteArray baResult;
 
     if(initCLI())
@@ -7549,7 +7557,8 @@ QList<QString> PEFile::getCLI_MetaData_USAsList()
     QString sTemp;
     int nStringSize;
 
-    char *pOffset=baStrings.data();
+    char *_pOffset=baStrings.data();
+    char *pOffset=_pOffset;
     int nSize=baStrings.size();
 
     pOffset++;
@@ -7564,8 +7573,18 @@ QList<QString> PEFile::getCLI_MetaData_USAsList()
             nStringSize=0;
         }
 
+        if(nStringSize>nSize-i)
+        {
+            break;
+        }
+
         pOffset++;
+        if(pOffset>_pOffset+nSize)
+        {
+            break;
+        }
         sTemp=QString::fromUtf16((ushort *)pOffset,nStringSize/2);
+
         listResult.append(sTemp);
 
         pOffset+=nStringSize;
