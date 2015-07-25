@@ -16,7 +16,7 @@ QString Utils::getApplicationPath()
     sResult="/Volumes/DATA/prepare/qt/DIE_source";
 #endif
 #ifdef Q_OS_LINUX
-    sResult="/home/trix/prepare/qt/DIE_source";
+    sResult="/home/trix/ownCloud/prepare/qt/DIE_source";
 #endif
 #endif
 

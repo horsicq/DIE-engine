@@ -481,11 +481,11 @@ bool Binary::readArray(unsigned int nOffset, char *pBuffer, unsigned int nSize)
 QByteArray Binary::readArray(unsigned int nOffset, unsigned int nSize)
 {
     QByteArray baResult;
-    int nFileSize=size();
+    unsigned int nFileSize=size();
 
     if(nOffset<nFileSize)
     {
-        if(nOffset+nSize>nFileSize)
+        if((unsigned long long)nOffset+(unsigned long long)nSize>(unsigned long long)nFileSize)
         {
             nSize=nFileSize-nOffset;
         }
