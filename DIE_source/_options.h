@@ -5,7 +5,7 @@
 #include <QList>
 
 #define __DIE "Detect It Easy"
-#define __VERSION "0.98"
+#define __VERSION "0.99"
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
 #define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"
