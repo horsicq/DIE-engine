@@ -53,7 +53,7 @@ struct mach_header_64
 /*
  * The layout of the file depends on the filetype.  For all but the MH_OBJECT
  * file type the segments are padded out and aligned on a segment alignment
- * boundary for efficient demand pageing.  The MH_EXECUTE, MH_FVMLIB, MH_DYLIB,
+ * boundary for efficient demand paging.  The MH_EXECUTE, MH_FVMLIB, MH_DYLIB,
  * MH_DYLINKER and MH_BUNDLE file types also have the headers included as part
  * of their first segment.
  *
@@ -68,7 +68,7 @@ struct mach_header_64
  * format can be executed under the kernel but may demand paged it and not
  * preload it before execution.
  *
- * A core file is in MH_CORE format and can be any in an arbritray legal
+ * A core file is in MH_CORE format and can be any in an arbitrary legal
  * Mach-O file.
  *
  * Constants for the filetype field of the mach_header
@@ -530,7 +530,7 @@ struct section_64   /* for 64-bit architectures */
 #define SEG_UNIXSTACK	"__UNIXSTACK"	/* the unix stack segment */
 
 #define SEG_IMPORT	"__IMPORT"	/* the segment for the self (dyld) */
-/* modifing code stubs that has read, */
+/* modifying code stubs that has read, */
 /* write and execute permissions */
 
 #define x86_THREAD_STATE32 1

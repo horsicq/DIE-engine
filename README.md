@@ -24,7 +24,7 @@ How to build:
 
 ## Mac:
 
-* instal XCODE: https://developer.apple.com/xcode/downloads/
+* install XCODE: https://developer.apple.com/xcode/downloads/
 * Install QT 4.8.6: http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-opensource-mac-4.8.6-1.dmg
 
 * run build_console_mac.sh ( bash -x build_console_mac.sh )
