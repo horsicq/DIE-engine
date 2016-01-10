@@ -457,7 +457,7 @@ int main(int argc, char *argv[])
         printf(__VERSION);
         printf(" console\n");
         printf("\n");
-        printf("Copyright(C) 2006-2008 Hellsp@wn 2012-2015 Hors\n");
+        printf("Copyright(C) 2006-2008 Hellsp@wn 2012-2016 Hors\n");
         printf("Website: http://ntinfo.biz\n");
         printf("Bugreports: horsicq@gmail.com\n");
         printf("\n");

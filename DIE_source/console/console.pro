@@ -22,6 +22,8 @@ unix:macx {
 TARGET = DIEC_mac
 }
 
+include(../../build.pri)
+
 HEADERS += \
     _mainclass.h \
     ../scriptpe.h \

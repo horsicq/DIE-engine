@@ -26,7 +26,6 @@ QString scriptPE::getCompilerVersion()
 }
 QString scriptPE::getGeneralOptions()
 {
-
     QString sResult;
 
     bool bIs64=pefile->isPEPlus();
@@ -248,6 +247,7 @@ unsigned int scriptPE::getMajorLinkerVersion()
 {
     return pefile->getOptionalHeader_MajorLinkerVersion();
 }
+
 unsigned int scriptPE::getMinorLinkerVersion()
 {
     return pefile->getOptionalHeader_MinorLinkerVersion();
@@ -279,18 +279,18 @@ unsigned int scriptPE::getNumberOfImportThunks(unsigned int nImport)
 
     unsigned nResult=pefile->getNumberOfImportThunks(nImport);
 
-
-
     return nResult;
 }
 unsigned int scriptPE::getSizeOfCode()
 {
     return pefile->getOptionalHeader_SizeOfCode();
 }
+
 unsigned int scriptPE::getSizeOfUninitializedData()
 {
     return pefile->getOptionalHeader_SizeOfUninitializedData();
 }
+
 int scriptPE::getNumberOfSections()
 {
     return pefile->getFileHeader_NumberOfSections();
@@ -300,6 +300,7 @@ unsigned int scriptPE::getImageBase()
 {
     return pefile->getOptionalHeader_ImageBase();
 }
+
 bool scriptPE::isDll()
 {
     return pefile->isDll();
@@ -309,10 +310,12 @@ bool scriptPE::isDriver()
 {
     return pefile->isDriver();
 }
+
 unsigned int scriptPE::getSectionFileSize(int nSectionNumber)
 {
     return pefile->getSection_SizeOfRawData(nSectionNumber);
 }
+
 unsigned int scriptPE::getSectionFileOffset(int nSectionNumber)
 {
     return pefile->getSection_PointerToRawData(nSectionNumber);

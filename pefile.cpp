@@ -1,7 +1,5 @@
 #include "pefile.h"
 
-
-
 PEFile::PEFile(QObject *parent) :
     Binary(parent)
 {
@@ -2180,7 +2178,6 @@ unsigned int PEFile::CalculateCheckSum()
 
 unsigned short PEFile::CheckSum(int nStartValue,int nDataSize)
 {
-
     int nSum=nStartValue;
     unsigned int nTemp=0;
     char *pBuffer=new char[BUFFER_SIZE];
@@ -3392,7 +3389,6 @@ bool PEFile::isDll()
         {
             return (getFileHeader_Characteristics()&IMAGE_FILE_DLL);
         }
-
     }
 
     return false;
@@ -3418,7 +3414,6 @@ unsigned int PEFile::calculateSizeOfImage2()
 {
     unsigned int nLastSection=getFileHeader_NumberOfSections()-1;
     return (getSection_VirtualAddress(nLastSection)+getSection_VirtualSize(nLastSection));
-
 }
 
 unsigned int PEFile::calculateSizeOfHeaders()
@@ -3430,7 +3425,6 @@ unsigned int PEFile::calculateBaseOfCode()
 {
     unsigned int nCharacteristics;
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
-
 
     for(int i=0; i<nNumberOfSections; i++)
     {
@@ -3455,7 +3449,6 @@ unsigned int PEFile::calculateBaseOfData()
     unsigned int nCharacteristics;
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
 
-
     for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
@@ -3478,7 +3471,6 @@ unsigned int PEFile::calculateSizeOfInitializedData()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nResult=0;
 
-
     for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
@@ -3497,7 +3489,6 @@ unsigned int PEFile::calculateSizeOfInitializedData2()
     unsigned int nCharacteristics;
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nResult=0;
-
 
     for(int i=0; i<nNumberOfSections; i++)
     {
@@ -3518,7 +3509,6 @@ unsigned int PEFile::calculateSizeOfUninitializedData()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nResult=0;
 
-
     for(int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
@@ -3537,7 +3527,6 @@ unsigned int PEFile::calculateSizeOfCode()
     unsigned int nCharacteristics;
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nResult=0;
-
 
     for(int i=0; i<nNumberOfSections; i++)
     {
@@ -3610,9 +3599,6 @@ bool PEFile::compareEP(QString sSignature,unsigned int nOffset)
     return compare(sSignature,getEntryPointOffset()+nOffset);
 }
 
-
-
-
 //bool PEFile::compareOverlay(char *pszSignature,unsigned int nOffset)
 //{
 ////    bool bResult=false;
@@ -3683,7 +3669,6 @@ void PEFile::setImportThunk(unsigned int nImport,unsigned int nFunctionNumber, u
         return;
     }
 
-
     if(nImport<getNumberOfImports())
     {
         if(nFunctionNumber<getNumberOfImportThunks(nImport))
@@ -3715,7 +3700,6 @@ void PEFile::setImportThunk64(unsigned int nImport,unsigned int nFunctionNumber,
         emit appendWarning("Import is not present");
         return;
     }
-
 
     if(nImport<getNumberOfImports())
     {
@@ -3854,7 +3838,6 @@ unsigned int PEFile::getImportLibraryNumber(QString sLibraryName)
     }
 
     int nNumberOfImports=getNumberOfImports();
-
 
     for(int i=0; i<nNumberOfImports; i++)
     {

@@ -9,6 +9,8 @@ QT       +=script xml gui
 TARGET = diedll
 TEMPLATE = lib
 
+include(../../build.pri)
+
 DEFINES += DIEDLL_LIBRARY
 
 SOURCES += diedll.cpp \
