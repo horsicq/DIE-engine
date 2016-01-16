@@ -136,7 +136,7 @@ struct mach_header_64
 #define MH_BINDS_TO_WEAK 0x10000	/* the final linked image uses
 					   weak symbols */
 
-#define MH_ALLOW_STACK_EXECUTION 0x20000/* When this bit is set, all stacks 
+#define MH_ALLOW_STACK_EXECUTION 0x20000/* When this bit is set, all stacks
 					   in the task will be given stack
 					   execution privilege.  Only used in
 					   MH_EXECUTE filetypes. */
@@ -147,15 +147,15 @@ struct mach_header_64
 					     LC_LOAD_DYLIB load command to the
 					     dylib if no symbols are being
 					     referenced from the dylib. */
-#define MH_ROOT_SAFE 0x40000           /* When this bit is set, the binary 
+#define MH_ROOT_SAFE 0x40000	       /* When this bit is set, the binary
 					  declares it is safe for use in
 					  processes with uid zero */
 
-#define MH_SETUID_SAFE 0x80000         /* When this bit is set, the binary 
+#define MH_SETUID_SAFE 0x80000	       /* When this bit is set, the binary
 					  declares it is safe for use in
 					  processes when issetugid() is true */
 
-#define MH_NO_REEXPORTED_DYLIBS 0x100000 /* When this bit is set on a dylib, 
+#define MH_NO_REEXPORTED_DYLIBS 0x100000 /* When this bit is set on a dylib,
 					  the static linker does not need to
 					  examine dependent dylibs to see
 					  if any are re-exported */
@@ -430,7 +430,7 @@ struct section_64   /* for 64-bit architectures */
 						   interposing */
 #define	S_16BYTE_LITERALS		0xe	/* section with only 16 byte
 						   literals */
-#define	S_DTRACE_DOF			0xf	/* section contains 
+#define S_DTRACE_DOF			0xf	/* section contains
 						   DTrace Object Format */
 #define	S_LAZY_DYLIB_SYMBOL_POINTERS	0x10	/* section with only lazy
 						   symbol pointers to lazy
