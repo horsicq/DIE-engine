@@ -193,7 +193,7 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
         }
         else if(sParam.toLower().contains("-database:"))
         {
-            sTemp=sParam.section(":",1,1).toLower();
+            sTemp=sParam.section(":",1,-1).toLower();
 
             QDir _dir;
 
