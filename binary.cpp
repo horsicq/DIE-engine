@@ -2557,8 +2557,10 @@ QList<QString> Binary::getTypes()
                     {
                         listResult.append(QString("PE+(64)"));
                     }
-
-                    listResult.append(QString("PE"));
+                    else
+                    {
+                        listResult.append(QString("PE"));
+                    }
                 }
             }
 
