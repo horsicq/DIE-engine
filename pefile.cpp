@@ -5442,7 +5442,7 @@ QByteArray PEFile::getResourceIdDataFast(unsigned int nID1)
 
             if(!isOffsetValid(nDirectoryEntryOffset))
             {
-                return false;
+                return QByteArray();
             }
 
             //            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
@@ -5451,7 +5451,7 @@ QByteArray PEFile::getResourceIdDataFast(unsigned int nID1)
 
             if(!isOffsetValid(nDirectoryEntryOffset))
             {
-                return false;
+                return QByteArray();
             }
 
             //            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
@@ -5459,7 +5459,7 @@ QByteArray PEFile::getResourceIdDataFast(unsigned int nID1)
 
             if(!isOffsetValid(nDirectoryEntryOffset))
             {
-                return false;
+                return QByteArray();
             }
 
             //            unsigned int nRVA=(((IMAGE_RESOURCE_DATA_ENTRY*)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
