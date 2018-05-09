@@ -1,6 +1,8 @@
-QT       += core script xml
+QT       += core script xml concurrent
 
 QT       -= gui
+
+DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x000000
 
 CONFIG   += console
 CONFIG   -= app_bundle

@@ -8,17 +8,6 @@ QString Utils::getApplicationPath()
 {
     QString sResult;
     sResult=qApp->applicationDirPath();
-#ifndef QT_NO_DEBUG
-#ifdef Q_WS_WIN
-    sResult="F:\\prepare\\qt\\DIE_source";
-#endif
-#ifdef Q_OS_MAC
-    sResult="/Volumes/DATA/prepare/qt/DIE_source";
-#endif
-#ifdef Q_OS_LINUX
-    sResult="/home/trix/ownCloud/prepare/qt/DIE_source";
-#endif
-#endif
 
     return sResult;
 }
