@@ -1,11 +1,36 @@
+// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
 #ifndef _OPTIONS_H
 #define _OPTIONS_H
 
 #include <QString>
 #include <QList>
+#include <QMutex>
+#ifdef USE_NFD
+#include "staticscan.h"
+#include "staticscanitemmodel.h"
+#endif
 
 #define __DIE "Detect It Easy"
-#define __VERSION "1.01"
+#define __VERSION "2.00"
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
 #define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"
@@ -24,6 +49,28 @@ struct __SIGNATURE
     QString sText;
 };
 
+enum SCAN_METHODS
+{
+    SM_DIE=0,
+#ifdef USE_NFD
+    SM_NFD,
+#endif
+#ifdef USE_YARA
+    SM_YARA,
+#endif
+#ifdef USE_PEID
+    SM_PEID
+#endif
+};
+
+struct __DIE_RESULT
+{
+    QString sSignature;
+    QString sFileType;
+    QString sType;
+    QString sName;
+};
+
 struct __DIE_OPTIONS
 {
     int nDialogOpen;
@@ -31,8 +78,12 @@ struct __DIE_OPTIONS
     bool bScanAfterOpen;
     bool bSaveLastDirectory;
     bool bShowTooltips;
-    bool bShowVersion;
-    bool bShowOptions;
+    bool bScanShowVersionDIE;
+    bool bScanShowOptionsDIE;
+#ifdef USE_NFD
+    bool bScanDeepScanNFD;
+    bool bScanScanOverlayNFD;
+#endif
     bool bShowErrors;
     bool bShowScanTime;
     bool bScanSubfolders;
@@ -64,7 +115,7 @@ struct __DIE_OPTIONS
     QString sEndianness;
     bool bEnablePlugins;
     QString sCodec;
-    int nNumberOfResults;
+//    int nNumberOfResults;
     QString sDataBasePath;
     QString sEditorPath;
     QString sHelpPath;
@@ -74,13 +125,24 @@ struct __DIE_OPTIONS
     QString sLangsPath;
     QString sScriptsPath;
     QString sSearchPath;
+    SCAN_METHODS sm;
+    QMutex *pMutexResult;
+    QList<__DIE_RESULT> die_listResult;
+#ifdef USE_NFD
+    QList<SpecAbstract::SCAN_STRUCT> nfd_listResult;
+#endif
 };
 
 #define __StayOnTop "General/StayOnTop"
 #define __SingleApplication "General/SingleApplication"
 #define __ScanAfterOpen "Scan/ScanAfterOpen"
-#define __ShowVersion "Scan/ShowVersion"
-#define __ShowOptions "Scan/ShowOptions"
+#define __ScanShowVersionDIE "Scan/ShowVersionDIE"
+#define __ScanShowOptionsDIE "Scan/ShowOptionsDIE"
+#ifdef USE_NFD
+#define __ScanDeepScanNFD "Scan/ScanDeepNFD"
+#define __ScanScanOverlayNFD "Scan/ScanOverlayNFD"
+#endif
+#define __ScanMethod "Scan/Method"
 #define __ShowErrors "Scan/ShowErrors"
 #define __ShowScanTime "Scan/ShowScanTime"
 #define __SectionsEntropyAfterOpen "Entropy/SectionsEntropyAfterOpen"
@@ -117,7 +179,7 @@ struct __DIE_OPTIONS
 #define __DefaultEditorPath "$app/editor"
 #define __DefaultHelpPath "$app/help"
 #define __DefaultInfoPath "$app/info"
-#define __DefaultPluginsPath "$app/plugins"
+#define __DefaultPluginsPath "$app/die_plugins"
 #define __DefaultQSSPath "$app/qss"
 #define __DefaultLangsPath "$app/lang"
 #define __DefaultScriptsPath "$app/scripts"
@@ -166,6 +228,7 @@ struct __DIE_OPTIONS
 #define __KeySequence_ctrlaltS "Ctrl+Alt+S"
 #define __KeySequence_ctrlaltU "Ctrl+Alt+U"
 #define __KeySequence_ctrlaltL "Ctrl+Alt+L"
+#define __KeySequence_ctrlaltI "Ctrl+Alt+I"
 
 #define __KeySequence_save "Ctrl+S"
 #define __KeySequence_open "Ctrl+O"

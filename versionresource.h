@@ -1,3 +1,23 @@
+// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
 #ifndef VERSIONRESOURCE_H
 #define VERSIONRESOURCE_H
 
@@ -34,30 +54,30 @@ typedef struct __tagVS_FIXEDFILEINFO
     unsigned int dwFileDateLS;       // e.g.  0
 } __VS_FIXEDFILEINFO;
 
-#define VS_FF_DEBUG 0x00000001
-#define VS_FF_INFOINFERRED 0x00000010
-#define VS_FF_PATCHED 0x00000004
-#define VS_FF_PRERELEASE 0x00000002
-#define VS_FF_PRIVATEBUILD 0x00000008
-#define VS_FF_SPECIALBUILD 0x00000020
+#define _VS_FF_DEBUG 0x00000001
+#define _VS_FF_INFOINFERRED 0x00000010
+#define _VS_FF_PATCHED 0x00000004
+#define _VS_FF_PRERELEASE 0x00000002
+#define _VS_FF_PRIVATEBUILD 0x00000008
+#define _VS_FF_SPECIALBUILD 0x00000020
 
-#define VOS_DOS 0x00010000
-#define VOS_NT 0x00040000
-#define VOS__WINDOWS16 0x00010000
-#define VOS__WINDOWS32 0x00000001
-#define VOS_OS216 0x00020000
-#define VOS_OS232 0x00030000
-#define VOS__PM16 0x00000002
-#define VOS__PM32 0x00000003
-#define VOS_UNKNOWN 0x00000000
+#define _VOS_DOS 0x00010000
+#define _VOS_NT 0x00040000
+#define _VOS__WINDOWS16 0x00010000
+#define _VOS__WINDOWS32 0x00000001
+#define _VOS_OS216 0x00020000
+#define _VOS_OS232 0x00030000
+#define _VOS__PM16 0x00000002
+#define _VOS__PM32 0x00000003
+#define _VOS_UNKNOWN 0x00000000
 
-#define VFT_APP 0x00000001
-#define VFT_DLL 0x00000002
-#define VFT_DRV 0x00000003
-#define VFT_FONT 0x00000004
-#define VFT_STATIC_LIB 0x00000007
-#define VFT_UNKNOWN 0x00000000
-#define VFT_VXD 0x00000005
+#define _VFT_APP 0x00000001
+#define _VFT_DLL 0x00000002
+#define _VFT_DRV 0x00000003
+#define _VFT_FONT 0x00000004
+#define _VFT_STATIC_LIB 0x00000007
+#define _VFT_UNKNOWN 0x00000000
+#define _VFT_VXD 0x00000005
 
 
 class VersionResource : public QObject

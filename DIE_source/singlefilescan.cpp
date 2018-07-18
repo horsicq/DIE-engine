@@ -19,14 +19,16 @@ SingleFileScan::SingleFileScan(QObject *parent):
 void SingleFileScan::flagsToOptions(unsigned int nFlags, __DIE_OPTIONS *pOptions)
 {
     pOptions->bShowErrors=nFlags&DIE_SHOWERRORS;
-    pOptions->bShowOptions=nFlags&DIE_SHOWOPTIONS;
-    pOptions->bShowVersion=nFlags&DIE_SHOWVERSION;
+    pOptions->bScanShowOptionsDIE=nFlags&DIE_SHOWOPTIONS;
+    pOptions->bScanShowVersionDIE=nFlags&DIE_SHOWVERSION;
     pOptions->bScanSubfolders=false;
     pOptions->bShowEntropy=nFlags&DIE_SHOWENTROPY;
     pOptions->bSingleLineOutput=nFlags&DIE_SINGLELINEOUTPUT;
     pOptions->bShowFileFormatOnce=nFlags&DIE_SHOWFILEFORMATONCE;
     pOptions->bFullScan=nFlags&DIE_FULLSCAN;
     pOptions->bShowScanTime=false;
+    pOptions->sm=SM_DIE;
+    pOptions->pMutexResult=0;
 }
 
 QString SingleFileScan::process(QString sFileName)
@@ -35,7 +37,7 @@ QString SingleFileScan::process(QString sFileName)
 
     Scan scan;
 
-    QObject::connect(&scan,SIGNAL(appendSignature(QString)),this,SLOT(appendSignature(QString)),Qt::DirectConnection);
+    QObject::connect(&scan,SIGNAL(die_appendSignatureSignal(QString)),this,SLOT(appendSignature(QString)),Qt::DirectConnection);
 
     if(options.bShowErrors)
     {
@@ -60,7 +62,6 @@ QString SingleFileScan::process(QString sFileName)
 
 QString SingleFileScan::firstBytes(QString sFileName,unsigned int nSize)
 {
-
     QByteArray baResult;
     QString sType=Binary::getType(sFileName);
 
@@ -128,20 +129,20 @@ void SingleFileScan::setDataBase(QString sDataBase)
     if(options.sDataBasePath!=sDataBase)
     {
         options.sDataBasePath=sDataBase;
-        Scan::loadScripts(&options);
+        Scan::die_loadScripts(&options);
 #ifdef QT_DEBUG
-        qDebug("New database: %s",sDataBase.toAscii().data());
+        qDebug("New database: %s",sDataBase.toLatin1().data());
 #endif
     }
     else
     {
 #ifdef QT_DEBUG
-        qDebug("old database: %s",options.sDataBasePath.toAscii().data());
+        qDebug("old database: %s",options.sDataBasePath.toLatin1().data());
 #endif
     }
 }
 
-__DIE_OPTIONS SingleFileScan::options= {0};
+__DIE_OPTIONS SingleFileScan::options={};
 
 void SingleFileScan::appendMessage(QString sMessage)
 {
@@ -226,12 +227,12 @@ int __DIE_scan(QString szFileName,char *pszOutBuffer,int nOutBufferSize,unsigned
     if(nSize<nOutBufferSize)
     {
         pszOutBuffer[nSize-1]=0;
-        strcpy(pszOutBuffer,sResult.toAscii().data());
+        strcpy(pszOutBuffer,sResult.toLatin1().data());
     }
     else
     {
         pszOutBuffer[nOutBufferSize-1]=0;
-        strncpy(pszOutBuffer,sResult.toAscii().data(),nOutBufferSize-1);
+        strncpy(pszOutBuffer,sResult.toLatin1().data(),nOutBufferSize-1);
     }
 
     return nSize;
@@ -274,7 +275,7 @@ int __DIE_scanW(wchar_t *pwszFileName,char *pszOutBuffer,int nOutBufferSize,unsi
 
 char *__DIE_versionA(void)
 {
-    return __VERSION;
+    return (char *)__VERSION;
 }
 
 wchar_t *__DIE_versionW(void)

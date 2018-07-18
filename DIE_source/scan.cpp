@@ -1,3 +1,23 @@
+// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
 #include "scan.h"
 
 //using namespace QtConcurrent;
@@ -5,6 +25,7 @@
 Scan::Scan(QObject *parent) :
     QObject(parent)
 {
+    connect(this,SIGNAL(die_appendSignatureSignal(QString)),this,SLOT(die_appendSignatureSlot(QString)));
 
     dirContent=0;
     nNumberOfSignatures=0;
@@ -77,7 +98,7 @@ void Scan::process()
         for(int i=0; (i<dirContent->count())&&(bIsRun); i++)
         {
             analize(dirContent->at(i),pOptions->bFullScan);
-            emit appendSignature("");
+            emit die_appendSignatureSignal("");
 
             emit setProgressBar2(dirContent->count(),i+1);
         }
@@ -93,78 +114,109 @@ void Scan::process()
 
 bool Scan::analize(QString sFileName,bool bFullScan)
 {
-    pOptions->nNumberOfResults=0;
+    if(pOptions->pMutexResult)
+    {
+        pOptions->pMutexResult->lock();
+    }
+
+
+    QTime scanTime=QTime::currentTime();
+
+//    pOptions->nNumberOfResults=0;
 
     emit appendFileName(sFileName);
 
-    Binary file;
-
-    PluginsScript engine;
-
-    connect(&file,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
-
-    QList<QString> listTypes;
-
-    if(file.setFileName(sFileName))
+    if(pOptions->sm==SM_DIE)
     {
-        listTypes=file.getTypes();
-        //qDebug(sType.toAscii().data());
-        file.close();
+        pOptions->die_listResult.clear();
+
+        Binary file;
+
+        PluginsScript engine;
+
+        connect(&file,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+        connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+        connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
+
+        QList<QString> listTypes;
+
+        if(file.setFileName(sFileName))
+        {
+            listTypes=file.getTypes();
+            //qDebug(sType.toAscii().data());
+            file.close();
+        }
+        else
+        {
+            file.close();
+
+            return false;
+        }
+
+        int nCount=listTypes.count();
+
+        if(!bFullScan)
+        {
+            nCount=1;
+        }
+
+        for(int i=0; i<nCount; i++)
+        {
+            QString sType=listTypes.at(i);
+
+            if((sType=="PE")||(sType=="PE+(64)"))
+            {
+                die_scanPE(sFileName,sType);
+            }
+            else if((sType=="ELF")||(sType=="ELF64"))
+            {
+                die_scanELF(sFileName,sType);
+            }
+            else if(sType=="MSDOS")
+            {
+                die_scanMSDOS(sFileName,sType);
+            }
+            else if((sType=="MACH")||(sType=="MACH64"))
+            {
+                die_scanMACH(sFileName,sType);
+            }
+            else if(sType=="Text")
+            {
+                die_scanText(sFileName,sType);
+            }
+            else if(sType=="Binary")
+            {
+                die_scanBinary(sFileName,sType);
+            }
+        }
     }
-    else
+#ifdef USE_NFD
+    else if(pOptions->sm==SM_NFD)
     {
-        file.close();
+        emit setProgressBar(1,0);
 
-        return false;
+        SpecAbstract::SCAN_OPTIONS nfd_options=SpecAbstract::SCAN_OPTIONS();
+        nfd_options.bScanOverlay=pOptions->bScanScanOverlayNFD;
+        nfd_options.bDeepScan=pOptions->bScanDeepScanNFD;
+
+        pOptions->nfd_listResult=StaticScan::process(sFileName,&nfd_options);
+
+        emit setProgressBar(1,1);
     }
+#endif
 
-    int nCount=listTypes.count();
+    int nMs=scanTime.msecsTo(QTime::currentTime());
 
-    if(!bFullScan)
-    {
-        nCount=1;
-    }
+    emit singleScanComplete(nMs);
 
-    for(int i=0; i<nCount; i++)
-    {
-        QString sType=listTypes.at(i);
-
-        if((sType=="PE")||(sType=="PE+(64)"))
-        {
-            scanPE(sFileName,sType);
-        }
-        else if((sType=="ELF")||(sType=="ELF64"))
-        {
-            scanELF(sFileName,sType);
-        }
-        else if(sType=="MSDOS")
-        {
-            scanMSDOS(sFileName,sType);
-        }
-        else if((sType=="MACH")||(sType=="MACH64"))
-        {
-            scanMACH(sFileName,sType);
-        }
-        else if(sType=="Text")
-        {
-            scanText(sFileName,sType);
-        }
-        else if(sType=="Binary")
-        {
-            scanBinary(sFileName,sType);
-        }
-    }
-
-
+    return true;
 }
 
-bool Scan::scanPE(QString sFileName,QString sPrefix)
+bool Scan::die_scanPE(QString sFileName,QString sPrefix)
 {
     PluginsScript engine;
     connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
 
     PEFile _pefile;
     connect(&_pefile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
@@ -192,7 +244,7 @@ bool Scan::scanPE(QString sFileName,QString sPrefix)
 
         engine.setData(&scriptpe,"PE",Utils::getDataBasePath(pOptions));
 
-        handleSignatures(&engine,&(pOptions->listPEScripts),sPrefix);
+        die_handleSignatures(&engine,&(pOptions->listPEScripts),sPrefix);
 
         return true;
     }
@@ -203,11 +255,11 @@ bool Scan::scanPE(QString sFileName,QString sPrefix)
     }
 }
 
-bool Scan::scanELF(QString sFileName,QString sPrefix)
+bool Scan::die_scanELF(QString sFileName,QString sPrefix)
 {
     PluginsScript engine;
     connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
 
     ELFFile _elfile;
     connect(&_elfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
@@ -222,7 +274,7 @@ bool Scan::scanELF(QString sFileName,QString sPrefix)
 
         engine.setData(&scriptelf,"ELF",Utils::getDataBasePath(pOptions));
 
-        handleSignatures(&engine,&(pOptions->listELFScripts),sPrefix);
+        die_handleSignatures(&engine,&(pOptions->listELFScripts),sPrefix);
 
         return true;
     }
@@ -234,11 +286,11 @@ bool Scan::scanELF(QString sFileName,QString sPrefix)
 
 }
 
-bool Scan::scanMACH(QString sFileName,QString sPrefix)
+bool Scan::die_scanMACH(QString sFileName,QString sPrefix)
 {
     PluginsScript engine;
     connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
 
     MACHFile _machfile;
     connect(&_machfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
@@ -253,7 +305,7 @@ bool Scan::scanMACH(QString sFileName,QString sPrefix)
 
         engine.setData(&scriptmach,"MACH",Utils::getDataBasePath(pOptions));
 
-        handleSignatures(&engine,&(pOptions->listMACHScripts),sPrefix);
+        die_handleSignatures(&engine,&(pOptions->listMACHScripts),sPrefix);
 
         return true;
     }
@@ -264,11 +316,11 @@ bool Scan::scanMACH(QString sFileName,QString sPrefix)
     }
 }
 
-bool Scan::scanMSDOS(QString sFileName, QString sPrefix)
+bool Scan::die_scanMSDOS(QString sFileName, QString sPrefix)
 {
     PluginsScript engine;
     connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
 
     MSDOSFile _msdosfile;
     connect(&_msdosfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
@@ -283,7 +335,7 @@ bool Scan::scanMSDOS(QString sFileName, QString sPrefix)
 
         engine.setData(&scriptmsdos,"MSDOS",Utils::getDataBasePath(pOptions));
 
-        handleSignatures(&engine,&(pOptions->listMSDOSScripts),sPrefix);
+        die_handleSignatures(&engine,&(pOptions->listMSDOSScripts),sPrefix);
 
         return true;
     }
@@ -294,11 +346,11 @@ bool Scan::scanMSDOS(QString sFileName, QString sPrefix)
     }
 }
 
-bool Scan::scanText(QString sFileName,QString sPrefix)
+bool Scan::die_scanText(QString sFileName,QString sPrefix)
 {
     PluginsScript engine;
     connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
 
     TextFile _text;
     connect(&_text,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
@@ -311,7 +363,7 @@ bool Scan::scanText(QString sFileName,QString sPrefix)
 
         engine.setData(&scripttext,"Text",Utils::getDataBasePath(pOptions));
 
-        handleSignatures(&engine,&(pOptions->listTextScripts),sPrefix);
+        die_handleSignatures(&engine,&(pOptions->listTextScripts),sPrefix);
 
         return true;
     }
@@ -322,11 +374,11 @@ bool Scan::scanText(QString sFileName,QString sPrefix)
     }
 }
 
-bool Scan::scanBinary(QString sFileName,QString sPrefix)
+bool Scan::die_scanBinary(QString sFileName,QString sPrefix)
 {
     PluginsScript engine;
     connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(appendSignature(QString)));
+    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
 
     Binary _binary;
     connect(&_binary,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
@@ -339,7 +391,7 @@ bool Scan::scanBinary(QString sFileName,QString sPrefix)
 
         engine.setData(&scriptbinary,"Binary",Utils::getDataBasePath(pOptions));
 
-        handleSignatures(&engine,&(pOptions->listBinaryScripts),sPrefix);
+        die_handleSignatures(&engine,&(pOptions->listBinaryScripts),sPrefix);
 
         return true;
     }
@@ -350,7 +402,7 @@ bool Scan::scanBinary(QString sFileName,QString sPrefix)
     }
 }
 
-void Scan::handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> *pListSignatures, QString sType)
+void Scan::die_handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> *pListSignatures, QString sType)
 {
     int _nNumberOfSignatures=pListSignatures->count();
 
@@ -378,14 +430,12 @@ void Scan::handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> *pLi
                 scanTime=QTime::currentTime();
             }
 
-            compareFile(pluginScript,pListSignatures->at(i).sText,pListSignatures->at(i).sName,sType);
-
+            die_compareFile(pluginScript,pListSignatures->at(i).sText,pListSignatures->at(i).sName,sType);
 
             if(pOptions->bShowScanTime)
             {
                 emit appendError(QString("%1: %2 ms").arg(pListSignatures->at(i).sName).arg(scanTime.msecsTo(QTime::currentTime())));
             }
-
 
             if(i+1>(_nNumberOfSignatures/30)*k)
             {
@@ -393,14 +443,13 @@ void Scan::handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> *pLi
                 k++;
             }
         }
-
     }
 
     emit setProgressBar(1,1);
 
     if(bResult==false)
     {
-        emit appendSignature(sType+": Nothing found");
+        emit die_appendSignatureSignal(sType+": Nothing found");
     }
 }
 
@@ -494,7 +543,7 @@ void Scan::loadTypeScripts(QList<__SIGNATURE> *pList, QString sType,__DIE_OPTION
     pList->append(listSignatures);
 }
 
-void Scan::loadScripts(__DIE_OPTIONS *pOptions)
+void Scan::die_loadScripts(__DIE_OPTIONS *pOptions)
 {
     loadTypeScripts(&pOptions->listBinaryScripts,"Binary",pOptions);
     loadTypeScripts(&pOptions->listTextScripts,"Text",pOptions);
@@ -504,18 +553,44 @@ void Scan::loadScripts(__DIE_OPTIONS *pOptions)
     loadTypeScripts(&pOptions->listMACHScripts,"MACH",pOptions);
 }
 
-QString Scan::compareFile(PluginsScript *pScript,QString sScript,QString sScriptName,QString sType)
+void Scan::die_appendSignatureSlot(QString sString)
+{
+    //qDebug(sString.toLatin1().data());
+
+    if((sString!="")&&(!sString.contains("Nothing found")))
+    {
+        __DIE_RESULT record;
+        QString sTemp;
+        if(sString.contains(";"))
+        {
+            record.sSignature=sString.section(";",0,0);
+            sTemp=sString.section(";",1,-1);
+        }
+        else
+        {
+            sTemp=sString;
+        }
+
+        record.sFileType=sTemp.section(":",0,0);
+        record.sType=sTemp.section(":",1,1);
+        record.sName=sTemp.section(":",2,-1);
+
+        pOptions->die_listResult.append(record);
+    }
+}
+
+QString Scan::die_compareFile(PluginsScript *pScript,QString sScript,QString sScriptName,QString sType)
 {
     QScriptValueList args;
     QString sResult="";
 
-    args<<true<<pOptions->bShowVersion<<pOptions->bShowOptions;
+    args<<true<<pOptions->bScanShowVersionDIE<<pOptions->bScanShowOptionsDIE;
 
     QScriptValue result=pScript->call(sScript,"detect",args,sScriptName);
 
     if(result.toString()!="")
     {
-        pOptions->nNumberOfResults++;
+//        pOptions->nNumberOfResults++;
         QString sSignature;
 
         if(bShowSource)
@@ -525,7 +600,7 @@ QString Scan::compareFile(PluginsScript *pScript,QString sScript,QString sScript
 
         sSignature+=sType+": "+result.toString();
 
-        emit appendSignature(sSignature);
+        emit die_appendSignatureSignal(sSignature);
 
         bResult=true;
 

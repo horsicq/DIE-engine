@@ -1,3 +1,23 @@
+// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
 #include "pefile.h"
 
 PEFile::PEFile(QObject *parent) :
@@ -1175,7 +1195,7 @@ unsigned int PEFile::getSectionNumber(QString sSectionName)
     unsigned int nSectionsTableOffset=getSectionsTableOffset();
     unsigned int nSections=getFileHeader_NumberOfSections();
 
-    for(int i=0; i<nSections; i++)
+    for(unsigned int i=0; i<nSections; i++)
     {
         if(getSectionNameAsString(i,nSectionsTableOffset)==sSectionName)
         {
@@ -1201,7 +1221,7 @@ QList<IMAGE_SECTION_HEADER> PEFile::getSections()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nOffset=getSectionsTableOffset();
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         if(!readArray(nOffset,(char *)&section,sizeof(section)))
         {
@@ -1423,7 +1443,7 @@ bool PEFile::rebuild()
 
     unsigned int nFileAlignment=getOptionalHeader_FileAlignment();
     unsigned int nSizeOfHeaders=getSectionRealSize(0,qMin(getOptionalHeader_SizeOfHeaders(),pListSections[0].nOldOffset),nFileAlignment);
-    int nDelta=0;
+//    int nDelta=0;
     unsigned int nMaxSize=nSizeOfHeaders;
 
     setOptionalHeader_SizeOfHeaders(nMaxSize);
@@ -1521,13 +1541,13 @@ unsigned int PEFile::getSectionRealSize(unsigned int nOffset, unsigned int nSize
 
     for(int i=nAlignedSize-nAlignment; i>=0; i-=nAlignment)
     {
-        if(i<nSize)
+        if(i<(int)nSize)
         {
             nTemp=qMax(nAlignment,nSize-i);
 
             baTemp=readArray(nOffset+i,nTemp);
 
-            for(int j=0; j<nTemp; j++)
+            for(unsigned int j=0; j<nTemp; j++)
             {
                 if(*(baTemp.data()+j))
                 {
@@ -1535,7 +1555,6 @@ unsigned int PEFile::getSectionRealSize(unsigned int nOffset, unsigned int nSize
                 }
             }
         }
-
     }
 
     return 0;
@@ -1619,7 +1638,7 @@ unsigned long long PEFile::OffsetToRVA(unsigned long long nOffset)
         {
             for(int i=0; i<getFileHeader_NumberOfSections(); i++)
             {
-                int nPointerToRawData=getSection_PointerToRawData(i);
+                unsigned int nPointerToRawData=getSection_PointerToRawData(i);
 
                 if(nPointerToRawData)
                 {
@@ -1630,7 +1649,7 @@ unsigned long long PEFile::OffsetToRVA(unsigned long long nOffset)
                 }
             }
 
-            if(nResult!=-1) // new
+            if(nResult!=(unsigned int)-1) // new
             {
                 return nResult;
             }
@@ -1645,7 +1664,7 @@ unsigned int PEFile::OffsetToVA32(unsigned int nOffset)
 {
     unsigned int nResult=OffsetToRVA(nOffset);
 
-    if(nResult!=-1)
+    if(nResult!=(unsigned int)-1)
     {
         nResult+=getOptionalHeader_ImageBase();
     }
@@ -1657,7 +1676,7 @@ unsigned long long PEFile::OffsetToVA64(unsigned int nOffset)
 {
     unsigned long long nResult=OffsetToRVA(nOffset);
 
-    if(nResult!=-1)
+    if(nResult!=(unsigned int)-1)
     {
         nResult+=getOptionalHeader_ImageBase64();
     }
@@ -1938,7 +1957,7 @@ QList<PEFile::RICH_RECORD> PEFile::getRichSignatureRecords()
 
         unsigned int nOffset=findString(getDosStubOffset(),getDosStubSize(),"Rich");
 
-        if(nOffset!=-1)
+        if(nOffset!=(unsigned int)-1)
         {
             unsigned int nXORkey=readDword(nOffset+4);
 
@@ -2153,22 +2172,22 @@ unsigned int PEFile::CalculateCheckSum()
     unsigned int nCalcSum=CheckSum(0,size());
     unsigned int nHdrSum=getOptionalHeader_CheckSum();
 
-    if(LOWORD(nCalcSum)>=LOWORD(nHdrSum))
+    if(__LOWORD(nCalcSum)>=__LOWORD(nHdrSum))
     {
-        nCalcSum-=LOWORD(nHdrSum);
+        nCalcSum-=__LOWORD(nHdrSum);
     }
     else
     {
-        nCalcSum=((LOWORD(nCalcSum)-LOWORD(nHdrSum))&0xFFFF)-1;
+        nCalcSum=((__LOWORD(nCalcSum)-__LOWORD(nHdrSum))&0xFFFF)-1;
     }
 
-    if(LOWORD(nCalcSum)>=HIWORD(nHdrSum)) //!!!!!
+    if(__LOWORD(nCalcSum)>=__HIWORD(nHdrSum)) //!!!!!
     {
-        nCalcSum-=HIWORD(nHdrSum);
+        nCalcSum-=__HIWORD(nHdrSum);
     }
     else
     {
-        nCalcSum=((LOWORD(nCalcSum)-HIWORD(nHdrSum))&0xFFFF)-1;
+        nCalcSum=((__LOWORD(nCalcSum)-__HIWORD(nHdrSum))&0xFFFF)-1;
     }
 
     nCalcSum+=this->size();
@@ -2197,13 +2216,13 @@ unsigned short PEFile::CheckSum(int nStartValue,int nDataSize)
 
         pOffset=pBuffer;
 
-        for(int i=0; i<(nTemp+1)/2; i++)
+        for(unsigned int i=0; i<(nTemp+1)/2; i++)
         {
             nSum+=*((unsigned short *)pOffset);
 
-            if(HIWORD(nSum)!=0)
+            if(__HIWORD(nSum)!=0)
             {
-                nSum=LOWORD(nSum)+HIWORD(nSum);
+                nSum=__LOWORD(nSum)+__HIWORD(nSum);
             }
 
             pOffset+=2;
@@ -2215,7 +2234,7 @@ unsigned short PEFile::CheckSum(int nStartValue,int nDataSize)
 
     delete[] pBuffer;
 
-    return (unsigned short)(LOWORD(nSum)+HIWORD(nSum));
+    return (unsigned short)(__LOWORD(nSum)+__HIWORD(nSum));
 }
 
 bool PEFile::dumpDosStub(QString sFileName)
@@ -2374,8 +2393,6 @@ bool PEFile::isManifestPresent()
     return isResourceIdPresent(24);
 }
 
-
-
 unsigned int PEFile::getImportSection()
 {
     if(!isImportPresent())
@@ -2448,7 +2465,7 @@ unsigned int PEFile::getNumberOfImports()
 
     nOffset=getImportTableOffset();
 
-    if((nOffset!=-1)&&(nOffset!=0))
+    if((nOffset!=(unsigned int)-1)&&(nOffset!=0))
     {
         nThunk=readDword(nOffset+offsetof(IMAGE_IMPORT_DESCRIPTOR,OriginalFirstThunk));
 
@@ -2566,7 +2583,7 @@ QList<IMAGE_IMPORT_DESCRIPTOR> PEFile::getImports()
     unsigned int nNumberOfImports=getNumberOfImports();
     unsigned int nOffset=getImportTableOffset();
 
-    for(int i=0; i<nNumberOfImports; i++)
+    for(unsigned int i=0; i<nNumberOfImports; i++)
     {
         if(!readArray(nOffset,(char *)&import,sizeof(import)))
         {
@@ -2590,7 +2607,7 @@ QList<QString> PEFile::getImportLibraiesAsNames()
 
     unsigned int nNumberOfImports=getNumberOfImports();
 
-    for(int i=0; i<nNumberOfImports; i++)
+    for(unsigned int i=0; i<nNumberOfImports; i++)
     {
         sRecord=getImport_NameAsString(i).toLower();
 
@@ -2614,13 +2631,13 @@ QList<QString> PEFile::getImportFunctionsAsNames()
     unsigned int nNumberOfImports=getNumberOfImports();
     unsigned int nNumberOfFunctions=0;
 
-    for(int i=0; i<nNumberOfImports; i++)
+    for(unsigned int i=0; i<nNumberOfImports; i++)
     {
         sRecord=QString("[%1]").arg(getImport_NameAsString(i).toLower());
 
         nNumberOfFunctions=getNumberOfImportThunks(i);
 
-        for(int j=0; j<nNumberOfFunctions; j++)
+        for(unsigned int j=0; j<nNumberOfFunctions; j++)
         {
             sFunction=getImportFunctionName(i,j);
 
@@ -2658,13 +2675,13 @@ QList<PEFile::IMPORT_LIST> PEFile::getImportFunctionsAsList()
 
     IMPORT_LIST record;
 
-    for(int i=0; i<nNumberOfImports; i++)
+    for(unsigned int i=0; i<nNumberOfImports; i++)
     {
         sRecord=QString("[%1]").arg(getImport_NameAsString(i).toLower());
 
         nNumberOfFunctions=getNumberOfImportThunks(i);
 
-        for(int j=0; j<nNumberOfFunctions; j++)
+        for(unsigned int j=0; j<nNumberOfFunctions; j++)
         {
             sFunction=getImportFunctionName(i,j);
 
@@ -2710,13 +2727,13 @@ QList<QString> PEFile::getImportLibraryFunctionsAsNames(QString sLibraryName)
     unsigned int nNumberOfImports=getNumberOfImports();
     unsigned int nNumberOfFunctions=0;
 
-    for(int i=0; i<nNumberOfImports; i++)
+    for(unsigned int i=0; i<nNumberOfImports; i++)
     {
         if(getImport_NameAsString(i).toLower()==sLibraryName)
         {
             nNumberOfFunctions=getNumberOfImportThunks(i);
 
-            for(int j=0; j<nNumberOfFunctions; j++)
+            for(unsigned int j=0; j<nNumberOfFunctions; j++)
             {
                 sFunction=getImportFunctionName(i,j);
 
@@ -3017,7 +3034,7 @@ bool PEFile::isLibraryPresent(QString sLibraryName)
     nImportTableOffset=getImportTableOffset();
     sTemp=sLibraryName.toLower();
 
-    for(int i=0; i<nNumberOfImports; i++)
+    for(unsigned int i=0; i<nNumberOfImports; i++)
     {
         if(getImport_NameAsString(i,nImportTableOffset).toLower()==sTemp)
         {
@@ -3042,7 +3059,7 @@ bool PEFile::isSectionNamePresent(QString sSectionName)
     unsigned int nSectionsTableOffset=getSectionsTableOffset();
     QString sTemp=sSectionName.toLower();
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         if(getSectionNameAsString(i,nSectionsTableOffset).toLower()==sTemp)
         {
@@ -3363,8 +3380,6 @@ unsigned short PEFile::getImportHint(unsigned int nThunk)
     return readWord(RVAToOffset(nThunk));
 }
 
-
-
 bool PEFile::completeCheck()
 {
     if(isValid())
@@ -3426,7 +3441,7 @@ unsigned int PEFile::calculateBaseOfCode()
     unsigned int nCharacteristics;
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3449,7 +3464,7 @@ unsigned int PEFile::calculateBaseOfData()
     unsigned int nCharacteristics;
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3471,7 +3486,7 @@ unsigned int PEFile::calculateSizeOfInitializedData()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nResult=0;
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3490,7 +3505,7 @@ unsigned int PEFile::calculateSizeOfInitializedData2()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nResult=0;
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3509,7 +3524,7 @@ unsigned int PEFile::calculateSizeOfUninitializedData()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nResult=0;
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -3528,7 +3543,7 @@ unsigned int PEFile::calculateSizeOfCode()
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nResult=0;
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         nCharacteristics=getSection_Characteristics(i);
 
@@ -4266,7 +4281,7 @@ void PEFile::setExport_FunctionName(int nNumber, unsigned int nValue)
 
 QString PEFile::getExport_FunctionNameAsString(int nNumber)
 {
-    if(nNumber<getExport_NumberOfNames())
+    if(nNumber<(int)getExport_NumberOfNames())
     {
         unsigned int nRVA=getExport_FunctionName(nNumber);
         unsigned int nOffset=RVAToOffset(nRVA);
@@ -4289,7 +4304,7 @@ void PEFile::FixRawOffsets(int nDelta)
 {
     setOptionalHeader_SizeOfHeaders(getOptionalHeader_SizeOfHeaders()+nDelta);
 
-    for(int i=0; i<getFileHeader_NumberOfSections(); i++)
+    for(unsigned int i=0; i<getFileHeader_NumberOfSections(); i++)
     {
         //        int nh=(int)getSection_PointerToRawData(i)+nDelta;
         setSection_PointerToRawData(i,(int)getSection_PointerToRawData(i)+nDelta);
@@ -4308,7 +4323,7 @@ bool PEFile::isSectionNamePresentExp(QString sSectionName)
     QRegExp exp;
     exp.setPattern(sSectionName);
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         if(getSectionNameAsString(i,nSectionsTableOffset).toLower().contains(exp))
         {
@@ -4325,7 +4340,7 @@ unsigned int PEFile::getSectionNumberExp(QString sSectionName)
     QRegExp exp;
     exp.setPattern(sSectionName);
 
-    for(int i=0; i<nSections; i++)
+    for(unsigned int i=0; i<nSections; i++)
     {
         if(getSectionNameAsString(i,nSectionsTableOffset).contains(exp))
         {
@@ -4345,11 +4360,10 @@ QString PEFile::getSectionNameCollision(QString sString1,QString sString2)
     unsigned int nSecondSection=0;
     QString sSecondSection;
 
-
     unsigned int nNumberOfSections=getFileHeader_NumberOfSections();
     unsigned int nSectionsTableOffset=getSectionsTableOffset();
 
-    for(int i=0; i<nNumberOfSections; i++)
+    for(unsigned int i=0; i<nNumberOfSections; i++)
     {
         list.append(getSectionNameAsString(i,nSectionsTableOffset));
 
@@ -4521,7 +4535,7 @@ void PEFile::resourceToXML(unsigned int nResourceOffset,unsigned int nResourceDi
             nTemp=RVAToOffset(ImageResDataEntry.OffsetToData);
             pXml->writeAttribute("Offset",QString::number(nTemp));
 
-            if(nTemp==-1)
+            if(nTemp==(unsigned int)-1)
             {
                 emit appendWarning(QString("Invalid resource RVA: %1 (may be packed)").arg(ImageResDataEntry.OffsetToData,8,16,QChar('0')));
             }
@@ -4721,7 +4735,7 @@ QByteArray PEFile::ImportAsXMLToBin(QByteArray baXML,IMAGE_DATA_DIRECTORY *pddIm
                             *((short *)pNames)=(short)xml.attributes().value("Hint").toString().toInt();
                             pNames+=sizeof(short);
 
-                            strcpy(pNames,sFunctionName.toAscii());
+                            strcpy(pNames,sFunctionName.toLatin1());
                             pNames+=sFunctionName.size()+1;
                         }
 
@@ -4748,7 +4762,7 @@ QByteArray PEFile::ImportAsXMLToBin(QByteArray baXML,IMAGE_DATA_DIRECTORY *pddIm
                 *pnOriginalFirstThunk=0;
                 pnOriginalFirstThunk++;
 
-                strcpy(pNames,sDllName.toAscii());
+                strcpy(pNames,sDllName.toLatin1());
                 pNames+=sDllName.size()+1;
 
                 pIID++;
@@ -5024,13 +5038,19 @@ bool PEFile::isResourceNamePresentFast(QString sName)
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return false;
+    }
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
         //&0x7FFFFFFF
         //        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToData);
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
@@ -5044,7 +5064,7 @@ bool PEFile::isResourceNamePresentFast(QString sName)
         {
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-            for(int j=0; j<nNameEntries2; j++)
+            for(unsigned int j=0; j<nNameEntries2; j++)
             {
                 unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
                 nTemp+=nResourceOffset;
@@ -5154,14 +5174,20 @@ unsigned int PEFile::getResourceNameOffsetFast(QString sName)
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return -1;
+    }
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
         //&0x7FFFFFFF
         //        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
         //        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
@@ -5175,7 +5201,7 @@ unsigned int PEFile::getResourceNameOffsetFast(QString sName)
         {
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-            for(int j=0; j<nNameEntries2; j++)
+            for(unsigned int j=0; j<nNameEntries2; j++)
             {
                 unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
                 nTemp+=nResourceOffset;
@@ -5194,7 +5220,7 @@ unsigned int PEFile::getResourceNameOffsetFast(QString sName)
                 {
 
                     //                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
-                    nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+                    nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
@@ -5209,7 +5235,7 @@ unsigned int PEFile::getResourceNameOffsetFast(QString sName)
                     }
 
                     //                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
-                    nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+                    nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
@@ -5250,13 +5276,19 @@ unsigned int PEFile::getResourceNameSizeFast(QString sName)
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return 0;
+    }
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
         //&0x7FFFFFFF
         //        nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
@@ -5270,7 +5302,7 @@ unsigned int PEFile::getResourceNameSizeFast(QString sName)
         {
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-            for(int j=0; j<nNameEntries2; j++)
+            for(unsigned int j=0; j<nNameEntries2; j++)
             {
                 unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
                 nTemp+=nResourceOffset;
@@ -5289,7 +5321,7 @@ unsigned int PEFile::getResourceNameSizeFast(QString sName)
                 {
 
                     //                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
-                    nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+                    nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
@@ -5304,7 +5336,7 @@ unsigned int PEFile::getResourceNameSizeFast(QString sName)
                     }
 
                     //                    nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToData);
-                    nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+                    nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
                     if(!isOffsetValid(nDirectoryEntryOffset))
                     {
@@ -5353,7 +5385,7 @@ QByteArray PEFile::getResourceIdData(unsigned int nID1,unsigned int nID2,unsigne
             {
                 if(xml.attributes().value("Level").toString()=="0")
                 {
-                    if(xml.attributes().value("Id").toString().toInt()==nID1)
+                    if(xml.attributes().value("Id").toString().toUInt()==nID1)
                     {
                         bFlag1=true;
                     }
@@ -5364,7 +5396,7 @@ QByteArray PEFile::getResourceIdData(unsigned int nID1,unsigned int nID2,unsigne
                 }
                 else if(xml.attributes().value("Level").toString()=="1")
                 {
-                    if((xml.attributes().value("Id").toString().toInt()==nID2)||(nID2==-1))
+                    if((xml.attributes().value("Id").toString().toUInt()==nID2)||(nID2==(unsigned int)-1))
                     {
                         bFlag2=true;
                     }
@@ -5376,7 +5408,7 @@ QByteArray PEFile::getResourceIdData(unsigned int nID1,unsigned int nID2,unsigne
                 else if(xml.attributes().value("Level").toString()=="2")
                 {
                     //                    QString sTemp=xml.attributes().value("Id").toString();
-                    if((xml.attributes().value("Id").toString().toInt()==nID3)||(nID3==-1))
+                    if((xml.attributes().value("Id").toString().toUInt()==nID3)||(nID3==(unsigned int)-1))
                     {
                         if(bFlag1&&bFlag2)
                         {
@@ -5424,10 +5456,16 @@ QByteArray PEFile::getResourceIdDataFast(unsigned int nID1)
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return baResult;
+    }
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY_ENTRY)*nNameEntries;
 
-    for(int i=0; i<nIDEntries; i++)
+    for(unsigned int i=0; i<nIDEntries; i++)
     {
         //&0x7FFFFFFF
 
@@ -5437,7 +5475,7 @@ QByteArray PEFile::getResourceIdDataFast(unsigned int nID1)
         if(nID1==_nID)
         {
             //            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nOffset))->OffsetToDirectory);
-            nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+            nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
             if(!isOffsetValid(nDirectoryEntryOffset))
@@ -5446,7 +5484,7 @@ QByteArray PEFile::getResourceIdDataFast(unsigned int nID1)
             }
 
             //            nDirectoryEntryOffset=nResourceOffset+(((IMAGE_RESOURCE_DIRECTORY_ENTRY *)(___pMemory+nDirectoryEntryOffset))->OffsetToDirectory);
-            nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+            nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
             nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
             if(!isOffsetValid(nDirectoryEntryOffset))
@@ -5502,7 +5540,7 @@ bool PEFile::isResourceIdPresent(unsigned int nID1, unsigned int nID2, unsigned 
                 if(xml.attributes().value("Level").toString()=="0")
                 {
                     //                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
-                    if(xml.attributes().value("Id").toString().toInt()==nID1)
+                    if(xml.attributes().value("Id").toString().toUInt()==nID1)
                     {
                         bFlag1=true;
                     }
@@ -5514,7 +5552,7 @@ bool PEFile::isResourceIdPresent(unsigned int nID1, unsigned int nID2, unsigned 
                 else if(xml.attributes().value("Level").toString()=="1")
                 {
                     //                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
-                    if((xml.attributes().value("Id").toString().toInt()==nID2)||(nID2==-1))
+                    if((xml.attributes().value("Id").toString().toUInt()==nID2)||(nID2==(unsigned int)-1))
                     {
                         bFlag2=true;
                     }
@@ -5526,7 +5564,7 @@ bool PEFile::isResourceIdPresent(unsigned int nID1, unsigned int nID2, unsigned 
                 else if(xml.attributes().value("Level").toString()=="2")
                 {
                     //                    qDebug(xml.attributes().value("Id").toString().toAscii().data());
-                    if((xml.attributes().value("Id").toString().toInt()==nID3)||(nID3==-1))
+                    if((xml.attributes().value("Id").toString().toUInt()==nID3)||(nID3==(unsigned int)-1))
                     {
                         if(bFlag1&&bFlag2)
                         {
@@ -5652,6 +5690,7 @@ unsigned int PEFile::getNumberOfResources()
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
     if((int)(nNameEntries+nIDEntries)>100)
@@ -5660,14 +5699,14 @@ unsigned int PEFile::getNumberOfResources()
         return 0;
     }
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
         if(!isOffsetValid(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData)))
         {
             return 0;
         }
 
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
@@ -5712,11 +5751,17 @@ unsigned int PEFile::getResourceOffsetByNumber(unsigned int nNumber)
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return -1;
+    }
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
@@ -5726,15 +5771,21 @@ unsigned int PEFile::getResourceOffsetByNumber(unsigned int nNumber)
         unsigned int nNameEntries2=readWord(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
         unsigned int nIDEntries2=readWord(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+        if((int)(nNameEntries2+nIDEntries2)>100)
+        {
+            // corrupted resource
+            return -1;
+        }
+
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
+        for(unsigned int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
                 //                unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
                 //                nTemp+=nResourceOffset;
-                nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+                nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
@@ -5748,7 +5799,7 @@ unsigned int PEFile::getResourceOffsetByNumber(unsigned int nNumber)
                     return -1;
                 }
 
-                nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+                nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
@@ -5793,12 +5844,17 @@ unsigned int PEFile::getResourceSizeByNumber(unsigned int nNumber)
 
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return 0;
+    }
 
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
@@ -5810,13 +5866,13 @@ unsigned int PEFile::getResourceSizeByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
+        for(unsigned int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
                 //                unsigned int nTemp=readDword(nDirectoryEntryOffset)&0x7FFFFFFF;
                 //                nTemp+=nResourceOffset;
-                nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+                nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
@@ -5830,7 +5886,7 @@ unsigned int PEFile::getResourceSizeByNumber(unsigned int nNumber)
                     return 0;
                 }
 
-                nDirectoryEntryOffset=nResourceOffset+readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+                nDirectoryEntryOffset=nResourceOffset+(readDword(nDirectoryEntryOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
                 if(!isOffsetValid(nDirectoryEntryOffset))
                 {
@@ -5876,11 +5932,17 @@ unsigned int PEFile::getResourceIdByNumber(unsigned int nNumber)
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return 0;
+    }
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
@@ -5892,7 +5954,7 @@ unsigned int PEFile::getResourceIdByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
+        for(unsigned int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
@@ -5940,11 +6002,17 @@ QString PEFile::getResourceNameByNumber(unsigned int nNumber)
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return "";
+    }
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
 
         if(!isOffsetValid(nDirectoryEntryOffset))
         {
@@ -5956,7 +6024,7 @@ QString PEFile::getResourceNameByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
+        for(unsigned int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
@@ -6018,11 +6086,17 @@ QString PEFile::getResourceTypeByNumber(unsigned int nNumber)
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
 
+    if((int)(nNameEntries+nIDEntries)>100)
+    {
+        // corrupted resource
+        return "";
+    }
+
     nOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-    for(int i=0; i<nNameEntries+nIDEntries; i++)
+    for(unsigned int i=0; i<nNameEntries+nIDEntries; i++)
     {
-        nDirectoryEntryOffset=nResourceOffset+readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF;
+        nDirectoryEntryOffset=nResourceOffset+(readDword(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,OffsetToData))&0x7FFFFFFF);
         sType=resourceIdToString(readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY_ENTRY,Id)));
 
         if(!isOffsetValid(nDirectoryEntryOffset))
@@ -6035,7 +6109,7 @@ QString PEFile::getResourceTypeByNumber(unsigned int nNumber)
 
         nDirectoryEntryOffset+=sizeof(IMAGE_RESOURCE_DIRECTORY);
 
-        for(int j=0; j<nNameEntries2+nIDEntries2; j++)
+        for(unsigned int j=0; j<nNameEntries2+nIDEntries2; j++)
         {
             if(nCurrentNumber==nNumber)
             {
@@ -6385,7 +6459,7 @@ bool PEFile::initCLI()
                             }
                         }
 
-                        if(!(CLI_Section.nCLI_Flags&COMIMAGE_FLAGS_NATIVE_ENTRYPOINT))
+                        if(!(CLI_Section.nCLI_Flags&0x00000010)) // COMIMAGE_FLAGS_NATIVE_ENTRYPOINT
                         {
                             if(((CLI_Section.nEntryPoint&0xFF000000)>>24)==6)
                             {
@@ -6762,10 +6836,9 @@ unsigned int PEFile::getCLI_MetaData_TablesHeaderOffset()
 unsigned int PEFile::getCLI_MetaDataStreamOffset(QString sStream)
 {
     unsigned int nResult=0;
-
     unsigned int nNumberOfStreams=getCLI_MetaData_Streams();
 
-    for(int i=0; i<nNumberOfStreams; i++)
+    for(unsigned int i=0; i<nNumberOfStreams; i++)
     {
         if(getCLI_MetaData_Stream_Name(i)==sStream)
         {
@@ -7342,7 +7415,7 @@ unsigned int PEFile::getCLI_MetaData_Tables_MethodDef_RVA(int nIndex)
 {
     if(initCLI())
     {
-        if(nIndex<getCLI_MetaData_Tables_TablesNumberOfIndexes(6))
+        if((unsigned int)nIndex<getCLI_MetaData_Tables_TablesNumberOfIndexes(6))
         {
             unsigned int nOffset=getCLI_MetaData_Tables_HeadersOffset(6);
             nOffset+=getCLI_MetaData_Tables_SizeOfHeader(6)*(nIndex-1);
@@ -7427,7 +7500,7 @@ bool PEFile::compareEP_NETfast(char *pszSignature)
     int nSize=strlen(pszSignature)/2;
     char *pBuffer=new char[nSize*2+1];
 
-    if(nSize<=CLI_Section.nEntryPointSize)
+    if((unsigned int)nSize<=CLI_Section.nEntryPointSize)
     {
         dataToHex(CLI_Section.pEntryPoint,nSize,pBuffer);
         bResult=signatureCompare(pBuffer,pszSignature,nSize*2);
@@ -7440,7 +7513,7 @@ bool PEFile::compareEP_NETfast(char *pszSignature)
 
 bool PEFile::compareEP_NETfast(QString sSignature)
 {
-    return compareEP_NETfast(convertSignature(sSignature).toAscii().data());
+    return compareEP_NETfast(convertSignature(sSignature).toLatin1().data());
 }
 
 bool PEFile::compareEPfast(QString sSignature)
@@ -7548,7 +7621,6 @@ QList<QString> PEFile::getCLI_MetaData_USAsList()
 
     for(int i=1; i<nSize; i++)
     {
-
         nStringSize=(*((unsigned char *)pOffset));
 
         if(nStringSize==0x80)
@@ -7572,7 +7644,6 @@ QList<QString> PEFile::getCLI_MetaData_USAsList()
 
         pOffset+=nStringSize;
         i+=nStringSize;
-
     }
 
     return listResult;
@@ -7649,7 +7720,7 @@ QByteArray PEFile::getRelocsAsXML()
             xml.writeAttribute("Address",QString::number(nRVA));
             xml.writeAttribute("NumberOfRelocs",QString::number((nSize-8)/2));
 
-            for(int i=0; i<(nSize-8)/2; i++)
+            for(unsigned int i=0; i<(nSize-8)/2; i++)
             {
                 sTypeOffset=readWord(nRelocsOffset+8+i*2);
 
@@ -7708,7 +7779,7 @@ QList<unsigned int> PEFile::getRelocsAsList()
                 }
 
 
-                for(int i=0; i<(nSize-8)/2; i++)
+                for(unsigned int i=0; i<(nSize-8)/2; i++)
                 {
                     sTypeOffset=readWord(nRelocsOffset+8+i*2);
 
@@ -7726,19 +7797,20 @@ QList<unsigned int> PEFile::getRelocsAsList()
 
 bool PEFile::addRelocsSectionFromList(QList<unsigned int> *pList, QString sSectionName)
 {
-    IMAGE_SECTION_HEADER ish= {0};
+    Q_UNUSED(sSectionName);
+    // TODO SectionName
+
+    IMAGE_SECTION_HEADER ish={};
 
     QByteArray baSection;
 
-    IMAGE_BASE_RELOCATION *pIBR=(IMAGE_BASE_RELOCATION *)baSection.data();
-    IMAGE_BASE_RELOCATION IBR= {0};
-
-
+//    IMAGE_BASE_RELOCATION *pIBR=(IMAGE_BASE_RELOCATION *)baSection.data();
+//    IMAGE_BASE_RELOCATION IBR={};
 
     //    QList<unsigned int> listPageAddresses;
     //    QList<unsigned int> listPages;
     unsigned int nPageAddress=0;
-    unsigned int nCount=0;
+//    unsigned int nCount=0;
 
     for(int i=0; i<pList->count(); i++)
     {
@@ -7770,7 +7842,7 @@ unsigned int PEFile::getNumberOfRelocs()
 
     nOffset=getRelocsTableOffset();
 
-    if((nOffset!=-1)&&(nOffset!=0))
+    if((nOffset!=(unsigned int)-1)&&(nOffset!=0))
     {
         do
         {
@@ -7797,7 +7869,7 @@ unsigned int PEFile::getNumberOfRelocsPages()
 {
     unsigned int nOffset;
     unsigned int nResult=0;
-    unsigned int nTemp;
+//    unsigned int nTemp;
     unsigned int nAddress;
     unsigned int nSize;
 
@@ -7809,7 +7881,7 @@ unsigned int PEFile::getNumberOfRelocsPages()
 
     nOffset=getRelocsTableOffset();
 
-    if((nOffset!=-1)&&(nOffset!=0))
+    if((nOffset!=(unsigned int)-1)&&(nOffset!=0))
     {
         do
         {
@@ -8461,7 +8533,7 @@ unsigned int PEFile::getBoundImport_NumberOfImports()
 
     unsigned int nOffset=getBoundImportTableOffset();
 
-    if((nOffset!=-1)&&(nOffset!=0))
+    if((nOffset!=(unsigned int)-1)&&(nOffset!=0))
     {
         while(1)
         {
@@ -8485,7 +8557,7 @@ unsigned int PEFile::getBoundImport_TimeDateStamp(unsigned int nImport)
 {
     unsigned int nOffset;
 
-    if(nImport<(int)getBoundImport_NumberOfImports())
+    if((int)nImport<(int)getBoundImport_NumberOfImports())
     {
         nOffset=getBoundImportTableOffset();
         nOffset+=sizeof(IMAGE_BOUND_IMPORT_DESCRIPTOR)*nImport;
@@ -8502,7 +8574,7 @@ unsigned short PEFile::getBoundImport_OffsetModuleName(unsigned int nImport)
 {
     unsigned int nOffset;
 
-    if(nImport<(int)getBoundImport_NumberOfImports())
+    if((int)nImport<(int)getBoundImport_NumberOfImports())
     {
         nOffset=getBoundImportTableOffset();
         nOffset+=sizeof(IMAGE_BOUND_IMPORT_DESCRIPTOR)*nImport;
@@ -8519,7 +8591,7 @@ unsigned short PEFile::getBoundImport_NumberOfModuleForwarderRefs(unsigned int n
 {
     unsigned int nOffset;
 
-    if(nImport<(int)getBoundImport_NumberOfImports())
+    if((int)nImport<(int)getBoundImport_NumberOfImports())
     {
         nOffset=getBoundImportTableOffset();
         nOffset+=sizeof(IMAGE_BOUND_IMPORT_DESCRIPTOR)*nImport;
@@ -8536,7 +8608,7 @@ QString PEFile::getBoundImport_ModuleNameAsString(unsigned int nImport)
 {
     unsigned int nOffset;
 
-    if(nImport<(int)getBoundImport_NumberOfImports())
+    if((int)nImport<(int)getBoundImport_NumberOfImports())
     {
         nOffset=getBoundImportTableOffset();
         nOffset+=sizeof(IMAGE_BOUND_IMPORT_DESCRIPTOR)*nImport;
@@ -8597,7 +8669,7 @@ unsigned int PEFile::getDebug_Characteristics(unsigned int nDebug)
 {
     unsigned int nOffset;
 
-    if(nDebug<(int)getDebug_NumberOfDirectories())
+    if((int)nDebug<(int)getDebug_NumberOfDirectories())
     {
         nOffset=getDebugTableOffset();
         nOffset+=sizeof(IMAGE_DEBUG_DIRECTORY)*nDebug;
@@ -8614,7 +8686,7 @@ unsigned int PEFile::getDebug_TimeDateStamp(unsigned int nDebug)
 {
     unsigned int nOffset;
 
-    if(nDebug<(int)getDebug_NumberOfDirectories())
+    if((int)nDebug<(int)getDebug_NumberOfDirectories())
     {
         nOffset=getDebugTableOffset();
         nOffset+=sizeof(IMAGE_DEBUG_DIRECTORY)*nDebug;
@@ -8631,7 +8703,7 @@ unsigned short PEFile::getDebug_MajorVersion(unsigned int nDebug)
 {
     unsigned int nOffset;
 
-    if(nDebug<(int)getDebug_NumberOfDirectories())
+    if((int)nDebug<(int)getDebug_NumberOfDirectories())
     {
         nOffset=getDebugTableOffset();
         nOffset+=sizeof(IMAGE_DEBUG_DIRECTORY)*nDebug;
@@ -8648,7 +8720,7 @@ unsigned short PEFile::getDebug_MinorVersion(unsigned int nDebug)
 {
     unsigned int nOffset;
 
-    if(nDebug<(int)getDebug_NumberOfDirectories())
+    if((int)nDebug<(int)getDebug_NumberOfDirectories())
     {
         nOffset=getDebugTableOffset();
         nOffset+=sizeof(IMAGE_DEBUG_DIRECTORY)*nDebug;
@@ -8665,7 +8737,7 @@ unsigned int PEFile::getDebug_Type(unsigned int nDebug)
 {
     unsigned int nOffset;
 
-    if(nDebug<(int)getDebug_NumberOfDirectories())
+    if((int)nDebug<(int)getDebug_NumberOfDirectories())
     {
         nOffset=getDebugTableOffset();
         nOffset+=sizeof(IMAGE_DEBUG_DIRECTORY)*nDebug;
@@ -8682,7 +8754,7 @@ unsigned int PEFile::getDebug_SizeOfData(unsigned int nDebug)
 {
     unsigned int nOffset;
 
-    if(nDebug<(int)getDebug_NumberOfDirectories())
+    if((int)nDebug<(int)getDebug_NumberOfDirectories())
     {
         nOffset=getDebugTableOffset();
         nOffset+=sizeof(IMAGE_DEBUG_DIRECTORY)*nDebug;
@@ -8699,7 +8771,7 @@ unsigned int PEFile::getDebug_AddressOfRawData(unsigned int nDebug)
 {
     unsigned int nOffset;
 
-    if(nDebug<(int)getDebug_NumberOfDirectories())
+    if((int)nDebug<(int)getDebug_NumberOfDirectories())
     {
         nOffset=getDebugTableOffset();
         nOffset+=sizeof(IMAGE_DEBUG_DIRECTORY)*nDebug;
@@ -8716,7 +8788,7 @@ unsigned int PEFile::getDebug_PointerToRawData(unsigned int nDebug)
 {
     unsigned int nOffset;
 
-    if(nDebug<(int)getDebug_NumberOfDirectories())
+    if((int)nDebug<(int)getDebug_NumberOfDirectories())
     {
         nOffset=getDebugTableOffset();
         nOffset+=sizeof(IMAGE_DEBUG_DIRECTORY)*nDebug;

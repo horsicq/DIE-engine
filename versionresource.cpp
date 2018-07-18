@@ -1,3 +1,23 @@
+// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
 #include "versionresource.h"
 
 VersionResource::VersionResource(QByteArray *pbaData)
@@ -128,7 +148,7 @@ QString VersionResource::getStringFileInfo(QString sKey)
 
 QString VersionResource::versionToString(unsigned int nValue)
 {
-    return QString("%1.%2").arg(HIWORD(nValue)).arg(LOWORD(nValue));
+    return QString("%1.%2").arg(__HIWORD(nValue)).arg(__LOWORD(nValue));
 }
 
 QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
@@ -140,7 +160,7 @@ QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
 
     QString sResult="";
 
-    if(nFileFlags&VS_FF_DEBUG)
+    if(nFileFlags&_VS_FF_DEBUG)
     {
         if(sResult!="")
         {
@@ -150,7 +170,7 @@ QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
         sResult+="VS_FF_DEBUG";
     }
 
-    if(nFileFlags&VS_FF_INFOINFERRED)
+    if(nFileFlags&_VS_FF_INFOINFERRED)
     {
         if(sResult!="")
         {
@@ -160,7 +180,7 @@ QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
         sResult+="VS_FF_INFOINFERRED";
     }
 
-    if(nFileFlags&VS_FF_PATCHED)
+    if(nFileFlags&_VS_FF_PATCHED)
     {
         if(sResult!="")
         {
@@ -170,7 +190,7 @@ QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
         sResult+="VS_FF_PATCHED";
     }
 
-    if(nFileFlags&VS_FF_PRERELEASE)
+    if(nFileFlags&_VS_FF_PRERELEASE)
     {
         if(sResult!="")
         {
@@ -180,7 +200,7 @@ QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
         sResult+="VS_FF_PRERELEASE";
     }
 
-    if(nFileFlags&VS_FF_PRIVATEBUILD)
+    if(nFileFlags&_VS_FF_PRIVATEBUILD)
     {
         if(sResult!="")
         {
@@ -190,7 +210,7 @@ QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
         sResult+="VS_FF_PRIVATEBUILD";
     }
 
-    if(nFileFlags&VS_FF_SPECIALBUILD)
+    if(nFileFlags&_VS_FF_SPECIALBUILD)
     {
         if(sResult!="")
         {
@@ -206,14 +226,14 @@ QString VersionResource::fileFlagsToString(unsigned int nFileFlags)
 
 QString VersionResource::fileOSToString(unsigned int nFileOS)
 {
-    if(nFileOS==VOS_UNKNOWN)
+    if(nFileOS==_VOS_UNKNOWN)
     {
         return "VOS_UNKNOWN";
     }
 
     QString sResult="";
 
-    if(nFileOS&VOS_DOS)
+    if(nFileOS&_VOS_DOS)
     {
         if(sResult!="")
         {
@@ -223,7 +243,7 @@ QString VersionResource::fileOSToString(unsigned int nFileOS)
         sResult+="VOS_DOS";
     }
 
-    if(nFileOS&VOS_NT)
+    if(nFileOS&_VOS_NT)
     {
         if(sResult!="")
         {
@@ -233,7 +253,7 @@ QString VersionResource::fileOSToString(unsigned int nFileOS)
         sResult+="VOS_NT";
     }
 
-    if(nFileOS&VOS__WINDOWS32)
+    if(nFileOS&_VOS__WINDOWS32)
     {
         if(sResult!="")
         {
@@ -248,27 +268,27 @@ QString VersionResource::fileOSToString(unsigned int nFileOS)
 
 QString VersionResource::fileTypeToString(unsigned int nFileType)
 {
-    if(nFileType==VFT_UNKNOWN)
+    if(nFileType==_VFT_UNKNOWN)
     {
         return "VFT_UNKNOWN";
     }
-    else if(nFileType==VFT_DLL)
+    else if(nFileType==_VFT_DLL)
     {
         return "VFT_DLL";
     }
-    else if(nFileType==VFT_DRV)
+    else if(nFileType==_VFT_DRV)
     {
         return "VFT_DRV";
     }
-    else if(nFileType==VFT_FONT)
+    else if(nFileType==_VFT_FONT)
     {
         return "VFT_FONT";
     }
-    else if(nFileType==VFT_STATIC_LIB)
+    else if(nFileType==_VFT_STATIC_LIB)
     {
         return "VFT_STATIC_LIB";
     }
-    else if(nFileType==VFT_VXD)
+    else if(nFileType==_VFT_VXD)
     {
         return "VFT_VXD";
     }

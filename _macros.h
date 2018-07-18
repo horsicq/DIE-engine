@@ -36,18 +36,18 @@ typedef long LONG;
 typedef wchar_t WCHAR;    // wc,   16-bit UNICODE character
 
 //#define ALIGN_DOWN(x, align)    (x & ~(align-1))
-#define ALIGN_DOWN(x, align)    (x & ~(align - 1))
-#define ALIGN_UP(x, align)      ((x & (align - 1)) ? ALIGN_DOWN(x, align) + align : x)
+#define ALIGN_DOWN(x, align)    ((x) & ~((align) - 1))
+#define ALIGN_UP(x, align)      (((x) & ((align) - 1)) ? ALIGN_DOWN((x), (align)) + (align) : (x))
 #define MAXIMAL(a,b)            (((a)>(b))?(a):(b))
 #define MINIMAL(a,b)            (((a) < (b)) ? (a) : (b))
 //#define max(a,b)                (((a) > (b)) ? (a) : (b))
 //#define min(a,b)                (((a) < (b)) ? (a) : (b))
 
-#define MAKEWORD(a, b)          ((WORD)(((BYTE)((DWORD *)(a) & 0xff)) | ((WORD)((BYTE)((DWORD_PTR)(b) & 0xff))) << 8))
-#define MAKELONG(a, b)          ((LONG)(((WORD)((DWORD *)(a) & 0xffff)) | ((DWORD)((WORD)((DWORD_PTR)(b) & 0xffff))) << 16))
-#define LOWORD(l)               ((unsigned short)((unsigned int)(l) & 0xffff))
-#define HIWORD(l)               ((unsigned short)((unsigned int)(l) >> 16))
-#define LOBYTE(w)               ((BYTE)((DWORD *)(w) & 0xff))
-#define HIBYTE(w)               ((BYTE)((DWORD *)(w) >> 8))
+#define __MAKEWORD(a, b)          ((WORD)(((BYTE)((DWORD *)(a) & 0xff)) | ((WORD)((BYTE)((DWORD_PTR)(b) & 0xff))) << 8))
+#define __MAKELONG(a, b)          ((LONG)(((WORD)((DWORD *)(a) & 0xffff)) | ((DWORD)((WORD)((DWORD_PTR)(b) & 0xffff))) << 16))
+#define __LOWORD(l)               ((unsigned short)((unsigned int)(l) & 0xffff))
+#define __HIWORD(l)               ((unsigned short)((unsigned int)(l) >> 16))
+#define __LOBYTE(w)               ((BYTE)((DWORD *)(w) & 0xff))
+#define __HIBYTE(w)               ((BYTE)((DWORD *)(w) >> 8))
 
 #endif // _MACROS_H

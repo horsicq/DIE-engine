@@ -1,6 +1,6 @@
 #/bin/bash -x
 
-QMAKE=/home/hors/QT/4.8.6/bin/qmake
+QMAKE=/home/hors/QT/4.8.7/bin/qmake
 
 $QMAKE DIE_source/console/console.pro -r -spec linux-g++
 make clean

@@ -1,9 +1,29 @@
+// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
 #ifndef SCAN_H
 #define SCAN_H
 
 
 #include <QCoreApplication>
-#include <QtConcurrentMap>
+//#include <QtConcurrentMap>
 #include <QFutureWatcher>
 #include <QThread>
 #include <QDir>
@@ -45,26 +65,30 @@ public:
     void setRun(bool bIsRun);
 
     bool analize(QString sFileName,bool bFullScan);
-    bool scanPE(QString sFileName,QString sPrefix);
-    bool scanELF(QString sFileName,QString sPrefix);
-    bool scanMACH(QString sFileName,QString sPrefix);
-    bool scanMSDOS(QString sFileName,QString sPrefix);
-    bool scanText(QString sFileName,QString sPrefix);
-    bool scanBinary(QString sFileName,QString sPrefix);
+    bool die_scanPE(QString sFileName,QString sPrefix);
+    bool die_scanELF(QString sFileName,QString sPrefix);
+    bool die_scanMACH(QString sFileName,QString sPrefix);
+    bool die_scanMSDOS(QString sFileName,QString sPrefix);
+    bool die_scanText(QString sFileName,QString sPrefix);
+    bool die_scanBinary(QString sFileName,QString sPrefix);
 
-    void handleSignatures(PluginsScript *pluginScript,QList<__SIGNATURE> *pListSignatures,QString sType);
+    void die_handleSignatures(PluginsScript *pluginScript,QList<__SIGNATURE> *pListSignatures,QString sType);
 
     static void loadTypeScripts(QList<__SIGNATURE> *pList,QString sType,__DIE_OPTIONS *pOptions);
-    static void loadScripts(__DIE_OPTIONS *pOptions);
+    static void die_loadScripts(__DIE_OPTIONS *pOptions);
     //    void _compareFile(QString sScript);
 signals:
-    void appendSignature(const QString &sString);
+    void die_appendSignatureSignal(const QString &sString);
     void setProgressBar(int nMax,int nValue);
     void setProgressBar2(int nMax,int nValue);
     void appendError(QString sText);
     void appendFileName(QString sText);
     void appendExtra(QString sText);
+    void singleScanComplete(int nTime);
     void _finished();
+
+private slots:
+    void die_appendSignatureSlot(QString sString);
 
 public slots:
     void process();
@@ -82,7 +106,7 @@ private:
 
     //    PluginsScript *pScript;
     QString sFileName;
-    QString compareFile(PluginsScript *pScript,QString sScript,QString sScriptName,QString sType);
+    QString die_compareFile(PluginsScript *pScript,QString sScript,QString sScriptName,QString sType);
 };
 
 #endif // SCAN_H

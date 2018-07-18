@@ -1,3 +1,23 @@
+// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
 #include "binary.h"
 
 Binary::Binary(QObject *parent) :
@@ -383,7 +403,7 @@ bool Binary::readArrayFromFile(unsigned int nOffset, char *pBuffer, unsigned int
 
     baTemp=file.read(nSize);
 
-    if(baTemp.size()==nSize)
+    if(baTemp.size()==(int)nSize)
     {
         memcpy(pBuffer,baTemp.data(),nSize);
         return true;
@@ -1183,7 +1203,7 @@ QString Binary::getString(unsigned int nOffset,unsigned int nMaxSize)
             pOffset=(unsigned char *)baData.data();
         }
 
-        for(int i=0; i<nMaxSize; i++)
+        for(unsigned int i=0; i<nMaxSize; i++)
         {
             //            pBuffer[i]=readByte(nOffset+i);
             if(pOffset[i]==0)
@@ -1248,7 +1268,7 @@ QString Binary::getAnsiString(unsigned int nOffset, unsigned int nMaxSize)
     }
 
 
-    for(int i=0; i<nMaxSize; i++)
+    for(unsigned int i=0; i<nMaxSize; i++)
     {
         if((pOffset[i]==0)||((unsigned char)pOffset[i]>127))
         {
@@ -1355,7 +1375,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nRVA=OffsetToRVA(nOffset);
 
-                if(nRVA==-1)
+                if(nRVA==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1367,7 +1387,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nOffset=RVAToOffset(nRVA);
 
-                if(nOffset==-1)
+                if(nOffset==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1380,7 +1400,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nRVA=OffsetToRVA(nOffset);
 
-                if(nRVA==-1)
+                if(nRVA==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1389,7 +1409,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nOffset=RVAToOffset(nRVA);
 
-                if(nOffset==-1)
+                if(nOffset==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1402,7 +1422,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nRVA=OffsetToRVA(nOffset);
 
-                if(nRVA==-1)
+                if(nRVA==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1411,7 +1431,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nOffset=RVAToOffset(nRVA);
 
-                if(nOffset==-1)
+                if(nOffset==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1432,7 +1452,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nOffset=VAToOffset32(nDword);
 
-                if(nOffset==-1)
+                if(nOffset==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1453,7 +1473,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nOffset=VAToOffset(sWord);
 
-                if(nOffset==-1)
+                if(nOffset==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1474,7 +1494,7 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
 
                 nOffset=VAToOffset(cByte);
 
-                if(nOffset==-1)
+                if(nOffset==(unsigned int)-1)
                 {
                     return false;
                 }
@@ -1569,14 +1589,14 @@ bool Binary::compareEPfast(QString sSignature,int nOffset)
     {
 
         dataToHex(baEntryPoint.data()+nOffset,nSize,pBuffer);
-        bResult=signatureCompare(pBuffer,sSignature.toAscii().data(),nSize*2);
+        bResult=signatureCompare(pBuffer,sSignature.toLatin1().data(),nSize*2);
 
     }
     else
     {
         QByteArray baBuffer=readArray(nEntryPointOffset+nOffset,nSize);
         dataToHex(baBuffer.data(),nSize,pBuffer);
-        bResult=signatureCompare(pBuffer,sSignature.toAscii().data(),nSize*2);
+        bResult=signatureCompare(pBuffer,sSignature.toLatin1().data(),nSize*2);
     }
 
     delete[] pBuffer;
@@ -1643,7 +1663,7 @@ bool Binary::_compare(QString sSignature,unsigned int nOffset)
     if(readArray(nOffset,pBuffer,nSize))
     {
         dataToHex(pBuffer,nSize,pBuffer2);
-        bResult=signatureCompare(pBuffer2,sSignature.toAscii().data(),nSize*2);
+        bResult=signatureCompare(pBuffer2,sSignature.toLatin1().data(),nSize*2);
     }
     else
     {
@@ -1671,7 +1691,7 @@ QString Binary::convertSignature(QString sSignature)
     if(sSignature.contains(QChar(39)))
     {
         QByteArray baBuffer;
-        QByteArray baSignature=sSignature.toAscii();
+        QByteArray baSignature=sSignature.toLatin1();
 
         baBuffer.resize(sSignature.size()*2);
         baBuffer.fill(0);
@@ -1725,22 +1745,15 @@ bool Binary::dataToHex(char *pData, unsigned int nDataSize,char *pOut)
 {
     unsigned char cTemp;
 
-
-    for(int y=0, x=0; y<nDataSize; ++y, ++x)
+    for(int y=0, x=0; y<(int)nDataSize; ++y, ++x)
     {
-
         cTemp=((unsigned char)pData[y])>>4;
-
-        pOut[x]=(char)(cTemp>9 ? cTemp+0x37 : cTemp+0x30);
-
+        pOut[x]=(char)((cTemp>9)?(cTemp+0x37):(cTemp+0x30));
         cTemp=((unsigned char)(pData[y]&0xF));
-
-        pOut[++x]=(char)(cTemp>9 ? cTemp+0x37 : cTemp+0x30);
+        pOut[++x]=(char)((cTemp>9)?(cTemp+0x37):(cTemp+0x30));
     }
 
-
     pOut[nDataSize*2]=0;
-
 
     return true;
 }
@@ -1908,7 +1921,7 @@ unsigned int Binary::findSignatureInMemory(char *pMemory, unsigned int nMemorySi
                 //                memoryCompare(char *pMemory1, char *pMemory2, int nSize)
             }
 
-            if(nNext==-1)
+            if(nNext==(unsigned int)-1)
             {
                 if(bIsFirst)
                 {
@@ -1946,7 +1959,7 @@ unsigned int Binary::findByte(unsigned int nOffset, unsigned int nSize, unsigned
         return -1;
     }
 
-    if(nSize==-1)
+    if(nSize==(unsigned int)-1)
     {
         nSize=size()-nOffset;
     }
@@ -1976,7 +1989,7 @@ unsigned int Binary::findByte(unsigned int nOffset, unsigned int nSize, unsigned
             return -1;
         }
 
-        for(int i=0; i<nTemp; i++)
+        for(unsigned int i=0; i<nTemp; i++)
         {
             if(*((unsigned char *)(pBuffer+i))==cValue)
             {
@@ -2002,7 +2015,7 @@ unsigned int Binary::findWord(unsigned int nOffset, unsigned int nSize, unsigned
         return -1;
     }
 
-    if(nSize==-1)
+    if(nSize==(unsigned int)-1)
     {
         nSize=size()-nOffset;
     }
@@ -2033,7 +2046,7 @@ unsigned int Binary::findWord(unsigned int nOffset, unsigned int nSize, unsigned
             return -1;
         }
 
-        for(int i=0; i<nTemp-1; i++)
+        for(unsigned int i=0; i<nTemp-1; i++)
         {
             if(*((unsigned short *)(pBuffer+i))==sValue)
             {
@@ -2059,7 +2072,7 @@ unsigned int Binary::findDword(unsigned int nOffset, unsigned int nSize, unsigne
         return -1;
     }
 
-    if(nSize==-1)
+    if(nSize==(unsigned int)-1)
     {
         nSize=size()-nOffset;
     }
@@ -2090,7 +2103,7 @@ unsigned int Binary::findDword(unsigned int nOffset, unsigned int nSize, unsigne
             return -1;
         }
 
-        for(int i=0; i<nTemp-3; i++)
+        for(unsigned int i=0; i<nTemp-3; i++)
         {
             if(*((unsigned int *)(pBuffer+i))==nValue)
             {
@@ -2121,7 +2134,7 @@ unsigned int Binary::findArray(unsigned int nOffset, unsigned int nSize, char *p
         return -1;
     }
 
-    if(nSize==-1)
+    if(nSize==(unsigned int)-1)
     {
         nSize=size()-nOffset;
     }
@@ -2157,7 +2170,7 @@ unsigned int Binary::findArray(unsigned int nOffset, unsigned int nSize, char *p
             return -1;
         }
 
-        for(int i=0; i<nTemp-(nArraySize-1); i++)
+        for(unsigned int i=0; i<nTemp-(nArraySize-1); i++)
         {
             if(pBuffer[i]==pArray[0])
             {
@@ -2181,7 +2194,7 @@ unsigned int Binary::findArray(unsigned int nOffset, unsigned int nSize, char *p
 
 unsigned int Binary::findString(unsigned int nOffset, unsigned int nSize, QString sString)
 {
-    return findArray(nOffset,nSize,sString.toAscii().data(),sString.toAscii().size());
+    return findArray(nOffset,nSize,sString.toLatin1().data(),sString.toLatin1().size());
 }
 
 unsigned int Binary::findSignature(unsigned int nOffset, unsigned int nSize, QString sSignature)
@@ -2196,12 +2209,12 @@ unsigned int Binary::findSignature(unsigned int nOffset, unsigned int nSize, QSt
         return -1;
     }
 
-    if(nSize==-1)
+    if(nSize==(unsigned int)-1)
     {
         nSize=size()-nOffset;
     }
 
-    if(sSignature.size()>nSize)
+    if(sSignature.size()>(int)nSize)
     {
         return -1;
     }
@@ -2242,7 +2255,7 @@ unsigned int Binary::findSignature(unsigned int nOffset, unsigned int nSize, QSt
         {
             nResult=findArray(nOffset,nSize,baSig.data(),baSig.size());
 
-            if(nResult==-1)
+            if(nResult==(unsigned int)-1)
             {
                 return -1;
             }
@@ -2313,7 +2326,7 @@ unsigned int Binary::findSignature(unsigned int nOffset, unsigned int nSize, QSt
 
 bool Binary::isSignaturePresent(unsigned int nOffset, unsigned int nSize, QString sSignature)
 {
-    return (findSignature(nOffset,nSize,sSignature)!=-1);
+    return (findSignature(nOffset,nSize,sSignature)!=(unsigned int)-1);
 }
 
 float Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
@@ -2323,7 +2336,7 @@ float Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
         return 0.0;
     }
 
-    if(nDataSize==-1)
+    if(nDataSize==(unsigned int)-1)
     {
         nDataSize=size()-nOffset;
 
@@ -2364,7 +2377,7 @@ float Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
             return 0;
         }
 
-        for(int i=0; i<nTemp; i++)
+        for(unsigned int i=0; i<nTemp; i++)
         {
             bytes[(unsigned char)pBuffer[i]]+=1;
         }
@@ -2411,7 +2424,7 @@ QString Binary::calculateMD5(unsigned int nOffset, unsigned int nDataSize)
         return 0;
     }
 
-    if(nDataSize==-1)
+    if(nDataSize==(unsigned int)-1)
     {
         nDataSize=size()-nOffset;
     }
@@ -2529,7 +2542,7 @@ QList<QString> Binary::getTypes()
 
             bool isHeaderValid=false;
 
-            if((nLfanew<nHeaderSize)&&(baHeader.size()>sizeof(IMAGE_NT_HEADERS32)))
+            if((nLfanew<nHeaderSize)&&((unsigned int)baHeader.size()>sizeof(IMAGE_NT_HEADERS32)))
             {
                 pOffset+=nLfanew;
                 isHeaderValid=true;
@@ -2623,7 +2636,7 @@ QString Binary::getDisasmMode()
     {
         if(((IMAGE_DOS_HEADER *)pOffset)->e_magic==IMAGE_DOS_SIGNATURE)
         {
-            if((((IMAGE_DOS_HEADER *)pOffset)->e_lfanew<baHeader.size()-sizeof(IMAGE_NT_HEADERS))&&(baHeader.size()>sizeof(IMAGE_NT_HEADERS)))
+            if((((IMAGE_DOS_HEADER *)pOffset)->e_lfanew<(unsigned int)baHeader.size()-sizeof(IMAGE_NT_HEADERS))&&((unsigned int)baHeader.size()>sizeof(IMAGE_NT_HEADERS)))
             {
                 pOffset+=((IMAGE_DOS_HEADER *)pOffset)->e_lfanew;
 
