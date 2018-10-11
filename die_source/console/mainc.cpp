@@ -510,7 +510,14 @@ int main(int argc, char *argv[])
 
         SingleFileScan sfs;
 
-        //        sfs.setOptions(&options);
+        sfs.setDataBase(SingleFileScan::options.sDataBasePath);
+
+        bInvalidBase=(SingleFileScan::options.listBinaryScripts.count()==0)
+                      &&(SingleFileScan::options.listELFScripts.count()==0)
+                      &&(SingleFileScan::options.listMACHScripts.count()==0)
+                      &&(SingleFileScan::options.listMSDOSScripts.count()==0)
+                      &&(SingleFileScan::options.listPEScripts.count()==0)
+                      &&(SingleFileScan::options.listTextScripts.count()==0);
 
         for(int i=0; i<listFiles.count(); i++)
         {
