@@ -71,11 +71,11 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
 
             if(sTemp=="yes")
             {
-                pOptions->bShowOptions=true;
+                pOptions->bScanShowOptionsDIE=true;
             }
             else if(sTemp=="no")
             {
-                pOptions->bShowOptions=false;
+                pOptions->bScanShowOptionsDIE=false;
             }
             else
             {
@@ -89,11 +89,11 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
 
             if(sTemp=="yes")
             {
-                pOptions->bShowVersion=true;
+                pOptions->bScanShowVersionDIE=true;
             }
             else if(sTemp=="no")
             {
-                pOptions->bShowVersion=false;
+                pOptions->bScanShowVersionDIE=false;
             }
             else
             {
@@ -346,8 +346,8 @@ void loadOptions(__DIE_OPTIONS *pOptions)
     QSettings settings(Utils::getApplicationPath()+QDir::separator()+"diec.ini",QSettings::IniFormat);
 
     pOptions->bShowErrors=settings.value("ShowErrors",false).toBool();
-    pOptions->bShowOptions=settings.value("ShowOptions",true).toBool();
-    pOptions->bShowVersion=settings.value("ShowVersion",true).toBool();
+    pOptions->bScanShowOptionsDIE=settings.value("ShowOptions",true).toBool();
+    pOptions->bScanShowVersionDIE=settings.value("ShowVersion",true).toBool();
     pOptions->bScanSubfolders=settings.value("ScanSubfolders",true).toBool();
     pOptions->bShowEntropy=settings.value("ShowEntropy",false).toBool();
     pOptions->bSingleLineOutput=settings.value("SingleLineOutput",false).toBool();
@@ -440,7 +440,7 @@ int main(int argc, char *argv[])
 
     loadOptions(&SingleFileScan::options);
     //    // fill scripts
-    Scan::loadScripts(&SingleFileScan::options);
+    Scan::die_loadScripts(&SingleFileScan::options);
 
     bool bInvalidBase=(SingleFileScan::options.listBinaryScripts.count()==0)
                       &&(SingleFileScan::options.listELFScripts.count()==0)
@@ -480,8 +480,8 @@ int main(int argc, char *argv[])
         printf("\n");
         printf("Options:\n");
         printf(QString("-showerrors [default: -showerrors:%1] Show all errors\n").arg(SingleFileScan::options.bShowErrors?"yes":"no").toAscii().data());
-        printf(QString("-showoptions [default: -showoptions:%1] Show compiler/protector/packer/etc options\n").arg(SingleFileScan::options.bShowOptions?"yes":"no").toAscii().data());
-        printf(QString("-showversion [default: -showversion:%1] Show compiler/protector/packer/etc version\n").arg(SingleFileScan::options.bShowVersion?"yes":"no").toAscii().data());
+        printf(QString("-showoptions [default: -showoptions:%1] Show compiler/protector/packer/etc options\n").arg(SingleFileScan::options.bScanShowOptionsDIE?"yes":"no").toAscii().data());
+        printf(QString("-showversion [default: -showversion:%1] Show compiler/protector/packer/etc version\n").arg(SingleFileScan::options.bScanShowVersionDIE?"yes":"no").toAscii().data());
         printf(QString("-subfolders [default: -subfolders:%1] Scan subfolders. Only for directory scan\n").arg(SingleFileScan::options.bScanSubfolders?"yes":"no").toAscii().data());
         printf(QString("-showentropy [default: -showentropy:%1] Show entropy\n").arg(SingleFileScan::options.bShowEntropy?"yes":"no").toAscii().data());
         printf(QString("-singlelineoutput [default: -singlelineoutput:%1] Output as single line\n").arg(SingleFileScan::options.bSingleLineOutput?"yes":"no").toAscii().data());
