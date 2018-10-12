@@ -126,20 +126,12 @@ void SingleFileScan::setDataBase(QString sDataBase)
         sDataBase=__DefaultDataBasePath;
     }
 
-    if(options.sDataBasePath!=sDataBase)
-    {
-        options.sDataBasePath=sDataBase;
-        Scan::die_loadScripts(&options);
+    options.sDataBasePath=sDataBase;
+    Scan::die_loadScripts(&options);
 #ifdef QT_DEBUG
-        qDebug("New database: %s",sDataBase.toLatin1().data());
+    qDebug("New database: %s",sDataBase.toLatin1().data());
 #endif
-    }
-    else
-    {
-#ifdef QT_DEBUG
-        qDebug("old database: %s",options.sDataBasePath.toLatin1().data());
-#endif
-    }
+    
 }
 
 __DIE_OPTIONS SingleFileScan::options={};
