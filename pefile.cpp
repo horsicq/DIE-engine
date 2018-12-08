@@ -4292,6 +4292,47 @@ QString PEFile::getExport_FunctionNameAsString(int nNumber)
     return "";
 }
 
+bool PEFile::isExportFunctionPresent(QString sFunctionName)
+{
+    bool bResult=false;
+
+    int nNumberOfNames=getExport_NumberOfNames();
+
+    for(int i=0;i<nNumberOfNames;i++)
+    {
+        QString _sCurrentName=getExport_FunctionNameAsString(i);
+        if(_sCurrentName==sFunctionName)
+        {
+            bResult=true;
+            break;
+        }
+    }
+
+    return false;
+}
+
+bool PEFile::isExportFunctionPresentExp(QString sFunctionName)
+{
+    QRegExp exp;
+    exp.setPattern(sFunctionName);
+
+    bool bResult=false;
+
+    int nNumberOfNames=getExport_NumberOfNames();
+
+    for(int i=0;i<nNumberOfNames;i++)
+    {
+        QString _sCurrentName=getExport_FunctionNameAsString(i);
+        if(_sCurrentName.contains(exp))
+        {
+            bResult=true;
+            break;
+        }
+    }
+
+    return false;
+}
+
 QString PEFile::getExport_FunctionNameAsString(int nNumber,unsigned int nAddressOfNames)
 {
     return getAnsiString(RVAToOffset(readDword(nAddressOfNames+4*nNumber)),120);

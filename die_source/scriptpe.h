@@ -150,11 +150,17 @@ public slots:
     unsigned int getNumberOfRichIDs();
     bool isRichVersionPresent(unsigned int nID);
     bool isSignedFile();
+
+    bool isExportPresent();
+    bool isTLSPresent();
+    bool isImportPresent();
+    bool isResourcePresent();
+    bool isExportFunctionPresent(QString sFunctionName);
+    bool isExportFunctionPresentExp(QString sFunctionName);
 private:
     PEFile *pefile;
     //    int nEPOffset;
     //    int nFileSize;
-
 };
 
 #endif // SCRIPTPE_H

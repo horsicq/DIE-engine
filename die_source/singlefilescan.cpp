@@ -26,6 +26,7 @@ void SingleFileScan::flagsToOptions(unsigned int nFlags, __DIE_OPTIONS *pOptions
     pOptions->bSingleLineOutput=nFlags&DIE_SINGLELINEOUTPUT;
     pOptions->bShowFileFormatOnce=nFlags&DIE_SHOWFILEFORMATONCE;
     pOptions->bFullScan=nFlags&DIE_FULLSCAN;
+    pOptions->bScanDeepScanDIE=nFlags&DIE_DEEPSCAN;
     pOptions->bShowScanTime=false;
     pOptions->sm=SM_DIE;
     pOptions->pMutexResult=0;

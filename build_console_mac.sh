@@ -1,6 +1,6 @@
 #!/bin/sh -x
 
-qmake DIE_source/console/console.pro -r -spec macx-g++ CONFIG+=release CONFIG+=x86_64
+qmake DIE_source/console_source/console_source.pro -r -spec macx-g++ CONFIG+=release CONFIG+=x86_64
 make clean
 make
 

@@ -485,6 +485,9 @@ public slots:
 
     QString getExport_FunctionNameAsString(int nNumber);
 
+    bool isExportFunctionPresent(QString sFunctionName);
+    bool isExportFunctionPresentExp(QString sFunctionName);
+
     unsigned int getImportSection();
 
     unsigned int getImportTableOffset();

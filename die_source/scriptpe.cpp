@@ -567,6 +567,36 @@ bool scriptPE::isSignedFile()
     return pefile->isSignedFile();
 }
 
+bool scriptPE::isExportPresent()
+{
+    return pefile->isExportPresent();
+}
+
+bool scriptPE::isTLSPresent()
+{
+    return pefile->isTLSPresent();
+}
+
+bool scriptPE::isImportPresent()
+{
+    return pefile->isImportPresent();
+}
+
+bool scriptPE::isResourcePresent()
+{
+    return pefile->isResourcePresent();
+}
+
+bool scriptPE::isExportFunctionPresent(QString sFunctionName)
+{
+    return pefile->isExportFunctionPresent(sFunctionName);
+}
+
+bool scriptPE::isExportFunctionPresentExp(QString sFunctionName)
+{
+    return pefile->isExportFunctionPresentExp(sFunctionName);
+}
+
 QString scriptPE::getPEFileVersion(QString sFileName)
 {
     QString sResult;

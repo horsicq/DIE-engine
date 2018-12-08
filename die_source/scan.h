@@ -49,6 +49,7 @@
 #define DIE_SINGLELINEOUTPUT        0x00000010
 #define DIE_SHOWFILEFORMATONCE      0x00000020
 #define DIE_FULLSCAN                0x00000040
+#define DIE_DEEPSCAN                0x00000080
 
 class Scan : public QObject
 {

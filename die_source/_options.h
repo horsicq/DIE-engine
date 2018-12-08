@@ -30,7 +30,7 @@
 #endif
 
 #define __DIE "Detect It Easy"
-#define __VERSION "2.00"
+#define __VERSION "2.01"
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
 #define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"
@@ -42,6 +42,8 @@
 #define DIE_SHOWENTROPY             0x00000008
 #define DIE_SINGLELINEOUTPUT        0x00000010
 #define DIE_SHOWFILEFORMATONCE      0x00000020
+#define DIE_FULLSCAN                0x00000040
+#define DIE_DEEPSCAN                0x00000080
 
 struct __SIGNATURE
 {
@@ -80,6 +82,8 @@ struct __DIE_OPTIONS
     bool bShowTooltips;
     bool bScanShowVersionDIE;
     bool bScanShowOptionsDIE;
+    bool bScanDeepScanDIE;
+    bool bScanResizeToContentsDIE;
 #ifdef USE_NFD
     bool bScanDeepScanNFD;
     bool bScanScanOverlayNFD;
@@ -129,7 +133,7 @@ struct __DIE_OPTIONS
     QMutex *pMutexResult;
     QList<__DIE_RESULT> die_listResult;
 #ifdef USE_NFD
-    QList<SpecAbstract::SCAN_STRUCT> nfd_listResult;
+    SpecAbstract::SCAN_RESULT nfd_result;
 #endif
 };
 
@@ -138,6 +142,8 @@ struct __DIE_OPTIONS
 #define __ScanAfterOpen "Scan/ScanAfterOpen"
 #define __ScanShowVersionDIE "Scan/ShowVersionDIE"
 #define __ScanShowOptionsDIE "Scan/ShowOptionsDIE"
+#define __ScanDeepScanDIE "Scan/ScanDeepDIE"
+#define __ScanResizeColumnsToContent "Scan/ResizeColumnsToContent"
 #ifdef USE_NFD
 #define __ScanDeepScanNFD "Scan/ScanDeepNFD"
 #define __ScanScanOverlayNFD "Scan/ScanOverlayNFD"
