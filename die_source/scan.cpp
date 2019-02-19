@@ -198,6 +198,7 @@ bool Scan::analize(QString sFileName,bool bFullScan)
         nfd_options.bScanOverlay=pOptions->bScanScanOverlayNFD;
         nfd_options.bDeepScan=pOptions->bScanDeepScanNFD;
 
+<<<<<<< HEAD
         pOptions->nfd_result=StaticScan::processFile(sFileName,&nfd_options);
 
         emit setProgressBar(1,1);
@@ -209,6 +210,9 @@ bool Scan::analize(QString sFileName,bool bFullScan)
         emit setProgressBar(1,0);
 
         pOptions->yara_result=QYara::scanFile(sFileName,pOptions->sDataBaseYARA);
+=======
+        pOptions->nfd_result=StaticScan::process(sFileName,&nfd_options);
+>>>>>>> bc70495d47928782ff9fda6f288186705a84c0f4
 
         emit setProgressBar(1,1);
     }
