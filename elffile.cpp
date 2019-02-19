@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -1068,7 +1068,7 @@ QString ELFFile::getSectionName(int nSection)
 
     QByteArray baSectionNamesTable=getSectionNamesTable();
 
-    if((int)nName<baSectionNamesTable.size())
+    if(((int)nName<baSectionNamesTable.size())&&((int)nName>0))
     {
         sResult.append(baSectionNamesTable.data()+nName);
     }

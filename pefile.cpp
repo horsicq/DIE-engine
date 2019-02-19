@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -4290,6 +4290,47 @@ QString PEFile::getExport_FunctionNameAsString(int nNumber)
     }
 
     return "";
+}
+
+bool PEFile::isExportFunctionPresent(QString sFunctionName)
+{
+    bool bResult=false;
+
+    int nNumberOfNames=getExport_NumberOfNames();
+
+    for(int i=0;i<nNumberOfNames;i++)
+    {
+        QString _sCurrentName=getExport_FunctionNameAsString(i);
+        if(_sCurrentName==sFunctionName)
+        {
+            bResult=true;
+            break;
+        }
+    }
+
+    return bResult;
+}
+
+bool PEFile::isExportFunctionPresentExp(QString sFunctionName)
+{
+    QRegExp exp;
+    exp.setPattern(sFunctionName);
+
+    bool bResult=false;
+
+    int nNumberOfNames=getExport_NumberOfNames();
+
+    for(int i=0;i<nNumberOfNames;i++)
+    {
+        QString _sCurrentName=getExport_FunctionNameAsString(i);
+        if(_sCurrentName.contains(exp))
+        {
+            bResult=true;
+            break;
+        }
+    }
+
+    return bResult;
 }
 
 QString PEFile::getExport_FunctionNameAsString(int nNumber,unsigned int nAddressOfNames)

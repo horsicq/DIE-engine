@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -49,6 +49,7 @@
 #define DIE_SINGLELINEOUTPUT        0x00000010
 #define DIE_SHOWFILEFORMATONCE      0x00000020
 #define DIE_FULLSCAN                0x00000040
+#define DIE_DEEPSCAN                0x00000080
 
 class Scan : public QObject
 {
@@ -77,6 +78,9 @@ public:
     static void loadTypeScripts(QList<__SIGNATURE> *pList,QString sType,__DIE_OPTIONS *pOptions);
     static void die_loadScripts(__DIE_OPTIONS *pOptions);
     //    void _compareFile(QString sScript);
+#ifdef USE_YARA
+    static void yara_loadBase(__DIE_OPTIONS *pOptions);
+#endif
 signals:
     void die_appendSignatureSignal(const QString &sString);
     void setProgressBar(int nMax,int nValue);

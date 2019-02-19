@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -565,6 +565,36 @@ bool scriptPE::isRichVersionPresent(unsigned int nVersion)
 bool scriptPE::isSignedFile()
 {
     return pefile->isSignedFile();
+}
+
+bool scriptPE::isExportPresent()
+{
+    return pefile->isExportPresent();
+}
+
+bool scriptPE::isTLSPresent()
+{
+    return pefile->isTLSPresent();
+}
+
+bool scriptPE::isImportPresent()
+{
+    return pefile->isImportPresent();
+}
+
+bool scriptPE::isResourcePresent()
+{
+    return pefile->isResourcePresent();
+}
+
+bool scriptPE::isExportFunctionPresent(QString sFunctionName)
+{
+    return pefile->isExportFunctionPresent(sFunctionName);
+}
+
+bool scriptPE::isExportFunctionPresentExp(QString sFunctionName)
+{
+    return pefile->isExportFunctionPresentExp(sFunctionName);
 }
 
 QString scriptPE::getPEFileVersion(QString sFileName)

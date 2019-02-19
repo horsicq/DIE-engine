@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -28,8 +28,8 @@ QString Utils::getApplicationPath()
 {
     QString sResult;
     sResult=qApp->applicationDirPath();
-#ifndef QT_NO_DEBUG
-#ifdef Q_WS_WIN
+#ifdef QT_DEBUG
+#ifdef Q_OS_WIN
     sResult="C:\\tmp_build\\qt5\\die\\die_source";
 #endif
 #ifdef Q_OS_MAC
@@ -120,6 +120,12 @@ QString Utils::getSearchPath(__DIE_OPTIONS *pOptions)
 {
     return convertPath(pOptions->sSearchPath);
 }
+#ifdef USE_YARA
+QString Utils::getDataBaseYARAPath(__DIE_OPTIONS *pOptions)
+{
+    return convertPath(pOptions->sDataBaseYARAPath);
+}
+#endif
 
 QString Utils::getDefaultFont()
 {

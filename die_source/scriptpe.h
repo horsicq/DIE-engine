@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+﻿// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -150,11 +150,17 @@ public slots:
     unsigned int getNumberOfRichIDs();
     bool isRichVersionPresent(unsigned int nID);
     bool isSignedFile();
+
+    bool isExportPresent();
+    bool isTLSPresent();
+    bool isImportPresent();
+    bool isResourcePresent();
+    bool isExportFunctionPresent(QString sFunctionName);
+    bool isExportFunctionPresentExp(QString sFunctionName);
 private:
     PEFile *pefile;
     //    int nEPOffset;
     //    int nFileSize;
-
 };
 
 #endif // SCRIPTPE_H

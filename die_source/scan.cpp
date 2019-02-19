@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -119,7 +119,6 @@ bool Scan::analize(QString sFileName,bool bFullScan)
         pOptions->pMutexResult->lock();
     }
 
-
     QTime scanTime=QTime::currentTime();
 
 //    pOptions->nNumberOfResults=0;
@@ -199,7 +198,17 @@ bool Scan::analize(QString sFileName,bool bFullScan)
         nfd_options.bScanOverlay=pOptions->bScanScanOverlayNFD;
         nfd_options.bDeepScan=pOptions->bScanDeepScanNFD;
 
-        pOptions->nfd_listResult=StaticScan::process(sFileName,&nfd_options);
+        pOptions->nfd_result=StaticScan::processFile(sFileName,&nfd_options);
+
+        emit setProgressBar(1,1);
+    }
+#endif
+#ifdef USE_YARA
+    else if(pOptions->sm==SM_YARA)
+    {
+        emit setProgressBar(1,0);
+
+        pOptions->yara_result=QYara::scanFile(sFileName,pOptions->sDataBaseYARA);
 
         emit setProgressBar(1,1);
     }
@@ -419,9 +428,26 @@ void Scan::die_handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> 
     int k=0;
     bResult=false;
 
+    bool bDeepScan=pOptions->bScanDeepScanDIE;
+
     for(int i=0; (i<_nNumberOfSignatures)&&(bIsRun); i++)
     {
-        if(pListSignatures->at(i).sName!="_init")
+        QString _sName=pListSignatures->at(i).sName;
+        QString sPrefix=_sName.section(".",0,0);
+
+        bool bSuccess=true;
+
+        if(_sName=="_init")
+        {
+            bSuccess=false;
+        }
+
+        if((sPrefix=="EP")||(sPrefix=="DS"))
+        {
+            bSuccess=bDeepScan;
+        }
+
+        if(bSuccess)
         {
             QTime scanTime;
 
@@ -434,7 +460,7 @@ void Scan::die_handleSignatures(PluginsScript *pluginScript, QList<__SIGNATURE> 
 
             if(pOptions->bShowScanTime)
             {
-                emit appendError(QString("%1: %2 ms").arg(pListSignatures->at(i).sName).arg(scanTime.msecsTo(QTime::currentTime())));
+                emit appendError(QString("%1: %2 ms").arg(_sName).arg(scanTime.msecsTo(QTime::currentTime())));
             }
 
             if(i+1>(_nNumberOfSignatures/30)*k)
@@ -552,7 +578,20 @@ void Scan::die_loadScripts(__DIE_OPTIONS *pOptions)
     loadTypeScripts(&pOptions->listPEScripts,"PE",pOptions);
     loadTypeScripts(&pOptions->listMACHScripts,"MACH",pOptions);
 }
+#ifdef USE_YARA
+void Scan::yara_loadBase(__DIE_OPTIONS *pOptions)
+{
+    QFile file;
+    file.setFileName(Utils::getDataBaseYARAPath(pOptions));
 
+    if(file.open(QIODevice::ReadOnly))
+    {
+        pOptions->sDataBaseYARA=file.readAll();
+
+        file.close();
+    }
+}
+#endif
 void Scan::die_appendSignatureSlot(QString sString)
 {
     //qDebug(sString.toLatin1().data());

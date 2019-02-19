@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -45,7 +45,9 @@ public:
     static QString getLangsPath(__DIE_OPTIONS *pOptions);
     static QString getScriptsPath(__DIE_OPTIONS *pOptions);
     static QString getSearchPath(__DIE_OPTIONS *pOptions);
-
+#ifdef USE_YARA
+    static QString getDataBaseYARAPath(__DIE_OPTIONS *pOptions);
+#endif
     static QString getDefaultFont();
 };
 

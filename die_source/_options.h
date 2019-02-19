@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -28,9 +28,12 @@
 #include "staticscan.h"
 #include "staticscanitemmodel.h"
 #endif
+#ifdef USE_YARA
+#include "qyara.h"
+#endif
 
 #define __DIE "Detect It Easy"
-#define __VERSION "2.00"
+#define __VERSION "2.02"
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
 #define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"
@@ -42,6 +45,8 @@
 #define DIE_SHOWENTROPY             0x00000008
 #define DIE_SINGLELINEOUTPUT        0x00000010
 #define DIE_SHOWFILEFORMATONCE      0x00000020
+#define DIE_FULLSCAN                0x00000040
+#define DIE_DEEPSCAN                0x00000080
 
 struct __SIGNATURE
 {
@@ -80,6 +85,8 @@ struct __DIE_OPTIONS
     bool bShowTooltips;
     bool bScanShowVersionDIE;
     bool bScanShowOptionsDIE;
+    bool bScanDeepScanDIE;
+    bool bScanResizeToContentsDIE;
 #ifdef USE_NFD
     bool bScanDeepScanNFD;
     bool bScanScanOverlayNFD;
@@ -125,11 +132,20 @@ struct __DIE_OPTIONS
     QString sLangsPath;
     QString sScriptsPath;
     QString sSearchPath;
+#ifdef USE_YARA
+    QString sDataBaseYARAPath;
+    QString sDataBaseYARA;
+#endif
     SCAN_METHODS sm;
     QMutex *pMutexResult;
     QList<__DIE_RESULT> die_listResult;
 #ifdef USE_NFD
-    QList<SpecAbstract::SCAN_STRUCT> nfd_listResult;
+    SpecAbstract::SCAN_RESULT nfd_result;
+#endif
+    bool bDieLoaded;
+#ifdef USE_YARA
+    bool bYaraLoaded;
+    QYara::RESULT yara_result;
 #endif
 };
 
@@ -138,6 +154,8 @@ struct __DIE_OPTIONS
 #define __ScanAfterOpen "Scan/ScanAfterOpen"
 #define __ScanShowVersionDIE "Scan/ShowVersionDIE"
 #define __ScanShowOptionsDIE "Scan/ShowOptionsDIE"
+#define __ScanDeepScanDIE "Scan/ScanDeepDIE"
+#define __ScanResizeColumnsToContent "Scan/ResizeColumnsToContent"
 #ifdef USE_NFD
 #define __ScanDeepScanNFD "Scan/ScanDeepNFD"
 #define __ScanScanOverlayNFD "Scan/ScanOverlayNFD"
@@ -174,6 +192,9 @@ struct __DIE_OPTIONS
 #define __LangsPath "Paths/Langs"
 #define __ScriptsPath "Paths/Scripts"
 #define __SearchPath "Paths/Search"
+#ifdef USE_YARA
+#define __DataBaseYARAPath "Paths/DataBaseYARA"
+#endif
 
 #define __DefaultDataBasePath "$app/db"
 #define __DefaultEditorPath "$app/editor"
@@ -184,6 +205,9 @@ struct __DIE_OPTIONS
 #define __DefaultLangsPath "$app/lang"
 #define __DefaultScriptsPath "$app/scripts"
 #define __DefaultSearchPath "$app/search"
+#ifdef USE_YARA
+#define __DefaultDataBaseYARAPath "$app/yara/packer.yar"
+#endif
 
 // KeySequences
 #define __KeySequence_tab1 "Alt+1"

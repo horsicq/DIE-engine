@@ -26,6 +26,7 @@ void SingleFileScan::flagsToOptions(unsigned int nFlags, __DIE_OPTIONS *pOptions
     pOptions->bSingleLineOutput=nFlags&DIE_SINGLELINEOUTPUT;
     pOptions->bShowFileFormatOnce=nFlags&DIE_SHOWFILEFORMATONCE;
     pOptions->bFullScan=nFlags&DIE_FULLSCAN;
+    pOptions->bScanDeepScanDIE=nFlags&DIE_DEEPSCAN;
     pOptions->bShowScanTime=false;
     pOptions->sm=SM_DIE;
     pOptions->pMutexResult=0;
@@ -270,9 +271,9 @@ char *__DIE_versionA(void)
     return (char *)__VERSION;
 }
 
-wchar_t *__DIE_versionW(void)
+/* wchar_t *__DIE_versionW(void)
 {
 #define WIDEN2(x) L ## x
 #define WIDEN(x) WIDEN2(x)
     return WIDEN(__VERSION);
-}
+} */
