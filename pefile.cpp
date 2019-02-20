@@ -4308,11 +4308,7 @@ bool PEFile::isExportFunctionPresent(QString sFunctionName)
         }
     }
 
-<<<<<<< HEAD
     return bResult;
-=======
-    return false;
->>>>>>> bc70495d47928782ff9fda6f288186705a84c0f4
 }
 
 bool PEFile::isExportFunctionPresentExp(QString sFunctionName)
@@ -4334,11 +4330,7 @@ bool PEFile::isExportFunctionPresentExp(QString sFunctionName)
         }
     }
 
-<<<<<<< HEAD
     return bResult;
-=======
-    return false;
->>>>>>> bc70495d47928782ff9fda6f288186705a84c0f4
 }
 
 QString PEFile::getExport_FunctionNameAsString(int nNumber,unsigned int nAddressOfNames)

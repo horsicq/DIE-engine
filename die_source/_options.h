@@ -33,11 +33,7 @@
 #endif
 
 #define __DIE "Detect It Easy"
-<<<<<<< HEAD
 #define __VERSION "2.02"
-=======
-#define __VERSION "2.01"
->>>>>>> bc70495d47928782ff9fda6f288186705a84c0f4
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
 #define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"
@@ -145,14 +141,11 @@ struct __DIE_OPTIONS
     QList<__DIE_RESULT> die_listResult;
 #ifdef USE_NFD
     SpecAbstract::SCAN_RESULT nfd_result;
-<<<<<<< HEAD
 #endif
     bool bDieLoaded;
 #ifdef USE_YARA
     bool bYaraLoaded;
     QYara::RESULT yara_result;
-=======
->>>>>>> bc70495d47928782ff9fda6f288186705a84c0f4
 #endif
 };
 
