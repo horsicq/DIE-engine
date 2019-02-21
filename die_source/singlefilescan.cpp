@@ -271,9 +271,10 @@ char *__DIE_versionA(void)
     return (char *)__VERSION;
 }
 
-/* wchar_t *__DIE_versionW(void)
+wchar_t *__DIE_versionW(void)
 {
-#define WIDEN2(x) L ## x
-#define WIDEN(x) WIDEN2(x)
-    return WIDEN(__VERSION);
-} */
+//#define WIDEN2(x) L ## x
+//#define WIDEN(x) WIDEN2(x)
+//    return WIDEN(__VERSION);
+    return __VERSIONW;
+}

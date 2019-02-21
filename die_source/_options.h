@@ -34,6 +34,7 @@
 
 #define __DIE "Detect It Easy"
 #define __VERSION "2.02"
+#define __VERSIONW L"2.02"
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
 #define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"
@@ -62,9 +63,6 @@ enum SCAN_METHODS
 #endif
 #ifdef USE_YARA
     SM_YARA,
-#endif
-#ifdef USE_PEID
-    SM_PEID
 #endif
 };
 

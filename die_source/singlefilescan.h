@@ -40,6 +40,6 @@ int __DIE_scanExW(wchar_t *pwszFileName, char *pszOutBuffer, int nOutBufferSize,
 int __DIE_scanA(char *pszFileName,char *pszOutBuffer,int nOutBufferSize,unsigned int nFlags);
 int __DIE_scanW(wchar_t *pwszFileName,char *pszOutBuffer,int nOutBufferSize,unsigned int nFlags);
 char *__DIE_versionA(void);
-//wchar_t *__DIE_versionW(void);
+wchar_t *__DIE_versionW(void);
 
 #endif // SINGLEFILESCAN_H
