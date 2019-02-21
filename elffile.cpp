@@ -105,11 +105,21 @@ unsigned char ELFFile::getElfHeader_iversion()
     return readByte(6);
 }
 
+unsigned char ELFFile::getElfHeader_osabi()
+{
+    return readByte(7);
+}
+
+unsigned char ELFFile::getElfHeader_abiversion()
+{
+    return readByte(8);
+}
+
 unsigned char ELFFile::getElfHeader_pad(int nIndex)
 {
     if(nIndex<9)
     {
-        return readByte(7+nIndex);
+        return readByte(9+nIndex);
     }
 
     emit appendError(QString("Value out of range: n=%1").arg(nIndex));
@@ -145,11 +155,21 @@ void ELFFile::setElfHeader_iversion(unsigned char cValue)
     writeByte(6,cValue);
 }
 
+void ELFFile::setElfHeader_osabi(unsigned char cValue)
+{
+    writeByte(7,cValue);
+}
+
+void ELFFile::setElfHeader_abiversion(unsigned char cValue)
+{
+    writeByte(8,cValue);
+}
+
 void ELFFile::setElfHeader_pad(unsigned char cValue, int nIndex)
 {
     if(nIndex<9)
     {
-        writeByte(7+nIndex,cValue);
+        writeByte(9+nIndex,cValue);
         return;
     }
 

@@ -72,12 +72,16 @@ public slots:
     unsigned char getElfHeader_class();
     unsigned char getElfHeader_data();
     unsigned char getElfHeader_iversion();
+    unsigned char getElfHeader_osabi();
+    unsigned char getElfHeader_abiversion();
     unsigned char getElfHeader_pad(int nIndex);
 
     void setElfHeader_magic(unsigned int nValue);
     void setElfHeader_class(unsigned char cValue);
     void setElfHeader_data(unsigned char cValue);
     void setElfHeader_iversion(unsigned char cValue);
+    void setElfHeader_osabi(unsigned char cValue);
+    void setElfHeader_abiversion(unsigned char cValue);
     void setElfHeader_pad(unsigned char cValue,int nIndex);
 
     unsigned short getElfHeader_type();
