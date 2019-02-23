@@ -276,5 +276,5 @@ wchar_t *__DIE_versionW(void)
 //#define WIDEN2(x) L ## x
 //#define WIDEN(x) WIDEN2(x)
 //    return WIDEN(__VERSION);
-    return __VERSIONW;
+    return (wchar_t *)__VERSIONW;
 }
