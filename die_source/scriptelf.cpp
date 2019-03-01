@@ -356,7 +356,7 @@ QString scriptELF::getSectionName(int nSection)
 
 bool scriptELF::compareOverlay(QString sSignature, unsigned int nOffset)
 {
-    return compareOverlay(sSignature,nOffset);
+    return elffile->compareOverlay(sSignature,nOffset);
 }
 
 long long scriptELF::getEntryPointOffset()
