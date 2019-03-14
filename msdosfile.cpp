@@ -302,8 +302,6 @@ void MSDOSFile::entryPointLoad()
     _loadEntryPoint();
 }
 
-
-
 unsigned long long MSDOSFile::OffsetToRVA(unsigned long long nOffset)
 {
     unsigned long long nResult=-1;
