@@ -1700,7 +1700,7 @@ QString Binary::convertSignature(QString sSignature)
         char *pSignature=baSignature.data();
         int nSignatureSize=baSignature.size();
         bool bIsANSI=false;
-        char cANSI[2];
+        char cANSI[4];
 
         for(int i=0,j=0; i<nSignatureSize; i++)
         {
