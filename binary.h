@@ -64,7 +64,7 @@ class Binary : public QObject
     Q_OBJECT
 public:
 
-    explicit Binary(QObject *parent = 0);
+    explicit Binary(QObject *parent = nullptr);
     ~Binary();
 
     unsigned char readByteFromFile(unsigned int nOffset);
@@ -117,7 +117,6 @@ public:
     static unsigned int findDataInMemory(char *pMemory,unsigned int nMemorySize,char *pData,unsigned int nDataSize);
     static unsigned int findSignatureInMemory(char *pMemory,unsigned int nMemorySize,QString sSignature);
     //    QByteArray getHeaderData();
-
 
     bool reopen();
     bool isReadOnly();
