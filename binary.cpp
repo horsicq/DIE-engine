@@ -29,8 +29,7 @@ Binary::Binary(QObject *parent) :
     nEntryPointOffset=0;
 
     ___nSize=0;
-
-    ___pMemory=0;
+    ___pMemory=nullptr;
 
     nIsReverse=-1; // unknown
     //    _clearMemory();
@@ -152,7 +151,6 @@ QString Binary::getFileName()
 {
     return sFileName;
 }
-
 
 unsigned long long Binary::size()
 {
@@ -396,7 +394,6 @@ bool Binary::readArrayFromFile(unsigned int nOffset, char *pBuffer, unsigned int
         return false;
     }
 
-
     file.seek(nOffset);
 
     QByteArray baTemp;
@@ -450,7 +447,6 @@ bool Binary::readArray(unsigned int nOffset, char *pBuffer, unsigned int nSize)
 {
     //    bool  bResult;
 
-
     if(!isOffsetAndSizeValid(nOffset,nSize))
     {
         return false;
@@ -464,8 +460,6 @@ bool Binary::readArray(unsigned int nOffset, char *pBuffer, unsigned int nSize)
     {
         readArrayFromFile(nOffset,pBuffer,nSize);
     }
-
-
 
     //    if(isArrayInMemory(nOffset,nSize))
     //    {
@@ -689,7 +683,6 @@ void Binary::writeByte(unsigned int nOffset, unsigned char cValue)
 
 void Binary::writeWord(unsigned int nOffset, unsigned short sValue,bool bReverse)
 {
-
     if(bReverse)
     {
         sValue=swapWord(sValue);
@@ -715,12 +708,10 @@ void Binary::writeWord(unsigned int nOffset, unsigned short sValue,bool bReverse
     //    emit appendError("Cannot write(read-only mode)");
 
     writeArray(nOffset,(char *)&sValue,2);
-
 }
 
 void Binary::writeDword(unsigned int nOffset, unsigned int nValue,bool bReverse)
 {
-
     if(bReverse)
     {
         nValue=swapDword(nValue);
@@ -744,7 +735,6 @@ void Binary::writeDword(unsigned int nOffset, unsigned int nValue,bool bReverse)
     //    emit appendError("Cannot write(read-only mode)");
 
     writeArray(nOffset,(char *)&nValue,4);
-
 }
 
 void Binary::writeQword(unsigned int nOffset, unsigned long long qValue,bool bReverse)
@@ -869,7 +859,6 @@ bool Binary::createFile(QString sFileName,unsigned int nSize)
 
         emit appendError(QString("Cannot resize file: %1 (size=%2)").arg(sFileName).arg(nSize));
         return false;
-
     }
 
     emit appendError(QString("Cannot open file: %1").arg(sFileName));
@@ -947,7 +936,6 @@ bool Binary::dump(QString sFileName, unsigned int nOffset, unsigned int nSize)
     {
         return false;
     }
-
 
     unsigned int nOffsetDest=0;
     unsigned int nTemp=0;
@@ -1224,8 +1212,6 @@ QString Binary::getString(unsigned int nOffset,unsigned int nMaxSize)
         delete[] pBuffer;
     }
 
-
-
     return sResult;
 }
 
@@ -1266,7 +1252,6 @@ QString Binary::getAnsiString(unsigned int nOffset, unsigned int nMaxSize)
 
         pOffset=(unsigned char *)baData.data();
     }
-
 
     for(unsigned int i=0; i<nMaxSize; i++)
     {
@@ -1477,8 +1462,6 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
                 {
                     return false;
                 }
-
-
             }
             else if(sSignature.left(2)=="##")
             {
@@ -1498,8 +1481,6 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
                 {
                     return false;
                 }
-
-
             }
 
             if(sSignature=="")
@@ -1520,7 +1501,6 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
                 return false;
             }
 
-
             nOffset+=sSeq.size()/2;
             sSignature=sSignature.mid(sSeq.size());
         }
@@ -1537,7 +1517,6 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
         {
             return _compare(sSignature,nOffset);
         }
-
     }
 }
 
@@ -1587,10 +1566,8 @@ bool Binary::compareEPfast(QString sSignature,int nOffset)
 
     if(nSize+nOffset<=baEntryPoint.size())
     {
-
         dataToHex(baEntryPoint.data()+nOffset,nSize,pBuffer);
         bResult=signatureCompare(pBuffer,sSignature.toLatin1().data(),nSize*2);
-
     }
     else
     {
@@ -1772,7 +1749,6 @@ bool Binary::signatureCompare(char *pData,char *pSignature,int nSize)
             {
                 return false;
             }
-
         }
     }
 
@@ -1885,7 +1861,6 @@ unsigned int Binary::findSignatureInMemory(char *pMemory, unsigned int nMemorySi
                 }
             }
 
-
             sPart=sSignature.section(".",0,0);
             sSignature="."+sSignature.section(".",1,-1);
 
@@ -1894,7 +1869,6 @@ unsigned int Binary::findSignatureInMemory(char *pMemory, unsigned int nMemorySi
                 //Success
                 return nResult;
             }
-
 
             baSig.clear();
             baSig.append(sPart);
@@ -1932,7 +1906,6 @@ unsigned int Binary::findSignatureInMemory(char *pMemory, unsigned int nMemorySi
                     bIsFirst=true;
                     continue;
                 }
-
             }
 
             if(bIsFirst)
@@ -1942,7 +1915,6 @@ unsigned int Binary::findSignatureInMemory(char *pMemory, unsigned int nMemorySi
 
             nOffset+=nNext+baSig.size();
         }
-
     }
 
     return -1;
@@ -2033,7 +2005,6 @@ unsigned int Binary::findWord(unsigned int nOffset, unsigned int nSize, unsigned
     unsigned int nTemp=0;
     char *pBuffer=new char[BUFFER_SIZE+1];
 
-
     while(nSize>1)
     {
         nTemp=MINIMAL(BUFFER_SIZE+1,nSize);
@@ -2089,7 +2060,6 @@ unsigned int Binary::findDword(unsigned int nOffset, unsigned int nSize, unsigne
 
     unsigned int nTemp=0;
     char *pBuffer=new char[BUFFER_SIZE+3];
-
 
     while(nSize>3)
     {
@@ -2156,7 +2126,6 @@ unsigned int Binary::findArray(unsigned int nOffset, unsigned int nSize, char *p
 
     unsigned int nTemp=0;
     char *pBuffer=new char[BUFFER_SIZE+(nArraySize-1)];
-
 
     while(nSize>nArraySize-1)
     {
@@ -2269,15 +2238,12 @@ unsigned int Binary::findSignature(unsigned int nOffset, unsigned int nSize, QSt
 
             nSize-=(nResult-nOffset);
             nOffset=nResult;
-
         }
-
     }
 
     // TODO!!!
 
     return -1;
-
 
     //    unsigned int nArraySize=sSignature.size();
     //    unsigned int nTemp=0;
@@ -2421,7 +2387,7 @@ QString Binary::calculateMD5(unsigned int nOffset, unsigned int nDataSize)
 {
     if(nDataSize==0)
     {
-        return 0;
+        return nullptr;
     }
 
     if(nDataSize==(unsigned int)-1)
@@ -2431,12 +2397,12 @@ QString Binary::calculateMD5(unsigned int nOffset, unsigned int nDataSize)
 
     if(!isOffsetValid(nOffset))
     {
-        return 0;
+        return nullptr;
     }
 
     if(!isSizeValid(nDataSize))
     {
-        return 0;
+        return nullptr;
     }
 
     unsigned int nSize=nDataSize;
@@ -2456,7 +2422,7 @@ QString Binary::calculateMD5(unsigned int nOffset, unsigned int nDataSize)
             delete[] pBuffer;
             emit appendError("Read error");
 
-            return 0;
+            return nullptr;
         }
 
         crypto.addData(pBuffer,nTemp);
