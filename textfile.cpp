@@ -27,12 +27,17 @@ TextFile::TextFile(QObject *parent) :
 
 bool TextFile::isValid()
 {
+    bool bResult=false;
+
     if(isPlainText())
     {
-        return true;
+        bResult=true;
     }
 
-    emit appendError("Invalid Text file");
+    if(!bResult)
+    {
+        emit appendError("Invalid Text file");
+    }
 
-    return false;
+    return bResult;
 }

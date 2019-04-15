@@ -118,7 +118,7 @@ private:
 
     Q_OBJECT
 public:
-    explicit PEFile(QObject *parent = 0);
+    explicit PEFile(QObject *parent=nullptr);
     ~PEFile();
 
     QByteArray createHeader32();
@@ -133,7 +133,6 @@ public:
     bool addDosStub(QByteArray &baData);
     bool addDosStub(char *pData,int nDataSize);
 
-
     int CalculateHeadersSize(int nDosStubSize, int nSizeOfOptionalHeader, int nNumberOfSection, int nFileAlignment);
     void FixRawOffsets(int nDelta);
     void fixSizeOfHeaders();
@@ -142,7 +141,6 @@ public:
 
     bool addOverlay(QByteArray &baData);
     bool addOverlay(char *pData,int nDataSize);
-
 
     unsigned int getNewSection_VirtualAddress();
     unsigned int getNewSection_PointerToRawData();
