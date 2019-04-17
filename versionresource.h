@@ -85,21 +85,18 @@ class VersionResource : public QObject
     Q_OBJECT
 public:
     explicit VersionResource(QByteArray *pbaData);
+
     void setData(QByteArray *pbaData);
     bool isValid();
-
     unsigned int getLength(unsigned int nOffset);
     unsigned int getValueLength(unsigned int nOffset);
     unsigned int getType(unsigned int nOffset);
     QString getKey(unsigned int nOffset);
-
     QString versionToString(unsigned int nValue);
     QString fileFlagsToString(unsigned int nFileFlags);
     QString fileOSToString(unsigned int nFileOS);
     QString fileTypeToString(unsigned int nFileType);
-
     unsigned int getNextHeaderOffset(unsigned int nOffset);
-
     unsigned int getFixedFileInfo_Signature();
     unsigned int getFixedFileInfo_StrucVersion();
     unsigned int getFixedFileInfo_FileVersionMS();
@@ -113,20 +110,16 @@ public:
     unsigned int getFixedFileInfo_FileSubtype();
     unsigned int getFixedFileInfo_FileDateMS();
     unsigned int getFixedFileInfo_FileDateLS();
-
     bool isChildrenPresent();
-
     unsigned int getChildrenOffset();
-
     QString getValue(unsigned int nOffset);
-
     unsigned int getDword(unsigned int nOffset);
-
     QString getFileVersion();
     QString getStringFileInfo(QString sKey);
+
 signals:
     void appendError(QString sString);
-public slots:
+
 private:
     QByteArray *pbaData;
 };
