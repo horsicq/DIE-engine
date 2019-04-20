@@ -27,7 +27,7 @@ class TextFile : public Binary
 {
     Q_OBJECT
 public:
-    explicit TextFile(QObject *parent = 0);
+    explicit TextFile(QObject *parent=nullptr);
 
 public slots:
     bool isValid();

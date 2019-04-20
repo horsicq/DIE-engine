@@ -43,10 +43,7 @@ class MACHFile : public Binary
 {
     Q_OBJECT
 public:
-    explicit MACHFile(QObject *parent = 0);
-signals:
-
-private slots:
+    explicit MACHFile(QObject *parent=nullptr);
 
 public slots:
     bool isValid();
@@ -84,7 +81,6 @@ public slots:
 
     static QString loadCommandTypeToString(unsigned int nType);
 
-
     unsigned int getNumberOfSegments();
     unsigned int getSegmentHeaderOffset(unsigned int nSegment);
     unsigned int getSegmentHeaderSize();
@@ -114,7 +110,6 @@ public slots:
     unsigned int getNumberOfSections();
     unsigned int getSectionHeaderOffset(unsigned int nSection);
     unsigned int getSectionHeaderSize();
-
 
     QString getSection_sectname32(unsigned int nSection);
     QString getSection_segname32(unsigned int nSection);
@@ -199,7 +194,5 @@ public slots:
 
     bool compareOverlay(QString sSignature,unsigned int nOffset=0);
 };
-
-
 
 #endif // MACHFILE_H

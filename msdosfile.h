@@ -27,12 +27,8 @@ class MSDOSFile : public Binary
 {
     Q_OBJECT
 public:
-    explicit MSDOSFile(QObject *parent = 0);
+    explicit MSDOSFile(QObject *parent=nullptr);
     void entryPointLoad();
-signals:
-
-private slots:
-
 
 public slots:
     bool compareEPfast(QString sSignature);
@@ -81,7 +77,6 @@ public slots:
 
     unsigned int getDosHeader_lfanew();
     void setDosHeader_lfanew(unsigned int nValue);
-
 
     virtual unsigned long long OffsetToRVA(unsigned long long nOffset);
     virtual unsigned long long RVAToOffset(unsigned long long nRVA);

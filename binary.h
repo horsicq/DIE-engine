@@ -64,7 +64,7 @@ class Binary : public QObject
     Q_OBJECT
 public:
 
-    explicit Binary(QObject *parent = nullptr);
+    explicit Binary(QObject *parent=nullptr);
     ~Binary();
 
     unsigned char readByteFromFile(unsigned int nOffset);

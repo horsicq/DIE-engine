@@ -40,8 +40,7 @@ public:
 
     Q_OBJECT
 public:
-    explicit ELFFile(QObject *parent = 0);
-
+    explicit ELFFile(QObject *parent=nullptr);
 
     QByteArray getSectionNamesTable();
     QByteArray getSection(int nSection);

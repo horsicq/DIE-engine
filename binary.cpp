@@ -100,7 +100,6 @@ bool Binary::reopen()
                 {
                     nTemp=0x2000;
                 }
-
                 //                _memorylist[0].nOffset=0;
                 //                _memorylist[0].baData=file.read(nTemp);
             }

@@ -646,8 +646,6 @@ public slots:
     unsigned int getCLIEntryPoint();
     void entryPointLoad_NET();
 
-
-
     QByteArray getCLI_MetaData_Strings();
     QByteArray getCLI_MetaData_US();
     QByteArray getCLI_MetaData_Blob();
