@@ -27,17 +27,22 @@ ELFFile::ELFFile(QObject *parent) :
 
 bool ELFFile::isValid()
 {
+    bool bResult=false;
+
     if(size()>=(int)sizeof(Elf32_Ehdr))
     {
         if(getElfHeader_magic()==0x464c457f)
         {
-            return true;
+            bResult=true;
         }
     }
 
-    emit appendError("Invalid ELF file");
+    if(!bResult)
+    {
+        emit appendError("Invalid ELF file");
+    }
 
-    return false;
+    return bResult;
 }
 
 bool ELFFile::isELF64()
