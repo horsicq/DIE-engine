@@ -127,7 +127,6 @@ bool Binary::resize(unsigned long long nNewSize)
 
     if(file.resize(nNewSize))
     {
-
         ___nSize=nNewSize;
         ___pMemory=file.map(0,___nSize);
 
@@ -509,7 +508,6 @@ QByteArray Binary::readArray(unsigned int nOffset, unsigned int nSize)
     }
 
     return baResult;
-
 }
 
 bool Binary::writeArray(unsigned int nOffset, char *pBuffer, unsigned int nSize)
@@ -677,7 +675,6 @@ void Binary::writeByte(unsigned int nOffset, unsigned char cValue)
     //    emit appendError("Cannot write(read-only mode)");
 
     writeArray(nOffset,(char *)&cValue,1);
-
 }
 
 void Binary::writeWord(unsigned int nOffset, unsigned short sValue,bool bReverse)
@@ -861,6 +858,7 @@ bool Binary::createFile(QString sFileName,unsigned int nSize)
     }
 
     emit appendError(QString("Cannot open file: %1").arg(sFileName));
+
     return false;
 }
 
@@ -1292,6 +1290,7 @@ unsigned long long Binary::OffsetToRVA(unsigned long long nOffset)
     }
 
     emit appendWarning(QString("Invalid offset: %1").arg(nOffset,0,16,QChar('0')));
+
     return -1;
 }
 unsigned long long Binary::RVAToOffset(unsigned long long nRVA)
@@ -1307,6 +1306,7 @@ unsigned long long Binary::RVAToOffset(unsigned long long nRVA)
     }
 
     emit appendWarning(QString("Invalid RVA: %1").arg(nRVA,0,16,QChar('0')));
+
     return -1;
 }
 unsigned long long Binary::VAToOffset(unsigned long long nVA)
@@ -1320,6 +1320,7 @@ unsigned long long Binary::VAToOffset(unsigned long long nVA)
     }
 
     emit appendWarning(QString("Invalid VA: %1").arg(nVA,0,16,QChar('0')));
+
     return -1;
 }
 
@@ -1336,6 +1337,7 @@ unsigned long long Binary::OffsetToVA(unsigned long long nOffset)
     }
 
     emit appendWarning(QString("Invalid offset: %1").arg(nOffset,0,16,QChar('0')));
+
     return -1;
 }
 bool Binary::compare(QString sSignature, unsigned int nOffset)
