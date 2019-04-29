@@ -29,7 +29,7 @@ class scriptBinary : public scriptGeneric
 {
     Q_OBJECT
 public:
-    explicit scriptBinary(QObject *parent = 0);
+    explicit scriptBinary(QObject *parent=nullptr);
     void setData(Binary *binary);
 
 signals:
@@ -41,12 +41,10 @@ public slots:
     //    QString upperCase(QString sString);
 
     //    bool isPlainText();
-
     bool compare(QString sSignature,unsigned int nOffset=0);
     //    bool compareHeader(QString sSignature);
     bool compareEP(QString sSignature,unsigned int nOffset=0);
     //    bool compareEPn(QString sSignature,unsigned int nOffset);
-
     QString getString(unsigned int nOffset,unsigned int nSize=50);
     unsigned int readDword(unsigned int nOffset);
     unsigned short readWord(unsigned int nOffset);
@@ -62,7 +60,6 @@ public slots:
     int findString(unsigned int nOffset, unsigned int nSize, QString sValue);
     int findSignature(unsigned int nOffset, unsigned int nSize, QString sSignature);
     bool isSignaturePresent(unsigned int nOffset, unsigned int nSize, QString sSignature);
-
     float calculateEntropy(unsigned int nOffset, unsigned int nSize);
     QString getSignature(unsigned int nOffset,unsigned int nSize);
     QString calculateMD5(unsigned int nOffset, unsigned int nSize);

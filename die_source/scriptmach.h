@@ -35,7 +35,6 @@ public slots:
 
     bool compareEP(QString sSignature,unsigned int nOffset=0);
     //    bool compareEPn(QString sSignature,unsigned int nOffset);
-
     QString getString(unsigned int nOffset,unsigned int nSize=50);
     unsigned int readDword(unsigned int nOffset);
     unsigned short readWord(unsigned int nOffset);
@@ -58,33 +57,25 @@ public slots:
     bool isLibraryPresent(QString sLibrary);
     unsigned int getLibraryCurrentVersion(QString sLibrary);
     int getSectionNumber(QString sSectionName);
-
     QString getGeneralOptions();
     int getNumberOfSections();
     int getNumberOfSegments();
-
     float calculateEntropy(unsigned int nOffset, unsigned int nSize);
     QString getSignature(unsigned int nOffset,unsigned int nSize);
     QString calculateMD5(unsigned int nOffset, unsigned int nSize);
-
     unsigned int getSectionFileOffset(int nSection);
     unsigned int getSectionFileSize(int nSection);
-
     QString getSectionName(int nSection);
-
     QString getSegmentName(int nSegment);
     unsigned int getSegmentFileSize(int nSegment);
     unsigned int getSegmentFileOffset(int nSegment);
-
     long long RVAToOffset(unsigned long long nRVA);
     long long VAToOffset(unsigned long long nVA);
     long long OffsetToVA(unsigned long long nOffset);
     long long OffsetToRVA(unsigned long long nOffset);
-
     unsigned int getOverlaySize();
     unsigned int getOverlayOffset();
     bool isOverlayPresent();
-
     bool compareOverlay(QString sSignature,unsigned int nOffset=0);
     long long getEntryPointOffset();
 private:

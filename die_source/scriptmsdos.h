@@ -31,12 +31,10 @@ public:
     explicit scriptMSDOS(QObject *parent = 0);
     void setData(MSDOSFile *msdosfile);
 
-
 public slots:
 
     bool compareEP(QString sSignature,unsigned int nOffset=0);
     //    bool compareEPn(QString sSignature,unsigned int nOffset);
-
     QString getString(unsigned int nOffset,unsigned int nSize=50);
     unsigned int readDword(unsigned int nOffset);
     unsigned short readWord(unsigned int nOffset);

@@ -45,7 +45,6 @@ public slots:
     //    virtual bool compareHeader(QString sSignature)=0;
     virtual bool compareEP(QString sSignature,unsigned int nOffset)=0;
     //    virtual bool compareEP(unsigned int nOffset,QString sSignature)=0;
-
     virtual QString getString(unsigned int nOffset,unsigned int nSize=50)=0;
     virtual unsigned int readDword(unsigned int nOffset)=0;
     virtual unsigned short readWord(unsigned int nOffset)=0;
@@ -63,7 +62,6 @@ public slots:
     virtual bool isSignaturePresent(unsigned int nOffset, unsigned int nSize, QString sSignature)=0;
     virtual float calculateEntropy(unsigned int nOffset, unsigned int nSize)=0;
     virtual QString getSignature(unsigned int nOffset,unsigned int nSize)=0;
-
     virtual QString calculateMD5(unsigned int nOffset, unsigned int nSize)=0;
 
 public slots:

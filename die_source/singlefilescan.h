@@ -10,7 +10,7 @@ class SingleFileScan : public QObject
 {
     Q_OBJECT
 public:
-    SingleFileScan(QObject *parent = 0);
+    SingleFileScan(QObject *parent=nullptr);
 
     //    void setOptions(__DIE_OPTIONS *pOptions);
     static void flagsToOptions(unsigned int nFlags,__DIE_OPTIONS *pOptions);
@@ -31,7 +31,7 @@ private:
     QString sResult;
     QString sCurrentType;
 };
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN
 bool  WINAPI  _DllMain(_In_  HINSTANCE hinstDLL,_In_  DWORD fdwReason,_In_  LPVOID lpvReserved);
 #endif
 int __DIE_scan(QString szFileName,char *pszOutBuffer,int nOutBufferSize,unsigned int nFlags,QString sDataBase);

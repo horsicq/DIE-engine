@@ -177,7 +177,7 @@ void SingleFileScan::appendError(QString sMessage)
     appendMessage(sMessage);
 }
 
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN
 bool  WINAPI  _DllMain(_In_  HINSTANCE hinstDLL,_In_  DWORD fdwReason,_In_  LPVOID lpvReserved)
 {
     switch(fdwReason)

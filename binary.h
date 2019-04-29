@@ -225,16 +225,12 @@ protected:
     //    char pEntryPoint[EPCODE];
     //    unsigned int nEntryPointSize;
     unsigned long long ___nSize;
-
     unsigned char *___pMemory;
-
     int nIsReverse;
 
 private:
     //    void _clearMemory();
     //    void addMemory(unsigned int nOffset,unsigned int nSize);
-
-
 };
 
 #endif // BINARY_H

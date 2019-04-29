@@ -26,20 +26,6 @@
 #include <QFile>
 #include <QDir>
 #include "die_source/utils.h"
-//#include "../_pe.h"
-//#include "scriptpe.h"
-//#include "scriptbinary.h"
-//#include "scriptelf.h"
-//#include "scriptmsdos.h"
-////#include "dialogoptions.h"
-//#include <QTime>
-
-//struct __SD
-//{
-//    QByteArray *baData;
-//    unsigned int nEntryPointOffset;
-//    unsigned int nSize;
-//};
 
 class PluginsScript : public QScriptEngine
 {

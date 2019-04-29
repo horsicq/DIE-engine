@@ -21,7 +21,6 @@
 #ifndef SCAN_H
 #define SCAN_H
 
-
 #include <QCoreApplication>
 //#include <QtConcurrentMap>
 #include <QFutureWatcher>
@@ -55,16 +54,14 @@ class Scan : public QObject
 {
     Q_OBJECT
 public:
-    explicit Scan(QObject *parent = 0);
+    explicit Scan(QObject *parent=nullptr);
     void setData(QString sScanFileName,__DIE_OPTIONS *pOptions);
     void setData(QList<QString> *dirContent,__DIE_OPTIONS *pOptions);
     void setData(__DIE_OPTIONS *pOptions);
     void setShowSource(bool bShowSource);
-
     bool isRun();
     bool isCompleted();
     void setRun(bool bIsRun);
-
     bool analize(QString sFileName,bool bFullScan);
     bool die_scanPE(QString sFileName,QString sPrefix);
     bool die_scanELF(QString sFileName,QString sPrefix);
@@ -72,9 +69,7 @@ public:
     bool die_scanMSDOS(QString sFileName,QString sPrefix);
     bool die_scanText(QString sFileName,QString sPrefix);
     bool die_scanBinary(QString sFileName,QString sPrefix);
-
     void die_handleSignatures(PluginsScript *pluginScript,QList<__SIGNATURE> *pListSignatures,QString sType);
-
     static void loadTypeScripts(QList<__SIGNATURE> *pList,QString sType,__DIE_OPTIONS *pOptions);
     static void die_loadScripts(__DIE_OPTIONS *pOptions);
     //    void _compareFile(QString sScript);

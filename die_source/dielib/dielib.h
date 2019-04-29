@@ -11,10 +11,9 @@
 #define DIE_SINGLELINEOUTPUT        0x00000010
 #define DIE_SHOWFILEFORMATONCE      0x00000020
 
-#ifdef Q_OS_WIN
-typedef unsigned short wchar_t;
-#endif
-
+//#ifdef Q_OS_WIN
+//typedef unsigned short wchar_t;
+//#endif
 
 #ifdef __cplusplus
 extern "C" {

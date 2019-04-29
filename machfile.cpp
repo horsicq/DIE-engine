@@ -27,7 +27,6 @@ MACHFile::MACHFile(QObject *parent) :
 
 bool MACHFile::isValid()
 {
-
     if(size()>=(int)sizeof(mach_header))
     {
         unsigned int nMagic=readDword(0);
@@ -53,13 +52,11 @@ bool MACHFile::isMACH64()
         return true;
     }
 
-
     return false;
 }
 
 bool MACHFile::isReverse()
 {
-
     if(nIsReverse==-1)
     {
         unsigned int nMagic=readDword(0);
@@ -429,8 +426,6 @@ unsigned int MACHFile::getSegmentHeaderOffset(unsigned int nSegment)
         {
             return getLoadCommand_offset(nResult-1);
         }
-
-
     }
 
     emit appendError(QString("Invalid segment number: %1").arg(nSegment));
@@ -912,8 +907,6 @@ QList<load_command_offset> MACHFile::getLoadCommands_offset()
         nOffset+=record.cmdsize;
     }
 
-
-
     return listResult;
 }
 
@@ -1045,7 +1038,6 @@ QList<section> MACHFile::getSectionsList32()
 QList<section_64> MACHFile::getSectionsList64()
 {
     QList<section_64> listResult;
-
 
     QList<load_command_offset> list=getLoadCommands_offset();
     unsigned int nOffset=0;

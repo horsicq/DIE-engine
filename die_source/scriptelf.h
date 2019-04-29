@@ -34,7 +34,6 @@ public:
 
 public slots:
     QString getGeneralOptions();
-
     unsigned short getElfHeader_type();
     unsigned short getElfHeader_machine();
     unsigned int getElfHeader_version();
@@ -51,7 +50,6 @@ public slots:
     unsigned short getElfHeader_shentsize();
     unsigned short getElfHeader_shnum();
     unsigned short getElfHeader_shstrndx();
-
     bool compareEP(QString sSignature,unsigned int nOffset=0);
     //    bool compareEPn(QString sSignature,unsigned int nOffset);
     //    bool compareHeader(QString sSignature);
@@ -71,41 +69,28 @@ public slots:
     int findString(unsigned int nOffset, unsigned int nSize, QString sValue);
     int findSignature(unsigned int nOffset, unsigned int nSize, QString sSignature);
     bool isSignaturePresent(unsigned int nOffset, unsigned int nSize, QString sSignature);
-
     //    bool compareReg(QString sSignature,unsigned int nOffset);
-
     bool isSectionNamePresent(QString sSectionName);
     bool isStringInTablePresent(QString sSectionName, QString sString);
-
     float calculateEntropy(unsigned int nOffset, unsigned int nSize);
     QString getSignature(unsigned int nOffset,unsigned int nSize);
     QString calculateMD5(unsigned int nOffset, unsigned int nSize);
-
     unsigned int getSectionFileOffset(int nSection);
     unsigned int getSectionFileSize(int nSection);
     int getSectionNumber(QString sSectionName);
-
     long long RVAToOffset(unsigned long long nRVA);
     long long VAToOffset(unsigned long long nVA);
     long long OffsetToVA(unsigned long long nOffset);
     long long OffsetToRVA(unsigned long long nOffset);
-
     unsigned int getProgramFileOffset(int nProgram);
     unsigned int getProgramFileSize(int nProgram);
-
     unsigned int getOverlaySize();
     unsigned int getOverlayOffset();
     bool isOverlayPresent();
-
-
     int getNumberOfSections();
     int getNumberOfPrograms();
-
     QString getSectionName(int nSection);
-
-
     bool compareOverlay(QString sSignature,unsigned int nOffset=0);
-
     long long getEntryPointOffset();
 private:
     ELFFile *elffile;
