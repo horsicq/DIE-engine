@@ -1442,8 +1442,6 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
                 {
                     return false;
                 }
-
-
             }
             else if(sSignature.left(4)=="####")
             {
@@ -1488,7 +1486,6 @@ bool Binary::compare(QString sSignature, unsigned int nOffset)
             {
                 return true;
             }
-
 
             sSeq=sSignature.section("$",0,0);
 

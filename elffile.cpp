@@ -47,15 +47,17 @@ bool ELFFile::isValid()
 
 bool ELFFile::isELF64()
 {
+    bool bResult=false;
+
     if(isValid())
     {
         if(getElfHeader_class()==2)
         {
-            return true;
+            bResult=true;
         }
     }
 
-    return false;
+    return bResult;
 }
 
 bool ELFFile::isReverse()
