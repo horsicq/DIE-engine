@@ -35,7 +35,6 @@ bool MACHFile::isValid()
         {
             return true;
         }
-
     }
 
     emit appendError("Invalid MACH file");
@@ -76,9 +75,7 @@ bool MACHFile::isReverse()
 void MACHFile::entryPointLoad()
 {
     //    nEntryPointOffset=getAddressOfEntryPoint();
-
     //    _loadEntryPoint();
-
     if(isMACH64())
     {
         nEntryPointOffset=RVAToOffset64(getEntryPoint());
@@ -924,19 +921,7 @@ QList<segment_command> MACHFile::getSegmentsList32()
         if(list.at(i).cmd==LC_SEGMENT)
         {
             nOffset=list.at(i).offset;
-
-            //            uint32_t cmd;
-            //            uint32_t cmdsize;
-            //            char segname[16];
-            //            uint32_t vmaddr;
-            //            uint32_t vmsize;
-            //            uint32_t fileoff;
-            //            uint32_t filesize;
-            //            vm_prot_t maxprot;
-            //            vm_prot_t initprot;
-            //            uint32_t nsects;
-            //            uint32_t flags;
-
+            
             record.cmd=readDword(nOffset+offsetof(segment_command,cmd),isReverse());
             record.cmdsize=readDword(nOffset+offsetof(segment_command,cmdsize),isReverse());
             readArray(nOffset+offsetof(segment_command,segname),record.segname,16);
