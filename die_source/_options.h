@@ -120,7 +120,7 @@ struct __DIE_OPTIONS
     QString sEndianness;
     bool bEnablePlugins;
     QString sCodec;
-//    int nNumberOfResults;
+    //    int nNumberOfResults;
     QString sDataBasePath;
     QString sEditorPath;
     QString sHelpPath;

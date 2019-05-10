@@ -121,7 +121,7 @@ bool Scan::analize(QString sFileName,bool bFullScan)
 
     QTime scanTime=QTime::currentTime();
 
-//    pOptions->nNumberOfResults=0;
+    //    pOptions->nNumberOfResults=0;
 
     emit appendFileName(sFileName);
 
@@ -189,6 +189,7 @@ bool Scan::analize(QString sFileName,bool bFullScan)
             }
         }
     }
+
 #ifdef USE_NFD
     else if(pOptions->sm==SM_NFD)
     {
@@ -202,6 +203,7 @@ bool Scan::analize(QString sFileName,bool bFullScan)
 
         emit setProgressBar(1,1);
     }
+
 #endif
 #ifdef USE_YARA
     else if(pOptions->sm==SM_YARA)
@@ -212,6 +214,7 @@ bool Scan::analize(QString sFileName,bool bFullScan)
 
         emit setProgressBar(1,1);
     }
+
 #endif
 
     int nMs=scanTime.msecsTo(QTime::currentTime());
@@ -600,6 +603,7 @@ void Scan::die_appendSignatureSlot(QString sString)
     {
         __DIE_RESULT record;
         QString sTemp;
+
         if(sString.contains(";"))
         {
             record.sSignature=sString.section(";",0,0);
@@ -629,7 +633,7 @@ QString Scan::die_compareFile(PluginsScript *pScript,QString sScript,QString sSc
 
     if(result.toString()!="")
     {
-//        pOptions->nNumberOfResults++;
+        //        pOptions->nNumberOfResults++;
         QString sSignature;
 
         if(bShowSource)

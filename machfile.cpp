@@ -397,6 +397,7 @@ unsigned int MACHFile::getNumberOfSegments()
         if((getLoadCommand_type(i)==LC_SEGMENT)||(getLoadCommand_type(i)==LC_SEGMENT_64))
         {
             nResult++;
+
             if(nResult>1000)
             {
                 break;
@@ -921,7 +922,7 @@ QList<segment_command> MACHFile::getSegmentsList32()
         if(list.at(i).cmd==LC_SEGMENT)
         {
             nOffset=list.at(i).offset;
-            
+
             record.cmd=readDword(nOffset+offsetof(segment_command,cmd),isReverse());
             record.cmdsize=readDword(nOffset+offsetof(segment_command,cmdsize),isReverse());
             readArray(nOffset+offsetof(segment_command,segname),record.segname,16);

@@ -132,10 +132,10 @@ void SingleFileScan::setDataBase(QString sDataBase)
 #ifdef QT_DEBUG
     qDebug("New database: %s",sDataBase.toLatin1().data());
 #endif
-    
+
 }
 
-__DIE_OPTIONS SingleFileScan::options={};
+__DIE_OPTIONS SingleFileScan::options= {};
 
 void SingleFileScan::appendMessage(QString sMessage)
 {
@@ -273,8 +273,8 @@ char *__DIE_versionA(void)
 
 wchar_t *__DIE_versionW(void)
 {
-//#define WIDEN2(x) L ## x
-//#define WIDEN(x) WIDEN2(x)
-//    return WIDEN(__VERSION);
+    //#define WIDEN2(x) L ## x
+    //#define WIDEN(x) WIDEN2(x)
+    //    return WIDEN(__VERSION);
     return (wchar_t *)__VERSIONW;
 }

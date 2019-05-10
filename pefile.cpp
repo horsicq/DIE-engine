@@ -1443,7 +1443,7 @@ bool PEFile::rebuild()
 
     unsigned int nFileAlignment=getOptionalHeader_FileAlignment();
     unsigned int nSizeOfHeaders=getSectionRealSize(0,qMin(getOptionalHeader_SizeOfHeaders(),pListSections[0].nOldOffset),nFileAlignment);
-//    int nDelta=0;
+    //    int nDelta=0;
     unsigned int nMaxSize=nSizeOfHeaders;
 
     setOptionalHeader_SizeOfHeaders(nMaxSize);
@@ -4298,9 +4298,10 @@ bool PEFile::isExportFunctionPresent(QString sFunctionName)
 
     int nNumberOfNames=getExport_NumberOfNames();
 
-    for(int i=0;i<nNumberOfNames;i++)
+    for(int i=0; i<nNumberOfNames; i++)
     {
         QString _sCurrentName=getExport_FunctionNameAsString(i);
+
         if(_sCurrentName==sFunctionName)
         {
             bResult=true;
@@ -4320,9 +4321,10 @@ bool PEFile::isExportFunctionPresentExp(QString sFunctionName)
 
     int nNumberOfNames=getExport_NumberOfNames();
 
-    for(int i=0;i<nNumberOfNames;i++)
+    for(int i=0; i<nNumberOfNames; i++)
     {
         QString _sCurrentName=getExport_FunctionNameAsString(i);
+
         if(_sCurrentName.contains(exp))
         {
             bResult=true;
@@ -5883,6 +5885,7 @@ unsigned int PEFile::getResourceSizeByNumber(unsigned int nNumber)
 
     unsigned int nNameEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfNamedEntries));
     unsigned int nIDEntries=readWord(nOffset+offsetof(IMAGE_RESOURCE_DIRECTORY,NumberOfIdEntries));
+
     if((int)(nNameEntries+nIDEntries)>100)
     {
         // corrupted resource
@@ -6181,9 +6184,9 @@ unsigned int PEFile::getNETOffset()
 
 bool PEFile::initCLI()
 {
-//    #ifdef QT_DEBUG
-//        qDebug("bool PEFile::initCLI()");
-//    #endif
+    //    #ifdef QT_DEBUG
+    //        qDebug("bool PEFile::initCLI()");
+    //    #endif
 
     IMAGE_DATA_DIRECTORY idd;
     unsigned int nOffset;
@@ -6192,9 +6195,9 @@ bool PEFile::initCLI()
     {
         if(!CLI_Section.bIsInit)
         {
-//            #ifdef QT_DEBUG
-//                qDebug("CLI_Section.bIsInit=0");
-//            #endif
+            //            #ifdef QT_DEBUG
+            //                qDebug("CLI_Section.bIsInit=0");
+            //            #endif
 
             CLI_Section.nEntryPointSize=0;
 
@@ -7562,9 +7565,9 @@ QByteArray PEFile::getCLI_MetaData_Strings()
 
 QByteArray PEFile::getCLI_MetaData_US()
 {
-//#ifdef QT_DEBUG
-//    qDebug("QByteArray PEFile::getCLI_MetaData_US()");
-//#endif
+    //#ifdef QT_DEBUG
+    //    qDebug("QByteArray PEFile::getCLI_MetaData_US()");
+    //#endif
 
     QByteArray baResult;
 
@@ -7650,10 +7653,12 @@ QList<QString> PEFile::getCLI_MetaData_USAsList()
         }
 
         pOffset++;
+
         if(pOffset>_pOffset+nSize)
         {
             break;
         }
+
         sTemp=QString::fromUtf16((ushort *)pOffset,nStringSize/2);
 
         listResult.append(sTemp);
@@ -7750,6 +7755,7 @@ QByteArray PEFile::getRelocsAsXML()
 
             xml.writeEndElement();
         }
+
         //        xml.writeAttribute("NumberOfRelocs",QString::number(ird.Characteristics));
         //        pXml->writeAttribute("MajorVersion",QString::number(ird.MajorVersion));
         //        pXml->writeAttribute("MinorVersion",QString::number(ird.MinorVersion));
@@ -7787,7 +7793,6 @@ QList<unsigned int> PEFile::getRelocsAsList()
                     break;
                 }
 
-
                 for(unsigned int i=0; i<(nSize-8)/2; i++)
                 {
                     sTypeOffset=readWord(nRelocsOffset+8+i*2);
@@ -7808,17 +7813,17 @@ bool PEFile::addRelocsSectionFromList(QList<unsigned int> *pList, QString sSecti
     Q_UNUSED(sSectionName);
     // TODO SectionName
 
-    IMAGE_SECTION_HEADER ish={};
+    IMAGE_SECTION_HEADER ish= {};
 
     QByteArray baSection;
 
-//    IMAGE_BASE_RELOCATION *pIBR=(IMAGE_BASE_RELOCATION *)baSection.data();
-//    IMAGE_BASE_RELOCATION IBR={};
+    //    IMAGE_BASE_RELOCATION *pIBR=(IMAGE_BASE_RELOCATION *)baSection.data();
+    //    IMAGE_BASE_RELOCATION IBR={};
 
     //    QList<unsigned int> listPageAddresses;
     //    QList<unsigned int> listPages;
     unsigned int nPageAddress=0;
-//    unsigned int nCount=0;
+    //    unsigned int nCount=0;
 
     for(int i=0; i<pList->count(); i++)
     {
@@ -7877,7 +7882,7 @@ unsigned int PEFile::getNumberOfRelocsPages()
 {
     unsigned int nOffset;
     unsigned int nResult=0;
-//    unsigned int nTemp;
+    //    unsigned int nTemp;
     unsigned int nAddress;
     unsigned int nSize;
 
