@@ -33,8 +33,8 @@
 #endif
 
 #define __DIE "Detect It Easy"
-#define __VERSION "2.03"
-#define __VERSIONW L"2.03"
+#define __VERSION "2.04"
+#define __VERSIONW L"2.04"
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
 #define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"

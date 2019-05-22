@@ -1118,17 +1118,18 @@ bool PEFile::isValid()
 
 bool PEFile::isPEPlus()
 {
+    bool bResult=false;
+
     if(isValid())
     {
-        return (getFileHeader_Machine()==IMAGE_FILE_MACHINE_AMD64)||(getFileHeader_Machine()==IMAGE_FILE_MACHINE_IA64);
+        quint16 nMachine=getFileHeader_Machine();
+        bResult=(nMachine==IMAGE_FILE_MACHINE_AMD64)||
+                (nMachine==IMAGE_FILE_MACHINE_IA64)||
+                (nMachine==0xAA64);
     }
 
-    return false;
+    return bResult;
 }
-
-
-
-
 
 unsigned int PEFile::getNtHeadersSize()
 {

@@ -1410,9 +1410,12 @@ bool ELFFile::isStringInTablePresent(QString sSectionName, QString sString)
 
             for(int j=0; j<listResult.count(); j++)
             {
-                //                qDebug(listResult.at(j).sString.toAscii().data());
-                //                qDebug(sString.toAscii().data());
-                if(listResult.at(j).sString==sString)
+                QString _sString=listResult.at(j).sString;
+
+                //qDebug(listResult.at(j).sString.toLatin1().data());
+                //                qDebug(sString.toLatin1().data());
+
+                if(_sString==sString)
                 {
                     return true;
                 }

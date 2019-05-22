@@ -175,6 +175,7 @@ typedef struct _IMAGE_FILE_HEADER
 #define IMAGE_FILE_MACHINE_AMD64             0x8664  // AMD64 (K8)
 #define IMAGE_FILE_MACHINE_M32R              0x9041  // M32R little-endian
 #define IMAGE_FILE_MACHINE_CEE               0xC0EE
+#define IMAGE_FILE_MACHINE_ARM64             0xAA64 
 
 //
 // Directory format.
