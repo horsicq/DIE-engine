@@ -262,7 +262,7 @@ bool MSDOSFile::isNE()
     unsigned int nOffset=getDosHeader_lfanew();
     unsigned short sNew=readWord(nOffset);
 
-    return (sNew==0x454E);
+    return (sNew==0x454E); // TODO const
 }
 
 bool MSDOSFile::isLE()
@@ -270,7 +270,7 @@ bool MSDOSFile::isLE()
     unsigned int nOffset=getDosHeader_lfanew();
     unsigned short sNew=readWord(nOffset);
 
-    return (sNew==0x454C);
+    return (sNew==0x454C); // TODO const
 }
 
 bool MSDOSFile::isLX()
@@ -278,7 +278,7 @@ bool MSDOSFile::isLX()
     unsigned int nOffset=getDosHeader_lfanew();
     unsigned short sNew=readWord(nOffset);
 
-    return (sNew==0x584C);
+    return (sNew==0x584C); // TODO const
 }
 
 bool MSDOSFile::compareEP(QString sSignature, unsigned int nOffset)
@@ -397,6 +397,7 @@ unsigned int MSDOSFile::getOverlayOffset()
 {
     //	unsigned int nResult=(getDosHeader_cp()-1)*0x200+getDosHeader_cblp();
 
+	// TODO Check
     unsigned int nResult=0;
 
     if(isNE())
