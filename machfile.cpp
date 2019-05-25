@@ -184,14 +184,18 @@ unsigned int MACHFile::getMachHeaderOffset()
 
 unsigned int MACHFile::getMachHeaderSize()
 {
+    unsigned int nResult=0;
+
     if(isMACH64())
     {
-        return sizeof(mach_header_64);
+        nResult=sizeof(mach_header_64);
     }
     else
     {
-        return sizeof(mach_header);
+        nResult=sizeof(mach_header);
     }
+
+    return nResult;
 }
 
 bool MACHFile::isLoadCommandPresent(unsigned int nLoadCommand)
@@ -1435,7 +1439,6 @@ bool MACHFile::compareOverlay(QString sSignature, unsigned int nOffset)
 {
     return compare(sSignature,getOverlayOffset()+nOffset);
 }
-
 
 unsigned int MACHFile::getLoadCommand_type(unsigned int nLoadCommand)
 {
