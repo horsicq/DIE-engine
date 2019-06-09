@@ -1807,15 +1807,18 @@ bool Binary::memoryCompare(char *pMemory1, char *pMemory2, int nSize)
 
 unsigned int Binary::findDataInMemory(char *pMemory, unsigned int nMemorySize, char *pData, unsigned int nDataSize)
 {
+    unsigned int nResult=-1;
+
     for(int i=0; i<(int)(nMemorySize-nDataSize+1); i++)
     {
         if(memoryCompare(pMemory+i,pData,nDataSize))
         {
-            return i;
+            nResult=i;
+            break;
         }
     }
 
-    return -1;
+    return nResult;
 }
 
 unsigned int Binary::findSignatureInMemory(char *pMemory, unsigned int nMemorySize, QString sSignature)
