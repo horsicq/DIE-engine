@@ -1,3 +1,15 @@
 [submodule "Detect-It-Easy"]
 	path = Detect-It-Easy
 	url = https://github.com/horsicq/Detect-It-Easy.git
+[submodule "Formats"]
+	path = Formats
+	url = https://github.com/horsicq/Formats.git
+[submodule "SpecAbstract"]
+	path = SpecAbstract
+	url = https://github.com/horsicq/SpecAbstract.git
+[submodule "StaticScan"]
+	path = StaticScan
+	url = https://github.com/horsicq/StaticScan.git
+[submodule "XArchive"]
+	path = XArchive
+	url = https://github.com/horsicq/XArchive.git
