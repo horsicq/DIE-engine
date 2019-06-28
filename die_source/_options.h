@@ -37,7 +37,8 @@
 #define __VERSIONW L"2.04"
 #define __BUILDDATE __DATE__
 #define __UPDATEFILE "http://ntinfo.biz/files/die_version"
-#define __HOMEPAGE "http://ntinfo.biz/index.php/detect-it-easy"
+//#define __UPDATEFILE "https://raw.githubusercontent.com/horsicq/Detect-It-Easy/master/die_version.txt"
+#define __HOMEPAGE "http://ntinfo.biz"
 #define __TOOLTIPRELAY 1000
 
 #define DIE_SHOWERRORS              0x00000001
