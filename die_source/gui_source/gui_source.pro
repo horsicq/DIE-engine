@@ -367,8 +367,8 @@ include(../../qwt/qwt.pri)
 include(../../beaengine/beaengine.pri)
 include(../../qtsingleapplication/qtsingleapplication.pri)
 include(../../build.pri)
-include(../../staticscan/staticscan.pri)
-greaterThan(QT_MAJOR_VERSION, 4): include(../../QYara/qyara.pri)
+include(../../../_mylibs/StaticScan/staticscan.pri)
+greaterThan(QT_MAJOR_VERSION, 4): include(../../../_mylibs/QYara/qyara.pri)
 
 macx {
      LIBS += "-framework CoreFoundation"
