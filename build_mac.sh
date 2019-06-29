@@ -110,7 +110,7 @@ cp -R $SOURCE_PATH/Detect-It-Easy/db            $SOURCE_PATH/release/${BUILD_NAM
 cp -R $SOURCE_PATH/Detect-It-Easy/info          $SOURCE_PATH/release/${BUILD_NAME}/die.app/Contents/MacOS/
 cp -R $SOURCE_PATH/Detect-It-Easy/scripts       $SOURCE_PATH/release/${BUILD_NAME}/die.app/Contents/MacOS/
 cp -R $SOURCE_PATH/Detect-It-Easy/qss           $SOURCE_PATH/release/${BUILD_NAME}/die.app/Contents/MacOS/
-cp -R $SOURCE_PATH/Detect-It-Easy/lang          $SOURCE_PATH/release/${BUILD_NAME}/die.app/Contents/MacOS/
+cp -R $SOURCE_PATH/die_source/lang              $SOURCE_PATH/release/${BUILD_NAME}/die.app/Contents/MacOS/
 cp -R $SOURCE_PATH/Detect-It-Easy/editor        $SOURCE_PATH/release/${BUILD_NAME}/die.app/Contents/MacOS/
 cp -R $SOURCE_PATH/Detect-It-Easy/search        $SOURCE_PATH/release/${BUILD_NAME}/die.app/Contents/MacOS/
 cp -R $SOURCE_PATH/Detect-It-Easy/yara          $SOURCE_PATH/release/${BUILD_NAME}/die.app/Contents/MacOS/

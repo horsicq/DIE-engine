@@ -127,7 +127,7 @@ xcopy %SOURCE_PATH%\Detect-It-Easy\qss %SOURCE_PATH%\release\%BUILD_NAME%\base\q
 xcopy %SOURCE_PATH%\Detect-It-Easy\info %SOURCE_PATH%\release\%BUILD_NAME%\base\info /E /I
 xcopy %SOURCE_PATH%\Detect-It-Easy\scripts %SOURCE_PATH%\release\%BUILD_NAME%\base\scripts /E /I
 xcopy %SOURCE_PATH%\Detect-It-Easy\search %SOURCE_PATH%\release\%BUILD_NAME%\base\search /E /I
-xcopy %SOURCE_PATH%\Detect-It-Easy\lang %SOURCE_PATH%\release\%BUILD_NAME%\base\lang /E /I
+xcopy %SOURCE_PATH%\die_source\lang %SOURCE_PATH%\release\%BUILD_NAME%\base\lang /E /I
 xcopy %SOURCE_PATH%\Detect-It-Easy\yara %SOURCE_PATH%\release\%BUILD_NAME%\base\yara /E /I
 
 %UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\die.exe
