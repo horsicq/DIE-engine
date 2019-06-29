@@ -7,13 +7,13 @@ BUILD_NAME=die_mac_portable
 GUIEXE=die
 CONEXE=diec
 
-cd $SOURCE_PATH
+cd $SOURCE_PATH/die_source
 
-rm -rf build
+rm -rf $SOURCE_PATH/build
 
 function makeproject
 {
-    cd $SOURCE_PATH/$1
+    cd $SOURCE_PATH/die_source/$1
     
     $QT_PATH/bin/qmake $1.pro -spec macx-clang CONFIG+=x86_64
     make -f Makefile clean
