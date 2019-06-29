@@ -49,13 +49,13 @@ cp -R $SOURCE_PATH/Detect-It-Easy/editor        $SOURCE_PATH/release/${BUILD_NAM
 cp -R $SOURCE_PATH/Detect-It-Easy/search        $SOURCE_PATH/release/${BUILD_NAME}/base/
 cp -R $SOURCE_PATH/Detect-It-Easy/yara          $SOURCE_PATH/release/${BUILD_NAME}/base/
 
-cp -R $SOURCE_PATH/die_source/gui_source/build/release/die                $SOURCE_PATH/release/${BUILD_NAME}/base/
-cp -R $SOURCE_PATH/die_source/gui_source/build/release/diec               $SOURCE_PATH/release/${BUILD_NAME}/base/
-cp -R $SOURCE_PATH/die_source/gui_source/build/release/diel               $SOURCE_PATH/release/${BUILD_NAME}/base/
+cp -R $SOURCE_PATH/die_source/build/release/die                $SOURCE_PATH/release/${BUILD_NAME}/base/
+cp -R $SOURCE_PATH/die_source/build/release/diec               $SOURCE_PATH/release/${BUILD_NAME}/base/
+cp -R $SOURCE_PATH/die_source/build/release/diel               $SOURCE_PATH/release/${BUILD_NAME}/base/
 
-cp -R $SOURCE_PATH/die_source/gui_source/files/lin/die.sh                 $SOURCE_PATH/release/${BUILD_NAME}/
-cp -R $SOURCE_PATH/die_source/gui_source/files/lin/diec.sh                $SOURCE_PATH/release/${BUILD_NAME}/
-cp -R $SOURCE_PATH/gdie_source/ui_source/files/lin/diel.sh                $SOURCE_PATH/release/${BUILD_NAME}/
+cp -R $SOURCE_PATH/die_source/files/lin/die.sh                 $SOURCE_PATH/release/${BUILD_NAME}/
+cp -R $SOURCE_PATH/die_source/files/lin/diec.sh                $SOURCE_PATH/release/${BUILD_NAME}/
+cp -R $SOURCE_PATH/die_source/files/lin/diel.sh                $SOURCE_PATH/release/${BUILD_NAME}/
 
 chmod +x $SOURCE_PATH/release/${BUILD_NAME}/die.sh
 chmod +x $SOURCE_PATH/release/${BUILD_NAME}/diec.sh
