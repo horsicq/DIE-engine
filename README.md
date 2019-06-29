@@ -6,3 +6,5 @@ DIE-engine
 
 DIE engine
 
+More info: https://n10info.blogspot.com/2019/06/build-detect-it-easy-on-linux-windows.html
+
