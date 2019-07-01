@@ -80,7 +80,9 @@ bool DialogPEDllCharacteristics::reload()
         ui->checkBoxNX_COMPAT->setToolTip(tr("Image is NX compatible"));
         ui->checkBoxTERMINAL_SERVER_AWARE->setToolTip(tr("Terminal server aware"));
         ui->checkBoxWDM_DRIVER->setToolTip(tr("Driver uses WDM model"));
-
+        ui->checkBoxHIGH_ENTROPY_VA->setToolTip(tr("Image can handle a high entropy 64-bit virtual address space."));
+        ui->checkBoxAPPCONTAINER->setToolTip(tr("Image should execute in an AppContainer"));
+        ui->checkBoxGUARD_CF->setToolTip(tr("Image supports Control Flow Guard."));
     }
 
     bEdited=false;
@@ -119,13 +121,16 @@ void DialogPEDllCharacteristics::lineEditDllCharacteristics_textChanged(const QS
 
     sDllCharacteristics=arg1.toUInt(&bTemp,16);
 
+    ui->checkBoxHIGH_ENTROPY_VA->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_HIGH_ENTROPY_VA);
     ui->checkBoxDYNAMIC_BASE->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE);
     ui->checkBoxFORCE_INTEGRITY->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY);
     ui->checkBoxNX_COMPAT->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_NX_COMPAT);
     ui->checkBoxNO_ISOLATION->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_NO_ISOLATION);
     ui->checkBoxNO_SEH->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_NO_SEH);
     ui->checkBoxNO_BIND->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_NO_BIND);
+    ui->checkBoxAPPCONTAINER->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_APPCONTAINER);
     ui->checkBoxWDM_DRIVER->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_WDM_DRIVER);
+    ui->checkBoxGUARD_CF->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_GUARD_CF);
     ui->checkBoxTERMINAL_SERVER_AWARE->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE);
 
     ui->pushButtonApply->setEnabled(true);

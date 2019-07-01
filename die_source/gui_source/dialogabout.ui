@@ -75,7 +75,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="res.qrc">
+        <iconset>
          <normaloff>:/new/prefix1/pics/DiEn.bmp</normaloff>:/new/prefix1/pics/DiEn.bmp</iconset>
        </property>
        <property name="iconSize">
@@ -436,27 +436,27 @@
          </item>
          <item>
           <property name="text">
-           <string>Metabolic</string>
+           <string notr="true">Metabolic</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Adler</string>
+           <string notr="true">Adler</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>mrexodia</string>
+           <string notr="true">mrexodia</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Rinat Aminow</string>
+           <string notr="true">Rinat Aminow</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>ktg kbh</string>
+           <string notr="true">ktg kbh</string>
           </property>
          </item>
         </widget>
