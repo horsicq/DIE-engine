@@ -75,7 +75,6 @@ private:
     ThreadExport *scan;
 
     QAction *actCopyAsString;
-
 };
 
 #endif // DIALOGPEEXPORT_H

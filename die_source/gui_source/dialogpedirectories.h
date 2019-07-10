@@ -162,7 +162,6 @@ private:
     QPushButtonX *pushButtonDELAY_IMPORTHex;
     QPushButtonX *pushButtonCOM_DESCRIPTORHex;
     QPushButtonX *pushButtonReservedHex;
-
 };
 
 #endif // DIALOGPEDIRECTORIES_H

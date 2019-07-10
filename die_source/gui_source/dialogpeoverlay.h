@@ -47,7 +47,6 @@ private slots:
     void on_pushButtonRemove_clicked();
     bool reload();
     void on_pushButtonReplace_clicked();
-
     void on_pushButtonEntropy_clicked();
 
 private:

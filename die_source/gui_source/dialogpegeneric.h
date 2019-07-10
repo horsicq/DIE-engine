@@ -31,9 +31,7 @@ public:
     explicit DialogPEGeneric(QWidget *parent = 0);
 
     void setData(__DIE_OPTIONS *pOptions, PEFile *pefile);
-signals:
 
-public slots:
 protected:
     PEFile *pefile;
 };

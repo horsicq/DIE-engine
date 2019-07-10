@@ -48,7 +48,6 @@ private slots:
     void version();
     void manifest();
     void on_pushButtonManifest_clicked();
-
     void on_pushButtonVersion_clicked();
 
 private:

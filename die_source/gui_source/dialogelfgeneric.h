@@ -30,9 +30,7 @@ class DialogELFGeneric : public QXDialogX
 public:
     explicit DialogELFGeneric(QWidget *parent = 0);
     void setData(__DIE_OPTIONS *pOptions,ELFFile *elffile);
-signals:
 
-public slots:
 protected:
     ELFFile *elffile;
 };

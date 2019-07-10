@@ -35,9 +35,6 @@ class DialogPEImport;
 class DialogPEImport : public DialogPEGeneric
 {
     Q_OBJECT
-
-
-
 public:
     explicit DialogPEImport(QWidget *parent);
     ~DialogPEImport();
@@ -62,6 +59,7 @@ private slots:
 
 signals:
     void reset();
+
 private:
     Ui::DialogPEImport *ui;
 

@@ -83,7 +83,6 @@ private:
     QLineEdit *lineEdite_res27;
     QLineEdit *lineEdite_res28;
     QLineEdit *lineEdite_res29;
-
 };
 
 #endif // DIALOGPEDOSHEADER_H

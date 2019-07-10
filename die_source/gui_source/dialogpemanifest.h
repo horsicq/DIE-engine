@@ -40,11 +40,8 @@ private slots:
     void on_pushButtonOK_clicked();
     bool reload();
 
-
 private:
     Ui::DialogPEManifest *ui;
-
-
 };
 
 #endif // DIALOGPEMANIFEST_H

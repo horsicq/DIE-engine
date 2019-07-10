@@ -58,8 +58,6 @@ private slots:
     void copyAsString();
     void stringTable();
 
-signals:
-
 private:
     QAction *actCopyAsString;
     QAction *actEditHeader;

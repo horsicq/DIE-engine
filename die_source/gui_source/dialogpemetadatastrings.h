@@ -40,14 +40,11 @@ public:
     explicit DialogPEMetaDataStrings(QWidget *parent);
     ~DialogPEMetaDataStrings();
 
-
 private:
     Ui::DialogPEMetaDataStrings *ui;
 
     QStandardItemModel *model;
     QAction *actCopyAsString;
-
-
 
 private slots:
     void on_pushButtonOK_clicked();

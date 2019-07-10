@@ -36,7 +36,6 @@ public:
     explicit DialogELFMachine(QWidget *parent);
     ~DialogELFMachine();
 
-
 private:
     Ui::DialogELFMachine *ui;
 

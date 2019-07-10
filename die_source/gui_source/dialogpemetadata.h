@@ -60,8 +60,6 @@ private:
     QAction *actMetaDataUS;
     QAction *actHex;
     QAction *actDump;
-
-
 };
 
 #endif // DIALOGPEMETADATA_H

@@ -43,8 +43,6 @@ private slots:
 
 private:
     Ui::DialogPEBoundImport *ui;
-
-
 };
 
 #endif // DIALOGPEBOUNDIMPORT_H

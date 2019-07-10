@@ -87,7 +87,6 @@ private:
     QLineEditX *lineEditLoaderFlags;
     QLineEditX *lineEditNumberOfRvaAndSizes;
 
-
     unsigned int nOffset;
     unsigned int nSize;
 

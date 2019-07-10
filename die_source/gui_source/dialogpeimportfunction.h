@@ -37,7 +37,6 @@ public:
     ~DialogPEImportFunction();
     void setData(__DIE_OPTIONS *pOptions,PEFile *pefile,int nNumber,int nFunctionNumber);
 
-
 private:
     Ui::DialogPEImportFunction *ui;
 
@@ -47,8 +46,6 @@ private:
     QLineEditX *lineEditThunk;
     QLineEditX *lineEditOrdinal;
     QLineEditX *lineEditHint;
-
-
 
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);

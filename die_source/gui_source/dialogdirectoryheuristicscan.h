@@ -74,6 +74,7 @@ private slots:
 signals:
     void pushButtonScan_click();
     void reset();
+
 private:
     Ui::DialogDirectoryHeuristicScan *ui;
     //ScanHeuristic *scanheuristic;

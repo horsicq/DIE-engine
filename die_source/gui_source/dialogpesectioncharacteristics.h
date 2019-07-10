@@ -36,6 +36,7 @@ public:
     explicit DialogPESectionCharacteristics(QWidget *parent);
     ~DialogPESectionCharacteristics();
     void setData(__DIE_OPTIONS *pOptions,PEFile *pefile,  int nSection);
+
 private:
     Ui::DialogPESectionCharacteristics *ui;
 

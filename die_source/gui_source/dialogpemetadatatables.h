@@ -42,8 +42,6 @@ public:
 private slots:
     void on_pushButtonOK_clicked();
     bool reload();
-
-
     void on_lineEditHeapOffsetSizes_textChanged(const QString &arg1);
 
 private:

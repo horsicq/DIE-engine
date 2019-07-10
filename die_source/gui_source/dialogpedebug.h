@@ -47,7 +47,6 @@ private:
     QAction *actHex;
     QAction *actDump;
 
-
 private slots:
     void on_pushButtonOK_clicked();
     bool reload();

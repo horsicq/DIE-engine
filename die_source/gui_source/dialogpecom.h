@@ -108,8 +108,6 @@ private:
     QPushButton *pushButtonVTableFixupsHEX;
     QPushButton *pushButtonExportAddressTableJumpsHEX;
     QPushButton *pushButtonManagedNativeHeaderHEX;
-
-
 };
 
 #endif // DIALOGPECOM_H

@@ -55,8 +55,6 @@ private:
     QList<unsigned int> listAddresses;
     QList<unsigned int> listSizes;
     QList<unsigned int> listOffsets;
-
-
 };
 
 #endif // DIALOGPEBASERELOCK_H
