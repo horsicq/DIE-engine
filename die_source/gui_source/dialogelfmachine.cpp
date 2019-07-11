@@ -74,8 +74,6 @@ bool DialogELFMachine::reload()
         ui->comboBoxValue->setToolTip(tr("Set machine"));
     }
 
-
-
     ui->comboBoxValue->clear();
     ui->comboBoxValue->addItem("","");
 

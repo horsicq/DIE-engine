@@ -264,7 +264,6 @@ void DialogELFSectionHeader::on_pushButtonApply_clicked()
         elffile->setSectionHeader64_info(nSection,lineEditsh_info->text().toUInt(&bTemp,16));
         elffile->setSectionHeader64_addralign(nSection,lineEditsh_addralign->text().toULongLong(&bTemp,16));
         elffile->setSectionHeader64_entsize(nSection,lineEditsh_entsize->text().toULongLong(&bTemp,16));
-
     }
     else
     {
@@ -280,8 +279,6 @@ void DialogELFSectionHeader::on_pushButtonApply_clicked()
         elffile->setSectionHeader32_entsize(nSection,lineEditsh_entsize->text().toUInt(&bTemp,16));
 
     }
-
-
 
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
 

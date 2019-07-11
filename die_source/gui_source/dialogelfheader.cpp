@@ -143,7 +143,6 @@ DialogELFHeader::DialogELFHeader(QWidget *parent) :
     lineEdite_pad7->setInputMask("HH");
     lineEdite_pad8->setInputMask("HH");
 
-
     for(int i=0; i<26; i++)
     {
         newItem = new QTableWidgetItem;
@@ -184,7 +183,6 @@ DialogELFHeader::DialogELFHeader(QWidget *parent) :
     ui->tableWidgetELFHeader->setCellWidget(26,1,lineEdite_shnum);
     ui->tableWidgetELFHeader->setCellWidget(27,1,lineEdite_shstrndx);
 
-
     ui->tableWidgetELFHeader->setColumnWidth(0,90);
     ui->tableWidgetELFHeader->setColumnWidth(1,120);
 
@@ -217,7 +215,6 @@ DialogELFHeader::DialogELFHeader(QWidget *parent) :
     connect(lineEdite_shentsize,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEdite_shnum,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEdite_shstrndx,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
-
 
     pushButtonClassExtra=new QPushButtonX;
     pushButtonClassExtra->setText("...");
@@ -255,7 +252,6 @@ DialogELFHeader::DialogELFHeader(QWidget *parent) :
     connect(pushButtonEntryExtra,SIGNAL(clicked()),this,SLOT(pushButtonEntryExtra_clicked()));
 
     ui->tableWidgetELFHeader->resizeColumnToContents(2);
-
 
     ui->checkBoxReadOnly->setChecked(true);
 
@@ -309,7 +305,6 @@ void DialogELFHeader::on_checkBoxReadOnly_stateChanged(int arg1)
     lineEdite_shentsize->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEdite_shnum->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEdite_shstrndx->setReadOnly(ui->checkBoxReadOnly->checkState());
-
 }
 //void DialogELFHeader::setData(ELFFile *elffile, __OPTIONS *pOptions)
 //{

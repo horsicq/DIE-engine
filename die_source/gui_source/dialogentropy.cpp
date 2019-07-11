@@ -148,7 +148,6 @@ void DialogEntropy::on_pushButtonSaveDiagram_clicked()
         sFileName = pOptions->sLastDirectory+QDir::separator()+QString("%1.png").arg(tr("Histogram"));
         pPlot=plot2;
     }
-
     else
     {
         return;
@@ -175,7 +174,6 @@ void DialogEntropy::on_pushButtonSaveDiagram_clicked()
 
         filter += imageFilter;
     }
-
 
     filter += "PDF Documents (*.pdf)";
     filter += "Postscript Documents (*.ps)";
@@ -251,7 +249,6 @@ bool DialogEntropy::reload()
         ui->tabWidget->setTabToolTip(2,QString("%1(Alt+3)").arg(tr("Bytes")));
     }
 
-
     bool bTemp;
     QString sTemp;
     unsigned nFileSize=_binary->size();
@@ -313,7 +310,6 @@ bool DialogEntropy::reload()
 
     reloadGraph();
 
-
     scan= new ThreadEntropy;
 
     QThread* thread =new QThread;
@@ -331,23 +327,12 @@ bool DialogEntropy::reload()
     connect(scan,SIGNAL(setEntropy(float)),this,SLOT(setEntropy(float)));
     connect(scan,SIGNAL(reloadGraph()),this,SLOT(reloadGraph()));
 
-
     scan->setData(_binary,nOffset,nSize,xCurve,yCurve,xHistogram,yHistogram,pOptions->nEntropyGraph);
     thread->start();
 
     bIsScan=true;
 
     ui->pushButtonReload->setText(tr("Stop"));
-
-    ///////////////////////////////////////////////////////
-    ///
-    ///
-    ///
-    ///
-    ///
-    ///
-    ///
-    ///
 
     ui->listWidget->clear();
     listZones.clear();
@@ -379,8 +364,6 @@ bool DialogEntropy::reload()
                 pItem->setData(Qt::UserRole,QString("%1:%2").arg(__nOffset).arg(__nSize));
 
                 ui->listWidget->addItem(pItem);
-
-
 
                 zone = new QwtPlotZoneItem;
                 zone->setInterval(__nOffset,__nOffset+__nSize);
@@ -429,7 +412,6 @@ bool DialogEntropy::reload()
                     pItem->setData(Qt::UserRole,QString("%1:%2").arg(__nOffset).arg(__nSize));
                     ui->listWidget->addItem(pItem);
 
-
                     zone = new QwtPlotZoneItem;
                     zone->setInterval(__nOffset,__nOffset+__nSize);
                     zone->setVisible(false);
@@ -467,8 +449,6 @@ bool DialogEntropy::reload()
                         __nOffset=elffile.getProgramHeader64_offset(i);
                         __nSize=elffile.getProgramHeader64_filesz(i);
                     }
-
-
 
                     __entropy=elffile.calculateEntropy(__nOffset,__nSize);
                     pItem=new QListWidgetItem;
@@ -528,7 +508,6 @@ bool DialogEntropy::reload()
             {
                 for(int i=0; i<machfile.getNumberOfSegments(); i++)
                 {
-
                     if(_binary->getType()=="MACH")
                     {
                         __nOffset=machfile.getSegment_fileoff32(i);
@@ -539,8 +518,6 @@ bool DialogEntropy::reload()
                         __nOffset=machfile.getSegment_fileoff64(i);
                         __nSize=machfile.getSegment_filesize64(i);
                     }
-
-
 
                     __entropy=machfile.calculateEntropy(__nOffset,__nSize);
                     pItem=new QListWidgetItem;
@@ -574,7 +551,6 @@ bool DialogEntropy::reload()
                     pItem->setData(Qt::UserRole,QString("%1:%2").arg(__nOffset).arg(__nSize));
                     ui->listWidget->addItem(pItem);
 
-
                     zone = new QwtPlotZoneItem;
                     zone->setInterval(__nOffset,__nOffset+__nSize);
                     zone->setVisible(false);
@@ -588,7 +564,6 @@ bool DialogEntropy::reload()
                 }
             }
         }
-
     }
 
     return true;
@@ -619,8 +594,6 @@ void DialogEntropy::setEntropy(float fEntropy)
             ui->lineEditStatus->setText(tr("not packed"));
         }
     }
-
-
     //    ui->pushButtonReload->setText("Reload");
 }
 
@@ -640,8 +613,6 @@ void DialogEntropy::reloadGraph()
 
         samples[i] = QwtIntervalSample(yHistogram[i], interval);
     }
-
-
 
     //    histogram->setData( new QwtIntervalSeriesData( samples ) );
     histogram->setSamples(samples);
@@ -669,15 +640,12 @@ void DialogEntropy::reloadGraph()
     }
 }
 
-
-
 void DialogEntropy::on_listWidget_itemSelectionChanged()
 {
     for(int j=0; j<listZones.count(); j++)
     {
         listZones.at(j)->setVisible(false);
     }
-
 
     unsigned int nPartOffset=nSize;
     unsigned int nPartSize=0;
@@ -733,8 +701,6 @@ void DialogEntropy::on_listWidget_doubleClicked(const QModelIndex &index)
 
         reload();
     }
-
-
 }
 
 void DialogEntropy::on_pushButtonExtra_clicked()

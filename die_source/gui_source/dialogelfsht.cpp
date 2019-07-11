@@ -75,7 +75,6 @@ bool DialogELFSHT::reload()
 
     ui->tableWidgetSections->setHorizontalHeaderLabels(labels);
 
-
     int nNumberOfSections=elffile->getElfHeader_shnum();
 
     ui->tableWidgetSections->setRowCount(nNumberOfSections);
@@ -142,8 +141,6 @@ bool DialogELFSHT::reload()
     ui->tableWidgetSections->setColumnWidth(2,115);
     ui->tableWidgetSections->setColumnWidth(3,115);
     ui->tableWidgetSections->setColumnWidth(4,115);
-
-
     //    ui->tableWidgetSections->resizeColumnsToContents();
 
     return true;

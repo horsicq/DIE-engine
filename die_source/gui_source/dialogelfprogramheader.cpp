@@ -55,7 +55,6 @@ DialogELFProgramHeader::DialogELFProgramHeader(QWidget *parent) :
     lineEditsh_memsz->setAlignment(Qt::AlignCenter);
     lineEditsh_align->setAlignment(Qt::AlignCenter);
 
-
     newItem = new QTableWidgetItem;
     newItem->setText("type");
     ui->tableWidgetSectionHeader->setItem(0,0,newItem);
@@ -96,7 +95,6 @@ DialogELFProgramHeader::DialogELFProgramHeader(QWidget *parent) :
     ui->tableWidgetSectionHeader->setItem(7,0,newItem);
     ui->tableWidgetSectionHeader->item(7,0)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
 
-
     ui->tableWidgetSectionHeader->setCellWidget(0,1,lineEditsh_type);
     ui->tableWidgetSectionHeader->setCellWidget(1,1,lineEditsh_flags);
     ui->tableWidgetSectionHeader->setCellWidget(2,1,lineEditsh_offset);
@@ -105,7 +103,6 @@ DialogELFProgramHeader::DialogELFProgramHeader(QWidget *parent) :
     ui->tableWidgetSectionHeader->setCellWidget(5,1,lineEditsh_filesz);
     ui->tableWidgetSectionHeader->setCellWidget(6,1,lineEditsh_memsz);
     ui->tableWidgetSectionHeader->setCellWidget(7,1,lineEditsh_align);
-
 
     connect(lineEditsh_type,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditsh_flags,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
