@@ -110,7 +110,7 @@ void DialogOptions::on_pushButtonApply_clicked()
 
 #ifdef USE_NFD
     pOptions->bScanDeepScanNFD=ui->checkBoxDeepScanNFD->isChecked();
-    pOptions->bScanScanOverlayNFD=ui->checkBoxScanOverlayNFD->isChecked();
+    pOptions->bScanRecursiveNFD=ui->checkBoxRecursiveNFD->isChecked();
 #endif
     pOptions->bShowScanTime=ui->checkBoxScanTime->isChecked();
     pOptions->bSaveLastDirectory=ui->checkBoxSaveLastDirectory->isChecked();
@@ -609,7 +609,7 @@ void DialogOptions::setTooltips(bool bIsEnable)
         ui->checkBoxVersionDIE->setToolTip(tr("Show compiler/linker/packer/protector version"));
         ui->checkBoxDeepScanDIE->setToolTip(tr("Deep scan"));
         ui->checkBoxDeepScanNFD->setToolTip(tr("Deep scan"));
-        ui->checkBoxScanOverlayNFD->setToolTip(tr("Scan overlay"));
+        ui->checkBoxRecursiveNFD->setToolTip(tr("Recursive"));
         ui->checkBoxScanTime->setToolTip(tr("Show scan time in log"));
         ui->checkBoxSaveLastDirectory->setToolTip(tr("Save last directory"));
         ui->checkBoxScanAfterOpen->setToolTip(tr("Scan file after open or drop"));
@@ -816,7 +816,7 @@ bool DialogOptions::reload()
 
 #ifdef USE_NFD
     ui->checkBoxDeepScanNFD->setChecked(pOptions->bScanDeepScanNFD);
-    ui->checkBoxScanOverlayNFD->setChecked(pOptions->bScanScanOverlayNFD);
+    ui->checkBoxRecursiveNFD->setChecked(pOptions->bScanRecursiveNFD);
 #endif
     ui->checkBoxSaveLastDirectory->setChecked(pOptions->bSaveLastDirectory);
     ui->checkBoxShowTooltips->setChecked(pOptions->bShowTooltips);

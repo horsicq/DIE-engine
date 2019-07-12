@@ -66,9 +66,6 @@ private:
     QAction *actHex;
     QAction *actDump;
     int nNumberOfSections;
-
-
-
 };
 
 #endif // DIALOGPESECTIONS_H

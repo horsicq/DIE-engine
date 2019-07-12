@@ -59,7 +59,6 @@ public slots:
 
 private:
     Ui::FormMACH *ui;
-
 };
 
 #endif // MACHFORM_H

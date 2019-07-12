@@ -43,9 +43,7 @@ public:
     unsigned long long getOffset(int nIndex);
     unsigned long long getSize(int nIndex);
     QString getName(int nIndex);
-signals:
 
-public slots:
 private:
     QVector<QString> listNames;
     QVector<QString> listOffsets;

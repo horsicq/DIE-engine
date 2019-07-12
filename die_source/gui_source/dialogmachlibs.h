@@ -38,17 +38,16 @@ public:
     explicit DialogMACHLibs(QWidget *parent);
     ~DialogMACHLibs();
 
-private:
-    Ui::DialogMACHLibs *ui;
-
-    QAction *actCopyAsString;
-
 private slots:
     void on_pushButtonOK_clicked();
     bool reload();
 
     void copyAsString();
     void on_tableWidgetStrings_customContextMenuRequested(const QPoint &pos);
+
+private:
+    Ui::DialogMACHLibs *ui;
+    QAction *actCopyAsString;
 };
 
 #endif // DIALOGNACHLIBS

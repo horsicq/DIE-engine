@@ -37,6 +37,17 @@ public:
     explicit DialogPELoadConfig(QWidget *parent);
     ~DialogPELoadConfig();
 
+
+private slots:
+    void on_checkBoxReadOnly_stateChanged(int arg1);
+    void on_pushButtonOK_clicked();
+    bool reload();
+    void on_pushButtonCancel_clicked();
+    void on_pushButtonApply_clicked();
+    void applyEnable();
+    //    void pushButtonData_clicked();
+    //    void pushButtonCallbacks_clicked();
+
 private:
     Ui::DialogPELoadConfig *ui;
 
@@ -62,16 +73,6 @@ private:
     QLineEditX *lineEditSEHandlerCount;
     //    QPushButtonX *pushButtonData;
     //    QPushButtonX *pushButtonCallbacks;
-
-private slots:
-    void on_checkBoxReadOnly_stateChanged(int arg1);
-    void on_pushButtonOK_clicked();
-    bool reload();
-    void on_pushButtonCancel_clicked();
-    void on_pushButtonApply_clicked();
-    void applyEnable();
-    //    void pushButtonData_clicked();
-    //    void pushButtonCallbacks_clicked();
 };
 
 #endif // DIALOGPELOADCONFIG_H

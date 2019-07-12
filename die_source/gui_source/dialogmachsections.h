@@ -40,7 +40,6 @@ public:
     ~DialogMACHSections();
 
     //    void setData(ELFFile *pelffile, __OPTIONS *pOptions);
-
 private:
     Ui::DialogMACHSections *ui;
     QAction *actEditHeader;

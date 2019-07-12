@@ -31,16 +31,15 @@ class QDialogX : public QDialog
 public:
     explicit QDialogX(QWidget *parent = 0);
 
-
     //    void _error(QString sString);
     //    void _reload();
-
 public:
     void setData(Binary *binary,__DIE_OPTIONS *pOptions);
     void setData(PEFile *pefile,__DIE_OPTIONS *pOptions);
     void setData(MSDOSFile *msdosfile,__DIE_OPTIONS *pOptions);
     void setData(ELFFile *elffile,__DIE_OPTIONS *pOptions);
     void setData(MACHFile *machfile,__DIE_OPTIONS *pOptions);
+
 protected:
     Binary *binary;
     PEFile *pefile;
@@ -48,13 +47,13 @@ protected:
     ELFFile *elffile;
     MACHFile *machfile;
     __DIE_OPTIONS *pOptions;
+
 signals:
     void reloadSignal();
     void appendError(QString sString);
 
 public slots:
     virtual bool reload()=0;
-
 };
 
 #endif // QDIALOGX_H

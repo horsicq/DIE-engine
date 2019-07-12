@@ -30,9 +30,7 @@ class DialogMACHGeneric : public QXDialogX
 public:
     explicit DialogMACHGeneric(QWidget *parent = 0);
     void setData(__DIE_OPTIONS *pOptions,MACHFile *machfile);
-signals:
 
-public slots:
 protected:
     MACHFile *machfile;
 };

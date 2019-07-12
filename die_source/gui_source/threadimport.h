@@ -52,15 +52,16 @@ public:
 
     bool isCompleted();
     bool isRun();
+
 signals:
     void setProgressBar(int nMax,int nValue);
     //    void appendRow(int index,QString sThunk,QString sOrdinal,QString sHint,QString sName);
     void _started();
     void _finished();
+
 public slots:
     void process();
     void _stop();
-protected:
 
 private:
     PEFile *pefile;

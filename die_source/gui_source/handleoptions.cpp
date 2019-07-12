@@ -20,7 +20,7 @@ void HandleOptions::save(__DIE_OPTIONS *pOptions)
     settings.setValue(__ScanMethod,(int)pOptions->sm);
 #ifdef USE_NFD
     settings.setValue(__ScanDeepScanNFD,pOptions->bScanDeepScanNFD);
-    settings.setValue(__ScanScanOverlayNFD,pOptions->bScanScanOverlayNFD);
+    settings.setValue(__ScanScanRecursiveNFD,pOptions->bScanRecursiveNFD);
 #endif
     settings.setValue(__ShowTooltips,pOptions->bShowTooltips);
     settings.setValue(__ShowErrors,pOptions->bShowErrors);
@@ -72,7 +72,7 @@ void HandleOptions::load(__DIE_OPTIONS *pOptions)
     pOptions->sm=(SCAN_METHODS)settings.value(__ScanMethod,(int)SM_DIE).toInt();
 #ifdef USE_NFD
     pOptions->bScanDeepScanNFD=settings.value(__ScanDeepScanNFD,true).toBool();
-    pOptions->bScanScanOverlayNFD=settings.value(__ScanScanOverlayNFD,true).toBool();
+    pOptions->bScanRecursiveNFD=settings.value(__ScanScanRecursiveNFD,true).toBool();
 #endif
     pOptions->bShowTooltips=settings.value(__ShowTooltips,true).toBool();
     pOptions->bShowErrors=settings.value(__ShowErrors,false).toBool();

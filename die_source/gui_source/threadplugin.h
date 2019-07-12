@@ -32,13 +32,11 @@ public:
     explicit ThreadPlugin(QObject *parent = 0);
     void setData(QString sScript,PluginsScript *pPluginScript);
 
-
 signals:
     void _finished();
+
 protected:
     void run();
-
-public slots:
 
 private:
     QString sScript;

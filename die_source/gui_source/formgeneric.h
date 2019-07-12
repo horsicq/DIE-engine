@@ -30,14 +30,15 @@ class FormGeneric : public QWidget
 public:
     explicit FormGeneric(QWidget *parent = 0);
     void setData(QString sFileName, __DIE_OPTIONS *pOptions);
-signals:
 
 public slots:
     virtual bool reload()=0;
     virtual void showTooltips(bool bShow)=0;
+
 protected:
     QString sFileName;
     __DIE_OPTIONS *pOptions;
+
 signals:
     void appendError(QString sError);
     void reloadSignal();

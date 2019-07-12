@@ -36,7 +36,6 @@ public:
     explicit DialogELFType(QWidget *parent);
     ~DialogELFType();
 
-
 private:
     Ui::DialogELFType *ui;
 

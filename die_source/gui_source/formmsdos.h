@@ -42,9 +42,7 @@ private slots:
     bool reload();
 
     void on_pushButtonEntryPoint_clicked();
-
     void on_pushButtonDosHeader_clicked();
-
     void on_pushButtonOverlay_clicked();
 
 public slots:

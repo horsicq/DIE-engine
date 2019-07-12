@@ -38,7 +38,6 @@ public:
     explicit DialogPEExport(QWidget *parent);
     ~DialogPEExport();
 
-
 private slots:
     bool reload();
     void on_pushButtonOK_clicked();

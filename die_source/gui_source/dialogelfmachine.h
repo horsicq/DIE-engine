@@ -36,9 +36,6 @@ public:
     explicit DialogELFMachine(QWidget *parent);
     ~DialogELFMachine();
 
-private:
-    Ui::DialogELFMachine *ui;
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();
@@ -49,6 +46,9 @@ private slots:
     void on_pushButtonApply_clicked();
     void on_lineEditValue_textChanged(const QString &arg1);
     void on_comboBoxValue_currentIndexChanged(int index);
+
+private:
+    Ui::DialogELFMachine *ui;
 };
 
 #endif // DIALOGELFMACHINE_H

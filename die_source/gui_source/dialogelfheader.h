@@ -40,6 +40,22 @@ public:
     explicit DialogELFHeader(QWidget *parent = 0);
     ~DialogELFHeader();
 
+private slots:
+    void applyEnable();
+    bool reload();
+
+    void on_checkBoxReadOnly_stateChanged(int arg1);
+    void on_pushButtonOK_clicked();
+    void on_pushButtonCancel_clicked();
+    void on_pushButtonApply_clicked();
+    void on_pushButtonHex_clicked();
+
+    void pushButtonClassExtra_clicked();
+    void pushButtonDataExtra_clicked();
+    void pushButtonTypeExtra_clicked();
+    void pushButtonMACHineExtra_clicked();
+    void pushButtonEntryExtra_clicked();
+
     //    void setData(ELFFile *pelffile, __OPTIONS *pOptions);
 private:
     Ui::DialogELFHeader *ui;
@@ -88,21 +104,7 @@ private:
     //    void reloadSignal();
     //    void appendError(QString sString);
 
-private slots:
-    void applyEnable();
-    bool reload();
 
-    void on_checkBoxReadOnly_stateChanged(int arg1);
-    void on_pushButtonOK_clicked();
-    void on_pushButtonCancel_clicked();
-    void on_pushButtonApply_clicked();
-    void on_pushButtonHex_clicked();
-
-    void pushButtonClassExtra_clicked();
-    void pushButtonDataExtra_clicked();
-    void pushButtonTypeExtra_clicked();
-    void pushButtonMACHineExtra_clicked();
-    void pushButtonEntryExtra_clicked();
 };
 
 #endif // DIALOGELFHEADER_H

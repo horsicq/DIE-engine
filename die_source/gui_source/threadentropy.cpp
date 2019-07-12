@@ -89,8 +89,6 @@ float ThreadEntropy::getEntropy(unsigned int nDataOffset,unsigned int nDataSize,
         _nSize-=nTemp;
         _nOffset+=nTemp;
 
-
-
         if(bProgressBar)
         {
             if(i+1>(nCount/30)*k)

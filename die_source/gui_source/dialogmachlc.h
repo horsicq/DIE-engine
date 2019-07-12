@@ -38,11 +38,6 @@ public:
     explicit DialogMACHLC(QWidget *parent = 0);
     ~DialogMACHLC();
 
-private:
-    Ui::DialogMACHLC *ui;
-    QAction *actEditHeader;
-    QAction *actHex;
-
 private slots:
     bool reload();
 
@@ -52,6 +47,10 @@ private slots:
     void editHeader();
     void hex();
 
+private:
+    Ui::DialogMACHLC *ui;
+    QAction *actEditHeader;
+    QAction *actHex;
 };
 
 #endif // DIALOGMACHLC_H

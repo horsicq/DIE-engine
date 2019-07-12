@@ -141,7 +141,6 @@ private slots:
 private:
     Ui::DialogOptions *ui;
     //    QMainWindow *mainWindow;
-
     QShortcut *shortcut1;
     QShortcut *shortcut2;
     QShortcut *shortcut3;

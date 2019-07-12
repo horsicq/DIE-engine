@@ -66,6 +66,7 @@ public:
     bool isCompleted();
 
     static QList<CRYPTO_RECORD> loadCryptoSignatures(QString sDatabaseName);
+
 signals:
     //    void setProgressBar(int nMax,int nValue);
     void appendRow(QString sName,unsigned long long nOffset,unsigned long long nSize);
@@ -74,11 +75,13 @@ signals:
     void progressValueChanged(int nValue);
     void foundLimit(int nLimit);
     void appendError(QString sString);
+
 public slots:
     void process();
     void _stop();
     void slot_progressRangeChanged(int minimum,int maximum);
     //    void cryptoResultReady(int index);
+
 private:
     bool bIsRun;
     bool bIsCompleted;

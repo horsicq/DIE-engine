@@ -49,6 +49,7 @@ signals:
 public slots:
     virtual bool reload()=0;
     int exec();
+
 protected:
     __DIE_OPTIONS *pOptions;
 

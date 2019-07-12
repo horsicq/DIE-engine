@@ -44,7 +44,6 @@ private:
     bool bEdited;
 
 signals:
-
     void checked();
 
 private slots:

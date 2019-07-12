@@ -38,7 +38,6 @@ public:
 
     void setData(__DIE_OPTIONS *pOptions,ELFFile *pelffile,int nSection);
 
-
 private slots:
     bool reload();
     void on_checkBoxReadOnly_stateChanged(int arg1);
@@ -46,6 +45,10 @@ private slots:
     void on_pushButtonCancel_clicked();
     void on_pushButtonApply_clicked();
     void applyEnable();
+
+signals:
+    void reloadSignal();
+    void appendError(QString sString);
 
 private:
     Ui::DialogELFSectionHeader *ui;
@@ -63,10 +66,6 @@ private:
     QLineEditX *lineEditsh_info;
     QLineEditX *lineEditsh_addralign;
     QLineEditX *lineEditsh_entsize;
-
-signals:
-    void reloadSignal();
-    void appendError(QString sString);
 };
 
 #endif // DIALOGELFSECTIONHEADER_H

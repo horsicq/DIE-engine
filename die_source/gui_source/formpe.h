@@ -41,6 +41,7 @@ public:
 
 private:
     Ui::FormPE *ui;
+
 public slots:
     bool reload();
     void on_pushButtonPE_clicked();
@@ -54,8 +55,6 @@ public slots:
     void on_pushButtonNET_clicked();
 
     void showTooltips(bool bShow);
-
-
 };
 
 #endif // PEFORM_H

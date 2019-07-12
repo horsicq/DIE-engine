@@ -66,7 +66,6 @@ private slots:
     void pushButtonCheckSumExtra_clicked();
     void pushButtonSubsystemExtra_clicked();
 
-
 private:
     Ui::DialogPE *ui;
 

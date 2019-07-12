@@ -32,12 +32,9 @@ public:
     explicit ThreadSearchPlugin(QObject *parent = 0);
     void setData(QString sScript,PluginsScript *pPluginScript);
 
-
-signals:
 protected:
     void run();
 
-public slots:
 private:
     QString sScript;
     PluginsScript *pPluginScript;

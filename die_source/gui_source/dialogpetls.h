@@ -49,8 +49,6 @@ private:
 
     //    QPushButtonX *pushButtonData;
     //    QPushButtonX *pushButtonCallbacks;
-
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();

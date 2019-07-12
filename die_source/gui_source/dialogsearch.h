@@ -44,7 +44,6 @@ public:
     ~DialogSearch();
     void setData(__DIE_OPTIONS *pOptions,Binary *_binary,unsigned int nOffset,unsigned int nSize);
 
-
 private slots:
     void on_pushButtonOK_clicked();
     void on_pushButtonSearch_clicked();
@@ -69,13 +68,11 @@ private slots:
     void on_lineEditFilter_textChanged(const QString &arg1);
 
 signals:
-
     void reset();
 
 private:
     Ui::DialogSearch *ui;
     SEARCHDATA searchdata;
-
 
     Binary *_binary;
     unsigned int nOffset;

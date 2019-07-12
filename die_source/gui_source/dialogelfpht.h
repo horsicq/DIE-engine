@@ -42,11 +42,6 @@ public:
 
     //    void setData(ELFFile *pelffile, __OPTIONS *pOptions);
 
-private:
-    Ui::DialogELFPHT *ui;
-    //    ELFFile *pelffile;
-    //    __OPTIONS *pOptions;
-
 private slots:
     bool reload();
 
@@ -65,6 +60,9 @@ signals:
     //    void appendError(QString sString);
 
 private:
+    Ui::DialogELFPHT *ui;
+    //    ELFFile *pelffile;
+    //    __OPTIONS *pOptions;
     QAction *actCopyAsString;
     QAction *actEditHeader;
     QAction *actEntropy;

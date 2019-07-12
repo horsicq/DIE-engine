@@ -36,7 +36,6 @@ public:
     explicit DialogPESubsystem(QWidget *parent);
     ~DialogPESubsystem();
 
-
 private:
     Ui::DialogPESubsystem *ui;
 

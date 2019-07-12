@@ -38,12 +38,10 @@ public:
     ~DialogPESectionHeader();
     void setData(__DIE_OPTIONS *pOptions,PEFile *pefile, int nSection);
 
-
 private:
     Ui::DialogPESectionHeader *ui;
 
     int nSection;
-
 
     QLineEditX *lineEditName;
     QLineEditX *lineEditVirtualSize;
@@ -68,7 +66,6 @@ private slots:
     void on_pushButtonApply_clicked();
     void applyEnable();
     void pushButtonCharacteristicsExtra_clicked();
-
 };
 
 #endif // DIALOGPESECTIONHEADER_H

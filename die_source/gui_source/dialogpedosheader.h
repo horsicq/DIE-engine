@@ -38,7 +38,6 @@ public:
     ~DialogPEDosHeader();
 
 private slots:
-
     bool reload();
     void on_pushButtonHex_clicked();
     void on_checkBoxReadOnly_stateChanged(int arg1);

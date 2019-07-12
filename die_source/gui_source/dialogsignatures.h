@@ -84,6 +84,7 @@ private:
     QAbstractItemModel *pModel;
 
     bool bHighlightChanged;
+
 private slots:
     bool reload();
     bool reload(QString sNewCurrent);
@@ -108,7 +109,6 @@ private slots:
 
 protected:
     void closeEvent(QCloseEvent *event);
-
 };
 
 #endif // DIALOGSIGNATURES_H

@@ -88,7 +88,7 @@ struct __DIE_OPTIONS
     bool bScanResizeToContentsDIE;
 #ifdef USE_NFD
     bool bScanDeepScanNFD;
-    bool bScanScanOverlayNFD;
+    bool bScanRecursiveNFD;
 #endif
     bool bShowErrors;
     bool bShowScanTime;
@@ -157,7 +157,7 @@ struct __DIE_OPTIONS
 #define __ScanResizeColumnsToContent "Scan/ResizeColumnsToContent"
 #ifdef USE_NFD
 #define __ScanDeepScanNFD "Scan/ScanDeepNFD"
-#define __ScanScanOverlayNFD "Scan/ScanOverlayNFD"
+#define __ScanScanRecursiveNFD "Scan/RecursiveNFD"
 #endif
 #define __ScanMethod "Scan/Method"
 #define __ShowErrors "Scan/ShowErrors"

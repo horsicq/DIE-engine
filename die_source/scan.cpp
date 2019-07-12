@@ -196,7 +196,7 @@ bool Scan::analize(QString sFileName,bool bFullScan)
         emit setProgressBar(1,0);
 
         SpecAbstract::SCAN_OPTIONS nfd_options=SpecAbstract::SCAN_OPTIONS();
-        nfd_options.bScanOverlay=pOptions->bScanScanOverlayNFD;
+        nfd_options.bRecursive=pOptions->bScanRecursiveNFD;
         nfd_options.bDeepScan=pOptions->bScanDeepScanNFD;
 
         pOptions->nfd_result=StaticScan::processFile(sFileName,&nfd_options);

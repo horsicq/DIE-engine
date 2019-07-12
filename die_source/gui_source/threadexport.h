@@ -32,18 +32,20 @@ public:
     void setData(PEFile *pefile);
 
     bool isCompleted();
+
 signals:
     void setProgressBar(int nMax,int nValue);
     void appendRow(int index,QString sOrdinal,QString sAddress,QString sName);
     void _finished();
+
 public slots:
     void process();
     void _stop();
+
 private:
     PEFile *pefile;
     bool bIsRun;
     bool bIsCompleted;
-
 };
 
 #endif // THREADEXPORT_H
