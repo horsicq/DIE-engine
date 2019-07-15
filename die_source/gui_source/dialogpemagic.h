@@ -36,9 +36,6 @@ public:
     explicit DialogPEMagic(QWidget *parent);
     ~DialogPEMagic();
 
-private:
-    Ui::DialogPEMagic *ui;
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();
@@ -49,6 +46,9 @@ private slots:
     void on_pushButtonApply_clicked();
     void on_lineEditMagic_textChanged(const QString &arg1);
     void on_comboBoxMagic_currentIndexChanged(int index);
+
+private:
+    Ui::DialogPEMagic *ui;
 };
 
 #endif // DIALOGPEMAGIC_H

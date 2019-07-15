@@ -37,15 +37,6 @@ class DialogPEDebug : public DialogPEGeneric
 public:
     explicit DialogPEDebug(QWidget *parent);
     ~DialogPEDebug();
-private:
-    Ui::DialogPEDebug *ui;
-
-    int nNumberOfDebugs;
-
-    QAction *actCopyAsString;
-    QAction *actEditEntropy;
-    QAction *actHex;
-    QAction *actDump;
 
 private slots:
     void on_pushButtonOK_clicked();
@@ -56,6 +47,14 @@ private slots:
     void entropy();
     void copyAsString();
     void on_tableWidgetDebug_customContextMenuRequested(const QPoint &pos);
+
+private:
+    Ui::DialogPEDebug *ui;
+    int nNumberOfDebugs;
+    QAction *actCopyAsString;
+    QAction *actEditEntropy;
+    QAction *actHex;
+    QAction *actDump;
 };
 
 #endif // DIALOGPEDEBUG_H

@@ -95,16 +95,12 @@ private:
     QPushButtonX *pushButtonTypeExtra;
     QPushButtonX *pushButtonMACHineExtra;
     QPushButtonX *pushButtonEntryExtra;
-
-
     //    ELFFile *elffile;
     //    __OPTIONS *pOptions;
 
     //signals:
     //    void reloadSignal();
     //    void appendError(QString sString);
-
-
 };
 
 #endif // DIALOGELFHEADER_H

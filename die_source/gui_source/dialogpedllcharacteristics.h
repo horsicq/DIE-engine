@@ -36,10 +36,6 @@ public:
     explicit DialogPEDllCharacteristics(QWidget *parent);
     ~DialogPEDllCharacteristics();
 
-private:
-    Ui::DialogPEDllCharacteristics *ui;
-    bool bEdited;
-
 signals:
     void checked();
 
@@ -62,6 +58,10 @@ private slots:
     void on_checkBoxNO_BIND_stateChanged(int arg1);
     void on_checkBoxWDM_DRIVER_stateChanged(int arg1);
     void on_checkBoxTERMINAL_SERVER_AWARE_stateChanged(int arg1);
+
+private:
+    Ui::DialogPEDllCharacteristics *ui;
+    bool bEdited;
 };
 
 #endif // DIALOGDLLCHARACTERISTICS_H

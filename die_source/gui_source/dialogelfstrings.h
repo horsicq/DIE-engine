@@ -41,17 +41,17 @@ public:
 
     void setData(__DIE_OPTIONS *pOptions,ELFFile *elffile,unsigned int nSection);
 
-private:
-    Ui::DialogELFStrings *ui;
-    QAction *actCopyAsString;
-    unsigned int nSection;
-
 private slots:
     void on_pushButtonOK_clicked();
     bool reload();
 
     void copyAsString();
     void on_tableWidgetStrings_customContextMenuRequested(const QPoint &pos);
+
+private:
+    Ui::DialogELFStrings *ui;
+    QAction *actCopyAsString;
+    unsigned int nSection;
 };
 
 #endif // DIALOGELFSTRINGS_H

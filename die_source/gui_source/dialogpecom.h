@@ -78,7 +78,6 @@ private:
     //    QLineEdit *lineEditFileSubtype;
     //    QLineEdit *lineEditFileDateMS;
     //    QLineEdit *lineEditFileDateLS;
-
     QLineEditX *lineEditMetaDataAddress;
     QLineEditX *lineEditResourcesAddress;
     QLineEditX *lineEditStrongNameSignatureAddress;

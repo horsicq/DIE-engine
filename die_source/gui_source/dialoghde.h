@@ -69,9 +69,7 @@ private:
     QString sName;
     unsigned long long nSelectionStart;
     unsigned long long nSelectionSize;
-
     //    ThreadSearchPlugin *tsp;
-
     //    QTimer timerPlugin;
 };
 

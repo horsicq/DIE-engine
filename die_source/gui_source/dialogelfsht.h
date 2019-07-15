@@ -41,9 +41,6 @@ public:
     explicit DialogELFSHT(QWidget *parent = 0);
     ~DialogELFSHT();
 
-private:
-    Ui::DialogELFSHT *ui;
-
 private slots:
     bool reload();
 
@@ -59,6 +56,8 @@ private slots:
     void stringTable();
 
 private:
+    Ui::DialogELFSHT *ui;
+
     QAction *actCopyAsString;
     QAction *actEditHeader;
     QAction *actEntropy;

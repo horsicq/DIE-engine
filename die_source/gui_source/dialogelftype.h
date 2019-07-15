@@ -36,9 +36,6 @@ public:
     explicit DialogELFType(QWidget *parent);
     ~DialogELFType();
 
-private:
-    Ui::DialogELFType *ui;
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();
@@ -49,6 +46,9 @@ private slots:
     void on_pushButtonApply_clicked();
     void on_lineEditValue_textChanged(const QString &arg1);
     void on_comboBoxValue_currentIndexChanged(int index);
+
+private:
+    Ui::DialogELFType *ui;
 };
 
 #endif // DIALOGELFTYPE_H

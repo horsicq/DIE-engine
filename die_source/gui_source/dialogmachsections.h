@@ -40,14 +40,6 @@ public:
     ~DialogMACHSections();
 
     //    void setData(ELFFile *pelffile, __OPTIONS *pOptions);
-private:
-    Ui::DialogMACHSections *ui;
-    QAction *actEditHeader;
-    QAction *actHex;
-    QAction *actDump;
-    QAction *actEntropy;
-    QAction *actCopyAsString;
-    QAction *actSearch;
 
 private slots:
     bool reload();
@@ -61,6 +53,15 @@ private slots:
     void entropy();
     void search();
     void copyAsString();
+
+private:
+    Ui::DialogMACHSections *ui;
+    QAction *actEditHeader;
+    QAction *actHex;
+    QAction *actDump;
+    QAction *actEntropy;
+    QAction *actCopyAsString;
+    QAction *actSearch;
 };
 
 #endif // DIALOGMACHSECTIONS_H

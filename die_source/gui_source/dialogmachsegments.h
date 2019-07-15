@@ -39,16 +39,7 @@ public:
     explicit DialogMACHSegments(QWidget *parent = 0);
     ~DialogMACHSegments();
 
-    //    void setData(ELFFile *pelffile, __OPTIONS *pOptions);
-private:
-    Ui::DialogMACHSegments *ui;
-    QAction *actEditHeader;
-    QAction *actHex;
-    QAction *actDump;
-    QAction *actEntropy;
-    QAction *actCopyAsString;
-    QAction *actSearch;
-
+    //    void setData(ELFFile *pelffile, __OPTIONS *pOptions)
 private slots:
     bool reload();
 
@@ -61,6 +52,15 @@ private slots:
     void entropy();
     void search();
     void copyAsString();
+
+private:
+    Ui::DialogMACHSegments *ui;
+    QAction *actEditHeader;
+    QAction *actHex;
+    QAction *actDump;
+    QAction *actEntropy;
+    QAction *actCopyAsString;
+    QAction *actSearch;
 };
 
 #endif // DIALOGMACHSEGMENTS_H

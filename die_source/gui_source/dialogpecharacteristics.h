@@ -36,10 +36,6 @@ public:
     explicit DialogPECharacteristics(QWidget *parent);
     ~DialogPECharacteristics();
 
-private:
-    Ui::DialogPECharacteristics *ui;
-    bool bEdited;
-
 signals:
     void checked();
 
@@ -68,6 +64,10 @@ private slots:
     void on_checkBoxUP_SYSTEM_ONLY_stateChanged(int arg1);
     void on_checkBoxBYTES_REVERSED_HI_stateChanged(int arg1);
     void checkbox_reload();
+
+private:
+    Ui::DialogPECharacteristics *ui;
+    bool bEdited;
 };
 
 #endif // DIALOGPECHARACTERISTICS_H

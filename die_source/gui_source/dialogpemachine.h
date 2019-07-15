@@ -36,9 +36,6 @@ public:
     explicit DialogPEMachine(QWidget *parent);
     ~DialogPEMachine();
 
-private:
-    Ui::DialogPEMachine *ui;
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();
@@ -49,6 +46,9 @@ private slots:
     void on_pushButtonApply_clicked();
     void on_lineEditMachine_textChanged(const QString &arg1);
     void on_comboBoxMachine_currentIndexChanged(int index);
+
+private:
+    Ui::DialogPEMachine *ui;
 };
 
 #endif // DialogPEMachine_H

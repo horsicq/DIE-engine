@@ -37,6 +37,17 @@ public:
     ~DialogMACHHeader();
 
     void setData(MACHFile *pmachfile, __DIE_OPTIONS *pOptions);
+
+private slots:
+    void applyEnable();
+    bool reload();
+
+    void on_checkBoxReadOnly_stateChanged(int arg1);
+    void on_pushButtonOK_clicked();
+    void on_pushButtonCancel_clicked();
+    void on_pushButtonApply_clicked();
+    void on_pushButtonHex_clicked();
+
 private:
     Ui::DialogMACHHeader *ui;
 
@@ -48,16 +59,6 @@ private:
     QLineEditX *lineEdite_sizeofcmds;
     QLineEditX *lineEdite_flags;
     QLineEditX *lineEdite_reserved;
-
-private slots:
-    void applyEnable();
-    bool reload();
-
-    void on_checkBoxReadOnly_stateChanged(int arg1);
-    void on_pushButtonOK_clicked();
-    void on_pushButtonCancel_clicked();
-    void on_pushButtonApply_clicked();
-    void on_pushButtonHex_clicked();
 };
 
 #endif // DIALOGMACHHEADER_H

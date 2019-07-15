@@ -36,9 +36,6 @@ public:
     explicit DialogMACHUUID(QWidget *parent);
     ~DialogMACHUUID();
 
-private:
-    Ui::DialogMACHUUID *ui;
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();
@@ -48,6 +45,9 @@ private slots:
     void on_pushButtonCancel_clicked();
     void on_pushButtonApply_clicked();
     void on_lineEditUUID_textChanged(const QString &arg1);
+
+private:
+    Ui::DialogMACHUUID *ui;
 };
 
 #endif // DialogMACHUUID_H

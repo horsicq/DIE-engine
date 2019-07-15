@@ -36,9 +36,6 @@ public:
     explicit DialogPECheckSum(QWidget *parent);
     ~DialogPECheckSum();
 
-private:
-    Ui::DialogPECheckSum *ui;
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();
@@ -49,6 +46,9 @@ private slots:
     void on_pushButtonApply_clicked();
     void on_lineEditCheckSum_textChanged(const QString &arg1);
     void on_pushButtonCalculate_clicked();
+
+private:
+    Ui::DialogPECheckSum *ui;
 };
 
 #endif // DIALOGPECHECKSUM_H

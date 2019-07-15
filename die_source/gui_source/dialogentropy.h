@@ -73,7 +73,6 @@ private slots:
     void on_pushButtonExtra_clicked();
 
 signals:
-
     void reset();
 
 private:
