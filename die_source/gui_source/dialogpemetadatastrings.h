@@ -40,18 +40,18 @@ public:
     explicit DialogPEMetaDataStrings(QWidget *parent);
     ~DialogPEMetaDataStrings();
 
-private:
-    Ui::DialogPEMetaDataStrings *ui;
-
-    QStandardItemModel *model;
-    QAction *actCopyAsString;
-
 private slots:
     void on_pushButtonOK_clicked();
     bool reload();
 
     void copyAsString();
     void on_tableWidgetStrings_customContextMenuRequested(const QPoint &pos);
+
+private:
+    Ui::DialogPEMetaDataStrings *ui;
+
+    QStandardItemModel *model;
+    QAction *actCopyAsString;
 };
 
 #endif // DIALOGPEMETADATASTRINGS_H

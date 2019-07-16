@@ -36,9 +36,6 @@ public:
     explicit DialogPESubsystem(QWidget *parent);
     ~DialogPESubsystem();
 
-private:
-    Ui::DialogPESubsystem *ui;
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();
@@ -49,6 +46,9 @@ private slots:
     void on_pushButtonApply_clicked();
     void on_lineEditSubsystem_textChanged(const QString &arg1);
     void on_comboBoxSubsystem_currentIndexChanged(int index);
+
+private:
+    Ui::DialogPESubsystem *ui;
 };
 
 #endif // DIALOGPESUBSYSTEM_H

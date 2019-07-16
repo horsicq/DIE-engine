@@ -36,9 +36,6 @@ public:
     explicit DialogPETimeDateStamp(QWidget *parent);
     ~DialogPETimeDateStamp();
 
-private:
-    Ui::DialogPETimeDateStamp *ui;
-
 private slots:
     bool reload();
     void on_checkBoxReadOnly_stateChanged(int arg1);
@@ -47,6 +44,9 @@ private slots:
     void on_pushButtonApply_clicked();
     void on_lineEditTimeDateStamp_textChanged(const QString &arg1);
     void on_dateTimeEditTimeDateStamp_dateTimeChanged(const QDateTime &date);
+
+private:
+    Ui::DialogPETimeDateStamp *ui;
 };
 
 #endif // DIALOGPETIMEDATESTAMP_H

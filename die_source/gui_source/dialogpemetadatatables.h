@@ -46,7 +46,6 @@ private slots:
 
 private:
     Ui::DialogPEMetaDataTables *ui;
-
 };
 
 #endif // DIALOGPEMETADATATABLES_H

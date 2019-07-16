@@ -37,14 +37,6 @@ public:
     explicit DialogPEStub(QWidget *parent);
     ~DialogPEStub();
 
-private:
-    Ui::DialogPEStub *ui;
-
-    unsigned int nOffset;
-    unsigned int nSize;
-    bool bStubPresent;
-    bool bInvalidHeader;
-
 private slots:
     void on_checkBoxReadOnly_stateChanged(int arg1);
     void on_pushButtonOK_clicked();
@@ -54,8 +46,14 @@ private slots:
     void on_pushButtonRemove_clicked();
     bool reload();
     void on_pushButtonReplace_clicked();
-
     void on_pushButtonRich_clicked();
+
+private:
+    Ui::DialogPEStub *ui;
+    unsigned int nOffset;
+    unsigned int nSize;
+    bool bStubPresent;
+    bool bInvalidHeader;
 };
 
 #endif // DIALOGPESTUB_H

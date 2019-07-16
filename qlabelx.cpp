@@ -46,8 +46,6 @@ bool QLabelX::event(QEvent *event)
     }
 
     return QLabel::event(event);
-
-
 }
 
 void QLabelX::leaveEvent(QEvent *myLeave)

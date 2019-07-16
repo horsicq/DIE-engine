@@ -37,12 +37,6 @@ public:
     ~DialogPESectionCharacteristics();
     void setData(__DIE_OPTIONS *pOptions,PEFile *pefile,  int nSection);
 
-private:
-    Ui::DialogPESectionCharacteristics *ui;
-
-    int nSection;
-    bool bEdited;
-
 signals:
     void checked();
 
@@ -76,6 +70,12 @@ private slots:
     void on_checkBoxMEM_READ_stateChanged(int arg1);
     void on_checkBoxMEM_WRITE_stateChanged(int arg1);
     void checkbox_reload();
+
+private:
+    Ui::DialogPESectionCharacteristics *ui;
+
+    int nSection;
+    bool bEdited;
 };
 
 #endif // DIALOGPESECTIONCHARACTERISTICS_H

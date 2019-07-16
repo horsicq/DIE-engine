@@ -47,8 +47,6 @@ bool QProgressBarX::event(QEvent *event)
     }
 
     return QProgressBar::event(event);
-
-
 }
 
 void QProgressBarX::leaveEvent(QEvent *myLeave)

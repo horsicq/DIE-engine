@@ -46,8 +46,6 @@ bool QDateTimeEditX::event(QEvent *event)
     }
 
     return QDateTimeEdit::event(event);
-
-
 }
 
 void QDateTimeEditX::leaveEvent(QEvent *myLeave)

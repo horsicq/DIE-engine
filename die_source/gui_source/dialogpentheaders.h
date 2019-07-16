@@ -45,6 +45,26 @@ public:
     explicit DialogPENtHeaders(QWidget *parent);
     ~DialogPENtHeaders();
 
+private slots:
+    bool reload();
+    void on_pushButtonOK_clicked();
+    void on_pushButtonCancel_clicked();
+    void on_pushButtonApply_clicked();
+    void on_checkBoxReadOnly_stateChanged(int arg1);
+    void on_pushButtonHex_clicked();
+    void applyEnable();
+    void on_lineEditSignature_textChanged(const QString &arg1);
+    void pushButtonMachineExtra_clicked();
+    void pushButtonNumberOfSectionsExtra_clicked();
+    void pushButtonTimeDateStampExtra_clicked();
+    void pushButtonCharacteristicsExtra_clicked();
+    void pushButtonMagicExtra_clicked();
+    void pushButtonAddressOfEntryPointExtra_clicked();
+    void pushButtonSizeOfHeadersExtra_clicked();
+    void pushButtonCheckSumExtra_clicked();
+    void pushButtonSubsystemExtra_clicked();
+    void pushButtonDllCharacteristicsExtra_clicked();
+
 private:
     Ui::DialogPENtHeaders *ui;
 
@@ -100,26 +120,6 @@ private:
     QPushButtonX *pushButtonCheckSumExtra;
     QPushButtonX *pushButtonSubsystemExtra;
     QPushButtonX *pushButtonDllCharacteristicsExtra;
-
-private slots:
-    bool reload();
-    void on_pushButtonOK_clicked();
-    void on_pushButtonCancel_clicked();
-    void on_pushButtonApply_clicked();
-    void on_checkBoxReadOnly_stateChanged(int arg1);
-    void on_pushButtonHex_clicked();
-    void applyEnable();
-    void on_lineEditSignature_textChanged(const QString &arg1);
-    void pushButtonMachineExtra_clicked();
-    void pushButtonNumberOfSectionsExtra_clicked();
-    void pushButtonTimeDateStampExtra_clicked();
-    void pushButtonCharacteristicsExtra_clicked();
-    void pushButtonMagicExtra_clicked();
-    void pushButtonAddressOfEntryPointExtra_clicked();
-    void pushButtonSizeOfHeadersExtra_clicked();
-    void pushButtonCheckSumExtra_clicked();
-    void pushButtonSubsystemExtra_clicked();
-    void pushButtonDllCharacteristicsExtra_clicked();
 };
 
 #endif // DIALOGPENTHEADERS_H
