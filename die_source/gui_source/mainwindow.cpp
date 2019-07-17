@@ -124,7 +124,6 @@ MainWindow::MainWindow(QWidget *parent) :
     timerPlugin.setInterval(1000);
     connect(&timerPlugin,SIGNAL(timeout()),this,SLOT(setPluginEnabled()));
 
-
     ui->tableWidgetResult_die->setColumnCount(4);
 
     resizeScanResult(false);
@@ -161,7 +160,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(this, SIGNAL(appendError(QString)), this, SLOT(_error(QString)));
 
-
     QList<SCAN_METHODS> listMethods;
 
     listMethods.append(SM_DIE);
@@ -187,29 +185,24 @@ MainWindow::MainWindow(QWidget *parent) :
         {
             sText="Detect It Easy";
         }
-
 #ifdef USE_NFD
         else if(smCurrent==SM_NFD)
         {
             sText="Nauz File Detector";
         }
-
 #endif
 #ifdef USE_YARA
         else if(smCurrent==SM_YARA)
         {
             sText="YARA";
         }
-
 #endif
 #ifdef USE_PEID
         else if(smCurrent==SM_PEID)
         {
             sText="PEiD";
         }
-
 #endif
-
         ui->comboBoxScanMethod->addItem(sText,smCurrent);
 
         if(options.sm==smCurrent)
@@ -289,7 +282,6 @@ void MainWindow::loadPlugins()
 
                         ui->listWidgetPlugins->addItem(pListWidgetItem);
                     }
-
                 }
 
                 pluginloader.unload();
@@ -434,7 +426,6 @@ void MainWindow::openFile(QString sFileName)
         }
 
 #endif
-
         QFileInfo fi;
 
         while(true)
@@ -543,7 +534,6 @@ bool MainWindow::reload()
             staticform=0;
         }
 
-
         if((sType=="PE")||(sType=="PE+(64)"))
         {
             //            this->setMinimumSize(QSize(580, 330));
@@ -604,7 +594,6 @@ bool MainWindow::reload()
         }
 
         clearResult();
-
 
         if(options.bScanAfterOpen)
         {
@@ -705,8 +694,6 @@ void MainWindow::scanCompleteSlot(int nMs)
                 ui->tableWidgetResult_die->setIndexWidget(ui->tableWidgetResult_die->model()->index(nRowCount,1),lineEdit2);
                 ui->tableWidgetResult_die->setItem(nRowCount,2,item3);
                 ui->tableWidgetResult_die->setItem(nRowCount,3,item4);
-
-
             }
         }
 
@@ -769,7 +756,6 @@ void MainWindow::setTop(bool bState)
         {
             this->setWindowFlags(this->windowFlags()| Qt::CustomizeWindowHint | Qt::WindowStaysOnTopHint);
         }
-
     }
     else
     {
@@ -777,7 +763,6 @@ void MainWindow::setTop(bool bState)
         {
             this->setWindowFlags(this->windowFlags() ^ (Qt::CustomizeWindowHint | Qt::WindowStaysOnTopHint));
         }
-
     }
 
     this->show();
@@ -881,7 +866,6 @@ void MainWindow::appendScriptWarningMessage(QString sString)
     {
         ui->textEditScript->append(QString("<font color=\"yellow\">%1</font>").arg(sString));
     }
-
 }
 
 void MainWindow::appendScriptErrorMessage(QString sString)
@@ -903,7 +887,6 @@ void MainWindow::appendScriptSuccessMessage(QString sString)
 void MainWindow::on_pushButtonDirectory_clicked()
 {
     // bIsDialogsopen=true;
-
     _directory("");
     // bIsDialogsopen=false;
 }
@@ -928,7 +911,6 @@ void MainWindow::on_pushButtonExtra_clicked()
             }
         }
     }
-
 #ifdef USE_NFD
     else if(options.sm==SM_NFD)
     {
@@ -944,9 +926,7 @@ void MainWindow::on_pushButtonExtra_clicked()
     {
         sExtra=QYara::toText(&options.yara_result);
     }
-
 #endif
-
     DialogExtra dialogextra(this);
 
     dialogextra.setData(&options,sExtra);
@@ -958,7 +938,6 @@ void MainWindow::on_pushButtonExtra_clicked()
 void MainWindow::_pushButtonInfo()
 {
     // bIsDialogsopen=true;
-
 
     DialogInfo dialoginfo(this);
 
@@ -1008,7 +987,6 @@ void MainWindow::dropEvent(QDropEvent *event)
         ui->tabWidgetMain->setCurrentIndex(0);
 
         openFile(pathList.at(0));
-
     }
 }
 
@@ -1029,7 +1007,6 @@ void MainWindow::on_tableWidgetResult_die_clicked(const QModelIndex &index)
 
         // bIsDialogsopen=true;
 
-
         QString sText=ui->tableWidgetResult_die->item(index.row(),index.column()-2)->text().trimmed();
 
         dialoginfo.setData(&options,sText);
@@ -1038,7 +1015,6 @@ void MainWindow::on_tableWidgetResult_die_clicked(const QModelIndex &index)
 
         // bIsDialogsopen=false;
     }
-
     //    else if(index.column()==0)
     //    {
     //        QString sSignaturePath=ui->tableWidgetResult->item(index.row(),index.column())->data(Qt::UserRole).toString();
@@ -1053,13 +1029,11 @@ void MainWindow::updateOptions()
     //    bool bTemp;
     //    double fTemp;
     //    unsigned int nTemp;
-
     HandleOptions::load(&options);
 
     setTop(options.bStayOnTop);
     showTooltips(options.bShowTooltips);
     setCurrentSize(options.bResizeableMainWindow);
-
 
     if(sCurrentType=="PE")
     {
@@ -1094,8 +1068,6 @@ void MainWindow::on_pushButtonClearLog_clicked()
 void MainWindow::on_pushButtonSaveLog_clicked()
 {
     // bIsDialogsopen=true;
-
-
     QFile file;
     QString sFileName;
     sFileName=QFileDialog::getSaveFileName(this, tr("Save file..."),options.sLastDirectory+QDir::separator()+QString("%1.txt").arg(tr("Log")), tr("Text files (*.txt);;All files (*)"));
@@ -1288,8 +1260,6 @@ void MainWindow::showSource(QString sSignature)
 void MainWindow::on_pushButtonSelect_clicked()
 {
     // bIsDialogsopen=true;
-
-
     DialogSelectPlugin dsp(this);
 
     dsp.setData(&options);
@@ -1303,9 +1273,7 @@ void MainWindow::on_pushButtonSelect_clicked()
 
         ui->lineEditScriptName->setText(sName);
     }
-
     // bIsDialogsopen=false;
-
 }
 
 void MainWindow::on_pushButtonRun_clicked()
@@ -1360,23 +1328,18 @@ void MainWindow::pluginFinished()
 void MainWindow::on_pushButtonInfo_clicked()
 {
     // bIsDialogsopen=true;
-
-
     if(options.sPluginName!="")
     {
         scriptdie.setData(ui->lineEditFileName->text());
         QString sInfo=pluginscript.callFromFile(Utils::getScriptsPath(&options)+QDir::separator()+options.sPluginName+".sg","info").toString();
         QMessageBox::information(this,tr("Plugin information"),sInfo);
     }
-
     // bIsDialogsopen=false;
 }
 
 void MainWindow::on_pushButtonDebug_clicked()
 {
     // bIsDialogsopen=true;
-
-
     if(options.sPluginName!="")
     {
         QScriptEngineDebugger debugger(this);
@@ -1421,7 +1384,6 @@ void MainWindow::on_pushButtonSave_clicked()
             file.close();
         }
     }
-
     // bIsDialogsopen=false;
 }
 
@@ -1523,14 +1485,11 @@ void MainWindow::tabLog()
 void MainWindow::on_pushButtonSignatures_clicked()
 {
     // bIsDialogsopen=true;
-
-
     DialogSignatures ds(this);
 
     ds.setData(&options,ui->lineEditFileName->text());
 
     ds.exec();
-
     // bIsDialogsopen=false;
 }
 
@@ -1581,7 +1540,6 @@ void MainWindow::on_tabWidgetMain_currentChanged(int index)
         {
             loadPlugins();
         }
-
     }
 }
 
@@ -1651,14 +1609,12 @@ void MainWindow::changeMethod(SCAN_METHODS sm, bool bOpenFile)
         ui->stackedWidgetScan->setCurrentIndex(0);
         ui->pushButtonSignatures->setEnabled(true);
     }
-
 #ifdef USE_NFD
     else if(sm==SM_NFD)
     {
         ui->stackedWidgetScan->setCurrentIndex(1);
         ui->pushButtonSignatures->setEnabled(false);
     }
-
 #endif
 #ifdef USE_YARA
     else if(sm==SM_YARA)
@@ -1672,7 +1628,6 @@ void MainWindow::changeMethod(SCAN_METHODS sm, bool bOpenFile)
         ui->stackedWidgetScan->setCurrentIndex(2);
         ui->pushButtonSignatures->setEnabled(false); // TODO
     }
-
 #endif
 #ifdef USE_PEID
     else if(sm==SM_PEID)
@@ -1681,7 +1636,6 @@ void MainWindow::changeMethod(SCAN_METHODS sm, bool bOpenFile)
     }
 
 #endif
-
     if(options.bScanAfterOpen&&bOpenFile)
     {
         emit scanSignal();
@@ -1696,22 +1650,18 @@ void MainWindow::on_pushButtonScanMethodInfo_clicked()
     {
         sText="die_info";
     }
-
 #ifdef USE_NFD
     else if(options.sm==SM_NFD)
     {
         sText="nfd_info";
     }
-
 #endif
 #ifdef USE_YARA
     else if(options.sm==SM_YARA)
     {
         sText="yara_info";
     }
-
 #endif
-
     DialogInfo dialoginfo(this);
 
     dialoginfo.setData(&options,sText);

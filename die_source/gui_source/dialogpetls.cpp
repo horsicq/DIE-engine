@@ -174,14 +174,11 @@ bool DialogPETLS::reload()
     lineEditSizeOfZeroFill->setText(QString("%1").arg(pefile->getTLS_SizeOfZeroFill(),8,16,QChar('0')));
     lineEditCharacteristics->setText(QString("%1").arg(pefile->getTLS_Characteristics(),8,16,QChar('0')));
 
-
-
     ui->checkBoxReadOnly->setEnabled(!pefile->isReadOnly());
     ui->pushButtonApply->setEnabled(false);
 
     return true;
 }
-
 
 void DialogPETLS::on_checkBoxReadOnly_stateChanged(int arg1)
 {
@@ -203,7 +200,6 @@ void DialogPETLS::on_pushButtonApply_clicked()
     bool bTemp;
     ui->pushButtonApply->setEnabled(false);
 
-
     if(pefile->isPEPlus())
     {
         pefile->setTLS_StartAddressOfRawData64(lineEditStartAddressOfRawData->text().toULongLong(&bTemp,16));
@@ -219,7 +215,6 @@ void DialogPETLS::on_pushButtonApply_clicked()
         pefile->setTLS_AddressOfIndex(lineEditAddressOfIndex->text().toUInt(&bTemp,16));
         pefile->setTLS_AddressOfCallBacks(lineEditAddressOfCallBacks->text().toUInt(&bTemp,16));
     }
-
 
     pefile->setTLS_SizeOfZeroFill(lineEditSizeOfZeroFill->text().toUInt(&bTemp,16));
     pefile->setTLS_Characteristics(lineEditCharacteristics->text().toUInt(&bTemp,16));

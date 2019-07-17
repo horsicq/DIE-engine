@@ -34,7 +34,6 @@ DialogSignatures::DialogSignatures(QWidget *parent) :
     ui->pushButtonSave->setShortcut(QKeySequence(__KeySequence_save));
     ui->pushButtonClear->setShortcut(QKeySequence(__KeySequence_ctrlL));
 
-
     ui->checkBoxReadOnly->setChecked(true);
     ui->pushButtonSave->setEnabled(false);
 
@@ -85,7 +84,6 @@ QAbstractItemModel *DialogSignatures::modelFromFile(const QString& fileName)
     {
         return new QStringListModel(completer);
     }
-
 #ifndef QT_NO_CURSOR
     QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
 #endif
@@ -102,7 +100,6 @@ QAbstractItemModel *DialogSignatures::modelFromFile(const QString& fileName)
         }
 
     }
-
 #ifndef QT_NO_CURSOR
     QApplication::restoreOverrideCursor();
 #endif
@@ -146,7 +143,6 @@ bool DialogSignatures::reload(QString sNewCurrent)
         ui->pushButtonSave->setToolTip(tr("Save signature"));
         ui->pushButtonClear->setToolTip(tr("Clear log"));
     }
-
 
     ui->listWidgetSignatures->clear();
 
@@ -252,7 +248,6 @@ bool DialogSignatures::reload(QString sNewCurrent)
             file.close();
         }
 
-
         ui->textEditSignature->setData(&listTooltips,sFolder);
     }
 
@@ -273,14 +268,10 @@ bool DialogSignatures::reload(QString sNewCurrent)
                 }
             }
         }
-
     }
 
     return true;
-
 }
-
-
 
 void DialogSignatures::on_listWidgetSignatures_currentRowChanged(int currentRow)
 {
@@ -342,7 +333,6 @@ void DialogSignatures::on_pushButtonNew_clicked()
             }
         }
 
-
         QListWidgetItem *pListWidget=new QListWidgetItem;
         pListWidget->setText(sNew);
         pListWidget->setData(Qt::UserRole,Utils::getDataBasePath(pOptions)+QDir::separator()+sFolder+QDir::separator()+sNew);
@@ -357,7 +347,6 @@ void DialogSignatures::on_pushButtonNew_clicked()
 void DialogSignatures::on_pushButtonSave_clicked()
 {
     save();
-
 }
 
 void DialogSignatures::on_textEditSignature_textChanged()
@@ -378,7 +367,6 @@ void DialogSignatures::on_checkBoxReadOnly_stateChanged(int arg1)
     {
         ui->textEditSignature->setReadOnly(ui->checkBoxReadOnly->isChecked());
     }
-
 }
 
 void DialogSignatures::on_pushButtonDebug_clicked()
@@ -453,7 +441,6 @@ void DialogSignatures::_run(bool bIsDebug)
             scriptbinary.setData(&binary);
             pluginscript.addClass(&scriptbinary,"Binary",Utils::getDataBasePath(pOptions));
         }
-
         //        if(bIsDebug)
         //        {
         //            QScriptEngineDebugger debugger(this);
@@ -493,7 +480,6 @@ void DialogSignatures::_run(bool bIsDebug)
 
             debugger.action(QScriptEngineDebugger::InterruptAction)->trigger();
 
-
             sResult=pluginscript.callFromFile(sCurrent,"detect",arg).toString();
         }
         else
@@ -510,14 +496,9 @@ void DialogSignatures::_run(bool bIsDebug)
             ui->lineEditTime->setText(tr("%1 ms").arg(scanTime.msecsTo(QTime::currentTime())));
         }
 
-
-
         ui->lineEditResult->setText(sResult);
     }
-
 }
-
-
 
 void DialogSignatures::appendLog(QString sString)
 {
@@ -626,7 +607,6 @@ void DialogSignatures::closeEvent(QCloseEvent *event)
             save();
         }
     }
-
 }
 
 void DialogSignatures::on_listWidgetSignatures_customContextMenuRequested(const QPoint &pos)
@@ -635,7 +615,6 @@ void DialogSignatures::on_listWidgetSignatures_customContextMenuRequested(const 
     {
         return;
     }
-
 
     QMenu menu;
 

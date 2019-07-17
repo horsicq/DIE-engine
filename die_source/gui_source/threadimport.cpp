@@ -151,7 +151,6 @@ void ThreadImport::process()
         pListLibraries->append(impLibrary);
     }
 
-
     emit setProgressBar(1,1);
 
     emit _finished();
@@ -162,4 +161,3 @@ void ThreadImport::process()
 
     bIsCompleted=true;
 }
-

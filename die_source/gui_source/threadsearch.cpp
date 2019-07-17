@@ -316,7 +316,6 @@ void ThreadSearch::searchANSI(QFile *pFile)
         }
 
         nFoundIndex+=appendResult(szBuffer,pSearchData->nSize-nFoundSize,nFoundSize);
-
     }
 
     if(pOffset)
@@ -529,7 +528,6 @@ void ThreadSearch::searchCrypto(QFile *pFile)
     {
         emit appendError(tr("Cannot map file"));
     }
-
 }
 
 bool ThreadSearch::isCompleted()
@@ -673,13 +671,10 @@ label_finish:
         file.close();
     }
 
-
-
     if(nFoundIndex>nFoundLimit)
     {
         emit foundLimit(nFoundLimit);
     }
-
 
 #ifdef QT_DEBUG
     qDebug("Stop thread");

@@ -40,10 +40,10 @@ void QTextEditXeditor::setCompleter(QCompleter *completer)
 {
     if(c)
     {
-        QObject::disconnect(c, 0, this, 0);
+        QObject::disconnect(c,0,this,0);
     }
 
-    c = completer;
+    c=completer;
 
     if(!c)
     {
@@ -229,7 +229,6 @@ void QTextEditXeditor::showTooltip()
     {
         QToolTip::showText(mapToGlobal(cursorRect().center()),sTooltip);
     }
-
 }
 
 void QTextEditXeditor::focusInEvent(QFocusEvent *e)
@@ -276,7 +275,6 @@ void QTextEditXeditor::keyPressEvent(QKeyEvent *e)
 
         return;
     }
-
 
     if(c && c->popup()->isVisible())
     {

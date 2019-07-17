@@ -41,7 +41,6 @@ FormPE::FormPE(QWidget *parent) :
     ui->pushButtonOverlay->setShortcut(QKeySequence(__KeySequence_altO));
     ui->pushButtonPE->setShortcut(QKeySequence(__KeySequence_altP));
     ui->pushButtonResource->setShortcut(QKeySequence(__KeySequence_altR));
-
 }
 
 FormPE::~FormPE()
@@ -80,7 +79,6 @@ bool FormPE::reload()
             ui->pushButtonOverlay->setEnabled(pefile.isOverlayPresent());
 
             ui->pushButtonNET->setEnabled(pefile.isNETPresent());
-
         }
     }
 
@@ -230,7 +228,6 @@ void FormPE::on_pushButtonOverlay_clicked()
     }
 }
 
-
 void FormPE::on_pushButtonResource_clicked()
 {
     PEFile pefile;
@@ -245,8 +242,6 @@ void FormPE::on_pushButtonResource_clicked()
 
     pefile.close();
 }
-
-
 
 void FormPE::on_pushButtonNET_clicked()
 {

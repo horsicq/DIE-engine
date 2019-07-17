@@ -56,7 +56,6 @@ bool DialogPEVersionInfo::reload()
     int nSize=0;
     int nSize2=0;
 
-
     VersionResource vr(&baTemp);
     connect(&vr,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
 

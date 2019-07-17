@@ -37,13 +37,11 @@ int main(int argc, char *argv[])
 #if QT_VERSION_MINOR >= 0x06
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
-
     //#ifdef Q_OS_MAC
     //    QStringList listPlugins;
     //    listPlugins.append(qApp->applicationDirPath()+"/../PlugIns");
     //    qApp->setLibraryPaths(listPlugins);
     //#endif
-
 #ifdef Q_OS_MAC
 #ifndef QT_DEBUG
     QString sLibraryPath=QString(argv[0]);
@@ -52,7 +50,6 @@ int main(int argc, char *argv[])
     //qDebug(sLibraryPath.toLatin1().data());
 #endif
 #endif
-
     QtSingleApplication app(argc, argv);
 
     //    qDebug(QLocale::system().name().toAscii().data());
@@ -70,7 +67,6 @@ int main(int argc, char *argv[])
     {
         QString sLangsPath=Utils::convertPath(_options.sLangsPath.replace("/",QDir::separator()));
 
-
         bool bLoad=false;
 
         if((_options.sLanguage=="")||(_options.sLanguage=="default"))
@@ -86,7 +82,6 @@ int main(int argc, char *argv[])
         {
             qApp->installTranslator(&translator);
         }
-
         //        else
         //        {
         //            _options.sLanguage="default";

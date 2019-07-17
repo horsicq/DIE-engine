@@ -74,7 +74,6 @@ void DialogSearch::setData(__DIE_OPTIONS *pOptions,Binary *_binary, unsigned int
 
     cryptoSignatures=ThreadSearch::loadCryptoSignatures(Utils::getSearchPath(pOptions)+QDir::separator()+"crypto.db");
 
-
     setOptions(pOptions);
 }
 
@@ -88,7 +87,6 @@ void DialogSearch::on_pushButtonSearch_clicked()
     reload();
     search();
 }
-
 
 bool DialogSearch::reload()
 {

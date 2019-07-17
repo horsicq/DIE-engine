@@ -32,7 +32,6 @@ FormMACH::FormMACH(QWidget *parent) :
     connect(this, SIGNAL(appendError(QString)), parent, SLOT(_error(QString)));
     connect(this, SIGNAL(reloadSignal()), parent, SLOT(_reload()));
 
-
     ui->pushButtonMachHeader->setShortcut(QKeySequence(__KeySequence_altM));
     ui->pushButtonLoadCommands->setShortcut(QKeySequence(__KeySequence_altB));
     ui->pushButtonSegments->setShortcut(QKeySequence(__KeySequence_altN));
@@ -45,7 +44,6 @@ FormMACH::~FormMACH()
     delete ui;
 }
 
-
 bool FormMACH::reload()
 {
     MACHFile machfile;
@@ -53,7 +51,6 @@ bool FormMACH::reload()
 
     if(machfile.setFileName(sFileName))
     {
-
         if(machfile.isMACH64())
         {
             ui->lineEditEntryPoint->setText(QString("%1").arg(machfile.getEntryPoint(),16,16,QChar('0')));

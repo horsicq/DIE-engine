@@ -28,7 +28,6 @@ QDialogX::QDialogX(QWidget *parent) :
     connect(this, SIGNAL(reloadSignal()), parent, SIGNAL(reloadSignal()));
     //    connect(this, SIGNAL(reloadSignal()), this, SLOT(reload()));
     connect(this, SIGNAL(appendError(QString)), parent, SIGNAL(appendError(QString)));
-
 }
 
 

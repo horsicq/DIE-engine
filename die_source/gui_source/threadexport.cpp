@@ -59,12 +59,10 @@ void ThreadExport::process()
     int nNumberOfFunctions=pefile->getExport_NumberOfFunctions();
     int nNumberOfNames=pefile->getExport_NumberOfNames();
 
-
     if(nNumberOfFunctions>0xFFFF)
     {
         nNumberOfFunctions=0;
     }
-
 
     unsigned int nAddressOfNameOrdinals=pefile->RVAToOffset(pefile->getExport_AddressOfNameOrdinals());
     unsigned int nAddressOfFunctions=pefile->RVAToOffset(pefile->getExport_AddressOfFunctions());
@@ -119,7 +117,6 @@ void ThreadExport::process()
             emit setProgressBar(nNumberOfFunctions,i+1);
             k++;
         }
-
     }
 
     emit setProgressBar(1,1);

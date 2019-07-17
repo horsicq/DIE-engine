@@ -98,7 +98,6 @@ void HandleOptions::load(__DIE_OPTIONS *pOptions)
     pOptions->bResizeableMainWindow=settings.value(__ResizeableMainWindow,false).toBool();
     pOptions->fThreshold=settings.value(__Threshold,7).toDouble();
     pOptions->nEntropyGraph=settings.value(__EntropyGraph,100).toUInt();
-
 #ifdef Q_OS_WIN
     pOptions->sStyle=settings.value(__Style,"Fusion").toString();
     pOptions->bEnableFont=settings.value(__EnableFont,true).toBool();
@@ -117,7 +116,6 @@ void HandleOptions::load(__DIE_OPTIONS *pOptions)
     pOptions->sFont=settings.value(__Font,"").toString();
     pOptions->sFontHEX=settings.value(__FontHEX,"").toString();
 #endif
-
     pOptions->sStyleSheet=settings.value(__StyleSheet,"orange").toString();
     pOptions->bEnableLanguage=settings.value(__EnableLanguage,false).toBool();
     pOptions->sLanguage=settings.value(__Language,"").toString();
@@ -125,7 +123,6 @@ void HandleOptions::load(__DIE_OPTIONS *pOptions)
     pOptions->nAddressWidth=settings.value(__AddressWidthHEX,8).toUInt();
     pOptions->sEndianness=settings.value(__Endianness,"Big Endian").toString();
     pOptions->bEnablePlugins=settings.value(__EnablePlugins,false).toBool();
-
     pOptions->sDataBasePath=settings.value(__DataBasePath,__DefaultDataBasePath).toString();
     pOptions->sEditorPath=settings.value(__EditorPath,__DefaultEditorPath).toString();
     pOptions->sHelpPath=settings.value(__HelpPath,__DefaultHelpPath).toString();
