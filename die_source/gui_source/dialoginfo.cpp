@@ -101,12 +101,10 @@ bool DialogInfo::reload()
     //        this->sString=this->sString.section("(",0,0);
     //    }
 
-
     if(pOptions->bScanShowOptionsDIE)
     {
         this->sString=this->sString.section("[",0,0);
     }
-
 
     QFile file;
     QString sFileName=this->sString;

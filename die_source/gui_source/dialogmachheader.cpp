@@ -65,7 +65,6 @@ DialogMACHHeader::DialogMACHHeader(QWidget *parent) :
     lineEdite_flags->setAlignment(Qt::AlignCenter);
     lineEdite_reserved->setAlignment(Qt::AlignCenter);
 
-
     lineEdite_magic->setInputMask("HHHHHHHH");
     lineEdite_cputype->setInputMask("HHHHHHHH");
     lineEdite_cpusubtype->setInputMask("HHHHHHHH");
@@ -74,7 +73,6 @@ DialogMACHHeader::DialogMACHHeader(QWidget *parent) :
     lineEdite_sizeofcmds->setInputMask("HHHHHHHH");
     lineEdite_flags->setInputMask("HHHHHHHH");
     lineEdite_reserved->setInputMask("HHHHHHHH");
-
 
     for(int i=0; i<8; i++)
     {
@@ -94,7 +92,6 @@ DialogMACHHeader::DialogMACHHeader(QWidget *parent) :
     ui->tableWidgetMACHHeader->setCellWidget(5,1,lineEdite_sizeofcmds);
     ui->tableWidgetMACHHeader->setCellWidget(6,1,lineEdite_flags);
     ui->tableWidgetMACHHeader->setCellWidget(7,1,lineEdite_reserved);
-
 
     ui->tableWidgetMACHHeader->setColumnWidth(0,90);
     ui->tableWidgetMACHHeader->setColumnWidth(1,120);
@@ -232,6 +229,3 @@ void DialogMACHHeader::on_pushButtonHex_clicked()
 
     dialoghde.exec();
 }
-
-
-

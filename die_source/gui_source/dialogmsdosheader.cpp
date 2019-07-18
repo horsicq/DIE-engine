@@ -70,7 +70,6 @@ DialogMSDOSHeader::DialogMSDOSHeader(QWidget *parent) :
                          "e_lfanew"
                        };
 
-
     lineEdite_magic=new QLineEditX;
     lineEdite_cblp=new QLineEditX;
     lineEdite_cp=new QLineEditX;
@@ -250,8 +249,6 @@ DialogMSDOSHeader::DialogMSDOSHeader(QWidget *parent) :
     connect(lineEdite_res28,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEdite_res29,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
 
-
-
     ui->checkBoxReadOnly->setChecked(true);
 
     //    connect(&msdosfile,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
@@ -327,7 +324,6 @@ bool DialogMSDOSHeader::reload()
     return true;
 }
 
-
 void DialogMSDOSHeader::on_pushButtonHex_clicked()
 {
     DialogHDE dialoghde(this);
@@ -335,7 +331,6 @@ void DialogMSDOSHeader::on_pushButtonHex_clicked()
 
     dialoghde.exec();
 }
-
 
 void DialogMSDOSHeader::on_checkBoxReadOnly_stateChanged(int arg1)
 {

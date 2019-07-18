@@ -32,7 +32,6 @@ DialogMACHLibs::DialogMACHLibs(QWidget *parent) :
     actCopyAsString=new QAction("", this);
 
     connect(actCopyAsString,SIGNAL(triggered()),this,SLOT(copyAsString()));
-
 }
 
 DialogMACHLibs::~DialogMACHLibs()
@@ -101,7 +100,6 @@ bool DialogMACHLibs::reload()
         ui->tableWidgetStrings->setRowHeight(i,20);
     }
 
-
     ui->tableWidgetStrings->setColumnWidth(0,80);
     ui->tableWidgetStrings->setColumnWidth(1,80);
     ui->tableWidgetStrings->setColumnWidth(2,80);
@@ -110,8 +108,6 @@ bool DialogMACHLibs::reload()
 
     return true;
 }
-
-
 
 void DialogMACHLibs::copyAsString()
 {

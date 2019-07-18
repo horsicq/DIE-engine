@@ -65,7 +65,6 @@ void DialogNewSignature::setData(__DIE_OPTIONS *pOptions,QString sFolder,QString
     }
 
     setOptions(pOptions);
-
 }
 
 void DialogNewSignature::on_lineEditFileName_textChanged(const QString &arg1)
@@ -89,7 +88,6 @@ void DialogNewSignature::on_pushButtonOK_clicked()
 
         return;
     }
-
 
     QString sFileName=Utils::getDataBasePath(pOptions)+QDir::separator()+sFolder+QDir::separator()+ui->lineEditFileName->text()+".sg";
 
@@ -185,8 +183,6 @@ void DialogNewSignature::on_pushButtonOK_clicked()
 
         return;
     }
-
-
 }
 
 bool DialogNewSignature::reload()

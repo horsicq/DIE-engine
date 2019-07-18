@@ -59,7 +59,6 @@ DialogHDE::~DialogHDE()
     delete ui;
 }
 
-
 bool DialogHDE::reload()
 {
     pHexEdit->setData(&QXHexView::ReadFromFile,&QXHexView::WriteToFile,sFileName,0,0);
@@ -82,7 +81,6 @@ bool DialogHDE::reload()
     }
 
     pHexEdit->setLittleEndian(pOptions->sEndianness=="Little Endian");
-
 
     return true;
 }

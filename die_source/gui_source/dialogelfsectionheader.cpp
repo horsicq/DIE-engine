@@ -277,7 +277,6 @@ void DialogELFSectionHeader::on_pushButtonApply_clicked()
         elffile->setSectionHeader32_info(nSection,lineEditsh_info->text().toUInt(&bTemp,16));
         elffile->setSectionHeader32_addralign(nSection,lineEditsh_addralign->text().toUInt(&bTemp,16));
         elffile->setSectionHeader32_entsize(nSection,lineEditsh_entsize->text().toUInt(&bTemp,16));
-
     }
 
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);

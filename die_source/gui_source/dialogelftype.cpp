@@ -85,7 +85,6 @@ bool DialogELFType::reload()
     return true;
 }
 
-
 void DialogELFType::on_checkBoxReadOnly_stateChanged(int arg1)
 {
     ui->lineEditValue->setReadOnly(ui->checkBoxReadOnly->checkState());

@@ -42,7 +42,6 @@ DialogMACHSegments::DialogMACHSegments(QWidget *parent) :
     connect(actSearch,SIGNAL(triggered()),this,SLOT(search()));
 
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_quit));
-
 }
 
 DialogMACHSegments::~DialogMACHSegments()
@@ -69,8 +68,6 @@ bool DialogMACHSegments::reload()
 
     QTableWidgetItem *newItem;
 
-
-
     QStringList labels;
 
     labels.append("segname");
@@ -83,10 +80,8 @@ bool DialogMACHSegments::reload()
     labels.append("nsects");
     labels.append("flags");
 
-
     ui->tableWidgetSections->setColumnCount(labels.count());
     ui->tableWidgetSections->setHorizontalHeaderLabels(labels);
-
 
     int nNumberOfSections=machfile->getNumberOfSegments();
 
@@ -194,7 +189,6 @@ bool DialogMACHSegments::reload()
 
     ui->tableWidgetSections->resizeColumnsToContents();
 
-
     return false;
 }
 
@@ -202,7 +196,6 @@ void DialogMACHSegments::on_pushButtonOK_clicked()
 {
     this->close();
 }
-
 
 void DialogMACHSegments::on_tableWidgetSections_customContextMenuRequested(const QPoint &pos)
 {
@@ -224,7 +217,6 @@ void DialogMACHSegments::on_tableWidgetSections_customContextMenuRequested(const
         nSize=machfile->getSegment_filesize32(nSection);
     }
 
-
     if(nSize)
     {
         actSearch->setEnabled(true);
@@ -240,7 +232,6 @@ void DialogMACHSegments::on_tableWidgetSections_customContextMenuRequested(const
         actEntropy->setEnabled(false);
     }
 
-
     QMenu menu;
 
     menu.addAction(actCopyAsString);
@@ -252,7 +243,6 @@ void DialogMACHSegments::on_tableWidgetSections_customContextMenuRequested(const
     menu.addAction(actEntropy);
     menu.addAction(actHex);
     menu.addAction(actDump);
-
 
     QPoint pos2=pos;
     pos2.setY(pos2.ry()+20);
@@ -366,4 +356,3 @@ void DialogMACHSegments::copyAsString()
     QClipboard *clipboard = QApplication::clipboard();
     clipboard->setText(QString("%1").arg(ui->tableWidgetSections->selectedItems().at(0)->text()));
 }
-

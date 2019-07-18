@@ -139,4 +139,3 @@ void DialogMACHLC::hex()
 
     dialoghde.exec();
 }
-

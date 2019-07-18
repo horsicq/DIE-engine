@@ -222,8 +222,6 @@ void DialogFLC::on_lineEditFileOffset_textChanged(const QString &arg1)
     if(!ui->lineEditFileOffset->isReadOnly())
     {
         unsigned long long nFileOffset=stringToValue(ui->lineEditFileOffset->text(),ui->checkBoxAddressAsHex->isChecked()?16:10);
-
-
         unsigned long long nVA=0;
         unsigned long long nRVA=0;
 

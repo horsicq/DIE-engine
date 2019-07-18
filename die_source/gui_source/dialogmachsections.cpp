@@ -68,8 +68,6 @@ bool DialogMACHSections::reload()
 
     QTableWidgetItem *newItem;
 
-
-
     QStringList labels;
 
     labels.append("sectname");
@@ -82,10 +80,8 @@ bool DialogMACHSections::reload()
     labels.append("nreloc");
     labels.append("flags");
 
-
     ui->tableWidgetSections->setColumnCount(labels.count());
     ui->tableWidgetSections->setHorizontalHeaderLabels(labels);
-
 
     int nNumberOfSections=machfile->getNumberOfSections();
 
@@ -193,7 +189,6 @@ bool DialogMACHSections::reload()
 
     ui->tableWidgetSections->resizeColumnsToContents();
 
-
     return false;
 }
 
@@ -201,7 +196,6 @@ void DialogMACHSections::on_pushButtonOK_clicked()
 {
     this->close();
 }
-
 
 void DialogMACHSections::on_tableWidgetSections_customContextMenuRequested(const QPoint &pos)
 {
@@ -238,7 +232,6 @@ void DialogMACHSections::on_tableWidgetSections_customContextMenuRequested(const
         actEntropy->setEnabled(false);
     }
 
-
     QMenu menu;
 
     menu.addAction(actCopyAsString);
@@ -250,7 +243,6 @@ void DialogMACHSections::on_tableWidgetSections_customContextMenuRequested(const
     menu.addAction(actEntropy);
     menu.addAction(actHex);
     menu.addAction(actDump);
-
 
     QPoint pos2=pos;
     pos2.setY(pos2.ry()+20);
@@ -364,4 +356,3 @@ void DialogMACHSections::copyAsString()
     QClipboard *clipboard = QApplication::clipboard();
     clipboard->setText(QString("%1").arg(ui->tableWidgetSections->selectedItems().at(0)->text()));
 }
-

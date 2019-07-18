@@ -39,7 +39,6 @@ DialogOptions::DialogOptions(QWidget *parent) :
     ui->pushButtonAllClear->setEnabled(false);
     ui->pushButtonAllSet->setEnabled(false);
 #endif
-
     ui->listWidgetTabs->setCurrentRow(0);
 
     shortcut1 = new QShortcut(QKeySequence(__KeySequence_tab1), this);
@@ -337,15 +336,12 @@ void DialogOptions::on_pushButtonApply_clicked()
     }
 
 #ifdef USE_YARA
-
     if(pOptions->sDataBaseYARAPath!=ui->lineEditDataBaseYARA->text())
     {
         pOptions->sDataBaseYARAPath=ui->lineEditDataBaseYARA->text();
         bAppRestart=true;
     }
-
 #endif
-
     if(bAppRestart)
     {
         QMessageBox::information(this,tr("Information"),tr("Need to restart application!"));
@@ -765,7 +761,6 @@ void DialogOptions::on_pushButtonFontHEX_clicked()
     if(ok)
     {
         ui->lineEditFontHEX->setText(font.key());
-
     }
 }
 
@@ -962,7 +957,6 @@ bool DialogOptions::reload()
 #endif
     ui->pushButtonApply->setEnabled(false);
     reloadShellState();
-
 
     return true;
 }
