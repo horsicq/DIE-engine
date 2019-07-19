@@ -931,7 +931,6 @@ bool DialogOptions::reload()
     ui->comboBoxEndianness->addItem("Big Endian");
     ui->comboBoxEndianness->addItem("Little Endian");
 
-
     for(int i=0; i<ui->comboBoxEndianness->count(); i++)
     {
         if(ui->comboBoxEndianness->itemText(i)==pOptions->sEndianness)

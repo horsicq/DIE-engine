@@ -43,14 +43,12 @@ DialogPEBaseReloc::DialogPEBaseReloc(QWidget *parent) :
     ui->tableWidgetRelocs->setColumnWidth(2,80);
     ui->tableWidgetRelocs->setColumnWidth(3,100);
 
-
     ui->tableWidgetRelocPage->setColumnCount(3);
     labels.clear();
 
     labels.append("Address");
     labels.append("Type");
     labels.append("Value");
-
 
     ui->tableWidgetRelocPage->setHorizontalHeaderLabels(labels);
 
@@ -65,7 +63,6 @@ DialogPEBaseReloc::~DialogPEBaseReloc()
 {
     delete ui;
 }
-
 
 void DialogPEBaseReloc::on_pushButtonOK_clicked()
 {
@@ -99,7 +96,6 @@ bool DialogPEBaseReloc::reload()
 
         if(nAddress&&nSize)
         {
-
             listAddresses.append(nAddress);
             listSizes.append(nSize);
             listOffsets.append(nRelocsTableOffset);
@@ -109,7 +105,6 @@ bool DialogPEBaseReloc::reload()
 
             ui->tableWidgetRelocs->setItem(i,0,newItem);
             ui->tableWidgetRelocs->item(i,0)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
-
 
             newItem = new QTableWidgetItem;
             newItem->setText(QString("%1").arg(nSize,8,16,QChar('0')));
@@ -136,7 +131,6 @@ bool DialogPEBaseReloc::reload()
 
             ui->tableWidgetRelocs->setItem(i,3,newItem);
             ui->tableWidgetRelocs->item(i,3)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
-
 
             ui->tableWidgetRelocs->setRowHeight(i,20);
             i++;
@@ -165,7 +159,6 @@ void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
         unsigned short sTypeOffset;
         QTableWidgetItem *newItem;
 
-
         nOffset+=8;
 
         ui->tableWidgetRelocPage->setRowCount(0);
@@ -182,9 +175,6 @@ void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
             lineEdit->setText(QString("%1").arg(nAddress+(sTypeOffset&0x0FFF),8,16,QChar('0')));
             ui->tableWidgetRelocPage->setIndexWidget(ui->tableWidgetRelocPage->model()->index(i,0),lineEdit);
 
-
-
-
             newItem = new QTableWidgetItem;
 
             if((sTypeOffset&0xF000)==0)
@@ -200,10 +190,8 @@ void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
                 newItem->setText("DIR64");
             }
 
-
             ui->tableWidgetRelocPage->setItem(i,1,newItem);
             ui->tableWidgetRelocPage->item(i,1)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
-
 
             lineEdit=new QLineEditX;
             lineEdit->setReadOnly(true);
@@ -221,6 +209,4 @@ void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
             nOffset+=2;
         }
     }
-
-
 }

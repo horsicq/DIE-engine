@@ -31,7 +31,6 @@ DialogPECheckSum::DialogPECheckSum(QWidget *parent) :
 
     ui->checkBoxReadOnly->setChecked(true);
 
-
     ui->pushButtonCancel->setShortcut(QKeySequence(__KeySequence_quit));
     ui->pushButtonApply->setShortcut(QKeySequence(__KeySequence_save));
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_saveandquit));

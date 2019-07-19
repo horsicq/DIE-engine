@@ -255,38 +255,31 @@ bool DialogPECOM::reload()
         lineEditResourcesSize->setText(QString("%1").arg(idd.Size,8,16,QChar('0')));
         pushButtonResourcesHEX->setEnabled(idd.VirtualAddress!=0);
 
-
         pefile->getCLI_StrongNameSignature(&idd);
         lineEditStrongNameSignatureAddress->setText(QString("%1").arg(idd.VirtualAddress,8,16,QChar('0')));
         lineEditStrongNameSignatureSize->setText(QString("%1").arg(idd.Size,8,16,QChar('0')));
         pushButtonStrongNameSignatureHEX->setEnabled(idd.VirtualAddress!=0);
-
 
         pefile->getCLI_CodeManagerTable(&idd);
         lineEditCodeManagerTableAddress->setText(QString("%1").arg(idd.VirtualAddress,8,16,QChar('0')));
         lineEditCodeManagerTableSize->setText(QString("%1").arg(idd.Size,8,16,QChar('0')));
         pushButtonCodeManagerTableHEX->setEnabled(idd.VirtualAddress!=0);
 
-
         pefile->getCLI_VTableFixups(&idd);
         lineEditVTableFixupsAddress->setText(QString("%1").arg(idd.VirtualAddress,8,16,QChar('0')));
         lineEditVTableFixupsSize->setText(QString("%1").arg(idd.Size,8,16,QChar('0')));
         pushButtonVTableFixupsHEX->setEnabled(idd.VirtualAddress!=0);
-
 
         pefile->getCLI_ExportAddressTableJumps(&idd);
         lineEditExportAddressTableJumpsAddress->setText(QString("%1").arg(idd.VirtualAddress,8,16,QChar('0')));
         lineEditExportAddressTableJumpsSize->setText(QString("%1").arg(idd.Size,8,16,QChar('0')));
         pushButtonExportAddressTableJumpsHEX->setEnabled(idd.VirtualAddress!=0);
 
-
         pefile->getCLI_ManagedNativeHeader(&idd);
         lineEditManagedNativeHeaderAddress->setText(QString("%1").arg(idd.VirtualAddress,8,16,QChar('0')));
         lineEditManagedNativeHeaderSize->setText(QString("%1").arg(idd.Size,8,16,QChar('0')));
         pushButtonManagedNativeHeaderHEX->setEnabled(idd.VirtualAddress!=0);
-
     }
-
 
     return true;
 }
@@ -444,5 +437,4 @@ void DialogPECOM::on_pushButtonEntryPointExtra_clicked()
 
         dialoghde.exec();
     }
-
 }

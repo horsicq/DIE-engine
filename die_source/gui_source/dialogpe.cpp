@@ -163,7 +163,6 @@ bool DialogPE::reload()
         pushButtonTimeDateStampExtra->setToolTip(tr("TimeDateStamp"));
     }
 
-
     lineEditEntryPoint->setText(QString("%1").arg(pefile->getOptionalHeader_AddressOfEntryPoint(),8,16,QChar('0')));
 
     if(pefile->isPEPlus())
@@ -196,7 +195,6 @@ void DialogPE::on_pushButtonDosHeader_clicked()
     dialogpedosheader.setData(pOptions,pefile);
 
     dialogpedosheader.exec();
-
 }
 
 void DialogPE::on_pushButtonStub_clicked()
@@ -288,7 +286,6 @@ void DialogPE::on_pushButtonApply_clicked()
     pefile->setOptionalHeader_CheckSum(lineEditCheckSum->text().toUInt(&bTemp,16));
     pefile->setOptionalHeader_Subsystem(lineEditSubsystem->text().toUInt(&bTemp,16));
 
-
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
 
     emit reloadSignal();
@@ -303,8 +300,6 @@ void DialogPE::on_pushButtonOK_clicked()
     on_pushButtonCancel_clicked();
 }
 
-
-
 void DialogPE::pushButtonTimeDateStampExtra_clicked()
 {
     DialogPETimeDateStamp dialogpetimedatestamp(this);
@@ -317,8 +312,6 @@ void DialogPE::pushButtonTimeDateStampExtra_clicked()
 void DialogPE::pushButtonAddressOfEntryPointExtra_clicked()
 {
     DialogHDE dialoghde(this);
-
-
     //    dialoghde.setData(pefile->getFileName(),pefile->RVAToOffset(pefile->getOptionalHeader_AddressOfEntryPoint()),0,pefile->getDisasmMode(),pOptions);
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"x86-ASM",pefile->getDisasmMode(),"MASM",pefile->RVAToOffset(pefile->getOptionalHeader_AddressOfEntryPoint()),1,tr("EntryPoint"));
 
@@ -344,4 +337,3 @@ void DialogPE::pushButtonSubsystemExtra_clicked()
 
     dialogpesubsystem.exec();
 }
-

@@ -167,8 +167,6 @@ QString DialogPEDebug::numberToType(unsigned int nType)
         sResult="BORLAND";
     }
 
-
-
     return sResult;
 }
 
@@ -219,8 +217,6 @@ void DialogPEDebug::copyAsString()
     clipboard->setText(QString("%1").arg(ui->tableWidgetDebug->selectedItems().at(0)->text()));
 }
 
-
-
 void DialogPEDebug::on_tableWidgetDebug_customContextMenuRequested(const QPoint &pos)
 {
     if(!ui->tableWidgetDebug->selectedItems().count())
@@ -246,7 +242,6 @@ void DialogPEDebug::on_tableWidgetDebug_customContextMenuRequested(const QPoint 
         actDump->setEnabled(false);
         actEditEntropy->setEnabled(false);
     }
-
 
     QMenu menu;
 

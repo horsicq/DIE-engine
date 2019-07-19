@@ -48,12 +48,10 @@ void DialogNewSignature::setData(__DIE_OPTIONS *pOptions,QString sFolder,QString
     QDir dir(Utils::getEditorPath(pOptions)+QDir::separator()+"templates");
     QFileInfoList dircontent=dir.entryInfoList(QStringList()<<"*.tpl");
 
-
     for(int i=0; i<dircontent.count(); i++)
     {
         ui->comboBoxTemplate->addItem(dircontent.at(i).baseName(),dircontent.at(i).absoluteFilePath());
     }
-
 
     QDir dir2(Utils::getEditorPath(pOptions)+QDir::separator()+"templates"+QDir::separator()+sFolder);
     QFileInfoList dircontent2=dir2.entryInfoList(QStringList()<<"*.tpl");

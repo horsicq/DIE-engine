@@ -76,7 +76,6 @@ bool DialogPEBoundImport::reload()
             nChilds=pefile->getBoundImport_NumberOfModuleForwarderRefs(i);
             ui->treeWidgetBoundImport->insertTopLevelItem(nIndex++,item0);
         }
-
     }
 
     return true;
