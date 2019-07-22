@@ -27,7 +27,6 @@ DialogPEMetaDataStrings::DialogPEMetaDataStrings(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
     actCopyAsString=new QAction("", this);
 
     connect(actCopyAsString,SIGNAL(triggered()),this,SLOT(copyAsString()));
@@ -73,7 +72,6 @@ bool DialogPEMetaDataStrings::reload()
 
     QList<QString> listStrings=pefile->getCLI_MetaData_StringsAsList();
 
-
     QStandardItem *newItem;
     model=new QStandardItemModel(listStrings.count(), 2);
     model->setHeaderData(0,Qt::Horizontal,"Nr");
@@ -88,7 +86,6 @@ bool DialogPEMetaDataStrings::reload()
         newItem = new QStandardItem;
         newItem->setText(listStrings.at(i));
         model->setItem(i,1,newItem);
-
     }
 
     ui->tableWidgetStrings->setModel(model);
@@ -108,19 +105,11 @@ bool DialogPEMetaDataStrings::reload()
 
     //        ui->tableWidgetStrings->setRowHeight(i,20);
     //    }
-
-
     ui->tableWidgetStrings->setColumnWidth(0,50);
     ui->tableWidgetStrings->setColumnWidth(1,250);
 
-
-
-
-
     return true;
 }
-
-
 
 void DialogPEMetaDataStrings::copyAsString()
 {
@@ -131,8 +120,6 @@ void DialogPEMetaDataStrings::copyAsString()
     QClipboard *clipboard = QApplication::clipboard();
     clipboard->setText(QString("%1").arg(index.model()->data(index).toString()));
 }
-
-
 
 void DialogPEMetaDataStrings::on_tableWidgetStrings_customContextMenuRequested(const QPoint &pos)
 {
@@ -148,8 +135,6 @@ void DialogPEMetaDataStrings::on_tableWidgetStrings_customContextMenuRequested(c
 
     //    menu.addAction(actCopyAsString);
     //    actCopyAsString->setText(QString("Copy as \"%1\"").arg(ui->tableWidgetStrings->selectedItems().at(0)->text()));
-
-
 
     //    QPoint pos2=pos;
     //    pos2.setY(pos2.ry()+20);
@@ -167,7 +152,6 @@ void DialogPEMetaDataStrings::on_tableWidgetStrings_customContextMenuRequested(c
 
     menu.addAction(actCopyAsString);
     actCopyAsString->setText(tr("Copy as \"%1\"").arg(index.model()->data(index).toString()));
-
 
     QPoint pos2=pos;
     pos2.setY(pos2.ry()+20);

@@ -27,7 +27,6 @@ DialogPEMetaData::DialogPEMetaData(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
     ui->lineEditVersion->setString(true);
     ui->lineEditVersion->setHex(false);
     ui->lineEditVersion->setDec(false);
@@ -44,7 +43,6 @@ DialogPEMetaData::DialogPEMetaData(QWidget *parent) :
     connect(actMetaDataStrings,SIGNAL(triggered()),this,SLOT(metadatastrings()));
     connect(actMetaDataUS,SIGNAL(triggered()),this,SLOT(metadataus()));
 
-
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_quit));
 }
 
@@ -59,7 +57,6 @@ void DialogPEMetaData::on_pushButtonOK_clicked()
 }
 bool DialogPEMetaData::reload()
 {
-
     if(pOptions->bShowTooltips)
     {
         ui->pushButtonOK->setToolTip(tr("Quit"));
@@ -72,10 +69,8 @@ bool DialogPEMetaData::reload()
         ui->lineEditStreams->setToolTip(tr("Number of streams"));
     }
 
-
     if(pefile->isNETPresent())
     {
-
         ui->lineEditSignature->setText(QString("%1").arg(pefile->getCLI_MetaData_Signature(),8,16,QChar('0')));
         ui->lineEditMajorRuntimeVersion->setText(QString("%1").arg(pefile->getCLI_MetaData_MajorVersion(),4,16,QChar('0')));
         ui->lineEditMinorRuntimeVersion->setText(QString("%1").arg(pefile->getCLI_MetaData_MinorVersion(),4,16,QChar('0')));
@@ -97,9 +92,7 @@ bool DialogPEMetaData::reload()
 
         //        int g=pefile->getCLI_MetaData_TablesHeaderOffset();
         //        g++;
-
     }
-
 
     return true;
 }
@@ -108,7 +101,6 @@ void DialogPEMetaData::hex()
 {
     unsigned int nOffset=ui->treeWidgetExtra->currentItem()->data(0,Qt::UserRole).toString().section(":",0,0).toInt();
     unsigned int nSize=ui->treeWidgetExtra->currentItem()->data(0,Qt::UserRole).toString().section(":",1,1).toInt();
-
 
     DialogHDE dialoghde(this);
 
@@ -164,13 +156,11 @@ void DialogPEMetaData::metadataus()
     dialogpemetadataus.exec();
 }
 
-
 void DialogPEMetaData::on_treeWidgetExtra_customContextMenuRequested(const QPoint &pos)
 {
     if(ui->treeWidgetExtra->currentItem()->data(0,Qt::UserRole).toString()!="")
     {
         QMenu menu;
-
 
         if(ui->treeWidgetExtra->currentItem()->text(0)=="#~")
         {

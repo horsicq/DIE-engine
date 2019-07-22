@@ -66,7 +66,6 @@ bool DialogPEMetaDataTables::reload()
         ui->lineEditSorted->setText(QString("%1").arg(pefile->getCLI_MetaData_Tables_Sorted(),16,16,QChar('0')));
         ui->lineEditValid->setText(QString("%1").arg(pefile->getCLI_MetaData_Tables_Valid(),16,16,QChar('0')));
 
-
         ui->tableWidgetExtra->setRowCount(pefile->getCLI_MetaData_Tables_Valid_NumberOfRows());
         ui->tableWidgetExtra->setColumnCount(4);
 
@@ -76,8 +75,6 @@ bool DialogPEMetaDataTables::reload()
         labels.append("Name");
         labels.append("Rows");
         labels.append("Is sorted");
-
-
 
         ui->tableWidgetExtra->setHorizontalHeaderLabels(labels);
 
@@ -97,12 +94,10 @@ bool DialogPEMetaDataTables::reload()
                 ui->tableWidgetExtra->setItem(j,1,newItem);
                 ui->tableWidgetExtra->item(j,1)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
 
-
                 newItem = new QTableWidgetItem;
                 newItem->setText(QString("%1").arg(pefile->getCLI_MetaData_Tables_TablesNumberOfIndexes(i),8,16,QChar('0')));
                 ui->tableWidgetExtra->setItem(j,2,newItem);
                 ui->tableWidgetExtra->item(j,2)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
-
 
                 newItem = new QTableWidgetItem;
 
@@ -123,12 +118,8 @@ bool DialogPEMetaDataTables::reload()
             }
         }
 
-
         ui->tableWidgetExtra->resizeColumnsToContents();
-
-
     }
-
 
     return true;
 }

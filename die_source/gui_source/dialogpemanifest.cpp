@@ -32,7 +32,6 @@ QString GetTab(int nIndent)
         nIndent--;
     }
 
-
     return sResult;
 }
 
@@ -79,12 +78,10 @@ bool DialogPEManifest::reload()
     {
         QXmlStreamReader xml(baTemp);
 
-
         while(!xml.atEnd())
         {
             if(xml.readNext())
             {
-
                 if(xml.isStartElement())
                 {
                     sTemp=GetTab(nIndent);
@@ -128,7 +125,6 @@ bool DialogPEManifest::reload()
                     ui->textEditInfo->append(sTemp=GetTab(nIndent)+xml.text().toString());
                 }
             }
-
         }
     }
     else
@@ -136,7 +132,6 @@ bool DialogPEManifest::reload()
         //        qDebug("Invalid manifest");
         emit appendError("Invalid manifest");
     }
-
 
     return true;
 }

@@ -27,8 +27,6 @@ DialogPEMagic::DialogPEMagic(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
-
     ui->comboBoxMagic->addItem("");
     ui->comboBoxMagic->addItem("NT_OPTIONAL_HDR32_MAGIC");
     ui->comboBoxMagic->addItem("NT_OPTIONAL_HDR64_MAGIC");
@@ -75,8 +73,6 @@ bool DialogPEMagic::reload()
 
     ui->lineEditMagic->setText(QString("%1").arg(sMagic,4,16,QChar('0')));
 
-
-
     ui->checkBoxReadOnly->setEnabled(!pefile->isReadOnly());
     ui->pushButtonApply->setEnabled(false);
 
@@ -110,8 +106,6 @@ void DialogPEMagic::on_pushButtonApply_clicked()
 void DialogPEMagic::on_lineEditMagic_textChanged(const QString &arg1)
 {
     bool bTemp;
-
-
 
     switch(arg1.toInt(&bTemp,16))
     {
@@ -151,6 +145,5 @@ void DialogPEMagic::on_comboBoxMagic_currentIndexChanged(int index)
         case(3):
             ui->lineEditMagic->setText("0107");
             break;
-
     }
 }
