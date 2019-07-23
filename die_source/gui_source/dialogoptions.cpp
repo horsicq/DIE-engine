@@ -334,7 +334,6 @@ void DialogOptions::on_pushButtonApply_clicked()
         pOptions->sLangsPath=ui->lineEditLangs->text();
         bAppRestart=true;
     }
-
 #ifdef USE_YARA
     if(pOptions->sDataBaseYARAPath!=ui->lineEditDataBaseYARA->text())
     {
@@ -475,7 +474,6 @@ void DialogOptions::reloadShellState()
         ui->pushButtonAllSet->setEnabled(false);
         ui->pushButtonAllClear->setEnabled(true);
     }
-
 #endif
 }
 
@@ -848,7 +846,6 @@ bool DialogOptions::reload()
             nIndex=i+1;
         }
     }
-
     ui->comboBoxCodec->setCurrentIndex(nIndex);
 
     QStringList listStyles=QStyleFactory::keys();
@@ -866,7 +863,6 @@ bool DialogOptions::reload()
 
     ui->comboBoxStyle->addItems(listStyles);
     ui->comboBoxStyle->setCurrentIndex(nIndex);
-
 
     sCurrentStyle=pOptions->sStyleSheet;
     nIndex=0;

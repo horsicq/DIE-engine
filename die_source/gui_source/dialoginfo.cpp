@@ -27,7 +27,6 @@ DialogInfo::DialogInfo(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_quit));
 }
 

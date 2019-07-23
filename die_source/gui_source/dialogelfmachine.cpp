@@ -87,7 +87,6 @@ bool DialogELFMachine::reload()
     unsigned short sValue=elffile->getElfHeader_machine();
     ui->lineEditValue->setText(QString("%1").arg(sValue,4,16,QChar('0')));
 
-
     ui->checkBoxReadOnly->setEnabled(!elffile->isReadOnly());
 
     ui->pushButtonApply->setEnabled(false);
@@ -178,7 +177,6 @@ void DialogELFMachine::on_comboBoxValue_currentIndexChanged(int index)
     {
         ui->lineEditValue->setText(ui->comboBoxValue->itemData(index).toString());
     }
-
     //    switch(index)
     //    {
     //    case(1):

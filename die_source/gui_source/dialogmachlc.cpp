@@ -96,7 +96,6 @@ void DialogMACHLC::on_pushButtonOK_clicked()
     this->close();
 }
 
-
 void DialogMACHLC::on_tableWidgetSections_customContextMenuRequested(const QPoint &pos)
 {
     if(!ui->tableWidgetSections->rowCount())

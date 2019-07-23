@@ -412,8 +412,6 @@ void DialogPECOM::pushButtonManagedNativeHeaderHEX_clicked()
     dialoghde.exec();
 }
 
-
-
 void DialogPECOM::on_pushButtonEntryPointExtra_clicked()
 {
     bool bOK;

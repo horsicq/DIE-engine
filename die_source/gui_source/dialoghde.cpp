@@ -25,7 +25,6 @@ DialogHDE::DialogHDE(QWidget *parent) :
     QXDialogX(parent),
     ui(new Ui::DialogHDE)
 {
-
     ui->setupUi(this);
 
     this->setWindowFlags(this->windowFlags()|Qt::WindowMinMaxButtonsHint);
@@ -39,7 +38,6 @@ DialogHDE::DialogHDE(QWidget *parent) :
 
 void DialogHDE::setData(__DIE_OPTIONS *pOptions,QString sFileName,  unsigned long long nAddress, unsigned long long nSize, QString sType, QString sMode, QString sSyntax, unsigned long long nSelectionStart, unsigned long long nSelectionSize,QString sName)
 {
-
     this->sFileName=sFileName;
     this->pOptions=pOptions;
     this->nAddress=nAddress;

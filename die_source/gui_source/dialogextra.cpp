@@ -29,7 +29,6 @@ DialogExtra::DialogExtra(QWidget *parent) :
 
     this->setWindowFlags(this->windowFlags()|Qt::WindowMinMaxButtonsHint);
 
-
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_quit));
 }
 

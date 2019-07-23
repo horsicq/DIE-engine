@@ -130,7 +130,6 @@ DialogELFProgramHeader::~DialogELFProgramHeader()
 
 void DialogELFProgramHeader::setData(__DIE_OPTIONS *pOptions,ELFFile *pelffile,int nProgram)
 {
-
     this->nProgram=nProgram;
 
     DialogELFGeneric::setData(pOptions,pelffile);
