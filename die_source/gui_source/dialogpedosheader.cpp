@@ -70,7 +70,6 @@ DialogPEDosHeader::DialogPEDosHeader(QWidget *parent) :
                          "e_lfanew"
                        };
 
-
     lineEdite_magic=new QLineEditX;
     lineEdite_cblp=new QLineEditX;
     lineEdite_cp=new QLineEditX;
@@ -326,7 +325,6 @@ bool DialogPEDosHeader::reload()
     return true;
 }
 
-
 void DialogPEDosHeader::on_pushButtonHex_clicked()
 {
     DialogHDE dialoghde(this);
@@ -334,7 +332,6 @@ void DialogPEDosHeader::on_pushButtonHex_clicked()
 
     dialoghde.exec();
 }
-
 
 void DialogPEDosHeader::on_checkBoxReadOnly_stateChanged(int arg1)
 {

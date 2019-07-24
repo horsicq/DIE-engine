@@ -58,7 +58,6 @@ DialogPEExport::DialogPEExport(QWidget *parent) :
     lineEditAddressOfNames->setInputMask("HHHHHHHH");
     lineEditAddressOfNameOrdinals->setInputMask("HHHHHHHH");
 
-
     newItem = new QTableWidgetItem;
     newItem->setText("Characteristics");
     ui->tableWidgetHeader->setItem(0,0,newItem);
@@ -118,8 +117,6 @@ DialogPEExport::DialogPEExport(QWidget *parent) :
 
     ui->tableWidgetHeader->resizeColumnsToContents();
 
-
-
     connect(lineEditCharacteristics,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditTimeDateStamp,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditMajorVersion,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
@@ -131,7 +128,6 @@ DialogPEExport::DialogPEExport(QWidget *parent) :
     connect(lineEditAddressOfFunctions,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditAddressOfNames,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditAddressOfNameOrdinals,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
-
 
     //    QFont font("MS Shell Dlg 2", 10, QFont::Bold);
     actEdit=new QAction(tr("Edit"), this);
@@ -160,7 +156,6 @@ DialogPEExport::~DialogPEExport()
 
     delete ui;
 }
-
 
 bool DialogPEExport::reload()
 {
@@ -205,8 +200,6 @@ bool DialogPEExport::reload()
         ui->tableWidgetFunctions->setColumnWidth(1,70);
         ui->tableWidgetFunctions->setColumnWidth(2,340);
 
-
-
         scan= new ThreadExport;
 
         QThread* thread =new QThread;
@@ -229,9 +222,6 @@ bool DialogPEExport::reload()
         ui->tableWidgetFunctions->setSortingEnabled(false);
     }
 
-
-
-
     ui->checkBoxReadOnly->setEnabled(!pefile->isReadOnly());
     ui->pushButtonApply->setEnabled(false);
 
@@ -250,7 +240,6 @@ void DialogPEExport::on_pushButtonOK_clicked()
 
 void DialogPEExport::on_pushButtonCancel_clicked()
 {
-
     this->close();
 }
 
@@ -313,7 +302,6 @@ void DialogPEExport::edit()
 
 void DialogPEExport::on_tableWidgetFunctions_customContextMenuRequested(const QPoint &pos)
 {
-
     if(!ui->tableWidgetFunctions->selectedItems().count())
     {
         return;
@@ -361,7 +349,6 @@ void DialogPEExport::appendRow(int index,QString sOrdinal,QString sAddress,QStri
     newItem->setText(sAddress);
     ui->tableWidgetFunctions->setItem(index,1,newItem);
     ui->tableWidgetFunctions->item(index,1)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
-
 
     //    QLineEditX *lineEdit=new QLineEditX;
     //    lineEdit->setHex(false);

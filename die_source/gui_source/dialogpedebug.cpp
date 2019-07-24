@@ -170,7 +170,6 @@ QString DialogPEDebug::numberToType(unsigned int nType)
     return sResult;
 }
 
-
 void DialogPEDebug::hex()
 {
     DialogHDE dialoghde(this);
@@ -185,7 +184,6 @@ void DialogPEDebug::hex()
 
 void DialogPEDebug::dump()
 {
-
     int nDebug=ui->tableWidgetDebug->selectedItems().at(0)->row();
 
     QString sFileName;
@@ -228,7 +226,6 @@ void DialogPEDebug::on_tableWidgetDebug_customContextMenuRequested(const QPoint 
 
     //     QString sString=((QTableWidgetItem *)(ui->tableWidgetSections->focusWidget()))->text();
     //     qDebug(sString.toAscii().data());
-
 
     if(pefile->getDebug_SizeOfData(nDebug))
     {

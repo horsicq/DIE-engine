@@ -48,7 +48,6 @@ DialogPEDirectories::DialogPEDirectories(QWidget *parent) :
 
     ui->tableWidgetDirectories->setHorizontalHeaderLabels(labels);
 
-
     QString sLabels[]= { "EXPORT",
                          "IMPORT",
                          "RESOURCE",
@@ -753,8 +752,6 @@ bool DialogPEDirectories::reload()
 
     int nNumberOfRvaAndSizes=pefile->getOptionalHeader_NumberOfRvaAndSizes();
 
-
-
     if(nNumberOfRvaAndSizes<16)
     {
         pushButtonReservedExtra->setEnabled(false);
@@ -885,7 +882,6 @@ bool DialogPEDirectories::reload()
 
     ui->checkBoxReadOnly->setEnabled(!pefile->isReadOnly());
 
-
     ui->pushButtonApply->setEnabled(false);
 
     //   emit reloadSignal();
@@ -960,7 +956,6 @@ void DialogPEDirectories::on_pushButtonApply_clicked()
     IMAGE_DATA_DIRECTORY idd;
 
     ui->pushButtonApply->setEnabled(false);
-
 
     idd.VirtualAddress=lineeditEXPORTAddress->text().toUInt(&bTemp,16);
     idd.Size=lineeditEXPORTSize->text().toUInt(&bTemp,16);
@@ -1042,8 +1037,6 @@ void DialogPEDirectories::on_pushButtonApply_clicked()
 
     pefile->setOptionalHeader_DataDirectory(15,&idd);
 
-
-
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
 
     emit reloadSignal();
@@ -1053,7 +1046,6 @@ void DialogPEDirectories::applyEnable()
 {
     ui->pushButtonApply->setEnabled(true);
 }
-
 
 void DialogPEDirectories::pushButtonEXPORTExtra_clicked()
 {

@@ -136,7 +136,6 @@ bool DialogPEBaseReloc::reload()
             i++;
             nRelocsTableOffset+=nSize;
         }
-
     }
     while(nAddress&&nSize);
 
@@ -167,7 +166,6 @@ void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
         for(int i=0; i<(nSize-8)/2; i++)
         {
             sTypeOffset=pefile->readWord(nOffset);
-
 
             lineEdit=new QLineEditX;
             lineEdit->setReadOnly(true);

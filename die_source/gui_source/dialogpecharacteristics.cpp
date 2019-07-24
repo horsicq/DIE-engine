@@ -306,6 +306,5 @@ void DialogPECharacteristics::checkbox_reload()
         ui->lineEditCharacteristics->setText(QString("%1").arg(sCharacteristics,4,16,QChar('0')));
         bEdited=true;
     }
-
     //connect(ui->lineEditCharacteristics,SIGNAL(textChanged(QString)),this,SLOT(lineEditCharacteristics_textChanged(QString)));
 }

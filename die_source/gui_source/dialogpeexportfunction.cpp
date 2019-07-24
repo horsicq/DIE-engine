@@ -39,7 +39,6 @@ DialogPEExportFunction::DialogPEExportFunction(QWidget *parent) :
         ui->tableWidgetExportFunction->setRowHeight(i,20);
     }
 
-
     lineEditOrdinal=new QLineEditX;
     lineEditRVA=new QLineEditX;
     lineEditName=new QLineEditX;
@@ -67,7 +66,6 @@ DialogPEExportFunction::DialogPEExportFunction(QWidget *parent) :
     ui->tableWidgetExportFunction->setItem(2,0,newItem);
     ui->tableWidgetExportFunction->item(2,0)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
 
-
     ui->tableWidgetExportFunction->setIndexWidget(ui->tableWidgetExportFunction->model()->index(0,1),lineEditOrdinal);
     ui->tableWidgetExportFunction->setIndexWidget(ui->tableWidgetExportFunction->model()->index(1,1),lineEditRVA);
     ui->tableWidgetExportFunction->setIndexWidget(ui->tableWidgetExportFunction->model()->index(2,1),lineEditName);
@@ -94,7 +92,6 @@ void DialogPEExportFunction::setData(__DIE_OPTIONS *pOptions,PEFile *pefile,int 
     //pefile.setFileName(sFileName);
     DialogPEGeneric::setData(pOptions,pefile);
 }
-
 
 void DialogPEExportFunction::on_pushButtonOK_clicked()
 {
@@ -134,7 +131,6 @@ bool DialogPEExportFunction::reload()
     return true;
 }
 
-
 void DialogPEExportFunction::on_checkBoxReadOnly_stateChanged(int arg1)
 {
     lineEditOrdinal->setReadOnly(ui->checkBoxReadOnly->isChecked());
@@ -157,8 +153,6 @@ void DialogPEExportFunction::on_pushButtonApply_clicked()
     pefile->setExport_FunctionNameOrdinal(nNumber,lineEditOrdinal->text().toUInt(&bTemp,16));
     pefile->setExport_FunctionAddress(nNumber,lineEditRVA->text().toUInt(&bTemp,16));
     pefile->setExport_FunctionName(nNumber,lineEditName->text().toUInt(&bTemp,16));
-
-
 
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
 
