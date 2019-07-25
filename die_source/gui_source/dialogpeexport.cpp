@@ -159,7 +159,6 @@ DialogPEExport::~DialogPEExport()
 
 bool DialogPEExport::reload()
 {
-
     if(pOptions->bShowTooltips)
     {
         ui->pushButtonOK->setToolTip(tr("Quit and apply changes"));
@@ -215,7 +214,6 @@ bool DialogPEExport::reload()
 
         connect(scan,SIGNAL(setProgressBar(int,int)),this,SLOT(setProgressBar(int,int)));
         connect(scan,SIGNAL(appendRow(int,QString,QString,QString)),this,SLOT(appendRow(int,QString,QString,QString)));
-
 
         thread->start(QThread::LowestPriority);
 
@@ -342,7 +340,6 @@ void DialogPEExport::appendRow(int index,QString sOrdinal,QString sAddress,QStri
 
     ui->tableWidgetFunctions->setItem(index,0,newItem);
     ui->tableWidgetFunctions->item(index,0)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
-
 
     newItem = new QTableWidgetItem;
 

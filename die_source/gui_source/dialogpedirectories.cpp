@@ -383,7 +383,6 @@ DialogPEDirectories::DialogPEDirectories(QWidget *parent) :
     ui->tableWidgetDirectories->setIndexWidget(ui->tableWidgetDirectories->model()->index(14,5),pushButtonCOM_DESCRIPTORHex);
     ui->tableWidgetDirectories->setIndexWidget(ui->tableWidgetDirectories->model()->index(15,5),pushButtonReservedHex);
 
-
     connect(pushButtonEXPORTExtra,SIGNAL(clicked()),this,SLOT(pushButtonEXPORTExtra_clicked()));
     connect(pushButtonIMPORTExtra,SIGNAL(clicked()),this,SLOT(pushButtonIMPORTExtra_clicked()));
     connect(pushButtonRESOURCEExtra,SIGNAL(clicked()),this,SLOT(pushButtonRESOURCEExtra_clicked()));

@@ -59,8 +59,6 @@ bool DialogPEDebug::reload()
 
     QTableWidgetItem *newItem;
     //    pefile->setFileName(sFileName);
-
-
     ui->tableWidgetDebug->clear();
 
     QStringList labels;

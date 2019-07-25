@@ -182,7 +182,6 @@ void DialogPEDllCharacteristics::checkbox_reload()
             sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE;
         }
 
-
         bEdited=false;
         ui->lineEditDllCharacteristics->setText(QString("%1").arg(sDllCharacteristics,4,16,QChar('0')));
         bEdited=true;

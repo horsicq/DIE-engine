@@ -176,7 +176,6 @@ bool DialogPE::reload()
         lineEditImageBase->setText(QString("%1").arg(pefile->getOptionalHeader_ImageBase(),8,16,QChar('0')));
     }
 
-
     lineEditSizeOfImage->setText(QString("%1").arg(pefile->getOptionalHeader_SizeOfImage(),8,16,QChar('0')));
     lineEditTimeDateStamp->setText(QString("%1").arg(pefile->getFileHeader_TimeDateStamp(),8,16,QChar('0')));
     lineEditCheckSum->setText(QString("%1").arg(pefile->getOptionalHeader_CheckSum(),8,16,QChar('0')));
