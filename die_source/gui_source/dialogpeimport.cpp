@@ -65,7 +65,6 @@ DialogPEImport::DialogPEImport(QWidget *parent) :
     ui->tableWidgetFunctions->setColumnWidth(2,45);
     ui->tableWidgetFunctions->setColumnWidth(3,390);
 
-
     actEditFunction=new QAction(tr("Edit"), this);
     actEditLibrary=new QAction(tr("Edit"), this);
 
@@ -78,8 +77,6 @@ DialogPEImport::DialogPEImport(QWidget *parent) :
     connect(actEditFunction,SIGNAL(triggered()),this,SLOT(editFunction()));
     connect(actEditLibrary,SIGNAL(triggered()),this,SLOT(editLibrary()));
 
-
-
     //    timer.setInterval(1000);
     //    connect(&timer,SIGNAL(timeout()),this,SLOT(setTableEnable()));
 
@@ -89,7 +86,6 @@ DialogPEImport::DialogPEImport(QWidget *parent) :
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_quit));
 
     bSync=false;
-
 }
 
 DialogPEImport::~DialogPEImport()
@@ -98,7 +94,6 @@ DialogPEImport::~DialogPEImport()
 
     delete ui;
 }
-
 
 void DialogPEImport::on_pushButtonOK_clicked()
 {
@@ -135,9 +130,6 @@ bool DialogPEImport::reload()
     connect(scan, SIGNAL(_finished()), this, SLOT(enableControls()));
 
     thread->start(QThread::LowestPriority);
-
-
-
     //    if(nNumberOfImports)
     //    {
     //        ui->tableWidgetLibraries->setCurrentCell(0,0);
@@ -288,9 +280,6 @@ void DialogPEImport::createTable()
         ui->tableWidgetLibraries->setCurrentCell(0,0);
     }
 }
-
-
-
 
 void DialogPEImport::on_tableWidgetLibraries_currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn)
 {

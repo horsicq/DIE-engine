@@ -34,7 +34,6 @@ DialogPEMagic::DialogPEMagic(QWidget *parent) :
 
     ui->lineEditMagic->setInputMask("HHHH");
 
-
     ui->checkBoxReadOnly->setChecked(true);
 
     ui->pushButtonCancel->setShortcut(QKeySequence(__KeySequence_quit));
@@ -78,7 +77,6 @@ bool DialogPEMagic::reload()
 
     return true;
 }
-
 
 void DialogPEMagic::on_checkBoxReadOnly_stateChanged(int arg1)
 {
@@ -128,10 +126,8 @@ void DialogPEMagic::on_lineEditMagic_textChanged(const QString &arg1)
     ui->pushButtonApply->setEnabled(true);
 }
 
-
 void DialogPEMagic::on_comboBoxMagic_currentIndexChanged(int index)
 {
-
     switch(index)
     {
         case(1):

@@ -27,7 +27,6 @@ DialogPELoadConfig::DialogPELoadConfig(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
     ui->tableWidgetLoadConfig->setRowCount(20);
     ui->tableWidgetLoadConfig->setColumnCount(2);
 
@@ -100,7 +99,6 @@ DialogPELoadConfig::DialogPELoadConfig(QWidget *parent) :
     lineEditSEHandlerTable->setAlignment(Qt::AlignCenter);
     lineEditSEHandlerCount->setAlignment(Qt::AlignCenter);
 
-
     QList<QString> listLabels;
 
     listLabels.append("Size");
@@ -124,7 +122,6 @@ DialogPELoadConfig::DialogPELoadConfig(QWidget *parent) :
     listLabels.append("SEHandlerTable");
     listLabels.append("SEHandlerCount");
 
-
     for(int i=0; i<listLabels.count(); i++)
     {
         newItem = new QTableWidgetItem;
@@ -132,7 +129,6 @@ DialogPELoadConfig::DialogPELoadConfig(QWidget *parent) :
         ui->tableWidgetLoadConfig->setItem(i,0,newItem);
         ui->tableWidgetLoadConfig->item(i,0)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
     }
-
 
     ui->tableWidgetLoadConfig->setCellWidget(0,1,lineEditSize);
     ui->tableWidgetLoadConfig->setCellWidget(1,1,lineEditTimeDateStamp);
@@ -155,7 +151,6 @@ DialogPELoadConfig::DialogPELoadConfig(QWidget *parent) :
     ui->tableWidgetLoadConfig->setCellWidget(18,1,lineEditSEHandlerTable);
     ui->tableWidgetLoadConfig->setCellWidget(19,1,lineEditSEHandlerCount);
 
-
     connect(lineEditSize,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditTimeDateStamp,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditMajorVersion,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
@@ -176,7 +171,6 @@ DialogPELoadConfig::DialogPELoadConfig(QWidget *parent) :
     connect(lineEditSecurityCookie,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditSEHandlerTable,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditSEHandlerCount,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
-
 
     ui->tableWidgetLoadConfig->resizeColumnsToContents();
 
@@ -234,7 +228,6 @@ bool DialogPELoadConfig::reload()
     lineEditCSDVersion->setText(QString("%1").arg(pefile->getLoadConfig_CSDVersion(),4,16,QChar('0')));
     lineEditReserved1->setText(QString("%1").arg(pefile->getLoadConfig_Reserved1(),4,16,QChar('0')));
 
-
     if(pefile->isPEPlus())
     {
         lineEditDeCommitFreeBlockThreshold->setInputMask("HHHHHHHHHHHHHHHH");
@@ -258,7 +251,6 @@ bool DialogPELoadConfig::reload()
         lineEditSecurityCookie->setText(QString("%1").arg(pefile->getLoadConfig_SecurityCookie64(),16,16,QChar('0')));
         lineEditSEHandlerTable->setText(QString("%1").arg(pefile->getLoadConfig_SEHandlerTable64(),16,16,QChar('0')));
         lineEditSEHandlerCount->setText(QString("%1").arg(pefile->getLoadConfig_SEHandlerCount64(),16,16,QChar('0')));
-
     }
     else
     {
@@ -283,7 +275,6 @@ bool DialogPELoadConfig::reload()
         lineEditSecurityCookie->setText(QString("%1").arg(pefile->getLoadConfig_SecurityCookie(),8,16,QChar('0')));
         lineEditSEHandlerTable->setText(QString("%1").arg(pefile->getLoadConfig_SEHandlerTable(),8,16,QChar('0')));
         lineEditSEHandlerCount->setText(QString("%1").arg(pefile->getLoadConfig_SEHandlerCount(),8,16,QChar('0')));
-
     }
 
     ui->checkBoxReadOnly->setEnabled(!pefile->isReadOnly());
@@ -315,8 +306,6 @@ void DialogPELoadConfig::on_checkBoxReadOnly_stateChanged(int arg1)
     lineEditSecurityCookie->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditSEHandlerTable->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditSEHandlerCount->setReadOnly(ui->checkBoxReadOnly->isChecked());
-
-
 }
 
 void DialogPELoadConfig::on_pushButtonCancel_clicked()
@@ -340,7 +329,6 @@ void DialogPELoadConfig::on_pushButtonApply_clicked()
     pefile->setLoadConfig_CSDVersion(lineEditCSDVersion->text().toUShort(&bTemp,16));
     pefile->setLoadConfig_Reserved1(lineEditReserved1->text().toUShort(&bTemp,16));
 
-
     if(pefile->isPEPlus())
     {
         pefile->setLoadConfig_DeCommitFreeBlockThreshold64(lineEditDeCommitFreeBlockThreshold->text().toULongLong(&bTemp,16));
@@ -353,7 +341,6 @@ void DialogPELoadConfig::on_pushButtonApply_clicked()
         pefile->setLoadConfig_SecurityCookie64(lineEditSecurityCookie->text().toULongLong(&bTemp,16));
         pefile->setLoadConfig_SEHandlerTable64(lineEditSEHandlerTable->text().toULongLong(&bTemp,16));
         pefile->setLoadConfig_SEHandlerCount64(lineEditSEHandlerCount->text().toULongLong(&bTemp,16));
-
     }
     else
     {
@@ -367,9 +354,7 @@ void DialogPELoadConfig::on_pushButtonApply_clicked()
         pefile->setLoadConfig_SecurityCookie(lineEditSecurityCookie->text().toUInt(&bTemp,16));
         pefile->setLoadConfig_SEHandlerTable(lineEditSEHandlerTable->text().toUInt(&bTemp,16));
         pefile->setLoadConfig_SEHandlerCount(lineEditSEHandlerCount->text().toUInt(&bTemp,16));
-
     }
-
 
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
 

@@ -104,7 +104,6 @@ bool DialogPEMachine::reload()
     return true;
 }
 
-
 void DialogPEMachine::on_checkBoxReadOnly_stateChanged(int arg1)
 {
     ui->lineEditMachine->setReadOnly(ui->checkBoxReadOnly->checkState());
@@ -120,7 +119,6 @@ void DialogPEMachine::on_pushButtonApply_clicked()
 {
     bool bTemp;
     ui->pushButtonApply->setEnabled(false);
-
 
     pefile->setFileHeader_Machine(ui->lineEditMachine->text().toUInt(&bTemp,16));
 
@@ -257,7 +255,6 @@ void DialogPEMachine::on_lineEditMachine_textChanged(const QString &arg1)
 
     ui->pushButtonApply->setEnabled(true);
 }
-
 
 void DialogPEMachine::on_comboBoxMachine_currentIndexChanged(int index)
 {

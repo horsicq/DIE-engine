@@ -47,7 +47,6 @@ DialogPEImportFunction::DialogPEImportFunction(QWidget *parent) :
     lineEditOrdinal->setAlignment(Qt::AlignCenter);
     lineEditHint->setAlignment(Qt::AlignCenter);
 
-
     lineEditThunk->setInputMask("HHHHHHHH");
     lineEditOrdinal->setInputMask("HHHHHHHH");
     lineEditHint->setInputMask("HHHH");
@@ -71,11 +70,9 @@ DialogPEImportFunction::DialogPEImportFunction(QWidget *parent) :
     ui->tableWidgetImportFunction->setCellWidget(1,1,lineEditOrdinal);
     ui->tableWidgetImportFunction->setCellWidget(2,1,lineEditHint);
 
-
     connect(lineEditThunk,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditOrdinal,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditHint,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
-
 
     ui->tableWidgetImportFunction->setColumnWidth(0,115);
     ui->tableWidgetImportFunction->setColumnWidth(1,115);
@@ -163,7 +160,6 @@ bool DialogPEImportFunction::reload()
             ui->lineEditFunctionName->setText(pefile->getImportFunctionName(nNumber,nFunctionNumber));
         }
     }
-
     //    ui->tableWidgetFunctions->setColumnWidth(0,115);
     //    ui->tableWidgetFunctions->setColumnWidth(1,115);
 

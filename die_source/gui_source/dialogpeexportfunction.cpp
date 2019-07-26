@@ -112,7 +112,6 @@ bool DialogPEExportFunction::reload()
         ui->pushButtonApply->setToolTip(tr("Apply changes"));
         ui->checkBoxReadOnly->setToolTip(tr("Set/unset read-only mode"));
         ui->lineEditFunctionName->setToolTip(tr("Function name"));
-
     }
 
     //    unsigned int nOrdinal=pefile->getExport_FunctionNameOrdinal(nNumber);
@@ -149,7 +148,6 @@ void DialogPEExportFunction::on_pushButtonApply_clicked()
     ui->pushButtonApply->setEnabled(false);
 
     // TODO!!!
-
     pefile->setExport_FunctionNameOrdinal(nNumber,lineEditOrdinal->text().toUInt(&bTemp,16));
     pefile->setExport_FunctionAddress(nNumber,lineEditRVA->text().toUInt(&bTemp,16));
     pefile->setExport_FunctionName(nNumber,lineEditName->text().toUInt(&bTemp,16));

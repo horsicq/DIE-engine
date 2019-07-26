@@ -115,7 +115,6 @@ void DialogPEImportLibrary::setData(__DIE_OPTIONS *pOptions,PEFile *pefile,int n
     DialogPEGeneric::setData(pOptions,pefile);
 }
 
-
 void DialogPEImportLibrary::on_pushButtonOK_clicked()
 {
     if(ui->pushButtonApply->isEnabled())
@@ -151,7 +150,6 @@ bool DialogPEImportLibrary::reload()
     return true;
 }
 
-
 void DialogPEImportLibrary::on_checkBoxReadOnly_stateChanged(int arg1)
 {
     lineEditOriginalFirstThunk->setReadOnly(ui->checkBoxReadOnly->isChecked());
@@ -176,7 +174,6 @@ void DialogPEImportLibrary::on_pushButtonApply_clicked()
     pefile->setImport_ForwarderChain(nNumber,lineEditForwarderChain->text().toUInt(&bTemp,16));
     pefile->setImport_Name(nNumber,lineEditName->text().toUInt(&bTemp,16));
     pefile->setImport_FirstThunk(nNumber,lineEditFirstThunk->text().toUInt(&bTemp,16));
-
 
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
 
