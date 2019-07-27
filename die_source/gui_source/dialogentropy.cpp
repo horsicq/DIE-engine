@@ -324,7 +324,7 @@ bool DialogEntropy::reload()
     connect(scan, SIGNAL(_finished()), this, SLOT(_on_finished()));
 
     connect(scan,SIGNAL(setProgressBar(int,int)),this,SLOT(setProgressBar(int,int)));
-    connect(scan,SIGNAL(setEntropy(float)),this,SLOT(setEntropy(float)));
+    connect(scan,SIGNAL(setEntropy(double)),this,SLOT(setEntropy(double)));
     connect(scan,SIGNAL(reloadGraph()),this,SLOT(reloadGraph()));
 
     scan->setData(_binary,nOffset,nSize,xCurve,yCurve,xHistogram,yHistogram,pOptions->nEntropyGraph);
@@ -574,18 +574,18 @@ void DialogEntropy::setProgressBar(int nMax, int nValue)
     ui->progressBar->setValue(nValue);
 }
 
-void DialogEntropy::setEntropy(float fEntropy)
+void DialogEntropy::setEntropy(double dEntropy)
 {
-    ui->lineEditEntropy->setText(QString("%1").arg(fEntropy));
+    ui->lineEditEntropy->setText(QString("%1").arg(dEntropy));
 
-    int nTemp=(int)((fEntropy/8)*1000);
+    int nTemp=(int)((dEntropy/8)*1000);
 
     ui->progressBarStatus->setMaximum(1000);
     ui->progressBarStatus->setValue(nTemp);
 
     if(pOptions)
     {
-        if(fEntropy>pOptions->fThreshold)
+        if(dEntropy>pOptions->dThreshold)
         {
             ui->lineEditStatus->setText(tr("packed"));
         }

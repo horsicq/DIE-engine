@@ -351,13 +351,13 @@ void DialogPESections::copyAsString()
 
 void DialogPESections::on_pushButtonCheckPackedStatus_clicked()
 {
-    float fEntropy;
+    double dEntropy;
 
     nNumberOfSections;
 
     for(int i=0; i<nNumberOfSections; i++)
     {
-        fEntropy=pefile->calculateEntropy(pefile->getSection_PointerToRawData(i),pefile->getSection_SizeOfRawData(i));
+        dEntropy=pefile->calculateEntropy(pefile->getSection_PointerToRawData(i),pefile->getSection_SizeOfRawData(i));
 
         //        if(fEntropy<0.01)
         //        {
@@ -365,9 +365,9 @@ void DialogPESections::on_pushButtonCheckPackedStatus_clicked()
         //        }
 
         //        fEntropy=0.0;
-        ui->tableWidgetSections->item(i,6)->setText(QString("%1").arg(fEntropy,0,'f',2));
+        ui->tableWidgetSections->item(i,6)->setText(QString("%1").arg(dEntropy,0,'f',2));
 
-        if(fEntropy>pOptions->fThreshold)
+        if(dEntropy>pOptions->dThreshold)
         {
             ui->tableWidgetSections->item(i,7)->setText(tr("yes"));
         }

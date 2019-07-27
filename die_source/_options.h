@@ -100,7 +100,7 @@ struct __DIE_OPTIONS
     bool bFullScan;
     bool bSectionsEntropyAfterOpen;
     bool bSingleApplication;
-    double fThreshold;
+    double dThreshold;
     unsigned int nEntropyGraph;
     QString sLastDirectory;
     QString sPluginName;

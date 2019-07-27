@@ -32,12 +32,12 @@ public:
     void setData(Binary *_binary,unsigned int nOffset,unsigned int nSize,double *pXEntropy,double *pYEntropy,double *pXHistogram,double *pYHistogram,int nPunkts);
 
     bool isCompleted();
-    float getEntropy(unsigned int nDataOffset,unsigned int nDataSize,bool nProgressBar=true);
+    double getEntropy(unsigned int nDataOffset,unsigned int nDataSize,bool nProgressBar=true);
     void getHistogram(unsigned int nDataOffset,unsigned int nDataSize,double *pX,bool bProgressBar=true);
 
 signals:
     void setProgressBar(int nMax,int nValue);
-    void setEntropy(float fEntropy);
+    void setEntropy(double dEntropy);
     void reloadGraph();
     void _finished();
 

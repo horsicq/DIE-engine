@@ -30,7 +30,7 @@ void HandleOptions::save(__DIE_OPTIONS *pOptions)
     settings.setValue(__SaveLastDirectory,pOptions->bSaveLastDirectory);
     settings.setValue(__LastDirectory,pOptions->sLastDirectory);
     settings.setValue(__ResizeableMainWindow,pOptions->bResizeableMainWindow);
-    settings.setValue(__Threshold,pOptions->fThreshold);
+    settings.setValue(__Threshold,pOptions->dThreshold);
     settings.setValue(__EntropyGraph,pOptions->nEntropyGraph);
     settings.setValue(__Style,pOptions->sStyle);
     settings.setValue(__StyleSheet,pOptions->sStyleSheet);
@@ -96,7 +96,7 @@ void HandleOptions::load(__DIE_OPTIONS *pOptions)
     pOptions->sLastDirectory=sLastDirectory;
 
     pOptions->bResizeableMainWindow=settings.value(__ResizeableMainWindow,false).toBool();
-    pOptions->fThreshold=settings.value(__Threshold,7).toDouble();
+    pOptions->dThreshold=settings.value(__Threshold,7).toDouble();
     pOptions->nEntropyGraph=settings.value(__EntropyGraph,100).toUInt();
 #ifdef Q_OS_WIN
     pOptions->sStyle=settings.value(__Style,"Fusion").toString();

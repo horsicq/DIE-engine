@@ -118,7 +118,7 @@ void DialogOptions::on_pushButtonApply_clicked()
     pOptions->bShowErrors=ui->checkBoxShowErrors->isChecked();
     pOptions->bSectionsEntropyAfterOpen=ui->checkBoxSectionsEntropyAfterOpen->isChecked();
     pOptions->bResizeableMainWindow=ui->checkBoxResizeableMainWindow->isChecked();
-    pOptions->fThreshold=ui->doubleSpinBox->value();
+    pOptions->dThreshold=ui->doubleSpinBox->value();
     pOptions->nEntropyGraph=ui->spinBoxEntropy->value();
     pOptions->nAddressWidth=ui->spinBoxAddressWidth->value();
 
@@ -817,7 +817,7 @@ bool DialogOptions::reload()
     ui->checkBoxShowErrors->setChecked(pOptions->bShowErrors);
     ui->checkBoxScanTime->setChecked(pOptions->bShowScanTime);
     ui->checkBoxSectionsEntropyAfterOpen->setChecked(pOptions->bSectionsEntropyAfterOpen);
-    ui->doubleSpinBox->setValue(pOptions->fThreshold);
+    ui->doubleSpinBox->setValue(pOptions->dThreshold);
     ui->spinBoxEntropy->setValue(pOptions->nEntropyGraph);
     ui->checkBoxResizeableMainWindow->setChecked(pOptions->bResizeableMainWindow);
 

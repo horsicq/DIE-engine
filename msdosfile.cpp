@@ -110,13 +110,18 @@ unsigned short MSDOSFile::getDosHeader_ovno()
 }
 unsigned short MSDOSFile::getDosHeader_res(int nIndex)
 {
+    unsigned short nResult=0;
+
     if(nIndex<4)
     {
-        return readWord(offsetof(IMAGE_DOS_HEADER,e_res)+sizeof(unsigned short)*nIndex);
+        nResult=readWord(offsetof(IMAGE_DOS_HEADER,e_res)+sizeof(unsigned short)*nIndex);
+    }
+    else
+    {
+        emit appendError(QString("Value out of range: n=%1").arg(nIndex));
     }
 
-    emit appendError(QString("Value out of range: n=%1").arg(nIndex));
-    return 0;
+    return nResult;
 }
 unsigned short MSDOSFile::getDosHeader_oemid()
 {

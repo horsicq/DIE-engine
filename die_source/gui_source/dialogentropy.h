@@ -59,7 +59,7 @@ private slots:
     void on_pushButtonReload_clicked();
     bool reload();
     void setProgressBar(int nMax, int nValue);
-    void setEntropy(float fEntropy);
+    void setEntropy(double dEntropy);
     void reloadGraph();
     void on_listWidget_itemSelectionChanged();
     void on_tabWidget_currentChanged(int index);

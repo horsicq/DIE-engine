@@ -179,8 +179,8 @@ public slots:
 
     static QString convertSignature(QString sSignature);
 
-    float calculateEntropy(unsigned int nOffset=0,unsigned int nDataSize=-1);
-    static float calculateEntropy(QString sFileName,unsigned int nOffset=0,unsigned int nDataSize=-1);
+    double calculateEntropy(unsigned int nOffset=0,unsigned int nDataSize=-1);
+    static double calculateEntropy(QString sFileName,unsigned int nOffset=0,unsigned int nDataSize=-1);
     QString calculateMD5(unsigned int nOffset=0,unsigned int nDataSize=-1);
     static QString calculateMD5(QString sFileName,unsigned int nOffset=0,unsigned int nDataSize=-1);
     bool isOffsetValid(unsigned int nOffset);

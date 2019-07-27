@@ -48,22 +48,22 @@ bool ThreadEntropy::isCompleted()
 {
     return bIsCompleted;
 }
-float ThreadEntropy::getEntropy(unsigned int nDataOffset,unsigned int nDataSize,bool bProgressBar)
+double ThreadEntropy::getEntropy(unsigned int nDataOffset,unsigned int nDataSize,bool bProgressBar)
 {
     if(nDataSize==0)
     {
         return 0;
     }
 
-    float fEntropy=1.4426950408889634073599246810023;
+    double dEntropy=1.4426950408889634073599246810023;
 
     QByteArray baTemp;
     baTemp.resize(BUFFER_SIZE);
 
     unsigned int _nSize=nDataSize;
 
-    float bytes[256]= {0.0};
-    float temp;
+    double bytes[256]= {0.0};
+    double temp;
 
     unsigned int nTemp=0;
 
@@ -101,17 +101,17 @@ float ThreadEntropy::getEntropy(unsigned int nDataOffset,unsigned int nDataSize,
 
     for(int j=0; (j<256)&&(bIsRun); j++)
     {
-        temp=bytes[j]/(float)nDataSize;
+        temp=bytes[j]/(double)nDataSize;
 
         if(temp)
         {
-            fEntropy+=(-log(temp)/log((float)2))*bytes[j];
+            dEntropy+=(-log(temp)/log((double)2))*bytes[j];
         }
     }
 
-    fEntropy=fEntropy/(float)nDataSize;
+    dEntropy=dEntropy/(double)nDataSize;
 
-    return fEntropy;
+    return dEntropy;
 }
 
 void ThreadEntropy::getHistogram(unsigned int nDataOffset, unsigned int nDataSize, double *pX,bool bProgressBar)
@@ -169,13 +169,13 @@ void ThreadEntropy::process()
 
     getHistogram(nOffset,nSize,pYHistogram);
 
-    float fEntropy=getEntropy(nOffset,nSize);
+    double dEntropy=getEntropy(nOffset,nSize);
 
     // new>>
-    pYEntropy[nPunkts]=fEntropy;
+    pYEntropy[nPunkts]=dEntropy;
     //<<
 
-    emit setEntropy(fEntropy);
+    emit setEntropy(dEntropy);
 
     unsigned int nProcent=nSize/nPunkts;
 
@@ -184,7 +184,7 @@ void ThreadEntropy::process()
         for(int i=0; (i<nPunkts)&&(bIsRun); i++)
         {
             pXEntropy[i]=i*nProcent+nOffset;
-            pYEntropy[i]=fEntropy;
+            pYEntropy[i]=dEntropy;
 
             //            qDebug("%d x=%f y=%f",i,pXEntropy[i],pYEntropy[i]);
         }
@@ -194,13 +194,13 @@ void ThreadEntropy::process()
         for(int i=0; (i<nPunkts)&&(bIsRun); i++)
         {
             pXEntropy[i]=0;
-            pYEntropy[i]=fEntropy;
+            pYEntropy[i]=dEntropy;
         }
 
         pXEntropy[0]=nOffset;
-        pYEntropy[0]=fEntropy;
+        pYEntropy[0]=dEntropy;
         pXEntropy[1]=nOffset+nSize;
-        pYEntropy[1]=fEntropy;
+        pYEntropy[1]=dEntropy;
     }
 
     emit reloadGraph();
@@ -211,9 +211,8 @@ void ThreadEntropy::process()
 
         for(int j=0; (j<nPunkts-nPunkts/10)&&(bIsRun); j++)
         {
-            fEntropy=getEntropy(nOffset+j*nProcent,nProcent*(nPunkts/10),false);
-            pYEntropy[j]=fEntropy;
-
+            dEntropy=getEntropy(nOffset+j*nProcent,nProcent*(nPunkts/10),false);
+            pYEntropy[j]=dEntropy;
 
             if(j+1>(100/30)*k)
             {

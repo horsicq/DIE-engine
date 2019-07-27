@@ -2297,7 +2297,7 @@ bool Binary::isSignaturePresent(unsigned int nOffset, unsigned int nSize, QStrin
     return (findSignature(nOffset,nSize,sSignature)!=(unsigned int)-1);
 }
 
-float Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
+double Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
 {
     if(nDataSize==0)
     {
@@ -2326,9 +2326,9 @@ float Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
 
     unsigned int nSize=nDataSize;
 
-    float fEntropy=1.4426950408889634073599246810023;
-    float bytes[256]= {0.0};
-    float temp;
+    double dEntropy=1.4426950408889634073599246810023;
+    double bytes[256]= {0.0};
+    double temp;
 
     unsigned int nTemp=0;
     char *pBuffer=new char[BUFFER_SIZE];
@@ -2362,16 +2362,16 @@ float Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
 
         if(temp)
         {
-            fEntropy+=(-log(temp)/log((float)2))*bytes[j];
+            dEntropy+=(-log(temp)/log((double)2))*bytes[j];
         }
     }
 
-    fEntropy=fEntropy/(float)nDataSize;
+    dEntropy=dEntropy/(double)nDataSize;
 
-    return fEntropy;
+    return dEntropy;
 }
 
-float Binary::calculateEntropy(QString sFileName, unsigned int nOffset, unsigned int nDataSize)
+double Binary::calculateEntropy(QString sFileName, unsigned int nOffset, unsigned int nDataSize)
 {
     Binary bin;
 
