@@ -130,12 +130,6 @@ bool DialogPEImport::reload()
     connect(scan, SIGNAL(_finished()), this, SLOT(enableControls()));
 
     thread->start(QThread::LowestPriority);
-    //    if(nNumberOfImports)
-    //    {
-    //        ui->tableWidgetLibraries->setCurrentCell(0,0);
-    //        QModelIndex index;
-    //        _on_tableWidgetLibraries_clicked(index);
-    //    }
 
     return true;
 }

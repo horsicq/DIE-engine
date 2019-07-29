@@ -100,7 +100,6 @@ void DialogPEImportFunction::setData(__DIE_OPTIONS *pOptions,PEFile *pefile,int 
     DialogPEGeneric::setData(pOptions,pefile);
 }
 
-
 void DialogPEImportFunction::on_pushButtonOK_clicked()
 {
     if(ui->pushButtonApply->isEnabled())
@@ -168,7 +167,6 @@ bool DialogPEImportFunction::reload()
 
     return true;
 }
-
 
 void DialogPEImportFunction::on_checkBoxReadOnly_stateChanged(int arg1)
 {
