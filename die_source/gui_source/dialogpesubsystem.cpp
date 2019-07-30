@@ -27,8 +27,6 @@ DialogPESubsystem::DialogPESubsystem(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
-
     ui->comboBoxSubsystem->addItem("");
     ui->comboBoxSubsystem->addItem("UNKNOWN");
     ui->comboBoxSubsystem->addItem("NATIVE");
@@ -45,7 +43,6 @@ DialogPESubsystem::DialogPESubsystem(QWidget *parent) :
     ui->comboBoxSubsystem->addItem("XBOX");
 
     ui->lineEditSubsystem->setInputMask("HHHH");
-
 
     ui->checkBoxReadOnly->setChecked(true);
 
@@ -92,7 +89,6 @@ bool DialogPESubsystem::reload()
 
     return true;
 }
-
 
 void DialogPESubsystem::on_checkBoxReadOnly_stateChanged(int arg1)
 {
@@ -182,10 +178,8 @@ void DialogPESubsystem::on_lineEditSubsystem_textChanged(const QString &arg1)
     ui->pushButtonApply->setEnabled(true);
 }
 
-
 void DialogPESubsystem::on_comboBoxSubsystem_currentIndexChanged(int index)
 {
-
     switch(index)
     {
         case(1):

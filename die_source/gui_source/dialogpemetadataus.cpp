@@ -58,7 +58,6 @@ bool DialogPEMetaDataUS::reload()
     {
         ui->pushButtonOK->setToolTip(tr("Quit"));
     }
-
     //    ui->tableWidgetStrings->clear();
     QList<QString> listStrings=pefile->getCLI_MetaData_USAsList();
     QStandardItem *newItem;

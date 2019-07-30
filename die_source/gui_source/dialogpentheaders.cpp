@@ -229,7 +229,6 @@ DialogPENtHeaders::DialogPENtHeaders(QWidget *parent) :
         ui->tableWidgetOptionalHeader->setRowHeight(i,20);
     }
 
-
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(0,1),lineEditMagic);
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(1,1),lineEditMajorLinkerVersion);
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(2,1),lineEditMinorLinkerVersion);
@@ -260,8 +259,6 @@ DialogPENtHeaders::DialogPENtHeaders(QWidget *parent) :
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(27,1),lineEditSizeOfHeapCommit);
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(28,1),lineEditLoaderFlags);
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(29,1),lineEditNumberOfRvaAndSizes);
-
-
 
     connect(lineEditMagic,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditMajorLinkerVersion,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
@@ -322,7 +319,6 @@ DialogPENtHeaders::DialogPENtHeaders(QWidget *parent) :
     ui->tableWidgetFileHeader->setIndexWidget(ui->tableWidgetFileHeader->model()->index(6,2),pushButtonCharacteristicsExtra);
     connect(pushButtonCharacteristicsExtra,SIGNAL(clicked()),this,SLOT(pushButtonCharacteristicsExtra_clicked()));
 
-
     pushButtonMagicExtra=new QPushButtonX;
     pushButtonMagicExtra->setText("...");
     pushButtonMagicExtra->setFixedWidth(30);
@@ -337,14 +333,12 @@ DialogPENtHeaders::DialogPENtHeaders(QWidget *parent) :
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(6,2),pushButtonAddressOfEntryPointExtra);
     connect(pushButtonAddressOfEntryPointExtra,SIGNAL(clicked()),this,SLOT(pushButtonAddressOfEntryPointExtra_clicked()));
 
-
     pushButtonSizeOfHeadersExtra=new QPushButtonX;
     pushButtonSizeOfHeadersExtra->setText("...");
     pushButtonSizeOfHeadersExtra->setFixedWidth(30);
 
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(20,2),pushButtonSizeOfHeadersExtra);
     connect(pushButtonSizeOfHeadersExtra,SIGNAL(clicked()),this,SLOT(pushButtonSizeOfHeadersExtra_clicked()));
-
 
     pushButtonCheckSumExtra=new QPushButtonX;
     pushButtonCheckSumExtra->setText("...");
@@ -360,15 +354,12 @@ DialogPENtHeaders::DialogPENtHeaders(QWidget *parent) :
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(22,2),pushButtonSubsystemExtra);
     connect(pushButtonSubsystemExtra,SIGNAL(clicked()),this,SLOT(pushButtonSubsystemExtra_clicked()));
 
-
     pushButtonDllCharacteristicsExtra=new QPushButtonX;
     pushButtonDllCharacteristicsExtra->setText("...");
     pushButtonDllCharacteristicsExtra->setFixedWidth(30);
 
     ui->tableWidgetOptionalHeader->setIndexWidget(ui->tableWidgetOptionalHeader->model()->index(23,2),pushButtonDllCharacteristicsExtra);
     connect(pushButtonDllCharacteristicsExtra,SIGNAL(clicked()),this,SLOT(pushButtonDllCharacteristicsExtra_clicked()));
-
-
     //    ui->tableWidgetFileHeader->resizeColumnToContents(2);
     //    ui->tableWidgetOptionalHeader->resizeColumnToContents(2);
 
@@ -394,7 +385,6 @@ DialogPENtHeaders::~DialogPENtHeaders()
 {
     delete ui;
 }
-
 
 void DialogPENtHeaders::on_pushButtonOK_clicked()
 {
@@ -466,7 +456,6 @@ void DialogPENtHeaders::on_pushButtonApply_clicked()
     pefile->setOptionalHeader_Subsystem(lineEditSubsystem->text().toUInt(&bTemp,16));
     pefile->setOptionalHeader_DllCharacteristics(lineEditDllCharacteristics->text().toUInt(&bTemp,16));
 
-
     if(pefile->isPEPlus())
     {
         pefile->setOptionalHeader_SizeOfStackReserve64(lineEditSizeOfStackReserve->text().toULongLong(&bTemp,16));
@@ -506,8 +495,6 @@ void DialogPENtHeaders::on_pushButtonApply_clicked()
     pefile->setOptionalHeader_LoaderFlags(lineEditLoaderFlags->text().toUInt(&bTemp,16));
     pefile->setOptionalHeader_NumberOfRvaAndSizes(lineEditNumberOfRvaAndSizes->text().toUInt(&bTemp,16));
 
-
-
     //    baLocalCopy.clear();
     //    baLocalCopy.append(pefile->data(),pefile->size());
 
@@ -536,7 +523,6 @@ bool DialogPENtHeaders::reload()
         pushButtonMagicExtra->setToolTip(tr("Magic"));
         pushButtonSizeOfHeadersExtra->setToolTip(tr("Headers"));
         pushButtonDllCharacteristicsExtra->setToolTip(tr("DLL characteristics"));
-
 
         ui->pushButtonHex->setToolTip(tr("%1 HEX/Disasm").arg(tr("NT Headers")));
         ui->lineEditOffset->setToolTip(tr("File offset of %1").arg(tr("NT Headers")));
@@ -605,11 +591,6 @@ bool DialogPENtHeaders::reload()
     lineEditSubsystem->setText(QString("%1").arg(pefile->getOptionalHeader_Subsystem(),4,16,QChar('0')));
     lineEditDllCharacteristics->setText(QString("%1").arg(pefile->getOptionalHeader_DllCharacteristics(),4,16,QChar('0')));
 
-
-
-
-
-
     if(pefile->isPEPlus())
     {
         lineEditSizeOfStackReserve->setInputMask("HHHHHHHHHHHHHHHH");
@@ -653,7 +634,6 @@ bool DialogPENtHeaders::reload()
         lineEditSizeOfHeapCommit->setInputMask("HHHHHHHH");
         lineEditSizeOfHeapCommit->setText(QString("%1").arg(pefile->getOptionalHeader_SizeOfHeapCommit(),8,16,QChar('0')));
     }
-
 
     lineEditLoaderFlags->setText(QString("%1").arg(pefile->getOptionalHeader_LoaderFlags(),8,16,QChar('0')));
     lineEditNumberOfRvaAndSizes->setText(QString("%1").arg(pefile->getOptionalHeader_NumberOfRvaAndSizes(),8,16,QChar('0')));
@@ -785,7 +765,6 @@ void DialogPENtHeaders::pushButtonAddressOfEntryPointExtra_clicked()
 void DialogPENtHeaders::pushButtonSizeOfHeadersExtra_clicked()
 {
     DialogHDE dialoghde(this);
-
 
     //    dialoghde.setData(pefile->getFileName(),0,pefile->getOptionalHeader_SizeOfHeaders(),pefile->getDisasmMode(),pOptions);
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",0,pefile->getOptionalHeader_SizeOfHeaders(),tr("Headers"));

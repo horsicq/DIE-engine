@@ -66,7 +66,6 @@ bool DialogPEOverlay::reload()
         ui->pushButtonHex->setToolTip(tr("%1 HEX/Disasm").arg(tr("Overlay")));
         ui->lineEditOffset->setToolTip(tr("File offset of %1").arg(tr("Overlay")));
         ui->lineEditSize->setToolTip(tr("Size of %1 in bytes").arg(tr("Overlay")));
-
     }
 
     bOverlayPresent=pefile->isOverlayPresent();

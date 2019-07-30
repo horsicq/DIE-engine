@@ -27,7 +27,6 @@ DialogPESections::DialogPESections(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
     actEditHeader=new QAction(tr("Edit header"), this);
     actHex=new QAction(tr("Hex"), this);
     actDump=new QAction(tr("Dump"), this);
@@ -42,10 +41,7 @@ DialogPESections::DialogPESections(QWidget *parent) :
     connect(actSearch,SIGNAL(triggered()),this,SLOT(search()));
     connect(actCopyAsString,SIGNAL(triggered()),this,SLOT(copyAsString()));
 
-
-
     ui->checkBoxReadOnly->setChecked(true);
-
 
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_quit));
     ui->pushButtonAddNewSection->setShortcut(QKeySequence(__KeySequence_ctrlA));
@@ -69,7 +65,6 @@ bool DialogPESections::reload()
 
         ui->pushButtonCheckPackedStatus->setToolTip(tr("Check packed status"));
     }
-
 
     QTableWidgetItem *newItem;
     //    pefile->setFileName(sFileName);
@@ -196,7 +191,6 @@ void DialogPESections::on_pushButtonAddNewSection_clicked()
         }
 
         pefile->addSection(&ish,sFileName);
-
     }
 
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
@@ -226,8 +220,6 @@ void DialogPESections::on_tableWidgetSections_customContextMenuRequested(const Q
 
     //     QString sString=((QTableWidgetItem *)(ui->tableWidgetSections->focusWidget()))->text();
     //     qDebug(sString.toAscii().data());
-
-
     if(pefile->getSection_SizeOfRawData(nSection))
     {
         actSearch->setEnabled(true);
@@ -242,7 +234,6 @@ void DialogPESections::on_tableWidgetSections_customContextMenuRequested(const Q
         actDump->setEnabled(false);
         actEntropy->setEnabled(false);
     }
-
 
     QMenu menu;
 
@@ -275,7 +266,6 @@ void DialogPESections::on_checkBoxReadOnly_stateChanged(int arg1)
     {
         ui->pushButtonDeleteLastSection->setEnabled(false);
     }
-
 }
 
 void DialogPESections::editHeader()
@@ -317,7 +307,6 @@ void DialogPESections::hex()
 
 void DialogPESections::dump()
 {
-
     int nSection=ui->tableWidgetSections->selectedItems().at(0)->row();
 
     QString sFileName;

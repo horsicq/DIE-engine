@@ -130,21 +130,6 @@ xcopy %SOURCE_PATH%\Detect-It-Easy\search %SOURCE_PATH%\release\%BUILD_NAME%\bas
 xcopy %SOURCE_PATH%\die_source\lang %SOURCE_PATH%\release\%BUILD_NAME%\base\lang /E /I
 xcopy %SOURCE_PATH%\Detect-It-Easy\yara %SOURCE_PATH%\release\%BUILD_NAME%\base\yara /E /I
 
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\die.exe
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\diel.exe
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\diec.exe
-
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Widgets.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Gui.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Core.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Concurrent.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Script.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Network.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5ScriptTools.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Svg.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Xml.dll
-%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\libcrypto-1_1.dll
-
 rmdir /s /q %SOURCE_PATH%\release\%BUILD_NAME_DLL%\
 mkdir %SOURCE_PATH%\release\%BUILD_NAME_DLL%
 copy %SOURCE_PATH%\die_source\build\release\diedll.dll release\%BUILD_NAME_DLL%\
@@ -160,12 +145,37 @@ xcopy %SOURCE_PATH%\diedll_win\SDK %SOURCE_PATH%\release\%BUILD_NAME_DLL%\SDK /E
 copy %SOURCE_PATH%\diedll_win\diedll.h %SOURCE_PATH%\release\%BUILD_NAME_DLL%\
 
 cd %SOURCE_PATH%\release
+if exist %BUILD_NAME%_noupx_%RELEASE_VERSION%.zip del %BUILD_NAME%_noupx_%RELEASE_VERSION%.zip
+%SEVENZIP_PATH%\7z.exe a %BUILD_NAME%_noupx_%RELEASE_VERSION%.zip %BUILD_NAME%\*
+cd %SOURCE_PATH%
+
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\die.exe
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\diel.exe
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\diec.exe
+
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Widgets.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Gui.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Core.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Concurrent.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Script.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Network.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5ScriptTools.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Svg.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\Qt5Xml.dll
+%UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\libcrypto-1_1.dll
+
+cd %SOURCE_PATH%\release
 if exist %BUILD_NAME%_%RELEASE_VERSION%.zip del %BUILD_NAME%_%RELEASE_VERSION%.zip
 %SEVENZIP_PATH%\7z.exe a %BUILD_NAME%_%RELEASE_VERSION%.zip %BUILD_NAME%\*
-rmdir /s /q %BUILD_NAME%\
+cd %SOURCE_PATH%
+
+cd %SOURCE_PATH%\release
 if exist %BUILD_NAME_DLL%_%RELEASE_VERSION%.zip del %BUILD_NAME_DLL%_%RELEASE_VERSION%.zip
 %SEVENZIP_PATH%\7z.exe a %BUILD_NAME_DLL%_%RELEASE_VERSION%.zip %BUILD_NAME_DLL%\*
-rmdir /s /q %BUILD_NAME_DLL%\
+
 cd %SOURCE_PATH%
+
+rmdir /s /q %SOURCE_PATH%\release\%BUILD_NAME%\
+rmdir /s /q %SOURCE_PATH%\release\%BUILD_NAME_DLL%\
 
 goto:eof

@@ -56,7 +56,6 @@ bool DialogPETimeDateStamp::reload()
 
     ui->lineEditTimeDateStamp->setText(QString("%1").arg(pefile->getFileHeader_TimeDateStamp(),4,16,QChar('0')));
 
-
     ui->checkBoxReadOnly->setEnabled(!pefile->isReadOnly());
     ui->pushButtonApply->setEnabled(false);
 
@@ -78,7 +77,6 @@ void DialogPETimeDateStamp::on_pushButtonOK_clicked()
 
     on_pushButtonCancel_clicked();
 }
-
 
 void DialogPETimeDateStamp::on_pushButtonCancel_clicked()
 {

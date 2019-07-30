@@ -62,7 +62,6 @@ void FormMSDOS::showTooltips(bool bShow)
         ui->pushButtonDosHeader->setToolTip(tr("MS DOS Header"));
         ui->lineEditEntryPoint->setToolTip(tr("Address of EntryPoint"));
         ui->pushButtonEntryPoint->setToolTip(tr("Address of EntryPoint"));
-
     }
     else
     {
@@ -71,8 +70,6 @@ void FormMSDOS::showTooltips(bool bShow)
         ui->pushButtonEntryPoint->setToolTip("");
     }
 }
-
-
 
 void FormMSDOS::on_pushButtonEntryPoint_clicked()
 {

@@ -71,7 +71,6 @@ bool DialogPEResource::reload()
     int nIndex=0;
     QString sName;
 
-
     while(!xml.atEnd())
     {
         if(xml.readNextStartElement())
@@ -86,7 +85,6 @@ bool DialogPEResource::reload()
 
                     if(sName!="")
                     {
-
                         sName="\'"+sName+"\'";
                     }
                     else
@@ -107,7 +105,6 @@ bool DialogPEResource::reload()
 
                     if(sName!="")
                     {
-
                         sName="\'"+sName+"\'";
                     }
                     else
@@ -117,8 +114,6 @@ bool DialogPEResource::reload()
 
                     item1->setText(0,sName);
                     item0->addChild(item1);
-
-
                 }
             }
             else if(xml.name()=="DataEntry")
@@ -129,7 +124,6 @@ bool DialogPEResource::reload()
                 {
                     item1->setData(0,Qt::UserRole,sDataString);
                 }
-
             }
         }
     }
@@ -141,8 +135,6 @@ void DialogPEResource::on_treeWidgetResource_customContextMenuRequested(const QP
 {
     //    qDebug("context menu");
     //    qDebug(ui->treeWidgetResource->currentItem()->data(0,Qt::UserRole).toString().toAscii().data());
-
-
     if(ui->treeWidgetResource->currentItem()->data(0,Qt::UserRole).toString()!="")
     {
         QMenu menu;
@@ -168,7 +160,6 @@ void DialogPEResource::hex()
     unsigned int nOffset=ui->treeWidgetResource->currentItem()->data(0,Qt::UserRole).toString().section(":",0,0).toInt();
     unsigned int nSize=ui->treeWidgetResource->currentItem()->data(0,Qt::UserRole).toString().section(":",1,1).toInt();
 
-
     DialogHDE dialoghde(this);
 
     //    int nSection=ui->tableWidgetSections->selectedItems().at(0)->row();
@@ -180,7 +171,6 @@ void DialogPEResource::hex()
 
 void DialogPEResource::dump()
 {
-
     unsigned int nOffset=ui->treeWidgetResource->currentItem()->data(0,Qt::UserRole).toString().section(":",0,0).toInt();
     unsigned int nSize=ui->treeWidgetResource->currentItem()->data(0,Qt::UserRole).toString().section(":",1,1).toInt();
     //    int nSection=ui->tableWidgetSections->selectedItems().at(0)->row();

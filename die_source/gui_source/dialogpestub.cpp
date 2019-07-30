@@ -51,7 +51,6 @@ DialogPEStub::~DialogPEStub()
     delete ui;
 }
 
-
 bool DialogPEStub::reload()
 {
     if(pOptions->bShowTooltips)
@@ -107,10 +106,8 @@ bool DialogPEStub::reload()
 
     ui->pushButtonRich->setEnabled(pefile->isRichSignaturePresent());
 
-
     ui->checkBoxReadOnly->setChecked(!ui->checkBoxReadOnly->isChecked());
     ui->checkBoxReadOnly->setChecked(!ui->checkBoxReadOnly->isChecked());
-
 
     ui->checkBoxReadOnly->setEnabled(!pefile->isReadOnly());
 
@@ -136,8 +133,6 @@ void DialogPEStub::on_checkBoxReadOnly_stateChanged(int arg1)
         {
 
             ui->pushButtonAdd->setEnabled(!bInvalidHeader);
-
-
         }
     }
 }

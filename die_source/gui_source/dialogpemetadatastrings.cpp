@@ -62,8 +62,6 @@ bool DialogPEMetaDataStrings::reload()
 
     //    QTableWidgetItem *newItem;
     //    pefile->setFileName(sFileName);
-
-
     //    ui->tableWidgetStrings->clear();
     //    ui->tableWidgetStrings->setRowCount(listStrings.count());
     //    ui->tableWidgetStrings->setColumnCount(2);
@@ -100,9 +98,6 @@ bool DialogPEMetaDataStrings::reload()
     //        newItem->setText(listStrings.at(i));
     //        ui->tableWidgetStrings->setItem(i,1,newItem);
     //        ui->tableWidgetStrings->item(i,1)->setTextAlignment(Qt::AlignLeft|Qt::AlignVCenter);
-
-
-
     //        ui->tableWidgetStrings->setRowHeight(i,20);
     //    }
     ui->tableWidgetStrings->setColumnWidth(0,50);

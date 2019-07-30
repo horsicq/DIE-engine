@@ -81,9 +81,9 @@ double ThreadEntropy::getEntropy(unsigned int nDataOffset,unsigned int nDataSize
             bIsRun=false;
         }
 
-        for(unsigned int i=0; i<nTemp; i++)
+        for(unsigned int m=0; m<nTemp; m++)
         {
-            bytes[(unsigned char)baTemp.data()[i]]+=1;
+            bytes[(unsigned char)baTemp.data()[m]]+=1;
         }
 
         _nSize-=nTemp;
@@ -116,7 +116,6 @@ double ThreadEntropy::getEntropy(unsigned int nDataOffset,unsigned int nDataSize
 
 void ThreadEntropy::getHistogram(unsigned int nDataOffset, unsigned int nDataSize, double *pX,bool bProgressBar)
 {
-
     QByteArray baTemp;
     baTemp.resize(BUFFER_SIZE);
 
@@ -129,7 +128,7 @@ void ThreadEntropy::getHistogram(unsigned int nDataOffset, unsigned int nDataSiz
 
     int k=0;
 
-    for(int i=0; (i<nCount+1)&&(bIsRun); i++)
+    for(unsigned int i=0; (i<nCount+1)&&(bIsRun); i++)
     {
         nTemp=MINIMAL(BUFFER_SIZE,_nSize);
 
@@ -138,9 +137,9 @@ void ThreadEntropy::getHistogram(unsigned int nDataOffset, unsigned int nDataSiz
             bIsRun=false;
         }
 
-        for(int i=0; i<nTemp; i++)
+        for(unsigned int m=0; m<nTemp; m++)
         {
-            pX[(unsigned char)baTemp.data()[i]]+=1;
+            pX[(unsigned char)baTemp.data()[m]]+=1;
         }
 
         _nSize-=nTemp;

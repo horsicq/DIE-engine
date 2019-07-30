@@ -150,8 +150,6 @@ DialogPEExport::~DialogPEExport()
     //    {
     //        //qDebug("buzy");
     //    }
-
-
     //    delete scan;
 
     delete ui;

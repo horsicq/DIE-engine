@@ -98,7 +98,6 @@ QAbstractItemModel *DialogSignatures::modelFromFile(const QString& fileName)
             sLine=line.trimmed();
             words << sLine.section(";",0,0);
         }
-
     }
 #ifndef QT_NO_CURSOR
     QApplication::restoreOverrideCursor();
@@ -242,7 +241,6 @@ bool DialogSignatures::reload(QString sNewCurrent)
                     sLine=line.trimmed();
                     listTooltips.append(sLine);
                 }
-
             }
 
             file.close();

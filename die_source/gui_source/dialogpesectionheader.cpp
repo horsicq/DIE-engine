@@ -60,7 +60,6 @@ DialogPESectionHeader::DialogPESectionHeader(QWidget *parent) :
     lineEditNumberOfLinenumbers->setAlignment(Qt::AlignCenter);
     lineEditCharacteristics->setAlignment(Qt::AlignCenter);
 
-
     lineEditName->setInputMask("xxxxxxxx");
     lineEditVirtualSize->setInputMask("HHHHHHHH");
     lineEditVirtualAddress->setInputMask("HHHHHHHH");
@@ -71,7 +70,6 @@ DialogPESectionHeader::DialogPESectionHeader(QWidget *parent) :
     lineEditNumberOfRelocations->setInputMask("HHHH");
     lineEditNumberOfLinenumbers->setInputMask("HHHH");
     lineEditCharacteristics->setInputMask("HHHHHHHH");
-
 
     newItem = new QTableWidgetItem;
     newItem->setText("Name");
@@ -123,7 +121,6 @@ DialogPESectionHeader::DialogPESectionHeader(QWidget *parent) :
     ui->tableWidgetSectionHeader->setItem(9,0,newItem);
     ui->tableWidgetSectionHeader->item(9,0)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
 
-
     ui->tableWidgetSectionHeader->setIndexWidget(ui->tableWidgetSectionHeader->model()->index(0,1),lineEditName);
     ui->tableWidgetSectionHeader->setIndexWidget(ui->tableWidgetSectionHeader->model()->index(1,1),lineEditVirtualSize);
     ui->tableWidgetSectionHeader->setIndexWidget(ui->tableWidgetSectionHeader->model()->index(2,1),lineEditVirtualAddress);
@@ -134,7 +131,6 @@ DialogPESectionHeader::DialogPESectionHeader(QWidget *parent) :
     ui->tableWidgetSectionHeader->setIndexWidget(ui->tableWidgetSectionHeader->model()->index(7,1),lineEditNumberOfRelocations);
     ui->tableWidgetSectionHeader->setIndexWidget(ui->tableWidgetSectionHeader->model()->index(8,1),lineEditNumberOfLinenumbers);
     ui->tableWidgetSectionHeader->setIndexWidget(ui->tableWidgetSectionHeader->model()->index(9,1),lineEditCharacteristics);
-
 
     connect(lineEditName,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditVirtualSize,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
@@ -147,14 +143,12 @@ DialogPESectionHeader::DialogPESectionHeader(QWidget *parent) :
     connect(lineEditNumberOfLinenumbers,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
     connect(lineEditCharacteristics,SIGNAL(textChanged(QString)),this,SLOT(applyEnable()));
 
-
     pushButtonCharacteristicsExtra=new QPushButtonX;
     pushButtonCharacteristicsExtra->setText("...");
     pushButtonCharacteristicsExtra->setFixedWidth(30);
 
     ui->tableWidgetSectionHeader->setIndexWidget(ui->tableWidgetSectionHeader->model()->index(9,2),pushButtonCharacteristicsExtra);
     connect(pushButtonCharacteristicsExtra,SIGNAL(clicked()),this,SLOT(pushButtonCharacteristicsExtra_clicked()));
-
 
     ui->tableWidgetSectionHeader->resizeColumnsToContents();
 
@@ -163,7 +157,6 @@ DialogPESectionHeader::DialogPESectionHeader(QWidget *parent) :
     ui->pushButtonCancel->setShortcut(QKeySequence(__KeySequence_quit));
     ui->pushButtonApply->setShortcut(QKeySequence(__KeySequence_save));
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_saveandquit));
-
 }
 
 DialogPESectionHeader::~DialogPESectionHeader()
@@ -177,7 +170,6 @@ void DialogPESectionHeader::setData(__DIE_OPTIONS *pOptions,PEFile *pefile, int 
 
     DialogPEGeneric::setData(pOptions,pefile);
 }
-
 
 void DialogPESectionHeader::on_pushButtonOK_clicked()
 {
@@ -257,7 +249,6 @@ void DialogPESectionHeader::on_pushButtonApply_clicked()
     pefile->setSection_NumberOfLinenumbers(nSection,lineEditNumberOfLinenumbers->text().toUInt(&bTemp,16));
     pefile->setSection_Characteristics(nSection,lineEditCharacteristics->text().toUInt(&bTemp,16));
 
-
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
 
     emit reloadSignal();
@@ -276,6 +267,3 @@ void DialogPESectionHeader::pushButtonCharacteristicsExtra_clicked()
 
     dialogpesectioncharacteristics.exec();
 }
-
-
-

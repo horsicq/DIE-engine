@@ -68,7 +68,6 @@ void DialogPESectionCharacteristics::setData(__DIE_OPTIONS *pOptions,PEFile *pef
     DialogPEGeneric::setData(pOptions,pefile);
 }
 
-
 void DialogPESectionCharacteristics::on_pushButtonOK_clicked()
 {
     if(ui->pushButtonApply->isEnabled())
@@ -109,7 +108,6 @@ bool DialogPESectionCharacteristics::reload()
         ui->checkBoxMEM_READ->setToolTip(tr("Section is readable"));
         ui->checkBoxMEM_WRITE->setToolTip(tr("Section is writeable"));
 
-
         ui->comboBoxALIGN->setToolTip(tr("Set align"));
     }
 
@@ -124,7 +122,6 @@ bool DialogPESectionCharacteristics::reload()
 
     return true;
 }
-
 
 void DialogPESectionCharacteristics::on_checkBoxReadOnly_stateChanged(int arg1)
 {
@@ -144,8 +141,6 @@ void DialogPESectionCharacteristics::on_pushButtonApply_clicked()
     ui->pushButtonApply->setEnabled(false);
 
     pefile->setSection_Characteristics(nSection,ui->lineEditSectionSectionCharacteristics->text().toUInt(&bTemp,16));
-
-
 
     ui->checkBoxReadOnly->setCheckState(Qt::Unchecked);
 
@@ -387,9 +382,7 @@ void DialogPESectionCharacteristics::checkbox_reload()
             nCharacteristics+=IMAGE_SCN_MEM_WRITE;
         }
 
-
         nCharacteristics+=((ui->comboBoxALIGN->currentIndex())<<20);
-
 
         ui->lineEditSectionSectionCharacteristics->setText(QString("%1").arg(nCharacteristics,8,16,QChar('0')));
     }
