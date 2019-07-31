@@ -30,7 +30,6 @@ QDialogX::QDialogX(QWidget *parent) :
     connect(this, SIGNAL(appendError(QString)), parent, SIGNAL(appendError(QString)));
 }
 
-
 void QDialogX::setData(PEFile *pefile, __DIE_OPTIONS *pOptions)
 {
     this->pefile=pefile;

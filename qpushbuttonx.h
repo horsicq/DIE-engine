@@ -33,8 +33,7 @@ class QPushButtonX : public QPushButton
 {
     Q_OBJECT
 public:
-    explicit QPushButtonX(QObject *parent = 0);
-
+    explicit QPushButtonX(QWidget *parent=nullptr);
 
     void setShortcut(const QKeySequence &key);
     void setEnabled(bool bState);
@@ -47,12 +46,12 @@ protected:
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
     QString sShortCut;
-
 };
 
 #endif // QPUSHBUTTONX_H

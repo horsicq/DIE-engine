@@ -54,4 +54,3 @@ int QXDialogX::exec()
 
     return QDialog::exec();
 }
-

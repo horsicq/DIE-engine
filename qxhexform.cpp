@@ -41,7 +41,6 @@ QXHexForm::QXHexForm(QWidget *parent) :
     connect(ui->scrollAreaHEX,SIGNAL(setReadOnly(bool)),this,SLOT(setReadOnly(bool)));
 
     //    connect(ui->scrollAreaHEX,SIGNAL(_reloadMemoryMap(QList<__MEMORYMAP>*)),this,SLOT(reloadMemoryMap(QList<__MEMORYMAP>*)));
-
     //    ui->scrollAreaHEX->setFocus();
 
     ui->scrollAreaHEX->setReadOnlyMode(true);
@@ -188,7 +187,6 @@ void QXHexForm::on_checkBoxAddressAsHex_stateChanged(int arg1)
 
     //    handleMemoryMap(bIsChecked);
 
-
     setHEXfocus();
 }
 
@@ -227,7 +225,6 @@ void QXHexForm::setSelectionSize(unsigned long long nValue)
 
 void QXHexForm::on_comboBoxType_currentIndexChanged(const QString &arg1)
 {
-
     ui->comboBoxMode->clear();
     ui->comboBoxSyntax->clear();
 
@@ -309,8 +306,6 @@ void QXHexForm::setComboBoxSyntax(QString sSyntax)
             break;
         }
     }
-
-
 }
 
 void QXHexForm::on_pushButtonExtra_clicked()
@@ -321,7 +316,6 @@ void QXHexForm::on_pushButtonExtra_clicked()
     ui->scrollAreaHEX->__update();
 
     setHEXfocus();
-
 }
 
 void QXHexForm::on_comboBoxImage_currentIndexChanged(const QString &arg1)
@@ -357,7 +351,6 @@ void QXHexForm::on_pushButtonReload_clicked()
 {
     ui->scrollAreaHEX->reload();
 }
-
 
 //void QXHexForm::reloadMemoryMap(QList<__MEMORYMAP> *pMemoryMap)
 //{

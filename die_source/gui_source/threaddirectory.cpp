@@ -26,7 +26,6 @@ ThreadDirectory::ThreadDirectory(QObject *parent) :
     bIsRun=false;
     bIsCompleted=true;
     nTotal=0;
-
     //    filter.append("*.exe");
     //    filter.append("*.dll");
     //    filter.append("*.sys");

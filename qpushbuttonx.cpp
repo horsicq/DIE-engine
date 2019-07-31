@@ -20,7 +20,7 @@
 //
 #include "qpushbuttonx.h"
 
-QPushButtonX::QPushButtonX(QObject *parent)
+QPushButtonX::QPushButtonX(QWidget *parent) : QPushButton(parent)
 {
     //    qDebug("Constructor");
     x=0;
