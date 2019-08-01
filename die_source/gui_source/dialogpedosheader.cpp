@@ -196,13 +196,12 @@ DialogPEDosHeader::DialogPEDosHeader(QWidget *parent) :
     ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(11,1),lineEdite_cs);
     ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(12,1),lineEdite_lfarlc);
     ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(13,1),lineEdite_ovno);
-    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(14,1),lineEdite_oemid);
-    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(15,1),lineEdite_oeminfo);
-
-    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(16,1),lineEdite_res0);
-    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(17,1),lineEdite_res1);
-    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(18,1),lineEdite_res2);
-    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(19,1),lineEdite_res3);
+    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(14,1),lineEdite_res0);
+    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(15,1),lineEdite_res1);
+    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(16,1),lineEdite_res2);
+    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(17,1),lineEdite_res3);
+    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(18,1),lineEdite_oemid);
+    ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(19,1),lineEdite_oeminfo);
     ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(20,1),lineEdite_res20);
     ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(21,1),lineEdite_res21);
     ui->tableWidgetDosHeader->setIndexWidget(ui->tableWidgetDosHeader->model()->index(22,1),lineEdite_res22);
