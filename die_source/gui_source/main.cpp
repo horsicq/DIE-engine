@@ -25,12 +25,6 @@
 #include "handleoptions.h"
 #include "mainwindow.h"
 
-#ifdef Q_OS_WIN
-#ifdef QT_DEBUG
-//#include "../../../VisualLeakDetector/include/vld.h"
-#endif
-#endif
-
 int main(int argc, char *argv[])
 {
     //    qDebug("Start application Argc %d %s",argc,argc==2?argv[1]:"no ars");

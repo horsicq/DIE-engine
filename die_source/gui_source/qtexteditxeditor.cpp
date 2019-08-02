@@ -55,7 +55,6 @@ void QTextEditXeditor::setCompleter(QCompleter *completer)
     c->setCaseSensitivity(Qt::CaseInsensitive);
     QObject::connect(c, SIGNAL(activated(QString)),
                      this, SLOT(insertCompletion(QString)));
-
 }
 
 void QTextEditXeditor::setData(QList<QString> *pList, QString sType)
@@ -78,7 +77,6 @@ void QTextEditXeditor::lineNumberAreaPaintEvent(QPaintEvent *event)
     int blockNumber = block.blockNumber();
     int top = (int) blockBoundingGeometry(block).translated(contentOffset()).top();
     int bottom = top + (int) blockBoundingRect(block).height();
-
 
     while(block.isValid() && top <= event->rect().bottom())
     {

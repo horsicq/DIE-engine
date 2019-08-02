@@ -20,7 +20,7 @@
 //
 #include "qprogressbarx.h"
 
-QProgressBarX::QProgressBarX(QObject *parent)
+QProgressBarX::QProgressBarX(QWidget *parent): QProgressBar(parent)
 {
     //    qDebug("Constructor");
     x=0;

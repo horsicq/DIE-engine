@@ -31,7 +31,7 @@ class QProgressBarX : public QProgressBar
 {
     Q_OBJECT
 public:
-    explicit QProgressBarX(QObject *parent = 0);
+    explicit QProgressBarX(QWidget *parent=nullptr);
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
