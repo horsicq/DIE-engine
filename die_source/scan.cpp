@@ -189,7 +189,6 @@ bool Scan::analize(QString sFileName,bool bFullScan)
             }
         }
     }
-
 #ifdef USE_NFD
     else if(pOptions->sm==SM_NFD)
     {
@@ -203,7 +202,6 @@ bool Scan::analize(QString sFileName,bool bFullScan)
 
         emit setProgressBar(1,1);
     }
-
 #endif
 #ifdef USE_YARA
     else if(pOptions->sm==SM_YARA)
@@ -214,7 +212,6 @@ bool Scan::analize(QString sFileName,bool bFullScan)
 
         emit setProgressBar(1,1);
     }
-
 #endif
 
     int nMs=scanTime.msecsTo(QTime::currentTime());

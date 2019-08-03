@@ -87,7 +87,6 @@ QString VersionResource::getStringFileInfo(QString sKey)
 
     if(isChildrenPresent())
     {
-
         unsigned int nOffset=getChildrenOffset();
         unsigned int nOffset2=0;
         int nLength =pbaData->size()-nOffset;
@@ -303,6 +302,7 @@ unsigned int VersionResource::getNextHeaderOffset(unsigned int nOffset)
     //    nSize+=(wcslen((ushort *)(pbaData->data()+nSize))+1)*sizeof(short);
     nSize+=(sString.length()+1)*sizeof(short);
     nSize=ALIGN_UP(nSize,4);
+
     return nSize;
 }
 

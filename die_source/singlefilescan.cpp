@@ -180,6 +180,9 @@ void SingleFileScan::appendError(QString sMessage)
 #ifdef Q_OS_WIN
 bool  WINAPI  _DllMain(_In_  HINSTANCE hinstDLL,_In_  DWORD fdwReason,_In_  LPVOID lpvReserved)
 {
+    Q_UNUSED(hinstDLL)
+    Q_UNUSED(lpvReserved)
+
     switch(fdwReason)
     {
         case DLL_PROCESS_ATTACH:
