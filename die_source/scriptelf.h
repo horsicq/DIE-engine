@@ -31,7 +31,6 @@ public:
     explicit scriptELF(QObject *parent = 0);
     void setData(ELFFile *elffile);
 
-
 public slots:
     QString getGeneralOptions();
     unsigned short getElfHeader_type();
@@ -92,6 +91,7 @@ public slots:
     QString getSectionName(int nSection);
     bool compareOverlay(QString sSignature,unsigned int nOffset=0);
     long long getEntryPointOffset();
+
 private:
     ELFFile *elffile;
 };

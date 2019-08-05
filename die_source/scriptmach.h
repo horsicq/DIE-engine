@@ -32,7 +32,6 @@ public:
     void setData(MACHFile *machfile);
 
 public slots:
-
     bool compareEP(QString sSignature,unsigned int nOffset=0);
     //    bool compareEPn(QString sSignature,unsigned int nOffset);
     QString getString(unsigned int nOffset,unsigned int nSize=50);
@@ -78,6 +77,7 @@ public slots:
     bool isOverlayPresent();
     bool compareOverlay(QString sSignature,unsigned int nOffset=0);
     long long getEntryPointOffset();
+
 private:
     MACHFile *machfile;
 };

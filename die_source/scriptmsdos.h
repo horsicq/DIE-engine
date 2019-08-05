@@ -32,7 +32,6 @@ public:
     void setData(MSDOSFile *msdosfile);
 
 public slots:
-
     bool compareEP(QString sSignature,unsigned int nOffset=0);
     //    bool compareEPn(QString sSignature,unsigned int nOffset);
     QString getString(unsigned int nOffset,unsigned int nSize=50);
@@ -67,6 +66,7 @@ public slots:
     bool compareOverlay(QString sSignature,unsigned int nOffset=0);
 
     int getEntryPointOffset();
+
 private:
     MSDOSFile *msdosfile;
 };

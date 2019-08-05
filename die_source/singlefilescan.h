@@ -20,12 +20,14 @@ public:
     static void setDataBase(QString sDataBase);
 
     static __DIE_OPTIONS options;
+
 public slots:
 
 private slots:
     void appendMessage(QString sMessage);
     void appendSignature(QString sMessage);
     void appendError(QString sMessage);
+
 private:
     //    __DIE_OPTIONS *pOptions;
     QString sResult;

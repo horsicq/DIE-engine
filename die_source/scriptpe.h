@@ -157,6 +157,7 @@ public slots:
     bool isResourcePresent();
     bool isExportFunctionPresent(QString sFunctionName);
     bool isExportFunctionPresentExp(QString sFunctionName);
+
 private:
     PEFile *pefile;
     //    int nEPOffset;

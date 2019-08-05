@@ -34,7 +34,6 @@ public:
 signals:
     void appendError(QString sString);
 
-
 public slots:
     void _log(QString sString);
     unsigned int swapBytes(unsigned int nValue);
@@ -63,9 +62,6 @@ public slots:
     virtual float calculateEntropy(unsigned int nOffset, unsigned int nSize)=0;
     virtual QString getSignature(unsigned int nOffset,unsigned int nSize)=0;
     virtual QString calculateMD5(unsigned int nOffset, unsigned int nSize)=0;
-
-public slots:
-
 };
 
 #endif // SCRIPTGENERIC_H

@@ -64,9 +64,9 @@ public slots:
     float calculateEntropy(unsigned int nOffset, unsigned int nSize);
     QString getSignature(unsigned int nOffset,unsigned int nSize);
     QString calculateMD5(unsigned int nOffset, unsigned int nSize);
+
 private:
     Binary *binary;
-
 };
 
 #endif // SCRIPTTEXT_H

@@ -2604,7 +2604,7 @@ QString Binary::getDisasmMode()
     {
         if(((IMAGE_DOS_HEADER *)pOffset)->e_magic==IMAGE_DOS_SIGNATURE)
         {
-            if((((IMAGE_DOS_HEADER *)pOffset)->e_lfanew<(unsigned int)baHeader.size()-sizeof(IMAGE_NT_HEADERS))&&((unsigned int)baHeader.size()>sizeof(IMAGE_NT_HEADERS)))
+            if(((unsigned int)(((IMAGE_DOS_HEADER *)pOffset)->e_lfanew)<(unsigned int)baHeader.size()-sizeof(IMAGE_NT_HEADERS))&&((unsigned int)baHeader.size()>sizeof(IMAGE_NT_HEADERS)))
             {
                 pOffset+=((IMAGE_DOS_HEADER *)pOffset)->e_lfanew;
 
