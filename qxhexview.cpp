@@ -87,8 +87,6 @@ QList<QString> QXHexView::setData(QByteArray(*__ReadMemory)(QVariant,unsigned lo
 
     _initHEX(&datablock);
 
-
-
     datablock.__ReadMemory=__ReadMemory;
     datablock.__WriteMemory=__WriteMemory;
     datablock.nStartAddress=nStartAddress;
@@ -99,8 +97,6 @@ QList<QString> QXHexView::setData(QByteArray(*__ReadMemory)(QVariant,unsigned lo
     datablock.nSymbolHeight=qxhexviewx->fontMetrics().height();
 
     //    rescroll();
-
-
     //    scrollSlot(0);
     qxhexviewx->__update(nStartAddress);
 
@@ -141,7 +137,6 @@ void QXHexView::setType(QString sType, QString sMode, QString sSyntax)
     {
         datablock.nCurrentAddress=datablock.nCursor;
     }
-
 
     scrollbar->setMaximum(0);
 
@@ -185,7 +180,6 @@ void QXHexView::goToAddress(unsigned long long nAddress)
         emit appendError(QString("%1 %2: %3").arg(tr("Invalid")).arg(tr("Address")).arg(nAddress));
     }
 }
-
 
 QByteArray QXHexView::ReadFromFile(QVariant parameter,unsigned long long nOffset,unsigned long long nSize,bool *pbIsReadOnly)
 {
@@ -262,13 +256,10 @@ void QXHexView::_paintHEX(QWidget *pWidget)
     {
         return;
     }
-
     //#ifdef QT_DEBUG
     //    QElapsedTimer timer;
     //    timer.start();
     //#endif
-
-
     int nSymbolWidth=_pDataBlock->nSymbolWidth;
     int nSymbolHeight=_pDataBlock->nSymbolHeight;
     int nLineCount=_pDataBlock->nLineCount;
@@ -285,7 +276,6 @@ void QXHexView::_paintHEX(QWidget *pWidget)
     bool bCursorL=_pDataBlock->bCursorL;
 
     _pDataBlock->bShowCursor=!bShowCursor;
-
 
     if(nStartSelection>=nEndSelection)
     {
@@ -404,14 +394,11 @@ void QXHexView::_paintHEX(QWidget *pWidget)
         }
 
 #ifdef QT_DEBUG
-
         if(_pDataBlock->sHEX.length()<=2*(_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress+i))
         {
             qDebug("HEX lenght :%d index %d",_pDataBlock->sHEX.length(),2*(_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress+i));
         }
-
 #endif
-
         if(bCursor&&(bCursorH||bCursorL))
         {
             if(bCursorH)
@@ -434,7 +421,6 @@ void QXHexView::_paintHEX(QWidget *pWidget)
                 painter.drawText(xPosHex+xIndent+(i%nLineCount)*(nSymbolWidth*3)+nSymbolWidth,pWidget->rect().y()+nSymbolHeight*(j)+yIndent,_pDataBlock->sHEX.at(2*(_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress+i)+1));
                 _paintRevert(pWidget,&painter);
             }
-
         }
         else
         {
@@ -446,14 +432,10 @@ void QXHexView::_paintHEX(QWidget *pWidget)
             painter.drawText(xPosHex+xIndent+(i%nLineCount)*(nSymbolWidth*3)+2*nSymbolWidth,pWidget->rect().y()+nSymbolHeight*(j)+yIndent," ");
         }
 
-
         //        if(bCursor)
         //        {
         //            _paintRevert(pWidget,&painter);
         //        }
-
-
-
         //        if(bCursor)
         //        {
         //            _paintRevert(pWidget,&painter);
@@ -465,12 +447,10 @@ void QXHexView::_paintHEX(QWidget *pWidget)
         }
 
 #ifdef QT_DEBUG
-
         if(_pDataBlock->sANSI.length()<=_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress+i)
         {
             qDebug("ANSI lenght :%d index %d",_pDataBlock->sANSI.length(),(_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress+i));
         }
-
 #endif
         int __nSize=_pDataBlock->sANSI.length();
         int __i=(_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress+i);
@@ -501,12 +481,9 @@ void QXHexView::_paintHEX(QWidget *pWidget)
     painter.drawLine(pWidget->rect().x()+xPosHex,pWidget->rect().y(),pWidget->rect().x()+xPosHex,pWidget->rect().height());
     painter.drawLine(pWidget->rect().x()+xPosAnsi,pWidget->rect().y(),pWidget->rect().x()+xPosAnsi,pWidget->rect().height());
     painter.drawLine(pWidget->rect().x()+xPosEnd,pWidget->rect().y(),pWidget->rect().x()+xPosEnd,pWidget->rect().height());
-
-
     //#ifdef QT_DEBUG
     //    qDebug("_Paint :%d ms",timer.elapsed());
     //#endif
-
 }
 
 bool QXHexView::_mouseEventHEX(QWidget *pWidget, QEvent *event)
@@ -518,10 +495,7 @@ bool QXHexView::_mouseEventHEX(QWidget *pWidget, QEvent *event)
     //    {
     //        return false;
     //    }
-
     //    qDebug("%X",_pDataBlock->nReadBlockSize);
-
-
     int nSymbolWidth=_pDataBlock->nSymbolWidth;
     int nSymbolHeight=_pDataBlock->nSymbolHeight;
     int nLineCount=_pDataBlock->nLineCount;
@@ -536,8 +510,6 @@ bool QXHexView::_mouseEventHEX(QWidget *pWidget, QEvent *event)
     int xPosEnd=xPosAnsi+nSymbolWidth*(nLineCount+2);
     int xIndent=nSymbolWidth;
     int yIndent=nSymbolHeight;
-
-
 
     int nX=mouseEvent->pos().x();
     int nY=mouseEvent->pos().y();
@@ -608,21 +580,17 @@ bool QXHexView::_mouseEventHEX(QWidget *pWidget, QEvent *event)
         {
             nAddress=-1;
         }
-
     }
 
     if(nAddress!=-1)
     {
         if(event->type() == QEvent::MouseButtonPress)
         {
-
             //            _pDataBlock->nStartSelection=nAddress;
             //            _pDataBlock->nEndSelection=nAddress+1;
 
-
             _pDataBlock->nCursor=nAddress;
             _pDataBlock->nFirstClick=nAddress;
-
 
             ((QXHexViewX *)pWidget)->__update();
         }
@@ -664,12 +632,7 @@ bool QXHexView::_mouseEventHEX(QWidget *pWidget, QEvent *event)
 
             ((QXHexViewX *)pWidget)->__update();
         }
-
-
     }
-
-
-
 
     return false;
 }
@@ -706,13 +669,10 @@ void QXHexView::_keyPressEventHEX(QWidget *pWidget, QKeyEvent *event)
     {
         _writeCharHEX(pWidget,event->key(),event->modifiers(),event->text());
     }
-
-
 }
 
 void QXHexView::_contextMenuHEX(QWidget *pWidget, QPoint pos)
 {
-
     _contextMenu(pWidget,pos);
 }
 
@@ -744,7 +704,6 @@ void QXHexView::_contextMenu(QWidget *pWidget, QPoint pos)
 #else
     actSearchNext->setShortcut(QKeySequence("F3"));
 #endif
-
     connect(actSearchNext,SIGNAL(triggered()),pWidget,SLOT(findNext()));
 
     QAction *actDump=new QAction(tr("Dump"), pWidget);
@@ -777,8 +736,6 @@ void QXHexView::_contextMenu(QWidget *pWidget, QPoint pos)
     menu->addAction(actGoToAddress);
     //    menu->addAction(actSearch);
 
-
-
     if(((QXHexViewX *)pWidget)->isSelectionPresent())
     {
         pWidget->addAction(actDump);
@@ -790,8 +747,6 @@ void QXHexView::_contextMenu(QWidget *pWidget, QPoint pos)
         menuCopy->addAction(actCopyAsANSI);
         menuCopy->addAction(actCopyAsSignature);
         menu->addMenu(menuCopy);
-
-
     }
 
     menuSearch->addAction(actSearchSignature);
@@ -874,7 +829,6 @@ void QXHexView::_paintRevert(QWidget *pWidget,QPainter *pPainter)
     {
         pPainter->setPen(pWidget->palette().color(QPalette::Text));
     }
-
 }
 
 void QXHexView::_paintFontRevert(QWidget *pWidget, QPainter *pPainter)
@@ -962,8 +916,6 @@ void QXHexView::scrollSlot(int nScrollPosition)
     {
         if(datablock.__ReadMemory)
         {
-
-
             if(nScrollPosition!=(int)datablock.nCurrentScrollPosition)
             {
                 unsigned long long nAddress=datablock._scrollPositionToAddress(&datablock,nScrollPosition);
@@ -979,7 +931,6 @@ void QXHexView::scrollSlot(int nScrollPosition)
     }
 }
 
-
 void QXHexView::rescroll()
 {
     int nMax=(datablock.nMaxSize-datablock._getStep())/datablock._getStep();
@@ -988,7 +939,6 @@ void QXHexView::rescroll()
     {
         scrollbar->setRange(0,nMax);
     }
-
 }
 
 void QXHexView::__update()
@@ -1052,6 +1002,7 @@ unsigned long long QXHexView::_addressToScrollPositionHEX(__DATABLOCK *pData,uns
 {
     pData->nAddressDelta=(nAddress-(pData->nStartAddress))%(pData->nLineCount);
     pData->nCurrentScrollPosition=(nAddress-(pData->nStartAddress))/(pData->nLineCount);
+
     return pData->nCurrentScrollPosition;
 }
 
@@ -1164,7 +1115,6 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
     //        pWidget->emitSelectionSizeChanged(1);
     //    }
 
-
     unsigned int nReadBlockSize=nLineCount*(pWidget->rect().height()/nSymbolHeight);
     int nScreenLines=pWidget->rect().height()/nSymbolHeight;
 
@@ -1175,8 +1125,6 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
 
     //    int nSize=_pDataBlock->baBuffer.size();
     int nSize=nReadBlockSize;
-
-
 
     char *pOffset=_pDataBlock->baBuffer.data()+(_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress);
 
@@ -1192,8 +1140,6 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
 #ifdef QT_DEBUG
     qDebug("ReadBlockSize=%d",nSize);
 #endif
-
-
     _pDataBlock->nReadBlockSize=nSize;
     //    int nSize2=_getRealSizeX86ASM(_pDataBlock,pOffset,nSize,nScreenLines-1);
 
@@ -1223,12 +1169,10 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
     painter.drawLine(pWidget->rect().x()+xPosHex,pWidget->rect().y(),pWidget->rect().x()+xPosHex,pWidget->rect().height());
     painter.drawLine(pWidget->rect().x()+xPosDisasm,pWidget->rect().y(),pWidget->rect().x()+xPosDisasm,pWidget->rect().height());
 
-
     QString sTemp;
 
     _pDataBlock->listAddresses.clear();
     _pDataBlock->listSizes.clear();
-
 
     DISASM MyDisasm;
     memset(&MyDisasm,0,sizeof(MyDisasm));
@@ -1263,12 +1207,10 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
         MyDisasm.Options=0x400;
     }
 
-
     //        MyDisasm.Archi=pOptions->nAsmMode;
     //        MyDisasm.Options=pOptions->nAsmSyntax;
 
     MyDisasm.EIP=(UIntPtr)pOffset;
-
 
     int nError=0;
     int nLen=0;
@@ -1276,7 +1218,6 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
     QString sOpcode;
     QString sBinary;
     int i=0;
-
 
     for(; !nError;)
     {
@@ -1344,7 +1285,6 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
                 }
 
                 painter.drawText(xPosAddress+xIndent,pWidget->rect().y()+nSymbolHeight*(k)+yIndent,sTemp);
-
             }
 
             //            if((nStartSelection<=((nAddress+i))&&((nEndSelection>(nAddress+i)))))
@@ -1372,7 +1312,6 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
             }
 
             painter.drawText(xPosDisasm+xIndent,pWidget->rect().y()+nSymbolHeight*(k)+yIndent,sOpcode);
-
 
             if(bSel)
             {
@@ -1447,11 +1386,7 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
                 bCursor=false;
                 bSel=false;
             }
-
-
-
         }
-
 
         i+=nLen;
         k++;
@@ -1462,10 +1397,7 @@ void QXHexView::_paintX86ASM(QWidget *pWidget)
         }
 
     }
-
     //    _pDataBlock->listAddresses.append(nAddress+i+nLen);
-
-
 }
 
 bool QXHexView::_mouseEventX86ASM(QWidget *pWidget, QEvent *event)
@@ -1473,7 +1405,6 @@ bool QXHexView::_mouseEventX86ASM(QWidget *pWidget, QEvent *event)
     __DATABLOCK *_pDataBlock=((QXHexViewX *)pWidget)->getDataBlock();
 
     QMouseEvent *mouseEvent = static_cast<QMouseEvent*>(event);
-
 
     unsigned long long nCurrentAddress=_pDataBlock->nCurrentAddress;
     unsigned long long nAddress;
@@ -1550,7 +1481,6 @@ bool QXHexView::_mouseEventX86ASM(QWidget *pWidget, QEvent *event)
         }
     }
 
-
     if(nAddress!=-1)
     {
         if(event->type() == QEvent::MouseButtonPress)
@@ -1570,11 +1500,9 @@ bool QXHexView::_mouseEventX86ASM(QWidget *pWidget, QEvent *event)
         }
         else if(event->type() == QEvent::MouseMove)
         {
-
             _pDataBlock->bShowCursor=false;
 
             _pDataBlock->nStartSelection=_pDataBlock->nFirstClick;
-
 
             if(bHex)
             {
@@ -1629,19 +1557,11 @@ bool QXHexView::_mouseEventX86ASM(QWidget *pWidget, QEvent *event)
                 }
             }
         }
-
-
-
     }
-
     //    qDebug("Start selection %X",_pDataBlock->nStartSelection);
     //    qDebug("Next selection %X",_pDataBlock->nNextSelection);
     //    qDebug("End selection %X",_pDataBlock->nEndSelection);
-
-
-
     ((QXHexViewX *)pWidget)->__update();
-
 
     return false;
 }
@@ -1705,7 +1625,6 @@ unsigned long long QXHexView::_getNextOpcodeAddressX86ASM(QWidget *pWidget, unsi
     QList<int> listAddresses;
     int nLen=0;
 
-
     for(int i=0; i<nSize;)
     {
         listAddresses.append(i);
@@ -1728,7 +1647,6 @@ unsigned long long QXHexView::_getNextOpcodeAddressX86ASM(QWidget *pWidget, unsi
         nResult=nCurrent;
     }
 
-
     return nResult;
 }
 
@@ -1746,7 +1664,6 @@ unsigned long long QXHexView::_getPrevOpcodeAddressX86ASM(QWidget *pWidget, unsi
     int nSize=baData.size();
     QList<int> listAddresses;
     int nLen=0;
-
 
     for(int i=0; i<nSize;)
     {
@@ -1813,7 +1730,6 @@ unsigned long long QXHexView::_scrollPositionToAddressX86ASM(__DATABLOCK *pData,
         return nScrollPosition+(pData->nStartAddress);
     }
 
-
     unsigned long long nAddress=qMax((long long)0,(long long)nScrollPosition-100);
 
     bool bTemp;
@@ -1823,7 +1739,6 @@ unsigned long long QXHexView::_scrollPositionToAddressX86ASM(__DATABLOCK *pData,
     int nSize=baData.size();
     QList<int> listAddresses;
     int nLen=0;
-
 
     for(int i=0; i<nSize;)
     {
@@ -1944,9 +1859,7 @@ void QXHexView::_moveRightX86ASM(QWidget *pWidget)
             _pDataBlock->bCursorL=false;
             _pDataBlock->nCursor++;
         }
-
     }
-
 
     if(_pDataBlock->nCursor>=_pDataBlock->nCurrentAddress+_pDataBlock->nReadBlockSize)
     {
@@ -1977,13 +1890,11 @@ void QXHexView::_moveLeftX86ASM(QWidget *pWidget)
             _pDataBlock->bCursorL=true;
             _pDataBlock->nCursor--;
         }
-
     }
     else if(_pDataBlock->bCursorL)
     {
         _pDataBlock->bCursorH=true;
         _pDataBlock->bCursorL=false;
-
     }
 
     if(_pDataBlock->nCursor<_pDataBlock->nCurrentAddress)
@@ -2006,7 +1917,6 @@ void QXHexView::_moveUpX86ASM(QWidget *pWidget)
     {
         _pDataBlock->nCursor=nCursor;
     }
-
 
     _stepBX86ASM(pWidget);
 }
@@ -2061,7 +1971,6 @@ void QXHexView::_moveRightHEX(QWidget *pWidget)
             _pDataBlock->bCursorL=false;
             _pDataBlock->nCursor++;
         }
-
     }
 
     if(_pDataBlock->nCursor>=_pDataBlock->nCurrentAddress+_pDataBlock->nReadBlockSize)
@@ -2131,7 +2040,6 @@ void QXHexView::_moveUpHEX(QWidget *pWidget)
         _pDataBlock->nCursor=nCursor;
     }
 
-
     _stepBHEX(pWidget);
 }
 
@@ -2153,8 +2061,6 @@ void QXHexView::_moveDownHEX(QWidget *pWidget)
     //    qDebug("Cursor %d",nCursor);
 
     _stepFHEX(pWidget);
-
-
 }
 
 void QXHexView::_movePageUpHEX(QWidget *pWidget)
@@ -2213,8 +2119,6 @@ void QXHexView::_movePageUpX86ASM(QWidget *pWidget)
     //        nCursor=_getPrevOpcodeAddressX86ASM(pWidget,_pDataBlock->nCursor);
     //        _pDataBlock->nCursor=nCursor;
     //    }
-
-
     unsigned long long nAddress=_pDataBlock->nCurrentAddress-20*_getStepX86ASM();
 
     if(nAddress>_pDataBlock->nCurrentAddress)
@@ -2240,9 +2144,6 @@ void QXHexView::_movePageDownX86ASM(QWidget *pWidget)
     //    {
     //        _pDataBlock->nCursor=_pDataBlock->nMaxSize-1;
     //    }
-
-
-
     unsigned long long nAddress=_pDataBlock->nCurrentAddress+20*_getStepX86ASM();
 
     if(nAddress<_pDataBlock->nMaxSize)
@@ -2344,7 +2245,6 @@ void QXHexView::_writeCharHEX(QWidget *pWidget,int nKeyCode,int nMod,QString sTe
             _moveRightHEX(pWidget);
         }
     }
-
     //((QXHexViewX *)pWidget)->_reload();
 }
 
@@ -2367,7 +2267,6 @@ void QXHexView::_writeCharX86ASM(QWidget *pWidget,int nKeyCode,int nMod,QString 
 #else
         if(!(nMod&Qt::CTRL)&&!(nMod&Qt::ALT))
 #endif
-
         {
             if((nKeyCode>=Qt::Key_0)&&(nKeyCode<=Qt::Key_9))
             {
@@ -2463,8 +2362,6 @@ void QXHexView::_stepFHEX(QWidget *pWidget)
         //        scrollbar->setValue(scrollbar->value()+1);
         ((QXHexViewX *)pWidget)->_stepF();
     }
-
-
 }
 
 void QXHexView::_stepBHEX(QWidget *pWidget)
@@ -2512,7 +2409,6 @@ void QXHexView::_stepBX86ASM(QWidget *pWidget)
     {
         ((QXHexViewX *)pWidget)->_stepB();
     }
-
 }
 
 void QXHexView::_stepB()
@@ -2671,7 +2567,6 @@ void QXHexView::setImage(QString sImage)
     }
     else if(sImage=="ELF")
     {
-
         ELFFile elffile;
 
         if(elffile.setFileName(datablock.parameter.toString()))
@@ -2715,7 +2610,7 @@ void QXHexView::setImage(QString sImage)
         {
             //            datablock.nAddressWidth=10;
 
-            for(int i=0; i<machfile.getNumberOfSegments(); i++)
+            for(int i=0; (unsigned int)i<machfile.getNumberOfSegments(); i++)
             {
                 dr.nOffset=machfile.getSegment_fileoff32(i);
                 dr.nAddress=machfile.getSegment_vmaddr32(i);
@@ -2746,7 +2641,6 @@ void QXHexView::setImage(QString sImage)
     }
 
     qxhexviewx->__update();
-
 }
 
 void QXHexView::_setFont(QFont font)
