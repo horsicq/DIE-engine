@@ -63,7 +63,6 @@ QXHexViewX::QXHexViewX(QScrollArea *parent) :
     QObject::connect(shortcutStartDocument, SIGNAL(activated()), this, SIGNAL(_signalStartDocument()));
     shortcutEndDocument = new QShortcut(QKeySequence::MoveToEndOfDocument, this);
     QObject::connect(shortcutEndDocument, SIGNAL(activated()), this, SIGNAL(_signalEndDocument()));
-
 #ifdef Q_OS_MAC
     shortcutSearchNext = new QShortcut(QKeySequence("Ctrl+G"), this);
 #else
@@ -178,9 +177,7 @@ void QXHexViewX::read()
                     qDebug("F");
 #endif
                 }
-
             }
-
 
             pDataBlock->nBufferSize=qMin((unsigned long long)pDataBlock->nReadBlockMax,pDataBlock->nMaxSize-(pDataBlock->nBufferAddress-pDataBlock->nStartAddress));
             _reload();
@@ -194,7 +191,6 @@ void QXHexViewX::read()
         qDebug("Address: %x",pDataBlock->nCurrentAddress);
         qDebug("Size: %x",pDataBlock->nReadBlockSize);
 #endif
-
         pDataBlock->nBufferAddress=pDataBlock->nCurrentAddress;
         pDataBlock->nBufferSize=pDataBlock->nReadBlockSize;
 
@@ -212,7 +208,6 @@ QByteArray QXHexViewX::read(unsigned long long nAddress, unsigned long long nSiz
 #ifdef QT_DEBUG
         qDebug("Read from file");
 #endif
-
         nSize=qMin(nSize,pDataBlock->nMaxSize-nAddress+pDataBlock->nStartAddress);
 
         baResult=pDataBlock->__ReadMemory(pDataBlock->parameter.toString(),nAddress,nSize,&bIsReadOnly);
@@ -226,7 +221,6 @@ QByteArray QXHexViewX::read(unsigned long long nAddress, unsigned long long nSiz
 bool QXHexViewX::write(unsigned long long nAddress, QByteArray baData)
 {
     //    qDebug("Write: %x",nAddress);
-
     if(pDataBlock->__WriteMemory(pDataBlock->parameter.toString(),nAddress,baData))
     {
         setModAddresses.insert(nAddress);
@@ -243,7 +237,6 @@ void QXHexViewX::paintEvent(QPaintEvent *event)
     //    {
     //        return;
     //    }
-
     emit __repaint();
 }
 bool QXHexViewX::event(QEvent *event)
@@ -433,12 +426,8 @@ void QXHexViewX::findSignature(QString sSignature,bool bIsCursor)
     }
 
     pDataBlock->sSearchSignature=sSignature;
-
     //    qDebug(sSignature.toAscii().data());
-
     _searchThread();
-
-
     //    QMessageBox::information(this,"Information","Nothing found");
 }
 
@@ -844,5 +833,3 @@ void QXHexViewX::_pageDown()
 {
     emit _signalPageDown();
 }
-
-

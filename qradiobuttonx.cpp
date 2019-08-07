@@ -46,8 +46,6 @@ bool QRadioButtonX::event(QEvent *event)
     }
 
     return QRadioButton::event(event);
-
-
 }
 
 void QRadioButtonX::leaveEvent(QEvent *myLeave)

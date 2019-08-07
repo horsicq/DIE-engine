@@ -63,4 +63,3 @@ void QTableWidgetX::_showTooltip()
         QToolTip::showText(QPoint(x,y),toolTip());
     }
 }
-

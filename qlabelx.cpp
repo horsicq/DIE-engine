@@ -20,7 +20,7 @@
 //
 #include "qlabelx.h"
 
-QLabelX::QLabelX(QObject *parent)
+QLabelX::QLabelX(QWidget *parent): QLabel(parent)
 {
     x=0;
     y=0;
@@ -61,4 +61,3 @@ void QLabelX::_showTooltip()
         QToolTip::showText(QPoint(x,y),toolTip());
     }
 }
-

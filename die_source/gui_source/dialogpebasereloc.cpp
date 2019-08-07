@@ -124,7 +124,6 @@ bool DialogPEBaseReloc::reload()
             ui->tableWidgetRelocs->setItem(i,2,newItem);
             ui->tableWidgetRelocs->item(i,2)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);
 
-
             newItem = new QTableWidgetItem;
 
             newItem->setText(QString("%1").arg(nRelocsTableOffset,8,16,QChar('0')));

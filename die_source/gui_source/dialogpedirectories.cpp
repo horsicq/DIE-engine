@@ -484,7 +484,6 @@ bool DialogPEDirectories::reload()
 
     IMAGE_DATA_DIRECTORY idd;
 
-    //
     //    pefile->setFileName(sFileName);
 
     nOffset=pefile->getDataDirectoriesOffset();

@@ -34,7 +34,6 @@ bool ScriptEngineEventFilter::eventFilter(QObject* object,QEvent* event)
     }
 
     return QObject::eventFilter(object,event);
-
 }
 void ScriptEngineEventFilter::checkToolTip()
 {
