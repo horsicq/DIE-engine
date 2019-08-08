@@ -75,10 +75,12 @@ DialogAbout::~DialogAbout()
 
     delete ui;
 }
+
 void DialogAbout::setData(__DIE_OPTIONS *pOptions)
 {
     setOptions(pOptions);
 }
+
 void DialogAbout::on_pushButtonOK_clicked()
 {
     this->close();
@@ -89,6 +91,7 @@ void DialogAbout::on_pushButtonCheckUpdate_clicked()
     m_manager->get(QNetworkRequest(QUrl(__UPDATEFILE)));
     ui->pushButtonCheckUpdate->setEnabled(false);
 }
+
 void DialogAbout::replyFinished(QNetworkReply* pReply)
 {
     ui->pushButtonCheckUpdate->setEnabled(true);

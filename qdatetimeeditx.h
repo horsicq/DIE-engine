@@ -31,18 +31,19 @@ class QDateTimeEditX : public QDateTimeEdit
 {
     Q_OBJECT
 public:
-    explicit QDateTimeEditX(QObject *parent = 0);
+    explicit QDateTimeEditX(QWidget *parent=nullptr);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
-
 };
 
 #endif // QDATETIMEEDITX_H

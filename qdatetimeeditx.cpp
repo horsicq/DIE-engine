@@ -20,7 +20,7 @@
 //
 #include "qdatetimeeditx.h"
 
-QDateTimeEditX::QDateTimeEditX(QObject *parent)
+QDateTimeEditX::QDateTimeEditX(QWidget *parent): QDateTimeEdit(parent)
 {
     x=0;
     y=0;
@@ -61,4 +61,3 @@ void QDateTimeEditX::_showTooltip()
         QToolTip::showText(QPoint(x,y),toolTip());
     }
 }
-
