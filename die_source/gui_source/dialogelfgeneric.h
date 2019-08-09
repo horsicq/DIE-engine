@@ -27,6 +27,7 @@
 class DialogELFGeneric : public QXDialogX
 {
     Q_OBJECT
+
 public:
     explicit DialogELFGeneric(QWidget *parent = 0);
     void setData(__DIE_OPTIONS *pOptions,ELFFile *elffile);

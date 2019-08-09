@@ -27,6 +27,7 @@
 class DialogPEGeneric : public QXDialogX
 {
     Q_OBJECT
+
 public:
     explicit DialogPEGeneric(QWidget *parent = 0);
 

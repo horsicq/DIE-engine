@@ -50,7 +50,6 @@ public slots:
 
 private:
     Ui::FormMSDOS *ui;
-
 };
 
 #endif // MSDOSFORM_H

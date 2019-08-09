@@ -35,6 +35,7 @@ class DialogPEImport;
 class DialogPEImport : public DialogPEGeneric
 {
     Q_OBJECT
+
 public:
     explicit DialogPEImport(QWidget *parent);
     ~DialogPEImport();

@@ -31,18 +31,18 @@ class QComboBoxX : public QComboBox
 {
     Q_OBJECT
 public:
-    explicit QComboBoxX(QObject *parent = 0);
+    explicit QComboBoxX(QWidget *parent=nullptr);
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
-
 };
 
 #endif // QCOMBOBOXX_H

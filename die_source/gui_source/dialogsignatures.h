@@ -48,6 +48,30 @@ public:
     ~DialogSignatures();
     void setData(__DIE_OPTIONS *pOptions,QString sFileName,QString sCurrentSignature="");
 
+private slots:
+    bool reload();
+    bool reload(QString sNewCurrent);
+    void on_listWidgetSignatures_currentRowChanged(int currentRow);
+    void on_pushButtonNew_clicked();
+    void on_pushButtonSave_clicked();
+    void on_textEditSignature_textChanged();
+    void on_checkBoxReadOnly_stateChanged(int arg1);
+    void on_pushButtonDebug_clicked();
+    void on_pushButtonRun_clicked();
+    void _run(bool bIsDebug);
+    void appendLog(QString sString);
+    void on_pushButtonClear_clicked();
+
+    void save();
+    void deleteSignature();
+    void renameSignature();
+
+    void on_listWidgetSignatures_customContextMenuRequested(const QPoint &pos);
+    void on_checkBoxHighlight_stateChanged(int arg1);
+
+protected:
+    void closeEvent(QCloseEvent *event);
+
 private:
     Ui::DialogSignatures *ui;
     QString sFileName;
@@ -84,31 +108,6 @@ private:
     QAbstractItemModel *pModel;
 
     bool bHighlightChanged;
-
-private slots:
-    bool reload();
-    bool reload(QString sNewCurrent);
-    void on_listWidgetSignatures_currentRowChanged(int currentRow);
-    void on_pushButtonNew_clicked();
-    void on_pushButtonSave_clicked();
-    void on_textEditSignature_textChanged();
-    void on_checkBoxReadOnly_stateChanged(int arg1);
-    void on_pushButtonDebug_clicked();
-    void on_pushButtonRun_clicked();
-    void _run(bool bIsDebug);
-    void appendLog(QString sString);
-    void on_pushButtonClear_clicked();
-
-    void save();
-    void deleteSignature();
-    void renameSignature();
-
-    void on_listWidgetSignatures_customContextMenuRequested(const QPoint &pos);
-
-    void on_checkBoxHighlight_stateChanged(int arg1);
-
-protected:
-    void closeEvent(QCloseEvent *event);
 };
 
 #endif // DIALOGSIGNATURES_H

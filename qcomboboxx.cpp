@@ -20,7 +20,7 @@
 //
 #include "qcomboboxx.h"
 
-QComboBoxX::QComboBoxX(QObject *parent)
+QComboBoxX::QComboBoxX(QWidget *parent): QComboBox(parent)
 {
     x=0;
     y=0;
@@ -46,8 +46,6 @@ bool QComboBoxX::event(QEvent *event)
     }
 
     return QComboBox::event(event);
-
-
 }
 
 void QComboBoxX::leaveEvent(QEvent *myLeave)

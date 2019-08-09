@@ -220,7 +220,3 @@ protected:
 };
 
 #endif // MAINWINDOW_H
-
-
-
-

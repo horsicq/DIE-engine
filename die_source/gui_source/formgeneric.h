@@ -35,13 +35,13 @@ public slots:
     virtual bool reload()=0;
     virtual void showTooltips(bool bShow)=0;
 
-protected:
-    QString sFileName;
-    __DIE_OPTIONS *pOptions;
-
 signals:
     void appendError(QString sError);
     void reloadSignal();
+
+protected:
+    QString sFileName;
+    __DIE_OPTIONS *pOptions;
 };
 
 #endif // FORMGENERIC_H
