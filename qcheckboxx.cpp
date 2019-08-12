@@ -20,7 +20,7 @@
 //
 #include "qcheckboxx.h"
 
-QCheckBoxX::QCheckBoxX(QObject *parent)
+QCheckBoxX::QCheckBoxX(QWidget *parent): QCheckBox(parent)
 {
     x=0;
     y=0;
@@ -46,8 +46,6 @@ bool QCheckBoxX::event(QEvent *event)
     }
 
     return QCheckBox::event(event);
-
-
 }
 
 void QCheckBoxX::leaveEvent(QEvent *myLeave)

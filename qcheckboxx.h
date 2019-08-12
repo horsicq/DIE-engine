@@ -31,19 +31,20 @@ class QCheckBoxX : public QCheckBox
 {
     Q_OBJECT
 public:
-    explicit QCheckBoxX(QObject *parent = 0);
+    explicit QCheckBoxX(QWidget *parent=nullptr);
     void setToolTip(const QString &text);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
-
 };
 
 #endif // QCHECKBOXX_H
