@@ -20,7 +20,7 @@
 //
 #include "qlineeditx.h"
 
-QLineEditX::QLineEditX(QObject *parent)
+QLineEditX::QLineEditX(QWidget *parent): QLineEdit(parent)
 {
     this->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(this,SIGNAL(customContextMenuRequested(QPoint)),this,SLOT(customContextMenuRequested(QPoint)));
@@ -38,8 +38,6 @@ QLineEditX::QLineEditX(QObject *parent)
     connect(actCopyAsHex0x,SIGNAL(triggered()),this,SLOT(copyAsHex0x()));
     connect(actCopyAsHex,SIGNAL(triggered()),this,SLOT(copyAsHex()));
     connect(actCopyAsDec,SIGNAL(triggered()),this,SLOT(copyAsDec()));
-
-
 }
 void QLineEditX::customContextMenuRequested(const QPoint &pos)
 {
@@ -52,7 +50,6 @@ void QLineEditX::customContextMenuRequested(const QPoint &pos)
     {
         menu.addAction(actCopyAsString);
         actCopyAsString->setText(tr("Copy as \"%1\"").arg(this->text()));
-
     }
 
     if(bIsHex)
@@ -123,7 +120,6 @@ void QLineEditX::copyAsDec()
     {
         clipboard->setText(QString("%1").arg(this->text().toULongLong(&bTemp,16)));
     }
-
 }
 
 void QLineEditX::setHex(bool bValue)
@@ -159,8 +155,6 @@ bool QLineEditX::event(QEvent *event)
     }
 
     return QLineEdit::event(event);
-
-
 }
 
 void QLineEditX::leaveEvent(QEvent *myLeave)

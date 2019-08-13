@@ -35,9 +35,7 @@ class QLineEditX : public QLineEdit
 {
     Q_OBJECT
 public:
-    explicit QLineEditX(QObject *parent = 0);
-
-signals:
+    explicit QLineEditX(QWidget *parent=nullptr);
 
 public slots:
     void customContextMenuRequested(const QPoint &pos);
@@ -49,15 +47,6 @@ public slots:
     void setHex(bool bValue);
     void setDec(bool bValue);
     void setString(bool bValue);
-private:
-    QAction *actCopyAsString;
-    QAction *actCopyAsHex;
-    QAction *actCopyAsHex0x;
-    QAction *actCopyAsDec;
-
-    bool bIsHex;
-    bool bIsDec;
-    bool bIsString;
 
 protected:
     bool event(QEvent *event);
@@ -66,11 +55,20 @@ protected:
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
 
+    QAction *actCopyAsString;
+    QAction *actCopyAsHex;
+    QAction *actCopyAsHex0x;
+    QAction *actCopyAsDec;
+
+    bool bIsHex;
+    bool bIsDec;
+    bool bIsString;
 };
 
 #endif // QLINEEDITX_H
