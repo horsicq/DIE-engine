@@ -131,7 +131,6 @@ void DialogDirectoryHeuristicScan::singleScanCompleteSlot(int nMs)
             sText+=QString("%1: %2: %3\r\n").arg(record.sFileType).arg(record.sType).arg(record.sName);
         }
     }
-
 #ifdef USE_NFD
     else if(pOptions->sm==SM_NFD)
     {
@@ -140,7 +139,6 @@ void DialogDirectoryHeuristicScan::singleScanCompleteSlot(int nMs)
         StaticScanItemModel model(&listResult);
         sText=model.toFormattedString();
     }
-
 #endif
 #ifdef USE_YARA
     else if(pOptions->sm==SM_YARA)
@@ -154,7 +152,6 @@ void DialogDirectoryHeuristicScan::singleScanCompleteSlot(int nMs)
             sText+=QString("    %1\r\n").arg(listResult.at(i));
         }
     }
-
 #endif
     ui->textEditResult->append(sText);
 

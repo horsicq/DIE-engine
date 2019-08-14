@@ -49,7 +49,7 @@ class QXHexView : public QScrollArea
 {
     Q_OBJECT
 public:
-    explicit QXHexView(QWidget *parent = 0);
+    explicit QXHexView(QWidget *parent=nullptr);
     QList<QString> setData(QByteArray(*__ReadMemory)(QVariant,unsigned long long,unsigned long long,bool *),bool (*__WriteMemory)(QVariant,unsigned long long,QByteArray),QVariant parameter,unsigned long long nStartAddress,unsigned long long nMaxSize);
     void setType(QString sType,QString sMode,QString sSyntax);
     void setAddressAsHEX(bool bState);
@@ -61,6 +61,7 @@ public:
     void setLittleEndian(bool bState);
     void setVorBuffer(bool bState);
     void reloadMemoryMap();
+
 signals:
     void _reloadMemoryMap(QList<__MEMORYMAP> *pMemoryMap);
     void appendError(QString szText);
@@ -71,7 +72,6 @@ signals:
     void closeDialog();
 
 public slots:
-
     void goToAddress(unsigned long long nAddress);
     static QByteArray ReadFromFile(QVariant parameter,unsigned long long nOffset,unsigned long long nSize,bool *pbIsReadOnly);
     static bool WriteToFile(QVariant parameter,unsigned long long nOffset,QByteArray baData);
@@ -149,8 +149,8 @@ public slots:
 protected:
     bool event(QEvent *event);
     void keyPressEvent(QKeyEvent * event);
-private:
 
+private:
     //    QByteArray (*__ReadMemory)(QVariant,unsigned long long,unsigned long long);
     //    QVariant parameter;
 
