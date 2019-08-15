@@ -234,7 +234,7 @@ void QXHexSearchThread::startSearch()
         //        nBlockOffset=_search(&(pDataBlock->sSearchSignature),&baBuffer);
         nBlockOffset=-1;
 
-        for(int i=0; i<nBlockSize-(nSignatureSize-1); i+=2)
+        for(int i=0; (unsigned int)i<nBlockSize-(nSignatureSize-1); i+=2)
         {
             if(bSearch==0)
             {

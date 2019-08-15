@@ -162,7 +162,7 @@ void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
         ui->tableWidgetRelocPage->setRowCount(0);
         ui->tableWidgetRelocPage->setRowCount((nSize-8)/2);
 
-        for(int i=0; i<(nSize-8)/2; i++)
+        for(int i=0; (unsigned int)i<(nSize-8)/2; i++)
         {
             sTypeOffset=pefile->readWord(nOffset);
 

@@ -2629,7 +2629,7 @@ void QXHexView::setImage(QString sImage)
         {
             //            datablock.nAddressWidth=10;
 
-            for(int i=0; i<machfile.getNumberOfSegments(); i++)
+            for(int i=0; (unsigned int)i<machfile.getNumberOfSegments(); i++)
             {
                 dr.nOffset=machfile.getSegment_fileoff64(i);
                 dr.nAddress=machfile.getSegment_vmaddr64(i);

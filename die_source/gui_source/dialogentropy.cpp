@@ -506,7 +506,7 @@ bool DialogEntropy::reload()
 
             if(machfile.setFileName(_binary->getFileName()))
             {
-                for(int i=0; i<machfile.getNumberOfSegments(); i++)
+                for(int i=0; (unsigned int)i<machfile.getNumberOfSegments(); i++)
                 {
                     if(_binary->getType()=="MACH")
                     {
