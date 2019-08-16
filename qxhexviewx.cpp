@@ -233,6 +233,7 @@ bool QXHexViewX::write(unsigned long long nAddress, QByteArray baData)
 
 void QXHexViewX::paintEvent(QPaintEvent *event)
 {
+    Q_UNUSED(event);
     //    if(bIsUpdated)
     //    {
     //        return;

@@ -40,8 +40,6 @@ public:
     void setLittleEndian(bool bState);
     void setTab(int nTab);
 
-private:
-    Ui::QXHexSearch *ui;
 signals:
     void signature(QString sSignature,bool bIsCursor);
 
@@ -63,6 +61,9 @@ private slots:
     void on_pushButtonOK_clicked();
     void on_pushButtonCancel_clicked();
     void on_tabWidget_currentChanged(int index);
+
+private:
+    Ui::QXHexSearch *ui;
 };
 
 #endif // QXHEXSEARCH_H

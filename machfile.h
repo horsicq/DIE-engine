@@ -42,6 +42,7 @@ struct DYLIB_FULL
 class MACHFile : public Binary
 {
     Q_OBJECT
+
 public:
     explicit MACHFile(QObject *parent=nullptr);
 

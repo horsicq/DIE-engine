@@ -30,6 +30,7 @@
 class QTabWidgetX : public QTabWidget
 {
     Q_OBJECT
+
 public:
     explicit QTabWidgetX(QWidget *parent = 0);
 protected:

@@ -41,6 +41,7 @@ public:
     ~QXHexSignature();
 
     void _showToolTips(bool bState);
+
 private slots:
     void reload();
     void on_pushButtonClose_clicked();

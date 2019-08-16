@@ -30,6 +30,7 @@
 class PluginsScript : public QScriptEngine
 {
     Q_OBJECT
+
 public:
     explicit PluginsScript(QObject *parent = 0);
     void setData(QObject *pClass,QString sClassName,QString sDefaultPath);

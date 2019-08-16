@@ -20,7 +20,7 @@
 //
 #include "qradiobuttonx.h"
 
-QRadioButtonX::QRadioButtonX(QObject *parent)
+QRadioButtonX::QRadioButtonX(QWidget *parent): QRadioButton(parent)
 {
     x=0;
     y=0;
@@ -61,6 +61,7 @@ void QRadioButtonX::_showTooltip()
         QToolTip::showText(QPoint(x,y),toolTip());
     }
 }
+
 void QRadioButtonX::setToolTip(const QString &text)
 {
     QString sToolTip=text;

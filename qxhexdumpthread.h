@@ -28,6 +28,7 @@
 class QXHexDumpThread : public QObject
 {
     Q_OBJECT
+
 public:
     explicit QXHexDumpThread(QObject *parent = 0);
 
@@ -37,18 +38,18 @@ signals:
     void _information(QString sString);
     void progressRangeChanged(int nMin,int nMax);
     void progressValueChanged(int nValue);
+
 public slots:
     void stopDump();
     void startDump();
+
 public:
     void setData(__DATABLOCK *pDataBlock);
+
 private:
     __DATABLOCK *pDataBlock;
 
     bool bDump;
-
-public slots:
-
 };
 
 #endif // QXHEXDUMPTHREAD_H

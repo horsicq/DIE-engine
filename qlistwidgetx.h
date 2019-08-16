@@ -30,8 +30,10 @@
 class QListWidgetX : public QListWidget
 {
     Q_OBJECT
+
 public:
-    explicit QListWidgetX(QWidget *parent = 0);
+    explicit QListWidgetX(QWidget *parent=nullptr);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);

@@ -30,8 +30,10 @@
 class QComboBoxX : public QComboBox
 {
     Q_OBJECT
+
 public:
     explicit QComboBoxX(QWidget *parent=nullptr);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);

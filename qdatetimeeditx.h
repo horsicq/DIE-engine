@@ -30,6 +30,7 @@
 class QDateTimeEditX : public QDateTimeEdit
 {
     Q_OBJECT
+
 public:
     explicit QDateTimeEditX(QWidget *parent=nullptr);
 

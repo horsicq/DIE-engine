@@ -83,6 +83,7 @@ typedef struct __tagVS_FIXEDFILEINFO
 class VersionResource : public QObject
 {
     Q_OBJECT
+
 public:
     explicit VersionResource(QByteArray *pbaData);
 

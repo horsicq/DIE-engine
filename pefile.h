@@ -115,8 +115,8 @@ private:
 #define CLI_METADATA_unknown62              0x0000000000000000 //62
 #define CLI_METADATA_unknown63              0x0000000000000000 //63
 
-
     Q_OBJECT
+
 public:
     explicit PEFile(QObject *parent=nullptr);
     ~PEFile();

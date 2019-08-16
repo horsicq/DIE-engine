@@ -30,19 +30,21 @@
 class QProgressBarX : public QProgressBar
 {
     Q_OBJECT
+
 public:
     explicit QProgressBarX(QWidget *parent=nullptr);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
-
 };
 
 #endif // QPROGRESSBARX_H

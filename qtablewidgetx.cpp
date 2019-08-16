@@ -20,8 +20,7 @@
 //
 #include "qtablewidgetx.h"
 
-QTableWidgetX::QTableWidgetX(QWidget *parent) :
-    QTableWidget(parent)
+QTableWidgetX::QTableWidgetX(QWidget *parent): QTableWidget(parent)
 {
     //    qDebug("Constructor");
     x=0;

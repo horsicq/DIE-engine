@@ -39,6 +39,7 @@ public:
     };
 
     Q_OBJECT
+
 public:
     explicit ELFFile(QObject *parent=nullptr);
 

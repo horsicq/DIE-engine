@@ -30,6 +30,7 @@
 class QCheckBoxX : public QCheckBox
 {
     Q_OBJECT
+
 public:
     explicit QCheckBoxX(QWidget *parent=nullptr);
     void setToolTip(const QString &text);

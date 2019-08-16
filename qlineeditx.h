@@ -34,6 +34,7 @@
 class QLineEditX : public QLineEdit
 {
     Q_OBJECT
+
 public:
     explicit QLineEditX(QWidget *parent=nullptr);
 

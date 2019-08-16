@@ -41,13 +41,16 @@ public:
     void setData(QList<__DATARECORD> *pList,bool bIsHEX);
 
     void _showToolTips(bool bState);
+
 private:
     Ui::QXHexGoTo *ui;
     QList<__DATARECORD> *pList;
     //    unsigned long long nStartAddress;
     //    unsigned long long nMaxSize;
+
 signals:
     void valueChanged(unsigned long long);
+
 private slots:
     void on_pushButtonOK_clicked();
     void on_pushButtonCancel_clicked();

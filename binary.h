@@ -62,6 +62,7 @@ class Binary : public QObject
 #define BUFFER_SIZE 0x1000
 #define MEMORYCOUNT 10
     Q_OBJECT
+
 public:
 
     explicit Binary(QObject *parent=nullptr);

@@ -30,8 +30,10 @@
 class QLabelX : public QLabel
 {
     Q_OBJECT
+
 public:
     explicit QLabelX(QWidget *parent=nullptr);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);

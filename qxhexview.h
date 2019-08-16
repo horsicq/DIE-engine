@@ -48,6 +48,7 @@
 class QXHexView : public QScrollArea
 {
     Q_OBJECT
+
 public:
     explicit QXHexView(QWidget *parent=nullptr);
     QList<QString> setData(QByteArray(*__ReadMemory)(QVariant,unsigned long long,unsigned long long,bool *),bool (*__WriteMemory)(QVariant,unsigned long long,QByteArray),QVariant parameter,unsigned long long nStartAddress,unsigned long long nMaxSize);

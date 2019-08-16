@@ -30,15 +30,18 @@
 class QRadioButtonX : public QRadioButton
 {
     Q_OBJECT
+
 public:
-    explicit QRadioButtonX(QObject *parent = 0);
+    explicit QRadioButtonX(QWidget *parent=nullptr);
     void setToolTip(const QString &text);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;

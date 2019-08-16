@@ -31,8 +31,10 @@
 class QTextEditX : public QTextEdit
 {
     Q_OBJECT
+
 public:
     explicit QTextEditX(QWidget *parent = 0);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
@@ -40,11 +42,11 @@ protected:
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
-
 };
 
 #endif // QTEXTEDITX_H

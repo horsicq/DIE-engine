@@ -20,8 +20,7 @@
 //
 #include "qlistwidgetx.h"
 
-QListWidgetX::QListWidgetX(QWidget *parent) :
-    QListWidget(parent)
+QListWidgetX::QListWidgetX(QWidget *parent) : QListWidget(parent)
 {
     //    qDebug("Constructor");
     x=0;

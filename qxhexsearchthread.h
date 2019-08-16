@@ -27,6 +27,7 @@
 class QXHexSearchThread : public QObject
 {
     Q_OBJECT
+
 public:
     explicit QXHexSearchThread(QObject *parent = 0);
 
@@ -36,6 +37,7 @@ signals:
     void _nothingfound();
     void progressRangeChanged(int nMin,int nMax);
     void progressValueChanged(int nValue);
+
 public slots:
     unsigned char signatureToByte(QString *psSignature);
     unsigned short signatureToWord(QString *psSignature);
@@ -43,8 +45,10 @@ public slots:
     unsigned int _search(QString *psSignature,QByteArray *pbaData);
     void stopSearch();
     void startSearch();
+
 public:
     void setData(__DATABLOCK *pDataBlock);
+
 private:
     __DATABLOCK *pDataBlock;
 

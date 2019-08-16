@@ -41,14 +41,13 @@ class DialogHDE : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogHDE(QWidget *parent);
+    explicit DialogHDE(QWidget *parent=nullptr);
     void setData(__DIE_OPTIONS *pOptions,QString sFileName,unsigned long long nAddress,unsigned long long nSize,QString sType,QString sMode,QString sSyntax,unsigned long long nSelectionStart,unsigned long long nSelectionSize,QString sName);
     ~DialogHDE();
 
 private slots:
     bool reload();
     void closeDialog();
-
     //    void on_pushButtonSearch_clicked();
 
 signals:

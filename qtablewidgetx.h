@@ -30,19 +30,21 @@
 class QTableWidgetX : public QTableWidget
 {
     Q_OBJECT
+
 public:
-    explicit QTableWidgetX(QWidget *parent = 0);
+    explicit QTableWidgetX(QWidget *parent=nullptr);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
-
 };
 
 #endif // QTABLEWIDGETX_H

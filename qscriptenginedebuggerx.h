@@ -27,12 +27,11 @@
 class QScriptEngineDebuggerX : public QScriptEngineDebugger
 {
     Q_OBJECT
+
 public:
     explicit QScriptEngineDebuggerX(QObject *parent = 0);
 
 signals:
-
-
     //protected:
     //    bool event(QEvent *e) ;
 

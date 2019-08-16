@@ -30,10 +30,10 @@
 class ScriptEngineEventFilter : public QObject
 {
     Q_OBJECT
+
 public:
     explicit ScriptEngineEventFilter(QObject *parent = 0);
     bool eventFilter(QObject *object, QEvent *event);
-signals:
 
 public slots:
     void checkToolTip();

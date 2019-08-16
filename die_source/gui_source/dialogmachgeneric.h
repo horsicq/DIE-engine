@@ -27,6 +27,7 @@
 class DialogMACHGeneric : public QXDialogX
 {
     Q_OBJECT
+
 public:
     explicit DialogMACHGeneric(QWidget *parent = 0);
     void setData(__DIE_OPTIONS *pOptions,MACHFile *machfile);

@@ -26,6 +26,7 @@
 class MSDOSFile : public Binary
 {
     Q_OBJECT
+
 public:
     explicit MSDOSFile(QObject *parent=nullptr);
     void entryPointLoad();

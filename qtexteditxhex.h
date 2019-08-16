@@ -29,11 +29,12 @@
 class QTextEditXHEX : public QTextEditX
 {
     Q_OBJECT
+
 public:
     explicit QTextEditXHEX(QWidget *parent = 0);
+
 protected:
     void keyPressEvent(QKeyEvent *e);
-
 };
 
 #endif // QTEXTEDITXHEX_H

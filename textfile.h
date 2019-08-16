@@ -26,6 +26,7 @@
 class TextFile : public Binary
 {
     Q_OBJECT
+
 public:
     explicit TextFile(QObject *parent=nullptr);
 

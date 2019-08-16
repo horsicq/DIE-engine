@@ -30,19 +30,21 @@
 class QTreeWidgetX : public QTreeWidget
 {
     Q_OBJECT
+
 public:
     explicit QTreeWidgetX(QWidget *parent=0);
+
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);
 
 private slots:
     void _showTooltip();
+
 private:
     int x;
     int y;
     bool bIsShow;
-
 };
 
 #endif // QTREEWIDGETX_H

@@ -32,6 +32,7 @@
 class QPushButtonX : public QPushButton
 {
     Q_OBJECT
+
 public:
     explicit QPushButtonX(QWidget *parent=nullptr);
 

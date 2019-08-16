@@ -80,6 +80,7 @@ private slots:
 signals:
     void appendError(QString sString);
     void closeDialog();
+
 private:
     Ui::QXHexForm *ui;
     QString sType;
