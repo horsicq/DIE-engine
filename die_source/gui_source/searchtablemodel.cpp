@@ -27,39 +27,45 @@ SearchTableModel::SearchTableModel(QObject *parent) :
 
 int SearchTableModel::rowCount(const QModelIndex &parent) const
 {
+    Q_UNUSED(parent);
+
     return listNames.count();
 }
 
 int SearchTableModel::columnCount(const QModelIndex &parent) const
 {
+    Q_UNUSED(parent);
+
     return 3;
 }
 
 QVariant SearchTableModel::data(const QModelIndex &index, int role) const
 {
+    QVariant varResult;
+
     if(role==Qt::DisplayRole)
     {
         if(index.column()==0)
         {
-            return QVariant(listNames.at(index.row()));
+            varResult=QVariant(listNames.at(index.row()));
         }
         else if(index.column()==1)
         {
-            return QVariant(listOffsets.at(index.row()));
+            varResult=QVariant(listOffsets.at(index.row()));
         }
         else if(index.column()==2)
         {
-            return QVariant(listSizes.at(index.row()));
+            varResult=QVariant(listSizes.at(index.row()));
         }
     }
-    else
-    {
-        return QVariant();
-    }
+
+    return varResult;
 }
 
 QVariant SearchTableModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
+    QVariant varResult;
+
     if(role == Qt::DisplayRole)
     {
         if(orientation == Qt::Horizontal)
@@ -67,18 +73,18 @@ QVariant SearchTableModel::headerData(int section, Qt::Orientation orientation, 
             switch(section)
             {
                 case 0:
-                    return QString("Value");
+                    varResult=QString("Value");
 
                 case 1:
-                    return QString("Offset");
+                    varResult=QString("Offset");
 
                 case 2:
-                    return QString("Size");
+                    varResult=QString("Size");
             }
         }
     }
 
-    return QVariant();
+    return varResult;
 }
 
 void SearchTableModel::addRow(QString sName, unsigned long long nOffset, unsigned long long nSize)
