@@ -452,7 +452,7 @@ void QXHexView::_paintHEX(QWidget *pWidget)
             qDebug("ANSI lenght :%d index %d",_pDataBlock->sANSI.length(),(_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress+i));
         }
 #endif
-        int __nSize=_pDataBlock->sANSI.length();
+//        int __nSize=_pDataBlock->sANSI.length();
         int __i=(_pDataBlock->nCurrentAddress-_pDataBlock->nBufferAddress+i);
         QChar _chSymbol=_pDataBlock->sANSI.at(__i);
         //        qDebug("i=%d %s",__i,_pDataBlock->sANSI.mid(__i,1).toLatin1().data());
@@ -509,7 +509,7 @@ bool QXHexView::_mouseEventHEX(QWidget *pWidget, QEvent *event)
     int xPosAnsi=xPosHex+nSymbolWidth*(nLineCount*3+1);
     int xPosEnd=xPosAnsi+nSymbolWidth*(nLineCount+2);
     int xIndent=nSymbolWidth;
-    int yIndent=nSymbolHeight;
+//    int yIndent=nSymbolHeight;
 
     int nX=mouseEvent->pos().x();
     int nY=mouseEvent->pos().y();
@@ -833,6 +833,8 @@ void QXHexView::_paintRevert(QWidget *pWidget,QPainter *pPainter)
 
 void QXHexView::_paintFontRevert(QWidget *pWidget, QPainter *pPainter)
 {
+    Q_UNUSED(pWidget)
+
     QFont font=pPainter->font();
 
     if(font.weight()==QFont::Normal)
@@ -1406,7 +1408,7 @@ bool QXHexView::_mouseEventX86ASM(QWidget *pWidget, QEvent *event)
 
     QMouseEvent *mouseEvent = static_cast<QMouseEvent*>(event);
 
-    unsigned long long nCurrentAddress=_pDataBlock->nCurrentAddress;
+//    unsigned long long nCurrentAddress=_pDataBlock->nCurrentAddress;
     unsigned long long nAddress;
     //    unsigned long long nAddress2;
 
@@ -1417,7 +1419,7 @@ bool QXHexView::_mouseEventX86ASM(QWidget *pWidget, QEvent *event)
 
     int nAddressWidth=_pDataBlock->nAddressWidth;
     int xIndent=nSymbolWidth;
-    int yIndent=nSymbolHeight;
+//    int yIndent=nSymbolHeight;
 
     int xPosHex=xPosAddress+nSymbolWidth*(nAddressWidth+2);
     int xPosDisasm=xPosHex+nSymbolWidth*(nLineCount*2+2);

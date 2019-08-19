@@ -667,7 +667,7 @@ void ThreadSearch::process()
 #ifdef QT_DEBUG
         qDebug("scan time: %d",scanTime.msecsTo(QTime::currentTime()));
 #endif
-label_finish:
+//label_finish:
         file.close();
     }
 
