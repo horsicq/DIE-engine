@@ -54,7 +54,7 @@ class QXHexViewX : public QWidget
 public:
     Q_OBJECT
 public:
-    explicit QXHexViewX(QScrollArea *parent = 0);
+    explicit QXHexViewX(QScrollArea *parent=nullptr);
     ~QXHexViewX();
     QWidget *getHinstance();
     void setData(__DATABLOCK *pDataBlock);

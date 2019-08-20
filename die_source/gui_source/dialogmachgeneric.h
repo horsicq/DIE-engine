@@ -29,7 +29,7 @@ class DialogMACHGeneric : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogMACHGeneric(QWidget *parent = 0);
+    explicit DialogMACHGeneric(QWidget *parent=nullptr);
     void setData(__DIE_OPTIONS *pOptions,MACHFile *machfile);
 
 protected:

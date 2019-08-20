@@ -30,7 +30,7 @@ class SearchTableModel : public QAbstractTableModel
 {
     Q_OBJECT
 public:
-    explicit SearchTableModel(QObject *parent = 0);
+    explicit SearchTableModel(QObject *parent=nullptr);
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const ;
     int columnCount(const QModelIndex &parent = QModelIndex()) const;

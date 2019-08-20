@@ -29,7 +29,7 @@ class QScriptEngineDebuggerX : public QScriptEngineDebugger
     Q_OBJECT
 
 public:
-    explicit QScriptEngineDebuggerX(QObject *parent = 0);
+    explicit QScriptEngineDebuggerX(QObject *parent=nullptr);
 
 signals:
     //protected:

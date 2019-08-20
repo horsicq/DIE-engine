@@ -36,7 +36,7 @@ class QXHexSignature : public QDialog
     Q_OBJECT
 
 public:
-    explicit QXHexSignature(QWidget *parent = 0);
+    explicit QXHexSignature(QWidget *parent=nullptr);
     void setData(QByteArray baData);
     ~QXHexSignature();
 

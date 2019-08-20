@@ -33,7 +33,7 @@ class QTextEditX : public QTextEdit
     Q_OBJECT
 
 public:
-    explicit QTextEditX(QWidget *parent = 0);
+    explicit QTextEditX(QWidget *parent=nullptr);
 
 protected:
     bool event(QEvent *event);

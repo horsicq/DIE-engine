@@ -28,7 +28,7 @@ class scriptText : public scriptGeneric
 {
     Q_OBJECT
 public:
-    explicit scriptText(QObject *parent = 0);
+    explicit scriptText(QObject *parent=nullptr);
     void setData(Binary *binary);
 
 signals:

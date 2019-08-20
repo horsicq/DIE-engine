@@ -28,7 +28,7 @@ class scriptMSDOS : public scriptGeneric
 {
     Q_OBJECT
 public:
-    explicit scriptMSDOS(QObject *parent = 0);
+    explicit scriptMSDOS(QObject *parent=nullptr);
     void setData(MSDOSFile *msdosfile);
 
 public slots:

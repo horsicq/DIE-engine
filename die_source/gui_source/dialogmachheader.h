@@ -33,7 +33,7 @@ class DialogMACHHeader : public DialogMACHGeneric
     Q_OBJECT
 
 public:
-    explicit DialogMACHHeader(QWidget *parent = 0);
+    explicit DialogMACHHeader(QWidget *parent=nullptr);
     ~DialogMACHHeader();
 
     void setData(MACHFile *pmachfile, __DIE_OPTIONS *pOptions);

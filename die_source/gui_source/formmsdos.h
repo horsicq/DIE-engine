@@ -35,7 +35,7 @@ class FormMSDOS : public FormGeneric
     Q_OBJECT
 
 public:
-    explicit FormMSDOS(QWidget *parent = 0);
+    explicit FormMSDOS(QWidget *parent=nullptr);
     ~FormMSDOS();
 
 private slots:

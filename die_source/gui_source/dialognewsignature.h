@@ -34,7 +34,7 @@ class DialogNewSignature : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogNewSignature(QWidget *parent = 0);
+    explicit DialogNewSignature(QWidget *parent=nullptr);
     ~DialogNewSignature();
     void setData(__DIE_OPTIONS *pOptions,QString sFolder,QString *psNew);
 

@@ -32,7 +32,7 @@ class ScriptEngineEventFilter : public QObject
     Q_OBJECT
 
 public:
-    explicit ScriptEngineEventFilter(QObject *parent = 0);
+    explicit ScriptEngineEventFilter(QObject *parent=nullptr);
     bool eventFilter(QObject *object, QEvent *event);
 
 public slots:

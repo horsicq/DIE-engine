@@ -36,7 +36,7 @@ class FormPE : public FormGeneric
     Q_OBJECT
 
 public:
-    explicit FormPE(QWidget *parent = 0);
+    explicit FormPE(QWidget *parent=nullptr);
     ~FormPE();
 
 private:

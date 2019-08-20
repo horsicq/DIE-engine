@@ -29,7 +29,7 @@ class scriptPE : public scriptGeneric
 {
     Q_OBJECT
 public:
-    explicit scriptPE(QObject *parent = 0);
+    explicit scriptPE(QObject *parent=nullptr);
     void setData(PEFile *pefile);
 
 public slots:

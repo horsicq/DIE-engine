@@ -36,7 +36,7 @@ class DialogMACHSegments : public DialogMACHGeneric
     Q_OBJECT
 
 public:
-    explicit DialogMACHSegments(QWidget *parent = 0);
+    explicit DialogMACHSegments(QWidget *parent=nullptr);
     ~DialogMACHSegments();
 
     //    void setData(ELFFile *pelffile, __OPTIONS *pOptions)

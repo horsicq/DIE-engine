@@ -33,7 +33,7 @@ class DialogELFSectionHeader : public DialogELFGeneric
     Q_OBJECT
 
 public:
-    explicit DialogELFSectionHeader(QWidget *parent = 0);
+    explicit DialogELFSectionHeader(QWidget *parent=nullptr);
     ~DialogELFSectionHeader();
 
     void setData(__DIE_OPTIONS *pOptions,ELFFile *pelffile,int nSection);

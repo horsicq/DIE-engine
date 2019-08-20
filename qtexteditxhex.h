@@ -31,7 +31,7 @@ class QTextEditXHEX : public QTextEditX
     Q_OBJECT
 
 public:
-    explicit QTextEditXHEX(QWidget *parent = 0);
+    explicit QTextEditXHEX(QWidget *parent=nullptr);
 
 protected:
     void keyPressEvent(QKeyEvent *e);

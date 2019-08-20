@@ -29,7 +29,7 @@ class ThreadSearchPlugin : public QThread
 {
     Q_OBJECT
 public:
-    explicit ThreadSearchPlugin(QObject *parent = 0);
+    explicit ThreadSearchPlugin(QObject *parent=nullptr);
     void setData(QString sScript,PluginsScript *pPluginScript);
 
 protected:

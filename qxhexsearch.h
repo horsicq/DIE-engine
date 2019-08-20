@@ -34,7 +34,7 @@ class QXHexSearch : public QDialog
     Q_OBJECT
 
 public:
-    explicit QXHexSearch(QWidget *parent = 0);
+    explicit QXHexSearch(QWidget *parent=nullptr);
     ~QXHexSearch();
     void _showToolTips(bool bState);
     void setLittleEndian(bool bState);

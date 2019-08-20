@@ -32,7 +32,7 @@ class QTabWidgetX : public QTabWidget
     Q_OBJECT
 
 public:
-    explicit QTabWidgetX(QWidget *parent = 0);
+    explicit QTabWidgetX(QWidget *parent=nullptr);
 protected:
     bool event(QEvent *event);
     void leaveEvent(QEvent *myLeave);

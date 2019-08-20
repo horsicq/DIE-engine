@@ -40,7 +40,7 @@ class FormMACH : public FormGeneric
     Q_OBJECT
 
 public:
-    explicit FormMACH(QWidget *parent = 0);
+    explicit FormMACH(QWidget *parent=nullptr);
     ~FormMACH();
 
 private slots:

@@ -32,7 +32,7 @@ class PluginsScript : public QScriptEngine
     Q_OBJECT
 
 public:
-    explicit PluginsScript(QObject *parent = 0);
+    explicit PluginsScript(QObject *parent=nullptr);
     void setData(QObject *pClass,QString sClassName,QString sDefaultPath);
     QScriptValue callFromFile(QString sScriptFile,QString sFunctionName,QScriptValueList valuelist=QScriptValueList());
     QScriptValue evalFromFile(QString sScriptFile);

@@ -35,7 +35,7 @@ class DialogMACHLC : public DialogMACHGeneric
     Q_OBJECT
 
 public:
-    explicit DialogMACHLC(QWidget *parent = 0);
+    explicit DialogMACHLC(QWidget *parent=nullptr);
     ~DialogMACHLC();
 
 private slots:

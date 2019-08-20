@@ -122,7 +122,7 @@ void DialogMACHLibs::on_tableWidgetStrings_customContextMenuRequested(const QPoi
         return;
     }
 
-    int nDebug=ui->tableWidgetStrings->selectedItems().at(0)->row();
+//    int nDebug=ui->tableWidgetStrings->selectedItems().at(0)->row();
 
     //     QString sString=((QTableWidgetItem *)(ui->tableWidgetSections->focusWidget()))->text();
     //     qDebug(sString.toAscii().data());

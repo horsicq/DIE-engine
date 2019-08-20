@@ -36,7 +36,7 @@ class DialogPEResource : public DialogPEGeneric
     Q_OBJECT
 
 public:
-    explicit DialogPEResource(QWidget *parent = 0);
+    explicit DialogPEResource(QWidget *parent=nullptr);
     ~DialogPEResource();
 
 private slots:

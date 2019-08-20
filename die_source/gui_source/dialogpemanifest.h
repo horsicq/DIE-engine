@@ -33,7 +33,7 @@ class DialogPEManifest : public DialogPEGeneric
     Q_OBJECT
 
 public:
-    explicit DialogPEManifest(QWidget *parent = 0);
+    explicit DialogPEManifest(QWidget *parent=nullptr);
     ~DialogPEManifest();
 
 private slots:

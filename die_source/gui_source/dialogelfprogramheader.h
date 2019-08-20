@@ -33,7 +33,7 @@ class DialogELFProgramHeader : public DialogELFGeneric
     Q_OBJECT
 
 public:
-    explicit DialogELFProgramHeader(QWidget *parent = 0);
+    explicit DialogELFProgramHeader(QWidget *parent=nullptr);
     ~DialogELFProgramHeader();
 
     void setData(__DIE_OPTIONS *pOptions,ELFFile *pelffile,int nProgram);

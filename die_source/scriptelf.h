@@ -28,7 +28,7 @@ class scriptELF : public scriptGeneric
 {
     Q_OBJECT
 public:
-    explicit scriptELF(QObject *parent = 0);
+    explicit scriptELF(QObject *parent=nullptr);
     void setData(ELFFile *elffile);
 
 public slots:

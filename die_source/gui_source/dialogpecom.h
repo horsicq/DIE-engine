@@ -36,7 +36,7 @@ class DialogPECOM : public DialogPEGeneric
     Q_OBJECT
 
 public:
-    explicit DialogPECOM(QWidget *parent = 0);
+    explicit DialogPECOM(QWidget *parent=nullptr);
     ~DialogPECOM();
 
 private slots:

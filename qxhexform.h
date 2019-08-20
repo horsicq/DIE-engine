@@ -36,7 +36,7 @@ class QXHexForm : public QWidget
     Q_OBJECT
 
 public:
-    explicit QXHexForm(QWidget *parent = 0);
+    explicit QXHexForm(QWidget *parent=nullptr);
     ~QXHexForm();
     void setData(QByteArray(*__ReadMemory)(QVariant,unsigned long long,unsigned long long,bool *),bool (*__WriteMemory)(QVariant,unsigned long long,QByteArray),QVariant parameter,unsigned long long nStartAddress,unsigned long long nMaxSize);
     void setType(QString sType,QString sMode,QString sSyntax);

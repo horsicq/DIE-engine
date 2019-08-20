@@ -29,7 +29,7 @@ class DialogELFGeneric : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogELFGeneric(QWidget *parent = 0);
+    explicit DialogELFGeneric(QWidget *parent=nullptr);
     void setData(__DIE_OPTIONS *pOptions,ELFFile *elffile);
 
 protected:

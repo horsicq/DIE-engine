@@ -34,7 +34,7 @@ class DialogPEBoundImport : public DialogPEGeneric
     Q_OBJECT
 
 public:
-    explicit DialogPEBoundImport(QWidget *parent = 0);
+    explicit DialogPEBoundImport(QWidget *parent=nullptr);
     ~DialogPEBoundImport();
 
 private slots:

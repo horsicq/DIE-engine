@@ -28,7 +28,7 @@ class ThreadExport : public QObject
 {
     Q_OBJECT
 public:
-    explicit ThreadExport(QObject *parent = 0);
+    explicit ThreadExport(QObject *parent=nullptr);
     void setData(PEFile *pefile);
 
     bool isCompleted();

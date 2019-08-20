@@ -29,7 +29,7 @@ class ThreadPlugin : public QThread
 {
     Q_OBJECT
 public:
-    explicit ThreadPlugin(QObject *parent = 0);
+    explicit ThreadPlugin(QObject *parent=nullptr);
     void setData(QString sScript,PluginsScript *pPluginScript);
 
 signals:

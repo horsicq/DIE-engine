@@ -44,7 +44,7 @@ class DialogSignatures : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogSignatures(QWidget *parent = 0);
+    explicit DialogSignatures(QWidget *parent=nullptr);
     ~DialogSignatures();
     void setData(__DIE_OPTIONS *pOptions,QString sFileName,QString sCurrentSignature="");
 

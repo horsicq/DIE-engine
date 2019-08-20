@@ -38,7 +38,7 @@ class DialogELFSHT : public DialogELFGeneric
     Q_OBJECT
 
 public:
-    explicit DialogELFSHT(QWidget *parent = 0);
+    explicit DialogELFSHT(QWidget *parent=nullptr);
     ~DialogELFSHT();
 
 private slots:

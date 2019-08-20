@@ -27,7 +27,7 @@ class DialogMSDOSGeneric : public QXDialogX
 {
     Q_OBJECT
 public:
-    explicit DialogMSDOSGeneric(QWidget *parent = 0);
+    explicit DialogMSDOSGeneric(QWidget *parent=nullptr);
     void setData(__DIE_OPTIONS *pOptions, MSDOSFile *msdosfile);
 
 protected:

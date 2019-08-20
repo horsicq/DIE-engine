@@ -29,6 +29,7 @@
 #include <QThread>
 #include <qtconcurrentmap.h>
 #include <QFutureWatcher>
+#include <QMutex>
 
 struct CRYPTO_RECORD
 {
@@ -60,7 +61,7 @@ class ThreadSearch : public QObject
 {
     Q_OBJECT
 public:
-    explicit ThreadSearch(QObject *parent = 0);
+    explicit ThreadSearch(QObject *parent=nullptr);
     //    void setData(Binary *binary,QString sType,unsigned long long nOffset,unsigned long long nSize,unsigned int nFlags,QList<CRYPTO_RECORD> *pCryptoSignatures,QFutureWatcher<QString> *watcher);
     void setData(SEARCHDATA *pSearchData);
     bool isCompleted();

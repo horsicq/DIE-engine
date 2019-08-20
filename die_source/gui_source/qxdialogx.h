@@ -37,7 +37,7 @@ class QXDialogX : public QDialog
 {
     Q_OBJECT
 public:
-    explicit QXDialogX(QWidget *parent = 0);
+    explicit QXDialogX(QWidget *parent=nullptr);
     ~QXDialogX();
 
     void setOptions(__DIE_OPTIONS *pOptions);

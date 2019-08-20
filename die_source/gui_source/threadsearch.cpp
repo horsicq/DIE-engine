@@ -26,6 +26,7 @@ struct INPUT_STRUCT
     unsigned long long nSize;
     unsigned char *pMemory;
     CRYPTO_RECORD cryptorecord;
+    QMutex *pMutex;
 };
 
 QString findCrypto(INPUT_STRUCT input)
@@ -91,12 +92,16 @@ QString findCrypto(INPUT_STRUCT input)
             {
                 if(bFirst)
                 {
+                    input.pMutex->lock();
                     nTempOffset=Binary::findDataInMemory(pOffset+nOffset,nSize-nOffset,pSignature,nSignatureSize);
+                    input.pMutex->unlock();
                     nStartOffset=nOffset+nTempOffset;
                 }
                 else
                 {
+                    input.pMutex->lock();
                     nTempOffset=Binary::findDataInMemory(pOffset+nOffset,qMin((int)(nSize-nOffset),20+nSignatureSize),pSignature,nSignatureSize);
+                    input.pMutex->unlock();
                 }
             }
 
@@ -129,14 +134,20 @@ QString findCrypto(INPUT_STRUCT input)
         nSignatureSize=baSignature.size();
         pSignature=(char *)(baSignature.data());
 
+        input.pMutex->lock();
+
         for(int j=0; j<(int)(nSize-nSignatureSize); j++)
         {
-            if(Binary::memoryCompare(pOffset+j,pSignature,nSignatureSize))
+            bool bCompare=Binary::memoryCompare(pOffset+j,pSignature,nSignatureSize);
+
+            if(bCompare)
             {
                 //!!!
                 sResult+=QString("%1;%2;%3;;").arg(sSignatureName).arg(j).arg(nSignatureSize);
             }
         }
+
+        input.pMutex->unlock();
     }
 
     return sResult;
@@ -447,14 +458,18 @@ void ThreadSearch::searchCrypto(QFile *pFile)
 {
     unsigned int nFoundLimit=10000;
     unsigned long long nFoundIndex=0;
-    QList<INPUT_STRUCT> args;
-    INPUT_STRUCT input_record;
+    QList<INPUT_STRUCT> listImputRecords;
+
+    QMutex mutex;
+
     char *pOffset=(char *)pFile->map(pSearchData->nOffset,pSearchData->nSize);
 
     if(pOffset)
     {
         for(int i=0; (i<pSearchData->pCryptoSignatures->count())&&bIsRun; i++)
         {
+            INPUT_STRUCT input_record={0};
+
             if(pSearchData->nFlags) // Big endian
             {
                 if(pSearchData->pCryptoSignatures->at(i).sType=="LE")
@@ -474,13 +489,14 @@ void ThreadSearch::searchCrypto(QFile *pFile)
             input_record.pMemory=(unsigned char *)pOffset;
             input_record.nOffset=pSearchData->nOffset;
             input_record.nSize=pSearchData->nSize;
+            input_record.pMutex=&mutex;
 
-            args.append(input_record);
+            listImputRecords.append(input_record);
         }
 
-        if(!args.isEmpty())
+        if(!listImputRecords.isEmpty())
         {
-            pSearchData->watcher->setFuture(QtConcurrent::mapped(args,findCrypto));
+            pSearchData->watcher->setFuture(QtConcurrent::mapped(listImputRecords,findCrypto));
             pSearchData->watcher->waitForFinished();
 
             if(bIsRun)

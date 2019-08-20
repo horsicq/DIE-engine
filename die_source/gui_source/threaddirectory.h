@@ -29,7 +29,7 @@ class ThreadDirectory : public QObject
 {
     Q_OBJECT
 public:
-    explicit ThreadDirectory(QObject *parent = 0);
+    explicit ThreadDirectory(QObject *parent=nullptr);
     void setData(QString sDirectory,bool bSubDirectory,QList<QString> *pList);
 
     bool isCompleted();

@@ -28,7 +28,7 @@ class FormGeneric : public QWidget
 {
     Q_OBJECT
 public:
-    explicit FormGeneric(QWidget *parent = 0);
+    explicit FormGeneric(QWidget *parent=nullptr);
     void setData(QString sFileName, __DIE_OPTIONS *pOptions);
 
 public slots:

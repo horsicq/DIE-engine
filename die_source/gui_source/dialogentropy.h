@@ -50,7 +50,7 @@ class DialogEntropy : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogEntropy(QWidget *parent = 0);
+    explicit DialogEntropy(QWidget *parent=nullptr);
     ~DialogEntropy();
     void setData(__DIE_OPTIONS *pOptions,Binary *_binary,unsigned int nOffset,unsigned int nSize);
 

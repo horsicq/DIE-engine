@@ -29,7 +29,7 @@ class QXHexSearchThread : public QObject
     Q_OBJECT
 
 public:
-    explicit QXHexSearchThread(QObject *parent = 0);
+    explicit QXHexSearchThread(QObject *parent=nullptr);
 
 signals:
     void _searchComplete();

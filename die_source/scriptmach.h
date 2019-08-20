@@ -28,7 +28,7 @@ class scriptMACH : public scriptGeneric
 {
     Q_OBJECT
 public:
-    explicit scriptMACH(QObject *parent = 0);
+    explicit scriptMACH(QObject *parent=nullptr);
     void setData(MACHFile *machfile);
 
 public slots:

@@ -29,7 +29,7 @@ class DialogPEGeneric : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogPEGeneric(QWidget *parent = 0);
+    explicit DialogPEGeneric(QWidget *parent=nullptr);
 
     void setData(__DIE_OPTIONS *pOptions, PEFile *pefile);
 

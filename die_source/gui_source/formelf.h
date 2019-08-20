@@ -37,7 +37,7 @@ class FormELF : public FormGeneric
     Q_OBJECT
 
 public:
-    explicit FormELF(QWidget *parent = 0);
+    explicit FormELF(QWidget *parent=nullptr);
     ~FormELF();
 
 private slots:

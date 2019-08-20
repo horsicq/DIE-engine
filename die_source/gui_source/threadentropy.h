@@ -28,7 +28,7 @@ class ThreadEntropy : public QObject
 {
     Q_OBJECT
 public:
-    explicit ThreadEntropy(QObject *parent = 0);
+    explicit ThreadEntropy(QObject *parent=nullptr);
     void setData(Binary *_binary,unsigned int nOffset,unsigned int nSize,double *pXEntropy,double *pYEntropy,double *pXHistogram,double *pYHistogram,int nPunkts);
 
     bool isCompleted();

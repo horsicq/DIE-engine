@@ -30,7 +30,7 @@ class QXHexDumpThread : public QObject
     Q_OBJECT
 
 public:
-    explicit QXHexDumpThread(QObject *parent = 0);
+    explicit QXHexDumpThread(QObject *parent=nullptr);
 
 signals:
     void _dumpComplete();

@@ -40,7 +40,7 @@ class DialogSearch : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogSearch(QWidget *parent = 0);
+    explicit DialogSearch(QWidget *parent=nullptr);
     ~DialogSearch();
     void setData(__DIE_OPTIONS *pOptions,Binary *_binary,unsigned int nOffset,unsigned int nSize);
 

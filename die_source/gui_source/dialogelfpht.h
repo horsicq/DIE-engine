@@ -37,7 +37,7 @@ class DialogELFPHT : public DialogELFGeneric
     Q_OBJECT
 
 public:
-    explicit DialogELFPHT(QWidget *parent = 0);
+    explicit DialogELFPHT(QWidget *parent=nullptr);
     ~DialogELFPHT();
 
     //    void setData(ELFFile *pelffile, __OPTIONS *pOptions);

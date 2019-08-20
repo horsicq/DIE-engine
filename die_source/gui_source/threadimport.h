@@ -47,7 +47,7 @@ public:
         QList<IMPORT_FUNCTION> listFunctions;
     };
 
-    explicit ThreadImport(QObject *parent = 0);
+    explicit ThreadImport(QObject *parent=nullptr);
     void setData(PEFile *pefile, QList<IMPORT_LIBRARY> *pListLibraries);
 
     bool isCompleted();

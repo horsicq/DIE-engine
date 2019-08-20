@@ -33,7 +33,7 @@ class DialogSelectPlugin : public QXDialogX
     Q_OBJECT
 
 public:
-    explicit DialogSelectPlugin(QWidget *parent = 0);
+    explicit DialogSelectPlugin(QWidget *parent=nullptr);
     void setData(__DIE_OPTIONS *pOptions);
     ~DialogSelectPlugin();
 

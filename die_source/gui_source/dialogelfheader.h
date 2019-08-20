@@ -37,7 +37,7 @@ class DialogELFHeader : public DialogELFGeneric
     Q_OBJECT
 
 public:
-    explicit DialogELFHeader(QWidget *parent = 0);
+    explicit DialogELFHeader(QWidget *parent=nullptr);
     ~DialogELFHeader();
 
 private slots:

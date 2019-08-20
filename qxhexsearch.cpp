@@ -253,66 +253,92 @@ void QXHexSearch::toHEX()
 
 void QXHexSearch::on_lineEditValue_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonBigEndian_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonLittleEndian_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonInt64_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonChar_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonUChar_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonShort_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonUShort_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonInt_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonUInt_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonUInt64_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonDouble_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 
 void QXHexSearch::on_radioButtonFloat_toggled(bool checked)
 {
+    Q_UNUSED(checked);
+
     toHEX();
 }
 

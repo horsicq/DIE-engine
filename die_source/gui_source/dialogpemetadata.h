@@ -37,7 +37,7 @@ class DialogPEMetaData : public DialogPEGeneric
     Q_OBJECT
 
 public:
-    explicit DialogPEMetaData(QWidget *parent = 0);
+    explicit DialogPEMetaData(QWidget *parent=nullptr);
     ~DialogPEMetaData();
 
 private slots:

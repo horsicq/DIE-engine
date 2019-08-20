@@ -29,7 +29,7 @@ class QDialogX : public QDialog
 {
     Q_OBJECT
 public:
-    explicit QDialogX(QWidget *parent = 0);
+    explicit QDialogX(QWidget *parent=nullptr);
 
     //    void _error(QString sString);
     //    void _reload();

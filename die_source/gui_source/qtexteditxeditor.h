@@ -35,7 +35,7 @@ class Highlighter : public QSyntaxHighlighter
     Q_OBJECT
 
 public:
-    Highlighter(QTextDocument *parent = 0)
+    Highlighter(QTextDocument *parent=nullptr)
         : QSyntaxHighlighter(parent)
     {
         HighlightingRule rule;
@@ -154,7 +154,7 @@ class QTextEditXeditor : public QPlainTextEdit
 {
     Q_OBJECT
 public:
-    explicit QTextEditXeditor(QWidget *parent = 0);
+    explicit QTextEditXeditor(QWidget *parent=nullptr);
     void setCompleter(QCompleter *c);
     void setData(QList<QString> *pList,QString sType);
     QCompleter *completer() const;

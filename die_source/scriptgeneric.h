@@ -29,7 +29,7 @@ class scriptGeneric : public QObject
 {
     Q_OBJECT
 public:
-    explicit scriptGeneric(QObject *parent = 0);
+    explicit scriptGeneric(QObject *parent=nullptr);
 
 signals:
     void appendError(QString sString);

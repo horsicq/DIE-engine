@@ -35,7 +35,7 @@ class QXHexGoTo : public QDialog
     Q_OBJECT
 
 public:
-    explicit QXHexGoTo(QWidget *parent = 0);
+    explicit QXHexGoTo(QWidget *parent=nullptr);
     ~QXHexGoTo();
     //    void setData(unsigned long long nStartAddress,unsigned long long nMaxSize,bool bIsHEX);
     void setData(QList<__DATARECORD> *pList,bool bIsHEX);
