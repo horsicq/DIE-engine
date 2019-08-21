@@ -197,6 +197,8 @@ void DialogFLC::on_radioButtonRVA_toggled(bool checked)
 
 void DialogFLC::on_lineEditBaseAddress_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     if(bConvert)
     {
         return;
@@ -212,6 +214,8 @@ void DialogFLC::on_lineEditBaseAddress_textChanged(const QString &arg1)
 
 void DialogFLC::on_lineEditFileOffset_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     if(bConvert)
     {
         return;
@@ -283,6 +287,8 @@ void DialogFLC::on_lineEditFileOffset_textChanged(const QString &arg1)
 
 void DialogFLC::on_lineEditVirtualAddress_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     if(bConvert)
     {
         return;
@@ -366,6 +372,8 @@ void DialogFLC::on_lineEditVirtualAddress_textChanged(const QString &arg1)
 
 void DialogFLC::on_lineEditRVA_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     if(bConvert)
     {
         return;
