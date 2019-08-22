@@ -90,19 +90,20 @@ QString findCrypto(INPUT_STRUCT input)
             }
             else
             {
+                input.pMutex->lock();
+
                 if(bFirst)
                 {
-                    input.pMutex->lock();
                     nTempOffset=Binary::findDataInMemory(pOffset+nOffset,nSize-nOffset,pSignature,nSignatureSize);
-                    input.pMutex->unlock();
+
                     nStartOffset=nOffset+nTempOffset;
                 }
                 else
                 {
-                    input.pMutex->lock();
                     nTempOffset=Binary::findDataInMemory(pOffset+nOffset,qMin((int)(nSize-nOffset),20+nSignatureSize),pSignature,nSignatureSize);
-                    input.pMutex->unlock();
                 }
+
+                input.pMutex->unlock();
             }
 
             if(nTempOffset==-1)

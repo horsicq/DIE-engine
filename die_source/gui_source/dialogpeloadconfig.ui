@@ -33,7 +33,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>TLS</string>
+   <string>Load Config</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>

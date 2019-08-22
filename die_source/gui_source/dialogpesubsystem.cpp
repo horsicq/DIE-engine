@@ -92,6 +92,8 @@ bool DialogPESubsystem::reload()
 
 void DialogPESubsystem::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditSubsystem->setReadOnly(ui->checkBoxReadOnly->checkState());
     ui->comboBoxSubsystem->setEnabled(!ui->checkBoxReadOnly->checkState());
 }

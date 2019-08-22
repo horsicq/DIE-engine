@@ -106,6 +106,8 @@ bool DialogPEMachine::reload()
 
 void DialogPEMachine::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditMachine->setReadOnly(ui->checkBoxReadOnly->checkState());
     ui->comboBoxMachine->setEnabled(!ui->checkBoxReadOnly->checkState());
 }

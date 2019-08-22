@@ -125,6 +125,8 @@ bool DialogPESectionCharacteristics::reload()
 
 void DialogPESectionCharacteristics::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditSectionSectionCharacteristics->setReadOnly(ui->checkBoxReadOnly->isChecked());
     ui->comboBoxALIGN->setEnabled(!ui->checkBoxReadOnly->isChecked());
     ui->groupBox->setEnabled(!ui->checkBoxReadOnly->isChecked());
@@ -183,101 +185,141 @@ void DialogPESectionCharacteristics::on_lineEditSectionSectionCharacteristics_te
 
 void DialogPESectionCharacteristics::on_comboBoxALIGN_currentIndexChanged(int index)
 {
+    Q_UNUSED(index)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxCNT_CODE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxCNT_INITIALIZED_DATA_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxCNT_UNINITIALIZED_DATA_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxLNK_INFO_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxLNK_REMOVE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxLNK_COMDAT_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxNO_DEFER_SPEC_EXC_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxGPREL_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_PURGEABLE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_LOCKED_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_PRELOAD_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxLNK_NRELOC_OVFL_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_DISCARDABLE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_NOT_CACHED_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_NOT_PAGED_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_SHARED_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_EXECUTE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_READ_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPESectionCharacteristics::on_checkBoxMEM_WRITE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
