@@ -48,6 +48,8 @@ DialogPECharacteristics::~DialogPECharacteristics()
 
 void DialogPECharacteristics::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditCharacteristics->setReadOnly(ui->checkBoxReadOnly->checkState());
     ui->groupBox->setEnabled(!ui->checkBoxReadOnly->checkState());
 }
@@ -148,76 +150,106 @@ void DialogPECharacteristics::lineEditCharacteristics_textChanged(const QString 
 
 void DialogPECharacteristics::on_checkBoxRELOCS_STRIPPED_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxEXECUTABLE_IMAGE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxLINE_NUMS_STRIPPED_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxLOCAL_SYMS_STRIPPED_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxAGGRESIVE_WS_TRIM_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxLARGE_ADDRESS_AWARE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxBYTES_REVERSED_LO_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBox32BIT_MACHINE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxDEBUG_STRIPPED_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxREMOVABLE_RUN_FROM_SWAP_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxNET_RUN_FROM_SWAP_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxSYSTEM_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxDLL_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxUP_SYSTEM_ONLY_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPECharacteristics::on_checkBoxBYTES_REVERSED_HI_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 

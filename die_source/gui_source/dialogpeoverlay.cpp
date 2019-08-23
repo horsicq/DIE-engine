@@ -108,6 +108,8 @@ bool DialogPEOverlay::reload()
 
 void DialogPEOverlay::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     if(ui->checkBoxReadOnly->checkState())
     {
         ui->pushButtonAdd->setEnabled(false);

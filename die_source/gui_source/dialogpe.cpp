@@ -248,6 +248,8 @@ void DialogPE::applyEnable()
 
 void DialogPE::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditEntryPoint->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEditImageBase->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEditSizeOfImage->setReadOnly(ui->checkBoxReadOnly->checkState());

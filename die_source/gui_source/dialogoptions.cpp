@@ -355,41 +355,57 @@ void DialogOptions::on_pushButtonApply_clicked()
 
 void DialogOptions::on_checkBoxStayOnTop_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxVersionDIE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxOptionsDIE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxScanAfterOpen_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxSaveLastDirectory_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxShowTooltips_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_comboBoxStyle_currentIndexChanged(int index)
 {
+    Q_UNUSED(index)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_comboBoxStyleSheet_currentIndexChanged(int index)
 {
+    Q_UNUSED(index)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
@@ -520,31 +536,43 @@ void DialogOptions::clearExtension(QString sExtension)
 
 void DialogOptions::on_checkBoxSingleApplication_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxShowErrors_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxResizeableMainWindow_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxSectionsEntropyAfterOpen_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_doubleSpinBox_valueChanged(double arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_spinBoxEntropy_valueChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
@@ -742,10 +770,15 @@ void DialogOptions::on_pushButtonFont_clicked()
 
 void DialogOptions::on_lineEditFont_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
+
 void DialogOptions::on_lineEditFontHEX_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
@@ -764,16 +797,22 @@ void DialogOptions::on_pushButtonFontHEX_clicked()
 
 void DialogOptions::on_spinBoxAddressWidth_valueChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_comboBoxEndianness_currentIndexChanged(int index)
 {
+    Q_UNUSED(index)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxScanTime_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
@@ -968,11 +1007,15 @@ void DialogOptions::on_pushButtonAllClear_clicked()
 
 void DialogOptions::on_checkBoxEnablePlugins_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_comboBoxCodec_currentIndexChanged(int index)
 {
+    Q_UNUSED(index)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
@@ -991,41 +1034,57 @@ void DialogOptions::on_pushButtonSetPathDefault_clicked()
 
 void DialogOptions::on_lineEditDataBase_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_lineEditEditor_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_lineEditHelp_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_lineEditInfo_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_lineEditPlugins_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_lineEditQSS_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_lineEditScripts_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_lineEditSearch_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
@@ -1111,6 +1170,8 @@ void DialogOptions::on_pushButtonSearch_clicked()
 
 void DialogOptions::on_comboBoxLanguage_currentIndexChanged(int index)
 {
+    Q_UNUSED(index)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
@@ -1126,47 +1187,65 @@ void DialogOptions::on_pushButtonLangs_clicked()
 
 void DialogOptions::on_lineEditLangs_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxLanguage_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
     ui->comboBoxLanguage->setEnabled(ui->checkBoxLanguage->isChecked());
 }
 
 void DialogOptions::on_groupBoxFont_toggled(bool arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxLanguage_toggled(bool checked)
 {
+    Q_UNUSED(checked)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_comboBoxMethod_currentIndexChanged(int index)
 {
+    Q_UNUSED(index)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxDeepScanNFD_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxScanOverlayNFD_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxDeepScanDIE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 
 void DialogOptions::on_checkBoxResizeColumnsToContent_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 #ifdef USE_YARA

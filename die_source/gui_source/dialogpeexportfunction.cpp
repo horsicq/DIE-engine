@@ -132,6 +132,8 @@ bool DialogPEExportFunction::reload()
 
 void DialogPEExportFunction::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditOrdinal->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditRVA->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditName->setReadOnly(ui->checkBoxReadOnly->isChecked());

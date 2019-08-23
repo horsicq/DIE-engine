@@ -80,6 +80,8 @@ bool DialogPEMagic::reload()
 
 void DialogPEMagic::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditMagic->setReadOnly(ui->checkBoxReadOnly->checkState());
     ui->comboBoxMagic->setEnabled(!ui->checkBoxReadOnly->checkState());
 }

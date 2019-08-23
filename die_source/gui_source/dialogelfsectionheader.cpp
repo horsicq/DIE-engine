@@ -220,6 +220,8 @@ bool DialogELFSectionHeader::reload()
 
 void DialogELFSectionHeader::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditsh_name->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditsh_type->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditsh_flags->setReadOnly(ui->checkBoxReadOnly->isChecked());

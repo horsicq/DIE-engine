@@ -334,6 +334,8 @@ void DialogMSDOSHeader::on_pushButtonHex_clicked()
 
 void DialogMSDOSHeader::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEdite_magic->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEdite_cblp->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEdite_cp->setReadOnly(ui->checkBoxReadOnly->checkState());

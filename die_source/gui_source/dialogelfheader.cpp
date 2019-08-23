@@ -276,6 +276,8 @@ void DialogELFHeader::applyEnable()
 
 void DialogELFHeader::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEdite_magic->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEdite_class->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEdite_data->setReadOnly(ui->checkBoxReadOnly->checkState());

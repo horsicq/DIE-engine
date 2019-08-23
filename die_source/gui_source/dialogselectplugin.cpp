@@ -78,6 +78,8 @@ void DialogSelectPlugin::on_pushButtonOK_clicked()
 
 void DialogSelectPlugin::on_listWidgetPlugins_doubleClicked(const QModelIndex &index)
 {
+    Q_UNUSED(index)
+
     if(ui->listWidgetPlugins->count())
     {
         if(ui->listWidgetPlugins->currentItem()->text()!="")

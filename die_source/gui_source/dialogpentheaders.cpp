@@ -646,6 +646,8 @@ bool DialogPENtHeaders::reload()
 
 void DialogPENtHeaders::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditSignature->setReadOnly(ui->checkBoxReadOnly->checkState());
 
     lineEditMachine->setReadOnly(ui->checkBoxReadOnly->checkState());
@@ -704,6 +706,8 @@ void DialogPENtHeaders::applyEnable()
 
 void DialogPENtHeaders::on_lineEditSignature_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 

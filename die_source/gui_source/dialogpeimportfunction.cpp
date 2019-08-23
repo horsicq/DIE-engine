@@ -170,6 +170,8 @@ bool DialogPEImportFunction::reload()
 
 void DialogPEImportFunction::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditThunk->setReadOnly(ui->checkBoxReadOnly->isChecked());
 }
 

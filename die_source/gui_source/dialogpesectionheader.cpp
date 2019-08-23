@@ -216,6 +216,8 @@ bool DialogPESectionHeader::reload()
 
 void DialogPESectionHeader::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditName->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditVirtualSize->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditVirtualAddress->setReadOnly(ui->checkBoxReadOnly->isChecked());

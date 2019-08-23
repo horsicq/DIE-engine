@@ -48,6 +48,8 @@ DialogPEDllCharacteristics::~DialogPEDllCharacteristics()
 
 void DialogPEDllCharacteristics::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditDllCharacteristics->setReadOnly(ui->checkBoxReadOnly->checkState());
     ui->groupBox->setEnabled(!ui->checkBoxReadOnly->checkState());
 }
@@ -192,40 +194,56 @@ void DialogPEDllCharacteristics::checkbox_reload()
 
 void DialogPEDllCharacteristics::on_checkBoxDYNAMIC_BASE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPEDllCharacteristics::on_checkBoxFORCE_INTEGRITY_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPEDllCharacteristics::on_checkBoxNX_COMPAT_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPEDllCharacteristics::on_checkBoxNO_ISOLATION_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPEDllCharacteristics::on_checkBoxNO_SEH_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPEDllCharacteristics::on_checkBoxNO_BIND_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPEDllCharacteristics::on_checkBoxWDM_DRIVER_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }
 
 void DialogPEDllCharacteristics::on_checkBoxTERMINAL_SERVER_AWARE_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     emit checked();
 }

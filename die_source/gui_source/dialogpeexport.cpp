@@ -264,6 +264,8 @@ void DialogPEExport::on_pushButtonApply_clicked()
 
 void DialogPEExport::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditCharacteristics->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditTimeDateStamp->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditMajorVersion->setReadOnly(ui->checkBoxReadOnly->isChecked());

@@ -64,6 +64,8 @@ bool DialogPETimeDateStamp::reload()
 
 void DialogPETimeDateStamp::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditTimeDateStamp->setReadOnly(ui->checkBoxReadOnly->checkState());
     ui->dateTimeEditTimeDateStamp->setEnabled(!ui->checkBoxReadOnly->checkState());
 }

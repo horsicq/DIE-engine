@@ -152,6 +152,8 @@ bool DialogPEImportLibrary::reload()
 
 void DialogPEImportLibrary::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditOriginalFirstThunk->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditTimeDateStamp->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditForwarderChain->setReadOnly(ui->checkBoxReadOnly->isChecked());

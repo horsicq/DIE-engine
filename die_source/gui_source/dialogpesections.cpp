@@ -255,6 +255,8 @@ void DialogPESections::on_tableWidgetSections_customContextMenuRequested(const Q
 
 void DialogPESections::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonAddNewSection->setEnabled(!ui->checkBoxReadOnly->isChecked());
     //actEditHeader->setEnabled(!ui->checkBoxReadOnly->isChecked());
 

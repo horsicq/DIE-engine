@@ -514,6 +514,8 @@ void MainWindow::controlsEnable(bool bEnable)
 
 void MainWindow::on_lineEditType_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     controlsEnable(true);
 }
 
@@ -1545,6 +1547,8 @@ void MainWindow::on_tabWidgetMain_currentChanged(int index)
 
 void MainWindow::on_lineEditFileName_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     if(ui->tabWidgetMain->currentIndex()==2)
     {
         // Load plugins
