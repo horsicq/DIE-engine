@@ -118,6 +118,8 @@ bool DialogDirectoryHeuristicScan::reload()
 
 void DialogDirectoryHeuristicScan::singleScanCompleteSlot(int nMs)
 {
+    Q_UNUSED(nMs)
+
     QString sText;
 
     if(pOptions->sm==SM_DIE)

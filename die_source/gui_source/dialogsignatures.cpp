@@ -361,6 +361,8 @@ void DialogSignatures::on_textEditSignature_textChanged()
 
 void DialogSignatures::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     if(ui->listWidgetSignatures->count())
     {
         ui->textEditSignature->setReadOnly(ui->checkBoxReadOnly->isChecked());
@@ -598,6 +600,8 @@ void DialogSignatures::renameSignature()
 
 void DialogSignatures::closeEvent(QCloseEvent *event)
 {
+    Q_UNUSED(event)
+
     if(ui->pushButtonSave->isEnabled())
     {
         if(QMessageBox::information(this,tr("Information"),tr("Save signature(%1)?").arg(sCurrent),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
@@ -624,6 +628,8 @@ void DialogSignatures::on_listWidgetSignatures_customContextMenuRequested(const 
 
 void DialogSignatures::on_checkBoxHighlight_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     bHighlightChanged=true;
     ui->textEditSignature->enableHighlight(ui->checkBoxHighlight->isChecked());
 }

@@ -76,6 +76,8 @@ bool DialogPECheckSum::reload()
 
 void DialogPECheckSum::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditCheckSum->setReadOnly(ui->checkBoxReadOnly->checkState());
     ui->pushButtonCalculate->setEnabled(!ui->checkBoxReadOnly->checkState());
 }
@@ -99,6 +101,8 @@ void DialogPECheckSum::on_pushButtonApply_clicked()
 
 void DialogPECheckSum::on_lineEditCheckSum_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }
 

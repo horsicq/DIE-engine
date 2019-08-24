@@ -179,6 +179,8 @@ void QXHexForm::setCursor(unsigned long long nValue)
 
 void QXHexForm::on_checkBoxAddressAsHex_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     bool bIsChecked=ui->checkBoxAddressAsHex->isChecked();
     ui->scrollAreaHEX->setAddressAsHEX(bIsChecked);
 
@@ -262,12 +264,16 @@ void QXHexForm::on_comboBoxType_currentIndexChanged(const QString &arg1)
 
 void QXHexForm::on_comboBoxMode_currentIndexChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->scrollAreaHEX->setType(ui->comboBoxType->currentText(),ui->comboBoxMode->currentText(),ui->comboBoxSyntax->currentText());
     setHEXfocus();
 }
 
 void QXHexForm::on_comboBoxSyntax_currentIndexChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->scrollAreaHEX->setType(ui->comboBoxType->currentText(),ui->comboBoxMode->currentText(),ui->comboBoxSyntax->currentText());
     setHEXfocus();
 }
@@ -320,6 +326,8 @@ void QXHexForm::on_pushButtonExtra_clicked()
 
 void QXHexForm::on_comboBoxImage_currentIndexChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->scrollAreaHEX->setImage(ui->comboBoxImage->currentText());
 
     setHEXfocus();
@@ -337,6 +345,8 @@ void QXHexForm::setReadOnly(bool bState)
 
 void QXHexForm::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->scrollAreaHEX->setReadOnlyMode(ui->checkBoxReadOnly->isChecked());
 
     setHEXfocus();

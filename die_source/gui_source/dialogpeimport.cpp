@@ -277,6 +277,10 @@ void DialogPEImport::createTable()
 
 void DialogPEImport::on_tableWidgetLibraries_currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn)
 {
+    Q_UNUSED(currentColumn)
+    Q_UNUSED(previousRow)
+    Q_UNUSED(previousColumn)
+
     if(!bSync)
     {
         int row=currentRow;

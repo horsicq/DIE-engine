@@ -690,6 +690,8 @@ void DialogEntropy::on_tabWidget_currentChanged(int index)
 
 void DialogEntropy::on_listWidget_doubleClicked(const QModelIndex &index)
 {
+    Q_UNUSED(index)
+
     QString sTemp=ui->listWidget->selectedItems().at(0)->data(Qt::UserRole).toString();
     unsigned int nPartOffset=sTemp.section(":",0,0).toUInt();
     unsigned int nPartSize=sTemp.section(":",1,1).toUInt();

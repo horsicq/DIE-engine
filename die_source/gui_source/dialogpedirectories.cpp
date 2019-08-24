@@ -889,6 +889,8 @@ bool DialogPEDirectories::reload()
 
 void DialogPEDirectories::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineeditEXPORTAddress->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineeditIMPORTAddress->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineeditRESOURCEAddress->setReadOnly(ui->checkBoxReadOnly->checkState());
