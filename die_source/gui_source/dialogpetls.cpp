@@ -182,6 +182,8 @@ bool DialogPETLS::reload()
 
 void DialogPETLS::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditStartAddressOfRawData->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditEndAddressOfRawData->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditAddressOfIndex->setReadOnly(ui->checkBoxReadOnly->isChecked());

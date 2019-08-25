@@ -73,6 +73,8 @@ bool DialogMACHUUID::reload()
 
 void DialogMACHUUID::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditUUID->setReadOnly(ui->checkBoxReadOnly->checkState());
 }
 
@@ -95,5 +97,7 @@ void DialogMACHUUID::on_pushButtonApply_clicked()
 
 void DialogMACHUUID::on_lineEditUUID_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->pushButtonApply->setEnabled(true);
 }

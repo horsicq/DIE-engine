@@ -166,5 +166,7 @@ void QXHexSignature::on_checkBoxUpper_toggled(bool checked)
 
 void QXHexSignature::on_lineEditWildcard_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1)
+
     reload();
 }

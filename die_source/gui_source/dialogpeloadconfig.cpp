@@ -286,6 +286,8 @@ bool DialogPELoadConfig::reload()
 
 void DialogPELoadConfig::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEditSize->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditTimeDateStamp->setReadOnly(ui->checkBoxReadOnly->isChecked());
     lineEditMajorVersion->setReadOnly(ui->checkBoxReadOnly->isChecked());

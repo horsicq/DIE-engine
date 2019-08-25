@@ -97,6 +97,8 @@ bool DialogELFMachine::reload()
 
 void DialogELFMachine::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     ui->lineEditValue->setReadOnly(ui->checkBoxReadOnly->checkState());
     ui->comboBoxValue->setEnabled(!ui->checkBoxReadOnly->checkState());
 }

@@ -57,7 +57,7 @@ bool DialogPEBoundImport::reload()
     QDateTime dt;
     QString sName;
 
-    for(int i=0; i<nImports; i++)
+    for(int i=0; i<(int)nImports; i++)
     {
         dt.setTime_t(pefile->getBoundImport_TimeDateStamp(i));
         sName=QString("%1(%2)").arg(pefile->getBoundImport_ModuleNameAsString(i)).arg(dt.toString());
