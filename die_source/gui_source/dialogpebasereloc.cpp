@@ -143,6 +143,8 @@ bool DialogPEBaseReloc::reload()
 
 void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
 {
+    Q_UNUSED(index)
+
     int nRow=ui->tableWidgetRelocs->selectedItems().at(0)->row();
     //    unsigned int nAddress=ui->tableWidgetRelocs->item(nRow,0)->text().toUInt();
     //    unsigned int nSize=ui->tableWidgetRelocs->item(nRow,1)->text().toUInt();

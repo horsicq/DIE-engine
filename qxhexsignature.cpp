@@ -156,11 +156,15 @@ void QXHexSignature::on_pushButtonCopy_clicked()
 
 void QXHexSignature::on_checkBoxSpaces_toggled(bool checked)
 {
+    Q_UNUSED(checked)
+
     reload();
 }
 
 void QXHexSignature::on_checkBoxUpper_toggled(bool checked)
 {
+    Q_UNUSED(checked)
+
     reload();
 }
 

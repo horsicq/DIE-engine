@@ -126,6 +126,8 @@ void DialogMACHHeader::applyEnable()
 
 void DialogMACHHeader::on_checkBoxReadOnly_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     lineEdite_magic->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEdite_cputype->setReadOnly(ui->checkBoxReadOnly->checkState());
     lineEdite_cpusubtype->setReadOnly(ui->checkBoxReadOnly->checkState());

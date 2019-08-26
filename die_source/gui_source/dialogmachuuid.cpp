@@ -85,7 +85,7 @@ void DialogMACHUUID::on_pushButtonCancel_clicked()
 
 void DialogMACHUUID::on_pushButtonApply_clicked()
 {
-    bool bTemp;
+//    bool bTemp;
     ui->pushButtonApply->setEnabled(false);
 
     machfile->setUUIDFromString(ui->lineEditUUID->text());
