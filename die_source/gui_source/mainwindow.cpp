@@ -34,10 +34,10 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(shortcut1, SIGNAL(activated()), this, SLOT(tabScan()));
     shortcut2 = new QShortcut(QKeySequence(__KeySequence_tab2), this);
     QObject::connect(shortcut2, SIGNAL(activated()), this, SLOT(tabScripts()));
+//    shortcut3 = new QShortcut(QKeySequence(__KeySequence_tab3), this);
+//    QObject::connect(shortcut3, SIGNAL(activated()), this, SLOT(tabPlugins()));
     shortcut3 = new QShortcut(QKeySequence(__KeySequence_tab3), this);
-    QObject::connect(shortcut3, SIGNAL(activated()), this, SLOT(tabPlugins()));
-    shortcut4 = new QShortcut(QKeySequence(__KeySequence_tab4), this);
-    QObject::connect(shortcut4, SIGNAL(activated()), this, SLOT(tabLog()));
+    QObject::connect(shortcut3, SIGNAL(activated()), this, SLOT(tabLog()));
 
     ui->pushButtonAbout->setShortcut(QKeySequence(__KeySequence_altA));
 
@@ -249,50 +249,50 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::loadPlugins()
-{
-    ui->listWidgetPlugins->clear();
+//void MainWindow::loadPlugins()
+//{
+//    ui->listWidgetPlugins->clear();
 
-    QDir dir(Utils::getPluginsPath(&options)+QDir::separator());
-    QFileInfoList dircontent=dir.entryInfoList(QStringList()<<"*.*");
+//    QDir dir(Utils::getPluginsPath(&options)+QDir::separator());
+//    QFileInfoList dircontent=dir.entryInfoList(QStringList()<<"*.*");
 
-    QPluginLoader pluginloader;
-    QListWidgetItem *pListWidgetItem;
+//    QPluginLoader pluginloader;
+//    QListWidgetItem *pListWidgetItem;
 
-    for(int i=0; i<dircontent.count(); i++)
-    {
-        pluginloader.setFileName(dircontent.at(i).absoluteFilePath());
+//    for(int i=0; i<dircontent.count(); i++)
+//    {
+//        pluginloader.setFileName(dircontent.at(i).absoluteFilePath());
 
-        if(!dircontent.at(i).isDir())
-        {
-            if(pluginloader.load())
-            {
-                QObject *plugin=pluginloader.instance();
+//        if(!dircontent.at(i).isDir())
+//        {
+//            if(pluginloader.load())
+//            {
+//                QObject *plugin=pluginloader.instance();
 
-                if(plugin)
-                {
-                    PluginInterface *plugininterface=qobject_cast<PluginInterface *>(plugin);
+//                if(plugin)
+//                {
+//                    PluginInterface *plugininterface=qobject_cast<PluginInterface *>(plugin);
 
-                    if(plugininterface)
-                    {
-                        pListWidgetItem=new QListWidgetItem;
+//                    if(plugininterface)
+//                    {
+//                        pListWidgetItem=new QListWidgetItem;
 
-                        pListWidgetItem->setText(plugininterface->getName());
-                        pListWidgetItem->setData(Qt::UserRole,dircontent.at(i).absoluteFilePath());
+//                        pListWidgetItem->setText(plugininterface->getName());
+//                        pListWidgetItem->setData(Qt::UserRole,dircontent.at(i).absoluteFilePath());
 
-                        ui->listWidgetPlugins->addItem(pListWidgetItem);
-                    }
-                }
+//                        ui->listWidgetPlugins->addItem(pListWidgetItem);
+//                    }
+//                }
 
-                pluginloader.unload();
-            }
-            else
-            {
-                _error(pluginloader.errorString());
-            }
-        }
-    }
-}
+//                pluginloader.unload();
+//            }
+//            else
+//            {
+//                _error(pluginloader.errorString());
+//            }
+//        }
+//    }
+//}
 
 void MainWindow::on_pushButtonExit_clicked()
 {
@@ -1475,14 +1475,14 @@ void MainWindow::tabScripts()
     ui->tabWidgetMain->setCurrentIndex(1);
 }
 
-void MainWindow::tabPlugins()
-{
-    ui->tabWidgetMain->setCurrentIndex(2);
-}
+//void MainWindow::tabPlugins()
+//{
+//    ui->tabWidgetMain->setCurrentIndex(2);
+//}
 
 void MainWindow::tabLog()
 {
-    ui->tabWidgetMain->setCurrentIndex(3);
+    ui->tabWidgetMain->setCurrentIndex(2);
 }
 void MainWindow::on_pushButtonSignatures_clicked()
 {
@@ -1495,68 +1495,69 @@ void MainWindow::on_pushButtonSignatures_clicked()
     // bIsDialogsopen=false;
 }
 
-void MainWindow::on_listWidgetPlugins_itemSelectionChanged()
-{
-    if(ui->listWidgetPlugins->count()==0)
-    {
-        return ;
-    }
+//void MainWindow::on_listWidgetPlugins_itemSelectionChanged()
+//{
+//    if(ui->listWidgetPlugins->count()==0)
+//    {
+//        return ;
+//    }
 
-    QObjectList list=ui->widgetPlugin->children();
+//    QObjectList list=ui->widgetPlugin->children();
 
-    for(int i=0; i<list.count(); i++)
-    {
-        delete list.at(i);
-    }
+//    for(int i=0; i<list.count(); i++)
+//    {
+//        delete list.at(i);
+//    }
 
-    pluginloader.unload();
+//    pluginloader.unload();
 
-    pluginloader.setFileName(ui->listWidgetPlugins->currentItem()->data(Qt::UserRole).toString());
+//    pluginloader.setFileName(ui->listWidgetPlugins->currentItem()->data(Qt::UserRole).toString());
 
-    if(pluginloader.load())
-    {
-        QObject *plugin = pluginloader.instance();
+//    if(pluginloader.load())
+//    {
+//        QObject *plugin = pluginloader.instance();
 
-        if(plugin)
-        {
-            PluginInterface *plugininterface=qobject_cast<PluginInterface *>(plugin);
+//        if(plugin)
+//        {
+//            PluginInterface *plugininterface=qobject_cast<PluginInterface *>(plugin);
 
-            if(plugininterface)
-            {
-                dieplugin.pWidget=ui->widgetPlugin;
-                dieplugin.sFileName=ui->lineEditFileName->text();
-                dieplugin.sPluginPath=Utils::getPluginsPath(&options);
+//            if(plugininterface)
+//            {
+//                dieplugin.pWidget=ui->widgetPlugin;
+//                dieplugin.sFileName=ui->lineEditFileName->text();
+//                dieplugin.sPluginPath=Utils::getPluginsPath(&options);
 
-                plugininterface->init(&dieplugin);
-            }
-        }
-    }
-}
+//                plugininterface->init(&dieplugin);
+//            }
+//        }
+//    }
+//}
 
 void MainWindow::on_tabWidgetMain_currentChanged(int index)
 {
-    if(index==2)
-    {
-        // Load plugins
-        if(options.bEnablePlugins)
-        {
-            loadPlugins();
-        }
-    }
+    Q_UNUSED(index)
+//    if(index==2)
+//    {
+//        // Load plugins
+//        if(options.bEnablePlugins)
+//        {
+//            loadPlugins();
+//        }
+//    }
 }
 
 void MainWindow::on_lineEditFileName_textChanged(const QString &arg1)
 {
     Q_UNUSED(arg1)
 
-    if(ui->tabWidgetMain->currentIndex()==2)
-    {
-        // Load plugins
-        if(options.bEnablePlugins)
-        {
-            loadPlugins();
-        }
-    }
+//    if(ui->tabWidgetMain->currentIndex()==2)
+//    {
+//        // Load plugins
+//        if(options.bEnablePlugins)
+//        {
+//            loadPlugins();
+//        }
+//    }
 }
 
 void MainWindow::on_pushButtonSearch_clicked()

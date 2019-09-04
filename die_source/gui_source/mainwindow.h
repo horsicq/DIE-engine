@@ -75,7 +75,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void loadPlugins();
+//    void loadPlugins();
     void on_pushButtonExit_clicked();
     void on_pushButtonOptions_clicked();
     void on_pushButtonAbout_clicked();
@@ -139,10 +139,10 @@ private slots:
     void setCurrentSize(bool bState);
     void tabScan();
     void tabScripts();
-    void tabPlugins();
+//    void tabPlugins();
     void tabLog();
     void on_pushButtonSignatures_clicked();
-    void on_listWidgetPlugins_itemSelectionChanged();
+//    void on_listWidgetPlugins_itemSelectionChanged();
     void on_tabWidgetMain_currentChanged(int index);
     void on_lineEditFileName_textChanged(const QString &arg1);
     void on_pushButtonSearch_clicked();
@@ -186,7 +186,7 @@ private:
     QShortcut *shortcut1;
     QShortcut *shortcut2;
     QShortcut *shortcut3;
-    QShortcut *shortcut4;
+    //    QShortcut *shortcut4;
     //    QShortcut *shortcut5;
     //    QShortcut *shortcut6;
     //    QShortcut *shortcut7;

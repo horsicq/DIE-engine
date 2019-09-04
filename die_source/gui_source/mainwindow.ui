@@ -821,37 +821,6 @@
           </item>
          </layout>
         </widget>
-        <widget class="QWidget" name="tabPlugins">
-         <attribute name="title">
-          <string>Plugins</string>
-         </attribute>
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <item>
-           <widget class="QListWidgetX" name="listWidgetPlugins">
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>16777215</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_5">
-            <item>
-             <widget class="QWidget" name="widgetPlugin" native="true">
-              <property name="minimumSize">
-               <size>
-                <width>305</width>
-                <height>0</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
         <widget class="QWidget" name="tabLog">
          <attribute name="title">
           <string>Log</string>
@@ -1057,11 +1026,6 @@
    <class>QProgressBarX</class>
    <extends>QProgressBar</extends>
    <header>qprogressbarx.h</header>
-  </customwidget>
-  <customwidget>
-   <class>QListWidgetX</class>
-   <extends>QListWidget</extends>
-   <header>qlistwidgetx.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

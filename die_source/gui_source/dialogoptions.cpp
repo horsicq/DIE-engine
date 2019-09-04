@@ -55,8 +55,8 @@ DialogOptions::DialogOptions(QWidget *parent) :
     QObject::connect(shortcut6, SIGNAL(activated()), this, SLOT(tab6()));
     shortcut7 = new QShortcut(QKeySequence(__KeySequence_tab7), this);
     QObject::connect(shortcut7, SIGNAL(activated()), this, SLOT(tab7()));
-    shortcut8 = new QShortcut(QKeySequence(__KeySequence_tab8), this);
-    QObject::connect(shortcut8, SIGNAL(activated()), this, SLOT(tab8()));
+//    shortcut8 = new QShortcut(QKeySequence(__KeySequence_tab8), this);
+//    QObject::connect(shortcut8, SIGNAL(activated()), this, SLOT(tab8()));
 
     ui->pushButtonCancel->setShortcut(QKeySequence(__KeySequence_quit));
     ui->pushButtonApply->setShortcut(QKeySequence(__KeySequence_save));
@@ -122,11 +122,11 @@ void DialogOptions::on_pushButtonApply_clicked()
     pOptions->nEntropyGraph=ui->spinBoxEntropy->value();
     pOptions->nAddressWidth=ui->spinBoxAddressWidth->value();
 
-    if(pOptions->bEnablePlugins!=ui->checkBoxEnablePlugins->isChecked())
-    {
-        pOptions->bEnablePlugins=ui->checkBoxEnablePlugins->isChecked();
-        bAppRestart=true;
-    }
+//    if(pOptions->bEnablePlugins!=ui->checkBoxEnablePlugins->isChecked())
+//    {
+//        pOptions->bEnablePlugins=ui->checkBoxEnablePlugins->isChecked();
+//        bAppRestart=true;
+//    }
 
     if(pOptions->sCodec!=ui->comboBoxCodec->currentText())
     {
@@ -261,10 +261,10 @@ void DialogOptions::on_pushButtonApply_clicked()
         ui->lineEditInfo->setText(__DefaultInfoPath);
     }
 
-    if(!dir.exists(Utils::convertPath(ui->lineEditPlugins->text())))
-    {
-        ui->lineEditPlugins->setText(__DefaultPluginsPath);
-    }
+//    if(!dir.exists(Utils::convertPath(ui->lineEditPlugins->text())))
+//    {
+//        ui->lineEditPlugins->setText(__DefaultPluginsPath);
+//    }
 
     if(!dir.exists(Utils::convertPath(ui->lineEditQSS->text())))
     {
@@ -305,11 +305,11 @@ void DialogOptions::on_pushButtonApply_clicked()
         bAppRestart=true;
     }
 
-    if(pOptions->sPluginsPath!=ui->lineEditPlugins->text())
-    {
-        pOptions->sPluginsPath=ui->lineEditPlugins->text();
-        bAppRestart=true;
-    }
+//    if(pOptions->sPluginsPath!=ui->lineEditPlugins->text())
+//    {
+//        pOptions->sPluginsPath=ui->lineEditPlugins->text();
+//        bAppRestart=true;
+//    }
 
     if(pOptions->sQSSPath!=ui->lineEditQSS->text())
     {
@@ -614,11 +614,11 @@ void DialogOptions::tab7()
     ui->stackedWidget->setCurrentIndex(6);
 }
 
-void DialogOptions::tab8()
-{
-    ui->listWidgetTabs->setCurrentRow(7);
-    ui->stackedWidget->setCurrentIndex(7);
-}
+//void DialogOptions::tab8()
+//{
+//    ui->listWidgetTabs->setCurrentRow(7);
+//    ui->stackedWidget->setCurrentIndex(7);
+//}
 
 void DialogOptions::setTooltips(bool bIsEnable)
 {
@@ -667,7 +667,7 @@ void DialogOptions::setTooltips(bool bIsEnable)
         ui->spinBoxAddressWidth->setToolTip(tr("Address width"));
         ui->comboBoxEndianness->setToolTip(tr("Endianness"));
 
-        ui->checkBoxEnablePlugins->setToolTip(tr("Enable plugins"));
+//        ui->checkBoxEnablePlugins->setToolTip(tr("Enable plugins"));
 
         ui->pushButtonSetPathDefault->setToolTip(tr("Set default paths"));
         ui->pushButtonDataBase->setToolTip(tr("Set database path"));
@@ -678,8 +678,8 @@ void DialogOptions::setTooltips(bool bIsEnable)
         ui->lineEditHelp->setToolTip(tr("Current help path"));
         ui->pushButtonInfo->setToolTip(tr("Set info path"));
         ui->lineEditInfo->setToolTip(tr("Current info path"));
-        ui->pushButtonPlugins->setToolTip(tr("Set plugins path"));
-        ui->lineEditPlugins->setToolTip(tr("Current plugins path"));
+//        ui->pushButtonPlugins->setToolTip(tr("Set plugins path"));
+//        ui->lineEditPlugins->setToolTip(tr("Current plugins path"));
         ui->pushButtonQSS->setToolTip(tr("Set QSS path"));
         ui->lineEditQSS->setToolTip(tr("Current QSS path"));
         ui->pushButtonScripts->setToolTip(tr("Set scripts path"));
@@ -725,7 +725,7 @@ void DialogOptions::setTooltips(bool bIsEnable)
         ui->spinBoxAddressWidth->setToolTip("");
         ui->comboBoxEndianness->setToolTip("");
 
-        ui->checkBoxEnablePlugins->setToolTip("");
+//        ui->checkBoxEnablePlugins->setToolTip("");
 
         ui->pushButtonSetPathDefault->setToolTip("");
         ui->pushButtonDataBase->setToolTip("");
@@ -736,8 +736,8 @@ void DialogOptions::setTooltips(bool bIsEnable)
         ui->lineEditHelp->setToolTip("");
         ui->pushButtonInfo->setToolTip("");
         ui->lineEditInfo->setToolTip("");
-        ui->pushButtonPlugins->setToolTip("");
-        ui->lineEditPlugins->setToolTip("");
+//        ui->pushButtonPlugins->setToolTip("");
+//        ui->lineEditPlugins->setToolTip("");
         ui->pushButtonQSS->setToolTip("");
         ui->lineEditQSS->setToolTip("");
         ui->pushButtonScripts->setToolTip("");
@@ -751,6 +751,7 @@ void DialogOptions::setTooltips(bool bIsEnable)
 
 void DialogOptions::on_listWidgetTabs_currentRowChanged(int currentRow)
 {
+    // TODO
     ui->stackedWidget->setCurrentIndex(currentRow);
 }
 
@@ -866,7 +867,7 @@ bool DialogOptions::reload()
     ui->lineEditFontHEX->setText(pOptions->sFontHEX);
     ui->spinBoxAddressWidth->setValue(pOptions->nAddressWidth);
 
-    ui->checkBoxEnablePlugins->setChecked(pOptions->bEnablePlugins);
+//    ui->checkBoxEnablePlugins->setChecked(pOptions->bEnablePlugins);
 
     setTooltips(pOptions->bShowTooltips);
 
@@ -981,7 +982,7 @@ bool DialogOptions::reload()
     ui->lineEditEditor->setText(pOptions->sEditorPath);
     ui->lineEditHelp->setText(pOptions->sHelpPath);
     ui->lineEditInfo->setText(pOptions->sInfoPath);
-    ui->lineEditPlugins->setText(pOptions->sPluginsPath);
+//    ui->lineEditPlugins->setText(pOptions->sPluginsPath);
     ui->lineEditQSS->setText(pOptions->sQSSPath);
     ui->lineEditScripts->setText(pOptions->sScriptsPath);
     ui->lineEditSearch->setText(pOptions->sSearchPath);
@@ -1025,7 +1026,7 @@ void DialogOptions::on_pushButtonSetPathDefault_clicked()
     ui->lineEditEditor->setText(__DefaultEditorPath);
     ui->lineEditHelp->setText(__DefaultHelpPath);
     ui->lineEditInfo->setText(__DefaultInfoPath);
-    ui->lineEditPlugins->setText(__DefaultPluginsPath);
+//    ui->lineEditPlugins->setText(__DefaultPluginsPath);
     ui->lineEditQSS->setText(__DefaultQSSPath);
     ui->lineEditScripts->setText(__DefaultScriptsPath);
     ui->lineEditSearch->setText(__DefaultSearchPath);
@@ -1060,12 +1061,12 @@ void DialogOptions::on_lineEditInfo_textChanged(const QString &arg1)
     ui->pushButtonApply->setEnabled(true);
 }
 
-void DialogOptions::on_lineEditPlugins_textChanged(const QString &arg1)
-{
-    Q_UNUSED(arg1)
+//void DialogOptions::on_lineEditPlugins_textChanged(const QString &arg1)
+//{
+//    Q_UNUSED(arg1)
 
-    ui->pushButtonApply->setEnabled(true);
-}
+//    ui->pushButtonApply->setEnabled(true);
+//}
 
 void DialogOptions::on_lineEditQSS_textChanged(const QString &arg1)
 {
@@ -1128,15 +1129,15 @@ void DialogOptions::on_pushButtonInfo_clicked()
     }
 }
 
-void DialogOptions::on_pushButtonPlugins_clicked()
-{
-    QString sDirectoryName=QFileDialog::getExistingDirectory(this, tr("Open directory"),Utils::getPluginsPath(pOptions),QFileDialog::ShowDirsOnly|QFileDialog::DontResolveSymlinks);
+//void DialogOptions::on_pushButtonPlugins_clicked()
+//{
+//    QString sDirectoryName=QFileDialog::getExistingDirectory(this, tr("Open directory"),Utils::getPluginsPath(pOptions),QFileDialog::ShowDirsOnly|QFileDialog::DontResolveSymlinks);
 
-    if(!sDirectoryName.isEmpty())
-    {
-        ui->lineEditPlugins->setText(sDirectoryName);
-    }
-}
+//    if(!sDirectoryName.isEmpty())
+//    {
+//        ui->lineEditPlugins->setText(sDirectoryName);
+//    }
+//}
 
 void DialogOptions::on_pushButtonQSS_clicked()
 {

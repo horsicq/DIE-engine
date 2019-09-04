@@ -42,6 +42,18 @@ public:
     explicit DialogOptions(QWidget *parent);
     ~DialogOptions();
     //    void setData(QMainWindow *mainWindow);
+    enum OSECT
+    {
+        OSECT_GENERAL=0,
+        OSECT_SCAN,
+        OSECT_ENTROPY,
+        OSECT_APPERANCE,
+        OSECT_CONTEXT,
+        OSECT_HEX,
+        OSECT_PLUGINS,
+        OSECT_PATHS,
+    };
+
 private slots:
     void on_pushButtonCancel_clicked();
     void on_pushButtonOK_clicked();
@@ -81,7 +93,7 @@ private slots:
     void tab5();
     void tab6();
     void tab7();
-    void tab8();
+//    void tab8();
 
     void setTooltips(bool bIsEnable);
 
@@ -109,7 +121,7 @@ private slots:
     void on_lineEditEditor_textChanged(const QString &arg1);
     void on_lineEditHelp_textChanged(const QString &arg1);
     void on_lineEditInfo_textChanged(const QString &arg1);
-    void on_lineEditPlugins_textChanged(const QString &arg1);
+//    void on_lineEditPlugins_textChanged(const QString &arg1);
     void on_lineEditQSS_textChanged(const QString &arg1);
     void on_lineEditScripts_textChanged(const QString &arg1);
     void on_lineEditSearch_textChanged(const QString &arg1);
@@ -118,7 +130,7 @@ private slots:
     void on_pushButtonEditor_clicked();
     void on_pushButtonHelp_clicked();
     void on_pushButtonInfo_clicked();
-    void on_pushButtonPlugins_clicked();
+//    void on_pushButtonPlugins_clicked();
     void on_pushButtonQSS_clicked();
     void on_pushButtonScripts_clicked();
     void on_pushButtonSearch_clicked();
@@ -138,6 +150,7 @@ private slots:
 #ifdef USE_YARA
     void on_pushButtonYARADataBase_clicked();
 #endif
+
 private:
     Ui::DialogOptions *ui;
     //    QMainWindow *mainWindow;
@@ -148,7 +161,7 @@ private:
     QShortcut *shortcut5;
     QShortcut *shortcut6;
     QShortcut *shortcut7;
-    QShortcut *shortcut8;
+//    QShortcut *shortcut8;
 };
 
 #endif // DIALOGOPTIONS_H
