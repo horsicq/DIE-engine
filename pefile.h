@@ -492,9 +492,8 @@ public slots:
     unsigned int getNumberOfImports();
 
     QList<IMAGE_IMPORT_DESCRIPTOR> getImports();
-    QList<QString> getImportLibraiesAsNames();
+    QList<QString> getImportLibrariesAsNames();
     QList<QString> getImportFunctionsAsNames();
-
 
     QList<IMPORT_LIST> getImportFunctionsAsList();
 

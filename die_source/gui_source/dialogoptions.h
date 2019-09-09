@@ -112,7 +112,7 @@ private slots:
 
     void on_pushButtonAllSet_clicked();
     void on_pushButtonAllClear_clicked();
-    void on_checkBoxEnablePlugins_stateChanged(int arg1);
+//    void on_checkBoxEnablePlugins_stateChanged(int arg1);
 
     void on_comboBoxCodec_currentIndexChanged(int index);
 
@@ -144,12 +144,14 @@ private slots:
     void on_checkBoxLanguage_toggled(bool checked);
     void on_comboBoxMethod_currentIndexChanged(int index);
     void on_checkBoxDeepScanNFD_stateChanged(int arg1);
-    void on_checkBoxScanOverlayNFD_stateChanged(int arg1);
+//    void on_checkBoxScanOverlayNFD_stateChanged(int arg1);
     void on_checkBoxDeepScanDIE_stateChanged(int arg1);
     void on_checkBoxResizeColumnsToContent_stateChanged(int arg1);
 #ifdef USE_YARA
     void on_pushButtonYARADataBase_clicked();
 #endif
+
+    void on_checkBoxRecursiveNFD_stateChanged(int arg1);
 
 private:
     Ui::DialogOptions *ui;

@@ -158,6 +158,8 @@ public slots:
     bool isExportFunctionPresent(QString sFunctionName);
     bool isExportFunctionPresentExp(QString sFunctionName);
 
+    QString _getImportHash();
+
 private:
     PEFile *pefile;
     //    int nEPOffset;

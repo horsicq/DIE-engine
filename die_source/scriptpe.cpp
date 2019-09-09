@@ -597,6 +597,24 @@ bool scriptPE::isExportFunctionPresentExp(QString sFunctionName)
     return pefile->isExportFunctionPresentExp(sFunctionName);
 }
 
+QString scriptPE::_getImportHash()
+{
+    QString sResult;
+
+    QString sString;
+
+    QList<QString> list=pefile->getImportFunctionsAsNames();
+
+    for(int i=0;i<list.count();i++)
+    {
+        sString+=list.at(i);
+    }
+
+    sResult=QString(QCryptographicHash::hash(QByteArray(sString.toLatin1().data(),sString.size()),QCryptographicHash::Md5).toHex());
+
+    return sResult;
+}
+
 QString scriptPE::getPEFileVersion(QString sFileName)
 {
     QString sResult;

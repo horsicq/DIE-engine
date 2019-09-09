@@ -2601,7 +2601,7 @@ QList<IMAGE_IMPORT_DESCRIPTOR> PEFile::getImports()
     return listResult;
 }
 
-QList<QString> PEFile::getImportLibraiesAsNames()
+QList<QString> PEFile::getImportLibrariesAsNames()
 {
     QList<QString> listResult;
     QString sRecord;

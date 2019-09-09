@@ -1006,12 +1006,12 @@ void DialogOptions::on_pushButtonAllClear_clicked()
     clearExtension("*");
 }
 
-void DialogOptions::on_checkBoxEnablePlugins_stateChanged(int arg1)
-{
-    Q_UNUSED(arg1)
+//void DialogOptions::on_checkBoxEnablePlugins_stateChanged(int arg1)
+//{
+//    Q_UNUSED(arg1)
 
-    ui->pushButtonApply->setEnabled(true);
-}
+//    ui->pushButtonApply->setEnabled(true);
+//}
 
 void DialogOptions::on_comboBoxCodec_currentIndexChanged(int index)
 {
@@ -1229,12 +1229,12 @@ void DialogOptions::on_checkBoxDeepScanNFD_stateChanged(int arg1)
     ui->pushButtonApply->setEnabled(true);
 }
 
-void DialogOptions::on_checkBoxScanOverlayNFD_stateChanged(int arg1)
-{
-    Q_UNUSED(arg1)
+//void DialogOptions::on_checkBoxScanOverlayNFD_stateChanged(int arg1)
+//{
+//    Q_UNUSED(arg1)
 
-    ui->pushButtonApply->setEnabled(true);
-}
+//    ui->pushButtonApply->setEnabled(true);
+//}
 
 void DialogOptions::on_checkBoxDeepScanDIE_stateChanged(int arg1)
 {
@@ -1260,3 +1260,10 @@ void DialogOptions::on_pushButtonYARADataBase_clicked()
     }
 }
 #endif
+
+void DialogOptions::on_checkBoxRecursiveNFD_stateChanged(int arg1)
+{
+    Q_UNUSED(arg1)
+
+    ui->pushButtonApply->setEnabled(true);
+}
