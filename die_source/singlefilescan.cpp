@@ -154,6 +154,8 @@ void SingleFileScan::appendMessage(QString sMessage)
     {
         sResult+="\n";
     }
+
+    listDetects.append(sMessage);
 }
 
 void SingleFileScan::appendSignature(QString sMessage)

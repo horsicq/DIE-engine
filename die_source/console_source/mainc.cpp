@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -455,7 +455,6 @@ int printSignatures(QString sType,QList<__SIGNATURE> *pList)
     return nResult;
 }
 
-
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
@@ -489,7 +488,6 @@ int main(int argc, char *argv[])
                       &&(SingleFileScan::options.listPEScripts.count()==0)
                       &&(SingleFileScan::options.listTextScripts.count()==0);
 
-
     if(arguments.count()==1)
     {
         printf(__DIE);
@@ -497,7 +495,7 @@ int main(int argc, char *argv[])
         printf(__VERSION);
         printf(" console\n");
         printf("\n");
-        printf("Copyright(C) 2006-2008 Hellsp@wn 2012-2018 Hors\n");
+        printf("Copyright(C) 2006-2008 Hellsp@wn 2012-2019 Hors\n");
         printf("Website: http://ntinfo.biz\n");
         printf("Bugreports: horsicq@gmail.com\n");
         printf("\n");
