@@ -119,7 +119,7 @@ bool scriptMSDOS::isSignaturePresent(unsigned int nOffset, unsigned int nSize, Q
     return msdosfile->isSignaturePresent(nOffset,nSize,sSignature);
 }
 
-float scriptMSDOS::calculateEntropy(unsigned int nOffset, unsigned int nSize)
+double scriptMSDOS::calculateEntropy(unsigned int nOffset, unsigned int nSize)
 {
     return msdosfile->calculateEntropy(nOffset,nSize);
 }

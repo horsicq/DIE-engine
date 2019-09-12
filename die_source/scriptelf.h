@@ -71,7 +71,7 @@ public slots:
     //    bool compareReg(QString sSignature,unsigned int nOffset);
     bool isSectionNamePresent(QString sSectionName);
     bool isStringInTablePresent(QString sSectionName, QString sString);
-    float calculateEntropy(unsigned int nOffset, unsigned int nSize);
+    double calculateEntropy(unsigned int nOffset, unsigned int nSize);
     QString getSignature(unsigned int nOffset,unsigned int nSize);
     QString calculateMD5(unsigned int nOffset, unsigned int nSize);
     unsigned int getSectionFileOffset(int nSection);

@@ -203,7 +203,7 @@ int scriptMACH::getNumberOfSegments()
     return machfile->getNumberOfSegments();
 }
 
-float scriptMACH::calculateEntropy(unsigned int nOffset, unsigned int nSize)
+double scriptMACH::calculateEntropy(unsigned int nOffset, unsigned int nSize)
 {
     return machfile->calculateEntropy(nOffset,nSize);
 }

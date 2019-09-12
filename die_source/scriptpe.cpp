@@ -487,7 +487,7 @@ QString scriptPE::getManifest()
     return pefile->getManifest();
 }
 
-float scriptPE::calculateEntropy(unsigned int nOffset, unsigned int nSize)
+double scriptPE::calculateEntropy(unsigned int nOffset, unsigned int nSize)
 {
     return pefile->calculateEntropy(nOffset,nSize);
 }

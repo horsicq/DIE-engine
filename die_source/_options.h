@@ -122,6 +122,7 @@ struct __DIE_OPTIONS
     bool bEnablePlugins;
     QString sCodec;
     //    int nNumberOfResults;
+    bool bCustomDatabase;
     QString sDataBasePath;
     QString sEditorPath;
     QString sHelpPath;

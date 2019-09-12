@@ -52,8 +52,8 @@ QString SingleFileScan::process(QString sFileName)
 
     if(options.bShowEntropy)
     {
-        float fEntropy=Binary::calculateEntropy(sFileName);
-        appendMessage(QString("Entropy: %1").arg(fEntropy));
+        double dEntropy=Binary::calculateEntropy(sFileName);
+        appendEntropy(dEntropy);
     }
 
     scan.setRun(false);
@@ -132,10 +132,9 @@ void SingleFileScan::setDataBase(QString sDataBase)
 #ifdef QT_DEBUG
     qDebug("New database: %s",sDataBase.toLatin1().data());
 #endif
-
 }
 
-__DIE_OPTIONS SingleFileScan::options= {};
+__DIE_OPTIONS SingleFileScan::options={};
 
 void SingleFileScan::appendMessage(QString sMessage)
 {
@@ -177,6 +176,11 @@ void SingleFileScan::appendSignature(QString sMessage)
 void SingleFileScan::appendError(QString sMessage)
 {
     appendMessage(sMessage);
+}
+
+void SingleFileScan::appendEntropy(double dEntropy)
+{
+    appendMessage(QString("Entropy: %1").arg(dEntropy));
 }
 
 #ifdef Q_OS_WIN

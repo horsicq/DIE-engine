@@ -264,7 +264,7 @@ bool scriptELF::isStringInTablePresent(QString sSectionName, QString sString)
     return elffile->isStringInTablePresent(sSectionName,sString);
 }
 
-float scriptELF::calculateEntropy(unsigned int nOffset, unsigned int nSize)
+double scriptELF::calculateEntropy(unsigned int nOffset, unsigned int nSize)
 {
     return elffile->calculateEntropy(nOffset,nSize);
 }

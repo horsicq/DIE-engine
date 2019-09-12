@@ -237,6 +237,7 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
 
             if(_dir.exists(Utils::convertPath(sTemp)))
             {
+                pOptions->bCustomDatabase=true;
                 pOptions->sDataBasePath=sTemp;
             }
             else
@@ -535,6 +536,11 @@ int main(int argc, char *argv[])
         if(!ParseOptions(&SingleFileScan::options,&arguments,&listFiles))
         {
             return 0;
+        }
+
+        if(SingleFileScan::options.bCustomDatabase)
+        {
+            Scan::die_loadScripts(&SingleFileScan::options);
         }
 
         _MainClass mc(&a);

@@ -2339,7 +2339,8 @@ double Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
 
         if(!readArrayFromFile(nOffset,pBuffer,nTemp))
         {
-            delete[] pBuffer;
+            delete [] pBuffer;
+
             emit appendError("Read error");
 
             return 0;
@@ -2358,7 +2359,7 @@ double Binary::calculateEntropy(unsigned int nOffset,unsigned int nDataSize)
 
     for(int j=0; j<256; j++)
     {
-        temp=bytes[j]/(float)nDataSize;
+        temp=bytes[j]/(double)nDataSize;
 
         if(temp)
         {

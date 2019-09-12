@@ -133,7 +133,7 @@ bool scriptText::isSignaturePresent(unsigned int nOffset, unsigned int nSize, QS
     return binary->isSignaturePresent(nOffset,nSize,sSignature);
 }
 
-float scriptText::calculateEntropy(unsigned int nOffset, unsigned int nSize)
+double scriptText::calculateEntropy(unsigned int nOffset, unsigned int nSize)
 {
     return binary->calculateEntropy(nOffset,nSize);
 }

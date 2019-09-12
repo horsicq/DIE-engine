@@ -20,12 +20,20 @@ public:
     static void setDataBase(QString sDataBase);
     static __DIE_OPTIONS options;
 
-public slots:
+    struct DETECT_RECORD
+    {
+        QString sFileType;
+        QString sType;
+        QString sName;
+        QString sVersion;
+        QString sOptions;
+    };
 
 private slots:
     void appendMessage(QString sMessage);
     void appendSignature(QString sMessage);
     void appendError(QString sMessage);
+    void appendEntropy(double dEntropy);
 
 private:
     //    __DIE_OPTIONS *pOptions;

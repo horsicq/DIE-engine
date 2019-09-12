@@ -60,7 +60,7 @@ public slots:
     int findString(unsigned int nOffset, unsigned int nSize, QString sValue);
     int findSignature(unsigned int nOffset, unsigned int nSize, QString sSignature);
     bool isSignaturePresent(unsigned int nOffset, unsigned int nSize, QString sSignature);
-    float calculateEntropy(unsigned int nOffset, unsigned int nSize);
+    double calculateEntropy(unsigned int nOffset, unsigned int nSize);
     QString getSignature(unsigned int nOffset,unsigned int nSize);
     QString calculateMD5(unsigned int nOffset, unsigned int nSize);
 

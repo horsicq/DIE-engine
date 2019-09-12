@@ -130,7 +130,7 @@ public slots:
     QString getVersionStringInfo(QString sKey);
     QString getManifest();
 
-    float calculateEntropy(unsigned int nOffset, unsigned int nSize);
+    double calculateEntropy(unsigned int nOffset, unsigned int nSize);
     QString getSignature(unsigned int nOffset,unsigned int nSize);
     QString calculateMD5(unsigned int nOffset, unsigned int nSize);
 
