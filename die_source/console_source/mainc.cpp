@@ -211,6 +211,24 @@ bool ParseOptions(__DIE_OPTIONS *pOptions,QStringList *pListArguments,QStringLis
                 return false;
             }
         }
+        else if(sParam.toLower().contains("-showjson:"))
+        {
+            sTemp=sParam.section(":",1,1).toLower();
+
+            if(sTemp=="yes")
+            {
+                pOptions->bShowJSON=true;
+            }
+            else if(sTemp=="no")
+            {
+                pOptions->bShowJSON=false;
+            }
+            else
+            {
+                printf("Invalid parameter: %s",sParam.toLatin1().data());
+                return false;
+            }
+        }
         else if(sParam.toLower().contains("-fullscan:"))
         {
             sTemp=sParam.section(":",1,1).toLower();
@@ -392,6 +410,7 @@ void loadOptions(__DIE_OPTIONS *pOptions)
     pOptions->bShowEntropy=settings.value("ShowEntropy",false).toBool();
     pOptions->bSingleLineOutput=settings.value("SingleLineOutput",false).toBool();
     pOptions->bShowFileFormatOnce=settings.value("ShowFileFormatOnce",false).toBool();
+    pOptions->bShowJSON=settings.value("ShowJSON",false).toBool();
     pOptions->bFullScan=settings.value("FullScan",false).toBool();
     pOptions->sDataBasePath=settings.value("DataBase","$app/db").toString();
     pOptions->bShowScanTime=false;
@@ -526,6 +545,7 @@ int main(int argc, char *argv[])
         printf(QString("-showentropy [default: -showentropy:%1] Show entropy\n").arg(SingleFileScan::options.bShowEntropy?"yes":"no").toLatin1().data());
         printf(QString("-singlelineoutput [default: -singlelineoutput:%1] Output as single line\n").arg(SingleFileScan::options.bSingleLineOutput?"yes":"no").toLatin1().data());
         printf(QString("-showfileformatonce [default: -showfileformatonce:%1] Show file format once\n").arg(SingleFileScan::options.bShowFileFormatOnce?"yes":"no").toLatin1().data());
+        printf(QString("-showjson [default: -showjson:%1] Show JSON\n").arg(SingleFileScan::options.bShowJSON?"yes":"no").toLatin1().data());
         printf(QString("-fullscan [default: -fullscan:%1] Full scan for all valid types\n").arg(SingleFileScan::options.bFullScan?"yes":"no").toLatin1().data());
         printf(QString("-database [default: -database:\"%1\"] Set scan database\n").arg(SingleFileScan::options.sDataBasePath).toLatin1().data());
     }

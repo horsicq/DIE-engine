@@ -37,9 +37,8 @@ private slots:
 
 private:
     //    __DIE_OPTIONS *pOptions;
-    QString sResult;
+    QString __sResult;
     QString sCurrentType;
-    QList<QString> listDetects;
 };
 #ifdef Q_OS_WIN
 bool  WINAPI  _DllMain(_In_  HINSTANCE hinstDLL,_In_  DWORD fdwReason,_In_  LPVOID lpvReserved);

@@ -125,6 +125,8 @@ bool Scan::analize(QString sFileName,bool bFullScan)
 
     emit appendFileName(sFileName);
 
+    pOptions->sCurrentFileName=sFileName;
+
     if(pOptions->sm==SM_DIE)
     {
         pOptions->die_listResult.clear();
@@ -577,6 +579,15 @@ void Scan::die_loadScripts(__DIE_OPTIONS *pOptions)
     loadTypeScripts(&pOptions->listMSDOSScripts,"MSDOS",pOptions);
     loadTypeScripts(&pOptions->listPEScripts,"PE",pOptions);
     loadTypeScripts(&pOptions->listMACHScripts,"MACH",pOptions);
+}
+
+QString Scan::toJSON(__DIE_OPTIONS *pOptions)
+{
+    QString sResult;
+
+    // TODO
+
+    return sResult;
 }
 #ifdef USE_YARA
 void Scan::yara_loadBase(__DIE_OPTIONS *pOptions)

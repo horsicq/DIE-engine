@@ -97,6 +97,7 @@ struct __DIE_OPTIONS
     bool bShowEntropy;
     bool bSingleLineOutput;
     bool bShowFileFormatOnce;
+    bool bShowJSON;
     bool bFullScan;
     bool bSectionsEntropyAfterOpen;
     bool bSingleApplication;
@@ -138,6 +139,8 @@ struct __DIE_OPTIONS
 #endif
     SCAN_METHODS sm;
     QMutex *pMutexResult;
+    QString sCurrentFileName;
+    double dEntropy;
     QList<__DIE_RESULT> die_listResult;
 #ifdef USE_NFD
     SpecAbstract::SCAN_RESULT nfd_result;
@@ -147,6 +150,7 @@ struct __DIE_OPTIONS
     bool bYaraLoaded;
     QYara::RESULT yara_result;
 #endif
+
 };
 
 #define __StayOnTop "General/StayOnTop"

@@ -49,6 +49,7 @@
 #define DIE_SHOWFILEFORMATONCE      0x00000020
 #define DIE_FULLSCAN                0x00000040
 #define DIE_DEEPSCAN                0x00000080
+#define DIE_SHOWJSON                0x00000100
 
 class Scan : public QObject
 {
@@ -73,6 +74,7 @@ public:
     static void loadTypeScripts(QList<__SIGNATURE> *pList,QString sType,__DIE_OPTIONS *pOptions);
     static void die_loadScripts(__DIE_OPTIONS *pOptions);
     //    void _compareFile(QString sScript);
+    QString toJSON(__DIE_OPTIONS *pOptions);
 #ifdef USE_YARA
     static void yara_loadBase(__DIE_OPTIONS *pOptions);
 #endif

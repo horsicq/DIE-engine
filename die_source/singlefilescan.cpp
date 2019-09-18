@@ -27,6 +27,7 @@ void SingleFileScan::flagsToOptions(unsigned int nFlags, __DIE_OPTIONS *pOptions
     pOptions->bShowFileFormatOnce=nFlags&DIE_SHOWFILEFORMATONCE;
     pOptions->bFullScan=nFlags&DIE_FULLSCAN;
     pOptions->bScanDeepScanDIE=nFlags&DIE_DEEPSCAN;
+    pOptions->bShowJSON=nFlags&DIE_SHOWJSON;
     pOptions->bShowScanTime=false;
     pOptions->sm=SM_DIE;
     pOptions->pMutexResult=0;
@@ -34,7 +35,9 @@ void SingleFileScan::flagsToOptions(unsigned int nFlags, __DIE_OPTIONS *pOptions
 
 QString SingleFileScan::process(QString sFileName)
 {
-    sResult.clear();
+    QString sResult;
+
+    __sResult.clear();
 
     Scan scan;
 
@@ -52,11 +55,20 @@ QString SingleFileScan::process(QString sFileName)
 
     if(options.bShowEntropy)
     {
-        double dEntropy=Binary::calculateEntropy(sFileName);
-        appendEntropy(dEntropy);
+        options.dEntropy=Binary::calculateEntropy(sFileName);
+        appendEntropy(options.dEntropy);
     }
 
     scan.setRun(false);
+
+    if(!options.bShowJSON)
+    {
+        sResult=__sResult;
+    }
+    else
+    {
+        sResult=scan.toJSON(&options);
+    }
 
     return sResult;
 }
@@ -138,12 +150,12 @@ __DIE_OPTIONS SingleFileScan::options={};
 
 void SingleFileScan::appendMessage(QString sMessage)
 {
-    if((sResult!="")&&(options.bSingleLineOutput))
+    if((__sResult!="")&&(options.bSingleLineOutput))
     {
-        sResult+="; ";
+        __sResult+="; ";
     }
 
-    sResult+=sMessage;
+    __sResult+=sMessage;
 
     if(options.bSingleLineOutput)
     {
@@ -151,10 +163,8 @@ void SingleFileScan::appendMessage(QString sMessage)
     }
     else
     {
-        sResult+="\n";
+        __sResult+="\n";
     }
-
-    listDetects.append(sMessage);
 }
 
 void SingleFileScan::appendSignature(QString sMessage)
