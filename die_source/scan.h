@@ -31,6 +31,10 @@
 #include <QSettings>
 #include <QTime>
 
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
+
 #include "../pluginsscript.h"
 #include "scriptpe.h"
 #include "scriptbinary.h"

@@ -167,6 +167,8 @@ void LiteWindow::appendError(QString sString)
 
 void LiteWindow::on_checkBoxShowErrors_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     if(ui->checkBoxShowErrors->checkState())
     {
         options.bShowErrors=true;
@@ -179,6 +181,8 @@ void LiteWindow::on_checkBoxShowErrors_stateChanged(int arg1)
 
 void LiteWindow::on_checkBoxAddToContextMenu_stateChanged(int arg1)
 {
+    Q_UNUSED(arg1)
+
     QSettings settings1("HKEY_CLASSES_ROOT\\exefile\\shell\\Detect it easy lite",QSettings::NativeFormat);
     QSettings settings2("HKEY_CLASSES_ROOT\\dllfile\\shell\\Detect it easy lite",QSettings::NativeFormat);
     QSettings settings3("HKEY_CLASSES_ROOT\\sysfile\\shell\\Detect it easy lite",QSettings::NativeFormat);

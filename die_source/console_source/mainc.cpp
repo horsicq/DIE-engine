@@ -561,6 +561,13 @@ int main(int argc, char *argv[])
         if(SingleFileScan::options.bCustomDatabase)
         {
             Scan::die_loadScripts(&SingleFileScan::options);
+
+            bInvalidBase=(SingleFileScan::options.listBinaryScripts.count()==0)
+                                  &&(SingleFileScan::options.listELFScripts.count()==0)
+                                  &&(SingleFileScan::options.listMACHScripts.count()==0)
+                                  &&(SingleFileScan::options.listMSDOSScripts.count()==0)
+                                  &&(SingleFileScan::options.listPEScripts.count()==0)
+                                  &&(SingleFileScan::options.listTextScripts.count()==0);
         }
 
         _MainClass mc(&a);

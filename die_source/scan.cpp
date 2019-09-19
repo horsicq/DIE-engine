@@ -585,7 +585,33 @@ QString Scan::toJSON(__DIE_OPTIONS *pOptions)
 {
     QString sResult;
 
-    // TODO
+    QJsonObject jsonResult;
+
+    jsonResult.insert("filename",pOptions->sCurrentFileName);
+
+    if(pOptions->bShowEntropy)
+    {
+        jsonResult.insert("entropy",QString::number(pOptions->dEntropy));
+    }
+
+    QJsonArray jsArray;
+
+    for(int i=0;i<pOptions->die_listResult.count();i++)
+    {
+        QJsonObject jsRecord;
+
+        jsRecord.insert("name",pOptions->die_listResult.at(i).sName);
+        jsRecord.insert("filetype",pOptions->die_listResult.at(i).sFileType);
+        jsRecord.insert("type",pOptions->die_listResult.at(i).sType);
+
+        jsArray.append(jsRecord);
+    }
+
+    jsonResult.insert("detects",jsArray);
+
+    QJsonDocument saveFormat(jsonResult);
+
+    sResult=saveFormat.toJson(QJsonDocument::Indented).data();
 
     return sResult;
 }
@@ -622,9 +648,9 @@ void Scan::die_appendSignatureSlot(QString sString)
             sTemp=sString;
         }
 
-        record.sFileType=sTemp.section(":",0,0);
-        record.sType=sTemp.section(":",1,1);
-        record.sName=sTemp.section(":",2,-1);
+        record.sFileType=sTemp.section(": ",0,0);
+        record.sType=sTemp.section(": ",1,1);
+        record.sName=sTemp.section(": ",2,-1);
 
         pOptions->die_listResult.append(record);
     }
