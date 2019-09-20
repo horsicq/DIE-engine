@@ -344,8 +344,6 @@ void DialogPESections::on_pushButtonCheckPackedStatus_clicked()
 {
     double dEntropy;
 
-    nNumberOfSections;
-
     for(int i=0; i<nNumberOfSections; i++)
     {
         dEntropy=pefile->calculateEntropy(pefile->getSection_PointerToRawData(i),pefile->getSection_SizeOfRawData(i));
