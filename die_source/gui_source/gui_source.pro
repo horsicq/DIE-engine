@@ -31,19 +31,7 @@ HEADERS += \
     threadexport.h \
     threadentropy.h \
     threaddirectory.h \
-    ../../qtreewidgetx.h \
-    ../../qtexteditx.h \
-    ../../qtabwidgetx.h \
-    ../../qtablewidgetx.h \
-    ../../qpushbuttonx.h \
-    ../../qprogressbarx.h \
-    ../../qlistwidgetx.h \
-    ../../qlineeditx.h \
-    ../../qlabelx.h \
     qdialogx.h \
-    ../../qdatetimeeditx.h \
-    ../../qcomboboxx.h \
-    ../../qcheckboxx.h \
     mainwindow.h \
     dialogpeversioninfo.h \
     dialogpetimedatestamp.h \
@@ -86,26 +74,6 @@ HEADERS += \
     dialogpechecksum.h \
     dialogpecharacteristics.h \
     dialogabout.h \
-    ../scriptpe.h \
-    ../scriptmsdos.h \
-    ../scriptelf.h \
-    ../scriptbinary.h \
-    ../scripttext.h \
-    ../scriptmach.h \
-    ../scan.h \
-    ../../pluginsscript.h \
-    ../_options.h \
-    ../../pefile.h \
-    ../../msdosfile.h \
-    ../../elffile.h \
-    ../../textfile.h \
-    ../../binary.h \
-    ../../versionresource.h \
-    ../../qxhexviewx.h \
-    ../../qxhexview.h \
-    ../../qxhexgoto.h \
-    ../../qxhexform.h \
-    ../../qxhexsignature.h \
     dialogsignatures.h \
     dialognewsignature.h \
     dialogpetls.h \
@@ -120,20 +88,11 @@ HEADERS += \
     dialogelfdata.h \
     dialogelftype.h \
     dialogelfmachine.h \
-    handleoptions.h \   
-    ../../qxhexsearch.h \
-    ../../qradiobuttonx.h \
-    ../../qxhexsearchthread.h \
-    ../../qxhex.h \
-    ../../qtexteditxhex.h \
-    ../../qscriptenginedebuggerx.h \
-    ../../qxhexdumpthread.h \
-    ../../machfile.h \
+    handleoptions.h \
     dialogmachheader.h \
     dialogmachlc.h \
     dialogmachsegments.h \
     dialogmachsections.h \
-    ../scriptgeneric.h \
     dialogelfstrings.h \
     dialogmachuuid.h \
     dialogmachlibs.h \
@@ -148,13 +107,54 @@ HEADERS += \
     formmsdos.h \
     formmach.h \
     formgeneric.h \
-    ../scriptdie.h \
     dialogsearch.h \
     threadsearch.h \
     searchtablemodel.h \
+    dialogflc.h \
+    ../_options.h \
+    ../scriptpe.h \
+    ../scriptmsdos.h \
+    ../scriptelf.h \
+    ../scriptbinary.h \
+    ../scripttext.h \
+    ../scriptmach.h \
+    ../scan.h \
+    ../scriptgeneric.h \
+    ../scriptdie.h \
     ../utils.h \
-    ../../scriptengineeventfilter.h \
-    dialogflc.h
+    ../../pluginsscript.h \
+    ../../qtreewidgetx.h \
+    ../../qtexteditx.h \
+    ../../qtabwidgetx.h \
+    ../../qtablewidgetx.h \
+    ../../qpushbuttonx.h \
+    ../../qprogressbarx.h \
+    ../../qlistwidgetx.h \
+    ../../qlineeditx.h \
+    ../../qlabelx.h \
+    ../../qdatetimeeditx.h \
+    ../../qcomboboxx.h \
+    ../../qcheckboxx.h \
+    ../../pefile.h \
+    ../../msdosfile.h \
+    ../../elffile.h \
+    ../../textfile.h \
+    ../../binary.h \
+    ../../versionresource.h \
+    ../../qxhexviewx.h \
+    ../../qxhexview.h \
+    ../../qxhexgoto.h \
+    ../../qxhexform.h \
+    ../../qxhexsignature.h \
+    ../../qxhexsearch.h \
+    ../../qradiobuttonx.h \
+    ../../qxhexsearchthread.h \
+    ../../qxhex.h \
+    ../../qtexteditxhex.h \
+    ../../qscriptenginedebuggerx.h \
+    ../../qxhexdumpthread.h \
+    ../../machfile.h \
+    ../../scriptengineeventfilter.h
 
 SOURCES += \
     threadplugin.cpp \
@@ -162,19 +162,7 @@ SOURCES += \
     threadexport.cpp \
     threadentropy.cpp \
     threaddirectory.cpp \
-    ../../qtreewidgetx.cpp \
-    ../../qtexteditx.cpp \
-    ../../qtabwidgetx.cpp \
-    ../../qtablewidgetx.cpp \
-    ../../qpushbuttonx.cpp \
-    ../../qprogressbarx.cpp \
-    ../../qlistwidgetx.cpp \
-    ../../qlineeditx.cpp \
-    ../../qlabelx.cpp \
     qdialogx.cpp \
-    ../../qdatetimeeditx.cpp \
-    ../../qcomboboxx.cpp \
-    ../../qcheckboxx.cpp \
     mainwindow.cpp \
     main.cpp \
     dialogpeversioninfo.cpp \
@@ -218,25 +206,6 @@ SOURCES += \
     dialogpechecksum.cpp \
     dialogpecharacteristics.cpp \
     dialogabout.cpp \
-    ../scriptpe.cpp \
-    ../scriptmsdos.cpp \
-    ../scriptelf.cpp \
-    ../scriptbinary.cpp \
-    ../scripttext.cpp \
-    ../scan.cpp \
-    ../../pluginsscript.cpp \
-    ../../pefile.cpp \
-    ../../msdosfile.cpp \
-    ../../elffile.cpp \
-    ../../textfile.cpp \
-    ../../binary.cpp \
-    ../../machfile.cpp \
-    ../../versionresource.cpp \
-    ../../qxhexviewx.cpp \
-    ../../qxhexview.cpp \
-    ../../qxhexgoto.cpp \
-    ../../qxhexform.cpp \
-    ../../qxhexsignature.cpp \
     dialogsignatures.cpp \
     dialognewsignature.cpp \
     dialogpetls.cpp \
@@ -252,19 +221,10 @@ SOURCES += \
     dialogelftype.cpp \
     dialogelfmachine.cpp \
     handleoptions.cpp \
-    ../../qxhexsearch.cpp \
-    ../../qradiobuttonx.cpp \
-    ../../qxhexsearchthread.cpp \
-    ../../qtexteditxhex.cpp \
-    ../../qxhex.cpp \
-    ../../qscriptenginedebuggerx.cpp \
-    ../../qxhexdumpthread.cpp \
-    ../scriptmach.cpp \
     dialogmachheader.cpp \
     dialogmachlc.cpp \
     dialogmachsegments.cpp \
     dialogmachsections.cpp \
-    ../scriptgeneric.cpp \
     dialogelfstrings.cpp \
     dialogmachuuid.cpp \
     dialogmachlibs.cpp \
@@ -279,13 +239,53 @@ SOURCES += \
     formelf.cpp \
     formmach.cpp \
     formmsdos.cpp \
-    ../scriptdie.cpp \
     dialogsearch.cpp \
     threadsearch.cpp \
     searchtablemodel.cpp \
+    dialogflc.cpp \
+    ../scriptpe.cpp \
+    ../scriptmsdos.cpp \
+    ../scriptelf.cpp \
+    ../scriptbinary.cpp \
+    ../scripttext.cpp \
+    ../scriptmach.cpp \
+    ../scriptdie.cpp \
+    ../scriptgeneric.cpp \
     ../utils.cpp \
-    ../../scriptengineeventfilter.cpp \
-    dialogflc.cpp
+    ../scan.cpp \
+    ../../qtreewidgetx.cpp \
+    ../../qtexteditx.cpp \
+    ../../qtabwidgetx.cpp \
+    ../../qtablewidgetx.cpp \
+    ../../qpushbuttonx.cpp \
+    ../../qprogressbarx.cpp \
+    ../../qlistwidgetx.cpp \
+    ../../qlineeditx.cpp \
+    ../../qlabelx.cpp \
+    ../../qdatetimeeditx.cpp \
+    ../../qcomboboxx.cpp \
+    ../../qcheckboxx.cpp \
+    ../../pluginsscript.cpp \
+    ../../pefile.cpp \
+    ../../msdosfile.cpp \
+    ../../elffile.cpp \
+    ../../textfile.cpp \
+    ../../binary.cpp \
+    ../../machfile.cpp \
+    ../../versionresource.cpp \
+    ../../qxhexviewx.cpp \
+    ../../qxhexview.cpp \
+    ../../qxhexgoto.cpp \
+    ../../qxhexform.cpp \
+    ../../qxhexsignature.cpp \
+    ../../qxhexsearch.cpp \
+    ../../qradiobuttonx.cpp \
+    ../../qxhexsearchthread.cpp \
+    ../../qtexteditxhex.cpp \
+    ../../qxhex.cpp \
+    ../../qscriptenginedebuggerx.cpp \
+    ../../qxhexdumpthread.cpp \
+    ../../scriptengineeventfilter.cpp
 
 FORMS += \
     mainwindow.ui \
