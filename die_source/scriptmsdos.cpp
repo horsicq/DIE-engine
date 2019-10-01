@@ -55,6 +55,11 @@ QString scriptMSDOS::getString(unsigned int nOffset, unsigned int nSize)
     return msdosfile->getString(nOffset,nSize);
 }
 
+unsigned long long scriptMSDOS::readQword(unsigned int nOffset)
+{
+    return msdosfile->readQword(nOffset);
+}
+
 unsigned int scriptMSDOS::readDword(unsigned int nOffset)
 {
     return msdosfile->readDword(nOffset);

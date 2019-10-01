@@ -59,6 +59,7 @@ public slots:
     QString getFileCompleteSuffix();
     unsigned int getSize();
     QString getString(unsigned int nOffset,unsigned int nSize=50);
+    unsigned long long readQword(unsigned int nOffset);
     unsigned int readDword(unsigned int nOffset);
     unsigned short readWord(unsigned int nOffset);
     unsigned char readByte(unsigned int nOffset);

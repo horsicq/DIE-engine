@@ -108,6 +108,7 @@ public slots:
     QString getFileSuffix();
     QString getFileCompleteSuffix();
     unsigned int getSize();
+    unsigned long long readQword(unsigned int nOffset);
     unsigned int readDword(unsigned int nOffset);
     unsigned short readWord(unsigned int nOffset);
     unsigned char readByte(unsigned int nOffset);

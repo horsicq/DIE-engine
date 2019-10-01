@@ -78,6 +78,11 @@ QString scriptMACH::getString(unsigned int nOffset, unsigned int nSize)
     return machfile->getString(nOffset,nSize);
 }
 
+unsigned long long scriptMACH::readQword(unsigned int nOffset)
+{
+    return machfile->readQword(nOffset);
+}
+
 unsigned int scriptMACH::readDword(unsigned int nOffset)
 {
     return machfile->readDword(nOffset);

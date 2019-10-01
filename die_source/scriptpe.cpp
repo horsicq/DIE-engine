@@ -681,6 +681,11 @@ unsigned int scriptPE::getSize()
     return pefile->size();
 }
 
+unsigned long long scriptPE::readQword(unsigned int nOffset)
+{
+    return pefile->readQword(nOffset);
+}
+
 unsigned int scriptPE::getOverlayOffset()
 {
     return pefile->getOverlayOffset();

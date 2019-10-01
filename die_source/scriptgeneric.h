@@ -45,6 +45,7 @@ public slots:
     virtual bool compareEP(QString sSignature,unsigned int nOffset)=0;
     //    virtual bool compareEP(unsigned int nOffset,QString sSignature)=0;
     virtual QString getString(unsigned int nOffset,unsigned int nSize=50)=0;
+    virtual unsigned long long readQword(unsigned int nOffset)=0;
     virtual unsigned int readDword(unsigned int nOffset)=0;
     virtual unsigned short readWord(unsigned int nOffset)=0;
     virtual unsigned char readByte(unsigned int nOffset)=0;

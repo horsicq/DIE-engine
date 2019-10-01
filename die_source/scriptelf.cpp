@@ -205,6 +205,11 @@ QString scriptELF::getString(unsigned int nOffset, unsigned int nSize)
     return elffile->getString(nOffset,nSize);
 }
 
+unsigned long long scriptELF::readQword(unsigned int nOffset)
+{
+    return elffile->readQword(nOffset);
+}
+
 unsigned int scriptELF::readDword(unsigned int nOffset)
 {
     return elffile->readDword(nOffset);

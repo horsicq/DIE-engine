@@ -63,6 +63,11 @@ QString scriptText::getString(unsigned int nOffset, unsigned int nSize)
     return binary->getString(nOffset,nSize);
 }
 
+unsigned long long scriptText::readQword(unsigned int nOffset)
+{
+    return binary->readQword(nOffset);
+}
+
 unsigned int scriptText::readDword(unsigned int nOffset)
 {
     return binary->readDword(nOffset);

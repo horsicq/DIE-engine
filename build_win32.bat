@@ -145,8 +145,8 @@ xcopy %SOURCE_PATH%\diedll_win\SDK %SOURCE_PATH%\release\%BUILD_NAME_DLL%\SDK /E
 copy %SOURCE_PATH%\diedll_win\diedll.h %SOURCE_PATH%\release\%BUILD_NAME_DLL%\
 
 cd %SOURCE_PATH%\release
-if exist %BUILD_NAME%_noupx_%RELEASE_VERSION%.zip del %BUILD_NAME%_noupx_%RELEASE_VERSION%.zip
-%SEVENZIP_PATH%\7z.exe a %BUILD_NAME%_noupx_%RELEASE_VERSION%.zip %BUILD_NAME%\*
+if exist %BUILD_NAME%_%RELEASE_VERSION%.zip del %BUILD_NAME%_%RELEASE_VERSION%.zip
+%SEVENZIP_PATH%\7z.exe a %BUILD_NAME%_%RELEASE_VERSION%.zip %BUILD_NAME%\*
 cd %SOURCE_PATH%
 
 %UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\die.exe
@@ -165,8 +165,8 @@ cd %SOURCE_PATH%
 %UPX_PATH%\upx.exe %SOURCE_PATH%\release\%BUILD_NAME%\base\libcrypto-1_1.dll
 
 cd %SOURCE_PATH%\release
-if exist %BUILD_NAME%_%RELEASE_VERSION%.zip del %BUILD_NAME%_%RELEASE_VERSION%.zip
-%SEVENZIP_PATH%\7z.exe a %BUILD_NAME%_%RELEASE_VERSION%.zip %BUILD_NAME%\*
+if exist %BUILD_NAME%_upx_%RELEASE_VERSION%.zip del %BUILD_NAME%_upx_%RELEASE_VERSION%.zip
+%SEVENZIP_PATH%\7z.exe a %BUILD_NAME%_upx_%RELEASE_VERSION%.zip %BUILD_NAME%\*
 cd %SOURCE_PATH%
 
 cd %SOURCE_PATH%\release
