@@ -5,6 +5,15 @@ CONFIG(debug, debug|release) {
     DESTDIR = ../build/release
 }
 
+win32-g++ {
+    QMAKE_CXXFLAGS += -Wno-missing-field-initializers
+}
+unix:!macx {
+    QMAKE_CXXFLAGS += -Wno-missing-field-initializers
+}
+unix:macx {
+    QMAKE_CXXFLAGS += -Wno-missing-field-initializers
+}
 
 !contains(QMAKE_TARGET.arch, x86_64) {
     win32-msvc2013{
