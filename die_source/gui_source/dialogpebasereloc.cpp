@@ -52,9 +52,9 @@ DialogPEBaseReloc::DialogPEBaseReloc(QWidget *parent) :
 
     ui->tableWidgetRelocPage->setHorizontalHeaderLabels(labels);
 
-    ui->tableWidgetRelocs->setColumnWidth(0,100);
-    ui->tableWidgetRelocs->setColumnWidth(1,125);
-    ui->tableWidgetRelocs->setColumnWidth(2,80);
+    ui->tableWidgetRelocPage->setColumnWidth(0,100);
+    ui->tableWidgetRelocPage->setColumnWidth(1,125);
+    ui->tableWidgetRelocPage->setColumnWidth(2,120);
 
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_quit));
 }
@@ -93,6 +93,11 @@ bool DialogPEBaseReloc::reload()
     {
         nAddress=pefile->readDword(nRelocsTableOffset);
         nSize=pefile->readDword(nRelocsTableOffset+4);
+
+        if(nAddress&0xFFF)
+        {
+            break;
+        }
 
         if(nAddress&&nSize)
         {
@@ -150,6 +155,8 @@ void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
     //    unsigned int nSize=ui->tableWidgetRelocs->item(nRow,1)->text().toUInt();
     //    unsigned int nOffset=ui->tableWidgetRelocs->item(nRow,3)->text().toUInt();
 
+    bool bIs64=pefile->isPEPlus();
+
     if((nRow>=0)&&(nRow<listAddresses.count()))
     {
         unsigned int nAddress=listAddresses.at(nRow);
@@ -198,7 +205,7 @@ void DialogPEBaseReloc::on_tableWidgetRelocs_clicked(const QModelIndex &index)
 
             if((sTypeOffset&0xF000))
             {
-                lineEdit->setText(QString("%1").arg(pefile->readDword(pefile->RVAToOffset(nAddress+(sTypeOffset&0x0FFF))),8,16,QChar('0')));
+                lineEdit->setText(QString("%1").arg(pefile->readDword(pefile->RVAToOffset(nAddress+(sTypeOffset&0x0FFF))),bIs64?16:8,16,QChar('0')));
             }
 
             ui->tableWidgetRelocPage->setIndexWidget(ui->tableWidgetRelocPage->model()->index(i,2),lineEdit);

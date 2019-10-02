@@ -7906,6 +7906,10 @@ unsigned int PEFile::getNumberOfRelocsPages()
 
             nOffset+=nSize;
 
+            if(nAddress&0xFFF)
+            {
+                break;
+            }
         }
         while(nAddress&&nSize);
 

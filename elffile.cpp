@@ -33,7 +33,12 @@ bool ELFFile::isValid()
     {
         if(getElfHeader_magic()==0x464c457f)
         {
-            bResult=true;
+            unsigned char cClass=getElfHeader_class();
+
+            if((cClass==1)||(cClass==2))
+            {
+                bResult=true;
+            }
         }
     }
 
