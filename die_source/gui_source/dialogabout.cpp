@@ -96,25 +96,28 @@ void DialogAbout::replyFinished(QNetworkReply* pReply)
 {
     ui->pushButtonCheckUpdate->setEnabled(true);
 
-    if(pReply->error()!=QNetworkReply::NoError)
+    if(pReply->error()==QNetworkReply::NoError)
     {
-        QMessageBox::critical(this,tr("Network error"),pReply->errorString());
-        return;
-    }
+        QByteArray data=pReply->readAll();
+        QString _sVersion(data);
 
-    QByteArray data=pReply->readAll();
-    QString sVersion(data);
+        QString sVersion=_sVersion.section(" ",-1,-1);
 
-    if(sVersion==QString("%1 %2").arg(__DIE).arg(__VERSION))
-    {
-        QMessageBox::information(this,tr("Update information"),tr("No update available"));
+        if(sVersion.toDouble()<=QString(__VERSION).toDouble())
+        {
+            QMessageBox::information(this,tr("Update information"),tr("No update available"));
+        }
+        else
+        {
+            if(QMessageBox::information(this,tr("Update information"),QString("%1\r\n\r\n%2\r\n\r\n%3").arg(tr("New version available")).arg(sVersion).arg(tr("Go to download page?")),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
+            {
+                QDesktopServices::openUrl(QUrl(__HOMEPAGE));
+            }
+        }
     }
     else
     {
-        if(QMessageBox::information(this,tr("Update information"),QString("%1\r\n\r\n%2\r\n\r\n%3").arg(tr("New version available")).arg(sVersion).arg(tr("Go to download page?")),QMessageBox::Yes,QMessageBox::No)==QMessageBox::Yes)
-        {
-            QDesktopServices::openUrl(QUrl(__HOMEPAGE));
-        }
+        QMessageBox::critical(this,tr("Network error"),pReply->errorString());
     }
 }
 
