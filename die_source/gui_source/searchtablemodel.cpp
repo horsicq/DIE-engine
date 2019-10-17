@@ -66,20 +66,15 @@ QVariant SearchTableModel::headerData(int section, Qt::Orientation orientation, 
 {
     QVariant varResult;
 
-    if(role == Qt::DisplayRole)
+    if(role==Qt::DisplayRole)
     {
-        if(orientation == Qt::Horizontal)
+        if(orientation==Qt::Horizontal)
         {
             switch(section)
             {
-                case 0:
-                    varResult=QString("Value");
-
-                case 1:
-                    varResult=QString("Offset");
-
-                case 2:
-                    varResult=QString("Size");
+                case 0:     varResult=tr("Value");          break;
+                case 1:     varResult=tr("Offset");         break;
+                case 2:     varResult=tr("Size");           break;
             }
         }
     }

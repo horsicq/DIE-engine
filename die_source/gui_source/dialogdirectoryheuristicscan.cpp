@@ -25,19 +25,19 @@
 QString seconds_to_DHMS(quint32 duration)
 {
     QString res;
-    int seconds = (int)(duration % 60);
-    duration /= 60;
-    int minutes = (int)(duration % 60);
-    duration /= 60;
-    int hours = (int)(duration % 24);
-    int days = (int)(duration / 24);
+    int seconds=(int)(duration%60);
+    duration/=60;
+    int minutes=(int)(duration%60);
+    duration/=60;
+    int hours=(int)(duration%24);
+    int days=(int)(duration/24);
 
-    if((hours == 0)&&(days == 0))
+    if((hours==0)&&(days==0))
     {
         return res.sprintf("%02d:%02d", minutes, seconds);
     }
 
-    if(days == 0)
+    if(days==0)
     {
         return res.sprintf("%02d:%02d:%02d", hours, minutes, seconds);
     }
@@ -236,7 +236,7 @@ void DialogDirectoryHeuristicScan::on_pushButtonScan_clicked()
         connect(td,SIGNAL(setTotal(int)),this,SLOT(setTotal(int)));
         connect(td,SIGNAL(_finished()),this,SLOT(startScan()));
 
-        QThread* thread =new QThread;
+        QThread* thread=new QThread;
         td->moveToThread(thread);
 
         connect(this, SIGNAL(reset()), td, SLOT(_stop()),Qt::DirectConnection);
@@ -318,7 +318,7 @@ void DialogDirectoryHeuristicScan::startScan()
 {
     scan=new Scan;
 
-    QThread* thread =new QThread;
+    QThread* thread=new QThread;
     scan->moveToThread(thread);
 
     connect(this, SIGNAL(reset()), scan, SLOT(_stop()),Qt::DirectConnection);

@@ -145,7 +145,7 @@ DialogELFHeader::DialogELFHeader(QWidget *parent) :
 
     for(int i=0; i<26; i++)
     {
-        newItem = new QTableWidgetItem;
+        newItem=new QTableWidgetItem;
         newItem->setText(sLabels[i]);
         ui->tableWidgetELFHeader->setItem(i,0,newItem);
         ui->tableWidgetELFHeader->item(i,0)->setTextAlignment(Qt::AlignHCenter|Qt::AlignVCenter);

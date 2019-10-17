@@ -45,15 +45,15 @@ DialogAbout::DialogAbout(QWidget *parent) :
 
     ui->labelComponents->setText(sComponentsText);
 
-    m_manager = new QNetworkAccessManager(this);
+    m_manager=new QNetworkAccessManager(this);
 
     connect(m_manager, SIGNAL(finished(QNetworkReply*)),this, SLOT(replyFinished(QNetworkReply*)));
 
-    shortcut1 = new QShortcut(QKeySequence(__KeySequence_tab1), this);
+    shortcut1=new QShortcut(QKeySequence(__KeySequence_tab1), this);
     QObject::connect(shortcut1, SIGNAL(activated()), this, SLOT(tabInfo()));
-    shortcut2 = new QShortcut(QKeySequence(__KeySequence_tab2), this);
+    shortcut2=new QShortcut(QKeySequence(__KeySequence_tab2), this);
     QObject::connect(shortcut2, SIGNAL(activated()), this, SLOT(tabLibs()));
-    shortcut3 = new QShortcut(QKeySequence(__KeySequence_tab3), this);
+    shortcut3=new QShortcut(QKeySequence(__KeySequence_tab3), this);
     QObject::connect(shortcut3, SIGNAL(activated()), this, SLOT(tabThanks()));
 
     ui->pushButtonOK->setShortcut(QKeySequence(__KeySequence_quit));
