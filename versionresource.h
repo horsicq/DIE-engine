@@ -24,11 +24,7 @@
 #include <QByteArray>
 #include <QObject>
 #include "_macros.h"
-#if  defined(_WIN32)
-#include <windows.h>
-#else
 #include "__windows.h"
-#endif
 
 struct _VS_VERSION_INFO
 {

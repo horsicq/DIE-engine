@@ -482,7 +482,7 @@ bool DialogPEDirectories::reload()
         pushButtonReservedExtra->setToolTip(tr("Reserved"));
     }
 
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     //    pefile->setFileName(sFileName);
 
@@ -953,7 +953,7 @@ void DialogPEDirectories::on_pushButtonCancel_clicked()
 void DialogPEDirectories::on_pushButtonApply_clicked()
 {
     bool bTemp;
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     ui->pushButtonApply->setEnabled(false);
 
@@ -1133,7 +1133,7 @@ void DialogPEDirectories::pushButtonReservedExtra_clicked()
 }
 void DialogPEDirectories::pushButtonEXPORTHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1145,7 +1145,7 @@ void DialogPEDirectories::pushButtonEXPORTHex_clicked()
 }
 void DialogPEDirectories::pushButtonIMPORTHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1157,7 +1157,7 @@ void DialogPEDirectories::pushButtonIMPORTHex_clicked()
 }
 void DialogPEDirectories::pushButtonRESOURCEHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1169,7 +1169,7 @@ void DialogPEDirectories::pushButtonRESOURCEHex_clicked()
 }
 void DialogPEDirectories::pushButtonEXCEPTIONHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1181,7 +1181,7 @@ void DialogPEDirectories::pushButtonEXCEPTIONHex_clicked()
 }
 void DialogPEDirectories::pushButtonSECURITYHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1193,7 +1193,7 @@ void DialogPEDirectories::pushButtonSECURITYHex_clicked()
 }
 void DialogPEDirectories::pushButtonBASERELOCHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1205,7 +1205,7 @@ void DialogPEDirectories::pushButtonBASERELOCHex_clicked()
 }
 void DialogPEDirectories::pushButtonDEBUGHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1217,7 +1217,7 @@ void DialogPEDirectories::pushButtonDEBUGHex_clicked()
 }
 void DialogPEDirectories::pushButtonCOPYRIGHTHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1229,7 +1229,7 @@ void DialogPEDirectories::pushButtonCOPYRIGHTHex_clicked()
 }
 void DialogPEDirectories::pushButtonGLOBALPTRHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1241,7 +1241,7 @@ void DialogPEDirectories::pushButtonGLOBALPTRHex_clicked()
 }
 void DialogPEDirectories::pushButtonTLSHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1253,7 +1253,7 @@ void DialogPEDirectories::pushButtonTLSHex_clicked()
 }
 void DialogPEDirectories::pushButtonLOAD_CONFIGHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1265,7 +1265,7 @@ void DialogPEDirectories::pushButtonLOAD_CONFIGHex_clicked()
 }
 void DialogPEDirectories::pushButtonBOUND_IMPORTHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1277,7 +1277,7 @@ void DialogPEDirectories::pushButtonBOUND_IMPORTHex_clicked()
 }
 void DialogPEDirectories::pushButtonIATHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1289,7 +1289,7 @@ void DialogPEDirectories::pushButtonIATHex_clicked()
 }
 void DialogPEDirectories::pushButtonDELAY_IMPORTHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1301,7 +1301,7 @@ void DialogPEDirectories::pushButtonDELAY_IMPORTHex_clicked()
 }
 void DialogPEDirectories::pushButtonCOM_DESCRIPTORHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 
@@ -1313,7 +1313,7 @@ void DialogPEDirectories::pushButtonCOM_DESCRIPTORHex_clicked()
 }
 void DialogPEDirectories::pushButtonReservedHex_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     DialogHDE dialoghde(this);
 

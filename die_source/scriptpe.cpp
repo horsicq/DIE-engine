@@ -383,7 +383,7 @@ unsigned int scriptPE::getResourceNameSize(QString sName)
 
 bool scriptPE::isConsole()
 {
-    return pefile->getOptionalHeader_Subsystem()==IMAGE_SUBSYSTEM_WINDOWS_CUI;
+    return pefile->getOptionalHeader_Subsystem()==S_IMAGE_SUBSYSTEM_WINDOWS_CUI;
 }
 
 int scriptPE::findSignature(unsigned int nOffset,unsigned int nSize,QString sSignature)

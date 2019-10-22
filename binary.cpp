@@ -2500,27 +2500,27 @@ QList<QString> Binary::getTypes()
     char *pOffset=baHeader.data();
     unsigned int nSize=size();
 
-    if(nSize>=(int)sizeof(IMAGE_DOS_HEADER))
+    if(nSize>=(int)sizeof(S_IMAGE_DOS_HEADER))
     {
-        if((((IMAGE_DOS_HEADER *)pOffset)->e_magic==IMAGE_DOS_SIGNATURE)||(((IMAGE_DOS_HEADER *)pOffset)->e_magic==0x4D5A))
+        if((((S_IMAGE_DOS_HEADER *)pOffset)->e_magic==S_IMAGE_DOS_SIGNATURE)||(((S_IMAGE_DOS_HEADER *)pOffset)->e_magic==0x4D5A))
         {
             unsigned int nLfanew=0;
-            nLfanew=((IMAGE_DOS_HEADER *)pOffset)->e_lfanew;
-            unsigned int nHeaderSize=baHeader.size()-sizeof(IMAGE_NT_HEADERS32);
+            nLfanew=((S_IMAGE_DOS_HEADER *)pOffset)->e_lfanew;
+            unsigned int nHeaderSize=baHeader.size()-sizeof(S_IMAGE_NT_HEADERS32);
             QByteArray baNTHeaders;
 
             bool isHeaderValid=false;
 
-            if((nLfanew<nHeaderSize)&&((unsigned int)baHeader.size()>sizeof(IMAGE_NT_HEADERS32)))
+            if((nLfanew<nHeaderSize)&&((unsigned int)baHeader.size()>sizeof(S_IMAGE_NT_HEADERS32)))
             {
                 pOffset+=nLfanew;
                 isHeaderValid=true;
             }
             else
             {
-                baNTHeaders=readArray(nLfanew,sizeof(IMAGE_NT_HEADERS32));
+                baNTHeaders=readArray(nLfanew,sizeof(S_IMAGE_NT_HEADERS32));
 
-                if(baNTHeaders.size()==sizeof(IMAGE_NT_HEADERS32))
+                if(baNTHeaders.size()==sizeof(S_IMAGE_NT_HEADERS32))
                 {
                     pOffset=baNTHeaders.data();
                     isHeaderValid=true;
@@ -2529,13 +2529,13 @@ QList<QString> Binary::getTypes()
 
             if(isHeaderValid)
             {
-                if((((IMAGE_NT_HEADERS *)pOffset))->Signature==IMAGE_NT_SIGNATURE)
+                if((((S_IMAGE_NT_HEADERS32 *)pOffset))->Signature==S_IMAGE_NT_SIGNATURE)
                 {
-                    if((((IMAGE_NT_HEADERS *)pOffset)->FileHeader.Machine)==IMAGE_FILE_MACHINE_AMD64)
+                    if((((S_IMAGE_NT_HEADERS32 *)pOffset)->FileHeader.Machine)==S_IMAGE_FILE_MACHINE_AMD64)
                     {
                         listResult.append(QString("PE+(64)"));
                     }
-                    else if((((IMAGE_NT_HEADERS *)pOffset)->FileHeader.Machine)==IMAGE_FILE_MACHINE_IA64)
+                    else if((((S_IMAGE_NT_HEADERS32 *)pOffset)->FileHeader.Machine)==S_IMAGE_FILE_MACHINE_IA64)
                     {
                         listResult.append(QString("PE+(64)"));
                     }
@@ -2601,21 +2601,21 @@ QString Binary::getDisasmMode()
     char *pOffset=baHeader.data();
     unsigned int nSize=size();
 
-    if(nSize>=(int)sizeof(IMAGE_DOS_HEADER))
+    if(nSize>=(int)sizeof(S_IMAGE_DOS_HEADER))
     {
-        if(((IMAGE_DOS_HEADER *)pOffset)->e_magic==IMAGE_DOS_SIGNATURE)
+        if(((S_IMAGE_DOS_HEADER *)pOffset)->e_magic==S_IMAGE_DOS_SIGNATURE)
         {
-            if(((unsigned int)(((IMAGE_DOS_HEADER *)pOffset)->e_lfanew)<(unsigned int)baHeader.size()-sizeof(IMAGE_NT_HEADERS))&&((unsigned int)baHeader.size()>sizeof(IMAGE_NT_HEADERS)))
+            if(((unsigned int)(((S_IMAGE_DOS_HEADER *)pOffset)->e_lfanew)<(unsigned int)baHeader.size()-sizeof(S_IMAGE_NT_HEADERS32))&&((unsigned int)baHeader.size()>sizeof(S_IMAGE_NT_HEADERS32)))
             {
-                pOffset+=((IMAGE_DOS_HEADER *)pOffset)->e_lfanew;
+                pOffset+=((S_IMAGE_DOS_HEADER *)pOffset)->e_lfanew;
 
-                if(((IMAGE_NT_HEADERS *)pOffset)->Signature==IMAGE_NT_SIGNATURE)
+                if(((S_IMAGE_NT_HEADERS32 *)pOffset)->Signature==S_IMAGE_NT_SIGNATURE)
                 {
-                    if((((IMAGE_NT_HEADERS *)pOffset)->FileHeader.Machine)==IMAGE_FILE_MACHINE_AMD64)
+                    if((((S_IMAGE_NT_HEADERS32 *)pOffset)->FileHeader.Machine)==S_IMAGE_FILE_MACHINE_AMD64)
                     {
                         return QString("64");
                     }
-                    else if((((IMAGE_NT_HEADERS *)pOffset)->FileHeader.Machine)==IMAGE_FILE_MACHINE_IA64)
+                    else if((((S_IMAGE_NT_HEADERS32 *)pOffset)->FileHeader.Machine)==S_IMAGE_FILE_MACHINE_IA64)
                     {
                         return QString("64");
                     }

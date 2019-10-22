@@ -26,14 +26,15 @@
 
 QScriptValue includeScript(QScriptContext *context, QScriptEngine *engine)
 {
+    // TODO load from memory
     QScriptValue ret(false);
 
-    if(engine == 0)
+    if(engine==0)
     {
         return ret;
     }
 
-    QString fileName = context->argument(0).toString();
+    QString fileName=context->argument(0).toString();
 
     fileName=((PluginsScript *)engine)->getDefaultPath()+QDir::separator()+fileName;
 

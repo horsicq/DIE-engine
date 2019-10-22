@@ -123,9 +123,9 @@ public:
 
     QByteArray createHeader32();
 
-    bool addSection(IMAGE_SECTION_HEADER *pISH,QByteArray baData);
-    bool addSection(IMAGE_SECTION_HEADER *pISH,char *pData,int nDataSize);
-    bool addSection(IMAGE_SECTION_HEADER *pISH,QString sFileName);
+    bool addSection(S_IMAGE_SECTION_HEADER *pISH,QByteArray baData);
+    bool addSection(S_IMAGE_SECTION_HEADER *pISH, char *pData, int nDataSize);
+    bool addSection(S_IMAGE_SECTION_HEADER *pISH,QString sFileName);
 
     bool rebuild();
     unsigned int getSectionRealSize(unsigned int nOffset,unsigned int nSize,unsigned int nAlignment);
@@ -161,13 +161,13 @@ public:
     QByteArray getImportAsXML();
     bool saveImportAsXMLFile(QString sFileName);
 
-    QByteArray ImportAsXMLToBin(QByteArray baXML, IMAGE_DATA_DIRECTORY *pddImportTable, IMAGE_DATA_DIRECTORY *pddIAT);
+    QByteArray ImportAsXMLToBin(QByteArray baXML, S_IMAGE_DATA_DIRECTORY *pddImportTable, S_IMAGE_DATA_DIRECTORY *pddIAT);
 
-    bool addImportSection(IMAGE_SECTION_HEADER *pISH,QByteArray baData,IMAGE_DATA_DIRECTORY *pddImportTable,IMAGE_DATA_DIRECTORY *pddIAT);
-    bool addImportSection(IMAGE_SECTION_HEADER *pISH, char *pData, int nDataSize, IMAGE_DATA_DIRECTORY *pddImportTable, IMAGE_DATA_DIRECTORY *pddIAT);
+    bool addImportSection(S_IMAGE_SECTION_HEADER *pISH,QByteArray baData,S_IMAGE_DATA_DIRECTORY *pddImportTable,S_IMAGE_DATA_DIRECTORY *pddIAT);
+    bool addImportSection(S_IMAGE_SECTION_HEADER *pISH, char *pData, int nDataSize, S_IMAGE_DATA_DIRECTORY *pddImportTable, S_IMAGE_DATA_DIRECTORY *pddIAT);
     void FixImportBin(unsigned int nOffset, unsigned int nImportTableOffset, int nDelta);
-    bool addImportSectionFromXML(IMAGE_SECTION_HEADER *pISH, QByteArray baXML);
-    //    bool addImportSectionFromMap(IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long,QString> &mapIAT);
+    bool addImportSectionFromXML(S_IMAGE_SECTION_HEADER *pISH, QByteArray baXML);
+    //    bool addImportSectionFromMap(S_IMAGE_SECTION_HEADER *pISH, QMap<unsigned long long,QString> &mapIAT);
 private:
     bool bIsNETEntryPontLoad;
 private slots:
@@ -331,8 +331,8 @@ public slots:
     void setOptionalHeader_LoaderFlags(unsigned int nValue);
     void setOptionalHeader_NumberOfRvaAndSizes(unsigned int nValue);
 
-    void getOptionalHeader_DataDirectory(int nDirectory,IMAGE_DATA_DIRECTORY *pDataDirectory);
-    void setOptionalHeader_DataDirectory(int nDirectory,IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void getOptionalHeader_DataDirectory(int nDirectory,S_IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void setOptionalHeader_DataDirectory(int nDirectory,S_IMAGE_DATA_DIRECTORY *pDataDirectory);
 
     bool isDirectoryPresent(int nDirectory);
     bool isRVAPresentInFile(unsigned int nRVA);
@@ -371,7 +371,7 @@ public slots:
     QString getSectionNameAsString(int nSection);
     void setSectionNameAsString(int nSection,QString sValue);
 
-    QList<IMAGE_SECTION_HEADER> getSections();
+    QList<S_IMAGE_SECTION_HEADER> getSections();
 
     virtual unsigned long long OffsetToRVA(unsigned long long nOffset);
     unsigned int OffsetToVA32(unsigned int nOffset);
@@ -491,7 +491,7 @@ public slots:
     unsigned int getImportTableOffset();
     unsigned int getNumberOfImports();
 
-    QList<IMAGE_IMPORT_DESCRIPTOR> getImports();
+    QList<S_IMAGE_IMPORT_DESCRIPTOR> getImports();
     QList<QString> getImportLibrariesAsNames();
     QList<QString> getImportFunctionsAsNames();
 
@@ -602,15 +602,15 @@ public slots:
     unsigned int getCLI_Size();
     unsigned short getCLI_MajorRuntimeVersion();
     unsigned short getCLI_MinorRuntimeVersion();
-    void getCLI_MetaData(IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void getCLI_MetaData(S_IMAGE_DATA_DIRECTORY *pDataDirectory);
     unsigned int getCLI_Flags();
     unsigned int getCLI_EntryPoint();
-    void getCLI_Resources(IMAGE_DATA_DIRECTORY *pDataDirectory);
-    void getCLI_StrongNameSignature(IMAGE_DATA_DIRECTORY *pDataDirectory);
-    void getCLI_CodeManagerTable(IMAGE_DATA_DIRECTORY *pDataDirectory);
-    void getCLI_VTableFixups(IMAGE_DATA_DIRECTORY *pDataDirectory);
-    void getCLI_ExportAddressTableJumps(IMAGE_DATA_DIRECTORY *pDataDirectory);
-    void getCLI_ManagedNativeHeader(IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void getCLI_Resources(S_IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void getCLI_StrongNameSignature(S_IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void getCLI_CodeManagerTable(S_IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void getCLI_VTableFixups(S_IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void getCLI_ExportAddressTableJumps(S_IMAGE_DATA_DIRECTORY *pDataDirectory);
+    void getCLI_ManagedNativeHeader(S_IMAGE_DATA_DIRECTORY *pDataDirectory);
 
     QByteArray getCLI_MetaData();
 
@@ -793,15 +793,15 @@ private:
         unsigned int nCLI_Size;
         unsigned sCLI_MajorRuntimeVersion;
         unsigned sCLI_MinorRuntimeVersion;
-        IMAGE_DATA_DIRECTORY CLI_MetaData;
+        S_IMAGE_DATA_DIRECTORY CLI_MetaData;
         unsigned int nCLI_Flags;
         unsigned int nCLI_EntryPoint;
-        IMAGE_DATA_DIRECTORY CLI_Resources;
-        IMAGE_DATA_DIRECTORY CLI_StrongNameSignature;
-        IMAGE_DATA_DIRECTORY CLI_CodeManagerTable;
-        IMAGE_DATA_DIRECTORY CLI_VTableFixups;
-        IMAGE_DATA_DIRECTORY CLI_ExportAddressTableJumps;
-        IMAGE_DATA_DIRECTORY CLI_ManagedNativeHeader;
+        S_IMAGE_DATA_DIRECTORY CLI_Resources;
+        S_IMAGE_DATA_DIRECTORY CLI_StrongNameSignature;
+        S_IMAGE_DATA_DIRECTORY CLI_CodeManagerTable;
+        S_IMAGE_DATA_DIRECTORY CLI_VTableFixups;
+        S_IMAGE_DATA_DIRECTORY CLI_ExportAddressTableJumps;
+        S_IMAGE_DATA_DIRECTORY CLI_ManagedNativeHeader;
 
         unsigned int nCLI_MetaDataOffset;
         unsigned int nCLI_MetaData_Signature;

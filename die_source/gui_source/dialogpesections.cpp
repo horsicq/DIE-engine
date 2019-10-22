@@ -179,7 +179,7 @@ void DialogPESections::on_pushButtonOK_clicked()
 
 void DialogPESections::on_pushButtonAddNewSection_clicked()
 {
-    IMAGE_SECTION_HEADER ish= {0};
+    S_IMAGE_SECTION_HEADER ish={};
 
     QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file..."),pOptions->sLastDirectory, tr("All files (*)"));
 

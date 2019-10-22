@@ -217,7 +217,7 @@ bool DialogPECOM::reload()
         ui->checkBoxTRACKDEBUGDATA->setToolTip(tr("Track debug data"));
     }
 
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
 
     if(pefile->isNETPresent())
     {
@@ -337,7 +337,7 @@ void DialogPECOM::pushButtonManagedNativeHeaderExtra_clicked()
 
 void DialogPECOM::pushButtonMetaDataHEX_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
     pefile->getCLI_MetaData(&idd);
 
     DialogHDE dialoghde(this);
@@ -348,7 +348,7 @@ void DialogPECOM::pushButtonMetaDataHEX_clicked()
 
 void DialogPECOM::pushButtonResourcesHEX_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
     pefile->getCLI_Resources(&idd);
 
     DialogHDE dialoghde(this);
@@ -359,7 +359,7 @@ void DialogPECOM::pushButtonResourcesHEX_clicked()
 
 void DialogPECOM::pushButtonStrongNameSignatureHEX_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
     pefile->getCLI_StrongNameSignature(&idd);
 
     DialogHDE dialoghde(this);
@@ -370,7 +370,7 @@ void DialogPECOM::pushButtonStrongNameSignatureHEX_clicked()
 
 void DialogPECOM::pushButtonCodeManagerTableHEX_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
     pefile->getCLI_CodeManagerTable(&idd);
 
     DialogHDE dialoghde(this);
@@ -381,7 +381,7 @@ void DialogPECOM::pushButtonCodeManagerTableHEX_clicked()
 
 void DialogPECOM::pushButtonVTableFixupsHEX_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
     pefile->getCLI_VTableFixups(&idd);
 
     DialogHDE dialoghde(this);
@@ -392,7 +392,7 @@ void DialogPECOM::pushButtonVTableFixupsHEX_clicked()
 
 void DialogPECOM::pushButtonExportAddressTableJumpsHEX_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
     pefile->getCLI_ExportAddressTableJumps(&idd);
 
     DialogHDE dialoghde(this);
@@ -403,7 +403,7 @@ void DialogPECOM::pushButtonExportAddressTableJumpsHEX_clicked()
 
 void DialogPECOM::pushButtonManagedNativeHeaderHEX_clicked()
 {
-    IMAGE_DATA_DIRECTORY idd;
+    S_IMAGE_DATA_DIRECTORY idd={};
     pefile->getCLI_ManagedNativeHeader(&idd);
 
     DialogHDE dialoghde(this);

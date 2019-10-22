@@ -27,9 +27,9 @@ MSDOSFile::MSDOSFile(QObject *parent) :
 
 bool MSDOSFile::isValid()
 {
-    if(size()>=(int)sizeof(IMAGE_DOS_HEADER))
+    if(size()>=(int)sizeof(S_IMAGE_DOS_HEADER))
     {
-        if(getDosHeader_magic()==IMAGE_DOS_SIGNATURE)
+        if(getDosHeader_magic()==S_IMAGE_DOS_SIGNATURE)
         {
             return true;
         }
@@ -50,63 +50,63 @@ unsigned int MSDOSFile::getDosHeaderOffset()
 }
 unsigned int MSDOSFile::getDosHeaderSize()
 {
-    return sizeof(IMAGE_DOS_HEADER);
+    return sizeof(S_IMAGE_DOS_HEADER);
 }
 unsigned short MSDOSFile::getDosHeader_magic()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_magic));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_magic));
 }
 unsigned short MSDOSFile::getDosHeader_cblp()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_cblp));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_cblp));
 }
 unsigned short MSDOSFile::getDosHeader_cp()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_cp));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_cp));
 }
 unsigned short MSDOSFile::getDosHeader_crlc()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_crlc));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_crlc));
 }
 unsigned short MSDOSFile::getDosHeader_cparhdr()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_cparhdr));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_cparhdr));
 }
 unsigned short MSDOSFile::getDosHeader_minalloc()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_minalloc));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_minalloc));
 }
 unsigned short MSDOSFile::getDosHeader_maxalloc()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_maxalloc));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_maxalloc));
 }
 unsigned short MSDOSFile::getDosHeader_ss()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_ss));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_ss));
 }
 unsigned short MSDOSFile::getDosHeader_sp()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_sp));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_sp));
 }
 unsigned short MSDOSFile::getDosHeader_csum()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_csum));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_csum));
 }
 unsigned short MSDOSFile::getDosHeader_ip()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_ip));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_ip));
 }
 unsigned short MSDOSFile::getDosHeader_cs()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_cs));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_cs));
 }
 unsigned short MSDOSFile::getDosHeader_lfarlc()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_lfarlc));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_lfarlc));
 }
 unsigned short MSDOSFile::getDosHeader_ovno()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_ovno));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_ovno));
 }
 unsigned short MSDOSFile::getDosHeader_res(int nIndex)
 {
@@ -114,7 +114,7 @@ unsigned short MSDOSFile::getDosHeader_res(int nIndex)
 
     if(nIndex<4)
     {
-        nResult=readWord(offsetof(IMAGE_DOS_HEADER,e_res)+sizeof(unsigned short)*nIndex);
+        nResult=readWord(offsetof(S_IMAGE_DOS_HEADER,e_res)+sizeof(unsigned short)*nIndex);
     }
     else
     {
@@ -125,17 +125,17 @@ unsigned short MSDOSFile::getDosHeader_res(int nIndex)
 }
 unsigned short MSDOSFile::getDosHeader_oemid()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_oemid));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_oemid));
 }
 unsigned short MSDOSFile::getDosHeader_oeminfo()
 {
-    return readWord(offsetof(IMAGE_DOS_HEADER,e_oeminfo));
+    return readWord(offsetof(S_IMAGE_DOS_HEADER,e_oeminfo));
 }
 unsigned short MSDOSFile::getDosHeader_res2(int nIndex)
 {
     if(nIndex<10)
     {
-        return readWord(offsetof(IMAGE_DOS_HEADER,e_res2)+sizeof(unsigned short)*nIndex);
+        return readWord(offsetof(S_IMAGE_DOS_HEADER,e_res2)+sizeof(unsigned short)*nIndex);
     }
 
     emit appendError(QString("Value out of range: n=%1").arg(nIndex));
@@ -143,65 +143,65 @@ unsigned short MSDOSFile::getDosHeader_res2(int nIndex)
 }
 void MSDOSFile::setDosHeader_magic(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_magic),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_magic),sValue);
 }
 void MSDOSFile::setDosHeader_cblp(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_cblp),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_cblp),sValue);
 }
 void MSDOSFile::setDosHeader_cp(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_cp),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_cp),sValue);
 }
 void MSDOSFile::setDosHeader_crlc(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_crlc),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_crlc),sValue);
 }
 void MSDOSFile::setDosHeader_cparhdr(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_cparhdr),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_cparhdr),sValue);
 }
 void MSDOSFile::setDosHeader_minalloc(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_minalloc),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_minalloc),sValue);
 }
 void MSDOSFile::setDosHeader_maxalloc(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_maxalloc),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_maxalloc),sValue);
 }
 void MSDOSFile::setDosHeader_ss(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_ss),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_ss),sValue);
 }
 void MSDOSFile::setDosHeader_sp(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_sp),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_sp),sValue);
 }
 void MSDOSFile::setDosHeader_csum(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_csum),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_csum),sValue);
 }
 void MSDOSFile::setDosHeader_ip(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_ip),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_ip),sValue);
 }
 void MSDOSFile::setDosHeader_cs(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_cs),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_cs),sValue);
 }
 void MSDOSFile::setDosHeader_lfarlc(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_lfarlc),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_lfarlc),sValue);
 }
 void MSDOSFile::setDosHeader_ovno(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_ovno),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_ovno),sValue);
 }
 void MSDOSFile::setDosHeader_res(short sValue,int nIndex)
 {
     if(nIndex<4)
     {
-        writeWord(offsetof(IMAGE_DOS_HEADER,e_res)+sizeof(unsigned short)*nIndex,sValue);
+        writeWord(offsetof(S_IMAGE_DOS_HEADER,e_res)+sizeof(unsigned short)*nIndex,sValue);
         return;
     }
 
@@ -209,17 +209,17 @@ void MSDOSFile::setDosHeader_res(short sValue,int nIndex)
 }
 void MSDOSFile::setDosHeader_oemid(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_oemid),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_oemid),sValue);
 }
 void MSDOSFile::setDosHeader_oeminfo(unsigned short sValue)
 {
-    writeWord(offsetof(IMAGE_DOS_HEADER,e_oeminfo),sValue);
+    writeWord(offsetof(S_IMAGE_DOS_HEADER,e_oeminfo),sValue);
 }
 void MSDOSFile::setDosHeader_res2(short sValue,int nIndex)
 {
     if(nIndex<10)
     {
-        writeWord(offsetof(IMAGE_DOS_HEADER,e_res2)+sizeof(unsigned short)*nIndex,sValue);
+        writeWord(offsetof(S_IMAGE_DOS_HEADER,e_res2)+sizeof(unsigned short)*nIndex,sValue);
         return;
     }
 
@@ -228,12 +228,12 @@ void MSDOSFile::setDosHeader_res2(short sValue,int nIndex)
 
 unsigned int MSDOSFile::getDosHeader_lfanew()
 {
-    return readDword(offsetof(IMAGE_DOS_HEADER,e_lfanew));
+    return readDword(offsetof(S_IMAGE_DOS_HEADER,e_lfanew));
 }
 
 void MSDOSFile::setDosHeader_lfanew(unsigned int nValue)
 {
-    writeDword(offsetof(IMAGE_DOS_HEADER,e_lfanew),nValue);
+    writeDword(offsetof(S_IMAGE_DOS_HEADER,e_lfanew),nValue);
 }
 
 unsigned int MSDOSFile::getEntryPointOffset()
