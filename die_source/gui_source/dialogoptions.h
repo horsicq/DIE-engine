@@ -148,6 +148,7 @@ private slots:
     void on_checkBoxDeepScanDIE_stateChanged(int arg1);
     void on_checkBoxResizeColumnsToContent_stateChanged(int arg1);
 #ifdef USE_YARA
+    void on_lineEditDataBaseYARA_textChanged(const QString &arg1);
     void on_pushButtonYARADataBase_clicked();
 #endif
 

@@ -1250,6 +1250,14 @@ void DialogOptions::on_checkBoxResizeColumnsToContent_stateChanged(int arg1)
     ui->pushButtonApply->setEnabled(true);
 }
 #ifdef USE_YARA
+void DialogOptions::on_lineEditDataBaseYARA_textChanged(const QString &arg1)
+{
+    Q_UNUSED(arg1)
+
+    ui->pushButtonApply->setEnabled(true);
+}
+#endif
+#ifdef USE_YARA
 void DialogOptions::on_pushButtonYARADataBase_clicked()
 {
     QString sFileName=QFileDialog::getOpenFileName(this, tr("Open file"),Utils::getDataBaseYARAPath(pOptions),tr("All files (*)"));
