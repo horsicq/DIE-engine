@@ -1,5 +1,5 @@
-set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio 12.0"
-set QT_PATH="C:\Qt\5.6.3\msvc2013"
+set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community"
+set QT_PATH="C:\Qt\5.12.5\msvc2017"
 rem set QT_PATH="C:\Qt\Qt5.6.3_msvc2013_x86\5.6.3\msvc2013"
 set UPX_PATH="C:\Utils\upx-3.95-win32"
 set SEVENZIP_PATH="C:\Program Files\7-Zip"
@@ -11,8 +11,8 @@ set BUILD_NAME_DLL=die_win32_dll
 set QMAKE=%QT_PATH%\bin\qmake.exe
 set LUPDATE=%QT_PATH%\bin\lupdate.exe
 
-set QT_SPEC=win32-msvc2013
-call %VS_PATH%\VC\bin\vcvars32.bat
+set QT_SPEC=win32-msvc
+call %VS_PATH%\VC\Auxiliary\Build\vcvars32.bat
 
 %CUR_DRIVE%
 cd %SOURCE_PATH%
@@ -115,8 +115,8 @@ copy %QT_PATH%\bin\Qt5Svg.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
 copy %QT_PATH%\bin\Qt5Xml.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
 copy %QT_PATH%\plugins\platforms\qwindows.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\platforms\
 
-copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcp120.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
-copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcr120.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
+copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
+copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
 
 rem mkdir release\%BUILD_NAME%\base\die_plugins
 rem copy plugins_source\build\release\simpleexample_win.dll release\%BUILD_NAME%\base\die_plugins\simpleexample.dll
@@ -137,8 +137,8 @@ copy %SOURCE_PATH%\die_source\build\release\diedll.lib release\%BUILD_NAME_DLL%\
 copy %QT_PATH%\bin\Qt5Core.dll %SOURCE_PATH%\release\%BUILD_NAME_DLL%\
 copy %QT_PATH%\bin\Qt5Script.dll %SOURCE_PATH%\release\%BUILD_NAME_DLL%\
 
-copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcp120.dll %SOURCE_PATH%\release\%BUILD_NAME_DLL%\
-copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcr120.dll %SOURCE_PATH%\release\%BUILD_NAME_DLL%\
+copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
+copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
 
 xcopy %SOURCE_PATH%\db %SOURCE_PATH%\release\%BUILD_NAME_DLL%\db /E /I
 xcopy %SOURCE_PATH%\diedll_win\SDK %SOURCE_PATH%\release\%BUILD_NAME_DLL%\SDK /E /I

@@ -52,13 +52,3 @@ HEADERS += diedll.h \
     ../scriptmach.h \
     ../scriptgeneric.h \
     ../singlefilescan.h
-
-
-unix:!symbian {
-    maemo5 {
-        target.path = /opt/usr/lib
-    } else {
-        target.path = /usr/lib
-    }
-    INSTALLS += target
-}

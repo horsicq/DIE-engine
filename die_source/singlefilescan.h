@@ -5,6 +5,9 @@
 #include <QString>
 #include "_options.h"
 #include "scan.h"
+#ifdef DIEDLL_LIBRARY
+#include <windows.h>
+#endif
 
 class SingleFileScan : public QObject
 {
