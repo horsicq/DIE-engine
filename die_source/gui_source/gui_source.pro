@@ -368,6 +368,7 @@ include(../../beaengine/beaengine.pri)
 include(../../qtsingleapplication/qtsingleapplication.pri)
 include(../../build.pri)
 include(../../StaticScan/staticscan.pri)
+
 greaterThan(QT_MAJOR_VERSION, 4): include(../../QYara/qyara.pri)
 
 macx {
