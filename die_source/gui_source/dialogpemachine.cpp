@@ -135,115 +135,115 @@ void DialogPEMachine::on_lineEditMachine_textChanged(const QString &arg1)
 
     switch(arg1.toInt(&bTemp,16))
     {
-        case(IMAGE_FILE_MACHINE_UNKNOWN):
+        case(S_IMAGE_FILE_MACHINE_UNKNOWN):
             ui->comboBoxMachine->setCurrentIndex(1);
             break;
 
-        case(IMAGE_FILE_MACHINE_I386):
+        case(S_IMAGE_FILE_MACHINE_I386):
             ui->comboBoxMachine->setCurrentIndex(2);
             break;
 
-        case(IMAGE_FILE_MACHINE_R3000):
+        case(S_IMAGE_FILE_MACHINE_R3000):
             ui->comboBoxMachine->setCurrentIndex(3);
             break;
 
-        case(IMAGE_FILE_MACHINE_R4000):
+        case(S_IMAGE_FILE_MACHINE_R4000):
             ui->comboBoxMachine->setCurrentIndex(4);
             break;
 
-        case(IMAGE_FILE_MACHINE_R10000):
+        case(S_IMAGE_FILE_MACHINE_R10000):
             ui->comboBoxMachine->setCurrentIndex(5);
             break;
 
-        case(IMAGE_FILE_MACHINE_WCEMIPSV2):
+        case(S_IMAGE_FILE_MACHINE_WCEMIPSV2):
             ui->comboBoxMachine->setCurrentIndex(6);
             break;
 
-        case(IMAGE_FILE_MACHINE_ALPHA):
+        case(S_IMAGE_FILE_MACHINE_ALPHA):
             ui->comboBoxMachine->setCurrentIndex(7);
             break;
 
-        case(IMAGE_FILE_MACHINE_SH3):
+        case(S_IMAGE_FILE_MACHINE_SH3):
             ui->comboBoxMachine->setCurrentIndex(8);
             break;
 
-        case(IMAGE_FILE_MACHINE_SH3DSP):
+        case(S_IMAGE_FILE_MACHINE_SH3DSP):
             ui->comboBoxMachine->setCurrentIndex(9);
             break;
 
-        case(IMAGE_FILE_MACHINE_SH3E):
+        case(S_IMAGE_FILE_MACHINE_SH3E):
             ui->comboBoxMachine->setCurrentIndex(10);
             break;
 
-        case(IMAGE_FILE_MACHINE_SH4):
+        case(S_IMAGE_FILE_MACHINE_SH4):
             ui->comboBoxMachine->setCurrentIndex(11);
             break;
 
-        case(IMAGE_FILE_MACHINE_SH5):
+        case(S_IMAGE_FILE_MACHINE_SH5):
             ui->comboBoxMachine->setCurrentIndex(12);
             break;
 
-        case(IMAGE_FILE_MACHINE_ARM):
+        case(S_IMAGE_FILE_MACHINE_ARM):
             ui->comboBoxMachine->setCurrentIndex(13);
             break;
 
-        case(IMAGE_FILE_MACHINE_THUMB):
+        case(S_IMAGE_FILE_MACHINE_THUMB):
             ui->comboBoxMachine->setCurrentIndex(14);
             break;
 
-        case(IMAGE_FILE_MACHINE_AM33):
+        case(S_IMAGE_FILE_MACHINE_AM33):
             ui->comboBoxMachine->setCurrentIndex(15);
             break;
 
-        case(IMAGE_FILE_MACHINE_POWERPC):
+        case(S_IMAGE_FILE_MACHINE_POWERPC):
             ui->comboBoxMachine->setCurrentIndex(16);
             break;
 
-        case(IMAGE_FILE_MACHINE_POWERPCFP):
+        case(S_IMAGE_FILE_MACHINE_POWERPCFP):
             ui->comboBoxMachine->setCurrentIndex(17);
             break;
 
-        case(IMAGE_FILE_MACHINE_IA64):
+        case(S_IMAGE_FILE_MACHINE_IA64):
             ui->comboBoxMachine->setCurrentIndex(18);
             break;
 
-        case(IMAGE_FILE_MACHINE_MIPS16):
+        case(S_IMAGE_FILE_MACHINE_MIPS16):
             ui->comboBoxMachine->setCurrentIndex(19);
             break;
 
-        case(IMAGE_FILE_MACHINE_ALPHA64):
+        case(S_IMAGE_FILE_MACHINE_ALPHA64):
             ui->comboBoxMachine->setCurrentIndex(20);
             break;
 
-        case(IMAGE_FILE_MACHINE_MIPSFPU):
+        case(S_IMAGE_FILE_MACHINE_MIPSFPU):
             ui->comboBoxMachine->setCurrentIndex(21);
             break;
 
-        case(IMAGE_FILE_MACHINE_MIPSFPU16):
+        case(S_IMAGE_FILE_MACHINE_MIPSFPU16):
             ui->comboBoxMachine->setCurrentIndex(22);
             break;
 
-        case(IMAGE_FILE_MACHINE_TRICORE):
+        case(S_IMAGE_FILE_MACHINE_TRICORE):
             ui->comboBoxMachine->setCurrentIndex(23);
             break;
 
-        case(IMAGE_FILE_MACHINE_CEF):
+        case(S_IMAGE_FILE_MACHINE_CEF):
             ui->comboBoxMachine->setCurrentIndex(24);
             break;
 
-        case(IMAGE_FILE_MACHINE_EBC):
+        case(S_IMAGE_FILE_MACHINE_EBC):
             ui->comboBoxMachine->setCurrentIndex(25);
             break;
 
-        case(IMAGE_FILE_MACHINE_AMD64):
+        case(S_IMAGE_FILE_MACHINE_AMD64):
             ui->comboBoxMachine->setCurrentIndex(26);
             break;
 
-        case(IMAGE_FILE_MACHINE_M32R):
+        case(S_IMAGE_FILE_MACHINE_M32R):
             ui->comboBoxMachine->setCurrentIndex(27);
             break;
 
-        case(IMAGE_FILE_MACHINE_CEE):
+        case(S_IMAGE_FILE_MACHINE_CEE):
             ui->comboBoxMachine->setCurrentIndex(28);
             break;
 

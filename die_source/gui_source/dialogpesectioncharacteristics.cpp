@@ -155,27 +155,27 @@ void DialogPESectionCharacteristics::on_lineEditSectionSectionCharacteristics_te
 
     nCharacteristics=arg1.toUInt(&bTemp,16);
 
-    ui->checkBoxCNT_CODE->setChecked(nCharacteristics&IMAGE_SCN_CNT_CODE);
-    ui->checkBoxCNT_INITIALIZED_DATA->setChecked(nCharacteristics&IMAGE_SCN_CNT_INITIALIZED_DATA);
-    ui->checkBoxCNT_UNINITIALIZED_DATA->setChecked(nCharacteristics&IMAGE_SCN_CNT_UNINITIALIZED_DATA);
-    ui->checkBoxLNK_INFO->setChecked(nCharacteristics&IMAGE_SCN_LNK_INFO);
-    ui->checkBoxLNK_REMOVE->setChecked(nCharacteristics&IMAGE_SCN_LNK_REMOVE);
-    ui->checkBoxLNK_COMDAT->setChecked(nCharacteristics&IMAGE_SCN_LNK_COMDAT);
-    ui->checkBoxNO_DEFER_SPEC_EXC->setChecked(nCharacteristics&IMAGE_SCN_NO_DEFER_SPEC_EXC);
-    ui->checkBoxGPREL->setChecked(nCharacteristics&IMAGE_SCN_GPREL);
-    ui->checkBoxMEM_PURGEABLE->setChecked(nCharacteristics&IMAGE_SCN_MEM_PURGEABLE);
-    ui->checkBoxMEM_LOCKED->setChecked(nCharacteristics&IMAGE_SCN_MEM_LOCKED);
-    ui->checkBoxMEM_PRELOAD->setChecked(nCharacteristics&IMAGE_SCN_MEM_PRELOAD);
-    ui->checkBoxLNK_NRELOC_OVFL->setChecked(nCharacteristics&IMAGE_SCN_LNK_NRELOC_OVFL);
-    ui->checkBoxMEM_DISCARDABLE->setChecked(nCharacteristics&IMAGE_SCN_MEM_DISCARDABLE);
-    ui->checkBoxMEM_NOT_CACHED->setChecked(nCharacteristics&IMAGE_SCN_MEM_NOT_CACHED);
-    ui->checkBoxMEM_NOT_PAGED->setChecked(nCharacteristics&IMAGE_SCN_MEM_NOT_PAGED);
-    ui->checkBoxMEM_SHARED->setChecked(nCharacteristics&IMAGE_SCN_MEM_SHARED);
-    ui->checkBoxMEM_EXECUTE->setChecked(nCharacteristics&IMAGE_SCN_MEM_EXECUTE);
-    ui->checkBoxMEM_READ->setChecked(nCharacteristics&IMAGE_SCN_MEM_READ);
-    ui->checkBoxMEM_WRITE->setChecked(nCharacteristics&IMAGE_SCN_MEM_WRITE);
+    ui->checkBoxCNT_CODE->setChecked(nCharacteristics&S_IMAGE_SCN_CNT_CODE);
+    ui->checkBoxCNT_INITIALIZED_DATA->setChecked(nCharacteristics&S_IMAGE_SCN_CNT_INITIALIZED_DATA);
+    ui->checkBoxCNT_UNINITIALIZED_DATA->setChecked(nCharacteristics&S_IMAGE_SCN_CNT_UNINITIALIZED_DATA);
+    ui->checkBoxLNK_INFO->setChecked(nCharacteristics&S_IMAGE_SCN_LNK_INFO);
+    ui->checkBoxLNK_REMOVE->setChecked(nCharacteristics&S_IMAGE_SCN_LNK_REMOVE);
+    ui->checkBoxLNK_COMDAT->setChecked(nCharacteristics&S_IMAGE_SCN_LNK_COMDAT);
+    ui->checkBoxNO_DEFER_SPEC_EXC->setChecked(nCharacteristics&S_IMAGE_SCN_NO_DEFER_SPEC_EXC);
+    ui->checkBoxGPREL->setChecked(nCharacteristics&S_IMAGE_SCN_GPREL);
+    ui->checkBoxMEM_PURGEABLE->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_PURGEABLE);
+    ui->checkBoxMEM_LOCKED->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_LOCKED);
+    ui->checkBoxMEM_PRELOAD->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_PRELOAD);
+    ui->checkBoxLNK_NRELOC_OVFL->setChecked(nCharacteristics&S_IMAGE_SCN_LNK_NRELOC_OVFL);
+    ui->checkBoxMEM_DISCARDABLE->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_DISCARDABLE);
+    ui->checkBoxMEM_NOT_CACHED->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_NOT_CACHED);
+    ui->checkBoxMEM_NOT_PAGED->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_NOT_PAGED);
+    ui->checkBoxMEM_SHARED->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_SHARED);
+    ui->checkBoxMEM_EXECUTE->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_EXECUTE);
+    ui->checkBoxMEM_READ->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_READ);
+    ui->checkBoxMEM_WRITE->setChecked(nCharacteristics&S_IMAGE_SCN_MEM_WRITE);
 
-    nCharacteristics=(nCharacteristics&IMAGE_SCN_ALIGN_MASK)>>20;
+    nCharacteristics=(nCharacteristics&S_IMAGE_SCN_ALIGN_MASK)>>20;
 
     ui->comboBoxALIGN->setCurrentIndex(nCharacteristics);
 
@@ -331,97 +331,97 @@ void DialogPESectionCharacteristics::checkbox_reload()
     {
         if(ui->checkBoxCNT_CODE->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_CNT_CODE;
+            nCharacteristics+=S_IMAGE_SCN_CNT_CODE;
         }
 
         if(ui->checkBoxCNT_INITIALIZED_DATA->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_CNT_INITIALIZED_DATA;
+            nCharacteristics+=S_IMAGE_SCN_CNT_INITIALIZED_DATA;
         }
 
         if(ui->checkBoxCNT_UNINITIALIZED_DATA->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_CNT_UNINITIALIZED_DATA;
+            nCharacteristics+=S_IMAGE_SCN_CNT_UNINITIALIZED_DATA;
         }
 
         if(ui->checkBoxLNK_INFO->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_LNK_INFO;
+            nCharacteristics+=S_IMAGE_SCN_LNK_INFO;
         }
 
         if(ui->checkBoxLNK_REMOVE->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_LNK_REMOVE;
+            nCharacteristics+=S_IMAGE_SCN_LNK_REMOVE;
         }
 
         if(ui->checkBoxLNK_COMDAT->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_LNK_COMDAT;
+            nCharacteristics+=S_IMAGE_SCN_LNK_COMDAT;
         }
 
         if(ui->checkBoxNO_DEFER_SPEC_EXC->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_NO_DEFER_SPEC_EXC;
+            nCharacteristics+=S_IMAGE_SCN_NO_DEFER_SPEC_EXC;
         }
 
         if(ui->checkBoxGPREL->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_GPREL;
+            nCharacteristics+=S_IMAGE_SCN_GPREL;
         }
 
         if(ui->checkBoxMEM_PURGEABLE->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_PURGEABLE;
+            nCharacteristics+=S_IMAGE_SCN_MEM_PURGEABLE;
         }
 
         if(ui->checkBoxMEM_LOCKED->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_LOCKED;
+            nCharacteristics+=S_IMAGE_SCN_MEM_LOCKED;
         }
 
         if(ui->checkBoxMEM_PRELOAD->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_PRELOAD;
+            nCharacteristics+=S_IMAGE_SCN_MEM_PRELOAD;
         }
 
         if(ui->checkBoxLNK_NRELOC_OVFL->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_LNK_NRELOC_OVFL;
+            nCharacteristics+=S_IMAGE_SCN_LNK_NRELOC_OVFL;
         }
 
         if(ui->checkBoxMEM_DISCARDABLE->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_DISCARDABLE;
+            nCharacteristics+=S_IMAGE_SCN_MEM_DISCARDABLE;
         }
 
         if(ui->checkBoxMEM_NOT_CACHED->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_NOT_CACHED;
+            nCharacteristics+=S_IMAGE_SCN_MEM_NOT_CACHED;
         }
 
         if(ui->checkBoxMEM_NOT_PAGED->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_NOT_PAGED;
+            nCharacteristics+=S_IMAGE_SCN_MEM_NOT_PAGED;
         }
 
         if(ui->checkBoxMEM_SHARED->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_SHARED;
+            nCharacteristics+=S_IMAGE_SCN_MEM_SHARED;
         }
 
         if(ui->checkBoxMEM_EXECUTE->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_EXECUTE;
+            nCharacteristics+=S_IMAGE_SCN_MEM_EXECUTE;
         }
 
         if(ui->checkBoxMEM_READ->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_READ;
+            nCharacteristics+=S_IMAGE_SCN_MEM_READ;
         }
 
         if(ui->checkBoxMEM_WRITE->isChecked())
         {
-            nCharacteristics+=IMAGE_SCN_MEM_WRITE;
+            nCharacteristics+=S_IMAGE_SCN_MEM_WRITE;
         }
 
         nCharacteristics+=((ui->comboBoxALIGN->currentIndex())<<20);

@@ -121,55 +121,55 @@ void DialogPESubsystem::on_lineEditSubsystem_textChanged(const QString &arg1)
 
     switch(arg1.toInt(&bTemp,16))
     {
-        case(IMAGE_SUBSYSTEM_UNKNOWN):
+        case(S_IMAGE_SUBSYSTEM_UNKNOWN):
             ui->comboBoxSubsystem->setCurrentIndex(1);
             break;
 
-        case(IMAGE_SUBSYSTEM_NATIVE):
+        case(S_IMAGE_SUBSYSTEM_NATIVE):
             ui->comboBoxSubsystem->setCurrentIndex(2);
             break;
 
-        case(IMAGE_SUBSYSTEM_WINDOWS_GUI):
+        case(S_IMAGE_SUBSYSTEM_WINDOWS_GUI):
             ui->comboBoxSubsystem->setCurrentIndex(3);
             break;
 
-        case(IMAGE_SUBSYSTEM_WINDOWS_CUI):
+        case(S_IMAGE_SUBSYSTEM_WINDOWS_CUI):
             ui->comboBoxSubsystem->setCurrentIndex(4);
             break;
 
-        case(IMAGE_SUBSYSTEM_OS2_CUI):
+        case(S_IMAGE_SUBSYSTEM_OS2_CUI):
             ui->comboBoxSubsystem->setCurrentIndex(5);
             break;
 
-        case(IMAGE_SUBSYSTEM_POSIX_CUI):
+        case(S_IMAGE_SUBSYSTEM_POSIX_CUI):
             ui->comboBoxSubsystem->setCurrentIndex(6);
             break;
 
-        case(IMAGE_SUBSYSTEM_NATIVE_WINDOWS):
+        case(S_IMAGE_SUBSYSTEM_NATIVE_WINDOWS):
             ui->comboBoxSubsystem->setCurrentIndex(7);
             break;
 
-        case(IMAGE_SUBSYSTEM_WINDOWS_CE_GUI):
+        case(S_IMAGE_SUBSYSTEM_WINDOWS_CE_GUI):
             ui->comboBoxSubsystem->setCurrentIndex(8);
             break;
 
-        case(IMAGE_SUBSYSTEM_EFI_APPLICATION):
+        case(S_IMAGE_SUBSYSTEM_EFI_APPLICATION):
             ui->comboBoxSubsystem->setCurrentIndex(9);
             break;
 
-        case(IMAGE_SUBSYSTEM_EFI_BOOT_SERVICE_DRIVER):
+        case(S_IMAGE_SUBSYSTEM_EFI_BOOT_SERVICE_DRIVER):
             ui->comboBoxSubsystem->setCurrentIndex(10);
             break;
 
-        case(IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER):
+        case(S_IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER):
             ui->comboBoxSubsystem->setCurrentIndex(11);
             break;
 
-        case(IMAGE_SUBSYSTEM_EFI_ROM):
+        case(S_IMAGE_SUBSYSTEM_EFI_ROM):
             ui->comboBoxSubsystem->setCurrentIndex(12);
             break;
 
-        case(IMAGE_SUBSYSTEM_XBOX):
+        case(S_IMAGE_SUBSYSTEM_XBOX):
             ui->comboBoxSubsystem->setCurrentIndex(13);
             break;
 

@@ -12,6 +12,10 @@ macx {
     ICON = pics/main.icns
 }
 
+macx {
+greaterThan(QT_MINOR_VERSION, 10): QMAKE_CXXFLAGS += -std=c++11
+}
+
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
@@ -372,5 +376,5 @@ include(../../StaticScan/staticscan.pri)
 greaterThan(QT_MAJOR_VERSION, 4): include(../../QYara/qyara.pri)
 
 macx {
-     LIBS += "-framework CoreFoundation"
+lessThan(QT_MINOR_VERSION, 10): LIBS += "-framework CoreFoundation"
 }

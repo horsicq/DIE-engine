@@ -123,17 +123,17 @@ void DialogPEDllCharacteristics::lineEditDllCharacteristics_textChanged(const QS
 
     sDllCharacteristics=arg1.toUInt(&bTemp,16);
 
-    ui->checkBoxHIGH_ENTROPY_VA->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_HIGH_ENTROPY_VA);
-    ui->checkBoxDYNAMIC_BASE->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE);
-    ui->checkBoxFORCE_INTEGRITY->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY);
-    ui->checkBoxNX_COMPAT->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_NX_COMPAT);
-    ui->checkBoxNO_ISOLATION->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_NO_ISOLATION);
-    ui->checkBoxNO_SEH->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_NO_SEH);
-    ui->checkBoxNO_BIND->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_NO_BIND);
-    ui->checkBoxAPPCONTAINER->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_APPCONTAINER);
-    ui->checkBoxWDM_DRIVER->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_WDM_DRIVER);
-    ui->checkBoxGUARD_CF->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_GUARD_CF);
-    ui->checkBoxTERMINAL_SERVER_AWARE->setChecked(sDllCharacteristics&IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE);
+    ui->checkBoxHIGH_ENTROPY_VA->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_HIGH_ENTROPY_VA);
+    ui->checkBoxDYNAMIC_BASE->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE);
+    ui->checkBoxFORCE_INTEGRITY->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY);
+    ui->checkBoxNX_COMPAT->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_NX_COMPAT);
+    ui->checkBoxNO_ISOLATION->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_NO_ISOLATION);
+    ui->checkBoxNO_SEH->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_NO_SEH);
+    ui->checkBoxNO_BIND->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_NO_BIND);
+    ui->checkBoxAPPCONTAINER->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_APPCONTAINER);
+    ui->checkBoxWDM_DRIVER->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_WDM_DRIVER);
+    ui->checkBoxGUARD_CF->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_GUARD_CF);
+    ui->checkBoxTERMINAL_SERVER_AWARE->setChecked(sDllCharacteristics&S_IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE);
 
     ui->pushButtonApply->setEnabled(true);
 }
@@ -146,42 +146,42 @@ void DialogPEDllCharacteristics::checkbox_reload()
     {
         if(ui->checkBoxDYNAMIC_BASE->isChecked())
         {
-            sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE;
+            sDllCharacteristics+=S_IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE;
         }
 
         if(ui->checkBoxFORCE_INTEGRITY->isChecked())
         {
-            sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY;
+            sDllCharacteristics+=S_IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY;
         }
 
         if(ui->checkBoxNX_COMPAT->isChecked())
         {
-            sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_NX_COMPAT;
+            sDllCharacteristics+=S_IMAGE_DLLCHARACTERISTICS_NX_COMPAT;
         }
 
         if(ui->checkBoxNO_ISOLATION->isChecked())
         {
-            sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_NO_ISOLATION;
+            sDllCharacteristics+=S_IMAGE_DLLCHARACTERISTICS_NO_ISOLATION;
         }
 
         if(ui->checkBoxNO_SEH->isChecked())
         {
-            sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_NO_SEH;
+            sDllCharacteristics+=S_IMAGE_DLLCHARACTERISTICS_NO_SEH;
         }
 
         if(ui->checkBoxNO_BIND->isChecked())
         {
-            sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_NO_BIND;
+            sDllCharacteristics+=S_IMAGE_DLLCHARACTERISTICS_NO_BIND;
         }
 
         if(ui->checkBoxWDM_DRIVER->isChecked())
         {
-            sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_WDM_DRIVER;
+            sDllCharacteristics+=S_IMAGE_DLLCHARACTERISTICS_WDM_DRIVER;
         }
 
         if(ui->checkBoxTERMINAL_SERVER_AWARE->isChecked())
         {
-            sDllCharacteristics+=IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE;
+            sDllCharacteristics+=S_IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE;
         }
 
         bEdited=false;

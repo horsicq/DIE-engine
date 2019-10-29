@@ -532,7 +532,7 @@ bool DialogPENtHeaders::reload()
     }
 
     nOffset=pefile->getNtHeadersOffset();
-    nSize=pefile->getNtHeadersSize()-16*sizeof(IMAGE_DATA_DIRECTORY);
+    nSize=pefile->getNtHeadersSize()-16*sizeof(S_IMAGE_DATA_DIRECTORY);
 
     ui->lineEditOffset->setText(QString("%1").arg(nOffset));
     ui->lineEditSize->setText(QString("%1").arg(nSize));

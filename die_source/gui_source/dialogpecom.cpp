@@ -289,12 +289,12 @@ void DialogPECOM::on_lineEditFlags_textChanged(const QString &arg1)
     bool bOK;
     unsigned int nValue=arg1.toUInt(&bOK,16);
 
-    ui->checkBox32BITREQUIRED->setChecked(nValue&COMIMAGE_FLAGS_32BITREQUIRED);
-    ui->checkBoxILONLY->setChecked(nValue&COMIMAGE_FLAGS_ILONLY);
-    ui->checkBoxIL_LIBRARY->setChecked(nValue&COMIMAGE_FLAGS_IL_LIBRARY);
+    ui->checkBox32BITREQUIRED->setChecked(nValue&S_COMIMAGE_FLAGS_32BITREQUIRED);
+    ui->checkBoxILONLY->setChecked(nValue&S_COMIMAGE_FLAGS_ILONLY);
+    ui->checkBoxIL_LIBRARY->setChecked(nValue&S_COMIMAGE_FLAGS_IL_LIBRARY);
     ui->checkBoxNATIVE_ENTRYPOINT->setChecked(nValue&0x00000010); // COMIMAGE_FLAGS_NATIVE_ENTRYPOINT
-    ui->checkBoxSTRONGNAMESIGNED->setChecked(nValue&COMIMAGE_FLAGS_STRONGNAMESIGNED);
-    ui->checkBoxTRACKDEBUGDATA->setChecked(nValue&COMIMAGE_FLAGS_TRACKDEBUGDATA);
+    ui->checkBoxSTRONGNAMESIGNED->setChecked(nValue&S_COMIMAGE_FLAGS_STRONGNAMESIGNED);
+    ui->checkBoxTRACKDEBUGDATA->setChecked(nValue&S_COMIMAGE_FLAGS_TRACKDEBUGDATA);
 }
 
 void DialogPECOM::pushButtonMetaDataExtra_clicked()

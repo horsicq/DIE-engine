@@ -380,7 +380,7 @@ void MainWindow::openFile(QString sFileName)
     if(!sFileName.isEmpty())
     {
 #ifdef Q_OS_MAC
-
+#if (QT_VERSION_MAJOR<=5)&&(QT_VERSION_MINOR<=10)
         if(sFileName.startsWith("/.file/id="))
         {
             CFStringRef relCFStringRef =
@@ -424,7 +424,7 @@ void MainWindow::openFile(QString sFileName)
             CFRelease(relCFURL);
             CFRelease(relCFStringRef);
         }
-
+#endif
 #endif
         QFileInfo fi;
 

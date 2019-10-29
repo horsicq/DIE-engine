@@ -1137,7 +1137,7 @@ void DialogPEDirectories::pushButtonEXPORTHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_EXPORT,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_EXPORT,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Export"));
 
@@ -1149,7 +1149,7 @@ void DialogPEDirectories::pushButtonIMPORTHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_IMPORT,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_IMPORT,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Import"));
 
@@ -1161,7 +1161,7 @@ void DialogPEDirectories::pushButtonRESOURCEHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_RESOURCE,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_RESOURCE,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Resource"));
 
@@ -1173,7 +1173,7 @@ void DialogPEDirectories::pushButtonEXCEPTIONHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_EXCEPTION,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_EXCEPTION,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Exceptions"));
 
@@ -1185,7 +1185,7 @@ void DialogPEDirectories::pushButtonSECURITYHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_SECURITY,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_SECURITY,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",idd.VirtualAddress,idd.Size,tr("Security")); // Except!!! offset, not RVA
 
@@ -1197,7 +1197,7 @@ void DialogPEDirectories::pushButtonBASERELOCHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_BASERELOC,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_BASERELOC,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Basereloc"));
 
@@ -1209,7 +1209,7 @@ void DialogPEDirectories::pushButtonDEBUGHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_DEBUG,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_DEBUG,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Debug"));
 
@@ -1221,7 +1221,7 @@ void DialogPEDirectories::pushButtonCOPYRIGHTHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_ARCHITECTURE,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_ARCHITECTURE,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Copyright"));
 
@@ -1233,7 +1233,7 @@ void DialogPEDirectories::pushButtonGLOBALPTRHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_GLOBALPTR,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_GLOBALPTR,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Globalptr"));
 
@@ -1245,7 +1245,7 @@ void DialogPEDirectories::pushButtonTLSHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_TLS,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_TLS,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("TLS"));
 
@@ -1257,7 +1257,7 @@ void DialogPEDirectories::pushButtonLOAD_CONFIGHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Load config"));
 
@@ -1269,7 +1269,7 @@ void DialogPEDirectories::pushButtonBOUND_IMPORTHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Bound import"));
 
@@ -1281,7 +1281,7 @@ void DialogPEDirectories::pushButtonIATHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_IAT,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_IAT,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("IAT"));
 
@@ -1293,7 +1293,7 @@ void DialogPEDirectories::pushButtonDELAY_IMPORTHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("Delay import"));
 
@@ -1305,7 +1305,7 @@ void DialogPEDirectories::pushButtonCOM_DESCRIPTORHex_clicked()
 
     DialogHDE dialoghde(this);
 
-    pefile->getOptionalHeader_DataDirectory(IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR,&idd);
+    pefile->getOptionalHeader_DataDirectory(S_IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR,&idd);
 
     dialoghde.setData(pOptions,pefile->getFileName(),0,0,"HEX","","",pefile->RVAToOffset(idd.VirtualAddress),idd.Size,tr("COM descriptor"));
 

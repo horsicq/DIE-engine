@@ -128,22 +128,22 @@ void DialogPECharacteristics::lineEditCharacteristics_textChanged(const QString 
 
     sCharacteristics=arg1.toUInt(&bTemp,16);
 
-    ui->checkBoxRELOCS_STRIPPED->setChecked(sCharacteristics&IMAGE_FILE_RELOCS_STRIPPED);
-    ui->checkBoxEXECUTABLE_IMAGE->setChecked(sCharacteristics&IMAGE_FILE_EXECUTABLE_IMAGE);
-    ui->checkBoxLINE_NUMS_STRIPPED->setChecked(sCharacteristics&IMAGE_FILE_LINE_NUMS_STRIPPED);
-    ui->checkBoxLOCAL_SYMS_STRIPPED->setChecked(sCharacteristics&IMAGE_FILE_LOCAL_SYMS_STRIPPED);
-    ui->checkBoxAGGRESIVE_WS_TRIM->setChecked(sCharacteristics&IMAGE_FILE_AGGRESIVE_WS_TRIM);
-    ui->checkBoxLARGE_ADDRESS_AWARE->setChecked(sCharacteristics&IMAGE_FILE_LARGE_ADDRESS_AWARE);
-    ui->checkBoxBYTES_REVERSED_LO->setChecked(sCharacteristics&IMAGE_FILE_BYTES_REVERSED_LO);
+    ui->checkBoxRELOCS_STRIPPED->setChecked(sCharacteristics&S_IMAGE_FILE_RELOCS_STRIPPED);
+    ui->checkBoxEXECUTABLE_IMAGE->setChecked(sCharacteristics&S_IMAGE_FILE_EXECUTABLE_IMAGE);
+    ui->checkBoxLINE_NUMS_STRIPPED->setChecked(sCharacteristics&S_IMAGE_FILE_LINE_NUMS_STRIPPED);
+    ui->checkBoxLOCAL_SYMS_STRIPPED->setChecked(sCharacteristics&S_IMAGE_FILE_LOCAL_SYMS_STRIPPED);
+    ui->checkBoxAGGRESIVE_WS_TRIM->setChecked(sCharacteristics&S_IMAGE_FILE_AGGRESIVE_WS_TRIM);
+    ui->checkBoxLARGE_ADDRESS_AWARE->setChecked(sCharacteristics&S_IMAGE_FILE_LARGE_ADDRESS_AWARE);
+    ui->checkBoxBYTES_REVERSED_LO->setChecked(sCharacteristics&S_IMAGE_FILE_BYTES_REVERSED_LO);
 
-    ui->checkBox32BIT_MACHINE->setChecked(sCharacteristics&IMAGE_FILE_32BIT_MACHINE);
-    ui->checkBoxDEBUG_STRIPPED->setChecked(sCharacteristics&IMAGE_FILE_DEBUG_STRIPPED);
-    ui->checkBoxREMOVABLE_RUN_FROM_SWAP->setChecked(sCharacteristics&IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP);
-    ui->checkBoxNET_RUN_FROM_SWAP->setChecked(sCharacteristics&IMAGE_FILE_NET_RUN_FROM_SWAP);
-    ui->checkBoxSYSTEM->setChecked(sCharacteristics&IMAGE_FILE_SYSTEM);
-    ui->checkBoxDLL->setChecked(sCharacteristics&IMAGE_FILE_DLL);
-    ui->checkBoxUP_SYSTEM_ONLY->setChecked(sCharacteristics&IMAGE_FILE_UP_SYSTEM_ONLY);
-    ui->checkBoxBYTES_REVERSED_HI->setChecked(sCharacteristics&IMAGE_FILE_BYTES_REVERSED_HI);
+    ui->checkBox32BIT_MACHINE->setChecked(sCharacteristics&S_IMAGE_FILE_32BIT_MACHINE);
+    ui->checkBoxDEBUG_STRIPPED->setChecked(sCharacteristics&S_IMAGE_FILE_DEBUG_STRIPPED);
+    ui->checkBoxREMOVABLE_RUN_FROM_SWAP->setChecked(sCharacteristics&S_IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP);
+    ui->checkBoxNET_RUN_FROM_SWAP->setChecked(sCharacteristics&S_IMAGE_FILE_NET_RUN_FROM_SWAP);
+    ui->checkBoxSYSTEM->setChecked(sCharacteristics&S_IMAGE_FILE_SYSTEM);
+    ui->checkBoxDLL->setChecked(sCharacteristics&S_IMAGE_FILE_DLL);
+    ui->checkBoxUP_SYSTEM_ONLY->setChecked(sCharacteristics&S_IMAGE_FILE_UP_SYSTEM_ONLY);
+    ui->checkBoxBYTES_REVERSED_HI->setChecked(sCharacteristics&S_IMAGE_FILE_BYTES_REVERSED_HI);
 
     ui->pushButtonApply->setEnabled(true);
 }
@@ -261,77 +261,77 @@ void DialogPECharacteristics::checkbox_reload()
     {
         if(ui->checkBoxRELOCS_STRIPPED->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_RELOCS_STRIPPED;
+            sCharacteristics+=S_IMAGE_FILE_RELOCS_STRIPPED;
         }
 
         if(ui->checkBoxEXECUTABLE_IMAGE->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_EXECUTABLE_IMAGE;
+            sCharacteristics+=S_IMAGE_FILE_EXECUTABLE_IMAGE;
         }
 
         if(ui->checkBoxLINE_NUMS_STRIPPED->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_LINE_NUMS_STRIPPED;
+            sCharacteristics+=S_IMAGE_FILE_LINE_NUMS_STRIPPED;
         }
 
         if(ui->checkBoxLOCAL_SYMS_STRIPPED->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_LOCAL_SYMS_STRIPPED;
+            sCharacteristics+=S_IMAGE_FILE_LOCAL_SYMS_STRIPPED;
         }
 
         if(ui->checkBoxAGGRESIVE_WS_TRIM->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_AGGRESIVE_WS_TRIM;
+            sCharacteristics+=S_IMAGE_FILE_AGGRESIVE_WS_TRIM;
         }
 
         if(ui->checkBoxLARGE_ADDRESS_AWARE->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_LARGE_ADDRESS_AWARE;
+            sCharacteristics+=S_IMAGE_FILE_LARGE_ADDRESS_AWARE;
         }
 
         if(ui->checkBoxBYTES_REVERSED_LO->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_BYTES_REVERSED_LO;
+            sCharacteristics+=S_IMAGE_FILE_BYTES_REVERSED_LO;
         }
 
         if(ui->checkBox32BIT_MACHINE->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_32BIT_MACHINE;
+            sCharacteristics+=S_IMAGE_FILE_32BIT_MACHINE;
         }
 
         if(ui->checkBoxDEBUG_STRIPPED->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_DEBUG_STRIPPED;
+            sCharacteristics+=S_IMAGE_FILE_DEBUG_STRIPPED;
         }
 
         if(ui->checkBoxREMOVABLE_RUN_FROM_SWAP->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP;
+            sCharacteristics+=S_IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP;
         }
 
         if(ui->checkBoxNET_RUN_FROM_SWAP->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_NET_RUN_FROM_SWAP;
+            sCharacteristics+=S_IMAGE_FILE_NET_RUN_FROM_SWAP;
         }
 
         if(ui->checkBoxSYSTEM->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_SYSTEM;
+            sCharacteristics+=S_IMAGE_FILE_SYSTEM;
         }
 
         if(ui->checkBoxDLL->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_DLL;
+            sCharacteristics+=S_IMAGE_FILE_DLL;
         }
 
         if(ui->checkBoxUP_SYSTEM_ONLY->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_UP_SYSTEM_ONLY;
+            sCharacteristics+=S_IMAGE_FILE_UP_SYSTEM_ONLY;
         }
 
         if(ui->checkBoxBYTES_REVERSED_HI->isChecked())
         {
-            sCharacteristics+=IMAGE_FILE_BYTES_REVERSED_HI;
+            sCharacteristics+=S_IMAGE_FILE_BYTES_REVERSED_HI;
         }
 
         bEdited=false;

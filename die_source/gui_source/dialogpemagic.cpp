@@ -109,15 +109,15 @@ void DialogPEMagic::on_lineEditMagic_textChanged(const QString &arg1)
 
     switch(arg1.toInt(&bTemp,16))
     {
-        case(IMAGE_NT_OPTIONAL_HDR32_MAGIC):
+        case(S_IMAGE_NT_OPTIONAL_HDR32_MAGIC):
             ui->comboBoxMagic->setCurrentIndex(1);
             break;
 
-        case(IMAGE_NT_OPTIONAL_HDR64_MAGIC):
+        case(S_IMAGE_NT_OPTIONAL_HDR64_MAGIC):
             ui->comboBoxMagic->setCurrentIndex(2);
             break;
 
-        case(IMAGE_ROM_OPTIONAL_HDR_MAGIC):
+        case(S_IMAGE_ROM_OPTIONAL_HDR_MAGIC):
             ui->comboBoxMagic->setCurrentIndex(3);
             break;
 
