@@ -1,7 +1,16 @@
 #!/bin/sh -x
+set -e # Exit immediately if any command exits with non-zero status.
+
 QT_PATH=$HOME/Qt5.6.3/5.6.3/clang_64
+if [ ! -x "$QT_PATH/bin/qmake" ]; then
+    QT_PATH=/usr/local/opt/qt # homebrew default path
+    if [ ! -x "$QT_PATH/bin/qmake" ]; then
+        echo "No Qt found. Install it with: brew install qt" 1>&2; exit 1
+    fi
+fi
+
 RELEASE_VERSION=$(cat "release_version.txt")
-echo $RELEASE_VERSION
+echo "Version: ${RELEASE_VERSION}"
 SOURCE_PATH=$PWD
 BUILD_NAME=die_mac_portable
 GUIEXE=die
@@ -14,7 +23,7 @@ rm -rf $SOURCE_PATH/build
 function makeproject
 {
     cd $SOURCE_PATH/die_source/$1
-    
+
     $QT_PATH/bin/qmake $1.pro -spec macx-clang CONFIG+=x86_64
     make -f Makefile clean
     make -f Makefile
@@ -22,7 +31,7 @@ function makeproject
     rm -rf Makefile
     rm -rf Makefile.Release
     rm -rf Makefile.Debug
-    rm -rf object_script.*     
+    rm -rf object_script.*
 
     cd $SOURCE_PATH
 }
@@ -40,14 +49,14 @@ mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns
 
 function fixlibrary
 {
-    install_name_tool -change @rpath/$1.framework/Versions/5/$1 @executable_path/../Frameworks/$1.framework/Versions/5/$1  $2    
+    install_name_tool -change @rpath/$1.framework/Versions/5/$1 @executable_path/../Frameworks/$1.framework/Versions/5/$1  $2
 }
 
 function fiximport
 {
     fixlibrary QtWidgets $1
     fixlibrary QtGui $1
-    fixlibrary QtCore $1  
+    fixlibrary QtCore $1
     #fixlibrary QtDBus $1
     fixlibrary QtPrintSupport $1
     fixlibrary QtScript $1
@@ -64,9 +73,9 @@ function copylibrary
     mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework
     mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions
     mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions/5
-    
+
     cp -R $QT_PATH/lib/$1.framework/Versions/5/$1 $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions/5
-    
+
     install_name_tool -id @executable_path/../Frameworks/$1.framework/Versions/5/$1 $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions/5/$1
     fiximport $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions/5/$1
 }
@@ -75,7 +84,7 @@ function copyplugin
 {
     mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns/$1/
     cp -R $QT_PATH/plugins/$1/$2.dylib $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns/$1/
-    
+
     install_name_tool -id @executable_path/../PlugIns/$1/$2.dylib $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns/$1/$2.dylib
     fiximport $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns/$1/$2.dylib
 }

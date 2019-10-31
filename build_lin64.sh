@@ -1,10 +1,10 @@
-#/bin/bash -x
+#!/bin/sh -x
+set -e # Exit immediately if any command exits with a non-zero status.
 
 SOURCE_PATH=$PWD
 QT_PATH=$HOME/Qt5.6.3/5.6.3/gcc_64
 RELEASE_VERSION=$(cat "release_version.txt")
-echo "Version:"
-echo ${RELEASE_VERSION}
+echo "Version: ${RELEASE_VERSION}"
 
 BUILD_NAME=die_lin64_portable
 GUIEXE=die
@@ -15,7 +15,7 @@ cd $SOURCE_PATH/die_source/gui_source
 function makeproject
 {
     cd $SOURCE_PATH/die_source/$1
-    
+
     $QT_PATH/bin/qmake $1.pro -spec linux-g++
     make -f Makefile clean
     make -f Makefile
@@ -23,7 +23,7 @@ function makeproject
     rm -rf Makefile
     rm -rf Makefile.Release
     rm -rf Makefile.Debug
-    rm -rf object_script.*     
+    rm -rf object_script.*
 
     cd $SOURCE_PATH
 }
