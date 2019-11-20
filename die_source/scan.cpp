@@ -294,7 +294,6 @@ bool Scan::die_scanELF(QString sFileName,QString sPrefix)
         emit setProgressBar(1,1);
         return false;
     }
-
 }
 
 bool Scan::die_scanMACH(QString sFileName,QString sPrefix)

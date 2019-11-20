@@ -151,6 +151,7 @@ private slots:
     void on_comboBoxScanMethod_currentIndexChanged(int index);
 
     void changeMethod(SCAN_METHODS sm,bool bOpenFile=false);
+    void methodControls(SCAN_METHODS sm);
     void on_pushButtonScanMethodInfo_clicked();
 
 signals:

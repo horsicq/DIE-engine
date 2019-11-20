@@ -32,7 +32,6 @@ void scriptMACH::setData(MACHFile *machfile)
     //    emit appendError("Test2");
 }
 
-
 //bool scriptMACH::compareHeader(QString sSignature)
 //{
 //    return machfile->compareHeader(sSignature);
@@ -183,8 +182,6 @@ QString scriptMACH::getGeneralOptions()
     {
         sResult+="BUNDLE";
     }
-
-
 
     if(machfile->isMACH64())
     {

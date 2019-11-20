@@ -1631,7 +1631,7 @@ void MainWindow::changeMethod(SCAN_METHODS sm, bool bOpenFile)
         }
 
         ui->stackedWidgetScan->setCurrentIndex(2);
-        ui->pushButtonSignatures->setEnabled(false); // TODO
+        ui->pushButtonSignatures->setEnabled(false);
     }
 #endif
 #ifdef USE_PEID
@@ -1641,10 +1641,33 @@ void MainWindow::changeMethod(SCAN_METHODS sm, bool bOpenFile)
     }
 
 #endif
+
+    methodControls(sm);
+
     if(options.bScanAfterOpen&&bOpenFile)
     {
         emit scanSignal();
     }
+}
+
+void MainWindow::methodControls(SCAN_METHODS sm)
+{
+    if(sm==SM_DIE)
+    {
+        ui->pushButtonSignatures->setEnabled(true);
+    }
+#ifdef USE_NFD
+    else if(sm==SM_NFD)
+    {
+        ui->pushButtonSignatures->setEnabled(false);
+    }
+#endif
+#ifdef USE_YARA
+    else if(sm==SM_YARA)
+    {
+        ui->pushButtonSignatures->setEnabled(false);
+    }
+#endif
 }
 
 void MainWindow::on_pushButtonScanMethodInfo_clicked()
