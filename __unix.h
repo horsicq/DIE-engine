@@ -30,7 +30,7 @@
 typedef unsigned int Elf32_Addr;
 typedef unsigned short Elf32_Half;
 typedef unsigned int Elf32_Off;
-typedef int	Elf32_Sword;
+typedef int Elf32_Sword;
 typedef unsigned int Elf32_Word;
 typedef unsigned int Elf32_Size;
 
