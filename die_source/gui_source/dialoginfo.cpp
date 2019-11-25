@@ -35,7 +35,7 @@ DialogInfo::~DialogInfo()
     delete ui;
 }
 
-void DialogInfo::setData(__DIE_OPTIONS *pOptions,QString &sString)
+void DialogInfo::setData(__DIE_OPTIONS *pOptions,QString &sString) // TODO
 {
     this->sString=sString;
 
