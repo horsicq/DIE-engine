@@ -74,6 +74,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&__binary, SIGNAL(appendError(QString)),this,SLOT(appendScriptErrorMessage(QString)));
     connect(&__elffile, SIGNAL(appendError(QString)),this,SLOT(appendScriptErrorMessage(QString)));
     connect(&__msdosfile, SIGNAL(appendError(QString)),this,SLOT(appendScriptErrorMessage(QString)));
+    // TODO MACHO
 
     pluginscript.addClass(&__pefile,"PEFile",Utils::getApplicationPath());
     pluginscript.addClass(&__binary,"BinaryFile",Utils::getApplicationPath());

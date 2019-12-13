@@ -8,6 +8,9 @@
 #ifdef DIEDLL_LIBRARY
 #include <windows.h>
 #endif
+#ifdef DIE_CONSOLE
+#include <windows.h>
+#endif
 
 class SingleFileScan : public QObject
 {

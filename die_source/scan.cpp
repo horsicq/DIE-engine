@@ -181,10 +181,10 @@ bool Scan::analize(QString sFileName,bool bFullScan)
             {
                 die_scanMACH(sFileName,sType);
             }
-            else if(sType=="Text")
-            {
-                die_scanText(sFileName,sType);
-            }
+//            else if(sType=="Text")
+//            {
+//                die_scanText(sFileName,sType);
+//            }
             else if(sType=="Binary")
             {
                 die_scanBinary(sFileName,sType);
@@ -356,33 +356,33 @@ bool Scan::die_scanMSDOS(QString sFileName, QString sPrefix)
     }
 }
 
-bool Scan::die_scanText(QString sFileName,QString sPrefix)
-{
-    PluginsScript engine;
-    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
+//bool Scan::die_scanText(QString sFileName,QString sPrefix)
+//{
+//    PluginsScript engine;
+//    connect(&engine,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+//    connect(&engine,SIGNAL(appendMessage(QString)),this,SIGNAL(die_appendSignatureSignal(QString)));
 
-    TextFile _text;
-    connect(&_text,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
-    scriptText scripttext;
-    connect(&scripttext,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+//    TextFile _text;
+//    connect(&_text,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
+//    scriptText scripttext;
+//    connect(&scripttext,SIGNAL(appendError(QString)),this,SIGNAL(appendError(QString)));
 
-    if(_text.setFileName(sFileName))
-    {
-        scripttext.setData(&_text);
+//    if(_text.setFileName(sFileName))
+//    {
+//        scripttext.setData(&_text);
 
-        engine.setData(&scripttext,"Text",Utils::getDataBasePath(pOptions));
+//        engine.setData(&scripttext,"Text",Utils::getDataBasePath(pOptions));
 
-        die_handleSignatures(&engine,&(pOptions->listTextScripts),sPrefix);
+//        die_handleSignatures(&engine,&(pOptions->listTextScripts),sPrefix);
 
-        return true;
-    }
-    else
-    {
-        emit setProgressBar(1,1);
-        return false;
-    }
-}
+//        return true;
+//    }
+//    else
+//    {
+//        emit setProgressBar(1,1);
+//        return false;
+//    }
+//}
 
 bool Scan::die_scanBinary(QString sFileName,QString sPrefix)
 {
@@ -573,7 +573,7 @@ void Scan::loadTypeScripts(QList<__SIGNATURE> *pList, QString sType,__DIE_OPTION
 void Scan::die_loadScripts(__DIE_OPTIONS *pOptions)
 {
     loadTypeScripts(&pOptions->listBinaryScripts,"Binary",pOptions);
-    loadTypeScripts(&pOptions->listTextScripts,"Text",pOptions);
+//    loadTypeScripts(&pOptions->listTextScripts,"Text",pOptions);
     loadTypeScripts(&pOptions->listELFScripts,"ELF",pOptions);
     loadTypeScripts(&pOptions->listMSDOSScripts,"MSDOS",pOptions);
     loadTypeScripts(&pOptions->listPEScripts,"PE",pOptions);

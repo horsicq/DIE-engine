@@ -7,6 +7,8 @@ CONFIG   -= app_bundle
 
 TARGET = diec
 
+DEFINES += DIE_CONSOLE
+
 include(../../build.pri)
 
 HEADERS += \

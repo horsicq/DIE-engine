@@ -107,7 +107,7 @@ struct __DIE_OPTIONS
     QString sPluginName;
     QList<__SIGNATURE> listPEScripts;
     QList<__SIGNATURE> listBinaryScripts;
-    QList<__SIGNATURE> listTextScripts;
+//    QList<__SIGNATURE> listTextScripts;
     QList<__SIGNATURE> listELFScripts;
     QList<__SIGNATURE> listMSDOSScripts;
     QList<__SIGNATURE> listMACHScripts;

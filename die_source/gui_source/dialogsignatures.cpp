@@ -188,17 +188,16 @@ bool DialogSignatures::reload(QString sNewCurrent)
         {
             sFolder="Binary";
         }
-        else if(sType=="Text")
-        {
-            sFolder="Text";
-        }
+//        else if(sType=="Text")
+//        {
+//            sFolder="Text";
+//        }
     }
 
     if(sFolder!="")
     {
         QDir dir(Utils::getDataBasePath(pOptions)+QDir::separator()+sFolder);
         QFileInfoList dircontent=dir.entryInfoList(QStringList()<<"*.sg");
-
 
         for(int i=0; i<dircontent.count(); i++)
         {

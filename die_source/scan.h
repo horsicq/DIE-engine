@@ -72,7 +72,7 @@ public:
     bool die_scanELF(QString sFileName,QString sPrefix);
     bool die_scanMACH(QString sFileName,QString sPrefix);
     bool die_scanMSDOS(QString sFileName,QString sPrefix);
-    bool die_scanText(QString sFileName,QString sPrefix);
+//    bool die_scanText(QString sFileName,QString sPrefix);
     bool die_scanBinary(QString sFileName,QString sPrefix);
     void die_handleSignatures(PluginsScript *pluginScript,QList<__SIGNATURE> *pListSignatures,QString sType);
     static void loadTypeScripts(QList<__SIGNATURE> *pList,QString sType,__DIE_OPTIONS *pOptions);

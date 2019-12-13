@@ -2580,10 +2580,10 @@ QList<QString> Binary::getTypes()
         }
     }
 
-    if(isPlainText())
-    {
-        listResult.append(QString("Text"));
-    }
+//    if(isPlainText())
+//    {
+//        listResult.append(QString("Text"));
+//    }
 
     listResult.append(QString("Binary"));
 

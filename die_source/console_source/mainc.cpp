@@ -505,8 +505,7 @@ int main(int argc, char *argv[])
                       &&(SingleFileScan::options.listELFScripts.count()==0)
                       &&(SingleFileScan::options.listMACHScripts.count()==0)
                       &&(SingleFileScan::options.listMSDOSScripts.count()==0)
-                      &&(SingleFileScan::options.listPEScripts.count()==0)
-                      &&(SingleFileScan::options.listTextScripts.count()==0);
+                      &&(SingleFileScan::options.listPEScripts.count()==0);
 
     if(arguments.count()==1)
     {
@@ -521,7 +520,6 @@ int main(int argc, char *argv[])
         printf("\n");
         int nTotal=0;
         nTotal+=printSignatures("Binary",&SingleFileScan::options.listBinaryScripts);
-        nTotal+=printSignatures("Text",&SingleFileScan::options.listTextScripts);
         nTotal+=printSignatures("MSDOS",&SingleFileScan::options.listMSDOSScripts);
         nTotal+=printSignatures("PE/PE+",&SingleFileScan::options.listPEScripts);
         nTotal+=printSignatures("ELF/ELF64",&SingleFileScan::options.listELFScripts);
@@ -562,12 +560,11 @@ int main(int argc, char *argv[])
         {
             Scan::die_loadScripts(&SingleFileScan::options);
 
-            bInvalidBase=(SingleFileScan::options.listBinaryScripts.count()==0)
-                                  &&(SingleFileScan::options.listELFScripts.count()==0)
-                                  &&(SingleFileScan::options.listMACHScripts.count()==0)
-                                  &&(SingleFileScan::options.listMSDOSScripts.count()==0)
-                                  &&(SingleFileScan::options.listPEScripts.count()==0)
-                                  &&(SingleFileScan::options.listTextScripts.count()==0);
+            bInvalidBase=(  SingleFileScan::options.listBinaryScripts.count()==0)
+                            &&(SingleFileScan::options.listELFScripts.count()==0)
+                            &&(SingleFileScan::options.listMACHScripts.count()==0)
+                            &&(SingleFileScan::options.listMSDOSScripts.count()==0)
+                            &&(SingleFileScan::options.listPEScripts.count()==0);
         }
 
         _MainClass mc(&a);
