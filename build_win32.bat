@@ -68,16 +68,16 @@ cd %SOURCE_PATH%\die_source\winloader_source
 
 Rc.exe /v rsrc_die.rc
 Cvtres.exe /v rsrc_die.res
-cl.exe /c winloader_die.cpp /D_USING_V110_SDK71_
-link.exe /SUBSYSTEM:WINDOWS winloader_die.obj rsrc_die.res user32.lib kernel32.lib shell32.lib /SUBSYSTEM:WINDOWS,5.01 /ENTRY:entry /OUT:%SOURCE_PATH%\die_source\build\release\winloader_die.exe
+cl.exe /c winloader_die.cpp /D_USING_V110_SDK71_ /GS- /Oi-
+link.exe /SUBSYSTEM:WINDOWS winloader_die.obj rsrc_die.res user32.lib kernel32.lib shell32.lib /NODEFAULTLIB /SAFESEH:NO /SUBSYSTEM:WINDOWS,5.01 /ENTRY:entry /OUT:%SOURCE_PATH%\die_source\build\release\winloader_die.exe
 if exist winloader_die.obj del winloader_die.obj
 if exist rsrc_die.res del rsrc_die.res
 if exist rsrc_die.obj del rsrc_die.obj
 
 Rc.exe /v rsrc_diel.rc
 Cvtres.exe /v rsrc_diel.res
-cl.exe /c winloader_diel.cpp /D_USING_V110_SDK71_
-link.exe /SUBSYSTEM:WINDOWS winloader_diel.obj rsrc_diel.res user32.lib kernel32.lib shell32.lib /SUBSYSTEM:WINDOWS,5.01 /ENTRY:entry /OUT:%SOURCE_PATH%\die_source\build\release\winloader_diel.exe
+cl.exe /c winloader_diel.cpp /D_USING_V110_SDK71_ /GS- /Oi-
+link.exe /SUBSYSTEM:WINDOWS winloader_diel.obj rsrc_diel.res user32.lib kernel32.lib shell32.lib /NODEFAULTLIB /SAFESEH:NO /SUBSYSTEM:WINDOWS,5.01 /ENTRY:entry /OUT:%SOURCE_PATH%\die_source\build\release\winloader_diel.exe
 if exist winloader_diel.obj del winloader_diel.obj
 if exist rsrc_diel.res del rsrc_diel.res
 if exist rsrc_diel.obj del rsrc_diel.obj
