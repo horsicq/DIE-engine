@@ -21,7 +21,7 @@ unix:macx {
        QMAKE_CXXFLAGS  += /D_USING_V110_SDK71_
        QMAKE_LFLAGS += /SUBSYSTEM:WINDOWS,5.01
     }
-    win32-msvc2017{
+    win32-msvc{ # 2017
        # Windows XP support
        QMAKE_CXXFLAGS  += /D_USING_V110_SDK71_
        QMAKE_LFLAGS += /SUBSYSTEM:WINDOWS,5.01
