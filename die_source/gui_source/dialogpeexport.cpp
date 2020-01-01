@@ -314,9 +314,7 @@ void DialogPEExport::on_tableWidgetFunctions_customContextMenuRequested(const QP
 
     menu.addAction(actEdit);
 
-    QPoint pos2=pos;
-    pos2.setY(pos2.ry()+20);
-    menu.exec(ui->tableWidgetFunctions->mapToGlobal(pos2));
+    menu.exec(ui->tableWidgetFunctions->viewport()->mapToGlobal(pos));
 }
 void DialogPEExport::setProgressBar(int nMax, int nValue)
 {

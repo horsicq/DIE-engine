@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2020 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -209,9 +209,7 @@ void DialogELFPHT::on_tableWidgetSections_customContextMenuRequested(const QPoin
     menu.addAction(actHex);
     menu.addAction(actDump);
 
-    QPoint pos2=pos;
-    pos2.setY(pos2.ry()+20);
-    menu.exec(ui->tableWidgetSections->mapToGlobal(pos2));
+    menu.exec(ui->tableWidgetSections->viewport()->mapToGlobal(pos));
 }
 void DialogELFPHT::editHeader()
 {

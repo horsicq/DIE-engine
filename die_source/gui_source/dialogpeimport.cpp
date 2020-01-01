@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2020 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -172,9 +172,7 @@ void DialogPEImport::on_tableWidgetLibraries_customContextMenuRequested(const QP
     menu.addSeparator();
     menu.addAction(actEditLibrary);
 
-    QPoint pos2=pos;
-    pos2.setY(pos2.ry()+20);
-    menu.exec(ui->tableWidgetLibraries->mapToGlobal(pos2));
+    menu.exec(ui->tableWidgetLibraries->viewport()->mapToGlobal(pos));
 }
 
 void DialogPEImport::on_tableWidgetFunctions_customContextMenuRequested(const QPoint &pos)
@@ -193,9 +191,7 @@ void DialogPEImport::on_tableWidgetFunctions_customContextMenuRequested(const QP
 
     menu.addAction(actEditFunction);
 
-    QPoint pos2=pos;
-    pos2.setY(pos2.ry()+20);
-    menu.exec(ui->tableWidgetFunctions->mapToGlobal(pos2));
+    menu.exec(ui->tableWidgetFunctions->viewport()->mapToGlobal(pos));
 }
 void DialogPEImport::setProgressBar(int nMax, int nValue)
 {

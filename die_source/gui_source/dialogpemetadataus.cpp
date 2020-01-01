@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2020 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -104,7 +104,5 @@ void DialogPEMetaDataUS::on_tableWidgetStrings_customContextMenuRequested(const 
     menu.addAction(actCopyAsString);
     actCopyAsString->setText(tr("Copy as \"%1\"").arg(index.model()->data(index).toString()));
 
-    QPoint pos2=pos;
-    pos2.setY(pos2.ry()+20);
-    menu.exec(ui->tableWidgetStrings->mapToGlobal(pos2));
+    menu.exec(ui->tableWidgetStrings->viewport()->mapToGlobal(pos));
 }

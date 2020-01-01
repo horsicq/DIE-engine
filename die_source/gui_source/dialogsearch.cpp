@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2019 hors<horsicq@gmail.com>
+// Copyright (c) 2012-2020 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -252,9 +252,7 @@ void DialogSearch::on_tableViewANSI_customContextMenuRequested(const QPoint &pos
     menu.addSeparator();
     menu.addAction(actHex);
 
-    QPoint pos2=pos;
-    pos2.setY(pos2.ry()+20);
-    menu.exec(ui->tableViewANSI->mapToGlobal(pos2));
+    menu.exec(ui->tableViewANSI->viewport()->mapToGlobal(pos));
 }
 void DialogSearch::hex()
 {
