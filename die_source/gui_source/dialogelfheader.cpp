@@ -234,21 +234,21 @@ DialogELFHeader::DialogELFHeader(QWidget *parent) :
     pushButtonTypeExtra->setText("...");
     pushButtonTypeExtra->setFixedWidth(30);
 
-    ui->tableWidgetELFHeader->setIndexWidget(ui->tableWidgetELFHeader->model()->index(13,2),pushButtonTypeExtra);
+    ui->tableWidgetELFHeader->setIndexWidget(ui->tableWidgetELFHeader->model()->index(15,2),pushButtonTypeExtra);
     connect(pushButtonTypeExtra,SIGNAL(clicked()),this,SLOT(pushButtonTypeExtra_clicked()));
 
     pushButtonMACHineExtra=new QPushButtonX;
     pushButtonMACHineExtra->setText("...");
     pushButtonMACHineExtra->setFixedWidth(30);
 
-    ui->tableWidgetELFHeader->setIndexWidget(ui->tableWidgetELFHeader->model()->index(14,2),pushButtonMACHineExtra);
+    ui->tableWidgetELFHeader->setIndexWidget(ui->tableWidgetELFHeader->model()->index(16,2),pushButtonMACHineExtra);
     connect(pushButtonMACHineExtra,SIGNAL(clicked()),this,SLOT(pushButtonMACHineExtra_clicked()));
 
     pushButtonEntryExtra=new QPushButtonX;
     pushButtonEntryExtra->setText("...");
     pushButtonEntryExtra->setFixedWidth(30);
 
-    ui->tableWidgetELFHeader->setIndexWidget(ui->tableWidgetELFHeader->model()->index(16,2),pushButtonEntryExtra);
+    ui->tableWidgetELFHeader->setIndexWidget(ui->tableWidgetELFHeader->model()->index(18,2),pushButtonEntryExtra);
     connect(pushButtonEntryExtra,SIGNAL(clicked()),this,SLOT(pushButtonEntryExtra_clicked()));
 
     ui->tableWidgetELFHeader->resizeColumnToContents(2);
