@@ -29,10 +29,11 @@ void scriptBinary::setData(Binary *binary)
 {
     this->binary=binary;
 }
-//bool scriptBinary::isPlainText()
-//{
-//    return binary->isPlainText();
-//}
+
+bool scriptBinary::isPlainText()
+{
+    return binary->isPlainText();
+}
 
 bool scriptBinary::compare(QString sSignature,unsigned int nOffset)
 {

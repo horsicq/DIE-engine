@@ -40,7 +40,7 @@ public slots:
     //    unsigned int swapBytes(unsigned int nValue);
     //    QString upperCase(QString sString);
 
-    //    bool isPlainText();
+    bool isPlainText();
     bool compare(QString sSignature,unsigned int nOffset=0);
     //    bool compareHeader(QString sSignature);
     bool compareEP(QString sSignature,unsigned int nOffset=0);
