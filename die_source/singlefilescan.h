@@ -9,7 +9,9 @@
 #include <windows.h>
 #endif
 #ifdef DIE_CONSOLE
+#ifdef Q_OS_WIN
 #include <windows.h>
+#endif
 #endif
 
 class SingleFileScan : public QObject
