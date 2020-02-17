@@ -97,8 +97,8 @@ chmod +x $SOURCE_PATH/release/$BUILD_NAME/die.sh
 chmod +x $SOURCE_PATH/release/$BUILD_NAME/diec.sh
 chmod +x $SOURCE_PATH/release/$BUILD_NAME/diel.sh
 
-rm -r $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.tar
-rm -r $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.tar.gz
+rm -rf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.tar
+rm -rf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.tar.gz
 cd $SOURCE_PATH/release/
 tar -cvf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.tar ${BUILD_NAME}
 cd $SOURCE_PATH
