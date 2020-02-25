@@ -367,7 +367,8 @@ FORMS += \
 
 TRANSLATIONS=   ../translate/*.ts
 
-include(../../qwt/qwt.pri)
+#include(../../qwt/qwt.pri)
+include(../../XQwt/xqwt.pri)
 include(../../beaengine/beaengine.pri)
 include(../../qtsingleapplication/qtsingleapplication.pri)
 include(../../build.pri)
