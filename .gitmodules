@@ -19,3 +19,6 @@
 [submodule "QOpenSSL"]
 	path = QOpenSSL
 	url = https://github.com/horsicq/QOpenSSL.git
+[submodule "XQwt"]
+	path = XQwt
+	url = https://github.com/horsicq/XQwt.git
