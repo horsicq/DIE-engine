@@ -62,6 +62,7 @@ function fiximport
     fixlibrary QtScript $1
     fixlibrary QtSvg $1
     fixlibrary QtXml $1
+    fixlibrary QtOpenGL $1
     fixlibrary QtNetwork $1
     fixlibrary QtScriptTools $1
     fixlibrary QtConcurrent $1
@@ -98,6 +99,7 @@ copylibrary QtGui
 copylibrary QtCore
 copylibrary QtPrintSupport
 copylibrary QtXml
+copylibrary QtOpenGL
 copylibrary QtScript
 copylibrary QtNetwork
 copylibrary QtScriptTools

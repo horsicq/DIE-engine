@@ -67,7 +67,8 @@ cp -R $QT_PATH/lib/libQt5Gui.so.5.6.3                           $SOURCE_PATH/rel
 cp -R $QT_PATH/lib/libQt5Widgets.so.5.6.3                       $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5DBus.so.5.6.3                          $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5Xml.so.5.6.3                           $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5Script.so.5.6.3                           $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5OpenGL.so.5.6.3                        $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5Script.so.5.6.3                        $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5XcbQpa.so.5.6.3                        $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libicui18n.so.56.1                           $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libicuuc.so.56.1                             $SOURCE_PATH/release/$BUILD_NAME/base/
@@ -84,6 +85,7 @@ mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5.6.3                 $SOU
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5.6.3             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5.6.3                $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Xml.so.5.6.3                 $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Xml.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5.6.3              $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Script.so.5.6.3              $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Script.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5.6.3              $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libicui18n.so.56.1                 $SOURCE_PATH/release/$BUILD_NAME/base/libicui18n.so.56
