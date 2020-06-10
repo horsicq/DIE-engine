@@ -71,7 +71,6 @@ QXHexSignature::QXHexSignature(QWidget *parent) :
         {
             ui->horizontalLayout7->addWidget(pushButton[i]);
         }
-
     }
 }
 
@@ -125,7 +124,6 @@ void QXHexSignature::reload()
         {
             sTemp=QString("%1").arg((unsigned char)(baData.data()[i]),2,16,QChar('0'));
         }
-
 
         if(ui->checkBoxUpper->isChecked())
         {
