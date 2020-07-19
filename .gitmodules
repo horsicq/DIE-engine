@@ -31,3 +31,6 @@
 [submodule "XTranslation"]
 	path = XTranslation
 	url = https://github.com/horsicq/XTranslation.git
+[submodule "XDEX"]
+	path = XDEX
+	url = https://github.com/horsicq/XDEX.git
