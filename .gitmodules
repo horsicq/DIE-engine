@@ -34,3 +34,36 @@
 [submodule "XDEX"]
 	path = XDEX
 	url = https://github.com/horsicq/XDEX.git
+[submodule "FormatDialogs"]
+	path = FormatDialogs
+	url = https://github.com/horsicq/FormatDialogs.git
+[submodule "FormatWidgets"]
+	path = FormatWidgets
+	url = https://github.com/horsicq/FormatWidgets.git
+[submodule "Controls"]
+	path = Controls
+	url = https://github.com/horsicq/Controls.git
+[submodule "QHexView"]
+	path = QHexView
+	url = https://github.com/horsicq/QHexView.git
+[submodule "XMemoryMapWidget"]
+	path = XMemoryMapWidget
+	url = https://github.com/horsicq/XMemoryMapWidget.git
+[submodule "XEntropyWidget"]
+	path = XEntropyWidget
+	url = https://github.com/horsicq/XEntropyWidget.git
+[submodule "XDisasm"]
+	path = XDisasm
+	url = https://github.com/horsicq/XDisasm.git
+[submodule "XCapstone"]
+	path = XCapstone
+	url = https://github.com/horsicq/XCapstone.git
+[submodule "XHashWidget"]
+	path = XHashWidget
+	url = https://github.com/horsicq/XHashWidget.git
+[submodule "die_script"]
+	path = die_script
+	url = https://github.com/horsicq/die_script.git
+[submodule "die_widget"]
+	path = die_widget
+	url = https://github.com/horsicq/die_widget.git
