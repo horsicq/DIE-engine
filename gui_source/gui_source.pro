@@ -24,15 +24,15 @@ include(../build.pri)
 
 !contains(XCONFIG, formatwidgets) {
     XCONFIG += formatwidgets
-    include(../../_mylibs/FormatWidgets/formatwidgets.pri)
+    include(../FormatWidgets/formatwidgets.pri)
 }
 
 !contains(XCONFIG, die_widget) {
     XCONFIG += die_widget
-    include(../../_mylibs/die_widget/die_widget.pri)
+    include(../die_widget/die_widget.pri)
 }
 
 !contains(XCONFIG, xoptions) {
     XCONFIG += xoptions
-    include(../../_mylibs/XOptions/xoptions.pri)
+    include(../XOptions/xoptions.pri)
 }

@@ -14,5 +14,5 @@ SOURCES += \
 
 !contains(XCONFIG, die_script) {
     XCONFIG += die_script
-    include(../../_mylibs/die_script/die_script.pri)
+    include(../die_script/die_script.pri)
 }
