@@ -67,3 +67,6 @@
 [submodule "die_widget"]
 	path = die_widget
 	url = https://github.com/horsicq/die_widget.git
+[submodule "nfd_widget"]
+	path = nfd_widget
+	url = https://github.com/horsicq/nfd_widget.git
