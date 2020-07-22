@@ -28,11 +28,6 @@ include(../build.pri)
     include(../FormatWidgets/formatwidgets.pri)
 }
 
-!contains(XCONFIG, die_widget) {
-    XCONFIG += die_widget
-    include(../die_widget/die_widget.pri)
-}
-
 !contains(XCONFIG, xoptions) {
     XCONFIG += xoptions
     include(../XOptions/xoptions.pri)
