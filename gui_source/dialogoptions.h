@@ -59,6 +59,8 @@ private slots:
     void on_pushButtonRegister_clicked();
     void on_pushButtonClear_clicked();
 
+    void on_toolButtonDIEInfo_clicked();
+
 private:
     Ui::DialogOptions *ui;
     XOptions *pOptions;

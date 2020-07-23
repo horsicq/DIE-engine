@@ -41,7 +41,8 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
     pOptions->setCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
 
     pOptions->setCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
-    pOptions->setLineEdit(ui->lineEditDatabase,XOptions::ID_DBPATH);
+    pOptions->setLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DBPATH);
+    pOptions->setLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
 
     pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
     pOptions->setComboBox(ui->comboBoxQss,XOptions::ID_QSS);
@@ -78,7 +79,8 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
 
     pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
-    pOptions->getLineEdit(ui->lineEditDatabase,XOptions::ID_DBPATH);
+    pOptions->getLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DBPATH);
+    pOptions->getLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
 
     pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
     pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
@@ -99,14 +101,14 @@ void DialogOptions::on_listWidgetOptions_currentRowChanged(int currentRow)
 
 void DialogOptions::on_toolButtonDIEDatabase_clicked()
 {
-    QString sText=ui->lineEditDatabase->text();
+    QString sText=ui->lineEditDIEDatabase->text();
     QString sInitDirectory=XBinary::convertPathName(sText);
 
     QString sDirectoryName=QFileDialog::getExistingDirectory(this,tr("Open directory")+QString("..."),sInitDirectory,QFileDialog::ShowDirsOnly);
 
     if(!sDirectoryName.isEmpty())
     {
-        ui->lineEditDatabase->setText(sDirectoryName);
+        ui->lineEditDIEDatabase->setText(sDirectoryName);
     }
 }
 
@@ -126,4 +128,16 @@ void DialogOptions::on_pushButtonClear_clicked()
 
     contextState();
 #endif
+}
+void DialogOptions::on_toolButtonDIEInfo_clicked()
+{
+    QString sText=ui->lineEditDIEInfo->text();
+    QString sInitDirectory=XBinary::convertPathName(sText);
+
+    QString sDirectoryName=QFileDialog::getExistingDirectory(this,tr("Open directory")+QString("..."),sInitDirectory,QFileDialog::ShowDirsOnly);
+
+    if(!sDirectoryName.isEmpty())
+    {
+        ui->lineEditDIEInfo->setText(sDirectoryName);
+    }
 }

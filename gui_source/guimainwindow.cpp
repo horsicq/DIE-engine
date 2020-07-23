@@ -44,6 +44,7 @@ GuiMainWindow::GuiMainWindow(QWidget *parent)
     listIDs.append(XOptions::ID_LASTDIRECTORY);
     listIDs.append(XOptions::ID_SAVEBACKUP);
     listIDs.append(XOptions::ID_DBPATH);
+    listIDs.append(XOptions::ID_INFOPATH);
 
     xOptions.setValueIDs(listIDs);
     xOptions.load();
