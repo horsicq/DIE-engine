@@ -29,5 +29,6 @@
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "die.ini"
+#define X_UPDATEPAGE "https://github.com/horsicq/DIE-engine/releases"
 
 #endif // _GLOBAL_H

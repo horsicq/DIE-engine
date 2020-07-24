@@ -22,6 +22,9 @@
 #define DIALOGABOUT_H
 
 #include <QDialog>
+#include <QDesktopServices>
+#include "QUrl"
+#include "../global.h"
 
 namespace Ui {
 class DialogAbout;
@@ -32,11 +35,12 @@ class DialogAbout : public QDialog
     Q_OBJECT
 
 public:
-    explicit DialogAbout(QWidget *parent = nullptr);
+    explicit DialogAbout(QWidget *pParent=nullptr);
     ~DialogAbout();
 
 private slots:
     void on_pushButtonOK_clicked();
+    void on_pushButtonCheckUpdates_clicked();
 
 private:
     Ui::DialogAbout *ui;

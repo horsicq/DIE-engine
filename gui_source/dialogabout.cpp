@@ -21,8 +21,8 @@
 #include "dialogabout.h"
 #include "ui_dialogabout.h"
 
-DialogAbout::DialogAbout(QWidget *parent) :
-    QDialog(parent),
+DialogAbout::DialogAbout(QWidget *pParent) :
+    QDialog(pParent),
     ui(new Ui::DialogAbout)
 {
     ui->setupUi(this);
@@ -36,4 +36,9 @@ DialogAbout::~DialogAbout()
 void DialogAbout::on_pushButtonOK_clicked()
 {
     this->close();
+}
+
+void DialogAbout::on_pushButtonCheckUpdates_clicked()
+{
+    QDesktopServices::openUrl(QUrl(X_UPDATEPAGE));
 }

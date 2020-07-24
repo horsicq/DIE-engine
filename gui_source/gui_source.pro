@@ -32,3 +32,6 @@ include(../build.pri)
     XCONFIG += xoptions
     include(../XOptions/xoptions.pri)
 }
+
+RESOURCES += \
+    res.qrc
