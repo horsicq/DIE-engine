@@ -1,3 +1,16 @@
+TRANSLATIONS = \
+        translation/die_en.ts \
+        translation/die_ar.ts \
+        translation/die_de.ts \
+        translation/die_ja.ts \
+        translation/die_pl.ts \
+        translation/die_ru.ts \
+        translation/die_vi.ts \
+        translation/die_es.ts \
+        translation/die_fr.ts \
+        translation/die_zh.ts \
+        translation/die_zh_TW.ts
+
 FORMS += \
     ../FormatDialogs/dialogdump.ui \
     ../FormatDialogs/dialogdumpprocess.ui \

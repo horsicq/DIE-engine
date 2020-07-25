@@ -28,7 +28,9 @@ del Makefile.Debug
 cd ..
 
 cd gui_source
+mkdir %SOURCE_PATH%\gui_source\translation
 %QT_PATH%\bin\qmake.exe gui_source.pro -r -spec win32-msvc "CONFIG+=release"
+%QT_PATH%\bin\lupdate.exe gui_source_tr.pro
 
 nmake Makefile.Release clean
 nmake
@@ -62,6 +64,7 @@ cd ..
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\base
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\base\platforms
+mkdir %SOURCE_PATH%\release\%BUILD_NAME%\base\lang
 
 copy %SOURCE_PATH%\build\loader\%GUIEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %SOURCE_PATH%\build\release\%GUIEXE% %SOURCE_PATH%\release\%BUILD_NAME%\base\
@@ -81,6 +84,17 @@ copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\vcruntime140.d
 xcopy %SOURCE_PATH%\Detect-It-Easy\db %SOURCE_PATH%\release\%BUILD_NAME%\base\db /E /I
 xcopy %SOURCE_PATH%\Detect-It-Easy\info %SOURCE_PATH%\release\%BUILD_NAME%\base\info /E /I
 xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\base\qss /E /I
+
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_de.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_de.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_ar.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_ar.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_es.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_es.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_ja.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_ja.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_pl.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_pl.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_fr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_fr.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_ru.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_ru.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_vi.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_vi.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_zh.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_zh.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_zh_TW.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_zh_TW.qm
 
 cd %SOURCE_PATH%\release
 if exist %ZIP_NAME%.zip del %ZIP_NAME%.zip
