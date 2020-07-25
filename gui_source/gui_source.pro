@@ -35,3 +35,11 @@ include(../build.pri)
 
 RESOURCES += \
     res.qrc
+
+win32 {
+    RC_ICONS = ../icons/main.ico
+}
+
+macx {
+    ICON = ../icons/main.icns
+}
