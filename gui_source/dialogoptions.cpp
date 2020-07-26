@@ -29,7 +29,7 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
 
     this->pOptions=pOptions;
 
-    ui->listWidgetOptions->insertItem(TAB_GENERAL,      tr("Genaral"));
+    ui->listWidgetOptions->insertItem(TAB_GENERAL,      tr("General"));
     ui->listWidgetOptions->insertItem(TAB_SCAN,         tr("Scan"));
     ui->listWidgetOptions->insertItem(TAB_APPEARANCE,   tr("Appearance"));
 #ifdef Q_OS_WIN
