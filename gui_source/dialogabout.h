@@ -25,6 +25,7 @@
 #include <QDesktopServices>
 #include "QUrl"
 #include "../global.h"
+#include "qwt_global.h"
 
 namespace Ui {
 class DialogAbout;

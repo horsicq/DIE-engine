@@ -26,6 +26,22 @@ DialogAbout::DialogAbout(QWidget *pParent) :
     ui(new Ui::DialogAbout)
 {
     ui->setupUi(this);
+
+    ui->tabWidgetAbout->setCurrentIndex(0);
+
+    QString sInfoText=ui->labelInfo->text();
+
+    sInfoText=sInfoText.replace("#VERSION#",QString("%1 v%2").arg(X_APPLICATIONNAME).arg(X_APPLICATIONVERSION));
+    sInfoText=sInfoText.replace("#DATE#",__DATE__);
+
+    ui->labelInfo->setText(sInfoText);
+
+    QString sComponentsText=ui->labelComponents->text();
+
+    sComponentsText=sComponentsText.replace("#QT_VERSION#",QT_VERSION_STR);
+    sComponentsText=sComponentsText.replace("#QWT_VERSION#",QWT_VERSION_STR);
+
+    ui->labelComponents->setText(sComponentsText);
 }
 
 DialogAbout::~DialogAbout()
