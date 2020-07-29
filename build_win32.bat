@@ -86,8 +86,8 @@ xcopy %SOURCE_PATH%\Detect-It-Easy\info %SOURCE_PATH%\release\%BUILD_NAME%\base\
 xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\base\qss /E /I
 
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_de.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_de.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_ar.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_ar.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_es.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_es.qm
+rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_ar.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_ar.qm
+rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_es.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_es.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_ja.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_ja.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_pl.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_pl.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_fr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\die_fr.qm
