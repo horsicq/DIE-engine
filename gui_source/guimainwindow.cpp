@@ -45,6 +45,7 @@ GuiMainWindow::GuiMainWindow(QWidget *parent)
     listIDs.append(XOptions::ID_SAVEBACKUP);
     listIDs.append(XOptions::ID_DBPATH);
     listIDs.append(XOptions::ID_INFOPATH);
+    listIDs.append(XOptions::ID_SCANENGINE);
 
     xOptions.setValueIDs(listIDs);
     xOptions.load();
@@ -182,6 +183,7 @@ void GuiMainWindow::adjust()
     xOptions.adjustStayOnTop(this);
 
     ui->widgetFormats->setDIEDatabase(xOptions.getDbPath());
+    ui->widgetFormats->setScanEngine(xOptions.getScanEngine());
 }
 
 void GuiMainWindow::adjustFile()
@@ -203,7 +205,7 @@ void GuiMainWindow::adjustFile()
 void GuiMainWindow::processFile(QString sFileName, bool bScan)
 {
     ui->lineEditFileName->setText(sFileName);
-    ui->widgetFormats->setFileName(sFileName,bScan); 
+    ui->widgetFormats->setData(sFileName,bScan);
 
     adjustFile();
 }

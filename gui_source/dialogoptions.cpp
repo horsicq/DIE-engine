@@ -41,6 +41,7 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
     pOptions->setCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
 
     pOptions->setCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
+    pOptions->setComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
     pOptions->setLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DBPATH);
     pOptions->setLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
 
@@ -79,6 +80,7 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
 
     pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
+    pOptions->getComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
     pOptions->getLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DBPATH);
     pOptions->getLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
 
