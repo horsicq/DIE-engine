@@ -188,6 +188,16 @@ void GuiMainWindow::processFile(QString sFileName, bool bScan)
     ui->lineEditFileName->setText(sFileName);
     ui->widgetFormats->setFileName(sFileName,bScan);
 
+    // TODO adjust after options
+    if(xOptions.isSaveBackup())
+    {
+        ui->widgetFormats->setBackupFileName(XBinary::getBackupName(sFileName));
+    }
+    else
+    {
+        ui->widgetFormats->setBackupFileName("");
+    }
+
     xOptions.setLastDirectory(sFileName);
 }
 
