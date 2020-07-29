@@ -57,6 +57,7 @@ private slots:
 
     QString getCurrentFileName();
     void adjust();
+    void adjustFile();
 
     void processFile(QString sFileName, bool bScan);
 

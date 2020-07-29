@@ -85,6 +85,7 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
     dialogOptions.exec();
 
     adjust();
+    adjustFile();
 }
 
 void GuiMainWindow::on_pushButtonHex_clicked()
@@ -183,12 +184,10 @@ void GuiMainWindow::adjust()
     ui->widgetFormats->setDIEDatabase(xOptions.getDbPath());
 }
 
-void GuiMainWindow::processFile(QString sFileName, bool bScan)
+void GuiMainWindow::adjustFile()
 {
-    ui->lineEditFileName->setText(sFileName);
-    ui->widgetFormats->setFileName(sFileName,bScan);
+    QString sFileName=getCurrentFileName();
 
-    // TODO adjust after options
     if(xOptions.isSaveBackup())
     {
         ui->widgetFormats->setBackupFileName(XBinary::getBackupName(sFileName));
@@ -199,6 +198,14 @@ void GuiMainWindow::processFile(QString sFileName, bool bScan)
     }
 
     xOptions.setLastDirectory(sFileName);
+}
+
+void GuiMainWindow::processFile(QString sFileName, bool bScan)
+{
+    ui->lineEditFileName->setText(sFileName);
+    ui->widgetFormats->setFileName(sFileName,bScan); 
+
+    adjustFile();
 }
 
 void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event)
