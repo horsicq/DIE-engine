@@ -69,6 +69,36 @@
         <attribute name="title">
          <string>Donate</string>
         </attribute>
+        <widget class="QGroupBox" name="groupBoxPaypal">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>153</width>
+           <height>53</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string notr="true">Paypal</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="lineEditPaypal"/>
+          </item>
+         </layout>
+        </widget>
        </widget>
        <widget class="QWidget" name="tabThanks">
         <attribute name="title">
