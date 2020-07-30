@@ -30,7 +30,56 @@ struct USERINFO
 USERINFO _userinfo_records[]=
 {
     {QString("Nick Sm"),                QString("NickSM")},
-    {QString("hypn0"),                  QString("hypn0")}
+    {QString("hypn0"),                  QString("hypn0")},
+    {QString("ajax"),                   QString("ajax")},
+    {QString("==DJ==[ZLO]"),            QString("DrZlo")},
+    {QString("ADMIN-CRACK"),            QString("ADMINCRACK")},
+    {QString("mushr00m"),               QString("mushr00m")},
+    {QString("gurololicon"),            QString("gurololicon")},
+    {QString("Diabolic"),               QString("Diabolic")},
+    {QString("user_"),                  QString("user_")},
+    {QString("void"),                   QString("void")},
+    {QString("NikolayD"),               QString("NikolayD")},
+    {QString("4kusNick"),               QString("4kusNick")},
+    {QString("BoRoV"),                  QString("BoRoV")},
+    {QString("HandMill"),               QString("HandMill")},
+    {QString("ELF_7719116"),            QString("ELF_7719116")},
+    {QString("SReg"),                   QString("SReg")},
+    {QString("Zorn"),                   QString("Zorn")},
+    {QString("BAHEK"),                  QString("BAHEK")},
+    {QString("GPcH"),                   QString("GPcH")},
+    {QString("Airenikus"),              QString("Airenikus")},
+    {QString("crc1"),                   QString("crc1")},
+    {QString("DimitarSerg"),            QString("DimitarSerg")},
+    {QString("RedBlkJck"),              QString("RedBlkJck")},
+    {QString("JMPer"),                  QString("JMPer")},
+    {QString("exet0l"),                 QString("exet0l")},
+    {QString("Mick Grove"),             QString("MickGrove")},
+    {QString("Levis"),                  QString("Levis")},
+    {QString("sendersu"),               QString("sendersu")},
+    {QString("ekse0x"),                 QString("ekse0x")},
+    {QString("Slinger"),                QString("Slinger")},
+    {QString("DenCoder"),               QString("DenCoder")},
+    {QString("deniskore"),              QString("deniskore")},
+    {QString("Hellsp@wn"),              QString("hellspawn")},
+    {QString("Dazz"),                   QString("Dazz")},
+    {QString("A.S.L."),                 QString("ASL")},
+    {QString("DICI BF"),                QString("DICIBF")},
+    {QString("Javier Nieto"),           QString("JavierNieto")},
+    {QString("Jason Hood"),             QString("JasonHood")},
+    {QString("Tembo"),                  QString("Tembo")},
+    {QString("Bartosz Wójcik"),         QString("Bartosz")},
+    {QString("Jeffrey Wu"),             QString("JeffreyWu")},
+    {QString("Murcielago"),             QString("Murcielago")},
+    {QString("Eliseu Filipi"),          QString("EliseuFilipi")},
+    {QString("dartraiden"),             QString("dartraiden")},
+    {QString("Jupiter"),                QString("Jupiter")},
+    {QString("d3dm4u5"),                QString("d3dm4u5")},
+    {QString("Metabolic"),              QString("Metabolic")},
+    {QString("Adler"),                  QString("Adler")},
+    {QString("mrexodia"),               QString("mrexodia")},
+    {QString("Rinat Aminow"),           QString("RinatAminow")},
+    {QString("ktg kbh"),                QString("ktgkbh")},
 };
 
 DialogAbout::DialogAbout(QWidget *pParent) :
@@ -106,4 +155,9 @@ void DialogAbout::on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurre
         ui->pushButtonAvatar->setIcon(buttonIcon);
         ui->pushButtonAvatar->setIconSize(pixmap.rect().size());
     }
+}
+
+void DialogAbout::on_pushButtonAvatar_clicked()
+{
+
 }
