@@ -21,6 +21,18 @@
 #include "dialogabout.h"
 #include "ui_dialogabout.h"
 
+struct USERINFO
+{
+    QString sUser;
+    QString sImage;
+};
+
+USERINFO _userinfo_records[]=
+{
+    {QString("Nick Sm"),                QString("NickSM")},
+    {QString("hypn0"),                  QString("hypn0")}
+};
+
 DialogAbout::DialogAbout(QWidget *pParent) :
     QDialog(pParent),
     ui(new Ui::DialogAbout)
@@ -38,10 +50,32 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 
     QString sComponentsText=ui->labelComponents->text();
 
-    sComponentsText=sComponentsText.replace("#QT_VERSION#",QT_VERSION_STR);
-    sComponentsText=sComponentsText.replace("#QWT_VERSION#",QWT_VERSION_STR);
+    sComponentsText=sComponentsText.replace("#QT#",QT_VERSION_STR);
+    sComponentsText=sComponentsText.replace("#QWT#",QWT_VERSION_STR);
+    sComponentsText=sComponentsText.replace("#CAPSTONE#",QString("%1.%2.%3").arg(CS_VERSION_MAJOR).arg(CS_VERSION_MINOR).arg(CS_VERSION_EXTRA));
 
     ui->labelComponents->setText(sComponentsText);
+
+    int nCount=sizeof(_userinfo_records)/sizeof(USERINFO);
+
+    {
+        QSignalBlocker blocker1(ui->listWidgetThanks);
+
+        for(int i=0;i<nCount;i++)
+        {
+            QListWidgetItem *pItem=new QListWidgetItem;
+            pItem->setText(_userinfo_records[i].sUser);
+            pItem->setData(Qt::UserRole,QString("://images/avatars/%1.bmp").arg(_userinfo_records[i].sImage));
+
+            ui->listWidgetThanks->insertItem(i,pItem);
+        }
+    }
+
+    if(nCount)
+    {
+        // TODO random
+        ui->listWidgetThanks->setCurrentRow(0);
+    }
 }
 
 DialogAbout::~DialogAbout()
@@ -57,4 +91,19 @@ void DialogAbout::on_pushButtonOK_clicked()
 void DialogAbout::on_pushButtonCheckUpdates_clicked()
 {
     QDesktopServices::openUrl(QUrl(X_UPDATEPAGE));
+}
+
+void DialogAbout::on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurrent, QListWidgetItem *pPrevious)
+{
+    Q_UNUSED(pPrevious)
+
+    if(pCurrent)
+    {
+        QString sImagePath=pCurrent->data(Qt::UserRole).toString();
+
+        QPixmap pixmap(sImagePath);
+        QIcon buttonIcon(pixmap);
+        ui->pushButtonAvatar->setIcon(buttonIcon);
+        ui->pushButtonAvatar->setIconSize(pixmap.rect().size());
+    }
 }

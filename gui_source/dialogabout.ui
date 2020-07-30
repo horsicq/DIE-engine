@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>606</width>
+    <width>647</width>
     <height>388</height>
    </rect>
   </property>
@@ -98,7 +98,7 @@
      <item>
       <widget class="QTabWidget" name="tabWidgetAbout">
        <property name="currentIndex">
-        <number>2</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="tabDonate">
         <attribute name="title">
@@ -139,7 +139,7 @@
              <number>1</number>
             </property>
             <item>
-             <widget class="QLineEdit" name="lineEdit">
+             <widget class="QLineEdit" name="lineEditPaypal">
               <property name="enabled">
                <bool>true</bool>
               </property>
@@ -158,7 +158,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QGroupBox" name="groupBoxPayPal_2">
+          <widget class="QGroupBox" name="groupBoxBitcoin">
            <property name="title">
             <string notr="true">Bitcoin</string>
            </property>
@@ -179,7 +179,7 @@
              <number>1</number>
             </property>
             <item>
-             <widget class="QLineEdit" name="lineEdit_2">
+             <widget class="QLineEdit" name="lineEditBitcoin">
               <property name="enabled">
                <bool>true</bool>
               </property>
@@ -299,7 +299,7 @@ border-radius:50px;</string>
             <enum>QFrame::Sunken</enum>
            </property>
            <property name="text">
-            <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;QT Library #QT_VERSION# &lt;/span&gt;&lt;a href=&quot;http://qt-project.org&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;http://qt-project.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;QWT Library #QWT_VERSION# &lt;/span&gt;&lt;a href=&quot; http://qwt.sourceforge.net&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;http://qwt.sourceforge.net&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;QT Library #QT# &lt;/span&gt;&lt;a href=&quot;http://qt-project.org&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;http://qt-project.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;QWT Library #QWT# &lt;/span&gt;&lt;a href=&quot; http://qwt.sourceforge.net&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;http://qwt.sourceforge.net&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Capstone #CAPSTONE# &lt;/span&gt;&lt;a href=&quot; http://qwt.sourceforge.net&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;http://www.capstone-engine.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="openExternalLinks">
             <bool>true</bool>

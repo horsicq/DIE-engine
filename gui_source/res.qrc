@@ -1,5 +1,57 @@
 <RCC>
     <qresource prefix="/">
         <file>images/about.png</file>
+        <file>images/avatars/4kusNick.bmp</file>
+        <file>images/avatars/Adler.bmp</file>
+        <file>images/avatars/ADMINCRACK.bmp</file>
+        <file>images/avatars/Airenikus.bmp</file>
+        <file>images/avatars/ajax.bmp</file>
+        <file>images/avatars/ASL.bmp</file>
+        <file>images/avatars/BAHEK.bmp</file>
+        <file>images/avatars/Bartosz.bmp</file>
+        <file>images/avatars/BoRoV.bmp</file>
+        <file>images/avatars/crc1.bmp</file>
+        <file>images/avatars/d3dm4u5.bmp</file>
+        <file>images/avatars/dartraiden.bmp</file>
+        <file>images/avatars/Dazz.bmp</file>
+        <file>images/avatars/DenCoder.bmp</file>
+        <file>images/avatars/deniskore.bmp</file>
+        <file>images/avatars/Diabolic.bmp</file>
+        <file>images/avatars/DICIBF.bmp</file>
+        <file>images/avatars/DimitarSerg.bmp</file>
+        <file>images/avatars/DrZlo.bmp</file>
+        <file>images/avatars/ekse0x.bmp</file>
+        <file>images/avatars/ELF_7719116.bmp</file>
+        <file>images/avatars/EliseuFilipi.bmp</file>
+        <file>images/avatars/exet0l.bmp</file>
+        <file>images/avatars/GPcH.bmp</file>
+        <file>images/avatars/gurololicon.bmp</file>
+        <file>images/avatars/HandMill.bmp</file>
+        <file>images/avatars/hellspawn.bmp</file>
+        <file>images/avatars/hypn0.bmp</file>
+        <file>images/avatars/JasonHood.bmp</file>
+        <file>images/avatars/JavierNieto.bmp</file>
+        <file>images/avatars/JeffreyWu.bmp</file>
+        <file>images/avatars/JMPer.bmp</file>
+        <file>images/avatars/Jupiter.bmp</file>
+        <file>images/avatars/ktgkbh.bmp</file>
+        <file>images/avatars/Levis.bmp</file>
+        <file>images/avatars/Metabolic.bmp</file>
+        <file>images/avatars/MickGrove.bmp</file>
+        <file>images/avatars/mrexodia.bmp</file>
+        <file>images/avatars/Murcielago.bmp</file>
+        <file>images/avatars/mushr00m.bmp</file>
+        <file>images/avatars/NickSM.bmp</file>
+        <file>images/avatars/NikolayD.bmp</file>
+        <file>images/avatars/RedBlkJck.bmp</file>
+        <file>images/avatars/RinatAminow.bmp</file>
+        <file>images/avatars/sendersu.bmp</file>
+        <file>images/avatars/SkyRE.bmp</file>
+        <file>images/avatars/Slinger.bmp</file>
+        <file>images/avatars/SReg.bmp</file>
+        <file>images/avatars/Tembo.bmp</file>
+        <file>images/avatars/user_.bmp</file>
+        <file>images/avatars/void.bmp</file>
+        <file>images/avatars/Zorn.bmp</file>
     </qresource>
 </RCC>

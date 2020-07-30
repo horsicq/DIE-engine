@@ -24,8 +24,10 @@
 #include <QDialog>
 #include <QDesktopServices>
 #include "QUrl"
+#include <QListWidgetItem>
 #include "../global.h"
 #include "qwt_global.h"
+#include "capstone/capstone.h"
 
 namespace Ui {
 class DialogAbout;
@@ -42,6 +44,8 @@ public:
 private slots:
     void on_pushButtonOK_clicked();
     void on_pushButtonCheckUpdates_clicked();
+
+    void on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurrent, QListWidgetItem *pPrevious);
 
 private:
     Ui::DialogAbout *ui;
