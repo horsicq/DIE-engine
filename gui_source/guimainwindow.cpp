@@ -182,7 +182,8 @@ void GuiMainWindow::adjust()
 {
     xOptions.adjustStayOnTop(this);
 
-    ui->widgetFormats->setDIEDatabase(xOptions.getDbPath());
+    ui->widgetFormats->setDIEDatabasePath(xOptions.getDbPath());
+    ui->widgetFormats->setDIEInfoPath(xOptions.getInfoPath());
     ui->widgetFormats->setScanEngine(xOptions.getScanEngine());
 }
 
