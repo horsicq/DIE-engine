@@ -13,12 +13,6 @@
 [submodule "XArchive"]
 	path = XArchive
 	url = https://github.com/horsicq/XArchive.git
-[submodule "QYara"]
-	path = QYara
-	url = https://github.com/horsicq/QYara.git
-[submodule "QOpenSSL"]
-	path = QOpenSSL
-	url = https://github.com/horsicq/QOpenSSL.git
 [submodule "XQwt"]
 	path = XQwt
 	url = https://github.com/horsicq/XQwt.git
