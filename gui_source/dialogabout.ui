@@ -98,7 +98,7 @@
      <item>
       <widget class="QTabWidget" name="tabWidgetAbout">
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="tabDonate">
         <attribute name="title">
@@ -184,7 +184,7 @@
                <bool>true</bool>
               </property>
               <property name="text">
-               <string>3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</string>
+               <string notr="true">3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</string>
               </property>
               <property name="readOnly">
                <bool>true</bool>
