@@ -144,7 +144,7 @@
                <bool>true</bool>
               </property>
               <property name="text">
-               <string>ntinfo.re@gmail.com</string>
+               <string notr="true">ntinfo.re@gmail.com</string>
               </property>
               <property name="readOnly">
                <bool>true</bool>
