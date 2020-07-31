@@ -47,6 +47,7 @@ private slots:
     void on_pushButtonCheckUpdates_clicked();
     void on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurrent, QListWidgetItem *pPrevious);
     void on_pushButtonAvatar_clicked();
+    void random();
 
 private:
     Ui::DialogAbout *ui;

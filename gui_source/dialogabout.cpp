@@ -122,8 +122,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 
     if(nCount)
     {
-        // TODO random
-        ui->listWidgetThanks->setCurrentRow(0);
+        random();
     }
 }
 
@@ -159,5 +158,15 @@ void DialogAbout::on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurre
 
 void DialogAbout::on_pushButtonAvatar_clicked()
 {
+    random();
+}
 
+void DialogAbout::random()
+{
+    int nCount=sizeof(_userinfo_records)/sizeof(USERINFO);
+
+    if(nCount)
+    {
+        ui->listWidgetThanks->setCurrentRow(XBinary::random(nCount));
+    }
 }
