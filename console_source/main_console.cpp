@@ -99,11 +99,9 @@ int main(int argc, char *argv[])
 
     parser.addPositionalArgument("file","The file to open.");
 
-    // TODO show errors
-
-    QCommandLineOption clDeepScan(QStringList()<<"d"<<"deepscan","Deep scan.");
-    QCommandLineOption clResultAsXml(QStringList()<<"x"<<"xml","Result as XML.");
-    QCommandLineOption clResultAsJson(QStringList()<<"j"<<"json","Result as JSON.");
+    QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",     "Deep scan.");
+    QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",          "Result as XML.");
+    QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON.");
 
     parser.addOption(clDeepScan);
     parser.addOption(clResultAsXml);
@@ -126,10 +124,7 @@ int main(int argc, char *argv[])
 
     DiE_Script die_script;
 
-//    listArgs.append("C:\\tmp\\USBStick\\YUMI-2.0.7.1.exe");
-
-    die_script.loadDatabase("$app/db");
-//    die_script.loadDatabase("C:\\tmp_build\\qt5\\die\\Detect-It-Easy\\db");
+    die_script.loadDatabase("$data/db");
 
     if(listArgs.count())
     {
