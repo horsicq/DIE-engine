@@ -86,13 +86,13 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SO
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/die.sh
 echo "export LD_LIBRARY_PATH=\"./base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/die.sh
-echo "./base/die $*" >> release/$BUILD_NAME/die.sh
+echo "./base/die \$*" >> release/$BUILD_NAME/die.sh
 
 chmod +x release/$BUILD_NAME/die.sh
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/diec.sh
 echo "export LD_LIBRARY_PATH=\"./base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/diec.sh
-echo "./base/diec $*" >> release/$BUILD_NAME/diec.sh
+echo "./base/diec \$*" >> release/$BUILD_NAME/diec.sh
 
 chmod +x release/$BUILD_NAME/diec.sh
 
