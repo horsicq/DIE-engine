@@ -64,16 +64,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="147"/>
-        <source>ntinfo.re@gmail.com</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogabout.ui" line="187"/>
-        <source>3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../dialogabout.ui" line="217"/>
         <source>Thanks</source>
         <translation type="unfinished"></translation>
@@ -688,12 +678,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../die_widget/dialogsignatures.cpp" line="150"/>
+        <location filename="../../die_widget/dialogsignatures.cpp" line="157"/>
         <source>Debugger</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../die_widget/dialogsignatures.cpp" line="163"/>
+        <location filename="../../die_widget/dialogsignatures.cpp" line="170"/>
         <source>msec</source>
         <translation type="unfinished"></translation>
     </message>
@@ -760,7 +750,7 @@
     </message>
     <message>
         <location filename="../../FormatWidgets/ELF/elfwidget.cpp" line="89"/>
-        <source>Detect</source>
+        <source>Heuristic scan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
