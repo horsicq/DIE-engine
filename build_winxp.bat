@@ -41,7 +41,7 @@ del Makefile.Debug
 cd ..
 
 cd console_source
-%QT_PATH%\bin\qmake.exe console_source.pro -r -spec win32-msvc "CONFIG+=release"
+%QT_PATH%\bin\qmake.exe console_source.pro -r -spec %QT_SPEC% "CONFIG+=release"
 
 nmake Makefile.Release clean
 nmake

@@ -1277,18 +1277,18 @@
     </message>
     <message>
         <location filename="../../nfd_widget/nfd_widget.ui" line="162"/>
-        <location filename="../../nfd_widget/nfd_widget.cpp" line="103"/>
-        <location filename="../../nfd_widget/nfd_widget.cpp" line="141"/>
+        <location filename="../../nfd_widget/nfd_widget.cpp" line="107"/>
+        <location filename="../../nfd_widget/nfd_widget.cpp" line="145"/>
         <source>Scan</source>
         <translation>Skanuj</translation>
     </message>
     <message>
-        <location filename="../../nfd_widget/nfd_widget.cpp" line="87"/>
+        <location filename="../../nfd_widget/nfd_widget.cpp" line="91"/>
         <source>Stop</source>
         <translation>Zatrzymaj</translation>
     </message>
     <message>
-        <location filename="../../nfd_widget/nfd_widget.cpp" line="137"/>
+        <location filename="../../nfd_widget/nfd_widget.cpp" line="141"/>
         <source>msec</source>
         <translation></translation>
     </message>
@@ -1500,17 +1500,17 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../../Formats/xbinary.cpp" line="2658"/>
+        <location filename="../../Formats/xbinary.cpp" line="2668"/>
         <source>Read error</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../Formats/xbinary.cpp" line="2665"/>
+        <location filename="../../Formats/xbinary.cpp" line="2675"/>
         <source>Write error</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../Formats/xbinary.cpp" line="2690"/>
+        <location filename="../../Formats/xbinary.cpp" line="2700"/>
         <source>Cannot open file</source>
         <translation></translation>
     </message>
