@@ -120,8 +120,6 @@ int main(int argc, char *argv[])
     scanOptions.bResultAsXML=parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON=parser.isSet(clResultAsJson);
 
-    scanOptions.bResultAsJSON=true;
-
     DiE_Script die_script;
 
     die_script.loadDatabase("$data/db");
