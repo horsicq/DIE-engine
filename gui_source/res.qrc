@@ -53,5 +53,9 @@
         <file>images/avatars/user_.bmp</file>
         <file>images/avatars/void.bmp</file>
         <file>images/avatars/Zorn.bmp</file>
+        <file>images/avatars/DavidZimmer.bmp</file>
+        <file>images/avatars/FernandoMerces.bmp</file>
+        <file>images/avatars/JuJu2015.bmp</file>
+        <file>images/avatars/Nomade.bmp</file>
     </qresource>
 </RCC>
