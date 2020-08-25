@@ -96,9 +96,9 @@ void DialogOptions::on_pushButtonOK_clicked()
     this->close();
 }
 
-void DialogOptions::on_listWidgetOptions_currentRowChanged(int currentRow)
+void DialogOptions::on_listWidgetOptions_currentRowChanged(int nCurrentRow)
 {
-    ui->stackedWidgetOptions->setCurrentIndex(currentRow);
+    ui->stackedWidgetOptions->setCurrentIndex(nCurrentRow);
 }
 
 void DialogOptions::on_toolButtonDIEDatabase_clicked()

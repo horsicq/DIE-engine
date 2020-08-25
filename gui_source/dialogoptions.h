@@ -54,11 +54,10 @@ private slots:
 #endif
     void on_pushButtonCancel_clicked();
     void on_pushButtonOK_clicked();
-    void on_listWidgetOptions_currentRowChanged(int currentRow);
+    void on_listWidgetOptions_currentRowChanged(int nCurrentRow);
     void on_toolButtonDIEDatabase_clicked();
     void on_pushButtonRegister_clicked();
     void on_pushButtonClear_clicked();
-
     void on_toolButtonDIEInfo_clicked();
 
 private:
