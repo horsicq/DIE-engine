@@ -10,7 +10,7 @@ TRANSLATIONS = \
         translation/die_es.ts \
         translation/die_fr.ts \
 		translation/die_pt_BR.ts \
-        translation/die_zh.ko \
+        translation/die_ko.ts \
         translation/die_zh.ts \
         translation/die_zh_TW.ts
 
