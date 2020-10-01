@@ -1,5 +1,4 @@
 TRANSLATIONS = \
-        translation/die_en.ts \
         translation/die_it.ts \
         translation/die_ar.ts \
         translation/die_de.ts \
