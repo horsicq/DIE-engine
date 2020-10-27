@@ -85,14 +85,16 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURC
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_zh_TW.qm
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/die.sh
-echo "export LD_LIBRARY_PATH=\"./base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/die.sh
-echo "./base/die \$*" >> release/$BUILD_NAME/die.sh
+echo "DIRECTORY=`dirname $0`" >> release/$BUILD_NAME/die.sh
+echo "export LD_LIBRARY_PATH=\"$DIRECTORY/base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/die.sh
+echo "$DIRECTORY/base/die \$*" >> release/$BUILD_NAME/die.sh
 
 chmod +x release/$BUILD_NAME/die.sh
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/diec.sh
-echo "export LD_LIBRARY_PATH=\"./base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/diec.sh
-echo "./base/diec \$*" >> release/$BUILD_NAME/diec.sh
+echo "DIRECTORY=`dirname $0`" >> release/$BUILD_NAME/diec.sh
+echo "export LD_LIBRARY_PATH=\"$DIRECTORY/base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/diec.sh
+echo "$DIRECTORY/base/diec \$*" >> release/$BUILD_NAME/diec.sh
 
 chmod +x release/$BUILD_NAME/diec.sh
 
