@@ -49,6 +49,7 @@ cp -R $QT_PATH/lib/libQt5Core.so.5.12.8                         $SOURCE_PATH/rel
 cp -R $QT_PATH/lib/libQt5Svg.so.5.12.8                          $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5Gui.so.5.12.8                          $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5Widgets.so.5.12.8                      $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5OpenGL.so.5.12.8                       $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5DBus.so.5.12.8                         $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5XcbQpa.so.5.12.8                       $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5ScriptTools.so.5.12.8                  $SOURCE_PATH/release/$BUILD_NAME/base/
@@ -61,6 +62,7 @@ mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Core.so.5.12.8               $SOU
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Svg.so.5.12.8               	$SOURCE_PATH/release/$BUILD_NAME/base/libQt5Svg.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5.12.8                $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5.12.8            $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5.12.8             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5.12.8               $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5.12.8             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5ScriptTools.so.5.12.8        $SOURCE_PATH/release/$BUILD_NAME/base/libQt5ScriptTools.so.5
@@ -85,17 +87,16 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURC
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_zh_TW.qm
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/die.sh
-echo "DIRECTORY=`dirname $0`" >> release/$BUILD_NAME/die.sh
-echo "export LD_LIBRARY_PATH=\"$DIRECTORY/base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/die.sh
-echo "$DIRECTORY/base/die \$*" >> release/$BUILD_NAME/die.sh
-
-chmod +x release/$BUILD_NAME/die.sh
+echo "CWD=\$(dirname \$0)" >> release/$BUILD_NAME/die.sh
+echo "export LD_LIBRARY_PATH=\"\$CWD/base:\$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/die.sh
+echo "\$CWD/base/die \$*" >> release/$BUILD_NAME/die.sh
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/diec.sh
-echo "DIRECTORY=`dirname $0`" >> release/$BUILD_NAME/diec.sh
-echo "export LD_LIBRARY_PATH=\"$DIRECTORY/base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/diec.sh
-echo "$DIRECTORY/base/diec \$*" >> release/$BUILD_NAME/diec.sh
+echo "CWD=\$(dirname \$0)" >> release/$BUILD_NAME/diec.sh
+echo "export LD_LIBRARY_PATH=\"\$CWD/base:\$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/diec.sh
+echo "\$CWD/base/diec \$*" >> release/$BUILD_NAME/diec.sh
 
+chmod +x release/$BUILD_NAME/die.sh
 chmod +x release/$BUILD_NAME/diec.sh
 
 rm -rf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.tar.gz
