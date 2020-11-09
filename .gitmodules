@@ -67,3 +67,9 @@
 [submodule "archive_widget"]
 	path = archive_widget
 	url = https://github.com/horsicq/archive_widget.git
+[submodule "XMIME"]
+	path = XMIME
+	url = https://github.com/horsicq/XMIME.git
+[submodule "XSingleApplication"]
+	path = XSingleApplication
+	url = https://github.com/horsicq/XSingleApplication.git
