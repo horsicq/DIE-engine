@@ -24,6 +24,7 @@ FORMS += \
 include(../build.pri)
 
 XCONFIG += use_dex
+XCONFIG += use_archive
 
 !contains(XCONFIG, formatwidgets) {
     XCONFIG += formatwidgets
