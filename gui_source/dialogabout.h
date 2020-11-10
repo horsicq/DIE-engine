@@ -45,7 +45,7 @@ public:
 private slots:
     void on_pushButtonOK_clicked();
     void on_pushButtonCheckUpdates_clicked();
-    void on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurrent, QListWidgetItem *pPrevious);
+    void on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurrent,QListWidgetItem *pPrevious);
     void on_pushButtonAvatar_clicked();
     void random();
 
