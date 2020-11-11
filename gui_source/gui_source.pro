@@ -36,6 +36,11 @@ XCONFIG += use_archive
     include(../XOptions/xoptions.pri)
 }
 
+!contains(XCONFIG, xmimewidget) {
+    XCONFIG += xmimewidget
+    include(../XMIMEWidget/xmimewidget.pri)
+}
+
 RESOURCES += \
     res.qrc
 
