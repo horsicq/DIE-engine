@@ -65,6 +65,13 @@
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
+         <widget class="QPushButton" name="pushButtonMIME">
+          <property name="text">
+           <string notr="true">MIME</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QPushButton" name="pushButtonHash">
           <property name="text">
            <string>Hash</string>

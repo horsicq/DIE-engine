@@ -89,6 +89,26 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
     adjustFile();
 }
 
+void GuiMainWindow::on_pushButtonMIME_clicked()
+{
+    QString sFileName=getCurrentFileName();
+
+    if(sFileName!="")
+    {
+        QFile file;
+        file.setFileName(sFileName);
+
+        if(XBinary::tryToOpen(&file))
+        {
+            DialogMIME dialogMIME(this,&file);
+
+            dialogMIME.exec();
+
+            file.close();
+        }
+    }
+}
+
 void GuiMainWindow::on_pushButtonHex_clicked()
 {
     QString sFileName=getCurrentFileName();

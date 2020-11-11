@@ -24,6 +24,7 @@
 #include "../global.h"
 #include <QMainWindow>
 #include <QFileDialog>
+#include "dialogmime.h"
 #include "dialoghex.h"
 #include "dialogentropy.h"
 #include "dialogsearchstrings.h"
@@ -49,6 +50,7 @@ private slots:
     void on_pushButtonExit_clicked();
     void on_pushButtonAbout_clicked();
     void on_pushButtonOptions_clicked();
+    void on_pushButtonMIME_clicked();
     void on_pushButtonHex_clicked();
     void on_pushButtonStrings_clicked();
     void on_pushButtonEntropy_clicked();
