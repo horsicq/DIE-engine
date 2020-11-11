@@ -73,3 +73,6 @@
 [submodule "XSingleApplication"]
 	path = XSingleApplication
 	url = https://github.com/horsicq/XSingleApplication.git
+[submodule "XMIMEWidget"]
+	path = XMIMEWidget
+	url = https://github.com/horsicq/XMIMEWidget.git
