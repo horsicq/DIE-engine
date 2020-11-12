@@ -23,8 +23,10 @@ FORMS += \
 
 include(../build.pri)
 
-XCONFIG += use_dex
-XCONFIG += use_archive
+!contains(XCONFIG, xmimewidget) {
+    XCONFIG += xmimewidget
+    include(../XMIMEWidget/xmimewidget.pri)
+}
 
 !contains(XCONFIG, formatwidgets) {
     XCONFIG += formatwidgets
@@ -34,11 +36,6 @@ XCONFIG += use_archive
 !contains(XCONFIG, xoptions) {
     XCONFIG += xoptions
     include(../XOptions/xoptions.pri)
-}
-
-!contains(XCONFIG, xmimewidget) {
-    XCONFIG += xmimewidget
-    include(../XMIMEWidget/xmimewidget.pri)
 }
 
 RESOURCES += \
