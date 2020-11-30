@@ -117,6 +117,7 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_ru.ts -qm  $SOURC
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/die_vi.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/die_zh.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/die_zh_TW.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_tr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/die_tr.qm
 
 rm -rf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg
 hdiutil create -format UDBZ -quiet -srcfolder $SOURCE_PATH/release/$BUILD_NAME $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg

@@ -85,6 +85,7 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_ru.ts -qm  $SOURC
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_vi.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_zh.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_zh_TW.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_tr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_tr.qm
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/die.sh
 echo "CWD=\$(dirname \$0)" >> release/$BUILD_NAME/die.sh

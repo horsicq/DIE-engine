@@ -11,7 +11,8 @@ TRANSLATIONS = \
 		translation/die_pt_BR.ts \
         translation/die_ko.ts \
         translation/die_zh.ts \
-        translation/die_zh_TW.ts
+        translation/die_zh_TW.ts\
+        translation/die_tr.ts
 
 FORMS += \
     ../FormatDialogs/dialogdump.ui \

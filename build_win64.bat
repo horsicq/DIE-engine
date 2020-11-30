@@ -93,6 +93,7 @@ xcopy %SOURCE_PATH%\Detect-It-Easy\info %SOURCE_PATH%\release\%BUILD_NAME%\info 
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_zh_TW.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\die_zh_TW.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_it.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\die_it.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_ko.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\die_ko.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_tr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\die_tr.qm
 
 cd %SOURCE_PATH%\release
 if exist %ZIP_NAME%.zip del %ZIP_NAME%.zip
