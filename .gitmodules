@@ -76,3 +76,6 @@
 [submodule "XMIMEWidget"]
 	path = XMIMEWidget
 	url = https://github.com/horsicq/XMIMEWidget.git
+[submodule "XHexView"]
+	path = XHexView
+	url = https://github.com/horsicq/XHexView.git
