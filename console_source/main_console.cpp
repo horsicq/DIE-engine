@@ -24,6 +24,7 @@
 #include <QCommandLineParser>
 #include <QCommandLineOption>
 #include "die_script.h"
+#include "entropyprocess.h"
 
 void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
 {
@@ -54,28 +55,52 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
             printf("%s:\n",sFileName.toLatin1().data());
         }
 
-        DiE_Script::SCAN_RESULT scanResult=pDieScript->scanFile(sFileName,pScanOptions);
-
-        QString sResult;
-
-        if(pScanOptions->bResultAsJSON)
+        if(pScanOptions->bShowEntropy)
         {
-            sResult=DiE_Script::scanResultToJsonString(&scanResult);
-        }
-        else if(pScanOptions->bResultAsXML)
-        {
-            sResult=DiE_Script::scanResultToXmlString(&scanResult);
+            QString sResult;
+
+            EntropyProcess::DATA epData=EntropyProcess::processRegionsFile(sFileName);
+
+            if(pScanOptions->bResultAsJSON)
+            {
+                sResult=EntropyProcess::dataToJsonString(&epData);
+            }
+            else if(pScanOptions->bResultAsXML)
+            {
+                sResult=EntropyProcess::dataToXmlString(&epData);
+            }
+            else
+            {
+                sResult=EntropyProcess::dataToPlainString(&epData);
+            }
+
+            printf("%s",sResult.toLatin1().data());
         }
         else
         {
-            sResult=DiE_Script::scanResultToPlainString(&scanResult);
-        }
+            QString sResult;
 
-        printf("%s",sResult.toLatin1().data());
+            DiE_Script::SCAN_RESULT scanResult=pDieScript->scanFile(sFileName,pScanOptions);
 
-        if(scanResult.listErrors.count())
-        {
-            printf("%s",DiE_Script::getErrorsString(&scanResult).toLatin1().data());
+            if(pScanOptions->bResultAsJSON)
+            {
+                sResult=DiE_Script::scanResultToJsonString(&scanResult);
+            }
+            else if(pScanOptions->bResultAsXML)
+            {
+                sResult=DiE_Script::scanResultToXmlString(&scanResult);
+            }
+            else
+            {
+                sResult=DiE_Script::scanResultToPlainString(&scanResult);
+            }
+
+            printf("%s",sResult.toLatin1().data());
+
+            if(scanResult.listErrors.count())
+            {
+                printf("%s",DiE_Script::getErrorsString(&scanResult).toLatin1().data());
+            }
         }
     }
 }
@@ -100,10 +125,12 @@ int main(int argc, char *argv[])
     parser.addPositionalArgument("file","The file to open.");
 
     QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",     "Deep scan.");
+    QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",      "Show entropy.");
     QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",          "Result as XML.");
     QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON.");
 
     parser.addOption(clDeepScan);
+    parser.addOption(clEntropy);
     parser.addOption(clResultAsXml);
     parser.addOption(clResultAsJson);
 
@@ -117,6 +144,7 @@ int main(int argc, char *argv[])
     scanOptions.bShowOptions=true;
     scanOptions.bShowVersion=true;
     scanOptions.bDeepScan=parser.isSet(clDeepScan);
+    scanOptions.bShowEntropy=parser.isSet(clEntropy);
     scanOptions.bResultAsXML=parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON=parser.isSet(clResultAsJson);
 

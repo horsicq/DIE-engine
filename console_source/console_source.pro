@@ -18,3 +18,8 @@ SOURCES += \
     XCONFIG += die_script
     include(../die_script/die_script.pri)
 }
+
+!contains(XCONFIG, entropyprocess) {
+    XCONFIG += entropyprocess
+    include(../XEntropyWidget/entropyprocess.pri)
+}
