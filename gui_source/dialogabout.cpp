@@ -84,6 +84,7 @@ USERINFO _userinfo_records[]=
     {QString("Fernando Mercês"),        QString("FernandoMerces")},
     {QString("JuJu2015"),               QString("JuJu2015")},
     {QString("Nomade"),                 QString("Nomade")},
+    {QString("JaeHuyng Lee"),           QString("JaeHuyngLee")},
 };
 
 DialogAbout::DialogAbout(QWidget *pParent) :
@@ -118,7 +119,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
         {
             QListWidgetItem *pItem=new QListWidgetItem;
             pItem->setText(_userinfo_records[i].sUser);
-            pItem->setData(Qt::UserRole,QString("://images/avatars/%1.bmp").arg(_userinfo_records[i].sImage));
+            pItem->setData(Qt::UserRole,QString("://images/avatars/%1.png").arg(_userinfo_records[i].sImage));
 
             ui->listWidgetThanks->insertItem(i,pItem);
         }
