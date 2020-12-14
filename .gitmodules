@@ -79,3 +79,6 @@
 [submodule "XHexView"]
 	path = XHexView
 	url = https://github.com/horsicq/XHexView.git
+[submodule "XDisasmView"]
+	path = XDisasmView
+	url = https://github.com/horsicq/XDisasmView.git
