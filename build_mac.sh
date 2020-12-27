@@ -1,5 +1,5 @@
 #!/bin/sh -x
-QT_PATH=$HOME/Qt/5.12.8/clang_64
+QT_PATH=$HOME/Qt/5.15.2/clang_64
 RELEASE_VERSION=$(cat "release_version.txt")
 echo $RELEASE_VERSION
 SOURCE_PATH=$PWD
@@ -118,6 +118,7 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_vi.ts -qm  $SOURC
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/die_zh.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/die_zh_TW.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_tr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/die_tr.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_es.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/die_es.qm
 
 rm -rf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg
 hdiutil create -format UDBZ -quiet -srcfolder $SOURCE_PATH/release/$BUILD_NAME $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg

@@ -1,5 +1,5 @@
 #!/bin/bash -x
-QT_PATH=$HOME/Qt/5.12.8/gcc_64
+QT_PATH=$HOME/Qt/5.15.2/gcc_64
 RELEASE_VERSION=$(cat "release_version.txt")
 echo $RELEASE_VERSION
 SOURCE_PATH=$PWD
@@ -45,28 +45,28 @@ cp -R $QT_PATH/plugins/platforms/libqxcb.so                     $SOURCE_PATH/rel
 cp -R $SOURCE_PATH/build/release/die                     		$SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $SOURCE_PATH/build/release/diec                     		$SOURCE_PATH/release/$BUILD_NAME/base/
 
-cp -R $QT_PATH/lib/libQt5Core.so.5.12.8                         $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5Svg.so.5.12.8                          $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5Gui.so.5.12.8                          $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5Widgets.so.5.12.8                      $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5OpenGL.so.5.12.8                       $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5DBus.so.5.12.8                         $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5XcbQpa.so.5.12.8                       $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5ScriptTools.so.5.12.8                  $SOURCE_PATH/release/$BUILD_NAME/base/
-cp -R $QT_PATH/lib/libQt5Script.so.5.12.8                       $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5Core.so.5.15.2                         $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5Svg.so.5.15.2                          $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5Gui.so.5.15.2                          $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5Widgets.so.5.15.2                      $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5OpenGL.so.5.15.2                       $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5DBus.so.5.15.2                         $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5XcbQpa.so.5.15.2                       $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5ScriptTools.so.5.15.2                  $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5Script.so.5.15.2                       $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libicui18n.so.56.1                           $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libicuuc.so.56.1                             $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libicudata.so.56.1                           $SOURCE_PATH/release/$BUILD_NAME/base/
 
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Core.so.5.12.8               $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Core.so.5
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Svg.so.5.12.8               	$SOURCE_PATH/release/$BUILD_NAME/base/libQt5Svg.so.5
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5.12.8                $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5.12.8            $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5.12.8             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5.12.8               $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5.12.8             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5ScriptTools.so.5.12.8        $SOURCE_PATH/release/$BUILD_NAME/base/libQt5ScriptTools.so.5
-mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Script.so.5.12.8             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Script.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Core.so.5.15.2               $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Core.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Svg.so.5.15.2               	$SOURCE_PATH/release/$BUILD_NAME/base/libQt5Svg.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5.15.2                $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5.15.2            $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5.15.2             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5.15.2               $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5.15.2             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5ScriptTools.so.5.15.2        $SOURCE_PATH/release/$BUILD_NAME/base/libQt5ScriptTools.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Script.so.5.15.2             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Script.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libicui18n.so.56.1                 $SOURCE_PATH/release/$BUILD_NAME/base/libicui18n.so.56
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libicuuc.so.56.1                   $SOURCE_PATH/release/$BUILD_NAME/base/libicuuc.so.56
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libicudata.so.56.1                 $SOURCE_PATH/release/$BUILD_NAME/base/libicudata.so.56
