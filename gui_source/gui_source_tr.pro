@@ -1,19 +1,19 @@
 TRANSLATIONS = \
-        translation/die_it.ts \
-        translation/die_ar.ts \
-        translation/die_de.ts \
-        translation/die_ja.ts \
-        translation/die_pl.ts \
-        translation/die_ru.ts \
-        translation/die_vi.ts \
-        translation/die_es.ts \
-        translation/die_fr.ts \
-		translation/die_pt_BR.ts \
-        translation/die_ko.ts \
-        translation/die_zh.ts \
-        translation/die_zh_TW.ts\
-        translation/die_tr.ts\
-        translation/die_he.ts
+    translation/die_it.ts \
+    translation/die_ar.ts \
+    translation/die_de.ts \
+    translation/die_ja.ts \
+    translation/die_pl.ts \
+    translation/die_ru.ts \
+    translation/die_vi.ts \
+    translation/die_es.ts \
+    translation/die_fr.ts \
+    translation/die_pt_BR.ts \
+    translation/die_ko.ts \
+    translation/die_zh.ts \
+    translation/die_zh_TW.ts\
+    translation/die_tr.ts\
+    translation/die_he.ts
 
 FORMS += \
     ../FormatDialogs/dialogdump.ui \
@@ -23,8 +23,12 @@ FORMS += \
     ../FormatDialogs/dialoginfo.ui \
     ../FormatDialogs/dialogsearch.ui \
     ../FormatDialogs/dialogsearchprocess.ui \
+    ../FormatDialogs/dialogtextinfo.ui \
     ../FormatWidgets/Binary/binarywidget.ui \
     ../FormatWidgets/Binary/dialogbinary.ui \
+    ../FormatWidgets/DEX/dexsectionheaderwidget.ui \
+    ../FormatWidgets/DEX/dexwidget.ui \
+    ../FormatWidgets/DEX/dialogdex.ui \
     ../FormatWidgets/ELF/dialogelf.ui \
     ../FormatWidgets/ELF/elfsectionheaderwidget.ui \
     ../FormatWidgets/ELF/elfwidget.ui \
@@ -52,22 +56,36 @@ FORMS += \
     ../QHexView/dialoghex.ui \
     ../QHexView/qhexviewwidget.ui \
     ../StaticScan/dialogstaticscan.ui \
+    ../StaticScan/dialogstaticscanprocess.ui \
     ../StaticScan/formresult.ui \
     ../StaticScan/formstaticscan.ui \
     ../StaticScan/heurwidget.ui \
+    ../XDisasm/dialogasmsignature.ui \
     ../XDisasm/dialogdisasm.ui \
     ../XDisasm/dialogdisasmlabels.ui \
     ../XDisasm/dialogdisasmprocess.ui \
-    ../XDisasm/dialogsignature.ui \
     ../XDisasm/xdisasmwidget.ui \
+    ../XDisasmView/dialogmultidisasm.ui \
+    ../XDisasmView/dialogmultidisasmsignature.ui \
+    ../XDisasmView/xmultidisasmwidget.ui \
     ../XEntropyWidget/dialogentropy.ui \
     ../XEntropyWidget/dialogentropyprocess.ui \
     ../XEntropyWidget/xentropywidget.ui \
     ../XHashWidget/dialoghash.ui \
+    ../XHashWidget/dialoghashprocess.ui \
     ../XHashWidget/xhashwidget.ui \
+    ../XHexView/dialoghexview.ui \
+    ../XHexView/xhexviewwidget.ui \
+    ../XMIMEWidget/dialogmime.ui \
+    ../XMIMEWidget/xmimewidget.ui \
     ../XMemoryMapWidget/dialogmemorymap.ui \
     ../XMemoryMapWidget/xmemorymapwidget.ui \
-    ../die_widget/dialoginfo.ui \
+    ../archive_widget/archive_widget.ui \
+    ../archive_widget/dialogarchive.ui \
+    ../archive_widget/dialogcreateviewmodel.ui \
+    ../archive_widget/dialogshowimage.ui \
+    ../archive_widget/dialogshowtext.ui \
+    ../archive_widget/dialogunpackfile.ui \
     ../die_widget/dialoglog.ui \
     ../die_widget/dialogsignatures.ui \
     ../die_widget/die_widget.ui \
@@ -79,22 +97,28 @@ FORMS += \
 HEADERS += \
     ../Controls/hexvalidator.h \
     ../Controls/subclassofqstyleditemdelegate.h \
+    ../Controls/xabstracttableview.h \
     ../Controls/xcomboboxex.h \
     ../Controls/xdatetimeeditx.h \
     ../Controls/xlineedithex.h \
-    ../Detect-It-Easy/diedll_win/diedll.h \
     ../FormatDialogs/dialogdumpprocess.h \
     ../FormatDialogs/dialoggotoaddress.h \
     ../FormatDialogs/dialoghexsignature.h \
     ../FormatDialogs/dialoginfo.h \
     ../FormatDialogs/dialogsearch.h \
     ../FormatDialogs/dialogsearchprocess.h \
+    ../FormatDialogs/dialogtextinfo.h \
     ../FormatDialogs/dumpprocess.h \
     ../FormatDialogs/searchprocess.h \
     ../FormatDialogs/xshortcuts.h \
     ../FormatWidgets/Binary/binary_defs.h \
     ../FormatWidgets/Binary/binarywidget.h \
     ../FormatWidgets/Binary/dialogbinary.h \
+    ../FormatWidgets/DEX/dex_defs.h \
+    ../FormatWidgets/DEX/dexprocessdata.h \
+    ../FormatWidgets/DEX/dexsectionheaderwidget.h \
+    ../FormatWidgets/DEX/dexwidget.h \
+    ../FormatWidgets/DEX/dialogdex.h \
     ../FormatWidgets/ELF/dialogelf.h \
     ../FormatWidgets/ELF/elf_defs.h \
     ../FormatWidgets/ELF/elfprocessdata.h \
@@ -155,9 +179,9 @@ HEADERS += \
     ../QHexView/dialoghex.h \
     ../QHexView/qhexview.h \
     ../QHexView/qhexviewwidget.h \
-    ../QYara/qyara.h \
     ../SpecAbstract/specabstract.h \
     ../StaticScan/dialogstaticscan.h \
+    ../StaticScan/dialogstaticscanprocess.h \
     ../StaticScan/formresult.h \
     ../StaticScan/formstaticscan.h \
     ../StaticScan/heurwidget.h \
@@ -165,29 +189,54 @@ HEADERS += \
     ../StaticScan/staticscanitem.h \
     ../StaticScan/staticscanitemmodel.h \
     ../XArchive/xarchive.h \
+    ../XArchive/xarchives.h \
     ../XArchive/xcab.h \
+    ../XArchive/xmachofat.h \
     ../XArchive/xrar.h \
     ../XArchive/xsevenzip.h \
     ../XArchive/xzip.h \
     ../XCapstone/xcapstone.h \
+    ../XDEX/xandroidbinary.h \
+    ../XDEX/xandroidbinary_def.h \
     ../XDEX/xdex.h \
     ../XDEX/xdex_def.h \
+    ../XDisasm/dialogasmsignature.h \
     ../XDisasm/dialogdisasm.h \
     ../XDisasm/dialogdisasmlabels.h \
     ../XDisasm/dialogdisasmprocess.h \
-    ../XDisasm/dialogsignature.h \
     ../XDisasm/xdisasm.h \
     ../XDisasm/xdisasmmodel.h \
     ../XDisasm/xdisasmwidget.h \
+    ../XDisasmView/dialogmultidisasm.h \
+    ../XDisasmView/dialogmultidisasmsignature.h \
+    ../XDisasmView/xdisasmview.h \
+    ../XDisasmView/xmultidisasmwidget.h \
     ../XEntropyWidget/dialogentropy.h \
     ../XEntropyWidget/dialogentropyprocess.h \
     ../XEntropyWidget/entropyprocess.h \
     ../XEntropyWidget/xentropywidget.h \
     ../XHashWidget/dialoghash.h \
+    ../XHashWidget/dialoghashprocess.h \
+    ../XHashWidget/hashprocess.h \
     ../XHashWidget/xhashwidget.h \
+    ../XHexView/dialoghexview.h \
+    ../XHexView/xhexview.h \
+    ../XHexView/xhexviewwidget.h \
+    ../XMIME/xmime.h \
+    ../XMIMEWidget/dialogmime.h \
+    ../XMIMEWidget/xmimewidget.h \
     ../XMemoryMapWidget/dialogmemorymap.h \
     ../XMemoryMapWidget/xmemorymapwidget.h \
     ../XOptions/xoptions.h \
+    ../XSingleApplication/xsingleapplication.h \
+    ../archive_widget/archive_widget.h \
+    ../archive_widget/createviewmodelprocess.h \
+    ../archive_widget/dialogarchive.h \
+    ../archive_widget/dialogcreateviewmodel.h \
+    ../archive_widget/dialogshowimage.h \
+    ../archive_widget/dialogshowtext.h \
+    ../archive_widget/dialogunpackfile.h \
+    ../archive_widget/unpackfileprocess.h \
     ../die_script/binary_script.h \
     ../die_script/die_script.h \
     ../die_script/die_scriptengine.h \
@@ -195,7 +244,6 @@ HEADERS += \
     ../die_script/mach_script.h \
     ../die_script/msdos_script.h \
     ../die_script/pe_script.h \
-    ../die_widget/dialoginfo.h \
     ../die_widget/dialoglog.h \
     ../die_widget/dialogsignatures.h \
     ../die_widget/die_highlighter.h \
@@ -210,23 +258,27 @@ HEADERS += \
 SOURCES += \
     ../Controls/hexvalidator.cpp \
     ../Controls/subclassofqstyleditemdelegate.cpp \
+    ../Controls/xabstracttableview.cpp \
     ../Controls/xcomboboxex.cpp \
     ../Controls/xdatetimeeditx.cpp \
     ../Controls/xlineedithex.cpp \
-    ../Detect-It-Easy/diedll_win/SDK/diecl.c \
-    ../Detect-It-Easy/diedll_win/SDK/dieclu.c \
-    ../Detect-It-Easy/diedll_win/SDK/simple.cpp \
     ../FormatDialogs/dialogdumpprocess.cpp \
     ../FormatDialogs/dialoggotoaddress.cpp \
     ../FormatDialogs/dialoghexsignature.cpp \
     ../FormatDialogs/dialoginfo.cpp \
     ../FormatDialogs/dialogsearch.cpp \
     ../FormatDialogs/dialogsearchprocess.cpp \
+    ../FormatDialogs/dialogtextinfo.cpp \
     ../FormatDialogs/dumpprocess.cpp \
     ../FormatDialogs/searchprocess.cpp \
     ../FormatWidgets/Binary/binary_defs.cpp \
     ../FormatWidgets/Binary/binarywidget.cpp \
     ../FormatWidgets/Binary/dialogbinary.cpp \
+    ../FormatWidgets/DEX/dex_defs.cpp \
+    ../FormatWidgets/DEX/dexprocessdata.cpp \
+    ../FormatWidgets/DEX/dexsectionheaderwidget.cpp \
+    ../FormatWidgets/DEX/dexwidget.cpp \
+    ../FormatWidgets/DEX/dialogdex.cpp \
     ../FormatWidgets/ELF/dialogelf.cpp \
     ../FormatWidgets/ELF/elf_defs.cpp \
     ../FormatWidgets/ELF/elfprocessdata.cpp \
@@ -279,10 +331,10 @@ SOURCES += \
     ../QHexView/dialoghex.cpp \
     ../QHexView/qhexview.cpp \
     ../QHexView/qhexviewwidget.cpp \
-    ../QYara/qyara.cpp \
     ../SpecAbstract/signatures.cpp \
     ../SpecAbstract/specabstract.cpp \
     ../StaticScan/dialogstaticscan.cpp \
+    ../StaticScan/dialogstaticscanprocess.cpp \
     ../StaticScan/formresult.cpp \
     ../StaticScan/formstaticscan.cpp \
     ../StaticScan/heurwidget.cpp \
@@ -290,28 +342,52 @@ SOURCES += \
     ../StaticScan/staticscanitem.cpp \
     ../StaticScan/staticscanitemmodel.cpp \
     ../XArchive/xarchive.cpp \
+    ../XArchive/xarchives.cpp \
     ../XArchive/xcab.cpp \
+    ../XArchive/xmachofat.cpp \
     ../XArchive/xrar.cpp \
     ../XArchive/xsevenzip.cpp \
     ../XArchive/xzip.cpp \
     ../XCapstone/xcapstone.cpp \
+    ../XDEX/xandroidbinary.cpp \
     ../XDEX/xdex.cpp \
+    ../XDisasm/dialogasmsignature.cpp \
     ../XDisasm/dialogdisasm.cpp \
     ../XDisasm/dialogdisasmlabels.cpp \
     ../XDisasm/dialogdisasmprocess.cpp \
-    ../XDisasm/dialogsignature.cpp \
     ../XDisasm/xdisasm.cpp \
     ../XDisasm/xdisasmmodel.cpp \
     ../XDisasm/xdisasmwidget.cpp \
+    ../XDisasmView/dialogmultidisasm.cpp \
+    ../XDisasmView/dialogmultidisasmsignature.cpp \
+    ../XDisasmView/xdisasmview.cpp \
+    ../XDisasmView/xmultidisasmwidget.cpp \
     ../XEntropyWidget/dialogentropy.cpp \
     ../XEntropyWidget/dialogentropyprocess.cpp \
     ../XEntropyWidget/entropyprocess.cpp \
     ../XEntropyWidget/xentropywidget.cpp \
     ../XHashWidget/dialoghash.cpp \
+    ../XHashWidget/dialoghashprocess.cpp \
+    ../XHashWidget/hashprocess.cpp \
     ../XHashWidget/xhashwidget.cpp \
+    ../XHexView/dialoghexview.cpp \
+    ../XHexView/xhexview.cpp \
+    ../XHexView/xhexviewwidget.cpp \
+    ../XMIME/xmime.cpp \
+    ../XMIMEWidget/dialogmime.cpp \
+    ../XMIMEWidget/xmimewidget.cpp \
     ../XMemoryMapWidget/dialogmemorymap.cpp \
     ../XMemoryMapWidget/xmemorymapwidget.cpp \
     ../XOptions/xoptions.cpp \
+    ../XSingleApplication/xsingleapplication.cpp \
+    ../archive_widget/archive_widget.cpp \
+    ../archive_widget/createviewmodelprocess.cpp \
+    ../archive_widget/dialogarchive.cpp \
+    ../archive_widget/dialogcreateviewmodel.cpp \
+    ../archive_widget/dialogshowimage.cpp \
+    ../archive_widget/dialogshowtext.cpp \
+    ../archive_widget/dialogunpackfile.cpp \
+    ../archive_widget/unpackfileprocess.cpp \
     ../console_source/main_console.cpp \
     ../die_script/binary_script.cpp \
     ../die_script/die_script.cpp \
@@ -320,7 +396,6 @@ SOURCES += \
     ../die_script/mach_script.cpp \
     ../die_script/msdos_script.cpp \
     ../die_script/pe_script.cpp \
-    ../die_widget/dialoginfo.cpp \
     ../die_widget/dialoglog.cpp \
     ../die_widget/dialogsignatures.cpp \
     ../die_widget/die_highlighter.cpp \
