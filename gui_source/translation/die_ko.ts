@@ -5,763 +5,765 @@
         <name>Archive_widget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">格式</translation>
+            <translation type="unfinished">형식</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished">过滤器</translation>
+            <translation type="unfinished">필터</translation>
         </message>
         <message>
             <source>Tree</source>
-            <translation>目录</translation>
+            <translation type="unfinished">
+            </translation>
         </message>
         <message>
             <source>Table</source>
-            <translation>表格</translation>
+            <translation type="unfinished">
+            </translation>
         </message>
         <message>
             <source>Open</source>
-            <translation>打开</translation>
+            <translation>열기</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">哈希</translation>
+            <translation type="unfinished">해시</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">复制</translation>
+            <translation type="unfinished">복사</translation>
         </message>
         <message>
             <source>File name</source>
-            <translation type="unfinished">文件名</translation>
+            <translation type="unfinished">파일 이름</translation>
         </message>
         <message>
             <source>Dump</source>
-            <translation type="unfinished">转储</translation>
+            <translation type="unfinished">덤프</translation>
         </message>
         <message>
             <source>Save file</source>
-            <translation type="unfinished">保存文件</translation>
+            <translation type="unfinished">파일 저장</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">无法保存文件</translation>
+            <translation type="unfinished">파일을 저장할 수 없습니다</translation>
         </message>
     </context>
     <context>
         <name>BinaryWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
     </context>
     <context>
         <name>CreateViewModelProcess</name>
         <message>
             <source>File</source>
-            <translation>文件</translation>
+            <translation>파일</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
     </context>
     <context>
         <name>DEXSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
     </context>
     <context>
         <name>DEXWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished">过滤器</translation>
+            <translation type="unfinished">필터</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
     </context>
     <context>
         <name>DIE_Widget</name>
         <message>
             <source>Signatures</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">深度扫描</translation>
+            <translation type="unfinished">정밀 검사</translation>
         </message>
         <message>
             <source>Log</source>
-            <translation type="unfinished">日志</translation>
+            <translation type="unfinished">로그</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished">停止</translation>
+            <translation type="unfinished">중지</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">毫秒</translation>
+            <translation type="unfinished">msec</translation>
         </message>
     </context>
     <context>
         <name>DialogAbout</name>
         <message>
             <source>About</source>
-            <translation type="unfinished">关于</translation>
+            <translation type="unfinished">정보</translation>
         </message>
         <message>
             <source>Donate</source>
-            <translation>捐赠</translation>
+            <translation>기부</translation>
         </message>
         <message>
             <source>Thanks</source>
-            <translation>致谢名单</translation>
+            <translation>감사</translation>
         </message>
         <message>
             <source>Libraries</source>
-            <translation type="unfinished">库</translation>
+            <translation type="unfinished">라이브러리</translation>
         </message>
         <message>
             <source>Check updates</source>
-            <translation>检查更新</translation>
+            <translation>업데이트 확인</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">确定</translation>
+            <translation type="unfinished">확인</translation>
         </message>
     </context>
     <context>
         <name>DialogArchive</name>
         <message>
             <source>Archive</source>
-            <translation type="unfinished">存档</translation>
+            <translation type="unfinished">아카이브</translation>
         </message>
     </context>
     <context>
         <name>DialogAsmSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">空格</translation>
+            <translation type="unfinished">공백</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">上位</translation>
+            <translation type="unfinished">위쪽</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">通配符</translation>
+            <translation type="unfinished">와일드카드</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">复制</translation>
+            <translation type="unfinished">복사</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">确定</translation>
+            <translation type="unfinished">확인</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">相关虚拟地址</translation>
+            <translation type="unfinished">상대적 가상 주소(RVA)</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">字节</translation>
+            <translation type="unfinished">Bytes</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">操作码</translation>
+            <translation type="unfinished">Opcode</translation>
         </message>
     </context>
     <context>
         <name>DialogCreateViewModel</name>
         <message>
             <source>Create view model</source>
-            <translation type="unfinished">创建视图模型</translation>
+            <translation type="unfinished">보기 모델 만들기</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasm</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasmLabels</name>
         <message>
             <source>Labels</source>
-            <translation type="unfinished">标签</translation>
+            <translation type="unfinished">레이블</translation>
         </message>
         <message>
             <source>Go to</source>
-            <translation type="unfinished">进入</translation>
+            <translation type="unfinished">이동</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">姓名</translation>
+            <translation type="unfinished">이름</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasmProcess</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Opcodes</source>
-            <translation>操作码</translation>
+            <translation>Opcodes</translation>
         </message>
         <message>
             <source>Calls</source>
-            <translation>调用</translation>
+            <translation>호출</translation>
         </message>
         <message>
             <source>Jumps</source>
-            <translation>跳过</translation>
+            <translation>점프</translation>
         </message>
         <message>
             <source>Ref to</source>
-            <translation>引用给</translation>
+            <translation>다음으로 참조</translation>
         </message>
         <message>
             <source>Ref from</source>
-            <translation>引用至</translation>
+            <translation>다음에서 참조</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
     </context>
     <context>
         <name>DialogDump</name>
         <message>
             <source>Dump</source>
-            <translation type="unfinished">转储</translation>
+            <translation type="unfinished">덤프</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
     </context>
     <context>
         <name>DialogDumpProcess</name>
         <message>
             <source>Dump</source>
-            <translation type="unfinished">转储</translation>
+            <translation type="unfinished">덤프</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
     </context>
     <context>
         <name>DialogEntropy</name>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogEntropyProcess</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">处理</translation>
+            <translation type="unfinished">프로세스</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
     </context>
     <context>
         <name>DialogGoToAddress</name>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">进入地址</translation>
+            <translation type="unfinished">주소로 이동</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">确定</translation>
+            <translation type="unfinished">확인</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">虚拟地址</translation>
+            <translation type="unfinished">가상 주소</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">值</translation>
+            <translation type="unfinished">값</translation>
         </message>
         <message>
             <source>File offset</source>
-            <translation type="unfinished">文件偏移</translation>
+            <translation type="unfinished">파일 오프셋</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">相关虚拟地址</translation>
+            <translation type="unfinished">상대적 가상 주소(RVA)</translation>
         </message>
         <message>
             <source>Invalid</source>
-            <translation>无效</translation>
+            <translation>무효함</translation>
         </message>
     </context>
     <context>
         <name>DialogHash</name>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">哈希</translation>
+            <translation type="unfinished">해시</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogHashProcess</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">处理</translation>
+            <translation type="unfinished">프로세스</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
     </context>
     <context>
         <name>DialogHex</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogHexSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">空格</translation>
+            <translation type="unfinished">공백</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">上位</translation>
+            <translation type="unfinished">위쪽</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">通配符</translation>
+            <translation type="unfinished">와일드카드</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">复制</translation>
+            <translation type="unfinished">복사</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">确定</translation>
+            <translation type="unfinished">확인</translation>
         </message>
     </context>
     <context>
         <name>DialogHexView</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogInfo</name>
         <message>
             <source>Info</source>
-            <translation type="unfinished">信息</translation>
+            <translation type="unfinished">정보</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogLog</name>
         <message>
             <source>Log</source>
-            <translation type="unfinished">日志</translation>
+            <translation type="unfinished">로그</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogMIME</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogMemoryMap</name>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogMultiDisasm</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogMultiDisasmSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">空格</translation>
+            <translation type="unfinished">공백</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">上位</translation>
+            <translation type="unfinished">위쪽</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">通配符</translation>
+            <translation type="unfinished">와일드카드</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">复制</translation>
+            <translation type="unfinished">복사</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">确定</translation>
+            <translation type="unfinished">확인</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">字节</translation>
+            <translation type="unfinished">Bytes</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">操作码</translation>
+            <translation type="unfinished">Opcode</translation>
         </message>
     </context>
     <context>
         <name>DialogOptions</name>
         <message>
             <source>Options</source>
-            <translation type="unfinished">选项</translation>
+            <translation type="unfinished">옵션</translation>
         </message>
         <message>
             <source>Save last directory</source>
-            <translation>保存到上次目录</translation>
+            <translation>마지막 디렉터리 저장</translation>
         </message>
         <message>
             <source>Stay on top</source>
-            <translation>保留在顶端</translation>
+            <translation>항상 위에 놓기</translation>
         </message>
         <message>
             <source>Save backup</source>
-            <translation>保存备份</translation>
+            <translation>백업 저장</translation>
         </message>
         <message>
             <source>Scan after open</source>
-            <translation>打开后扫描</translation>
+            <translation>열기 후 검색</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished">数据库</translation>
+            <translation type="unfinished">데이터베이스</translation>
         </message>
         <message>
             <source>Info</source>
-            <translation type="unfinished">信息</translation>
+            <translation type="unfinished">정보</translation>
         </message>
         <message>
             <source>Style</source>
-            <translation>样式</translation>
+            <translation>스타일</translation>
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished">语言</translation>
+            <translation type="unfinished">언어</translation>
         </message>
         <message>
             <source>Register</source>
-            <translation>注册</translation>
+            <translation>등록</translation>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished">清除</translation>
+            <translation type="unfinished">지우기</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">确定</translation>
+            <translation type="unfinished">확인</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>General</source>
-            <translation>常规</translation>
+            <translation>일반</translation>
         </message>
         <message>
             <source>Appearance</source>
-            <translation>外观</translation>
+            <translation>모양</translation>
         </message>
         <message>
             <source>Context</source>
-            <translation>上下文菜单</translation>
+            <translation>컨텍스트 메뉴</translation>
         </message>
         <message>
             <source>Information</source>
-            <translation>信息</translation>
+            <translation>정보</translation>
         </message>
         <message>
             <source>Please restart the application</source>
-            <translation>请重启应用程序</translation>
+            <translation>프로그램을 재시작하세요</translation>
         </message>
         <message>
             <source>Open directory</source>
-            <translation>打开目录</translation>
+            <translation>디렉터리 열기</translation>
         </message>
     </context>
     <context>
         <name>DialogProcessData</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">处理</translation>
+            <translation type="unfinished">프로세스</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
     </context>
     <context>
         <name>DialogSearch</name>
         <message>
             <source>Search</source>
-            <translation type="unfinished">搜索</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Search from</source>
-            <translation>搜索</translation>
+            <translation>다음에서 검색</translation>
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Match case</source>
-            <translation>区分大小写</translation>
+            <translation>대소 문자 구분</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">值</translation>
+            <translation type="unfinished">값</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">字节序</translation>
+            <translation type="unfinished">엔디언</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">确定</translation>
+            <translation type="unfinished">확인</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Begin</source>
-            <translation>开始</translation>
+            <translation>시작</translation>
         </message>
         <message>
             <source>Cursor</source>
-            <translation type="unfinished">光标</translation>
+            <translation type="unfinished">커서</translation>
         </message>
     </context>
     <context>
         <name>DialogSearchProcess</name>
         <message>
             <source>Search</source>
-            <translation type="unfinished">搜索</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
     </context>
     <context>
         <name>DialogSearchStrings</name>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogSearchStringsProcess</name>
         <message>
             <source>Search strings</source>
-            <translation>搜索字符串</translation>
+            <translation>문자열 검색</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Create view model</source>
-            <translation type="unfinished">创建视图模型</translation>
+            <translation type="unfinished">보기 모델 만들기</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
     </context>
     <context>
         <name>DialogSectionHeader</name>
         <message>
             <source>Section</source>
-            <translation type="unfinished">区块</translation>
+            <translation type="unfinished">섹션</translation>
         </message>
     </context>
     <context>
         <name>DialogShowImage</name>
         <message>
             <source>Image</source>
-            <translation type="unfinished">图片</translation>
+            <translation type="unfinished">이미지</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
@@ -773,18 +775,18 @@
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogSignatures</name>
         <message>
             <source>Signatures</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">保存</translation>
+            <translation type="unfinished">저장</translation>
         </message>
         <message>
             <source>Run</source>
@@ -793,11 +795,11 @@
         </message>
         <message>
             <source>Debug</source>
-            <translation type="unfinished">调试器</translation>
+            <translation type="unfinished">디버거</translation>
         </message>
         <message>
             <source>Read only</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Show type</source>
@@ -806,1030 +808,1015 @@
         </message>
         <message>
             <source>Show version</source>
-            <translation type="unfinished">版本</translation>
+            <translation type="unfinished">버전</translation>
         </message>
         <message>
             <source>Show options</source>
-            <translation type="unfinished">选项</translation>
+            <translation type="unfinished">옵션</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">深度扫描</translation>
+            <translation type="unfinished">정밀 검사</translation>
         </message>
         <message>
             <source>Clear result</source>
-            <translation type="unfinished">保存结果</translation>
+            <translation type="unfinished">결과 저장</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished">数据库</translation>
+            <translation type="unfinished">데이터베이스</translation>
         </message>
         <message>
             <source>Debugger</source>
-            <translation>调试器</translation>
+            <translation>디버거</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">毫秒</translation>
+            <translation type="unfinished">msec</translation>
         </message>
     </context>
     <context>
         <name>DialogStaticScan</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">递归扫描</translation>
+            <translation type="unfinished">재귀적 검색</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">深度扫描</translation>
+            <translation type="unfinished">정밀 검사</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
-        </message>
-        <message>
-            <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
-        </message>
-        <message>
-            <source>Text documents</source>
-            <translation type="unfinished">文本文件</translation>
-        </message>
-        <message>
-            <source>Save result</source>
-            <translation type="unfinished">保存结果</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogStaticScanProcess</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
         <message>
             <source>Text documents</source>
-            <translation type="unfinished">文本文件</translation>
+            <translation>텍스트 문서</translation>
         </message>
         <message>
             <source>Save result</source>
-            <translation type="unfinished">保存结果</translation>
+            <translation>결과 저장</translation>
         </message>
     </context>
     <context>
         <name>DialogTextInfo</name>
         <message>
             <source>Info</source>
-            <translation type="unfinished">信息</translation>
+            <translation type="unfinished">정보</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">关闭</translation>
+            <translation type="unfinished">닫기</translation>
         </message>
     </context>
     <context>
         <name>DialogUnpackFile</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">处理</translation>
+            <translation type="unfinished">프로세스</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
+            <translation type="unfinished">취소</translation>
         </message>
     </context>
     <context>
         <name>ELFSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
     </context>
     <context>
         <name>ELFWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
-        </message>
-        <message>
-            <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
-        </message>
-        <message>
-            <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
+        </message>
+        <message>
+            <source>Strings</source>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
+        </message>
+        <message>
+            <source>Readonly</source>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">编辑</translation>
+            <translation type="unfinished">편집</translation>
         </message>
     </context>
     <context>
         <name>EntropyProcess</name>
         <message>
             <source>packed</source>
-            <translation type="unfinished">打包</translation>
+            <translation>패킹됨</translation>
         </message>
         <message>
             <source>not packed</source>
-            <translation type="unfinished">未打包</translation>
+            <translation>패킹 안됨</translation>
         </message>
     </context>
     <context>
         <name>FormResult</name>
         <message>
             <source>Clear</source>
-            <translation type="unfinished">清除</translation>
+            <translation type="unfinished">지우기</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">保存</translation>
+            <translation type="unfinished">저장</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">毫秒</translation>
+            <translation type="unfinished">msec</translation>
         </message>
     </context>
     <context>
         <name>FormStaticScan</name>
         <message>
             <source>Recursive</source>
-            <translation>递归</translation>
+            <translation>재귀적</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">深度扫描</translation>
+            <translation type="unfinished">정밀 검사</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
     </context>
     <context>
         <name>FormatWidget</name>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">无法保存文件</translation>
+            <translation type="unfinished">파일을 저장할 수 없습니다</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">姓名</translation>
+            <translation type="unfinished">이름</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">偏移</translation>
+            <translation type="unfinished">오프셋</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">值</translation>
+            <translation type="unfinished">값</translation>
         </message>
     </context>
     <context>
         <name>FormatsWidget</name>
         <message>
             <source>File type</source>
-            <translation>文件类型</translation>
+            <translation>파일 유형</translation>
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">入口点</translation>
+            <translation type="unfinished">진입 지점</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Base address</source>
-            <translation>基址</translation>
+            <translation>기준 주소</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
         <message>
             <source>Export</source>
-            <translation>导出</translation>
+            <translation>내보내기</translation>
         </message>
         <message>
             <source>Import</source>
-            <translation>输入表</translation>
+            <translation>가져오기</translation>
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished">资源</translation>
+            <translation type="unfinished">리소스</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">区块</translation>
+            <translation type="unfinished">섹션</translation>
         </message>
         <message>
             <source>Manifest</source>
-            <translation>显示</translation>
+            <translation>Manifest</translation>
         </message>
         <message>
             <source>Version</source>
-            <translation>版本</translation>
+            <translation>버전</translation>
         </message>
         <message>
             <source>Commands</source>
-            <translation type="unfinished">命令</translation>
+            <translation type="unfinished">주석</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">区隔</translation>
+            <translation type="unfinished">세그먼트</translation>
         </message>
         <message>
             <source>Libraries</source>
-            <translation type="unfinished">库</translation>
+            <translation type="unfinished">라이브러리</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">字节序</translation>
+            <translation type="unfinished">엔디언</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">模式</translation>
+            <translation type="unfinished">모드</translation>
         </message>
         <message>
             <source>Architecture</source>
-            <translation type="unfinished">架构</translation>
+            <translation type="unfinished">아키텍처</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
     </context>
     <context>
         <name>GuiMainWindow</name>
         <message>
             <source>File name</source>
-            <translation type="unfinished">文件名</translation>
+            <translation type="unfinished">파일 이름</translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">哈希</translation>
+            <translation type="unfinished">해시</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished">选项</translation>
+            <translation type="unfinished">옵션</translation>
         </message>
         <message>
             <source>About</source>
-            <translation type="unfinished">关于</translation>
+            <translation type="unfinished">정보</translation>
         </message>
         <message>
             <source>Exit</source>
-            <translation>退出</translation>
+            <translation>끝내기</translation>
         </message>
         <message>
             <source>Open file</source>
-            <translation>打开文件</translation>
+            <translation>파일 열기</translation>
         </message>
         <message>
             <source>All files</source>
-            <translation type="unfinished">所有文件</translation>
+            <translation type="unfinished">모든 파일</translation>
         </message>
     </context>
     <context>
         <name>HeurWidget</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">递归扫描</translation>
+            <translation type="unfinished">재귀적 검색</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">深度扫描</translation>
+            <translation type="unfinished">정밀 검사</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
         <message>
             <source>Heuristic</source>
-            <translation>启发式</translation>
+            <translation>휴리스틱</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">姓名</translation>
+            <translation type="unfinished">이름</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">值</translation>
+            <translation type="unfinished">값</translation>
         </message>
     </context>
     <context>
         <name>LESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
     </context>
     <context>
         <name>LEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">编辑</translation>
+            <translation type="unfinished">편집</translation>
         </message>
     </context>
     <context>
         <name>MACHSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
     </context>
     <context>
         <name>MACHWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
         <message>
             <source>Commands</source>
-            <translation type="unfinished">命令</translation>
+            <translation type="unfinished">주석</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">区隔</translation>
+            <translation type="unfinished">세그먼트</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">区块</translation>
+            <translation type="unfinished">섹션</translation>
         </message>
         <message>
             <source>Libraries</source>
-            <translation type="unfinished">库</translation>
+            <translation type="unfinished">라이브러리</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>Library</source>
-            <translation type="unfinished">库</translation>
+            <translation type="unfinished">라이브러리</translation>
         </message>
     </context>
     <context>
         <name>MSDOSWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
     </context>
     <context>
         <name>NESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
     </context>
     <context>
         <name>NEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
-        </message>
-        <message>
-            <source>Detect</source>
-            <translation>检测</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">区隔</translation>
+            <translation type="unfinished">세그먼트</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
     </context>
     <context>
         <name>NFD_Widget</name>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">递归扫描</translation>
+            <translation type="unfinished">재귀적 검색</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">深度扫描</translation>
+            <translation type="unfinished">정밀 검사</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">扫描</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished">停止</translation>
+            <translation type="unfinished">중지</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">毫秒</translation>
+            <translation type="unfinished">msec</translation>
         </message>
     </context>
     <context>
         <name>PEProcessData</name>
         <message>
             <source>Resources</source>
-            <translation type="unfinished">资源</translation>
+            <translation type="unfinished">리소스</translation>
         </message>
     </context>
     <context>
         <name>PESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
     </context>
     <context>
         <name>PEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">启发式扫描</translation>
+            <translation type="unfinished">휴리스틱 검색</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">区块</translation>
+            <translation type="unfinished">섹션</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
         <message>
             <source>Calculate</source>
-            <translation>计算</translation>
+            <translation>계산</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">编辑</translation>
+            <translation type="unfinished">편집</translation>
         </message>
         <message>
             <source>Header</source>
-            <translation type="unfinished">报头</translation>
+            <translation type="unfinished">헤더</translation>
         </message>
     </context>
     <context>
         <name>QHexView</name>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">无法保存文件</translation>
+            <translation type="unfinished">파일을 저장할 수 없습니다</translation>
         </message>
     </context>
     <context>
         <name>QHexViewWidget</name>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">进入地址</translation>
+            <translation type="unfinished">주소로 이동</translation>
         </message>
         <message>
             <source>Cursor</source>
-            <translation type="unfinished">光标</translation>
+            <translation type="unfinished">커서</translation>
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">选中项</translation>
+            <translation type="unfinished">선택</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <translation type="unfinished">읽기 전용</translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">原始数据</translation>
+            <translation type="unfinished">로우 데이터</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">保存转储</translation>
+            <translation type="unfinished">덤프 저장</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">转储到文件</translation>
+            <translation type="unfinished">파일로 덤프</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished">查找</translation>
+            <translation type="unfinished">찾기</translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished">查找下一个</translation>
+            <translation type="unfinished">다음 찾기</translation>
         </message>
         <message>
             <source>Select</source>
-            <translation type="unfinished">选择</translation>
+            <translation type="unfinished">선택</translation>
         </message>
         <message>
             <source>Select all</source>
-            <translation type="unfinished">全选</translation>
+            <translation type="unfinished">모두 선택</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">复制</translation>
+            <translation type="unfinished">복사</translation>
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished">复制为十六进制</translation>
+            <translation type="unfinished">헥사로 복사</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
     </context>
     <context>
         <name>QObject</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">偏移</translation>
+            <translation type="unfinished">오프셋</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
         <message>
             <source>Read error</source>
-            <translation type="unfinished">读取错误</translation>
+            <translation type="unfinished">읽기 오류</translation>
         </message>
         <message>
             <source>Write error</source>
-            <translation>写入错误</translation>
+            <translation>쓰기 오류</translation>
         </message>
         <message>
             <source>Cannot open file</source>
-            <translation type="unfinished">无法打开文件</translation>
+            <translation type="unfinished">파일을 열 수 없습니다</translation>
         </message>
     </context>
     <context>
         <name>SearchStrings</name>
         <message>
             <source>Maximum</source>
-            <translation>最大值</translation>
+            <translation>최대</translation>
         </message>
         <message>
             <source>Read error</source>
-            <translation type="unfinished">读取错误</translation>
+            <translation type="unfinished">읽기 오류</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">偏移</translation>
+            <translation type="unfinished">오프셋</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
     </context>
     <context>
         <name>SearchStringsWidget</name>
         <message>
             <source>Search</source>
-            <translation type="unfinished">搜索</translation>
+            <translation type="unfinished">검색</translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished">过滤器</translation>
+            <translation type="unfinished">필터</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">保存</translation>
+            <translation type="unfinished">저장</translation>
         </message>
         <message>
             <source>Save file</source>
-            <translation type="unfinished">保存文件</translation>
+            <translation type="unfinished">파일 저장</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
         <message>
             <source>Text files</source>
-            <translation>文本文件</translation>
+            <translation>텍스트 파일</translation>
         </message>
         <message>
             <source>All files</source>
-            <translation type="unfinished">所有文件</translation>
+            <translation type="unfinished">모든 파일</translation>
         </message>
         <message>
             <source>Copy string</source>
-            <translation>复制字符串</translation>
+            <translation>문자열 복사</translation>
         </message>
         <message>
             <source>Copy address</source>
-            <translation>复制地址</translation>
+            <translation>주소 복사</translation>
         </message>
         <message>
             <source>Copy offset</source>
-            <translation>复印偏移</translation>
+            <translation>오프셋 복사</translation>
         </message>
         <message>
             <source>Copy size</source>
-            <translation>复印尺寸</translation>
+            <translation>크기 복사</translation>
         </message>
     </context>
     <context>
         <name>SpecAbstract</name>
         <message>
             <source>Unknown</source>
-            <translation>未知</translation>
+            <translation>알 수 없음</translation>
         </message>
         <message>
             <source>Header</source>
-            <translation type="unfinished">报头</translation>
+            <translation type="unfinished">헤더</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
         <message>
             <source>Archive record</source>
-            <translation>存档记录</translation>
-        </message>
-        <message>
-            <source>Archive</source>
-            <translation type="unfinished">存档</translation>
-        </message>
-        <message>
-            <source>Certificate</source>
-            <translation>证书</translation>
-        </message>
-        <message>
-            <source>Compiler</source>
-            <translation>编辑器</translation>
-        </message>
-        <message>
-            <source>Converter</source>
-            <translation>转换器</translation>
-        </message>
-        <message>
-            <source>Cryptor</source>
-            <translation>加密库</translation>
-        </message>
-        <message>
-            <source>Database</source>
-            <translation type="unfinished">数据库</translation>
-        </message>
-        <message>
-            <source>Debug data</source>
-            <translation>调试数据</translation>
-        </message>
-        <message>
-            <source>protection</source>
-            <translation>保护</translation>
-        </message>
-        <message>
-            <source>extender</source>
-            <translation>扩展器</translation>
-        </message>
-        <message>
-            <source>Format</source>
-            <translation>格式</translation>
-        </message>
-        <message>
-            <source>Generic</source>
-            <translation>通用</translation>
-        </message>
-        <message>
-            <source>Image</source>
-            <translation type="unfinished">图片</translation>
-        </message>
-        <message>
-            <source>Installer</source>
-            <translation>安装程序</translation>
-        </message>
-        <message>
-            <source>Installer data</source>
-            <translation>安装程序数据</translation>
-        </message>
-        <message>
-            <source>Joiner</source>
-            <translation>合并工具</translation>
-        </message>
-        <message>
-            <source>Language</source>
-            <translation type="unfinished">语言</translation>
-        </message>
-        <message>
-            <source>Library</source>
-            <translation type="unfinished">库</translation>
-        </message>
-        <message>
-            <source>Linker</source>
-            <translation>连接器</translation>
-        </message>
-        <message>
-            <source>compressor</source>
-            <translation>压缩软件</translation>
-        </message>
-        <message>
-            <source>Resources</source>
-            <translation type="unfinished">资源</translation>
-        </message>
-        <message>
-            <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation>아카이브 레코드</translation>
         </message>
         <message>
             <source>obfuscator</source>
-            <translation>模糊器</translation>
-        </message>
-        <message>
-            <source>Packer</source>
-            <translation>封隔器</translation>
+            <translation>난독화기</translation>
         </message>
         <message>
             <source>Tool</source>
-            <translation>工具</translation>
+            <translation>도구</translation>
+        </message>
+        <message>
+            <source>Certificate</source>
+            <translation>인증서</translation>
+        </message>
+        <message>
+            <source>Compiler</source>
+            <translation>컴파일러</translation>
+        </message>
+        <message>
+            <source>Converter</source>
+            <translation>변환기</translation>
+        </message>
+        <message>
+            <source>Cryptor</source>
+            <translation type="unfinished">
+            </translation>
+        </message>
+        <message>
+            <source>Database</source>
+            <translation type="unfinished">데이터베이스</translation>
+        </message>
+        <message>
+            <source>Debug data</source>
+            <translation>디버그 데이터</translation>
+        </message>
+        <message>
+            <source>protection</source>
+            <translation>보호</translation>
+        </message>
+        <message>
+            <source>extender</source>
+            <translation>확장기</translation>
+        </message>
+        <message>
+            <source>Format</source>
+            <translation>형식</translation>
+        </message>
+        <message>
+            <source>Generic</source>
+            <translation>일반</translation>
+        </message>
+        <message>
+            <source>Image</source>
+            <translation type="unfinished">이미지</translation>
+        </message>
+        <message>
+            <source>Installer</source>
+            <translation>인스톨러</translation>
+        </message>
+        <message>
+            <source>Installer data</source>
+            <translation>인스톨러 데이터</translation>
+        </message>
+        <message>
+            <source>Joiner</source>
+            <translation>병합기</translation>
+        </message>
+        <message>
+            <source>Language</source>
+            <translation type="unfinished">언어</translation>
+        </message>
+        <message>
+            <source>Library</source>
+            <translation type="unfinished">라이브러리</translation>
+        </message>
+        <message>
+            <source>Linker</source>
+            <translation>링커</translation>
+        </message>
+        <message>
+            <source>compressor</source>
+            <translation>압축기</translation>
+        </message>
+        <message>
+            <source>Packer</source>
+            <translation>패커</translation>
         </message>
         <message>
             <source>Protector</source>
-            <translation>保护器</translation>
+            <translation>프로텍터</translation>
         </message>
         <message>
             <source>Protector data</source>
-            <translation>保护器数据</translation>
+            <translation>프로텍터 데이터</translation>
         </message>
         <message>
             <source>data</source>
-            <translation>数据</translation>
+            <translation>데이터</translation>
         </message>
         <message>
             <source>Sign tool</source>
-            <translation>签名工具</translation>
+            <translation>서명 도구</translation>
         </message>
         <message>
             <source>Source code</source>
-            <translation>源代码</translation>
+            <translation>소스 코드</translation>
         </message>
         <message>
             <source>Stub</source>
-            <translation>末节区域</translation>
+            <translation>스텁</translation>
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">入口点</translation>
+            <translation type="unfinished">진입 지점</translation>
         </message>
         <message>
             <source>Section name</source>
-            <translation>分段名称</translation>
+            <translation>섹션 이름</translation>
         </message>
         <message>
             <source>Code section</source>
-            <translation>代码段</translation>
+            <translation>코드 섹션</translation>
         </message>
         <message>
             <source>Entry point section</source>
-            <translation>入口点段</translation>
+            <translation>진입 지점 섹션</translation>
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
+        </message>
+        <message>
+            <source>Archive</source>
+            <translation type="unfinished">아카이브</translation>
+        </message>
+        <message>
+            <source>Resources</source>
+            <translation type="unfinished">리소스</translation>
+        </message>
+        <message>
+            <source>Type</source>
+            <translation type="unfinished">유형</translation>
         </message>
     </context>
     <context>
         <name>StaticScan</name>
         <message>
             <source>File scan</source>
-            <translation>文件扫描</translation>
+            <translation>파일 검색</translation>
         </message>
         <message>
             <source>Directory scan</source>
-            <translation>目录扫描</translation>
+            <translation>디렉터리 검색</translation>
         </message>
         <message>
             <source>Device scan</source>
-            <translation>设备扫描</translation>
+            <translation>장치 검색</translation>
         </message>
     </context>
     <context>
         <name>StaticScanItemModel</name>
         <message>
             <source>Result</source>
-            <translation>结果</translation>
+            <translation>결과</translation>
         </message>
     </context>
     <context>
         <name>ToolsWidget</name>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">字符串</translation>
+            <translation type="unfinished">문자열</translation>
         </message>
     </context>
     <context>
@@ -1841,314 +1828,306 @@
         </message>
         <message>
             <source>Document</source>
-            <translation type="unfinished">文件</translation>
+            <translation type="unfinished">문서</translation>
         </message>
         <message>
             <source>Image</source>
-            <translation type="unfinished">图片</translation>
+            <translation type="unfinished">이미지</translation>
         </message>
         <message>
             <source>Archive</source>
-            <translation type="unfinished">存档</translation>
+            <translation type="unfinished">아카이브</translation>
         </message>
     </context>
     <context>
         <name>XComboBoxEx</name>
         <message>
             <source>Flags</source>
-            <translation>标志</translation>
+            <translation>Flags</translation>
         </message>
     </context>
     <context>
         <name>XDEX</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">报头</translation>
+            <translation type="unfinished">헤더</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
     </context>
     <context>
         <name>XDisasmModel</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">偏移</translation>
+            <translation type="unfinished">오프셋</translation>
         </message>
         <message>
             <source>Label</source>
-            <translation>标签</translation>
+            <translation>레이블</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">字节</translation>
+            <translation type="unfinished">Bytes</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">操作码</translation>
+            <translation type="unfinished">Opcode</translation>
         </message>
     </context>
     <context>
         <name>XDisasmView</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">偏移</translation>
+            <translation type="unfinished">오프셋</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">字节</translation>
+            <translation type="unfinished">Bytes</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">操作码</translation>
+            <translation type="unfinished">Opcode</translation>
         </message>
         <message>
             <source>Invalid opcode</source>
-            <translation type="unfinished">无效</translation>
+            <translation type="unfinished">무효함</translation>
         </message>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">进入地址</translation>
+            <translation type="unfinished">주소로 이동</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">转储到文件</translation>
+            <translation type="unfinished">파일로 덤프</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished">查找</translation>
+            <translation type="unfinished">찾기</translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished">查找下一个</translation>
+            <translation type="unfinished">다음 찾기</translation>
         </message>
         <message>
             <source>Select all</source>
-            <translation type="unfinished">全选</translation>
+            <translation type="unfinished">모두 선택</translation>
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished">复制为十六进制</translation>
+            <translation type="unfinished">헥사로 복사</translation>
         </message>
         <message>
             <source>Select</source>
-            <translation type="unfinished">选择</translation>
+            <translation type="unfinished">선택</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">复制</translation>
+            <translation type="unfinished">복사</translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">原始数据</translation>
+            <translation type="unfinished">로우 데이터</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">保存转储</translation>
+            <translation type="unfinished">덤프 저장</translation>
         </message>
     </context>
     <context>
         <name>XDisasmWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>Analyze</source>
-            <translation>分析</translation>
+            <translation>분석</translation>
         </message>
         <message>
             <source>Labels</source>
-            <translation type="unfinished">标签</translation>
+            <translation type="unfinished">레이블</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
         <message>
             <source>Go to</source>
-            <translation type="unfinished">进入</translation>
+            <translation type="unfinished">이동</translation>
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">入口点</translation>
+            <translation type="unfinished">진입 지점</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">虚拟地址</translation>
+            <translation type="unfinished">가상 주소</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">相关虚拟地址</translation>
+            <translation type="unfinished">상대적 가상 주소(RVA)</translation>
         </message>
         <message>
             <source>File offset</source>
-            <translation type="unfinished">文件偏移</translation>
+            <translation type="unfinished">파일 오프셋</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">复制</translation>
+            <translation type="unfinished">복사</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">转储到文件</translation>
+            <translation type="unfinished">파일로 덤프</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
+            <translation type="unfinished">Disasm</translation>
         </message>
         <message>
             <source>To data</source>
-            <translation>到数据</translation>
+            <translation>데이터로 변환</translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">原始数据</translation>
+            <translation type="unfinished">로우 데이터</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">保存转储</translation>
+            <translation type="unfinished">덤프 저장</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">错误</translation>
+            <translation type="unfinished">오류</translation>
         </message>
     </context>
     <context>
         <name>XELF</name>
         <message>
             <source>Segment</source>
-            <translation type="unfinished">段</translation>
+            <translation type="unfinished">세그먼트</translation>
         </message>
     </context>
     <context>
         <name>XEntropyWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>Total</source>
-            <translation>总计</translation>
+            <translation>전체</translation>
         </message>
         <message>
             <source>Status</source>
-            <translation>状态</translation>
+            <translation>상태</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">偏移</translation>
+            <translation type="unfinished">오프셋</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">信息熵</translation>
+            <translation type="unfinished">엔트로피</translation>
         </message>
         <message>
             <source>Regions</source>
-            <translation>区域</translation>
+            <translation>영역</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">保存</translation>
+            <translation type="unfinished">저장</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">字节</translation>
+            <translation type="unfinished">Bytes</translation>
         </message>
         <message>
             <source>Byte</source>
-            <translation>字节</translation>
+            <translation>Byte</translation>
         </message>
         <message>
             <source>Count</source>
-            <translation>计数</translation>
+            <translation>카운트</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">姓名</translation>
-        </message>
-        <message>
-            <source>packed</source>
-            <translation type="unfinished">打包</translation>
-        </message>
-        <message>
-            <source>not packed</source>
-            <translation type="unfinished">未打包</translation>
+            <translation type="unfinished">이름</translation>
         </message>
         <message>
             <source>Images</source>
-            <translation>影像</translation>
+            <translation>이미지</translation>
         </message>
         <message>
             <source>Documents</source>
-            <translation>文件</translation>
+            <translation>문서</translation>
         </message>
         <message>
             <source>Save diagram</source>
-            <translation>保存图表</translation>
+            <translation>도표 저장</translation>
         </message>
     </context>
     <context>
         <name>XHashWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>Method</source>
-            <translation>方法</translation>
+            <translation>방식</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">偏移</translation>
+            <translation type="unfinished">오프셋</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">重新加载</translation>
+            <translation type="unfinished">재호출</translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">哈希</translation>
+            <translation type="unfinished">해시</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">姓名</translation>
+            <translation type="unfinished">이름</translation>
         </message>
     </context>
     <context>
         <name>XHexView</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>Symbols</source>
@@ -2157,73 +2136,73 @@
         </message>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">进入地址</translation>
+            <translation type="unfinished">주소로 이동</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">转储到文件</translation>
+            <translation type="unfinished">파일로 덤프</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">签名</translation>
+            <translation type="unfinished">서명</translation>
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished">查找</translation>
+            <translation type="unfinished">찾기</translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished">查找下一个</translation>
+            <translation type="unfinished">다음 찾기</translation>
         </message>
         <message>
             <source>Select all</source>
-            <translation type="unfinished">全选</translation>
+            <translation type="unfinished">모두 선택</translation>
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished">复制为十六进制</translation>
+            <translation type="unfinished">헥사로 복사</translation>
         </message>
         <message>
             <source>Select</source>
-            <translation type="unfinished">选择</translation>
+            <translation type="unfinished">선택</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">复制</translation>
+            <translation type="unfinished">복사</translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">原始数据</translation>
+            <translation type="unfinished">로우 데이터</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">保存转储</translation>
+            <translation type="unfinished">덤프 저장</translation>
         </message>
     </context>
     <context>
         <name>XHexViewWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">格式</translation>
+            <translation type="unfinished">형식</translation>
         </message>
         <message>
             <source>Cursor</source>
-            <translation type="unfinished">光标</translation>
+            <translation type="unfinished">커서</translation>
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">选中项</translation>
+            <translation type="unfinished">선택</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
     </context>
     <context>
         <name>XMACH</name>
         <message>
             <source>Segment</source>
-            <translation type="unfinished">段</translation>
+            <translation type="unfinished">세그먼트</translation>
         </message>
     </context>
     <context>
@@ -2238,104 +2217,104 @@
         <name>XMSDOS</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">报头</translation>
+            <translation type="unfinished">헤더</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
     </context>
     <context>
         <name>XMemoryMapWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>File offset</source>
-            <translation type="unfinished">文件偏移</translation>
+            <translation type="unfinished">파일 오프셋</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">虚拟地址</translation>
+            <translation type="unfinished">가상 주소</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">相关虚拟地址</translation>
+            <translation type="unfinished">상대적 가상 주소(RVA)</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">模式</translation>
+            <translation type="unfinished">모드</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">字节序</translation>
+            <translation type="unfinished">엔디언</translation>
         </message>
         <message>
             <source>Architecture</source>
-            <translation type="unfinished">架构</translation>
+            <translation type="unfinished">아키텍처</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">内存映射</translation>
+            <translation type="unfinished">메모리 맵</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">姓名</translation>
+            <translation type="unfinished">이름</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">偏移</translation>
+            <translation type="unfinished">오프셋</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">地址</translation>
+            <translation type="unfinished">주소</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
     </context>
     <context>
         <name>XMultiDisasmWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">格式</translation>
+            <translation type="unfinished">형식</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">类型</translation>
+            <translation type="unfinished">유형</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">模式</translation>
+            <translation type="unfinished">모드</translation>
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">选中项</translation>
+            <translation type="unfinished">선택</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
+            <translation type="unfinished">크기</translation>
         </message>
     </context>
     <context>
         <name>XPE</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">报头</translation>
+            <translation type="unfinished">헤더</translation>
         </message>
         <message>
             <source>Section</source>
-            <translation type="unfinished">区块</translation>
+            <translation type="unfinished">섹션</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">覆盖</translation>
+            <translation type="unfinished">오버레이</translation>
         </message>
         <message>
             <source>Cannot open file</source>
-            <translation type="unfinished">无法打开文件</translation>
+            <translation type="unfinished">파일을 열 수 없습니다</translation>
         </message>
     </context>
 </TS>
