@@ -60,6 +60,7 @@ function fiximport
     fixlibrary QtConcurrent $1
 	fixlibrary QtScript $1
     fixlibrary QtScriptTools $1
+    fixlibrary QtNetwork $1
 }
 
 function copylibrary
@@ -97,6 +98,7 @@ copylibrary QtOpenGL
 copylibrary QtConcurrent
 copylibrary QtScript
 copylibrary QtScriptTools
+copylibrary QtNetwork
 
 copyplugin platforms libqcocoa
 copyplugin platforms libqminimal
