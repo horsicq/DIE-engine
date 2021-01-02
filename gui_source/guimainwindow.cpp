@@ -41,6 +41,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     listIDs.append(XOptions::ID_STAYONTOP);
     listIDs.append(XOptions::ID_SCANAFTEROPEN);
     listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
+    listIDs.append(XOptions::ID_SINGLEAPPLICATION);
     listIDs.append(XOptions::ID_LASTDIRECTORY);
     listIDs.append(XOptions::ID_SAVEBACKUP);
     listIDs.append(XOptions::ID_DBPATH);
@@ -120,10 +121,10 @@ void GuiMainWindow::on_pushButtonHex_clicked()
 
         if(XBinary::tryToOpen(&file))
         {
-            QHexView::OPTIONS hexOptions={};
-            hexOptions.sBackupFileName=XBinary::getBackupName(&file);
+            XHexView::OPTIONS hexOptions={};
+//            hexOptions.sBackupFileName=XBinary::getBackupName(&file);
 
-            DialogHex dialogHex(this,&file,&hexOptions);
+            DialogHexView dialogHex(this,&file,hexOptions);
 
             dialogHex.exec();
 

@@ -39,6 +39,7 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
     pOptions->setCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
     pOptions->setCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
     pOptions->setCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
+    pOptions->setCheckBox(ui->checkBoxSingleApplication,XOptions::ID_SINGLEAPPLICATION);
 
     pOptions->setCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
     pOptions->setComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
@@ -78,6 +79,7 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
     pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
     pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
+    pOptions->getCheckBox(ui->checkBoxSingleApplication,XOptions::ID_SINGLEAPPLICATION);
 
     pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
     pOptions->getComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);

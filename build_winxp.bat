@@ -54,6 +54,7 @@ cd ..
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\lang
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\platforms
+mkdir %SOURCE_PATH%\release\%BUILD_NAME%\imageformats
 
 copy %SOURCE_PATH%\build\release\%GUIEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %SOURCE_PATH%\build\release\%CONEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
@@ -64,7 +65,12 @@ copy %QT_PATH%\bin\Qt5OpenGL.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %QT_PATH%\bin\Qt5Svg.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %QT_PATH%\bin\Qt5Script.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %QT_PATH%\bin\Qt5ScriptTools.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %QT_PATH%\bin\Qt5Network.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %QT_PATH%\plugins\platforms\qwindows.dll %SOURCE_PATH%\release\%BUILD_NAME%\platforms\
+copy %QT_PATH%\plugins\imageformats\qjpeg.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
+copy %QT_PATH%\plugins\imageformats\qtiff.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
+copy %QT_PATH%\plugins\imageformats\qico.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
+copy %QT_PATH%\plugins\imageformats\qgif.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
 
 copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcp120.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcr120.dll %SOURCE_PATH%\release\%BUILD_NAME%\

@@ -35,7 +35,7 @@
      <item>
       <widget class="QStackedWidget" name="stackedWidgetOptions">
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="pageGeneral">
         <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -69,6 +69,13 @@
           <widget class="QCheckBox" name="checkBoxSaveBackup">
            <property name="text">
             <string>Save backup</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBoxSingleApplication">
+           <property name="text">
+            <string>Single application</string>
            </property>
           </widget>
          </item>

@@ -22,6 +22,7 @@
 
 #include <QApplication>
 #include <QStyleFactory>
+#include "xsingleapplication.h"
 
 int main(int argc, char *argv[])
 {
@@ -39,11 +40,38 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
-    QApplication a(argc, argv);
+    XSingleApplication a(argc,argv);
 
-    XOptions::adjustApplicationView(X_OPTIONSFILE,X_APPLICATIONFILENAME);
+    XOptions xOptions;
 
-    GuiMainWindow w;
-    w.show();
-    return a.exec();
+    xOptions.setName(X_OPTIONSFILE);
+
+    QList<XOptions::ID> listIDs;
+
+    listIDs.append(XOptions::ID_STYLE);
+    listIDs.append(XOptions::ID_LANG);
+    listIDs.append(XOptions::ID_QSS);
+    listIDs.append(XOptions::ID_SINGLEAPPLICATION);
+
+    xOptions.setValueIDs(listIDs);
+    xOptions.load();
+
+    if(xOptions.isSingleApplication())
+    {
+        a.enableSingleInstance();
+    }
+
+    int nResult=0;
+
+    if(a.isPrimary())
+    {
+        XOptions::adjustApplicationView(X_APPLICATIONFILENAME,&xOptions);
+
+        GuiMainWindow w;
+        w.show();
+
+        nResult=a.exec();
+    }
+
+    return nResult;
 }

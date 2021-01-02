@@ -25,7 +25,7 @@
 #include <QMainWindow>
 #include <QFileDialog>
 #include "dialogmime.h"
-#include "dialoghex.h"
+#include "dialoghexview.h"
 #include "dialogentropy.h"
 #include "dialogsearchstrings.h"
 #include "dialogmemorymap.h"
