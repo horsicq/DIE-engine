@@ -82,3 +82,6 @@
 [submodule "XDisasmView"]
 	path = XDisasmView
 	url = https://github.com/horsicq/XDisasmView.git
+[submodule "XGithub"]
+	path = XGithub
+	url = https://github.com/horsicq/XGithub.git
