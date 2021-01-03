@@ -57,7 +57,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     {
         QString sFileName=QCoreApplication::arguments().at(1);
 
-        processFile(sFileName,true);
+        processFile(sFileName);
     }
 }
 
@@ -224,10 +224,10 @@ void GuiMainWindow::adjustFile()
     xOptions.setLastDirectory(sFileName);
 }
 
-void GuiMainWindow::processFile(QString sFileName, bool bScan)
+void GuiMainWindow::processFile(QString sFileName)
 {
     ui->lineEditFileName->setText(sFileName);
-    ui->widgetFormats->setData(sFileName,bScan);
+    ui->widgetFormats->setData(sFileName,xOptions.isScanAfterOpen());
 
     adjustFile();
 }
@@ -256,10 +256,7 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
 
             sFileName=XBinary::convertFileName(sFileName);
 
-            if(xOptions.isScanAfterOpen())
-            {
-                processFile(sFileName,xOptions.isScanAfterOpen());
-            }
+            processFile(sFileName);
         }
     }
 }
@@ -272,9 +269,6 @@ void GuiMainWindow::on_pushButtonOpenFile_clicked()
 
     if(!sFileName.isEmpty())
     {
-        if(xOptions.isScanAfterOpen())
-        {
-            processFile(sFileName,xOptions.isScanAfterOpen());
-        }
+        processFile(sFileName);
     }
 }

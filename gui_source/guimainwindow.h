@@ -61,7 +61,8 @@ private slots:
     void adjust();
     void adjustFile();
 
-    void processFile(QString sFileName, bool bScan);
+public slots:
+    void processFile(QString sFileName);
 
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;

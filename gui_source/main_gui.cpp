@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
-    XSingleApplication a(argc,argv);
+    XSingleApplication app(argc,argv);
 
     XOptions xOptions;
 
@@ -58,19 +58,22 @@ int main(int argc, char *argv[])
 
     if(xOptions.isSingleApplication())
     {
-        a.enableSingleInstance();
+        app.enableSingleInstance();
     }
 
     int nResult=0;
 
-    if(a.isPrimary())
+    if(app.isPrimary())
     {
         XOptions::adjustApplicationView(X_APPLICATIONFILENAME,&xOptions);
 
-        GuiMainWindow w;
-        w.show();
+        GuiMainWindow mainWindow;
 
-        nResult=a.exec();
+        QObject::connect(&app,SIGNAL(messageText(QString)),&mainWindow,SLOT(processFile(QString)));
+
+        mainWindow.show();
+
+        nResult=app.exec();
     }
 
     return nResult;
