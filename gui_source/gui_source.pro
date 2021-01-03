@@ -40,7 +40,7 @@ include(../build.pri)
 
 !contains(XCONFIG, xsingleapplication) {
     XCONFIG += xsingleapplication
-    include(../../_mylibs/XSingleApplication/xsingleapplication.pri)
+    include(../XSingleApplication/xsingleapplication.pri)
 }
 
 RESOURCES += \
