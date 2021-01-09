@@ -20,6 +20,7 @@ del %SOURCE_PATH%\build_libs\.qmake.stash
 del %SOURCE_PATH%\gui_source\.qmake.stash
 del %SOURCE_PATH%\console_source\.qmake.stash
 
+rmdir /s /q %SOURCE_PATH%\XCapstone\3rdparty\Capstone\release
 rmdir /s /q %SOURCE_PATH%\XArchive\3rdparty\lzma\release
 rmdir /s /q %SOURCE_PATH%\XArchive\3rdparty\zlib\release
 rmdir /s /q %SOURCE_PATH%\XArchive\3rdparty\bzip2\release
