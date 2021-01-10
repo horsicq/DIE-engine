@@ -575,6 +575,10 @@
             <translation>Guardar copia de seguridad</translation>
         </message>
         <message>
+            <source>Single application</source>
+            <translation>Aplicación única</translation>
+        </message>
+        <message>
             <source>Scan after open</source>
             <translation>Escanear después de abrir</translation>
         </message>
@@ -768,8 +772,7 @@
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
@@ -788,8 +791,7 @@
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debug</source>
@@ -801,8 +803,7 @@
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Show version</source>
@@ -915,16 +916,12 @@
             <translation type="unfinished">Recargar</translation>
         </message>
         <message>
-            <source>Readonly</source>
-            <translation type="unfinished">Solo lectura</translation>
+            <source>Disasm</source>
+            <translation type="unfinished">Desensamblar</translation>
         </message>
         <message>
             <source>Strings</source>
             <translation type="unfinished">Textos</translation>
-        </message>
-        <message>
-            <source>Disasm</source>
-            <translation type="unfinished">Desensamblar</translation>
         </message>
         <message>
             <source>Memory map</source>
@@ -937,6 +934,10 @@
         <message>
             <source>Heuristic scan</source>
             <translation type="unfinished">Escaneo heurístico</translation>
+        </message>
+        <message>
+            <source>Readonly</source>
+            <translation type="unfinished">Solo lectura</translation>
         </message>
         <message>
             <source>Edit</source>
@@ -1468,7 +1469,7 @@
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">Selección</translation>
+            <translation>Selección</translation>
         </message>
         <message>
             <source>Size</source>
@@ -1647,8 +1648,12 @@
             <translation>Registro de archivo</translation>
         </message>
         <message>
-            <source>Archive</source>
-            <translation type="unfinished">Archivo</translation>
+            <source>obfuscator</source>
+            <translation>ofuscador</translation>
+        </message>
+        <message>
+            <source>Tool</source>
+            <translation>Herramienta</translation>
         </message>
         <message>
             <source>Certificate</source>
@@ -1723,24 +1728,8 @@
             <translation>compresor</translation>
         </message>
         <message>
-            <source>Resources</source>
-            <translation type="unfinished">Recursos</translation>
-        </message>
-        <message>
-            <source>Type</source>
-            <translation type="unfinished">Tipo</translation>
-        </message>
-        <message>
-            <source>obfuscator</source>
-            <translation>ofuscador</translation>
-        </message>
-        <message>
             <source>Packer</source>
             <translation>Packer</translation>
-        </message>
-        <message>
-            <source>Tool</source>
-            <translation>Herramienta</translation>
         </message>
         <message>
             <source>Protector</source>
@@ -1786,6 +1775,18 @@
             <source>String</source>
             <translation type="unfinished">Texto</translation>
         </message>
+        <message>
+            <source>Archive</source>
+            <translation type="unfinished">Archivo</translation>
+        </message>
+        <message>
+            <source>Resources</source>
+            <translation type="unfinished">Recursos</translation>
+        </message>
+        <message>
+            <source>Type</source>
+            <translation type="unfinished">Tipo</translation>
+        </message>
     </context>
     <context>
         <name>StaticScan</name>
@@ -1820,8 +1821,7 @@
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Document</source>
@@ -2128,8 +2128,7 @@
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Go to address</source>
@@ -2181,18 +2180,6 @@
         <message>
             <source>Form</source>
             <translation type="unfinished">Formato</translation>
-        </message>
-        <message>
-            <source>Cursor</source>
-            <translation type="unfinished">Cursor</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Selección</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Tamaño</translation>
         </message>
     </context>
     <context>
@@ -2284,14 +2271,6 @@
         <message>
             <source>Mode</source>
             <translation type="unfinished">Modo</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Selección</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Tamaño</translation>
         </message>
     </context>
     <context>

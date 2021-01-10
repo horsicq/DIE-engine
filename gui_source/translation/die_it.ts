@@ -17,18 +17,15 @@
         </message>
         <message>
             <source>Tree</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Table</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Scan</source>
@@ -86,8 +83,7 @@
         <name>CreateViewModelProcess</name>
         <message>
             <source>File</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Size</source>
@@ -579,6 +575,10 @@
             <translation>Salva backup</translation>
         </message>
         <message>
+            <source>Single application</source>
+            <translation>Singola applicazione</translation>
+        </message>
+        <message>
             <source>Scan after open</source>
             <translation>Scansione dopo apertura</translation>
         </message>
@@ -772,8 +772,7 @@
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
@@ -792,8 +791,7 @@
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debug</source>
@@ -805,8 +803,7 @@
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Show version</source>
@@ -1472,7 +1469,7 @@
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">Selezione</translation>
+            <translation>Selezione</translation>
         </message>
         <message>
             <source>Size</source>
@@ -1672,8 +1669,7 @@
         </message>
         <message>
             <source>Cryptor</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Database</source>
@@ -1825,8 +1821,7 @@
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Document</source>
@@ -2133,8 +2128,7 @@
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Go to address</source>
@@ -2186,18 +2180,6 @@
         <message>
             <source>Form</source>
             <translation type="unfinished">Formato</translation>
-        </message>
-        <message>
-            <source>Cursor</source>
-            <translation type="unfinished">Cursore</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Selezione</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Dimensioni</translation>
         </message>
     </context>
     <context>
@@ -2289,14 +2271,6 @@
         <message>
             <source>Mode</source>
             <translation type="unfinished">Modalità</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Selezione</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Dimensioni</translation>
         </message>
     </context>
     <context>

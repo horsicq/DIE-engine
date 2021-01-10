@@ -705,53 +705,58 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="107"/>
-        <source>Scan after open</source>
+        <location filename="../dialogoptions.ui" line="78"/>
+        <source>Single application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogoptions.ui" line="114"/>
+        <source>Scan after open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogoptions.ui" line="121"/>
         <location filename="../dialogoptions.cpp" line="33"/>
         <source>Scan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="148"/>
+        <location filename="../dialogoptions.ui" line="155"/>
         <source>Database</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="179"/>
+        <location filename="../dialogoptions.ui" line="186"/>
         <source>Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="239"/>
+        <location filename="../dialogoptions.ui" line="246"/>
         <source>Style</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="287"/>
+        <location filename="../dialogoptions.ui" line="294"/>
         <source>Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="342"/>
+        <location filename="../dialogoptions.ui" line="349"/>
         <source>Register</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="349"/>
+        <location filename="../dialogoptions.ui" line="356"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="405"/>
+        <location filename="../dialogoptions.ui" line="412"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="412"/>
+        <location filename="../dialogoptions.ui" line="419"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -771,18 +776,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.cpp" line="93"/>
+        <location filename="../dialogoptions.cpp" line="95"/>
         <source>Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.cpp" line="93"/>
+        <location filename="../dialogoptions.cpp" line="95"/>
         <source>Please restart the application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogoptions.cpp" line="109"/>
-        <location filename="../dialogoptions.cpp" line="139"/>
+        <location filename="../dialogoptions.cpp" line="111"/>
+        <location filename="../dialogoptions.cpp" line="141"/>
         <source>Open directory</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1397,12 +1402,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.cpp" line="270"/>
+        <location filename="../guimainwindow.cpp" line="268"/>
         <source>Open file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.cpp" line="270"/>
+        <location filename="../guimainwindow.cpp" line="268"/>
         <source>All files</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2044,20 +2049,20 @@
         <location filename="../../SpecAbstract/specabstract.cpp" line="180"/>
         <location filename="../../SpecAbstract/specabstract.cpp" line="184"/>
         <location filename="../../SpecAbstract/specabstract.cpp" line="224"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="886"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="890"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="887"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="891"/>
         <source>Unknown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="170"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="891"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="892"/>
         <source>Header</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="171"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="892"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="893"/>
         <source>Overlay</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2206,44 +2211,44 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="893"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="894"/>
         <source>Entry point</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="894"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="895"/>
         <source>Section name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="896"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="897"/>
         <source>Code section</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="897"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="898"/>
         <source>Entry point section</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="898"/>
         <location filename="../../SpecAbstract/specabstract.cpp" line="899"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="903"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="900"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="904"/>
         <source>String</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="901"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="902"/>
         <source>Archive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="902"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="903"/>
         <source>Resources</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="904"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="905"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2377,62 +2382,62 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="203"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="205"/>
         <source>Invalid opcode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="442"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="444"/>
         <source>Go to address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="446"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="448"/>
         <source>Dump to file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="450"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="452"/>
         <source>Signature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="454"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="456"/>
         <source>Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="458"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="460"/>
         <source>Find next</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="462"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="464"/>
         <source>Select all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="466"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="468"/>
         <source>Copy as hex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="471"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="473"/>
         <source>Select</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="472"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="474"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="618"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="620"/>
         <source>Raw data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasmView/xdisasmview.cpp" line="620"/>
+        <location filename="../../XDisasmView/xdisasmview.cpp" line="622"/>
         <source>Save dump</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2460,70 +2465,70 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="337"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="307"/>
         <source>Go to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="339"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="309"/>
         <source>Entry point</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="343"/>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="364"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="313"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="334"/>
         <source>Virtual address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="347"/>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="368"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="317"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="338"/>
         <source>Relative virtual address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="351"/>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="372"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="321"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="342"/>
         <source>File offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="362"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="332"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="386"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="356"/>
         <source>Signature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="390"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="360"/>
         <source>Dump to file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="394"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="364"/>
         <source>Disasm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="398"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="368"/>
         <source>To data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="514"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="484"/>
         <source>Raw data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="516"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="486"/>
         <source>Save dump</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="640"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="610"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2550,19 +2555,19 @@
     </message>
     <message>
         <location filename="../../XEntropyWidget/xentropywidget.ui" line="126"/>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="220"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="206"/>
         <source>Status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../XEntropyWidget/xentropywidget.ui" line="176"/>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="217"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="203"/>
         <source>Offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../XEntropyWidget/xentropywidget.ui" line="213"/>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="218"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="204"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2573,7 +2578,7 @@
     </message>
     <message>
         <location filename="../../XEntropyWidget/xentropywidget.ui" line="257"/>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="219"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="205"/>
         <source>Entropy</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2593,33 +2598,33 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="146"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="132"/>
         <source>Byte</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="147"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="133"/>
         <source>Count</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="216"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="202"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="334"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="320"/>
         <source>Images</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="352"/>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="353"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="338"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="339"/>
         <source>Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="359"/>
+        <location filename="../../XEntropyWidget/xentropywidget.cpp" line="345"/>
         <source>Save diagram</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2638,13 +2643,13 @@
     </message>
     <message>
         <location filename="../../XHashWidget/xhashwidget.ui" line="100"/>
-        <location filename="../../XHashWidget/xhashwidget.cpp" line="117"/>
+        <location filename="../../XHashWidget/xhashwidget.cpp" line="103"/>
         <source>Offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../XHashWidget/xhashwidget.ui" line="137"/>
-        <location filename="../../XHashWidget/xhashwidget.cpp" line="118"/>
+        <location filename="../../XHashWidget/xhashwidget.cpp" line="104"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2655,12 +2660,12 @@
     </message>
     <message>
         <location filename="../../XHashWidget/xhashwidget.ui" line="190"/>
-        <location filename="../../XHashWidget/xhashwidget.cpp" line="119"/>
+        <location filename="../../XHashWidget/xhashwidget.cpp" line="105"/>
         <source>Hash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHashWidget/xhashwidget.cpp" line="116"/>
+        <location filename="../../XHashWidget/xhashwidget.cpp" line="102"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2678,57 +2683,57 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="327"/>
+        <location filename="../../XHexView/xhexview.cpp" line="334"/>
         <source>Go to address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="331"/>
+        <location filename="../../XHexView/xhexview.cpp" line="338"/>
         <source>Dump to file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="335"/>
+        <location filename="../../XHexView/xhexview.cpp" line="342"/>
         <source>Signature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="339"/>
+        <location filename="../../XHexView/xhexview.cpp" line="346"/>
         <source>Find</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="343"/>
+        <location filename="../../XHexView/xhexview.cpp" line="350"/>
         <source>Find next</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="347"/>
+        <location filename="../../XHexView/xhexview.cpp" line="354"/>
         <source>Select all</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="351"/>
+        <location filename="../../XHexView/xhexview.cpp" line="358"/>
         <source>Copy as hex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="356"/>
+        <location filename="../../XHexView/xhexview.cpp" line="363"/>
         <source>Select</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="357"/>
+        <location filename="../../XHexView/xhexview.cpp" line="364"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="588"/>
+        <location filename="../../XHexView/xhexview.cpp" line="595"/>
         <source>Raw data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XHexView/xhexview.cpp" line="590"/>
+        <location filename="../../XHexView/xhexview.cpp" line="597"/>
         <source>Save dump</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2738,21 +2743,6 @@
     <message>
         <location filename="../../XHexView/xhexviewwidget.ui" line="17"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XHexView/xhexviewwidget.ui" line="63"/>
-        <source>Cursor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XHexView/xhexviewwidget.ui" line="91"/>
-        <source>Selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XHexView/xhexviewwidget.ui" line="119"/>
-        <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2788,62 +2778,62 @@
 <context>
     <name>XMemoryMapWidget</name>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="43"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="55"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="69"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="81"/>
         <source>File offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="82"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="94"/>
         <source>Virtual address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="95"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="107"/>
         <source>Relative virtual address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="118"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="130"/>
         <source>Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="158"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="170"/>
         <source>Endianness</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="192"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="204"/>
         <source>Architecture</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="244"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.ui" line="256"/>
         <source>Memory map</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.cpp" line="157"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.cpp" line="125"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.cpp" line="158"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.cpp" line="126"/>
         <source>Offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.cpp" line="159"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.cpp" line="127"/>
         <source>Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XMemoryMapWidget/xmemorymapwidget.cpp" line="160"/>
+        <location filename="../../XMemoryMapWidget/xmemorymapwidget.cpp" line="128"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2863,16 +2853,6 @@
     <message>
         <location filename="../../XDisasmView/xmultidisasmwidget.ui" line="89"/>
         <source>Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XDisasmView/xmultidisasmwidget.ui" line="126"/>
-        <source>Selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XDisasmView/xmultidisasmwidget.ui" line="154"/>
-        <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

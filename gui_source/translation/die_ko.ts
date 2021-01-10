@@ -17,13 +17,11 @@
         </message>
         <message>
             <source>Tree</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Table</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Open</source>
@@ -577,6 +575,10 @@
             <translation>백업 저장</translation>
         </message>
         <message>
+            <source>Single application</source>
+            <translation>단일 애플리케이션</translation>
+        </message>
+        <message>
             <source>Scan after open</source>
             <translation>열기 후 검색</translation>
         </message>
@@ -770,8 +772,7 @@
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
@@ -790,8 +791,7 @@
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debug</source>
@@ -803,8 +803,7 @@
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Show version</source>
@@ -1470,7 +1469,7 @@
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">선택</translation>
+            <translation>선택</translation>
         </message>
         <message>
             <source>Size</source>
@@ -1670,8 +1669,7 @@
         </message>
         <message>
             <source>Cryptor</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Database</source>
@@ -1823,8 +1821,7 @@
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Document</source>
@@ -2131,8 +2128,7 @@
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Go to address</source>
@@ -2185,18 +2181,6 @@
             <source>Form</source>
             <translation type="unfinished">형식</translation>
         </message>
-        <message>
-            <source>Cursor</source>
-            <translation type="unfinished">커서</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">선택</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">크기</translation>
-        </message>
     </context>
     <context>
         <name>XMACH</name>
@@ -2209,8 +2193,7 @@
         <name>XMIMEWidget</name>
         <message>
             <source>All</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -2288,14 +2271,6 @@
         <message>
             <source>Mode</source>
             <translation type="unfinished">모드</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">선택</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">크기</translation>
         </message>
     </context>
     <context>

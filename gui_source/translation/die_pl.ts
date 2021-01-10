@@ -5,8 +5,7 @@
         <name>Archive_widget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Type</source>
@@ -14,23 +13,19 @@
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Tree</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Table</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Scan</source>
@@ -38,8 +33,7 @@
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -47,8 +41,7 @@
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy</source>
@@ -72,8 +65,7 @@
         </message>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -84,29 +76,25 @@
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>CreateViewModelProcess</name>
         <message>
             <source>File</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DEXSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -117,23 +105,19 @@
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -141,8 +125,7 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -169,8 +152,7 @@
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -181,8 +163,7 @@
         </message>
         <message>
             <source>Donate</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Thanks</source>
@@ -194,8 +175,7 @@
         </message>
         <message>
             <source>Check updates</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>OK</source>
@@ -206,8 +186,7 @@
         <name>DialogArchive</name>
         <message>
             <source>Archive</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -226,8 +205,7 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy</source>
@@ -251,16 +229,14 @@
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogCreateViewModel</name>
         <message>
             <source>Create view model</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -271,31 +247,26 @@
         <name>DialogDisasm</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogDisasmLabels</name>
         <message>
             <source>Labels</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Go to</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Name</source>
@@ -310,33 +281,27 @@
         <name>DialogDisasmProcess</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Opcodes</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Calls</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Jumps</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Ref to</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Ref from</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -377,16 +342,14 @@
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogEntropyProcess</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -440,21 +403,18 @@
         <name>DialogHash</name>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogHashProcess</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -469,8 +429,7 @@
         <name>DialogHex</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -489,8 +448,7 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy</source>
@@ -505,8 +463,7 @@
         <name>DialogHexView</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -517,8 +474,7 @@
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -529,42 +485,36 @@
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogMIME</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogMemoryMap</name>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogMultiDisasm</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -583,8 +533,7 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy</source>
@@ -604,8 +553,7 @@
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -624,8 +572,11 @@
         </message>
         <message>
             <source>Save backup</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Single application</source>
+            <translation>Pojedyncza aplikacja</translation>
         </message>
         <message>
             <source>Scan after open</source>
@@ -637,8 +588,7 @@
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Info</source>
@@ -646,13 +596,11 @@
         </message>
         <message>
             <source>Style</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Register</source>
@@ -688,8 +636,7 @@
         </message>
         <message>
             <source>Please restart the application</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Open directory</source>
@@ -700,8 +647,7 @@
         <name>DialogProcessData</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -724,8 +670,7 @@
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Match case</source>
@@ -779,21 +724,18 @@
         <name>DialogSearchStrings</name>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogSearchStringsProcess</name>
         <message>
             <source>Search strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -801,8 +743,7 @@
         </message>
         <message>
             <source>Create view model</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Error</source>
@@ -824,21 +765,18 @@
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -853,23 +791,19 @@
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debug</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Read only</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Show version</source>
@@ -889,23 +823,19 @@
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debugger</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -924,21 +854,11 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
-        </message>
-        <message>
-            <source>Cancel</source>
-            <translation type="unfinished">Anuluj</translation>
-        </message>
-        <message>
-            <source>Save result</source>
-            <translation type="unfinished">Zapisz wynik</translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -953,12 +873,11 @@
         </message>
         <message>
             <source>Text documents</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Save result</source>
-            <translation type="unfinished">Zapisz wynik</translation>
+            <translation>Zapisz wynik</translation>
         </message>
     </context>
     <context>
@@ -969,16 +888,14 @@
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>DialogUnpackFile</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -989,8 +906,7 @@
         <name>ELFSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -1000,24 +916,16 @@
             <translation type="unfinished">Przeładuj</translation>
         </message>
         <message>
-            <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <source>Disasm</source>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
-        </message>
-        <message>
-            <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -1025,8 +933,11 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Readonly</source>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Edit</source>
@@ -1037,11 +948,11 @@
         <name>EntropyProcess</name>
         <message>
             <source>packed</source>
-            <translation type="unfinished">upakowany</translation>
+            <translation>upakowany</translation>
         </message>
         <message>
             <source>not packed</source>
-            <translation type="unfinished">nie upakowany</translation>
+            <translation>nie upakowany</translation>
         </message>
     </context>
     <context>
@@ -1056,16 +967,14 @@
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>FormStaticScan</name>
         <message>
             <source>Recursive</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Deep scan</source>
@@ -1084,8 +993,7 @@
         </message>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Name</source>
@@ -1112,13 +1020,11 @@
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Base address</source>
@@ -1126,8 +1032,7 @@
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Overlay</source>
@@ -1143,8 +1048,7 @@
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Sections</source>
@@ -1160,8 +1064,7 @@
         </message>
         <message>
             <source>Commands</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Segments</source>
@@ -1185,8 +1088,7 @@
         </message>
         <message>
             <source>Architecture</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Type</source>
@@ -1201,13 +1103,11 @@
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -1227,13 +1127,11 @@
         </message>
         <message>
             <source>Open file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>All files</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -1252,13 +1150,11 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Heuristic</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Type</source>
@@ -1277,8 +1173,7 @@
         <name>LESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -1289,23 +1184,19 @@
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -1313,8 +1204,7 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Overlay</source>
@@ -1329,8 +1219,7 @@
         <name>MACHSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -1341,23 +1230,19 @@
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -1365,13 +1250,11 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Commands</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Segments</source>
@@ -1402,23 +1285,19 @@
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -1426,8 +1305,7 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Overlay</source>
@@ -1438,8 +1316,7 @@
         <name>NESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -1450,23 +1327,19 @@
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -1474,8 +1347,7 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Segments</source>
@@ -1498,8 +1370,7 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Scan</source>
@@ -1511,24 +1382,21 @@
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>PEProcessData</name>
         <message>
             <source>Resources</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>PESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -1539,18 +1407,15 @@
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entropy</source>
@@ -1558,13 +1423,11 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Sections</source>
@@ -1591,8 +1454,7 @@
         <name>QHexView</name>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -1607,22 +1469,19 @@
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">Sekcje</translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Save dump</source>
@@ -1630,8 +1489,7 @@
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Signature</source>
@@ -1639,13 +1497,11 @@
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Select</source>
@@ -1661,8 +1517,7 @@
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Error</source>
@@ -1681,36 +1536,30 @@
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Read error</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Write error</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cannot open file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>SearchStrings</name>
         <message>
             <source>Maximum</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Read error</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Address</source>
@@ -1722,8 +1571,7 @@
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Type</source>
@@ -1731,8 +1579,7 @@
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -1743,8 +1590,7 @@
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Save</source>
@@ -1756,46 +1602,38 @@
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Text files</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>All files</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy string</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy address</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy offset</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>SpecAbstract</name>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Header</source>
@@ -1807,63 +1645,55 @@
         </message>
         <message>
             <source>Archive record</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
-            <source>Archive</source>
-            <translation type="unfinished">
-            </translation>
+            <source>obfuscator</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Tool</source>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Certificate</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Compiler</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Converter</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cryptor</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debug data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>protection</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>extender</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Format</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Generic</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Image</source>
@@ -1871,23 +1701,19 @@
         </message>
         <message>
             <source>Installer</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Installer data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Joiner</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Library</source>
@@ -1895,62 +1721,35 @@
         </message>
         <message>
             <source>Linker</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>compressor</source>
-            <translation type="unfinished">
-            </translation>
-        </message>
-        <message>
-            <source>Resources</source>
-            <translation type="unfinished">
-            </translation>
-        </message>
-        <message>
-            <source>Type</source>
-            <translation type="unfinished">Typ</translation>
-        </message>
-        <message>
-            <source>obfuscator</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Packer</source>
-            <translation type="unfinished">
-            </translation>
-        </message>
-        <message>
-            <source>Tool</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Protector</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Protector data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Sign tool</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Source code</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Stub</source>
@@ -1958,28 +1757,35 @@
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Section name</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Code section</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entry point section</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Archive</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Resources</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Type</source>
+            <translation type="unfinished">Typ</translation>
         </message>
     </context>
     <context>
@@ -1994,37 +1800,32 @@
         </message>
         <message>
             <source>Device scan</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>StaticScanItemModel</name>
         <message>
             <source>Result</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>ToolsWidget</name>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Document</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Image</source>
@@ -2032,8 +1833,7 @@
         </message>
         <message>
             <source>Archive</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -2066,8 +1866,7 @@
         </message>
         <message>
             <source>Label</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Bytes</source>
@@ -2075,8 +1874,7 @@
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -2095,8 +1893,7 @@
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Invalid opcode</source>
@@ -2108,8 +1905,7 @@
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Signature</source>
@@ -2117,13 +1913,11 @@
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Select all</source>
@@ -2131,8 +1925,7 @@
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Select</source>
@@ -2144,8 +1937,7 @@
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Save dump</source>
@@ -2160,13 +1952,11 @@
         </message>
         <message>
             <source>Analyze</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Labels</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Overlay</source>
@@ -2174,13 +1964,11 @@
         </message>
         <message>
             <source>Go to</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Virtual address</source>
@@ -2204,23 +1992,19 @@
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>To data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Save dump</source>
@@ -2246,8 +2030,7 @@
         </message>
         <message>
             <source>Total</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Status</source>
@@ -2259,8 +2042,7 @@
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Reload</source>
@@ -2272,8 +2054,7 @@
         </message>
         <message>
             <source>Regions</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Save</source>
@@ -2296,22 +2077,12 @@
             <translation type="unfinished">Nazwa</translation>
         </message>
         <message>
-            <source>packed</source>
-            <translation type="unfinished">upakowany</translation>
-        </message>
-        <message>
-            <source>not packed</source>
-            <translation type="unfinished">nie upakowany</translation>
-        </message>
-        <message>
             <source>Images</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Documents</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Save diagram</source>
@@ -2334,8 +2105,7 @@
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Reload</source>
@@ -2343,8 +2113,7 @@
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Name</source>
@@ -2359,8 +2128,7 @@
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Go to address</source>
@@ -2368,8 +2136,7 @@
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Signature</source>
@@ -2377,13 +2144,11 @@
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Select all</source>
@@ -2391,8 +2156,7 @@
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Select</source>
@@ -2404,8 +2168,7 @@
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Save dump</source>
@@ -2416,21 +2179,7 @@
         <name>XHexViewWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">
-            </translation>
-        </message>
-        <message>
-            <source>Cursor</source>
-            <translation type="unfinished">Kursor</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Sekcje</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -2444,8 +2193,7 @@
         <name>XMIMEWidget</name>
         <message>
             <source>All</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -2487,13 +2235,11 @@
         </message>
         <message>
             <source>Architecture</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Name</source>
@@ -2509,16 +2255,14 @@
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
         <name>XMultiDisasmWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Type</source>
@@ -2527,15 +2271,6 @@
         <message>
             <source>Mode</source>
             <translation type="unfinished">Tryb</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Sekcje</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">
-            </translation>
         </message>
     </context>
     <context>
@@ -2554,8 +2289,7 @@
         </message>
         <message>
             <source>Cannot open file</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
 </TS>

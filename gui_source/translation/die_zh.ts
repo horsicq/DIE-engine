@@ -575,6 +575,10 @@
             <translation>保存备份</translation>
         </message>
         <message>
+            <source>Single application</source>
+            <translation>单一申请</translation>
+        </message>
+        <message>
             <source>Scan after open</source>
             <translation>打开后扫描</translation>
         </message>
@@ -768,8 +772,7 @@
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
@@ -788,8 +791,7 @@
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debug</source>
@@ -801,8 +803,7 @@
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Show version</source>
@@ -859,18 +860,6 @@
             <source>Close</source>
             <translation type="unfinished">关闭</translation>
         </message>
-        <message>
-            <source>Cancel</source>
-            <translation type="unfinished">取消</translation>
-        </message>
-        <message>
-            <source>Text documents</source>
-            <translation type="unfinished">文本文件</translation>
-        </message>
-        <message>
-            <source>Save result</source>
-            <translation type="unfinished">保存结果</translation>
-        </message>
     </context>
     <context>
         <name>DialogStaticScanProcess</name>
@@ -884,11 +873,11 @@
         </message>
         <message>
             <source>Text documents</source>
-            <translation type="unfinished">文本文件</translation>
+            <translation>文本文件</translation>
         </message>
         <message>
             <source>Save result</source>
-            <translation type="unfinished">保存结果</translation>
+            <translation>保存结果</translation>
         </message>
     </context>
     <context>
@@ -927,16 +916,12 @@
             <translation type="unfinished">重新加载</translation>
         </message>
         <message>
-            <source>Readonly</source>
-            <translation type="unfinished">只读</translation>
+            <source>Disasm</source>
+            <translation type="unfinished">反汇编</translation>
         </message>
         <message>
             <source>Strings</source>
             <translation type="unfinished">字符串</translation>
-        </message>
-        <message>
-            <source>Disasm</source>
-            <translation type="unfinished">反汇编</translation>
         </message>
         <message>
             <source>Memory map</source>
@@ -951,6 +936,10 @@
             <translation type="unfinished">启发式扫描</translation>
         </message>
         <message>
+            <source>Readonly</source>
+            <translation type="unfinished">只读</translation>
+        </message>
+        <message>
             <source>Edit</source>
             <translation type="unfinished">编辑</translation>
         </message>
@@ -959,11 +948,11 @@
         <name>EntropyProcess</name>
         <message>
             <source>packed</source>
-            <translation type="unfinished">打包</translation>
+            <translation>打包</translation>
         </message>
         <message>
             <source>not packed</source>
-            <translation type="unfinished">未打包</translation>
+            <translation>未打包</translation>
         </message>
     </context>
     <context>
@@ -1361,10 +1350,6 @@
             <translation type="unfinished">启发式扫描</translation>
         </message>
         <message>
-            <source>Detect</source>
-            <translation>检测</translation>
-        </message>
-        <message>
             <source>Segments</source>
             <translation type="unfinished">区隔</translation>
         </message>
@@ -1484,7 +1469,7 @@
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">选中项</translation>
+            <translation>选中项</translation>
         </message>
         <message>
             <source>Size</source>
@@ -1663,8 +1648,12 @@
             <translation>存档记录</translation>
         </message>
         <message>
-            <source>Archive</source>
-            <translation type="unfinished">存档</translation>
+            <source>obfuscator</source>
+            <translation>模糊器</translation>
+        </message>
+        <message>
+            <source>Tool</source>
+            <translation>工具</translation>
         </message>
         <message>
             <source>Certificate</source>
@@ -1739,24 +1728,8 @@
             <translation>压缩软件</translation>
         </message>
         <message>
-            <source>Resources</source>
-            <translation type="unfinished">资源</translation>
-        </message>
-        <message>
-            <source>Type</source>
-            <translation type="unfinished">类型</translation>
-        </message>
-        <message>
-            <source>obfuscator</source>
-            <translation>模糊器</translation>
-        </message>
-        <message>
             <source>Packer</source>
             <translation>封隔器</translation>
-        </message>
-        <message>
-            <source>Tool</source>
-            <translation>工具</translation>
         </message>
         <message>
             <source>Protector</source>
@@ -1802,6 +1775,18 @@
             <source>String</source>
             <translation type="unfinished">字符串</translation>
         </message>
+        <message>
+            <source>Archive</source>
+            <translation type="unfinished">存档</translation>
+        </message>
+        <message>
+            <source>Resources</source>
+            <translation type="unfinished">资源</translation>
+        </message>
+        <message>
+            <source>Type</source>
+            <translation type="unfinished">类型</translation>
+        </message>
     </context>
     <context>
         <name>StaticScan</name>
@@ -1836,8 +1821,7 @@
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Document</source>
@@ -2093,14 +2077,6 @@
             <translation type="unfinished">姓名</translation>
         </message>
         <message>
-            <source>packed</source>
-            <translation type="unfinished">打包</translation>
-        </message>
-        <message>
-            <source>not packed</source>
-            <translation type="unfinished">未打包</translation>
-        </message>
-        <message>
             <source>Images</source>
             <translation>影像</translation>
         </message>
@@ -2152,8 +2128,7 @@
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Go to address</source>
@@ -2206,18 +2181,6 @@
             <source>Form</source>
             <translation type="unfinished">格式</translation>
         </message>
-        <message>
-            <source>Cursor</source>
-            <translation type="unfinished">光标</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">选中项</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
-        </message>
     </context>
     <context>
         <name>XMACH</name>
@@ -2230,8 +2193,7 @@
         <name>XMIMEWidget</name>
         <message>
             <source>All</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -2309,14 +2271,6 @@
         <message>
             <source>Mode</source>
             <translation type="unfinished">模式</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">选中项</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">尺寸</translation>
         </message>
     </context>
     <context>

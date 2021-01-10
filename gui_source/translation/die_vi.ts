@@ -5,8 +5,7 @@
         <name>Archive_widget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Type</source>
@@ -18,13 +17,11 @@
         </message>
         <message>
             <source>Tree</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Table</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Open</source>
@@ -44,8 +41,7 @@
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy</source>
@@ -167,8 +163,7 @@
         </message>
         <message>
             <source>Donate</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Thanks</source>
@@ -180,8 +175,7 @@
         </message>
         <message>
             <source>Check updates</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>OK</source>
@@ -211,8 +205,7 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy</source>
@@ -292,28 +285,23 @@
         </message>
         <message>
             <source>Opcodes</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Calls</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Jumps</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Ref to</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Ref from</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -415,8 +403,7 @@
         <name>DialogHash</name>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
@@ -461,8 +448,7 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy</source>
@@ -547,8 +533,7 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Copy</source>
@@ -588,6 +573,10 @@
         <message>
             <source>Save backup</source>
             <translation>Lưu sao lưu</translation>
+        </message>
+        <message>
+            <source>Single application</source>
+            <translation>Đơn</translation>
         </message>
         <message>
             <source>Scan after open</source>
@@ -783,8 +772,7 @@
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
@@ -803,13 +791,11 @@
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debug</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Read only</source>
@@ -817,8 +803,7 @@
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Show version</source>
@@ -846,8 +831,7 @@
         </message>
         <message>
             <source>Debugger</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>msec</source>
@@ -876,18 +860,6 @@
             <source>Close</source>
             <translation type="unfinished">Đóng</translation>
         </message>
-        <message>
-            <source>Cancel</source>
-            <translation type="unfinished">Hủy</translation>
-        </message>
-        <message>
-            <source>Text documents</source>
-            <translation type="unfinished">Tài liệu văn bản</translation>
-        </message>
-        <message>
-            <source>Save result</source>
-            <translation type="unfinished">Lưu kết quả</translation>
-        </message>
     </context>
     <context>
         <name>DialogStaticScanProcess</name>
@@ -901,11 +873,11 @@
         </message>
         <message>
             <source>Text documents</source>
-            <translation type="unfinished">Tài liệu văn bản</translation>
+            <translation>Tài liệu văn bản</translation>
         </message>
         <message>
             <source>Save result</source>
-            <translation type="unfinished">Lưu kết quả</translation>
+            <translation>Lưu kết quả</translation>
         </message>
     </context>
     <context>
@@ -944,16 +916,12 @@
             <translation type="unfinished">Tải lại</translation>
         </message>
         <message>
-            <source>Readonly</source>
-            <translation type="unfinished">Chỉ đọc</translation>
+            <source>Disasm</source>
+            <translation type="unfinished">Rối loạn</translation>
         </message>
         <message>
             <source>Strings</source>
             <translation type="unfinished">Chuỗi</translation>
-        </message>
-        <message>
-            <source>Disasm</source>
-            <translation type="unfinished">Rối loạn</translation>
         </message>
         <message>
             <source>Memory map</source>
@@ -968,6 +936,10 @@
             <translation type="unfinished">Quét phỏng đoán</translation>
         </message>
         <message>
+            <source>Readonly</source>
+            <translation type="unfinished">Chỉ đọc</translation>
+        </message>
+        <message>
             <source>Edit</source>
             <translation type="unfinished">Chỉnh sửa</translation>
         </message>
@@ -976,11 +948,11 @@
         <name>EntropyProcess</name>
         <message>
             <source>packed</source>
-            <translation type="unfinished">nén</translation>
+            <translation>nén</translation>
         </message>
         <message>
             <source>not packed</source>
-            <translation type="unfinished">không nén</translation>
+            <translation>không nén</translation>
         </message>
     </context>
     <context>
@@ -1131,8 +1103,7 @@
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Strings</source>
@@ -1379,10 +1350,6 @@
             <translation type="unfinished">Quét phỏng đoán</translation>
         </message>
         <message>
-            <source>Detect</source>
-            <translation>Phát hiện</translation>
-        </message>
-        <message>
             <source>Segments</source>
             <translation type="unfinished">Đoạn</translation>
         </message>
@@ -1502,7 +1469,7 @@
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">Lựa chọn</translation>
+            <translation>Lựa chọn</translation>
         </message>
         <message>
             <source>Size</source>
@@ -1666,8 +1633,7 @@
         <name>SpecAbstract</name>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Header</source>
@@ -1682,28 +1648,28 @@
             <translation>Bản ghi lưu trữ</translation>
         </message>
         <message>
-            <source>Archive</source>
-            <translation type="unfinished">Bản ghi lưu trữ</translation>
+            <source>obfuscator</source>
+            <translation>trình làm rối</translation>
+        </message>
+        <message>
+            <source>Tool</source>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Certificate</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Compiler</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Converter</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Cryptor</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Database</source>
@@ -1711,8 +1677,7 @@
         </message>
         <message>
             <source>Debug data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>protection</source>
@@ -1724,8 +1689,7 @@
         </message>
         <message>
             <source>Format</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Generic</source>
@@ -1737,13 +1701,11 @@
         </message>
         <message>
             <source>Installer</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Installer data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Joiner</source>
@@ -1759,44 +1721,23 @@
         </message>
         <message>
             <source>Linker</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>compressor</source>
             <translation>bộ nén</translation>
         </message>
         <message>
-            <source>Resources</source>
-            <translation type="unfinished">Tài nguyên</translation>
-        </message>
-        <message>
-            <source>Type</source>
-            <translation type="unfinished">Loại</translation>
-        </message>
-        <message>
-            <source>obfuscator</source>
-            <translation>trình làm rối</translation>
-        </message>
-        <message>
             <source>Packer</source>
-            <translation type="unfinished">
-            </translation>
-        </message>
-        <message>
-            <source>Tool</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Protector</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Protector data</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>data</source>
@@ -1834,6 +1775,18 @@
             <source>String</source>
             <translation type="unfinished">Chuỗi</translation>
         </message>
+        <message>
+            <source>Archive</source>
+            <translation type="unfinished">Bản ghi lưu trữ</translation>
+        </message>
+        <message>
+            <source>Resources</source>
+            <translation type="unfinished">Tài nguyên</translation>
+        </message>
+        <message>
+            <source>Type</source>
+            <translation type="unfinished">Loại</translation>
+        </message>
     </context>
     <context>
         <name>StaticScan</name>
@@ -1868,8 +1821,7 @@
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Document</source>
@@ -2125,14 +2077,6 @@
             <translation type="unfinished">Tên</translation>
         </message>
         <message>
-            <source>packed</source>
-            <translation type="unfinished">nén</translation>
-        </message>
-        <message>
-            <source>not packed</source>
-            <translation type="unfinished">không nén</translation>
-        </message>
-        <message>
             <source>Images</source>
             <translation>Hình ảnh</translation>
         </message>
@@ -2169,8 +2113,7 @@
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Name</source>
@@ -2185,8 +2128,7 @@
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Go to address</source>
@@ -2237,20 +2179,7 @@
         <name>XHexViewWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">
-            </translation>
-        </message>
-        <message>
-            <source>Cursor</source>
-            <translation type="unfinished">Con trỏ</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Lựa chọn</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Kích thước</translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -2264,8 +2193,7 @@
         <name>XMIMEWidget</name>
         <message>
             <source>All</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
     </context>
     <context>
@@ -2334,8 +2262,7 @@
         <name>XMultiDisasmWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Type</source>
@@ -2344,14 +2271,6 @@
         <message>
             <source>Mode</source>
             <translation type="unfinished">Chế độ</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Lựa chọn</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Kích thước</translation>
         </message>
     </context>
     <context>

@@ -575,6 +575,10 @@
             <translation>Yedek kayfet</translation>
         </message>
         <message>
+            <source>Single application</source>
+            <translation>Tek uygulama</translation>
+        </message>
+        <message>
             <source>Scan after open</source>
             <translation>Açtıktan sonra tara</translation>
         </message>
@@ -768,8 +772,7 @@
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Close</source>
@@ -788,8 +791,7 @@
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Debug</source>
@@ -801,8 +803,7 @@
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Show version</source>
@@ -1468,7 +1469,7 @@
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished">Seçilen</translation>
+            <translation>Seçilen</translation>
         </message>
         <message>
             <source>Size</source>
@@ -1820,8 +1821,7 @@
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Document</source>
@@ -2128,8 +2128,7 @@
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished">
-            </translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Go to address</source>
@@ -2181,18 +2180,6 @@
         <message>
             <source>Form</source>
             <translation type="unfinished">Biçim</translation>
-        </message>
-        <message>
-            <source>Cursor</source>
-            <translation type="unfinished">Cursor</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Seçilen</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
         </message>
     </context>
     <context>
@@ -2284,14 +2271,6 @@
         <message>
             <source>Mode</source>
             <translation type="unfinished">Mod</translation>
-        </message>
-        <message>
-            <source>Selection</source>
-            <translation type="unfinished">Seçilen</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
         </message>
     </context>
     <context>
