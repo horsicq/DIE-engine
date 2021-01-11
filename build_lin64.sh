@@ -78,16 +78,16 @@ cp -Rf $SOURCE_PATH/XStyles/qss/ $SOURCE_PATH/release/$BUILD_NAME/base/qss/
 cp -Rf $SOURCE_PATH/Detect-It-Easy/info/ $SOURCE_PATH/release/$BUILD_NAME/base/info/
 cp -Rf $SOURCE_PATH/Detect-It-Easy/db/ $SOURCE_PATH/release/$BUILD_NAME/base/db/
 
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_de.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_de.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_ja.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_ja.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_pl.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_pl.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_pt_BR.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_pt_BR.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_fr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_fr.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_ru.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_ru.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_vi.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_zh.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_zh_TW.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_tr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/die_tr.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_de.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_de.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_ja.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_ja.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_pl.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_pl.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_pt_BR.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_pt_BR.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_fr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_fr.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_ru.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_ru.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_vi.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_zh.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_zh_TW.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_tr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_tr.qm
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/die.sh
 echo "CWD=\$(dirname \$0)" >> release/$BUILD_NAME/die.sh
