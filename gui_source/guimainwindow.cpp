@@ -227,9 +227,13 @@ void GuiMainWindow::adjustFile()
 void GuiMainWindow::processFile(QString sFileName)
 {
     ui->lineEditFileName->setText(sFileName);
-    ui->widgetFormats->setData(sFileName,xOptions.isScanAfterOpen());
 
-    adjustFile();
+    if(sFileName!="")
+    {
+        ui->widgetFormats->setData(sFileName,xOptions.isScanAfterOpen());
+
+        adjustFile();
+    }
 }
 
 void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event)
