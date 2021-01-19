@@ -85,3 +85,6 @@
 [submodule "XGithub"]
 	path = XGithub
 	url = https://github.com/horsicq/XGithub.git
+[submodule "XShortcuts"]
+	path = XShortcuts
+	url = https://github.com/horsicq/XShortcuts.git
