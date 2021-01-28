@@ -1,4 +1,4 @@
-// Copyright (c) 2020 hors<horsicq@gmail.com>
+// Copyright (c) 2020-2021 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -29,6 +29,7 @@
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "die.ini"
+#define X_SHORTCUTSFILE "shortcuts.ini"
 #define X_UPDATEPAGE "https://github.com/horsicq/DIE-engine/releases"
 
 #endif // _GLOBAL_H

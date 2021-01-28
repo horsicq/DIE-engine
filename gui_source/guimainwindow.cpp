@@ -33,23 +33,47 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 
     xOptions.setName(X_OPTIONSFILE);
 
-    QList<XOptions::ID> listIDs;
+    QList<XOptions::ID> listOptionsIDs;
 
-    listIDs.append(XOptions::ID_STYLE);
-    listIDs.append(XOptions::ID_QSS);
-    listIDs.append(XOptions::ID_LANG);
-    listIDs.append(XOptions::ID_STAYONTOP);
-    listIDs.append(XOptions::ID_SCANAFTEROPEN);
-    listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
-    listIDs.append(XOptions::ID_SINGLEAPPLICATION);
-    listIDs.append(XOptions::ID_LASTDIRECTORY);
-    listIDs.append(XOptions::ID_SAVEBACKUP);
-    listIDs.append(XOptions::ID_DBPATH);
-    listIDs.append(XOptions::ID_INFOPATH);
-    listIDs.append(XOptions::ID_SCANENGINE);
+    listOptionsIDs.append(XOptions::ID_STYLE);
+    listOptionsIDs.append(XOptions::ID_QSS);
+    listOptionsIDs.append(XOptions::ID_LANG);
+    listOptionsIDs.append(XOptions::ID_STAYONTOP);
+    listOptionsIDs.append(XOptions::ID_SCANAFTEROPEN);
+    listOptionsIDs.append(XOptions::ID_SAVELASTDIRECTORY);
+    listOptionsIDs.append(XOptions::ID_SINGLEAPPLICATION);
+    listOptionsIDs.append(XOptions::ID_LASTDIRECTORY);
+    listOptionsIDs.append(XOptions::ID_SAVEBACKUP);
+    listOptionsIDs.append(XOptions::ID_DBPATH);
+    listOptionsIDs.append(XOptions::ID_INFOPATH);
+    listOptionsIDs.append(XOptions::ID_SCANENGINE);
 
-    xOptions.setValueIDs(listIDs);
+    xOptions.setValueIDs(listOptionsIDs);
     xOptions.load();
+
+    xShortcuts.setName(X_SHORTCUTSFILE);
+
+    QList<XShortcuts::ID> listShortcutsIDs;
+
+//    listShortcutsIDs.append(XShortcuts::ID_ACTION_COPY);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_DUMPTOFILE);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_GOTOADDRESS);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_SIGNATURE);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_FIND);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_FINDNEXT);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_SELECTALL);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_COPYASHEX);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_DUMPTOFILE);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_GOTOADDRESS);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_HEXSIGNATURE);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_SIGNATURE);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_FIND);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_FINDNEXT);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_SELECTALL);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_COPYASHEX);
+
+    xShortcuts.setShortcutsIDs(listShortcutsIDs);
+    xShortcuts.load();
 
     adjust();
 
@@ -64,6 +88,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 GuiMainWindow::~GuiMainWindow()
 {
     xOptions.save();
+    xShortcuts.save();
 
     delete ui;
 }
@@ -206,6 +231,9 @@ void GuiMainWindow::adjust()
     ui->widgetFormats->setDIEDatabasePath(xOptions.getDbPath());
     ui->widgetFormats->setDIEInfoPath(xOptions.getInfoPath());
     ui->widgetFormats->setScanEngine(xOptions.getScanEngine());
+
+    ui->widgetFormats->setShortcuts(&xShortcuts);
+    // TODO setShortcuts for mainWindow ...
 }
 
 void GuiMainWindow::adjustFile()
@@ -275,4 +303,15 @@ void GuiMainWindow::on_pushButtonOpenFile_clicked()
     {
         processFile(sFileName);
     }
+}
+
+void GuiMainWindow::on_pushButtonShortcuts_clicked()
+{
+    DialogShortcuts dialogShortcuts(this);
+
+    dialogShortcuts.setData(&xShortcuts);
+
+    dialogShortcuts.exec();
+
+    adjust();
 }

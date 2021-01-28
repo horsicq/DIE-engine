@@ -33,6 +33,7 @@
 #include "dialogabout.h"
 #include "dialogoptions.h"
 #include "xoptions.h"
+#include "dialogshortcuts.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class GuiMainWindow; }
@@ -49,6 +50,7 @@ public:
 private slots:
     void on_pushButtonExit_clicked();
     void on_pushButtonAbout_clicked();
+    void on_pushButtonShortcuts_clicked();
     void on_pushButtonOptions_clicked();
     void on_pushButtonMIME_clicked();
     void on_pushButtonHex_clicked();
@@ -72,5 +74,6 @@ protected:
 private:
     Ui::GuiMainWindow *ui;
     XOptions xOptions;
+    XShortcuts xShortcuts;
 };
 #endif // GUIMAINWINDOW_H
