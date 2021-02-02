@@ -53,26 +53,10 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 
     xShortcuts.setName(X_SHORTCUTSFILE);
 
-    QList<XShortcuts::ID> listShortcutsIDs;
-
-//    listShortcutsIDs.append(XShortcuts::ID_ACTION_COPY);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_DUMPTOFILE);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_GOTOADDRESS);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_SIGNATURE);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_FIND);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_FINDNEXT);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_SELECTALL);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_COPYASHEX);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_DUMPTOFILE);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_GOTOADDRESS);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_HEXSIGNATURE);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_SIGNATURE);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_FIND);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_FINDNEXT);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_SELECTALL);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_COPYASHEX);
-
-    xShortcuts.setShortcutsIDs(listShortcutsIDs);
+    xShortcuts.addGroup(XShortcuts::ID_STRINGS);
+    xShortcuts.addGroup(XShortcuts::ID_HEX);
+    xShortcuts.addGroup(XShortcuts::ID_DISASM);
+    xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
     xShortcuts.load();
 
     adjust();
@@ -127,6 +111,7 @@ void GuiMainWindow::on_pushButtonMIME_clicked()
         if(XBinary::tryToOpen(&file))
         {
             DialogMIME dialogMIME(this,&file);
+            dialogMIME.setShortcuts(&xShortcuts);
 
             dialogMIME.exec();
 
@@ -150,6 +135,7 @@ void GuiMainWindow::on_pushButtonHex_clicked()
 //            hexOptions.sBackupFileName=XBinary::getBackupName(&file);
 
             DialogHexView dialogHex(this,&file,hexOptions);
+            dialogHex.setShortcuts(&xShortcuts);
 
             dialogHex.exec();
 
@@ -171,6 +157,7 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
         {
             // TODO options
             DialogSearchStrings dialogSearchStrings(this,&file,0,true);
+            dialogSearchStrings.setShortcuts(&xShortcuts);
 
             dialogSearchStrings.exec();
 
@@ -191,6 +178,7 @@ void GuiMainWindow::on_pushButtonEntropy_clicked()
         if(file.open(QIODevice::ReadOnly))
         {
             DialogEntropy dialogEntropy(this,&file);
+            dialogEntropy.setShortcuts(&xShortcuts);
 
             dialogEntropy.exec();
 
@@ -211,6 +199,7 @@ void GuiMainWindow::on_pushButtonHash_clicked()
         if(file.open(QIODevice::ReadOnly))
         {
             DialogHash dialogHash(this,&file);
+            dialogHash.setShortcuts(&xShortcuts);
 
             dialogHash.exec();
 
