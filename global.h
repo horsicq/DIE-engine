@@ -25,7 +25,7 @@
 
 #define X_APPLICATIONNAME "Detect It Easy"
 #define X_APPLICATIONFILENAME "die"
-#define X_APPLICATIONVERSION "3.01"
+#define X_APPLICATIONVERSION "3.02"
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "die.ini"
