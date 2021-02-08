@@ -1,6 +1,5 @@
 TRANSLATIONS = \
     translation/die_it.ts \
-    translation/die_ar.ts \
     translation/die_de.ts \
     translation/die_ja.ts \
     translation/die_pl.ts \
@@ -80,6 +79,7 @@ FORMS += \
     ../XMIMEWidget/xmimewidget.ui \
     ../XMemoryMapWidget/dialogmemorymap.ui \
     ../XMemoryMapWidget/xmemorymapwidget.ui \
+    ../XShortcuts/dialogshortcuts.ui \
     ../archive_widget/archive_widget.ui \
     ../archive_widget/dialogarchive.ui \
     ../archive_widget/dialogcreateviewmodel.ui \
@@ -93,167 +93,6 @@ FORMS += \
     dialogoptions.ui \
     guimainwindow.ui \
     ../nfd_widget/nfd_widget.ui
-
-HEADERS += \
-    ../Controls/hexvalidator.h \
-    ../Controls/subclassofqstyleditemdelegate.h \
-    ../Controls/xabstracttableview.h \
-    ../Controls/xcomboboxex.h \
-    ../Controls/xdatetimeeditx.h \
-    ../Controls/xlineedithex.h \
-    ../FormatDialogs/dialogdumpprocess.h \
-    ../FormatDialogs/dialoggotoaddress.h \
-    ../FormatDialogs/dialoghexsignature.h \
-    ../FormatDialogs/dialoginfo.h \
-    ../FormatDialogs/dialogsearch.h \
-    ../FormatDialogs/dialogsearchprocess.h \
-    ../FormatDialogs/dialogtextinfo.h \
-    ../FormatDialogs/dumpprocess.h \
-    ../FormatDialogs/searchprocess.h \
-    ../FormatDialogs/xshortcuts.h \
-    ../FormatWidgets/Binary/binary_defs.h \
-    ../FormatWidgets/Binary/binarywidget.h \
-    ../FormatWidgets/Binary/dialogbinary.h \
-    ../FormatWidgets/DEX/dex_defs.h \
-    ../FormatWidgets/DEX/dexprocessdata.h \
-    ../FormatWidgets/DEX/dexsectionheaderwidget.h \
-    ../FormatWidgets/DEX/dexwidget.h \
-    ../FormatWidgets/DEX/dialogdex.h \
-    ../FormatWidgets/ELF/dialogelf.h \
-    ../FormatWidgets/ELF/elf_defs.h \
-    ../FormatWidgets/ELF/elfprocessdata.h \
-    ../FormatWidgets/ELF/elfsectionheaderwidget.h \
-    ../FormatWidgets/ELF/elfwidget.h \
-    ../FormatWidgets/LE/dialogle.h \
-    ../FormatWidgets/LE/le_defs.h \
-    ../FormatWidgets/LE/leprocessdata.h \
-    ../FormatWidgets/LE/lesectionheaderwidget.h \
-    ../FormatWidgets/LE/lewidget.h \
-    ../FormatWidgets/MACH/dialogmach.h \
-    ../FormatWidgets/MACH/mach_defs.h \
-    ../FormatWidgets/MACH/machprocessdata.h \
-    ../FormatWidgets/MACH/machsectionheaderwidget.h \
-    ../FormatWidgets/MACH/machwidget.h \
-    ../FormatWidgets/MSDOS/dialogmsdos.h \
-    ../FormatWidgets/MSDOS/msdos_defs.h \
-    ../FormatWidgets/MSDOS/msdoswidget.h \
-    ../FormatWidgets/NE/dialogne.h \
-    ../FormatWidgets/NE/ne_defs.h \
-    ../FormatWidgets/NE/neprocessdata.h \
-    ../FormatWidgets/NE/nesectionheaderwidget.h \
-    ../FormatWidgets/NE/newidget.h \
-    ../FormatWidgets/PE/dialogpe.h \
-    ../FormatWidgets/PE/pe_defs.h \
-    ../FormatWidgets/PE/peprocessdata.h \
-    ../FormatWidgets/PE/pesectionheaderwidget.h \
-    ../FormatWidgets/PE/pewidget.h \
-    ../FormatWidgets/SearchStrings/dialogsearchstrings.h \
-    ../FormatWidgets/SearchStrings/dialogsearchstringsprocess.h \
-    ../FormatWidgets/SearchStrings/searchstrings.h \
-    ../FormatWidgets/SearchStrings/searchstringswidget.h \
-    ../FormatWidgets/dialogprocessdata.h \
-    ../FormatWidgets/dialogsectionheader.h \
-    ../FormatWidgets/formatswidget.h \
-    ../FormatWidgets/formatwidget.h \
-    ../FormatWidgets/formatwidget_def.h \
-    ../FormatWidgets/invwidget.h \
-    ../FormatWidgets/processdata.h \
-    ../FormatWidgets/toolswidget.h \
-    ../Formats/subdevice.h \
-    ../Formats/xbinary.h \
-    ../Formats/xcom.h \
-    ../Formats/xcom_def.h \
-    ../Formats/xelf.h \
-    ../Formats/xelf_def.h \
-    ../Formats/xformats.h \
-    ../Formats/xle.h \
-    ../Formats/xle_def.h \
-    ../Formats/xmach.h \
-    ../Formats/xmach_def.h \
-    ../Formats/xmsdos.h \
-    ../Formats/xmsdos_def.h \
-    ../Formats/xne.h \
-    ../Formats/xne_def.h \
-    ../Formats/xpe.h \
-    ../Formats/xpe_def.h \
-    ../QHexView/dialoghex.h \
-    ../QHexView/qhexview.h \
-    ../QHexView/qhexviewwidget.h \
-    ../SpecAbstract/specabstract.h \
-    ../StaticScan/dialogstaticscan.h \
-    ../StaticScan/dialogstaticscanprocess.h \
-    ../StaticScan/formresult.h \
-    ../StaticScan/formstaticscan.h \
-    ../StaticScan/heurwidget.h \
-    ../StaticScan/staticscan.h \
-    ../StaticScan/staticscanitem.h \
-    ../StaticScan/staticscanitemmodel.h \
-    ../XArchive/xarchive.h \
-    ../XArchive/xarchives.h \
-    ../XArchive/xcab.h \
-    ../XArchive/xmachofat.h \
-    ../XArchive/xrar.h \
-    ../XArchive/xsevenzip.h \
-    ../XArchive/xzip.h \
-    ../XCapstone/xcapstone.h \
-    ../XDEX/xandroidbinary.h \
-    ../XDEX/xandroidbinary_def.h \
-    ../XDEX/xdex.h \
-    ../XDEX/xdex_def.h \
-    ../XDisasm/dialogasmsignature.h \
-    ../XDisasm/dialogdisasm.h \
-    ../XDisasm/dialogdisasmlabels.h \
-    ../XDisasm/dialogdisasmprocess.h \
-    ../XDisasm/xdisasm.h \
-    ../XDisasm/xdisasmmodel.h \
-    ../XDisasm/xdisasmwidget.h \
-    ../XDisasmView/dialogmultidisasm.h \
-    ../XDisasmView/dialogmultidisasmsignature.h \
-    ../XDisasmView/xdisasmview.h \
-    ../XDisasmView/xmultidisasmwidget.h \
-    ../XEntropyWidget/dialogentropy.h \
-    ../XEntropyWidget/dialogentropyprocess.h \
-    ../XEntropyWidget/entropyprocess.h \
-    ../XEntropyWidget/xentropywidget.h \
-    ../XHashWidget/dialoghash.h \
-    ../XHashWidget/dialoghashprocess.h \
-    ../XHashWidget/hashprocess.h \
-    ../XHashWidget/xhashwidget.h \
-    ../XHexView/dialoghexview.h \
-    ../XHexView/xhexview.h \
-    ../XHexView/xhexviewwidget.h \
-    ../XMIME/xmime.h \
-    ../XMIMEWidget/dialogmime.h \
-    ../XMIMEWidget/xmimewidget.h \
-    ../XMemoryMapWidget/dialogmemorymap.h \
-    ../XMemoryMapWidget/xmemorymapwidget.h \
-    ../XOptions/xoptions.h \
-    ../XSingleApplication/xsingleapplication.h \
-    ../archive_widget/archive_widget.h \
-    ../archive_widget/createviewmodelprocess.h \
-    ../archive_widget/dialogarchive.h \
-    ../archive_widget/dialogcreateviewmodel.h \
-    ../archive_widget/dialogshowimage.h \
-    ../archive_widget/dialogshowtext.h \
-    ../archive_widget/dialogunpackfile.h \
-    ../archive_widget/unpackfileprocess.h \
-    ../die_script/binary_script.h \
-    ../die_script/die_script.h \
-    ../die_script/die_scriptengine.h \
-    ../die_script/elf_script.h \
-    ../die_script/mach_script.h \
-    ../die_script/msdos_script.h \
-    ../die_script/pe_script.h \
-    ../die_widget/dialoglog.h \
-    ../die_widget/dialogsignatures.h \
-    ../die_widget/die_highlighter.h \
-    ../die_widget/die_signatureedit.h \
-    ../die_widget/die_widget.h \
-    ../global.h \
-    dialogabout.h \
-    dialogoptions.h \
-    guimainwindow.h \
-    ../nfd_widget/nfd_widget.h
 
 SOURCES += \
     ../Controls/hexvalidator.cpp \
@@ -366,6 +205,7 @@ SOURCES += \
     ../XEntropyWidget/dialogentropyprocess.cpp \
     ../XEntropyWidget/entropyprocess.cpp \
     ../XEntropyWidget/xentropywidget.cpp \
+    ../XGithub/xgithub.cpp \
     ../XHashWidget/dialoghash.cpp \
     ../XHashWidget/dialoghashprocess.cpp \
     ../XHashWidget/hashprocess.cpp \
@@ -379,6 +219,8 @@ SOURCES += \
     ../XMemoryMapWidget/dialogmemorymap.cpp \
     ../XMemoryMapWidget/xmemorymapwidget.cpp \
     ../XOptions/xoptions.cpp \
+    ../XShortcuts/dialogshortcuts.cpp \
+    ../XShortcuts/xshortcuts.cpp \
     ../XSingleApplication/xsingleapplication.cpp \
     ../archive_widget/archive_widget.cpp \
     ../archive_widget/createviewmodelprocess.cpp \
@@ -407,3 +249,5 @@ SOURCES += \
     main_gui.cpp \
     ../nfd_widget/nfd_widget.cpp \
     ../winloader_source/winloader.cpp
+
+
