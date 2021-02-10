@@ -88,3 +88,6 @@
 [submodule "XShortcuts"]
 	path = XShortcuts
 	url = https://github.com/horsicq/XShortcuts.git
+[submodule "XHexEdit"]
+	path = XHexEdit
+	url = https://github.com/horsicq/XHexEdit.git
