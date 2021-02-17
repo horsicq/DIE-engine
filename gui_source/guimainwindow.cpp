@@ -155,8 +155,11 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            // TODO options
-            DialogSearchStrings dialogSearchStrings(this,&file,0,true);
+            MultiSearch::OPTIONS stringsOptions={};
+            stringsOptions.bAnsi=true;
+            stringsOptions.bUnicode=true;
+
+            DialogSearchStrings dialogSearchStrings(this,&file,stringsOptions,true);
             dialogSearchStrings.setShortcuts(&xShortcuts);
 
             dialogSearchStrings.exec();
