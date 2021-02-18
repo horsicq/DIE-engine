@@ -47,7 +47,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     listOptionsIDs.append(XOptions::ID_DATABASEPATH);
     listOptionsIDs.append(XOptions::ID_INFOPATH);
     listOptionsIDs.append(XOptions::ID_SCANENGINE);
-    listOptionsIDs.append(XOptions::ID_SIGNATURESFILE);
+    listOptionsIDs.append(XOptions::ID_SIGNATURESFILENAME);
 
     xOptions.setValueIDs(listOptionsIDs);
     xOptions.load();
