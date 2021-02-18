@@ -54,6 +54,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     xShortcuts.setName(X_SHORTCUTSFILE);
 
     xShortcuts.addGroup(XShortcuts::ID_STRINGS);
+    xShortcuts.addGroup(XShortcuts::ID_SIGNATURES);
     xShortcuts.addGroup(XShortcuts::ID_HEX);
     xShortcuts.addGroup(XShortcuts::ID_DISASM);
     xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
@@ -155,7 +156,7 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            MultiSearch::OPTIONS stringsOptions={};
+            SearchStringsWidget::OPTIONS stringsOptions={};
             stringsOptions.bAnsi=true;
             stringsOptions.bUnicode=true;
 
