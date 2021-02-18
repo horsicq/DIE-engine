@@ -47,6 +47,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     listOptionsIDs.append(XOptions::ID_DATABASEPATH);
     listOptionsIDs.append(XOptions::ID_INFOPATH);
     listOptionsIDs.append(XOptions::ID_SCANENGINE);
+    listOptionsIDs.append(XOptions::ID_SIGNATURESFILE);
 
     xOptions.setValueIDs(listOptionsIDs);
     xOptions.load();
@@ -221,8 +222,14 @@ void GuiMainWindow::adjust()
 {
     xOptions.adjustStayOnTop(this);
 
-    ui->widgetFormats->setDIEDatabasePath(xOptions.getDbPath());
-    ui->widgetFormats->setDIEInfoPath(xOptions.getInfoPath());
+    FormatsWidget::OPTIONS options={};
+
+    options.sDatabasePath=xOptions.getDatabasePath();
+    options.sInfoPath=xOptions.getInfoPath();
+    options.bIsSaveBackup=xOptions.isSaveBackup();
+
+    ui->widgetFormats->setOptions(options);
+
     ui->widgetFormats->setScanEngine(xOptions.getScanEngine());
 
     ui->widgetFormats->setShortcuts(&xShortcuts);
@@ -233,15 +240,6 @@ void GuiMainWindow::adjustFile()
 {
     QString sFileName=getCurrentFileName();
 
-    if(xOptions.isSaveBackup())
-    {
-        ui->widgetFormats->setBackupFileName(XBinary::getBackupName(sFileName));
-    }
-    else
-    {
-        ui->widgetFormats->setBackupFileName("");
-    }
-
     xOptions.setLastDirectory(sFileName);
 }
 
@@ -251,7 +249,7 @@ void GuiMainWindow::processFile(QString sFileName)
 
     if(sFileName!="")
     {
-        ui->widgetFormats->setData(sFileName,xOptions.isScanAfterOpen());
+        ui->widgetFormats->setFileName(sFileName,xOptions.isScanAfterOpen());
 
         adjustFile();
     }
