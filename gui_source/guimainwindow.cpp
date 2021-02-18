@@ -44,7 +44,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     listOptionsIDs.append(XOptions::ID_SINGLEAPPLICATION);
     listOptionsIDs.append(XOptions::ID_LASTDIRECTORY);
     listOptionsIDs.append(XOptions::ID_SAVEBACKUP);
-    listOptionsIDs.append(XOptions::ID_DBPATH);
+    listOptionsIDs.append(XOptions::ID_DATABASEPATH);
     listOptionsIDs.append(XOptions::ID_INFOPATH);
     listOptionsIDs.append(XOptions::ID_SCANENGINE);
 

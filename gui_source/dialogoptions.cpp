@@ -43,7 +43,7 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
 
     pOptions->setCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
     pOptions->setComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
-    pOptions->setLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DBPATH);
+    pOptions->setLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DATABASEPATH);
     pOptions->setLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
 
     pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
@@ -83,7 +83,7 @@ void DialogOptions::on_pushButtonOK_clicked()
 
     pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
     pOptions->getComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
-    pOptions->getLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DBPATH);
+    pOptions->getLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DATABASEPATH);
     pOptions->getLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
 
     pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
