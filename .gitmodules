@@ -91,3 +91,6 @@
 [submodule "XHexEdit"]
 	path = XHexEdit
 	url = https://github.com/horsicq/XHexEdit.git
+[submodule "signatures"]
+	path = signatures
+	url = https://github.com/horsicq/signatures.git
