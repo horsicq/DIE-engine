@@ -45,6 +45,7 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
     pOptions->setComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
     pOptions->setLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DATABASEPATH);
     pOptions->setLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
+    pOptions->setLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
     pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
     pOptions->setComboBox(ui->comboBoxQss,XOptions::ID_QSS);
@@ -85,6 +86,7 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
     pOptions->getLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DATABASEPATH);
     pOptions->getLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
+    pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
     pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
     pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
@@ -143,5 +145,18 @@ void DialogOptions::on_toolButtonDIEInfo_clicked()
     if(!sDirectoryName.isEmpty())
     {
         ui->lineEditDIEInfo->setText(sDirectoryName);
+    }
+}
+
+void DialogOptions::on_toolButtonSearchSignatures_clicked()
+{
+    QString sText=ui->lineEditSearchSignatures->text();
+    QString sInitDirectory=XBinary::convertPathName(sText);
+
+    QString sDirectoryName=QFileDialog::getExistingDirectory(this,tr("Open directory")+QString("..."),sInitDirectory,QFileDialog::ShowDirsOnly);
+
+    if(!sDirectoryName.isEmpty())
+    {
+        ui->lineEditSearchSignatures->setText(sDirectoryName);
     }
 }

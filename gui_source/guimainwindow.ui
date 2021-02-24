@@ -100,6 +100,13 @@
          </widget>
         </item>
         <item>
+         <widget class="QPushButton" name="pushButtonSignatures">
+          <property name="text">
+           <string>Signatures</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <spacer name="verticalSpacer">
           <property name="orientation">
            <enum>Qt::Vertical</enum>

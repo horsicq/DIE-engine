@@ -28,6 +28,7 @@
 #include "dialoghexview.h"
 #include "dialogentropy.h"
 #include "dialogsearchstrings.h"
+#include "dialogsearchsignatures.h"
 #include "dialogmemorymap.h"
 #include "dialoghash.h"
 #include "dialogabout.h"
@@ -55,6 +56,7 @@ private slots:
     void on_pushButtonMIME_clicked();
     void on_pushButtonHex_clicked();
     void on_pushButtonStrings_clicked();
+    void on_pushButtonSignatures_clicked();
     void on_pushButtonEntropy_clicked();
     void on_pushButtonOpenFile_clicked();
     void on_pushButtonHash_clicked();

@@ -47,7 +47,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     listOptionsIDs.append(XOptions::ID_DATABASEPATH);
     listOptionsIDs.append(XOptions::ID_INFOPATH);
     listOptionsIDs.append(XOptions::ID_SCANENGINE);
-    listOptionsIDs.append(XOptions::ID_SIGNATURESFILENAME);
+    listOptionsIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
 
     xOptions.setValueIDs(listOptionsIDs);
     xOptions.load();
@@ -171,6 +171,30 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
     }
 }
 
+void GuiMainWindow::on_pushButtonSignatures_clicked()
+{
+    QString sFileName=getCurrentFileName();
+
+    if(sFileName!="")
+    {
+        QFile file;
+        file.setFileName(sFileName);
+
+        if(file.open(QIODevice::ReadOnly))
+        {
+            SearchSignaturesWidget::OPTIONS signaturesOptions={};
+            signaturesOptions.sSignaturesPath=xOptions.getSearchSignaturesPath();
+
+            DialogSearchSignatures dialogSearchSignatures(this,&file,XBinary::FT_UNKNOWN,signaturesOptions);
+            dialogSearchSignatures.setShortcuts(&xShortcuts);
+
+            dialogSearchSignatures.exec();
+
+            file.close();
+        }
+    }
+}
+
 void GuiMainWindow::on_pushButtonEntropy_clicked()
 {
     QString sFileName=getCurrentFileName();
@@ -227,6 +251,7 @@ void GuiMainWindow::adjust()
     options.sDatabasePath=xOptions.getDatabasePath();
     options.sInfoPath=xOptions.getInfoPath();
     options.bIsSaveBackup=xOptions.isSaveBackup();
+    options.sSearchSignaturesPath=xOptions.getSearchSignaturesPath();
 
     ui->widgetFormats->setOptions(options);
 

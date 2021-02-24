@@ -59,6 +59,7 @@ private slots:
     void on_pushButtonRegister_clicked();
     void on_pushButtonClear_clicked();
     void on_toolButtonDIEInfo_clicked();
+    void on_toolButtonSearchSignatures_clicked();
 
 private:
     Ui::DialogOptions *ui;
