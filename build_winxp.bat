@@ -108,6 +108,9 @@ rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_ar.ts -q
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_tr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\die_tr.qm
 rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\die_he.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\die_he.qm
 
+mkdir %SOURCE_PATH%\release\%BUILD_NAME%\signatures
+xcopy %SOURCE_PATH%\signatures\crypto.db %SOURCE_PATH%\release\%BUILD_NAME%\signatures\
+
 cd %SOURCE_PATH%\release
 if exist %ZIP_NAME%.zip del %ZIP_NAME%.zip
 %SEVENZIP_PATH%\7z.exe a %ZIP_NAME%.zip %BUILD_NAME%\*
