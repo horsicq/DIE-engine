@@ -134,6 +134,7 @@ void GuiMainWindow::on_pushButtonHex_clicked()
         if(XBinary::tryToOpen(&file))
         {
             XHexView::OPTIONS hexOptions={};
+            hexOptions.sSignaturesPath=xOptions.getSearchSignaturesPath();
 //            hexOptions.sBackupFileName=XBinary::getBackupName(&file);
 
             DialogHexView dialogHex(this,&file,hexOptions);
