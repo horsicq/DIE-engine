@@ -89,6 +89,9 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURC
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_zh_TW.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_tr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/die_tr.qm
 
+mkdir -p $SOURCE_PATH/release/$BUILD_NAME/base/signatures
+cp -R $SOURCE_PATH/signatures/crypto.db                     		$SOURCE_PATH/release/$BUILD_NAME/base/signatures
+
 echo "#!/bin/sh" >> release/$BUILD_NAME/die.sh
 echo "CWD=\$(dirname \$0)" >> release/$BUILD_NAME/die.sh
 echo "export LD_LIBRARY_PATH=\"\$CWD/base:\$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/die.sh
