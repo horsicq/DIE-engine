@@ -94,3 +94,6 @@
 [submodule "signatures"]
 	path = signatures
 	url = https://github.com/horsicq/signatures.git
+[submodule "XDemangle"]
+	path = XDemangle
+	url = https://github.com/horsicq/XDemangle.git
