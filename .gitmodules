@@ -97,3 +97,6 @@
 [submodule "XDemangle"]
 	path = XDemangle
 	url = https://github.com/horsicq/XDemangle.git
+[submodule "XDemangleWidget"]
+	path = XDemangleWidget
+	url = https://github.com/horsicq/XDemangleWidget.git
