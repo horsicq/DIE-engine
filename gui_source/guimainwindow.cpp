@@ -251,7 +251,7 @@ void GuiMainWindow::adjust()
 
     options.sDatabasePath=xOptions.getDatabasePath();
     options.sInfoPath=xOptions.getInfoPath();
-    options.bIsSaveBackup=xOptions.isSaveBackup();
+    options.bSaveBackup=xOptions.isSaveBackup();
     options.sSearchSignaturesPath=xOptions.getSearchSignaturesPath();
 
     ui->widgetFormats->setOptions(options);
