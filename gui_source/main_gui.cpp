@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 
     if(app.isPrimary())
     {
-        XOptions::adjustApplicationView(X_APPLICATIONFILENAME,&xOptions);
+        XOptions::adjustApplicationView(X_APPLICATIONNAME,&xOptions);
 
         GuiMainWindow mainWindow;
 

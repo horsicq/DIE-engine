@@ -75,7 +75,7 @@ protected:
 
 private:
     Ui::GuiMainWindow *ui;
-    XOptions xOptions;
-    XShortcuts xShortcuts;
+    XOptions g_xOptions;
+    XShortcuts g_xShortcuts;
 };
 #endif // GUIMAINWINDOW_H
