@@ -11,7 +11,7 @@ if [[ $ARCHITECTURE == *"x86_64"* ]]; then
     ARCHITECTURE="amd64"
 fi
 
-BUILD_NAME=die_${RELEASE_VERSION}_${ARCHITECTURE}-${REVISION}
+BUILD_NAME=die_${RELEASE_VERSION}-${REVISION}_${ARCHITECTURE}
 
 cd $SOURCE_PATH
 
@@ -83,4 +83,5 @@ sudo chmod 0755 $SOURCE_PATH/release/$BUILD_NAME/usr/bin/diec
 
 sudo dpkg -b $SOURCE_PATH/release/$BUILD_NAME
 
-sudo rm -rf release/$BUILD_NAME
+sudo rm -rf $SOURCE_PATH/release/$BUILD_NAME
+sudo chmod -R 777 $SOURCE_PATH/release/
