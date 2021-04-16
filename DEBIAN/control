@@ -1,7 +1,7 @@
 Package: die
 Version: 3.02
-Architecture: all
+Architecture: amd64
 Maintainer: hors <horsicq@gmail.com>
-Depends: libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5 libqt5scripttools5, libqt5script5, libqt5network5, libicu67
+Depends: libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5scripttools5, libqt5script5, libqt5network5
 Homepage: http://ntinfo.biz
 Description: Program for determining types of files
