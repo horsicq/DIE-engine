@@ -77,10 +77,10 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_he.ts -qm $SOURCE
 
 cp -R $SOURCE_PATH/signatures/crypto.db                     		$SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/signatures/
 
-chown root:root -R $SOURCE_PATH/release/$BUILD_NAME
-chmod 0755 $SOURCE_PATH/release/$BUILD_NAME/usr/bin/die
-chmod 0755 $SOURCE_PATH/release/$BUILD_NAME/usr/bin/diec
+sudo chown root:root -R $SOURCE_PATH/release/$BUILD_NAME
+sudo chmod 0755 $SOURCE_PATH/release/$BUILD_NAME/usr/bin/die
+sudo chmod 0755 $SOURCE_PATH/release/$BUILD_NAME/usr/bin/diec
 
-dpkg -b $SOURCE_PATH/release/$BUILD_NAME
+sudo dpkg -b $SOURCE_PATH/release/$BUILD_NAME
 
-rm -rf release/$BUILD_NAME
+sudo rm -rf release/$BUILD_NAME
