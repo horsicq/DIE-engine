@@ -83,4 +83,4 @@ chmod 0755 $SOURCE_PATH/release/$BUILD_NAME/usr/bin/diec
 
 dpkg -b $SOURCE_PATH/release/$BUILD_NAME
 
-#rm -rf release/$BUILD_NAME
+rm -rf release/$BUILD_NAME
