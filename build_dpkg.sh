@@ -52,10 +52,11 @@ mkdir -p $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die
 mkdir -p $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang
 mkdir -p $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/signatures
 
-cp -R $SOURCE_PATH/build/release/die                     		$SOURCE_PATH/release/$BUILD_NAME/usr/bin/
-cp -R $SOURCE_PATH/build/release/diec                     		$SOURCE_PATH/release/$BUILD_NAME/usr/bin/
+cp -f $SOURCE_PATH/build/release/die                     		$SOURCE_PATH/release/$BUILD_NAME/usr/bin/
+cp -f $SOURCE_PATH/build/release/diec                     		$SOURCE_PATH/release/$BUILD_NAME/usr/bin/
 
-cp -R $SOURCE_PATH/DEBIAN/control                     		    $SOURCE_PATH/release/$BUILD_NAME/DEBIAN/
+cp -f $SOURCE_PATH/DEBIAN/control                     		    $SOURCE_PATH/release/$BUILD_NAME/DEBIAN/
+cp -f $SOURCE_PATH/LICENSE                     		            $SOURCE_PATH/release/$BUILD_NAME/
 cp -Rf $SOURCE_PATH/XStyles/qss/ $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/
 cp -Rf $SOURCE_PATH/Detect-It-Easy/info/ $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/
 cp -Rf $SOURCE_PATH/Detect-It-Easy/db/ $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/
@@ -75,7 +76,7 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_ko.ts -qm $SOURCE
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_tr.ts -qm $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_tr.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/die_he.ts -qm $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_he.qm
 
-cp -R $SOURCE_PATH/signatures/crypto.db                     		$SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/signatures/
+cp -f $SOURCE_PATH/signatures/crypto.db                     		$SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/signatures/
 
 sudo chown root:root -R $SOURCE_PATH/release/$BUILD_NAME
 sudo chmod 0755 $SOURCE_PATH/release/$BUILD_NAME/usr/bin/die
