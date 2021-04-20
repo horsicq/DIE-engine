@@ -121,7 +121,7 @@ void DialogOptions::on_toolButtonDIEDatabase_clicked()
 void DialogOptions::on_pushButtonRegister_clicked()
 {
 #ifdef Q_OS_WIN
-    pOptions->registerContext(X_APPLICATIONNAME,"*",qApp->applicationFilePath());
+    pOptions->registerContext(X_APPLICATIONDISPLAYNAME,"*",qApp->applicationFilePath());
 
     contextState();
 #endif
@@ -130,7 +130,7 @@ void DialogOptions::on_pushButtonRegister_clicked()
 void DialogOptions::on_pushButtonClear_clicked()
 {
 #ifdef Q_OS_WIN
-    pOptions->clearContext(X_APPLICATIONNAME,"*");
+    pOptions->clearContext(X_APPLICATIONDISPLAYNAME,"*");
 
     contextState();
 #endif

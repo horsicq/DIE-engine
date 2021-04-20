@@ -23,7 +23,7 @@
 
 #include <QString>
 
-#define X_APPLICATIONDISPPLAYNAME "DetectItEasy"
+#define X_APPLICATIONDISPLAYNAME "Detect It Easy"
 #define X_APPLICATIONNAME "die"
 #define X_APPLICATIONVERSION "3.02"
 #define X_ORGANIZATIONNAME "NTInfo"

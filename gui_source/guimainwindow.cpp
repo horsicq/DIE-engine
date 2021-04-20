@@ -27,7 +27,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 {
     ui->setupUi(this);
 
-    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONDISPPLAYNAME).arg(X_APPLICATIONVERSION));
+    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME).arg(X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
 
