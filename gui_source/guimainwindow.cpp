@@ -229,7 +229,7 @@ void GuiMainWindow::on_pushButtonHash_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogHash dialogHash(this,&file);
+            DialogHash dialogHash(this,&file,XBinary::FT_UNKNOWN);
             dialogHash.setShortcuts(&g_xShortcuts);
 
             dialogHash.exec();
