@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=3.02
+Type=Application
+Name=Detect It Easy
+Comment=Detect It Easy, or abbreviated "DIE" is a program for determining types of files.
+TryExec=die
+Exec=die %f
+Icon=die
+Terminal=false
+Categories=Programming
+MimeType=application/octet-stream
