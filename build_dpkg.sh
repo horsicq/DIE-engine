@@ -1,6 +1,4 @@
 #!/bin/bash -x
-
-// https://askubuntu.com/questions/1345/what-is-the-simplest-debian-packaging-guide
 RELEASE_VERSION=$(cat "release_version.txt")
 ARCHITECTURE=$(uname -m)
 REVISION=$(date "+%Y%m%d")
