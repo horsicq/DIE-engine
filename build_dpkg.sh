@@ -37,6 +37,7 @@ makeproject console_source
 
 cd $SOURCE_PATH/gui_source
 lupdate gui_source_tr.pro
+lrelease gui_source_tr.pro
 cd $SOURCE_PATH
 
 mkdir -p $SOURCE_PATH/release
@@ -65,20 +66,7 @@ cp -Rf $SOURCE_PATH/Detect-It-Easy/db/ $SOURCE_PATH/release/$BUILD_NAME/usr/lib/
 
 cp -Rf $SOURCE_PATH/DEBIAN/hicolor/ $SOURCE_PATH/release/$BUILD_NAME/usr/share/icons/
 
-lrelease  $SOURCE_PATH/gui_source/translation/die_de.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_de.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_ja.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_ja.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_pl.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_pl.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_pt_BR.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_pt_BR.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_fr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_fr.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_ru.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_ru.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_vi.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_zh.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_zh_TW.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_es.ts -qm $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_es.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_it.ts -qm $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_it.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_ko.ts -qm $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_ko.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_tr.ts -qm $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_tr.qm
-lrelease  $SOURCE_PATH/gui_source/translation/die_he.ts -qm $SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/lang/die_he.qm
+mv $SOURCE_PATH/gui_source/translation/*.qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/
 
 cp -f $SOURCE_PATH/signatures/crypto.db                     		$SOURCE_PATH/release/$BUILD_NAME/usr/lib/die/signatures/
 
