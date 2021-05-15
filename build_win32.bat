@@ -1,5 +1,5 @@
 set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community"
-set QT_PATH=C:\Qt\5.15.2\msvc2019
+set QT_PATH="C:\Qt\5.15.2\msvc2019"
 set SEVENZIP_PATH="C:\Program Files\7-Zip"
 
 set BUILD_NAME=die_win32_portable
@@ -32,7 +32,7 @@ rmdir /s /q %SOURCE_PATH%\gui_source\release
 cd build_libs
 %QT_PATH%\bin\qmake.exe build_libs.pro -r -spec win32-msvc "CONFIG+=release"
 
-nmake Makefile.Release clean
+nmake Makefile clean
 nmake
 del Makefile
 del Makefile.Release
@@ -83,9 +83,9 @@ copy %QT_PATH%\plugins\imageformats\qtiff.dll %SOURCE_PATH%\release\%BUILD_NAME%
 copy %QT_PATH%\plugins\imageformats\qico.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
 copy %QT_PATH%\plugins\imageformats\qgif.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
 
-copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x86\Microsoft.VC142.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x86\Microsoft.VC142.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x86\Microsoft.VC142.CRT\msvcp140_1.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\%VCToolsVersion%\x86\Microsoft.VC142.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\%VCToolsVersion%\x86\Microsoft.VC142.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\%VCToolsVersion%\x86\Microsoft.VC142.CRT\msvcp140_1.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 
 xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\qss /E /I
 xcopy %SOURCE_PATH%\Detect-It-Easy\db %SOURCE_PATH%\release\%BUILD_NAME%\db /E /I
