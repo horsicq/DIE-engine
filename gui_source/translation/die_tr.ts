@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="tr_TR">
+<TS>
     <context>
         <name>Archive_widget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">Biçim</translation>
+            <translation>Biçim</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished">Filtre</translation>
+            <translation>Filtre</translation>
         </message>
         <message>
             <source>Tree</source>
@@ -29,54 +29,58 @@
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">Hash</translation>
+            <translation>Hash</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Kapyala</translation>
+            <translation>Kapyala</translation>
         </message>
         <message>
-            <source>File name</source>
-            <translation type="unfinished">Dosya adı</translation>
+            <source>Filename</source>
+            <translation>Dosya adı</translation>
         </message>
         <message>
-            <source>Dump</source>
-            <translation type="unfinished">Dump (dök)</translation>
+            <source>Dump to file</source>
+            <translation>Dosyaya dök</translation>
         </message>
         <message>
             <source>Save file</source>
-            <translation type="unfinished">Dosya kaydet</translation>
+            <translation>Dosya kaydet</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
         </message>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">Dosya kayıt edilemiyor</translation>
+            <translation>Dosya kayıt edilemiyor</translation>
         </message>
     </context>
     <context>
         <name>BinaryWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
     </context>
     <context>
@@ -87,79 +91,83 @@
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
+            <translation>Boyut</translation>
         </message>
     </context>
     <context>
         <name>DEXSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
     </context>
     <context>
         <name>DEXWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished">Filtre</translation>
+            <translation>Filtre</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
     </context>
     <context>
         <name>DIE_Widget</name>
         <message>
             <source>Signatures</source>
-            <translation type="unfinished">İmzalar</translation>
+            <translation>İmzalar</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Derin tarama</translation>
+            <translation>Derin tarama</translation>
         </message>
         <message>
             <source>Log</source>
-            <translation type="unfinished">Log Kayıt</translation>
+            <translation>Log Kayıt</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished">Dur</translation>
+            <translation>Dur</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">msec</translation>
+            <translation>msec</translation>
         </message>
     </context>
     <context>
         <name>DialogAbout</name>
         <message>
             <source>About</source>
-            <translation type="unfinished">Hakkında</translation>
+            <translation>Hakkında</translation>
         </message>
         <message>
             <source>Donate</source>
@@ -171,7 +179,7 @@
         </message>
         <message>
             <source>Libraries</source>
-            <translation type="unfinished">Kütüphaneler</translation>
+            <translation>Kütüphaneler</translation>
         </message>
         <message>
             <source>Check updates</source>
@@ -179,109 +187,128 @@
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">Tamam</translation>
+            <translation>Tamam</translation>
         </message>
     </context>
     <context>
         <name>DialogArchive</name>
         <message>
             <source>Archive</source>
-            <translation type="unfinished">Arşiv</translation>
+            <translation>Arşiv</translation>
+        </message>
+        <message>
+            <source>Open</source>
+            <translation>Aç</translation>
+        </message>
+        <message>
+            <source>Close</source>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogAsmSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">İmza</translation>
+            <translation>İmza</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">Alanlar</translation>
+            <translation>Alanlar</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">Üst</translation>
+            <translation>Üst</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">Genel arama karakteri</translation>
+            <translation>Genel arama karakteri</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Kapyala</translation>
+            <translation>Kapyala</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">Tamam</translation>
+            <translation>Tamam</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">İlgili sanal adres</translation>
+            <translation>İlgili sanal adres</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Bytes</translation>
+            <translation>Bytes</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">Opcode</translation>
+            <translation>Opcode</translation>
         </message>
     </context>
     <context>
         <name>DialogCreateViewModel</name>
         <message>
             <source>Create view model</source>
-            <translation type="unfinished">Görünüm modeli oluştur</translation>
+            <translation>Görünüm modeli oluştur</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogDemangle</name>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>OK</source>
+            <translation>Tamam</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasm</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasmLabels</name>
         <message>
             <source>Labels</source>
-            <translation type="unfinished">Etiketler</translation>
+            <translation>Etiketler</translation>
         </message>
         <message>
             <source>Go to</source>
-            <translation type="unfinished">Git</translation>
+            <translation>Git</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">İsim</translation>
+            <translation>İsim</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasmProcess</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Opcodes</source>
@@ -305,94 +332,94 @@
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
     </context>
     <context>
         <name>DialogDump</name>
         <message>
             <source>Dump</source>
-            <translation type="unfinished">Dump (dök)</translation>
+            <translation>Dump (dök)</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
     </context>
     <context>
         <name>DialogDumpProcess</name>
         <message>
             <source>Dump</source>
-            <translation type="unfinished">Dump (dök)</translation>
+            <translation>Dump (dök)</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
         </message>
     </context>
     <context>
         <name>DialogEntropy</name>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogEntropyProcess</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">İşlem</translation>
+            <translation>İşlem</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
         </message>
     </context>
     <context>
         <name>DialogGoToAddress</name>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">Adrese git</translation>
+            <translation>Adrese git</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">Tamam</translation>
+            <translation>Tamam</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">Sanal adres</translation>
+            <translation>Sanal adres</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">Değer</translation>
+            <translation>Değer</translation>
         </message>
         <message>
-            <source>File offset</source>
-            <translation type="unfinished">Dosya ofseti</translation>
+            <source>Offset</source>
+            <translation>Ofset</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">İlgili sanal adres</translation>
+            <translation>İlgili sanal adres</translation>
         </message>
         <message>
             <source>Invalid</source>
@@ -403,164 +430,203 @@
         <name>DialogHash</name>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">Hash</translation>
+            <translation>Hash</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogHashProcess</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">İşlem</translation>
+            <translation>İşlem</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
         </message>
     </context>
     <context>
         <name>DialogHex</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogHexSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">İmza</translation>
+            <translation>İmza</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">Alanlar</translation>
+            <translation>Alanlar</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">Üst</translation>
+            <translation>Üst</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">Genel arama karakteri</translation>
+            <translation>Genel arama karakteri</translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Kapyala</translation>
+            <translation>Kapyala</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">Tamam</translation>
+            <translation>Tamam</translation>
         </message>
     </context>
     <context>
         <name>DialogHexView</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogInfo</name>
         <message>
             <source>Info</source>
-            <translation type="unfinished">Bilgi</translation>
+            <translation>Bilgi</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogLog</name>
         <message>
             <source>Log</source>
-            <translation type="unfinished">Log Kayıt</translation>
+            <translation>Log Kayıt</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogMIME</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogMemoryMap</name>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogMultiDisasm</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogMultiDisasmSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">İmza</translation>
+            <translation>İmza</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">Alanlar</translation>
+            <translation>Alanlar</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">Üst</translation>
+            <translation>Üst</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished">Genel arama karakteri</translation>
+            <translation>Genel arama karakteri</translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Kapyala</translation>
+            <translation>Kapyala</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">Tamam</translation>
+            <translation>Tamam</translation>
+        </message>
+        <message>
+            <source>Relative virtual address</source>
+            <translation>İlgili sanal adres</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Bytes</translation>
+            <translation>Bytes</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">Opcode</translation>
+            <translation>Opcode</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogMultiSearchProcess</name>
+        <message>
+            <source>Search</source>
+            <translation>Ara</translation>
+        </message>
+        <message>
+            <source>Cancel</source>
+            <translation>İptal</translation>
+        </message>
+        <message>
+            <source>Search strings</source>
+            <translation>Kelime ara</translation>
+        </message>
+        <message>
+            <source>Search signatures</source>
+            <translation>İmzalar</translation>
+        </message>
+        <message>
+            <source>Create view model</source>
+            <translation>Görünüm modeli oluştur</translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>Hata</translation>
         </message>
     </context>
     <context>
         <name>DialogOptions</name>
         <message>
             <source>Options</source>
-            <translation type="unfinished">Ayarlar</translation>
+            <translation>Ayarlar</translation>
         </message>
         <message>
             <source>Save last directory</source>
@@ -584,15 +650,19 @@
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished">Database</translation>
+            <translation>Database</translation>
         </message>
         <message>
             <source>Info</source>
-            <translation type="unfinished">Bilgi</translation>
+            <translation>Bilgi</translation>
+        </message>
+        <message>
+            <source>Search signatures</source>
+            <translation>İmzalar</translation>
         </message>
         <message>
             <source>Style</source>
@@ -600,7 +670,7 @@
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished">Diller</translation>
+            <translation>Diller</translation>
         </message>
         <message>
             <source>Register</source>
@@ -608,15 +678,15 @@
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished">Temizle</translation>
+            <translation>Temizle</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">Tamam</translation>
+            <translation>Tamam</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>General</source>
@@ -647,22 +717,22 @@
         <name>DialogProcessData</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">İşlem</translation>
+            <translation>İşlem</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
         </message>
     </context>
     <context>
         <name>DialogSearch</name>
         <message>
             <source>Search</source>
-            <translation type="unfinished">Ara</translation>
+            <translation>Ara</translation>
         </message>
         <message>
             <source>Search from</source>
@@ -670,7 +740,7 @@
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished">Kelime</translation>
+            <translation>Kelime</translation>
         </message>
         <message>
             <source>Match case</source>
@@ -678,23 +748,23 @@
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">İmza</translation>
+            <translation>İmza</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">Değer</translation>
+            <translation>Değer</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">Endianness</translation>
+            <translation>Endianness</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">Tamam</translation>
+            <translation>Tamam</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>Begin</source>
@@ -702,132 +772,163 @@
         </message>
         <message>
             <source>Cursor</source>
-            <translation type="unfinished">Cursor</translation>
+            <translation>Cursor</translation>
         </message>
     </context>
     <context>
         <name>DialogSearchProcess</name>
         <message>
             <source>Search</source>
-            <translation type="unfinished">Ara</translation>
+            <translation>Ara</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogSearchSignatures</name>
+        <message>
+            <source>Signatures</source>
+            <translation>İmzalar</translation>
+        </message>
+        <message>
+            <source>Close</source>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogSearchStrings</name>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
-        </message>
-    </context>
-    <context>
-        <name>DialogSearchStringsProcess</name>
-        <message>
-            <source>Search strings</source>
-            <translation>Kelime ara</translation>
-        </message>
-        <message>
-            <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
-        </message>
-        <message>
-            <source>Create view model</source>
-            <translation type="unfinished">Görünüm modeli oluştur</translation>
-        </message>
-        <message>
-            <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogSectionHeader</name>
         <message>
             <source>Section</source>
-            <translation type="unfinished">Seçim</translation>
+            <translation>Seçim</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogShortcuts</name>
+        <message>
+            <source>Shortcuts</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Filter</source>
+            <translation>Filtre</translation>
+        </message>
+        <message>
+            <source>Clear</source>
+            <translation>Temizle</translation>
+        </message>
+        <message>
+            <source>Cancel</source>
+            <translation>İptal</translation>
+        </message>
+        <message>
+            <source>OK</source>
+            <translation>Tamam</translation>
+        </message>
+        <message>
+            <source>Group</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Name</source>
+            <translation>İsim</translation>
+        </message>
+        <message>
+            <source>Shortcut</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Cannot set shortcut</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>DialogShowImage</name>
         <message>
             <source>Image</source>
-            <translation type="unfinished">İmaj</translation>
+            <translation>İmaj</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogSignatures</name>
         <message>
             <source>Signatures</source>
-            <translation type="unfinished">İmzalar</translation>
+            <translation>İmzalar</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">Kaydet</translation>
+            <translation>Kaydet</translation>
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Debug</source>
-            <translation type="unfinished">Debugger</translation>
+            <translation></translation>
         </message>
         <message>
-            <source>Read only</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <source>Readonly</source>
+            <translation>Sadece okuma</translation>
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Show version</source>
-            <translation type="unfinished">Versiyon</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Show options</source>
-            <translation type="unfinished">Ayarlar</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Derin tarama</translation>
+            <translation>Derin tarama</translation>
         </message>
         <message>
             <source>Clear result</source>
-            <translation type="unfinished">Sonucu kaydet</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished">Database</translation>
+            <translation>Database</translation>
         </message>
         <message>
             <source>Debugger</source>
@@ -835,41 +936,41 @@
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">msec</translation>
+            <translation>msec</translation>
         </message>
     </context>
     <context>
         <name>DialogStaticScan</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">Tekrarlananları tara</translation>
+            <translation>Tekrarlananları tara</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Derin tarama</translation>
+            <translation>Derin tarama</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogStaticScanProcess</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
         <message>
             <source>Text documents</source>
@@ -884,64 +985,80 @@
         <name>DialogTextInfo</name>
         <message>
             <source>Info</source>
-            <translation type="unfinished">Bilgi</translation>
+            <translation>Bilgi</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished">Kapat</translation>
+            <translation>Kapat</translation>
         </message>
     </context>
     <context>
         <name>DialogUnpackFile</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished">İşlem</translation>
+            <translation>İşlem</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">İptal</translation>
+            <translation>İptal</translation>
         </message>
     </context>
     <context>
         <name>ELFSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
     </context>
     <context>
         <name>ELFWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>İmzalar</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">Düzenle</translation>
+            <translation>Düzenle</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Header</source>
+            <translation>Header</translation>
         </message>
     </context>
     <context>
@@ -959,15 +1076,15 @@
         <name>FormResult</name>
         <message>
             <source>Clear</source>
-            <translation type="unfinished">Temizle</translation>
+            <translation>Temizle</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">Kaydet</translation>
+            <translation>Kaydet</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">msec</translation>
+            <translation>msec</translation>
         </message>
     </context>
     <context>
@@ -978,38 +1095,38 @@
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Derin tarama</translation>
+            <translation>Derin tarama</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
         </message>
     </context>
     <context>
         <name>FormatWidget</name>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
         </message>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">Dosya kayıt edilemiyor</translation>
+            <translation>Dosya kayıt edilemiyor</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">İsim</translation>
+            <translation>İsim</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Ofset</translation>
+            <translation>Ofset</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">Değer</translation>
+            <translation>Değer</translation>
         </message>
     </context>
     <context>
@@ -1020,11 +1137,11 @@
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">Entry point</translation>
+            <translation>Entry point</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Base address</source>
@@ -1032,11 +1149,11 @@
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
         </message>
         <message>
             <source>Export</source>
@@ -1048,11 +1165,11 @@
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished">Kaynaklar</translation>
+            <translation>Kaynaklar</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">Seçimler</translation>
+            <translation>Seçimler</translation>
         </message>
         <message>
             <source>Manifest</source>
@@ -1064,62 +1181,74 @@
         </message>
         <message>
             <source>Commands</source>
-            <translation type="unfinished">Komutlar</translation>
+            <translation>Komutlar</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">Segmentler</translation>
+            <translation>Segmentler</translation>
         </message>
         <message>
             <source>Libraries</source>
-            <translation type="unfinished">Kütüphaneler</translation>
+            <translation>Kütüphaneler</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">Endianness</translation>
+            <translation>Endianness</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">Mod</translation>
+            <translation>Mod</translation>
         </message>
         <message>
             <source>Architecture</source>
-            <translation type="unfinished">Mimari</translation>
+            <translation>Mimari</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
     </context>
     <context>
         <name>GuiMainWindow</name>
         <message>
             <source>File name</source>
-            <translation type="unfinished">Dosya adı</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">Hash</translation>
+            <translation>Hash</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>İmzalar</translation>
+        </message>
+        <message>
+            <source>Shortcuts</source>
+            <translation></translation>
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished">Ayarlar</translation>
+            <translation>Ayarlar</translation>
         </message>
         <message>
             <source>About</source>
-            <translation type="unfinished">Hakkında</translation>
+            <translation>Hakkında</translation>
         </message>
         <message>
             <source>Exit</source>
@@ -1131,26 +1260,26 @@
         </message>
         <message>
             <source>All files</source>
-            <translation type="unfinished">Bütün Dosyalar</translation>
+            <translation>Bütün Dosyalar</translation>
         </message>
     </context>
     <context>
         <name>HeurWidget</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">Tekrarlananları tara</translation>
+            <translation>Tekrarlananları tara</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Derin tarama</translation>
+            <translation>Derin tarama</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
         <message>
             <source>Heuristic</source>
@@ -1158,284 +1287,404 @@
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">İsim</translation>
+            <translation>İsim</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">Değer</translation>
+            <translation>Değer</translation>
+        </message>
+    </context>
+    <context>
+        <name>InvWidget</name>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>Disasm</translation>
         </message>
     </context>
     <context>
         <name>LESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
     </context>
     <context>
         <name>LEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">Düzenle</translation>
+            <translation>Düzenle</translation>
+        </message>
+    </context>
+    <context>
+        <name>MACHOFATWidget</name>
+        <message>
+            <source>Form</source>
+            <translation>Biçim</translation>
+        </message>
+    </context>
+    <context>
+        <name>MACHProcessData</name>
+        <message>
+            <source>Name</source>
+            <translation>İsim</translation>
+        </message>
+        <message>
+            <source>Offset</source>
+            <translation>Ofset</translation>
+        </message>
+        <message>
+            <source>Address</source>
+            <translation>Adres</translation>
+        </message>
+        <message>
+            <source>Opcode</source>
+            <translation>Opcode</translation>
+        </message>
+        <message>
+            <source>Value</source>
+            <translation>Değer</translation>
         </message>
     </context>
     <context>
         <name>MACHSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
     </context>
     <context>
         <name>MACHWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
-            <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
+        </message>
+        <message>
+            <source>Readonly</source>
+            <translation>Sadece okuma</translation>
+        </message>
+        <message>
+            <source>Hash</source>
+            <translation>Hash</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>İmzalar</translation>
         </message>
         <message>
             <source>Commands</source>
-            <translation type="unfinished">Komutlar</translation>
+            <translation>Komutlar</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">Segmentler</translation>
+            <translation>Segmentler</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">Seçimler</translation>
+            <translation>Seçimler</translation>
         </message>
         <message>
-            <source>Libraries</source>
-            <translation type="unfinished">Kütüphaneler</translation>
+            <source>String table</source>
+            <translation></translation>
         </message>
         <message>
-            <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <source>Symbol table</source>
+            <translation></translation>
         </message>
         <message>
-            <source>Library</source>
-            <translation type="unfinished">Kütüphane</translation>
+            <source>Functions</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Data in code</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Header</source>
+            <translation>Header</translation>
+        </message>
+        <message>
+            <source>Edit</source>
+            <translation>Düzenle</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>MSDOSWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
+        </message>
+    </context>
+    <context>
+        <name>MultiSearch</name>
+        <message>
+            <source>Address</source>
+            <translation>Adres</translation>
+        </message>
+        <message>
+            <source>Offset</source>
+            <translation>Ofset</translation>
+        </message>
+        <message>
+            <source>Size</source>
+            <translation>Boyut</translation>
+        </message>
+        <message>
+            <source>Type</source>
+            <translation>Tip</translation>
+        </message>
+        <message>
+            <source>String</source>
+            <translation>Kelime</translation>
+        </message>
+        <message>
+            <source>Name</source>
+            <translation>İsim</translation>
         </message>
     </context>
     <context>
         <name>NESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
     </context>
     <context>
         <name>NEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">Segmentler</translation>
+            <translation>Segmentler</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
         </message>
     </context>
     <context>
         <name>NFD_Widget</name>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">Tekrarlananları tara</translation>
+            <translation>Tekrarlananları tara</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Derin tarama</translation>
+            <translation>Derin tarama</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Tarama</translation>
+            <translation>Tarama</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished">Dur</translation>
+            <translation>Dur</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished">msec</translation>
+            <translation>msec</translation>
         </message>
     </context>
     <context>
         <name>PEProcessData</name>
         <message>
             <source>Resources</source>
-            <translation type="unfinished">Kaynaklar</translation>
+            <translation>Kaynaklar</translation>
         </message>
     </context>
     <context>
         <name>PESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
     </context>
     <context>
         <name>PEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished">Sezgisel tarama</translation>
+            <translation>Sezgisel tarama</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
+        </message>
+        <message>
+            <source>Show valid</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>İmzalar</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">Seçimler</translation>
+            <translation>Seçimler</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
         </message>
         <message>
             <source>Calculate</source>
@@ -1443,29 +1692,33 @@
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">Düzenle</translation>
+            <translation>Düzenle</translation>
         </message>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>QHexView</name>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished">Dosya kayıt edilemiyor</translation>
+            <translation>Dosya kayıt edilemiyor</translation>
         </message>
     </context>
     <context>
         <name>QHexViewWidget</name>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">Adrese git</translation>
+            <translation>Adrese git</translation>
         </message>
         <message>
             <source>Cursor</source>
-            <translation type="unfinished">Cursor</translation>
+            <translation>Cursor</translation>
         </message>
         <message>
             <source>Selection</source>
@@ -1473,74 +1726,42 @@
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
+            <translation>Boyut</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished">Sadece okuma</translation>
+            <translation>Sadece okuma</translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">İşlenmemiş veri</translation>
+            <translation>İşlenmemiş veri</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">Dump kaydet</translation>
-        </message>
-        <message>
-            <source>Dump to file</source>
-            <translation type="unfinished">Dosyaya dök</translation>
-        </message>
-        <message>
-            <source>Signature</source>
-            <translation type="unfinished">İmza</translation>
-        </message>
-        <message>
-            <source>Find</source>
-            <translation type="unfinished">Bul</translation>
-        </message>
-        <message>
-            <source>Find next</source>
-            <translation type="unfinished">Sonrakini bul</translation>
-        </message>
-        <message>
-            <source>Select</source>
-            <translation type="unfinished">Seç</translation>
-        </message>
-        <message>
-            <source>Select all</source>
-            <translation type="unfinished">Hepsini seç</translation>
-        </message>
-        <message>
-            <source>Copy</source>
-            <translation type="unfinished">Kapyala</translation>
-        </message>
-        <message>
-            <source>Copy as hex</source>
-            <translation type="unfinished">HEX kopyala</translation>
+            <translation>Dump kaydet</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
         </message>
     </context>
     <context>
         <name>QObject</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Ofset</translation>
+            <translation>Ofset</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
+            <translation>Boyut</translation>
         </message>
         <message>
             <source>Read error</source>
-            <translation type="unfinished">Okuma hatası</translation>
+            <translation>Okuma hatası</translation>
         </message>
         <message>
             <source>Write error</source>
@@ -1548,61 +1769,53 @@
         </message>
         <message>
             <source>Cannot open file</source>
-            <translation type="unfinished">Dosya açılmıyor</translation>
+            <translation>Dosya açılmıyor</translation>
         </message>
     </context>
     <context>
-        <name>SearchStrings</name>
+        <name>QwtPlotRenderer</name>
         <message>
-            <source>Maximum</source>
-            <translation>Maksimum</translation>
+            <source>Documents</source>
+            <translation>Belgeler</translation>
         </message>
         <message>
-            <source>Read error</source>
-            <translation type="unfinished">Okuma hatası</translation>
+            <source>Images</source>
+            <translation>İmajlar</translation>
         </message>
         <message>
-            <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <source>Export File Name</source>
+            <translation></translation>
         </message>
-        <message>
-            <source>Offset</source>
-            <translation type="unfinished">Ofset</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
-        </message>
+    </context>
+    <context>
+        <name>SearchSignaturesWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
-            <source>String</source>
-            <translation type="unfinished">Kelime</translation>
+            <source>Endianness</source>
+            <translation>Endianness</translation>
         </message>
-    </context>
-    <context>
-        <name>SearchStringsWidget</name>
+        <message>
+            <source>File</source>
+            <translation>Dosya</translation>
+        </message>
         <message>
             <source>Search</source>
-            <translation type="unfinished">Ara</translation>
-        </message>
-        <message>
-            <source>Filter</source>
-            <translation type="unfinished">Filtre</translation>
+            <translation>Ara</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">Kaydet</translation>
+            <translation>Kaydet</translation>
         </message>
         <message>
             <source>Save file</source>
-            <translation type="unfinished">Dosya kaydet</translation>
+            <translation>Dosya kaydet</translation>
         </message>
         <message>
-            <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <source>Signatures</source>
+            <translation>İmzalar</translation>
         </message>
         <message>
             <source>Text files</source>
@@ -1610,7 +1823,58 @@
         </message>
         <message>
             <source>All files</source>
-            <translation type="unfinished">Bütün Dosyalar</translation>
+            <translation>Bütün Dosyalar</translation>
+        </message>
+        <message>
+            <source>Copy name</source>
+            <translation>HEX kopyala</translation>
+        </message>
+        <message>
+            <source>Copy signature</source>
+            <translation>İmza</translation>
+        </message>
+        <message>
+            <source>Copy address</source>
+            <translation>Adres kopyala</translation>
+        </message>
+        <message>
+            <source>Copy offset</source>
+            <translation>Ofset kopyala</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+    </context>
+    <context>
+        <name>SearchStringsWidget</name>
+        <message>
+            <source>Search</source>
+            <translation>Ara</translation>
+        </message>
+        <message>
+            <source>Filter</source>
+            <translation>Filtre</translation>
+        </message>
+        <message>
+            <source>Save</source>
+            <translation>Kaydet</translation>
+        </message>
+        <message>
+            <source>Save file</source>
+            <translation>Dosya kaydet</translation>
+        </message>
+        <message>
+            <source>Strings</source>
+            <translation>Kelimeler</translation>
+        </message>
+        <message>
+            <source>Text files</source>
+            <translation>Metin dosyaları</translation>
+        </message>
+        <message>
+            <source>All files</source>
+            <translation>Bütün Dosyalar</translation>
         </message>
         <message>
             <source>Copy string</source>
@@ -1628,6 +1892,14 @@
             <source>Copy size</source>
             <translation>Boyut kopyala</translation>
         </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
+        </message>
     </context>
     <context>
         <name>SpecAbstract</name>
@@ -1637,11 +1909,11 @@
         </message>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
         </message>
         <message>
             <source>Archive record</source>
@@ -1673,7 +1945,7 @@
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished">Database</translation>
+            <translation>Database</translation>
         </message>
         <message>
             <source>Debug data</source>
@@ -1697,7 +1969,7 @@
         </message>
         <message>
             <source>Image</source>
-            <translation type="unfinished">İmaj</translation>
+            <translation>İmaj</translation>
         </message>
         <message>
             <source>Installer</source>
@@ -1713,11 +1985,11 @@
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished">Diller</translation>
+            <translation>Diller</translation>
         </message>
         <message>
             <source>Library</source>
-            <translation type="unfinished">Kütüphane</translation>
+            <translation>Kütüphane</translation>
         </message>
         <message>
             <source>Linker</source>
@@ -1726,6 +1998,10 @@
         <message>
             <source>compressor</source>
             <translation>sıkıştırıcı</translation>
+        </message>
+        <message>
+            <source>Operation system</source>
+            <translation></translation>
         </message>
         <message>
             <source>Packer</source>
@@ -1757,7 +2033,7 @@
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">Entry point</translation>
+            <translation>Entry point</translation>
         </message>
         <message>
             <source>Section name</source>
@@ -1773,19 +2049,19 @@
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished">Kelime</translation>
+            <translation>Kelime</translation>
         </message>
         <message>
             <source>Archive</source>
-            <translation type="unfinished">Arşiv</translation>
+            <translation>Arşiv</translation>
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished">Kaynaklar</translation>
+            <translation>Kaynaklar</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
     </context>
     <context>
@@ -1814,26 +2090,38 @@
         <name>ToolsWidget</name>
         <message>
             <source>Strings</source>
-            <translation type="unfinished">Kelimeler</translation>
+            <translation>Kelimeler</translation>
         </message>
     </context>
     <context>
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Document</source>
-            <translation type="unfinished">Belgeler</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Image</source>
-            <translation type="unfinished">İmaj</translation>
+            <translation>İmaj</translation>
         </message>
         <message>
             <source>Archive</source>
-            <translation type="unfinished">Arşiv</translation>
+            <translation>Arşiv</translation>
+        </message>
+        <message>
+            <source>Read error</source>
+            <translation>Okuma hatası</translation>
+        </message>
+        <message>
+            <source>Maximum</source>
+            <translation>Maksimum</translation>
+        </message>
+        <message>
+            <source>Write error</source>
+            <translation>Yazma hatası</translation>
         </message>
     </context>
     <context>
@@ -1847,22 +2135,40 @@
         <name>XDEX</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
+        </message>
+    </context>
+    <context>
+        <name>XDemangle</name>
+        <message>
+            <source>Unknown</source>
+            <translation>Bilinmeyen</translation>
+        </message>
+        <message>
+            <source>Automatic</source>
+            <translation></translation>
+        </message>
+    </context>
+    <context>
+        <name>XDemangleWidget</name>
+        <message>
+            <source>Mode</source>
+            <translation>Mod</translation>
         </message>
     </context>
     <context>
         <name>XDisasmModel</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Ofset</translation>
+            <translation>Ofset</translation>
         </message>
         <message>
             <source>Label</source>
@@ -1870,85 +2176,125 @@
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Bytes</translation>
+            <translation>Bytes</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">Opcode</translation>
+            <translation>Opcode</translation>
         </message>
     </context>
     <context>
         <name>XDisasmView</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Ofset</translation>
+            <translation>Ofset</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Bytes</translation>
+            <translation>Bytes</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished">Opcode</translation>
+            <translation>Opcode</translation>
+        </message>
+        <message>
+            <source>Comment</source>
+            <translation></translation>
         </message>
         <message>
             <source>Invalid opcode</source>
-            <translation type="unfinished">Geçersiz</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">Adrese git</translation>
+            <translation>Adrese git</translation>
+        </message>
+        <message>
+            <source>Go to offset</source>
+            <translation>Ofset kopyala</translation>
+        </message>
+        <message>
+            <source>Go to entry point</source>
+            <translation>Entry point</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">Dosyaya dök</translation>
+            <translation>Dosyaya dök</translation>
+        </message>
+        <message>
+            <source>Hex signature</source>
+            <translation>İmza</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">İmza</translation>
+            <translation>İmza</translation>
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished">Bul</translation>
+            <translation>Bul</translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished">Sonrakini bul</translation>
+            <translation>Sonrakini bul</translation>
         </message>
         <message>
             <source>Select all</source>
-            <translation type="unfinished">Hepsini seç</translation>
+            <translation>Hepsini seç</translation>
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished">HEX kopyala</translation>
+            <translation>HEX kopyala</translation>
+        </message>
+        <message>
+            <source>Copy cursor offset</source>
+            <translation>Ofset kopyala</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>Adres kopyala</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Go to</source>
+            <translation>Git</translation>
         </message>
         <message>
             <source>Select</source>
-            <translation type="unfinished">Seç</translation>
+            <translation>Seç</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Kapyala</translation>
+            <translation>Kapyala</translation>
+        </message>
+        <message>
+            <source>Relative address</source>
+            <translation></translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">İşlenmemiş veri</translation>
+            <translation>İşlenmemiş veri</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">Dump kaydet</translation>
+            <translation>Dump kaydet</translation>
+        </message>
+        <message>
+            <source>Nothing found</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>XDisasmWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
             <source>Analyze</source>
@@ -1956,47 +2302,47 @@
         </message>
         <message>
             <source>Labels</source>
-            <translation type="unfinished">Etiketler</translation>
+            <translation>Etiketler</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
         </message>
         <message>
             <source>Go to</source>
-            <translation type="unfinished">Git</translation>
+            <translation>Git</translation>
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished">Entry point</translation>
+            <translation>Entry point</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">Sanal adres</translation>
+            <translation>Sanal adres</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">İlgili sanal adres</translation>
+            <translation>İlgili sanal adres</translation>
         </message>
         <message>
             <source>File offset</source>
-            <translation type="unfinished">Dosya ofseti</translation>
+            <translation>Dosya ofseti</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Kapyala</translation>
+            <translation>Kapyala</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">İmza</translation>
+            <translation>İmza</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">Dosyaya dök</translation>
+            <translation>Dosyaya dök</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished">Disasm</translation>
+            <translation>Disasm</translation>
         </message>
         <message>
             <source>To data</source>
@@ -2004,29 +2350,29 @@
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">İşlenmemiş veri</translation>
+            <translation>İşlenmemiş veri</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">Dump kaydet</translation>
+            <translation>Dump kaydet</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Hata</translation>
+            <translation>Hata</translation>
         </message>
     </context>
     <context>
         <name>XELF</name>
         <message>
             <source>Segment</source>
-            <translation type="unfinished">Segment</translation>
+            <translation>Segment</translation>
         </message>
     </context>
     <context>
         <name>XEntropyWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
             <source>Total</source>
@@ -2038,19 +2384,19 @@
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Ofset</translation>
+            <translation>Ofset</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
+            <translation>Boyut</translation>
         </message>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Entropy</translation>
+            <translation>Entropy</translation>
         </message>
         <message>
             <source>Regions</source>
@@ -2058,11 +2404,11 @@
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">Kaydet</translation>
+            <translation>Kaydet</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Bytes</translation>
+            <translation>Bytes</translation>
         </message>
         <message>
             <source>Byte</source>
@@ -2074,7 +2420,7 @@
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">İsim</translation>
+            <translation>İsim</translation>
         </message>
         <message>
             <source>Images</source>
@@ -2093,7 +2439,7 @@
         <name>XHashWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
             <source>Method</source>
@@ -2101,92 +2447,142 @@
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Ofset</translation>
+            <translation>Ofset</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
+            <translation>Boyut</translation>
         </message>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Tekrar yükle</translation>
+            <translation>Tekrar yükle</translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished">Hash</translation>
+            <translation>Hash</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">İsim</translation>
+            <translation>İsim</translation>
+        </message>
+    </context>
+    <context>
+        <name>XHexEdit</name>
+        <message>
+            <source>Offset</source>
+            <translation>Ofset</translation>
         </message>
     </context>
     <context>
         <name>XHexView</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Go to offset</source>
+            <translation>Ofset kopyala</translation>
         </message>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">Adrese git</translation>
+            <translation>Adrese git</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished">Dosyaya dök</translation>
+            <translation>Dosyaya dök</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">İmza</translation>
+            <translation>İmza</translation>
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished">Bul</translation>
+            <translation>Bul</translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished">Sonrakini bul</translation>
+            <translation>Sonrakini bul</translation>
         </message>
         <message>
             <source>Select all</source>
-            <translation type="unfinished">Hepsini seç</translation>
+            <translation>Hepsini seç</translation>
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished">HEX kopyala</translation>
+            <translation>HEX kopyala</translation>
+        </message>
+        <message>
+            <source>Copy cursor offset</source>
+            <translation>Ofset kopyala</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>Adres kopyala</translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>Disasm</translation>
+        </message>
+        <message>
+            <source>Memory map</source>
+            <translation>Hafıza haritası</translation>
+        </message>
+        <message>
+            <source>Go to</source>
+            <translation>Git</translation>
         </message>
         <message>
             <source>Select</source>
-            <translation type="unfinished">Seç</translation>
+            <translation>Seç</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Kapyala</translation>
+            <translation>Kapyala</translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished">İşlenmemiş veri</translation>
+            <translation>İşlenmemiş veri</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">Dump kaydet</translation>
+            <translation>Dump kaydet</translation>
+        </message>
+        <message>
+            <source>Nothing found</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>XHexViewWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">Biçim</translation>
+            <translation>Biçim</translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>Hata</translation>
+        </message>
+    </context>
+    <context>
+        <name>XLineEditHEX</name>
+        <message>
+            <source>Copy</source>
+            <translation>Kapyala</translation>
         </message>
     </context>
     <context>
         <name>XMACH</name>
         <message>
             <source>Segment</source>
-            <translation type="unfinished">Segment</translation>
+            <translation>Segment</translation>
         </message>
     </context>
     <context>
@@ -2200,96 +2596,259 @@
         <name>XMSDOS</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
         </message>
     </context>
     <context>
         <name>XMemoryMapWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
             <source>File offset</source>
-            <translation type="unfinished">Dosya ofseti</translation>
+            <translation>Dosya ofseti</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">Sanal adres</translation>
+            <translation>Sanal adres</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">İlgili sanal adres</translation>
+            <translation>İlgili sanal adres</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">Mod</translation>
+            <translation>Mod</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">Endianness</translation>
+            <translation>Endianness</translation>
         </message>
         <message>
             <source>Architecture</source>
-            <translation type="unfinished">Mimari</translation>
+            <translation>Mimari</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished">Hafıza haritası</translation>
+            <translation>Hafıza haritası</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">İsim</translation>
+            <translation>İsim</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Ofset</translation>
+            <translation>Ofset</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Adres</translation>
+            <translation>Adres</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished">Boyut</translation>
+            <translation>Boyut</translation>
         </message>
     </context>
     <context>
         <name>XMultiDisasmWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished">Biçim</translation>
+            <translation>Biçim</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Tip</translation>
+            <translation>Tip</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">Mod</translation>
+            <translation>Mod</translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>Hata</translation>
         </message>
     </context>
     <context>
         <name>XPE</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
         </message>
         <message>
             <source>Section</source>
-            <translation type="unfinished">Seçim</translation>
+            <translation>Seçim</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Kaplama</translation>
+            <translation>Kaplama</translation>
         </message>
         <message>
             <source>Cannot open file</source>
-            <translation type="unfinished">Dosya açılmıyor</translation>
+            <translation>Dosya açılmıyor</translation>
+        </message>
+    </context>
+    <context>
+        <name>XShortcuts</name>
+        <message>
+            <source>Unknown</source>
+            <translation>Bilinmeyen</translation>
+        </message>
+        <message>
+            <source>Copy</source>
+            <translation>Kapyala</translation>
+        </message>
+        <message>
+            <source>Copy string</source>
+            <translation>String kopyala</translation>
+        </message>
+        <message>
+            <source>Copy offset</source>
+            <translation>Ofset kopyala</translation>
+        </message>
+        <message>
+            <source>Copy size</source>
+            <translation>Boyut kopyala</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Copy name</source>
+            <translation>HEX kopyala</translation>
+        </message>
+        <message>
+            <source>Copy signature</source>
+            <translation>İmza</translation>
+        </message>
+        <message>
+            <source>Copy address</source>
+            <translation>Adres kopyala</translation>
+        </message>
+        <message>
+            <source>Dump to file</source>
+            <translation>Dosyaya dök</translation>
+        </message>
+        <message>
+            <source>Go to address</source>
+            <translation>Adrese git</translation>
+        </message>
+        <message>
+            <source>Go to offset</source>
+            <translation>Ofset kopyala</translation>
+        </message>
+        <message>
+            <source>Signature</source>
+            <translation>İmza</translation>
+        </message>
+        <message>
+            <source>Find</source>
+            <translation>Bul</translation>
+        </message>
+        <message>
+            <source>Find next</source>
+            <translation>Sonrakini bul</translation>
+        </message>
+        <message>
+            <source>Select all</source>
+            <translation>Hepsini seç</translation>
+        </message>
+        <message>
+            <source>Copy as hex</source>
+            <translation>HEX kopyala</translation>
+        </message>
+        <message>
+            <source>Copy cursor offset</source>
+            <translation>Ofset kopyala</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>Adres kopyala</translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>Disasm</translation>
+        </message>
+        <message>
+            <source>Memory map</source>
+            <translation>Hafıza haritası</translation>
+        </message>
+        <message>
+            <source>Go to entry point</source>
+            <translation>Entry point</translation>
+        </message>
+        <message>
+            <source>Hex signature</source>
+            <translation>İmza</translation>
+        </message>
+        <message>
+            <source>Run</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Set breakpoint</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Step into</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Step over</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Copy filename</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Entropy</source>
+            <translation>Entropy</translation>
+        </message>
+        <message>
+            <source>Hash</source>
+            <translation>Hash</translation>
+        </message>
+        <message>
+            <source>Open</source>
+            <translation>Aç</translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>Tarama</translation>
+        </message>
+        <message>
+            <source>Strings</source>
+            <translation>Kelimeler</translation>
+        </message>
+        <message>
+            <source>Action</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>İmzalar</translation>
+        </message>
+        <message>
+            <source>Debugger</source>
+            <translation>Debugger</translation>
+        </message>
+        <message>
+            <source>Archive</source>
+            <translation>Arşiv</translation>
+        </message>
+        <message>
+            <source>Table</source>
+            <translation>Tablo</translation>
         </message>
     </context>
 </TS>

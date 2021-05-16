@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW">
+<TS>
     <context>
         <name>Archive_widget</name>
         <message>
@@ -32,6 +32,10 @@
             <translation>掃描</translation>
         </message>
         <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
             <source>Strings</source>
             <translation>字串</translation>
         </message>
@@ -41,19 +45,19 @@
         </message>
         <message>
             <source>Hash</source>
-            <translation>雜湊值 (Hash)</translation>
+            <translation>雜湊值</translation>
         </message>
         <message>
             <source>Copy</source>
             <translation>複製</translation>
         </message>
         <message>
-            <source>File name</source>
-            <translation>檔名</translation>
+            <source>Filename</source>
+            <translation>檔案名</translation>
         </message>
         <message>
-            <source>Dump</source>
-            <translation>轉存</translation>
+            <source>Dump to file</source>
+            <translation>轉存到檔案</translation>
         </message>
         <message>
             <source>Save file</source>
@@ -112,6 +116,10 @@
             <translation>過濾</translation>
         </message>
         <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
             <source>Strings</source>
             <translation>字串</translation>
         </message>
@@ -125,7 +133,7 @@
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation>啟發式掃描 (Heuristic scan)</translation>
+            <translation>啟發式掃描</translation>
         </message>
     </context>
     <context>
@@ -188,6 +196,14 @@
             <source>Archive</source>
             <translation>存檔記錄</translation>
         </message>
+        <message>
+            <source>Open</source>
+            <translation>開啟</translation>
+        </message>
+        <message>
+            <source>Close</source>
+            <translation>關閉</translation>
+        </message>
     </context>
     <context>
         <name>DialogAsmSignature</name>
@@ -205,7 +221,7 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation>任意符號 (Wildcard)</translation>
+            <translation>任意符號</translation>
         </message>
         <message>
             <source>Copy</source>
@@ -241,6 +257,17 @@
         <message>
             <source>Cancel</source>
             <translation>取消</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogDemangle</name>
+        <message>
+            <source>Demangle</source>
+            <translation>解構</translation>
+        </message>
+        <message>
+            <source>OK</source>
+            <translation>確定</translation>
         </message>
     </context>
     <context>
@@ -387,8 +414,8 @@
             <translation>值</translation>
         </message>
         <message>
-            <source>File offset</source>
-            <translation>檔案偏移量</translation>
+            <source>Offset</source>
+            <translation>偏移</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
@@ -448,7 +475,11 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation>任意符號 (Wildcard)</translation>
+            <translation>任意符號</translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>掃描</translation>
         </message>
         <message>
             <source>Copy</source>
@@ -533,7 +564,11 @@
         </message>
         <message>
             <source>Wildcard</source>
-            <translation>任意符號 (Wildcard)</translation>
+            <translation>任意符號</translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>掃描</translation>
         </message>
         <message>
             <source>Copy</source>
@@ -542,6 +577,10 @@
         <message>
             <source>OK</source>
             <translation>確定</translation>
+        </message>
+        <message>
+            <source>Relative virtual address</source>
+            <translation>相對虛擬位址</translation>
         </message>
         <message>
             <source>Address</source>
@@ -554,6 +593,33 @@
         <message>
             <source>Opcode</source>
             <translation></translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogMultiSearchProcess</name>
+        <message>
+            <source>Search</source>
+            <translation>搜尋</translation>
+        </message>
+        <message>
+            <source>Cancel</source>
+            <translation>取消</translation>
+        </message>
+        <message>
+            <source>Search strings</source>
+            <translation>搜索字串</translation>
+        </message>
+        <message>
+            <source>Search signatures</source>
+            <translation>搜尋簽名</translation>
+        </message>
+        <message>
+            <source>Create view model</source>
+            <translation>建立視圖模型</translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>錯誤</translation>
         </message>
     </context>
     <context>
@@ -593,6 +659,10 @@
         <message>
             <source>Info</source>
             <translation>資訊</translation>
+        </message>
+        <message>
+            <source>Search signatures</source>
+            <translation>搜尋簽名</translation>
         </message>
         <message>
             <source>Style</source>
@@ -721,6 +791,17 @@
         </message>
     </context>
     <context>
+        <name>DialogSearchSignatures</name>
+        <message>
+            <source>Signatures</source>
+            <translation>簽章</translation>
+        </message>
+        <message>
+            <source>Close</source>
+            <translation>關閉</translation>
+        </message>
+    </context>
+    <context>
         <name>DialogSearchStrings</name>
         <message>
             <source>Strings</source>
@@ -732,29 +813,49 @@
         </message>
     </context>
     <context>
-        <name>DialogSearchStringsProcess</name>
+        <name>DialogSectionHeader</name>
         <message>
-            <source>Search strings</source>
-            <translation>搜索字串</translation>
+            <source>Section</source>
+            <translation>選擇</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogShortcuts</name>
+        <message>
+            <source>Shortcuts</source>
+            <translation>捷徑</translation>
+        </message>
+        <message>
+            <source>Filter</source>
+            <translation>過濾</translation>
+        </message>
+        <message>
+            <source>Clear</source>
+            <translation>清除</translation>
         </message>
         <message>
             <source>Cancel</source>
             <translation>取消</translation>
         </message>
         <message>
-            <source>Create view model</source>
-            <translation>建立視圖模型</translation>
+            <source>OK</source>
+            <translation>確定</translation>
         </message>
         <message>
-            <source>Error</source>
-            <translation>錯誤</translation>
+            <source>Group</source>
+            <translation>組</translation>
         </message>
-    </context>
-    <context>
-        <name>DialogSectionHeader</name>
         <message>
-            <source>Section</source>
-            <translation></translation>
+            <source>Name</source>
+            <translation>名稱</translation>
+        </message>
+        <message>
+            <source>Shortcut</source>
+            <translation>捷徑</translation>
+        </message>
+        <message>
+            <source>Cannot set shortcut</source>
+            <translation>無法設置捷徑</translation>
         </message>
     </context>
     <context>
@@ -798,7 +899,7 @@
             <translation>除錯</translation>
         </message>
         <message>
-            <source>Read only</source>
+            <source>Readonly</source>
             <translation>唯讀</translation>
         </message>
         <message>
@@ -940,8 +1041,24 @@
             <translation>唯讀</translation>
         </message>
         <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>簽章</translation>
+        </message>
+        <message>
             <source>Edit</source>
             <translation>編輯</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation>解構</translation>
+        </message>
+        <message>
+            <source>Header</source>
+            <translation>標頭</translation>
         </message>
     </context>
     <context>
@@ -1052,7 +1169,7 @@
         </message>
         <message>
             <source>Sections</source>
-            <translation></translation>
+            <translation>選擇</translation>
         </message>
         <message>
             <source>Manifest</source>
@@ -1114,6 +1231,18 @@
             <translation>熵值</translation>
         </message>
         <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>簽章</translation>
+        </message>
+        <message>
+            <source>Shortcuts</source>
+            <translation>捷徑</translation>
+        </message>
+        <message>
             <source>Options</source>
             <translation>選項</translation>
         </message>
@@ -1170,6 +1299,17 @@
         </message>
     </context>
     <context>
+        <name>InvWidget</name>
+        <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>反組譯</translation>
+        </message>
+    </context>
+    <context>
         <name>LESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
@@ -1185,6 +1325,10 @@
         <message>
             <source>Readonly</source>
             <translation>唯讀</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
         </message>
         <message>
             <source>Disasm</source>
@@ -1216,6 +1360,36 @@
         </message>
     </context>
     <context>
+        <name>MACHOFATWidget</name>
+        <message>
+            <source>Form</source>
+            <translation>表單</translation>
+        </message>
+    </context>
+    <context>
+        <name>MACHProcessData</name>
+        <message>
+            <source>Name</source>
+            <translation>名稱</translation>
+        </message>
+        <message>
+            <source>Offset</source>
+            <translation>偏移</translation>
+        </message>
+        <message>
+            <source>Address</source>
+            <translation>位址</translation>
+        </message>
+        <message>
+            <source>Opcode</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Value</source>
+            <translation>值</translation>
+        </message>
+    </context>
+    <context>
         <name>MACHSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
@@ -1229,8 +1403,8 @@
             <translation>重新載入</translation>
         </message>
         <message>
-            <source>Readonly</source>
-            <translation>唯讀</translation>
+            <source>Hex</source>
+            <translation>十六進制</translation>
         </message>
         <message>
             <source>Disasm</source>
@@ -1253,6 +1427,18 @@
             <translation>啟發式掃描</translation>
         </message>
         <message>
+            <source>Readonly</source>
+            <translation>唯讀</translation>
+        </message>
+        <message>
+            <source>Hash</source>
+            <translation>雜湊值</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>簽章</translation>
+        </message>
+        <message>
             <source>Commands</source>
             <translation>指令</translation>
         </message>
@@ -1262,19 +1448,35 @@
         </message>
         <message>
             <source>Sections</source>
+            <translation>選擇</translation>
+        </message>
+        <message>
+            <source>String table</source>
             <translation></translation>
         </message>
         <message>
-            <source>Libraries</source>
-            <translation>函示庫</translation>
+            <source>Symbol table</source>
+            <translation></translation>
         </message>
         <message>
-            <source>Type</source>
-            <translation>類型</translation>
+            <source>Functions</source>
+            <translation></translation>
         </message>
         <message>
-            <source>Library</source>
-            <translation>函示庫</translation>
+            <source>Data in code</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Header</source>
+            <translation>標頭</translation>
+        </message>
+        <message>
+            <source>Edit</source>
+            <translation>編輯</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation>解構</translation>
         </message>
     </context>
     <context>
@@ -1286,6 +1488,10 @@
         <message>
             <source>Readonly</source>
             <translation>唯讀</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
         </message>
         <message>
             <source>Disasm</source>
@@ -1313,6 +1519,33 @@
         </message>
     </context>
     <context>
+        <name>MultiSearch</name>
+        <message>
+            <source>Address</source>
+            <translation>位址</translation>
+        </message>
+        <message>
+            <source>Offset</source>
+            <translation>偏移</translation>
+        </message>
+        <message>
+            <source>Size</source>
+            <translation>大小</translation>
+        </message>
+        <message>
+            <source>Type</source>
+            <translation>類型</translation>
+        </message>
+        <message>
+            <source>String</source>
+            <translation>字串</translation>
+        </message>
+        <message>
+            <source>Name</source>
+            <translation>名稱</translation>
+        </message>
+    </context>
+    <context>
         <name>NESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
@@ -1328,6 +1561,10 @@
         <message>
             <source>Readonly</source>
             <translation>唯讀</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
         </message>
         <message>
             <source>Disasm</source>
@@ -1406,6 +1643,10 @@
             <translation>重新載入</translation>
         </message>
         <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
             <source>Disasm</source>
             <translation>反組譯</translation>
         </message>
@@ -1430,8 +1671,16 @@
             <translation>唯讀</translation>
         </message>
         <message>
+            <source>Show valid</source>
+            <translation>顯示有效</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>簽章</translation>
+        </message>
+        <message>
             <source>Sections</source>
-            <translation></translation>
+            <translation>選擇</translation>
         </message>
         <message>
             <source>Overlay</source>
@@ -1448,6 +1697,10 @@
         <message>
             <source>Header</source>
             <translation>標頭</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation>解構</translation>
         </message>
     </context>
     <context>
@@ -1488,38 +1741,6 @@
             <translation>保存轉存</translation>
         </message>
         <message>
-            <source>Dump to file</source>
-            <translation>轉存到檔案</translation>
-        </message>
-        <message>
-            <source>Signature</source>
-            <translation>簽章</translation>
-        </message>
-        <message>
-            <source>Find</source>
-            <translation>搜尋</translation>
-        </message>
-        <message>
-            <source>Find next</source>
-            <translation>搜尋下一個</translation>
-        </message>
-        <message>
-            <source>Select</source>
-            <translation>選擇</translation>
-        </message>
-        <message>
-            <source>Select all</source>
-            <translation>全選</translation>
-        </message>
-        <message>
-            <source>Copy</source>
-            <translation>複製</translation>
-        </message>
-        <message>
-            <source>Copy as hex</source>
-            <translation>複製為十六進制</translation>
-        </message>
-        <message>
             <source>Error</source>
             <translation>錯誤</translation>
         </message>
@@ -1552,34 +1773,77 @@
         </message>
     </context>
     <context>
-        <name>SearchStrings</name>
+        <name>QwtPlotRenderer</name>
         <message>
-            <source>Maximum</source>
-            <translation>最大值</translation>
+            <source>Documents</source>
+            <translation>檔案</translation>
         </message>
         <message>
-            <source>Read error</source>
-            <translation>讀取錯誤</translation>
+            <source>Images</source>
+            <translation>影像</translation>
         </message>
         <message>
-            <source>Address</source>
-            <translation>位址</translation>
+            <source>Export File Name</source>
+            <translation></translation>
         </message>
-        <message>
-            <source>Offset</source>
-            <translation>偏移</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation>大小</translation>
-        </message>
+    </context>
+    <context>
+        <name>SearchSignaturesWidget</name>
         <message>
             <source>Type</source>
             <translation>類型</translation>
         </message>
         <message>
-            <source>String</source>
-            <translation>字串</translation>
+            <source>Endianness</source>
+            <translation>位元組順序</translation>
+        </message>
+        <message>
+            <source>File</source>
+            <translation>檔案</translation>
+        </message>
+        <message>
+            <source>Search</source>
+            <translation>搜尋</translation>
+        </message>
+        <message>
+            <source>Save</source>
+            <translation>保存</translation>
+        </message>
+        <message>
+            <source>Save file</source>
+            <translation>保存檔案</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>簽章</translation>
+        </message>
+        <message>
+            <source>Text files</source>
+            <translation>文本檔案</translation>
+        </message>
+        <message>
+            <source>All files</source>
+            <translation>所有檔案</translation>
+        </message>
+        <message>
+            <source>Copy name</source>
+            <translation>複印名字</translation>
+        </message>
+        <message>
+            <source>Copy signature</source>
+            <translation>複印簽名</translation>
+        </message>
+        <message>
+            <source>Copy address</source>
+            <translation>複製位址</translation>
+        </message>
+        <message>
+            <source>Copy offset</source>
+            <translation>複印偏移</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
         </message>
     </context>
     <context>
@@ -1627,6 +1891,14 @@
         <message>
             <source>Copy size</source>
             <translation>複印大小</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation>解構</translation>
         </message>
     </context>
     <context>
@@ -1697,7 +1969,7 @@
         </message>
         <message>
             <source>Image</source>
-            <translation>圖像</translation>
+            <translation>映像檔</translation>
         </message>
         <message>
             <source>Installer</source>
@@ -1726,6 +1998,10 @@
         <message>
             <source>compressor</source>
             <translation>壓縮軟件</translation>
+        </message>
+        <message>
+            <source>Operation system</source>
+            <translation></translation>
         </message>
         <message>
             <source>Packer</source>
@@ -1821,7 +2097,7 @@
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation></translation>
+            <translation>文字</translation>
         </message>
         <message>
             <source>Document</source>
@@ -1829,11 +2105,23 @@
         </message>
         <message>
             <source>Image</source>
-            <translation>圖像</translation>
+            <translation>映像檔</translation>
         </message>
         <message>
             <source>Archive</source>
             <translation>存檔記錄</translation>
+        </message>
+        <message>
+            <source>Read error</source>
+            <translation>讀取錯誤</translation>
+        </message>
+        <message>
+            <source>Maximum</source>
+            <translation>最大值</translation>
+        </message>
+        <message>
+            <source>Write error</source>
+            <translation>寫入錯誤</translation>
         </message>
     </context>
     <context>
@@ -1852,6 +2140,24 @@
         <message>
             <source>Overlay</source>
             <translation></translation>
+        </message>
+    </context>
+    <context>
+        <name>XDemangle</name>
+        <message>
+            <source>Unknown</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Automatic</source>
+            <translation>自動</translation>
+        </message>
+    </context>
+    <context>
+        <name>XDemangleWidget</name>
+        <message>
+            <source>Mode</source>
+            <translation>模式</translation>
         </message>
     </context>
     <context>
@@ -1896,6 +2202,10 @@
             <translation></translation>
         </message>
         <message>
+            <source>Comment</source>
+            <translation>註解</translation>
+        </message>
+        <message>
             <source>Invalid opcode</source>
             <translation>無效</translation>
         </message>
@@ -1904,8 +2214,20 @@
             <translation>跳至位址</translation>
         </message>
         <message>
+            <source>Go to offset</source>
+            <translation>轉到偏移</translation>
+        </message>
+        <message>
+            <source>Go to entry point</source>
+            <translation>轉到入口點</translation>
+        </message>
+        <message>
             <source>Dump to file</source>
             <translation>轉存到檔案</translation>
+        </message>
+        <message>
+            <source>Hex signature</source>
+            <translation>十六進制簽名</translation>
         </message>
         <message>
             <source>Signature</source>
@@ -1928,6 +2250,22 @@
             <translation>複製為十六進制</translation>
         </message>
         <message>
+            <source>Copy cursor offset</source>
+            <translation>複印光標偏移</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>複印光標進制</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
+            <source>Go to</source>
+            <translation>跳至</translation>
+        </message>
+        <message>
             <source>Select</source>
             <translation>選擇</translation>
         </message>
@@ -1936,12 +2274,20 @@
             <translation>複製</translation>
         </message>
         <message>
+            <source>Relative address</source>
+            <translation>相對位址</translation>
+        </message>
+        <message>
             <source>Raw data</source>
             <translation>原始資料</translation>
         </message>
         <message>
             <source>Save dump</source>
             <translation>保存轉存</translation>
+        </message>
+        <message>
+            <source>Nothing found</source>
+            <translation>沒有找到</translation>
         </message>
     </context>
     <context>
@@ -2121,14 +2467,29 @@
         </message>
     </context>
     <context>
+        <name>XHexEdit</name>
+        <message>
+            <source>Offset</source>
+            <translation>偏移</translation>
+        </message>
+    </context>
+    <context>
         <name>XHexView</name>
         <message>
             <source>Address</source>
             <translation>位址</translation>
         </message>
         <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
             <source>Symbols</source>
             <translation></translation>
+        </message>
+        <message>
+            <source>Go to offset</source>
+            <translation>轉到偏移</translation>
         </message>
         <message>
             <source>Go to address</source>
@@ -2159,6 +2520,26 @@
             <translation>複製為十六進制</translation>
         </message>
         <message>
+            <source>Copy cursor offset</source>
+            <translation>複印光標偏移</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>複印光標進制</translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>反組譯</translation>
+        </message>
+        <message>
+            <source>Memory map</source>
+            <translation>記憶體區塊</translation>
+        </message>
+        <message>
+            <source>Go to</source>
+            <translation>跳至</translation>
+        </message>
+        <message>
             <source>Select</source>
             <translation>選擇</translation>
         </message>
@@ -2174,12 +2555,27 @@
             <source>Save dump</source>
             <translation>保存轉存</translation>
         </message>
+        <message>
+            <source>Nothing found</source>
+            <translation>沒有找到</translation>
+        </message>
     </context>
     <context>
         <name>XHexViewWidget</name>
         <message>
             <source>Form</source>
             <translation>表單</translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>錯誤</translation>
+        </message>
+    </context>
+    <context>
+        <name>XLineEditHEX</name>
+        <message>
+            <source>Copy</source>
+            <translation>複製</translation>
         </message>
     </context>
     <context>
@@ -2272,6 +2668,10 @@
             <source>Mode</source>
             <translation>模式</translation>
         </message>
+        <message>
+            <source>Error</source>
+            <translation>錯誤</translation>
+        </message>
     </context>
     <context>
         <name>XPE</name>
@@ -2281,7 +2681,7 @@
         </message>
         <message>
             <source>Section</source>
-            <translation></translation>
+            <translation>選擇</translation>
         </message>
         <message>
             <source>Overlay</source>
@@ -2290,6 +2690,165 @@
         <message>
             <source>Cannot open file</source>
             <translation>無法打開檔案</translation>
+        </message>
+    </context>
+    <context>
+        <name>XShortcuts</name>
+        <message>
+            <source>Unknown</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Copy</source>
+            <translation>複製</translation>
+        </message>
+        <message>
+            <source>Copy string</source>
+            <translation>複製字串</translation>
+        </message>
+        <message>
+            <source>Copy offset</source>
+            <translation>複印偏移</translation>
+        </message>
+        <message>
+            <source>Copy size</source>
+            <translation>複印大小</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation>十六進制</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation>解構</translation>
+        </message>
+        <message>
+            <source>Copy name</source>
+            <translation>複印名字</translation>
+        </message>
+        <message>
+            <source>Copy signature</source>
+            <translation>複印簽名</translation>
+        </message>
+        <message>
+            <source>Copy address</source>
+            <translation>複製位址</translation>
+        </message>
+        <message>
+            <source>Dump to file</source>
+            <translation>轉存到檔案</translation>
+        </message>
+        <message>
+            <source>Go to address</source>
+            <translation>跳至位址</translation>
+        </message>
+        <message>
+            <source>Go to offset</source>
+            <translation>轉到偏移</translation>
+        </message>
+        <message>
+            <source>Signature</source>
+            <translation>簽章</translation>
+        </message>
+        <message>
+            <source>Find</source>
+            <translation>搜尋</translation>
+        </message>
+        <message>
+            <source>Find next</source>
+            <translation>搜尋下一個</translation>
+        </message>
+        <message>
+            <source>Select all</source>
+            <translation>全選</translation>
+        </message>
+        <message>
+            <source>Copy as hex</source>
+            <translation>複製為十六進制</translation>
+        </message>
+        <message>
+            <source>Copy cursor offset</source>
+            <translation>複印光標偏移</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>複印光標進制</translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>反組譯</translation>
+        </message>
+        <message>
+            <source>Memory map</source>
+            <translation>記憶體區塊</translation>
+        </message>
+        <message>
+            <source>Go to entry point</source>
+            <translation>轉到入口點</translation>
+        </message>
+        <message>
+            <source>Hex signature</source>
+            <translation>十六進制簽名</translation>
+        </message>
+        <message>
+            <source>Run</source>
+            <translation>執行</translation>
+        </message>
+        <message>
+            <source>Set breakpoint</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Step into</source>
+            <translation>步進</translation>
+        </message>
+        <message>
+            <source>Step over</source>
+            <translation>步出</translation>
+        </message>
+        <message>
+            <source>Copy filename</source>
+            <translation>複印檔案名</translation>
+        </message>
+        <message>
+            <source>Entropy</source>
+            <translation>熵值</translation>
+        </message>
+        <message>
+            <source>Hash</source>
+            <translation>雜湊值</translation>
+        </message>
+        <message>
+            <source>Open</source>
+            <translation>開啟</translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>掃描</translation>
+        </message>
+        <message>
+            <source>Strings</source>
+            <translation>字串</translation>
+        </message>
+        <message>
+            <source>Action</source>
+            <translation>行動</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>簽章</translation>
+        </message>
+        <message>
+            <source>Debugger</source>
+            <translation>除錯器</translation>
+        </message>
+        <message>
+            <source>Archive</source>
+            <translation>存檔記錄</translation>
+        </message>
+        <message>
+            <source>Table</source>
+            <translation>表格</translation>
         </message>
     </context>
 </TS>

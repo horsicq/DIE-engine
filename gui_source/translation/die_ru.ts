@@ -1,169 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS>
     <context>
         <name>Archive_widget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished"></translation>
+            <translation>Формат</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished"></translation>
+            <translation>Фильтр</translation>
         </message>
         <message>
             <source>Tree</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Table</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"></translation>
+            <translation>Открыть</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished"></translation>
+            <translation>Хэш</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Копировать</translation>
+            <translation>Копировать</translation>
         </message>
         <message>
-            <source>File name</source>
-            <translation type="unfinished">Имя файла</translation>
+            <source>Filename</source>
+            <translation>Имя файла</translation>
         </message>
         <message>
-            <source>Dump</source>
-            <translation type="unfinished">Дамп</translation>
+            <source>Dump to file</source>
+            <translation>Дамп в файл</translation>
         </message>
         <message>
             <source>Save file</source>
-            <translation type="unfinished">Сохранить</translation>
+            <translation>Сохранить файл</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
         </message>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished"></translation>
+            <translation>Невозможно сохранить файл</translation>
         </message>
     </context>
     <context>
         <name>BinaryWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>CreateViewModelProcess</name>
         <message>
             <source>File</source>
-            <translation type="unfinished"></translation>
+            <translation>Файл</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished"></translation>
+            <translation>Размер</translation>
         </message>
     </context>
     <context>
         <name>DEXSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>DEXWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished"></translation>
+            <translation>Фильтр</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
     </context>
     <context>
         <name>DIE_Widget</name>
         <message>
             <source>Signatures</source>
-            <translation type="unfinished">Сигнатуры</translation>
+            <translation>Сигнатуры</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Глубокий анализ</translation>
+            <translation>Глубокий анализ</translation>
         </message>
         <message>
             <source>Log</source>
-            <translation type="unfinished">Лог</translation>
+            <translation>Журнал</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished">Стоп</translation>
+            <translation>Стоп</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished"></translation>
+            <translation>мс</translation>
         </message>
     </context>
     <context>
         <name>DialogAbout</name>
         <message>
             <source>About</source>
-            <translation type="unfinished">О программе</translation>
+            <translation>О программе</translation>
         </message>
         <message>
             <source>Donate</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Thanks</source>
@@ -171,228 +179,247 @@
         </message>
         <message>
             <source>Libraries</source>
-            <translation type="unfinished">Библиотеки</translation>
+            <translation>Библиотеки</translation>
         </message>
         <message>
             <source>Check updates</source>
-            <translation type="unfinished"></translation>
+            <translation>Проверить обновления</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">ОК</translation>
+            <translation>ОК</translation>
         </message>
     </context>
     <context>
         <name>DialogArchive</name>
         <message>
             <source>Archive</source>
-            <translation type="unfinished"></translation>
+            <translation>Архив</translation>
+        </message>
+        <message>
+            <source>Open</source>
+            <translation>Открыть</translation>
+        </message>
+        <message>
+            <source>Close</source>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogAsmSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">Сигнатура</translation>
+            <translation>Сигнатура</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">Пробелы</translation>
+            <translation>Пробелы</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">Верхний регистр</translation>
+            <translation>Верхний регистр</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Копировать</translation>
+            <translation>Копировать</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">ОК</translation>
+            <translation>ОК</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">Относительный виртуальный адрес</translation>
+            <translation>Относительный виртуальный адрес</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Байты</translation>
+            <translation>Байты</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished"></translation>
+            <translation>Опкод</translation>
         </message>
     </context>
     <context>
         <name>DialogCreateViewModel</name>
         <message>
             <source>Create view model</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogDemangle</name>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>OK</source>
+            <translation>ОК</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasm</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasmLabels</name>
         <message>
             <source>Labels</source>
-            <translation type="unfinished"></translation>
+            <translation>Метки</translation>
         </message>
         <message>
             <source>Go to</source>
-            <translation type="unfinished"></translation>
+            <translation>Перейти к</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">Имя</translation>
+            <translation>Имя</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
         </message>
     </context>
     <context>
         <name>DialogDisasmProcess</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Opcodes</source>
-            <translation type="unfinished"></translation>
+            <translation>Опкоды</translation>
         </message>
         <message>
             <source>Calls</source>
-            <translation type="unfinished"></translation>
+            <translation>Вызовы</translation>
         </message>
         <message>
             <source>Jumps</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Ref to</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Ref from</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
     </context>
     <context>
         <name>DialogDump</name>
         <message>
             <source>Dump</source>
-            <translation type="unfinished">Дамп</translation>
+            <translation>Дамп</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
     </context>
     <context>
         <name>DialogDumpProcess</name>
         <message>
             <source>Dump</source>
-            <translation type="unfinished">Дамп</translation>
+            <translation>Дамп</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
         </message>
     </context>
     <context>
         <name>DialogEntropy</name>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogEntropyProcess</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished"></translation>
+            <translation>Процесс</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
         </message>
     </context>
     <context>
         <name>DialogGoToAddress</name>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">Перейти к адресу</translation>
+            <translation>Перейти к адресу</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">ОК</translation>
+            <translation>ОК</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">Виртуальный адрес</translation>
+            <translation>Виртуальный адрес</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">Значение</translation>
+            <translation>Значение</translation>
         </message>
         <message>
-            <source>File offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <source>Offset</source>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">Относительный виртуальный адрес</translation>
+            <translation>Относительный виртуальный адрес</translation>
         </message>
         <message>
             <source>Invalid</source>
@@ -403,164 +430,203 @@
         <name>DialogHash</name>
         <message>
             <source>Hash</source>
-            <translation type="unfinished"></translation>
+            <translation>Хэш</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogHashProcess</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished"></translation>
+            <translation>Процесс</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
         </message>
     </context>
     <context>
         <name>DialogHex</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogHexSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">Сигнатура</translation>
+            <translation>Сигнатура</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">Пробелы</translation>
+            <translation>Пробелы</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">Верхний регистр</translation>
+            <translation>Верхний регистр</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Копировать</translation>
+            <translation>Копировать</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">ОК</translation>
+            <translation>ОК</translation>
         </message>
     </context>
     <context>
         <name>DialogHexView</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogInfo</name>
         <message>
             <source>Info</source>
-            <translation type="unfinished">Информация</translation>
+            <translation>Информация</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogLog</name>
         <message>
             <source>Log</source>
-            <translation type="unfinished">Лог</translation>
+            <translation>Журнал</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogMIME</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogMemoryMap</name>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogMultiDisasm</name>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogMultiDisasmSignature</name>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">Сигнатура</translation>
+            <translation>Сигнатура</translation>
         </message>
         <message>
             <source>Spaces</source>
-            <translation type="unfinished">Пробелы</translation>
+            <translation>Пробелы</translation>
         </message>
         <message>
             <source>Upper</source>
-            <translation type="unfinished">Верхний регистр</translation>
+            <translation>Верхний регистр</translation>
         </message>
         <message>
             <source>Wildcard</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Копировать</translation>
+            <translation>Копировать</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">ОК</translation>
+            <translation>ОК</translation>
+        </message>
+        <message>
+            <source>Relative virtual address</source>
+            <translation>Относительный виртуальный адрес</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Байты</translation>
+            <translation>Байты</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished"></translation>
+            <translation>Опкод</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogMultiSearchProcess</name>
+        <message>
+            <source>Search</source>
+            <translation>Поиск</translation>
+        </message>
+        <message>
+            <source>Cancel</source>
+            <translation>Отмена</translation>
+        </message>
+        <message>
+            <source>Search strings</source>
+            <translation>Поиск строк</translation>
+        </message>
+        <message>
+            <source>Search signatures</source>
+            <translation>Сигнатуры</translation>
+        </message>
+        <message>
+            <source>Create view model</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>Ошибка</translation>
         </message>
     </context>
     <context>
         <name>DialogOptions</name>
         <message>
             <source>Options</source>
-            <translation type="unfinished">Настройки</translation>
+            <translation>Настройки</translation>
         </message>
         <message>
             <source>Save last directory</source>
@@ -572,7 +638,7 @@
         </message>
         <message>
             <source>Save backup</source>
-            <translation type="unfinished"></translation>
+            <translation>Сохранить резервную копию</translation>
         </message>
         <message>
             <source>Single application</source>
@@ -584,23 +650,27 @@
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished"></translation>
+            <translation>База данных</translation>
         </message>
         <message>
             <source>Info</source>
-            <translation type="unfinished">Информация</translation>
+            <translation>Информация</translation>
+        </message>
+        <message>
+            <source>Search signatures</source>
+            <translation>Сигнатуры</translation>
         </message>
         <message>
             <source>Style</source>
-            <translation type="unfinished"></translation>
+            <translation>Стиль</translation>
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished"></translation>
+            <translation>Язык</translation>
         </message>
         <message>
             <source>Register</source>
@@ -608,15 +678,15 @@
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished">Очистить</translation>
+            <translation>Очистить</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">ОК</translation>
+            <translation>ОК</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>General</source>
@@ -636,7 +706,7 @@
         </message>
         <message>
             <source>Please restart the application</source>
-            <translation type="unfinished"></translation>
+            <translation>Пожалуйста перезапустите приложение</translation>
         </message>
         <message>
             <source>Open directory</source>
@@ -647,22 +717,22 @@
         <name>DialogProcessData</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished"></translation>
+            <translation>Процесс</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
         </message>
     </context>
     <context>
         <name>DialogSearch</name>
         <message>
             <source>Search</source>
-            <translation type="unfinished">Поиск</translation>
+            <translation>Поиск</translation>
         </message>
         <message>
             <source>Search from</source>
@@ -670,7 +740,7 @@
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished"></translation>
+            <translation>Строка</translation>
         </message>
         <message>
             <source>Match case</source>
@@ -678,23 +748,23 @@
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">Сигнатура</translation>
+            <translation>Сигнатура</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">Значение</translation>
+            <translation>Значение</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">Порядок байтов</translation>
+            <translation>Порядок байтов</translation>
         </message>
         <message>
             <source>OK</source>
-            <translation type="unfinished">ОК</translation>
+            <translation>ОК</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>Begin</source>
@@ -702,178 +772,209 @@
         </message>
         <message>
             <source>Cursor</source>
-            <translation type="unfinished">Курсор</translation>
+            <translation>Курсор</translation>
         </message>
     </context>
     <context>
         <name>DialogSearchProcess</name>
         <message>
             <source>Search</source>
-            <translation type="unfinished">Поиск</translation>
+            <translation>Поиск</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogSearchSignatures</name>
+        <message>
+            <source>Signatures</source>
+            <translation>Сигнатуры</translation>
+        </message>
+        <message>
+            <source>Close</source>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogSearchStrings</name>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
-        </message>
-    </context>
-    <context>
-        <name>DialogSearchStringsProcess</name>
-        <message>
-            <source>Search strings</source>
-            <translation type="unfinished"></translation>
-        </message>
-        <message>
-            <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
-        </message>
-        <message>
-            <source>Create view model</source>
-            <translation type="unfinished"></translation>
-        </message>
-        <message>
-            <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogSectionHeader</name>
         <message>
             <source>Section</source>
-            <translation type="unfinished">Секции</translation>
+            <translation>Секция</translation>
+        </message>
+    </context>
+    <context>
+        <name>DialogShortcuts</name>
+        <message>
+            <source>Shortcuts</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Filter</source>
+            <translation>Фильтр</translation>
+        </message>
+        <message>
+            <source>Clear</source>
+            <translation>Очистить</translation>
+        </message>
+        <message>
+            <source>Cancel</source>
+            <translation>Отмена</translation>
+        </message>
+        <message>
+            <source>OK</source>
+            <translation>ОК</translation>
+        </message>
+        <message>
+            <source>Group</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Name</source>
+            <translation>Имя</translation>
+        </message>
+        <message>
+            <source>Shortcut</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Cannot set shortcut</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>DialogShowImage</name>
         <message>
             <source>Image</source>
-            <translation type="unfinished">Образ</translation>
+            <translation>Образ</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogShowText</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogSignatures</name>
         <message>
             <source>Signatures</source>
-            <translation type="unfinished">Сигнатуры</translation>
+            <translation>Сигнатуры</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">Сохранить</translation>
+            <translation>Сохранить</translation>
         </message>
         <message>
             <source>Run</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Debug</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
-            <source>Read only</source>
-            <translation type="unfinished"></translation>
+            <source>Readonly</source>
+            <translation></translation>
         </message>
         <message>
             <source>Show type</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Show version</source>
-            <translation type="unfinished">Версия</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Show options</source>
-            <translation type="unfinished">Настройки</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Глубокий анализ</translation>
+            <translation>Глубокий анализ</translation>
         </message>
         <message>
             <source>Clear result</source>
-            <translation type="unfinished">Сохранить</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished"></translation>
+            <translation>База данных</translation>
         </message>
         <message>
             <source>Debugger</source>
-            <translation type="unfinished"></translation>
+            <translation>Отладчик</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished"></translation>
+            <translation>мс</translation>
         </message>
     </context>
     <context>
         <name>DialogStaticScan</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">Сканирования файла</translation>
+            <translation>Рекурсивное сканировние</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Глубокий анализ</translation>
+            <translation>Глубокий анализ</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogStaticScanProcess</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
         <message>
             <source>Text documents</source>
-            <translation type="unfinished"></translation>
+            <translation>Текстовые документы</translation>
         </message>
         <message>
             <source>Save result</source>
@@ -884,64 +985,80 @@
         <name>DialogTextInfo</name>
         <message>
             <source>Info</source>
-            <translation type="unfinished">Информация</translation>
+            <translation>Информация</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"></translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
         <name>DialogUnpackFile</name>
         <message>
             <source>Process</source>
-            <translation type="unfinished"></translation>
+            <translation>Процесс</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished">Отмена</translation>
+            <translation>Отмена</translation>
         </message>
     </context>
     <context>
         <name>ELFSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>ELFWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>Сигнатуры</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">Редактировать</translation>
+            <translation>Редактировать</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Header</source>
+            <translation>Header</translation>
         </message>
     </context>
     <context>
@@ -959,57 +1076,57 @@
         <name>FormResult</name>
         <message>
             <source>Clear</source>
-            <translation type="unfinished">Очистить</translation>
+            <translation>Очистить</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">Сохранить</translation>
+            <translation>Сохранить</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished"></translation>
+            <translation>мс</translation>
         </message>
     </context>
     <context>
         <name>FormStaticScan</name>
         <message>
             <source>Recursive</source>
-            <translation type="unfinished"></translation>
+            <translation>Рекурсивно</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Глубокий анализ</translation>
+            <translation>Глубокий анализ</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
         </message>
     </context>
     <context>
         <name>FormatWidget</name>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
         </message>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished"></translation>
+            <translation>Невозможно сохранить файл</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">Имя</translation>
+            <translation>Имя</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">Значение</translation>
+            <translation>Значение</translation>
         </message>
     </context>
     <context>
@@ -1020,11 +1137,11 @@
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished"></translation>
+            <translation>Точка входа</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Base address</source>
@@ -1032,11 +1149,11 @@
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
         </message>
         <message>
             <source>Export</source>
@@ -1048,11 +1165,11 @@
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished"></translation>
+            <translation>Ресурсы</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">Секции</translation>
+            <translation>Секции</translation>
         </message>
         <message>
             <source>Manifest</source>
@@ -1064,62 +1181,74 @@
         </message>
         <message>
             <source>Commands</source>
-            <translation type="unfinished"></translation>
+            <translation>Команды</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">Сегменты</translation>
+            <translation>Сегменты</translation>
         </message>
         <message>
             <source>Libraries</source>
-            <translation type="unfinished">Библиотеки</translation>
+            <translation>Библиотеки</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">Порядок байтов</translation>
+            <translation>Порядок байтов</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">Режим</translation>
+            <translation>Режим</translation>
         </message>
         <message>
             <source>Architecture</source>
-            <translation type="unfinished"></translation>
+            <translation>Архитектура</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
     </context>
     <context>
         <name>GuiMainWindow</name>
         <message>
             <source>File name</source>
-            <translation type="unfinished">Имя файла</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished"></translation>
+            <translation>Хэш</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>Сигнатуры</translation>
+        </message>
+        <message>
+            <source>Shortcuts</source>
+            <translation></translation>
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished">Настройки</translation>
+            <translation>Настройки</translation>
         </message>
         <message>
             <source>About</source>
-            <translation type="unfinished">О программе</translation>
+            <translation>О программе</translation>
         </message>
         <message>
             <source>Exit</source>
@@ -1127,315 +1256,435 @@
         </message>
         <message>
             <source>Open file</source>
-            <translation type="unfinished"></translation>
+            <translation>Открыть файл</translation>
         </message>
         <message>
             <source>All files</source>
-            <translation type="unfinished"></translation>
+            <translation>Все файлы</translation>
         </message>
     </context>
     <context>
         <name>HeurWidget</name>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">Сканирования файла</translation>
+            <translation>Рекурсивное сканировние</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Глубокий анализ</translation>
+            <translation>Глубокий анализ</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
         <message>
             <source>Heuristic</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристика</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">Имя</translation>
+            <translation>Имя</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished">Значение</translation>
+            <translation>Значение</translation>
+        </message>
+    </context>
+    <context>
+        <name>InvWidget</name>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>Дизассемблировать</translation>
         </message>
     </context>
     <context>
         <name>LESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>LEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">Редактировать</translation>
+            <translation>Редактировать</translation>
+        </message>
+    </context>
+    <context>
+        <name>MACHOFATWidget</name>
+        <message>
+            <source>Form</source>
+            <translation>Формат</translation>
+        </message>
+    </context>
+    <context>
+        <name>MACHProcessData</name>
+        <message>
+            <source>Name</source>
+            <translation>Имя</translation>
+        </message>
+        <message>
+            <source>Offset</source>
+            <translation>Смещение</translation>
+        </message>
+        <message>
+            <source>Address</source>
+            <translation>Адрес</translation>
+        </message>
+        <message>
+            <source>Opcode</source>
+            <translation>Опкод</translation>
+        </message>
+        <message>
+            <source>Value</source>
+            <translation>Значение</translation>
         </message>
     </context>
     <context>
         <name>MACHSectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>MACHWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
-            <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
+        </message>
+        <message>
+            <source>Readonly</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Hash</source>
+            <translation>Хэш</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>Сигнатуры</translation>
         </message>
         <message>
             <source>Commands</source>
-            <translation type="unfinished"></translation>
+            <translation>Команды</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">Сегменты</translation>
+            <translation>Сегменты</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">Секции</translation>
+            <translation>Секции</translation>
         </message>
         <message>
-            <source>Libraries</source>
-            <translation type="unfinished">Библиотеки</translation>
+            <source>String table</source>
+            <translation></translation>
         </message>
         <message>
-            <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <source>Symbol table</source>
+            <translation></translation>
         </message>
         <message>
-            <source>Library</source>
-            <translation type="unfinished">Библиотеки</translation>
+            <source>Functions</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Data in code</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Header</source>
+            <translation>Header</translation>
+        </message>
+        <message>
+            <source>Edit</source>
+            <translation>Редактировать</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>MSDOSWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
+        </message>
+    </context>
+    <context>
+        <name>MultiSearch</name>
+        <message>
+            <source>Address</source>
+            <translation>Адрес</translation>
+        </message>
+        <message>
+            <source>Offset</source>
+            <translation>Смещение</translation>
+        </message>
+        <message>
+            <source>Size</source>
+            <translation>Размер</translation>
+        </message>
+        <message>
+            <source>Type</source>
+            <translation>Тип</translation>
+        </message>
+        <message>
+            <source>String</source>
+            <translation>Строка</translation>
+        </message>
+        <message>
+            <source>Name</source>
+            <translation>Имя</translation>
         </message>
     </context>
     <context>
         <name>NESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>NEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
         <message>
             <source>Segments</source>
-            <translation type="unfinished">Сегменты</translation>
+            <translation>Сегменты</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
         </message>
     </context>
     <context>
         <name>NFD_Widget</name>
         <message>
             <source>Recursive scan</source>
-            <translation type="unfinished">Сканирования файла</translation>
+            <translation>Рекурсивное сканировние</translation>
         </message>
         <message>
             <source>Deep scan</source>
-            <translation type="unfinished">Глубокий анализ</translation>
+            <translation>Глубокий анализ</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
         <message>
             <source>Scan</source>
-            <translation type="unfinished">Сканировать</translation>
+            <translation>Сканировать</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished">Стоп</translation>
+            <translation>Стоп</translation>
         </message>
         <message>
             <source>msec</source>
-            <translation type="unfinished"></translation>
+            <translation>мс</translation>
         </message>
     </context>
     <context>
         <name>PEProcessData</name>
         <message>
             <source>Resources</source>
-            <translation type="unfinished"></translation>
+            <translation>Ресурсы</translation>
         </message>
     </context>
     <context>
         <name>PESectionHeaderWidget</name>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>PEWidget</name>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Heuristic scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Эвристическое сканирование</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Show valid</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>Сигнатуры</translation>
         </message>
         <message>
             <source>Sections</source>
-            <translation type="unfinished">Секции</translation>
+            <translation>Секции</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
         </message>
         <message>
             <source>Calculate</source>
@@ -1443,349 +1692,376 @@
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished">Редактировать</translation>
+            <translation>Редактировать</translation>
         </message>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>QHexView</name>
         <message>
             <source>Cannot save file</source>
-            <translation type="unfinished"></translation>
+            <translation>Невозможно сохранить файл</translation>
         </message>
     </context>
     <context>
         <name>QHexViewWidget</name>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">Перейти к адресу</translation>
+            <translation>Перейти к адресу</translation>
         </message>
         <message>
             <source>Cursor</source>
-            <translation type="unfinished">Курсор</translation>
+            <translation>Курсор</translation>
         </message>
         <message>
             <source>Selection</source>
-            <translation type="unfinished"></translation>
+            <translation>Выделение</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished"></translation>
+            <translation>Размер</translation>
         </message>
         <message>
             <source>Readonly</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished"></translation>
+            <translation>данные</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">Сохранить график</translation>
-        </message>
-        <message>
-            <source>Dump to file</source>
-            <translation type="unfinished"></translation>
-        </message>
-        <message>
-            <source>Signature</source>
-            <translation type="unfinished">Сигнатура</translation>
-        </message>
-        <message>
-            <source>Find</source>
-            <translation type="unfinished"></translation>
-        </message>
-        <message>
-            <source>Find next</source>
-            <translation type="unfinished"></translation>
-        </message>
-        <message>
-            <source>Select</source>
-            <translation type="unfinished">Выбрать</translation>
-        </message>
-        <message>
-            <source>Select all</source>
-            <translation type="unfinished">Выбрать всё</translation>
-        </message>
-        <message>
-            <source>Copy</source>
-            <translation type="unfinished">Копировать</translation>
-        </message>
-        <message>
-            <source>Copy as hex</source>
-            <translation type="unfinished"></translation>
+            <translation>Сохранить дамп</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
         </message>
     </context>
     <context>
         <name>QObject</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished"></translation>
+            <translation>Размер</translation>
         </message>
         <message>
             <source>Read error</source>
-            <translation type="unfinished"></translation>
+            <translation>Ошибка чтения</translation>
         </message>
         <message>
             <source>Write error</source>
-            <translation type="unfinished"></translation>
+            <translation>Ошибка записи</translation>
         </message>
         <message>
             <source>Cannot open file</source>
-            <translation type="unfinished"></translation>
+            <translation>Невозможно открыть файл</translation>
         </message>
     </context>
     <context>
-        <name>SearchStrings</name>
+        <name>QwtPlotRenderer</name>
         <message>
-            <source>Maximum</source>
-            <translation type="unfinished"></translation>
+            <source>Documents</source>
+            <translation>Документы</translation>
         </message>
         <message>
-            <source>Read error</source>
-            <translation type="unfinished"></translation>
+            <source>Images</source>
+            <translation>Образы</translation>
         </message>
         <message>
-            <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <source>Export File Name</source>
+            <translation></translation>
         </message>
-        <message>
-            <source>Offset</source>
-            <translation type="unfinished">Смещение</translation>
-        </message>
-        <message>
-            <source>Size</source>
-            <translation type="unfinished"></translation>
-        </message>
+    </context>
+    <context>
+        <name>SearchSignaturesWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
-            <source>String</source>
-            <translation type="unfinished"></translation>
+            <source>Endianness</source>
+            <translation>Порядок байтов</translation>
+        </message>
+        <message>
+            <source>File</source>
+            <translation>Файл</translation>
+        </message>
+        <message>
+            <source>Search</source>
+            <translation>Поиск</translation>
+        </message>
+        <message>
+            <source>Save</source>
+            <translation>Сохранить</translation>
+        </message>
+        <message>
+            <source>Save file</source>
+            <translation>Сохранить файл</translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>Сигнатуры</translation>
+        </message>
+        <message>
+            <source>Text files</source>
+            <translation>Текстовые файлы</translation>
+        </message>
+        <message>
+            <source>All files</source>
+            <translation>Все файлы</translation>
+        </message>
+        <message>
+            <source>Copy name</source>
+            <translation>Копировать как hex</translation>
+        </message>
+        <message>
+            <source>Copy signature</source>
+            <translation>Сигнатура</translation>
+        </message>
+        <message>
+            <source>Copy address</source>
+            <translation>Копировать адрес</translation>
+        </message>
+        <message>
+            <source>Copy offset</source>
+            <translation>Копировать смещение</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>SearchStringsWidget</name>
         <message>
             <source>Search</source>
-            <translation type="unfinished">Поиск</translation>
+            <translation>Поиск</translation>
         </message>
         <message>
             <source>Filter</source>
-            <translation type="unfinished"></translation>
+            <translation>Фильтр</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">Сохранить</translation>
+            <translation>Сохранить</translation>
         </message>
         <message>
             <source>Save file</source>
-            <translation type="unfinished">Сохранить</translation>
+            <translation>Сохранить файл</translation>
         </message>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
         <message>
             <source>Text files</source>
-            <translation type="unfinished"></translation>
+            <translation>Текстовые файлы</translation>
         </message>
         <message>
             <source>All files</source>
-            <translation type="unfinished"></translation>
+            <translation>Все файлы</translation>
         </message>
         <message>
             <source>Copy string</source>
-            <translation type="unfinished"></translation>
+            <translation>Сопировать строку</translation>
         </message>
         <message>
             <source>Copy address</source>
-            <translation type="unfinished"></translation>
+            <translation>Копировать адрес</translation>
         </message>
         <message>
             <source>Copy offset</source>
-            <translation type="unfinished"></translation>
+            <translation>Копировать смещение</translation>
         </message>
         <message>
             <source>Copy size</source>
-            <translation type="unfinished"></translation>
+            <translation>Сопировать размер</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>SpecAbstract</name>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"></translation>
+            <translation>Неизвестно</translation>
         </message>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
         </message>
         <message>
             <source>Archive record</source>
-            <translation type="unfinished"></translation>
+            <translation>Арихвная запись</translation>
         </message>
         <message>
             <source>obfuscator</source>
-            <translation type="unfinished"></translation>
+            <translation>обфускатор</translation>
         </message>
         <message>
             <source>Tool</source>
-            <translation type="unfinished"></translation>
+            <translation>Инструмент</translation>
         </message>
         <message>
             <source>Certificate</source>
-            <translation type="unfinished"></translation>
+            <translation>Сертификат</translation>
         </message>
         <message>
             <source>Compiler</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Converter</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Cryptor</source>
-            <translation type="unfinished"></translation>
+            <translation>Криптор</translation>
         </message>
         <message>
             <source>Database</source>
-            <translation type="unfinished"></translation>
+            <translation>База данных</translation>
         </message>
         <message>
             <source>Debug data</source>
-            <translation type="unfinished"></translation>
+            <translation>Отладочная информация</translation>
         </message>
         <message>
             <source>protection</source>
-            <translation type="unfinished"></translation>
+            <translation>защита</translation>
         </message>
         <message>
             <source>extender</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Format</source>
-            <translation type="unfinished"></translation>
+            <translation>Формат</translation>
         </message>
         <message>
             <source>Generic</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Image</source>
-            <translation type="unfinished">Образ</translation>
+            <translation>Образ</translation>
         </message>
         <message>
             <source>Installer</source>
-            <translation type="unfinished"></translation>
+            <translation>Установщик</translation>
         </message>
         <message>
             <source>Installer data</source>
-            <translation type="unfinished"></translation>
+            <translation>Данные установщика</translation>
         </message>
         <message>
             <source>Joiner</source>
-            <translation type="unfinished"></translation>
+            <translation>Джойнер</translation>
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished"></translation>
+            <translation>Язык</translation>
         </message>
         <message>
             <source>Library</source>
-            <translation type="unfinished">Библиотеки</translation>
+            <translation>Библиотека</translation>
         </message>
         <message>
             <source>Linker</source>
-            <translation type="unfinished"></translation>
+            <translation>Линкер</translation>
         </message>
         <message>
             <source>compressor</source>
-            <translation type="unfinished"></translation>
+            <translation>упаковщик</translation>
+        </message>
+        <message>
+            <source>Operation system</source>
+            <translation></translation>
         </message>
         <message>
             <source>Packer</source>
-            <translation type="unfinished"></translation>
+            <translation>Пакер</translation>
         </message>
         <message>
             <source>Protector</source>
-            <translation type="unfinished"></translation>
+            <translation>Протектор</translation>
         </message>
         <message>
             <source>Protector data</source>
-            <translation type="unfinished"></translation>
+            <translation>Данные протектора</translation>
         </message>
         <message>
             <source>data</source>
-            <translation type="unfinished"></translation>
+            <translation>данные</translation>
         </message>
         <message>
             <source>Sign tool</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Source code</source>
-            <translation type="unfinished"></translation>
+            <translation>Исходный код</translation>
         </message>
         <message>
             <source>Stub</source>
-            <translation>Stub</translation>
+            <translation>Стаб</translation>
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished"></translation>
+            <translation>Точка входа</translation>
         </message>
         <message>
             <source>Section name</source>
-            <translation type="unfinished"></translation>
+            <translation>Имя секции</translation>
         </message>
         <message>
             <source>Code section</source>
-            <translation type="unfinished"></translation>
+            <translation>Секция</translation>
         </message>
         <message>
             <source>Entry point section</source>
-            <translation type="unfinished"></translation>
+            <translation>Секция точки входа</translation>
         </message>
         <message>
             <source>String</source>
-            <translation type="unfinished"></translation>
+            <translation>Строка</translation>
         </message>
         <message>
             <source>Archive</source>
-            <translation type="unfinished"></translation>
+            <translation>Архив</translation>
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished"></translation>
+            <translation>Ресурсы</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
     </context>
     <context>
@@ -1800,40 +2076,52 @@
         </message>
         <message>
             <source>Device scan</source>
-            <translation type="unfinished"></translation>
+            <translation>Сканирование устройства</translation>
         </message>
     </context>
     <context>
         <name>StaticScanItemModel</name>
         <message>
             <source>Result</source>
-            <translation type="unfinished"></translation>
+            <translation>Результат</translation>
         </message>
     </context>
     <context>
         <name>ToolsWidget</name>
         <message>
             <source>Strings</source>
-            <translation type="unfinished"></translation>
+            <translation>Строки</translation>
         </message>
     </context>
     <context>
         <name>XBinary</name>
         <message>
             <source>Text</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Document</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Image</source>
-            <translation type="unfinished">Образ</translation>
+            <translation>Образ</translation>
         </message>
         <message>
             <source>Archive</source>
-            <translation type="unfinished"></translation>
+            <translation>Архив</translation>
+        </message>
+        <message>
+            <source>Read error</source>
+            <translation>Ошибка чтения</translation>
+        </message>
+        <message>
+            <source>Maximum</source>
+            <translation>Максимум</translation>
+        </message>
+        <message>
+            <source>Write error</source>
+            <translation>Ошибка записи</translation>
         </message>
     </context>
     <context>
@@ -1847,190 +2135,248 @@
         <name>XDEX</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
+        </message>
+    </context>
+    <context>
+        <name>XDemangle</name>
+        <message>
+            <source>Unknown</source>
+            <translation>Неизвестно</translation>
+        </message>
+        <message>
+            <source>Automatic</source>
+            <translation></translation>
+        </message>
+    </context>
+    <context>
+        <name>XDemangleWidget</name>
+        <message>
+            <source>Mode</source>
+            <translation>Режим</translation>
         </message>
     </context>
     <context>
         <name>XDisasmModel</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Label</source>
-            <translation type="unfinished"></translation>
+            <translation>Метка</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Байты</translation>
+            <translation>Байты</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished"></translation>
+            <translation>Опкод</translation>
         </message>
     </context>
     <context>
         <name>XDisasmView</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Байты</translation>
+            <translation>Байты</translation>
         </message>
         <message>
             <source>Opcode</source>
-            <translation type="unfinished"></translation>
+            <translation>Опкод</translation>
+        </message>
+        <message>
+            <source>Comment</source>
+            <translation>Комментарий</translation>
         </message>
         <message>
             <source>Invalid opcode</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation></translation>
         </message>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">Перейти к адресу</translation>
+            <translation>Перейти к адресу</translation>
+        </message>
+        <message>
+            <source>Go to offset</source>
+            <translation>Копировать смещение</translation>
+        </message>
+        <message>
+            <source>Go to entry point</source>
+            <translation>Точка входа</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished"></translation>
+            <translation>Дамп в файл</translation>
+        </message>
+        <message>
+            <source>Hex signature</source>
+            <translation>Сигнатура</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">Сигнатура</translation>
+            <translation>Сигнатура</translation>
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished"></translation>
+            <translation>Поиск</translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished"></translation>
+            <translation>Найти далее</translation>
         </message>
         <message>
             <source>Select all</source>
-            <translation type="unfinished">Выбрать всё</translation>
+            <translation>Выбрать всё</translation>
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished"></translation>
+            <translation>Копировать как hex</translation>
+        </message>
+        <message>
+            <source>Copy cursor offset</source>
+            <translation>Копировать смещение</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>Копировать адрес</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Go to</source>
+            <translation>Перейти к</translation>
         </message>
         <message>
             <source>Select</source>
-            <translation type="unfinished">Выбрать</translation>
+            <translation>Выбрать</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Копировать</translation>
+            <translation>Копировать</translation>
+        </message>
+        <message>
+            <source>Relative address</source>
+            <translation></translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished"></translation>
+            <translation>данные</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">Сохранить график</translation>
+            <translation>Сохранить дамп</translation>
+        </message>
+        <message>
+            <source>Nothing found</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>XDisasmWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
             <source>Analyze</source>
-            <translation type="unfinished"></translation>
+            <translation>Анализировать</translation>
         </message>
         <message>
             <source>Labels</source>
-            <translation type="unfinished"></translation>
+            <translation>Метки</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
         </message>
         <message>
             <source>Go to</source>
-            <translation type="unfinished"></translation>
+            <translation>Перейти к</translation>
         </message>
         <message>
             <source>Entry point</source>
-            <translation type="unfinished"></translation>
+            <translation>Точка входа</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">Виртуальный адрес</translation>
+            <translation>Виртуальный адрес</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">Относительный виртуальный адрес</translation>
+            <translation>Относительный виртуальный адрес</translation>
         </message>
         <message>
             <source>File offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Копировать</translation>
+            <translation>Копировать</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">Сигнатура</translation>
+            <translation>Сигнатура</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished"></translation>
+            <translation>Дамп в файл</translation>
         </message>
         <message>
             <source>Disasm</source>
-            <translation type="unfinished"></translation>
+            <translation>Дизассемблировать</translation>
         </message>
         <message>
             <source>To data</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished"></translation>
+            <translation>данные</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">Сохранить график</translation>
+            <translation>Сохранить дамп</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished">Ошибка</translation>
+            <translation>Ошибка</translation>
         </message>
     </context>
     <context>
         <name>XELF</name>
         <message>
             <source>Segment</source>
-            <translation type="unfinished">Сегменты</translation>
+            <translation>Сегмент</translation>
         </message>
     </context>
     <context>
         <name>XEntropyWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
             <source>Total</source>
-            <translation type="unfinished"></translation>
+            <translation>Всего</translation>
         </message>
         <message>
             <source>Status</source>
@@ -2038,31 +2384,31 @@
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished"></translation>
+            <translation>Размер</translation>
         </message>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
             <source>Entropy</source>
-            <translation type="unfinished">Энтропия</translation>
+            <translation>Энтропия</translation>
         </message>
         <message>
             <source>Regions</source>
-            <translation type="unfinished"></translation>
+            <translation>Регионы</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished">Сохранить</translation>
+            <translation>Сохранить</translation>
         </message>
         <message>
             <source>Bytes</source>
-            <translation type="unfinished">Байты</translation>
+            <translation>Байты</translation>
         </message>
         <message>
             <source>Byte</source>
@@ -2074,15 +2420,15 @@
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">Имя</translation>
+            <translation>Имя</translation>
         </message>
         <message>
             <source>Images</source>
-            <translation type="unfinished"></translation>
+            <translation>Образы</translation>
         </message>
         <message>
             <source>Documents</source>
-            <translation type="unfinished"></translation>
+            <translation>Документы</translation>
         </message>
         <message>
             <source>Save diagram</source>
@@ -2093,203 +2439,416 @@
         <name>XHashWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
             <source>Method</source>
-            <translation>метод</translation>
+            <translation>Метод</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished"></translation>
+            <translation>Размер</translation>
         </message>
         <message>
             <source>Reload</source>
-            <translation type="unfinished">Обновить</translation>
+            <translation>Обновить</translation>
         </message>
         <message>
             <source>Hash</source>
-            <translation type="unfinished"></translation>
+            <translation>Хэш</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">Имя</translation>
+            <translation>Имя</translation>
+        </message>
+    </context>
+    <context>
+        <name>XHexEdit</name>
+        <message>
+            <source>Offset</source>
+            <translation>Смещение</translation>
         </message>
     </context>
     <context>
         <name>XHexView</name>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
         </message>
         <message>
             <source>Symbols</source>
-            <translation type="unfinished"></translation>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Go to offset</source>
+            <translation>Копировать смещение</translation>
         </message>
         <message>
             <source>Go to address</source>
-            <translation type="unfinished">Перейти к адресу</translation>
+            <translation>Перейти к адресу</translation>
         </message>
         <message>
             <source>Dump to file</source>
-            <translation type="unfinished"></translation>
+            <translation>Дамп в файл</translation>
         </message>
         <message>
             <source>Signature</source>
-            <translation type="unfinished">Сигнатура</translation>
+            <translation>Сигнатура</translation>
         </message>
         <message>
             <source>Find</source>
-            <translation type="unfinished"></translation>
+            <translation>Поиск</translation>
         </message>
         <message>
             <source>Find next</source>
-            <translation type="unfinished"></translation>
+            <translation>Найти далее</translation>
         </message>
         <message>
             <source>Select all</source>
-            <translation type="unfinished">Выбрать всё</translation>
+            <translation>Выбрать всё</translation>
         </message>
         <message>
             <source>Copy as hex</source>
-            <translation type="unfinished"></translation>
+            <translation>Копировать как hex</translation>
+        </message>
+        <message>
+            <source>Copy cursor offset</source>
+            <translation>Копировать смещение</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>Копировать адрес</translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>Дизассемблировать</translation>
+        </message>
+        <message>
+            <source>Memory map</source>
+            <translation>Карта памяти</translation>
+        </message>
+        <message>
+            <source>Go to</source>
+            <translation>Перейти к</translation>
         </message>
         <message>
             <source>Select</source>
-            <translation type="unfinished">Выбрать</translation>
+            <translation>Выбрать</translation>
         </message>
         <message>
             <source>Copy</source>
-            <translation type="unfinished">Копировать</translation>
+            <translation>Копировать</translation>
         </message>
         <message>
             <source>Raw data</source>
-            <translation type="unfinished"></translation>
+            <translation>данные</translation>
         </message>
         <message>
             <source>Save dump</source>
-            <translation type="unfinished">Сохранить график</translation>
+            <translation>Сохранить дамп</translation>
+        </message>
+        <message>
+            <source>Nothing found</source>
+            <translation></translation>
         </message>
     </context>
     <context>
         <name>XHexViewWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished"></translation>
+            <translation>Формат</translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>Ошибка</translation>
+        </message>
+    </context>
+    <context>
+        <name>XLineEditHEX</name>
+        <message>
+            <source>Copy</source>
+            <translation>Копировать</translation>
         </message>
     </context>
     <context>
         <name>XMACH</name>
         <message>
             <source>Segment</source>
-            <translation type="unfinished">Сегменты</translation>
+            <translation>Сегмент</translation>
         </message>
     </context>
     <context>
         <name>XMIMEWidget</name>
         <message>
             <source>All</source>
-            <translation type="unfinished"></translation>
+            <translation>Все</translation>
         </message>
     </context>
     <context>
         <name>XMSDOS</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
         </message>
     </context>
     <context>
         <name>XMemoryMapWidget</name>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
             <source>File offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Virtual address</source>
-            <translation type="unfinished">Виртуальный адрес</translation>
+            <translation>Виртуальный адрес</translation>
         </message>
         <message>
             <source>Relative virtual address</source>
-            <translation type="unfinished">Относительный виртуальный адрес</translation>
+            <translation>Относительный виртуальный адрес</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">Режим</translation>
+            <translation>Режим</translation>
         </message>
         <message>
             <source>Endianness</source>
-            <translation type="unfinished">Порядок байтов</translation>
+            <translation>Порядок байтов</translation>
         </message>
         <message>
             <source>Architecture</source>
-            <translation type="unfinished"></translation>
+            <translation>Архитектура</translation>
         </message>
         <message>
             <source>Memory map</source>
-            <translation type="unfinished"></translation>
+            <translation>Карта памяти</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished">Имя</translation>
+            <translation>Имя</translation>
         </message>
         <message>
             <source>Offset</source>
-            <translation type="unfinished">Смещение</translation>
+            <translation>Смещение</translation>
         </message>
         <message>
             <source>Address</source>
-            <translation type="unfinished">Адрес</translation>
+            <translation>Адрес</translation>
         </message>
         <message>
             <source>Size</source>
-            <translation type="unfinished"></translation>
+            <translation>Размер</translation>
         </message>
     </context>
     <context>
         <name>XMultiDisasmWidget</name>
         <message>
             <source>Form</source>
-            <translation type="unfinished"></translation>
+            <translation>Формат</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished">Тип</translation>
+            <translation>Тип</translation>
         </message>
         <message>
             <source>Mode</source>
-            <translation type="unfinished">Режим</translation>
+            <translation>Режим</translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>Ошибка</translation>
         </message>
     </context>
     <context>
         <name>XPE</name>
         <message>
             <source>Header</source>
-            <translation type="unfinished">Header</translation>
+            <translation>Header</translation>
         </message>
         <message>
             <source>Section</source>
-            <translation type="unfinished">Секции</translation>
+            <translation>Секция</translation>
         </message>
         <message>
             <source>Overlay</source>
-            <translation type="unfinished">Оверлей</translation>
+            <translation>Оверлей</translation>
         </message>
         <message>
             <source>Cannot open file</source>
-            <translation type="unfinished"></translation>
+            <translation>Невозможно открыть файл</translation>
+        </message>
+    </context>
+    <context>
+        <name>XShortcuts</name>
+        <message>
+            <source>Unknown</source>
+            <translation>Неизвестно</translation>
+        </message>
+        <message>
+            <source>Copy</source>
+            <translation>Копировать</translation>
+        </message>
+        <message>
+            <source>Copy string</source>
+            <translation>Сопировать строку</translation>
+        </message>
+        <message>
+            <source>Copy offset</source>
+            <translation>Копировать смещение</translation>
+        </message>
+        <message>
+            <source>Copy size</source>
+            <translation>Сопировать размер</translation>
+        </message>
+        <message>
+            <source>Hex</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Demangle</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Copy name</source>
+            <translation>Копировать как hex</translation>
+        </message>
+        <message>
+            <source>Copy signature</source>
+            <translation>Сигнатура</translation>
+        </message>
+        <message>
+            <source>Copy address</source>
+            <translation>Копировать адрес</translation>
+        </message>
+        <message>
+            <source>Dump to file</source>
+            <translation>Дамп в файл</translation>
+        </message>
+        <message>
+            <source>Go to address</source>
+            <translation>Перейти к адресу</translation>
+        </message>
+        <message>
+            <source>Go to offset</source>
+            <translation>Копировать смещение</translation>
+        </message>
+        <message>
+            <source>Signature</source>
+            <translation>Сигнатура</translation>
+        </message>
+        <message>
+            <source>Find</source>
+            <translation>Поиск</translation>
+        </message>
+        <message>
+            <source>Find next</source>
+            <translation>Найти далее</translation>
+        </message>
+        <message>
+            <source>Select all</source>
+            <translation>Выбрать всё</translation>
+        </message>
+        <message>
+            <source>Copy as hex</source>
+            <translation>Копировать как hex</translation>
+        </message>
+        <message>
+            <source>Copy cursor offset</source>
+            <translation>Копировать смещение</translation>
+        </message>
+        <message>
+            <source>Copy cursor address</source>
+            <translation>Копировать адрес</translation>
+        </message>
+        <message>
+            <source>Disasm</source>
+            <translation>Дизассемблировать</translation>
+        </message>
+        <message>
+            <source>Memory map</source>
+            <translation>Карта памяти</translation>
+        </message>
+        <message>
+            <source>Go to entry point</source>
+            <translation>Точка входа</translation>
+        </message>
+        <message>
+            <source>Hex signature</source>
+            <translation>Сигнатура</translation>
+        </message>
+        <message>
+            <source>Run</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Set breakpoint</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Step into</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Step over</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Copy filename</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Entropy</source>
+            <translation>Энтропия</translation>
+        </message>
+        <message>
+            <source>Hash</source>
+            <translation>Хэш</translation>
+        </message>
+        <message>
+            <source>Open</source>
+            <translation>Открыть</translation>
+        </message>
+        <message>
+            <source>Scan</source>
+            <translation>Сканировать</translation>
+        </message>
+        <message>
+            <source>Strings</source>
+            <translation>Строки</translation>
+        </message>
+        <message>
+            <source>Action</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Signatures</source>
+            <translation>Сигнатуры</translation>
+        </message>
+        <message>
+            <source>Debugger</source>
+            <translation>Отладчик</translation>
+        </message>
+        <message>
+            <source>Archive</source>
+            <translation>Архив</translation>
+        </message>
+        <message>
+            <source>Table</source>
+            <translation></translation>
         </message>
     </context>
 </TS>
