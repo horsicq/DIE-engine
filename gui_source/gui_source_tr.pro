@@ -1,18 +1,19 @@
 TRANSLATIONS = \
-    translation/die_it.ts \
     translation/die_de.ts \
-    translation/die_ja.ts \
-    translation/die_pl.ts \
-    translation/die_ru.ts \
-    translation/die_vi.ts \
     translation/die_es.ts \
     translation/die_fr.ts \
-    translation/die_pt_BR.ts \
+    translation/die_he.ts \
+    translation/die_it.ts \
+    translation/die_ja.ts \
     translation/die_ko.ts \
-    translation/die_zh.ts \
-    translation/die_zh_TW.ts\
+    translation/die_pl.ts \
+    translation/die_pt_BR.ts \
+    translation/die_pt_PT.ts \
+    translation/die_ru.ts \
     translation/die_tr.ts\
-    translation/die_he.ts
+    translation/die_vi.ts \
+    translation/die_zh.ts \
+    translation/die_zh_TW.ts
 
 FORMS += \
     ../FormatDialogs/dialogdump.ui \
@@ -37,16 +38,19 @@ FORMS += \
     ../FormatWidgets/MACH/dialogmach.ui \
     ../FormatWidgets/MACH/machsectionheaderwidget.ui \
     ../FormatWidgets/MACH/machwidget.ui \
+    ../FormatWidgets/MACHOFAT/machofatwidget.ui \
     ../FormatWidgets/MSDOS/dialogmsdos.ui \
     ../FormatWidgets/MSDOS/msdoswidget.ui \
+    ../FormatWidgets/MultiSearch/dialogmultisearchprocess.ui \
     ../FormatWidgets/NE/dialogne.ui \
     ../FormatWidgets/NE/nesectionheaderwidget.ui \
     ../FormatWidgets/NE/newidget.ui \
     ../FormatWidgets/PE/dialogpe.ui \
     ../FormatWidgets/PE/pesectionheaderwidget.ui \
     ../FormatWidgets/PE/pewidget.ui \
+    ../FormatWidgets/SearchSignatures/dialogsearchsignatures.ui \
+    ../FormatWidgets/SearchSignatures/searchsignatureswidget.ui \
     ../FormatWidgets/SearchStrings/dialogsearchstrings.ui \
-    ../FormatWidgets/SearchStrings/dialogsearchstringsprocess.ui \
     ../FormatWidgets/SearchStrings/searchstringswidget.ui \
     ../FormatWidgets/dialogprocessdata.ui \
     ../FormatWidgets/dialogsectionheader.ui \
@@ -59,6 +63,8 @@ FORMS += \
     ../StaticScan/formresult.ui \
     ../StaticScan/formstaticscan.ui \
     ../StaticScan/heurwidget.ui \
+    ../XDemangleWidget/dialogdemangle.ui \
+    ../XDemangleWidget/xdemanglewidget.ui \
     ../XDisasm/dialogasmsignature.ui \
     ../XDisasm/dialogdisasm.ui \
     ../XDisasm/dialogdisasmlabels.ui \
@@ -133,9 +139,12 @@ SOURCES += \
     ../FormatWidgets/MACH/machprocessdata.cpp \
     ../FormatWidgets/MACH/machsectionheaderwidget.cpp \
     ../FormatWidgets/MACH/machwidget.cpp \
+    ../FormatWidgets/MACHOFAT/machofatwidget.cpp \
     ../FormatWidgets/MSDOS/dialogmsdos.cpp \
     ../FormatWidgets/MSDOS/msdos_defs.cpp \
     ../FormatWidgets/MSDOS/msdoswidget.cpp \
+    ../FormatWidgets/MultiSearch/dialogmultisearchprocess.cpp \
+    ../FormatWidgets/MultiSearch/multisearch.cpp \
     ../FormatWidgets/NE/dialogne.cpp \
     ../FormatWidgets/NE/ne_defs.cpp \
     ../FormatWidgets/NE/neprocessdata.cpp \
@@ -146,9 +155,9 @@ SOURCES += \
     ../FormatWidgets/PE/peprocessdata.cpp \
     ../FormatWidgets/PE/pesectionheaderwidget.cpp \
     ../FormatWidgets/PE/pewidget.cpp \
+    ../FormatWidgets/SearchSignatures/dialogsearchsignatures.cpp \
+    ../FormatWidgets/SearchSignatures/searchsignatureswidget.cpp \
     ../FormatWidgets/SearchStrings/dialogsearchstrings.cpp \
-    ../FormatWidgets/SearchStrings/dialogsearchstringsprocess.cpp \
-    ../FormatWidgets/SearchStrings/searchstrings.cpp \
     ../FormatWidgets/SearchStrings/searchstringswidget.cpp \
     ../FormatWidgets/dialogprocessdata.cpp \
     ../FormatWidgets/dialogsectionheader.cpp \
@@ -190,6 +199,9 @@ SOURCES += \
     ../XCapstone/xcapstone.cpp \
     ../XDEX/xandroidbinary.cpp \
     ../XDEX/xdex.cpp \
+    ../XDemangle/xdemangle.cpp \
+    ../XDemangleWidget/dialogdemangle.cpp \
+    ../XDemangleWidget/xdemanglewidget.cpp \
     ../XDisasm/dialogasmsignature.cpp \
     ../XDisasm/dialogdisasm.cpp \
     ../XDisasm/dialogdisasmlabels.cpp \
@@ -210,17 +222,120 @@ SOURCES += \
     ../XHashWidget/dialoghashprocess.cpp \
     ../XHashWidget/hashprocess.cpp \
     ../XHashWidget/xhashwidget.cpp \
+    ../XHexEdit/xhexedit.cpp \
     ../XHexView/dialoghexview.cpp \
     ../XHexView/xhexview.cpp \
     ../XHexView/xhexviewwidget.cpp \
+    ../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp \
+    ../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp \
+    ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangle.cpp \
+    ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangleNodes.cpp \
     ../XMIME/xmime.cpp \
     ../XMIMEWidget/dialogmime.cpp \
     ../XMIMEWidget/xmimewidget.cpp \
     ../XMemoryMapWidget/dialogmemorymap.cpp \
     ../XMemoryMapWidget/xmemorymapwidget.cpp \
     ../XOptions/xoptions.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_abstract_legend.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_abstract_scale.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_abstract_scale_draw.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_abstract_slider.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_analog_clock.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_arrow_button.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_clipper.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_color_map.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_column_symbol.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_compass.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_compass_rose.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_counter.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_curve_fitter.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_date.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_date_scale_draw.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_date_scale_engine.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_dial.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_dial_needle.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_dyngrid_layout.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_event_pattern.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_graphic.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_interval.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_interval_symbol.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_knob.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_legend.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_legend_data.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_legend_label.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_magnifier.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_math.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_matrix_raster_data.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_null_paintdevice.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_painter.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_painter_command.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_panner.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_picker.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_picker_machine.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_pixel_matrix.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_abstract_barchart.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_axis.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_barchart.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_canvas.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_curve.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_dict.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_directpainter.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_glcanvas.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_grid.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_histogram.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_intervalcurve.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_item.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_layout.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_legenditem.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_magnifier.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_marker.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_multi_barchart.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_panner.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_picker.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_rasteritem.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_renderer.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_rescaler.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_scaleitem.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_seriesitem.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_shapeitem.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_spectrocurve.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_spectrogram.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_svgitem.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_textlabel.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_tradingcurve.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_xml.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_zoneitem.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_zoomer.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_point_3d.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_point_data.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_point_mapper.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_point_polar.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_raster_data.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_round_scale_draw.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_sampling_thread.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_scale_div.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_scale_draw.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_scale_engine.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_scale_map.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_scale_widget.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_series_data.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_slider.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_spline.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_symbol.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_system_clock.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_text.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_text_engine.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_text_label.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_thermo.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_transform.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_wheel.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_widget_overlay.cpp \
     ../XShortcuts/dialogshortcuts.cpp \
     ../XShortcuts/xshortcuts.cpp \
+    ../XShortcuts/xshortcutsdialog.cpp \
+    ../XShortcuts/xshortcutstscrollarea.cpp \
+    ../XShortcuts/xshortcutswidget.cpp \
     ../XSingleApplication/xsingleapplication.cpp \
     ../archive_widget/archive_widget.cpp \
     ../archive_widget/createviewmodelprocess.cpp \
@@ -249,5 +364,6 @@ SOURCES += \
     main_gui.cpp \
     ../nfd_widget/nfd_widget.cpp \
     ../winloader_source/winloader.cpp
+
 
 
