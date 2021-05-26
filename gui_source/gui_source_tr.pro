@@ -106,6 +106,7 @@ SOURCES += \
     ../Controls/xabstracttableview.cpp \
     ../Controls/xcomboboxex.cpp \
     ../Controls/xdatetimeeditx.cpp \
+    ../Controls/xdevicetableview.cpp \
     ../Controls/xlineedithex.cpp \
     ../FormatDialogs/dialogdumpprocess.cpp \
     ../FormatDialogs/dialoggotoaddress.cpp \
@@ -364,6 +365,5 @@ SOURCES += \
     main_gui.cpp \
     ../nfd_widget/nfd_widget.cpp \
     ../winloader_source/winloader.cpp
-
 
 
