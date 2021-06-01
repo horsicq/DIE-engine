@@ -116,8 +116,12 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 
     int nCount=sizeof(_userinfo_records)/sizeof(USERINFO);
 
-    {
-        QSignalBlocker blocker1(ui->listWidgetThanks);
+    { 
+    #if QT_VERSION >= 0x050300
+        const QSignalBlocker blocker1(ui->listWidgetThanks);
+    #else
+        const bool bBlocked1=ui->listWidgetThanks->blockSignals(true);
+    #endif
 
         for(int i=0;i<nCount;i++)
         {
@@ -127,6 +131,10 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 
             ui->listWidgetThanks->insertItem(i,pItem);
         }
+
+    #if QT_VERSION < 0x050300
+        ui->listWidgetThanks->blockSignals(bBlocked1);
+    #endif
     }
 
     if(nCount)

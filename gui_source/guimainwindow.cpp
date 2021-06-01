@@ -239,6 +239,13 @@ void GuiMainWindow::on_pushButtonHash_clicked()
     }
 }
 
+void GuiMainWindow::on_pushButtonDemangle_clicked()
+{
+    DialogDemangle dialogDemangle(this);
+
+    dialogDemangle.exec();
+}
+
 QString GuiMainWindow::getCurrentFileName()
 {
     return ui->lineEditFileName->text();

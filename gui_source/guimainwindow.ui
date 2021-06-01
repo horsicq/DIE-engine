@@ -107,6 +107,13 @@
          </widget>
         </item>
         <item>
+         <widget class="QPushButton" name="pushButtonDemangle">
+          <property name="text">
+           <string>Demangle</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <spacer name="verticalSpacer">
           <property name="orientation">
            <enum>Qt::Vertical</enum>

@@ -60,6 +60,7 @@ private slots:
     void on_pushButtonEntropy_clicked();
     void on_pushButtonOpenFile_clicked();
     void on_pushButtonHash_clicked();
+    void on_pushButtonDemangle_clicked();
 
     QString getCurrentFileName();
     void adjust();
