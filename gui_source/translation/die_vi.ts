@@ -162,6 +162,10 @@
         <source>msec</source>
         <translation>mili-giây</translation>
     </message>
+    <message>
+        <source>Copy as</source>
+        <translation>Sao chép dưới dạng hex</translation>
+    </message>
 </context>
 <context>
     <name>DialogAbout</name>
@@ -1237,6 +1241,10 @@
     <message>
         <source>Signatures</source>
         <translation>Chữ ký</translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation></translation>
     </message>
     <message>
         <source>Shortcuts</source>
@@ -2836,6 +2844,10 @@
     <message>
         <source>Step over</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Dừng</translation>
     </message>
     <message>
         <source>Copy filename</source>

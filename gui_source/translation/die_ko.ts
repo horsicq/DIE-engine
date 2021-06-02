@@ -162,6 +162,10 @@
         <source>msec</source>
         <translation>msec</translation>
     </message>
+    <message>
+        <source>Copy as</source>
+        <translation>헥사로 복사</translation>
+    </message>
 </context>
 <context>
     <name>DialogAbout</name>
@@ -1237,6 +1241,10 @@
     <message>
         <source>Signatures</source>
         <translation>서명</translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation></translation>
     </message>
     <message>
         <source>Shortcuts</source>
@@ -2836,6 +2844,10 @@
     <message>
         <source>Step over</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>중지</translation>
     </message>
     <message>
         <source>Copy filename</source>

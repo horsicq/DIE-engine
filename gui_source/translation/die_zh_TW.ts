@@ -162,6 +162,10 @@
         <source>msec</source>
         <translation>毫秒</translation>
     </message>
+    <message>
+        <source>Copy as</source>
+        <translation>複製為十六進制</translation>
+    </message>
 </context>
 <context>
     <name>DialogAbout</name>
@@ -1237,6 +1241,10 @@
     <message>
         <source>Signatures</source>
         <translation>簽章</translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation>解構</translation>
     </message>
     <message>
         <source>Shortcuts</source>
@@ -2836,6 +2844,10 @@
     <message>
         <source>Step over</source>
         <translation>步出</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>停止</translation>
     </message>
     <message>
         <source>Copy filename</source>
