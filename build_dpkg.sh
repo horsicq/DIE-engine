@@ -19,13 +19,16 @@ if [ -z "$X_ERROR" ]; then
     check_file "$X_SOURCE_PATH/build/release/die"
     check_file "$X_SOURCE_PATH/build/release/diec"
     if [ -z "$X_ERROR" ]; then
-        create_app_dir die
+        create_deb_app_dir die
         
         cp -f $X_SOURCE_PATH/LICENSE                                        $X_SOURCE_PATH/release/$X_BUILD_NAME/
         cp -f $X_SOURCE_PATH/DEBIAN/control                                 $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/
-        sed -i "s/#ARCH#/$X_ARCHITECTURE/" $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+        sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+        sed -i "s/#ARCH#/$X_ARCHITECTURE/"                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
         cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
+        cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
         cp -f $X_SOURCE_PATH/DEBIAN/die.desktop                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
+        sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/die.desktop
         cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
         cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
         cp -Rf $X_SOURCE_PATH/Detect-It-Easy/info/                          $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
