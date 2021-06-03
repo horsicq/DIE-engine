@@ -25,6 +25,7 @@
 #include <QCommandLineOption>
 #include "die_script.h"
 #include "entropyprocess.h"
+#include "xoptions.h"
 
 void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
 {
@@ -116,7 +117,7 @@ int main(int argc, char *argv[])
 
     QCommandLineParser parser;
     QString sDescription;
-    sDescription.append(QString("%1 v%2\n").arg(X_APPLICATIONDISPLAYNAME).arg(X_APPLICATIONVERSION));
+    sDescription.append(QString("%1 v%2\n").arg(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
     sDescription.append(QString("%1\n").arg("Copyright(C) 2006-2008 Hellsp@wn 2012-2021 hors<horsicq@gmail.com> Web: http://ntinfo.biz"));
     parser.setApplicationDescription(sDescription);
     parser.addHelpOption();
@@ -150,7 +151,7 @@ int main(int argc, char *argv[])
 
     DiE_Script die_script;
 
-    die_script.loadDatabase("$data/db");
+    die_script.loadDatabase(XOptions().getApplicationDataPath()+QDir::separator()+"db");
 
     if(listArgs.count())
     {

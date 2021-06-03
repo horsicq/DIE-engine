@@ -23,3 +23,8 @@ SOURCES += \
     XCONFIG += entropyprocess
     include(../XEntropyWidget/entropyprocess.pri)
 }
+
+!contains(XCONFIG, xoptions) {
+    XCONFIG += xoptions
+    include(../XOptions/xoptions.pri)
+}
