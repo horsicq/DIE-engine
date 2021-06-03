@@ -14,14 +14,13 @@ cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               $X_SOURCE_PA
 cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/Detect-It-Easy/info/                          $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/                            $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -f $X_SOURCE_PATH/gui_source/translation/*.qm                    $X_SOURCE_PATH/release/appDir/usr/lib/die/lang/
 mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/die/signatures
 cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/appDir/usr/lib/die/signatures/
 
 cd $X_SOURCE_PATH/release
 
 linuxdeployqt $X_SOURCE_PATH/release/appDir/usr/share/applications/die.desktop -appimage -always-overwrite
-mv mv *.AppImage die_${X_RELEASE_VERSION}.AppImage
+mv *.AppImage die_${X_RELEASE_VERSION}.AppImage
 
 cd $X_SOURCE_PATH
 
