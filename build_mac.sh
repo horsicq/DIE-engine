@@ -38,7 +38,9 @@ if [ -z "$X_ERROR" ]; then
         deploy_qt_library QtPrintSupport die
         deploy_qt_library QtSvg die
         deploy_qt_library QtOpenGL die
-        deploy_qt_library QtConcurrent die
+        deploy_qt_library QtNetwork die
+        deploy_qt_library QtScript die
+        deploy_qt_library QtScriptTools die
 
         deploy_qt_plugin platforms libqcocoa die
         deploy_qt_plugin platforms libqminimal die
