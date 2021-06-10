@@ -64,7 +64,7 @@ DialogOptions::~DialogOptions()
 #ifdef Q_OS_WIN
 void DialogOptions::contextState()
 {
-    bool bState=pOptions->checkContext(X_APPLICATIONNAME,"*");
+    bool bState=pOptions->checkContext(X_APPLICATIONDISPLAYNAME,"*");
 
     ui->pushButtonRegister->setEnabled(!bState);
     ui->pushButtonClear->setEnabled(bState);
