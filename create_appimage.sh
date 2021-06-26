@@ -1,6 +1,7 @@
 #!/bin/bash -x
 export X_SOURCE_PATH=$PWD
 export X_RELEASE_VERSION=$(cat "release_version.txt")
+export VERSION=$X_RELEASE_VERSION
 
 source build_tools/linux.sh
 
@@ -20,7 +21,7 @@ cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PA
 cd $X_SOURCE_PATH/release
 
 linuxdeployqt $X_SOURCE_PATH/release/appDir/usr/share/applications/die.desktop -appimage -always-overwrite
-mv *.AppImage die_${X_RELEASE_VERSION}.AppImage
+#mv *.AppImage die_${X_RELEASE_VERSION}.AppImage
 
 cd $X_SOURCE_PATH
 

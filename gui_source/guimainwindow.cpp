@@ -165,7 +165,8 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
             stringsOptions.bAnsi=true;
             stringsOptions.bUnicode=true;
 
-            DialogSearchStrings dialogSearchStrings(this,&file,stringsOptions,true);
+            DialogSearchStrings dialogSearchStrings(this);
+            dialogSearchStrings.setData(&file,stringsOptions,true);
             dialogSearchStrings.setShortcuts(&g_xShortcuts);
 
             dialogSearchStrings.exec();
@@ -189,7 +190,8 @@ void GuiMainWindow::on_pushButtonSignatures_clicked()
             SearchSignaturesWidget::OPTIONS signaturesOptions={};
             signaturesOptions.sSignaturesPath=g_xOptions.getSearchSignaturesPath();
 
-            DialogSearchSignatures dialogSearchSignatures(this,&file,XBinary::FT_UNKNOWN,signaturesOptions);
+            DialogSearchSignatures dialogSearchSignatures(this);
+            dialogSearchSignatures.setData(&file,XBinary::FT_UNKNOWN,signaturesOptions);
             dialogSearchSignatures.setShortcuts(&g_xShortcuts);
 
             dialogSearchSignatures.exec();
@@ -210,7 +212,8 @@ void GuiMainWindow::on_pushButtonEntropy_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogEntropy dialogEntropy(this,&file);
+            DialogEntropy dialogEntropy(this);
+            dialogEntropy.setData(&file);
             dialogEntropy.setShortcuts(&g_xShortcuts);
 
             dialogEntropy.exec();
@@ -231,7 +234,8 @@ void GuiMainWindow::on_pushButtonHash_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogHash dialogHash(this,&file,XBinary::FT_UNKNOWN);
+            DialogHash dialogHash(this);
+            dialogHash.setData(&file,XBinary::FT_UNKNOWN);
             dialogHash.setShortcuts(&g_xShortcuts);
 
             dialogHash.exec();
