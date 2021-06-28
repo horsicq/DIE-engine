@@ -42,6 +42,14 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
+    if((argc==2)&&((argv[1]=="--version")||(argv[1]=="-v")))
+    {
+        QString sInfo=QString("%1 %2").arg(QCoreApplication::applicationName(),QCoreApplication::applicationVersion());
+        printf("%s",sInfo.toLatin1().data());
+
+        return 0;
+    }
+
     XSingleApplication app(argc,argv);
 
     XOptions xOptions;
