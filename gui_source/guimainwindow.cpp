@@ -163,7 +163,7 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
         {
             SearchStringsWidget::OPTIONS stringsOptions={};
             stringsOptions.bAnsi=true;
-            stringsOptions.bUTF8=true;
+            stringsOptions.bUTF8=false;
             stringsOptions.bUnicode=true;
 
             DialogSearchStrings dialogSearchStrings(this);
