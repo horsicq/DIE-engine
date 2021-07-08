@@ -106,3 +106,6 @@
 [submodule "build_tools"]
 	path = build_tools
 	url = https://github.com/horsicq/build_tools
+[submodule "XCppfilt"]
+	path = XCppfilt
+	url = https://github.com/horsicq/XCppfilt
