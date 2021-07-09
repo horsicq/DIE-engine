@@ -1,8 +1,8 @@
 # For additional build parameters
 CONFIG(debug, debug|release) {
-    DESTDIR = ../build/debug
+    DESTDIR = $$PWD/build/debug
 } else {
-    DESTDIR = ../build/release
+    DESTDIR = $$PWD/build/release
 }
 
 win32-g++ {

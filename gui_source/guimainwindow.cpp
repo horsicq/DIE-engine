@@ -64,8 +64,6 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 
     adjust();
 
-    ui->pushButtonDemangle->hide(); // TODO
-
     if(QCoreApplication::arguments().count()>1)
     {
         QString sFileName=QCoreApplication::arguments().at(1);
