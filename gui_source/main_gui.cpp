@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     if((argc==2)&&((QString(argv[1])=="--version")||(QString(argv[1])=="-v")))
     {
         QString sInfo=QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION);
-        printf("%s",sInfo.toLatin1().data());
+        printf("%s\n",sInfo.toLatin1().data());
 
         return 0;
     }
