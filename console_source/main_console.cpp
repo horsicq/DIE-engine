@@ -70,6 +70,14 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
             {
                 sResult=EntropyProcess::dataToXmlString(&epData);
             }
+            else if(pScanOptions->bResultAsCSV)
+            {
+                sResult=EntropyProcess::dataToCsvString(&epData);
+            }
+            else if(pScanOptions->bResultAsTSV)
+            {
+                sResult=EntropyProcess::dataToTsvString(&epData);
+            }
             else
             {
                 sResult=EntropyProcess::dataToPlainString(&epData);
@@ -90,6 +98,14 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
             else if(pScanOptions->bResultAsXML)
             {
                 sResult=DiE_Script::scanResultToXmlString(&scanResult);
+            }
+            else if(pScanOptions->bResultAsCSV)
+            {
+                sResult=DiE_Script::scanResultToCsvString(&scanResult);
+            }
+            else if(pScanOptions->bResultAsTSV)
+            {
+                sResult=DiE_Script::scanResultToTsvString(&scanResult);
             }
             else
             {
@@ -123,17 +139,21 @@ int main(int argc, char *argv[])
     parser.addHelpOption();
     parser.addVersionOption();
 
-    parser.addPositionalArgument("file","The file to open.");
+    parser.addPositionalArgument("target","The file or directory to open.");
 
     QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",     "Deep scan.");
     QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",      "Show entropy.");
     QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",          "Result as XML.");
     QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON.");
+    QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",          "Result as CSV.");
+    QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",          "Result as TSV.");
 
     parser.addOption(clDeepScan);
     parser.addOption(clEntropy);
     parser.addOption(clResultAsXml);
     parser.addOption(clResultAsJson);
+    parser.addOption(clResultAsCSV);
+    parser.addOption(clResultAsTSV);
 
     parser.process(app);
 
@@ -148,6 +168,8 @@ int main(int argc, char *argv[])
     scanOptions.bShowEntropy=parser.isSet(clEntropy);
     scanOptions.bResultAsXML=parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON=parser.isSet(clResultAsJson);
+    scanOptions.bResultAsCSV=parser.isSet(clResultAsCSV);
+    scanOptions.bResultAsTSV=parser.isSet(clResultAsTSV);
 
     DiE_Script die_script;
 
