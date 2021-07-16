@@ -7,12 +7,15 @@ CONFIG(debug, debug|release) {
 
 win32-g++ {
     QMAKE_CXXFLAGS += -Wno-missing-field-initializers
+    QMAKE_CXXFLAGS += -Werror=format-security
 }
 unix:!macx {
     QMAKE_CXXFLAGS += -Wno-missing-field-initializers
+    QMAKE_CXXFLAGS += -Werror=format-security
 }
 unix:macx {
     QMAKE_CXXFLAGS += -Wno-missing-field-initializers
+    QMAKE_CXXFLAGS += -Werror=format-security
 }
 
 !contains(QMAKE_TARGET.arch, x86_64) {
