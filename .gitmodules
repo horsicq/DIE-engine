@@ -37,9 +37,6 @@
 [submodule "Controls"]
 	path = Controls
 	url = https://github.com/horsicq/Controls.git
-[submodule "QHexView"]
-	path = QHexView
-	url = https://github.com/horsicq/QHexView.git
 [submodule "XMemoryMapWidget"]
 	path = XMemoryMapWidget
 	url = https://github.com/horsicq/XMemoryMapWidget.git
