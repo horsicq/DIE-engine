@@ -5,7 +5,7 @@ CONFIG(debug, debug|release) {
     DESTDIR = $$PWD/build/release
 }
 
-win32-g++ {
+win32-g++* {
     QMAKE_CXXFLAGS += -Wno-missing-field-initializers
     QMAKE_CXXFLAGS += -Werror=format-security
 }
