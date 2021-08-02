@@ -47,10 +47,10 @@ if [ -z "$X_ERROR" ]; then
         deploy_qt_plugin platforms libqminimal die
         deploy_qt_plugin platforms libqoffscreen die
         
-        deploy_qt_plugin imageformats qjpeg die
-        deploy_qt_plugin imageformats qtiff die
-        deploy_qt_plugin imageformats qico die
-        deploy_qt_plugin imageformats qgif die
+        deploy_qt_plugin imageformats libqjpeg die
+        deploy_qt_plugin imageformats libqtiff die
+        deploy_qt_plugin imageformats libqico die
+        deploy_qt_plugin imageformats libqgif die
 
         make_release
         make_clear
