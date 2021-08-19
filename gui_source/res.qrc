@@ -65,5 +65,7 @@
         <file>images/avatars/FrenchYeti.png</file>
         <file>images/avatars/NongHoangTu.png</file>
         <file>images/avatars/ArnaudDovi.png</file>
+        <file>images/avatars/Tilt.png</file>
+        <file>images/avatars/Gray.png</file>
     </qresource>
 </RCC>
