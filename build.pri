@@ -33,3 +33,7 @@ unix:macx {
     }
     # TODO more MSVC versions
 }
+contains(DEFINES, CREATE_PDB) {
+    QMAKE_CXXFLAGS += /Zi
+    QMAKE_LFLAGS += /DEBUG 
+}
