@@ -106,3 +106,12 @@
 [submodule "XCppfilt"]
 	path = XCppfilt
 	url = https://github.com/horsicq/XCppfilt
+[submodule "XDynStructs"]
+	path = XDynStructs
+	url = https://github.com/horsicq/XDynStructs
+[submodule "XDynStructsEngine"]
+	path = XDynStructsEngine
+	url = https://github.com/horsicq/XDynStructsEngine
+[submodule "XDynStructsWidget"]
+	path = XDynStructsWidget
+	url = https://github.com/horsicq/XDynStructsWidget
