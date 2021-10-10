@@ -27,7 +27,7 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
 {
     ui->setupUi(this);
 
-    this->pOptions=pOptions;
+    this->g_pOptions=pOptions;
 
     ui->listWidgetOptions->insertItem(TAB_GENERAL,      tr("General"));
     ui->listWidgetOptions->insertItem(TAB_SCAN,         tr("Scan"));
@@ -77,22 +77,22 @@ void DialogOptions::on_pushButtonCancel_clicked()
 
 void DialogOptions::on_pushButtonOK_clicked()
 {
-    pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
-    pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
-    pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
-    pOptions->getCheckBox(ui->checkBoxSingleApplication,XOptions::ID_SINGLEAPPLICATION);
+    g_pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
+    g_pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
+    g_pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
+    g_pOptions->getCheckBox(ui->checkBoxSingleApplication,XOptions::ID_SINGLEAPPLICATION);
 
-    pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
-    pOptions->getComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
-    pOptions->getLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DATABASEPATH);
-    pOptions->getLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
-    pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
+    g_pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
+    g_pOptions->getComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
+    g_pOptions->getLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DATABASEPATH);
+    g_pOptions->getLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
+    g_pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
-    pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
-    pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
-    pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+    g_pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
+    g_pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
+    g_pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
 
-    if(pOptions->isRestartNeeded())
+    if(g_pOptions->isRestartNeeded())
     {
         QMessageBox::information(this,tr("Information"),tr("Please restart the application"));
     }

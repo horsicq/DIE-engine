@@ -106,8 +106,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 
     QString sInfoText=ui->labelInfo->text();
 
-    sInfoText=sInfoText.replace("#VERSION#",QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME).arg(X_APPLICATIONVERSION));
-    sInfoText=sInfoText.replace("#DATE#",__DATE__);
+    sInfoText=sInfoText.replace("#VERSION#",QString("%1 %2(%3)").arg(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION,__DATE__));
 
     ui->labelInfo->setText(sInfoText);
 
