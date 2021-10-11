@@ -1,8 +1,6 @@
 QT += core
 QT -= gui
 
-include(../build.pri)
-
 XCONFIG += use_dex
 
 CONFIG += c++11
@@ -10,6 +8,8 @@ CONFIG += c++11
 TARGET = diec
 CONFIG += console
 CONFIG -= app_bundle
+
+include(../build.pri)
 
 SOURCES += \
         main_console.cpp
