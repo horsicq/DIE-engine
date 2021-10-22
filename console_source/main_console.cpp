@@ -31,7 +31,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
 {
     QList<QString> listFileNames;
 
-    for(int i=0;i<pListArgs->count();i++)
+    for(qint32 i=0;i<pListArgs->count();i++)
     {
         QString sFileName=pListArgs->at(i);
 
@@ -47,7 +47,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
 
     bool bShowFileName=listFileNames.count()>1;
 
-    for(int i=0;i<listFileNames.count();i++)
+    for(qint32 i=0;i<listFileNames.count();i++)
     {
         QString sFileName=listFileNames.at(i);
 

@@ -118,7 +118,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 
     ui->labelComponents->setText(sComponentsText);
 
-    int nCount=sizeof(_userinfo_records)/sizeof(USERINFO);
+    qint32 nCount=sizeof(_userinfo_records)/sizeof(USERINFO);
 
     { 
     #if QT_VERSION >= 0x050300
@@ -127,7 +127,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
         const bool bBlocked1=ui->listWidgetThanks->blockSignals(true);
     #endif
 
-        for(int i=0;i<nCount;i++)
+        for(qint32 i=0;i<nCount;i++)
         {
             QListWidgetItem *pItem=new QListWidgetItem;
             pItem->setText(_userinfo_records[i].sUser);
