@@ -22,10 +22,12 @@ find_package(Qt5 COMPONENTS Concurrent REQUIRED)
 find_package(Qt5 COMPONENTS OpenGL REQUIRED)
 find_package(Qt5 COMPONENTS PrintSupport REQUIRED)
 find_package(Qt5 COMPONENTS Svg REQUIRED)
+find_package(Qt5 COMPONENTS Network REQUIRED)
 
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_ARCHIVE)
 
+include_directories(${PROJECT_SOURCE_DIR}/../archive_widget/)
 include_directories(${PROJECT_SOURCE_DIR}/../Controls/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatDialogs/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/)
@@ -66,6 +68,7 @@ include_directories(${PROJECT_SOURCE_DIR}/../XOptions/)
 include_directories(${PROJECT_SOURCE_DIR}/../XQwt/3rdparty/qwt/src/)
 include_directories(${PROJECT_SOURCE_DIR}/../XShortcuts/)
 include_directories(${PROJECT_SOURCE_DIR}/../XMIMEWidget/)
+include_directories(${PROJECT_SOURCE_DIR}/../XSingleApplication/)
 
 set(PROJECT_SOURCES
             ../Controls/hexvalidator.cpp
@@ -92,9 +95,56 @@ set(PROJECT_SOURCES
             ../FormatDialogs/dialogtextinfo.ui
             ../FormatDialogs/dumpprocess.cpp
             ../FormatDialogs/searchprocess.cpp
+            ../FormatWidgets/DEX/dex_defs.cpp
+            ../FormatWidgets/DEX/dexprocessdata.cpp
+            ../FormatWidgets/DEX/dexsectionheaderwidget.cpp
+            ../FormatWidgets/DEX/dexsectionheaderwidget.ui
+            ../FormatWidgets/DEX/dexwidget.cpp
+            ../FormatWidgets/DEX/dexwidget.ui
+            ../FormatWidgets/DEX/dialogdex.cpp
+            ../FormatWidgets/DEX/dialogdex.ui
+            ../FormatWidgets/ELF/dialogelf.cpp
+            ../FormatWidgets/ELF/dialogelf.ui
+            ../FormatWidgets/ELF/elf_defs.cpp
+            ../FormatWidgets/ELF/elfprocessdata.cpp
+            ../FormatWidgets/ELF/elfsectionheaderwidget.cpp
+            ../FormatWidgets/ELF/elfsectionheaderwidget.ui
+            ../FormatWidgets/ELF/elfwidget.cpp
+            ../FormatWidgets/ELF/elfwidget.ui
+            ../FormatWidgets/LE/dialogle.cpp
+            ../FormatWidgets/LE/dialogle.ui
+            ../FormatWidgets/LE/le_defs.cpp
+            ../FormatWidgets/LE/leprocessdata.cpp
+            ../FormatWidgets/LE/lesectionheaderwidget.cpp
+            ../FormatWidgets/LE/lesectionheaderwidget.ui
+            ../FormatWidgets/LE/lewidget.cpp
+            ../FormatWidgets/LE/lewidget.ui
+            ../FormatWidgets/MACH/dialogmach.cpp
+            ../FormatWidgets/MACH/dialogmach.ui
+            ../FormatWidgets/MACH/mach_defs.cpp
+            ../FormatWidgets/MACH/machprocessdata.cpp
+            ../FormatWidgets/MACH/machsectionheaderwidget.cpp
+            ../FormatWidgets/MACH/machsectionheaderwidget.ui
+            ../FormatWidgets/MACH/machwidget.cpp
+            ../FormatWidgets/MACH/machwidget.ui
+            ../FormatWidgets/MACHOFAT/machofatwidget.cpp
+            ../FormatWidgets/MACHOFAT/machofatwidget.ui
+            ../FormatWidgets/MSDOS/dialogmsdos.cpp
+            ../FormatWidgets/MSDOS/dialogmsdos.ui
+            ../FormatWidgets/MSDOS/msdos_defs.cpp
+            ../FormatWidgets/MSDOS/msdoswidget.cpp
+            ../FormatWidgets/MSDOS/msdoswidget.ui
             ../FormatWidgets/MultiSearch/dialogmultisearchprocess.cpp
             ../FormatWidgets/MultiSearch/dialogmultisearchprocess.ui
             ../FormatWidgets/MultiSearch/multisearch.cpp
+            ../FormatWidgets/NE/dialogne.cpp
+            ../FormatWidgets/NE/dialogne.ui
+            ../FormatWidgets/NE/ne_defs.cpp
+            ../FormatWidgets/NE/neprocessdata.cpp
+            ../FormatWidgets/NE/nesectionheaderwidget.cpp
+            ../FormatWidgets/NE/nesectionheaderwidget.ui
+            ../FormatWidgets/NE/newidget.cpp
+            ../FormatWidgets/NE/newidget.ui
             ../FormatWidgets/PE/dialogpe.cpp
             ../FormatWidgets/PE/dialogpe.ui
             ../FormatWidgets/PE/pe_defs.cpp
@@ -117,6 +167,8 @@ set(PROJECT_SOURCES
             ../FormatWidgets/dialogprocessdata.ui
             ../FormatWidgets/dialogsectionheader.cpp
             ../FormatWidgets/dialogsectionheader.ui
+            ../FormatWidgets/formatswidget.cpp
+            ../FormatWidgets/formatswidget.ui
             ../FormatWidgets/formatwidget.cpp
             ../FormatWidgets/invwidget.cpp
             ../FormatWidgets/processdata.cpp
@@ -190,6 +242,10 @@ set(PROJECT_SOURCES
             ../XMemoryMapWidget/dialogmemorymap.ui
             ../XMemoryMapWidget/xmemorymapwidget.cpp
             ../XMemoryMapWidget/xmemorymapwidget.ui
+            ../XMIMEWidget/dialogmime.cpp
+            ../XMIMEWidget/dialogmime.ui
+            ../XMIMEWidget/xmimewidget.cpp
+            ../XMIMEWidget/xmimewidget.ui
             ../XOptions/xoptions.cpp
             ../XQwt/3rdparty/qwt/src/qwt_abstract_legend.cpp
             ../XQwt/3rdparty/qwt/src/qwt_abstract_scale.cpp
@@ -292,6 +348,21 @@ set(PROJECT_SOURCES
             ../XShortcuts/xshortcutsdialog.cpp
             ../XShortcuts/xshortcutstscrollarea.cpp
             ../XShortcuts/xshortcutswidget.cpp
+            ../XSingleApplication/xsingleapplication.cpp
+            ../archive_widget/archive_widget.cpp
+            ../archive_widget/archive_widget.ui
+            ../archive_widget/createviewmodelprocess.cpp
+            ../archive_widget/dialogarchive.cpp
+            ../archive_widget/dialogarchive.ui
+            ../archive_widget/dialogcreateviewmodel.cpp
+            ../archive_widget/dialogcreateviewmodel.ui
+            ../archive_widget/dialogshowimage.cpp
+            ../archive_widget/dialogshowimage.ui
+            ../archive_widget/dialogshowtext.cpp
+            ../archive_widget/dialogshowtext.ui
+            ../archive_widget/dialogunpackfile.cpp
+            ../archive_widget/dialogunpackfile.ui
+            ../archive_widget/unpackfileprocess.cpp
             dialogabout.cpp
             dialogabout.ui
             dialogoptions.cpp
@@ -311,7 +382,7 @@ if(APPLE)
             BUNDLE TRUE)
     set(MACOSX_BUNDLE_ICON_FILE ../icons/main.icns)
 else()
-    add_executable(${PROJECT_NAME}
+    add_executable(${PROJECT_NAME} WIN32
         ${PROJECT_SOURCES}
     )
 endif()
@@ -327,6 +398,7 @@ target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
 target_link_libraries(${PROJECT_NAME} Qt5::OpenGL)
 target_link_libraries(${PROJECT_NAME} Qt5::PrintSupport)
 target_link_libraries(${PROJECT_NAME} Qt5::Svg)
+target_link_libraries(${PROJECT_NAME} Qt5::Network)
 
 if(WIN32)
     target_link_libraries(${PROJECT_NAME} Wintrust)
