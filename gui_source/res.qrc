@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>images/about.png</file>
+        <file>images/main.png</file>
         <file>images/avatars/4kusNick.png</file>
         <file>images/avatars/Adler.png</file>
         <file>images/avatars/ADMINCRACK.png</file>
@@ -67,5 +68,8 @@
         <file>images/avatars/ArnaudDovi.png</file>
         <file>images/avatars/Tilt.png</file>
         <file>images/avatars/Gray.png</file>
+        <file>images/avatars/fr0zenbag.png</file>
+        <file>images/avatars/AndersonLeite.png</file>
+        <file>images/avatars/JiriVinopal.png</file>
     </qresource>
 </RCC>

@@ -51,6 +51,7 @@ int main(int argc, char *argv[])
     }
 
     XSingleApplication app(argc,argv);
+    QApplication::setWindowIcon(QIcon(":/images/main.png"));
 
     XOptions xOptions;
 
