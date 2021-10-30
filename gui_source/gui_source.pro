@@ -37,11 +37,6 @@ include(../build.pri)
     include(../FormatWidgets/formatwidgets.pri)
 }
 
-!contains(XCONFIG, xoptions) {
-    XCONFIG += xoptions
-    include(../XOptions/xoptions.pri)
-}
-
 !contains(XCONFIG, xsingleapplication) {
     XCONFIG += xsingleapplication
     include(../XSingleApplication/xsingleapplication.pri)
@@ -57,3 +52,6 @@ win32 {
 macx {
     ICON = ../icons/main.icns
 }
+
+DISTFILES += \
+    CMakeLists.txt
