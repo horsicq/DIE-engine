@@ -37,6 +37,14 @@ public:
     LiteMainWindow(QWidget *pParent=nullptr);
     ~LiteMainWindow();
 
+public slots:
+    void processFile(QString sFileName);
+
+private slots:
+    void on_pushButtonScan_clicked();
+    void on_pushButtonExit_clicked();
+    void on_pushButtonOpenFile_clicked();
+
 private:
     Ui::LiteMainWindow *ui;
 };

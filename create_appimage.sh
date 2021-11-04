@@ -9,6 +9,7 @@ create_image_app_dir die
 
 cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PATH/release/appDir/usr/bin/
 cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/appDir/usr/bin/
+cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/appDir/usr/bin/
 cp -f $X_SOURCE_PATH/DEBIAN/die.desktop                             $X_SOURCE_PATH/release/appDir/usr/share/applications/
 sed -i "s/#VERSION#/1.0/"                                           $X_SOURCE_PATH/release/appDir/usr/share/applications/die.desktop
 cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               $X_SOURCE_PATH/release/appDir/usr/share/icons/

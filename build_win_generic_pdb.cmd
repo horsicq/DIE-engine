@@ -16,12 +16,17 @@ call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\re
 
 IF NOT [%X_ERROR%] == [] goto exit
 
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diel.exe
+
+IF NOT [%X_ERROR%] == [] goto exit
+
 mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
 
 copy %X_SOURCE_PATH%\build\release\die.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
 copy %X_SOURCE_PATH%\build\release\diec.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
 copy %X_SOURCE_PATH%\build\release\die.pdb %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
 copy %X_SOURCE_PATH%\build\release\diec.pdb %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
+copy %X_SOURCE_PATH%\build\release\diel.pdb %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
 xcopy %X_SOURCE_PATH%\XStyles\qss %X_SOURCE_PATH%\release\%X_BUILD_NAME%\qss /E /I
 xcopy %X_SOURCE_PATH%\Detect-It-Easy\db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\db /E /I
 xcopy %X_SOURCE_PATH%\Detect-It-Easy\info %X_SOURCE_PATH%\release\%X_BUILD_NAME%\info /E /I

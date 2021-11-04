@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 project(MainProject)
 
@@ -17,3 +17,5 @@ add_subdirectory(XCppfilt)
 add_subdirectory(XCapstone)
 add_subdirectory(XArchive)
 add_subdirectory(gui_source)
+add_subdirectory(console_source)
+add_subdirectory(lite_source)

@@ -18,6 +18,7 @@ if [ -z "$X_ERROR" ]; then
 
     check_file "$X_SOURCE_PATH/build/release/die"
     check_file "$X_SOURCE_PATH/build/release/diec"
+    check_file "$X_SOURCE_PATH/build/release/diel"
     if [ -z "$X_ERROR" ]; then
         create_deb_app_dir die
         
@@ -27,6 +28,7 @@ if [ -z "$X_ERROR" ]; then
         sed -i "s/#ARCH#/$X_ARCHITECTURE/"                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
         cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
         cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
+        cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
         cp -f $X_SOURCE_PATH/DEBIAN/die.desktop                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
         sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/die.desktop
         cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/

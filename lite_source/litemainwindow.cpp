@@ -30,6 +30,13 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent)
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
+
+    if(QCoreApplication::arguments().count()>1)
+    {
+        QString sFileName=QCoreApplication::arguments().at(1);
+
+        processFile(sFileName);
+    }
 }
 
 LiteMainWindow::~LiteMainWindow()
@@ -37,3 +44,35 @@ LiteMainWindow::~LiteMainWindow()
     delete ui;
 }
 
+void LiteMainWindow::processFile(QString sFileName)
+{
+    ui->lineEditFileName->setText(sFileName);
+
+    if(sFileName!="")
+    {
+        // TODO
+    }
+}
+
+
+void LiteMainWindow::on_pushButtonScan_clicked()
+{
+    processFile(ui->lineEditFileName->text());
+}
+
+void LiteMainWindow::on_pushButtonExit_clicked()
+{
+    this->close();
+}
+
+void LiteMainWindow::on_pushButtonOpenFile_clicked()
+{
+    QString sDirectory=""; // mb TODO
+
+    QString sFileName=QFileDialog::getOpenFileName(this,tr("Open file")+QString("..."),sDirectory,tr("All files")+QString(" (*)"));
+
+    if(!sFileName.isEmpty())
+    {
+        processFile(sFileName);
+    }
+}
