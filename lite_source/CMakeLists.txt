@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(DIE VERSION 3.03 LANGUAGES CXX)
+project(DIEL VERSION 3.03 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -21,30 +21,17 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../release)
 find_package(QT NAMES Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Concurrent REQUIRED)
-find_package(Qt5 COMPONENTS OpenGL REQUIRED)
-find_package(Qt5 COMPONENTS PrintSupport REQUIRED)
-find_package(Qt5 COMPONENTS Svg REQUIRED)
-find_package(Qt5 COMPONENTS Network REQUIRED)
 
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_ARCHIVE)
 
-include(${PROJECT_SOURCE_DIR}/../XMIMEWidget/xmimewidget.cmake)
-include(${PROJECT_SOURCE_DIR}/../FormatWidgets/formatwidgets.cmake)
-include(${PROJECT_SOURCE_DIR}/../XSingleApplication/xsingleapplication.cmake)
+include(${PROJECT_SOURCE_DIR}/../die_script/die_script.cmake)
 
 set(PROJECT_SOURCES
-            ${XMIMEWIDGET_SOURCES}
-            ${FORMATWIDGETS_SOURCES}
-            ${XSINGLEAPPLICATION_SOURCES}
-            dialogabout.cpp
-            dialogabout.ui
-            dialogoptions.cpp
-            dialogoptions.ui
-            guimainwindow.cpp
-            guimainwindow.ui
-            main_gui.cpp
-            res.qrc
+            ${DIE_SCRIPT_SOURCES}
+            main_lite.cpp
+            litemainwindow.cpp
+            litemainwindow.ui
 )
 
 if(APPLE)
@@ -64,17 +51,8 @@ endif()
 target_link_libraries(${PROJECT_NAME} bzip2)
 target_link_libraries(${PROJECT_NAME} lzma)
 target_link_libraries(${PROJECT_NAME} zlib)
-target_link_libraries(${PROJECT_NAME} capstone)
-target_link_libraries(${PROJECT_NAME} cppfilt)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
-target_link_libraries(${PROJECT_NAME} Qt5::OpenGL)
-target_link_libraries(${PROJECT_NAME} Qt5::PrintSupport)
-target_link_libraries(${PROJECT_NAME} Qt5::Svg)
-target_link_libraries(${PROJECT_NAME} Qt5::Network)
 
-if(WIN32)
-    target_link_libraries(${PROJECT_NAME} Wintrust)
-    target_link_libraries(${PROJECT_NAME} Crypt32)
-endif()
+

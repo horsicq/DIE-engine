@@ -31,6 +31,9 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent)
 
     setAcceptDrops(true);
 
+    g_pDieScript=new DiE_Script;
+    g_pDieScript->loadDatabase(XOptions().getApplicationDataPath()+QDir::separator()+"db");
+
     if(QCoreApplication::arguments().count()>1)
     {
         QString sFileName=QCoreApplication::arguments().at(1);
@@ -42,18 +45,27 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent)
 LiteMainWindow::~LiteMainWindow()
 {
     delete ui;
+    delete g_pDieScript;
 }
 
 void LiteMainWindow::processFile(QString sFileName)
 {
+    ui->plainTextEditResult->clear();
+
     ui->lineEditFileName->setText(sFileName);
 
     if(sFileName!="")
     {
-        // TODO
+        DiE_Script::SCAN_OPTIONS scanOptions={};
+        scanOptions.bDeepScan;
+
+        DiE_Script::SCAN_RESULT scanResult=g_pDieScript->scanFile(sFileName,&scanOptions);
+
+        ui->plainTextEditResult->setPlainText(DiE_Script::scanResultToPlainString(&scanResult));
+
+       ui->labelScanTime->setText(QString("%1 %2").arg(scanResult.nScanTime).arg(tr("msec")));
     }
 }
-
 
 void LiteMainWindow::on_pushButtonScan_clicked()
 {
@@ -74,5 +86,34 @@ void LiteMainWindow::on_pushButtonOpenFile_clicked()
     if(!sFileName.isEmpty())
     {
         processFile(sFileName);
+    }
+}
+
+void LiteMainWindow::dragEnterEvent(QDragEnterEvent *event)
+{
+    event->acceptProposedAction();
+}
+
+void LiteMainWindow::dragMoveEvent(QDragMoveEvent *event)
+{
+    event->acceptProposedAction();
+}
+
+void LiteMainWindow::dropEvent(QDropEvent *event)
+{
+    const QMimeData *mimeData=event->mimeData();
+
+    if(mimeData->hasUrls())
+    {
+        QList<QUrl> urlList=mimeData->urls();
+
+        if(urlList.count())
+        {
+            QString sFileName=urlList.at(0).toLocalFile();
+
+            sFileName=XBinary::convertFileName(sFileName);
+
+            processFile(sFileName);
+        }
     }
 }

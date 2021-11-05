@@ -23,6 +23,8 @@
 
 #include "../global.h"
 #include <QMainWindow>
+#include <QMimeData>
+#include "die_script.h"
 #include "xoptions.h"
 
 QT_BEGIN_NAMESPACE
@@ -45,7 +47,13 @@ private slots:
     void on_pushButtonExit_clicked();
     void on_pushButtonOpenFile_clicked();
 
+protected:
+    void dragEnterEvent(QDragEnterEvent *event) override;
+    void dragMoveEvent(QDragMoveEvent *event) override;
+    void dropEvent(QDropEvent *event) override;
+
 private:
     Ui::LiteMainWindow *ui;
+    DiE_Script *g_pDieScript;
 };
 #endif // LITEMAINWINDOW_H

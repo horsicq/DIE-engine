@@ -28,3 +28,6 @@ SOURCES += \
     XCONFIG += xoptions
     include(../XOptions/xoptions.pri)
 }
+
+DISTFILES += \
+    CMakeLists.txt
