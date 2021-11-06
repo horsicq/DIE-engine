@@ -25,6 +25,9 @@ find_package(Qt5 COMPONENTS Concurrent REQUIRED)
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_ARCHIVE)
 
+add_definitions(-DUSE_DEX)
+add_definitions(-DUSE_ARCHIVE)
+
 include(${PROJECT_SOURCE_DIR}/../die_script/die_script.cmake)
 
 set(PROJECT_SOURCES
