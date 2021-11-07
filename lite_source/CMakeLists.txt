@@ -27,9 +27,11 @@ add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_ARCHIVE)
 
 include(${PROJECT_SOURCE_DIR}/../die_script/die_script.cmake)
+include(${PROJECT_SOURCE_DIR}/../XOptions/xoptions.cmake)
 
 set(PROJECT_SOURCES
             ${DIE_SCRIPT_SOURCES}
+            ${XOPTIONS_SOURCES}
             main_lite.cpp
             litemainwindow.cpp
             litemainwindow.ui
