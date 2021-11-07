@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(DIEL VERSION 3.03 LANGUAGES CXX)
+project(DIEC VERSION 3.03 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
