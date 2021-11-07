@@ -21,7 +21,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../release)
 find_package(QT NAMES Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Concurrent REQUIRED)
-find_package(Qt5 COMPONENTS Scripts REQUIRED)
+find_package(Qt5 COMPONENTS Script REQUIRED)
 
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_ARCHIVE)
@@ -55,6 +55,6 @@ target_link_libraries(${PROJECT_NAME} zlib)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
-target_link_libraries(${PROJECT_NAME} Qt5::Scripts)
+target_link_libraries(${PROJECT_NAME} Qt5::Script)
 
 
