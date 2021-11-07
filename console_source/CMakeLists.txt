@@ -27,10 +27,12 @@ add_definitions(-DUSE_ARCHIVE)
 
 include(${PROJECT_SOURCE_DIR}/../die_script/die_script.cmake)
 include(${PROJECT_SOURCE_DIR}/../XOptions/xoptions.cmake)
+include(${PROJECT_SOURCE_DIR}/../XEntropyWidget/entropyprocess.cmake)
 
 set(PROJECT_SOURCES
             ${DIE_SCRIPT_SOURCES}
             ${XOPTIONS_SOURCES}
+            ${ENTROPYPROCESS_SOURCES}
             main_console.cpp
 )
 
