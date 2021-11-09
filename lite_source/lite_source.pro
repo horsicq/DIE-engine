@@ -31,5 +31,13 @@ FORMS += \
     include(../XOptions/xoptions.pri)
 }
 
+win32 {
+    RC_ICONS = ../icons/lite.ico
+}
+
+macx {
+    ICON = ../icons/lite.icns
+}
+
 DISTFILES += \
     CMakeLists.txt
