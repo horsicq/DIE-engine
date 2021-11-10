@@ -1,208 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="he">
+<TS version="2.1" language="id">
 <context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
-        <translation>אודות</translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <source>Donate</source>
-        <translation>תרום</translation>
+        <translation>Donasi</translation>
     </message>
     <message>
         <source>Thanks</source>
-        <translation>תודה</translation>
+        <translation>Terimakasih</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>ספריות</translation>
+        <translation>Pustaka</translation>
     </message>
     <message>
         <source>Check updates</source>
-        <translation>בדוק עדכונים</translation>
+        <translation>Periksa pembaruan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>אישור</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
-        <translation>אפשרויות</translation>
+        <translation>Pilihan</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>שמור תיקייה אחרונה</translation>
+        <translation>Simpan direktori terakhir</translation>
     </message>
     <message>
         <source>Stay on top</source>
-        <translation>השאר בקידמה</translation>
+        <translation>Tetap diatas</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation>שמור גיבוי</translation>
+        <translation>Simpan cadangan</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation>יישום יחיד</translation>
+        <translation>Aplikasi tunggal</translation>
     </message>
     <message>
         <source>Scan after open</source>
-        <translation>סרוק לאחר הפתיחה</translation>
+        <translation>Pindai setelah buka</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>סרוק</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>מסד נתונים</translation>
+        <translation>Basis data</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>מידע</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>חפש חתימות</translation>
+        <translation>Cari tanda tangan</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation>סגנון</translation>
+        <translation>Gaya</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>שפה</translation>
+        <translation>Bahasa</translation>
     </message>
     <message>
         <source>Register</source>
-        <translation>הרשמה</translation>
+        <translation>Daftar</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>נקה</translation>
+        <translation>Bersihkan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>אישור</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>בטל</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>כללי</translation>
+        <translation>Umum</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation>מראה</translation>
+        <translation>Penampilan</translation>
     </message>
     <message>
         <source>Context</source>
-        <translation>הקשר</translation>
+        <translation>Konteks</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>מידע</translation>
+        <translation>Informasi</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>אנא הפעל את התוכנית מחדש</translation>
+        <translation>Silahkan mulai ulang aplikasi</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>פתח תיקייה</translation>
+        <translation>Buka direktori</translation>
     </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
     <message>
         <source>File name</source>
-        <translation>שם קובץ</translation>
+        <translation>Nama file</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>פונקציית גיבוב</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>מחרוזות</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>אנטרופיה</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>הקס</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>חתימות</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>להסיר</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>קיצורי דרך</translation>
+        <translation>Jalan pintas</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>אפשרויות</translation>
+        <translation>Pilihan</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>אודות</translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>יציאה</translation>
+        <translation>Keluar</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation>פתח קובץ</translation>
+        <translation>Buka file</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>כל הקבצים</translation>
+        <translation>Semua file</translation>
     </message>
 </context>
 <context>
     <name>LiteMainWindow</name>
     <message>
         <source>File name</source>
-        <translation>שם קובץ</translation>
+        <translation>Nama file</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>סריקה מתקדמת</translation>
+        <translation>Pemindaian seksama</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>סרוק</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>יציאה</translation>
+        <translation>Keluar</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>mdtk</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation>פתח קובץ</translation>
+        <translation>Buka file</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>כל הקבצים</translation>
+        <translation>Semua file</translation>
     </message>
 </context>
 </TS>
