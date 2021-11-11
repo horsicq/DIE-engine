@@ -57,7 +57,7 @@ void LiteMainWindow::processFile(QString sFileName)
     if(sFileName!="")
     {
         DiE_Script::SCAN_OPTIONS scanOptions={};
-        scanOptions.bDeepScan;
+        scanOptions.bDeepScan=ui->checkBoxDeepScan->isChecked();
 
         DiE_Script::SCAN_RESULT scanResult=g_pDieScript->scanFile(sFileName,&scanOptions);
 
