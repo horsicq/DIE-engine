@@ -65,6 +65,15 @@ int main(int argc, char *argv[])
     listIDs.append(XOptions::ID_SINGLEAPPLICATION);
 
     xOptions.setValueIDs(listIDs);
+
+    QMap<XOptions::ID,QVariant> mapDefaultValues;
+
+#ifdef Q_OS_WIN
+    mapDefaultValues.insert(XOptions::ID_QSS,"veles");
+#endif
+
+    xOptions.setDefaultValues(mapDefaultValues);
+
     xOptions.load();
 
     if(xOptions.isSingleApplication())
@@ -77,6 +86,8 @@ int main(int argc, char *argv[])
     if(app.isPrimary())
     {
         XOptions::adjustApplicationView(X_APPLICATIONNAME,&xOptions);
+
+        xOptions.save();
 
         GuiMainWindow mainWindow;
 

@@ -49,6 +49,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     listOptionsIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
 
     g_xOptions.setValueIDs(listOptionsIDs);
+
     g_xOptions.load();
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
