@@ -6,5 +6,5 @@
 # DIE-engine
 GUI & console sources for Detect It Easy(DiE): https://github.com/horsicq/Detect-It-Easy/
 
-![alt text](https://github.com/horsicq/Detect-It-Easy/blob/master/mascots/version.png "Version")
+![alt text](https://github.com/horsicq/Detect-It-Easy/blob/master/mascots/logo.png "logo")
 
