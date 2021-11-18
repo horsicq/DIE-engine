@@ -114,7 +114,7 @@ void GuiMainWindow::on_pushButtonMIME_clicked()
         if(XBinary::tryToOpen(&file))
         {
             DialogMIME dialogMIME(this,&file);
-            dialogMIME.setShortcuts(&g_xShortcuts);
+            dialogMIME.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogMIME.exec();
 
@@ -135,11 +135,9 @@ void GuiMainWindow::on_pushButtonHex_clicked()
         if(XBinary::tryToOpen(&file))
         {
             XHexView::OPTIONS hexOptions={};
-            hexOptions.sSignaturesPath=g_xOptions.getSearchSignaturesPath();
-//            hexOptions.sBackupFileName=XBinary::getBackupName(&file);
 
             DialogHexView dialogHex(this,&file,hexOptions);
-            dialogHex.setShortcuts(&g_xShortcuts);
+            dialogHex.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogHex.exec();
 
@@ -167,7 +165,7 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
 
             DialogSearchStrings dialogSearchStrings(this);
             dialogSearchStrings.setData(&file,stringsOptions,true);
-            dialogSearchStrings.setShortcuts(&g_xShortcuts);
+            dialogSearchStrings.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogSearchStrings.exec();
 
@@ -188,11 +186,10 @@ void GuiMainWindow::on_pushButtonSignatures_clicked()
         if(file.open(QIODevice::ReadOnly))
         {
             SearchSignaturesWidget::OPTIONS signaturesOptions={};
-            signaturesOptions.sSignaturesPath=g_xOptions.getSearchSignaturesPath();
 
             DialogSearchSignatures dialogSearchSignatures(this);
             dialogSearchSignatures.setData(&file,XBinary::FT_UNKNOWN,signaturesOptions);
-            dialogSearchSignatures.setShortcuts(&g_xShortcuts);
+            dialogSearchSignatures.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogSearchSignatures.exec();
 
@@ -214,7 +211,7 @@ void GuiMainWindow::on_pushButtonEntropy_clicked()
         {
             DialogEntropy dialogEntropy(this);
             dialogEntropy.setData(&file);
-            dialogEntropy.setShortcuts(&g_xShortcuts);
+            dialogEntropy.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogEntropy.exec();
 
@@ -236,7 +233,7 @@ void GuiMainWindow::on_pushButtonHash_clicked()
         {
             DialogHash dialogHash(this);
             dialogHash.setData(&file,XBinary::FT_UNKNOWN);
-            dialogHash.setShortcuts(&g_xShortcuts);
+            dialogHash.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogHash.exec();
 
@@ -261,18 +258,7 @@ void GuiMainWindow::adjust()
 {
     g_xOptions.adjustStayOnTop(this);
 
-    FormatsWidget::OPTIONS options={};
-
-    options.sDatabasePath=g_xOptions.getDatabasePath();
-    options.sInfoPath=g_xOptions.getInfoPath();
-    options.bIsSaveBackup=g_xOptions.isSaveBackup();
-    options.sSearchSignaturesPath=g_xOptions.getSearchSignaturesPath();
-
-    ui->widgetFormats->setOptions(options);
-
-    ui->widgetFormats->setScanEngine(g_xOptions.getScanEngine());
-
-    ui->widgetFormats->setShortcuts(&g_xShortcuts);
+    ui->widgetFormats->setScanEngine(g_xOptions.getScanEngine()); // TODO GlobalSettings
     // TODO setShortcuts for mainWindow ...
 }
 
