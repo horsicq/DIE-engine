@@ -2,6 +2,7 @@ QT += core
 QT -= gui
 
 XCONFIG += use_dex
+XCONFIG += use_archive
 
 CONFIG += c++11
 
