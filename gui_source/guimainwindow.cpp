@@ -62,6 +62,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     g_xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
     g_xShortcuts.load();
 
+    ui->widgetFormats->setGlobal(&g_xShortcuts,&g_xOptions);
+
     adjust();
 
     if(QCoreApplication::arguments().count()>1)
@@ -258,7 +260,8 @@ void GuiMainWindow::adjust()
 {
     g_xOptions.adjustStayOnTop(this);
 
-    ui->widgetFormats->setScanEngine(g_xOptions.getScanEngine()); // TODO GlobalSettings
+    ui->widgetFormats->adjust();
+
     // TODO setShortcuts for mainWindow ...
 }
 
