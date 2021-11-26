@@ -14,6 +14,8 @@ macx {
 
 include(../build.pri)
 
+XCONFIG += use_capstone_x86
+
 SOURCES += \
     litemainwindow.cpp \
     main_lite.cpp

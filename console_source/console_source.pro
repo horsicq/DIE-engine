@@ -12,6 +12,8 @@ CONFIG -= app_bundle
 
 include(../build.pri)
 
+XCONFIG += use_capstone_x86
+
 SOURCES += \
         main_console.cpp
 
