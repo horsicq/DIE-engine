@@ -15,7 +15,11 @@ include(../build.pri)
 XCONFIG += use_capstone_x86
 
 SOURCES += \
+        consoleoutput.cpp \
         main_console.cpp
+
+HEADERS += \
+    consoleoutput.h
 
 !contains(XCONFIG, die_script) {
     XCONFIG += die_script

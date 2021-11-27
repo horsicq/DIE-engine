@@ -34,6 +34,7 @@ set(PROJECT_SOURCES
             ${XOPTIONS_SOURCES}
             ${ENTROPYPROCESS_SOURCES}
             main_console.cpp
+            consoleoutput.cpp
 )
 
 if(APPLE)
