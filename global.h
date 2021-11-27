@@ -27,7 +27,7 @@
 #define X_APPLICATIONDISPLAYNAMELITE "Detect It Easy Lite"
 #define X_APPLICATIONNAME "die"
 #define X_APPLICATIONNAMELITE "diel"
-#define X_APPLICATIONVERSION "3.03"
+#define X_APPLICATIONVERSION "3.04"
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "die.ini"
