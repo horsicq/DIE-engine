@@ -149,6 +149,7 @@ int main(int argc, char *argv[])
     QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON.");
     QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",          "Result as CSV.");
     QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",          "Result as TSV.");
+    QCommandLineOption clShowDatabase   (QStringList()<<    "s"<<   "showdatabase", "Show database.");
 
     parser.addOption(clDeepScan);
     parser.addOption(clEntropy);
@@ -156,6 +157,7 @@ int main(int argc, char *argv[])
     parser.addOption(clResultAsJson);
     parser.addOption(clResultAsCSV);
     parser.addOption(clResultAsTSV);
+    parser.addOption(clShowDatabase);
 
     parser.process(app);
 
@@ -175,7 +177,16 @@ int main(int argc, char *argv[])
 
     DiE_Script die_script;
 
-    die_script.loadDatabase(XOptions().getApplicationDataPath()+QDir::separator()+"db");
+    QString sDatabase=XOptions().getApplicationDataPath()+QDir::separator()+"db";
+
+    // TODO set database
+
+    die_script.loadDatabase(sDatabase);
+
+    if(parser.isSet(clShowDatabase))
+    {
+        // TODO Show database
+    }
 
     if(listArgs.count())
     {
