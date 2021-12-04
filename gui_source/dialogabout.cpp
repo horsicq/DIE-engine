@@ -189,7 +189,7 @@ void DialogAbout::on_pushButtonAvatar_clicked()
 
 void DialogAbout::random()
 {
-    int nCount=sizeof(_userinfo_records)/sizeof(USERINFO);
+    qint32 nCount=sizeof(_userinfo_records)/sizeof(USERINFO);
 
     if(nCount)
     {
