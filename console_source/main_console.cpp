@@ -23,6 +23,7 @@
 #include <QCoreApplication>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
+#include "consoleoutput.h"
 #include "die_script.h"
 #include "entropyprocess.h"
 #include "xoptions.h"
@@ -143,13 +144,14 @@ int main(int argc, char *argv[])
 
     parser.addPositionalArgument("target","The file or directory to open.");
 
-    QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",     "Deep scan.");
-    QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",      "Show entropy.");
-    QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",          "Result as XML.");
-    QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON.");
-    QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",          "Result as CSV.");
-    QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",          "Result as TSV.");
-    QCommandLineOption clShowDatabase   (QStringList()<<    "s"<<   "showdatabase", "Show database.");
+    QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",     "Deep scan."            );
+    QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",      "Show entropy."         );
+    QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",          "Result as XML."        );
+    QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON."       );
+    QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",          "Result as CSV."        );
+    QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",          "Result as TSV."        );
+    QCommandLineOption clDatabase       (QStringList()<<    "D"<<   "database",     "Set database<path>.",  "path");
+    QCommandLineOption clShowDatabase   (QStringList()<<    "s"<<   "showdatabase", "Show database."        );
 
     parser.addOption(clDeepScan);
     parser.addOption(clEntropy);
@@ -157,6 +159,7 @@ int main(int argc, char *argv[])
     parser.addOption(clResultAsJson);
     parser.addOption(clResultAsCSV);
     parser.addOption(clResultAsTSV);
+    parser.addOption(clDatabase);
     parser.addOption(clShowDatabase);
 
     parser.process(app);
@@ -175,24 +178,32 @@ int main(int argc, char *argv[])
     scanOptions.bResultAsCSV=parser.isSet(clResultAsCSV);
     scanOptions.bResultAsTSV=parser.isSet(clResultAsTSV);
 
+    QString sDatabase=parser.value(clDatabase);
+
+    if(sDatabase=="")
+    {
+        sDatabase=XOptions().getApplicationDataPath()+QDir::separator()+"db";
+    }
+
+    ConsoleOutput consoleOutput;
     DiE_Script die_script;
 
-    QString sDatabase=XOptions().getApplicationDataPath()+QDir::separator()+"db";
-
-    // TODO set database
+    QObject::connect(&die_script,SIGNAL(errorMessage(QString)),&consoleOutput,SLOT(errorMessage(QString)));
+    QObject::connect(&die_script,SIGNAL(infoMessage(QString)),&consoleOutput,SLOT(infoMessage(QString)));
 
     die_script.loadDatabase(sDatabase);
 
     if(parser.isSet(clShowDatabase))
     {
-        // TODO Show database
+        printf("Database: %s\n",sDatabase.toLatin1().data());
+        // TODO Show database stats
     }
 
     if(listArgs.count())
     {
         ScanFiles(&listArgs,&scanOptions,&die_script);
     }
-    else
+    else if(!parser.isSet(clShowDatabase))
     {
         parser.showHelp();
         Q_UNREACHABLE();
