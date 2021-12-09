@@ -197,6 +197,7 @@ int main(int argc, char *argv[])
     {
         printf("Database: %s\n",sDatabase.toLatin1().data());
         // TODO Show database stats
+        // mb function in die_script
     }
 
     if(listArgs.count())

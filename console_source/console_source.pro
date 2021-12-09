@@ -36,5 +36,10 @@ HEADERS += \
     include(../XOptions/xoptions.pri)
 }
 
+win32 {
+    CONFIG -= embed_manifest_exe
+    QMAKE_MANIFEST = windows.manifest.xml
+}
+
 DISTFILES += \
     CMakeLists.txt

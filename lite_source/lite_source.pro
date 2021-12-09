@@ -38,6 +38,8 @@ FORMS += \
 
 win32 {
     RC_ICONS = ../icons/lite.ico
+    CONFIG -= embed_manifest_exe
+    QMAKE_MANIFEST = windows.manifest.xml
 }
 
 macx {
