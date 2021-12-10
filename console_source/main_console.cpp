@@ -117,6 +117,12 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
 
             printf("%s",sResult.toLatin1().data());
 
+//            QList<XBinary::SCANSTRUCT> listResult=DiE_Script::convert(&(scanResult.listRecords));
+
+//            ScanItemModel model(&listResult);
+
+//            printf("%s",model.toFormattedString().toLatin1().data());
+
             if(scanResult.listErrors.count())
             {
                 printf("%s",DiE_Script::getErrorsString(&scanResult).toLatin1().data());
@@ -196,8 +202,15 @@ int main(int argc, char *argv[])
     if(parser.isSet(clShowDatabase))
     {
         printf("Database: %s\n",sDatabase.toLatin1().data());
-        // TODO Show database stats
-        // mb function in die_script
+
+        QList<DiE_Script::SIGNATURE_STATE> list=die_script.getSignatureStates();
+
+        qint32 nNumberOfRecords=list.count();
+
+        for(qint32 i=0;i<nNumberOfRecords;i++)
+        {
+            printf("\t%s: %d\n",XBinary::fileTypeIdToString(list.at(i).fileType).toLatin1().data(),list.at(i).nNumberOfSignatures);
+        }
     }
 
     if(listArgs.count())
