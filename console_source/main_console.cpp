@@ -88,31 +88,39 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
 
             printf("%s",sResult.toLatin1().data());
         }
+        else if(pScanOptions->bShowExtraInfo)
+        {
+            // TODO
+        }
         else
         {
             QString sResult;
 
             DiE_Script::SCAN_RESULT scanResult=pDieScript->scanFile(sFileName,pScanOptions);
 
+            QList<XBinary::SCANSTRUCT> listResult=DiE_Script::convert(&(scanResult.listRecords));
+
+            ScanItemModel model(&listResult);
+
             if(pScanOptions->bResultAsJSON)
             {
-                sResult=DiE_Script::scanResultToJsonString(&scanResult);
+                sResult=model.toJSON();
             }
             else if(pScanOptions->bResultAsXML)
             {
-                sResult=DiE_Script::scanResultToXmlString(&scanResult);
+                sResult=model.toXML();
             }
             else if(pScanOptions->bResultAsCSV)
             {
-                sResult=DiE_Script::scanResultToCsvString(&scanResult);
+                sResult=model.toCSV();
             }
             else if(pScanOptions->bResultAsTSV)
             {
-                sResult=DiE_Script::scanResultToTsvString(&scanResult);
+                sResult=model.toTSV();
             }
             else
             {
-                sResult=DiE_Script::scanResultToPlainString(&scanResult);
+                sResult=model.toFormattedString();
             }
 
             printf("%s",sResult.toLatin1().data());
@@ -151,7 +159,9 @@ int main(int argc, char *argv[])
     parser.addPositionalArgument("target","The file or directory to open.");
 
     QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",     "Deep scan."            );
+    QCommandLineOption clAllTypesScan   (QStringList()<<    "a"<<   "alltypes",     "Scan all types."       );
     QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",      "Show entropy."         );
+    QCommandLineOption clExtraInfo      (QStringList()<<    "E"<<   "extra",        "Show extra info."      );
     QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",          "Result as XML."        );
     QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON."       );
     QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",          "Result as CSV."        );
@@ -160,7 +170,9 @@ int main(int argc, char *argv[])
     QCommandLineOption clShowDatabase   (QStringList()<<    "s"<<   "showdatabase", "Show database."        );
 
     parser.addOption(clDeepScan);
+    parser.addOption(clAllTypesScan);
     parser.addOption(clEntropy);
+    parser.addOption(clExtraInfo);
     parser.addOption(clResultAsXml);
     parser.addOption(clResultAsJson);
     parser.addOption(clResultAsCSV);
@@ -178,7 +190,9 @@ int main(int argc, char *argv[])
     scanOptions.bShowOptions=true;
     scanOptions.bShowVersion=true;
     scanOptions.bDeepScan=parser.isSet(clDeepScan);
+    scanOptions.bAllTypesScan=parser.isSet(clAllTypesScan);
     scanOptions.bShowEntropy=parser.isSet(clEntropy);
+    scanOptions.bShowExtraInfo=parser.isSet(clExtraInfo);
     scanOptions.bResultAsXML=parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON=parser.isSet(clResultAsJson);
     scanOptions.bResultAsCSV=parser.isSet(clResultAsCSV);
