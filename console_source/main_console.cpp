@@ -161,7 +161,7 @@ int main(int argc, char *argv[])
     QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",     "Deep scan."            );
     QCommandLineOption clAllTypesScan   (QStringList()<<    "a"<<   "alltypes",     "Scan all types."       );
     QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",      "Show entropy."         );
-    QCommandLineOption clExtraInfo      (QStringList()<<    "E"<<   "extra",        "Show extra info."      );
+    QCommandLineOption clInfo           (QStringList()<<    "i"<<   "info",         "Show extra info."      );
     QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",          "Result as XML."        );
     QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON."       );
     QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",          "Result as CSV."        );
@@ -172,7 +172,7 @@ int main(int argc, char *argv[])
     parser.addOption(clDeepScan);
     parser.addOption(clAllTypesScan);
     parser.addOption(clEntropy);
-    parser.addOption(clExtraInfo);
+    parser.addOption(clInfo);
     parser.addOption(clResultAsXml);
     parser.addOption(clResultAsJson);
     parser.addOption(clResultAsCSV);
@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
     scanOptions.bDeepScan=parser.isSet(clDeepScan);
     scanOptions.bAllTypesScan=parser.isSet(clAllTypesScan);
     scanOptions.bShowEntropy=parser.isSet(clEntropy);
-    scanOptions.bShowExtraInfo=parser.isSet(clExtraInfo);
+    scanOptions.bShowExtraInfo=parser.isSet(clInfo);
     scanOptions.bResultAsXML=parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON=parser.isSet(clResultAsJson);
     scanOptions.bResultAsCSV=parser.isSet(clResultAsCSV);

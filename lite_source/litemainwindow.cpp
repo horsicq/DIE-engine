@@ -58,13 +58,18 @@ void LiteMainWindow::processFile(QString sFileName)
     {
         DiE_Script::SCAN_OPTIONS scanOptions={};
         scanOptions.bDeepScan=ui->checkBoxDeepScan->isChecked();
+        scanOptions.bAllTypesScan=ui->checkBoxAllTypesScan->isChecked();
         scanOptions.bShowType=true;
         scanOptions.bShowVersion=true;
         scanOptions.bShowOptions=true;
 
         DiE_Script::SCAN_RESULT scanResult=g_pDieScript->scanFile(sFileName,&scanOptions);
 
-        ui->plainTextEditResult->setPlainText(DiE_Script::scanResultToPlainString(&scanResult));
+        QList<XBinary::SCANSTRUCT> listResult=DiE_Script::convert(&(scanResult.listRecords));
+
+        ScanItemModel model(&listResult);
+
+        ui->plainTextEditResult->setPlainText(model.toFormattedString());
 
        ui->labelScanTime->setText(QString("%1 %2").arg(scanResult.nScanTime).arg(tr("msec")));
     }
