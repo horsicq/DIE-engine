@@ -158,17 +158,19 @@ int main(int argc, char *argv[])
 
     parser.addPositionalArgument("target","The file or directory to open.");
 
-    QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",     "Deep scan."            );
-    QCommandLineOption clAllTypesScan   (QStringList()<<    "a"<<   "alltypes",     "Scan all types."       );
-    QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",      "Show entropy."         );
-    QCommandLineOption clInfo           (QStringList()<<    "i"<<   "info",         "Show extra info."      );
-    QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",          "Result as XML."        );
-    QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",         "Result as JSON."       );
-    QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",          "Result as CSV."        );
-    QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",          "Result as TSV."        );
-    QCommandLineOption clDatabase       (QStringList()<<    "D"<<   "database",     "Set database<path>.",  "path");
-    QCommandLineOption clShowDatabase   (QStringList()<<    "s"<<   "showdatabase", "Show database."        );
+    QCommandLineOption clRecursiveScan  (QStringList()<<    "r"<<   "recursivescan",    "Recursive scan."       );
+    QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",         "Deep scan."            );
+    QCommandLineOption clAllTypesScan   (QStringList()<<    "a"<<   "alltypes",         "Scan all types."       );
+    QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",          "Show entropy."         );
+    QCommandLineOption clInfo           (QStringList()<<    "i"<<   "info",             "Show extra info."      );
+    QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",              "Result as XML."        );
+    QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",             "Result as JSON."       );
+    QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",              "Result as CSV."        );
+    QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",              "Result as TSV."        );
+    QCommandLineOption clDatabase       (QStringList()<<    "D"<<   "database",         "Set database<path>.",  "path");
+    QCommandLineOption clShowDatabase   (QStringList()<<    "s"<<   "showdatabase",     "Show database."        );
 
+    parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
     parser.addOption(clAllTypesScan);
     parser.addOption(clEntropy);
@@ -189,6 +191,7 @@ int main(int argc, char *argv[])
     scanOptions.bShowType=true;
     scanOptions.bShowOptions=true;
     scanOptions.bShowVersion=true;
+    scanOptions.bRecursiveScan=parser.isSet(clRecursiveScan);
     scanOptions.bDeepScan=parser.isSet(clDeepScan);
     scanOptions.bAllTypesScan=parser.isSet(clAllTypesScan);
     scanOptions.bShowEntropy=parser.isSet(clEntropy);
