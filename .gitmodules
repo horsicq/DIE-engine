@@ -115,3 +115,6 @@
 [submodule "XDynStructsWidget"]
 	path = XDynStructsWidget
 	url = https://github.com/horsicq/XDynStructsWidget
+[submodule "XFileInfo"]
+	path = XFileInfo
+	url = https://github.com/horsicq/XFileInfo
