@@ -59,4 +59,7 @@ macx {
 }
 
 DISTFILES += \
+    ../CMakeLists.txt \
+    ../README.md \
+    ../release_version.txt \
     CMakeLists.txt
