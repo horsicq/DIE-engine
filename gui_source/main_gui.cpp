@@ -57,22 +57,14 @@ int main(int argc, char *argv[])
 
     xOptions.setName(X_OPTIONSFILE);
 
-    QList<XOptions::ID> listIDs;
-
-    listIDs.append(XOptions::ID_STYLE);
-    listIDs.append(XOptions::ID_LANG);
-    listIDs.append(XOptions::ID_QSS);
-    listIDs.append(XOptions::ID_SINGLEAPPLICATION);
-
-    xOptions.setValueIDs(listIDs);
-
-    QMap<XOptions::ID,QVariant> mapDefaultValues;
-
-#ifdef Q_OS_WIN
-    mapDefaultValues.insert(XOptions::ID_QSS,"veles");
+#ifdef Q_OS_WIN32
+    xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
+#else
+    xOptions.addID(XOptions::ID_VIEW_QSS);
 #endif
-
-    xOptions.setDefaultValues(mapDefaultValues);
+    xOptions.addID(XOptions::ID_VIEW_LANG,"System");
+    xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
+    xOptions.addID(XOptions::ID_VIEW_SINGLEAPPLICATION,false);
 
     xOptions.load();
 

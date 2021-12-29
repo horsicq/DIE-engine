@@ -29,47 +29,27 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
 
     this->g_pOptions=pOptions;
 
-    ui->listWidgetOptions->insertItem(TAB_GENERAL,      tr("General"));
-    ui->listWidgetOptions->insertItem(TAB_SCAN,         tr("Scan"));
-    ui->listWidgetOptions->insertItem(TAB_APPEARANCE,   tr("Appearance"));
-#ifdef Q_OS_WIN
-    ui->listWidgetOptions->insertItem(TAB_CONTEXT,      tr("Context"));
-#endif
+    this->g_pOptions=pOptions;
 
-    pOptions->setCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
-    pOptions->setCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
-    pOptions->setCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
-    pOptions->setCheckBox(ui->checkBoxSingleApplication,XOptions::ID_SINGLEAPPLICATION);
+    g_pDIEOptionsWidget=new DIEOptionsWidget(this);
+    g_pSearchSignaturesOptionsWidget=new SearchSignaturesOptionsWidget(this);
 
-    pOptions->setCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
-    pOptions->setComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
-    pOptions->setLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DATABASEPATH);
-    pOptions->setLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
-    pOptions->setLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
+    ui->widgetOptions->setOptions(pOptions,X_APPLICATIONDISPLAYNAME);
 
-    pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
-    pOptions->setComboBox(ui->comboBoxQss,XOptions::ID_QSS);
-    pOptions->setComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+    ui->widgetOptions->addPage(g_pDIEOptionsWidget,tr("Scan"));
+    g_pDIEOptionsWidget->setOptions(pOptions);
 
-    ui->stackedWidgetOptions->setCurrentIndex(TAB_GENERAL);
-#ifdef Q_OS_WIN
-    contextState();
-#endif
+    ui->widgetOptions->addPage(g_pSearchSignaturesOptionsWidget,tr("Signatures"));
+    g_pSearchSignaturesOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->setCurrentPage(2);
 }
 
 DialogOptions::~DialogOptions()
 {
     delete ui;
 }
-#ifdef Q_OS_WIN
-void DialogOptions::contextState()
-{
-    bool bState=g_pOptions->checkContext(X_APPLICATIONDISPLAYNAME,"*");
 
-    ui->pushButtonRegister->setEnabled(!bState);
-    ui->pushButtonClear->setEnabled(bState);
-}
-#endif
 void DialogOptions::on_pushButtonCancel_clicked()
 {
     this->close();
@@ -77,20 +57,9 @@ void DialogOptions::on_pushButtonCancel_clicked()
 
 void DialogOptions::on_pushButtonOK_clicked()
 {
-    g_pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
-    g_pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
-    g_pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
-    g_pOptions->getCheckBox(ui->checkBoxSingleApplication,XOptions::ID_SINGLEAPPLICATION);
-
-    g_pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
-    g_pOptions->getComboBox(ui->comboBoxScanEngine,XOptions::ID_SCANENGINE);
-    g_pOptions->getLineEdit(ui->lineEditDIEDatabase,XOptions::ID_DATABASEPATH);
-    g_pOptions->getLineEdit(ui->lineEditDIEInfo,XOptions::ID_INFOPATH);
-    g_pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
-
-    g_pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
-    g_pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
-    g_pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+    ui->widgetOptions->save();
+    g_pDIEOptionsWidget->save();
+    g_pSearchSignaturesOptionsWidget->save();
 
     if(g_pOptions->isRestartNeeded())
     {
@@ -98,65 +67,4 @@ void DialogOptions::on_pushButtonOK_clicked()
     }
 
     this->close();
-}
-
-void DialogOptions::on_listWidgetOptions_currentRowChanged(int nCurrentRow)
-{
-    ui->stackedWidgetOptions->setCurrentIndex(nCurrentRow);
-}
-
-void DialogOptions::on_toolButtonDIEDatabase_clicked()
-{
-    QString sText=ui->lineEditDIEDatabase->text();
-    QString sInitDirectory=XBinary::convertPathName(sText);
-
-    QString sDirectoryName=QFileDialog::getExistingDirectory(this,tr("Open directory")+QString("..."),sInitDirectory,QFileDialog::ShowDirsOnly);
-
-    if(!sDirectoryName.isEmpty())
-    {
-        ui->lineEditDIEDatabase->setText(sDirectoryName);
-    }
-}
-
-void DialogOptions::on_pushButtonRegister_clicked()
-{
-#ifdef Q_OS_WIN
-    g_pOptions->registerContext(X_APPLICATIONDISPLAYNAME,"*",qApp->applicationFilePath());
-
-    contextState();
-#endif
-}
-
-void DialogOptions::on_pushButtonClear_clicked()
-{
-#ifdef Q_OS_WIN
-    g_pOptions->clearContext(X_APPLICATIONDISPLAYNAME,"*");
-
-    contextState();
-#endif
-}
-void DialogOptions::on_toolButtonDIEInfo_clicked()
-{
-    QString sText=ui->lineEditDIEInfo->text();
-    QString sInitDirectory=XBinary::convertPathName(sText);
-
-    QString sDirectoryName=QFileDialog::getExistingDirectory(this,tr("Open directory")+QString("..."),sInitDirectory,QFileDialog::ShowDirsOnly);
-
-    if(!sDirectoryName.isEmpty())
-    {
-        ui->lineEditDIEInfo->setText(sDirectoryName);
-    }
-}
-
-void DialogOptions::on_toolButtonSearchSignatures_clicked()
-{
-    QString sText=ui->lineEditSearchSignatures->text();
-    QString sInitDirectory=XBinary::convertPathName(sText);
-
-    QString sDirectoryName=QFileDialog::getExistingDirectory(this,tr("Open directory")+QString("..."),sInitDirectory,QFileDialog::ShowDirsOnly);
-
-    if(!sDirectoryName.isEmpty())
-    {
-        ui->lineEditSearchSignatures->setText(sDirectoryName);
-    }
 }

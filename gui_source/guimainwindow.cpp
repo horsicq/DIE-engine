@@ -33,22 +33,30 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 
     g_xOptions.setName(X_OPTIONSFILE);
 
-    QList<XOptions::ID> listOptionsIDs;
+#ifdef Q_OS_WIN32
+    g_xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
+#else
+    g_xOptions.addID(XOptions::ID_VIEW_QSS);
+#endif
+    g_xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
+    g_xOptions.addID(XOptions::ID_VIEW_LANG,"System");
+    g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP,false);
+    g_xOptions.addID(XOptions::ID_VIEW_SINGLEAPPLICATION,false);
+    g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY,true);
+    g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP,true);
+    g_xOptions.addID(XOptions::ID_SIGNATURES_PATH,"$data/signatures");
+    g_xOptions.addID(XOptions::ID_SCAN_SCANAFTEROPEN,true);
+    g_xOptions.addID(XOptions::ID_SCAN_RECURSIVE,true);
+    g_xOptions.addID(XOptions::ID_SCAN_DEEP,true);
+    g_xOptions.addID(XOptions::ID_SCAN_HEURISTIC,false);
+    g_xOptions.addID(XOptions::ID_SCAN_ALLTYPES,false);
+    g_xOptions.addID(XOptions::ID_SCAN_DATABASEPATH,"$data/db");
+    g_xOptions.addID(XOptions::ID_SCAN_INFOPATH,"$data/info");
+    g_xOptions.addID(XOptions::ID_SCAN_ENGINE,"die");
 
-    listOptionsIDs.append(XOptions::ID_STYLE);
-    listOptionsIDs.append(XOptions::ID_QSS);
-    listOptionsIDs.append(XOptions::ID_LANG);
-    listOptionsIDs.append(XOptions::ID_STAYONTOP);
-    listOptionsIDs.append(XOptions::ID_SCANAFTEROPEN);
-    listOptionsIDs.append(XOptions::ID_SAVELASTDIRECTORY);
-    listOptionsIDs.append(XOptions::ID_SINGLEAPPLICATION);
-    listOptionsIDs.append(XOptions::ID_SAVEBACKUP);
-    listOptionsIDs.append(XOptions::ID_DATABASEPATH);
-    listOptionsIDs.append(XOptions::ID_INFOPATH);
-    listOptionsIDs.append(XOptions::ID_SCANENGINE);
-    listOptionsIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
-
-    g_xOptions.setValueIDs(listOptionsIDs);
+#ifdef Q_OS_WIN32
+    g_xOptions.addID(XOptions::ID_FILE_CONTEXT,"*");
+#endif
 
     g_xOptions.load();
 

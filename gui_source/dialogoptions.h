@@ -24,8 +24,8 @@
 #include <QDialog>
 #include <QMessageBox>
 #include <QFileDialog>
-#include "xoptions.h"
-#include "xbinary.h"
+#include "dieoptionswidget.h"
+#include "searchsignaturesoptionswidget.h"
 #include "../global.h"
 
 namespace Ui {
@@ -36,33 +36,18 @@ class DialogOptions : public QDialog
 {
     Q_OBJECT
 
-    enum TAB
-    {
-        TAB_GENERAL=0,
-        TAB_SCAN,
-        TAB_APPEARANCE,
-        TAB_CONTEXT
-    };
-
 public:
     explicit DialogOptions(QWidget *pParent,XOptions *pOptions);
     ~DialogOptions();
 
 private slots:
-#ifdef Q_OS_WIN
-    void contextState();
-#endif
     void on_pushButtonCancel_clicked();
     void on_pushButtonOK_clicked();
-    void on_listWidgetOptions_currentRowChanged(int nCurrentRow);
-    void on_toolButtonDIEDatabase_clicked();
-    void on_pushButtonRegister_clicked();
-    void on_pushButtonClear_clicked();
-    void on_toolButtonDIEInfo_clicked();
-    void on_toolButtonSearchSignatures_clicked();
 
 private:
     Ui::DialogOptions *ui;
+    DIEOptionsWidget *g_pDIEOptionsWidget;
+    SearchSignaturesOptionsWidget *g_pSearchSignaturesOptionsWidget;
     XOptions *g_pOptions;
 };
 
