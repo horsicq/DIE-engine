@@ -109,6 +109,7 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
     dialogOptions.exec();
 
     adjust();
+    ui->widgetFormats->adjustView();
     adjustFile();
 }
 
@@ -267,8 +268,6 @@ QString GuiMainWindow::getCurrentFileName()
 void GuiMainWindow::adjust()
 {
     g_xOptions.adjustStayOnTop(this);
-
-    ui->widgetFormats->adjust();
 
     // TODO setShortcuts for mainWindow ...
 }
