@@ -100,6 +100,7 @@ USERINFO _userinfo_records[]=
     {QString("Filip Navara"),           QString("FilipNavara")},
     {QString("Dr.FarFar"),              QString("DrFarFar")},
     {QString("Ali Hadi"),               QString("AliHadi")},
+    {QString("Leandro Fróes"),          QString("LeandroFroes")},
 };
 
 DialogAbout::DialogAbout(QWidget *pParent) :
