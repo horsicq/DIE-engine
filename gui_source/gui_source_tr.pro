@@ -13,6 +13,7 @@ TRANSLATIONS = \
     translation/die_pt_PT.ts \
     translation/die_ru.ts \
     translation/die_tr.ts\
+    translation/die_uk.ts\
     translation/die_vi.ts \
     translation/die_zh.ts \
     translation/die_zh_TW.ts
@@ -50,6 +51,7 @@ FORMS += \
     ../FormatWidgets/PE/pesectionheaderwidget.ui \
     ../FormatWidgets/PE/pewidget.ui \
     ../FormatWidgets/SearchSignatures/dialogsearchsignatures.ui \
+    ../FormatWidgets/SearchSignatures/searchsignaturesoptionswidget.ui \
     ../FormatWidgets/SearchSignatures/searchsignatureswidget.ui \
     ../FormatWidgets/SearchStrings/dialogsearchstrings.ui \
     ../FormatWidgets/SearchStrings/searchstringswidget.ui \
@@ -64,6 +66,7 @@ FORMS += \
     ../StaticScan/formresult.ui \
     ../StaticScan/formstaticscan.ui \
     ../StaticScan/heurwidget.ui \
+    ../StaticScan/staticscanoptionswidget.ui \
     ../XDemangleWidget/dialogdemangle.ui \
     ../XDemangleWidget/xdemanglewidget.ui \
     ../XDisasm/dialogasmsignature.ui \
@@ -73,21 +76,27 @@ FORMS += \
     ../XDisasm/xdisasmwidget.ui \
     ../XDisasmView/dialogmultidisasm.ui \
     ../XDisasmView/dialogmultidisasmsignature.ui \
+    ../XDisasmView/xdisasmviewoptionswidget.ui \
     ../XDisasmView/xmultidisasmwidget.ui \
     ../XDynStructsWidget/dialogxdynstructs.ui \
     ../XDynStructsWidget/xdynstructswidget.ui \
     ../XEntropyWidget/dialogentropy.ui \
     ../XEntropyWidget/dialogentropyprocess.ui \
     ../XEntropyWidget/xentropywidget.ui \
+    ../XFileInfo/dialogxfileinfo.ui \
+    ../XFileInfo/dialogxfileinfoprocess.ui \
+    ../XFileInfo/xfileinfowidget.ui \
     ../XHashWidget/dialoghash.ui \
     ../XHashWidget/dialoghashprocess.ui \
     ../XHashWidget/xhashwidget.ui \
     ../XHexView/dialoghexview.ui \
+    ../XHexView/xhexviewoptionswidget.ui \
     ../XHexView/xhexviewwidget.ui \
     ../XMIMEWidget/dialogmime.ui \
     ../XMIMEWidget/xmimewidget.ui \
     ../XMemoryMapWidget/dialogmemorymap.ui \
     ../XMemoryMapWidget/xmemorymapwidget.ui \
+    ../XOptions/xoptionswidget.ui \
     ../XShortcuts/dialogshortcuts.ui \
     ../archive_widget/archive_widget.ui \
     ../archive_widget/dialogarchive.ui \
@@ -97,9 +106,11 @@ FORMS += \
     ../archive_widget/dialogunpackfile.ui \
     ../die_widget/dialogdiescandirectory.ui \
     ../die_widget/dialogdiescanprocess.ui \
+    ../die_widget/dialogelapsed.ui \
     ../die_widget/dialoglog.ui \
     ../die_widget/dialogsignatures.ui \
     ../die_widget/die_widget.ui \
+    ../die_widget/dieoptionswidget.ui \
     dialogabout.ui \
     dialogoptions.ui \
     guimainwindow.ui \
@@ -163,6 +174,7 @@ SOURCES += \
     ../FormatWidgets/PE/pesectionheaderwidget.cpp \
     ../FormatWidgets/PE/pewidget.cpp \
     ../FormatWidgets/SearchSignatures/dialogsearchsignatures.cpp \
+    ../FormatWidgets/SearchSignatures/searchsignaturesoptionswidget.cpp \
     ../FormatWidgets/SearchSignatures/searchsignatureswidget.cpp \
     ../FormatWidgets/SearchStrings/dialogsearchstrings.cpp \
     ../FormatWidgets/SearchStrings/searchstringswidget.cpp \
@@ -174,6 +186,8 @@ SOURCES += \
     ../FormatWidgets/invwidget.cpp \
     ../FormatWidgets/processdata.cpp \
     ../FormatWidgets/toolswidget.cpp \
+    ../Formats/scanitem.cpp \
+    ../Formats/scanitemmodel.cpp \
     ../Formats/subdevice.cpp \
     ../Formats/xbinary.cpp \
     ../Formats/xcom.cpp \
@@ -195,6 +209,7 @@ SOURCES += \
     ../StaticScan/staticscan.cpp \
     ../StaticScan/staticscanitem.cpp \
     ../StaticScan/staticscanitemmodel.cpp \
+    ../StaticScan/staticscanoptionswidget.cpp \
     ../XArchive/xarchive.cpp \
     ../XArchive/xarchives.cpp \
     ../XArchive/xcab.cpp \
@@ -219,6 +234,7 @@ SOURCES += \
     ../XDisasmView/dialogmultidisasm.cpp \
     ../XDisasmView/dialogmultidisasmsignature.cpp \
     ../XDisasmView/xdisasmview.cpp \
+    ../XDisasmView/xdisasmviewoptionswidget.cpp \
     ../XDisasmView/xmultidisasmwidget.cpp \
     ../XDynStructsEngine/xdynstructsengine.cpp \
     ../XDynStructsWidget/dialogxdynstructs.cpp \
@@ -227,6 +243,10 @@ SOURCES += \
     ../XEntropyWidget/dialogentropyprocess.cpp \
     ../XEntropyWidget/entropyprocess.cpp \
     ../XEntropyWidget/xentropywidget.cpp \
+    ../XFileInfo/dialogxfileinfo.cpp \
+    ../XFileInfo/dialogxfileinfoprocess.cpp \
+    ../XFileInfo/xfileinfo.cpp \
+    ../XFileInfo/xfileinfowidget.cpp \
     ../XGithub/xgithub.cpp \
     ../XHashWidget/dialoghash.cpp \
     ../XHashWidget/dialoghashprocess.cpp \
@@ -235,6 +255,7 @@ SOURCES += \
     ../XHexEdit/xhexedit.cpp \
     ../XHexView/dialoghexview.cpp \
     ../XHexView/xhexview.cpp \
+    ../XHexView/xhexviewoptionswidget.cpp \
     ../XHexView/xhexviewwidget.cpp \
     ../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp \
     ../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp \
@@ -246,12 +267,15 @@ SOURCES += \
     ../XMemoryMapWidget/dialogmemorymap.cpp \
     ../XMemoryMapWidget/xmemorymapwidget.cpp \
     ../XOptions/xoptions.cpp \
+    ../XOptions/xoptionswidget.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_abstract_legend.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_abstract_scale.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_abstract_scale_draw.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_abstract_slider.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_analog_clock.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_arrow_button.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_bezier.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_clipper.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_color_map.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_column_symbol.cpp \
@@ -285,6 +309,7 @@ SOURCES += \
     ../XQwt/3rdparty/qwt/src/qwt_pixel_matrix.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_abstract_barchart.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_abstract_canvas.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_axis.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_barchart.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_canvas.cpp \
@@ -292,6 +317,7 @@ SOURCES += \
     ../XQwt/3rdparty/qwt/src/qwt_plot_dict.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_directpainter.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_glcanvas.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_graphicitem.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_grid.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_histogram.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_intervalcurve.cpp \
@@ -301,6 +327,7 @@ SOURCES += \
     ../XQwt/3rdparty/qwt/src/qwt_plot_magnifier.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_marker.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_multi_barchart.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_opengl_canvas.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_panner.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_picker.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_rasteritem.cpp \
@@ -314,13 +341,27 @@ SOURCES += \
     ../XQwt/3rdparty/qwt/src/qwt_plot_svgitem.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_textlabel.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_tradingcurve.cpp \
-    ../XQwt/3rdparty/qwt/src/qwt_plot_xml.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_plot_vectorfield.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_zoneitem.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_plot_zoomer.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_point_3d.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_point_data.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_point_mapper.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_point_polar.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_canvas.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_curve.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_fitter.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_grid.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_item.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_itemdict.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_layout.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_magnifier.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_marker.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_panner.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_picker.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_plot.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_renderer.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_polar_spectrogram.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_raster_data.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_round_scale_draw.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_sampling_thread.cpp \
@@ -332,6 +373,13 @@ SOURCES += \
     ../XQwt/3rdparty/qwt/src/qwt_series_data.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_slider.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_spline.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_spline_basis.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_spline_cubic.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_spline_curve_fitter.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_spline_local.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_spline_parametrization.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_spline_pleasing.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_spline_polynomial.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_symbol.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_system_clock.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_text.cpp \
@@ -339,6 +387,8 @@ SOURCES += \
     ../XQwt/3rdparty/qwt/src/qwt_text_label.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_thermo.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_transform.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_vectorfield_symbol.cpp \
+    ../XQwt/3rdparty/qwt/src/qwt_weeding_curve_fitter.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_wheel.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_widget_overlay.cpp \
     ../XShortcuts/dialogshortcuts.cpp \
@@ -355,26 +405,35 @@ SOURCES += \
     ../archive_widget/dialogshowtext.cpp \
     ../archive_widget/dialogunpackfile.cpp \
     ../archive_widget/unpackfileprocess.cpp \
+    ../console_source/consoleoutput.cpp \
     ../console_source/main_console.cpp \
     ../die_script/binary_script.cpp \
+    ../die_script/com_script.cpp \
     ../die_script/die_script.cpp \
     ../die_script/die_scriptengine.cpp \
     ../die_script/elf_script.cpp \
+    ../die_script/global_script.cpp \
+    ../die_script/le_script.cpp \
+    ../die_script/lx_script.cpp \
     ../die_script/mach_script.cpp \
     ../die_script/msdos_script.cpp \
+    ../die_script/ne_script.cpp \
     ../die_script/pe_script.cpp \
     ../die_widget/dialogdiescandirectory.cpp \
     ../die_widget/dialogdiescanprocess.cpp \
+    ../die_widget/dialogelapsed.cpp \
     ../die_widget/dialoglog.cpp \
     ../die_widget/dialogsignatures.cpp \
     ../die_widget/die_highlighter.cpp \
     ../die_widget/die_signatureedit.cpp \
     ../die_widget/die_widget.cpp \
+    ../die_widget/dieoptionswidget.cpp \
     dialogabout.cpp \
     dialogoptions.cpp \
     guimainwindow.cpp \
     main_gui.cpp \
     ../lite_source/litemainwindow.cpp \
     ../lite_source/main_lite.cpp \
-    ../nfd_widget/nfd_widget.cpp \
-    ../winloader_source/winloader.cpp
+    ../nfd_widget/nfd_widget.cpp
+
+
