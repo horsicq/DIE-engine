@@ -113,6 +113,29 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
     adjustFile();
 }
 
+void GuiMainWindow::on_pushButtonFileInfo_clicked()
+{
+    QString sFileName=getCurrentFileName();
+
+    if(sFileName!="")
+    {
+        QFile file;
+        file.setFileName(sFileName);
+
+        if(file.open(QIODevice::ReadOnly))
+        {
+            DialogXFileInfo dialogFileInfo(this);
+            dialogFileInfo.setGlobal(&g_xShortcuts,&g_xOptions);
+
+            dialogFileInfo.setData(&file,XBinary::FT_UNKNOWN,true);
+
+            dialogFileInfo.exec();
+
+            file.close();
+        }
+    }
+}
+
 void GuiMainWindow::on_pushButtonMIME_clicked()
 {
     QString sFileName=getCurrentFileName();
@@ -122,7 +145,7 @@ void GuiMainWindow::on_pushButtonMIME_clicked()
         QFile file;
         file.setFileName(sFileName);
 
-        if(XBinary::tryToOpen(&file))
+        if(file.open(QIODevice::ReadOnly))
         {
             DialogMIME dialogMIME(this,&file);
             dialogMIME.setGlobal(&g_xShortcuts,&g_xOptions);
