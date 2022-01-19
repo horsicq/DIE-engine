@@ -27,6 +27,7 @@
 #include "die_script.h"
 #include "entropyprocess.h"
 #include "xoptions.h"
+//#include "xfileinfo.h"
 
 void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
 {

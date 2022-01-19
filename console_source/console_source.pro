@@ -31,10 +31,10 @@ HEADERS += \
     include(../XEntropyWidget/entropyprocess.pri)
 }
 
-!contains(XCONFIG, xfileinfo) {
-    XCONFIG += xfileinfo
-    include(../XFileInfo/xfileinfo.pri)
-}
+#!contains(XCONFIG, xfileinfo) {
+#    XCONFIG += xfileinfo
+#    include(../XFileInfo/xfileinfo.pri)
+#}
 
 !contains(XCONFIG, xoptions) {
     XCONFIG += xoptions
