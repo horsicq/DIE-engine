@@ -22,18 +22,22 @@ if [ -z "$X_ERROR" ]; then
     if [ -z "$X_ERROR" ]; then
         create_deb_app_dir die
         
-        X_CONTROL_FILE=$X_SOURCE_PATH/LINUX/control_${X_OS_VERSION}_${X_ARCHITECTURE};
+        export X_PACKAGENAME='detectiteasy'
+        export X_MAINTAINER='hors <horsicq@gmail.com>'
         
-        if test -f "$X_CONTROL_FILE"; then
-            cp -f X_CONTROL_FILE                                                $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+        export X_HOMEPAGE='http://ntinfo.biz'
+        export X_DESCRIPTION='Program for determining types of files.'
+        
+        if [ "$X_DEBIAN_VERSION" -ge "11" ]; then
+            export X_DEPENDS='libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5scripttools5, libqt5script5, libqt5network5'
         else
-            cp -f $X_SOURCE_PATH/LINUX/control                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+            export X_DEPENDS='qt5-default, libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5scripttools5, libqt5script5, libqt5network5'
         fi
+        
+        create_deb_control $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
         
         #cp -f $X_SOURCE_PATH/LICENSE                                        $X_SOURCE_PATH/release/$X_BUILD_NAME/
         
-        sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
-        sed -i "s/#ARCH#/$X_ARCHITECTURE/"                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
         cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
         cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
         cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
