@@ -1,4 +1,4 @@
-/* Copyright (c) 2020-2021 hors<horsicq@gmail.com>
+/* Copyright (c) 2020-2022 hors<horsicq@gmail.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,10 +29,10 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
 
     this->g_pOptions=pOptions;
 
-    this->g_pOptions=pOptions;
-
     g_pDIEOptionsWidget=new DIEOptionsWidget(this);
     g_pSearchSignaturesOptionsWidget=new SearchSignaturesOptionsWidget(this);
+    g_pXHexViewOptionsWidget=new XHexViewOptionsWidget(this);
+    g_pXDisasmViewOptionsWidget=new XDisasmViewOptionsWidget(this);
 
     ui->widgetOptions->setOptions(pOptions,X_APPLICATIONDISPLAYNAME);
 
@@ -41,6 +41,12 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
 
     ui->widgetOptions->addPage(g_pSearchSignaturesOptionsWidget,tr("Signatures"));
     g_pSearchSignaturesOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->addPage(g_pXHexViewOptionsWidget,tr("Hex"));
+    g_pXHexViewOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->addPage(g_pXDisasmViewOptionsWidget,tr("Disasm"));
+    g_pXDisasmViewOptionsWidget->setOptions(pOptions);
 
     ui->widgetOptions->setCurrentPage(2);
 }
@@ -60,6 +66,8 @@ void DialogOptions::on_pushButtonOK_clicked()
     ui->widgetOptions->save();
     g_pDIEOptionsWidget->save();
     g_pSearchSignaturesOptionsWidget->save();
+    g_pXHexViewOptionsWidget->save();
+    g_pXDisasmViewOptionsWidget->save();
 
     if(g_pOptions->isRestartNeeded())
     {

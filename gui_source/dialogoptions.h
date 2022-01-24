@@ -26,6 +26,8 @@
 #include <QFileDialog>
 #include "dieoptionswidget.h"
 #include "searchsignaturesoptionswidget.h"
+#include "xhexviewoptionswidget.h"
+#include "xdisasmviewoptionswidget.h"
 #include "../global.h"
 
 namespace Ui {
@@ -48,6 +50,8 @@ private:
     Ui::DialogOptions *ui;
     DIEOptionsWidget *g_pDIEOptionsWidget;
     SearchSignaturesOptionsWidget *g_pSearchSignaturesOptionsWidget;
+    XHexViewOptionsWidget *g_pXHexViewOptionsWidget;
+    XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;
     XOptions *g_pOptions;
 };
 

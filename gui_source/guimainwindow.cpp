@@ -33,10 +33,10 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 
     g_xOptions.setName(X_OPTIONSFILE);
 
-#ifdef Q_OS_WIN32
-    g_xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
-#else
+#ifdef Q_OS_LINUX
     g_xOptions.addID(XOptions::ID_VIEW_QSS);
+#else
+    g_xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
 #endif
     g_xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
     g_xOptions.addID(XOptions::ID_VIEW_LANG,"System");
@@ -44,30 +44,26 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     g_xOptions.addID(XOptions::ID_VIEW_SINGLEAPPLICATION,false);
     g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY,true);
     g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP,true);
-    g_xOptions.addID(XOptions::ID_SIGNATURES_PATH,"$data/signatures");
-    g_xOptions.addID(XOptions::ID_SCAN_SCANAFTEROPEN,true);
-    g_xOptions.addID(XOptions::ID_SCAN_RECURSIVE,true);
-    g_xOptions.addID(XOptions::ID_SCAN_DEEP,true);
-    g_xOptions.addID(XOptions::ID_SCAN_HEURISTIC,false);
-    g_xOptions.addID(XOptions::ID_SCAN_ALLTYPES,false);
-    g_xOptions.addID(XOptions::ID_SCAN_DATABASEPATH,"$data/db");
-    g_xOptions.addID(XOptions::ID_SCAN_INFOPATH,"$data/info");
-    g_xOptions.addID(XOptions::ID_SCAN_ENGINE,"die");
 
 #ifdef Q_OS_WIN32
     g_xOptions.addID(XOptions::ID_FILE_CONTEXT,"*");
 #endif
+
+    DIEOptionsWidget::setDefaultValues(&g_xOptions);
+    SearchSignaturesOptionsWidget::setDefaultValues(&g_xOptions);
+    XHexViewOptionsWidget::setDefaultValues(&g_xOptions);
+    XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
 
     g_xOptions.load();
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
     g_xShortcuts.setNative(g_xOptions.isNative());
 
-    g_xShortcuts.addGroup(XShortcuts::ID_STRINGS);
-    g_xShortcuts.addGroup(XShortcuts::ID_SIGNATURES);
-    g_xShortcuts.addGroup(XShortcuts::ID_HEX);
-    g_xShortcuts.addGroup(XShortcuts::ID_DISASM);
-    g_xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_STRINGS);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_SIGNATURES);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_HEX);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_DISASM);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_ARCHIVE);
     g_xShortcuts.load();
 
     ui->widgetFormats->setGlobal(&g_xShortcuts,&g_xOptions);
