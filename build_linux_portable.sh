@@ -52,7 +52,9 @@ if [ -z "$X_ERROR" ]; then
         create_run_shell $X_SOURCE_PATH/release/$X_BUILD_NAME/diec.sh diec
         create_run_shell $X_SOURCE_PATH/release/$X_BUILD_NAME/diel.sh diel
 
-        make_targz $X_SOURCE_PATH/release/$X_BUILD_NAME $X_SOURCE_PATH/release/die_${X_RELEASE_VERSION}_${X_OS_VERSION}_${X_ARCHITECTURE}
+        cd $X_SOURCE_PATH/release
+        make_targz $X_BUILD_NAME $X_SOURCE_PATH/release/die_${X_RELEASE_VERSION}_${X_OS_VERSION}_${X_ARCHITECTURE}_portable
+        cd $X_SOURCE_PATH
 
         make_clear
     fi
