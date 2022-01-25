@@ -11,11 +11,14 @@ check_file $QMAKE_PATH
 
 if [ -z "$X_ERROR" ]; then
     make_init
-    make_build "$X_SOURCE_PATH/die_source.pro"
-    cd "$X_SOURCE_PATH/gui_source"
-    make_translate "gui_source_tr.pro"
-    cd "$X_SOURCE_PATH"
-
+    
+    if [ ! -f "$X_SOURCE_PATH/build/release/die" ]; then
+        make_build "$X_SOURCE_PATH/die_source.pro"
+        cd "$X_SOURCE_PATH/gui_source"
+        make_translate "gui_source_tr.pro"
+        cd "$X_SOURCE_PATH"
+    fi
+    
     check_file "$X_SOURCE_PATH/build/release/die"
     check_file "$X_SOURCE_PATH/build/release/diec"
     check_file "$X_SOURCE_PATH/build/release/diel"
