@@ -56,7 +56,7 @@ if [ -z "$X_ERROR" ]; then
         create_run_shell $X_SOURCE_PATH/release/$X_BUILD_NAME/diel.sh diel
 
         cd $X_SOURCE_PATH/release
-        make_targz $X_BUILD_NAME $X_SOURCE_PATH/release/die_${X_RELEASE_VERSION}_${X_OS_VERSION}_${X_ARCHITECTURE}_portable
+        make_targz $X_BUILD_NAME $X_SOURCE_PATH/release/die_${X_RELEASE_VERSION}_portable_${X_OS_VERSION}_${X_ARCHITECTURE}
         cd $X_SOURCE_PATH
 
         make_clear
