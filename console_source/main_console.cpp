@@ -27,7 +27,7 @@
 #include "die_script.h"
 #include "entropyprocess.h"
 #include "xoptions.h"
-//#include "xfileinfo.h"
+#include "xfileinfo.h"
 
 void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
 {
@@ -89,9 +89,44 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
 
             printf("%s",sResult.toLatin1().data());
         }
-        else if(pScanOptions->bShowExtraInfo)
+        else if((pScanOptions->bShowExtraInfo)||(pScanOptions->sSpecial!=""))
         {
-            // TODO
+            QString sResult;
+
+            XFileInfo::OPTIONS options={};
+
+            if(pScanOptions->sSpecial!="")
+            {
+                options.sString=pScanOptions->sSpecial;
+            }
+
+            XFileInfoModel model;
+
+            XFileInfo::processFile(sFileName,&model,options);
+
+            if(pScanOptions->bResultAsJSON)
+            {
+                sResult=model.toJSON();
+            }
+            else if(pScanOptions->bResultAsXML)
+            {
+                sResult=model.toXML();
+            }
+            else if(pScanOptions->bResultAsCSV)
+            {
+                sResult=model.toCSV();
+            }
+            else if(pScanOptions->bResultAsTSV)
+            {
+                sResult=model.toTSV();
+            }
+            else
+            {
+                sResult=model.toFormattedString();
+            }
+
+            printf("%s",sResult.toLatin1().data());
+
         }
         else
         {
@@ -163,25 +198,29 @@ int main(int argc, char *argv[])
     QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",         "Deep scan."            );
     QCommandLineOption clAllTypesScan   (QStringList()<<    "a"<<   "alltypes",         "Scan all types."       );
     QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",          "Show entropy."         );
-    QCommandLineOption clInfo           (QStringList()<<    "i"<<   "info",             "Show extra info."      );
+    QCommandLineOption clInfo           (QStringList()<<    "i"<<   "info",             "Show file info."      );
     QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",              "Result as XML."        );
     QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",             "Result as JSON."       );
     QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",              "Result as CSV."        );
     QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",              "Result as TSV."        );
-    QCommandLineOption clDatabase       (QStringList()<<    "D"<<   "database",         "Set database<path>.",  "path");
+    QCommandLineOption clDatabase       (QStringList()<<    "D"<<   "database",         "Set database<path>.",      "path");
     QCommandLineOption clShowDatabase   (QStringList()<<    "s"<<   "showdatabase",     "Show database."        );
+    QCommandLineOption clSpecial        (QStringList()<<    "S"<<   "special",          "Special file info for <method>. For example -S \"MD5\".",   "method");
+    QCommandLineOption clShowMethods    (QStringList()<<    "m"<<   "showmethods",      "Show all special methods for the file.");
 
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
     parser.addOption(clAllTypesScan);
     parser.addOption(clEntropy);
     parser.addOption(clInfo);
+    parser.addOption(clSpecial);
     parser.addOption(clResultAsXml);
     parser.addOption(clResultAsJson);
     parser.addOption(clResultAsCSV);
     parser.addOption(clResultAsTSV);
     parser.addOption(clDatabase);
     parser.addOption(clShowDatabase);
+    parser.addOption(clShowMethods);
 
     parser.process(app);
 
@@ -201,6 +240,8 @@ int main(int argc, char *argv[])
     scanOptions.bResultAsJSON=parser.isSet(clResultAsJson);
     scanOptions.bResultAsCSV=parser.isSet(clResultAsCSV);
     scanOptions.bResultAsTSV=parser.isSet(clResultAsTSV);
+
+    scanOptions.sSpecial=parser.value(clSpecial);
 
     QString sDatabase=parser.value(clDatabase);
 
