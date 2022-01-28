@@ -16,43 +16,18 @@ if [ -z "$X_ERROR" ]; then
     make_translate "gui_source_tr.pro" die
     cd "$X_SOURCE_PATH"
 
-    check_file "$X_SOURCE_PATH/build/release/diec"
-    check_file "$X_SOURCE_PATH/build/release/die.app/Contents/MacOS/die"
+    check_file "$X_SOURCE_PATH/build/release/DiE.app/Contents/MacOS/DiE"
     if [ -z "$X_ERROR" ]; then
-        cp -R "$X_SOURCE_PATH/build/release/die.app"    "$X_SOURCE_PATH/release/$X_BUILD_NAME"
-        cp -R "$X_SOURCE_PATH/build/release/diec"       "$X_SOURCE_PATH/release/$X_BUILD_NAME/die.app/Contents/MacOS/"
-
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/die.app/Contents/Resources/signatures
-        cp -R $X_SOURCE_PATH/signatures/crypto.db       $X_SOURCE_PATH/release/$X_BUILD_NAME/die.app/Contents/Resources/signatures
-        cp -Rf $X_SOURCE_PATH/XStyles/qss               $X_SOURCE_PATH/release/$X_BUILD_NAME/die.app/Contents/Resources/
-        cp -Rf $X_SOURCE_PATH/Detect-It-Easy/info       $X_SOURCE_PATH/release/$X_BUILD_NAME/die.app/Contents/Resources/
-        cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db         $X_SOURCE_PATH/release/$X_BUILD_NAME/die.app/Contents/Resources/
-
-        fiximport "$X_SOURCE_PATH/build/release/die.app/Contents/MacOS/die"
-        fiximport "$X_SOURCE_PATH/build/release/die.app/Contents/MacOS/diec"
-
-        deploy_qt_library QtWidgets die
-        deploy_qt_library QtGui die
-        deploy_qt_library QtCore die
-        deploy_qt_library QtDBus die
-        deploy_qt_library QtPrintSupport die
-        deploy_qt_library QtSvg die
-        deploy_qt_library QtOpenGL die
-        deploy_qt_library QtNetwork die
-        deploy_qt_library QtScript die
-        deploy_qt_library QtScriptTools die
-        deploy_qt_library QtConcurrent die
-
-        deploy_qt_plugin platforms libqcocoa die
-        deploy_qt_plugin platforms libqminimal die
-        deploy_qt_plugin platforms libqoffscreen die
+        cp -R "$X_SOURCE_PATH/build/release/DiE.app"      "$X_SOURCE_PATH/release/$X_BUILD_NAME"
+        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/XMachOViewer.app/Contents/Resources/signatures
+        cp -R $X_SOURCE_PATH/signatures/crypto.db      $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/signatures
+        cp -Rf $X_SOURCE_PATH/XStyles/qss                 $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
+        cp -Rf $X_SOURCE_PATH/Detect-It-Easy/info       $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
+        cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db         $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         
-        deploy_qt_plugin imageformats libqjpeg die
-        deploy_qt_plugin imageformats libqtiff die
-        deploy_qt_plugin imageformats libqico die
-        deploy_qt_plugin imageformats libqgif die
+        deploy_qt DiE
 
-        make_release
+        make_release DiE
         make_clear
     fi
 fi
