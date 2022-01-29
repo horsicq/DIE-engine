@@ -272,6 +272,27 @@ int main(int argc, char *argv[])
         }
     }
 
+    if(parser.isSet(clShowMethods))
+    {
+        XBinary::FT fileType=XBinary::FT_UNKNOWN;
+
+        if(listArgs.count())
+        {
+            fileType=XBinary::getPrefFileType(listArgs.at(0));
+        }
+
+        printf("Methods:\n");
+
+        QList<QString> listMethods=XFileInfo::getMethodNames(fileType);
+
+        qint32 nNumberOfMethods=listMethods.count();
+
+        for(qint32 i=0;i<nNumberOfMethods;i++)
+        {
+            printf("\t%s\n",listMethods.at(i).toUtf8().data());
+        }
+    }
+
     if(listArgs.count())
     {
         ScanFiles(&listArgs,&scanOptions,&die_script);
