@@ -12,6 +12,10 @@ macx {
     TARGET = DiE
 }
 
+#linux {
+#    TARGET = dieg
+#}
+
 SOURCES += \
     dialogabout.cpp \
     dialogoptions.cpp \
