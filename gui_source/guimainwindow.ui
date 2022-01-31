@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>706</width>
-    <height>474</height>
+    <width>707</width>
+    <height>430</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -64,6 +64,9 @@
       </item>
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>2</number>
+        </property>
         <item>
          <widget class="QPushButton" name="pushButtonFileInfo">
           <property name="text">
