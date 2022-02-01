@@ -292,8 +292,7 @@ int main(int argc, char *argv[])
             printf("\t%s\n",listMethods.at(i).toUtf8().data());
         }
     }
-
-    if(listArgs.count())
+    else if(listArgs.count())
     {
         ScanFiles(&listArgs,&scanOptions,&die_script);
     }
