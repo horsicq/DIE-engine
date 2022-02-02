@@ -20,7 +20,7 @@ if [ -z "$X_ERROR" ]; then
     if [ -z "$X_ERROR" ]; then
         cp -R "$X_SOURCE_PATH/build/release/DiE.app"      "$X_SOURCE_PATH/release/$X_BUILD_NAME"
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/XMachOViewer.app/Contents/Resources/signatures
-        cp -R $X_SOURCE_PATH/signatures/crypto.db      $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/signatures
+        cp -R $X_SOURCE_PATH/signatures/crypto.db      $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/signatures/
         cp -Rf $X_SOURCE_PATH/XStyles/qss                 $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/Detect-It-Easy/info       $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db         $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
