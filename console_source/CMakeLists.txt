@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(diec VERSION 3.03 LANGUAGES CXX)
+project(diec VERSION 3.04 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -28,11 +28,13 @@ add_definitions(-DUSE_ARCHIVE)
 include(${PROJECT_SOURCE_DIR}/../die_script/die_script.cmake)
 include(${PROJECT_SOURCE_DIR}/../XOptions/xoptions.cmake)
 include(${PROJECT_SOURCE_DIR}/../XEntropyWidget/entropyprocess.cmake)
+include(${PROJECT_SOURCE_DIR}/../XFileInfo/xfileinfo.cmake)
 
 set(PROJECT_SOURCES
             ${DIE_SCRIPT_SOURCES}
             ${XOPTIONS_SOURCES}
             ${ENTROPYPROCESS_SOURCES}
+            ${XFILEINFO_SOURCES}
             main_console.cpp
             consoleoutput.cpp
 )
@@ -54,6 +56,7 @@ endif()
 target_link_libraries(${PROJECT_NAME} bzip2)
 target_link_libraries(${PROJECT_NAME} lzma)
 target_link_libraries(${PROJECT_NAME} zlib)
+target_link_libraries(${PROJECT_NAME} capstone_x86)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Core)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)

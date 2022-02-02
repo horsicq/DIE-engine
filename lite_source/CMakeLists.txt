@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(diel VERSION 3.03 LANGUAGES CXX)
+project(diel VERSION 3.04 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -54,9 +54,13 @@ endif()
 target_link_libraries(${PROJECT_NAME} bzip2)
 target_link_libraries(${PROJECT_NAME} lzma)
 target_link_libraries(${PROJECT_NAME} zlib)
+target_link_libraries(${PROJECT_NAME} capstone_x86)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
 target_link_libraries(${PROJECT_NAME} Qt5::Script)
 
-
+if(WIN32)
+    target_link_libraries(${PROJECT_NAME} Wintrust)
+    target_link_libraries(${PROJECT_NAME} Crypt32)
+endif()
