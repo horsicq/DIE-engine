@@ -118,3 +118,6 @@
 [submodule "XFileInfo"]
 	path = XFileInfo
 	url = https://github.com/horsicq/XFileInfo
+[submodule "XPDF"]
+	path = XPDF
+	url = https://github.com/horsicq/XPDF
