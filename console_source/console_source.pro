@@ -3,6 +3,7 @@ QT -= gui
 
 XCONFIG += use_dex
 XCONFIG += use_archive
+XCONFIG += use_pdf
 
 CONFIG += c++11
 

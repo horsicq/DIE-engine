@@ -6,6 +6,7 @@ CONFIG += c++11
 TARGET = diel
 
 XCONFIG += use_dex
+XCONFIG += use_pdf
 XCONFIG += use_archive
 
 macx {
