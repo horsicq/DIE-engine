@@ -133,7 +133,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -395,15 +395,18 @@
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Spaces</translation>
+        <translatorcomment>&apos;Hex mit Leerzeichen trennen&apos;&apos;is possibly to long to be shown inthe dialog</translatorcomment>
+        <translation>XXXX -&gt; XX XX</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Oberer</translation>
+        <translatorcomment>&apos;Hex in Grossbuchstaben&apos;is possibly to long to be shown inthe dialog</translatorcomment>
+        <translation>Gross</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Wildcard</translation>
+        <translatorcomment>or &apos;Joker&apos; if there is not enought space int the dialog</translatorcomment>
+        <translation>Platzhalter</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -515,7 +518,8 @@
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>Entwirren</translation>
+        <translatorcomment>nicht mit &apos;Entwirren&apos; übersetzen. Vielleicht &apos;Entmangeln&apos; oder &apos;Entschmücken&apos;</translatorcomment>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>OK</source>
@@ -735,7 +739,7 @@
     </message>
     <message>
         <source>Upper</source>
-        <translation>Oberer</translation>
+        <translation>Gross</translation>
     </message>
     <message>
         <source>Wildcard</source>
@@ -783,7 +787,7 @@
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Close</source>
@@ -836,7 +840,7 @@
     </message>
     <message>
         <source>Upper</source>
-        <translation>Oberer</translation>
+        <translation>Gross</translation>
     </message>
     <message>
         <source>Wildcard</source>
@@ -988,6 +992,7 @@
     </message>
     <message>
         <source>Cursor</source>
+        <translatorcomment>&apos;aktuelle Position&apos;</translatorcomment>
         <translation>Zeiger</translation>
     </message>
 </context>
@@ -1353,7 +1358,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -1397,7 +1402,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Entwirren</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -1512,7 +1517,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -1615,7 +1620,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Entwirren</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>Shortcuts</source>
@@ -1734,7 +1739,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -1861,7 +1866,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -1945,7 +1950,7 @@
     </message>
     <message>
         <source>Local relocation</source>
-        <translation>Lokaler Umzug</translation>
+        <translation>Lokale Relocation</translation>
     </message>
     <message>
         <source>Functions</source>
@@ -1969,7 +1974,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Entwirren</translation>
+        <translation>Demangle</translation>
     </message>
 </context>
 <context>
@@ -1992,7 +1997,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2077,7 +2082,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2253,7 +2258,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2317,7 +2322,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importieren</translation>
+        <translation>Import</translation>
     </message>
     <message>
         <source>Resources</source>
@@ -2341,11 +2346,11 @@
     </message>
     <message>
         <source>Relocs</source>
-        <translation>Umzüge</translation>
+        <translation>Relocs</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debuggen</translation>
+        <translation>Debug</translation>
     </message>
     <message>
         <source>Callbacks</source>
@@ -2393,7 +2398,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Entwirren</translation>
+        <translation>Demangle</translation>
     </message>
 </context>
 <context>
@@ -2598,7 +2603,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Entwirren</translation>
+        <translation>Demangle</translation>
     </message>
 </context>
 <context>
@@ -2798,7 +2803,7 @@
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Nach dem öffnen Scannen</translation>
+        <translation>Scannen nach dem Öffnen starten</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -3060,7 +3065,7 @@
     </message>
     <message>
         <source>Find next</source>
-        <translation>Nächstes suchen</translation>
+        <translation>Weitersuchen</translation>
     </message>
     <message>
         <source>Select all</source>
@@ -3068,15 +3073,18 @@
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>Als Hex kopieren</translation>
+        <translatorcomment>Change source to&apos;Copy hex&apos;</translatorcomment>
+        <translation>Hex kopieren</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>Zeiger-Offset kopieren</translation>
+        <translatorcomment>Please change to &apos;Copy file offset&apos;</translatorcomment>
+        <translation>Dateioffset kopieren</translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>Zeigeradresse kopieren</translation>
+        <translatorcomment>Please change to &apos;Copy memory offset&apos;</translatorcomment>
+        <translation>Speicheroffset kopieren</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3481,7 +3489,7 @@
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>In Datei schreiben</translation>
+        <translation>In Datei speichern</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3493,7 +3501,7 @@
     </message>
     <message>
         <source>Find next</source>
-        <translation>Nächstes suchen</translation>
+        <translation>Weitersuchen</translation>
     </message>
     <message>
         <source>Select all</source>
@@ -3501,15 +3509,15 @@
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>Als Hex kopieren</translation>
+        <translation>Hex kopieren</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>Zeiger-Offset kopieren</translation>
+        <translation>Dateioffset kopieren</translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>Zeigeradresse kopieren</translation>
+        <translation>Speicheroffset kopieren</translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -3517,7 +3525,8 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translatorcomment>Change to &apos;image in source&apos;; &quot;Speicherkarte&quot; is bullshit it means SD-card to store photos and stuff</translatorcomment>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -3656,7 +3665,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -3882,7 +3891,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Entwirren</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>Copy name</source>
@@ -3922,7 +3931,7 @@
     </message>
     <message>
         <source>Find next</source>
-        <translation>Nächstes suchen</translation>
+        <translation>Weitersuchen</translation>
     </message>
     <message>
         <source>Select all</source>
@@ -3930,11 +3939,11 @@
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>Als Hex kopieren</translation>
+        <translation>Hex kopieren</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>Zeiger-Offset kopieren</translation>
+        <translation>Dateioffset kopieren</translation>
     </message>
     <message>
         <source>Copy cursor address</source>
@@ -3946,7 +3955,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Speicherkarte</translation>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Go to entry point</source>
@@ -3966,7 +3975,7 @@
     </message>
     <message>
         <source>CPU</source>
-        <translation>Zentralprozessor</translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <source>Actions</source>
@@ -3986,11 +3995,12 @@
     </message>
     <message>
         <source>Threads</source>
-        <translation>Themen</translation>
+        <translatorcomment>Don&apos;t translate this to &apos;Themen&apos;</translatorcomment>
+        <translation>Threads</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation>Griffe</translation>
+        <translation>Handles</translation>
     </message>
     <message>
         <source>Run</source>
@@ -4042,11 +4052,11 @@
     </message>
     <message>
         <source>Structs</source>
-        <translation>Strukturen</translation>
+        <translation>Structs</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation>Zuschauer</translation>
+        <translation>Betrachter</translation>
     </message>
     <message>
         <source>Action</source>
