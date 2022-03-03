@@ -166,7 +166,7 @@ void GuiMainWindow::on_pushButtonHex_clicked()
         {
             XHexView::OPTIONS hexOptions={};
 
-            DialogHexView dialogHex(this,&file,hexOptions);
+            DialogHexView dialogHex(this,&file,hexOptions,&file);
             dialogHex.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogHex.exec();
