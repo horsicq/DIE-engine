@@ -32,7 +32,7 @@ unix:macx {
     QMAKE_CXXFLAGS += -Werror=format-security
     QMAKE_CXXFLAGS += -Wno-unused-parameter
 }
-# Windows MSVC
+# Windows MSVC TODO check ARM64 !!!
 !contains(QMAKE_TARGET.arch, x86_64) {
     win32-msvc2013{
        # VS2013
