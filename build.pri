@@ -14,7 +14,7 @@ win32-g++* {
     QMAKE_CXXFLAGS += -Werror=format-security
     QMAKE_CXXFLAGS += -Wno-unused-parameter
 }
-# Linux
+# Linux gcc
 unix:!macx {
     QMAKE_CFLAGS  += -Wno-missing-field-initializers
     QMAKE_CFLAGS  += -Werror=format-security
@@ -23,7 +23,7 @@ unix:!macx {
     QMAKE_CXXFLAGS += -Werror=format-security
     QMAKE_CXXFLAGS += -Wno-unused-parameter
 }
-# macOS
+# macOS clang
 unix:macx {
     QMAKE_CFLAGS  += -Wno-missing-field-initializers
     QMAKE_CFLAGS  += -Werror=format-security
