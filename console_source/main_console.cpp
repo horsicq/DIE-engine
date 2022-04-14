@@ -43,7 +43,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
         }
         else
         {
-            printf("Cannot find: %s\n",sFileName.toLatin1().data());
+            printf("Cannot find: %s\n",sFileName.toUtf8().data());
         }
     }
 
@@ -57,7 +57,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
 
         if(bShowFileName)
         {
-            printf("%s:\n",sFileName.toLatin1().data());
+            printf("%s:\n",sFileName.toUtf8().data());
         }
 
         if(pScanOptions->bShowEntropy)
@@ -87,7 +87,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
                 sResult=EntropyProcess::dataToPlainString(&epData);
             }
 
-            printf("%s",sResult.toLatin1().data());
+            printf("%s",sResult.toUtf8().data());
         }
         else if((pScanOptions->bShowExtraInfo)||(pScanOptions->sSpecial!=""))
         {
@@ -125,51 +125,43 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
                 sResult=model.toFormattedString();
             }
 
-            printf("%s",sResult.toLatin1().data());
+            printf("%s",sResult.toUtf8().data());
 
         }
         else
         {
-            QString sResult;
-
             DiE_Script::SCAN_RESULT scanResult=pDieScript->scanFile(sFileName,pScanOptions);
 
             QList<XBinary::SCANSTRUCT> listResult=DiE_Script::convert(&(scanResult.listRecords));
 
             ScanItemModel model(&listResult);
 
-            if(pScanOptions->bResultAsJSON)
+            XBinary::FORMATTYPE formatType=XBinary::FORMATTYPE_TEXT;
+
+            if      (pScanOptions->bResultAsCSV)    formatType=XBinary::FORMATTYPE_CSV;
+            else if (pScanOptions->bResultAsJSON)   formatType=XBinary::FORMATTYPE_JSON;
+            else if (pScanOptions->bResultAsTSV)    formatType=XBinary::FORMATTYPE_TSV;
+            else if (pScanOptions->bResultAsXML)    formatType=XBinary::FORMATTYPE_XML;
+
+            if(formatType!=XBinary::FORMATTYPE_TEXT)
             {
-                sResult=model.toJSON();
-            }
-            else if(pScanOptions->bResultAsXML)
-            {
-                sResult=model.toXML();
-            }
-            else if(pScanOptions->bResultAsCSV)
-            {
-                sResult=model.toCSV();
-            }
-            else if(pScanOptions->bResultAsTSV)
-            {
-                sResult=model.toTSV();
+                printf("%s\n",model.toString(formatType).toUtf8().data());
             }
             else
             {
-                sResult=model.toFormattedString();
+                // Colored text
+                model.coloredOutput();
             }
-
-            printf("%s",sResult.toLatin1().data());
 
 //            QList<XBinary::SCANSTRUCT> listResult=DiE_Script::convert(&(scanResult.listRecords));
 
 //            ScanItemModel model(&listResult);
 
-//            printf("%s",model.toFormattedString().toLatin1().data());
+//            printf("%s",model.toFormattedString().toUtf8().data());
 
             if(scanResult.listErrors.count())
             {
-                printf("%s",DiE_Script::getErrorsString(&scanResult).toLatin1().data());
+                printf("%s",DiE_Script::getErrorsString(&scanResult).toUtf8().data());
             }
         }
     }
@@ -260,7 +252,7 @@ int main(int argc, char *argv[])
 
     if(parser.isSet(clShowDatabase))
     {
-        printf("Database: %s\n",sDatabase.toLatin1().data());
+        printf("Database: %s\n",sDatabase.toUtf8().data());
 
         QList<DiE_Script::SIGNATURE_STATE> list=die_script.getSignatureStates();
 
@@ -268,7 +260,7 @@ int main(int argc, char *argv[])
 
         for(qint32 i=0;i<nNumberOfRecords;i++)
         {
-            printf("\t%s: %d\n",XBinary::fileTypeIdToString(list.at(i).fileType).toLatin1().data(),list.at(i).nNumberOfSignatures);
+            printf("\t%s: %d\n",XBinary::fileTypeIdToString(list.at(i).fileType).toUtf8().data(),list.at(i).nNumberOfSignatures);
         }
     }
 
