@@ -27,8 +27,6 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
 {
     ui->setupUi(this);
 
-    this->g_pOptions=pOptions;
-
     g_pDIEOptionsWidget=new DIEOptionsWidget(this);
     g_pSearchSignaturesOptionsWidget=new SearchSignaturesOptionsWidget(this);
     g_pXHexViewOptionsWidget=new XHexViewOptionsWidget(this);
@@ -54,25 +52,4 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
 DialogOptions::~DialogOptions()
 {
     delete ui;
-}
-
-void DialogOptions::on_pushButtonCancel_clicked()
-{
-    this->close();
-}
-
-void DialogOptions::on_pushButtonOK_clicked()
-{
-    ui->widgetOptions->save();
-    g_pDIEOptionsWidget->save();
-    g_pSearchSignaturesOptionsWidget->save();
-    g_pXHexViewOptionsWidget->save();
-    g_pXDisasmViewOptionsWidget->save();
-
-    if(g_pOptions->isRestartNeeded())
-    {
-        QMessageBox::information(this,tr("Information"),tr("Please restart the application"));
-    }
-
-    this->close();
 }
