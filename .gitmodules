@@ -127,3 +127,6 @@
 [submodule "XInfoDB"]
 	path = XInfoDB
 	url = https://github.com/horsicq/XInfoDB
+[submodule "XSymbolsWidget"]
+	path = XSymbolsWidget
+	url = https://github.com/horsicq/XSymbolsWidget
