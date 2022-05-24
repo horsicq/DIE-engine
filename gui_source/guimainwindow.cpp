@@ -33,10 +33,10 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 
     g_xOptions.setName(X_OPTIONSFILE);
 
-#ifdef Q_OS_LINUX
-    g_xOptions.addID(XOptions::ID_VIEW_QSS);
-#else
+#ifdef Q_OS_WIN32
     g_xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
+#else
+    g_xOptions.addID(XOptions::ID_VIEW_QSS,"");
 #endif
     g_xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
     g_xOptions.addID(XOptions::ID_VIEW_LANG,"System");

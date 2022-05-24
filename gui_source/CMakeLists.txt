@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(die VERSION 3.04 LANGUAGES CXX)
+project(die VERSION 3.05 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -24,6 +24,7 @@ find_package(Qt5 COMPONENTS Concurrent REQUIRED)
 find_package(Qt5 COMPONENTS OpenGL REQUIRED)
 find_package(Qt5 COMPONENTS PrintSupport REQUIRED)
 find_package(Qt5 COMPONENTS Svg REQUIRED)
+find_package(Qt5 COMPONENTS Sql REQUIRED)
 find_package(Qt5 COMPONENTS Network REQUIRED)
 find_package(Qt5 COMPONENTS Script REQUIRED)
 find_package(Qt5 COMPONENTS ScriptTools REQUIRED)
@@ -75,6 +76,7 @@ target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
 target_link_libraries(${PROJECT_NAME} Qt5::OpenGL)
 target_link_libraries(${PROJECT_NAME} Qt5::PrintSupport)
 target_link_libraries(${PROJECT_NAME} Qt5::Svg)
+target_link_libraries(${PROJECT_NAME} Qt5::Sql)
 target_link_libraries(${PROJECT_NAME} Qt5::Network)
 target_link_libraries(${PROJECT_NAME} Qt5::Script)
 target_link_libraries(${PROJECT_NAME} Qt5::ScriptTools)

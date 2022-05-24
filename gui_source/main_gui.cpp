@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 #ifdef Q_OS_WIN32
     xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
 #else
-    xOptions.addID(XOptions::ID_VIEW_QSS);
+    xOptions.addID(XOptions::ID_VIEW_QSS,"");
 #endif
     xOptions.addID(XOptions::ID_VIEW_LANG,"System");
     xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
