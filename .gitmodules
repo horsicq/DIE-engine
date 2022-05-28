@@ -97,9 +97,6 @@
 [submodule "XDemangleWidget"]
 	path = XDemangleWidget
 	url = https://github.com/horsicq/XDemangleWidget.git
-[submodule "XLLVMDemangler"]
-	path = XLLVMDemangler
-	url = https://github.com/horsicq/XLLVMDemangler.git
 [submodule "build_tools"]
 	path = build_tools
 	url = https://github.com/horsicq/build_tools
