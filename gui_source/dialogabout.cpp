@@ -103,6 +103,9 @@ USERINFO _userinfo_records[]=
     {QString("Leandro Fróes"),          QString("LeandroFroes")},
     {QString("phithon"),                QString("phithon")},
     {QString("Christopher Layne"),      QString("clayne")},
+    {QString("Adric Net"),              QString("AdricNet")},
+    {QString("Gilad Reich"),            QString("GiladReich")},
+    {QString("João Vitor"),             QString("JoaoVitor")},
 };
 
 DialogAbout::DialogAbout(QWidget *pParent) :
@@ -171,7 +174,7 @@ void DialogAbout::on_pushButtonCheckUpdates_clicked()
     QDesktopServices::openUrl(QUrl(X_UPDATEPAGE));
 }
 
-void DialogAbout::on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurrent, QListWidgetItem *pPrevious)
+void DialogAbout::on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurrent,QListWidgetItem *pPrevious)
 {
     Q_UNUSED(pPrevious)
 

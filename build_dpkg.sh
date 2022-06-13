@@ -26,7 +26,7 @@ if [ -z "$X_ERROR" ]; then
         export X_MAINTAINER='hors <horsicq@gmail.com>'
         
         export X_HOMEPAGE='http://ntinfo.biz'
-        export X_DESCRIPTION='Program for determining types of files.'
+        export X_DESCRIPTION='Detect It Easy is a program for determining types of files.'
         
         if [ "$X_DEBIAN_VERSION" -ge "11" ]; then
             export X_DEPENDS='libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5scripttools5, libqt5script5, libqt5network5, libqt5sql5'
