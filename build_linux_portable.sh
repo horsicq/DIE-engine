@@ -25,16 +25,19 @@ if [ -z "$X_ERROR" ]; then
     if [ -z "$X_ERROR" ]; then
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base/platforms
+        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base/sqldrivers
     
         cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         
         cp -R $X_QT_INSTALL_PLUGINS/platforms/libqxcb.so                    $X_SOURCE_PATH/release/$X_BUILD_NAME/base/platforms/
+        cp -R $X_QT_INSTALL_PLUGINS/sqldrivers/qsqlite.dll                  $X_SOURCE_PATH/release/$X_BUILD_NAME/base/sqldrivers/
         
         cp -Lr $X_QT_INSTALL_LIBS/libQt5Core.so.5                           $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         cp -Lr $X_QT_INSTALL_LIBS/libQt5Svg.so.5                            $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         cp -Lr $X_QT_INSTALL_LIBS/libQt5Gui.so.5                            $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
+        cp -Lr $X_QT_INSTALL_LIBS/libQt5Sql.so.5                            $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         cp -Lr $X_QT_INSTALL_LIBS/libQt5Widgets.so.5                        $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         cp -Lr $X_QT_INSTALL_LIBS/libQt5OpenGL.so.5                         $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         cp -Lr $X_QT_INSTALL_LIBS/libQt5DBus.so.5                           $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
