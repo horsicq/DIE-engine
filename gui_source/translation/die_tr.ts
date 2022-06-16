@@ -52,7 +52,7 @@
         <translation>Kapyala</translation>
     </message>
     <message>
-        <source>Filename</source>
+        <source>File name</source>
         <translation>Dosya adı</translation>
     </message>
     <message>
@@ -114,6 +114,10 @@
     <message>
         <source>Filter</source>
         <translation>Filtre</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Kaydet</translation>
     </message>
     <message>
         <source>Info</source>
@@ -614,6 +618,33 @@
     </message>
 </context>
 <context>
+    <name>DialogEditString</name>
+    <message>
+        <source>String</source>
+        <translation>Kelime</translation>
+    </message>
+    <message>
+        <source>Keep size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>C Strings</source>
+        <translation>Kelimeler</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Tamam</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>Bytes available</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>DialogElapsed</name>
     <message>
         <source>Elapsed</source>
@@ -669,6 +700,10 @@
         <translation>Adres</translation>
     </message>
     <message>
+        <source>Hex</source>
+        <translation>altıgen</translation>
+    </message>
+    <message>
         <source>OK</source>
         <translation>Tamam</translation>
     </message>
@@ -721,6 +756,24 @@
     <message>
         <source>Error</source>
         <translation>Hata</translation>
+    </message>
+</context>
+<context>
+    <name>DialogHex</name>
+    <message>
+        <source>Close</source>
+        <translation>Kapat</translation>
+    </message>
+</context>
+<context>
+    <name>DialogHexEdit</name>
+    <message>
+        <source>Edit</source>
+        <translation>Düzenle</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Kapat</translation>
     </message>
 </context>
 <context>
@@ -905,14 +958,6 @@
         <translation>Ayarlar</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>Tamam</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>İptal</translation>
-    </message>
-    <message>
         <source>Scan</source>
         <translation>Tarama</translation>
     </message>
@@ -921,12 +966,12 @@
         <translation>İmzalar</translation>
     </message>
     <message>
-        <source>Information</source>
-        <translation>Bilgilendirme</translation>
+        <source>Hex</source>
+        <translation>altıgen</translation>
     </message>
     <message>
-        <source>Please restart the application</source>
-        <translation>Lütfen uygulamya tekrar başlatın</translation>
+        <source>Disasm</source>
+        <translation>Disasm</translation>
     </message>
 </context>
 <context>
@@ -1050,12 +1095,12 @@
         <translation>Temizle</translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>Kapat</translation>
+        <source>Default</source>
+        <translation>Varsayılan</translation>
     </message>
     <message>
-        <source>Group</source>
-        <translation>Grup</translation>
+        <source>Close</source>
+        <translation>Kapat</translation>
     </message>
     <message>
         <source>Name</source>
@@ -1271,8 +1316,24 @@
         <translation>Bilgi</translation>
     </message>
     <message>
+        <source>Save</source>
+        <translation>Kaydet</translation>
+    </message>
+    <message>
         <source>Close</source>
         <translation>Kapat</translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation>Metin belgeleri</translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation>Sonucu kaydet</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Sonuç</translation>
     </message>
 </context>
 <context>
@@ -1284,6 +1345,29 @@
     <message>
         <source>Cancel</source>
         <translation>İptal</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDisasmViewColors</name>
+    <message>
+        <source>Colors</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Tamam</translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation>Metin</translation>
+    </message>
+    <message>
+        <source>Background</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1313,6 +1397,32 @@
     <message>
         <source>Cancel</source>
         <translation>İptal</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXInfoDBTransferProcess</name>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>İçe al</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>Çıkart</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXSymbols</name>
+    <message>
+        <source>Symbols</source>
+        <translation>Semboller</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Kapat</translation>
     </message>
 </context>
 <context>
@@ -1586,12 +1696,20 @@
         <source>Type</source>
         <translation>Tip</translation>
     </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Otomatik</translation>
+    </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
     <message>
         <source>File name</source>
         <translation>Dosya adı</translation>
+    </message>
+    <message>
+        <source>File info</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2148,6 +2266,49 @@
     </message>
 </context>
 <context>
+    <name>PDFWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation>Tekrar yükle</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>altıgen</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Kelimeler</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Hafıza haritası</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropy</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Sezgisel tarama</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Sadece okuma</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Bilgi</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Hash</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>İmzalar</translation>
+    </message>
+</context>
+<context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
@@ -2180,6 +2341,14 @@
     <message>
         <source>Size</source>
         <translation>Boyut</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Diller</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Kelime</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -2324,6 +2493,10 @@
         <translation>Kaynaklar</translation>
     </message>
     <message>
+        <source>String table</source>
+        <translation>dize tablosu</translation>
+    </message>
+    <message>
         <source>Version</source>
         <translation>Versiyon</translation>
     </message>
@@ -2394,6 +2567,48 @@
     <message>
         <source>Demangle</source>
         <translation>parçalamak</translation>
+    </message>
+</context>
+<context>
+    <name>QHexView</name>
+    <message>
+        <source>Cannot save file</source>
+        <translation>Dosya kayıt edilemiyor</translation>
+    </message>
+</context>
+<context>
+    <name>QHexViewWidget</name>
+    <message>
+        <source>Go to address</source>
+        <translation>Adrese git</translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation>Cursor</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>Seçilen</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Boyut</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Sadece okuma</translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation>İşlenmemiş veri</translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation>Dump kaydet</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Hata</translation>
     </message>
 </context>
 <context>
@@ -2538,20 +2753,28 @@
         <translation>İmzalar</translation>
     </message>
     <message>
-        <source>Copy name</source>
-        <translation>Adı kopyala</translation>
+        <source>Copy</source>
+        <translation>Kapyala</translation>
     </message>
     <message>
-        <source>Copy signature</source>
-        <translation>İmzayı kopyala</translation>
+        <source>Follow in</source>
+        <translation></translation>
     </message>
     <message>
-        <source>Copy address</source>
-        <translation>Adres kopyala</translation>
+        <source>Name</source>
+        <translation>İsim</translation>
     </message>
     <message>
-        <source>Copy offset</source>
-        <translation>Ofset kopyala</translation>
+        <source>Signature</source>
+        <translation>İmza</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Ofset</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2563,6 +2786,10 @@
     <message>
         <source>Filter</source>
         <translation>Filtre</translation>
+    </message>
+    <message>
+        <source>C Strings</source>
+        <translation>Kelimeler</translation>
     </message>
     <message>
         <source>Save</source>
@@ -2577,20 +2804,32 @@
         <translation>Kelimeler</translation>
     </message>
     <message>
-        <source>Copy string</source>
-        <translation>String kopyala</translation>
+        <source>Copy</source>
+        <translation>Kapyala</translation>
     </message>
     <message>
-        <source>Copy address</source>
-        <translation>Adres kopyala</translation>
+        <source>Follow in</source>
+        <translation></translation>
     </message>
     <message>
-        <source>Copy offset</source>
-        <translation>Ofset kopyala</translation>
+        <source>Edit</source>
+        <translation>Düzenle</translation>
     </message>
     <message>
-        <source>Copy size</source>
-        <translation>Boyut kopyala</translation>
+        <source>String</source>
+        <translation>Kelime</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Ofset</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Boyut</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2599,6 +2838,14 @@
     <message>
         <source>Demangle</source>
         <translation>parçalamak</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Hata</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>Dosya kayıt edilemiyor</translation>
     </message>
 </context>
 <context>
@@ -3023,6 +3270,10 @@
         <translation>Opcode</translation>
     </message>
     <message>
+        <source>Symbol</source>
+        <translation>Sembol</translation>
+    </message>
+    <message>
         <source>Comment</source>
         <translation>Yorum Yap</translation>
     </message>
@@ -3031,16 +3282,12 @@
         <translation>Geçersiz işlem kodu</translation>
     </message>
     <message>
-        <source>Go to address</source>
-        <translation>Adrese git</translation>
+        <source>Offset</source>
+        <translation>Ofset</translation>
     </message>
     <message>
-        <source>Go to offset</source>
-        <translation>Ofset&apos;e git</translation>
-    </message>
-    <message>
-        <source>Go to entry point</source>
-        <translation>Giriş noktasına git</translation>
+        <source>Entry point</source>
+        <translation>Entry point</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3055,8 +3302,12 @@
         <translation>İmza</translation>
     </message>
     <message>
-        <source>Find</source>
-        <translation>Bul</translation>
+        <source>String</source>
+        <translation>Kelime</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Değer</translation>
     </message>
     <message>
         <source>Find next</source>
@@ -3067,24 +3318,16 @@
         <translation>Hepsini seç</translation>
     </message>
     <message>
-        <source>Copy as hex</source>
-        <translation>HEX kopyala</translation>
-    </message>
-    <message>
-        <source>Copy cursor offset</source>
-        <translation>İmleç ofsetini kopyala</translation>
-    </message>
-    <message>
-        <source>Copy cursor address</source>
-        <translation>İmleç adresini kopyala</translation>
-    </message>
-    <message>
         <source>Hex</source>
         <translation>altıgen</translation>
     </message>
     <message>
         <source>Go to</source>
         <translation>Git</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation>Bul</translation>
     </message>
     <message>
         <source>Select</source>
@@ -3095,8 +3338,12 @@
         <translation>Kapyala</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Ofset</translation>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Düzenle</translation>
     </message>
     <message>
         <source>Relative address</source>
@@ -3108,6 +3355,22 @@
     <message>
         <source>Font</source>
         <translation>Yazı tipi</translation>
+    </message>
+    <message>
+        <source>Syntax</source>
+        <translation>Sözdizimi</translation>
+    </message>
+    <message>
+        <source>Address colon</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Colors</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3184,8 +3447,23 @@
 <context>
     <name>XDynStructsEngine</name>
     <message>
+        <source>Value</source>
+        <translation>Değer</translation>
+    </message>
+    <message>
         <source>Cannot load file</source>
         <translation>Dosya yüklenemiyor</translation>
+    </message>
+</context>
+<context>
+    <name>XDynStructsOptionsWidget</name>
+    <message>
+        <source>Structs</source>
+        <translation>yapılar</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Klasör aç</translation>
     </message>
 </context>
 <context>
@@ -3297,6 +3575,14 @@
         <translation>Bölge</translation>
     </message>
     <message>
+        <source>Diagram</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Grid</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Bytes</source>
         <translation>Bytes</translation>
     </message>
@@ -3340,6 +3626,10 @@
         <translation>Tip</translation>
     </message>
     <message>
+        <source>Endianness</source>
+        <translation>Endianness</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>Dosya adı</translation>
     </message>
@@ -3348,20 +3638,48 @@
         <translation>Boyut</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>Hash</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>Entropy</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>paketlenmiş</translation>
     </message>
     <message>
         <source>not packed</source>
         <translation>paketlenmemiş</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropy</translation>
+    </message>
+    <message>
+        <source>File type</source>
+        <translation>Dosya tipi</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Entry point</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Ofset</translation>
+    </message>
+    <message>
+        <source>Relative address</source>
+        <translation>göreceli adres</translation>
+    </message>
+    <message>
+        <source>Bytes</source>
+        <translation>Bytes</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>İmza</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versiyon</translation>
     </message>
 </context>
 <context>
@@ -3452,6 +3770,10 @@
         <source>Offset</source>
         <translation>Ofset</translation>
     </message>
+    <message>
+        <source>Hex</source>
+        <translation>altıgen</translation>
+    </message>
 </context>
 <context>
     <name>XHexView</name>
@@ -3472,14 +3794,6 @@
         <translation>Ofset</translation>
     </message>
     <message>
-        <source>Go to offset</source>
-        <translation>Ofset&apos;e git</translation>
-    </message>
-    <message>
-        <source>Go to address</source>
-        <translation>Adrese git</translation>
-    </message>
-    <message>
         <source>Dump to file</source>
         <translation>Dosyaya dök</translation>
     </message>
@@ -3488,8 +3802,12 @@
         <translation>İmza</translation>
     </message>
     <message>
-        <source>Find</source>
-        <translation>Bul</translation>
+        <source>String</source>
+        <translation>Kelime</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Değer</translation>
     </message>
     <message>
         <source>Find next</source>
@@ -3498,18 +3816,6 @@
     <message>
         <source>Select all</source>
         <translation>Hepsini seç</translation>
-    </message>
-    <message>
-        <source>Copy as hex</source>
-        <translation>HEX kopyala</translation>
-    </message>
-    <message>
-        <source>Copy cursor offset</source>
-        <translation>İmleç ofsetini kopyala</translation>
-    </message>
-    <message>
-        <source>Copy cursor address</source>
-        <translation>İmleç adresini kopyala</translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -3524,6 +3830,10 @@
         <translation>Git</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>Bul</translation>
+    </message>
+    <message>
         <source>Select</source>
         <translation>Seç</translation>
     </message>
@@ -3531,12 +3841,24 @@
         <source>Copy</source>
         <translation>Kapyala</translation>
     </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Düzenle</translation>
+    </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Font</source>
         <translation>Yazı tipi</translation>
+    </message>
+    <message>
+        <source>Address colon</source>
+        <translation>Adres</translation>
     </message>
 </context>
 <context>
@@ -3552,6 +3874,49 @@
     <message>
         <source>Error</source>
         <translation>Hata</translation>
+    </message>
+</context>
+<context>
+    <name>XInfoDB</name>
+    <message>
+        <source>Unknown</source>
+        <translation>Bilinmeyen</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>Dosya</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiket</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Entry point</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>Çıkart</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>İçe al</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Veri</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>Nesne</translation>
+    </message>
+    <message>
+        <source>Function</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3682,16 +4047,12 @@
         <translation>Biçim</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Tip</translation>
-    </message>
-    <message>
         <source>Mode</source>
         <translation>Mod</translation>
     </message>
     <message>
-        <source>Syntax</source>
-        <translation>Sözdizimi</translation>
+        <source>Symbols</source>
+        <translation>Semboller</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3703,6 +4064,21 @@
     <message>
         <source>Unknown</source>
         <translation>Bilinmeyen</translation>
+    </message>
+</context>
+<context>
+    <name>XOptions</name>
+    <message>
+        <source>Automatic</source>
+        <translation>Otomatik</translation>
+    </message>
+    <message>
+        <source>Recent files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Temizle</translation>
     </message>
 </context>
 <context>
@@ -3728,6 +4104,10 @@
         <translation>Logoyu göster</translation>
     </message>
     <message>
+        <source>Font</source>
+        <translation>Yazı tipi</translation>
+    </message>
+    <message>
         <source>Save last directory</source>
         <translation>Son klasöre kaydet</translation>
     </message>
@@ -3736,8 +4116,24 @@
         <translation>Yedek kayfet</translation>
     </message>
     <message>
+        <source>Save history</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Add to context menu</source>
         <translation>Bağlam menüsüne ekle</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Varsayılan</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Tamam</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
     </message>
     <message>
         <source>Appearance</source>
@@ -3746,6 +4142,22 @@
     <message>
         <source>File</source>
         <translation>Dosya</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Hata</translation>
+    </message>
+    <message>
+        <source>Please run the program as an administrator</source>
+        <translation>Lütfen programı yönetici olarak çalıştırın</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Bilgilendirme</translation>
+    </message>
+    <message>
+        <source>Please restart the application</source>
+        <translation>Lütfen uygulamya tekrar başlatın</translation>
     </message>
 </context>
 <context>
@@ -3829,8 +4241,132 @@
 <context>
     <name>XShortcuts</name>
     <message>
-        <source>Unknown</source>
-        <translation>Bilinmeyen</translation>
+        <source>Action</source>
+        <translation>Eylem</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>Dosya</translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation>görüş</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Kelime</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Kelimeler</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>İmza</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>İmzalar</translation>
+    </message>
+    <message>
+        <source>Struct</source>
+        <translation>yapılar</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>altıgen</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>Disasm</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>hata ayıklama</translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation>Debugger</translation>
+    </message>
+    <message>
+        <source>Register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack</source>
+        <translation>Yığın</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>Arşiv</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>Tablo</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>İşlem</translation>
+    </message>
+    <message>
+        <source>Memory</source>
+        <translation>Hafıza</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kapyala</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Düzenle</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation>Bul</translation>
+    </message>
+    <message>
+        <source>Go to</source>
+        <translation>Git</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>Araçlar</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Yardım</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation>Seç</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Breakpoint</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Modules</source>
+        <translation>Modüller</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Hafıza haritası</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Değer</translation>
+    </message>
+    <message>
+        <source>Show</source>
+        <translation>Göstermek</translation>
     </message>
     <message>
         <source>Open</source>
@@ -3841,8 +4377,8 @@
         <translation>Kaydet</translation>
     </message>
     <message>
-        <source>Save As</source>
-        <translation>Farklı kaydet</translation>
+        <source>Save as</source>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -3857,104 +4393,40 @@
         <translation>Çıkış</translation>
     </message>
     <message>
-        <source>Copy</source>
-        <translation>Kapyala</translation>
+        <source>Dump to file</source>
+        <translation>Dosyaya dök</translation>
     </message>
     <message>
-        <source>Show</source>
-        <translation>Göstermek</translation>
+        <source>Address</source>
+        <translation>Adres</translation>
     </message>
     <message>
-        <source>Copy string</source>
-        <translation>String kopyala</translation>
+        <source>Entry point</source>
+        <translation>Entry point</translation>
     </message>
     <message>
-        <source>Copy offset</source>
-        <translation>Ofset kopyala</translation>
+        <source>Offset</source>
+        <translation>Ofset</translation>
     </message>
     <message>
-        <source>Copy size</source>
-        <translation>Boyut kopyala</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>altıgen</translation>
+        <source>Size</source>
+        <translation>Boyut</translation>
     </message>
     <message>
         <source>Demangle</source>
         <translation>parçalamak</translation>
     </message>
     <message>
-        <source>Copy name</source>
-        <translation>Adı kopyala</translation>
+        <source>Name</source>
+        <translation>İsim</translation>
     </message>
     <message>
-        <source>Copy signature</source>
-        <translation>İmzayı kopyala</translation>
+        <source>Next</source>
+        <translation></translation>
     </message>
     <message>
-        <source>Copy address</source>
-        <translation>Adres kopyala</translation>
-    </message>
-    <message>
-        <source>Dump to file</source>
-        <translation>Dosyaya dök</translation>
-    </message>
-    <message>
-        <source>Go to address</source>
-        <translation>Adrese git</translation>
-    </message>
-    <message>
-        <source>Go to offset</source>
-        <translation>Ofset&apos;e git</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>İmza</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>İmzalar</translation>
-    </message>
-    <message>
-        <source>Find</source>
-        <translation>Bul</translation>
-    </message>
-    <message>
-        <source>Find next</source>
-        <translation>Sonrakini bul</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation>Hepsini seç</translation>
-    </message>
-    <message>
-        <source>Copy as hex</source>
-        <translation>HEX kopyala</translation>
-    </message>
-    <message>
-        <source>Copy cursor offset</source>
-        <translation>İmleç ofsetini kopyala</translation>
-    </message>
-    <message>
-        <source>Copy cursor address</source>
-        <translation>İmleç adresini kopyala</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>Disasm</translation>
-    </message>
-    <message>
-        <source>Memory map</source>
-        <translation>Hafıza haritası</translation>
-    </message>
-    <message>
-        <source>Go to entry point</source>
-        <translation>Giriş noktasına git</translation>
-    </message>
-    <message>
-        <source>Hex signature</source>
-        <translation>altıgen imza</translation>
+        <source>All</source>
+        <translation>Hepsi</translation>
     </message>
     <message>
         <source>Attach</source>
@@ -3969,10 +4441,6 @@
         <translation>İşlemci</translation>
     </message>
     <message>
-        <source>Actions</source>
-        <translation>Hareketler</translation>
-    </message>
-    <message>
         <source>Log</source>
         <translation>Log Kayıt</translation>
     </message>
@@ -3981,8 +4449,8 @@
         <translation>kesme noktaları</translation>
     </message>
     <message>
-        <source>Call stack</source>
-        <translation>Çağrı yığını</translation>
+        <source>Callstack</source>
+        <translation></translation>
     </message>
     <message>
         <source>Threads</source>
@@ -3991,6 +4459,38 @@
     <message>
         <source>Handles</source>
         <translation>kulplar</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>Semboller</translation>
+    </message>
+    <message>
+        <source>Shortcuts</source>
+        <translation>Kısayollar</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Ayarlar</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>Hakkında</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Dosya adı</translation>
+    </message>
+    <message>
+        <source>Structs</source>
+        <translation>yapılar</translation>
+    </message>
+    <message>
+        <source>Viewer</source>
+        <translation>izleyici</translation>
+    </message>
+    <message>
+        <source>Folder</source>
+        <translation></translation>
     </message>
     <message>
         <source>Run</source>
@@ -4021,8 +4521,8 @@
         <translation>Aç/Kapat</translation>
     </message>
     <message>
-        <source>Copy filename</source>
-        <translation>Dosya adını kopyala</translation>
+        <source>Scan</source>
+        <translation>Tarama</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -4031,66 +4531,6 @@
     <message>
         <source>Hash</source>
         <translation>Hash</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Tarama</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>Kelimeler</translation>
-    </message>
-    <message>
-        <source>Structs</source>
-        <translation>yapılar</translation>
-    </message>
-    <message>
-        <source>Viewer</source>
-        <translation>izleyici</translation>
-    </message>
-    <message>
-        <source>Action</source>
-        <translation>Eylem</translation>
-    </message>
-    <message>
-        <source>File</source>
-        <translation>Dosya</translation>
-    </message>
-    <message>
-        <source>View</source>
-        <translation>görüş</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>hata ayıklama</translation>
-    </message>
-    <message>
-        <source>Debugger</source>
-        <translation>Debugger</translation>
-    </message>
-    <message>
-        <source>Registers</source>
-        <translation>Kayıtlar</translation>
-    </message>
-    <message>
-        <source>Stack</source>
-        <translation>Yığın</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>Arşiv</translation>
-    </message>
-    <message>
-        <source>Table</source>
-        <translation>Tablo</translation>
-    </message>
-    <message>
-        <source>Process</source>
-        <translation>İşlem</translation>
-    </message>
-    <message>
-        <source>Memory</source>
-        <translation>Hafıza</translation>
     </message>
 </context>
 <context>
@@ -4114,6 +4554,41 @@
     <message>
         <source>Cannot save file</source>
         <translation>Dosya kayıt edilemiyor</translation>
+    </message>
+</context>
+<context>
+    <name>XSymbolsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Biçim</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Kaydet</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Boyut</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tip</translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation>Sembol</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>Semboller</translation>
     </message>
 </context>
 </TS>
