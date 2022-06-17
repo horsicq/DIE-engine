@@ -118,9 +118,6 @@
 [submodule "XPDF"]
 	path = XPDF
 	url = https://github.com/horsicq/XPDF
-[submodule "QHexView"]
-	path = QHexView
-	url = https://github.com/horsicq/QHexView
 [submodule "XInfoDB"]
 	path = XInfoDB
 	url = https://github.com/horsicq/XInfoDB
