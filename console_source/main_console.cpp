@@ -29,7 +29,7 @@
 #include "xoptions.h"
 #include "xfileinfo.h"
 
-void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
+void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,DiE_Script *pDieScript)
 {
     QList<QString> listFileNames;
 
@@ -167,7 +167,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
     }
 }
 
-int main(int argc, char *argv[])
+int main(int argc,char *argv[])
 {
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
     QCoreApplication::setOrganizationDomain(X_ORGANIZATIONDOMAIN);
