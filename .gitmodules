@@ -124,3 +124,6 @@
 [submodule "XSymbolsWidget"]
 	path = XSymbolsWidget
 	url = https://github.com/horsicq/XSymbolsWidget
+[submodule "XOnlineTools"]
+	path = XOnlineTools
+	url = https://github.com/horsicq/XOnlineTools
