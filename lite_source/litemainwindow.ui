@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>446</width>
-    <height>238</height>
+    <width>478</width>
+    <height>240</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,6 +71,13 @@
            </widget>
           </item>
           <item>
+           <widget class="QCheckBox" name="checkBoxHeuristicScan">
+            <property name="text">
+             <string>Heuristic scan</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <spacer name="horizontalSpacer">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -90,22 +97,6 @@
             </property>
            </widget>
           </item>
-          <item>
-           <widget class="QLabel" name="labelScanTime">
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-            </property>
-           </widget>
-          </item>
          </layout>
         </item>
        </layout>
@@ -116,6 +107,22 @@
          <widget class="QPushButton" name="pushButtonScan">
           <property name="text">
            <string>Scan</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelScanTime">
+          <property name="maximumSize">
+           <size>
+            <width>75</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
           </property>
          </widget>
         </item>
