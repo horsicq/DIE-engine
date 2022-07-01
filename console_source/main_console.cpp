@@ -174,7 +174,7 @@ int main(int argc,char *argv[])
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
-    QCoreApplication app(argc, argv);
+    QCoreApplication app(argc,argv);
 
     QCommandLineParser parser;
     QString sDescription;
