@@ -251,10 +251,16 @@ int main(int argc,char *argv[])
     QObject::connect(&die_script,SIGNAL(errorMessage(QString)),&consoleOutput,SLOT(errorMessage(QString)));
     QObject::connect(&die_script,SIGNAL(infoMessage(QString)),&consoleOutput,SLOT(infoMessage(QString)));
 
-    die_script.loadDatabase(sDatabase);
+    bool bIsDbUsed=false;
 
     if(parser.isSet(clShowDatabase))
     {
+        if(!bIsDbUsed)
+        {
+            die_script.loadDatabase(sDatabase);
+            bIsDbUsed=true;
+        }
+
         printf("Database: %s\n",sDatabase.toUtf8().data());
 
         QList<DiE_Script::SIGNATURE_STATE> list=die_script.getSignatureStates();
@@ -289,6 +295,12 @@ int main(int argc,char *argv[])
     }
     else if(listArgs.count())
     {
+        if(!bIsDbUsed)
+        {
+            die_script.loadDatabase(sDatabase);
+            bIsDbUsed=true;
+        }
+
         ScanFiles(&listArgs,&scanOptions,&die_script);
     }
     else if(!parser.isSet(clShowDatabase))

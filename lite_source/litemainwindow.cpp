@@ -30,6 +30,7 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent)
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
+    installEventFilter(this);
 
     g_pDieScript=new DiE_Script;
     g_pDieScript->loadDatabase(XOptions().getApplicationDataPath()+QDir::separator()+"db");
@@ -125,4 +126,14 @@ void LiteMainWindow::dropEvent(QDropEvent *event)
             processFile(sFileName);
         }
     }
+}
+
+void LiteMainWindow::keyPressEvent(QKeyEvent *pEvent)
+{
+    if(pEvent->key()==Qt::Key_Escape)
+    {
+        this->close();
+    }
+
+    QWidget::keyPressEvent(pEvent);
 }
