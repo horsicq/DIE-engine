@@ -189,6 +189,7 @@ int main(int argc,char *argv[])
     QCommandLineOption clRecursiveScan  (QStringList()<<    "r"<<   "recursivescan",    "Recursive scan."       );
     QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",         "Deep scan."            );
     QCommandLineOption clHeuristicScan  (QStringList()<<    "u"<<   "heuristicscan",    "Heuristic scan."       );
+    QCommandLineOption clVerbose        (QStringList()<<    "b"<<   "verbose",          "Verbose."              );
     QCommandLineOption clAllTypesScan   (QStringList()<<    "a"<<   "alltypes",         "Scan all types."       );
     QCommandLineOption clEntropy        (QStringList()<<    "e"<<   "entropy",          "Show entropy."         );
     QCommandLineOption clInfo           (QStringList()<<    "i"<<   "info",             "Show file info."       );
@@ -204,6 +205,7 @@ int main(int argc,char *argv[])
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
     parser.addOption(clHeuristicScan);
+    parser.addOption(clVerbose);
     parser.addOption(clAllTypesScan);
     parser.addOption(clEntropy);
     parser.addOption(clInfo);
@@ -228,6 +230,7 @@ int main(int argc,char *argv[])
     scanOptions.bRecursiveScan=parser.isSet(clRecursiveScan);
     scanOptions.bIsDeepScan=parser.isSet(clDeepScan);
     scanOptions.bIsHeuristicScan=parser.isSet(clHeuristicScan);
+    scanOptions.bIsVerbose=parser.isSet(clVerbose);
     scanOptions.bAllTypesScan=parser.isSet(clAllTypesScan);
     scanOptions.bShowEntropy=parser.isSet(clEntropy);
     scanOptions.bShowExtraInfo=parser.isSet(clInfo);

@@ -78,6 +78,13 @@
            </widget>
           </item>
           <item>
+           <widget class="QCheckBox" name="checkBoxVerbose">
+            <property name="text">
+             <string>Verbose</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <spacer name="horizontalSpacer">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>

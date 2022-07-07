@@ -60,6 +60,7 @@ void LiteMainWindow::processFile(QString sFileName)
         DiE_Script::SCAN_OPTIONS scanOptions={};
         scanOptions.bIsDeepScan=ui->checkBoxDeepScan->isChecked();
         scanOptions.bIsHeuristicScan=ui->checkBoxHeuristicScan->isChecked();
+        scanOptions.bIsVerbose=ui->checkBoxVerbose->isChecked();
         scanOptions.bAllTypesScan=ui->checkBoxAllTypesScan->isChecked();
         scanOptions.bShowType=true;
         scanOptions.bShowVersion=true;
