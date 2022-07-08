@@ -28,6 +28,7 @@
 #include "searchsignaturesoptionswidget.h"
 #include "xhexviewoptionswidget.h"
 #include "xdisasmviewoptionswidget.h"
+#include "xonlinetoolsoptionswidget.h"
 #include "../global.h"
 
 namespace Ui {
@@ -39,7 +40,7 @@ class DialogOptions : public QDialog
     Q_OBJECT
 
 public:
-    explicit DialogOptions(QWidget *pParent,XOptions *pOptions);
+    explicit DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId);
     ~DialogOptions();
 
 private:
@@ -48,6 +49,7 @@ private:
     SearchSignaturesOptionsWidget *g_pSearchSignaturesOptionsWidget;
     XHexViewOptionsWidget *g_pXHexViewOptionsWidget;
     XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;
+    XOnlineToolsOptionsWidget *g_pXOnlineToolsOptionsWidget;
 };
 
 #endif // DIALOGOPTIONS_H

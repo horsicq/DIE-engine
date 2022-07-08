@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>707</width>
-    <height>430</height>
+    <width>690</width>
+    <height>446</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -120,6 +120,13 @@
          <widget class="QPushButton" name="pushButtonDemangle">
           <property name="text">
            <string>Demangle</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonVirusTotal">
+          <property name="text">
+           <string>VirusTotal</string>
           </property>
          </widget>
         </item>

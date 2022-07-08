@@ -53,6 +53,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     SearchSignaturesOptionsWidget::setDefaultValues(&g_xOptions);
     XHexViewOptionsWidget::setDefaultValues(&g_xOptions);
     XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
+    XOnlineToolsOptionsWidget::setDefaultValues(&g_xOptions);
 
     g_xOptions.load();
 
@@ -100,7 +101,7 @@ void GuiMainWindow::on_pushButtonAbout_clicked()
 
 void GuiMainWindow::on_pushButtonOptions_clicked()
 {
-    DialogOptions dialogOptions(this,&g_xOptions);
+    DialogOptions dialogOptions(this,&g_xOptions,XOptions::GROUPID_FILE);
 
     dialogOptions.exec();
 
@@ -277,6 +278,31 @@ void GuiMainWindow::on_pushButtonDemangle_clicked()
     DialogDemangle dialogDemangle(this);
 
     dialogDemangle.exec();
+}
+
+void GuiMainWindow::on_pushButtonVirusTotal_clicked()
+{
+    if(XVirusTotalWidget::checkVirusTotalKey(&g_xOptions,this))
+    {
+        QString sFileName=getCurrentFileName();
+
+        if(sFileName!="")
+        {
+            QFile file;
+            file.setFileName(sFileName);
+
+            if(file.open(QIODevice::ReadOnly))
+            {
+                DialogXVirusTotal dialogVirusTotal(this);
+                dialogVirusTotal.setGlobal(&g_xShortcuts,&g_xOptions);
+                dialogVirusTotal.setData(&file);
+
+                dialogVirusTotal.exec();
+
+                file.close();
+            }
+        }
+    }
 }
 
 QString GuiMainWindow::getCurrentFileName()

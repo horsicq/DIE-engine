@@ -21,7 +21,7 @@
 #include "dialogoptions.h"
 #include "ui_dialogoptions.h"
 
-DialogOptions::DialogOptions(QWidget *pParent,XOptions *pOptions) :
+DialogOptions::DialogOptions(QWidget *pParent,XOptions *pOptions,XOptions::GROUPID groupId) :
     QDialog(pParent),
     ui(new Ui::DialogOptions)
 {
@@ -31,6 +31,7 @@ DialogOptions::DialogOptions(QWidget *pParent,XOptions *pOptions) :
     g_pSearchSignaturesOptionsWidget=new SearchSignaturesOptionsWidget(this);
     g_pXHexViewOptionsWidget=new XHexViewOptionsWidget(this);
     g_pXDisasmViewOptionsWidget=new XDisasmViewOptionsWidget(this);
+    g_pXOnlineToolsOptionsWidget=new XOnlineToolsOptionsWidget(this);
 
     ui->widgetOptions->setOptions(pOptions,X_APPLICATIONDISPLAYNAME);
 
@@ -46,7 +47,10 @@ DialogOptions::DialogOptions(QWidget *pParent,XOptions *pOptions) :
     ui->widgetOptions->addPage(g_pXDisasmViewOptionsWidget,tr("Disasm"));
     g_pXDisasmViewOptionsWidget->setOptions(pOptions);
 
-    ui->widgetOptions->setCurrentPage(2);
+    ui->widgetOptions->addPage(g_pXOnlineToolsOptionsWidget,tr("Online tools"));
+    g_pXOnlineToolsOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->setCurrentPage(groupId);
 }
 
 DialogOptions::~DialogOptions()

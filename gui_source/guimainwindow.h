@@ -36,6 +36,7 @@
 #include "xoptions.h"
 #include "dialogshortcuts.h"
 #include "dialogxfileinfo.h"
+#include "dialogxvirustotal.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class GuiMainWindow; }
@@ -63,6 +64,7 @@ private slots:
     void on_pushButtonOpenFile_clicked();
     void on_pushButtonHash_clicked();
     void on_pushButtonDemangle_clicked();
+    void on_pushButtonVirusTotal_clicked();
 
     QString getCurrentFileName();
     void adjust();
