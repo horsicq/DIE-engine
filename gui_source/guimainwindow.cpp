@@ -282,25 +282,30 @@ void GuiMainWindow::on_pushButtonDemangle_clicked()
 
 void GuiMainWindow::on_pushButtonVirusTotal_clicked()
 {
-    if(XVirusTotalWidget::checkVirusTotalKey(&g_xOptions,this))
+    QString sFileName=getCurrentFileName();
+
+    if(sFileName!="")
     {
-        QString sFileName=getCurrentFileName();
+        QFile file;
+        file.setFileName(sFileName);
 
-        if(sFileName!="")
+        if(file.open(QIODevice::ReadOnly))
         {
-            QFile file;
-            file.setFileName(sFileName);
-
-            if(file.open(QIODevice::ReadOnly))
+            if(g_xOptions.getVirusTotalApiKey()!="")
             {
                 DialogXVirusTotal dialogVirusTotal(this);
                 dialogVirusTotal.setGlobal(&g_xShortcuts,&g_xOptions);
                 dialogVirusTotal.setData(&file);
 
                 dialogVirusTotal.exec();
-
-                file.close();
             }
+            else
+            {
+                QString sMD5=XBinary::getHash(XBinary::HASH_MD5,&file);
+                XVirusTotalWidget::showInBrowser(sMD5);
+            }
+
+            file.close();
         }
     }
 }
