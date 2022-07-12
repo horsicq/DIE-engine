@@ -167,6 +167,10 @@
         <translation>Sezgisel tarama</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Her türlü</translation>
     </message>
@@ -194,16 +198,20 @@
         <translation>İmzalar</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Derin tarama</translation>
-    </message>
-    <message>
         <source>Recursive scan</source>
         <translation>Tekrarlananları tara</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>Her türlü</translation>
+        <source>Deep scan</source>
+        <translation>Derin tarama</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Sezgisel tarama</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
@@ -212,6 +220,10 @@
     <message>
         <source>Log</source>
         <translation>Log Kayıt</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Her türlü</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -235,6 +247,10 @@
     <message>
         <source>Cannot load database</source>
         <translation>veritabanı yüklenemiyor</translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation>Klasör tara</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -460,12 +476,20 @@
         <translation>alt dizinler</translation>
     </message>
     <message>
+        <source>Recursive scan</source>
+        <translation>Tekrarlananları tara</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Derin tarama</translation>
     </message>
     <message>
-        <source>Recursive scan</source>
-        <translation>Tekrarlananları tara</translation>
+        <source>Heuristic scan</source>
+        <translation>Sezgisel tarama</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -612,10 +636,6 @@
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
-    </message>
 </context>
 <context>
     <name>DialogEditString</name>
@@ -684,10 +704,6 @@
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
-    </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
@@ -752,17 +768,6 @@
     <message>
         <source>Cancel</source>
         <translation>İptal</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
-    </message>
-</context>
-<context>
-    <name>DialogHex</name>
-    <message>
-        <source>Close</source>
-        <translation>Kapat</translation>
     </message>
 </context>
 <context>
@@ -946,10 +951,6 @@
         <source>Create view model</source>
         <translation>Görünüm modeli oluştur</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
-    </message>
 </context>
 <context>
     <name>DialogOptions</name>
@@ -973,6 +974,10 @@
         <source>Disasm</source>
         <translation>Disasm</translation>
     </message>
+    <message>
+        <source>Online tools</source>
+        <translation>İmza aracı</translation>
+    </message>
 </context>
 <context>
     <name>DialogProcessData</name>
@@ -983,10 +988,6 @@
     <message>
         <source>Cancel</source>
         <translation>İptal</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
     </message>
 </context>
 <context>
@@ -1045,10 +1046,6 @@
     <message>
         <source>Cancel</source>
         <translation>İptal</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
     </message>
 </context>
 <context>
@@ -1148,14 +1145,6 @@
         <translation>Kaydet</translation>
     </message>
     <message>
-        <source>Run</source>
-        <translation>Çalıştırmak</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>hata ayıklama</translation>
-    </message>
-    <message>
         <source>Readonly</source>
         <translation>Sadece okuma</translation>
     </message>
@@ -1168,12 +1157,28 @@
         <translation>Sürümü göster</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Çalıştırmak</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>hata ayıklama</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>Seçenekleri göster</translation>
     </message>
     <message>
         <source>Deep scan</source>
         <translation>Derin tarama</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Sezgisel tarama</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1215,6 +1220,10 @@
         <translation>Sezgisel tarama</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Her türlü</translation>
     </message>
@@ -1252,6 +1261,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Sezgisel tarama</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -1420,6 +1433,13 @@
         <source>Symbols</source>
         <translation>Semboller</translation>
     </message>
+    <message>
+        <source>Close</source>
+        <translation>Kapat</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
         <translation>Kapat</translation>
@@ -1786,6 +1806,10 @@
         <translation>Sezgisel tarama</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Her türlü</translation>
     </message>
@@ -1896,6 +1920,14 @@
     <message>
         <source>Deep scan</source>
         <translation>Derin tarama</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Sezgisel tarama</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -2245,12 +2277,16 @@
         <translation>Sezgisel tarama</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>Her türlü</translation>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
         <translation>dizin</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Her türlü</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2567,48 +2603,6 @@
     <message>
         <source>Demangle</source>
         <translation>parçalamak</translation>
-    </message>
-</context>
-<context>
-    <name>QHexView</name>
-    <message>
-        <source>Cannot save file</source>
-        <translation>Dosya kayıt edilemiyor</translation>
-    </message>
-</context>
-<context>
-    <name>QHexViewWidget</name>
-    <message>
-        <source>Go to address</source>
-        <translation>Adrese git</translation>
-    </message>
-    <message>
-        <source>Cursor</source>
-        <translation>Cursor</translation>
-    </message>
-    <message>
-        <source>Selection</source>
-        <translation>Seçilen</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Boyut</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>Sadece okuma</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>İşlenmemiş veri</translation>
-    </message>
-    <message>
-        <source>Save dump</source>
-        <translation>Dump kaydet</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
     </message>
 </context>
 <context>
@@ -3060,6 +3054,10 @@
         <translation>Sezgisel tarama</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Her türlü</translation>
     </message>
@@ -3069,6 +3067,29 @@
     <message>
         <source>Strings</source>
         <translation>Kelimeler</translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>Bilgi</translation>
+    </message>
+    <message>
+        <source>Check updates</source>
+        <translation>Güncellemeleri kontrol et</translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation>Teşekkürler</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>İnternet sitesi</translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation>Kütüphaneler</translation>
     </message>
 </context>
 <context>
@@ -3148,6 +3169,10 @@
     <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -3230,6 +3255,21 @@
     <message>
         <source>Nothing found</source>
         <translation>Hiçbirşey Bulunamadı</translation>
+    </message>
+</context>
+<context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation>İşlem</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Hata</translation>
     </message>
 </context>
 <context>
@@ -3359,6 +3399,10 @@
     <message>
         <source>Syntax</source>
         <translation>Sözdizimi</translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation></translation>
     </message>
     <message>
         <source>Address colon</source>
@@ -3871,10 +3915,6 @@
         <source>Hex</source>
         <translation>altıgen</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
-    </message>
 </context>
 <context>
     <name>XInfoDB</name>
@@ -4054,16 +4094,27 @@
         <source>Symbols</source>
         <translation>Semboller</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Hata</translation>
-    </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
         <translation>Bilinmeyen</translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Biçim</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4270,7 +4321,7 @@
     </message>
     <message>
         <source>Struct</source>
-        <translation>yapılar</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4589,6 +4640,73 @@
     <message>
         <source>Symbols</source>
         <translation>Semboller</translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Biçim</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>İnternet sitesi</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Kaydet</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>Tekrar yükle</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Bilgilendirme</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Tarama</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versiyon</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Sonuç</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Ayarlar</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>İmza aracı</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Hata</translation>
     </message>
 </context>
 </TS>

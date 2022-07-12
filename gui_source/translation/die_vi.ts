@@ -167,6 +167,10 @@
         <translation>Quét phỏng đoán</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Các loại</translation>
     </message>
@@ -194,16 +198,20 @@
         <translation>Chữ ký</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Quét sâu</translation>
-    </message>
-    <message>
         <source>Recursive scan</source>
         <translation>Quét đệ quy</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>Các loại</translation>
+        <source>Deep scan</source>
+        <translation>Quét sâu</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
@@ -212,6 +220,10 @@
     <message>
         <source>Log</source>
         <translation>Nhật ký</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Các loại</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -235,6 +247,10 @@
     <message>
         <source>Cannot load database</source>
         <translation>Không thể tải cơ sở dữ liệu</translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation>Quét thư mục</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -460,12 +476,20 @@
         <translation>Thư mục con</translation>
     </message>
     <message>
+        <source>Recursive scan</source>
+        <translation>Quét đệ quy</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Quét sâu</translation>
     </message>
     <message>
-        <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <source>Heuristic scan</source>
+        <translation>Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -612,10 +636,6 @@
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
 </context>
 <context>
     <name>DialogEditString</name>
@@ -684,10 +704,6 @@
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
@@ -752,17 +768,6 @@
     <message>
         <source>Cancel</source>
         <translation>Hủy</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
-</context>
-<context>
-    <name>DialogHex</name>
-    <message>
-        <source>Close</source>
-        <translation>Đóng</translation>
     </message>
 </context>
 <context>
@@ -946,10 +951,6 @@
         <source>Create view model</source>
         <translation>Tạo mẫu  xem</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
 </context>
 <context>
     <name>DialogOptions</name>
@@ -973,6 +974,10 @@
         <source>Disasm</source>
         <translation>Rối loạn</translation>
     </message>
+    <message>
+        <source>Online tools</source>
+        <translation>Công cụ ký</translation>
+    </message>
 </context>
 <context>
     <name>DialogProcessData</name>
@@ -983,10 +988,6 @@
     <message>
         <source>Cancel</source>
         <translation>Hủy</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
     </message>
 </context>
 <context>
@@ -1045,10 +1046,6 @@
     <message>
         <source>Cancel</source>
         <translation>Hủy</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
     </message>
 </context>
 <context>
@@ -1148,14 +1145,6 @@
         <translation>Lưu</translation>
     </message>
     <message>
-        <source>Run</source>
-        <translation>Chạy</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Gỡ lỗi</translation>
-    </message>
-    <message>
         <source>Readonly</source>
         <translation>Chỉ đọc</translation>
     </message>
@@ -1168,12 +1157,28 @@
         <translation>Hiển thị phiên bản</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Chạy</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Gỡ lỗi</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>Hiển thị các tùy chọn</translation>
     </message>
     <message>
         <source>Deep scan</source>
         <translation>Quét sâu</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1215,6 +1220,10 @@
         <translation>Quét phỏng đoán</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Các loại</translation>
     </message>
@@ -1252,6 +1261,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -1420,6 +1433,13 @@
         <source>Symbols</source>
         <translation>Ký hiệu</translation>
     </message>
+    <message>
+        <source>Close</source>
+        <translation>Đóng</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
         <translation>Đóng</translation>
@@ -1786,6 +1806,10 @@
         <translation>Quét phỏng đoán</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Các loại</translation>
     </message>
@@ -1896,6 +1920,14 @@
     <message>
         <source>Deep scan</source>
         <translation>Quét sâu</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -2245,12 +2277,16 @@
         <translation>Quét phỏng đoán</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>Các loại</translation>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
         <translation>Danh mục</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Các loại</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2567,48 +2603,6 @@
     <message>
         <source>Demangle</source>
         <translation>Gỡ rối</translation>
-    </message>
-</context>
-<context>
-    <name>QHexView</name>
-    <message>
-        <source>Cannot save file</source>
-        <translation>Không thể lưu tập tin</translation>
-    </message>
-</context>
-<context>
-    <name>QHexViewWidget</name>
-    <message>
-        <source>Go to address</source>
-        <translation>Đi tới địa chỉ</translation>
-    </message>
-    <message>
-        <source>Cursor</source>
-        <translation>Con trỏ</translation>
-    </message>
-    <message>
-        <source>Selection</source>
-        <translation>Lựa chọn</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Kích thước</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>Dữ lieu thô</translation>
-    </message>
-    <message>
-        <source>Save dump</source>
-        <translation>Lưu kết xuất</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
     </message>
 </context>
 <context>
@@ -3060,6 +3054,10 @@
         <translation>Quét phỏng đoán</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Các loại</translation>
     </message>
@@ -3069,6 +3067,29 @@
     <message>
         <source>Strings</source>
         <translation>Chuỗi</translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>Thông tin</translation>
+    </message>
+    <message>
+        <source>Check updates</source>
+        <translation>Kiểm tra cập nhật</translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation>Cảm ơn</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Trang mạng</translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation>Thư viện</translation>
     </message>
 </context>
 <context>
@@ -3148,6 +3169,10 @@
     <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -3230,6 +3255,21 @@
     <message>
         <source>Nothing found</source>
         <translation>Không kết quả</translation>
+    </message>
+</context>
+<context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation>Xử lý</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Lỗi</translation>
     </message>
 </context>
 <context>
@@ -3359,6 +3399,10 @@
     <message>
         <source>Syntax</source>
         <translation>Cú pháp</translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation></translation>
     </message>
     <message>
         <source>Address colon</source>
@@ -3871,10 +3915,6 @@
         <source>Hex</source>
         <translation>Hex</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
 </context>
 <context>
     <name>XInfoDB</name>
@@ -4054,16 +4094,27 @@
         <source>Symbols</source>
         <translation>Ký hiệu</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
         <translation>không xác định</translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Mẫu đơn</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4270,7 +4321,7 @@
     </message>
     <message>
         <source>Struct</source>
-        <translation>Cấu trúc</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4589,6 +4640,73 @@
     <message>
         <source>Symbols</source>
         <translation>Ký hiệu</translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Mẫu đơn</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Trang mạng</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Lưu</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>Tải lại</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Thông tin</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Quét</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Phiên bản</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Kết quả</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Tùy chọn</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>Công cụ ký</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Lỗi</translation>
     </message>
 </context>
 </TS>

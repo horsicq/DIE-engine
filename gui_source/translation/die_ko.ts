@@ -167,6 +167,10 @@
         <translation>휴리스틱 검색</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>모든 유형</translation>
     </message>
@@ -194,16 +198,20 @@
         <translation>서명</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>정밀 검사</translation>
-    </message>
-    <message>
         <source>Recursive scan</source>
         <translation>재귀적 검색</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>모든 유형</translation>
+        <source>Deep scan</source>
+        <translation>정밀 검사</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>휴리스틱 검색</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
@@ -212,6 +220,10 @@
     <message>
         <source>Log</source>
         <translation>로그</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>모든 유형</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -235,6 +247,10 @@
     <message>
         <source>Cannot load database</source>
         <translation>데이터베이스를 로드할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation>디렉터리 검색</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -460,12 +476,20 @@
         <translation>하위 디렉토리</translation>
     </message>
     <message>
+        <source>Recursive scan</source>
+        <translation>재귀적 검색</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>정밀 검사</translation>
     </message>
     <message>
-        <source>Recursive scan</source>
-        <translation>재귀적 검색</translation>
+        <source>Heuristic scan</source>
+        <translation>휴리스틱 검색</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -612,10 +636,6 @@
         <source>Cancel</source>
         <translation>취소</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
-    </message>
 </context>
 <context>
     <name>DialogEditString</name>
@@ -684,10 +704,6 @@
         <source>Cancel</source>
         <translation>취소</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
-    </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
@@ -752,17 +768,6 @@
     <message>
         <source>Cancel</source>
         <translation>취소</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
-    </message>
-</context>
-<context>
-    <name>DialogHex</name>
-    <message>
-        <source>Close</source>
-        <translation>닫기</translation>
     </message>
 </context>
 <context>
@@ -946,10 +951,6 @@
         <source>Create view model</source>
         <translation>보기 모델 만들기</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
-    </message>
 </context>
 <context>
     <name>DialogOptions</name>
@@ -973,6 +974,10 @@
         <source>Disasm</source>
         <translation>Disasm</translation>
     </message>
+    <message>
+        <source>Online tools</source>
+        <translation>서명 도구</translation>
+    </message>
 </context>
 <context>
     <name>DialogProcessData</name>
@@ -983,10 +988,6 @@
     <message>
         <source>Cancel</source>
         <translation>취소</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
     </message>
 </context>
 <context>
@@ -1045,10 +1046,6 @@
     <message>
         <source>Cancel</source>
         <translation>취소</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
     </message>
 </context>
 <context>
@@ -1148,14 +1145,6 @@
         <translation>저장</translation>
     </message>
     <message>
-        <source>Run</source>
-        <translation>운영</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>디버그</translation>
-    </message>
-    <message>
         <source>Readonly</source>
         <translation>읽기 전용</translation>
     </message>
@@ -1168,12 +1157,28 @@
         <translation>버전 표시</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>운영</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>디버그</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>옵션 표시</translation>
     </message>
     <message>
         <source>Deep scan</source>
         <translation>정밀 검사</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>휴리스틱 검색</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1215,6 +1220,10 @@
         <translation>휴리스틱 검색</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>모든 유형</translation>
     </message>
@@ -1252,6 +1261,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>휴리스틱 검색</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -1420,6 +1433,13 @@
         <source>Symbols</source>
         <translation>기호</translation>
     </message>
+    <message>
+        <source>Close</source>
+        <translation>닫기</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
         <translation>닫기</translation>
@@ -1786,6 +1806,10 @@
         <translation>휴리스틱 검색</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>모든 유형</translation>
     </message>
@@ -1896,6 +1920,14 @@
     <message>
         <source>Deep scan</source>
         <translation>정밀 검사</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>휴리스틱 검색</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -2245,12 +2277,16 @@
         <translation>휴리스틱 검색</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>모든 유형</translation>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
         <translation>예배 규칙서</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>모든 유형</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2567,48 +2603,6 @@
     <message>
         <source>Demangle</source>
         <translation>디망글</translation>
-    </message>
-</context>
-<context>
-    <name>QHexView</name>
-    <message>
-        <source>Cannot save file</source>
-        <translation>파일을 저장할 수 없습니다</translation>
-    </message>
-</context>
-<context>
-    <name>QHexViewWidget</name>
-    <message>
-        <source>Go to address</source>
-        <translation>주소로 이동</translation>
-    </message>
-    <message>
-        <source>Cursor</source>
-        <translation>커서</translation>
-    </message>
-    <message>
-        <source>Selection</source>
-        <translation>선택</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>크기</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>읽기 전용</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>로우 데이터</translation>
-    </message>
-    <message>
-        <source>Save dump</source>
-        <translation>덤프 저장</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
     </message>
 </context>
 <context>
@@ -3060,6 +3054,10 @@
         <translation>휴리스틱 검색</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>모든 유형</translation>
     </message>
@@ -3069,6 +3067,29 @@
     <message>
         <source>Strings</source>
         <translation>문자열</translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>Check updates</source>
+        <translation>업데이트 확인</translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation>감사</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>웹사이트</translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation>라이브러리</translation>
     </message>
 </context>
 <context>
@@ -3148,6 +3169,10 @@
     <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -3230,6 +3255,21 @@
     <message>
         <source>Nothing found</source>
         <translation>아무것도 찾을 수 없음</translation>
+    </message>
+</context>
+<context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation>프로세스</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>오류</translation>
     </message>
 </context>
 <context>
@@ -3359,6 +3399,10 @@
     <message>
         <source>Syntax</source>
         <translation>통사론</translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation></translation>
     </message>
     <message>
         <source>Address colon</source>
@@ -3871,10 +3915,6 @@
         <source>Hex</source>
         <translation>마녀</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
-    </message>
 </context>
 <context>
     <name>XInfoDB</name>
@@ -4054,16 +4094,27 @@
         <source>Symbols</source>
         <translation>기호</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
-    </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
         <translation>알 수 없음</translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>형태</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4270,7 +4321,7 @@
     </message>
     <message>
         <source>Struct</source>
-        <translation>구조체</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4589,6 +4640,73 @@
     <message>
         <source>Symbols</source>
         <translation>기호</translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>형태</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>웹사이트</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>재호출</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>버전</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>결과</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>옵션</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>서명 도구</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>오류</translation>
     </message>
 </context>
 </TS>

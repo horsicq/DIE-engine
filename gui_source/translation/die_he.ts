@@ -167,6 +167,10 @@
         <translation>סריקה היוריסטית</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>כל הסוגים</translation>
     </message>
@@ -194,16 +198,20 @@
         <translation>חתימות</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>סריקה מתקדמת</translation>
-    </message>
-    <message>
         <source>Recursive scan</source>
         <translation>סריקה רקורסיבית</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>כל הסוגים</translation>
+        <source>Deep scan</source>
+        <translation>סריקה מתקדמת</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>סריקה היוריסטית</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
@@ -212,6 +220,10 @@
     <message>
         <source>Log</source>
         <translation>יומן אירועים</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>כל הסוגים</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -235,6 +247,10 @@
     <message>
         <source>Cannot load database</source>
         <translation>לא ניתן לטעון את מסד הנתונים</translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation>סריקת תיקייה</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -460,12 +476,20 @@
         <translation>ספריות משנה</translation>
     </message>
     <message>
+        <source>Recursive scan</source>
+        <translation>סריקה רקורסיבית</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>סריקה מתקדמת</translation>
     </message>
     <message>
-        <source>Recursive scan</source>
-        <translation>סריקה רקורסיבית</translation>
+        <source>Heuristic scan</source>
+        <translation>סריקה היוריסטית</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -612,10 +636,6 @@
         <source>Cancel</source>
         <translation>בטל</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
-    </message>
 </context>
 <context>
     <name>DialogEditString</name>
@@ -684,10 +704,6 @@
         <source>Cancel</source>
         <translation>בטל</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
-    </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
@@ -752,17 +768,6 @@
     <message>
         <source>Cancel</source>
         <translation>בטל</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
-    </message>
-</context>
-<context>
-    <name>DialogHex</name>
-    <message>
-        <source>Close</source>
-        <translation>סגור</translation>
     </message>
 </context>
 <context>
@@ -946,10 +951,6 @@
         <source>Create view model</source>
         <translation>צור מודל תצוגה</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
-    </message>
 </context>
 <context>
     <name>DialogOptions</name>
@@ -973,6 +974,10 @@
         <source>Disasm</source>
         <translation>פירוק לפקודות</translation>
     </message>
+    <message>
+        <source>Online tools</source>
+        <translation>כלי חתימה</translation>
+    </message>
 </context>
 <context>
     <name>DialogProcessData</name>
@@ -983,10 +988,6 @@
     <message>
         <source>Cancel</source>
         <translation>בטל</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
@@ -1045,10 +1046,6 @@
     <message>
         <source>Cancel</source>
         <translation>בטל</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
@@ -1148,14 +1145,6 @@
         <translation>שמור</translation>
     </message>
     <message>
-        <source>Run</source>
-        <translation>לָרוּץ</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>לנפות</translation>
-    </message>
-    <message>
         <source>Readonly</source>
         <translation>לקריאה בלבד</translation>
     </message>
@@ -1168,12 +1157,28 @@
         <translation>הצג גרסה</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>לָרוּץ</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>לנפות</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>הצג אפשרויות</translation>
     </message>
     <message>
         <source>Deep scan</source>
         <translation>סריקה מתקדמת</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>סריקה היוריסטית</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1215,6 +1220,10 @@
         <translation>סריקה היוריסטית</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>כל הסוגים</translation>
     </message>
@@ -1252,6 +1261,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>סריקה היוריסטית</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -1420,6 +1433,13 @@
         <source>Symbols</source>
         <translation>סמלים</translation>
     </message>
+    <message>
+        <source>Close</source>
+        <translation>סגור</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
         <translation>סגור</translation>
@@ -1786,6 +1806,10 @@
         <translation>סריקה היוריסטית</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>כל הסוגים</translation>
     </message>
@@ -1896,6 +1920,14 @@
     <message>
         <source>Deep scan</source>
         <translation>סריקה מתקדמת</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>סריקה היוריסטית</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -2245,12 +2277,16 @@
         <translation>סריקה היוריסטית</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>כל הסוגים</translation>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
         <translation>מַדרִיך</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>כל הסוגים</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2567,48 +2603,6 @@
     <message>
         <source>Demangle</source>
         <translation>להסיר</translation>
-    </message>
-</context>
-<context>
-    <name>QHexView</name>
-    <message>
-        <source>Cannot save file</source>
-        <translation>לא ניתן לשמור את הקובץ</translation>
-    </message>
-</context>
-<context>
-    <name>QHexViewWidget</name>
-    <message>
-        <source>Go to address</source>
-        <translation>מעבר לכתובת</translation>
-    </message>
-    <message>
-        <source>Cursor</source>
-        <translation>סמן</translation>
-    </message>
-    <message>
-        <source>Selection</source>
-        <translation>בחירה</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>גודל</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>לקריאה בלבד</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>מידע גולמי</translation>
-    </message>
-    <message>
-        <source>Save dump</source>
-        <translation>שמור מצב</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
@@ -3060,6 +3054,10 @@
         <translation>סריקה היוריסטית</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>כל הסוגים</translation>
     </message>
@@ -3069,6 +3067,29 @@
     <message>
         <source>Strings</source>
         <translation>מחרוזות</translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>מידע</translation>
+    </message>
+    <message>
+        <source>Check updates</source>
+        <translation>בדוק עדכונים</translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation>תודה</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>אתר אינטרנט</translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation>ספריות</translation>
     </message>
 </context>
 <context>
@@ -3148,6 +3169,10 @@
     <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -3230,6 +3255,21 @@
     <message>
         <source>Nothing found</source>
         <translation>שום דבר לא נמצא</translation>
+    </message>
+</context>
+<context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation>תהליך</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>בטל</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
@@ -3359,6 +3399,10 @@
     <message>
         <source>Syntax</source>
         <translation>תחביר</translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation></translation>
     </message>
     <message>
         <source>Address colon</source>
@@ -3871,10 +3915,6 @@
         <source>Hex</source>
         <translation>הקס</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
-    </message>
 </context>
 <context>
     <name>XInfoDB</name>
@@ -4054,16 +4094,27 @@
         <source>Symbols</source>
         <translation>סמלים</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>שגיאה</translation>
-    </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
         <translation>לא ידוע</translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>טופס</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4270,7 +4321,7 @@
     </message>
     <message>
         <source>Struct</source>
-        <translation>מבנים</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4589,6 +4640,73 @@
     <message>
         <source>Symbols</source>
         <translation>סמלים</translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>טופס</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>אתר אינטרנט</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>שמור</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>טען מחדש</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>מידע</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>סרוק</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>גרסה</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>תוצאה</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>אפשרויות</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>כלי חתימה</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>שגיאה</translation>
     </message>
 </context>
 </TS>

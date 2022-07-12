@@ -167,6 +167,10 @@
         <translation>Escaneo heurístico</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Todos los tipos</translation>
     </message>
@@ -194,16 +198,20 @@
         <translation>Firmas</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Análisis en profundidad</translation>
-    </message>
-    <message>
         <source>Recursive scan</source>
         <translation>Escaneo recursivo</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>Todos los tipos</translation>
+        <source>Deep scan</source>
+        <translation>Análisis en profundidad</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Escaneo heurístico</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
@@ -212,6 +220,10 @@
     <message>
         <source>Log</source>
         <translation>Log</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Todos los tipos</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -235,6 +247,10 @@
     <message>
         <source>Cannot load database</source>
         <translation>No se puede cargar la base de datos</translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation>Escanear directorio</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -460,12 +476,20 @@
         <translation>Subdirectorios</translation>
     </message>
     <message>
+        <source>Recursive scan</source>
+        <translation>Escaneo recursivo</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Análisis en profundidad</translation>
     </message>
     <message>
-        <source>Recursive scan</source>
-        <translation>Escaneo recursivo</translation>
+        <source>Heuristic scan</source>
+        <translation>Escaneo heurístico</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -612,10 +636,6 @@
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
 </context>
 <context>
     <name>DialogEditString</name>
@@ -684,10 +704,6 @@
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
@@ -752,17 +768,6 @@
     <message>
         <source>Cancel</source>
         <translation>Cancelar</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-</context>
-<context>
-    <name>DialogHex</name>
-    <message>
-        <source>Close</source>
-        <translation>Cerrar</translation>
     </message>
 </context>
 <context>
@@ -946,10 +951,6 @@
         <source>Create view model</source>
         <translation>Crear modelo de vista</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
 </context>
 <context>
     <name>DialogOptions</name>
@@ -973,6 +974,10 @@
         <source>Disasm</source>
         <translation>Desensamblar</translation>
     </message>
+    <message>
+        <source>Online tools</source>
+        <translation>Herramienta de firmado</translation>
+    </message>
 </context>
 <context>
     <name>DialogProcessData</name>
@@ -983,10 +988,6 @@
     <message>
         <source>Cancel</source>
         <translation>Cancelar</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
     </message>
 </context>
 <context>
@@ -1045,10 +1046,6 @@
     <message>
         <source>Cancel</source>
         <translation>Cancelar</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
     </message>
 </context>
 <context>
@@ -1148,14 +1145,6 @@
         <translation>Guardar</translation>
     </message>
     <message>
-        <source>Run</source>
-        <translation>Ejecutar</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Depurar</translation>
-    </message>
-    <message>
         <source>Readonly</source>
         <translation>Solo lectura</translation>
     </message>
@@ -1168,12 +1157,28 @@
         <translation>Mostrar versión</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Ejecutar</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Depurar</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>Mostrar opciones</translation>
     </message>
     <message>
         <source>Deep scan</source>
         <translation>Análisis en profundidad</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Escaneo heurístico</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1215,6 +1220,10 @@
         <translation>Escaneo heurístico</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Todos los tipos</translation>
     </message>
@@ -1252,6 +1261,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Escaneo heurístico</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -1420,6 +1433,13 @@
         <source>Symbols</source>
         <translation>Símbolos</translation>
     </message>
+    <message>
+        <source>Close</source>
+        <translation>Cerrar</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
         <translation>Cerrar</translation>
@@ -1786,6 +1806,10 @@
         <translation>Escaneo heurístico</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Todos los tipos</translation>
     </message>
@@ -1896,6 +1920,14 @@
     <message>
         <source>Deep scan</source>
         <translation>Análisis en profundidad</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Escaneo heurístico</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -2245,12 +2277,16 @@
         <translation>Escaneo heurístico</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>Todos los tipos</translation>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
         <translation>Directorio</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Todos los tipos</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2567,48 +2603,6 @@
     <message>
         <source>Demangle</source>
         <translation>Demangle</translation>
-    </message>
-</context>
-<context>
-    <name>QHexView</name>
-    <message>
-        <source>Cannot save file</source>
-        <translation>No se puede guardar el archivo</translation>
-    </message>
-</context>
-<context>
-    <name>QHexViewWidget</name>
-    <message>
-        <source>Go to address</source>
-        <translation>Ir a la dirección</translation>
-    </message>
-    <message>
-        <source>Cursor</source>
-        <translation>Cursor</translation>
-    </message>
-    <message>
-        <source>Selection</source>
-        <translation>Selección</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Tamaño</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>Solo lectura</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>Datos raw</translation>
-    </message>
-    <message>
-        <source>Save dump</source>
-        <translation>Guardar volcado</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
     </message>
 </context>
 <context>
@@ -3060,6 +3054,10 @@
         <translation>Escaneo heurístico</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Todos los tipos</translation>
     </message>
@@ -3069,6 +3067,29 @@
     <message>
         <source>Strings</source>
         <translation>Textos</translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
+        <source>Check updates</source>
+        <translation>Comprobar actualizaciones</translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation>Gracias</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Sitio web</translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation>Librerías</translation>
     </message>
 </context>
 <context>
@@ -3148,6 +3169,10 @@
     <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -3230,6 +3255,21 @@
     <message>
         <source>Nothing found</source>
         <translation>No se ha encontrado nada</translation>
+    </message>
+</context>
+<context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation>Proceso</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
     </message>
 </context>
 <context>
@@ -3359,6 +3399,10 @@
     <message>
         <source>Syntax</source>
         <translation>Sintaxis</translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation></translation>
     </message>
     <message>
         <source>Address colon</source>
@@ -3871,10 +3915,6 @@
         <source>Hex</source>
         <translation>Hex</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
 </context>
 <context>
     <name>XInfoDB</name>
@@ -4054,16 +4094,27 @@
         <source>Symbols</source>
         <translation>Símbolos</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
         <translation>Desconocido</translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4270,7 +4321,7 @@
     </message>
     <message>
         <source>Struct</source>
-        <translation>Estructuras</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4589,6 +4640,73 @@
     <message>
         <source>Symbols</source>
         <translation>Símbolos</translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Sitio web</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Guardar</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>Recargar</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Información</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Escanear</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versión</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Resultado</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Opciones</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>Herramienta de firmado</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
     </message>
 </context>
 </TS>

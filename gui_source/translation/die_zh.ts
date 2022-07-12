@@ -167,6 +167,10 @@
         <translation>启发式扫描</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>所有类型</translation>
     </message>
@@ -191,19 +195,23 @@
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>深度扫描</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Recursive scan</source>
         <translation>递归扫描</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>所有类型</translation>
+        <source>Deep scan</source>
+        <translation>深度扫描</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>启发式扫描</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
@@ -212,6 +220,10 @@
     <message>
         <source>Log</source>
         <translation>日志</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>所有类型</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -235,6 +247,10 @@
     <message>
         <source>Cannot load database</source>
         <translation>无法加载数据库</translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation>目录扫描</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -302,7 +318,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Packer</source>
@@ -330,7 +346,7 @@
     </message>
     <message>
         <source>Stub</source>
-        <translation>桩</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Tool</source>
@@ -365,7 +381,7 @@
     </message>
     <message>
         <source>Libraries</source>
-        <translation>函数库</translation>
+        <translation>全部库</translation>
     </message>
     <message>
         <source>Check updates</source>
@@ -431,7 +447,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>机器码</translation>
+        <translation>指令</translation>
     </message>
 </context>
 <context>
@@ -460,12 +476,20 @@
         <translation>子目录</translation>
     </message>
     <message>
+        <source>Recursive scan</source>
+        <translation>递归扫描</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>深度扫描</translation>
     </message>
     <message>
-        <source>Recursive scan</source>
-        <translation>递归扫描</translation>
+        <source>Heuristic scan</source>
+        <translation>启发式扫描</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -568,7 +592,7 @@
     </message>
     <message>
         <source>Opcodes</source>
-        <translation>机器码</translation>
+        <translation>指令集</translation>
     </message>
     <message>
         <source>Calls</source>
@@ -612,10 +636,6 @@
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
-    </message>
 </context>
 <context>
     <name>DialogEditString</name>
@@ -625,11 +645,11 @@
     </message>
     <message>
         <source>Keep size</source>
-        <translation></translation>
+        <translation>保持大小</translation>
     </message>
     <message>
         <source>C Strings</source>
-        <translation>字符串</translation>
+        <translation>C 字符串</translation>
     </message>
     <message>
         <source>OK</source>
@@ -641,7 +661,7 @@
     </message>
     <message>
         <source>Bytes available</source>
-        <translation></translation>
+        <translation>可用字节</translation>
     </message>
 </context>
 <context>
@@ -683,10 +703,6 @@
     <message>
         <source>Cancel</source>
         <translation>取消</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
     </message>
 </context>
 <context>
@@ -752,17 +768,6 @@
     <message>
         <source>Cancel</source>
         <translation>取消</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
-    </message>
-</context>
-<context>
-    <name>DialogHex</name>
-    <message>
-        <source>Close</source>
-        <translation>关闭</translation>
     </message>
 </context>
 <context>
@@ -921,7 +926,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>机器码</translation>
+        <translation>指令</translation>
     </message>
 </context>
 <context>
@@ -946,10 +951,6 @@
         <source>Create view model</source>
         <translation>创建视图模型</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
-    </message>
 </context>
 <context>
     <name>DialogOptions</name>
@@ -963,7 +964,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -972,6 +973,10 @@
     <message>
         <source>Disasm</source>
         <translation>反汇编</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>签名工具</translation>
     </message>
 </context>
 <context>
@@ -983,10 +988,6 @@
     <message>
         <source>Cancel</source>
         <translation>取消</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
     </message>
 </context>
 <context>
@@ -1046,16 +1047,12 @@
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
-    </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1141,19 +1138,11 @@
     <name>DialogSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Save</source>
         <translation>保存</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>运行</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>调试</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -1168,12 +1157,28 @@
         <translation>显示版本</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>运行</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>调试</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>显示选项</translation>
     </message>
     <message>
         <source>Deep scan</source>
         <translation>深度扫描</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>启发式扫描</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1215,6 +1220,10 @@
         <translation>启发式扫描</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>所有类型</translation>
     </message>
@@ -1252,6 +1261,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>启发式扫描</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -1351,7 +1364,7 @@
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
-        <translation></translation>
+        <translation>所有颜色</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1367,7 +1380,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>背景</translation>
     </message>
 </context>
 <context>
@@ -1420,6 +1433,13 @@
         <source>Symbols</source>
         <translation>符号</translation>
     </message>
+    <message>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
         <translation>关闭</translation>
@@ -1495,11 +1515,11 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>节</translation>
+        <translation>全部节</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -1626,7 +1646,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Export</source>
@@ -1642,11 +1662,11 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>节</translation>
+        <translation>全部节</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation>时间日期戳</translation>
+        <translation>时间戳</translation>
     </message>
     <message>
         <source>Size of image</source>
@@ -1662,7 +1682,7 @@
     </message>
     <message>
         <source>Programs</source>
-        <translation>程序</translation>
+        <translation>全部程序</translation>
     </message>
     <message>
         <source>Commands</source>
@@ -1670,11 +1690,11 @@
     </message>
     <message>
         <source>Segments</source>
-        <translation>段</translation>
+        <translation>全部段</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>函数库</translation>
+        <translation>全部库</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1709,7 +1729,7 @@
     </message>
     <message>
         <source>File info</source>
-        <translation></translation>
+        <translation>文件信息</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -1729,7 +1749,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -1784,6 +1804,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>启发式扫描</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -1876,11 +1900,11 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -1896,6 +1920,14 @@
     <message>
         <source>Deep scan</source>
         <translation>深度扫描</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>启发式扫描</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -1945,7 +1977,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>机器码</translation>
+        <translation>指令</translation>
     </message>
     <message>
         <source>Value</source>
@@ -2003,7 +2035,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Commands</source>
@@ -2011,11 +2043,11 @@
     </message>
     <message>
         <source>Segments</source>
-        <translation>段</translation>
+        <translation>全部段</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>节</translation>
+        <translation>全部节</translation>
     </message>
     <message>
         <source>Rebase</source>
@@ -2031,7 +2063,7 @@
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation>懒惰绑定</translation>
+        <translation>延迟绑定</translation>
     </message>
     <message>
         <source>Export</source>
@@ -2051,7 +2083,7 @@
     </message>
     <message>
         <source>Modules</source>
-        <translation>模块</translation>
+        <translation>全部模块</translation>
     </message>
     <message>
         <source>External references</source>
@@ -2134,11 +2166,11 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
 </context>
 <context>
@@ -2219,15 +2251,15 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>段</translation>
+        <translation>全部段</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
 </context>
 <context>
@@ -2245,12 +2277,16 @@
         <translation>启发式扫描</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>所有类型</translation>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>Directory</source>
         <translation>目录</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>所有类型</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2305,7 +2341,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
 </context>
 <context>
@@ -2470,7 +2506,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2478,7 +2514,7 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>节</translation>
+        <translation>全部节</translation>
     </message>
     <message>
         <source>Export</source>
@@ -2542,7 +2578,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Calculate</source>
@@ -2567,48 +2603,6 @@
     <message>
         <source>Demangle</source>
         <translation>符号重组</translation>
-    </message>
-</context>
-<context>
-    <name>QHexView</name>
-    <message>
-        <source>Cannot save file</source>
-        <translation>无法保存文件</translation>
-    </message>
-</context>
-<context>
-    <name>QHexViewWidget</name>
-    <message>
-        <source>Go to address</source>
-        <translation>转到地址</translation>
-    </message>
-    <message>
-        <source>Cursor</source>
-        <translation>光标</translation>
-    </message>
-    <message>
-        <source>Selection</source>
-        <translation>选区</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>只读</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>原始数据</translation>
-    </message>
-    <message>
-        <source>Save dump</source>
-        <translation>保存转储</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
     </message>
 </context>
 <context>
@@ -2750,7 +2744,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -2758,7 +2752,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>显示到</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2789,7 +2783,7 @@
     </message>
     <message>
         <source>C Strings</source>
-        <translation>字符串</translation>
+        <translation>C 字符串</translation>
     </message>
     <message>
         <source>Save</source>
@@ -2809,7 +2803,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>显示到</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -2964,7 +2958,7 @@
     </message>
     <message>
         <source>Stub</source>
-        <translation>桩</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Virtual machine</source>
@@ -2976,7 +2970,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Entry point</source>
@@ -3060,6 +3054,10 @@
         <translation>启发式扫描</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>所有类型</translation>
     </message>
@@ -3069,6 +3067,29 @@
     <message>
         <source>Strings</source>
         <translation>字符串</translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <source>Check updates</source>
+        <translation>检查更新</translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation>致谢名单</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>网站</translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation>全部库</translation>
     </message>
 </context>
 <context>
@@ -3139,15 +3160,19 @@
     </message>
     <message>
         <source>kB</source>
-        <translation>kB</translation>
+        <translation></translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>MB</translation>
+        <translation></translation>
     </message>
     <message>
         <source>GB</source>
-        <translation>GB</translation>
+        <translation></translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -3155,7 +3180,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Archive record</source>
@@ -3192,7 +3217,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
 </context>
 <context>
@@ -3233,6 +3258,21 @@
     </message>
 </context>
 <context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation>进程</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>错误</translation>
+    </message>
+</context>
+<context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
@@ -3252,7 +3292,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>机器码</translation>
+        <translation>指令</translation>
     </message>
 </context>
 <context>
@@ -3267,7 +3307,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>机器码</translation>
+        <translation>指令</translation>
     </message>
     <message>
         <source>Symbol</source>
@@ -3339,7 +3379,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>显示到</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -3361,6 +3401,10 @@
         <translation>句法</translation>
     </message>
     <message>
+        <source>Uppercase</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Address colon</source>
         <translation>地址</translation>
     </message>
@@ -3370,7 +3414,7 @@
     </message>
     <message>
         <source>Colors</source>
-        <translation></translation>
+        <translation>所有颜色</translation>
     </message>
 </context>
 <context>
@@ -3389,7 +3433,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -3490,7 +3534,7 @@
     </message>
     <message>
         <source>Array</source>
-        <translation>大批</translation>
+        <translation>数组</translation>
     </message>
     <message>
         <source>Variable</source>
@@ -3572,11 +3616,11 @@
     </message>
     <message>
         <source>Regions</source>
-        <translation>区域</translation>
+        <translation>全部区域</translation>
     </message>
     <message>
         <source>Diagram</source>
-        <translation></translation>
+        <translation>图解</translation>
     </message>
     <message>
         <source>Grid</source>
@@ -3843,7 +3887,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>显示到</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -3870,10 +3914,6 @@
     <message>
         <source>Hex</source>
         <translation>十六进制</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
     </message>
 </context>
 <context>
@@ -3931,7 +3971,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -3978,7 +4018,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -4054,16 +4094,27 @@
         <source>Symbols</source>
         <translation>符号</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>错误</translation>
-    </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
         <translation>未知</translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>载入</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4074,7 +4125,7 @@
     </message>
     <message>
         <source>Recent files</source>
-        <translation></translation>
+        <translation>最近打开文件</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -4117,7 +4168,7 @@
     </message>
     <message>
         <source>Save history</source>
-        <translation></translation>
+        <translation>保存历史</translation>
     </message>
     <message>
         <source>Add to context menu</source>
@@ -4176,7 +4227,7 @@
     </message>
     <message>
         <source>Driver</source>
-        <translation>司机</translation>
+        <translation>驱动</translation>
     </message>
     <message>
         <source>Boot application</source>
@@ -4200,7 +4251,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆盖</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Cannot open file</source>
@@ -4266,11 +4317,11 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>签名</translation>
+        <translation>全部签名</translation>
     </message>
     <message>
         <source>Struct</source>
-        <translation>结构</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4330,7 +4381,7 @@
     </message>
     <message>
         <source>Tools</source>
-        <translation>工具</translation>
+        <translation>工具集</translation>
     </message>
     <message>
         <source>Help</source>
@@ -4342,19 +4393,19 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>显示到</translation>
     </message>
     <message>
         <source>Show in</source>
-        <translation></translation>
+        <translation>显示到</translation>
     </message>
     <message>
         <source>Breakpoint</source>
-        <translation></translation>
+        <translation>断点</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>模块</translation>
+        <translation>全部模块</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -4378,7 +4429,7 @@
     </message>
     <message>
         <source>Save as</source>
-        <translation></translation>
+        <translation>保存为</translation>
     </message>
     <message>
         <source>Close</source>
@@ -4422,7 +4473,7 @@
     </message>
     <message>
         <source>Next</source>
-        <translation></translation>
+        <translation>下一个</translation>
     </message>
     <message>
         <source>All</source>
@@ -4430,7 +4481,7 @@
     </message>
     <message>
         <source>Attach</source>
-        <translation>附</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Detach</source>
@@ -4438,7 +4489,7 @@
     </message>
     <message>
         <source>CPU</source>
-        <translation>中央处理器</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Log</source>
@@ -4446,11 +4497,11 @@
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation>断点</translation>
+        <translation>全部断点</translation>
     </message>
     <message>
         <source>Callstack</source>
-        <translation></translation>
+        <translation>调用栈</translation>
     </message>
     <message>
         <source>Threads</source>
@@ -4589,6 +4640,73 @@
     <message>
         <source>Symbols</source>
         <translation>符号</translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>载入</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>网站</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>重新加载</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>扫描</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>版本</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>结果</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>选项</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>签名工具</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>错误</translation>
     </message>
 </context>
 </TS>
