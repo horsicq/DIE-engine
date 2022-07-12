@@ -126,7 +126,7 @@
         <item>
          <widget class="QPushButton" name="pushButtonVirusTotal">
           <property name="text">
-           <string>VirusTotal</string>
+           <string notr="true">VirusTotal</string>
           </property>
          </widget>
         </item>
