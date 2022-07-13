@@ -124,7 +124,7 @@ void GuiMainWindow::on_pushButtonFileInfo_clicked()
             DialogXFileInfo dialogFileInfo(this);
             dialogFileInfo.setGlobal(&g_xShortcuts,&g_xOptions);
 
-            dialogFileInfo.setData(&file,XBinary::FT_UNKNOWN,true);
+            dialogFileInfo.setData(&file,XBinary::FT_UNKNOWN,"Info",true);
 
             dialogFileInfo.exec();
 

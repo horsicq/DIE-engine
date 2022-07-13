@@ -22,13 +22,11 @@
 #define DIALOGABOUT_H
 
 #include <QDialog>
-#include <QDesktopServices>
-#include "QUrl"
-#include <QListWidgetItem>
+#include <QMessageBox>
 #include "../global.h"
+#include "xoptions.h"
 #include "qwt_global.h"
 #include "capstone/capstone.h"
-#include "xbinary.h"
 
 namespace Ui {
 class DialogAbout;
@@ -44,10 +42,6 @@ public:
 
 private slots:
     void on_pushButtonOK_clicked();
-    void on_pushButtonCheckUpdates_clicked();
-    void on_listWidgetThanks_currentItemChanged(QListWidgetItem *pCurrent,QListWidgetItem *pPrevious);
-    void on_pushButtonAvatar_clicked();
-    void random();
 
 private:
     Ui::DialogAbout *ui;

@@ -99,6 +99,10 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
             {
                 options.sString=pScanOptions->sSpecial;
             }
+            else
+            {
+                options.sString="Info";
+            }
 
             XFileInfoModel model;
 
@@ -199,7 +203,7 @@ int main(int argc,char *argv[])
     QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",              "Result as TSV."        );
     QCommandLineOption clDatabase       (QStringList()<<    "D"<<   "database",         "Set database<path>.",      "path");
     QCommandLineOption clShowDatabase   (QStringList()<<    "s"<<   "showdatabase",     "Show database."        );
-    QCommandLineOption clSpecial        (QStringList()<<    "S"<<   "special",          "Special file info for <method>. For example -S \"MD5\".",   "method");
+    QCommandLineOption clSpecial        (QStringList()<<    "S"<<   "special",          "Special file info for <method>. For example -S \"Hash\".",   "method");
     QCommandLineOption clShowMethods    (QStringList()<<    "m"<<   "showmethods",      "Show all special methods for the file.");
 
     parser.addOption(clRecursiveScan);

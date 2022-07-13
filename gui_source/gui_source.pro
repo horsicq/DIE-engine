@@ -50,6 +50,11 @@ include(../build.pri)
     include(../XSingleApplication/xsingleapplication.pri)
 }
 
+!contains(XCONFIG, xaboutwidget) {
+    XCONFIG += xaboutwidget
+    include(../XAboutWidget/xaboutwidget.pri)
+}
+
 RESOURCES += \
     res.qrc
 
@@ -57,7 +62,7 @@ win32 {
     RC_ICONS = ../icons/main.ico
     CONFIG -= embed_manifest_exe
     QMAKE_MANIFEST = windows.manifest.xml
-    VERSION = 3.05.0.0
+    VERSION = 3.06.0.0
     QMAKE_TARGET_COMPANY = NTInfo
     QMAKE_TARGET_PRODUCT = Detect It Easy
     QMAKE_TARGET_DESCRIPTION = Detect It Easy is a program for determining types of files.
