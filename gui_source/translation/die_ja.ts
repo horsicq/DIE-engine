@@ -372,24 +372,24 @@
         <translation>情報</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>バグレポート</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Webサイト</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>寄付</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Thanks</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>ライブラリ</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>アップデートの確認</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
+        <source>Source code</source>
+        <translation>ソース コード</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>情報</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>ファイル名</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>サイズ</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>オペレーション システム</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>エンディアン</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>ファイル名</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>サイズ</translation>
+        <source>Hash</source>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>アーキテクチャ</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>

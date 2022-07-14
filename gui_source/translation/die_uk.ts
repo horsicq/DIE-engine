@@ -168,7 +168,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>All types</source>
@@ -211,7 +211,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>Directory</source>
@@ -372,24 +372,24 @@
         <translation>Про програму</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>Гаразд</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>Звіти про помилки</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Веб-сайт</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>Пожертвування</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Подяки</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>Бібліотеки</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Перевірити оновлення</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Гаразд</translation>
+        <source>Source code</source>
+        <translation>Джерельний код</translation>
     </message>
 </context>
 <context>
@@ -489,7 +489,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>All types</source>
@@ -976,7 +976,7 @@
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Інструмент підпису</translation>
+        <translation>Онлайн утиліти</translation>
     </message>
 </context>
 <context>
@@ -1178,7 +1178,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1221,7 +1221,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1264,7 +1264,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1807,7 +1807,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1927,7 +1927,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>All types</source>
@@ -2278,7 +2278,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>Directory</source>
@@ -3055,7 +3055,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Детально</translation>
     </message>
     <message>
         <source>All types</source>
@@ -3172,7 +3172,7 @@
     </message>
     <message>
         <source>TB</source>
-        <translation></translation>
+        <translation>ТБ</translation>
     </message>
     <message>
         <source>Header</source>
@@ -3402,7 +3402,7 @@
     </message>
     <message>
         <source>Uppercase</source>
-        <translation></translation>
+        <translation>Великі літери</translation>
     </message>
     <message>
         <source>Address colon</source>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Інфо</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Ім&apos;я файлу</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Розмір</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Операційна система</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Порядок байтів</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Ім&apos;я файлу</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Розмір</translation>
+        <source>Hash</source>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4060,6 +4068,10 @@
         <translation>Архітектура</translation>
     </message>
     <message>
+        <source>Show all</source>
+        <translation>Показати усе</translation>
+    </message>
+    <message>
         <source>Memory map</source>
         <translation>Карта пам&apos;яті</translation>
     </message>
@@ -4110,11 +4122,11 @@
     </message>
     <message>
         <source>Get</source>
-        <translation></translation>
+        <translation>Отримати</translation>
     </message>
     <message>
         <source>API key</source>
-        <translation></translation>
+        <translation>API ключ</translation>
     </message>
 </context>
 <context>
@@ -4321,7 +4333,7 @@
     </message>
     <message>
         <source>Struct</source>
-        <translation></translation>
+        <translation>Структура</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4341,7 +4353,7 @@
     </message>
     <message>
         <source>Register</source>
-        <translation></translation>
+        <translation>Реєстрація</translation>
     </message>
     <message>
         <source>Stack</source>
@@ -4650,11 +4662,11 @@
     </message>
     <message>
         <source>Rescan</source>
-        <translation></translation>
+        <translation>Пересканувати</translation>
     </message>
     <message>
         <source>Show detects</source>
-        <translation></translation>
+        <translation>Показати детекти</translation>
     </message>
     <message>
         <source>Website</source>
@@ -4674,7 +4686,7 @@
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation></translation>
+        <translation>Завантажити файл для аналізу?</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -4686,7 +4698,7 @@
     </message>
     <message>
         <source>Date</source>
-        <translation></translation>
+        <translation>Дата</translation>
     </message>
     <message>
         <source>Result</source>
@@ -4694,7 +4706,7 @@
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation></translation>
+        <translation>Прохання використовувати справжній API ключ</translation>
     </message>
     <message>
         <source>Options</source>
@@ -4702,7 +4714,7 @@
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Інструмент підпису</translation>
+        <translation>Онлайн утиліти</translation>
     </message>
     <message>
         <source>Error</source>

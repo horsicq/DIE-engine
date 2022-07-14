@@ -291,13 +291,13 @@ int main(int argc,char *argv[])
 
         printf("Methods:\n");
 
-        QList<QString> listMethods=XFileInfo::getMethodNames(fileType);
+        QList<XFileInfo::METHOD> listMethods=XFileInfo::getMethodNames(fileType);
 
         qint32 nNumberOfMethods=listMethods.count();
 
         for(qint32 i=0;i<nNumberOfMethods;i++)
         {
-            printf("\t%s\n",listMethods.at(i).toUtf8().data());
+            printf("\t%s\n",listMethods.at(i).sName.toUtf8().data());
         }
     }
     else if(listArgs.count())

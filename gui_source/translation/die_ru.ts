@@ -372,24 +372,24 @@
         <translation>О программе</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>ОК</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>Сообщения об ошибках</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Веб-сайт</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>Донат</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Благодарности</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>Библиотеки</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Проверить обновления</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>ОК</translation>
+        <source>Source code</source>
+        <translation>Исходный код</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Имя файла</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Размер</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Операционная система</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Порядок байтов</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Имя файла</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Размер</translation>
+        <source>Hash</source>
+        <translation>Хэш</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>Архитектура</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation>Показать всё</translation>
     </message>
     <message>
         <source>Memory map</source>

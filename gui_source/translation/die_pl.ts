@@ -372,24 +372,24 @@
         <translation>O programie</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>Zgłaszanie błędów</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Stronie internetowej</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>Podarować</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Podziękowania</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>Biblioteki</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Sprawdź aktualizacje</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
+        <source>Source code</source>
+        <translation>Kod źródłowy</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Informacje</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Nazwa pliku</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Rozmiar</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>System operacyjny</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Kolejność bajtów w strumieniu danych</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Nazwa pliku</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Rozmiar</translation>
+        <source>Hash</source>
+        <translation>Haszysz</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>Architektura</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>

@@ -5,7 +5,7 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <source>Type</source>
@@ -168,7 +168,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>All types</source>
@@ -211,7 +211,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>Directory</source>
@@ -372,24 +372,24 @@
         <translation>Sobre</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>Relatório de erros</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Site</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>Doar</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Obrigado</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>Bibliotecas</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Verificar atualizações</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
+        <source>Source code</source>
+        <translation>Código Fonte</translation>
     </message>
 </context>
 <context>
@@ -489,7 +489,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>All types</source>
@@ -976,7 +976,7 @@
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Ferramenta de assinatura</translation>
+        <translation>Ferramentas Online</translation>
     </message>
 </context>
 <context>
@@ -1178,7 +1178,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1221,7 +1221,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1264,7 +1264,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1807,7 +1807,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1927,7 +1927,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1958,7 +1958,7 @@
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
 </context>
 <context>
@@ -2278,7 +2278,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>Directory</source>
@@ -2709,7 +2709,7 @@
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <source>Search signatures</source>
@@ -3055,7 +3055,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Detalhado</translation>
     </message>
     <message>
         <source>All types</source>
@@ -3172,7 +3172,7 @@
     </message>
     <message>
         <source>TB</source>
-        <translation></translation>
+        <translation>TB</translation>
     </message>
     <message>
         <source>Header</source>
@@ -3402,7 +3402,7 @@
     </message>
     <message>
         <source>Uppercase</source>
-        <translation></translation>
+        <translation>Uppercase</translation>
     </message>
     <message>
         <source>Address colon</source>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Nome do arquivo</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Tamanho</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Sistema operacional</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Nome do arquivo</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Tamanho</translation>
+        <source>Hash</source>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>packed</source>
@@ -3730,7 +3738,7 @@
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <source>Type</source>
@@ -3909,7 +3917,7 @@
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4060,6 +4068,10 @@
         <translation>Arquitetura</translation>
     </message>
     <message>
+        <source>Show all</source>
+        <translation>Mostrar todos</translation>
+    </message>
+    <message>
         <source>Memory map</source>
         <translation>Mapa de memória</translation>
     </message>
@@ -4084,7 +4096,7 @@
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -4106,15 +4118,15 @@
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <source>Get</source>
-        <translation></translation>
+        <translation>Get</translation>
     </message>
     <message>
         <source>API key</source>
-        <translation></translation>
+        <translation>Chave API</translation>
     </message>
 </context>
 <context>
@@ -4321,7 +4333,7 @@
     </message>
     <message>
         <source>Struct</source>
-        <translation></translation>
+        <translation>Estrutura</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4611,7 +4623,7 @@
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <source>Save</source>
@@ -4646,15 +4658,15 @@
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation>Forma</translation>
+        <translation>Formulário</translation>
     </message>
     <message>
         <source>Rescan</source>
-        <translation></translation>
+        <translation>Verificar novamente</translation>
     </message>
     <message>
         <source>Show detects</source>
-        <translation></translation>
+        <translation>Mostrar detecções</translation>
     </message>
     <message>
         <source>Website</source>
@@ -4674,7 +4686,7 @@
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation></translation>
+        <translation>Fazer upload do arquivo para analisar ?</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -4686,7 +4698,7 @@
     </message>
     <message>
         <source>Date</source>
-        <translation></translation>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Result</source>
@@ -4694,7 +4706,7 @@
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation></translation>
+        <translation>Por gentileza utilize uma chave API Válida</translation>
     </message>
     <message>
         <source>Options</source>
@@ -4702,7 +4714,7 @@
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Ferramenta de assinatura</translation>
+        <translation>Ferramentas Online</translation>
     </message>
     <message>
         <source>Error</source>

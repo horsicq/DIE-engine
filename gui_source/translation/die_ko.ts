@@ -372,24 +372,24 @@
         <translation>정보</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>버그 신고</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>웹사이트</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>기부</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>감사</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>라이브러리</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>업데이트 확인</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>확인</translation>
+        <source>Source code</source>
+        <translation>소스 코드</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>파일 이름</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>운영 시스템</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>엔디언</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>파일 이름</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>크기</translation>
+        <source>Hash</source>
+        <translation>해시</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>아키텍처</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>

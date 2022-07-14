@@ -372,24 +372,24 @@
         <translation>אודות</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>אישור</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>דיווחי שגיאות</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>אתר אינטרנט</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>תרום</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>תודה</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>ספריות</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>בדוק עדכונים</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>אישור</translation>
+        <source>Source code</source>
+        <translation>קוד מקור</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>מידע</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>שם קובץ</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>גודל</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>מערכת הפעלה</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>סוג סיומת</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>שם קובץ</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>גודל</translation>
+        <source>Hash</source>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>ארכיטקטורה</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>

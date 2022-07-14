@@ -372,24 +372,24 @@
         <translation>关于</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>错误报告</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>网站</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>捐赠</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>致谢名单</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>全部库</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>检查更新</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>确定</translation>
+        <source>Source code</source>
+        <translation>源代码</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>文件名</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>大小</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>操作系统</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>字节序</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>文件名</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
+        <source>Hash</source>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>架构</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation>全部显示</translation>
     </message>
     <message>
         <source>Memory map</source>

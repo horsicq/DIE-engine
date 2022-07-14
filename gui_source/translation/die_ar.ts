@@ -372,24 +372,24 @@
         <translation>عن</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>نعم</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>تقارير الأخطاء</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>موقع إلكتروني</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>يتبرع</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>شكرا</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>مكتبات</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>تفقد التحديث</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>نعم</translation>
+        <source>Source code</source>
+        <translation>مصدر الرمز</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>اسم الملف</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>مقاس</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>نظام تشغيل</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>اسم الملف</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>مقاس</translation>
+        <source>Hash</source>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>هندسة معمارية</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>

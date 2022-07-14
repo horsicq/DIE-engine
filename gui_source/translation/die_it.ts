@@ -372,24 +372,24 @@
         <translation>Info</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>Segnalazioni di bug</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Sito web</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>Dona</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Grazie</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>Librerie</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Controlla aggiornamenti</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
+        <source>Source code</source>
+        <translation>Codice sorgente</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Informazioni</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Nome file</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Dimensioni</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Sistema operativo</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Endianità</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Nome file</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Dimensioni</translation>
+        <source>Hash</source>
+        <translation>Impronta</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>Architettura</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>

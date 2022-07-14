@@ -372,24 +372,24 @@
         <translation>À propos</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>Rapports de bogues</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Site Internet</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>Faire un don</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Remerciements</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>Bibliothèques</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Vérifier les mises à jour</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
+        <source>Source code</source>
+        <translation>Code source</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Nom de fichier</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Taille</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Le système d&apos;exploitation</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Endianité</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Nom de fichier</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Taille</translation>
+        <source>Hash</source>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>Architecture</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>

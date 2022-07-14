@@ -372,24 +372,24 @@
         <translation>Giới thiệu</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>Báo cáo lỗi</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Trang mạng</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>Quyên tặng</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Cảm ơn</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>Thư viện</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Kiểm tra cập nhật</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
+        <source>Source code</source>
+        <translation>Mã nguồn</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Thông tin</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Tên tệp</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Kích thước</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Hệ điêu hanh</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Tên tệp</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Kích thước</translation>
+        <source>Hash</source>
+        <translation>Băm</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>Kiến trúc</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>

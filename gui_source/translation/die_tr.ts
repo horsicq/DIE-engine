@@ -372,24 +372,24 @@
         <translation>Hakkında</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>Tamam</translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation>Hata raporları</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>İnternet sitesi</translation>
+    </message>
+    <message>
         <source>Donate</source>
         <translation>Bağış yap</translation>
     </message>
     <message>
-        <source>Thanks</source>
-        <translation>Teşekkürler</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>Kütüphaneler</translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Güncellemeleri kontrol et</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>Tamam</translation>
+        <source>Source code</source>
+        <translation>Kaynak kodu</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3654,18 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Bilgi</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Dosya adı</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Boyut</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>İşletim sistemi</translation>
     </message>
@@ -3674,12 +3686,8 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Dosya adı</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Boyut</translation>
+        <source>Hash</source>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>packed</source>
@@ -4058,6 +4066,10 @@
     <message>
         <source>Architecture</source>
         <translation>Mimari</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
     </message>
     <message>
         <source>Memory map</source>
