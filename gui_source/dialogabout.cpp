@@ -21,95 +21,6 @@
 #include "dialogabout.h"
 #include "ui_dialogabout.h"
 
-struct USERINFO
-{
-    QString sUser;
-    QString sImage;
-};
-
-USERINFO _userinfo_records[]=
-{
-    {QString("4kusNick"),               QString("4kusNick")},
-    {QString("==DJ==[ZLO]"),            QString("DrZlo")},
-    {QString("A.S.L."),                 QString("ASL")},
-    {QString("ADMIN-CRACK"),            QString("ADMINCRACK")},
-    {QString("Adam(Hexacorn)"),         QString("Hexacorn")},
-    {QString("Adler"),                  QString("Adler")},
-    {QString("Adric Net"),              QString("AdricNet")},
-    {QString("Airenikus"),              QString("Airenikus")},
-    {QString("Ali Hadi"),               QString("AliHadi")},
-    {QString("Anderson Leite"),         QString("AndersonLeite")},
-    {QString("Arnaud Dovi(class101)"),  QString("ArnaudDovi")},
-    {QString("BAHEK"),                  QString("BAHEK")},
-    {QString("Bartosz Wójcik"),         QString("Bartosz")},
-    {QString("BoRoV"),                  QString("BoRoV")},
-    {QString("Christopher Layne"),      QString("clayne")},
-    {QString("DICI BF"),                QString("DICIBF")},
-    {QString("David Zimmer"),           QString("DavidZimmer")},
-    {QString("Dazz"),                   QString("Dazz")},
-    {QString("DenCoder"),               QString("DenCoder")},
-    {QString("Diabolic"),               QString("Diabolic")},
-    {QString("DimitarSerg"),            QString("DimitarSerg")},
-    {QString("Dr.FarFar"),              QString("DrFarFar")},
-    {QString("ELF_7719116"),            QString("ELF_7719116")},
-    {QString("Eliseu Filipi"),          QString("EliseuFilipi")},
-    {QString("Elite_r"),                QString("Elite_r")},
-    {QString("Fernando Mercês"),        QString("FernandoMerces")},
-    {QString("Filip Navara"),           QString("FilipNavara")},
-    {QString("FrenchYeti"),             QString("FrenchYeti")},
-    {QString("GPcH"),                   QString("GPcH")},
-    {QString("Gilad Reich"),            QString("GiladReich")},
-    {QString("HandMill"),               QString("HandMill")},
-    {QString("Hellsp@wn"),              QString("hellspawn")},
-    {QString("JMPer"),                  QString("JMPer")},
-    {QString("JaeHuyng Lee"),           QString("JaeHuyngLee")},
-    {QString("Jason Hood"),             QString("JasonHood")},
-    {QString("Javi VR"),                QString("JaviVR")},
-    {QString("Javier Nieto"),           QString("JavierNieto")},
-    {QString("Jeffrey Wu"),             QString("JeffreyWu")},
-    {QString("Jiří Vinopal"),           QString("JiriVinopal")},
-    {QString("João Vitor"),             QString("JoaoVitor")},
-    {QString("JuJu2015"),               QString("JuJu2015")},
-    {QString("Jupiter"),                QString("Jupiter")},
-    {QString("Kaens"),                  QString("Kaens")},
-    {QString("Leandro Fróes"),          QString("LeandroFroes")},
-    {QString("Levis"),                  QString("Levis")},
-    {QString("LinXP"),                  QString("LinXP")},
-    {QString("Metabolic"),              QString("Metabolic")},
-    {QString("Mick Grove"),             QString("MickGrove")},
-    {QString("Murcielago"),             QString("Murcielago")},
-    {QString("Nick Sm"),                QString("NickSM")},
-    {QString("NikolayD"),               QString("NikolayD")},
-    {QString("Nomade"),                 QString("Nomade")},
-    {QString("Nông Hoàng Tú"),          QString("NongHoangTu")},
-    {QString("RedBlkJck"),              QString("RedBlkJck")},
-    {QString("Rinat Aminow"),           QString("RinatAminow")},
-    {QString("SReg"),                   QString("SReg")},
-    {QString("Slinger"),                QString("Slinger")},
-    {QString("Tembo"),                  QString("Tembo")},
-    {QString("Tilt"),                   QString("Tilt")},
-    {QString("Zorn"),                   QString("Zorn")},
-    {QString("ajax"),                   QString("ajax")},
-    {QString("crc1"),                   QString("crc1")},
-    {QString("d3dm4u5"),                QString("d3dm4u5")},
-    {QString("dartraiden"),             QString("dartraiden")},
-    {QString("deniskore"),              QString("deniskore")},
-    {QString("ekse0x"),                 QString("ekse0x")},
-    {QString("exet0l"),                 QString("exet0l")},
-    {QString("fr0zenbag"),              QString("fr0zenbag")},
-    {QString("graysuit"),               QString("Gray")},
-    {QString("gurololicon"),            QString("gurololicon")},
-    {QString("hypn0"),                  QString("hypn0")},
-    {QString("ktg kbh"),                QString("ktgkbh")},
-    {QString("misonothx"),              QString("misonothx")},
-    {QString("mrexodia"),               QString("mrexodia")},
-    {QString("mushr00m"),               QString("mushr00m")},
-    {QString("phithon"),                QString("phithon")},
-    {QString("sendersu"),               QString("sendersu")},
-    {QString("user_"),                  QString("user_")},
-    {QString("void"),                   QString("void")},
-};
-
 DialogAbout::DialogAbout(QWidget *pParent) :
     QDialog(pParent),
     ui(new Ui::DialogAbout)
@@ -140,13 +51,13 @@ DialogAbout::DialogAbout(QWidget *pParent) :
     _data.sLibraries+=QString("<p align=\"center\"><span style=\" font-weight:600;\">Capstone %1.%2.%3 </span><a href=\"http://www.capstone-engine.org\"><span style=\" text-decoration: underline; color:#ff0000;\">http://www.capstone-engine.org</span></a></p>")
             .arg(QString::number(CS_VERSION_MAJOR),QString::number(CS_VERSION_MINOR),QString::number(CS_VERSION_EXTRA));
 
-//    _data.sLogoPath=":/images/about.png";
+    _data.sLogoPath=":/images/about.png";
     _data.sUpdatesLink="https://github.com/horsicq/DIE-engine/releases";
 
 #ifndef QT_DEBUG
-    _data.sThanksPath=XOptions::getApplicationDataPath()+QDir::separator()+"images"+QDir::separator()+"thanks";
+    _data.sThanksPath=XOptions().getApplicationDataPath()+QDir::separator()+"images"+QDir::separator()+"thanks";
 #else
-    QDir dir(XOptions::getApplicationDataPath());
+    QDir dir(XOptions().getApplicationDataPath());
 
     dir.cdUp();
     dir.cdUp();
