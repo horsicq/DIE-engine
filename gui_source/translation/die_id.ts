@@ -3658,6 +3658,26 @@
         <translation>Info</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>Hash</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropi</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Titik masuk</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Tajuk</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versi</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>Nama file</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>Hash</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>dikemas</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>tidak dikemas</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>Entropi</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>Jenis file</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Titik masuk</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>Markah</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>Versi</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>Tipe</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Offset</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Ukuran</translation>
+        <source>Method</source>
+        <translation>Metode</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>Komentar</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>Muat ulang</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Simpan</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <source>Text</source>
+        <translation>Teks</translation>
     </message>
     <message>
         <source>Info</source>

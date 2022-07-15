@@ -3658,6 +3658,26 @@
         <translation>Thông tin</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>Băm</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropy</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Điểm nhập</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Tiêu đề</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Phiên bản</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>Tên tệp</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>Băm</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>nén</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>không nén</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>Entropy</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>Loại tập tin</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Điểm nhập</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>Chữ ký</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>Phiên bản</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>Loại</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Khoảng cách</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Kích thước</translation>
+        <source>Method</source>
+        <translation>phương pháp</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>Bình luận</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>Tải lại</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Lưu</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>Tải lại</translation>
+        <source>Text</source>
+        <translation>Chữ</translation>
     </message>
     <message>
         <source>Info</source>

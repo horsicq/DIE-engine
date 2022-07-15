@@ -472,3 +472,4 @@ SOURCES += \
     ../lite_source/litemainwindow.cpp \
     ../lite_source/main_lite.cpp \
     ../nfd_widget/nfd_widget.cpp
+

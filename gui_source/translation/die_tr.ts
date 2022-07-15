@@ -3658,6 +3658,26 @@
         <translation>Bilgi</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>Hash</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropy</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Entry point</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versiyon</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>Dosya adı</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>Hash</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>paketlenmiş</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>paketlenmemiş</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>Entropy</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>Dosya tipi</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Entry point</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>İmza</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>Versiyon</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>Tip</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Ofset</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Boyut</translation>
+        <source>Method</source>
+        <translation>Metod</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>Yorum Yap</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>Tekrar yükle</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Kaydet</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>Tekrar yükle</translation>
+        <source>Text</source>
+        <translation>Metin</translation>
     </message>
     <message>
         <source>Info</source>

@@ -3658,6 +3658,26 @@
         <translation>정보</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>해시</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>엔트로피</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>진입 지점</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>버전</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>파일 이름</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>엔디언</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>해시</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>패킹됨</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>패킹 안됨</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>엔트로피</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>파일 유형</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>진입 지점</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>서명</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>버전</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>유형</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>오프셋</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>크기</translation>
+        <source>Method</source>
+        <translation>방식</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>논평</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>재호출</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>저장</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>재호출</translation>
+        <source>Text</source>
+        <translation>텍스트</translation>
     </message>
     <message>
         <source>Info</source>

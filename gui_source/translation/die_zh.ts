@@ -3658,6 +3658,26 @@
         <translation>信息</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>哈希</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>信息熵</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>入口点</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>版本</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>文件名</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>字节序</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>哈希</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>已加壳</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>未加壳</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>信息熵</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>文件类型</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>入口点</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>签名</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>版本</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>类型</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>偏移</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
+        <source>Method</source>
+        <translation>方法</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>注释</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>重新加载</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>重新加载</translation>
+        <source>Text</source>
+        <translation>文本</translation>
     </message>
     <message>
         <source>Info</source>

@@ -3658,6 +3658,26 @@
         <translation>Informacje</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>Haszysz</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropia</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Punkt wejścia</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Nagłówek</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Wersja</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>Nazwa pliku</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>Kolejność bajtów w strumieniu danych</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>Haszysz</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>upakowany</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>nie upakowany</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>Entropia</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>Typ pliku</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Punkt wejścia</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>Sygnatura</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>Wersja</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>Typ</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Przesunięcie</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Rozmiar</translation>
+        <source>Method</source>
+        <translation>Metoda</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>Komentarz</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>Przeładuj</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Zapisz</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>Przeładuj</translation>
+        <source>Text</source>
+        <translation>Tekst</translation>
     </message>
     <message>
         <source>Info</source>

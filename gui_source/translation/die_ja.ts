@@ -3658,6 +3658,26 @@
         <translation>情報</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>ハッシュ</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>エントロピー</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>エントリ ポイント</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>ヘッダ</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>バージョン</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>ファイル名</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>エンディアン</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>ハッシュ</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>パック済み</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>未パック</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>エントロピー</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>ファイルの種類</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>エントリ ポイント</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>署名</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>バージョン</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>種類</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>オフセット</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>サイズ</translation>
+        <source>Method</source>
+        <translation>方法</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>コメント</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>再読み込み</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>再読み込み</translation>
+        <source>Text</source>
+        <translation>テキスト</translation>
     </message>
     <message>
         <source>Info</source>

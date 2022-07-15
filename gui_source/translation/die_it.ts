@@ -3658,6 +3658,26 @@
         <translation>Informazioni</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>Impronta</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropia</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Punto di ingresso</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Intestazione</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versione</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>Nome file</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>Endianità</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>Impronta</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>imballato</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>non imballato</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>Entropia</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>Tipo di file</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>Firma</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>Versione</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>Tipo</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Offset</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Dimensioni</translation>
+        <source>Method</source>
+        <translation>Metodo</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>Commento</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>Ricarica</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Salva</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>Ricarica</translation>
+        <source>Text</source>
+        <translation>Testo</translation>
     </message>
     <message>
         <source>Info</source>

@@ -2570,7 +2570,7 @@
     </message>
     <message>
         <source>Delay import</source>
-        <translation>Відкласти імпорт</translation>
+        <translation>Відкладений імпорт</translation>
     </message>
     <message>
         <source>Metadata</source>
@@ -3658,6 +3658,26 @@
         <translation>Інфо</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>Хеш</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Ентропія</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Точка входу</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Заголовок</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Версія</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>Ім&apos;я файлу</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>Порядок байтів</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>Хеш</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>запакований</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>незапакований</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>Ентропія</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>Тип файлу</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Точка входу</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>Сигнатура</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>Версія</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>Тип</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Зміщення</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Розмір</translation>
+        <source>Method</source>
+        <translation>Метод</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>Коментар</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>Перевантажити</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Зберегти</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>Перевантажити</translation>
+        <source>Text</source>
+        <translation>Текст</translation>
     </message>
     <message>
         <source>Info</source>

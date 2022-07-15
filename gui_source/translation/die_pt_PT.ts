@@ -4754,186 +4754,198 @@
 <context>
     <name>XFileInfo</name>
     <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="220"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="65"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="225"/>
         <source>Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="222"/>
-        <source>File name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="232"/>
-        <source>Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="246"/>
-        <source>Operation system</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="248"/>
-        <source>Architecture</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="249"/>
-        <source>Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="250"/>
-        <source>Type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="251"/>
-        <source>Endianness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="257"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="66"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="262"/>
         <source>Hash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="67"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="275"/>
-        <source>packed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="275"/>
-        <source>not packed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="278"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="285"/>
         <source>Entropy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="291"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="305"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="370"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="417"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="538"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="561"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="584"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="622"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="645"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="681"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="697"/>
-        <source>File type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="309"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="310"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="311"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="312"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="313"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="314"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="374"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="375"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="376"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="377"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="378"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="379"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="426"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="542"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="543"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="544"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="545"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="546"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="547"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="565"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="566"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="77"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="316"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="317"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="318"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="319"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="320"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="321"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="381"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="382"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="383"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="384"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="385"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="386"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="430"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="567"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="568"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="569"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="570"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="588"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="589"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="571"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="572"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="590"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="591"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="592"/>
         <location filename="../../XFileInfo/xfileinfo.cpp" line="593"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="626"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="627"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="628"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="629"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="630"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="631"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="594"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="595"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="613"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="614"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="615"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="616"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="617"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="618"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="651"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="652"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="653"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="654"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="655"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="656"/>
         <source>Entry point</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="309"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="374"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="429"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="542"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="565"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="588"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="626"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="86"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="113"/>
+        <source>Header</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="122"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="707"/>
+        <source>Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="227"/>
+        <source>File name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="237"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="251"/>
+        <source>Operation system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="253"/>
+        <source>Architecture</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="254"/>
+        <source>Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="255"/>
+        <source>Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="256"/>
+        <source>Endianness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="282"/>
+        <source>packed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="282"/>
+        <source>not packed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="298"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="312"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="377"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="424"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="563"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="586"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="609"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="647"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="670"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="706"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="722"/>
+        <source>File type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="316"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="381"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="432"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="567"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="590"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="613"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="651"/>
         <source>Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="310"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="375"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="430"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="543"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="566"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="589"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="627"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="317"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="382"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="433"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="568"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="591"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="614"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="652"/>
         <source>Offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="311"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="376"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="431"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="544"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="567"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="590"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="628"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="318"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="383"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="434"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="569"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="592"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="615"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="653"/>
         <source>Relative address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="312"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="377"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="432"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="545"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="568"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="591"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="629"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="319"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="384"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="435"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="570"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="593"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="616"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="654"/>
         <source>Bytes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="313"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="314"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="378"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="379"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="433"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="434"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="546"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="547"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="569"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="570"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="592"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="593"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="630"/>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="631"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="320"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="321"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="385"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="386"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="436"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="437"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="571"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="572"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="594"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="595"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="617"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="618"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="655"/>
+        <location filename="../../XFileInfo/xfileinfo.cpp" line="656"/>
         <source>Signature</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfo.cpp" line="682"/>
-        <source>Version</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4951,46 +4963,46 @@
     </message>
     <message>
         <location filename="../../XFileInfo/xfileinfowidget.ui" line="70"/>
-        <source>Offset</source>
+        <source>Method</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfowidget.ui" line="107"/>
-        <source>Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfowidget.ui" line="151"/>
+        <location filename="../../XFileInfo/xfileinfowidget.ui" line="94"/>
         <source>Comment</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfowidget.ui" line="158"/>
-        <source>Save</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../XFileInfo/xfileinfowidget.ui" line="165"/>
+        <location filename="../../XFileInfo/xfileinfowidget.ui" line="117"/>
         <source>Reload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="105"/>
+        <location filename="../../XFileInfo/xfileinfowidget.ui" line="124"/>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="44"/>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="130"/>
         <source>Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="106"/>
+        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="131"/>
         <source>Save file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="106"/>
+        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="131"/>
         <source>Text files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="106"/>
+        <location filename="../../XFileInfo/xfileinfowidget.cpp" line="131"/>
         <source>All files</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5448,17 +5460,17 @@
 <context>
     <name>XOptions</name>
     <message>
-        <location filename="../../XOptions/xoptions.cpp" line="824"/>
+        <location filename="../../XOptions/xoptions.cpp" line="831"/>
         <source>Automatic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XOptions/xoptions.cpp" line="1276"/>
+        <location filename="../../XOptions/xoptions.cpp" line="1283"/>
         <source>Recent files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XOptions/xoptions.cpp" line="1507"/>
+        <location filename="../../XOptions/xoptions.cpp" line="1514"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5567,11 +5579,11 @@
         <location filename="../../Formats/xpe.cpp" line="90"/>
         <location filename="../../Formats/xpe.cpp" line="248"/>
         <location filename="../../Formats/xpe.cpp" line="252"/>
-        <location filename="../../Formats/xpe.cpp" line="11376"/>
-        <location filename="../../Formats/xpe.cpp" line="11507"/>
-        <location filename="../../Formats/xpe.cpp" line="11869"/>
-        <location filename="../../Formats/xpe.cpp" line="11895"/>
-        <location filename="../../Formats/xpe.cpp" line="11922"/>
+        <location filename="../../Formats/xpe.cpp" line="11446"/>
+        <location filename="../../Formats/xpe.cpp" line="11577"/>
+        <location filename="../../Formats/xpe.cpp" line="11939"/>
+        <location filename="../../Formats/xpe.cpp" line="11965"/>
+        <location filename="../../Formats/xpe.cpp" line="11992"/>
         <source>Unknown</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5621,37 +5633,37 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="4652"/>
+        <location filename="../../Formats/xpe.cpp" line="4722"/>
         <source>Cannot open file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="8962"/>
+        <location filename="../../Formats/xpe.cpp" line="9032"/>
         <source>The file is signed and the signature was verified</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="8966"/>
+        <location filename="../../Formats/xpe.cpp" line="9036"/>
         <source>The file is not signed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="8970"/>
+        <location filename="../../Formats/xpe.cpp" line="9040"/>
         <source>The signature is present, but specifically disallowed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="8974"/>
+        <location filename="../../Formats/xpe.cpp" line="9044"/>
         <source>The signature is present, but not trusted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="8978"/>
+        <location filename="../../Formats/xpe.cpp" line="9048"/>
         <source>The signature error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="8982"/>
+        <location filename="../../Formats/xpe.cpp" line="9052"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>

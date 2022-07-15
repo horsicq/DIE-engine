@@ -45,7 +45,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -129,7 +129,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -156,7 +156,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканировние</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -168,7 +168,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
@@ -188,7 +188,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Открыть папку для сканирования</translation>
+        <translation>Открыть папку</translation>
     </message>
 </context>
 <context>
@@ -199,7 +199,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканировние</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -211,11 +211,11 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Каталог</translation>
+        <translation>Папка</translation>
     </message>
     <message>
         <source>Log</source>
@@ -469,7 +469,7 @@
     </message>
     <message>
         <source>Directory</source>
-        <translation>Каталог</translation>
+        <translation>Папка</translation>
     </message>
     <message>
         <source>Subdirectories</source>
@@ -477,7 +477,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканировние</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -489,7 +489,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
@@ -513,7 +513,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Открыть папку для сканирования</translation>
+        <translation>Открыть папку</translation>
     </message>
     <message>
         <source>msec</source>
@@ -752,7 +752,7 @@
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Close</source>
@@ -976,7 +976,7 @@
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Инструмент подписания</translation>
+        <translation>Онлайн-инструменты</translation>
     </message>
 </context>
 <context>
@@ -1018,7 +1018,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Порядок байтов</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1093,7 +1093,7 @@
     </message>
     <message>
         <source>Default</source>
-        <translation>Дефолт</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1178,7 +1178,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1209,7 +1209,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканировние</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1221,7 +1221,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1244,7 +1244,7 @@
     </message>
     <message>
         <source>Directory</source>
-        <translation>Каталог</translation>
+        <translation>Папка</translation>
     </message>
     <message>
         <source>Subdirectories</source>
@@ -1252,7 +1252,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканировние</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1264,7 +1264,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1288,7 +1288,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Открыть папку для сканирования</translation>
+        <translation>Открыть папку</translation>
     </message>
     <message>
         <source>msec</source>
@@ -1511,7 +1511,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -1702,7 +1702,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Порядок байтов</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -1718,7 +1718,7 @@
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Автоматический</translation>
+        <translation>Автоматически</translation>
     </message>
 </context>
 <context>
@@ -1733,7 +1733,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1795,7 +1795,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканировние</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1807,7 +1807,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1896,7 +1896,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -1927,7 +1927,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
@@ -2031,7 +2031,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -2162,7 +2162,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -2247,7 +2247,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -2266,7 +2266,7 @@
     <name>NFD_Widget</name>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканировние</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -2278,11 +2278,11 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Каталог</translation>
+        <translation>Папка</translation>
     </message>
     <message>
         <source>All types</source>
@@ -2337,7 +2337,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -2360,7 +2360,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2494,11 +2494,11 @@
     </message>
     <message>
         <source>Check</source>
-        <translation>Проверять</translation>
+        <translation>Проверить</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2570,7 +2570,7 @@
     </message>
     <message>
         <source>Delay import</source>
-        <translation>Отложить импорт</translation>
+        <translation>Отложенный импорт</translation>
     </message>
     <message>
         <source>Metadata</source>
@@ -2717,7 +2717,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Открыть папку для сканирования</translation>
+        <translation>Открыть папку</translation>
     </message>
 </context>
 <context>
@@ -2728,7 +2728,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Порядок байтов</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>File</source>
@@ -2752,7 +2752,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2803,7 +2803,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -2982,7 +2982,7 @@
     </message>
     <message>
         <source>Import hash</source>
-        <translation>Хэш импорта</translation>
+        <translation>Хеш импорта</translation>
     </message>
     <message>
         <source>Code section</source>
@@ -3043,7 +3043,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканировние</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -3055,7 +3055,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
@@ -3104,7 +3104,7 @@
     </message>
     <message>
         <source>16-bit</source>
-        <translation>16 бит</translation>
+        <translation>16-битный</translation>
     </message>
     <message>
         <source>32-bit</source>
@@ -3152,7 +3152,7 @@
     </message>
     <message>
         <source>Default</source>
-        <translation>Дефолт</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -3172,7 +3172,7 @@
     </message>
     <message>
         <source>TB</source>
-        <translation></translation>
+        <translation>ТБ</translation>
     </message>
     <message>
         <source>Header</source>
@@ -3228,7 +3228,7 @@
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Автоматический</translation>
+        <translation>Автоматически</translation>
     </message>
 </context>
 <context>
@@ -3319,7 +3319,7 @@
     </message>
     <message>
         <source>Invalid opcode</source>
-        <translation>Неверный код операции</translation>
+        <translation>Неверный опкод</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -3379,7 +3379,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -3402,15 +3402,15 @@
     </message>
     <message>
         <source>Uppercase</source>
-        <translation></translation>
+        <translation>Верхний регистр</translation>
     </message>
     <message>
         <source>Address colon</source>
-        <translation>Адрес</translation>
+        <translation>Разделитель в адресе (:)</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation></translation>
+        <translation>Подсветка синтаксиса</translation>
     </message>
     <message>
         <source>Colors</source>
@@ -3507,7 +3507,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Открыть папку для сканирования</translation>
+        <translation>Открыть папку</translation>
     </message>
 </context>
 <context>
@@ -3534,7 +3534,7 @@
     </message>
     <message>
         <source>Array</source>
-        <translation>Множество</translation>
+        <translation>Массив</translation>
     </message>
     <message>
         <source>Variable</source>
@@ -3658,6 +3658,26 @@
         <translation>Инфо</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>Хеш</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Энтропия</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Точка входа</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Заголовок</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Версия</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>Имя файла</translation>
     </message>
@@ -3683,11 +3703,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Порядок байтов</translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>packed</source>
@@ -3698,16 +3714,8 @@
         <translation>несжатый</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>Энтропия</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>Тип файла</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Точка входа</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>Сигнатура</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>Версия</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>Тип</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Смещение</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Размер</translation>
+        <source>Method</source>
+        <translation>Метод</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>Комментарий</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>Обновить</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Сохранить</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>Обновить</translation>
+        <source>Text</source>
+        <translation>Текст</translation>
     </message>
     <message>
         <source>Info</source>
@@ -3809,7 +3813,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Name</source>
@@ -3895,7 +3899,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -3910,7 +3914,7 @@
     </message>
     <message>
         <source>Address colon</source>
-        <translation>Адрес</translation>
+        <translation>Разделитель в адресе (:)</translation>
     </message>
 </context>
 <context>
@@ -4061,7 +4065,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Порядок байтов</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -4122,18 +4126,18 @@
     </message>
     <message>
         <source>Get</source>
-        <translation></translation>
+        <translation>Получить</translation>
     </message>
     <message>
         <source>API key</source>
-        <translation></translation>
+        <translation>API-ключ</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Automatic</source>
-        <translation>Автоматический</translation>
+        <translation>Автоматически</translation>
     </message>
     <message>
         <source>Recent files</source>
@@ -4152,7 +4156,7 @@
     </message>
     <message>
         <source>Single application</source>
-        <translation>Одно приложение</translation>
+        <translation>Запускать только одну копию приложения</translation>
     </message>
     <message>
         <source>Style</source>
@@ -4172,11 +4176,11 @@
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>Сохранить место последнего сканирования</translation>
+        <translation>Поминть папку последнего сканирования</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation>Сохранить резервную копию</translation>
+        <translation>Сохранять резервную копию</translation>
     </message>
     <message>
         <source>Save history</source>
@@ -4184,11 +4188,11 @@
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation>Добавить в контекстное меню</translation>
+        <translation>Добавить программу в контекстное меню</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Дефолт</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <source>OK</source>
@@ -4220,7 +4224,7 @@
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>Пожалуйста перезапустите приложение</translation>
+        <translation>Пожалуйста, перезапустите приложение</translation>
     </message>
 </context>
 <context>
@@ -4239,7 +4243,7 @@
     </message>
     <message>
         <source>Driver</source>
-        <translation>Водитель</translation>
+        <translation>Драйвер</translation>
     </message>
     <message>
         <source>Boot application</source>
@@ -4333,7 +4337,7 @@
     </message>
     <message>
         <source>Struct</source>
-        <translation></translation>
+        <translation>Структура</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -4353,7 +4357,7 @@
     </message>
     <message>
         <source>Register</source>
-        <translation></translation>
+        <translation>Регистр</translation>
     </message>
     <message>
         <source>Stack</source>
@@ -4405,11 +4409,11 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Show in</source>
-        <translation></translation>
+        <translation>Показать в</translation>
     </message>
     <message>
         <source>Breakpoint</source>
@@ -4493,7 +4497,7 @@
     </message>
     <message>
         <source>Attach</source>
-        <translation>Прикреплять</translation>
+        <translation>Прикрепить</translation>
     </message>
     <message>
         <source>Detach</source>
@@ -4593,7 +4597,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Хэш</translation>
+        <translation>Хеш</translation>
     </message>
 </context>
 <context>
@@ -4662,11 +4666,11 @@
     </message>
     <message>
         <source>Rescan</source>
-        <translation></translation>
+        <translation>Пересканировать</translation>
     </message>
     <message>
         <source>Show detects</source>
-        <translation></translation>
+        <translation>Показать обнаружение</translation>
     </message>
     <message>
         <source>Website</source>
@@ -4686,7 +4690,7 @@
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation></translation>
+        <translation>Загрузить файл для анализа?</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -4698,7 +4702,7 @@
     </message>
     <message>
         <source>Date</source>
-        <translation></translation>
+        <translation>Дата</translation>
     </message>
     <message>
         <source>Result</source>
@@ -4706,7 +4710,7 @@
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation></translation>
+        <translation>Пожалуйста, используйте действительный ключ API-ключ</translation>
     </message>
     <message>
         <source>Options</source>
@@ -4714,7 +4718,7 @@
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Инструмент подписания</translation>
+        <translation>Онлайн-инструменты</translation>
     </message>
     <message>
         <source>Error</source>

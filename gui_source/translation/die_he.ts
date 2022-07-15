@@ -3658,6 +3658,26 @@
         <translation>מידע</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>פונקציית גיבוב</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>אנטרופיה</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>כתובת תחילת הריצה</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>כותרת</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>גרסה</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>שם קובץ</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>סוג סיומת</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>פונקציית גיבוב</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>דחוס</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>לא דחוס</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>אנטרופיה</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>סוג קובץ</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>כתובת תחילת הריצה</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>חתימה</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>גרסה</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>סוג</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>היסט</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>גודל</translation>
+        <source>Method</source>
+        <translation>שיטה</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>תגובה</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>טען מחדש</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>שמור</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>טען מחדש</translation>
+        <source>Text</source>
+        <translation>טֶקסט</translation>
     </message>
     <message>
         <source>Info</source>

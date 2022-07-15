@@ -3658,6 +3658,26 @@
         <translation>معلومات</translation>
     </message>
     <message>
+        <source>Hash</source>
+        <translation>تجزئة</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>غير قادر علي</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>نقطة الدخول</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>رأس</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>إصدار</translation>
+    </message>
+    <message>
         <source>File name</source>
         <translation>اسم الملف</translation>
     </message>
@@ -3686,10 +3706,6 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>تجزئة</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>معباه</translation>
     </message>
@@ -3698,16 +3714,8 @@
         <translation>غير معبأ</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>غير قادر علي</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>نوع الملف</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3729,10 +3737,6 @@
         <source>Signature</source>
         <translation>إمضاء</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>إصدار</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -3745,24 +3749,24 @@
         <translation>نوع</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>عوض</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>مقاس</translation>
+        <source>Method</source>
+        <translation>طريقة</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>تعليق</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>إعادة تحميل</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>يحفظ</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>إعادة تحميل</translation>
+        <source>Text</source>
+        <translation>نص</translation>
     </message>
     <message>
         <source>Info</source>
