@@ -21,11 +21,13 @@ TRANSLATIONS = \
 FORMS += \
     ../FormatDialogs/dialogdump.ui \
     ../FormatDialogs/dialogdumpprocess.ui \
+    ../FormatDialogs/dialogeditstring.ui \
     ../FormatDialogs/dialoggotoaddress.ui \
     ../FormatDialogs/dialoghexsignature.ui \
     ../FormatDialogs/dialogsearch.ui \
     ../FormatDialogs/dialogsearchprocess.ui \
     ../FormatDialogs/dialogtextinfo.ui \
+    ../FormatDialogs/xdialogprocess.ui \
     ../FormatWidgets/Binary/binarywidget.ui \
     ../FormatWidgets/Binary/dialogbinary.ui \
     ../FormatWidgets/DEX/dexsectionheaderwidget.ui \
@@ -40,6 +42,7 @@ FORMS += \
     ../FormatWidgets/MACH/dialogmach.ui \
     ../FormatWidgets/MACH/machsectionheaderwidget.ui \
     ../FormatWidgets/MACH/machwidget.ui \
+    ../FormatWidgets/MACHOFAT/dialogmachofat.ui \
     ../FormatWidgets/MACHOFAT/machofatwidget.ui \
     ../FormatWidgets/MSDOS/dialogmsdos.ui \
     ../FormatWidgets/MSDOS/msdoswidget.ui \
@@ -47,6 +50,8 @@ FORMS += \
     ../FormatWidgets/NE/dialogne.ui \
     ../FormatWidgets/NE/nesectionheaderwidget.ui \
     ../FormatWidgets/NE/newidget.ui \
+    ../FormatWidgets/PDF/dialogpdf.ui \
+    ../FormatWidgets/PDF/pdfwidget.ui \
     ../FormatWidgets/PE/dialogpe.ui \
     ../FormatWidgets/PE/pesectionheaderwidget.ui \
     ../FormatWidgets/PE/pewidget.ui \
@@ -67,6 +72,7 @@ FORMS += \
     ../StaticScan/formstaticscan.ui \
     ../StaticScan/heurwidget.ui \
     ../StaticScan/staticscanoptionswidget.ui \
+    ../XAboutWidget/xaboutwidget.ui \
     ../XDemangleWidget/dialogdemangle.ui \
     ../XDemangleWidget/xdemanglewidget.ui \
     ../XDisasm/dialogasmsignature.ui \
@@ -76,9 +82,11 @@ FORMS += \
     ../XDisasm/xdisasmwidget.ui \
     ../XDisasmView/dialogmultidisasm.ui \
     ../XDisasmView/dialogmultidisasmsignature.ui \
+    ../XDisasmView/dialogxdisasmviewcolors.ui \
     ../XDisasmView/xdisasmviewoptionswidget.ui \
     ../XDisasmView/xmultidisasmwidget.ui \
     ../XDynStructsWidget/dialogxdynstructs.ui \
+    ../XDynStructsWidget/xdynstructsoptionswidget.ui \
     ../XDynStructsWidget/xdynstructswidget.ui \
     ../XEntropyWidget/dialogentropy.ui \
     ../XEntropyWidget/dialogentropyprocess.ui \
@@ -89,15 +97,22 @@ FORMS += \
     ../XHashWidget/dialoghash.ui \
     ../XHashWidget/dialoghashprocess.ui \
     ../XHashWidget/xhashwidget.ui \
+    ../XHexEdit/dialoghexedit.ui \
     ../XHexView/dialoghexview.ui \
     ../XHexView/xhexviewoptionswidget.ui \
     ../XHexView/xhexviewwidget.ui \
+    ../XInfoDB/dialogxinfodbtransferprocess.ui \
     ../XMIMEWidget/dialogmime.ui \
     ../XMIMEWidget/xmimewidget.ui \
     ../XMemoryMapWidget/dialogmemorymap.ui \
     ../XMemoryMapWidget/xmemorymapwidget.ui \
+    ../XOnlineTools/dialogxvirustotal.ui \
+    ../XOnlineTools/xonlinetoolsoptionswidget.ui \
+    ../XOnlineTools/xvirustotalwidget.ui \
     ../XOptions/xoptionswidget.ui \
     ../XShortcuts/dialogshortcuts.ui \
+    ../XSymbolsWidget/dialogxsymbols.ui \
+    ../XSymbolsWidget/xsymbolswidget.ui \
     ../archive_widget/archive_widget.ui \
     ../archive_widget/dialogarchive.ui \
     ../archive_widget/dialogcreateviewmodel.ui \
@@ -123,10 +138,12 @@ SOURCES += \
     ../Controls/xabstracttableview.cpp \
     ../Controls/xcomboboxex.cpp \
     ../Controls/xdatetimeeditx.cpp \
+    ../Controls/xdevicetableeditview.cpp \
     ../Controls/xdevicetableview.cpp \
     ../Controls/xhtml.cpp \
     ../Controls/xlineedithex.cpp \
     ../FormatDialogs/dialogdumpprocess.cpp \
+    ../FormatDialogs/dialogeditstring.cpp \
     ../FormatDialogs/dialoggotoaddress.cpp \
     ../FormatDialogs/dialoghexsignature.cpp \
     ../FormatDialogs/dialogsearch.cpp \
@@ -134,6 +151,7 @@ SOURCES += \
     ../FormatDialogs/dialogtextinfo.cpp \
     ../FormatDialogs/dumpprocess.cpp \
     ../FormatDialogs/searchprocess.cpp \
+    ../FormatDialogs/xdialogprocess.cpp \
     ../FormatWidgets/Binary/binary_defs.cpp \
     ../FormatWidgets/Binary/binarywidget.cpp \
     ../FormatWidgets/Binary/dialogbinary.cpp \
@@ -157,6 +175,7 @@ SOURCES += \
     ../FormatWidgets/MACH/machprocessdata.cpp \
     ../FormatWidgets/MACH/machsectionheaderwidget.cpp \
     ../FormatWidgets/MACH/machwidget.cpp \
+    ../FormatWidgets/MACHOFAT/dialogmachofat.cpp \
     ../FormatWidgets/MACHOFAT/machofatwidget.cpp \
     ../FormatWidgets/MSDOS/dialogmsdos.cpp \
     ../FormatWidgets/MSDOS/msdos_defs.cpp \
@@ -168,6 +187,9 @@ SOURCES += \
     ../FormatWidgets/NE/neprocessdata.cpp \
     ../FormatWidgets/NE/nesectionheaderwidget.cpp \
     ../FormatWidgets/NE/newidget.cpp \
+    ../FormatWidgets/PDF/dialogpdf.cpp \
+    ../FormatWidgets/PDF/pdf_defs.cpp \
+    ../FormatWidgets/PDF/pdfwidget.cpp \
     ../FormatWidgets/PE/dialogpe.cpp \
     ../FormatWidgets/PE/pe_defs.cpp \
     ../FormatWidgets/PE/peprocessdata.cpp \
@@ -193,6 +215,7 @@ SOURCES += \
     ../Formats/xcom.cpp \
     ../Formats/xelf.cpp \
     ../Formats/xformats.cpp \
+    ../Formats/xiodevice.cpp \
     ../Formats/xle.cpp \
     ../Formats/xmach.cpp \
     ../Formats/xmsdos.cpp \
@@ -210,6 +233,7 @@ SOURCES += \
     ../StaticScan/staticscanitem.cpp \
     ../StaticScan/staticscanitemmodel.cpp \
     ../StaticScan/staticscanoptionswidget.cpp \
+    ../XAboutWidget/xaboutwidget.cpp \
     ../XArchive/xarchive.cpp \
     ../XArchive/xarchives.cpp \
     ../XArchive/xcab.cpp \
@@ -233,11 +257,13 @@ SOURCES += \
     ../XDisasm/xdisasmwidget.cpp \
     ../XDisasmView/dialogmultidisasm.cpp \
     ../XDisasmView/dialogmultidisasmsignature.cpp \
+    ../XDisasmView/dialogxdisasmviewcolors.cpp \
     ../XDisasmView/xdisasmview.cpp \
     ../XDisasmView/xdisasmviewoptionswidget.cpp \
     ../XDisasmView/xmultidisasmwidget.cpp \
     ../XDynStructsEngine/xdynstructsengine.cpp \
     ../XDynStructsWidget/dialogxdynstructs.cpp \
+    ../XDynStructsWidget/xdynstructsoptionswidget.cpp \
     ../XDynStructsWidget/xdynstructswidget.cpp \
     ../XEntropyWidget/dialogentropy.cpp \
     ../XEntropyWidget/dialogentropyprocess.cpp \
@@ -246,28 +272,37 @@ SOURCES += \
     ../XFileInfo/dialogxfileinfo.cpp \
     ../XFileInfo/dialogxfileinfoprocess.cpp \
     ../XFileInfo/xfileinfo.cpp \
+    ../XFileInfo/xfileinfoitem.cpp \
+    ../XFileInfo/xfileinfomodel.cpp \
     ../XFileInfo/xfileinfowidget.cpp \
     ../XGithub/xgithub.cpp \
     ../XHashWidget/dialoghash.cpp \
     ../XHashWidget/dialoghashprocess.cpp \
     ../XHashWidget/hashprocess.cpp \
     ../XHashWidget/xhashwidget.cpp \
+    ../XHexEdit/dialoghexedit.cpp \
     ../XHexEdit/xhexedit.cpp \
     ../XHexView/dialoghexview.cpp \
     ../XHexView/xhexview.cpp \
     ../XHexView/xhexviewoptionswidget.cpp \
     ../XHexView/xhexviewwidget.cpp \
-    ../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp \
-    ../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp \
-    ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangle.cpp \
-    ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangleNodes.cpp \
+    ../XInfoDB/dialogxinfodbtransferprocess.cpp \
+    ../XInfoDB/xinfodb.cpp \
+    ../XInfoDB/xinfodbtransfer.cpp \
     ../XMIME/xmime.cpp \
     ../XMIMEWidget/dialogmime.cpp \
     ../XMIMEWidget/xmimewidget.cpp \
     ../XMemoryMapWidget/dialogmemorymap.cpp \
     ../XMemoryMapWidget/xmemorymapwidget.cpp \
+    ../XOnlineTools/dialogxvirustotal.cpp \
+    ../XOnlineTools/xonlinetools.cpp \
+    ../XOnlineTools/xonlinetoolsdialogprocess.cpp \
+    ../XOnlineTools/xonlinetoolsoptionswidget.cpp \
+    ../XOnlineTools/xvirustotal.cpp \
+    ../XOnlineTools/xvirustotalwidget.cpp \
     ../XOptions/xoptions.cpp \
     ../XOptions/xoptionswidget.cpp \
+    ../XPDF/xpdf.cpp \
     ../XQwt/3rdparty/qwt/src/qwt.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_abstract_legend.cpp \
     ../XQwt/3rdparty/qwt/src/qwt_abstract_scale.cpp \
@@ -397,6 +432,8 @@ SOURCES += \
     ../XShortcuts/xshortcutstscrollarea.cpp \
     ../XShortcuts/xshortcutswidget.cpp \
     ../XSingleApplication/xsingleapplication.cpp \
+    ../XSymbolsWidget/dialogxsymbols.cpp \
+    ../XSymbolsWidget/xsymbolswidget.cpp \
     ../archive_widget/archive_widget.cpp \
     ../archive_widget/createviewmodelprocess.cpp \
     ../archive_widget/dialogarchive.cpp \
@@ -435,5 +472,3 @@ SOURCES += \
     ../lite_source/litemainwindow.cpp \
     ../lite_source/main_lite.cpp \
     ../nfd_widget/nfd_widget.cpp
-
-
