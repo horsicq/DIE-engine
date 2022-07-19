@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(die VERSION 3.05 LANGUAGES CXX)
+project(die VERSION 3.06 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -36,13 +36,11 @@ add_definitions(-DUSE_ARCHIVE)
 include(${PROJECT_SOURCE_DIR}/../XMIMEWidget/xmimewidget.cmake)
 include(${PROJECT_SOURCE_DIR}/../FormatWidgets/formatwidgets.cmake)
 include(${PROJECT_SOURCE_DIR}/../XSingleApplication/xsingleapplication.cmake)
-include(${PROJECT_SOURCE_DIR}/../XAboutWidget/xaboutwidget.cmake)
 
 set(PROJECT_SOURCES
             ${XMIMEWIDGET_SOURCES}
             ${FORMATWIDGETS_SOURCES}
             ${XSINGLEAPPLICATION_SOURCES}
-            ${XABOUTWIDGET_SOURCES}
             dialogabout.cpp
             dialogabout.ui
             dialogoptions.cpp

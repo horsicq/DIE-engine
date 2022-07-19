@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>轉存</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>映像檔</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>關閉</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>文字</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>編輯</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>檔名</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>深層掃描</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>所有類型</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>掃描</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>退出</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>毫秒</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>打開檔案</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>所有檔案</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>目錄掃描</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>結果</translation>
     </message>
 </context>
 <context>

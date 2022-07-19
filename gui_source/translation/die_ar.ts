@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>أحمق</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>يلغي</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>صورة</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>قريب</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>نص</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>يحرر</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>اسم الملف</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>تفحص بعمق</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>مسح ارشادي</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>كل الانواع</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>مسح</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>مخرج</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>مللي ثانية</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>افتح الملف</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>كل الملفات</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>مسح الدليل</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>نتيجة</translation>
     </message>
 </context>
 <context>

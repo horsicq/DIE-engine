@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>Buang</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Batal</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>Gambar</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Tutup</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>Teks</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>Edit</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>Nama file</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>Semua jenis</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Pindai</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>Keluar</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>mdtk</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>Buka file</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>Semua file</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>Pemindaian Direktori</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>Hasil</translation>
     </message>
 </context>
 <context>

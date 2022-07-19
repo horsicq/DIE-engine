@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>덤프</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>취소</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>이미지</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>닫기</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>텍스트</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>편집</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>파일 이름</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>정밀 검사</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>모든 유형</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>검색</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>끝내기</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>msec</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>파일 열기</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>모든 파일</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>디렉터리 검색</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>결과</translation>
     </message>
 </context>
 <context>

@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>Volcar</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>Imagen</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Cerrar</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>Texto</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>Editar</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>Nombre de archivo</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>Análisis en profundidad</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Escaneo heurístico</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>Todos los tipos</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Escanear</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>Salir</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>mseg</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>Abrir archivo</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>Todos los archivos</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>Escanear directorio</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>Resultado</translation>
     </message>
 </context>
 <context>

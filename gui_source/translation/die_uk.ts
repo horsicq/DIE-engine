@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>Дамп</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Скасувати</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>Малюнок</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Закрити</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>Текст</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>Редагувати</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>Ім&apos;я файлу</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>Глибоке сканування</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Евристичне сканування</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation>Детально</translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>Всі види</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Сканувати</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>Вийти</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>мс</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>Відкрити файл</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>Всі файли</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>Сканування каталогу</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>Результат</translation>
     </message>
 </context>
 <context>

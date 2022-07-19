@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>Kết xuất</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Hủy</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>Hình ảnh</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Đóng</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>Chữ</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>Chỉnh sửa</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>Tên tệp</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>Quét sâu</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>Các loại</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Quét</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>Thoát</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>mili-giây</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>Mở tập tin</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>Tất cả tập tin</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>Quét thư mục</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>Kết quả</translation>
     </message>
 </context>
 <context>

@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>יצא כקובץ הרצה</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>בטל</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>תמונה</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>סגור</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>טֶקסט</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>עריכה</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>שם קובץ</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>סריקה מתקדמת</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>סריקה היוריסטית</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>כל הסוגים</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>סרוק</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>יציאה</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>msec</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>פתח קובץ</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>כל הקבצים</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>סריקת תיקייה</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>תוצאה</translation>
     </message>
 </context>
 <context>

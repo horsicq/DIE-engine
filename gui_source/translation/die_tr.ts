@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>Dump (dök)</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>İptal</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>İmaj</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Kapat</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>Metin</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>Düzenle</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>Dosya adı</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>Derin tarama</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Sezgisel tarama</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>Her türlü</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Tarama</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>Çıkış</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>msec</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>Dosya aç</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>Bütün Dosyalar</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>Klasör tara</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>Sonuç</translation>
     </message>
 </context>
 <context>

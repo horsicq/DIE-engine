@@ -447,7 +447,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Código de operação</translation>
+        <translation>Opcode</translation>
     </message>
 </context>
 <context>
@@ -609,17 +609,6 @@
     <message>
         <source>Ref from</source>
         <translation>Ref de</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
-    </message>
-</context>
-<context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>Dump</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -926,7 +915,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Código de operação</translation>
+        <translation>Opcode</translation>
     </message>
 </context>
 <context>
@@ -1124,17 +1113,6 @@
     </message>
 </context>
 <context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>Texto</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Fechar</translation>
-    </message>
-</context>
-<context>
     <name>DialogSignatures</name>
     <message>
         <source>Signatures</source>
@@ -1158,7 +1136,7 @@
     </message>
     <message>
         <source>Run</source>
-        <translation>Corre</translation>
+        <translation>Executar</translation>
     </message>
     <message>
         <source>Debug</source>
@@ -1420,7 +1398,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
     <message>
         <source>Export</source>
@@ -1654,7 +1632,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
     <message>
         <source>Resources</source>
@@ -1784,7 +1762,7 @@
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
 </context>
 <context>
@@ -1912,49 +1890,6 @@
     </message>
 </context>
 <context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>Nome do arquivo</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>Varredura profunda</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Varredura heurística</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation>Detalhado</translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>Todos os tipos</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Scan</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>Sair</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>mseg</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>Abrir arquivo</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>Todos os arquivos</translation>
-    </message>
-</context>
-<context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
@@ -1977,7 +1912,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Código de operação</translation>
+        <translation>Opcode</translation>
     </message>
     <message>
         <source>Value</source>
@@ -2522,7 +2457,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
     <message>
         <source>Resources</source>
@@ -2562,7 +2497,7 @@
     </message>
     <message>
         <source>Load config</source>
-        <translation>Carregar configuração</translation>
+        <translation>Exibir configuração</translation>
     </message>
     <message>
         <source>Bound import</source>
@@ -2982,7 +2917,7 @@
     </message>
     <message>
         <source>Import hash</source>
-        <translation>Importar hash</translation>
+        <translation>Hash Importação</translation>
     </message>
     <message>
         <source>Code section</source>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>Escanear diretório</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>Resultado</translation>
     </message>
 </context>
 <context>
@@ -3292,7 +3220,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Código de operação</translation>
+        <translation>Opcode</translation>
     </message>
 </context>
 <context>
@@ -3307,7 +3235,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Código de operação</translation>
+        <translation>Opcode</translation>
     </message>
     <message>
         <source>Symbol</source>
@@ -3956,7 +3884,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
     <message>
         <source>Data</source>
@@ -4224,7 +4152,7 @@
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>Por favor reinicie a aplicação</translation>
+        <translation>Por favor, reinicie a aplicação</translation>
     </message>
 </context>
 <context>
@@ -4561,7 +4489,7 @@
     </message>
     <message>
         <source>Run</source>
-        <translation>Corre</translation>
+        <translation>Executar</translation>
     </message>
     <message>
         <source>Pause</source>

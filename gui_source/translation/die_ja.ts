@@ -616,17 +616,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>ダンプ</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -1117,17 +1106,6 @@
     <message>
         <source>Image</source>
         <translation>イメージ</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>閉じる</translation>
-    </message>
-</context>
-<context>
-    <name>DialogShowText</name>
-    <message>
-        <source>Text</source>
-        <translation>テキスト</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1909,49 +1887,6 @@
     <message>
         <source>Edit</source>
         <translation>編集</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation>ファイル名</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>ディープスキャン</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>ヒューリスティック スキャン</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>いろんなタイプ</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>スキャン</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>終了</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>ミリ秒</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation>ファイルを開く</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation>すべてのファイル</translation>
     </message>
 </context>
 <context>
@@ -3026,13 +2961,6 @@
     <message>
         <source>Directory scan</source>
         <translation>ディレクトリのスキャン</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>結果</translation>
     </message>
 </context>
 <context>
