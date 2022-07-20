@@ -40,7 +40,7 @@ class DialogOptions : public QDialog
     Q_OBJECT
 
 public:
-    explicit DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId);
+    explicit DialogOptions(QWidget *pParent,XOptions *pOptions,XOptions::GROUPID groupId);
     ~DialogOptions();
 
 private:
