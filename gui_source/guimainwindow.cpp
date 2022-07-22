@@ -331,7 +331,7 @@ void GuiMainWindow::adjustFile()
 
 void GuiMainWindow::processFile(QString sFileName)
 {
-    ui->lineEditFileName->setText(sFileName);
+    ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
 
     if(sFileName!="")
     {

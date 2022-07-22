@@ -57,7 +57,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
 
         if(bShowFileName)
         {
-            printf("%s:\n",sFileName.toUtf8().data());
+            printf("%s:\n",QDir().toNativeSeparators(sFileName).toUtf8().data());
         }
 
         if(pScanOptions->bShowEntropy)

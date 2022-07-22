@@ -53,7 +53,7 @@ void LiteMainWindow::processFile(QString sFileName)
 {
     ui->plainTextEditResult->clear();
 
-    ui->lineEditFileName->setText(sFileName);
+    ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
 
     if(sFileName!="")
     {
