@@ -130,7 +130,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
             }
 
             printf("%s",sResult.toUtf8().data());
-
+            printf("\n");
         }
         else
         {
@@ -167,6 +167,7 @@ void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,
             {
                 printf("%s",DiE_Script::getErrorsString(&scanResult).toUtf8().data());
             }
+            printf("\n");
         }
     }
 }
