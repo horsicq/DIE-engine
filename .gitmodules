@@ -130,3 +130,6 @@
 [submodule "XAboutWidget"]
 	path = XAboutWidget
 	url = https://github.com/horsicq/XAboutWidget
+[submodule "hex_templates"]
+	path = hex_templates
+	url = https://github.com/horsicq/hex_templates
