@@ -209,7 +209,7 @@ void GuiMainWindow::on_pushButtonShortcuts_clicked()
 
 void GuiMainWindow::on_toolButtonRecentFiles_clicked()
 {
-    QMenu *pMenu=g_xOptions.createRecentFilesMenu(this);
+    QMenu *pMenu=g_xOptions.createRecentFilesMenu(this); // TODO move to constructor
 
     pMenu->exec(QCursor::pos());
 
