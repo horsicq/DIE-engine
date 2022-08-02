@@ -72,6 +72,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 
     connect(&g_xOptions,SIGNAL(openFile(QString)),this,SLOT(processFile(QString)));
 
+    g_pRecentFilesMenu=g_xOptions.createRecentFilesMenu(this);
+
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
 
     adjust();
@@ -209,9 +211,7 @@ void GuiMainWindow::on_pushButtonShortcuts_clicked()
 
 void GuiMainWindow::on_toolButtonRecentFiles_clicked()
 {
-    QMenu *pMenu=g_xOptions.createRecentFilesMenu(this); // TODO move to constructor
-
-    pMenu->exec(QCursor::pos());
+    g_pRecentFilesMenu->exec(QCursor::pos());
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
 }

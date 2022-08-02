@@ -66,5 +66,6 @@ private:
     Ui::GuiMainWindow *ui;
     XOptions g_xOptions;
     XShortcuts g_xShortcuts;
+    QMenu *g_pRecentFilesMenu;
 };
 #endif // GUIMAINWINDOW_H
