@@ -29,7 +29,7 @@
 #include "xoptions.h"
 #include "xfileinfo.h"
 
-void ScanFiles(QList<QString> *pListArgs,DiE_Script::SCAN_OPTIONS *pScanOptions,DiE_Script *pDieScript)
+void ScanFiles(QList<QString> *pListArgs,DiE_Script::OPTIONS *pScanOptions,DiE_Script *pDieScript)
 {
     QList<QString> listFileNames;
 
@@ -227,7 +227,7 @@ int main(int argc,char *argv[])
 
     QList<QString> listArgs=parser.positionalArguments();
 
-    DiE_Script::SCAN_OPTIONS scanOptions={0};
+    DiE_Script::OPTIONS scanOptions={0};
 
     scanOptions.bShowType=true;
     scanOptions.bShowOptions=true;
