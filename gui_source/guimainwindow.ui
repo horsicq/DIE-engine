@@ -36,7 +36,7 @@
        <item>
         <widget class="QToolButton" name="toolButtonRecentFiles">
          <property name="text">
-          <string>&gt;</string>
+          <string notr="true">&gt;</string>
          </property>
         </widget>
        </item>
