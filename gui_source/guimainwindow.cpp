@@ -66,6 +66,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     g_xShortcuts.addGroup(XShortcuts::GROUPID_HEX);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_DISASM);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_ARCHIVE);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_SCAN);
     g_xShortcuts.load();
 
     ui->widgetFormats->setGlobal(&g_xShortcuts,&g_xOptions);
