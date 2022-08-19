@@ -22,3 +22,4 @@ cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_PREFIX/li
 cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_PREFIX/lib/die/signatures/
 cp -Rf $X_SOURCE_PATH/Detect-It-Easy/info/                          $X_PREFIX/lib/die/
 cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/                            $X_PREFIX/lib/die/
+cp -Rf $X_SOURCE_PATH/images/                                       $X_PREFIX/lib/die/
