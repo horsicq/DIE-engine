@@ -22,6 +22,7 @@ FORMS += \
     $$PWD/../FormatDialogs/dialogdump.ui \
     $$PWD/../FormatDialogs/dialogdumpprocess.ui \
     $$PWD/../FormatDialogs/dialogeditstring.ui \
+    $$PWD/../FormatDialogs/dialogfindtext.ui \
     $$PWD/../FormatDialogs/dialoggotoaddress.ui \
     $$PWD/../FormatDialogs/dialoghexsignature.ui \
     $$PWD/../FormatDialogs/dialogsearch.ui \
@@ -144,6 +145,7 @@ SOURCES += \
     $$PWD/../Controls/xlineedithex.cpp \
     $$PWD/../FormatDialogs/dialogdumpprocess.cpp \
     $$PWD/../FormatDialogs/dialogeditstring.cpp \
+    $$PWD/../FormatDialogs/dialogfindtext.cpp \
     $$PWD/../FormatDialogs/dialoggotoaddress.cpp \
     $$PWD/../FormatDialogs/dialoghexsignature.cpp \
     $$PWD/../FormatDialogs/dialogsearch.cpp \
@@ -456,6 +458,7 @@ SOURCES += \
     $$PWD/../die_script/msdos_script.cpp \
     $$PWD/../die_script/ne_script.cpp \
     $$PWD/../die_script/pe_script.cpp \
+    $$PWD/../die_script/xscriptengine.cpp \
     $$PWD/../die_widget/dialogdiescandirectory.cpp \
     $$PWD/../die_widget/dialogdiescanprocess.cpp \
     $$PWD/../die_widget/dialogelapsed.cpp \
