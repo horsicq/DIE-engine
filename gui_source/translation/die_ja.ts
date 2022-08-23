@@ -79,8 +79,48 @@
         <translation>再読み込み</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Disasm</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>文字列</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>メモリ マップ</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>エントロピー</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>ヒューリスティック スキャン</translation>
+    </message>
+    <message>
         <source>Readonly</source>
         <translation>読み取り専用</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>情報</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>16 進数</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>ハッシュ</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>署名</translation>
     </message>
 </context>
 <context>
@@ -185,6 +225,14 @@
     <message>
         <source>Info</source>
         <translation>情報</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>編集</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation>フォント</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -695,6 +743,25 @@
     </message>
 </context>
 <context>
+    <name>DialogFindText</name>
+    <message>
+        <source>Find</source>
+        <translation>検索</translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation>大文字小文字を区別</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+</context>
+<context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
@@ -1127,12 +1194,16 @@
         <translation>読み取り専用</translation>
     </message>
     <message>
-        <source>Show type</source>
-        <translation>種類を表示</translation>
+        <source>Deep scan</source>
+        <translation>ディープスキャン</translation>
     </message>
     <message>
-        <source>Show version</source>
-        <translation>バージョンを表示</translation>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>ヒューリスティック スキャン</translation>
     </message>
     <message>
         <source>Run</source>
@@ -1143,20 +1214,28 @@
         <translation>デバッグ</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>検索</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>種類を表示</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>オプションを表示</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>ディープスキャン</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>ヒューリスティック スキャン</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <source>Show version</source>
+        <translation>バージョンを表示</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1345,12 +1424,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
-    </message>
-    <message>
         <source>OK</source>
         <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Text</source>
@@ -1623,6 +1702,30 @@
         <translation>メモリ マップ</translation>
     </message>
     <message>
+        <source>File info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>ハッシュ</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>文字列</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>署名</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>16 進数</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>エントロピー</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>オーバーレイ</translation>
     </message>
@@ -1706,30 +1809,6 @@
         <translation>ファイル名</translation>
     </message>
     <message>
-        <source>File info</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>ハッシュ</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>文字列</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>エントロピー</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>16 進数</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>署名</translation>
-    </message>
-    <message>
         <source>Demangle</source>
         <translation>デマングル</translation>
     </message>
@@ -1768,8 +1847,8 @@
 <context>
     <name>HeurWidget</name>
     <message>
-        <source>Scan</source>
-        <translation>スキャン</translation>
+        <source>Type</source>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -1796,16 +1875,16 @@
         <translation>保存</translation>
     </message>
     <message>
+        <source>Scan</source>
+        <translation>スキャン</translation>
+    </message>
+    <message>
         <source>Heuristic</source>
         <translation>ヒューリスティック</translation>
     </message>
     <message>
         <source>Result</source>
         <translation>結果</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>種類</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2713,20 +2792,24 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Filter</source>
-        <translation>フィルター</translation>
-    </message>
-    <message>
         <source>C Strings</source>
         <translation>文字列</translation>
     </message>
     <message>
-        <source>Save</source>
-        <translation>保存</translation>
+        <source>Links</source>
+        <translation></translation>
     </message>
     <message>
         <source>Search</source>
         <translation>検索</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>フィルター</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -3075,6 +3158,10 @@
         <translation>最大</translation>
     </message>
     <message>
+        <source>Invalid signature</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>書き込みエラー</translation>
     </message>
@@ -3087,16 +3174,32 @@
         <translation>バイト</translation>
     </message>
     <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>kB</source>
         <translation>kB</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>MB</source>
         <translation>MB</translation>
     </message>
     <message>
+        <source>GiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>TB</source>
@@ -3333,8 +3436,8 @@
         <translation></translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>アドレス</translation>
+        <source>Show colons in addresses</source>
+        <translation></translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -3602,10 +3705,6 @@
         <translation>ヘッダ</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>バージョン</translation>
-    </message>
-    <message>
         <source>File name</source>
         <translation>ファイル名</translation>
     </message>
@@ -3841,8 +3940,12 @@
         <translation>フォント</translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>アドレス</translation>
+        <source>Show colons in addresses</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Blinking cursor</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3854,6 +3957,34 @@
     <message>
         <source>Hex</source>
         <translation>16 進数</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>読み取り専用</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名前</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>値</translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation>カーソル</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>選択</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>サイズ</translation>
     </message>
 </context>
 <context>
@@ -4038,6 +4169,10 @@
         <source>Symbols</source>
         <translation>シンボル</translation>
     </message>
+    <message>
+        <source>Readonly</source>
+        <translation>読み取り専用</translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
@@ -4069,6 +4204,10 @@
     </message>
     <message>
         <source>Recent files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Code pages</source>
         <translation></translation>
     </message>
     <message>
@@ -4280,6 +4419,14 @@
         <translation>デバッグ</translation>
     </message>
     <message>
+        <source>Trace</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Debugger</source>
         <translation>デバッガ</translation>
     </message>
@@ -4358,6 +4505,14 @@
     <message>
         <source>Value</source>
         <translation>値</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>スキャン</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>編集</translation>
     </message>
     <message>
         <source>Show</source>
@@ -4514,10 +4669,6 @@
     <message>
         <source>Toggle</source>
         <translation>トグル</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>スキャン</translation>
     </message>
     <message>
         <source>Entropy</source>

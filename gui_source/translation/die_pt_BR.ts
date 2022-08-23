@@ -79,8 +79,48 @@
         <translation>Recarregar</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Disassemblar</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Strings</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Mapa de memória</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropia</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Varredura heurística</translation>
+    </message>
+    <message>
         <source>Readonly</source>
         <translation>Somente leitura</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Salvar</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Hash</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Assinaturas</translation>
     </message>
 </context>
 <context>
@@ -185,6 +225,14 @@
     <message>
         <source>Info</source>
         <translation>Info</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>Editor</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation>Fonte</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -695,6 +743,25 @@
     </message>
 </context>
 <context>
+    <name>DialogFindText</name>
+    <message>
+        <source>Find</source>
+        <translation>Encontrar</translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation>Match case</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+</context>
+<context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
@@ -1127,12 +1194,16 @@
         <translation>Somente leitura</translation>
     </message>
     <message>
-        <source>Show type</source>
-        <translation>Mostrar tipo</translation>
+        <source>Deep scan</source>
+        <translation>Varredura profunda</translation>
     </message>
     <message>
-        <source>Show version</source>
-        <translation>Mostrar versão</translation>
+        <source>Verbose</source>
+        <translation>Detalhado</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Varredura heurística</translation>
     </message>
     <message>
         <source>Run</source>
@@ -1143,20 +1214,28 @@
         <translation>Depurar</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>Encontrar</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Próximo</translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation>Detectar</translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>Mostrar tipo</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>Mostrar opções</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Varredura profunda</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Varredura heurística</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation>Detalhado</translation>
+        <source>Show version</source>
+        <translation>Mostrar versão</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1345,12 +1424,12 @@
         <translation>Cores</translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
-    </message>
-    <message>
         <source>OK</source>
         <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Text</source>
@@ -1623,6 +1702,30 @@
         <translation>Mapa de memória</translation>
     </message>
     <message>
+        <source>File info</source>
+        <translation>Informações de Arquivo</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Hash</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Strings</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Assinaturas</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropia</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Overlay</translation>
     </message>
@@ -1706,30 +1809,6 @@
         <translation>Nome do arquivo</translation>
     </message>
     <message>
-        <source>File info</source>
-        <translation>Informações de Arquivo</translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>Hash</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>Strings</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>Entropia</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>Hex</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>Assinaturas</translation>
-    </message>
-    <message>
         <source>Demangle</source>
         <translation>Demangle</translation>
     </message>
@@ -1768,8 +1847,8 @@
 <context>
     <name>HeurWidget</name>
     <message>
-        <source>Scan</source>
-        <translation>Scan</translation>
+        <source>Type</source>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -1796,16 +1875,16 @@
         <translation>Salvar</translation>
     </message>
     <message>
+        <source>Scan</source>
+        <translation>Scan</translation>
+    </message>
+    <message>
         <source>Heuristic</source>
         <translation>Heurística</translation>
     </message>
     <message>
         <source>Result</source>
         <translation>Resultado</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Tipo</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2713,20 +2792,24 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Filter</source>
-        <translation>Filtro</translation>
-    </message>
-    <message>
         <source>C Strings</source>
         <translation>C Strings</translation>
     </message>
     <message>
-        <source>Save</source>
-        <translation>Salvar</translation>
+        <source>Links</source>
+        <translation>Links</translation>
     </message>
     <message>
         <source>Search</source>
         <translation>Procurar</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>Filtro</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Salvar</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -3075,6 +3158,10 @@
         <translation>Máximo</translation>
     </message>
     <message>
+        <source>Invalid signature</source>
+        <translation>Assinatura Inválida</translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>Erro de escrita</translation>
     </message>
@@ -3087,16 +3174,32 @@
         <translation>Bytes</translation>
     </message>
     <message>
+        <source>KiB</source>
+        <translation>KiB</translation>
+    </message>
+    <message>
         <source>kB</source>
         <translation>kB</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>MiB</translation>
     </message>
     <message>
         <source>MB</source>
         <translation>MB</translation>
     </message>
     <message>
+        <source>GiB</source>
+        <translation>GiB</translation>
+    </message>
+    <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation>TiB</translation>
     </message>
     <message>
         <source>TB</source>
@@ -3333,7 +3436,7 @@
         <translation>Uppercase</translation>
     </message>
     <message>
-        <source>Address colon</source>
+        <source>Show colons in addresses</source>
         <translation>Coluna de endereço</translation>
     </message>
     <message>
@@ -3602,10 +3705,6 @@
         <translation>Header</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>Versão</translation>
-    </message>
-    <message>
         <source>File name</source>
         <translation>Nome do arquivo</translation>
     </message>
@@ -3841,8 +3940,12 @@
         <translation>Fonte</translation>
     </message>
     <message>
-        <source>Address colon</source>
+        <source>Show colons in addresses</source>
         <translation>Coluna de endereço</translation>
+    </message>
+    <message>
+        <source>Blinking cursor</source>
+        <translation>Cursor Piscando</translation>
     </message>
 </context>
 <context>
@@ -3854,6 +3957,34 @@
     <message>
         <source>Hex</source>
         <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>Inspetor de Dados</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Somente leitura</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nome</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Valor</translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation>Cursor</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>Seleção</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Tamanho</translation>
     </message>
 </context>
 <context>
@@ -4038,6 +4169,10 @@
         <source>Symbols</source>
         <translation>Símbolos</translation>
     </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Somente leitura</translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
@@ -4070,6 +4205,10 @@
     <message>
         <source>Recent files</source>
         <translation>Arquivos recentes</translation>
+    </message>
+    <message>
+        <source>Code pages</source>
+        <translation>Code pages</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -4280,6 +4419,14 @@
         <translation>Depurar</translation>
     </message>
     <message>
+        <source>Trace</source>
+        <translation>Rastro</translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation>Animar</translation>
+    </message>
+    <message>
         <source>Debugger</source>
         <translation>Depurador</translation>
     </message>
@@ -4358,6 +4505,14 @@
     <message>
         <source>Value</source>
         <translation>Valor</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Scan</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>Editor</translation>
     </message>
     <message>
         <source>Show</source>
@@ -4514,10 +4669,6 @@
     <message>
         <source>Toggle</source>
         <translation>Alternancia</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Scan</translation>
     </message>
     <message>
         <source>Entropy</source>

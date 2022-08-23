@@ -79,8 +79,48 @@
         <translation>Przeładuj</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Disazm</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Smyczki</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Mapa pamięci</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropia</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Skanowanie heurystyczne</translation>
+    </message>
+    <message>
         <source>Readonly</source>
         <translation>Tylko czytać</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Zapisz</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Informacje</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Klątwa</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Haszysz</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Sygnatury</translation>
     </message>
 </context>
 <context>
@@ -185,6 +225,14 @@
     <message>
         <source>Info</source>
         <translation>Informacje</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>Edytuj</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation>Czcionka</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -695,6 +743,25 @@
     </message>
 </context>
 <context>
+    <name>DialogFindText</name>
+    <message>
+        <source>Find</source>
+        <translation>Odnaleźć</translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation>Uwzględniaj wielkość liter</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anuluj</translation>
+    </message>
+</context>
+<context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
@@ -1127,12 +1194,16 @@
         <translation>Tylko czytać</translation>
     </message>
     <message>
-        <source>Show type</source>
-        <translation>Pokaż typ</translation>
+        <source>Deep scan</source>
+        <translation>Głębokie skanowanie</translation>
     </message>
     <message>
-        <source>Show version</source>
-        <translation>Pokaż wersję</translation>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Skanowanie heurystyczne</translation>
     </message>
     <message>
         <source>Run</source>
@@ -1143,20 +1214,28 @@
         <translation>Odpluskwić</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>Odnaleźć</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>Pokaż typ</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>Pokaż opcje</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Głębokie skanowanie</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Skanowanie heurystyczne</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <source>Show version</source>
+        <translation>Pokaż wersję</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1345,12 +1424,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation>Anuluj</translation>
-    </message>
-    <message>
         <source>OK</source>
         <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <source>Text</source>
@@ -1623,6 +1702,30 @@
         <translation>Mapa pamięci</translation>
     </message>
     <message>
+        <source>File info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Haszysz</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Smyczki</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Sygnatury</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Klątwa</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropia</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Nakładka</translation>
     </message>
@@ -1706,30 +1809,6 @@
         <translation>Nazwa pliku</translation>
     </message>
     <message>
-        <source>File info</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>Haszysz</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>Smyczki</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>Entropia</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>Klątwa</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>Sygnatury</translation>
-    </message>
-    <message>
         <source>Demangle</source>
         <translation>Demaglanie</translation>
     </message>
@@ -1768,8 +1847,8 @@
 <context>
     <name>HeurWidget</name>
     <message>
-        <source>Scan</source>
-        <translation>Skanuj</translation>
+        <source>Type</source>
+        <translation>Typ</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -1796,16 +1875,16 @@
         <translation>Zapisz</translation>
     </message>
     <message>
+        <source>Scan</source>
+        <translation>Skanuj</translation>
+    </message>
+    <message>
         <source>Heuristic</source>
         <translation>Heurystyczny</translation>
     </message>
     <message>
         <source>Result</source>
         <translation>Wynik</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Typ</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2713,20 +2792,24 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Filter</source>
-        <translation>Filtr</translation>
-    </message>
-    <message>
         <source>C Strings</source>
         <translation>Smyczki</translation>
     </message>
     <message>
-        <source>Save</source>
-        <translation>Zapisz</translation>
+        <source>Links</source>
+        <translation></translation>
     </message>
     <message>
         <source>Search</source>
         <translation>Znajdź</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>Filtr</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -3075,6 +3158,10 @@
         <translation>Maksymalny</translation>
     </message>
     <message>
+        <source>Invalid signature</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>Napisz błąd</translation>
     </message>
@@ -3087,16 +3174,32 @@
         <translation>Bajty</translation>
     </message>
     <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>kB</source>
         <translation>kB</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>MB</source>
         <translation>MB</translation>
     </message>
     <message>
+        <source>GiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>TB</source>
@@ -3333,8 +3436,8 @@
         <translation></translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>Adres</translation>
+        <source>Show colons in addresses</source>
+        <translation></translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -3602,10 +3705,6 @@
         <translation>Nagłówek</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>Wersja</translation>
-    </message>
-    <message>
         <source>File name</source>
         <translation>Nazwa pliku</translation>
     </message>
@@ -3841,8 +3940,12 @@
         <translation>Czcionka</translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>Adres</translation>
+        <source>Show colons in addresses</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Blinking cursor</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3854,6 +3957,34 @@
     <message>
         <source>Hex</source>
         <translation>Klątwa</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Tylko czytać</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nazwa</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Wartość</translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation>Kursor</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>Wybór</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Rozmiar</translation>
     </message>
 </context>
 <context>
@@ -4038,6 +4169,10 @@
         <source>Symbols</source>
         <translation>Symbolika</translation>
     </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Tylko czytać</translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
@@ -4069,6 +4204,10 @@
     </message>
     <message>
         <source>Recent files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Code pages</source>
         <translation></translation>
     </message>
     <message>
@@ -4280,6 +4419,14 @@
         <translation>Odpluskwić</translation>
     </message>
     <message>
+        <source>Trace</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Debugger</source>
         <translation>Debuger</translation>
     </message>
@@ -4358,6 +4505,14 @@
     <message>
         <source>Value</source>
         <translation>Wartość</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Skanuj</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>Edytuj</translation>
     </message>
     <message>
         <source>Show</source>
@@ -4514,10 +4669,6 @@
     <message>
         <source>Toggle</source>
         <translation>Przełącznik</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Skanuj</translation>
     </message>
     <message>
         <source>Entropy</source>

@@ -79,8 +79,48 @@
         <translation>재호출</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Disasm</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>문자열</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>메모리 맵</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>엔트로피</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>휴리스틱 검색</translation>
+    </message>
+    <message>
         <source>Readonly</source>
         <translation>읽기 전용</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>마녀</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>해시</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>서명</translation>
     </message>
 </context>
 <context>
@@ -185,6 +225,14 @@
     <message>
         <source>Info</source>
         <translation>정보</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>편집</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation>폰트</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -695,6 +743,25 @@
     </message>
 </context>
 <context>
+    <name>DialogFindText</name>
+    <message>
+        <source>Find</source>
+        <translation>찾기</translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation>대소 문자 구분</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+</context>
+<context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
@@ -1127,12 +1194,16 @@
         <translation>읽기 전용</translation>
     </message>
     <message>
-        <source>Show type</source>
-        <translation>유형 표시</translation>
+        <source>Deep scan</source>
+        <translation>정밀 검사</translation>
     </message>
     <message>
-        <source>Show version</source>
-        <translation>버전 표시</translation>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>휴리스틱 검색</translation>
     </message>
     <message>
         <source>Run</source>
@@ -1143,20 +1214,28 @@
         <translation>디버그</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>찾기</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>유형 표시</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>옵션 표시</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>정밀 검사</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <source>Show version</source>
+        <translation>버전 표시</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1345,12 +1424,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation>취소</translation>
-    </message>
-    <message>
         <source>OK</source>
         <translation>확인</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
     </message>
     <message>
         <source>Text</source>
@@ -1623,6 +1702,30 @@
         <translation>메모리 맵</translation>
     </message>
     <message>
+        <source>File info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>해시</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>문자열</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>서명</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>마녀</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>엔트로피</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>오버레이</translation>
     </message>
@@ -1706,30 +1809,6 @@
         <translation>파일 이름</translation>
     </message>
     <message>
-        <source>File info</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>해시</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>문자열</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>엔트로피</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>마녀</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>서명</translation>
-    </message>
-    <message>
         <source>Demangle</source>
         <translation>디망글</translation>
     </message>
@@ -1768,8 +1847,8 @@
 <context>
     <name>HeurWidget</name>
     <message>
-        <source>Scan</source>
-        <translation>검색</translation>
+        <source>Type</source>
+        <translation>유형</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -1796,16 +1875,16 @@
         <translation>저장</translation>
     </message>
     <message>
+        <source>Scan</source>
+        <translation>검색</translation>
+    </message>
+    <message>
         <source>Heuristic</source>
         <translation>휴리스틱</translation>
     </message>
     <message>
         <source>Result</source>
         <translation>결과</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>유형</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2713,20 +2792,24 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Filter</source>
-        <translation>필터</translation>
-    </message>
-    <message>
         <source>C Strings</source>
         <translation>문자열</translation>
     </message>
     <message>
-        <source>Save</source>
-        <translation>저장</translation>
+        <source>Links</source>
+        <translation></translation>
     </message>
     <message>
         <source>Search</source>
         <translation>검색</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>필터</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -3075,6 +3158,10 @@
         <translation>최대</translation>
     </message>
     <message>
+        <source>Invalid signature</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>쓰기 오류</translation>
     </message>
@@ -3087,16 +3174,32 @@
         <translation>Bytes</translation>
     </message>
     <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>kB</source>
         <translation>KB</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>MB</source>
         <translation>메가바이트</translation>
     </message>
     <message>
+        <source>GiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>TB</source>
@@ -3333,8 +3436,8 @@
         <translation></translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>주소</translation>
+        <source>Show colons in addresses</source>
+        <translation></translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -3602,10 +3705,6 @@
         <translation>헤더</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>버전</translation>
-    </message>
-    <message>
         <source>File name</source>
         <translation>파일 이름</translation>
     </message>
@@ -3841,8 +3940,12 @@
         <translation>폰트</translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>주소</translation>
+        <source>Show colons in addresses</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Blinking cursor</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3854,6 +3957,34 @@
     <message>
         <source>Hex</source>
         <translation>마녀</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>읽기 전용</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>값</translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation>커서</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>선택</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
     </message>
 </context>
 <context>
@@ -4038,6 +4169,10 @@
         <source>Symbols</source>
         <translation>기호</translation>
     </message>
+    <message>
+        <source>Readonly</source>
+        <translation>읽기 전용</translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
@@ -4069,6 +4204,10 @@
     </message>
     <message>
         <source>Recent files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Code pages</source>
         <translation></translation>
     </message>
     <message>
@@ -4280,6 +4419,14 @@
         <translation>디버그</translation>
     </message>
     <message>
+        <source>Trace</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Debugger</source>
         <translation>디버거</translation>
     </message>
@@ -4358,6 +4505,14 @@
     <message>
         <source>Value</source>
         <translation>값</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>편집</translation>
     </message>
     <message>
         <source>Show</source>
@@ -4514,10 +4669,6 @@
     <message>
         <source>Toggle</source>
         <translation>비녀장</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>검색</translation>
     </message>
     <message>
         <source>Entropy</source>

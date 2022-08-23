@@ -79,8 +79,48 @@
         <translation>Обновить</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Дизассемблировать</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Строки</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Карта памяти</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Энтропия</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Эвристическое сканирование</translation>
+    </message>
+    <message>
         <source>Readonly</source>
         <translation>Только чтение</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Хеш</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатуры</translation>
     </message>
 </context>
 <context>
@@ -185,6 +225,14 @@
     <message>
         <source>Info</source>
         <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>Редактор</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation>Шрифт</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -695,6 +743,25 @@
     </message>
 </context>
 <context>
+    <name>DialogFindText</name>
+    <message>
+        <source>Find</source>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation>Учитывать регистр</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+</context>
+<context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
@@ -1127,12 +1194,16 @@
         <translation>Только чтение</translation>
     </message>
     <message>
-        <source>Show type</source>
-        <translation>Показать тип</translation>
+        <source>Deep scan</source>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
-        <source>Show version</source>
-        <translation>Показать версию</translation>
+        <source>Verbose</source>
+        <translation>Подробно</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Run</source>
@@ -1143,20 +1214,28 @@
         <translation>Отладка</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Далее</translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation>Детект</translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>Показать тип</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>Показать настройки</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Глубокий анализ</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation>Подробно</translation>
+        <source>Show version</source>
+        <translation>Показать версию</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1345,12 +1424,12 @@
         <translation>Цвета</translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation>Отмена</translation>
-    </message>
-    <message>
         <source>OK</source>
         <translation>ОК</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
     </message>
     <message>
         <source>Text</source>
@@ -1623,6 +1702,30 @@
         <translation>Карта памяти</translation>
     </message>
     <message>
+        <source>File info</source>
+        <translation>Информация о файле</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Хеш</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Строки</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатуры</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Энтропия</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Оверлей</translation>
     </message>
@@ -1706,30 +1809,6 @@
         <translation>Имя файла</translation>
     </message>
     <message>
-        <source>File info</source>
-        <translation>Информация о файле</translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>Хеш</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>Строки</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>Энтропия</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>Hex</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>Сигнатуры</translation>
-    </message>
-    <message>
         <source>Demangle</source>
         <translation>Demangle</translation>
     </message>
@@ -1768,8 +1847,8 @@
 <context>
     <name>HeurWidget</name>
     <message>
-        <source>Scan</source>
-        <translation>Сканировать</translation>
+        <source>Type</source>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -1796,16 +1875,16 @@
         <translation>Сохранить</translation>
     </message>
     <message>
+        <source>Scan</source>
+        <translation>Сканировать</translation>
+    </message>
+    <message>
         <source>Heuristic</source>
         <translation>Эвристика</translation>
     </message>
     <message>
         <source>Result</source>
         <translation>Результат</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Тип</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2713,20 +2792,24 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Filter</source>
-        <translation>Фильтр</translation>
-    </message>
-    <message>
         <source>C Strings</source>
         <translation>C строки</translation>
     </message>
     <message>
-        <source>Save</source>
-        <translation>Сохранить</translation>
+        <source>Links</source>
+        <translation>Линки</translation>
     </message>
     <message>
         <source>Search</source>
         <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>Фильтр</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -3075,6 +3158,10 @@
         <translation>Максимум</translation>
     </message>
     <message>
+        <source>Invalid signature</source>
+        <translation>Неправильная сигнатура</translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>Ошибка записи</translation>
     </message>
@@ -3087,16 +3174,32 @@
         <translation>Байты</translation>
     </message>
     <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>kB</source>
         <translation>кБ</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>MB</source>
         <translation>МБ</translation>
     </message>
     <message>
+        <source>GiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>GB</source>
         <translation>ГБ</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>TB</source>
@@ -3333,8 +3436,8 @@
         <translation>Верхний регистр</translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>Разделитель в адресе (:)</translation>
+        <source>Show colons in addresses</source>
+        <translation>Разделитель в адресе</translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -3602,10 +3705,6 @@
         <translation>Заголовок</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>Версия</translation>
-    </message>
-    <message>
         <source>File name</source>
         <translation>Имя файла</translation>
     </message>
@@ -3841,8 +3940,12 @@
         <translation>Шрифт</translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>Разделитель в адресе (:)</translation>
+        <source>Show colons in addresses</source>
+        <translation>Разделитель в адресе</translation>
+    </message>
+    <message>
+        <source>Blinking cursor</source>
+        <translation>Мигающий курсор</translation>
     </message>
 </context>
 <context>
@@ -3854,6 +3957,34 @@
     <message>
         <source>Hex</source>
         <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>Инспектор данных</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Только чтение</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Имя</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Значение</translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation>Курсор</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>Выделение</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Размер</translation>
     </message>
 </context>
 <context>
@@ -4038,6 +4169,10 @@
         <source>Symbols</source>
         <translation>Символы</translation>
     </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Только чтение</translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
@@ -4070,6 +4205,10 @@
     <message>
         <source>Recent files</source>
         <translation>Недавние файлы</translation>
+    </message>
+    <message>
+        <source>Code pages</source>
+        <translation>Кодовые страницы</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -4280,6 +4419,14 @@
         <translation>Отладка</translation>
     </message>
     <message>
+        <source>Trace</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation>Анимация</translation>
+    </message>
+    <message>
         <source>Debugger</source>
         <translation>Отладчик</translation>
     </message>
@@ -4358,6 +4505,14 @@
     <message>
         <source>Value</source>
         <translation>Значение</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Сканировать</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>Редактор</translation>
     </message>
     <message>
         <source>Show</source>
@@ -4514,10 +4669,6 @@
     <message>
         <source>Toggle</source>
         <translation>Переключать</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Entropy</source>

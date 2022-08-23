@@ -79,8 +79,48 @@
         <translation>إعادة تحميل</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>كارثة</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>سلاسل</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>خريطة الذاكرة</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>غير قادر علي</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
         <source>Readonly</source>
         <translation>يقرأ فقط</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>يحفظ</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>عرافة</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>تجزئة</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>التوقيعات</translation>
     </message>
 </context>
 <context>
@@ -185,6 +225,14 @@
     <message>
         <source>Info</source>
         <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>يحرر</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation>الخط</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -695,6 +743,25 @@
     </message>
 </context>
 <context>
+    <name>DialogFindText</name>
+    <message>
+        <source>Find</source>
+        <translation>تجد</translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation>حالة مباراة</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>يلغي</translation>
+    </message>
+</context>
+<context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
@@ -1127,12 +1194,16 @@
         <translation>يقرأ فقط</translation>
     </message>
     <message>
-        <source>Show type</source>
-        <translation>نوع العرض</translation>
+        <source>Deep scan</source>
+        <translation>تفحص بعمق</translation>
     </message>
     <message>
-        <source>Show version</source>
-        <translation>عرض الإصدار</translation>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Run</source>
@@ -1143,20 +1214,28 @@
         <translation>تصحيح</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>تجد</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>نوع العرض</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>عرض الخيارات</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>تفحص بعمق</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>مسح ارشادي</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <source>Show version</source>
+        <translation>عرض الإصدار</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1345,12 +1424,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation>يلغي</translation>
-    </message>
-    <message>
         <source>OK</source>
         <translation>نعم</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>يلغي</translation>
     </message>
     <message>
         <source>Text</source>
@@ -1623,6 +1702,30 @@
         <translation>خريطة الذاكرة</translation>
     </message>
     <message>
+        <source>File info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>تجزئة</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>سلاسل</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>عرافة</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>غير قادر علي</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>تراكب</translation>
     </message>
@@ -1706,30 +1809,6 @@
         <translation>اسم الملف</translation>
     </message>
     <message>
-        <source>File info</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>تجزئة</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>سلاسل</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>غير قادر علي</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>عرافة</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>التوقيعات</translation>
-    </message>
-    <message>
         <source>Demangle</source>
         <translation>شطب</translation>
     </message>
@@ -1768,8 +1847,8 @@
 <context>
     <name>HeurWidget</name>
     <message>
-        <source>Scan</source>
-        <translation>مسح</translation>
+        <source>Type</source>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -1796,16 +1875,16 @@
         <translation>يحفظ</translation>
     </message>
     <message>
+        <source>Scan</source>
+        <translation>مسح</translation>
+    </message>
+    <message>
         <source>Heuristic</source>
         <translation>ارشادي</translation>
     </message>
     <message>
         <source>Result</source>
         <translation>نتيجة</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>نوع</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2713,20 +2792,24 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Filter</source>
-        <translation>منقي</translation>
-    </message>
-    <message>
         <source>C Strings</source>
         <translation>سلاسل</translation>
     </message>
     <message>
-        <source>Save</source>
-        <translation>يحفظ</translation>
+        <source>Links</source>
+        <translation></translation>
     </message>
     <message>
         <source>Search</source>
         <translation>بحث</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>منقي</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>يحفظ</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -3075,6 +3158,10 @@
         <translation>أقصى</translation>
     </message>
     <message>
+        <source>Invalid signature</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>خطأ الكتابة</translation>
     </message>
@@ -3087,16 +3174,32 @@
         <translation>بايت</translation>
     </message>
     <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>kB</source>
         <translation>كيلو بايت</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>MB</source>
         <translation>ميغا بايت</translation>
     </message>
     <message>
+        <source>GiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>GB</source>
         <translation>غيغابايت</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>TB</source>
@@ -3333,8 +3436,8 @@
         <translation></translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>عنوان</translation>
+        <source>Show colons in addresses</source>
+        <translation></translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -3602,10 +3705,6 @@
         <translation>رأس</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>إصدار</translation>
-    </message>
-    <message>
         <source>File name</source>
         <translation>اسم الملف</translation>
     </message>
@@ -3841,8 +3940,12 @@
         <translation>الخط</translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>عنوان</translation>
+        <source>Show colons in addresses</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Blinking cursor</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3854,6 +3957,34 @@
     <message>
         <source>Hex</source>
         <translation>عرافة</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>يقرأ فقط</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>اسم</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>قيمة</translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation>المؤشر</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>اختيار</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>مقاس</translation>
     </message>
 </context>
 <context>
@@ -4038,6 +4169,10 @@
         <source>Symbols</source>
         <translation>حرف او رمز</translation>
     </message>
+    <message>
+        <source>Readonly</source>
+        <translation>يقرأ فقط</translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
@@ -4069,6 +4204,10 @@
     </message>
     <message>
         <source>Recent files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Code pages</source>
         <translation></translation>
     </message>
     <message>
@@ -4280,6 +4419,14 @@
         <translation>تصحيح</translation>
     </message>
     <message>
+        <source>Trace</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Debugger</source>
         <translation>المصحح</translation>
     </message>
@@ -4358,6 +4505,14 @@
     <message>
         <source>Value</source>
         <translation>قيمة</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>مسح</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>يحرر</translation>
     </message>
     <message>
         <source>Show</source>
@@ -4514,10 +4669,6 @@
     <message>
         <source>Toggle</source>
         <translation>تبديل</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>مسح</translation>
     </message>
     <message>
         <source>Entropy</source>

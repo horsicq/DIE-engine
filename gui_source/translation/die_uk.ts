@@ -79,8 +79,48 @@
         <translation>Перевантажити</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Дизасемблер</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Стрічки</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Карта пам&apos;яті</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Ентропія</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Евристичне сканування</translation>
+    </message>
+    <message>
         <source>Readonly</source>
         <translation>Лише читання</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Зберегти</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Інфо</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Хеш</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатури</translation>
     </message>
 </context>
 <context>
@@ -185,6 +225,14 @@
     <message>
         <source>Info</source>
         <translation>Інфо</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>Редактор</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation>Шрифт</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -695,6 +743,25 @@
     </message>
 </context>
 <context>
+    <name>DialogFindText</name>
+    <message>
+        <source>Find</source>
+        <translation>Пошук</translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation>Враховувати регістр</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Гаразд</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Скасувати</translation>
+    </message>
+</context>
+<context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
@@ -1127,12 +1194,16 @@
         <translation>Лише читання</translation>
     </message>
     <message>
-        <source>Show type</source>
-        <translation>Показати тип</translation>
+        <source>Deep scan</source>
+        <translation>Глибоке сканування</translation>
     </message>
     <message>
-        <source>Show version</source>
-        <translation>Показати версію</translation>
+        <source>Verbose</source>
+        <translation>Детально</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Евристичне сканування</translation>
     </message>
     <message>
         <source>Run</source>
@@ -1143,20 +1214,28 @@
         <translation>Відлагодження</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>Пошук</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Далі</translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>Показати тип</translation>
+    </message>
+    <message>
         <source>Show options</source>
         <translation>Показати налаштування</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Глибоке сканування</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Евристичне сканування</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation>Детально</translation>
+        <source>Show version</source>
+        <translation>Показати версію</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -1345,12 +1424,12 @@
         <translation>Кольори</translation>
     </message>
     <message>
-        <source>Cancel</source>
-        <translation>Скасувати</translation>
-    </message>
-    <message>
         <source>OK</source>
         <translation>Гаразд</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <source>Text</source>
@@ -1623,6 +1702,30 @@
         <translation>Карта пам&apos;яті</translation>
     </message>
     <message>
+        <source>File info</source>
+        <translation>Інфо файлу</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Хеш</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Стрічки</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатури</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Ентропія</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Оверлей</translation>
     </message>
@@ -1706,30 +1809,6 @@
         <translation>Ім&apos;я файлу</translation>
     </message>
     <message>
-        <source>File info</source>
-        <translation>Інфо файлу</translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>Хеш</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>Стрічки</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>Ентропія</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>Hex</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>Сигнатури</translation>
-    </message>
-    <message>
         <source>Demangle</source>
         <translation>Деманглувати</translation>
     </message>
@@ -1768,8 +1847,8 @@
 <context>
     <name>HeurWidget</name>
     <message>
-        <source>Scan</source>
-        <translation>Сканувати</translation>
+        <source>Type</source>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -1796,16 +1875,16 @@
         <translation>Зберегти</translation>
     </message>
     <message>
+        <source>Scan</source>
+        <translation>Сканувати</translation>
+    </message>
+    <message>
         <source>Heuristic</source>
         <translation>Еврістика</translation>
     </message>
     <message>
         <source>Result</source>
         <translation>Результат</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Тип</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2713,20 +2792,24 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Filter</source>
-        <translation>Фільтр</translation>
-    </message>
-    <message>
         <source>C Strings</source>
         <translation>C стрічки</translation>
     </message>
     <message>
-        <source>Save</source>
-        <translation>Зберегти</translation>
+        <source>Links</source>
+        <translation></translation>
     </message>
     <message>
         <source>Search</source>
         <translation>Пошук</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>Фільтр</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Зберегти</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -3075,6 +3158,10 @@
         <translation>Максимум</translation>
     </message>
     <message>
+        <source>Invalid signature</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>Помилка запису</translation>
     </message>
@@ -3087,16 +3174,32 @@
         <translation>Байти</translation>
     </message>
     <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>kB</source>
         <translation>кБ</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>MB</source>
         <translation>МБ</translation>
     </message>
     <message>
+        <source>GiB</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>GB</source>
         <translation>ГБ</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
     </message>
     <message>
         <source>TB</source>
@@ -3333,8 +3436,8 @@
         <translation>Великі літери</translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>Розділювач в адресі (:)</translation>
+        <source>Show colons in addresses</source>
+        <translation>Розділювач в адресі</translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -3602,10 +3705,6 @@
         <translation>Заголовок</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>Версія</translation>
-    </message>
-    <message>
         <source>File name</source>
         <translation>Ім&apos;я файлу</translation>
     </message>
@@ -3841,8 +3940,12 @@
         <translation>Шрифт</translation>
     </message>
     <message>
-        <source>Address colon</source>
-        <translation>Розділювач в адресі (:)</translation>
+        <source>Show colons in addresses</source>
+        <translation>Розділювач в адресі</translation>
+    </message>
+    <message>
+        <source>Blinking cursor</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3854,6 +3957,34 @@
     <message>
         <source>Hex</source>
         <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Лише читання</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Ім&apos;я</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Значення</translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation>Курсор</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>Виділення</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Розмір</translation>
     </message>
 </context>
 <context>
@@ -4038,6 +4169,10 @@
         <source>Symbols</source>
         <translation>Символи</translation>
     </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Лише читання</translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
@@ -4070,6 +4205,10 @@
     <message>
         <source>Recent files</source>
         <translation>Останні файли</translation>
+    </message>
+    <message>
+        <source>Code pages</source>
+        <translation></translation>
     </message>
     <message>
         <source>Clear</source>
@@ -4280,6 +4419,14 @@
         <translation>Відлагодження</translation>
     </message>
     <message>
+        <source>Trace</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Debugger</source>
         <translation>Відлагоджувач</translation>
     </message>
@@ -4358,6 +4505,14 @@
     <message>
         <source>Value</source>
         <translation>Значення</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Сканувати</translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation>Редактор</translation>
     </message>
     <message>
         <source>Show</source>
@@ -4514,10 +4669,6 @@
     <message>
         <source>Toggle</source>
         <translation>Перемикач</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Сканувати</translation>
     </message>
     <message>
         <source>Entropy</source>
