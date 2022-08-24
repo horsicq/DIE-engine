@@ -13,6 +13,7 @@ cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PA
 cp -f $X_SOURCE_PATH/LINUX/die.desktop                              $X_SOURCE_PATH/release/appDir/usr/share/applications/
 sed -i "s/#VERSION#/1.0/"                                           $X_SOURCE_PATH/release/appDir/usr/share/applications/die.desktop
 cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                                $X_SOURCE_PATH/release/appDir/usr/share/icons/
+cp -Rf $X_SOURCE_PATH/images/                                       $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/Detect-It-Easy/info/                          $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/                            $X_SOURCE_PATH/release/appDir/usr/lib/die/
