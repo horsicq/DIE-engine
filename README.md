@@ -6,5 +6,9 @@
 # DIE-engine
 GUI & console sources for Detect It Easy(DiE): https://github.com/horsicq/Detect-It-Easy/
 
+## Special Thanks
+
+- [PELock Software Protection & Reverse Engineering](https://www.pelock.com)
+
 ![alt text](https://github.com/horsicq/Detect-It-Easy/blob/master/mascots/logo.png "logo")
 
