@@ -133,6 +133,3 @@
 [submodule "hex_templates"]
 	path = hex_templates
 	url = https://github.com/horsicq/hex_templates
-[submodule "XExtractorWidget"]
-	path = XExtractorWidget
-	url = https://github.com/horsicq/XExtractorWidget
