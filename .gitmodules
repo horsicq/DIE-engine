@@ -136,3 +136,6 @@
 [submodule "XExtractorWidget"]
 	path = XExtractorWidget
 	url = https://github.com/horsicq/XExtractorWidget
+[submodule "XExtractor"]
+	path = XExtractor
+	url = https://github.com/horsicq/XExtractor
