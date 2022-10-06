@@ -33,7 +33,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
 
     g_xOptions.setName(X_OPTIONSFILE);
 
-#ifdef Q_OS_WIN32
+#ifdef Q_OS_WIN
     g_xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
 #else
     g_xOptions.addID(XOptions::ID_VIEW_QSS,"");
@@ -46,7 +46,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP,true);
     g_xOptions.addID(XOptions::ID_FILE_SAVERECENTFILES,true);
 
-#ifdef Q_OS_WIN32
+#ifdef Q_OS_WIN
     g_xOptions.addID(XOptions::ID_FILE_CONTEXT,"*");
 #endif
 
