@@ -22,25 +22,25 @@
 #define DIALOGOPTIONS_H
 
 #include <QDialog>
-#include <QMessageBox>
 #include <QFileDialog>
+#include <QMessageBox>
+
+#include "../global.h"
 #include "dieoptionswidget.h"
 #include "searchsignaturesoptionswidget.h"
-#include "xhexviewoptionswidget.h"
 #include "xdisasmviewoptionswidget.h"
+#include "xhexviewoptionswidget.h"
 #include "xonlinetoolsoptionswidget.h"
-#include "../global.h"
 
 namespace Ui {
 class DialogOptions;
 }
 
-class DialogOptions : public QDialog
-{
+class DialogOptions : public QDialog {
     Q_OBJECT
 
 public:
-    explicit DialogOptions(QWidget *pParent,XOptions *pOptions,XOptions::GROUPID groupId);
+    explicit DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId);
     ~DialogOptions();
 
 private:
@@ -52,4 +52,4 @@ private:
     XOnlineToolsOptionsWidget *g_pXOnlineToolsOptionsWidget;
 };
 
-#endif // DIALOGOPTIONS_H
+#endif  // DIALOGOPTIONS_H

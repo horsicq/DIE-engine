@@ -23,21 +23,21 @@
 
 #include <QDialog>
 #include <QMessageBox>
+
 #include "../global.h"
-#include "xoptions.h"
-#include "qwt_global.h"
 #include "capstone/capstone.h"
+#include "qwt_global.h"
+#include "xoptions.h"
 
 namespace Ui {
 class DialogAbout;
 }
 
-class DialogAbout : public QDialog
-{
+class DialogAbout : public QDialog {
     Q_OBJECT
 
 public:
-    explicit DialogAbout(QWidget *pParent=nullptr);
+    explicit DialogAbout(QWidget *pParent = nullptr);
     ~DialogAbout();
 
 private slots:
@@ -47,4 +47,4 @@ private:
     Ui::DialogAbout *ui;
 };
 
-#endif // DIALOGABOUT_H
+#endif  // DIALOGABOUT_H

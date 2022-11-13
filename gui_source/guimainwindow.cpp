@@ -19,35 +19,33 @@
  * SOFTWARE.
  */
 #include "guimainwindow.h"
+
 #include "ui_guimainwindow.h"
 
-GuiMainWindow::GuiMainWindow(QWidget *pParent)
-    : QMainWindow(pParent),
-      ui(new Ui::GuiMainWindow)
-{
+GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow) {
     ui->setupUi(this);
 
-    setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
+    setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
 
     g_xOptions.setName(X_OPTIONSFILE);
 
 #ifdef Q_OS_WIN
-    g_xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
+    g_xOptions.addID(XOptions::ID_VIEW_QSS, "veles");
 #else
-    g_xOptions.addID(XOptions::ID_VIEW_QSS,"");
+    g_xOptions.addID(XOptions::ID_VIEW_QSS, "");
 #endif
-    g_xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
-    g_xOptions.addID(XOptions::ID_VIEW_LANG,"System");
-    g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP,false);
-    g_xOptions.addID(XOptions::ID_VIEW_SINGLEAPPLICATION,false);
-    g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY,true);
-    g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP,true);
-    g_xOptions.addID(XOptions::ID_FILE_SAVERECENTFILES,true);
+    g_xOptions.addID(XOptions::ID_VIEW_STYLE, "Fusion");
+    g_xOptions.addID(XOptions::ID_VIEW_LANG, "System");
+    g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP, false);
+    g_xOptions.addID(XOptions::ID_VIEW_SINGLEAPPLICATION, false);
+    g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY, true);
+    g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP, true);
+    g_xOptions.addID(XOptions::ID_FILE_SAVERECENTFILES, true);
 
 #ifdef Q_OS_WIN
-    g_xOptions.addID(XOptions::ID_FILE_CONTEXT,"*");
+    g_xOptions.addID(XOptions::ID_FILE_CONTEXT, "*");
 #endif
 
     DIEOptionsWidget::setDefaultValues(&g_xOptions);
@@ -69,47 +67,42 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     g_xShortcuts.addGroup(XShortcuts::GROUPID_SCAN);
     g_xShortcuts.load();
 
-    ui->widgetFormats->setGlobal(&g_xShortcuts,&g_xOptions);
+    ui->widgetFormats->setGlobal(&g_xShortcuts, &g_xOptions);
 
-    connect(&g_xOptions,SIGNAL(openFile(QString)),this,SLOT(processFile(QString)));
+    connect(&g_xOptions, SIGNAL(openFile(QString)), this, SLOT(processFile(QString)));
 
-    g_pRecentFilesMenu=g_xOptions.createRecentFilesMenu(this);
+    g_pRecentFilesMenu = g_xOptions.createRecentFilesMenu(this);
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
 
     adjust();
 
-    if(QCoreApplication::arguments().count()>1)
-    {
-        QString sFileName=QCoreApplication::arguments().at(1);
+    if (QCoreApplication::arguments().count() > 1) {
+        QString sFileName = QCoreApplication::arguments().at(1);
 
         processFile(sFileName);
     }
 }
 
-GuiMainWindow::~GuiMainWindow()
-{
+GuiMainWindow::~GuiMainWindow() {
     g_xOptions.save();
     g_xShortcuts.save();
 
     delete ui;
 }
 
-void GuiMainWindow::on_pushButtonExit_clicked()
-{
+void GuiMainWindow::on_pushButtonExit_clicked() {
     this->close();
 }
 
-void GuiMainWindow::on_pushButtonAbout_clicked()
-{
+void GuiMainWindow::on_pushButtonAbout_clicked() {
     DialogAbout dialogAbout(this);
 
     dialogAbout.exec();
 }
 
-void GuiMainWindow::on_pushButtonOptions_clicked()
-{
-    DialogOptions dialogOptions(this,&g_xOptions,XOptions::GROUPID_FILE);
+void GuiMainWindow::on_pushButtonOptions_clicked() {
+    DialogOptions dialogOptions(this, &g_xOptions, XOptions::GROUPID_FILE);
 
     dialogOptions.exec();
 
@@ -118,89 +111,75 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
     adjustFile();
 }
 
-void GuiMainWindow::on_pushButtonDemangle_clicked()
-{
+void GuiMainWindow::on_pushButtonDemangle_clicked() {
     DialogDemangle dialogDemangle(this);
 
     dialogDemangle.exec();
 }
 
-QString GuiMainWindow::getCurrentFileName()
-{
+QString GuiMainWindow::getCurrentFileName() {
     return ui->lineEditFileName->text();
 }
 
-void GuiMainWindow::adjust()
-{
+void GuiMainWindow::adjust() {
     g_xOptions.adjustStayOnTop(this);
 
     // TODO setShortcuts for mainWindow ...
 }
 
-void GuiMainWindow::adjustFile()
-{
-    QString sFileName=getCurrentFileName();
+void GuiMainWindow::adjustFile() {
+    QString sFileName = getCurrentFileName();
 
     g_xOptions.setLastFileName(sFileName);
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
 }
 
-void GuiMainWindow::processFile(QString sFileName)
-{
+void GuiMainWindow::processFile(QString sFileName) {
     ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
 
-    if(sFileName!="")
-    {
-        ui->widgetFormats->setFileName(sFileName,g_xOptions.isScanAfterOpen());
+    if (sFileName != "") {
+        ui->widgetFormats->setFileName(sFileName, g_xOptions.isScanAfterOpen());
 
         adjustFile();
     }
 }
 
-void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event)
-{
+void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event) {
     event->acceptProposedAction();
 }
 
-void GuiMainWindow::dragMoveEvent(QDragMoveEvent *event)
-{
+void GuiMainWindow::dragMoveEvent(QDragMoveEvent *event) {
     event->acceptProposedAction();
 }
 
-void GuiMainWindow::dropEvent(QDropEvent *event)
-{
-    const QMimeData* mimeData=event->mimeData();
+void GuiMainWindow::dropEvent(QDropEvent *event) {
+    const QMimeData *mimeData = event->mimeData();
 
-    if(mimeData->hasUrls())
-    {
-        QList<QUrl> urlList=mimeData->urls();
+    if (mimeData->hasUrls()) {
+        QList<QUrl> urlList = mimeData->urls();
 
-        if(urlList.count())
-        {
-            QString sFileName=urlList.at(0).toLocalFile();
+        if (urlList.count()) {
+            QString sFileName = urlList.at(0).toLocalFile();
 
-            sFileName=XBinary::convertFileName(sFileName);
+            sFileName = XBinary::convertFileName(sFileName);
 
             processFile(sFileName);
         }
     }
 }
 
-void GuiMainWindow::on_pushButtonOpenFile_clicked()
-{
-    QString sDirectory=g_xOptions.getLastDirectory();
+void GuiMainWindow::on_pushButtonOpenFile_clicked() {
+    QString sDirectory = g_xOptions.getLastDirectory();
 
-    QString sFileName=QFileDialog::getOpenFileName(this,tr("Open file")+QString("..."),sDirectory,tr("All files")+QString(" (*)"));
+    QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
 
-    if(!sFileName.isEmpty())
-    {
+    if (!sFileName.isEmpty()) {
         processFile(sFileName);
     }
 }
 
-void GuiMainWindow::on_pushButtonShortcuts_clicked()
-{
+void GuiMainWindow::on_pushButtonShortcuts_clicked() {
     DialogShortcuts dialogShortcuts(this);
 
     dialogShortcuts.setData(&g_xShortcuts);
@@ -210,8 +189,7 @@ void GuiMainWindow::on_pushButtonShortcuts_clicked()
     adjust();
 }
 
-void GuiMainWindow::on_toolButtonRecentFiles_clicked()
-{
+void GuiMainWindow::on_toolButtonRecentFiles_clicked() {
     g_pRecentFilesMenu->exec(QCursor::pos());
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());

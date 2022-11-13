@@ -18,21 +18,20 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include "guimainwindow.h"
-
 #include <QApplication>
 #include <QStyleFactory>
+
+#include "guimainwindow.h"
 #include "xsingleapplication.h"
 
-int main(int argc,char *argv[])
-{
-#if QT_VERSION >= QT_VERSION_CHECK(5,6,0)
+int main(int argc, char *argv[]) {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
 #ifdef Q_OS_MAC
 #ifndef QT_DEBUG
-    QString sLibraryPath=QString(argv[0]);
-    sLibraryPath=sLibraryPath.remove("MacOS/DiE")+"PlugIns";
+    QString sLibraryPath = QString(argv[0]);
+    sLibraryPath = sLibraryPath.remove("MacOS/DiE") + "PlugIns";
     QCoreApplication::setLibraryPaths(QStringList(sLibraryPath));
 #endif
 #endif
@@ -42,15 +41,14 @@ int main(int argc,char *argv[])
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
-    if((argc==2)&&((QString(argv[1])=="--version")||(QString(argv[1])=="-v")))
-    {
-        QString sInfo=QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION);
-        printf("%s\n",sInfo.toUtf8().data());
+    if ((argc == 2) && ((QString(argv[1]) == "--version") || (QString(argv[1]) == "-v"))) {
+        QString sInfo = QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION);
+        printf("%s\n", sInfo.toUtf8().data());
 
         return 0;
     }
 
-    XSingleApplication app(argc,argv);
+    XSingleApplication app(argc, argv);
 
 #ifndef Q_OS_WIN
     QApplication::setWindowIcon(QIcon(":/images/main.png"));
@@ -61,36 +59,34 @@ int main(int argc,char *argv[])
     xOptions.setName(X_OPTIONSFILE);
 
 #ifdef Q_OS_WIN
-    xOptions.addID(XOptions::ID_VIEW_QSS,"veles");
+    xOptions.addID(XOptions::ID_VIEW_QSS, "veles");
 #else
-    xOptions.addID(XOptions::ID_VIEW_QSS,"");
+    xOptions.addID(XOptions::ID_VIEW_QSS, "");
 #endif
-    xOptions.addID(XOptions::ID_VIEW_LANG,"System");
-    xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
-    xOptions.addID(XOptions::ID_VIEW_SINGLEAPPLICATION,false);
+    xOptions.addID(XOptions::ID_VIEW_LANG, "System");
+    xOptions.addID(XOptions::ID_VIEW_STYLE, "Fusion");
+    xOptions.addID(XOptions::ID_VIEW_SINGLEAPPLICATION, false);
 
     xOptions.load();
 
-    if(xOptions.isSingleApplication())
-    {
+    if (xOptions.isSingleApplication()) {
         app.enableSingleInstance();
     }
 
-    int nResult=0;
+    int nResult = 0;
 
-    if(app.isPrimary())
-    {
-        XOptions::adjustApplicationView(X_APPLICATIONNAME,&xOptions);
+    if (app.isPrimary()) {
+        XOptions::adjustApplicationView(X_APPLICATIONNAME, &xOptions);
 
         xOptions.save();
 
         GuiMainWindow mainWindow;
 
-        QObject::connect(&app,SIGNAL(messageText(QString)),&mainWindow,SLOT(processFile(QString)));
+        QObject::connect(&app, SIGNAL(messageText(QString)), &mainWindow, SLOT(processFile(QString)));
 
         mainWindow.show();
 
-        nResult=app.exec();
+        nResult = app.exec();
     }
 
     return nResult;

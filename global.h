@@ -34,4 +34,4 @@
 #define X_SHORTCUTSFILE "shortcuts.ini"
 #define X_UPDATEPAGE "https://github.com/horsicq/DIE-engine/releases"
 
-#endif // _GLOBAL_H
+#endif  // _GLOBAL_H

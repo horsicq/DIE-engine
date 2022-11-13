@@ -21,22 +21,24 @@
 #ifndef LITEMAINWINDOW_H
 #define LITEMAINWINDOW_H
 
-#include "../global.h"
 #include <QMainWindow>
 #include <QMimeData>
+
+#include "../global.h"
 #include "die_script.h"
 #include "xoptions.h"
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class LiteMainWindow; }
+namespace Ui {
+class LiteMainWindow;
+}
 QT_END_NAMESPACE
 
-class LiteMainWindow : public QMainWindow
-{
+class LiteMainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    LiteMainWindow(QWidget *pParent=nullptr);
+    LiteMainWindow(QWidget *pParent = nullptr);
     ~LiteMainWindow();
 
 public slots:
@@ -51,10 +53,10 @@ protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
     void dragMoveEvent(QDragMoveEvent *event) override;
     void dropEvent(QDropEvent *event) override;
-    void keyPressEvent(QKeyEvent* pEvent);
+    void keyPressEvent(QKeyEvent *pEvent);
 
 private:
     Ui::LiteMainWindow *ui;
     DiE_Script *g_pDieScript;
 };
-#endif // LITEMAINWINDOW_H
+#endif  // LITEMAINWINDOW_H

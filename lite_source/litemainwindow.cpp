@@ -19,120 +19,103 @@
  * SOFTWARE.
  */
 #include "litemainwindow.h"
+
 #include "ui_litemainwindow.h"
 
-LiteMainWindow::LiteMainWindow(QWidget *pParent)
-    : QMainWindow(pParent),
-      ui(new Ui::LiteMainWindow)
-{
+LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::LiteMainWindow) {
     ui->setupUi(this);
 
-    setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
+    setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
     installEventFilter(this);
 
-    g_pDieScript=new DiE_Script;
-    g_pDieScript->loadDatabase(XOptions().getApplicationDataPath()+QDir::separator()+"db");
+    g_pDieScript = new DiE_Script;
+    g_pDieScript->loadDatabase(XOptions().getApplicationDataPath() + QDir::separator() + "db");
 
-    if(QCoreApplication::arguments().count()>1)
-    {
-        QString sFileName=QCoreApplication::arguments().at(1);
+    if (QCoreApplication::arguments().count() > 1) {
+        QString sFileName = QCoreApplication::arguments().at(1);
 
         processFile(sFileName);
     }
 }
 
-LiteMainWindow::~LiteMainWindow()
-{
+LiteMainWindow::~LiteMainWindow() {
     delete ui;
     delete g_pDieScript;
 }
 
-void LiteMainWindow::processFile(QString sFileName)
-{
+void LiteMainWindow::processFile(QString sFileName) {
     ui->plainTextEditResult->clear();
 
     ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
 
-    if(sFileName!="")
-    {
-        DiE_Script::OPTIONS scanOptions={};
-        scanOptions.bIsDeepScan=ui->checkBoxDeepScan->isChecked();
-        scanOptions.bIsHeuristicScan=ui->checkBoxHeuristicScan->isChecked();
-        scanOptions.bIsVerbose=ui->checkBoxVerbose->isChecked();
-        scanOptions.bAllTypesScan=ui->checkBoxAllTypesScan->isChecked();
-        scanOptions.bShowType=true;
-        scanOptions.bShowVersion=true;
-        scanOptions.bShowOptions=true;
+    if (sFileName != "") {
+        DiE_Script::OPTIONS scanOptions = {};
+        scanOptions.bIsDeepScan = ui->checkBoxDeepScan->isChecked();
+        scanOptions.bIsHeuristicScan = ui->checkBoxHeuristicScan->isChecked();
+        scanOptions.bIsVerbose = ui->checkBoxVerbose->isChecked();
+        scanOptions.bAllTypesScan = ui->checkBoxAllTypesScan->isChecked();
+        scanOptions.bShowType = true;
+        scanOptions.bShowVersion = true;
+        scanOptions.bShowOptions = true;
 
-        DiE_Script::SCAN_RESULT scanResult=g_pDieScript->scanFile(sFileName,&scanOptions);
+        DiE_Script::SCAN_RESULT scanResult = g_pDieScript->scanFile(sFileName, &scanOptions);
 
-        QList<XBinary::SCANSTRUCT> listResult=DiE_Script::convert(&(scanResult.listRecords));
+        QList<XBinary::SCANSTRUCT> listResult = DiE_Script::convert(&(scanResult.listRecords));
 
         ScanItemModel model(&listResult);
 
         ui->plainTextEditResult->setPlainText(model.toFormattedString());
 
-       ui->labelScanTime->setText(QString("%1 %2").arg(scanResult.nScanTime).arg(tr("msec")));
+        ui->labelScanTime->setText(QString("%1 %2").arg(scanResult.nScanTime).arg(tr("msec")));
     }
 }
 
-void LiteMainWindow::on_pushButtonScan_clicked()
-{
+void LiteMainWindow::on_pushButtonScan_clicked() {
     processFile(ui->lineEditFileName->text());
 }
 
-void LiteMainWindow::on_pushButtonExit_clicked()
-{
+void LiteMainWindow::on_pushButtonExit_clicked() {
     this->close();
 }
 
-void LiteMainWindow::on_pushButtonOpenFile_clicked()
-{
-    QString sDirectory=""; // mb TODO
+void LiteMainWindow::on_pushButtonOpenFile_clicked() {
+    QString sDirectory = "";  // mb TODO
 
-    QString sFileName=QFileDialog::getOpenFileName(this,tr("Open file")+QString("..."),sDirectory,tr("All files")+QString(" (*)"));
+    QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
 
-    if(!sFileName.isEmpty())
-    {
+    if (!sFileName.isEmpty()) {
         processFile(sFileName);
     }
 }
 
-void LiteMainWindow::dragEnterEvent(QDragEnterEvent *event)
-{
+void LiteMainWindow::dragEnterEvent(QDragEnterEvent *event) {
     event->acceptProposedAction();
 }
 
-void LiteMainWindow::dragMoveEvent(QDragMoveEvent *event)
-{
+void LiteMainWindow::dragMoveEvent(QDragMoveEvent *event) {
     event->acceptProposedAction();
 }
 
-void LiteMainWindow::dropEvent(QDropEvent *event)
-{
-    const QMimeData *mimeData=event->mimeData();
+void LiteMainWindow::dropEvent(QDropEvent *event) {
+    const QMimeData *mimeData = event->mimeData();
 
-    if(mimeData->hasUrls())
-    {
-        QList<QUrl> urlList=mimeData->urls();
+    if (mimeData->hasUrls()) {
+        QList<QUrl> urlList = mimeData->urls();
 
-        if(urlList.count())
-        {
-            QString sFileName=urlList.at(0).toLocalFile();
+        if (urlList.count()) {
+            QString sFileName = urlList.at(0).toLocalFile();
 
-            sFileName=XBinary::convertFileName(sFileName);
+            sFileName = XBinary::convertFileName(sFileName);
 
             processFile(sFileName);
         }
     }
 }
 
-void LiteMainWindow::keyPressEvent(QKeyEvent *pEvent)
-{
-    if(pEvent->key()==Qt::Key_Escape)
-    {
+void LiteMainWindow::keyPressEvent(QKeyEvent *pEvent) {
+    if (pEvent->key() == Qt::Key_Escape) {
         this->close();
     }
 
