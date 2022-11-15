@@ -22,7 +22,8 @@
 
 #include "ui_dialogabout.h"
 
-DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::DialogAbout) {
+DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::DialogAbout)
+{
     ui->setupUi(this);
 
     XAboutWidget::DATA _data = {};
@@ -81,10 +82,12 @@ DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::Dialog
     ui->widgetAbout->setData(_data);
 }
 
-DialogAbout::~DialogAbout() {
+DialogAbout::~DialogAbout()
+{
     delete ui;
 }
 
-void DialogAbout::on_pushButtonOK_clicked() {
+void DialogAbout::on_pushButtonOK_clicked()
+{
     this->close();
 }

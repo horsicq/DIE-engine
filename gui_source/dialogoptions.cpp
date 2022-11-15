@@ -22,7 +22,8 @@
 
 #include "ui_dialogoptions.h"
 
-DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId) : QDialog(pParent), ui(new Ui::DialogOptions) {
+DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId) : QDialog(pParent), ui(new Ui::DialogOptions)
+{
     ui->setupUi(this);
 
     g_pDIEOptionsWidget = new DIEOptionsWidget(this);
@@ -51,6 +52,7 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GRO
     ui->widgetOptions->setCurrentPage(groupId);
 }
 
-DialogOptions::~DialogOptions() {
+DialogOptions::~DialogOptions()
+{
     delete ui;
 }

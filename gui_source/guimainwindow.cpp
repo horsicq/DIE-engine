@@ -22,7 +22,8 @@
 
 #include "ui_guimainwindow.h"
 
-GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow) {
+GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
+{
     ui->setupUi(this);
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
@@ -84,24 +85,28 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     }
 }
 
-GuiMainWindow::~GuiMainWindow() {
+GuiMainWindow::~GuiMainWindow()
+{
     g_xOptions.save();
     g_xShortcuts.save();
 
     delete ui;
 }
 
-void GuiMainWindow::on_pushButtonExit_clicked() {
+void GuiMainWindow::on_pushButtonExit_clicked()
+{
     this->close();
 }
 
-void GuiMainWindow::on_pushButtonAbout_clicked() {
+void GuiMainWindow::on_pushButtonAbout_clicked()
+{
     DialogAbout dialogAbout(this);
 
     dialogAbout.exec();
 }
 
-void GuiMainWindow::on_pushButtonOptions_clicked() {
+void GuiMainWindow::on_pushButtonOptions_clicked()
+{
     DialogOptions dialogOptions(this, &g_xOptions, XOptions::GROUPID_FILE);
 
     dialogOptions.exec();
@@ -111,23 +116,27 @@ void GuiMainWindow::on_pushButtonOptions_clicked() {
     adjustFile();
 }
 
-void GuiMainWindow::on_pushButtonDemangle_clicked() {
+void GuiMainWindow::on_pushButtonDemangle_clicked()
+{
     DialogDemangle dialogDemangle(this);
 
     dialogDemangle.exec();
 }
 
-QString GuiMainWindow::getCurrentFileName() {
+QString GuiMainWindow::getCurrentFileName()
+{
     return ui->lineEditFileName->text();
 }
 
-void GuiMainWindow::adjust() {
+void GuiMainWindow::adjust()
+{
     g_xOptions.adjustStayOnTop(this);
 
     // TODO setShortcuts for mainWindow ...
 }
 
-void GuiMainWindow::adjustFile() {
+void GuiMainWindow::adjustFile()
+{
     QString sFileName = getCurrentFileName();
 
     g_xOptions.setLastFileName(sFileName);
@@ -135,7 +144,8 @@ void GuiMainWindow::adjustFile() {
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
 }
 
-void GuiMainWindow::processFile(QString sFileName) {
+void GuiMainWindow::processFile(QString sFileName)
+{
     ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
 
     if (sFileName != "") {
@@ -145,15 +155,18 @@ void GuiMainWindow::processFile(QString sFileName) {
     }
 }
 
-void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event) {
+void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event)
+{
     event->acceptProposedAction();
 }
 
-void GuiMainWindow::dragMoveEvent(QDragMoveEvent *event) {
+void GuiMainWindow::dragMoveEvent(QDragMoveEvent *event)
+{
     event->acceptProposedAction();
 }
 
-void GuiMainWindow::dropEvent(QDropEvent *event) {
+void GuiMainWindow::dropEvent(QDropEvent *event)
+{
     const QMimeData *mimeData = event->mimeData();
 
     if (mimeData->hasUrls()) {
@@ -169,7 +182,8 @@ void GuiMainWindow::dropEvent(QDropEvent *event) {
     }
 }
 
-void GuiMainWindow::on_pushButtonOpenFile_clicked() {
+void GuiMainWindow::on_pushButtonOpenFile_clicked()
+{
     QString sDirectory = g_xOptions.getLastDirectory();
 
     QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
@@ -179,7 +193,8 @@ void GuiMainWindow::on_pushButtonOpenFile_clicked() {
     }
 }
 
-void GuiMainWindow::on_pushButtonShortcuts_clicked() {
+void GuiMainWindow::on_pushButtonShortcuts_clicked()
+{
     DialogShortcuts dialogShortcuts(this);
 
     dialogShortcuts.setData(&g_xShortcuts);
@@ -189,7 +204,8 @@ void GuiMainWindow::on_pushButtonShortcuts_clicked() {
     adjust();
 }
 
-void GuiMainWindow::on_toolButtonRecentFiles_clicked() {
+void GuiMainWindow::on_toolButtonRecentFiles_clicked()
+{
     g_pRecentFilesMenu->exec(QCursor::pos());
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());

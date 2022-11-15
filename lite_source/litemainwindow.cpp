@@ -22,7 +22,8 @@
 
 #include "ui_litemainwindow.h"
 
-LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::LiteMainWindow) {
+LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::LiteMainWindow)
+{
     ui->setupUi(this);
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
@@ -40,12 +41,14 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     }
 }
 
-LiteMainWindow::~LiteMainWindow() {
+LiteMainWindow::~LiteMainWindow()
+{
     delete ui;
     delete g_pDieScript;
 }
 
-void LiteMainWindow::processFile(QString sFileName) {
+void LiteMainWindow::processFile(QString sFileName)
+{
     ui->plainTextEditResult->clear();
 
     ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
@@ -72,15 +75,18 @@ void LiteMainWindow::processFile(QString sFileName) {
     }
 }
 
-void LiteMainWindow::on_pushButtonScan_clicked() {
+void LiteMainWindow::on_pushButtonScan_clicked()
+{
     processFile(ui->lineEditFileName->text());
 }
 
-void LiteMainWindow::on_pushButtonExit_clicked() {
+void LiteMainWindow::on_pushButtonExit_clicked()
+{
     this->close();
 }
 
-void LiteMainWindow::on_pushButtonOpenFile_clicked() {
+void LiteMainWindow::on_pushButtonOpenFile_clicked()
+{
     QString sDirectory = "";  // mb TODO
 
     QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
@@ -90,15 +96,18 @@ void LiteMainWindow::on_pushButtonOpenFile_clicked() {
     }
 }
 
-void LiteMainWindow::dragEnterEvent(QDragEnterEvent *event) {
+void LiteMainWindow::dragEnterEvent(QDragEnterEvent *event)
+{
     event->acceptProposedAction();
 }
 
-void LiteMainWindow::dragMoveEvent(QDragMoveEvent *event) {
+void LiteMainWindow::dragMoveEvent(QDragMoveEvent *event)
+{
     event->acceptProposedAction();
 }
 
-void LiteMainWindow::dropEvent(QDropEvent *event) {
+void LiteMainWindow::dropEvent(QDropEvent *event)
+{
     const QMimeData *mimeData = event->mimeData();
 
     if (mimeData->hasUrls()) {
@@ -114,7 +123,8 @@ void LiteMainWindow::dropEvent(QDropEvent *event) {
     }
 }
 
-void LiteMainWindow::keyPressEvent(QKeyEvent *pEvent) {
+void LiteMainWindow::keyPressEvent(QKeyEvent *pEvent)
+{
     if (pEvent->key() == Qt::Key_Escape) {
         this->close();
     }

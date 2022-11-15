@@ -30,7 +30,8 @@
 #include "xfileinfo.h"
 #include "xoptions.h"
 
-void ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE_Script *pDieScript) {
+void ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE_Script *pDieScript)
+{
     QList<QString> listFileNames;
 
     for (qint32 i = 0; i < pListArgs->count(); i++) {
@@ -140,7 +141,8 @@ void ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE
     }
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
     QCoreApplication::setOrganizationDomain(X_ORGANIZATIONDOMAIN);
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
