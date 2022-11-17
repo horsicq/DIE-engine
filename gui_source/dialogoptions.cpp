@@ -22,7 +22,8 @@
 
 #include "ui_dialogoptions.h"
 
-DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId) : QDialog(pParent), ui(new Ui::DialogOptions)
+DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId)
+    : QDialog(pParent), ui(new Ui::DialogOptions)
 {
     ui->setupUi(this);
 

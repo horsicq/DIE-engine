@@ -22,7 +22,8 @@
 
 #include "ui_litemainwindow.h"
 
-LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::LiteMainWindow)
+LiteMainWindow::LiteMainWindow(QWidget *pParent)
+    : QMainWindow(pParent), ui(new Ui::LiteMainWindow)
 {
     ui->setupUi(this);
 

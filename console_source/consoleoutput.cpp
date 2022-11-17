@@ -20,7 +20,8 @@
  */
 #include "consoleoutput.h"
 
-ConsoleOutput::ConsoleOutput(QObject *pParent) : QObject(pParent)
+ConsoleOutput::ConsoleOutput(QObject *pParent)
+    : QObject(pParent)
 {
 }
 
