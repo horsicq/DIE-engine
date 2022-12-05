@@ -37,6 +37,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 #else
     g_xOptions.addID(XOptions::ID_VIEW_QSS, "");
 #endif
+    g_xOptions.addID(XOptions::ID_VIEW_ADVANCED, false);
     g_xOptions.addID(XOptions::ID_VIEW_STYLE, "Fusion");
     g_xOptions.addID(XOptions::ID_VIEW_LANG, "System");
     g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP, false);
@@ -78,6 +79,14 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
     adjust();
 
+    bool bIsAdvanced = g_xOptions.getValue(XOptions::ID_VIEW_ADVANCED).toBool();
+
+    if (!bIsAdvanced) {
+        setAdvanced(bIsAdvanced);
+    }
+
+    ui->checkBoxAdvanced->setChecked(bIsAdvanced);
+
     if (QCoreApplication::arguments().count() > 1) {
         QString sFileName = QCoreApplication::arguments().at(1);
 
@@ -87,6 +96,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
 GuiMainWindow::~GuiMainWindow()
 {
+    g_xOptions.setValue(XOptions::ID_VIEW_ADVANCED,ui->checkBoxAdvanced->isChecked());
+
     g_xOptions.save();
     g_xShortcuts.save();
 
@@ -142,6 +153,18 @@ void GuiMainWindow::adjustFile()
     g_xOptions.setLastFileName(sFileName);
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
+}
+
+void GuiMainWindow::setAdvanced(bool bState)
+{
+    if (bState) {
+        ui->pushButtonDemangle->show();
+
+    } else {
+        ui->pushButtonDemangle->hide();
+    }
+
+    ui->widgetFormats->setAdvanced(bState);
 }
 
 void GuiMainWindow::processFile(QString sFileName)
@@ -209,4 +232,9 @@ void GuiMainWindow::on_toolButtonRecentFiles_clicked()
     g_pRecentFilesMenu->exec(QCursor::pos());
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
+}
+
+void GuiMainWindow::on_checkBoxAdvanced_toggled(bool bChecked)
+{
+    setAdvanced(bChecked);
 }

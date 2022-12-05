@@ -51,10 +51,12 @@ private slots:
     void on_pushButtonOpenFile_clicked();
     void on_pushButtonDemangle_clicked();
     void on_toolButtonRecentFiles_clicked();
+    void on_checkBoxAdvanced_toggled(bool bChecked);
 
     QString getCurrentFileName();
     void adjust();
     void adjustFile();
+    void setAdvanced(bool bState);
 
 public slots:
     void processFile(QString sFileName);
