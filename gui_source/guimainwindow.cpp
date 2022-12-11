@@ -96,7 +96,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
 GuiMainWindow::~GuiMainWindow()
 {
-    g_xOptions.setValue(XOptions::ID_VIEW_ADVANCED,ui->checkBoxAdvanced->isChecked());
+    g_xOptions.setValue(XOptions::ID_VIEW_ADVANCED, ui->checkBoxAdvanced->isChecked());
 
     g_xOptions.save();
     g_xShortcuts.save();
