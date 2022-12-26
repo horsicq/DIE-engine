@@ -1,5 +1,5 @@
 pkgname=detect-it-easy
-pkgver=3.06
+pkgver=3.07
 pkgrel=1
 pkgdesc='Detect It Easy, or abbreviated "DIE" is a program for determining types of files'
 arch=('x86_64')
@@ -88,9 +88,9 @@ package() {
   install -Dm 644 gui_source/translation/* -t "$pkgdir"/opt/"${_pkgname}"/lang
   install -Dm 644 XStyles/qss/* -t "$pkgdir"/opt/"${_pkgname}"/qss
   install -Dm 644 XInfoDB/info/* -t "$pkgdir"/opt/"${_pkgname}"/info
-  cp -r Detect-It-Easy/db/* -t "$pkgdir"/opt/"${_pkgname}"/db/
+  install -Dm 644 Detect-It-Easy/db/* -t "$pkgdir"/opt/"${_pkgname}"/db/
   install -Dm 644 signatures/crypto.db -t "$pkgdir"/opt/"${_pkgname}"/signatures
-  cp -r images/* -t "$pkgdir"/opt/"${_pkgname}"/images/
+  install -Dm 644 images/* -t "$pkgdir"/opt/"${_pkgname}"/images/
 
   echo -e "${_prefix}Setting up /usr/bin launchers"
   ln -s /opt/"${_pkgname}"/die "$pkgdir"/usr/bin/die
