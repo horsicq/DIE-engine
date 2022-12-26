@@ -87,7 +87,7 @@ package() {
   echo -e "${_prefix}Copying the package files"
   install -Dm 644 gui_source/translation/* -t "$pkgdir"/opt/"${_pkgname}"/lang
   install -Dm 644 XStyles/qss/* -t "$pkgdir"/opt/"${_pkgname}"/qss
-  install -Dm 644 XInfoDB/info/* -t "$pkgdir"/opt/"${_pkgname}"/info
+  install -Dm 644 XInfoDB/info/* -t "$pkgdir"/opt/"${_pkgname}"/info/
   install -Dm 644 Detect-It-Easy/db/* -t "$pkgdir"/opt/"${_pkgname}"/db/
   install -Dm 644 signatures/crypto.db -t "$pkgdir"/opt/"${_pkgname}"/signatures
   install -Dm 644 images/* -t "$pkgdir"/opt/"${_pkgname}"/images/
