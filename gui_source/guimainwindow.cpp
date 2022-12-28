@@ -33,7 +33,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.setName(X_OPTIONSFILE);
 
 #ifdef Q_OS_WIN
-    g_xOptions.addID(XOptions::ID_VIEW_QSS, "veles");
+    g_xOptions.addID(XOptions::ID_VIEW_QSS, "orange_fix");
 #else
     g_xOptions.addID(XOptions::ID_VIEW_QSS, "");
 #endif

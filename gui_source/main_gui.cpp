@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     xOptions.setName(X_OPTIONSFILE);
 
 #ifdef Q_OS_WIN
-    xOptions.addID(XOptions::ID_VIEW_QSS, "veles");
+    xOptions.addID(XOptions::ID_VIEW_QSS, "orange_fix");
 #else
     xOptions.addID(XOptions::ID_VIEW_QSS, "");
 #endif

@@ -68,13 +68,6 @@
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QCheckBox" name="checkBoxAdvanced">
-          <property name="text">
-           <string>Advanced</string>
-          </property>
-         </widget>
-        </item>
-        <item>
          <widget class="QGroupBox" name="groupBoxExtra">
           <layout class="QVBoxLayout" name="verticalLayout">
            <property name="spacing">
@@ -92,6 +85,13 @@
            <property name="bottomMargin">
             <number>0</number>
            </property>
+           <item>
+            <widget class="QCheckBox" name="checkBoxAdvanced">
+             <property name="text">
+              <string>Advanced</string>
+             </property>
+            </widget>
+           </item>
            <item>
             <widget class="QPushButton" name="pushButtonDemangle">
              <property name="text">

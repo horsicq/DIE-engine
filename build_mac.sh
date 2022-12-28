@@ -19,6 +19,7 @@ if [ -z "$X_ERROR" ]; then
     check_file "$X_SOURCE_PATH/build/release/DiE.app/Contents/MacOS/DiE"
     if [ -z "$X_ERROR" ]; then
         cp -R "$X_SOURCE_PATH/build/release/DiE.app"        "$X_SOURCE_PATH/release/$X_BUILD_NAME"
+        cp -R "$X_SOURCE_PATH/build/release/diec"           "$X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/MacOS/"
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/signatures
         cp -R $X_SOURCE_PATH/signatures/crypto.db           $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/signatures/
         cp -Rf $X_SOURCE_PATH/XStyles/qss                   $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
