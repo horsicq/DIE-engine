@@ -30,8 +30,10 @@
 #include "xfileinfo.h"
 #include "xoptions.h"
 
-void ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE_Script *pDieScript)
+XOptions::CR ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE_Script *pDieScript)
 {
+    XOptions::CR result = XOptions::CR_SUCCESS;
+
     QList<QString> listFileNames;
 
     for (qint32 i = 0; i < pListArgs->count(); i++) {
@@ -41,6 +43,8 @@ void ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE
             XBinary::findFiles(sFileName, &listFileNames);
         } else {
             printf("Cannot find: %s\n", sFileName.toUtf8().data());
+
+            result = XOptions::CR_CANNOTFINDFILE;
         }
     }
 
@@ -86,7 +90,9 @@ void ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE
 
             XFileInfoModel model;
 
-            XFileInfo::processFile(sFileName, &model, options);
+            if (!XFileInfo::processFile(sFileName, &model, options)) {
+                result = XOptions::CR_CANNOTOPENFILE;
+            }
 
             if (pScanOptions->bResultAsJSON) {
                 sResult = model.toJSON();
@@ -139,10 +145,14 @@ void ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE
             printf("\n");
         }
     }
+
+    return result;
 }
 
 int main(int argc, char *argv[])
 {
+    qint32 nResult = XOptions::CR_SUCCESS;
+
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
     QCoreApplication::setOrganizationDomain(X_ORGANIZATIONDOMAIN);
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
@@ -258,10 +268,11 @@ int main(int argc, char *argv[])
     QObject::connect(&die_script, SIGNAL(infoMessage(QString)), &consoleOutput, SLOT(infoMessage(QString)));
 
     bool bIsDbUsed = false;
+    bool bDbLoaded = false;
 
     if (parser.isSet(clShowDatabase)) {
         if (!bIsDbUsed) {
-            die_script.loadDatabase(sDatabase);
+            bDbLoaded = die_script.loadDatabase(sDatabase);
             bIsDbUsed = true;
         }
 
@@ -294,15 +305,19 @@ int main(int argc, char *argv[])
         }
     } else if (listArgs.count()) {
         if (!bIsDbUsed) {
-            die_script.loadDatabase(sDatabase);
+            bDbLoaded = die_script.loadDatabase(sDatabase);
             bIsDbUsed = true;
         }
 
-        ScanFiles(&listArgs, &scanOptions, &die_script);
+        nResult = ScanFiles(&listArgs, &scanOptions, &die_script);
     } else if (!parser.isSet(clShowDatabase)) {
         parser.showHelp();
         Q_UNREACHABLE();
     }
 
-    return 0;
+    if (bIsDbUsed && (!bDbLoaded)) {
+        nResult = XOptions::CR_CANNOTFINDDATABASE;
+    }
+
+    return nResult;
 }
