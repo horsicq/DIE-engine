@@ -31,6 +31,7 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GRO
     g_pXHexViewOptionsWidget = new XHexViewOptionsWidget(this);
     g_pXDisasmViewOptionsWidget = new XDisasmViewOptionsWidget(this);
     g_pXOnlineToolsOptionsWidget = new XOnlineToolsOptionsWidget(this);
+    g_pXInfoDBOptionsWidget = new XInfoDBOptionsWidget(this);
 
     ui->widgetOptions->setOptions(pOptions, X_APPLICATIONDISPLAYNAME);
 
@@ -48,6 +49,9 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GRO
 
     ui->widgetOptions->addPage(g_pXOnlineToolsOptionsWidget, tr("Online tools"));
     g_pXOnlineToolsOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->addPage(g_pXInfoDBOptionsWidget, tr("Info"));
+    g_pXInfoDBOptionsWidget->setOptions(pOptions);
 
     ui->widgetOptions->setCurrentPage(groupId);
 }

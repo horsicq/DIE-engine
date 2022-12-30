@@ -30,6 +30,7 @@
 #include "searchsignaturesoptionswidget.h"
 #include "xdisasmviewoptionswidget.h"
 #include "xhexviewoptionswidget.h"
+#include "xinfodboptionswidget.h"
 #include "xonlinetoolsoptionswidget.h"
 
 namespace Ui {
@@ -50,6 +51,7 @@ private:
     XHexViewOptionsWidget *g_pXHexViewOptionsWidget;
     XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;
     XOnlineToolsOptionsWidget *g_pXOnlineToolsOptionsWidget;
+    XInfoDBOptionsWidget *g_pXInfoDBOptionsWidget;
 };
 
 #endif  // DIALOGOPTIONS_H

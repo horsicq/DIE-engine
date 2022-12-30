@@ -5,7 +5,7 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Type</source>
@@ -103,10 +103,6 @@
         <translation>只读</translation>
     </message>
     <message>
-        <source>Save</source>
-        <translation>保存</translation>
-    </message>
-    <message>
         <source>Info</source>
         <translation>信息</translation>
     </message>
@@ -120,7 +116,15 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
@@ -187,6 +191,14 @@
         <source>Heuristic scan</source>
         <translation>启发式扫描</translation>
     </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
+    </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
@@ -223,12 +235,8 @@
         <translation>数据库</translation>
     </message>
     <message>
-        <source>Info</source>
-        <translation>信息</translation>
-    </message>
-    <message>
         <source>Editor</source>
-        <translation>编辑</translation>
+        <translation>编辑器</translation>
     </message>
     <message>
         <source>Font</source>
@@ -243,7 +251,7 @@
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -295,122 +303,6 @@
     <message>
         <source>Cannot load database</source>
         <translation>无法加载数据库</translation>
-    </message>
-    <message>
-        <source>Directory scan</source>
-        <translation>目录扫描</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>存档</translation>
-    </message>
-    <message>
-        <source>Compiler</source>
-        <translation>编译器</translation>
-    </message>
-    <message>
-        <source>Cryptor</source>
-        <translation>加密库</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>证书</translation>
-    </message>
-    <message>
-        <source>Converter</source>
-        <translation>转换器</translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation>数据</translation>
-    </message>
-    <message>
-        <source>Database</source>
-        <translation>数据库</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>调试数据</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>格式</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>镜像</translation>
-    </message>
-    <message>
-        <source>Installer</source>
-        <translation>安装程序</translation>
-    </message>
-    <message>
-        <source>Installer data</source>
-        <translation>安装程序数据</translation>
-    </message>
-    <message>
-        <source>Joiner</source>
-        <translation>合并工具</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>语言</translation>
-    </message>
-    <message>
-        <source>Library</source>
-        <translation>库</translation>
-    </message>
-    <message>
-        <source>Linker</source>
-        <translation>链接程序</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>附加</translation>
-    </message>
-    <message>
-        <source>Packer</source>
-        <translation>打包工具</translation>
-    </message>
-    <message>
-        <source>Player</source>
-        <translation>播放器</translation>
-    </message>
-    <message>
-        <source>Protection</source>
-        <translation>保护</translation>
-    </message>
-    <message>
-        <source>Protector</source>
-        <translation>保护器</translation>
-    </message>
-    <message>
-        <source>Protector data</source>
-        <translation>保护器数据</translation>
-    </message>
-    <message>
-        <source>Source code</source>
-        <translation>源代码</translation>
-    </message>
-    <message>
-        <source>Stub</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Tool</source>
-        <translation>工具</translation>
-    </message>
-    <message>
-        <source>compressor</source>
-        <translation>压缩工具</translation>
-    </message>
-    <message>
-        <source>obfuscator</source>
-        <translation>混淆器</translation>
-    </message>
-    <message>
-        <source>extender</source>
-        <translation>扩展器</translation>
     </message>
 </context>
 <context>
@@ -491,7 +383,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>字节数</translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -613,7 +505,7 @@
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>标贴</translation>
+        <translation>标签</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -978,7 +870,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>字节数</translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -988,20 +880,16 @@
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
-        <source>Search</source>
-        <translation>搜索</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-    <message>
         <source>Search strings</source>
         <translation>搜索字符串</translation>
     </message>
     <message>
         <source>Search signatures</source>
         <translation>搜索签名</translation>
+    </message>
+    <message>
+        <source>Search values</source>
+        <translation></translation>
     </message>
     <message>
         <source>Create view model</source>
@@ -1020,7 +908,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -1033,6 +921,10 @@
     <message>
         <source>Online tools</source>
         <translation>在线工具</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>信息</translation>
     </message>
 </context>
 <context>
@@ -1108,7 +1000,7 @@
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1120,6 +1012,17 @@
     <message>
         <source>Strings</source>
         <translation>字符串</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+</context>
+<context>
+    <name>DialogSearchValues</name>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1183,7 +1086,7 @@
     <name>DialogSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1363,14 +1266,6 @@
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
-        <source>Scan</source>
-        <translation>扫描</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-    <message>
         <source>Text documents</source>
         <translation>文本文档</translation>
     </message>
@@ -1421,7 +1316,7 @@
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
-        <translation>所有颜色</translation>
+        <translation>颜色</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1442,6 +1337,17 @@
 </context>
 <context>
     <name>DialogXDynStructs</name>
+    <message>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXExtractor</name>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
     <message>
         <source>Close</source>
         <translation>关闭</translation>
@@ -1477,7 +1383,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>导入表</translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Export</source>
@@ -1522,6 +1428,14 @@
     <message>
         <source>Readonly</source>
         <translation>只读</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
@@ -1572,11 +1486,19 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>全部节</translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -1651,6 +1573,22 @@
         <translation>无法保存文件</translation>
     </message>
     <message>
+        <source>Dump all</source>
+        <translation>转储</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation>文本文件</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>所有文件</translation>
+    </message>
+    <message>
         <source>Dump</source>
         <translation>转储</translation>
     </message>
@@ -1686,28 +1624,32 @@
         <translation>文件类型</translation>
     </message>
     <message>
-        <source>Entry point</source>
-        <translation>入口点</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>反汇编</translation>
+        <source>File size</source>
+        <translation></translation>
     </message>
     <message>
         <source>Base address</source>
         <translation>基址</translation>
     </message>
     <message>
-        <source>Memory map</source>
-        <translation>内存映射</translation>
+        <source>Entry point</source>
+        <translation>入口点</translation>
     </message>
     <message>
         <source>File info</source>
         <translation>文件信息</translation>
     </message>
     <message>
-        <source>Hash</source>
-        <translation>哈希</translation>
+        <source>Memory map</source>
+        <translation>内存映射</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>反汇编</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1715,15 +1657,23 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
-        <source>Hex</source>
-        <translation>十六进制</translation>
+        <source>Hash</source>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Entropy</source>
         <translation>信息熵</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -1735,7 +1685,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>导入表</translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Resources</source>
@@ -1743,7 +1693,7 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>全部节</translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Time date stamp</source>
@@ -1763,7 +1713,7 @@
     </message>
     <message>
         <source>Programs</source>
-        <translation>全部程序</translation>
+        <translation>程序</translation>
     </message>
     <message>
         <source>Commands</source>
@@ -1771,11 +1721,11 @@
     </message>
     <message>
         <source>Segments</source>
-        <translation>全部段</translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>全部库</translation>
+        <translation>库</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1807,6 +1757,10 @@
     <message>
         <source>File name</source>
         <translation>文件名</translation>
+    </message>
+    <message>
+        <source>Advanced</source>
+        <translation></translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -1841,7 +1795,7 @@
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation>导入表</translation>
+        <translation>导入</translation>
     </message>
 </context>
 <context>
@@ -1957,7 +1911,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -1972,7 +1926,7 @@
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
@@ -2049,7 +2003,15 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Commands</source>
@@ -2057,11 +2019,11 @@
     </message>
     <message>
         <source>Segments</source>
-        <translation>全部段</translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>全部节</translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Rebase</source>
@@ -2097,7 +2059,7 @@
     </message>
     <message>
         <source>Modules</source>
-        <translation>全部模块</translation>
+        <translation>模块</translation>
     </message>
     <message>
         <source>External references</source>
@@ -2180,7 +2142,15 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -2208,6 +2178,10 @@
     <message>
         <source>String</source>
         <translation>字符串</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>值</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2265,11 +2239,11 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>全部段</translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -2355,7 +2329,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
 </context>
 <context>
@@ -2363,6 +2337,82 @@
     <message>
         <source>Section</source>
         <translation>节</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <source>Relative address</source>
+        <translation>相对地址(RA)</translation>
+    </message>
+    <message>
+        <source>Virtual size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File offset</source>
+        <translation>文件偏移</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>大小</translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation>标志寄存器</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>附加</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>入口点</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>导出</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>导入</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>资源</translation>
+    </message>
+    <message>
+        <source>Exceptions</source>
+        <translation>异常</translation>
+    </message>
+    <message>
+        <source>Relocs</source>
+        <translation>重新定位</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>调试</translation>
+    </message>
+    <message>
+        <source>Load config</source>
+        <translation>加载配置</translation>
+    </message>
+    <message>
+        <source>Bound import</source>
+        <translation>绑定导入</translation>
+    </message>
+    <message>
+        <source>Delay import</source>
+        <translation>延迟导入</translation>
     </message>
     <message>
         <source>Type</source>
@@ -2377,20 +2427,8 @@
         <translation>哈希</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>名称</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>资源</translation>
-    </message>
-    <message>
         <source>Offset</source>
         <translation>偏移</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
     </message>
     <message>
         <source>Language</source>
@@ -2453,6 +2491,37 @@
     </message>
 </context>
 <context>
+    <name>PEToolsWidget</name>
+    <message>
+        <source>Tools</source>
+        <translation>工具集</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation>转储</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>附加</translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation>保存转储</translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation>原始数据</translation>
+    </message>
+</context>
+<context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
@@ -2491,12 +2560,28 @@
         <translation>保存</translation>
     </message>
     <message>
+        <source>Dump</source>
+        <translation>转储</translation>
+    </message>
+    <message>
+        <source>Dump all</source>
+        <translation>转储</translation>
+    </message>
+    <message>
         <source>Show valid</source>
         <translation>显示有效项</translation>
     </message>
     <message>
         <source>Table</source>
         <translation>表格</translation>
+    </message>
+    <message>
+        <source>Extract all icons</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extract all cursors</source>
+        <translation></translation>
     </message>
     <message>
         <source>Tree</source>
@@ -2520,7 +2605,19 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>工具集</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2528,7 +2625,7 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>全部节</translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Export</source>
@@ -2536,7 +2633,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>导入表</translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Resources</source>
@@ -2556,7 +2653,7 @@
     </message>
     <message>
         <source>Exceptions</source>
-        <translation>例外</translation>
+        <translation>异常</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -2723,7 +2820,7 @@
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Search signatures</source>
@@ -2758,7 +2855,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -2797,7 +2894,7 @@
     </message>
     <message>
         <source>Links</source>
-        <translation></translation>
+        <translation>链接</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2861,126 +2958,53 @@
     </message>
 </context>
 <context>
+    <name>SearchValuesWidget</name>
+    <message>
+        <source>Type</source>
+        <translation>类型</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>字符串</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>签名</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>值</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
+    </message>
+    <message>
+        <source>Values</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation>显示到</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>十六进制</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>反汇编</translation>
+    </message>
+</context>
+<context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
         <translation>未知</translation>
-    </message>
-    <message>
-        <source>obfuscator</source>
-        <translation>混淆器</translation>
-    </message>
-    <message>
-        <source>Tool</source>
-        <translation>工具</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>证书</translation>
-    </message>
-    <message>
-        <source>Compiler</source>
-        <translation>编译器</translation>
-    </message>
-    <message>
-        <source>Converter</source>
-        <translation>转换器</translation>
-    </message>
-    <message>
-        <source>Cryptor</source>
-        <translation>加密库</translation>
-    </message>
-    <message>
-        <source>Database</source>
-        <translation>数据库</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>调试数据</translation>
-    </message>
-    <message>
-        <source>protection</source>
-        <translation>防护</translation>
-    </message>
-    <message>
-        <source>extender</source>
-        <translation>扩展器</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>格式</translation>
-    </message>
-    <message>
-        <source>Generic</source>
-        <translation>通用</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>镜像</translation>
-    </message>
-    <message>
-        <source>Installer</source>
-        <translation>安装程序</translation>
-    </message>
-    <message>
-        <source>Installer data</source>
-        <translation>安装程序数据</translation>
-    </message>
-    <message>
-        <source>Joiner</source>
-        <translation>合并工具</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>语言</translation>
-    </message>
-    <message>
-        <source>Library</source>
-        <translation>库</translation>
-    </message>
-    <message>
-        <source>Linker</source>
-        <translation>链接程序</translation>
-    </message>
-    <message>
-        <source>compressor</source>
-        <translation>压缩工具</translation>
-    </message>
-    <message>
-        <source>Operation system</source>
-        <translation>操作系统</translation>
-    </message>
-    <message>
-        <source>Packer</source>
-        <translation>打包工具</translation>
-    </message>
-    <message>
-        <source>Protector</source>
-        <translation>保护器</translation>
-    </message>
-    <message>
-        <source>Protector data</source>
-        <translation>保护器数据</translation>
-    </message>
-    <message>
-        <source>data</source>
-        <translation>数据</translation>
-    </message>
-    <message>
-        <source>Sign tool</source>
-        <translation>签名工具</translation>
-    </message>
-    <message>
-        <source>Source code</source>
-        <translation>源代码</translation>
-    </message>
-    <message>
-        <source>Stub</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Virtual machine</source>
-        <translation>虚拟机</translation>
     </message>
     <message>
         <source>Header</source>
@@ -3100,7 +3124,15 @@
     </message>
     <message>
         <source>Libraries</source>
-        <translation>全部库</translation>
+        <translation>库</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <source>The value copied to clipboard</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3139,11 +3171,19 @@
     </message>
     <message>
         <source>Document</source>
-        <translation>文献</translation>
+        <translation>文档</translation>
     </message>
     <message>
         <source>Image</source>
         <translation>镜像</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation></translation>
     </message>
     <message>
         <source>Text</source>
@@ -3159,7 +3199,7 @@
     </message>
     <message>
         <source>Invalid signature</source>
-        <translation></translation>
+        <translation>无效的签名</translation>
     </message>
     <message>
         <source>Write error</source>
@@ -3171,7 +3211,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>字节数</translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>KiB</source>
@@ -3227,6 +3267,13 @@
     <message>
         <source>Unknown</source>
         <translation>未知</translation>
+    </message>
+</context>
+<context>
+    <name>XCapstone</name>
+    <message>
+        <source>Invalid opcode</source>
+        <translation>无效的操作码</translation>
     </message>
 </context>
 <context>
@@ -3319,7 +3366,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>字节数</translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -3334,7 +3381,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>字节数</translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -3347,10 +3394,6 @@
     <message>
         <source>Comment</source>
         <translation>注释</translation>
-    </message>
-    <message>
-        <source>Invalid opcode</source>
-        <translation>无效的操作码</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -3433,7 +3476,7 @@
     </message>
     <message>
         <source>Uppercase</source>
-        <translation></translation>
+        <translation>大写字母</translation>
     </message>
     <message>
         <source>Show colons in addresses</source>
@@ -3445,7 +3488,7 @@
     </message>
     <message>
         <source>Colors</source>
-        <translation>所有颜色</translation>
+        <translation>颜色</translation>
     </message>
 </context>
 <context>
@@ -3460,7 +3503,7 @@
     </message>
     <message>
         <source>Labels</source>
-        <translation>标贴</translation>
+        <translation>标签</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -3647,7 +3690,7 @@
     </message>
     <message>
         <source>Regions</source>
-        <translation>全部区域</translation>
+        <translation>区域</translation>
     </message>
     <message>
         <source>Diagram</source>
@@ -3659,7 +3702,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>字节数</translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Byte</source>
@@ -3680,6 +3723,65 @@
     <message>
         <source>Documents</source>
         <translation>文档</translation>
+    </message>
+</context>
+<context>
+    <name>XExtractorWidget</name>
+    <message>
+        <source>Extract</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>类型</translation>
+    </message>
+    <message>
+        <source>Dump all</source>
+        <translation>转储</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>扫描</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>深度扫描</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>选项</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>偏移</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>地址</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>大小</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation>显示到</translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation>转储到文件</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>十六进制</translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation>保存转储</translation>
     </message>
 </context>
 <context>
@@ -3758,7 +3860,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>字节数</translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3769,7 +3871,7 @@
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Type</source>
@@ -3810,6 +3912,145 @@
     <message>
         <source>All files</source>
         <translation>所有文件</translation>
+    </message>
+</context>
+<context>
+    <name>XFormats</name>
+    <message>
+        <source>obfuscator</source>
+        <translation>混淆器</translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation>工具</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>存档</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>证书</translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation>编译器</translation>
+    </message>
+    <message>
+        <source>Converter</source>
+        <translation>转换器</translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
+        <translation>加密库</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>数据</translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>数据库</translation>
+    </message>
+    <message>
+        <source>Debug data</source>
+        <translation>调试数据</translation>
+    </message>
+    <message>
+        <source>protection</source>
+        <translation>防护</translation>
+    </message>
+    <message>
+        <source>extender</source>
+        <translation>扩展器</translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>格式</translation>
+    </message>
+    <message>
+        <source>Generic</source>
+        <translation>通用</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>镜像</translation>
+    </message>
+    <message>
+        <source>Installer</source>
+        <translation>安装程序</translation>
+    </message>
+    <message>
+        <source>Installer data</source>
+        <translation>安装程序数据</translation>
+    </message>
+    <message>
+        <source>Joiner</source>
+        <translation>合并工具</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>语言</translation>
+    </message>
+    <message>
+        <source>Library</source>
+        <translation>库</translation>
+    </message>
+    <message>
+        <source>Linker</source>
+        <translation>链接程序</translation>
+    </message>
+    <message>
+        <source>compressor</source>
+        <translation>压缩工具</translation>
+    </message>
+    <message>
+        <source>Operation system</source>
+        <translation>操作系统</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>附加</translation>
+    </message>
+    <message>
+        <source>Packer</source>
+        <translation>打包工具</translation>
+    </message>
+    <message>
+        <source>Player</source>
+        <translation>播放器</translation>
+    </message>
+    <message>
+        <source>Protection</source>
+        <translation>保护</translation>
+    </message>
+    <message>
+        <source>Protector</source>
+        <translation>保护器</translation>
+    </message>
+    <message>
+        <source>Protector data</source>
+        <translation>保护器数据</translation>
+    </message>
+    <message>
+        <source>data</source>
+        <translation>数据</translation>
+    </message>
+    <message>
+        <source>Sign tool</source>
+        <translation>签名工具</translation>
+    </message>
+    <message>
+        <source>Source code</source>
+        <translation>源代码</translation>
+    </message>
+    <message>
+        <source>Stub</source>
+        <translation>存根</translation>
+    </message>
+    <message>
+        <source>Virtual machine</source>
+        <translation>虚拟机</translation>
     </message>
 </context>
 <context>
@@ -3877,6 +4118,14 @@
         <translation>偏移</translation>
     </message>
     <message>
+        <source>Start</source>
+        <translation>重新开始</translation>
+    </message>
+    <message>
+        <source>End</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation>转储到文件</translation>
     </message>
@@ -3911,6 +4160,10 @@
     <message>
         <source>Go to</source>
         <translation>转到</translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation>选区</translation>
     </message>
     <message>
         <source>Find</source>
@@ -3952,11 +4205,7 @@
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>十六进制</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Data inspector</source>
@@ -3965,6 +4214,10 @@
     <message>
         <source>Readonly</source>
         <translation>只读</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Name</source>
@@ -3985,6 +4238,13 @@
     <message>
         <source>Size</source>
         <translation>大小</translation>
+    </message>
+</context>
+<context>
+    <name>XIcon</name>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
@@ -4015,7 +4275,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>导入表</translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Data</source>
@@ -4028,6 +4288,24 @@
     <message>
         <source>Function</source>
         <translation>函数</translation>
+    </message>
+</context>
+<context>
+    <name>XInfoDBOptionsWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>打开目录</translation>
+    </message>
+</context>
+<context>
+    <name>XJpeg</name>
+    <message>
+        <source>Data</source>
+        <translation>数据</translation>
     </message>
 </context>
 <context>
@@ -4073,12 +4351,23 @@
         <source>Unknown</source>
         <translation>未知</translation>
     </message>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
 </context>
 <context>
     <name>XMIMEWidget</name>
     <message>
         <source>All</source>
         <translation>所有</translation>
+    </message>
+</context>
+<context>
+    <name>XMP3</name>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
@@ -4098,6 +4387,10 @@
 </context>
 <context>
     <name>XMemoryMapWidget</name>
+    <message>
+        <source>Dump all</source>
+        <translation>转储</translation>
+    </message>
     <message>
         <source>Save</source>
         <translation>保存</translation>
@@ -4154,12 +4447,32 @@
         <source>Name</source>
         <translation>名称</translation>
     </message>
+    <message>
+        <source>Dump to file</source>
+        <translation>转储到文件</translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation>转储</translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation>保存转储</translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation>原始数据</translation>
+    </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
+        <translation>表单</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -4185,7 +4498,7 @@
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Get</source>
@@ -4295,6 +4608,21 @@
     </message>
 </context>
 <context>
+    <name>XPDF</name>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>对象</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
@@ -4366,7 +4694,29 @@
     </message>
 </context>
 <context>
+    <name>XPNG</name>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
+</context>
+<context>
+    <name>XRar</name>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>数据</translation>
+    </message>
+</context>
+<context>
     <name>XSevenZip</name>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>未知</translation>
@@ -4400,7 +4750,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>全部签名</translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Struct</source>
@@ -4483,6 +4833,10 @@
         <translation>选择</translation>
     </message>
     <message>
+        <source>Selection</source>
+        <translation>选区</translation>
+    </message>
+    <message>
         <source>Follow in</source>
         <translation>显示到</translation>
     </message>
@@ -4496,7 +4850,7 @@
     </message>
     <message>
         <source>Modules</source>
-        <translation>全部模块</translation>
+        <translation>模块</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -4512,7 +4866,7 @@
     </message>
     <message>
         <source>Editor</source>
-        <translation>编辑</translation>
+        <translation>编辑器</translation>
     </message>
     <message>
         <source>Show</source>
@@ -4551,6 +4905,14 @@
         <translation>地址</translation>
     </message>
     <message>
+        <source>End</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation>重新开始</translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>入口点</translation>
     </message>
@@ -4561,6 +4923,10 @@
     <message>
         <source>Size</source>
         <translation>大小</translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation>指令</translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -4596,7 +4962,7 @@
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation>全部断点</translation>
+        <translation>断点</translation>
     </message>
     <message>
         <source>Callstack</source>
@@ -4701,12 +5067,24 @@
         <source>Cannot save file</source>
         <translation>无法保存文件</translation>
     </message>
+    <message>
+        <source>Open file</source>
+        <translation>打开文件</translation>
+    </message>
 </context>
 <context>
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
+        <translation>表单</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>重新加载</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Save</source>
@@ -4722,7 +5100,7 @@
     </message>
     <message>
         <source>Source</source>
-        <translation></translation>
+        <translation>源</translation>
     </message>
     <message>
         <source>Type</source>
@@ -4738,10 +5116,21 @@
     </message>
 </context>
 <context>
+    <name>XTiff</name>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>表格</translation>
+    </message>
+</context>
+<context>
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation>载入</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Rescan</source>
@@ -4769,7 +5158,7 @@
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation></translation>
+        <translation>上传这个文件进行分析？</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -4789,7 +5178,7 @@
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation></translation>
+        <translation>请使用有效的 API Key</translation>
     </message>
     <message>
         <source>Options</source>
