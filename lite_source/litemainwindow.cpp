@@ -28,6 +28,23 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 
+    g_xOptions.setName(X_OPTIONSFILELITE);
+
+    g_xOptions.addID(XOptions::ID_SCAN_RECURSIVE, true);
+    g_xOptions.addID(XOptions::ID_SCAN_DEEP, true);
+    g_xOptions.addID(XOptions::ID_SCAN_HEURISTIC, false);
+    g_xOptions.addID(XOptions::ID_SCAN_VERBOSE, true);
+    g_xOptions.addID(XOptions::ID_SCAN_ALLTYPES, false);
+    g_xOptions.addID(XOptions::ID_SCAN_DATABASEPATH, "$data/db");
+
+    g_xOptions.load();
+
+    ui->checkBoxRecursiveScan->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_RECURSIVE).toBool());
+    ui->checkBoxDeepScan->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_DEEP).toBool());
+    ui->checkBoxHeuristicScan->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_HEURISTIC).toBool());
+    ui->checkBoxVerbose->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_VERBOSE).toBool());
+    ui->checkBoxAllTypesScan->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_ALLTYPES).toBool());
+
     setAcceptDrops(true);
     installEventFilter(this);
 
@@ -43,6 +60,14 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
 
 LiteMainWindow::~LiteMainWindow()
 {
+    g_xOptions.setValue(XOptions::ID_SCAN_RECURSIVE, ui->checkBoxRecursiveScan->isChecked());
+    g_xOptions.setValue(XOptions::ID_SCAN_DEEP, ui->checkBoxDeepScan->isChecked());
+    g_xOptions.setValue(XOptions::ID_SCAN_HEURISTIC, ui->checkBoxHeuristicScan->isChecked());
+    g_xOptions.setValue(XOptions::ID_SCAN_VERBOSE, ui->checkBoxVerbose->isChecked());
+    g_xOptions.setValue(XOptions::ID_SCAN_ALLTYPES, ui->checkBoxAllTypesScan->isChecked());
+
+    g_xOptions.save();
+
     delete ui;
     delete g_pDieScript;
 }
@@ -59,6 +84,7 @@ void LiteMainWindow::processFile(QString sFileName)
         scanOptions.bIsHeuristicScan = ui->checkBoxHeuristicScan->isChecked();
         scanOptions.bIsVerbose = ui->checkBoxVerbose->isChecked();
         scanOptions.bAllTypesScan = ui->checkBoxAllTypesScan->isChecked();
+        scanOptions.bRecursiveScan = ui->checkBoxRecursiveScan->isChecked();
         scanOptions.bShowType = true;
         scanOptions.bShowVersion = true;
         scanOptions.bShowOptions = true;

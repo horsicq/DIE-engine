@@ -58,5 +58,6 @@ protected:
 private:
     Ui::LiteMainWindow *ui;
     DiE_Script *g_pDieScript;
+    XOptions g_xOptions;
 };
 #endif  // LITEMAINWINDOW_H

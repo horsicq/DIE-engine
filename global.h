@@ -31,6 +31,7 @@
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "die.ini"
+#define X_OPTIONSFILELITE "diel.ini"
 #define X_SHORTCUTSFILE "shortcuts.ini"
 #define X_UPDATEPAGE "https://github.com/horsicq/DIE-engine/releases"
 
