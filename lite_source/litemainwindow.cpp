@@ -48,6 +48,8 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     setAcceptDrops(true);
     installEventFilter(this);
 
+    XOptions::setMonoFont(ui->plainTextEditResult);
+
     g_pDieScript = new DiE_Script;
     g_pDieScript->loadDatabase(XOptions().getApplicationDataPath() + QDir::separator() + "db");
 
