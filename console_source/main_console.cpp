@@ -241,7 +241,7 @@ int main(int argc, char *argv[])
     scanOptions.bShowType = true;
     scanOptions.bShowOptions = true;
     scanOptions.bShowVersion = true;
-    scanOptions.bRecursiveScan = parser.isSet(clRecursiveScan);
+    scanOptions.bIsRecursiveScan = parser.isSet(clRecursiveScan);
     scanOptions.bIsDeepScan = parser.isSet(clDeepScan);
     scanOptions.bIsHeuristicScan = parser.isSet(clHeuristicScan);
     scanOptions.bIsVerbose = parser.isSet(clVerbose);

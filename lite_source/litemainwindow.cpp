@@ -84,7 +84,7 @@ void LiteMainWindow::processFile(QString sFileName)
         scanOptions.bIsHeuristicScan = ui->checkBoxHeuristicScan->isChecked();
         scanOptions.bIsVerbose = ui->checkBoxVerbose->isChecked();
         scanOptions.bAllTypesScan = ui->checkBoxAllTypesScan->isChecked();
-        scanOptions.bRecursiveScan = ui->checkBoxRecursiveScan->isChecked();
+        scanOptions.bIsRecursiveScan = ui->checkBoxRecursiveScan->isChecked();
         scanOptions.bShowType = true;
         scanOptions.bShowVersion = true;
         scanOptions.bShowOptions = true;
