@@ -91,7 +91,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     if (QCoreApplication::arguments().count() > 1) {
         QString sFileName = QCoreApplication::arguments().at(1);
 
-        processFile(sFileName);
+        _process(sFileName);
     }
 }
 
@@ -168,12 +168,12 @@ void GuiMainWindow::setAdvanced(bool bState)
     ui->widgetFormats->setAdvanced(bState);
 }
 
-void GuiMainWindow::processFile(QString sFileName)
+void GuiMainWindow::_process(QString sName)
 {
-    ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
+    if (sName != "") {
+        ui->lineEditFileName->setText(QDir().toNativeSeparators(sName));
 
-    if (sFileName != "") {
-        ui->widgetFormats->setFileName(sFileName, g_xOptions.isScanAfterOpen());
+        ui->widgetFormats->setName(sName, g_xOptions.isScanAfterOpen());
 
         adjustFile();
     }
@@ -201,7 +201,7 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
 
             sFileName = XBinary::convertFileName(sFileName);
 
-            processFile(sFileName);
+            _process(sFileName);
         }
     }
 }
@@ -213,7 +213,7 @@ void GuiMainWindow::on_pushButtonOpenFile_clicked()
     QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
 
     if (!sFileName.isEmpty()) {
-        processFile(sFileName);
+        _process(sFileName);
     }
 }
 

@@ -59,7 +59,7 @@ private slots:
     void setAdvanced(bool bState);
 
 public slots:
-    void processFile(QString sFileName);
+    void _process(QString sName);
 
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
