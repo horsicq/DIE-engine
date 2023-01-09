@@ -1097,6 +1097,18 @@
         <translation>Tylko czytać</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Uruchom</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Debugować</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Skanowanie rekurencyjne</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Głębokie skanowanie</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Skanowanie heurystyczne</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Uruchom</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Debugować</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>Szukaj</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>Pliki</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>spakowany</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Nakładka</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>Automatyczny</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Otwórz katalog</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>Maszyna wirtualna</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Nagłówek</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

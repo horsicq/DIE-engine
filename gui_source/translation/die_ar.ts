@@ -1097,6 +1097,18 @@
         <translation>يقرأ فقط</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>يركض</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>تصحيح</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>مسح تكراري</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>تفحص بعمق</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>مسح ارشادي</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>يركض</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>تصحيح</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>بحث</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>الملفات</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>معباه</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>تراكب</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>تلقائي</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>الدليل مفتوح</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>آلة افتراضية</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>رأس</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

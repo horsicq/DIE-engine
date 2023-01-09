@@ -1097,6 +1097,18 @@
         <translation>Salt okunur</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Yürüt</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Hata ayıklama</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Özyinelemeli tara</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Derin tarama</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Sezgisel tarama</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Yürüt</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Hata ayıklama</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>Ara</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>Dosyalar</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>paketlenmiş</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Kaplama</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>Otomatik</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Dizin aç</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>Sanal makine</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Başlık</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

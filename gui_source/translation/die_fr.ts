@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Extracteur</translation>
     </message>
     <message>
         <source>Search</source>
@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Info</source>
@@ -193,7 +193,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Extracteur</translation>
     </message>
     <message>
         <source>Search</source>
@@ -287,7 +287,7 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation>Arrêtez</translation>
+        <translation>Arrêter</translation>
     </message>
     <message>
         <source>msec</source>
@@ -445,7 +445,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>OK</source>
@@ -574,11 +574,11 @@
     </message>
     <message>
         <source>Keep size</source>
-        <translation></translation>
+        <translation>Garder la taille</translation>
     </message>
     <message>
         <source>C Strings</source>
-        <translation>Lignes de texte</translation>
+        <translation>Chaîne C</translation>
     </message>
     <message>
         <source>OK</source>
@@ -800,7 +800,7 @@
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>OK</source>
@@ -889,7 +889,7 @@
     </message>
     <message>
         <source>Search values</source>
-        <translation></translation>
+        <translation>Recherche de valeurs</translation>
     </message>
     <message>
         <source>Create view model</source>
@@ -1090,11 +1090,23 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Readonly</source>
         <translation>Lecture seule</translation>
+    </message>
+    <message>
+        <source>Run</source>
+        <translation>Lancer</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Déboguer</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Analyse récursive</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1109,24 +1121,16 @@
         <translation>Analyse heuristique</translation>
     </message>
     <message>
-        <source>Run</source>
-        <translation>Lancer</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Déboguer</translation>
-    </message>
-    <message>
         <source>Find</source>
         <translation>Chercher</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation></translation>
+        <translation>Suivant</translation>
     </message>
     <message>
         <source>Detect</source>
-        <translation></translation>
+        <translation>Détecter</translation>
     </message>
     <message>
         <source>Show type</source>
@@ -1240,7 +1244,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1282,7 +1286,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1332,7 +1336,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>Arrière-plan</translation>
     </message>
 </context>
 <context>
@@ -1346,7 +1350,7 @@
     <name>DialogXExtractor</name>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Extracteur</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1431,7 +1435,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Header</source>
@@ -1470,7 +1474,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Info</source>
@@ -1490,7 +1494,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Extracteur</translation>
     </message>
     <message>
         <source>Search</source>
@@ -1540,7 +1544,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>msec</source>
@@ -1574,11 +1578,11 @@
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Extraire</translation>
+        <translation>Tout extraire</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Text files</source>
@@ -1625,7 +1629,7 @@
     </message>
     <message>
         <source>File size</source>
-        <translation></translation>
+        <translation>Taille du fichier</translation>
     </message>
     <message>
         <source>Base address</source>
@@ -1637,7 +1641,7 @@
     </message>
     <message>
         <source>File info</source>
-        <translation></translation>
+        <translation>Informations du fichier</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -1669,11 +1673,19 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Extracteur</translation>
     </message>
     <message>
         <source>Search</source>
         <translation>Chercher</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Des dossiers</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>compressé</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -1751,6 +1763,10 @@
         <source>Automatic</source>
         <translation>Automatique</translation>
     </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Ouvrir un dossier</translation>
+    </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
@@ -1760,7 +1776,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation></translation>
+        <translation>Avancé</translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -1826,7 +1842,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2007,7 +2023,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Extracteur</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2146,7 +2162,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Extracteur</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2282,7 +2298,7 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation>Arrêtez</translation>
+        <translation>Arrêter</translation>
     </message>
     <message>
         <source>msec</source>
@@ -2348,7 +2364,7 @@
     </message>
     <message>
         <source>Virtual size</source>
-        <translation></translation>
+        <translation>Taille virtuelle</translation>
     </message>
     <message>
         <source>File offset</source>
@@ -2498,11 +2514,11 @@
     </message>
     <message>
         <source>Add</source>
-        <translation></translation>
+        <translation>Ajouter</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation></translation>
+        <translation>Enlever</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -2557,7 +2573,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -2565,7 +2581,7 @@
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Extraire</translation>
+        <translation>Tout extraire</translation>
     </message>
     <message>
         <source>Show valid</source>
@@ -2577,11 +2593,11 @@
     </message>
     <message>
         <source>Extract all icons</source>
-        <translation></translation>
+        <translation>Extraire toutes les icônes</translation>
     </message>
     <message>
         <source>Extract all cursors</source>
-        <translation></translation>
+        <translation>Extraire tous les curseurs</translation>
     </message>
     <message>
         <source>Tree</source>
@@ -2609,7 +2625,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Extracteur</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2847,7 +2863,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2890,11 +2906,11 @@
     <name>SearchStringsWidget</name>
     <message>
         <source>C Strings</source>
-        <translation>Lignes de texte</translation>
+        <translation>Chaîne C</translation>
     </message>
     <message>
         <source>Links</source>
-        <translation></translation>
+        <translation>Liens</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2906,7 +2922,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -2977,7 +2993,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2985,7 +3001,7 @@
     </message>
     <message>
         <source>Values</source>
-        <translation></translation>
+        <translation>Valeurs</translation>
     </message>
     <message>
         <source>Follow in</source>
@@ -3132,7 +3148,7 @@
     </message>
     <message>
         <source>The value copied to clipboard</source>
-        <translation></translation>
+        <translation>La valeur a été copiée dans le presse-papier</translation>
     </message>
 </context>
 <context>
@@ -3179,11 +3195,11 @@
     </message>
     <message>
         <source>Video</source>
-        <translation></translation>
+        <translation>Vidéo</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation></translation>
+        <translation>Audio</translation>
     </message>
     <message>
         <source>Text</source>
@@ -3389,7 +3405,7 @@
     </message>
     <message>
         <source>Symbol</source>
-        <translation>symbole</translation>
+        <translation>Symbole</translation>
     </message>
     <message>
         <source>Comment</source>
@@ -3480,11 +3496,11 @@
     </message>
     <message>
         <source>Show colons in addresses</source>
-        <translation></translation>
+        <translation>Montrer les deux points dans les addresses</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation></translation>
+        <translation>Surligner</translation>
     </message>
     <message>
         <source>Colors</source>
@@ -3604,7 +3620,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Array</source>
@@ -3678,7 +3694,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Save diagram</source>
@@ -3694,11 +3710,11 @@
     </message>
     <message>
         <source>Diagram</source>
-        <translation></translation>
+        <translation>Diagramme</translation>
     </message>
     <message>
         <source>Grid</source>
-        <translation></translation>
+        <translation>Grille</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -3729,7 +3745,7 @@
     <name>XExtractorWidget</name>
     <message>
         <source>Extract</source>
-        <translation></translation>
+        <translation>Extraire</translation>
     </message>
     <message>
         <source>Type</source>
@@ -3737,11 +3753,11 @@
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Extraire</translation>
+        <translation>Tout extraire</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -3891,7 +3907,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Text</source>
@@ -4054,6 +4070,17 @@
     </message>
 </context>
 <context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>En-tête</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>Pied de page</translation>
+    </message>
+</context>
+<context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
@@ -4073,7 +4100,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -4119,11 +4146,11 @@
     </message>
     <message>
         <source>Start</source>
-        <translation>Redémarrage</translation>
+        <translation>Commencer</translation>
     </message>
     <message>
         <source>End</source>
-        <translation></translation>
+        <translation>Fin</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -4194,7 +4221,7 @@
     </message>
     <message>
         <source>Show colons in addresses</source>
-        <translation></translation>
+        <translation>Montrer les deux points dans les addresses</translation>
     </message>
     <message>
         <source>Blinking cursor</source>
@@ -4209,7 +4236,7 @@
     </message>
     <message>
         <source>Data inspector</source>
-        <translation></translation>
+        <translation>Inspecteur de données</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -4287,7 +4314,7 @@
     </message>
     <message>
         <source>Function</source>
-        <translation></translation>
+        <translation>Fonction</translation>
     </message>
 </context>
 <context>
@@ -4389,11 +4416,11 @@
     <name>XMemoryMapWidget</name>
     <message>
         <source>Dump all</source>
-        <translation>Extraire</translation>
+        <translation>Tout extraire</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Type</source>
@@ -4502,7 +4529,7 @@
     </message>
     <message>
         <source>Get</source>
-        <translation></translation>
+        <translation>Obtenir</translation>
     </message>
     <message>
         <source>API key</source>
@@ -4619,7 +4646,7 @@
     </message>
     <message>
         <source>Footer</source>
-        <translation></translation>
+        <translation>Pied de page</translation>
     </message>
 </context>
 <context>
@@ -4774,7 +4801,7 @@
     </message>
     <message>
         <source>Animate</source>
-        <translation></translation>
+        <translation>Animer</translation>
     </message>
     <message>
         <source>Debugger</source>
@@ -4878,11 +4905,11 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Save as</source>
-        <translation></translation>
+        <translation>Enregistrer sous</translation>
     </message>
     <message>
         <source>Close</source>
@@ -4906,11 +4933,11 @@
     </message>
     <message>
         <source>End</source>
-        <translation></translation>
+        <translation>Fin</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Redémarrage</translation>
+        <translation>Commencer</translation>
     </message>
     <message>
         <source>Entry point</source>
@@ -4938,7 +4965,7 @@
     </message>
     <message>
         <source>Next</source>
-        <translation></translation>
+        <translation>Suivant</translation>
     </message>
     <message>
         <source>All</source>
@@ -5026,7 +5053,7 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation>Arrêtez</translation>
+        <translation>Arrêter</translation>
     </message>
     <message>
         <source>Restart</source>
@@ -5049,7 +5076,7 @@
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Text files</source>
@@ -5088,7 +5115,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Address</source>
@@ -5108,7 +5135,7 @@
     </message>
     <message>
         <source>Symbol</source>
-        <translation>symbole</translation>
+        <translation>Symbole</translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5134,7 +5161,7 @@
     </message>
     <message>
         <source>Rescan</source>
-        <translation></translation>
+        <translation>Rescanner</translation>
     </message>
     <message>
         <source>Show detects</source>
@@ -5146,7 +5173,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>Sauvegarder</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -5158,7 +5185,7 @@
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation></translation>
+        <translation>Envoyer le fichier pour analyse?</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -5178,7 +5205,7 @@
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation></translation>
+        <translation>Merci d&apos;utiliser une clé API valide</translation>
     </message>
     <message>
         <source>Options</source>

@@ -1097,6 +1097,18 @@
         <translation>Chỉ đọc</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Chạy</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Gỡ lỗi</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Quét đệ quy</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Quét sâu</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Chạy</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Gỡ lỗi</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>Tìm kiếm</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>Các tập tin</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>nén</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Xếp chồng</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>Tự động</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Mở thư mục</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>Máy ảo</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Tiêu đề</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

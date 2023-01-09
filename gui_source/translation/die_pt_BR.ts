@@ -889,7 +889,7 @@
     </message>
     <message>
         <source>Search values</source>
-        <translation></translation>
+        <translation>Buscar valores</translation>
     </message>
     <message>
         <source>Create view model</source>
@@ -1097,6 +1097,18 @@
         <translation>Somente leitura</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Executar</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Depurar</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Varredura recursiva</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Varredura profunda</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Varredura heurística</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Executar</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Depurar</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>Procurar</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>Arquivos</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>comprimido</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Overlay</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>Automático</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Abrir diretórios</translation>
     </message>
 </context>
 <context>
@@ -2985,7 +3001,7 @@
     </message>
     <message>
         <source>Values</source>
-        <translation></translation>
+        <translation>Valores</translation>
     </message>
     <message>
         <source>Follow in</source>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>Máquina virtual</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>Rodapé</translation>
     </message>
 </context>
 <context>

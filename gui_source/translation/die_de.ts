@@ -1097,6 +1097,18 @@
         <translation>Nur lesen</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Ausführen</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Debug</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Rekursiver Scan</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Tiefen-Scan</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Heuristischer Scan</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Ausführen</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Debug</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>Suche</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>Dateien</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>Gepackt</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Overlay</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>Automatisch</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Ordner öffnen</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>Virtuelle Maschine</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>Fußzeile</translation>
     </message>
 </context>
 <context>

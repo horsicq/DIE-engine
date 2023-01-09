@@ -1097,6 +1097,18 @@
         <translation>לקריאה בלבד</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>לָרוּץ</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>לנפות</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>סריקה רקורסיבית</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>סריקה מתקדמת</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>סריקה היוריסטית</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>לָרוּץ</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>לנפות</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>חפש</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>קבצים</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>דחוס</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>שכבה</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>אוֹטוֹמָטִי</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>פתח תיקייה</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>מכונה וירטואלית</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>כותרת</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

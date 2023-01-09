@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Екстрактор</translation>
     </message>
     <message>
         <source>Search</source>
@@ -193,7 +193,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Екстрактор</translation>
     </message>
     <message>
         <source>Search</source>
@@ -1097,6 +1097,18 @@
         <translation>Лише читання</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Запустити</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Відлагодження</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Рекурсивне сканування</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Глибоке сканування</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Евристичне сканування</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Запустити</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Відлагодження</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1346,7 +1350,7 @@
     <name>DialogXExtractor</name>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Екстрактор</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1490,7 +1494,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Екстрактор</translation>
     </message>
     <message>
         <source>Search</source>
@@ -1574,7 +1578,7 @@
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Дамп</translation>
+        <translation>Здампити все</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1625,7 +1629,7 @@
     </message>
     <message>
         <source>File size</source>
-        <translation></translation>
+        <translation>Розмір файлу</translation>
     </message>
     <message>
         <source>Base address</source>
@@ -1669,11 +1673,19 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Екстрактор</translation>
     </message>
     <message>
         <source>Search</source>
         <translation>Пошук</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Файли</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>запакований</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -1751,6 +1763,10 @@
         <source>Automatic</source>
         <translation>Автоматично</translation>
     </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Відкрити каталог</translation>
+    </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
@@ -1760,7 +1776,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation></translation>
+        <translation>Просунутий</translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -2007,7 +2023,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Екстрактор</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2146,7 +2162,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Екстрактор</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2348,7 +2364,7 @@
     </message>
     <message>
         <source>Virtual size</source>
-        <translation></translation>
+        <translation>Віртуальний розмір</translation>
     </message>
     <message>
         <source>File offset</source>
@@ -2498,11 +2514,11 @@
     </message>
     <message>
         <source>Add</source>
-        <translation></translation>
+        <translation>Добавити</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation></translation>
+        <translation>Видалити</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -2565,7 +2581,7 @@
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Дамп</translation>
+        <translation>Здампити все</translation>
     </message>
     <message>
         <source>Show valid</source>
@@ -2577,11 +2593,11 @@
     </message>
     <message>
         <source>Extract all icons</source>
-        <translation></translation>
+        <translation>Витягнути всі іконки</translation>
     </message>
     <message>
         <source>Extract all cursors</source>
-        <translation></translation>
+        <translation>Витягнути всі курсори</translation>
     </message>
     <message>
         <source>Tree</source>
@@ -2609,7 +2625,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>Екстрактор</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2985,7 +3001,7 @@
     </message>
     <message>
         <source>Values</source>
-        <translation></translation>
+        <translation>Значення</translation>
     </message>
     <message>
         <source>Follow in</source>
@@ -3132,7 +3148,7 @@
     </message>
     <message>
         <source>The value copied to clipboard</source>
-        <translation></translation>
+        <translation>Значення скопійовано до буферу обміну</translation>
     </message>
 </context>
 <context>
@@ -3179,11 +3195,11 @@
     </message>
     <message>
         <source>Video</source>
-        <translation></translation>
+        <translation>Відео</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation></translation>
+        <translation>Аудіо</translation>
     </message>
     <message>
         <source>Text</source>
@@ -3729,7 +3745,7 @@
     <name>XExtractorWidget</name>
     <message>
         <source>Extract</source>
-        <translation></translation>
+        <translation>Витягнути</translation>
     </message>
     <message>
         <source>Type</source>
@@ -3737,7 +3753,7 @@
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Дамп</translation>
+        <translation>Здампити все</translation>
     </message>
     <message>
         <source>Save</source>
@@ -4054,6 +4070,17 @@
     </message>
 </context>
 <context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Заголовок</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>Футер</translation>
+    </message>
+</context>
+<context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
@@ -4119,11 +4146,11 @@
     </message>
     <message>
         <source>Start</source>
-        <translation>Перезапустити</translation>
+        <translation>Початок</translation>
     </message>
     <message>
         <source>End</source>
-        <translation></translation>
+        <translation>Кінець</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -4389,7 +4416,7 @@
     <name>XMemoryMapWidget</name>
     <message>
         <source>Dump all</source>
-        <translation>Дамп</translation>
+        <translation>Здампити все</translation>
     </message>
     <message>
         <source>Save</source>
@@ -4619,7 +4646,7 @@
     </message>
     <message>
         <source>Footer</source>
-        <translation></translation>
+        <translation>Футер</translation>
     </message>
 </context>
 <context>
@@ -4906,11 +4933,11 @@
     </message>
     <message>
         <source>End</source>
-        <translation></translation>
+        <translation>Кінець</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Перезапустити</translation>
+        <translation>Початок</translation>
     </message>
     <message>
         <source>Entry point</source>

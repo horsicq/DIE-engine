@@ -1097,6 +1097,18 @@
         <translation>Только чтение</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Запустить</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Отладка</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Рекурсивное сканирование</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Глубокий анализ</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Эвристическое сканирование</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Запустить</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Отладка</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>Поиск</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>Файлы</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>сжатый</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Оверлей</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>Автоматически</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Открыть папку</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>Виртуальная машина</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Заголовок</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>Футер</translation>
     </message>
 </context>
 <context>

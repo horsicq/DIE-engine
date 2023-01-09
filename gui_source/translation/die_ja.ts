@@ -1097,6 +1097,18 @@
         <translation>読み取り専用</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>実行</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>デバッグ</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>ファイル スキャン</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>ディープスキャン</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>ヒューリスティック スキャン</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>実行</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>デバッグ</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>検索</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>ファイル</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>パック済み</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>オーバーレイ</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>自動</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>ディレクトリを開く</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>仮想マシン</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>ヘッダ</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

@@ -1097,6 +1097,18 @@
         <translation>Solo lectura</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Ejecutar</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Depurar</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Escaneo recursivo</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Análisis en profundidad</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Escaneo heurístico</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Ejecutar</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Depurar</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>Buscar</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>Archivos</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>empaquetado</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Overlay</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>Automático</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Abrir directorio</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>Máquina virtual</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Cabecera</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

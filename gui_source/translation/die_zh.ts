@@ -1097,6 +1097,18 @@
         <translation>只读</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>运行</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>调试</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>递归扫描</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>深度扫描</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>启发式扫描</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>运行</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>调试</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>搜索</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>文件</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>已加壳</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>附加</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>自动</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>打开目录</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>虚拟机</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>文件头</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

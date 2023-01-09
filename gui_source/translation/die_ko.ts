@@ -1097,6 +1097,18 @@
         <translation>읽기 전용</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>운영</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>디버그</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>재귀적 검색</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>정밀 검사</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>휴리스틱 검색</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>운영</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>디버그</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>검색</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>파일</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>패킹됨</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>오버레이</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>자동적 인</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>디렉터리 열기</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>가상 기기</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

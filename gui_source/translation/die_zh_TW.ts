@@ -1097,6 +1097,18 @@
         <translation>唯讀</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>執行</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>除錯</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>遞歸掃描</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>深層掃描</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>執行</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>除錯</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>搜尋</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>文件</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>已打包</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>覆蓋</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>自動</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>打開目錄</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>虛擬機</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>標頭</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>

@@ -1097,6 +1097,18 @@
         <translation>Hanya dibaca</translation>
     </message>
     <message>
+        <source>Run</source>
+        <translation>Lari</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Debug</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Pemindaian rekursif</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>Pemindaian seksama</translation>
     </message>
@@ -1107,14 +1119,6 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation>Lari</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Debug</translation>
     </message>
     <message>
         <source>Find</source>
@@ -1676,6 +1680,14 @@
         <translation>Cari</translation>
     </message>
     <message>
+        <source>Files</source>
+        <translation>File</translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation>dikemas</translation>
+    </message>
+    <message>
         <source>Overlay</source>
         <translation>Overlay</translation>
     </message>
@@ -1750,6 +1762,10 @@
     <message>
         <source>Automatic</source>
         <translation>Otomatis</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Buka direktori</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4067,17 @@
     <message>
         <source>Virtual machine</source>
         <translation>Mesin virtual</translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation>Tajuk</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
     </message>
 </context>
 <context>
