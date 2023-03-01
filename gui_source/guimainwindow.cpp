@@ -72,7 +72,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
     ui->widgetFormats->setGlobal(&g_xShortcuts, &g_xOptions);
 
-    connect(&g_xOptions, SIGNAL(openFile(QString)), this, SLOT(processFile(QString)));
+    connect(&g_xOptions, SIGNAL(openFile(QString)), this, SLOT(_process(QString)));
 
     g_pRecentFilesMenu = g_xOptions.createRecentFilesMenu(this);
 

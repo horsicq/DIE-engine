@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
 
         GuiMainWindow mainWindow;
 
-        QObject::connect(&app, SIGNAL(messageText(QString)), &mainWindow, SLOT(processFile(QString)));
+        QObject::connect(&app, SIGNAL(messageText(QString)), &mainWindow, SLOT(_process(QString)));
 
         mainWindow.show();
 
