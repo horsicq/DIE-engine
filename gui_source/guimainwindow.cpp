@@ -26,6 +26,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 {
     ui->setupUi(this);
 
+    g_bFullScreen = false;
+
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
@@ -62,6 +64,11 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xShortcuts.setName(X_SHORTCUTSFILE);
     g_xShortcuts.setNative(g_xOptions.isNative());
 
+    g_xShortcuts.addId(XShortcuts::X_ID_FILE_OPEN);
+    g_xShortcuts.addId(XShortcuts::X_ID_FILE_EXIT);
+
+    g_xShortcuts.addId(XShortcuts::X_ID_VIEW_FULLSCREEN);
+
     g_xShortcuts.addGroup(XShortcuts::GROUPID_STRINGS);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_SIGNATURES);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_HEX);
@@ -79,6 +86,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
 
     adjust();
+    memset(shortCuts, 0, sizeof shortCuts);
+    updateShortcuts();
 
     bool bIsAdvanced = g_xOptions.getValue(XOptions::ID_VIEW_ADVANCED).toBool();
 
@@ -107,7 +116,7 @@ GuiMainWindow::~GuiMainWindow()
 
 void GuiMainWindow::on_pushButtonExit_clicked()
 {
-    this->close();
+    exitSlot();
 }
 
 void GuiMainWindow::on_pushButtonAbout_clicked()
@@ -143,8 +152,20 @@ QString GuiMainWindow::getCurrentFileName()
 void GuiMainWindow::adjust()
 {
     g_xOptions.adjustStayOnTop(this);
+}
 
-    // TODO setShortcuts for mainWindow ...
+void GuiMainWindow::updateShortcuts()
+{
+    for (qint32 i = 0; i < __SC_SIZE; i++) {
+        if (shortCuts[i]) {
+            delete shortCuts[i];
+            shortCuts[i] = nullptr;
+        }
+    }
+
+    if (!shortCuts[SC_OPENFILE]) shortCuts[SC_OPENFILE] = new QShortcut(g_xShortcuts.getShortcut(X_ID_FILE_OPEN), this, SLOT(openFileSlot()));
+    if (!shortCuts[SC_EXIT]) shortCuts[SC_EXIT] = new QShortcut(g_xShortcuts.getShortcut(X_ID_FILE_EXIT), this, SLOT(exitSlot()));
+    if (!shortCuts[SC_FULLSCREEN]) shortCuts[SC_FULLSCREEN] = new QShortcut(g_xShortcuts.getShortcut(X_ID_VIEW_FULLSCREEN), this, SLOT(fullScreenSlot()));
 }
 
 void GuiMainWindow::adjustFile()
@@ -208,13 +229,7 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
 
 void GuiMainWindow::on_pushButtonOpenFile_clicked()
 {
-    QString sDirectory = g_xOptions.getLastDirectory();
-
-    QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
-
-    if (!sFileName.isEmpty()) {
-        _process(sFileName);
-    }
+    openFileSlot();
 }
 
 void GuiMainWindow::on_pushButtonShortcuts_clicked()
@@ -225,7 +240,7 @@ void GuiMainWindow::on_pushButtonShortcuts_clicked()
 
     dialogShortcuts.exec();
 
-    adjust();
+    updateShortcuts();
 }
 
 void GuiMainWindow::on_toolButtonRecentFiles_clicked()
@@ -238,4 +253,32 @@ void GuiMainWindow::on_toolButtonRecentFiles_clicked()
 void GuiMainWindow::on_checkBoxAdvanced_toggled(bool bChecked)
 {
     setAdvanced(bChecked);
+}
+
+void GuiMainWindow::exitSlot()
+{
+    this->close();
+}
+
+void GuiMainWindow::openFileSlot()
+{
+    QString sDirectory = g_xOptions.getLastDirectory();
+
+    QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
+
+    if (!sFileName.isEmpty()) {
+        _process(sFileName);
+    }
+}
+
+void GuiMainWindow::fullScreenSlot()
+{
+    // TODO mainWindow->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint)
+    g_bFullScreen = (!g_bFullScreen);
+
+    if (g_bFullScreen) {
+        showFullScreen();
+    } else {
+        showNormal();
+    }
 }

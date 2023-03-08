@@ -39,6 +39,13 @@ QT_END_NAMESPACE
 class GuiMainWindow : public QMainWindow {
     Q_OBJECT
 
+    enum SC {
+        SC_OPENFILE = 0,
+        SC_FULLSCREEN,
+        SC_EXIT,
+        __SC_SIZE
+    };
+
 public:
     GuiMainWindow(QWidget *pParent = nullptr);
     ~GuiMainWindow();
@@ -53,8 +60,13 @@ private slots:
     void on_toolButtonRecentFiles_clicked();
     void on_checkBoxAdvanced_toggled(bool bChecked);
 
+    void exitSlot();
+    void openFileSlot();
+    void fullScreenSlot();
+
     QString getCurrentFileName();
     void adjust();
+    void updateShortcuts();
     void adjustFile();
     void setAdvanced(bool bState);
 
@@ -71,5 +83,7 @@ private:
     XOptions g_xOptions;
     XShortcuts g_xShortcuts;
     QMenu *g_pRecentFilesMenu;
+    QShortcut *shortCuts[__SC_SIZE];
+    bool g_bFullScreen;
 };
 #endif  // GUIMAINWINDOW_H
