@@ -142,3 +142,6 @@
 [submodule "XUpdate"]
 	path = XUpdate
 	url = https://github.com/horsicq/XUpdate
+[submodule "XVisualizationWidget"]
+	path = XVisualizationWidget
+	url = https://github.com/horsicq/XVisualizationWidget
