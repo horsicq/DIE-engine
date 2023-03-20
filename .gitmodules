@@ -145,3 +145,6 @@
 [submodule "XVisualizationWidget"]
 	path = XVisualizationWidget
 	url = https://github.com/horsicq/XVisualizationWidget
+[submodule "XDecompiler"]
+	path = XDecompiler
+	url = https://github.com/horsicq/XDecompiler
