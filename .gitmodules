@@ -148,3 +148,6 @@
 [submodule "XDecompiler"]
 	path = XDecompiler
 	url = https://github.com/horsicq/XDecompiler
+[submodule "XYara"]
+	path = XYara
+	url = https://github.com/horsicq/XYara
