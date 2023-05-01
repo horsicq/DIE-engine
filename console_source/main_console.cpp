@@ -236,7 +236,7 @@ int main(int argc, char *argv[])
 
     QList<QString> listArgs = parser.positionalArguments();
 
-    DiE_Script::OPTIONS scanOptions = {0};
+    DiE_Script::OPTIONS scanOptions = {};
 
     scanOptions.bShowType = true;
     scanOptions.bShowOptions = true;
