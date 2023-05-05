@@ -74,7 +74,7 @@ LiteMainWindow::~LiteMainWindow()
     delete g_pDieScript;
 }
 
-void LiteMainWindow::processFile(QString sFileName)
+void LiteMainWindow::processFile(const QString &sFileName)
 {
     ui->plainTextEditResult->clear();
 

@@ -42,7 +42,7 @@ public:
     ~LiteMainWindow();
 
 public slots:
-    void processFile(QString sFileName);
+    void processFile(const QString &sFileName);
 
 private slots:
     void on_pushButtonScan_clicked();
