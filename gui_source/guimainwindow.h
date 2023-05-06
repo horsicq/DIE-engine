@@ -71,7 +71,7 @@ private slots:
     void setAdvanced(bool bState);
 
 public slots:
-    void _process(QString sName);
+    void _process(const QString &sName);
 
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;

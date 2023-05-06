@@ -189,7 +189,7 @@ void GuiMainWindow::setAdvanced(bool bState)
     ui->widgetFormats->setAdvanced(bState);
 }
 
-void GuiMainWindow::_process(QString sName)
+void GuiMainWindow::_process(const QString &sName)
 {
     if (sName != "") {
         ui->lineEditFileName->setText(QDir().toNativeSeparators(sName));
