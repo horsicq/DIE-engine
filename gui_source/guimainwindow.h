@@ -28,6 +28,7 @@
 #include "dialogabout.h"
 #include "dialogoptions.h"
 #include "dialogshortcuts.h"
+#include "dialogselectstyle.h"
 #include "xoptions.h"
 
 QT_BEGIN_NAMESPACE

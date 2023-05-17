@@ -20,17 +20,20 @@ macx {
 SOURCES += \
     dialogabout.cpp \
     dialogoptions.cpp \
+    dialogselectstyle.cpp \
     guimainwindow.cpp \
     main_gui.cpp
 
 HEADERS += \
     dialogabout.h \
     dialogoptions.h \
+    dialogselectstyle.h \
     guimainwindow.h
 
 FORMS += \
     dialogabout.ui \
     dialogoptions.ui \
+    dialogselectstyle.ui \
     guimainwindow.ui
 
 include(../build.pri)

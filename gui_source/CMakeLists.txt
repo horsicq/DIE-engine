@@ -47,6 +47,8 @@ set(PROJECT_SOURCES
             dialogabout.ui
             dialogoptions.cpp
             dialogoptions.ui
+            dialogselectstyle.cpp
+            dialogselectstyle.ui
             guimainwindow.cpp
             guimainwindow.ui
             main_gui.cpp
