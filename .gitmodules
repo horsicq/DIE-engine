@@ -151,3 +151,6 @@
 [submodule "XYara"]
 	path = XYara
 	url = https://github.com/horsicq/XYara
+[submodule "yara_widget"]
+	path = yara_widget
+	url = https://github.com/horsicq/yara_widget
