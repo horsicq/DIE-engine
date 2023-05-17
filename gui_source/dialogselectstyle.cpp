@@ -21,9 +21,7 @@
 #include "dialogselectstyle.h"
 #include "ui_dialogselectstyle.h"
 
-DialogSelectStyle::DialogSelectStyle(QWidget *pParent) :
-      QDialog(pParent),
-      ui(new Ui::DialogSelectStyle)
+DialogSelectStyle::DialogSelectStyle(QWidget *pParent) : QDialog(pParent), ui(new Ui::DialogSelectStyle)
 {
     ui->setupUi(this);
 
@@ -51,4 +49,3 @@ void DialogSelectStyle::on_toolButtonStyle2_clicked()
     nStyleCode = 2;
     this->close();
 }
-

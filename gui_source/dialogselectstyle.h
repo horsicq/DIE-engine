@@ -27,8 +27,7 @@ namespace Ui {
 class DialogSelectStyle;
 }
 
-class DialogSelectStyle : public QDialog
-{
+class DialogSelectStyle : public QDialog {
     Q_OBJECT
 
 public:
@@ -46,4 +45,4 @@ private:
     qint32 nStyleCode;
 };
 
-#endif // DIALOGSELECTSTYLE_H
+#endif  // DIALOGSELECTSTYLE_H
