@@ -36,10 +36,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
 #ifdef Q_OS_WIN
     g_xOptions.addID(XOptions::ID_VIEW_QSS, "orange_fix");
-    g_xOptions.addID(XOptions::ID_VIEW_SELECTSTYLE, g_xOptions.isWritable());
 #else
     g_xOptions.addID(XOptions::ID_VIEW_QSS, "");
-    g_xOptions.addID(XOptions::ID_VIEW_SELECTSTYLE, false);
 #endif
     g_xOptions.addID(XOptions::ID_VIEW_ADVANCED, false);
     g_xOptions.addID(XOptions::ID_VIEW_STYLE, "Fusion");
@@ -61,20 +59,6 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     XInfoDBOptionsWidget::setDefaultValues(&g_xOptions);
 
     g_xOptions.load();
-
-    if (g_xOptions.getValue(XOptions::ID_VIEW_SELECTSTYLE).toBool()) {
-        DialogSelectStyle dialogSelectStyle;
-        dialogSelectStyle.exec();
-        int nStyleCode = dialogSelectStyle.getStyleCode();
-
-        if (nStyleCode == 2) {
-            g_xOptions.setValue(XOptions::ID_VIEW_QSS, "orange_fix");
-        } else {
-            g_xOptions.setValue(XOptions::ID_VIEW_QSS, "");
-        }
-
-        g_xOptions.setValue(XOptions::ID_VIEW_SELECTSTYLE, false);
-    }
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
     g_xShortcuts.setNative(g_xOptions.isNative());

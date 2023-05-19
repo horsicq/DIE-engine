@@ -26,6 +26,7 @@ if [ -z "$X_ERROR" ]; then
         cp -Rf $X_SOURCE_PATH/XInfoDB/info                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db             $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/images                        $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
+        cp -Rf $X_SOURCE_PATH/XYara/yara_rules              $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         
         deploy_qt DiE
 

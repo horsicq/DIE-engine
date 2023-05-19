@@ -61,8 +61,10 @@ int main(int argc, char *argv[])
 
 #ifdef Q_OS_WIN
     xOptions.addID(XOptions::ID_VIEW_QSS, "orange_fix");
+    xOptions.addID(XOptions::ID_VIEW_SELECTSTYLE, xOptions.isWritable());
 #else
     xOptions.addID(XOptions::ID_VIEW_QSS, "");
+    xOptions.addID(XOptions::ID_VIEW_SELECTSTYLE, false);
 #endif
     xOptions.addID(XOptions::ID_VIEW_LANG, "System");
     xOptions.addID(XOptions::ID_VIEW_STYLE, "Fusion");
@@ -77,6 +79,22 @@ int main(int argc, char *argv[])
     int nResult = 0;
 
     if (app.isPrimary()) {
+        if (xOptions.getValue(XOptions::ID_VIEW_SELECTSTYLE).toBool()) {
+            DialogSelectStyle dialogSelectStyle;
+            dialogSelectStyle.exec();
+            int nStyleCode = dialogSelectStyle.getStyleCode();
+
+            if (nStyleCode == 2) {
+                xOptions.setValue(XOptions::ID_VIEW_QSS, "orange_fix");
+                xOptions.setValue(XOptions::ID_VIEW_STYLE, "Fusion");
+            } else {
+                xOptions.setValue(XOptions::ID_VIEW_QSS, "");
+                xOptions.setValue(XOptions::ID_VIEW_STYLE, "Fusion");
+            }
+
+            xOptions.setValue(XOptions::ID_VIEW_SELECTSTYLE, false);
+        }
+
         XOptions::adjustApplicationView(X_APPLICATIONNAME, &xOptions);
 
         xOptions.save();
