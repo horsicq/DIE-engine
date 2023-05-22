@@ -26,6 +26,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 {
     ui->setupUi(this);
 
+    XYara::initialize();
+
     g_bFullScreen = false;
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
@@ -111,6 +113,8 @@ GuiMainWindow::~GuiMainWindow()
     g_xShortcuts.save();
 
     delete ui;
+
+    XYara::finalize();
 }
 
 void GuiMainWindow::on_pushButtonExit_clicked()

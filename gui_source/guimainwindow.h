@@ -30,6 +30,7 @@
 #include "dialogshortcuts.h"
 #include "dialogselectstyle.h"
 #include "xoptions.h"
+#include "xyara.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
