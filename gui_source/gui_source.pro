@@ -53,6 +53,11 @@ include(../build.pri)
     include(../XSingleApplication/xsingleapplication.pri)
 }
 
+!contains(XCONFIG, xoptionswidget) {
+    XCONFIG += xoptionswidget
+    include(../XOptions/xoptionswidget.pri)
+}
+
 !contains(XCONFIG, xaboutwidget) {
     XCONFIG += xaboutwidget
     include(../XAboutWidget/xaboutwidget.pri)
