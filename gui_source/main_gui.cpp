@@ -60,9 +60,9 @@ int main(int argc, char *argv[])
     xOptions.setName(X_OPTIONSFILE);
 
 #ifdef Q_OS_WIN
-    //xOptions.addID(XOptions::ID_VIEW_QSS, "orange_fix");
+    // xOptions.addID(XOptions::ID_VIEW_QSS, "orange_fix");
     xOptions.addID(XOptions::ID_VIEW_QSS, "");
-    //xOptions.addID(XOptions::ID_VIEW_SELECTSTYLE, xOptions.isWritable());
+    // xOptions.addID(XOptions::ID_VIEW_SELECTSTYLE, xOptions.isWritable());
     xOptions.addID(XOptions::ID_VIEW_SELECTSTYLE, false);
 #else
     xOptions.addID(XOptions::ID_VIEW_QSS, "");
