@@ -60,6 +60,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     XOnlineToolsOptionsWidget::setDefaultValues(&g_xOptions);
     XInfoDBOptionsWidget::setDefaultValues(&g_xOptions);
 
+    g_xOptions.addID(XOptions::ID_SCAN_ENGINE, "auto");
+
     g_xOptions.load();
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
