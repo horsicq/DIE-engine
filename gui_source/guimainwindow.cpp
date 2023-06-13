@@ -61,6 +61,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     XInfoDBOptionsWidget::setDefaultValues(&g_xOptions);
 
     g_xOptions.addID(XOptions::ID_SCAN_ENGINE, "auto");
+    g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, "$data/yara_rules");
 
     g_xOptions.load();
 
