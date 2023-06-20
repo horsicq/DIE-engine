@@ -1,4 +1,4 @@
-set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
+set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
 set QMAKE_PATH="C:\Qt\6.2.4\msvc2019_64\bin\qmake.exe"
 set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
