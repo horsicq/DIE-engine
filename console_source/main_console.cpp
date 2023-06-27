@@ -117,14 +117,10 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOpti
 
             XBinary::FORMATTYPE formatType = XBinary::FORMATTYPE_TEXT;
 
-            if (pScanOptions->bResultAsCSV)
-                formatType = XBinary::FORMATTYPE_CSV;
-            else if (pScanOptions->bResultAsJSON)
-                formatType = XBinary::FORMATTYPE_JSON;
-            else if (pScanOptions->bResultAsTSV)
-                formatType = XBinary::FORMATTYPE_TSV;
-            else if (pScanOptions->bResultAsXML)
-                formatType = XBinary::FORMATTYPE_XML;
+            if (pScanOptions->bResultAsCSV) formatType = XBinary::FORMATTYPE_CSV;
+            else if (pScanOptions->bResultAsJSON) formatType = XBinary::FORMATTYPE_JSON;
+            else if (pScanOptions->bResultAsTSV) formatType = XBinary::FORMATTYPE_TSV;
+            else if (pScanOptions->bResultAsXML) formatType = XBinary::FORMATTYPE_XML;
 
             if (formatType != XBinary::FORMATTYPE_TEXT) {
                 printf("%s\n", model.toString(formatType).toUtf8().data());
