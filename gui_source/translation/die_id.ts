@@ -5,304 +5,288 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filter</translation>
+        <translation type="vanished">Filter</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>Pohon</translation>
+        <translation type="vanished">Pohon</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Meja</translation>
+        <translation type="vanished">Meja</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Buka</translation>
+        <translation type="vanished">Buka</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Nama file</translation>
+        <translation type="vanished">Nama file</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Simpan file</translation>
+        <translation type="vanished">Simpan file</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Tidak dapat menyimpan file</translation>
+        <translation type="vanished">Tidak dapat menyimpan file</translation>
     </message>
 </context>
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
 </context>
 <context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filter</translation>
+        <translation type="vanished">Filter</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Pindai setelah buka</translation>
+        <translation type="vanished">Pindai setelah buka</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Semua jenis</translation>
+        <translation type="vanished">Semua jenis</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Basis data</translation>
+        <translation type="vanished">Basis data</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation>jenis huruf</translation>
+        <translation type="vanished">jenis huruf</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Buka direktori</translation>
+        <translation type="vanished">Buka direktori</translation>
     </message>
 </context>
 <context>
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Direktori</translation>
+        <translation type="vanished">Direktori</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>Log</translation>
+        <translation type="vanished">Log</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Semua jenis</translation>
+        <translation type="vanished">Semua jenis</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Berhenti</translation>
+        <translation type="vanished">Berhenti</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mdtk</translation>
+        <translation type="vanished">mdtk</translation>
     </message>
     <message>
         <source>Copy as</source>
-        <translation>Salin sebagai</translation>
+        <translation type="vanished">Salin sebagai</translation>
     </message>
 </context>
 <context>
     <name>DiE_Script</name>
     <message>
         <source>Cannot load database</source>
-        <translation>Tidak dapat memuat basis data</translation>
+        <translation type="vanished">Tidak dapat memuat basis data</translation>
     </message>
 </context>
 <context>
@@ -336,564 +320,548 @@
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation>Arsip</translation>
+        <translation type="vanished">Arsip</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Buka</translation>
+        <translation type="vanished">Buka</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Tempat</translation>
+        <translation type="vanished">Tempat</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Atas</translation>
+        <translation type="vanished">Atas</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Wildcard</translation>
+        <translation type="vanished">Wildcard</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Alamat virtual relatif</translation>
+        <translation type="vanished">Alamat virtual relatif</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Kode operasi</translation>
+        <translation type="vanished">Kode operasi</translation>
     </message>
 </context>
 <context>
     <name>DialogCreateViewModel</name>
     <message>
         <source>Create view model</source>
-        <translation>Buat model tampilan</translation>
+        <translation type="vanished">Buat model tampilan</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Pemindaian Direktori</translation>
+        <translation type="vanished">Pemindaian Direktori</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Direktori</translation>
+        <translation type="vanished">Direktori</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Subdirektori</translation>
+        <translation type="vanished">Subdirektori</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Semua jenis</translation>
+        <translation type="vanished">Semua jenis</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Bersihkan</translation>
+        <translation type="vanished">Bersihkan</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Buka direktori</translation>
+        <translation type="vanished">Buka direktori</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mdtk</translation>
+        <translation type="vanished">mdtk</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Dokumen teks</translation>
+        <translation type="vanished">Dokumen teks</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Simpan hasil</translation>
+        <translation type="vanished">Simpan hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanProcess</name>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation type="vanished">Demangle</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>Label</translation>
+        <translation type="vanished">Label</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Pergi ke</translation>
+        <translation type="vanished">Pergi ke</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation>Kode operasi</translation>
+        <translation type="vanished">Kode operasi</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation>Panggil</translation>
+        <translation type="vanished">Panggil</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation>Lompat</translation>
+        <translation type="vanished">Lompat</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation>Ref ke</translation>
+        <translation type="vanished">Ref ke</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation>Formulir ref</translation>
+        <translation type="vanished">Formulir ref</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogEditString</name>
     <message>
         <source>String</source>
-        <translation>String</translation>
-    </message>
-    <message>
-        <source>Keep size</source>
-        <translation></translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>C Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
-    </message>
-    <message>
-        <source>Bytes available</source>
-        <translation></translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogElapsed</name>
     <message>
         <source>Elapsed</source>
-        <translation>Berlalu</translation>
+        <translation type="vanished">Berlalu</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Waktu</translation>
+        <translation type="vanished">Waktu</translation>
     </message>
     <message>
         <source>Script</source>
-        <translation>Naskah</translation>
+        <translation type="vanished">Naskah</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropyProcess</name>
     <message>
         <source>Process</source>
-        <translation>Proses</translation>
+        <translation type="vanished">Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogFindText</name>
     <message>
         <source>Find</source>
-        <translation>Temukan</translation>
+        <translation type="vanished">Temukan</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>Kecocokan kasus</translation>
+        <translation type="vanished">Kecocokan kasus</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation>Pergi ke alamat</translation>
+        <translation type="vanished">Pergi ke alamat</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Alamat virtual</translation>
+        <translation type="vanished">Alamat virtual</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Alamat virtual relatif</translation>
+        <translation type="vanished">Alamat virtual relatif</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation>Tidak valid</translation>
+        <translation type="vanished">Tidak valid</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogHashProcess</name>
     <message>
         <source>Process</source>
-        <translation>Proses</translation>
+        <translation type="vanished">Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Tempat</translation>
+        <translation type="vanished">Tempat</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Atas</translation>
+        <translation type="vanished">Atas</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Wildcard</translation>
+        <translation type="vanished">Wildcard</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogLog</name>
     <message>
         <source>Log</source>
-        <translation>Log</translation>
+        <translation type="vanished">Log</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogMIME</name>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Simpan file</translation>
+        <translation type="vanished">Simpan file</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>File teks</translation>
+        <translation type="vanished">File teks</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Semua file</translation>
+        <translation type="vanished">Semua file</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Tempat</translation>
+        <translation type="vanished">Tempat</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Atas</translation>
+        <translation type="vanished">Atas</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Wildcard</translation>
+        <translation type="vanished">Wildcard</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Alamat virtual relatif</translation>
+        <translation type="vanished">Alamat virtual relatif</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Kode operasi</translation>
+        <translation type="vanished">Kode operasi</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search strings</source>
-        <translation>Cari string</translation>
+        <translation type="vanished">Cari string</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>Cari tanda tangan</translation>
-    </message>
-    <message>
-        <source>Search values</source>
-        <translation></translation>
+        <translation type="vanished">Cari tanda tangan</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation>Buat model tampilan</translation>
+        <translation type="vanished">Buat model tampilan</translation>
     </message>
 </context>
 <context>
@@ -931,841 +899,804 @@
     <name>DialogProcessData</name>
     <message>
         <source>Process</source>
-        <translation>Proses</translation>
+        <translation type="vanished">Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation>Cari dari</translation>
+        <translation type="vanished">Cari dari</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>Kecocokan kasus</translation>
+        <translation type="vanished">Kecocokan kasus</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation>Mulai</translation>
+        <translation type="vanished">Mulai</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>Kursor</translation>
+        <translation type="vanished">Kursor</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchValues</name>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation>Bagian</translation>
+        <translation type="vanished">Bagian</translation>
+    </message>
+</context>
+<context>
+    <name>DialogSelectStyle</name>
+    <message>
+        <source>Style</source>
+        <translation type="unfinished">Gaya</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation>Jalan pintas</translation>
+        <translation type="vanished">Jalan pintas</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filter</translation>
+        <translation type="vanished">Filter</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Bersihkan</translation>
+        <translation type="vanished">Bersihkan</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Bawaan</translation>
+        <translation type="vanished">Bawaan</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation>Jalan pintas</translation>
+        <translation type="vanished">Jalan pintas</translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation>Tidak dapat mengatur pintasan</translation>
+        <translation type="vanished">Tidak dapat mengatur pintasan</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation>Gambar</translation>
+        <translation type="vanished">Gambar</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation>Lari</translation>
+        <translation type="vanished">Lari</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
+        <translation type="vanished">Debug</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Temukan</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Detect</source>
-        <translation></translation>
+        <translation type="vanished">Temukan</translation>
     </message>
     <message>
         <source>Show type</source>
-        <translation>Tampilkan jenis</translation>
+        <translation type="vanished">Tampilkan jenis</translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Tampilkan opsi</translation>
+        <translation type="vanished">Tampilkan opsi</translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Tampilkan versi</translation>
+        <translation type="vanished">Tampilkan versi</translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Hasil yang jelas</translation>
+        <translation type="vanished">Hasil yang jelas</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Basis data</translation>
+        <translation type="vanished">Basis data</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>Debugger</translation>
+        <translation type="vanished">Debugger</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mdtk</translation>
+        <translation type="vanished">mdtk</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Semua jenis</translation>
+        <translation type="vanished">Semua jenis</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Hasil</translation>
+        <translation type="vanished">Hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Pemindaian Direktori</translation>
+        <translation type="vanished">Pemindaian Direktori</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Direktori</translation>
+        <translation type="vanished">Direktori</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Subdirektori</translation>
+        <translation type="vanished">Subdirektori</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Semua jenis</translation>
+        <translation type="vanished">Semua jenis</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Bersihkan</translation>
+        <translation type="vanished">Bersihkan</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Buka direktori</translation>
+        <translation type="vanished">Buka direktori</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mdtk</translation>
+        <translation type="vanished">mdtk</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Dokumen teks</translation>
+        <translation type="vanished">Dokumen teks</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Simpan hasil</translation>
+        <translation type="vanished">Simpan hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation>Dokumen teks</translation>
+        <translation type="vanished">Dokumen teks</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Simpan hasil</translation>
+        <translation type="vanished">Simpan hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Dokumen teks</translation>
+        <translation type="vanished">Dokumen teks</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Simpan hasil</translation>
+        <translation type="vanished">Simpan hasil</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Hasil</translation>
+        <translation type="vanished">Hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogUnpackFile</name>
     <message>
         <source>Process</source>
-        <translation>Proses</translation>
+        <translation type="vanished">Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogXDisasmViewColors</name>
     <message>
-        <source>Colors</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Teks</translation>
+        <translation type="vanished">Teks</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation>Latar belakang</translation>
+        <translation type="vanished">Latar belakang</translation>
     </message>
 </context>
 <context>
     <name>DialogXDynStructs</name>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogXExtractor</name>
     <message>
-        <source>Extractor</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfo</name>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfoProcess</name>
     <message>
         <source>Process</source>
-        <translation>Proses</translation>
+        <translation type="vanished">Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogXInfoDBTransferProcess</name>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Impor</translation>
+        <translation type="vanished">Impor</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Ekspor</translation>
+        <translation type="vanished">Ekspor</translation>
     </message>
 </context>
 <context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
-        <translation>Simbol</translation>
+        <translation type="vanished">Simbol</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Bind</source>
-        <translation>Mengikat</translation>
+        <translation type="vanished">Mengikat</translation>
     </message>
 </context>
 <context>
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Bagian</translation>
+        <translation type="vanished">Bagian</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation type="vanished">Demangle</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation>dikemas</translation>
+        <translation type="vanished">dikemas</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>tidak dikemas</translation>
+        <translation type="vanished">tidak dikemas</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation>Bersihkan</translation>
+        <translation type="vanished">Bersihkan</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mdtk</translation>
+        <translation type="vanished">mdtk</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation>Rekursif</translation>
+        <translation type="vanished">Rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Tidak dapat menyimpan file</translation>
+        <translation type="vanished">Tidak dapat menyimpan file</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>File teks</translation>
+        <translation type="vanished">File teks</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Semua file</translation>
+        <translation type="vanished">Semua file</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Simpan sampah</translation>
+        <translation type="vanished">Simpan sampah</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Data mentah</translation>
+        <translation type="vanished">Data mentah</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation>Jenis file</translation>
-    </message>
-    <message>
-        <source>File size</source>
-        <translation></translation>
+        <translation type="vanished">Jenis file</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation>Alamat dasar</translation>
+        <translation type="vanished">Alamat dasar</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Titik masuk</translation>
-    </message>
-    <message>
-        <source>File info</source>
-        <translation></translation>
+        <translation type="vanished">Titik masuk</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Unpack</source>
-        <translation>dikemas</translation>
+        <translation type="vanished">dikemas</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Ekspor</translation>
+        <translation type="vanished">Ekspor</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Impor</translation>
+        <translation type="vanished">Impor</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Sumber</translation>
+        <translation type="vanished">Sumber</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Bagian</translation>
+        <translation type="vanished">Bagian</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation>Stempel tanggal waktu</translation>
+        <translation type="vanished">Stempel tanggal waktu</translation>
     </message>
     <message>
         <source>Size of image</source>
-        <translation>Ukuran gambar</translation>
+        <translation type="vanished">Ukuran gambar</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation>Daftar</translation>
+        <translation type="vanished">Daftar</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versi</translation>
+        <translation type="vanished">Versi</translation>
     </message>
     <message>
         <source>Programs</source>
-        <translation>Program</translation>
+        <translation type="vanished">Program</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>Perintah</translation>
+        <translation type="vanished">Perintah</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Segmen</translation>
+        <translation type="vanished">Segmen</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>Pustaka</translation>
+        <translation type="vanished">Pustaka</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation type="vanished">Mode</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Arsitektur</translation>
+        <translation type="vanished">Arsitektur</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Otomatis</translation>
+        <translation type="vanished">Otomatis</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Buka direktori</translation>
+        <translation type="vanished">Buka direktori</translation>
     </message>
 </context>
 <context>
@@ -1811,3413 +1742,3196 @@
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation>Impor</translation>
+        <translation type="vanished">Impor</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Semua jenis</translation>
+        <translation type="vanished">Semua jenis</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>Heuristik</translation>
+        <translation type="vanished">Heuristik</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Hasil</translation>
+        <translation type="vanished">Hasil</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
+    </message>
+</context>
+<context>
+    <name>LiteMainWindow</name>
+    <message>
+        <source>File name</source>
+        <translation type="unfinished">Nama file</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation type="unfinished">Pemindaian rekursif</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation type="unfinished">Pemindaian seksama</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">Pemindaian Heuristik</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation type="unfinished">Semua jenis</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation type="unfinished">Pindai</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation type="unfinished">Keluar</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation type="unfinished">mdtk</translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation type="unfinished">Buka file</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation type="unfinished">Semua file</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Kode operasi</translation>
+        <translation type="vanished">Kode operasi</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>Perintah</translation>
+        <translation type="vanished">Perintah</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Segmen</translation>
+        <translation type="vanished">Segmen</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Bagian</translation>
+        <translation type="vanished">Bagian</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation>rebase</translation>
+        <translation type="vanished">rebase</translation>
     </message>
     <message>
         <source>Binding</source>
-        <translation>Mengikat</translation>
+        <translation type="vanished">Mengikat</translation>
     </message>
     <message>
         <source>Weak binding</source>
-        <translation>Ikatan lemah</translation>
+        <translation type="vanished">Ikatan lemah</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation>Pengikatan malas</translation>
+        <translation type="vanished">Pengikatan malas</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Ekspor</translation>
+        <translation type="vanished">Ekspor</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation>tabel string</translation>
+        <translation type="vanished">tabel string</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation>Tabel simbol</translation>
+        <translation type="vanished">Tabel simbol</translation>
     </message>
     <message>
         <source>Table of contents</source>
-        <translation>Daftar Isi</translation>
+        <translation type="vanished">Daftar Isi</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>Modul</translation>
+        <translation type="vanished">Modul</translation>
     </message>
     <message>
         <source>External references</source>
-        <translation>Referensi eksternal</translation>
+        <translation type="vanished">Referensi eksternal</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
-        <translation>Simbol tidak langsung</translation>
+        <translation type="vanished">Simbol tidak langsung</translation>
     </message>
     <message>
         <source>Local relocation</source>
-        <translation>relokasi lokal</translation>
+        <translation type="vanished">relokasi lokal</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>Fungsi</translation>
+        <translation type="vanished">Fungsi</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation>Data dalam kode</translation>
+        <translation type="vanished">Data dalam kode</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation type="vanished">Demangle</translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Segmen</translation>
+        <translation type="vanished">Segmen</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
 </context>
 <context>
     <name>NFD_Widget</name>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Direktori</translation>
+        <translation type="vanished">Direktori</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Semua jenis</translation>
+        <translation type="vanished">Semua jenis</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Berhenti</translation>
+        <translation type="vanished">Berhenti</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mdtk</translation>
+        <translation type="vanished">mdtk</translation>
     </message>
 </context>
 <context>
     <name>PDFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
-        <translation>Bagian</translation>
+        <translation type="vanished">Bagian</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Alamat relatif</translation>
-    </message>
-    <message>
-        <source>Virtual size</source>
-        <translation></translation>
+        <translation type="vanished">Alamat relatif</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Offset file</translation>
+        <translation type="vanished">Offset file</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>Tandai</translation>
+        <translation type="vanished">Tandai</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Titik masuk</translation>
+        <translation type="vanished">Titik masuk</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Ekspor</translation>
+        <translation type="vanished">Ekspor</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Impor</translation>
+        <translation type="vanished">Impor</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Sumber</translation>
+        <translation type="vanished">Sumber</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation>Pengecualian</translation>
+        <translation type="vanished">Pengecualian</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation>relokasi</translation>
+        <translation type="vanished">relokasi</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
+        <translation type="vanished">Debug</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>Muat konfigurasi</translation>
+        <translation type="vanished">Muat konfigurasi</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>Impor terikat</translation>
+        <translation type="vanished">Impor terikat</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>Tunda impor</translation>
+        <translation type="vanished">Tunda impor</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Bahasa</translation>
+        <translation type="vanished">Bahasa</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Sertifikat</translation>
+        <translation type="vanished">Sertifikat</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="vanished">Status</translation>
     </message>
     <message>
         <source>Program name</source>
-        <translation>Nama program</translation>
+        <translation type="vanished">Nama program</translation>
     </message>
     <message>
         <source>Publisher</source>
-        <translation>Penerbit</translation>
+        <translation type="vanished">Penerbit</translation>
     </message>
     <message>
         <source>More info</source>
-        <translation>Info lebih lanjut</translation>
+        <translation type="vanished">Info lebih lanjut</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation>Nomor seri</translation>
+        <translation type="vanished">Nomor seri</translation>
     </message>
     <message>
         <source>Issuer</source>
-        <translation>Penerbit</translation>
+        <translation type="vanished">Penerbit</translation>
     </message>
     <message>
         <source>Subject</source>
-        <translation>Subjek</translation>
+        <translation type="vanished">Subjek</translation>
     </message>
     <message>
         <source>Algorithm</source>
-        <translation>algoritma</translation>
+        <translation type="vanished">algoritma</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versi</translation>
+        <translation type="vanished">Versi</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Hitung</translation>
+        <translation type="vanished">Hitung</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>PEToolsWidget</name>
     <message>
         <source>Tools</source>
-        <translation>Alat-alat</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation></translation>
+        <translation type="vanished">Alat-alat</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Simpan sampah</translation>
+        <translation type="vanished">Simpan sampah</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Data mentah</translation>
+        <translation type="vanished">Data mentah</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation>Tampilkan yang valid</translation>
+        <translation type="vanished">Tampilkan yang valid</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Meja</translation>
-    </message>
-    <message>
-        <source>Extract all icons</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Extract all cursors</source>
-        <translation></translation>
+        <translation type="vanished">Meja</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>Pohon</translation>
+        <translation type="vanished">Pohon</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation type="vanished">Format</translation>
     </message>
     <message>
         <source>Check</source>
-        <translation>Memeriksa</translation>
+        <translation type="vanished">Memeriksa</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Alat-alat</translation>
+        <translation type="vanished">Alat-alat</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Bagian</translation>
+        <translation type="vanished">Bagian</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Ekspor</translation>
+        <translation type="vanished">Ekspor</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Impor</translation>
+        <translation type="vanished">Impor</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Sumber</translation>
+        <translation type="vanished">Sumber</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation>tabel string</translation>
+        <translation type="vanished">tabel string</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versi</translation>
+        <translation type="vanished">Versi</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation>Daftar</translation>
+        <translation type="vanished">Daftar</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation>Pengecualian</translation>
+        <translation type="vanished">Pengecualian</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Sertifikat</translation>
+        <translation type="vanished">Sertifikat</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation>relokasi</translation>
+        <translation type="vanished">relokasi</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
+        <translation type="vanished">Debug</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation>Panggilan balik</translation>
+        <translation type="vanished">Panggilan balik</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>Muat konfigurasi</translation>
+        <translation type="vanished">Muat konfigurasi</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>Impor terikat</translation>
+        <translation type="vanished">Impor terikat</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>Tunda impor</translation>
+        <translation type="vanished">Tunda impor</translation>
     </message>
     <message>
         <source>Metadata</source>
-        <translation>Metadata</translation>
+        <translation type="vanished">Metadata</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation>Hitung</translation>
+        <translation type="vanished">Hitung</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation type="vanished">Demangle</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Hitung</translation>
+        <translation type="vanished">Hitung</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation>Nama perpustakaan</translation>
+        <translation type="vanished">Nama perpustakaan</translation>
     </message>
     <message>
         <source>Interpreter</source>
-        <translation>Penerjemah</translation>
+        <translation type="vanished">Penerjemah</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versi</translation>
+        <translation type="vanished">Versi</translation>
     </message>
     <message>
         <source>Length</source>
-        <translation>Panjang</translation>
+        <translation type="vanished">Panjang</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>Kesalahan baca</translation>
+        <translation type="vanished">Kesalahan baca</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>Kesalahan penulisan</translation>
+        <translation type="vanished">Kesalahan penulisan</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Tidak dapat membuka file</translation>
+        <translation type="vanished">Tidak dapat membuka file</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>Dokumen</translation>
+        <translation type="vanished">Dokumen</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Gambar</translation>
+        <translation type="vanished">Gambar</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>Ekspor Nama File</translation>
+        <translation type="vanished">Ekspor Nama File</translation>
     </message>
 </context>
 <context>
     <name>QwtPolarRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>Dokumen</translation>
+        <translation type="vanished">Dokumen</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Gambar</translation>
+        <translation type="vanished">Gambar</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>Ekspor Nama File</translation>
+        <translation type="vanished">Ekspor Nama File</translation>
     </message>
 </context>
 <context>
     <name>ScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation>Hasil</translation>
+        <translation type="vanished">Hasil</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>Cari tanda tangan</translation>
+        <translation type="vanished">Cari tanda tangan</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Buka direktori</translation>
+        <translation type="vanished">Buka direktori</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>C Strings</source>
-        <translation>String</translation>
-    </message>
-    <message>
-        <source>Links</source>
-        <translation></translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filter</translation>
+        <translation type="vanished">Filter</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation type="vanished">Demangle</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Tidak dapat menyimpan file</translation>
+        <translation type="vanished">Tidak dapat menyimpan file</translation>
     </message>
 </context>
 <context>
     <name>SearchValuesWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
-    </message>
-    <message>
-        <source>Values</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Cari</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Titik masuk</translation>
+        <translation type="vanished">Titik masuk</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation>Nama bagian</translation>
+        <translation type="vanished">Nama bagian</translation>
     </message>
     <message>
         <source>Import hash</source>
-        <translation>Impor hash</translation>
+        <translation type="vanished">Impor hash</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation>Bagian Kode</translation>
+        <translation type="vanished">Bagian Kode</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation>Bagian titik masuk</translation>
+        <translation type="vanished">Bagian titik masuk</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Arsip</translation>
+        <translation type="vanished">Arsip</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Sumber</translation>
+        <translation type="vanished">Sumber</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation>Pindai file</translation>
+        <translation type="vanished">Pindai file</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>Pemindaian perangkat</translation>
+        <translation type="vanished">Pemindaian perangkat</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>Pemindaian memori</translation>
+        <translation type="vanished">Pemindaian memori</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>Pemindaian Direktori</translation>
+        <translation type="vanished">Pemindaian Direktori</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Pindai setelah buka</translation>
+        <translation type="vanished">Pindai setelah buka</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation type="vanished">Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Pemindaian Heuristik</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Semua jenis</translation>
+        <translation type="vanished">Semua jenis</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
 </context>
 <context>
     <name>XAboutWidget</name>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Check updates</source>
-        <translation>Periksa pembaruan</translation>
+        <translation type="vanished">Periksa pembaruan</translation>
     </message>
     <message>
         <source>Thanks</source>
-        <translation>Terimakasih</translation>
+        <translation type="vanished">Terimakasih</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>Situs web</translation>
+        <translation type="vanished">Situs web</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>Pustaka</translation>
+        <translation type="vanished">Pustaka</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informasi</translation>
-    </message>
-    <message>
-        <source>The value copied to clipboard</source>
-        <translation></translation>
+        <translation type="vanished">Informasi</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>8-bit</source>
-        <translation>8-bit</translation>
+        <translation type="vanished">8-bit</translation>
     </message>
     <message>
         <source>16-bit</source>
-        <translation>16-bit</translation>
+        <translation type="vanished">16-bit</translation>
     </message>
     <message>
         <source>32-bit</source>
-        <translation>32-bit</translation>
+        <translation type="vanished">32-bit</translation>
     </message>
     <message>
         <source>64-bit</source>
-        <translation>64-bit</translation>
+        <translation type="vanished">64-bit</translation>
     </message>
     <message>
         <source>128-bit</source>
-        <translation>128-bit</translation>
+        <translation type="vanished">128-bit</translation>
     </message>
     <message>
         <source>Region</source>
-        <translation>Wilayah</translation>
+        <translation type="vanished">Wilayah</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Arsip</translation>
+        <translation type="vanished">Arsip</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>Dokumen</translation>
+        <translation type="vanished">Dokumen</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>Gambar</translation>
-    </message>
-    <message>
-        <source>Video</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Audio</source>
-        <translation></translation>
+        <translation type="vanished">Gambar</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Teks</translation>
+        <translation type="vanished">Teks</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>Kesalahan baca</translation>
+        <translation type="vanished">Kesalahan baca</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation>Maksimum</translation>
-    </message>
-    <message>
-        <source>Invalid signature</source>
-        <translation></translation>
+        <translation type="vanished">Maksimum</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>Kesalahan penulisan</translation>
+        <translation type="vanished">Kesalahan penulisan</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Bawaan</translation>
+        <translation type="vanished">Bawaan</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
-    </message>
-    <message>
-        <source>KiB</source>
-        <translation></translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>kB</source>
-        <translation>kB</translation>
-    </message>
-    <message>
-        <source>MiB</source>
-        <translation></translation>
+        <translation type="vanished">kB</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>MB</translation>
-    </message>
-    <message>
-        <source>GiB</source>
-        <translation></translation>
+        <translation type="vanished">MB</translation>
     </message>
     <message>
         <source>GB</source>
-        <translation>GB</translation>
-    </message>
-    <message>
-        <source>TiB</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>TB</source>
-        <translation></translation>
+        <translation type="vanished">GB</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation>Catatan arsip</translation>
+        <translation type="vanished">Catatan arsip</translation>
     </message>
     <message>
         <source>Resource</source>
-        <translation>Sumber</translation>
+        <translation type="vanished">Sumber</translation>
     </message>
 </context>
 <context>
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XCapstone</name>
     <message>
         <source>Invalid opcode</source>
-        <translation>opcode tidak valid</translation>
+        <translation type="vanished">opcode tidak valid</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation>Tandai</translation>
+        <translation type="vanished">Tandai</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Otomatis</translation>
+        <translation type="vanished">Otomatis</translation>
     </message>
 </context>
 <context>
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation type="vanished">Mode</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Dump</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Simpan sampah</translation>
+        <translation type="vanished">Simpan sampah</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Data mentah</translation>
+        <translation type="vanished">Data mentah</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation>Tidak ada yang ditemukan</translation>
+        <translation type="vanished">Tidak ada yang ditemukan</translation>
     </message>
 </context>
 <context>
     <name>XDialogProcess</name>
     <message>
         <source>Process</source>
-        <translation>Proses</translation>
+        <translation type="vanished">Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation type="vanished">Label</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Kode operasi</translation>
+        <translation type="vanished">Kode operasi</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Kode operasi</translation>
+        <translation type="vanished">Kode operasi</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation>Simbol</translation>
+        <translation type="vanished">Simbol</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Komentar</translation>
+        <translation type="vanished">Komentar</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Titik masuk</translation>
+        <translation type="vanished">Titik masuk</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>Tanda tangan heksagonal</translation>
+        <translation type="vanished">Tanda tangan heksagonal</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>Temukan selanjutnya</translation>
+        <translation type="vanished">Temukan selanjutnya</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Pilih semua</translation>
+        <translation type="vanished">Pilih semua</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Pergi ke</translation>
+        <translation type="vanished">Pergi ke</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Temukan</translation>
+        <translation type="vanished">Temukan</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Pilih</translation>
+        <translation type="vanished">Pilih</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Alamat relatif</translation>
+        <translation type="vanished">Alamat relatif</translation>
     </message>
 </context>
 <context>
     <name>XDisasmViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation>jenis huruf</translation>
+        <translation type="vanished">jenis huruf</translation>
     </message>
     <message>
         <source>Syntax</source>
-        <translation>Sintaksis</translation>
-    </message>
-    <message>
-        <source>Uppercase</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Show colons in addresses</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Highlight</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Colors</source>
-        <translation></translation>
+        <translation type="vanished">Sintaksis</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation>Analisa</translation>
+        <translation type="vanished">Analisa</translation>
     </message>
     <message>
         <source>Labels</source>
-        <translation>Label</translation>
+        <translation type="vanished">Label</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Pergi ke</translation>
+        <translation type="vanished">Pergi ke</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Titik masuk</translation>
+        <translation type="vanished">Titik masuk</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Alamat virtual</translation>
+        <translation type="vanished">Alamat virtual</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Alamat virtual relatif</translation>
+        <translation type="vanished">Alamat virtual relatif</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Offset file</translation>
+        <translation type="vanished">Offset file</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation>Ke data</translation>
+        <translation type="vanished">Ke data</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Data mentah</translation>
+        <translation type="vanished">Data mentah</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Simpan sampah</translation>
+        <translation type="vanished">Simpan sampah</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsEngine</name>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation>Tidak dapat memuat file</translation>
+        <translation type="vanished">Tidak dapat memuat file</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsOptionsWidget</name>
     <message>
         <source>Structs</source>
-        <translation>Struktur</translation>
+        <translation type="vanished">Struktur</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Buka direktori</translation>
+        <translation type="vanished">Buka direktori</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Prototype</source>
-        <translation>Prototipe</translation>
+        <translation type="vanished">Prototipe</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Array</source>
-        <translation>Himpunan</translation>
+        <translation type="vanished">Himpunan</translation>
     </message>
     <message>
         <source>Variable</source>
-        <translation>Variabel</translation>
+        <translation type="vanished">Variabel</translation>
     </message>
     <message>
         <source>Pointer</source>
-        <translation>penunjuk</translation>
+        <translation type="vanished">penunjuk</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation>Tidak dapat membaca memori di alamat</translation>
+        <translation type="vanished">Tidak dapat membaca memori di alamat</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Hasil</translation>
+        <translation type="vanished">Hasil</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Semua file</translation>
+        <translation type="vanished">Semua file</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Hitung</translation>
+        <translation type="vanished">Hitung</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation>Total</translation>
+        <translation type="vanished">Total</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="vanished">Status</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Save diagram</source>
-        <translation>Simpan diagram</translation>
+        <translation type="vanished">Simpan diagram</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation>Region</translation>
-    </message>
-    <message>
-        <source>Diagram</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Grid</source>
-        <translation></translation>
+        <translation type="vanished">Region</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Byte</source>
-        <translation>Byte</translation>
+        <translation type="vanished">Byte</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Gambar</translation>
+        <translation type="vanished">Gambar</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation>Dokumen</translation>
+        <translation type="vanished">Dokumen</translation>
     </message>
 </context>
 <context>
     <name>XExtractorWidget</name>
     <message>
-        <source>Extract</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Pemindaian seksama</translation>
+        <translation type="vanished">Pemindaian seksama</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Pilihan</translation>
+        <translation type="vanished">Pilihan</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Simpan sampah</translation>
+        <translation type="vanished">Simpan sampah</translation>
     </message>
 </context>
 <context>
     <name>XFileInfo</name>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Titik masuk</translation>
+        <translation type="vanished">Titik masuk</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Nama file</translation>
+        <translation type="vanished">Nama file</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation>Sistem operasi</translation>
+        <translation type="vanished">Sistem operasi</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Arsitektur</translation>
+        <translation type="vanished">Arsitektur</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation type="vanished">Mode</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>packed</source>
-        <translation>dikemas</translation>
+        <translation type="vanished">dikemas</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>tidak dikemas</translation>
+        <translation type="vanished">tidak dikemas</translation>
     </message>
     <message>
         <source>File type</source>
-        <translation>Jenis file</translation>
+        <translation type="vanished">Jenis file</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Alamat relatif</translation>
+        <translation type="vanished">Alamat relatif</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation>Metode</translation>
+        <translation type="vanished">Metode</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Komentar</translation>
+        <translation type="vanished">Komentar</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Teks</translation>
+        <translation type="vanished">Teks</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Simpan file</translation>
+        <translation type="vanished">Simpan file</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>File teks</translation>
+        <translation type="vanished">File teks</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Semua file</translation>
+        <translation type="vanished">Semua file</translation>
     </message>
 </context>
 <context>
     <name>XFormats</name>
     <message>
         <source>obfuscator</source>
-        <translation>obfuscator</translation>
+        <translation type="vanished">obfuscator</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation>Alat</translation>
+        <translation type="vanished">Alat</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Arsip</translation>
+        <translation type="vanished">Arsip</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Sertifikat</translation>
+        <translation type="vanished">Sertifikat</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation>Penyusun</translation>
+        <translation type="vanished">Penyusun</translation>
     </message>
     <message>
         <source>Converter</source>
-        <translation>Konverter</translation>
+        <translation type="vanished">Konverter</translation>
     </message>
     <message>
         <source>Cryptor</source>
-        <translation>Kriptor</translation>
+        <translation type="vanished">Kriptor</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Data</translation>
+        <translation type="vanished">Data</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Basis data</translation>
+        <translation type="vanished">Basis data</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation>Debug data</translation>
+        <translation type="vanished">Debug data</translation>
     </message>
     <message>
         <source>protection</source>
-        <translation>proteksi</translation>
+        <translation type="vanished">proteksi</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation>pemanjang</translation>
+        <translation type="vanished">pemanjang</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation type="vanished">Format</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation>Generik</translation>
+        <translation type="vanished">Generik</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>Gambar</translation>
+        <translation type="vanished">Gambar</translation>
     </message>
     <message>
         <source>Installer</source>
-        <translation>Pemasang</translation>
+        <translation type="vanished">Pemasang</translation>
     </message>
     <message>
         <source>Installer data</source>
-        <translation>Data penginstal</translation>
+        <translation type="vanished">Data penginstal</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation>Penggabung</translation>
+        <translation type="vanished">Penggabung</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Bahasa</translation>
+        <translation type="vanished">Bahasa</translation>
     </message>
     <message>
         <source>Library</source>
-        <translation>Pustaka</translation>
+        <translation type="vanished">Pustaka</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation>Penghubung</translation>
+        <translation type="vanished">Penghubung</translation>
     </message>
     <message>
         <source>compressor</source>
-        <translation>Kompresor</translation>
+        <translation type="vanished">Kompresor</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation>Sistem operasi</translation>
+        <translation type="vanished">Sistem operasi</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Packer</source>
-        <translation>Pengepak</translation>
+        <translation type="vanished">Pengepak</translation>
     </message>
     <message>
         <source>Player</source>
-        <translation>Pemain</translation>
+        <translation type="vanished">Pemain</translation>
     </message>
     <message>
         <source>Protection</source>
-        <translation>Perlindungan</translation>
+        <translation type="vanished">Perlindungan</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation>Pelindung</translation>
+        <translation type="vanished">Pelindung</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation>Pelindung data</translation>
+        <translation type="vanished">Pelindung data</translation>
     </message>
     <message>
         <source>data</source>
-        <translation>data</translation>
+        <translation type="vanished">data</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation>Alat penanda</translation>
+        <translation type="vanished">Alat penanda</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation>Sumber kode</translation>
+        <translation type="vanished">Sumber kode</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation>Potongan</translation>
+        <translation type="vanished">Potongan</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation>Mesin virtual</translation>
+        <translation type="vanished">Mesin virtual</translation>
     </message>
 </context>
 <context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
-    </message>
-    <message>
-        <source>Footer</source>
-        <translation></translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation>Metode</translation>
+        <translation type="vanished">Metode</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Simbol</translation>
+        <translation type="vanished">Simbol</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Mengulang kembali</translation>
-    </message>
-    <message>
-        <source>End</source>
-        <translation></translation>
+        <translation type="vanished">Mengulang kembali</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>Temukan selanjutnya</translation>
+        <translation type="vanished">Temukan selanjutnya</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Pilih semua</translation>
+        <translation type="vanished">Pilih semua</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Pergi ke</translation>
+        <translation type="vanished">Pergi ke</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Pilihan</translation>
+        <translation type="vanished">Pilihan</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Temukan</translation>
+        <translation type="vanished">Temukan</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Pilih</translation>
+        <translation type="vanished">Pilih</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation>jenis huruf</translation>
-    </message>
-    <message>
-        <source>Show colons in addresses</source>
-        <translation></translation>
+        <translation type="vanished">jenis huruf</translation>
     </message>
     <message>
         <source>Blinking cursor</source>
-        <translation>Kursor berkedip</translation>
+        <translation type="vanished">Kursor berkedip</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
-    </message>
-    <message>
-        <source>Data inspector</source>
-        <translation></translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>Kursor</translation>
+        <translation type="vanished">Kursor</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Pilihan</translation>
+        <translation type="vanished">Pilihan</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
 </context>
 <context>
     <name>XIcon</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
 </context>
 <context>
     <name>XInfoDB</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
-    </message>
-    <message>
-        <source>User</source>
-        <translation></translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation type="vanished">Label</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Titik masuk</translation>
+        <translation type="vanished">Titik masuk</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Ekspor</translation>
+        <translation type="vanished">Ekspor</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Impor</translation>
+        <translation type="vanished">Impor</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Data</translation>
+        <translation type="vanished">Data</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Obyek</translation>
-    </message>
-    <message>
-        <source>Function</source>
-        <translation></translation>
+        <translation type="vanished">Obyek</translation>
     </message>
 </context>
 <context>
     <name>XInfoDBOptionsWidget</name>
     <message>
         <source>Info</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Buka direktori</translation>
+        <translation type="vanished">Buka direktori</translation>
     </message>
 </context>
 <context>
     <name>XJpeg</name>
     <message>
         <source>Data</source>
-        <translation>Data</translation>
+        <translation type="vanished">Data</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Obyek</translation>
+        <translation type="vanished">Obyek</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
+        <translation type="vanished">Salin</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation>Segmen</translation>
+        <translation type="vanished">Segmen</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
 </context>
 <context>
     <name>XMIMEWidget</name>
     <message>
         <source>All</source>
-        <translation>Semua</translation>
+        <translation type="vanished">Semua</translation>
     </message>
 </context>
 <context>
     <name>XMP3</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Dump all</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Offset file</translation>
+        <translation type="vanished">Offset file</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Alamat virtual</translation>
+        <translation type="vanished">Alamat virtual</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Alamat virtual relatif</translation>
+        <translation type="vanished">Alamat virtual relatif</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation type="vanished">Mode</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Arsitektur</translation>
-    </message>
-    <message>
-        <source>Show all</source>
-        <translation></translation>
+        <translation type="vanished">Arsitektur</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Buang</translation>
+        <translation type="vanished">Buang</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Simpan sampah</translation>
+        <translation type="vanished">Simpan sampah</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Data mentah</translation>
+        <translation type="vanished">Data mentah</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation type="vanished">Mode</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Simbol</translation>
+        <translation type="vanished">Simbol</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Hanya dibaca</translation>
+        <translation type="vanished">Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
-    </message>
-    <message>
-        <source>Get</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>API key</source>
-        <translation></translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Automatic</source>
-        <translation>Otomatis</translation>
-    </message>
-    <message>
-        <source>Recent files</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Code pages</source>
-        <translation></translation>
+        <translation type="vanished">Otomatis</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Bersihkan</translation>
+        <translation type="vanished">Bersihkan</translation>
     </message>
 </context>
 <context>
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation>Tetap diatas</translation>
+        <translation type="vanished">Tetap diatas</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation>Aplikasi tunggal</translation>
+        <translation type="vanished">Aplikasi tunggal</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation>Gaya</translation>
+        <translation type="vanished">Gaya</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Bahasa</translation>
+        <translation type="vanished">Bahasa</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation>Tampilkan logo</translation>
+        <translation type="vanished">Tampilkan logo</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation>jenis huruf</translation>
+        <translation type="vanished">jenis huruf</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>Simpan direktori terakhir</translation>
+        <translation type="vanished">Simpan direktori terakhir</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation>Simpan cadangan</translation>
-    </message>
-    <message>
-        <source>Save history</source>
-        <translation></translation>
+        <translation type="vanished">Simpan cadangan</translation>
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation>Tambahkan ke menu konteks</translation>
+        <translation type="vanished">Tambahkan ke menu konteks</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Bawaan</translation>
+        <translation type="vanished">Bawaan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation type="vanished">Batal</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation>Penampilan</translation>
+        <translation type="vanished">Penampilan</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation>Silakan jalankan program sebagai administrator</translation>
+        <translation type="vanished">Silakan jalankan program sebagai administrator</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informasi</translation>
+        <translation type="vanished">Informasi</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>Silahkan mulai ulang aplikasi</translation>
+        <translation type="vanished">Silahkan mulai ulang aplikasi</translation>
     </message>
 </context>
 <context>
     <name>XPDF</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Obyek</translation>
-    </message>
-    <message>
-        <source>Footer</source>
-        <translation></translation>
+        <translation type="vanished">Obyek</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
     <message>
         <source>Application</source>
-        <translation>Aplikasi</translation>
+        <translation type="vanished">Aplikasi</translation>
     </message>
     <message>
         <source>Console</source>
-        <translation>Menghibur</translation>
+        <translation type="vanished">Menghibur</translation>
     </message>
     <message>
         <source>Driver</source>
-        <translation>Pengemudi</translation>
+        <translation type="vanished">Pengemudi</translation>
     </message>
     <message>
         <source>Boot application</source>
-        <translation>Aplikasi booting</translation>
+        <translation type="vanished">Aplikasi booting</translation>
     </message>
     <message>
         <source>Runtime driver</source>
-        <translation>Pengemudi runtime</translation>
+        <translation type="vanished">Pengemudi runtime</translation>
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation>Driver layanan boot</translation>
+        <translation type="vanished">Driver layanan boot</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation>Bagian</translation>
+        <translation type="vanished">Bagian</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Overlay</translation>
+        <translation type="vanished">Overlay</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Tidak dapat membuka file</translation>
+        <translation type="vanished">Tidak dapat membuka file</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation>File ditandatangani dan tanda tangan diverifikasi</translation>
+        <translation type="vanished">File ditandatangani dan tanda tangan diverifikasi</translation>
     </message>
     <message>
         <source>The file is not signed</source>
-        <translation>File tidak ditandatangani</translation>
+        <translation type="vanished">File tidak ditandatangani</translation>
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation>Tanda tangan ada, tetapi secara khusus tidak diizinkan</translation>
+        <translation type="vanished">Tanda tangan ada, tetapi secara khusus tidak diizinkan</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation>Tanda tangan ada, tapi tidak dipercaya</translation>
+        <translation type="vanished">Tanda tangan ada, tapi tidak dipercaya</translation>
     </message>
     <message>
         <source>The signature error</source>
-        <translation>Kesalahan tanda tangan</translation>
+        <translation type="vanished">Kesalahan tanda tangan</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Data</translation>
+        <translation type="vanished">Data</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="vanished">Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Action</source>
-        <translation>Tindakan</translation>
+        <translation type="vanished">Tindakan</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>Melihat</translation>
+        <translation type="vanished">Melihat</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>String</translation>
+        <translation type="vanished">String</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Markah</translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Markah</translation>
-    </message>
-    <message>
-        <source>Struct</source>
-        <translation></translation>
+        <translation type="vanished">Markah</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Mengulik</translation>
+        <translation type="vanished">Mengulik</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
-    </message>
-    <message>
-        <source>Trace</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Animate</source>
-        <translation></translation>
+        <translation type="vanished">Debug</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>Debugger</translation>
-    </message>
-    <message>
-        <source>Register</source>
-        <translation></translation>
+        <translation type="vanished">Debugger</translation>
     </message>
     <message>
         <source>Stack</source>
-        <translation>Tumpukan</translation>
+        <translation type="vanished">Tumpukan</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Arsip</translation>
+        <translation type="vanished">Arsip</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Meja</translation>
+        <translation type="vanished">Meja</translation>
     </message>
     <message>
         <source>Process</source>
-        <translation>Proses</translation>
+        <translation type="vanished">Proses</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation>Penyimpanan</translation>
+        <translation type="vanished">Penyimpanan</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
+        <translation type="vanished">Salin</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Temukan</translation>
+        <translation type="vanished">Temukan</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Pergi ke</translation>
+        <translation type="vanished">Pergi ke</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Alat-alat</translation>
+        <translation type="vanished">Alat-alat</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>Bantuan</translation>
+        <translation type="vanished">Bantuan</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Pilih</translation>
+        <translation type="vanished">Pilih</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Pilihan</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Show in</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Breakpoint</source>
-        <translation></translation>
+        <translation type="vanished">Pilihan</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>Modul</translation>
+        <translation type="vanished">Modul</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Peta memori</translation>
+        <translation type="vanished">Peta memori</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation type="vanished">Nilai</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation>Edit</translation>
+        <translation type="vanished">Edit</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation>Menunjukkan</translation>
+        <translation type="vanished">Menunjukkan</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Buka</translation>
+        <translation type="vanished">Buka</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
-    </message>
-    <message>
-        <source>Save as</source>
-        <translation></translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="vanished">Tutup</translation>
     </message>
     <message>
         <source>Print</source>
-        <translation>Mencetak</translation>
+        <translation type="vanished">Mencetak</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>Keluar</translation>
+        <translation type="vanished">Keluar</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Buang ke file</translation>
+        <translation type="vanished">Buang ke file</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
-    </message>
-    <message>
-        <source>End</source>
-        <translation></translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Mengulang kembali</translation>
+        <translation type="vanished">Mengulang kembali</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Titik masuk</translation>
+        <translation type="vanished">Titik masuk</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Kode operasi</translation>
+        <translation type="vanished">Kode operasi</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation type="vanished">Demangle</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation></translation>
+        <translation type="vanished">Nama</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Semua</translation>
+        <translation type="vanished">Semua</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation>Menempel</translation>
+        <translation type="vanished">Menempel</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation>Melepaskan</translation>
+        <translation type="vanished">Melepaskan</translation>
     </message>
     <message>
         <source>CPU</source>
-        <translation>CPU</translation>
+        <translation type="vanished">CPU</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>Log</translation>
+        <translation type="vanished">Log</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation>Breakpoint</translation>
-    </message>
-    <message>
-        <source>Callstack</source>
-        <translation></translation>
+        <translation type="vanished">Breakpoint</translation>
     </message>
     <message>
         <source>Threads</source>
-        <translation>Utas</translation>
+        <translation type="vanished">Utas</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation>Menangani</translation>
+        <translation type="vanished">Menangani</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Simbol</translation>
+        <translation type="vanished">Simbol</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>Jalan pintas</translation>
+        <translation type="vanished">Jalan pintas</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Pilihan</translation>
+        <translation type="vanished">Pilihan</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>Tentang</translation>
+        <translation type="vanished">Tentang</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Nama file</translation>
+        <translation type="vanished">Nama file</translation>
     </message>
     <message>
         <source>Structs</source>
-        <translation>Struktur</translation>
+        <translation type="vanished">Struktur</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation>Penonton</translation>
-    </message>
-    <message>
-        <source>Folder</source>
-        <translation></translation>
+        <translation type="vanished">Penonton</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation>Lari</translation>
+        <translation type="vanished">Lari</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation>Berhenti sebentar</translation>
+        <translation type="vanished">Berhenti sebentar</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation>Melangkah ke</translation>
+        <translation type="vanished">Melangkah ke</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>Langkah selesai</translation>
+        <translation type="vanished">Langkah selesai</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Berhenti</translation>
+        <translation type="vanished">Berhenti</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation>Mengulang kembali</translation>
+        <translation type="vanished">Mengulang kembali</translation>
     </message>
     <message>
         <source>Toggle</source>
-        <translation>Beralih</translation>
+        <translation type="vanished">Beralih</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropi</translation>
+        <translation type="vanished">Entropi</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Hash</translation>
+        <translation type="vanished">Hash</translation>
     </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>File teks</translation>
+        <translation type="vanished">File teks</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Semua file</translation>
+        <translation type="vanished">Semua file</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Tidak dapat menyimpan file</translation>
+        <translation type="vanished">Tidak dapat menyimpan file</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation>Buka file</translation>
+        <translation type="vanished">Buka file</translation>
     </message>
 </context>
 <context>
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Bersihkan</translation>
+        <translation type="vanished">Bersihkan</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Alamat</translation>
+        <translation type="vanished">Alamat</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation></translation>
+        <translation type="vanished">Ukuran</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation type="vanished">Tipe</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation>Simbol</translation>
+        <translation type="vanished">Simbol</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Simbol</translation>
+        <translation type="vanished">Simbol</translation>
     </message>
 </context>
 <context>
     <name>XTiff</name>
     <message>
         <source>Header</source>
-        <translation>Tajuk</translation>
+        <translation type="vanished">Tajuk</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Meja</translation>
+        <translation type="vanished">Meja</translation>
     </message>
 </context>
 <context>
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation>Membentuk</translation>
-    </message>
-    <message>
-        <source>Rescan</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Show detects</source>
-        <translation></translation>
+        <translation type="vanished">Membentuk</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>Situs web</translation>
+        <translation type="vanished">Situs web</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="vanished">Simpan</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Muat ulang</translation>
+        <translation type="vanished">Muat ulang</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informasi</translation>
-    </message>
-    <message>
-        <source>Upload the file for analyze?</source>
-        <translation></translation>
+        <translation type="vanished">Informasi</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Pindai</translation>
+        <translation type="vanished">Pindai</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versi</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation></translation>
+        <translation type="vanished">Versi</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Hasil</translation>
-    </message>
-    <message>
-        <source>Please use valid API key</source>
-        <translation></translation>
+        <translation type="vanished">Hasil</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Pilihan</translation>
+        <translation type="vanished">Pilihan</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Alat penanda</translation>
+        <translation type="vanished">Alat penanda</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="vanished">Kesalahan</translation>
     </message>
 </context>
 </TS>

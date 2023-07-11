@@ -5,304 +5,288 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Bộ lọc</translation>
+        <translation type="vanished">Bộ lọc</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>Cây</translation>
+        <translation type="vanished">Cây</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Bàn</translation>
+        <translation type="vanished">Bàn</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Mở</translation>
+        <translation type="vanished">Mở</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Tên tệp</translation>
+        <translation type="vanished">Tên tệp</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Lưu tập tin</translation>
+        <translation type="vanished">Lưu tập tin</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Không thể lưu tập tin</translation>
+        <translation type="vanished">Không thể lưu tập tin</translation>
     </message>
 </context>
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
 </context>
 <context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
-        <translation>Tập tin</translation>
+        <translation type="vanished">Tập tin</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Bộ lọc</translation>
+        <translation type="vanished">Bộ lọc</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Quét sau khi mở</translation>
+        <translation type="vanished">Quét sau khi mở</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Các loại</translation>
+        <translation type="vanished">Các loại</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Cơ sở dữ liệu</translation>
+        <translation type="vanished">Cơ sở dữ liệu</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation>Nét chữ</translation>
+        <translation type="vanished">Nét chữ</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Mở thư mục</translation>
+        <translation type="vanished">Mở thư mục</translation>
     </message>
 </context>
 <context>
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Danh mục</translation>
+        <translation type="vanished">Danh mục</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>Nhật ký</translation>
+        <translation type="vanished">Nhật ký</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Các loại</translation>
+        <translation type="vanished">Các loại</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Dừng</translation>
+        <translation type="vanished">Dừng</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mili-giây</translation>
+        <translation type="vanished">mili-giây</translation>
     </message>
     <message>
         <source>Copy as</source>
-        <translation>Sao chép dưới dạng</translation>
+        <translation type="vanished">Sao chép dưới dạng</translation>
     </message>
 </context>
 <context>
     <name>DiE_Script</name>
     <message>
         <source>Cannot load database</source>
-        <translation>Không thể tải cơ sở dữ liệu</translation>
+        <translation type="vanished">Không thể tải cơ sở dữ liệu</translation>
     </message>
 </context>
 <context>
@@ -336,564 +320,548 @@
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation>Lưu trữ</translation>
+        <translation type="vanished">Lưu trữ</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Mở</translation>
+        <translation type="vanished">Mở</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Khoảng trống</translation>
+        <translation type="vanished">Khoảng trống</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Trên</translation>
+        <translation type="vanished">Trên</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Ký tự đại diện</translation>
+        <translation type="vanished">Ký tự đại diện</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Địa chỉ ảo tương đối</translation>
+        <translation type="vanished">Địa chỉ ảo tương đối</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Mã vận hành</translation>
+        <translation type="vanished">Mã vận hành</translation>
     </message>
 </context>
 <context>
     <name>DialogCreateViewModel</name>
     <message>
         <source>Create view model</source>
-        <translation>Tạo mẫu  xem</translation>
+        <translation type="vanished">Tạo mẫu  xem</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Quét thư mục</translation>
+        <translation type="vanished">Quét thư mục</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Danh mục</translation>
+        <translation type="vanished">Danh mục</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Thư mục con</translation>
+        <translation type="vanished">Thư mục con</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Các loại</translation>
+        <translation type="vanished">Các loại</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Xóa</translation>
+        <translation type="vanished">Xóa</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Mở thư mục</translation>
+        <translation type="vanished">Mở thư mục</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mili-giây</translation>
+        <translation type="vanished">mili-giây</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Tài liệu văn bản</translation>
+        <translation type="vanished">Tài liệu văn bản</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Lưu kết quả</translation>
+        <translation type="vanished">Lưu kết quả</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanProcess</name>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>Gỡ rối</translation>
+        <translation type="vanished">Gỡ rối</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>Nhãn</translation>
+        <translation type="vanished">Nhãn</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Đi tới</translation>
+        <translation type="vanished">Đi tới</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation>Opcodes</translation>
+        <translation type="vanished">Opcodes</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation>Cuộc gọi</translation>
+        <translation type="vanished">Cuộc gọi</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation>Nhảy</translation>
+        <translation type="vanished">Nhảy</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation>Tham khảo</translation>
+        <translation type="vanished">Tham khảo</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation>Tham khảo từ</translation>
+        <translation type="vanished">Tham khảo từ</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogEditString</name>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
-    </message>
-    <message>
-        <source>Keep size</source>
-        <translation></translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>C Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
-    </message>
-    <message>
-        <source>Bytes available</source>
-        <translation></translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogElapsed</name>
     <message>
         <source>Elapsed</source>
-        <translation>Đã trôi qua</translation>
+        <translation type="vanished">Đã trôi qua</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Thời gian</translation>
+        <translation type="vanished">Thời gian</translation>
     </message>
     <message>
         <source>Script</source>
-        <translation>Script</translation>
+        <translation type="vanished">Script</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropyProcess</name>
     <message>
         <source>Process</source>
-        <translation>Xử lý</translation>
+        <translation type="vanished">Xử lý</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogFindText</name>
     <message>
         <source>Find</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>Đúng với mẫu</translation>
+        <translation type="vanished">Đúng với mẫu</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation>Đi tới địa chỉ</translation>
+        <translation type="vanished">Đi tới địa chỉ</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Địa chỉ ảo</translation>
+        <translation type="vanished">Địa chỉ ảo</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Địa chỉ ảo tương đối</translation>
+        <translation type="vanished">Địa chỉ ảo tương đối</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation>không hợp lệ</translation>
+        <translation type="vanished">không hợp lệ</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogHashProcess</name>
     <message>
         <source>Process</source>
-        <translation>Xử lý</translation>
+        <translation type="vanished">Xử lý</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Khoảng trống</translation>
+        <translation type="vanished">Khoảng trống</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Trên</translation>
+        <translation type="vanished">Trên</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Ký tự đại diện</translation>
+        <translation type="vanished">Ký tự đại diện</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogLog</name>
     <message>
         <source>Log</source>
-        <translation>Nhật ký</translation>
+        <translation type="vanished">Nhật ký</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogMIME</name>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Lưu tập tin</translation>
+        <translation type="vanished">Lưu tập tin</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>Tập tin văn bản</translation>
+        <translation type="vanished">Tập tin văn bản</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tất cả tập tin</translation>
+        <translation type="vanished">Tất cả tập tin</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Khoảng trống</translation>
+        <translation type="vanished">Khoảng trống</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Trên</translation>
+        <translation type="vanished">Trên</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Ký tự đại diện</translation>
+        <translation type="vanished">Ký tự đại diện</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Địa chỉ ảo tương đối</translation>
+        <translation type="vanished">Địa chỉ ảo tương đối</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Mã vận hành</translation>
+        <translation type="vanished">Mã vận hành</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search strings</source>
-        <translation>Tìm kiếm chuỗi</translation>
+        <translation type="vanished">Tìm kiếm chuỗi</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>Tìm kiếm chữ ký</translation>
-    </message>
-    <message>
-        <source>Search values</source>
-        <translation></translation>
+        <translation type="vanished">Tìm kiếm chữ ký</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation>Tạo mẫu  xem</translation>
+        <translation type="vanished">Tạo mẫu  xem</translation>
     </message>
 </context>
 <context>
@@ -931,841 +899,800 @@
     <name>DialogProcessData</name>
     <message>
         <source>Process</source>
-        <translation>Xử lý</translation>
+        <translation type="vanished">Xử lý</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation>Tìm kiếm từ</translation>
+        <translation type="vanished">Tìm kiếm từ</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>Đúng với mẫu</translation>
+        <translation type="vanished">Đúng với mẫu</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation>Bắt đầu</translation>
+        <translation type="vanished">Bắt đầu</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>Con trỏ</translation>
+        <translation type="vanished">Con trỏ</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchValues</name>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation>Mục</translation>
+        <translation type="vanished">Mục</translation>
+    </message>
+</context>
+<context>
+    <name>DialogSelectStyle</name>
+    <message>
+        <source>Style</source>
+        <translation type="unfinished">Kiểu</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation>Các phím tắt</translation>
+        <translation type="vanished">Các phím tắt</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Bộ lọc</translation>
+        <translation type="vanished">Bộ lọc</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Xóa</translation>
+        <translation type="vanished">Xóa</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Vỡ nợ</translation>
+        <translation type="vanished">Vỡ nợ</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation>Đường tắt</translation>
+        <translation type="vanished">Đường tắt</translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation>Không thể đặt phím tắt</translation>
+        <translation type="vanished">Không thể đặt phím tắt</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation>Hình ảnh</translation>
+        <translation type="vanished">Hình ảnh</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation>Chạy</translation>
+        <translation type="vanished">Chạy</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Gỡ lỗi</translation>
+        <translation type="vanished">Gỡ lỗi</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Tìm kiếm</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Detect</source>
-        <translation></translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Show type</source>
-        <translation>Hiển thị loại</translation>
+        <translation type="vanished">Hiển thị loại</translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Hiển thị các tùy chọn</translation>
+        <translation type="vanished">Hiển thị các tùy chọn</translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Hiển thị phiên bản</translation>
+        <translation type="vanished">Hiển thị phiên bản</translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Kết quả rõ ràng</translation>
+        <translation type="vanished">Kết quả rõ ràng</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Cơ sở dữ liệu</translation>
+        <translation type="vanished">Cơ sở dữ liệu</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>Trình gỡ lỗi</translation>
+        <translation type="vanished">Trình gỡ lỗi</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mili-giây</translation>
+        <translation type="vanished">mili-giây</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Các loại</translation>
+        <translation type="vanished">Các loại</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Kết quả</translation>
+        <translation type="vanished">Kết quả</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Quét thư mục</translation>
+        <translation type="vanished">Quét thư mục</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Danh mục</translation>
+        <translation type="vanished">Danh mục</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Thư mục con</translation>
+        <translation type="vanished">Thư mục con</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Các loại</translation>
+        <translation type="vanished">Các loại</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Xóa</translation>
+        <translation type="vanished">Xóa</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Mở thư mục</translation>
+        <translation type="vanished">Mở thư mục</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mili-giây</translation>
+        <translation type="vanished">mili-giây</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Tài liệu văn bản</translation>
+        <translation type="vanished">Tài liệu văn bản</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Lưu kết quả</translation>
+        <translation type="vanished">Lưu kết quả</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation>Tài liệu văn bản</translation>
+        <translation type="vanished">Tài liệu văn bản</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Lưu kết quả</translation>
+        <translation type="vanished">Lưu kết quả</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Tài liệu văn bản</translation>
+        <translation type="vanished">Tài liệu văn bản</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Lưu kết quả</translation>
+        <translation type="vanished">Lưu kết quả</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Kết quả</translation>
+        <translation type="vanished">Kết quả</translation>
     </message>
 </context>
 <context>
     <name>DialogUnpackFile</name>
     <message>
         <source>Process</source>
-        <translation>Xử lý</translation>
+        <translation type="vanished">Xử lý</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogXDisasmViewColors</name>
     <message>
-        <source>Colors</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Chữ</translation>
-    </message>
-    <message>
-        <source>Background</source>
-        <translation></translation>
+        <translation type="vanished">Chữ</translation>
     </message>
 </context>
 <context>
     <name>DialogXDynStructs</name>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogXExtractor</name>
     <message>
-        <source>Extractor</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfo</name>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfoProcess</name>
     <message>
         <source>Process</source>
-        <translation>Xử lý</translation>
+        <translation type="vanished">Xử lý</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
 </context>
 <context>
     <name>DialogXInfoDBTransferProcess</name>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Nhập</translation>
+        <translation type="vanished">Nhập</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Trích xuất</translation>
+        <translation type="vanished">Trích xuất</translation>
     </message>
 </context>
 <context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
-        <translation>Ký hiệu</translation>
+        <translation type="vanished">Ký hiệu</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Bind</source>
-        <translation>Trói buộc</translation>
+        <translation type="vanished">Trói buộc</translation>
     </message>
 </context>
 <context>
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Mục</translation>
+        <translation type="vanished">Mục</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Gỡ rối</translation>
+        <translation type="vanished">Gỡ rối</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation>nén</translation>
+        <translation type="vanished">nén</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>không nén</translation>
+        <translation type="vanished">không nén</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation>Xóa</translation>
+        <translation type="vanished">Xóa</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mili-giây</translation>
+        <translation type="vanished">mili-giây</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation>Đệ quy</translation>
+        <translation type="vanished">Đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Không thể lưu tập tin</translation>
+        <translation type="vanished">Không thể lưu tập tin</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>Tập tin văn bản</translation>
+        <translation type="vanished">Tập tin văn bản</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tất cả tập tin</translation>
+        <translation type="vanished">Tất cả tập tin</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Lưu kết xuất</translation>
+        <translation type="vanished">Lưu kết xuất</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dữ lieu thô</translation>
+        <translation type="vanished">Dữ lieu thô</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation>Loại tập tin</translation>
-    </message>
-    <message>
-        <source>File size</source>
-        <translation></translation>
+        <translation type="vanished">Loại tập tin</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation>Địa chỉ gốc</translation>
+        <translation type="vanished">Địa chỉ gốc</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Điểm nhập</translation>
-    </message>
-    <message>
-        <source>File info</source>
-        <translation></translation>
+        <translation type="vanished">Điểm nhập</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation>Các tập tin</translation>
+        <translation type="vanished">Các tập tin</translation>
     </message>
     <message>
         <source>Unpack</source>
-        <translation>nén</translation>
+        <translation type="vanished">nén</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Trích xuất</translation>
+        <translation type="vanished">Trích xuất</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Nhập</translation>
+        <translation type="vanished">Nhập</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Tài nguyên</translation>
+        <translation type="vanished">Tài nguyên</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Mục</translation>
+        <translation type="vanished">Mục</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation>Dấu ngày tháng</translation>
+        <translation type="vanished">Dấu ngày tháng</translation>
     </message>
     <message>
         <source>Size of image</source>
-        <translation>Kích thước của hình ảnh</translation>
+        <translation type="vanished">Kích thước của hình ảnh</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation>Xuất hiện</translation>
+        <translation type="vanished">Xuất hiện</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Phiên bản</translation>
+        <translation type="vanished">Phiên bản</translation>
     </message>
     <message>
         <source>Programs</source>
-        <translation>Các chương trình</translation>
+        <translation type="vanished">Các chương trình</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>Lệnh</translation>
+        <translation type="vanished">Lệnh</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Đoạn</translation>
+        <translation type="vanished">Đoạn</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>Thư viện</translation>
+        <translation type="vanished">Thư viện</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Chế độ</translation>
+        <translation type="vanished">Chế độ</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Kiến trúc</translation>
+        <translation type="vanished">Kiến trúc</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Tự động</translation>
+        <translation type="vanished">Tự động</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Mở thư mục</translation>
+        <translation type="vanished">Mở thư mục</translation>
     </message>
 </context>
 <context>
@@ -1811,3413 +1738,3192 @@
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation>Nhập</translation>
+        <translation type="vanished">Nhập</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Các loại</translation>
+        <translation type="vanished">Các loại</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>Phỏng đoán</translation>
+        <translation type="vanished">Phỏng đoán</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Kết quả</translation>
+        <translation type="vanished">Kết quả</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
+    </message>
+</context>
+<context>
+    <name>LiteMainWindow</name>
+    <message>
+        <source>File name</source>
+        <translation type="unfinished">Tên tệp</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation type="unfinished">Quét đệ quy</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation type="unfinished">Quét sâu</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation type="unfinished">Các loại</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation type="unfinished">Quét</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation type="unfinished">Thoát</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation type="unfinished">mili-giây</translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation type="unfinished">Mở tập tin</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation type="unfinished">Tất cả tập tin</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Mã vận hành</translation>
+        <translation type="vanished">Mã vận hành</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>Lệnh</translation>
+        <translation type="vanished">Lệnh</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Đoạn</translation>
+        <translation type="vanished">Đoạn</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Mục</translation>
+        <translation type="vanished">Mục</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation>Rebase</translation>
+        <translation type="vanished">Rebase</translation>
     </message>
     <message>
         <source>Binding</source>
-        <translation>Ràng buộc</translation>
+        <translation type="vanished">Ràng buộc</translation>
     </message>
     <message>
         <source>Weak binding</source>
-        <translation>Ràng buộc yếu</translation>
+        <translation type="vanished">Ràng buộc yếu</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation>Ràng buộc lười biếng</translation>
+        <translation type="vanished">Ràng buộc lười biếng</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Trích xuất</translation>
+        <translation type="vanished">Trích xuất</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation>Bảng chuỗi</translation>
+        <translation type="vanished">Bảng chuỗi</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation>Bảng ký hiệu</translation>
+        <translation type="vanished">Bảng ký hiệu</translation>
     </message>
     <message>
         <source>Table of contents</source>
-        <translation>Mục lục</translation>
+        <translation type="vanished">Mục lục</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>Mô-đun</translation>
+        <translation type="vanished">Mô-đun</translation>
     </message>
     <message>
         <source>External references</source>
-        <translation>Tài liệu tham khảo bên ngoài</translation>
+        <translation type="vanished">Tài liệu tham khảo bên ngoài</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
-        <translation>Ký hiệu gián tiếp</translation>
+        <translation type="vanished">Ký hiệu gián tiếp</translation>
     </message>
     <message>
         <source>Local relocation</source>
-        <translation>Di dời địa phương</translation>
+        <translation type="vanished">Di dời địa phương</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>Chức năng</translation>
+        <translation type="vanished">Chức năng</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation>Dữ liệu trong mã</translation>
+        <translation type="vanished">Dữ liệu trong mã</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Gỡ rối</translation>
+        <translation type="vanished">Gỡ rối</translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Đoạn</translation>
+        <translation type="vanished">Đoạn</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
 </context>
 <context>
     <name>NFD_Widget</name>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Danh mục</translation>
+        <translation type="vanished">Danh mục</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Các loại</translation>
+        <translation type="vanished">Các loại</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Dừng</translation>
+        <translation type="vanished">Dừng</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>mili-giây</translation>
+        <translation type="vanished">mili-giây</translation>
     </message>
 </context>
 <context>
     <name>PDFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
-        <translation>Mục</translation>
+        <translation type="vanished">Mục</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Địa chỉ tương đối</translation>
-    </message>
-    <message>
-        <source>Virtual size</source>
-        <translation></translation>
+        <translation type="vanished">Địa chỉ tương đối</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Khoảng cách đến đầu tập tin</translation>
+        <translation type="vanished">Khoảng cách đến đầu tập tin</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>Cờ</translation>
+        <translation type="vanished">Cờ</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Điểm nhập</translation>
+        <translation type="vanished">Điểm nhập</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Trích xuất</translation>
+        <translation type="vanished">Trích xuất</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Nhập</translation>
+        <translation type="vanished">Nhập</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Tài nguyên</translation>
+        <translation type="vanished">Tài nguyên</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation>Ngoại lệ</translation>
+        <translation type="vanished">Ngoại lệ</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation>Relocs</translation>
+        <translation type="vanished">Relocs</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Gỡ lỗi</translation>
+        <translation type="vanished">Gỡ lỗi</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>Tải cấu hình</translation>
+        <translation type="vanished">Tải cấu hình</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>Nhập khẩu ràng buộc</translation>
+        <translation type="vanished">Nhập khẩu ràng buộc</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>Nhập chậm</translation>
+        <translation type="vanished">Nhập chậm</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Ngôn ngữ</translation>
+        <translation type="vanished">Ngôn ngữ</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Giấy chứng nhận</translation>
+        <translation type="vanished">Giấy chứng nhận</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Trạng thái</translation>
+        <translation type="vanished">Trạng thái</translation>
     </message>
     <message>
         <source>Program name</source>
-        <translation>Tên chương trình</translation>
+        <translation type="vanished">Tên chương trình</translation>
     </message>
     <message>
         <source>Publisher</source>
-        <translation>Nhà xuất bản</translation>
+        <translation type="vanished">Nhà xuất bản</translation>
     </message>
     <message>
         <source>More info</source>
-        <translation>Thêm thông tin</translation>
+        <translation type="vanished">Thêm thông tin</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation>Số seri</translation>
+        <translation type="vanished">Số seri</translation>
     </message>
     <message>
         <source>Issuer</source>
-        <translation>Người phát hành</translation>
+        <translation type="vanished">Người phát hành</translation>
     </message>
     <message>
         <source>Subject</source>
-        <translation>Chủ thể</translation>
+        <translation type="vanished">Chủ thể</translation>
     </message>
     <message>
         <source>Algorithm</source>
-        <translation>Thuật toán</translation>
+        <translation type="vanished">Thuật toán</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Phiên bản</translation>
+        <translation type="vanished">Phiên bản</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Đếm</translation>
+        <translation type="vanished">Đếm</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
 </context>
 <context>
     <name>PEToolsWidget</name>
     <message>
         <source>Tools</source>
-        <translation>Công cụ</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation></translation>
+        <translation type="vanished">Công cụ</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Lưu kết xuất</translation>
+        <translation type="vanished">Lưu kết xuất</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dữ lieu thô</translation>
+        <translation type="vanished">Dữ lieu thô</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation>Hiển thị hợp lệ</translation>
+        <translation type="vanished">Hiển thị hợp lệ</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Bàn</translation>
-    </message>
-    <message>
-        <source>Extract all icons</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Extract all cursors</source>
-        <translation></translation>
+        <translation type="vanished">Bàn</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>Cây</translation>
+        <translation type="vanished">Cây</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>Sự sắp xếp</translation>
+        <translation type="vanished">Sự sắp xếp</translation>
     </message>
     <message>
         <source>Check</source>
-        <translation>Đánh dấu</translation>
+        <translation type="vanished">Đánh dấu</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Công cụ</translation>
+        <translation type="vanished">Công cụ</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Mục</translation>
+        <translation type="vanished">Mục</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Trích xuất</translation>
+        <translation type="vanished">Trích xuất</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Nhập</translation>
+        <translation type="vanished">Nhập</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Tài nguyên</translation>
+        <translation type="vanished">Tài nguyên</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation>Bảng chuỗi</translation>
+        <translation type="vanished">Bảng chuỗi</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Phiên bản</translation>
+        <translation type="vanished">Phiên bản</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation>Xuất hiện</translation>
+        <translation type="vanished">Xuất hiện</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation>Ngoại lệ</translation>
+        <translation type="vanished">Ngoại lệ</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Giấy chứng nhận</translation>
+        <translation type="vanished">Giấy chứng nhận</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation>Relocs</translation>
+        <translation type="vanished">Relocs</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Gỡ lỗi</translation>
+        <translation type="vanished">Gỡ lỗi</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation>Gọi lại</translation>
+        <translation type="vanished">Gọi lại</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>Tải cấu hình</translation>
+        <translation type="vanished">Tải cấu hình</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>Nhập khẩu ràng buộc</translation>
+        <translation type="vanished">Nhập khẩu ràng buộc</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>Nhập chậm</translation>
+        <translation type="vanished">Nhập chậm</translation>
     </message>
     <message>
         <source>Metadata</source>
-        <translation>metadata</translation>
+        <translation type="vanished">metadata</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation>Tính toán</translation>
+        <translation type="vanished">Tính toán</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Gỡ rối</translation>
+        <translation type="vanished">Gỡ rối</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Đếm</translation>
+        <translation type="vanished">Đếm</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation>Tên thư viện</translation>
+        <translation type="vanished">Tên thư viện</translation>
     </message>
     <message>
         <source>Interpreter</source>
-        <translation>Thông dịch viên</translation>
+        <translation type="vanished">Thông dịch viên</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Phiên bản</translation>
+        <translation type="vanished">Phiên bản</translation>
     </message>
     <message>
         <source>Length</source>
-        <translation>Chiều dài</translation>
+        <translation type="vanished">Chiều dài</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>Đọc lỗi</translation>
+        <translation type="vanished">Đọc lỗi</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>Ghi lỗi</translation>
+        <translation type="vanished">Ghi lỗi</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Không thể mở tập tin</translation>
+        <translation type="vanished">Không thể mở tập tin</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>Tài liệu</translation>
+        <translation type="vanished">Tài liệu</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Hình ảnh</translation>
+        <translation type="vanished">Hình ảnh</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>Xuất tên tệp</translation>
+        <translation type="vanished">Xuất tên tệp</translation>
     </message>
 </context>
 <context>
     <name>QwtPolarRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>Tài liệu</translation>
+        <translation type="vanished">Tài liệu</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Hình ảnh</translation>
+        <translation type="vanished">Hình ảnh</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>Xuất tên tệp</translation>
+        <translation type="vanished">Xuất tên tệp</translation>
     </message>
 </context>
 <context>
     <name>ScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation>Kết quả</translation>
+        <translation type="vanished">Kết quả</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>Tìm kiếm chữ ký</translation>
+        <translation type="vanished">Tìm kiếm chữ ký</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Mở thư mục</translation>
+        <translation type="vanished">Mở thư mục</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>Tập tin</translation>
+        <translation type="vanished">Tập tin</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>C Strings</source>
-        <translation>Chuỗi</translation>
-    </message>
-    <message>
-        <source>Links</source>
-        <translation></translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Bộ lọc</translation>
+        <translation type="vanished">Bộ lọc</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Gỡ rối</translation>
+        <translation type="vanished">Gỡ rối</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Không thể lưu tập tin</translation>
+        <translation type="vanished">Không thể lưu tập tin</translation>
     </message>
 </context>
 <context>
     <name>SearchValuesWidget</name>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Tìm kiếm</translation>
-    </message>
-    <message>
-        <source>Values</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Điểm nhập</translation>
+        <translation type="vanished">Điểm nhập</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation>Tên mục</translation>
+        <translation type="vanished">Tên mục</translation>
     </message>
     <message>
         <source>Import hash</source>
-        <translation>Nhập hàm băm</translation>
+        <translation type="vanished">Nhập hàm băm</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation>Mục mã</translation>
+        <translation type="vanished">Mục mã</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation>Mục điểm nhập</translation>
+        <translation type="vanished">Mục điểm nhập</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Lưu trữ</translation>
+        <translation type="vanished">Lưu trữ</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Tài nguyên</translation>
+        <translation type="vanished">Tài nguyên</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation>Quét tập tin</translation>
+        <translation type="vanished">Quét tập tin</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>Quét thiết bị</translation>
+        <translation type="vanished">Quét thiết bị</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>Quét bộ nhớ</translation>
+        <translation type="vanished">Quét bộ nhớ</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>Quét thư mục</translation>
+        <translation type="vanished">Quét thư mục</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Quét sau khi mở</translation>
+        <translation type="vanished">Quét sau khi mở</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Quét đệ quy</translation>
+        <translation type="vanished">Quét đệ quy</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Quét phỏng đoán</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation></translation>
+        <translation type="vanished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Các loại</translation>
+        <translation type="vanished">Các loại</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
 </context>
 <context>
     <name>XAboutWidget</name>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Check updates</source>
-        <translation>Kiểm tra cập nhật</translation>
+        <translation type="vanished">Kiểm tra cập nhật</translation>
     </message>
     <message>
         <source>Thanks</source>
-        <translation>Cảm ơn</translation>
+        <translation type="vanished">Cảm ơn</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>Trang mạng</translation>
+        <translation type="vanished">Trang mạng</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>Thư viện</translation>
+        <translation type="vanished">Thư viện</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Thông tin</translation>
-    </message>
-    <message>
-        <source>The value copied to clipboard</source>
-        <translation></translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>8-bit</source>
-        <translation>8 bit</translation>
+        <translation type="vanished">8 bit</translation>
     </message>
     <message>
         <source>16-bit</source>
-        <translation>16-bit</translation>
+        <translation type="vanished">16-bit</translation>
     </message>
     <message>
         <source>32-bit</source>
-        <translation>32-bit</translation>
+        <translation type="vanished">32-bit</translation>
     </message>
     <message>
         <source>64-bit</source>
-        <translation>64-bit</translation>
+        <translation type="vanished">64-bit</translation>
     </message>
     <message>
         <source>128-bit</source>
-        <translation>128-bit</translation>
+        <translation type="vanished">128-bit</translation>
     </message>
     <message>
         <source>Region</source>
-        <translation>Khu vực</translation>
+        <translation type="vanished">Khu vực</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Lưu trữ</translation>
+        <translation type="vanished">Lưu trữ</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>Tài liệu</translation>
+        <translation type="vanished">Tài liệu</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>Hình ảnh</translation>
-    </message>
-    <message>
-        <source>Video</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Audio</source>
-        <translation></translation>
+        <translation type="vanished">Hình ảnh</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Chữ</translation>
+        <translation type="vanished">Chữ</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>Đọc lỗi</translation>
+        <translation type="vanished">Đọc lỗi</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation>Tối đa</translation>
-    </message>
-    <message>
-        <source>Invalid signature</source>
-        <translation></translation>
+        <translation type="vanished">Tối đa</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>Ghi lỗi</translation>
+        <translation type="vanished">Ghi lỗi</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Vỡ nợ</translation>
+        <translation type="vanished">Vỡ nợ</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
-    </message>
-    <message>
-        <source>KiB</source>
-        <translation></translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>kB</source>
-        <translation>kB</translation>
-    </message>
-    <message>
-        <source>MiB</source>
-        <translation></translation>
+        <translation type="vanished">kB</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>MB</translation>
-    </message>
-    <message>
-        <source>GiB</source>
-        <translation></translation>
+        <translation type="vanished">MB</translation>
     </message>
     <message>
         <source>GB</source>
-        <translation>GB</translation>
-    </message>
-    <message>
-        <source>TiB</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>TB</source>
-        <translation></translation>
+        <translation type="vanished">GB</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation>Bản ghi lưu trữ</translation>
+        <translation type="vanished">Bản ghi lưu trữ</translation>
     </message>
     <message>
         <source>Resource</source>
-        <translation>Nguồn</translation>
+        <translation type="vanished">Nguồn</translation>
     </message>
 </context>
 <context>
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
 </context>
 <context>
     <name>XCapstone</name>
     <message>
         <source>Invalid opcode</source>
-        <translation>Opcode không hợp lệ</translation>
+        <translation type="vanished">Opcode không hợp lệ</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation>Cờ</translation>
+        <translation type="vanished">Cờ</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Tự động</translation>
+        <translation type="vanished">Tự động</translation>
     </message>
 </context>
 <context>
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation>Chế độ</translation>
+        <translation type="vanished">Chế độ</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Dump</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Lưu kết xuất</translation>
+        <translation type="vanished">Lưu kết xuất</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dữ lieu thô</translation>
+        <translation type="vanished">Dữ lieu thô</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation>Không kết quả</translation>
+        <translation type="vanished">Không kết quả</translation>
     </message>
 </context>
 <context>
     <name>XDialogProcess</name>
     <message>
         <source>Process</source>
-        <translation>Xử lý</translation>
+        <translation type="vanished">Xử lý</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Nhãn</translation>
+        <translation type="vanished">Nhãn</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Mã vận hành</translation>
+        <translation type="vanished">Mã vận hành</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Mã vận hành</translation>
+        <translation type="vanished">Mã vận hành</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation>Biểu tượng</translation>
+        <translation type="vanished">Biểu tượng</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Bình luận</translation>
+        <translation type="vanished">Bình luận</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Điểm nhập</translation>
+        <translation type="vanished">Điểm nhập</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>Chữ ký hex</translation>
+        <translation type="vanished">Chữ ký hex</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>Tìm kiếm tiếp theo</translation>
+        <translation type="vanished">Tìm kiếm tiếp theo</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Chọn tất cả</translation>
+        <translation type="vanished">Chọn tất cả</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Đi tới</translation>
+        <translation type="vanished">Đi tới</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Chọn</translation>
+        <translation type="vanished">Chọn</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Địa chỉ tương đối</translation>
+        <translation type="vanished">Địa chỉ tương đối</translation>
     </message>
 </context>
 <context>
     <name>XDisasmViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation>Nét chữ</translation>
+        <translation type="vanished">Nét chữ</translation>
     </message>
     <message>
         <source>Syntax</source>
-        <translation>Cú pháp</translation>
-    </message>
-    <message>
-        <source>Uppercase</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Show colons in addresses</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Highlight</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Colors</source>
-        <translation></translation>
+        <translation type="vanished">Cú pháp</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation>Phân tích</translation>
+        <translation type="vanished">Phân tích</translation>
     </message>
     <message>
         <source>Labels</source>
-        <translation>Nhãn</translation>
+        <translation type="vanished">Nhãn</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Đi tới</translation>
+        <translation type="vanished">Đi tới</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Điểm nhập</translation>
+        <translation type="vanished">Điểm nhập</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Địa chỉ ảo</translation>
+        <translation type="vanished">Địa chỉ ảo</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Địa chỉ ảo tương đối</translation>
+        <translation type="vanished">Địa chỉ ảo tương đối</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Khoảng cách đến đầu tập tin</translation>
+        <translation type="vanished">Khoảng cách đến đầu tập tin</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation>Tới dữ liệu</translation>
+        <translation type="vanished">Tới dữ liệu</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dữ lieu thô</translation>
+        <translation type="vanished">Dữ lieu thô</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Lưu kết xuất</translation>
+        <translation type="vanished">Lưu kết xuất</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsEngine</name>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation>Không thể tải tệp</translation>
+        <translation type="vanished">Không thể tải tệp</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsOptionsWidget</name>
     <message>
         <source>Structs</source>
-        <translation>Cấu trúc</translation>
+        <translation type="vanished">Cấu trúc</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Mở thư mục</translation>
+        <translation type="vanished">Mở thư mục</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Prototype</source>
-        <translation>Nguyên mẫu</translation>
+        <translation type="vanished">Nguyên mẫu</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Array</source>
-        <translation>Mảng</translation>
+        <translation type="vanished">Mảng</translation>
     </message>
     <message>
         <source>Variable</source>
-        <translation>Biến đổi</translation>
+        <translation type="vanished">Biến đổi</translation>
     </message>
     <message>
         <source>Pointer</source>
-        <translation>Con trỏ</translation>
+        <translation type="vanished">Con trỏ</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation>Không thể đọc bộ nhớ tại địa chỉ</translation>
+        <translation type="vanished">Không thể đọc bộ nhớ tại địa chỉ</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Kết quả</translation>
+        <translation type="vanished">Kết quả</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation>Các tập tin</translation>
+        <translation type="vanished">Các tập tin</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tất cả tập tin</translation>
+        <translation type="vanished">Tất cả tập tin</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Đếm</translation>
+        <translation type="vanished">Đếm</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation>Tổng</translation>
+        <translation type="vanished">Tổng</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Trạng thái</translation>
+        <translation type="vanished">Trạng thái</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Save diagram</source>
-        <translation>Lưu biểu đồ</translation>
+        <translation type="vanished">Lưu biểu đồ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation>Vùng</translation>
-    </message>
-    <message>
-        <source>Diagram</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Grid</source>
-        <translation></translation>
+        <translation type="vanished">Vùng</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Byte</source>
-        <translation>Byte</translation>
+        <translation type="vanished">Byte</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Hình ảnh</translation>
+        <translation type="vanished">Hình ảnh</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation>Tài liệu</translation>
+        <translation type="vanished">Tài liệu</translation>
     </message>
 </context>
 <context>
     <name>XExtractorWidget</name>
     <message>
-        <source>Extract</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Quét sâu</translation>
+        <translation type="vanished">Quét sâu</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Tùy chọn</translation>
+        <translation type="vanished">Tùy chọn</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Lưu kết xuất</translation>
+        <translation type="vanished">Lưu kết xuất</translation>
     </message>
 </context>
 <context>
     <name>XFileInfo</name>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Điểm nhập</translation>
+        <translation type="vanished">Điểm nhập</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Tên tệp</translation>
+        <translation type="vanished">Tên tệp</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation>Hệ điêu hanh</translation>
+        <translation type="vanished">Hệ điêu hanh</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Kiến trúc</translation>
+        <translation type="vanished">Kiến trúc</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Chế độ</translation>
+        <translation type="vanished">Chế độ</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>packed</source>
-        <translation>nén</translation>
+        <translation type="vanished">nén</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>không nén</translation>
+        <translation type="vanished">không nén</translation>
     </message>
     <message>
         <source>File type</source>
-        <translation>Loại tập tin</translation>
+        <translation type="vanished">Loại tập tin</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Địa chỉ tương đối</translation>
+        <translation type="vanished">Địa chỉ tương đối</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation>phương pháp</translation>
+        <translation type="vanished">phương pháp</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Bình luận</translation>
+        <translation type="vanished">Bình luận</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Chữ</translation>
+        <translation type="vanished">Chữ</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Lưu tập tin</translation>
+        <translation type="vanished">Lưu tập tin</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>Tập tin văn bản</translation>
+        <translation type="vanished">Tập tin văn bản</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tất cả tập tin</translation>
+        <translation type="vanished">Tất cả tập tin</translation>
     </message>
 </context>
 <context>
     <name>XFormats</name>
     <message>
         <source>obfuscator</source>
-        <translation>trình làm rối</translation>
+        <translation type="vanished">trình làm rối</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation>Dụng cụ</translation>
+        <translation type="vanished">Dụng cụ</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Lưu trữ</translation>
+        <translation type="vanished">Lưu trữ</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Giấy chứng nhận</translation>
+        <translation type="vanished">Giấy chứng nhận</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation>Trình biên dịch</translation>
+        <translation type="vanished">Trình biên dịch</translation>
     </message>
     <message>
         <source>Converter</source>
-        <translation>Bộ chuyển đổi</translation>
+        <translation type="vanished">Bộ chuyển đổi</translation>
     </message>
     <message>
         <source>Cryptor</source>
-        <translation>Cryptor</translation>
+        <translation type="vanished">Cryptor</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Dữ liệu</translation>
+        <translation type="vanished">Dữ liệu</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Cơ sở dữ liệu</translation>
+        <translation type="vanished">Cơ sở dữ liệu</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation>Gỡ lỗi dữ liệu</translation>
+        <translation type="vanished">Gỡ lỗi dữ liệu</translation>
     </message>
     <message>
         <source>protection</source>
-        <translation>bảo vệ</translation>
+        <translation type="vanished">bảo vệ</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation>bộ mở rộng</translation>
+        <translation type="vanished">bộ mở rộng</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>Sự sắp xếp</translation>
+        <translation type="vanished">Sự sắp xếp</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation>Chung</translation>
+        <translation type="vanished">Chung</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>Hình ảnh</translation>
+        <translation type="vanished">Hình ảnh</translation>
     </message>
     <message>
         <source>Installer</source>
-        <translation>Trình cài đặt</translation>
+        <translation type="vanished">Trình cài đặt</translation>
     </message>
     <message>
         <source>Installer data</source>
-        <translation>Dữ liệu trình cài đặt</translation>
+        <translation type="vanished">Dữ liệu trình cài đặt</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation>Trình kết hợp</translation>
+        <translation type="vanished">Trình kết hợp</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Ngôn ngữ</translation>
+        <translation type="vanished">Ngôn ngữ</translation>
     </message>
     <message>
         <source>Library</source>
-        <translation>Thư viện</translation>
+        <translation type="vanished">Thư viện</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation>Người liên kết</translation>
+        <translation type="vanished">Người liên kết</translation>
     </message>
     <message>
         <source>compressor</source>
-        <translation>bộ nén</translation>
+        <translation type="vanished">bộ nén</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation>Hệ điêu hanh</translation>
+        <translation type="vanished">Hệ điêu hanh</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Packer</source>
-        <translation>Người đóng gói</translation>
+        <translation type="vanished">Người đóng gói</translation>
     </message>
     <message>
         <source>Player</source>
-        <translation>Người chơi</translation>
+        <translation type="vanished">Người chơi</translation>
     </message>
     <message>
         <source>Protection</source>
-        <translation>Sự bảo vệ</translation>
+        <translation type="vanished">Sự bảo vệ</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation>Người bảo vệ</translation>
+        <translation type="vanished">Người bảo vệ</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation>Dữ liệu người bảo vệ</translation>
+        <translation type="vanished">Dữ liệu người bảo vệ</translation>
     </message>
     <message>
         <source>data</source>
-        <translation>dữ liệu</translation>
+        <translation type="vanished">dữ liệu</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation>Công cụ ký</translation>
+        <translation type="vanished">Công cụ ký</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation>Mã nguồn</translation>
+        <translation type="vanished">Mã nguồn</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation>Stub</translation>
+        <translation type="vanished">Stub</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation>Máy ảo</translation>
+        <translation type="vanished">Máy ảo</translation>
     </message>
 </context>
 <context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
-    </message>
-    <message>
-        <source>Footer</source>
-        <translation></translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation>phương pháp</translation>
+        <translation type="vanished">phương pháp</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Ký hiệu</translation>
+        <translation type="vanished">Ký hiệu</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Khởi động lại</translation>
-    </message>
-    <message>
-        <source>End</source>
-        <translation></translation>
+        <translation type="vanished">Khởi động lại</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>Tìm kiếm tiếp theo</translation>
+        <translation type="vanished">Tìm kiếm tiếp theo</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Chọn tất cả</translation>
+        <translation type="vanished">Chọn tất cả</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Đi tới</translation>
+        <translation type="vanished">Đi tới</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Lựa chọn</translation>
+        <translation type="vanished">Lựa chọn</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Chọn</translation>
+        <translation type="vanished">Chọn</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation>Nét chữ</translation>
-    </message>
-    <message>
-        <source>Show colons in addresses</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Blinking cursor</source>
-        <translation></translation>
+        <translation type="vanished">Nét chữ</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
-    </message>
-    <message>
-        <source>Data inspector</source>
-        <translation></translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>Con trỏ</translation>
+        <translation type="vanished">Con trỏ</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Lựa chọn</translation>
+        <translation type="vanished">Lựa chọn</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
 </context>
 <context>
     <name>XIcon</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
 </context>
 <context>
     <name>XInfoDB</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>Tập tin</translation>
-    </message>
-    <message>
-        <source>User</source>
-        <translation></translation>
+        <translation type="vanished">Tập tin</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Nhãn</translation>
+        <translation type="vanished">Nhãn</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Điểm nhập</translation>
+        <translation type="vanished">Điểm nhập</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Trích xuất</translation>
+        <translation type="vanished">Trích xuất</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Nhập</translation>
+        <translation type="vanished">Nhập</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Dữ liệu</translation>
+        <translation type="vanished">Dữ liệu</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Sự vật</translation>
-    </message>
-    <message>
-        <source>Function</source>
-        <translation></translation>
+        <translation type="vanished">Sự vật</translation>
     </message>
 </context>
 <context>
     <name>XInfoDBOptionsWidget</name>
     <message>
         <source>Info</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Mở thư mục</translation>
+        <translation type="vanished">Mở thư mục</translation>
     </message>
 </context>
 <context>
     <name>XJpeg</name>
     <message>
         <source>Data</source>
-        <translation>Dữ liệu</translation>
+        <translation type="vanished">Dữ liệu</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Sự vật</translation>
+        <translation type="vanished">Sự vật</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation>Đoạn</translation>
+        <translation type="vanished">Đoạn</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
 </context>
 <context>
     <name>XMIMEWidget</name>
     <message>
         <source>All</source>
-        <translation>Tất cả các</translation>
+        <translation type="vanished">Tất cả các</translation>
     </message>
 </context>
 <context>
     <name>XMP3</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Dump all</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Khoảng cách đến đầu tập tin</translation>
+        <translation type="vanished">Khoảng cách đến đầu tập tin</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Địa chỉ ảo</translation>
+        <translation type="vanished">Địa chỉ ảo</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Địa chỉ ảo tương đối</translation>
+        <translation type="vanished">Địa chỉ ảo tương đối</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Chế độ</translation>
+        <translation type="vanished">Chế độ</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianness</translation>
+        <translation type="vanished">Endianness</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Kiến trúc</translation>
-    </message>
-    <message>
-        <source>Show all</source>
-        <translation></translation>
+        <translation type="vanished">Kiến trúc</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Kết xuất</translation>
+        <translation type="vanished">Kết xuất</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Lưu kết xuất</translation>
+        <translation type="vanished">Lưu kết xuất</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dữ lieu thô</translation>
+        <translation type="vanished">Dữ lieu thô</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Chế độ</translation>
+        <translation type="vanished">Chế độ</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Ký hiệu</translation>
+        <translation type="vanished">Ký hiệu</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Chỉ đọc</translation>
+        <translation type="vanished">Chỉ đọc</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
 </context>
 <context>
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
-    </message>
-    <message>
-        <source>Get</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>API key</source>
-        <translation></translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Automatic</source>
-        <translation>Tự động</translation>
-    </message>
-    <message>
-        <source>Recent files</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Code pages</source>
-        <translation></translation>
+        <translation type="vanished">Tự động</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Xóa</translation>
+        <translation type="vanished">Xóa</translation>
     </message>
 </context>
 <context>
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation>Ở trên đầu</translation>
+        <translation type="vanished">Ở trên đầu</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation>Đơn</translation>
+        <translation type="vanished">Đơn</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation>Kiểu</translation>
+        <translation type="vanished">Kiểu</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Ngôn ngữ</translation>
+        <translation type="vanished">Ngôn ngữ</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation>Hiển thị biểu trưng</translation>
+        <translation type="vanished">Hiển thị biểu trưng</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation>Nét chữ</translation>
+        <translation type="vanished">Nét chữ</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>Lưu thư mục cuối cùng</translation>
+        <translation type="vanished">Lưu thư mục cuối cùng</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation>Lưu sao lưu</translation>
-    </message>
-    <message>
-        <source>Save history</source>
-        <translation></translation>
+        <translation type="vanished">Lưu sao lưu</translation>
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation>Thêm vào menu ngữ cảnh</translation>
+        <translation type="vanished">Thêm vào menu ngữ cảnh</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Vỡ nợ</translation>
+        <translation type="vanished">Vỡ nợ</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Hủy</translation>
+        <translation type="vanished">Hủy</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation>Giao diện</translation>
+        <translation type="vanished">Giao diện</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>Tập tin</translation>
+        <translation type="vanished">Tập tin</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation>Vui lòng chạy chương trình với tư cách quản trị viên</translation>
+        <translation type="vanished">Vui lòng chạy chương trình với tư cách quản trị viên</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Thông tin</translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>Vui lòng khởi động lại ứng dụng</translation>
+        <translation type="vanished">Vui lòng khởi động lại ứng dụng</translation>
     </message>
 </context>
 <context>
     <name>XPDF</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Sự vật</translation>
-    </message>
-    <message>
-        <source>Footer</source>
-        <translation></translation>
+        <translation type="vanished">Sự vật</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
     <message>
         <source>Application</source>
-        <translation>Ứng dụng</translation>
+        <translation type="vanished">Ứng dụng</translation>
     </message>
     <message>
         <source>Console</source>
-        <translation>Bảng điều khiển</translation>
+        <translation type="vanished">Bảng điều khiển</translation>
     </message>
     <message>
         <source>Driver</source>
-        <translation>Người lái xe</translation>
+        <translation type="vanished">Người lái xe</translation>
     </message>
     <message>
         <source>Boot application</source>
-        <translation>Khởi động ứng dụng</translation>
+        <translation type="vanished">Khởi động ứng dụng</translation>
     </message>
     <message>
         <source>Runtime driver</source>
-        <translation>Trình điều khiển thời gian chạy</translation>
+        <translation type="vanished">Trình điều khiển thời gian chạy</translation>
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation>Khởi động trình điều khiển dịch vụ</translation>
+        <translation type="vanished">Khởi động trình điều khiển dịch vụ</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation>Mục</translation>
+        <translation type="vanished">Mục</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Xếp chồng</translation>
+        <translation type="vanished">Xếp chồng</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Không thể mở tập tin</translation>
+        <translation type="vanished">Không thể mở tập tin</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation>Tệp đã được ký và chữ ký đã được xác minh</translation>
+        <translation type="vanished">Tệp đã được ký và chữ ký đã được xác minh</translation>
     </message>
     <message>
         <source>The file is not signed</source>
-        <translation>Tệp không được ký</translation>
+        <translation type="vanished">Tệp không được ký</translation>
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation>Chữ ký hiện có, nhưng đặc biệt không được phép</translation>
+        <translation type="vanished">Chữ ký hiện có, nhưng đặc biệt không được phép</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation>Chữ ký hiện có, nhưng không đáng tin cậy</translation>
+        <translation type="vanished">Chữ ký hiện có, nhưng không đáng tin cậy</translation>
     </message>
     <message>
         <source>The signature error</source>
-        <translation>Lỗi chữ ký</translation>
+        <translation type="vanished">Lỗi chữ ký</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Dữ liệu</translation>
+        <translation type="vanished">Dữ liệu</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>không xác định</translation>
+        <translation type="vanished">không xác định</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Action</source>
-        <translation>Hoạt động</translation>
+        <translation type="vanished">Hoạt động</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>Tập tin</translation>
+        <translation type="vanished">Tập tin</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>Quan điểm</translation>
+        <translation type="vanished">Quan điểm</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Chuỗi</translation>
+        <translation type="vanished">Chuỗi</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Chữ ký</translation>
-    </message>
-    <message>
-        <source>Struct</source>
-        <translation></translation>
+        <translation type="vanished">Chữ ký</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Hex</translation>
+        <translation type="vanished">Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <translation type="vanished">Rối loạn</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Gỡ lỗi</translation>
-    </message>
-    <message>
-        <source>Trace</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Animate</source>
-        <translation></translation>
+        <translation type="vanished">Gỡ lỗi</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>Trình gỡ lỗi</translation>
-    </message>
-    <message>
-        <source>Register</source>
-        <translation></translation>
+        <translation type="vanished">Trình gỡ lỗi</translation>
     </message>
     <message>
         <source>Stack</source>
-        <translation>Cây rơm</translation>
+        <translation type="vanished">Cây rơm</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Lưu trữ</translation>
+        <translation type="vanished">Lưu trữ</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Bàn</translation>
+        <translation type="vanished">Bàn</translation>
     </message>
     <message>
         <source>Process</source>
-        <translation>Xử lý</translation>
+        <translation type="vanished">Xử lý</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation>Kỉ niệm</translation>
+        <translation type="vanished">Kỉ niệm</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Sao chép</translation>
+        <translation type="vanished">Sao chép</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Tìm kiếm</translation>
+        <translation type="vanished">Tìm kiếm</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Đi tới</translation>
+        <translation type="vanished">Đi tới</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Công cụ</translation>
+        <translation type="vanished">Công cụ</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>Trợ giúp</translation>
+        <translation type="vanished">Trợ giúp</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Chọn</translation>
+        <translation type="vanished">Chọn</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Lựa chọn</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Show in</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Breakpoint</source>
-        <translation></translation>
+        <translation type="vanished">Lựa chọn</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>Mô-đun</translation>
+        <translation type="vanished">Mô-đun</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
+        <translation type="vanished">Sơ đồ bộ nhớ</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Giá trị</translation>
+        <translation type="vanished">Giá trị</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation>Chỉnh sửa</translation>
+        <translation type="vanished">Chỉnh sửa</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation>Trình diễn</translation>
+        <translation type="vanished">Trình diễn</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Mở</translation>
+        <translation type="vanished">Mở</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
-    </message>
-    <message>
-        <source>Save as</source>
-        <translation></translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Đóng</translation>
+        <translation type="vanished">Đóng</translation>
     </message>
     <message>
         <source>Print</source>
-        <translation>In</translation>
+        <translation type="vanished">In</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>Thoát</translation>
+        <translation type="vanished">Thoát</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <translation type="vanished">Kết xuất ra tập tin</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
-    </message>
-    <message>
-        <source>End</source>
-        <translation></translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Khởi động lại</translation>
+        <translation type="vanished">Khởi động lại</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Điểm nhập</translation>
+        <translation type="vanished">Điểm nhập</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <translation type="vanished">Khoảng cách</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Mã vận hành</translation>
+        <translation type="vanished">Mã vận hành</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Gỡ rối</translation>
+        <translation type="vanished">Gỡ rối</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Tên</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation></translation>
+        <translation type="vanished">Tên</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Tất cả các</translation>
+        <translation type="vanished">Tất cả các</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation>Gắn</translation>
+        <translation type="vanished">Gắn</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation>Tách ra</translation>
+        <translation type="vanished">Tách ra</translation>
     </message>
     <message>
         <source>CPU</source>
-        <translation>CPU</translation>
+        <translation type="vanished">CPU</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>Nhật ký</translation>
+        <translation type="vanished">Nhật ký</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation>Điểm ngắt</translation>
-    </message>
-    <message>
-        <source>Callstack</source>
-        <translation></translation>
+        <translation type="vanished">Điểm ngắt</translation>
     </message>
     <message>
         <source>Threads</source>
-        <translation>Chủ đề</translation>
+        <translation type="vanished">Chủ đề</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation>Xử lý</translation>
+        <translation type="vanished">Xử lý</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Ký hiệu</translation>
+        <translation type="vanished">Ký hiệu</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>Các phím tắt</translation>
+        <translation type="vanished">Các phím tắt</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Tùy chọn</translation>
+        <translation type="vanished">Tùy chọn</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>Giới thiệu</translation>
+        <translation type="vanished">Giới thiệu</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Tên tệp</translation>
+        <translation type="vanished">Tên tệp</translation>
     </message>
     <message>
         <source>Structs</source>
-        <translation>Cấu trúc</translation>
+        <translation type="vanished">Cấu trúc</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation>Người xem</translation>
-    </message>
-    <message>
-        <source>Folder</source>
-        <translation></translation>
+        <translation type="vanished">Người xem</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation>Chạy</translation>
+        <translation type="vanished">Chạy</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation>Tạm ngừng</translation>
+        <translation type="vanished">Tạm ngừng</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation>Bước vào</translation>
+        <translation type="vanished">Bước vào</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>Bước qua</translation>
+        <translation type="vanished">Bước qua</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Dừng</translation>
+        <translation type="vanished">Dừng</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation>Khởi động lại</translation>
+        <translation type="vanished">Khởi động lại</translation>
     </message>
     <message>
         <source>Toggle</source>
-        <translation>Chuyển đổi</translation>
+        <translation type="vanished">Chuyển đổi</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropy</translation>
+        <translation type="vanished">Entropy</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Băm</translation>
+        <translation type="vanished">Băm</translation>
     </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>Tập tin văn bản</translation>
+        <translation type="vanished">Tập tin văn bản</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tất cả tập tin</translation>
+        <translation type="vanished">Tất cả tập tin</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Không thể lưu tập tin</translation>
+        <translation type="vanished">Không thể lưu tập tin</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation>Mở tập tin</translation>
+        <translation type="vanished">Mở tập tin</translation>
     </message>
 </context>
 <context>
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Xóa</translation>
+        <translation type="vanished">Xóa</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <translation type="vanished">Địa chỉ</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Kích thước</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation></translation>
+        <translation type="vanished">Kích thước</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Loại</translation>
+        <translation type="vanished">Loại</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation>Biểu tượng</translation>
+        <translation type="vanished">Biểu tượng</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Ký hiệu</translation>
+        <translation type="vanished">Ký hiệu</translation>
     </message>
 </context>
 <context>
     <name>XTiff</name>
     <message>
         <source>Header</source>
-        <translation>Tiêu đề</translation>
+        <translation type="vanished">Tiêu đề</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Bàn</translation>
+        <translation type="vanished">Bàn</translation>
     </message>
 </context>
 <context>
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation>Mẫu đơn</translation>
-    </message>
-    <message>
-        <source>Rescan</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Show detects</source>
-        <translation></translation>
+        <translation type="vanished">Mẫu đơn</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>Trang mạng</translation>
+        <translation type="vanished">Trang mạng</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Lưu</translation>
+        <translation type="vanished">Lưu</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Tải lại</translation>
+        <translation type="vanished">Tải lại</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Thông tin</translation>
-    </message>
-    <message>
-        <source>Upload the file for analyze?</source>
-        <translation></translation>
+        <translation type="vanished">Thông tin</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Quét</translation>
+        <translation type="vanished">Quét</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Phiên bản</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation></translation>
+        <translation type="vanished">Phiên bản</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Kết quả</translation>
-    </message>
-    <message>
-        <source>Please use valid API key</source>
-        <translation></translation>
+        <translation type="vanished">Kết quả</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Tùy chọn</translation>
+        <translation type="vanished">Tùy chọn</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Công cụ ký</translation>
+        <translation type="vanished">Công cụ ký</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Lỗi</translation>
+        <translation type="vanished">Lỗi</translation>
     </message>
 </context>
 </TS>

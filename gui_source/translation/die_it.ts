@@ -5,304 +5,296 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
+        <translation type="vanished">Modulo</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filtro</translation>
+        <translation type="vanished">Filtro</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>Albero</translation>
+        <translation type="vanished">Albero</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Tabella</translation>
+        <translation type="vanished">Tabella</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Apri</translation>
+        <translation type="vanished">Apri</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Nome file</translation>
+        <translation type="vanished">Nome file</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Salva file</translation>
+        <translation type="vanished">Salva file</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Impossibile salvare il file</translation>
+        <translation type="vanished">Impossibile salvare il file</translation>
     </message>
 </context>
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
 </context>
 <context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filtro</translation>
+        <translation type="vanished">Filtro</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Scansiona dopo l&apos;apertura</translation>
+        <translation type="vanished">Scansiona dopo l&apos;apertura</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Tutti i tipi</translation>
+        <translation type="vanished">Tutti i tipi</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Base-dati</translation>
+        <translation type="vanished">Base-dati</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation>Editor</translation>
+        <translation type="vanished">Editor</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation>Font</translation>
+        <translation type="vanished">Font</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Apri cartella</translation>
+        <translation type="vanished">Apri cartella</translation>
     </message>
 </context>
 <context>
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Cartella</translation>
+        <translation type="vanished">Cartella</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>Registro</translation>
+        <translation type="vanished">Registro</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Tutti i tipi</translation>
+        <translation type="vanished">Tutti i tipi</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Ferma</translation>
+        <translation type="vanished">Ferma</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation type="vanished">msec</translation>
     </message>
     <message>
         <source>Copy as</source>
-        <translation>Copia come</translation>
+        <translation type="vanished">Copia come</translation>
     </message>
 </context>
 <context>
     <name>DiE_Script</name>
     <message>
         <source>Cannot load database</source>
-        <translation>Impossibile caricare il database</translation>
+        <translation type="vanished">Impossibile caricare il database</translation>
     </message>
 </context>
 <context>
@@ -336,564 +328,560 @@
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation>Archivio</translation>
+        <translation type="vanished">Archivio</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Apri</translation>
+        <translation type="vanished">Apri</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Spazi</translation>
+        <translation type="vanished">Spazi</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Superiore</translation>
+        <translation type="vanished">Superiore</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Carattere jolly</translation>
+        <translation type="vanished">Carattere jolly</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Indirizzo virtuale relativo</translation>
+        <translation type="vanished">Indirizzo virtuale relativo</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation type="vanished">Opcode</translation>
     </message>
 </context>
 <context>
     <name>DialogCreateViewModel</name>
     <message>
         <source>Create view model</source>
-        <translation>Crea modello vista</translation>
+        <translation type="vanished">Crea modello vista</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Scansione cartella</translation>
+        <translation type="vanished">Scansione cartella</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Cartella</translation>
+        <translation type="vanished">Cartella</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Sottocartelle</translation>
+        <translation type="vanished">Sottocartelle</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Tutti i tipi</translation>
+        <translation type="vanished">Tutti i tipi</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Pulisci</translation>
+        <translation type="vanished">Pulisci</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Apri cartella</translation>
+        <translation type="vanished">Apri cartella</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation type="vanished">msec</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Documenti di testo</translation>
+        <translation type="vanished">Documenti di testo</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Salva risultato</translation>
+        <translation type="vanished">Salva risultato</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanProcess</name>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>Distruggi</translation>
+        <translation type="vanished">Distruggi</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>Etichette</translation>
+        <translation type="vanished">Etichette</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Vai a</translation>
+        <translation type="vanished">Vai a</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation>Codici operativi</translation>
+        <translation type="vanished">Codici operativi</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation>Chiamate</translation>
+        <translation type="vanished">Chiamate</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation>Salti</translation>
+        <translation type="vanished">Salti</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation>Rif. a</translation>
+        <translation type="vanished">Rif. a</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation>Rif. da</translation>
+        <translation type="vanished">Rif. da</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogEditString</name>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Keep size</source>
-        <translation>Mantieni le dimensioni</translation>
+        <translation type="vanished">Mantieni le dimensioni</translation>
     </message>
     <message>
         <source>C Strings</source>
-        <translation>Stringhe C</translation>
+        <translation type="vanished">Stringhe C</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
     <message>
         <source>Bytes available</source>
-        <translation>Bytes disponibili</translation>
+        <translation type="vanished">Bytes disponibili</translation>
     </message>
 </context>
 <context>
     <name>DialogElapsed</name>
     <message>
         <source>Elapsed</source>
-        <translation>Trascorso</translation>
+        <translation type="vanished">Trascorso</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Volta</translation>
+        <translation type="vanished">Volta</translation>
     </message>
     <message>
         <source>Script</source>
-        <translation>Script</translation>
+        <translation type="vanished">Script</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropyProcess</name>
     <message>
         <source>Process</source>
-        <translation>Processo</translation>
+        <translation type="vanished">Processo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogFindText</name>
     <message>
         <source>Find</source>
-        <translation>Trova</translation>
+        <translation type="vanished">Trova</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>Corrispondenza forma</translation>
+        <translation type="vanished">Corrispondenza forma</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation>Vai all&apos;indirizzo</translation>
+        <translation type="vanished">Vai all&apos;indirizzo</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Indirizzo virtuale</translation>
+        <translation type="vanished">Indirizzo virtuale</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Indirizzo virtuale relativo</translation>
+        <translation type="vanished">Indirizzo virtuale relativo</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation>Non valido</translation>
+        <translation type="vanished">Non valido</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogHashProcess</name>
     <message>
         <source>Process</source>
-        <translation>Processo</translation>
+        <translation type="vanished">Processo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Spazi</translation>
+        <translation type="vanished">Spazi</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Superiore</translation>
+        <translation type="vanished">Superiore</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Carattere jolly</translation>
+        <translation type="vanished">Carattere jolly</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogLog</name>
     <message>
         <source>Log</source>
-        <translation>Registro</translation>
+        <translation type="vanished">Registro</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogMIME</name>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Salva file</translation>
+        <translation type="vanished">Salva file</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>File di testo</translation>
+        <translation type="vanished">File di testo</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tutti i file</translation>
+        <translation type="vanished">Tutti i file</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Spazi</translation>
+        <translation type="vanished">Spazi</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>Superiore</translation>
+        <translation type="vanished">Superiore</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Carattere jolly</translation>
+        <translation type="vanished">Carattere jolly</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Indirizzo virtuale relativo</translation>
+        <translation type="vanished">Indirizzo virtuale relativo</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation type="vanished">Opcode</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search strings</source>
-        <translation>Stringhe di ricerca</translation>
+        <translation type="vanished">Stringhe di ricerca</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>Firme di ricerca</translation>
-    </message>
-    <message>
-        <source>Search values</source>
-        <translation></translation>
+        <translation type="vanished">Firme di ricerca</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation>Crea modello vista</translation>
+        <translation type="vanished">Crea modello vista</translation>
     </message>
 </context>
 <context>
@@ -931,841 +919,832 @@
     <name>DialogProcessData</name>
     <message>
         <source>Process</source>
-        <translation>Processo</translation>
+        <translation type="vanished">Processo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation>Cerca da</translation>
+        <translation type="vanished">Cerca da</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>Corrispondenza forma</translation>
+        <translation type="vanished">Corrispondenza forma</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianità</translation>
+        <translation type="vanished">Endianità</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation>Inizia</translation>
+        <translation type="vanished">Inizia</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>Cursore</translation>
+        <translation type="vanished">Cursore</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchValues</name>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation>Sezione</translation>
+        <translation type="vanished">Sezione</translation>
+    </message>
+</context>
+<context>
+    <name>DialogSelectStyle</name>
+    <message>
+        <source>Style</source>
+        <translation type="unfinished">Stile</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation>Scorciatoie</translation>
+        <translation type="vanished">Scorciatoie</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filtro</translation>
+        <translation type="vanished">Filtro</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Pulisci</translation>
+        <translation type="vanished">Pulisci</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Predefinito</translation>
+        <translation type="vanished">Predefinito</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation>Scorciatoia</translation>
+        <translation type="vanished">Scorciatoia</translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation>Impossibile impostare la scorciatoia</translation>
+        <translation type="vanished">Impossibile impostare la scorciatoia</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation>Immagine</translation>
+        <translation type="vanished">Immagine</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation>Esegui</translation>
+        <translation type="vanished">Esegui</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
+        <translation type="vanished">Debug</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Trova</translation>
+        <translation type="vanished">Trova</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation>Successivo</translation>
+        <translation type="vanished">Successivo</translation>
     </message>
     <message>
         <source>Detect</source>
-        <translation>Rileva</translation>
+        <translation type="vanished">Rileva</translation>
     </message>
     <message>
         <source>Show type</source>
-        <translation>Mostra tipo</translation>
+        <translation type="vanished">Mostra tipo</translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Opzioni</translation>
+        <translation type="vanished">Opzioni</translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Versione</translation>
+        <translation type="vanished">Versione</translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Pulisci risultati</translation>
+        <translation type="vanished">Pulisci risultati</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Base-dati</translation>
+        <translation type="vanished">Base-dati</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>Debugger</translation>
+        <translation type="vanished">Debugger</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation type="vanished">msec</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Tutti i tipi</translation>
+        <translation type="vanished">Tutti i tipi</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Risultato</translation>
+        <translation type="vanished">Risultato</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Scansione cartella</translation>
+        <translation type="vanished">Scansione cartella</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Cartella</translation>
+        <translation type="vanished">Cartella</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Sottocartelle</translation>
+        <translation type="vanished">Sottocartelle</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Tutti i tipi</translation>
+        <translation type="vanished">Tutti i tipi</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Pulisci</translation>
+        <translation type="vanished">Pulisci</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Apri cartella</translation>
+        <translation type="vanished">Apri cartella</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation type="vanished">msec</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Documenti di testo</translation>
+        <translation type="vanished">Documenti di testo</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Salva risultato</translation>
+        <translation type="vanished">Salva risultato</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation>Documenti di testo</translation>
+        <translation type="vanished">Documenti di testo</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Salva risultato</translation>
+        <translation type="vanished">Salva risultato</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Documenti di testo</translation>
+        <translation type="vanished">Documenti di testo</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>Salva risultato</translation>
+        <translation type="vanished">Salva risultato</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Risultato</translation>
+        <translation type="vanished">Risultato</translation>
     </message>
 </context>
 <context>
     <name>DialogUnpackFile</name>
     <message>
         <source>Process</source>
-        <translation>Processo</translation>
+        <translation type="vanished">Processo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
-        <translation>Colori</translation>
+        <translation type="vanished">Colori</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Testo</translation>
+        <translation type="vanished">Testo</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation>Sfondo</translation>
+        <translation type="vanished">Sfondo</translation>
     </message>
 </context>
 <context>
     <name>DialogXDynStructs</name>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogXExtractor</name>
     <message>
-        <source>Extractor</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfo</name>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfoProcess</name>
     <message>
         <source>Process</source>
-        <translation>Processo</translation>
+        <translation type="vanished">Processo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
 </context>
 <context>
     <name>DialogXInfoDBTransferProcess</name>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Importa</translation>
+        <translation type="vanished">Importa</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Esporta</translation>
+        <translation type="vanished">Esporta</translation>
     </message>
 </context>
 <context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
-        <translation>Simboli</translation>
+        <translation type="vanished">Simboli</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Bind</source>
-        <translation>Legamento</translation>
+        <translation type="vanished">Legamento</translation>
     </message>
 </context>
 <context>
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sezioni</translation>
+        <translation type="vanished">Sezioni</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Distruggi</translation>
+        <translation type="vanished">Distruggi</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation>imballato</translation>
+        <translation type="vanished">imballato</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>non imballato</translation>
+        <translation type="vanished">non imballato</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation>Pulisci</translation>
+        <translation type="vanished">Pulisci</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation type="vanished">msec</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation>Ricorsivo</translation>
+        <translation type="vanished">Ricorsivo</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Impossibile salvare il file</translation>
+        <translation type="vanished">Impossibile salvare il file</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>File di testo</translation>
+        <translation type="vanished">File di testo</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tutti i file</translation>
+        <translation type="vanished">Tutti i file</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Salva dump</translation>
+        <translation type="vanished">Salva dump</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dati non elaborati</translation>
+        <translation type="vanished">Dati non elaborati</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation>Tipo di file</translation>
-    </message>
-    <message>
-        <source>File size</source>
-        <translation></translation>
+        <translation type="vanished">Tipo di file</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation>Indirizzo base</translation>
+        <translation type="vanished">Indirizzo base</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
+        <translation type="vanished">Punto di ingresso</translation>
     </message>
     <message>
         <source>File info</source>
-        <translation>File info</translation>
+        <translation type="vanished">File info</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Unpack</source>
-        <translation>imballato</translation>
+        <translation type="vanished">imballato</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Esporta</translation>
+        <translation type="vanished">Esporta</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Importa</translation>
+        <translation type="vanished">Importa</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Risorse</translation>
+        <translation type="vanished">Risorse</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sezioni</translation>
+        <translation type="vanished">Sezioni</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation>Timbro data e ora</translation>
+        <translation type="vanished">Timbro data e ora</translation>
     </message>
     <message>
         <source>Size of image</source>
-        <translation>Dimensione dell&apos;immagine</translation>
+        <translation type="vanished">Dimensione dell&apos;immagine</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation>Manifesto</translation>
+        <translation type="vanished">Manifesto</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versione</translation>
+        <translation type="vanished">Versione</translation>
     </message>
     <message>
         <source>Programs</source>
-        <translation>Programmi</translation>
+        <translation type="vanished">Programmi</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>Comandi</translation>
+        <translation type="vanished">Comandi</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Segmenti</translation>
+        <translation type="vanished">Segmenti</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>Librerie</translation>
+        <translation type="vanished">Librerie</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianità</translation>
+        <translation type="vanished">Endianità</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Modalità</translation>
+        <translation type="vanished">Modalità</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Architettura</translation>
+        <translation type="vanished">Architettura</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Automatico</translation>
+        <translation type="vanished">Automatico</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Apri cartella</translation>
+        <translation type="vanished">Apri cartella</translation>
     </message>
 </context>
 <context>
@@ -1811,3413 +1790,3360 @@
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation>Importa</translation>
+        <translation type="vanished">Importa</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Tutti i tipi</translation>
+        <translation type="vanished">Tutti i tipi</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>Euristico</translation>
+        <translation type="vanished">Euristico</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Risultato</translation>
+        <translation type="vanished">Risultato</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
+    </message>
+</context>
+<context>
+    <name>LiteMainWindow</name>
+    <message>
+        <source>File name</source>
+        <translation type="unfinished">Nome file</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation type="unfinished">Scansione ricorsiva</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation type="unfinished">Scansione approfondita</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">Scansione euristica</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation type="unfinished">Prolisso</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation type="unfinished">Tutti i tipi</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation type="unfinished">Scansione</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation type="unfinished">Esci</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation type="unfinished">msec</translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation type="unfinished">Apri file</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation type="unfinished">Tutti i file</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
+        <translation type="vanished">Modulo</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation type="vanished">Opcode</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>Comandi</translation>
+        <translation type="vanished">Comandi</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Segmenti</translation>
+        <translation type="vanished">Segmenti</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sezioni</translation>
+        <translation type="vanished">Sezioni</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation>Rebase</translation>
+        <translation type="vanished">Rebase</translation>
     </message>
     <message>
         <source>Binding</source>
-        <translation>Legame</translation>
+        <translation type="vanished">Legame</translation>
     </message>
     <message>
         <source>Weak binding</source>
-        <translation>Legame debole</translation>
+        <translation type="vanished">Legame debole</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation>Rilegatura pigra</translation>
+        <translation type="vanished">Rilegatura pigra</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Esporta</translation>
+        <translation type="vanished">Esporta</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation>Tabella delle stringhe</translation>
+        <translation type="vanished">Tabella delle stringhe</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation>Tabella dei simboli</translation>
+        <translation type="vanished">Tabella dei simboli</translation>
     </message>
     <message>
         <source>Table of contents</source>
-        <translation>Sommario</translation>
+        <translation type="vanished">Sommario</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>Moduli</translation>
+        <translation type="vanished">Moduli</translation>
     </message>
     <message>
         <source>External references</source>
-        <translation>Riferimenti esterni</translation>
+        <translation type="vanished">Riferimenti esterni</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
-        <translation>Simboli indiretti</translation>
+        <translation type="vanished">Simboli indiretti</translation>
     </message>
     <message>
         <source>Local relocation</source>
-        <translation>Trasferimento locale</translation>
+        <translation type="vanished">Trasferimento locale</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>Funzioni</translation>
+        <translation type="vanished">Funzioni</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation>Dati nel codice</translation>
+        <translation type="vanished">Dati nel codice</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Distruggi</translation>
+        <translation type="vanished">Distruggi</translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>Segmenti</translation>
+        <translation type="vanished">Segmenti</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
 </context>
 <context>
     <name>NFD_Widget</name>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Cartella</translation>
+        <translation type="vanished">Cartella</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Tutti i tipi</translation>
+        <translation type="vanished">Tutti i tipi</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Ferma</translation>
+        <translation type="vanished">Ferma</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation type="vanished">msec</translation>
     </message>
 </context>
 <context>
     <name>PDFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
-        <translation>Sezione</translation>
+        <translation type="vanished">Sezione</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Indirizzo relativo</translation>
-    </message>
-    <message>
-        <source>Virtual size</source>
-        <translation></translation>
+        <translation type="vanished">Indirizzo relativo</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Spostamento file</translation>
+        <translation type="vanished">Spostamento file</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>Segnali</translation>
+        <translation type="vanished">Segnali</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
+        <translation type="vanished">Punto di ingresso</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Esporta</translation>
+        <translation type="vanished">Esporta</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Importa</translation>
+        <translation type="vanished">Importa</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Risorse</translation>
+        <translation type="vanished">Risorse</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation>Eccezioni</translation>
+        <translation type="vanished">Eccezioni</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation>Ricolloca</translation>
+        <translation type="vanished">Ricolloca</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
+        <translation type="vanished">Debug</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>Carica configurazione</translation>
+        <translation type="vanished">Carica configurazione</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>Importazione vincolata</translation>
+        <translation type="vanished">Importazione vincolata</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>Importazione ritardata</translation>
+        <translation type="vanished">Importazione ritardata</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Lingua</translation>
+        <translation type="vanished">Lingua</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Certificato</translation>
+        <translation type="vanished">Certificato</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Stato</translation>
+        <translation type="vanished">Stato</translation>
     </message>
     <message>
         <source>Program name</source>
-        <translation>Nome del programma</translation>
+        <translation type="vanished">Nome del programma</translation>
     </message>
     <message>
         <source>Publisher</source>
-        <translation>Editore</translation>
+        <translation type="vanished">Editore</translation>
     </message>
     <message>
         <source>More info</source>
-        <translation>Ulteriori informazioni</translation>
+        <translation type="vanished">Ulteriori informazioni</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation>Numero di serie</translation>
+        <translation type="vanished">Numero di serie</translation>
     </message>
     <message>
         <source>Issuer</source>
-        <translation>Emittente</translation>
+        <translation type="vanished">Emittente</translation>
     </message>
     <message>
         <source>Subject</source>
-        <translation>Soggetto</translation>
+        <translation type="vanished">Soggetto</translation>
     </message>
     <message>
         <source>Algorithm</source>
-        <translation>Algoritmo</translation>
+        <translation type="vanished">Algoritmo</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versione</translation>
+        <translation type="vanished">Versione</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Conteggio</translation>
+        <translation type="vanished">Conteggio</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
 </context>
 <context>
     <name>PEToolsWidget</name>
     <message>
         <source>Tools</source>
-        <translation>Strumenti</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation></translation>
+        <translation type="vanished">Strumenti</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Salva dump</translation>
+        <translation type="vanished">Salva dump</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dati non elaborati</translation>
+        <translation type="vanished">Dati non elaborati</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation>Mostra valide</translation>
+        <translation type="vanished">Mostra valide</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Tabella</translation>
-    </message>
-    <message>
-        <source>Extract all icons</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Extract all cursors</source>
-        <translation></translation>
+        <translation type="vanished">Tabella</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>Albero</translation>
+        <translation type="vanished">Albero</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>Formato</translation>
+        <translation type="vanished">Formato</translation>
     </message>
     <message>
         <source>Check</source>
-        <translation>Dai un&apos;occhiata</translation>
+        <translation type="vanished">Dai un&apos;occhiata</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation></translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Strumenti</translation>
+        <translation type="vanished">Strumenti</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sezioni</translation>
+        <translation type="vanished">Sezioni</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Esporta</translation>
+        <translation type="vanished">Esporta</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Importa</translation>
+        <translation type="vanished">Importa</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Risorse</translation>
+        <translation type="vanished">Risorse</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation>Tabella delle stringhe</translation>
+        <translation type="vanished">Tabella delle stringhe</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versione</translation>
+        <translation type="vanished">Versione</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation>Manifesto</translation>
+        <translation type="vanished">Manifesto</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation>Eccezioni</translation>
+        <translation type="vanished">Eccezioni</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Certificato</translation>
+        <translation type="vanished">Certificato</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation>Ricolloca</translation>
+        <translation type="vanished">Ricolloca</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
+        <translation type="vanished">Debug</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation>Richiamate</translation>
+        <translation type="vanished">Richiamate</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>Carica configurazione</translation>
+        <translation type="vanished">Carica configurazione</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>Importazione vincolata</translation>
+        <translation type="vanished">Importazione vincolata</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>Importazione ritardata</translation>
+        <translation type="vanished">Importazione ritardata</translation>
     </message>
     <message>
         <source>Metadata</source>
-        <translation>Metadati</translation>
+        <translation type="vanished">Metadati</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation>Calcola</translation>
+        <translation type="vanished">Calcola</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Distruggi</translation>
+        <translation type="vanished">Distruggi</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Conteggio</translation>
+        <translation type="vanished">Conteggio</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation>Nome della libreria</translation>
+        <translation type="vanished">Nome della libreria</translation>
     </message>
     <message>
         <source>Interpreter</source>
-        <translation>Interprete</translation>
+        <translation type="vanished">Interprete</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versione</translation>
+        <translation type="vanished">Versione</translation>
     </message>
     <message>
         <source>Length</source>
-        <translation>Lunghezza</translation>
+        <translation type="vanished">Lunghezza</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>Errore di lettura</translation>
+        <translation type="vanished">Errore di lettura</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>Errore di scrittura</translation>
+        <translation type="vanished">Errore di scrittura</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Impossibile aprire il file</translation>
+        <translation type="vanished">Impossibile aprire il file</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>Documenti</translation>
+        <translation type="vanished">Documenti</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Immagini</translation>
+        <translation type="vanished">Immagini</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>Esporta nome file</translation>
+        <translation type="vanished">Esporta nome file</translation>
     </message>
 </context>
 <context>
     <name>QwtPolarRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>Documenti</translation>
+        <translation type="vanished">Documenti</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Immagini</translation>
+        <translation type="vanished">Immagini</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>Esporta nome file</translation>
+        <translation type="vanished">Esporta nome file</translation>
     </message>
 </context>
 <context>
     <name>ScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation>Risultato</translation>
+        <translation type="vanished">Risultato</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
+        <translation type="vanished">Modulo</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>Firme di ricerca</translation>
+        <translation type="vanished">Firme di ricerca</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Apri cartella</translation>
+        <translation type="vanished">Apri cartella</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianità</translation>
+        <translation type="vanished">Endianità</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Segui</translation>
+        <translation type="vanished">Segui</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>C Strings</source>
-        <translation>Stringhe C</translation>
+        <translation type="vanished">Stringhe C</translation>
     </message>
     <message>
         <source>Links</source>
-        <translation>Collegamenti</translation>
+        <translation type="vanished">Collegamenti</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filtro</translation>
+        <translation type="vanished">Filtro</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Segui</translation>
+        <translation type="vanished">Segui</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Distruggi</translation>
+        <translation type="vanished">Distruggi</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Impossibile salvare il file</translation>
+        <translation type="vanished">Impossibile salvare il file</translation>
     </message>
 </context>
 <context>
     <name>SearchValuesWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cerca</translation>
-    </message>
-    <message>
-        <source>Values</source>
-        <translation></translation>
+        <translation type="vanished">Cerca</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Segui</translation>
+        <translation type="vanished">Segui</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
+        <translation type="vanished">Punto di ingresso</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation>Nome sezione</translation>
+        <translation type="vanished">Nome sezione</translation>
     </message>
     <message>
         <source>Import hash</source>
-        <translation>Importa hash</translation>
+        <translation type="vanished">Importa hash</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation>Sezione codice</translation>
+        <translation type="vanished">Sezione codice</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation>Sezione del punto di ingresso</translation>
+        <translation type="vanished">Sezione del punto di ingresso</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Archivio</translation>
+        <translation type="vanished">Archivio</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>Risorse</translation>
+        <translation type="vanished">Risorse</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation>Scansione file</translation>
+        <translation type="vanished">Scansione file</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>Scansione dispositivo</translation>
+        <translation type="vanished">Scansione dispositivo</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>Scansione della memoria</translation>
+        <translation type="vanished">Scansione della memoria</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>Scansione cartella</translation>
+        <translation type="vanished">Scansione cartella</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Scansiona dopo l&apos;apertura</translation>
+        <translation type="vanished">Scansiona dopo l&apos;apertura</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Scansione ricorsiva</translation>
+        <translation type="vanished">Scansione ricorsiva</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Scansione euristica</translation>
+        <translation type="vanished">Scansione euristica</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Prolisso</translation>
+        <translation type="vanished">Prolisso</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>Tutti i tipi</translation>
+        <translation type="vanished">Tutti i tipi</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
 </context>
 <context>
     <name>XAboutWidget</name>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Check updates</source>
-        <translation>Controlla aggiornamenti</translation>
+        <translation type="vanished">Controlla aggiornamenti</translation>
     </message>
     <message>
         <source>Thanks</source>
-        <translation>Grazie</translation>
+        <translation type="vanished">Grazie</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>Sito web</translation>
+        <translation type="vanished">Sito web</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>Librerie</translation>
+        <translation type="vanished">Librerie</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informazioni</translation>
-    </message>
-    <message>
-        <source>The value copied to clipboard</source>
-        <translation></translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>8-bit</source>
-        <translation>8 bit</translation>
+        <translation type="vanished">8 bit</translation>
     </message>
     <message>
         <source>16-bit</source>
-        <translation>16 bit</translation>
+        <translation type="vanished">16 bit</translation>
     </message>
     <message>
         <source>32-bit</source>
-        <translation>32 bit</translation>
+        <translation type="vanished">32 bit</translation>
     </message>
     <message>
         <source>64-bit</source>
-        <translation>64 bit</translation>
+        <translation type="vanished">64 bit</translation>
     </message>
     <message>
         <source>128-bit</source>
-        <translation>128 bit</translation>
+        <translation type="vanished">128 bit</translation>
     </message>
     <message>
         <source>Region</source>
-        <translation>Regione</translation>
+        <translation type="vanished">Regione</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Archivio</translation>
+        <translation type="vanished">Archivio</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>Documento</translation>
+        <translation type="vanished">Documento</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>Immagine</translation>
-    </message>
-    <message>
-        <source>Video</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Audio</source>
-        <translation></translation>
+        <translation type="vanished">Immagine</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Testo</translation>
+        <translation type="vanished">Testo</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>Errore di lettura</translation>
+        <translation type="vanished">Errore di lettura</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation>Massimo</translation>
+        <translation type="vanished">Massimo</translation>
     </message>
     <message>
         <source>Invalid signature</source>
-        <translation>Firma non valida</translation>
+        <translation type="vanished">Firma non valida</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>Errore di scrittura</translation>
+        <translation type="vanished">Errore di scrittura</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Predefinito</translation>
+        <translation type="vanished">Predefinito</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
-    </message>
-    <message>
-        <source>KiB</source>
-        <translation></translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>kB</source>
-        <translation>kB</translation>
-    </message>
-    <message>
-        <source>MiB</source>
-        <translation></translation>
+        <translation type="vanished">kB</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>MB</translation>
-    </message>
-    <message>
-        <source>GiB</source>
-        <translation></translation>
+        <translation type="vanished">MB</translation>
     </message>
     <message>
         <source>GB</source>
-        <translation>GB</translation>
-    </message>
-    <message>
-        <source>TiB</source>
-        <translation></translation>
+        <translation type="vanished">GB</translation>
     </message>
     <message>
         <source>TB</source>
-        <translation>TB</translation>
+        <translation type="vanished">TB</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation>Voce di archivio</translation>
+        <translation type="vanished">Voce di archivio</translation>
     </message>
     <message>
         <source>Resource</source>
-        <translation>Risorsa</translation>
+        <translation type="vanished">Risorsa</translation>
     </message>
 </context>
 <context>
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>XCapstone</name>
     <message>
         <source>Invalid opcode</source>
-        <translation>Opcode invalido</translation>
+        <translation type="vanished">Opcode invalido</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation>Segnali</translation>
+        <translation type="vanished">Segnali</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Automatico</translation>
+        <translation type="vanished">Automatico</translation>
     </message>
 </context>
 <context>
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation>Modalità</translation>
+        <translation type="vanished">Modalità</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Dump</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Salva dump</translation>
+        <translation type="vanished">Salva dump</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dati non elaborati</translation>
+        <translation type="vanished">Dati non elaborati</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation>Nessun risultato</translation>
+        <translation type="vanished">Nessun risultato</translation>
     </message>
 </context>
 <context>
     <name>XDialogProcess</name>
     <message>
         <source>Process</source>
-        <translation>Processo</translation>
+        <translation type="vanished">Processo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Etichetta</translation>
+        <translation type="vanished">Etichetta</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation type="vanished">Opcode</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation type="vanished">Opcode</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation>Simbolo</translation>
+        <translation type="vanished">Simbolo</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Commento</translation>
+        <translation type="vanished">Commento</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
+        <translation type="vanished">Punto di ingresso</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>Firma esadecimale</translation>
+        <translation type="vanished">Firma esadecimale</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>Trova successivo</translation>
+        <translation type="vanished">Trova successivo</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Seleziona tutto</translation>
+        <translation type="vanished">Seleziona tutto</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Vai a</translation>
+        <translation type="vanished">Vai a</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Trova</translation>
+        <translation type="vanished">Trova</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Seleziona</translation>
+        <translation type="vanished">Seleziona</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Segui</translation>
+        <translation type="vanished">Segui</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Indirizzo relativo</translation>
+        <translation type="vanished">Indirizzo relativo</translation>
     </message>
 </context>
 <context>
     <name>XDisasmViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation>Font</translation>
+        <translation type="vanished">Font</translation>
     </message>
     <message>
         <source>Syntax</source>
-        <translation>Sintassi</translation>
+        <translation type="vanished">Sintassi</translation>
     </message>
     <message>
         <source>Uppercase</source>
-        <translation>Maiuscolo</translation>
+        <translation type="vanished">Maiuscolo</translation>
     </message>
     <message>
         <source>Show colons in addresses</source>
-        <translation>Mostra i due punti negli indirizzi</translation>
+        <translation type="vanished">Mostra i due punti negli indirizzi</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation>Evidenzia</translation>
+        <translation type="vanished">Evidenzia</translation>
     </message>
     <message>
         <source>Colors</source>
-        <translation>Colori</translation>
+        <translation type="vanished">Colori</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation>Analizza</translation>
+        <translation type="vanished">Analizza</translation>
     </message>
     <message>
         <source>Labels</source>
-        <translation>Etichette</translation>
+        <translation type="vanished">Etichette</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Vai a</translation>
+        <translation type="vanished">Vai a</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
+        <translation type="vanished">Punto di ingresso</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Indirizzo virtuale</translation>
+        <translation type="vanished">Indirizzo virtuale</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Indirizzo virtuale relativo</translation>
+        <translation type="vanished">Indirizzo virtuale relativo</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Spostamento file</translation>
+        <translation type="vanished">Spostamento file</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation>Ai dati</translation>
+        <translation type="vanished">Ai dati</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dati non elaborati</translation>
+        <translation type="vanished">Dati non elaborati</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Salva dump</translation>
+        <translation type="vanished">Salva dump</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsEngine</name>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation>Impossibile caricare il file</translation>
+        <translation type="vanished">Impossibile caricare il file</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsOptionsWidget</name>
     <message>
         <source>Structs</source>
-        <translation>Strutture</translation>
+        <translation type="vanished">Strutture</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Apri cartella</translation>
+        <translation type="vanished">Apri cartella</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsWidget</name>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Prototype</source>
-        <translation>Prototipo</translation>
+        <translation type="vanished">Prototipo</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Array</source>
-        <translation>Vettore</translation>
+        <translation type="vanished">Vettore</translation>
     </message>
     <message>
         <source>Variable</source>
-        <translation>Variabile</translation>
+        <translation type="vanished">Variabile</translation>
     </message>
     <message>
         <source>Pointer</source>
-        <translation>puntatore</translation>
+        <translation type="vanished">puntatore</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation>Impossibile leggere la memoria all&apos;indirizzo</translation>
+        <translation type="vanished">Impossibile leggere la memoria all&apos;indirizzo</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Risultato</translation>
+        <translation type="vanished">Risultato</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tutti i file</translation>
+        <translation type="vanished">Tutti i file</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Conteggio</translation>
+        <translation type="vanished">Conteggio</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation>Totale</translation>
+        <translation type="vanished">Totale</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Stato</translation>
+        <translation type="vanished">Stato</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Save diagram</source>
-        <translation>Salva diagramma</translation>
+        <translation type="vanished">Salva diagramma</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation>Regioni</translation>
+        <translation type="vanished">Regioni</translation>
     </message>
     <message>
         <source>Diagram</source>
-        <translation>Diagramma</translation>
+        <translation type="vanished">Diagramma</translation>
     </message>
     <message>
         <source>Grid</source>
-        <translation>Griglia</translation>
+        <translation type="vanished">Griglia</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Byte</source>
-        <translation>Byte</translation>
+        <translation type="vanished">Byte</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>Immagini</translation>
+        <translation type="vanished">Immagini</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation>Documenti</translation>
+        <translation type="vanished">Documenti</translation>
     </message>
 </context>
 <context>
     <name>XExtractorWidget</name>
     <message>
-        <source>Extract</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>Scansione approfondita</translation>
+        <translation type="vanished">Scansione approfondita</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Opzioni</translation>
+        <translation type="vanished">Opzioni</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Segui</translation>
+        <translation type="vanished">Segui</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Salva dump</translation>
+        <translation type="vanished">Salva dump</translation>
     </message>
 </context>
 <context>
     <name>XFileInfo</name>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
+        <translation type="vanished">Punto di ingresso</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Nome file</translation>
+        <translation type="vanished">Nome file</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation>Sistema operativo</translation>
+        <translation type="vanished">Sistema operativo</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Architettura</translation>
+        <translation type="vanished">Architettura</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Modalità</translation>
+        <translation type="vanished">Modalità</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianità</translation>
+        <translation type="vanished">Endianità</translation>
     </message>
     <message>
         <source>packed</source>
-        <translation>imballato</translation>
+        <translation type="vanished">imballato</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>non imballato</translation>
+        <translation type="vanished">non imballato</translation>
     </message>
     <message>
         <source>File type</source>
-        <translation>Tipo di file</translation>
+        <translation type="vanished">Tipo di file</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Indirizzo relativo</translation>
+        <translation type="vanished">Indirizzo relativo</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>Bytes</translation>
+        <translation type="vanished">Bytes</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
+        <translation type="vanished">Modulo</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation>Metodo</translation>
+        <translation type="vanished">Metodo</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>Commento</translation>
+        <translation type="vanished">Commento</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Testo</translation>
+        <translation type="vanished">Testo</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>Salva file</translation>
+        <translation type="vanished">Salva file</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>File di testo</translation>
+        <translation type="vanished">File di testo</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tutti i file</translation>
+        <translation type="vanished">Tutti i file</translation>
     </message>
 </context>
 <context>
     <name>XFormats</name>
     <message>
         <source>obfuscator</source>
-        <translation>offuscatore</translation>
+        <translation type="vanished">offuscatore</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation>Strumento</translation>
+        <translation type="vanished">Strumento</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Archivio</translation>
+        <translation type="vanished">Archivio</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>Certificato</translation>
+        <translation type="vanished">Certificato</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation>Compilatore</translation>
+        <translation type="vanished">Compilatore</translation>
     </message>
     <message>
         <source>Converter</source>
-        <translation>Convertitore</translation>
+        <translation type="vanished">Convertitore</translation>
     </message>
     <message>
         <source>Cryptor</source>
-        <translation>Cryptor</translation>
+        <translation type="vanished">Cryptor</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Dati</translation>
+        <translation type="vanished">Dati</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>Base-dati</translation>
+        <translation type="vanished">Base-dati</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation>Debug data</translation>
+        <translation type="vanished">Debug data</translation>
     </message>
     <message>
         <source>protection</source>
-        <translation>protezione</translation>
+        <translation type="vanished">protezione</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation>estensore</translation>
+        <translation type="vanished">estensore</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>Formato</translation>
+        <translation type="vanished">Formato</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation>Generico</translation>
+        <translation type="vanished">Generico</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>Immagine</translation>
+        <translation type="vanished">Immagine</translation>
     </message>
     <message>
         <source>Installer</source>
-        <translation>Installatore</translation>
+        <translation type="vanished">Installatore</translation>
     </message>
     <message>
         <source>Installer data</source>
-        <translation>Data installatore</translation>
+        <translation type="vanished">Data installatore</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation>Assemblatore</translation>
+        <translation type="vanished">Assemblatore</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Lingua</translation>
+        <translation type="vanished">Lingua</translation>
     </message>
     <message>
         <source>Library</source>
-        <translation>Libreria</translation>
+        <translation type="vanished">Libreria</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation>Linker</translation>
+        <translation type="vanished">Linker</translation>
     </message>
     <message>
         <source>compressor</source>
-        <translation>compressore</translation>
+        <translation type="vanished">compressore</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation>Sistema operativo</translation>
+        <translation type="vanished">Sistema operativo</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Packer</source>
-        <translation>Packer</translation>
+        <translation type="vanished">Packer</translation>
     </message>
     <message>
         <source>Player</source>
-        <translation>Giocatore</translation>
+        <translation type="vanished">Giocatore</translation>
     </message>
     <message>
         <source>Protection</source>
-        <translation>Protezione</translation>
+        <translation type="vanished">Protezione</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation>Protettore</translation>
+        <translation type="vanished">Protettore</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation>Protettore dati</translation>
+        <translation type="vanished">Protettore dati</translation>
     </message>
     <message>
         <source>data</source>
-        <translation>dati</translation>
+        <translation type="vanished">dati</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation>Strumento firma</translation>
+        <translation type="vanished">Strumento firma</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation>Codice sorgente</translation>
+        <translation type="vanished">Codice sorgente</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation>Stub</translation>
+        <translation type="vanished">Stub</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation>Macchina virtuale</translation>
+        <translation type="vanished">Macchina virtuale</translation>
     </message>
 </context>
 <context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
-    </message>
-    <message>
-        <source>Footer</source>
-        <translation></translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation>Metodo</translation>
+        <translation type="vanished">Metodo</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Simboli</translation>
+        <translation type="vanished">Simboli</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Ricomincia</translation>
-    </message>
-    <message>
-        <source>End</source>
-        <translation></translation>
+        <translation type="vanished">Ricomincia</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>Trova successivo</translation>
+        <translation type="vanished">Trova successivo</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Seleziona tutto</translation>
+        <translation type="vanished">Seleziona tutto</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Vai a</translation>
+        <translation type="vanished">Vai a</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Selezione</translation>
+        <translation type="vanished">Selezione</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Trova</translation>
+        <translation type="vanished">Trova</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Seleziona</translation>
+        <translation type="vanished">Seleziona</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Segui</translation>
+        <translation type="vanished">Segui</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation>Font</translation>
+        <translation type="vanished">Font</translation>
     </message>
     <message>
         <source>Show colons in addresses</source>
-        <translation>Mostra i due punti negli indirizzi</translation>
+        <translation type="vanished">Mostra i due punti negli indirizzi</translation>
     </message>
     <message>
         <source>Blinking cursor</source>
-        <translation>Cursore intermittente</translation>
+        <translation type="vanished">Cursore intermittente</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
+        <translation type="vanished">Modulo</translation>
     </message>
     <message>
         <source>Data inspector</source>
-        <translation>Analizzatore dati</translation>
+        <translation type="vanished">Analizzatore dati</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>Cursore</translation>
+        <translation type="vanished">Cursore</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Selezione</translation>
+        <translation type="vanished">Selezione</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
 </context>
 <context>
     <name>XIcon</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
 </context>
 <context>
     <name>XInfoDB</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>User</source>
-        <translation>Utente</translation>
+        <translation type="vanished">Utente</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>Etichetta</translation>
+        <translation type="vanished">Etichetta</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
+        <translation type="vanished">Punto di ingresso</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Esporta</translation>
+        <translation type="vanished">Esporta</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Importa</translation>
+        <translation type="vanished">Importa</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Dati</translation>
+        <translation type="vanished">Dati</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Oggetto</translation>
+        <translation type="vanished">Oggetto</translation>
     </message>
     <message>
         <source>Function</source>
-        <translation>Funzione</translation>
+        <translation type="vanished">Funzione</translation>
     </message>
 </context>
 <context>
     <name>XInfoDBOptionsWidget</name>
     <message>
         <source>Info</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Apri cartella</translation>
+        <translation type="vanished">Apri cartella</translation>
     </message>
 </context>
 <context>
     <name>XJpeg</name>
     <message>
         <source>Data</source>
-        <translation>Dati</translation>
+        <translation type="vanished">Dati</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Oggetto</translation>
+        <translation type="vanished">Oggetto</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation>Segmento</translation>
+        <translation type="vanished">Segmento</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
 </context>
 <context>
     <name>XMIMEWidget</name>
     <message>
         <source>All</source>
-        <translation>Tutti</translation>
+        <translation type="vanished">Tutti</translation>
     </message>
 </context>
 <context>
     <name>XMP3</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Dump all</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Spostamento file</translation>
+        <translation type="vanished">Spostamento file</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Indirizzo virtuale</translation>
+        <translation type="vanished">Indirizzo virtuale</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Indirizzo virtuale relativo</translation>
+        <translation type="vanished">Indirizzo virtuale relativo</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Modalità</translation>
+        <translation type="vanished">Modalità</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianità</translation>
+        <translation type="vanished">Endianità</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>Architettura</translation>
+        <translation type="vanished">Architettura</translation>
     </message>
     <message>
         <source>Show all</source>
-        <translation>Mostra tutto</translation>
+        <translation type="vanished">Mostra tutto</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>Scarica</translation>
+        <translation type="vanished">Scarica</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>Salva dump</translation>
+        <translation type="vanished">Salva dump</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dati non elaborati</translation>
+        <translation type="vanished">Dati non elaborati</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
+        <translation type="vanished">Modulo</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Modalità</translation>
+        <translation type="vanished">Modalità</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Simboli</translation>
+        <translation type="vanished">Simboli</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Sola lettura</translation>
+        <translation type="vanished">Sola lettura</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
-    </message>
-    <message>
-        <source>Get</source>
-        <translation></translation>
+        <translation type="vanished">Modulo</translation>
     </message>
     <message>
         <source>API key</source>
-        <translation>Chiave API</translation>
+        <translation type="vanished">Chiave API</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Automatic</source>
-        <translation>Automatico</translation>
+        <translation type="vanished">Automatico</translation>
     </message>
     <message>
         <source>Recent files</source>
-        <translation>File recenti</translation>
-    </message>
-    <message>
-        <source>Code pages</source>
-        <translation></translation>
+        <translation type="vanished">File recenti</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Pulisci</translation>
+        <translation type="vanished">Pulisci</translation>
     </message>
 </context>
 <context>
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation>Rimani davanti</translation>
+        <translation type="vanished">Rimani davanti</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation>Applicazione singola</translation>
+        <translation type="vanished">Applicazione singola</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation>Stile</translation>
+        <translation type="vanished">Stile</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Lingua</translation>
+        <translation type="vanished">Lingua</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation>Mostra logo</translation>
+        <translation type="vanished">Mostra logo</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation>Font</translation>
+        <translation type="vanished">Font</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>Salva le cartelle recenti</translation>
+        <translation type="vanished">Salva le cartelle recenti</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation>Salva backup</translation>
+        <translation type="vanished">Salva backup</translation>
     </message>
     <message>
         <source>Save history</source>
-        <translation>Salva la cronologia</translation>
+        <translation type="vanished">Salva la cronologia</translation>
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation>Aggiungi al menu contestuale</translation>
+        <translation type="vanished">Aggiungi al menu contestuale</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Predefinito</translation>
+        <translation type="vanished">Predefinito</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="vanished">Annulla</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation>Aspetto</translation>
+        <translation type="vanished">Aspetto</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation>Si prega di eseguire il programma come amministratore</translation>
+        <translation type="vanished">Si prega di eseguire il programma come amministratore</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>Riavvia l&apos;applicazione</translation>
+        <translation type="vanished">Riavvia l&apos;applicazione</translation>
     </message>
 </context>
 <context>
     <name>XPDF</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>Oggetto</translation>
-    </message>
-    <message>
-        <source>Footer</source>
-        <translation></translation>
+        <translation type="vanished">Oggetto</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
     <message>
         <source>Application</source>
-        <translation>Applicazione</translation>
+        <translation type="vanished">Applicazione</translation>
     </message>
     <message>
         <source>Console</source>
-        <translation>Console</translation>
+        <translation type="vanished">Console</translation>
     </message>
     <message>
         <source>Driver</source>
-        <translation>Autista</translation>
+        <translation type="vanished">Autista</translation>
     </message>
     <message>
         <source>Boot application</source>
-        <translation>Applicazione di avvio</translation>
+        <translation type="vanished">Applicazione di avvio</translation>
     </message>
     <message>
         <source>Runtime driver</source>
-        <translation>Driver di runtime</translation>
+        <translation type="vanished">Driver di runtime</translation>
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation>Driver del servizio di avvio</translation>
+        <translation type="vanished">Driver del servizio di avvio</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation>Sezione</translation>
+        <translation type="vanished">Sezione</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Sovrapposizione</translation>
+        <translation type="vanished">Sovrapposizione</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Impossibile aprire il file</translation>
+        <translation type="vanished">Impossibile aprire il file</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation>Il file è firmato e la firma è stata verificata</translation>
+        <translation type="vanished">Il file è firmato e la firma è stata verificata</translation>
     </message>
     <message>
         <source>The file is not signed</source>
-        <translation>Il file non è firmato</translation>
+        <translation type="vanished">Il file non è firmato</translation>
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation>La firma è presente, ma specificamente non consentita</translation>
+        <translation type="vanished">La firma è presente, ma specificamente non consentita</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation>La firma è presente, ma non attendibile</translation>
+        <translation type="vanished">La firma è presente, ma non attendibile</translation>
     </message>
     <message>
         <source>The signature error</source>
-        <translation>L&apos;errore di firma</translation>
+        <translation type="vanished">L&apos;errore di firma</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation>Dati</translation>
+        <translation type="vanished">Dati</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Sconosciuto</translation>
+        <translation type="vanished">Sconosciuto</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Action</source>
-        <translation>Azione</translation>
+        <translation type="vanished">Azione</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="vanished">File</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>Visualizzazione</translation>
+        <translation type="vanished">Visualizzazione</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>Stringa</translation>
+        <translation type="vanished">Stringa</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Stringhe</translation>
+        <translation type="vanished">Stringhe</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>Firma</translation>
+        <translation type="vanished">Firma</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Firme</translation>
+        <translation type="vanished">Firme</translation>
     </message>
     <message>
         <source>Struct</source>
-        <translation>Struttura</translation>
+        <translation type="vanished">Struttura</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>Esadecimale</translation>
+        <translation type="vanished">Esadecimale</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation type="vanished">Disasm</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
+        <translation type="vanished">Debug</translation>
     </message>
     <message>
         <source>Trace</source>
-        <translation>Trace</translation>
+        <translation type="vanished">Trace</translation>
     </message>
     <message>
         <source>Animate</source>
-        <translation>Anima</translation>
+        <translation type="vanished">Anima</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>Debugger</translation>
+        <translation type="vanished">Debugger</translation>
     </message>
     <message>
         <source>Register</source>
-        <translation>Registra</translation>
+        <translation type="vanished">Registra</translation>
     </message>
     <message>
         <source>Stack</source>
-        <translation>Pila</translation>
+        <translation type="vanished">Pila</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Archivio</translation>
+        <translation type="vanished">Archivio</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Tabella</translation>
+        <translation type="vanished">Tabella</translation>
     </message>
     <message>
         <source>Process</source>
-        <translation>Processo</translation>
+        <translation type="vanished">Processo</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation>Memoria</translation>
+        <translation type="vanished">Memoria</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copia</translation>
+        <translation type="vanished">Copia</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Trova</translation>
+        <translation type="vanished">Trova</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>Vai a</translation>
+        <translation type="vanished">Vai a</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Strumenti</translation>
+        <translation type="vanished">Strumenti</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>Aiuto</translation>
+        <translation type="vanished">Aiuto</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Seleziona</translation>
+        <translation type="vanished">Seleziona</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Selezione</translation>
+        <translation type="vanished">Selezione</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Segui</translation>
-    </message>
-    <message>
-        <source>Show in</source>
-        <translation></translation>
+        <translation type="vanished">Segui</translation>
     </message>
     <message>
         <source>Breakpoint</source>
-        <translation>Punto di interruzione</translation>
+        <translation type="vanished">Punto di interruzione</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>Moduli</translation>
+        <translation type="vanished">Moduli</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Mappa della memoria</translation>
+        <translation type="vanished">Mappa della memoria</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valori</translation>
+        <translation type="vanished">Valori</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation>Editor</translation>
+        <translation type="vanished">Editor</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation>Mostra</translation>
+        <translation type="vanished">Mostra</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Apri</translation>
+        <translation type="vanished">Apri</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Save as</source>
-        <translation>Salva con nome</translation>
+        <translation type="vanished">Salva con nome</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="vanished">Chiudi</translation>
     </message>
     <message>
         <source>Print</source>
-        <translation>Stampa</translation>
+        <translation type="vanished">Stampa</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>Esci</translation>
+        <translation type="vanished">Esci</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>Dump su file</translation>
+        <translation type="vanished">Dump su file</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
-    </message>
-    <message>
-        <source>End</source>
-        <translation></translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Ricomincia</translation>
+        <translation type="vanished">Ricomincia</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Punto di ingresso</translation>
+        <translation type="vanished">Punto di ingresso</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation type="vanished">Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation type="vanished">Opcode</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Distruggi</translation>
+        <translation type="vanished">Distruggi</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="vanished">Nome</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation>Successivo</translation>
+        <translation type="vanished">Successivo</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Tutti</translation>
+        <translation type="vanished">Tutti</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation>Allegare</translation>
+        <translation type="vanished">Allegare</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation>Stacca</translation>
+        <translation type="vanished">Stacca</translation>
     </message>
     <message>
         <source>CPU</source>
-        <translation>processore</translation>
+        <translation type="vanished">processore</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>Registro</translation>
+        <translation type="vanished">Registro</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation>Punti di interruzione</translation>
+        <translation type="vanished">Punti di interruzione</translation>
     </message>
     <message>
         <source>Callstack</source>
-        <translation>Stack di chiamata</translation>
+        <translation type="vanished">Stack di chiamata</translation>
     </message>
     <message>
         <source>Threads</source>
-        <translation>Discussioni</translation>
+        <translation type="vanished">Discussioni</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation>maniglie</translation>
+        <translation type="vanished">maniglie</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Simboli</translation>
+        <translation type="vanished">Simboli</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>Scorciatoie</translation>
+        <translation type="vanished">Scorciatoie</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Opzioni</translation>
+        <translation type="vanished">Opzioni</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>Info</translation>
+        <translation type="vanished">Info</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>Nome file</translation>
+        <translation type="vanished">Nome file</translation>
     </message>
     <message>
         <source>Structs</source>
-        <translation>Strutture</translation>
+        <translation type="vanished">Strutture</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation>Spettatore</translation>
+        <translation type="vanished">Spettatore</translation>
     </message>
     <message>
         <source>Folder</source>
-        <translation>Cartella</translation>
+        <translation type="vanished">Cartella</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation>Esegui</translation>
+        <translation type="vanished">Esegui</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation>Pausa</translation>
+        <translation type="vanished">Pausa</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation>Passa all&apos;interno</translation>
+        <translation type="vanished">Passa all&apos;interno</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>Passa oltre</translation>
+        <translation type="vanished">Passa oltre</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Ferma</translation>
+        <translation type="vanished">Ferma</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation>Ricomincia</translation>
+        <translation type="vanished">Ricomincia</translation>
     </message>
     <message>
         <source>Toggle</source>
-        <translation>Attiva/disattiva</translation>
+        <translation type="vanished">Attiva/disattiva</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>Entropia</translation>
+        <translation type="vanished">Entropia</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>Impronta</translation>
+        <translation type="vanished">Impronta</translation>
     </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>File di testo</translation>
+        <translation type="vanished">File di testo</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>Tutti i file</translation>
+        <translation type="vanished">Tutti i file</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Impossibile salvare il file</translation>
+        <translation type="vanished">Impossibile salvare il file</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation>Apri file</translation>
+        <translation type="vanished">Apri file</translation>
     </message>
 </context>
 <context>
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
+        <translation type="vanished">Modulo</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Pulisci</translation>
+        <translation type="vanished">Pulisci</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Indirizzo</translation>
+        <translation type="vanished">Indirizzo</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Dimensioni</translation>
+        <translation type="vanished">Dimensioni</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation>Sorgente</translation>
+        <translation type="vanished">Sorgente</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation>Simbolo</translation>
+        <translation type="vanished">Simbolo</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>Simboli</translation>
+        <translation type="vanished">Simboli</translation>
     </message>
 </context>
 <context>
     <name>XTiff</name>
     <message>
         <source>Header</source>
-        <translation>Intestazione</translation>
+        <translation type="vanished">Intestazione</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>Tabella</translation>
+        <translation type="vanished">Tabella</translation>
     </message>
 </context>
 <context>
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation>Modulo</translation>
+        <translation type="vanished">Modulo</translation>
     </message>
     <message>
         <source>Rescan</source>
-        <translation>Scansiona di nuovo</translation>
-    </message>
-    <message>
-        <source>Show detects</source>
-        <translation></translation>
+        <translation type="vanished">Scansiona di nuovo</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>Sito web</translation>
+        <translation type="vanished">Sito web</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation type="vanished">Salva</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="vanished">Ricarica</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informazioni</translation>
+        <translation type="vanished">Informazioni</translation>
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation>Caricare il file per l&apos;analisi?</translation>
+        <translation type="vanished">Caricare il file per l&apos;analisi?</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>Scansione</translation>
+        <translation type="vanished">Scansione</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versione</translation>
+        <translation type="vanished">Versione</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation>Data</translation>
+        <translation type="vanished">Data</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>Risultato</translation>
+        <translation type="vanished">Risultato</translation>
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation>Utilizizza una chiave API valida</translation>
+        <translation type="vanished">Utilizizza una chiave API valida</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Opzioni</translation>
+        <translation type="vanished">Opzioni</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Tools online</translation>
+        <translation type="vanished">Tools online</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation type="vanished">Errore</translation>
     </message>
 </context>
 </TS>
