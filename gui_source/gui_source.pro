@@ -9,6 +9,14 @@ XCONFIG += use_dex
 XCONFIG += use_pdf
 XCONFIG += use_archive
 
+#linux {
+#    XCONFIG += use_yara
+#}
+
+#win32 {
+#    XCONFIG += use_yara
+#}
+
 macx {
     TARGET = DiE
 }

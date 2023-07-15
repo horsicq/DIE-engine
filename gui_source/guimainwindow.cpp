@@ -25,9 +25,9 @@
 GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
 {
     ui->setupUi(this);
-
+#ifdef USE_YARA
     XYara::initialize();
-
+#endif
     g_bFullScreen = false;
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
@@ -61,8 +61,9 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     XInfoDBOptionsWidget::setDefaultValues(&g_xOptions);
 
     g_xOptions.addID(XOptions::ID_SCAN_ENGINE, "auto");
+#ifdef USE_YARA
     g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, "$data/yara_rules");
-
+#endif
     g_xOptions.load();
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
@@ -115,8 +116,9 @@ GuiMainWindow::~GuiMainWindow()
     g_xShortcuts.save();
 
     delete ui;
-
+#ifdef USE_YARA
     XYara::finalize();
+#endif
 }
 
 void GuiMainWindow::on_pushButtonExit_clicked()
