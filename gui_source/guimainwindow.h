@@ -63,6 +63,7 @@ private slots:
     void on_pushButtonDemangle_clicked();
     void on_toolButtonRecentFiles_clicked();
     void on_checkBoxAdvanced_toggled(bool bChecked);
+    void on_lineEditFileName_returnPressed();
 
     void exitSlot();
     void openFileSlot();

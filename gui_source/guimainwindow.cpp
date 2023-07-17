@@ -262,6 +262,13 @@ void GuiMainWindow::on_checkBoxAdvanced_toggled(bool bChecked)
     setAdvanced(bChecked);
 }
 
+void GuiMainWindow::on_lineEditFileName_returnPressed()
+{
+    QString sFileName = XBinary::convertFileName(ui->lineEditFileName->text());
+
+    _process(sFileName);
+}
+
 void GuiMainWindow::exitSlot()
 {
     this->close();
