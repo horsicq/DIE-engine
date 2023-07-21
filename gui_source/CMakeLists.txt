@@ -33,13 +33,6 @@ add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
 
-if(LINUX)
-    add_definitions(-DUSE_YARA)
-endif()
-if(WIN32)
-    add_definitions(-DUSE_YARA)
-endif()
-
 include(${PROJECT_SOURCE_DIR}/../XMIMEWidget/xmimewidget.cmake)
 include(${PROJECT_SOURCE_DIR}/../FormatWidgets/formatwidgets.cmake)
 include(${PROJECT_SOURCE_DIR}/../XSingleApplication/xsingleapplication.cmake)
@@ -54,8 +47,6 @@ set(PROJECT_SOURCES
             dialogabout.ui
             dialogoptions.cpp
             dialogoptions.ui
-            dialogselectstyle.cpp
-            dialogselectstyle.ui
             guimainwindow.cpp
             guimainwindow.ui
             main_gui.cpp
@@ -81,7 +72,6 @@ target_link_libraries(${PROJECT_NAME} lzma)
 target_link_libraries(${PROJECT_NAME} zlib)
 target_link_libraries(${PROJECT_NAME} capstone)
 target_link_libraries(${PROJECT_NAME} cppfilt)
-target_link_libraries(${PROJECT_NAME} yara)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)

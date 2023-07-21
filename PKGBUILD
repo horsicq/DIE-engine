@@ -89,6 +89,7 @@ package() {
   install -Dm 644 XStyles/qss/* -t "$pkgdir"/opt/"${_pkgname}"/qss
   cp -r XInfoDB/info/* -t "$pkgdir"/opt/"${_pkgname}"/info/
   cp -r Detect-It-Easy/db/* -t "$pkgdir"/opt/"${_pkgname}"/db/
+  cp -r XYara/yara_rules/* -t "$pkgdir"/opt/"${_pkgname}"/yara_rules/
   install -Dm 644 signatures/crypto.db -t "$pkgdir"/opt/"${_pkgname}"/signatures
   cp -r images/* -t "$pkgdir"/opt/"${_pkgname}"/images/
 

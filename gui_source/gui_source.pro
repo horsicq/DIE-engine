@@ -9,14 +9,6 @@ XCONFIG += use_dex
 XCONFIG += use_pdf
 XCONFIG += use_archive
 
-#linux {
-#    XCONFIG += use_yara
-#}
-
-#win32 {
-#    XCONFIG += use_yara
-#}
-
 macx {
     TARGET = DiE
 }
@@ -28,20 +20,17 @@ macx {
 SOURCES += \
     dialogabout.cpp \
     dialogoptions.cpp \
-    dialogselectstyle.cpp \
     guimainwindow.cpp \
     main_gui.cpp
 
 HEADERS += \
     dialogabout.h \
     dialogoptions.h \
-    dialogselectstyle.h \
     guimainwindow.h
 
 FORMS += \
     dialogabout.ui \
     dialogoptions.ui \
-    dialogselectstyle.ui \
     guimainwindow.ui
 
 include(../build.pri)
@@ -59,11 +48,6 @@ include(../build.pri)
 !contains(XCONFIG, xsingleapplication) {
     XCONFIG += xsingleapplication
     include(../XSingleApplication/xsingleapplication.pri)
-}
-
-!contains(XCONFIG, xoptionswidget) {
-    XCONFIG += xoptionswidget
-    include(../XOptions/xoptionswidget.pri)
 }
 
 !contains(XCONFIG, xaboutwidget) {
