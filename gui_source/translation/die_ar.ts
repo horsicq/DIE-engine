@@ -5,288 +5,375 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
+        <translation>استمارة</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">منقي</translation>
+        <translation>منقي</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation type="vanished">شجرة</translation>
+        <translation>شجرة</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation type="vanished">طاولة</translation>
+        <translation>طاولة</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">افتح</translation>
+        <translation>افتح</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation type="vanished">اسم الملف</translation>
+        <translation>اسم الملف</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
+        <translation>تفريغ إلى ملف</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="vanished">احفظ الملف</translation>
+        <translation>احفظ الملف</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation type="vanished">لا يمكن حفظ الملف</translation>
+        <translation>لا يمكن حفظ الملف</translation>
     </message>
 </context>
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
 </context>
 <context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
-        <translation type="vanished">ملف</translation>
+        <translation>ملف</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">منقي</translation>
+        <translation>منقي</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>التوقيعات</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
-        <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation type="vanished">مسح بعد الفتح</translation>
+        <translation>فحص بعد الفتح</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
+        <translation>مسح تكراري</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">كل الانواع</translation>
+        <translation>كل الانواع</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation type="vanished">قاعدة البيانات</translation>
+        <translation>قاعدة البيانات</translation>
+    </message>
+    <message>
+        <source>YARA</source>
+        <translation></translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>محرر</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation type="vanished">الخط</translation>
+        <translation>الخط</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">الدليل مفتوح</translation>
+        <translation>الدليل مفتوح</translation>
+    </message>
+</context>
+<context>
+    <name>DIEWidgetAdvanced</name>
+    <message>
+        <source>Form</source>
+        <translation>استمارة</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>نوع</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>مسح تكراري</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>فحص عميق</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>كل الانواع</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>أحفظ</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>فحص</translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation>ملفات نصية</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>كل الملفات</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطأ</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>لا يمكن حفظ الملف</translation>
     </message>
 </context>
 <context>
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
+        <translation>مسح تكراري</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="vanished">الدليل</translation>
+        <translation>الدليل</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation type="vanished">سجل</translation>
+        <translation>سجل</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">كل الانواع</translation>
+        <translation>كل الانواع</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">قف</translation>
+        <translation>قف</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">مللي ثانية</translation>
+        <translation>مللي ثانية</translation>
     </message>
     <message>
         <source>Copy as</source>
-        <translation type="vanished">نسخ بتنسيق</translation>
+        <translation>نسخ بتنسيق</translation>
     </message>
 </context>
 <context>
     <name>DiE_Script</name>
     <message>
         <source>Cannot load database</source>
-        <translation type="vanished">لا يمكن تحميل قاعدة البيانات</translation>
+        <translation>لا يمكن تحميل قاعدة البيانات</translation>
     </message>
 </context>
 <context>
@@ -320,548 +407,779 @@
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation type="vanished">أرشيف</translation>
+        <translation>أرشيف</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">افتح</translation>
+        <translation>افتح</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation type="vanished">المساحات</translation>
+        <translation>المساحات</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation type="vanished">العلوي</translation>
+        <translation>العلوي</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation type="vanished">البدل</translation>
+        <translation>البدل</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">العنوان الظاهري النسبي</translation>
+        <translation>العنوان الظاهري النسبي</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">بايت</translation>
+        <translation>بايت</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">كود التشغيل</translation>
+        <translation>كود التشغيل</translation>
+    </message>
+</context>
+<context>
+    <name>DialogBookmarks</name>
+    <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
+    </message>
+    <message>
+        <source>Location</source>
+        <translation>عمل</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>حجم</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>الالوان</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>اسم</translation>
+    </message>
+    <message>
+        <source>Background</source>
+        <translation>الخلفية</translation>
     </message>
 </context>
 <context>
     <name>DialogCreateViewModel</name>
     <message>
         <source>Create view model</source>
-        <translation type="vanished">إنشاء نموذج العرض</translation>
+        <translation>إنشاء نموذج العرض</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation type="vanished">مسح الدليل</translation>
+        <translation>فحص المسار</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="vanished">الدليل</translation>
+        <translation>الدليل</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation type="vanished">الدلائل الفرعية</translation>
+        <translation>الدلائل الفرعية</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
+        <translation>مسح تكراري</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">كل الانواع</translation>
+        <translation>كل الانواع</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">واضح</translation>
+        <translation>واضح</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">الدليل مفتوح</translation>
+        <translation>الدليل مفتوح</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">مللي ثانية</translation>
+        <translation>مللي ثانية</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation type="vanished">مستندات نصية</translation>
+        <translation>مستندات نصية</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation type="vanished">حفظ النتيجة</translation>
+        <translation>حفظ النتيجة</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanProcess</name>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
+    </message>
+</context>
+<context>
+    <name>DialogDIESignatures</name>
+    <message>
+        <source>Signatures</source>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>أحفظ</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>يقرأ فقط</translation>
+    </message>
+    <message>
+        <source>Run</source>
+        <translation>تشغيل</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>تصحيح</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>مسح تكراري</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>فحص عميق</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation>جد</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>التالي</translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>نوع الفرز</translation>
+    </message>
+    <message>
+        <source>Show options</source>
+        <translation>أضهر في</translation>
+    </message>
+    <message>
+        <source>Show version</source>
+        <translation>أضهر في</translation>
+    </message>
+    <message>
+        <source>Clear result</source>
+        <translation>حفظ النتيجة</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>قريب</translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>قاعدة البيانات</translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation>المصحح</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation>مللي ثانية</translation>
+    </message>
+</context>
+<context>
+    <name>DialogDIESignaturesElapsed</name>
+    <message>
+        <source>Elapsed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Script</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogDataInspector</name>
+    <message>
+        <source>Data inspector</source>
+        <translation>مفتش البيانات</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>يقرأ فقط</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>قريب</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>اسم</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>قيمة</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">شطب</translation>
+        <translation>شطب</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation type="vanished">ملصقات</translation>
+        <translation>ملصقات</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">اذهب إلى</translation>
+        <translation>اذهب إلى</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation type="vanished">أكواد التشغيل</translation>
+        <translation>أكواد التشغيل</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation type="vanished">المكالمات</translation>
+        <translation>المكالمات</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation type="vanished">يقفز</translation>
+        <translation>يقفز</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation type="vanished">المرجع</translation>
+        <translation>المرجع</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation type="vanished">المرجع من</translation>
+        <translation>المرجع من</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogEditString</name>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
+    </message>
+    <message>
+        <source>Keep size</source>
+        <translation>أبقاء الحجم نفسه</translation>
     </message>
     <message>
         <source>C Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>C Strings</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
-    </message>
-</context>
-<context>
-    <name>DialogElapsed</name>
-    <message>
-        <source>Elapsed</source>
-        <translation type="vanished">انقضى</translation>
+        <translation>يلغي</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation type="vanished">نعم</translation>
-    </message>
-    <message>
-        <source>Time</source>
-        <translation type="vanished">زمن</translation>
-    </message>
-    <message>
-        <source>Script</source>
-        <translation type="vanished">النصي</translation>
+        <source>Bytes available</source>
+        <translation>بايت متاح</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropyProcess</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">معالجة</translation>
+        <translation>معالجة</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogFindText</name>
     <message>
         <source>Find</source>
-        <translation type="vanished">تجد</translation>
+        <translation>جد</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation type="vanished">حالة مباراة</translation>
+        <translation>حالة مباراة</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation type="vanished">انتقل إلى العنوان</translation>
+        <translation>انتقل إلى العنوان</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation type="vanished">عنوان افتراضي</translation>
+        <translation>عنوان افتراضي</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">العنوان الظاهري النسبي</translation>
+        <translation>العنوان الظاهري النسبي</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation type="vanished">غير صالح</translation>
+        <translation>غير صالح</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogHashProcess</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">معالجة</translation>
+        <translation>معالجة</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>تعديل</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation type="vanished">المساحات</translation>
+        <translation>المساحات</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation type="vanished">العلوي</translation>
+        <translation>العلوي</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation type="vanished">البدل</translation>
+        <translation>البدل</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
-    </message>
-</context>
-<context>
-    <name>DialogLog</name>
-    <message>
-        <source>Log</source>
-        <translation type="vanished">سجل</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogMIME</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="vanished">احفظ الملف</translation>
+        <translation>احفظ الملف</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">ملفات نصية</translation>
+        <translation>ملفات نصية</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">كل الملفات</translation>
+        <translation>كل الملفات</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation type="vanished">المساحات</translation>
+        <translation>المساحات</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation type="vanished">العلوي</translation>
+        <translation>العلوي</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation type="vanished">البدل</translation>
+        <translation>البدل</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">العنوان الظاهري النسبي</translation>
+        <translation>العنوان الظاهري النسبي</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">بايت</translation>
+        <translation>بايت</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">كود التشغيل</translation>
+        <translation>كود التشغيل</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search strings</source>
-        <translation type="vanished">سلاسل البحث</translation>
+        <translation>سلاسل البحث</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation type="vanished">التوقيعات البحث</translation>
+        <translation>التوقيعات البحث</translation>
+    </message>
+    <message>
+        <source>Search values</source>
+        <translation>أبحث عن القيم</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation type="vanished">إنشاء نموذج العرض</translation>
+        <translation>إنشاء نموذج العرض</translation>
+    </message>
+</context>
+<context>
+    <name>DialogNFDScan</name>
+    <message>
+        <source>Scan</source>
+        <translation>فحص</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>قريب</translation>
+    </message>
+</context>
+<context>
+    <name>DialogNFDScanDirectory</name>
+    <message>
+        <source>Directory scan</source>
+        <translation>فحص المسار</translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation>الدليل</translation>
+    </message>
+    <message>
+        <source>Subdirectories</source>
+        <translation>الدلائل الفرعية</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>مسح تكراري</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>فحص عميق</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>كل الانواع</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>فحص</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>واضح</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>أحفظ</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>الدليل مفتوح</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation>مللي ثانية</translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation>مستندات نصية</translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation>حفظ النتيجة</translation>
+    </message>
+</context>
+<context>
+    <name>DialogNFDScanProcess</name>
+    <message>
+        <source>Text documents</source>
+        <translation>مستندات نصية</translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation>حفظ النتيجة</translation>
     </message>
 </context>
 <context>
@@ -872,7 +1190,7 @@
     </message>
     <message>
         <source>Scan</source>
-        <translation>مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -899,800 +1217,811 @@
     <name>DialogProcessData</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">معالجة</translation>
+        <translation>معالجة</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation type="vanished">البحث من</translation>
+        <translation>البحث من</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation type="vanished">حالة مباراة</translation>
+        <translation>حالة مباراة</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Endianness</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation type="vanished">يبدأ</translation>
+        <translation>يبدأ</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation type="vanished">المؤشر</translation>
+        <translation>المؤشر</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchValues</name>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation type="vanished">الجزء</translation>
+        <translation>الجزء</translation>
     </message>
 </context>
 <context>
     <name>DialogSelectStyle</name>
     <message>
         <source>Style</source>
-        <translation type="unfinished">أسلوب</translation>
+        <translation>أسلوب</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation type="vanished">الاختصارات</translation>
+        <translation>الاختصارات</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">منقي</translation>
+        <translation>منقي</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">واضح</translation>
+        <translation>واضح</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">تقصير</translation>
+        <translation>افتراضي</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation type="vanished">الاختصار</translation>
+        <translation>الاختصار</translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation type="vanished">لا يمكن تعيين الاختصار</translation>
+        <translation>لا يمكن تعيين الاختصار</translation>
+    </message>
+</context>
+<context>
+    <name>DialogShowData</name>
+    <message>
+        <source>Data</source>
+        <translation>البيانات</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>ينسخ</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation type="vanished">صورة</translation>
+        <translation>صورة</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
-    </message>
-</context>
-<context>
-    <name>DialogSignatures</name>
-    <message>
-        <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation type="vanished">يركض</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation type="vanished">تصحيح</translation>
-    </message>
-    <message>
-        <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
-    </message>
-    <message>
-        <source>Find</source>
-        <translation type="vanished">تجد</translation>
-    </message>
-    <message>
-        <source>Show type</source>
-        <translation type="vanished">نوع العرض</translation>
-    </message>
-    <message>
-        <source>Show options</source>
-        <translation type="vanished">عرض الخيارات</translation>
-    </message>
-    <message>
-        <source>Show version</source>
-        <translation type="vanished">عرض الإصدار</translation>
-    </message>
-    <message>
-        <source>Clear result</source>
-        <translation type="vanished">نتيجة واضحة</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">قريب</translation>
-    </message>
-    <message>
-        <source>Database</source>
-        <translation type="vanished">قاعدة البيانات</translation>
-    </message>
-    <message>
-        <source>Debugger</source>
-        <translation type="vanished">المصحح</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation type="vanished">مللي ثانية</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
+        <translation>مسح تكراري</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">كل الانواع</translation>
+        <translation>كل الانواع</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">نتيجة</translation>
+        <translation>نتيجة</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation type="vanished">مسح الدليل</translation>
+        <translation>فحص المسار</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="vanished">الدليل</translation>
+        <translation>الدليل</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation type="vanished">الدلائل الفرعية</translation>
+        <translation>الدلائل الفرعية</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
+        <translation>مسح تكراري</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">كل الانواع</translation>
+        <translation>كل الانواع</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">واضح</translation>
+        <translation>واضح</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">الدليل مفتوح</translation>
+        <translation>الدليل مفتوح</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">مللي ثانية</translation>
+        <translation>مللي ثانية</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation type="vanished">مستندات نصية</translation>
+        <translation>مستندات نصية</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation type="vanished">حفظ النتيجة</translation>
+        <translation>حفظ النتيجة</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation type="vanished">مستندات نصية</translation>
+        <translation>مستندات نصية</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation type="vanished">حفظ النتيجة</translation>
+        <translation>حفظ النتيجة</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation type="vanished">مستندات نصية</translation>
+        <translation>مستندات نصية</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation type="vanished">حفظ النتيجة</translation>
+        <translation>حفظ النتيجة</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">نتيجة</translation>
+        <translation>نتيجة</translation>
     </message>
 </context>
 <context>
     <name>DialogUnpackFile</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">معالجة</translation>
+        <translation>معالجة</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDisasmReferences</name>
+    <message>
+        <source>Dialog</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>DialogXDisasmViewColors</name>
     <message>
+        <source>Colors</source>
+        <translation>الالوان</translation>
+    </message>
+    <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation type="vanished">نص</translation>
+        <translation>نص</translation>
+    </message>
+    <message>
+        <source>Background</source>
+        <translation>الخلفية</translation>
     </message>
 </context>
 <context>
     <name>DialogXDynStructs</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogXExtractor</name>
     <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
+    </message>
+    <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfo</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfoProcess</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">معالجة</translation>
+        <translation>معالجة</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
 </context>
 <context>
     <name>DialogXInfoDBTransferProcess</name>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
     <message>
-        <source>Import</source>
-        <translation type="vanished">يستورد</translation>
+        <source>Analyze</source>
+        <translation>حلل</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>حرف او رمز</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>واضح</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>أزالة</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">يصدر</translation>
+        <translation>تصدير</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>يستورد</translation>
     </message>
 </context>
 <context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
-        <translation type="vanished">حرف او رمز</translation>
+        <translation>حرف او رمز</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Bind</source>
-        <translation type="vanished">ربط</translation>
+        <translation>ربط</translation>
     </message>
 </context>
 <context>
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation type="vanished">الأقسام</translation>
+        <translation>الأقسام</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>تعديل</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">شطب</translation>
+        <translation>شطب</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
+        <translation>تفريغ إلى ملف</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation type="vanished">معباه</translation>
+        <translation>معباه</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation type="vanished">غير معبأ</translation>
+        <translation>غير معبأ</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation type="vanished">واضح</translation>
+        <translation>واضح</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">مللي ثانية</translation>
+        <translation>مللي ثانية</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation type="vanished">العودية</translation>
+        <translation>العودية</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation type="vanished">لا يمكن حفظ الملف</translation>
+        <translation>لا يمكن حفظ الملف</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ الكل</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">ملفات نصية</translation>
+        <translation>ملفات نصية</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">كل الملفات</translation>
+        <translation>كل الملفات</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">حفظ التفريغ</translation>
+        <translation>حفظ التفريغ</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">مسودة بيانات</translation>
+        <translation>مسودة بيانات</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation type="vanished">نوع الملف</translation>
+        <translation>نوع الملف</translation>
+    </message>
+    <message>
+        <source>File size</source>
+        <translation>حجم الملف</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation type="vanished">العنوان الأساسي</translation>
+        <translation>العنوان الأساسي</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">نقطة الدخول</translation>
-    </message>
-    <message>
-        <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
+    </message>
+    <message>
+        <source>File info</source>
+        <translation>معلومات الملف</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>سلاسل</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>غير قادر علي</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>عرافة</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>تجزئة</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>خريطة الذاكرة</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>كارثة</translation>
+    </message>
+    <message>
+        <source>Visualisation</source>
+        <translation></translation>
     </message>
     <message>
         <source>Files</source>
-        <translation type="vanished">الملفات</translation>
+        <translation>الملفات</translation>
     </message>
     <message>
         <source>Unpack</source>
-        <translation type="vanished">معباه</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">يصدر</translation>
+        <translation>تصدير</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="vanished">يستورد</translation>
+        <translation>يستورد</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation type="vanished">موارد</translation>
+        <translation>المصادر</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation type="vanished">الأقسام</translation>
+        <translation>الأقسام</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation type="vanished">طابع تاريخ الوقت</translation>
+        <translation>طابع تاريخ الوقت</translation>
     </message>
     <message>
         <source>Size of image</source>
-        <translation type="vanished">حجم الصورة</translation>
+        <translation>حجم الصورة</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation type="vanished">يظهر</translation>
+        <translation>يظهر</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">إصدار</translation>
+        <translation>إصدار</translation>
     </message>
     <message>
         <source>Programs</source>
-        <translation type="vanished">البرامج</translation>
+        <translation>البرامج</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation type="vanished">أوامر</translation>
+        <translation>أوامر</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation type="vanished">شرائح</translation>
+        <translation>شرائح</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation type="vanished">مكتبات</translation>
+        <translation>مكتبات</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Endianness</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation type="vanished">الوضع</translation>
+        <translation>الوضع</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation type="vanished">هندسة معمارية</translation>
+        <translation>هندسة معمارية</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation type="vanished">تلقائي</translation>
+        <translation>تلقائي</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">الدليل مفتوح</translation>
+        <translation>الدليل مفتوح</translation>
     </message>
 </context>
 <context>
@@ -1703,7 +2032,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation></translation>
+        <translation>متقدم</translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -1738,3192 +2067,3769 @@
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation type="vanished">يستورد</translation>
+        <translation>يستورد</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
+        <translation>مسح تكراري</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">كل الانواع</translation>
+        <translation>كل الانواع</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation type="vanished">ارشادي</translation>
+        <translation>ارشادي</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">نتيجة</translation>
+        <translation>نتيجة</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation type="unfinished">اسم الملف</translation>
-    </message>
-    <message>
-        <source>Recursive scan</source>
-        <translation type="unfinished">مسح تكراري</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation type="unfinished">تفحص بعمق</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation type="unfinished">مسح ارشادي</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation type="unfinished">كل الانواع</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation type="unfinished">مسح</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation type="unfinished">مخرج</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation type="unfinished">مللي ثانية</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation type="unfinished">افتح الملف</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="unfinished">كل الملفات</translation>
+        <translation>تعديل</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
+        <translation>استمارة</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">كود التشغيل</translation>
+        <translation>كود التشغيل</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation type="vanished">أوامر</translation>
+        <translation>أوامر</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation type="vanished">شرائح</translation>
+        <translation>شرائح</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation type="vanished">الأقسام</translation>
+        <translation>الأقسام</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation type="vanished">ريباس</translation>
+        <translation>إعادة القاعدة</translation>
     </message>
     <message>
         <source>Binding</source>
-        <translation type="vanished">ربط</translation>
+        <translation>ربط</translation>
     </message>
     <message>
         <source>Weak binding</source>
-        <translation type="vanished">ربط ضعيف</translation>
+        <translation>ربط ضعيف</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation type="vanished">ربط كسول</translation>
+        <translation>ربط كسول</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">يصدر</translation>
+        <translation>تصدير</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation type="vanished">جدول سلسلة</translation>
+        <translation>جدول سلسلة</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation type="vanished">جدول الرموز</translation>
+        <translation>جدول الرموز</translation>
     </message>
     <message>
         <source>Table of contents</source>
-        <translation type="vanished">جدول المحتويات</translation>
+        <translation>جدول المحتويات</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation type="vanished">الوحدات</translation>
+        <translation>الوحدات</translation>
     </message>
     <message>
         <source>External references</source>
-        <translation type="vanished">المراجع الخارجية</translation>
+        <translation>المراجع الخارجية</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
-        <translation type="vanished">الرموز غير المباشرة</translation>
+        <translation>الرموز غير المباشرة</translation>
     </message>
     <message>
         <source>Local relocation</source>
-        <translation type="vanished">النقل المحلي</translation>
+        <translation>النقل المحلي</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation type="vanished">المهام</translation>
+        <translation>المهام</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation type="vanished">البيانات في التعليمات البرمجية</translation>
+        <translation>البيانات في التعليمات البرمجية</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>تعديل</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">شطب</translation>
+        <translation>شطب</translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation type="vanished">شرائح</translation>
+        <translation>شرائح</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
+    </message>
+</context>
+<context>
+    <name>NFDOptionsWidget</name>
+    <message>
+        <source>Scan after open</source>
+        <translation>فحص بعد الفتح</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>مسح تكراري</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>فحص عميق</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>كل الانواع</translation>
+    </message>
+</context>
+<context>
+    <name>NFDWidgetAdvanced</name>
+    <message>
+        <source>Type</source>
+        <translation>نوع</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>مسح تكراري</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>فحص عميق</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>كل الانواع</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>أحفظ</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>فحص</translation>
+    </message>
+    <message>
+        <source>Heuristic</source>
+        <translation>ارشادي</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>نتيجة</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>اسم</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>قيمة</translation>
     </message>
 </context>
 <context>
     <name>NFD_Widget</name>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
+        <translation>مسح تكراري</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="vanished">الدليل</translation>
+        <translation>الدليل</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">كل الانواع</translation>
+        <translation>كل الانواع</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">قف</translation>
+        <translation>قف</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">مللي ثانية</translation>
+        <translation>مللي ثانية</translation>
     </message>
 </context>
 <context>
     <name>PDFWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
-        <translation type="vanished">الجزء</translation>
+        <translation>الجزء</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation type="vanished">العنوان النسبي</translation>
+        <translation>العنوان النسبي</translation>
+    </message>
+    <message>
+        <source>Virtual size</source>
+        <translation>الحجم الافتراضي</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation type="vanished">إزاحة الملف</translation>
+        <translation>إزاحة الملف</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation type="vanished">أعلام</translation>
+        <translation>أعلام</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">نقطة الدخول</translation>
+        <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">يصدر</translation>
+        <translation>تصدير</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="vanished">يستورد</translation>
+        <translation>يستورد</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation type="vanished">موارد</translation>
+        <translation>المصادر</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation type="vanished">استثناءات</translation>
+        <translation>استثناءات</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation type="vanished">ينتقل</translation>
+        <translation>ينتقل</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="vanished">تصحيح</translation>
+        <translation>تصحيح</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation type="vanished">تحميل التكوين</translation>
+        <translation>تحميل التكوين</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation type="vanished">استيراد منضم</translation>
+        <translation>استيراد منضم</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation type="vanished">تأجيل الاستيراد</translation>
+        <translation>تأجيل الاستيراد</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">لغة</translation>
+        <translation>لغة</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation type="vanished">شهادة</translation>
+        <translation>شهادة</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation type="vanished">حالة</translation>
+        <translation>الحالة</translation>
     </message>
     <message>
         <source>Program name</source>
-        <translation type="vanished">إسم البرنامج</translation>
+        <translation>إسم البرنامج</translation>
     </message>
     <message>
         <source>Publisher</source>
-        <translation type="vanished">الناشر</translation>
+        <translation>الناشر</translation>
     </message>
     <message>
         <source>More info</source>
-        <translation type="vanished">مزيد من المعلومات</translation>
+        <translation>مزيد من المعلومات</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation type="vanished">رقم سري</translation>
+        <translation>رقم سري</translation>
     </message>
     <message>
         <source>Issuer</source>
-        <translation type="vanished">المُصدر</translation>
+        <translation>المُصدر</translation>
     </message>
     <message>
         <source>Subject</source>
-        <translation type="vanished">موضوعات</translation>
+        <translation>موضوعات</translation>
     </message>
     <message>
         <source>Algorithm</source>
-        <translation type="vanished">الخوارزمية</translation>
+        <translation>الخوارزمية</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">إصدار</translation>
+        <translation>إصدار</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation type="vanished">عدد</translation>
+        <translation>عدد</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
 </context>
 <context>
     <name>PEToolsWidget</name>
     <message>
         <source>Tools</source>
-        <translation type="vanished">أدوات</translation>
+        <translation>أدوات</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation>أضف</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>أزالة</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">حفظ التفريغ</translation>
+        <translation>حفظ التفريغ</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">مسودة بيانات</translation>
+        <translation>مسودة بيانات</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ الكل</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation type="vanished">عرض صالح</translation>
+        <translation>عرض صالح</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation type="vanished">طاولة</translation>
+        <translation>طاولة</translation>
+    </message>
+    <message>
+        <source>Extract all icons</source>
+        <translation>أستخراج كل الايكونات</translation>
+    </message>
+    <message>
+        <source>Extract all cursors</source>
+        <translation>أستخراج كل المؤشرات</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation type="vanished">شجرة</translation>
+        <translation>شجرة</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation type="vanished">صيغة</translation>
+        <translation>صيغة</translation>
     </message>
     <message>
         <source>Check</source>
-        <translation type="vanished">التحقق من</translation>
+        <translation>التحقق من</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation type="vanished">أدوات</translation>
+        <translation>أدوات</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation type="vanished">الأقسام</translation>
+        <translation>الأقسام</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">يصدر</translation>
+        <translation>تصدير</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="vanished">يستورد</translation>
+        <translation>يستورد</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation type="vanished">موارد</translation>
+        <translation>المصادر</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation type="vanished">جدول سلسلة</translation>
+        <translation>جدول سلسلة</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">إصدار</translation>
+        <translation>إصدار</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation type="vanished">يظهر</translation>
+        <translation>يظهر</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation type="vanished">استثناءات</translation>
+        <translation>استثناءات</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation type="vanished">شهادة</translation>
+        <translation>شهادة</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation type="vanished">ينتقل</translation>
+        <translation>ينتقل</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="vanished">تصحيح</translation>
+        <translation>تصحيح</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation type="vanished">عمليات الاسترجاعات</translation>
+        <translation>عمليات الاسترجاعات</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation type="vanished">تحميل التكوين</translation>
+        <translation>تحميل التكوين</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation type="vanished">استيراد منضم</translation>
+        <translation>استيراد منضم</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation type="vanished">تأجيل الاستيراد</translation>
+        <translation>تأجيل الاستيراد</translation>
     </message>
     <message>
         <source>Metadata</source>
-        <translation type="vanished">البيانات الوصفية</translation>
+        <translation>البيانات الوصفية</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation type="vanished">احسب</translation>
+        <translation>احسب</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>تعديل</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
+        <translation>تفريغ إلى ملف</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">شطب</translation>
+        <translation>شطب</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation type="vanished">عدد</translation>
+        <translation>عدد</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation type="vanished">اسم المكتبة</translation>
+        <translation>اسم المكتبة</translation>
     </message>
     <message>
         <source>Interpreter</source>
-        <translation type="vanished">مترجم</translation>
+        <translation>مترجم</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">إصدار</translation>
+        <translation>إصدار</translation>
     </message>
     <message>
         <source>Length</source>
-        <translation type="vanished">طول</translation>
+        <translation>طول</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation type="vanished">قراءة خطأ</translation>
+        <translation>قراءة خطأ</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation type="vanished">خطأ الكتابة</translation>
+        <translation>خطأ الكتابة</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation type="vanished">لا يمكن فتح ملف</translation>
+        <translation>لا يمكن فتح ملف</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation type="vanished">وثائق</translation>
+        <translation>وثائق</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation type="vanished">الصور</translation>
+        <translation>الصور</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation type="vanished">تصدير اسم الملف</translation>
+        <translation>تصدير اسم الملف</translation>
     </message>
 </context>
 <context>
     <name>QwtPolarRenderer</name>
     <message>
         <source>Documents</source>
-        <translation type="vanished">وثائق</translation>
+        <translation>وثائق</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation type="vanished">الصور</translation>
+        <translation>الصور</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation type="vanished">تصدير اسم الملف</translation>
+        <translation>تصدير اسم الملف</translation>
     </message>
 </context>
 <context>
     <name>ScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation type="vanished">نتيجة</translation>
+        <translation>نتيجة</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
+        <translation>استمارة</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation type="vanished">التوقيعات البحث</translation>
+        <translation>التوقيعات البحث</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">الدليل مفتوح</translation>
+        <translation>الدليل مفتوح</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Endianness</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">ملف</translation>
+        <translation>ملف</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation>اتبع في</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>C Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>C Strings</translation>
+    </message>
+    <message>
+        <source>Links</source>
+        <translation>روابط</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">منقي</translation>
+        <translation>منقي</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
-        <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <source>Follow in</source>
+        <translation>اتبع في</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation type="vanished">سلسلة</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation type="vanished">عنوان</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation type="vanished">عوض</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>تعديل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">شطب</translation>
+        <translation>شطب</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation type="vanished">لا يمكن حفظ الملف</translation>
+        <translation>لا يمكن حفظ الملف</translation>
     </message>
 </context>
 <context>
     <name>SearchValuesWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">بحث</translation>
+        <translation>بحث</translation>
+    </message>
+    <message>
+        <source>Values</source>
+        <translation>قيم</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation>اتبع في</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">نقطة الدخول</translation>
+        <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation type="vanished">اسم القسم</translation>
+        <translation>اسم القسم</translation>
     </message>
     <message>
         <source>Import hash</source>
-        <translation type="vanished">استيراد تجزئة</translation>
+        <translation>استيراد تجزئة</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation type="vanished">قسم الكود</translation>
+        <translation>قسم الكود</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation type="vanished">قسم نقطة الدخول</translation>
+        <translation>قسم نقطة الدخول</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation type="vanished">أرشيف</translation>
+        <translation>أرشيف</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation type="vanished">موارد</translation>
+        <translation>المصادر</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation type="vanished">مسح الملف</translation>
+        <translation>فحص الملف</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation type="vanished">فحص الجهاز</translation>
+        <translation>فحص الجهاز</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation type="vanished">مسح الذاكرة</translation>
+        <translation>مسح الذاكرة</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation type="vanished">مسح الدليل</translation>
+        <translation>فحص المسار</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation type="vanished">مسح بعد الفتح</translation>
+        <translation>فحص بعد الفتح</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">مسح تكراري</translation>
+        <translation>مسح تكراري</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">مسح ارشادي</translation>
+        <translation>مسح ارشادي</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>مطوّل</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">كل الانواع</translation>
+        <translation>كل الانواع</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
 </context>
 <context>
     <name>XAboutWidget</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
+    </message>
+    <message>
+        <source>Follow me</source>
+        <translation></translation>
     </message>
     <message>
         <source>Check updates</source>
-        <translation type="vanished">تفقد التحديث</translation>
+        <translation>تفقد التحديث</translation>
     </message>
     <message>
         <source>Thanks</source>
-        <translation type="vanished">شكرا</translation>
+        <translation>شكرا</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation type="vanished">موقع إلكتروني</translation>
+        <translation>موقع إلكتروني</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation type="vanished">مكتبات</translation>
+        <translation>مكتبات</translation>
+    </message>
+    <message>
+        <source>Update information</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>New version available</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Go to download page?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No update available</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Network error</source>
+        <translation></translation>
     </message>
     <message>
         <source>Information</source>
-        <translation type="vanished">معلومة</translation>
+        <translation>معلومة</translation>
+    </message>
+    <message>
+        <source>The value copied to clipboard</source>
+        <translation>The value copied to clipboard</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>8-bit</source>
-        <translation type="vanished">8 بت</translation>
+        <translation>8 بت</translation>
     </message>
     <message>
         <source>16-bit</source>
-        <translation type="vanished">16 بت</translation>
+        <translation>16 بت</translation>
     </message>
     <message>
         <source>32-bit</source>
-        <translation type="vanished">32 بت</translation>
+        <translation>32 بت</translation>
     </message>
     <message>
         <source>64-bit</source>
-        <translation type="vanished">64 بت</translation>
+        <translation>64 بت</translation>
     </message>
     <message>
         <source>128-bit</source>
-        <translation type="vanished">128 بت</translation>
+        <translation>128 بت</translation>
+    </message>
+    <message>
+        <source>256-bit</source>
+        <translation></translation>
     </message>
     <message>
         <source>Region</source>
-        <translation type="vanished">منطقة</translation>
+        <translation>منطقة</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation type="vanished">أرشيف</translation>
+        <translation>أرشيف</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation type="vanished">وثيقة</translation>
+        <translation>وثيقة</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="vanished">صورة</translation>
+        <translation>صورة</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>فيديو</translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation>صوت</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation type="vanished">نص</translation>
+        <translation>نص</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>إمضاء</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>التوقيعات</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation type="vanished">قراءة خطأ</translation>
+        <translation>قراءة خطأ</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation type="vanished">أقصى</translation>
+        <translation>أقصى</translation>
+    </message>
+    <message>
+        <source>Invalid signature</source>
+        <translation>توقيع غير صالح</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation type="vanished">خطأ الكتابة</translation>
+        <translation>خطأ الكتابة</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">تقصير</translation>
+        <translation>افتراضي</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">بايت</translation>
+        <translation>بايت</translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation>كليوبت</translation>
     </message>
     <message>
         <source>kB</source>
-        <translation type="vanished">كيلو بايت</translation>
+        <translation>كيلو بايت</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>ميجابت</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation type="vanished">ميغا بايت</translation>
+        <translation>ميغا بايت</translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation>غيغابت</translation>
     </message>
     <message>
         <source>GB</source>
-        <translation type="vanished">غيغابايت</translation>
+        <translation>غيغابايت</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation>تيرا بت</translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation>تيرا بايت</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation type="vanished">سجل الأرشيف</translation>
+        <translation>سجل الأرشيف</translation>
     </message>
     <message>
         <source>Resource</source>
-        <translation type="vanished">الموارد</translation>
+        <translation>مصدر</translation>
     </message>
 </context>
 <context>
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
 </context>
 <context>
     <name>XCapstone</name>
     <message>
         <source>Invalid opcode</source>
-        <translation type="vanished">كود التشغيل غير صالح</translation>
+        <translation>كود التشغيل غير صالح</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation type="vanished">أعلام</translation>
+        <translation>أعلام</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation type="vanished">تلقائي</translation>
+        <translation>تلقائي</translation>
     </message>
 </context>
 <context>
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation type="vanished">الوضع</translation>
+        <translation>الوضع</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Dump</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">حفظ التفريغ</translation>
+        <translation>حفظ التفريغ</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">مسودة بيانات</translation>
+        <translation>مسودة بيانات</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="vanished">لم يتم العثور على شيء</translation>
+        <translation>لم يتم العثور على شيء</translation>
     </message>
 </context>
 <context>
     <name>XDialogProcess</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">معالجة</translation>
+        <translation>معالجة</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation type="vanished">ملصق</translation>
+        <translation>ملصق</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">بايت</translation>
+        <translation>بايت</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">كود التشغيل</translation>
+        <translation>كود التشغيل</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">بايت</translation>
+        <translation>بايت</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">كود التشغيل</translation>
+        <translation>كود التشغيل</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation type="vanished">رمز</translation>
+        <translation>رمز</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation type="vanished">تعليق</translation>
+        <translation>تعليق</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation type="vanished">نقطة الدخول</translation>
-    </message>
-    <message>
-        <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
-    </message>
-    <message>
-        <source>Hex signature</source>
-        <translation type="vanished">التوقيع السداسي</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation type="vanished">سلسلة</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation type="vanished">قيمة</translation>
-    </message>
-    <message>
-        <source>Find next</source>
-        <translation type="vanished">بحث عن التالي</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation type="vanished">اختر الكل</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">اذهب إلى</translation>
+        <translation>اذهب إلى</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation type="vanished">تجد</translation>
+        <translation>جد</translation>
+    </message>
+    <message>
+        <source>Analyze</source>
+        <translation>حلل</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="vanished">يختار</translation>
+        <translation>يختار</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation>اتبع في</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>تعديل</translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation>تفريغ إلى ملف</translation>
+    </message>
+    <message>
+        <source>Hex signature</source>
+        <translation>التوقيع السداسي</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>إمضاء</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>سلسلة</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>قيمة</translation>
+    </message>
+    <message>
+        <source>Find next</source>
+        <translation>بحث عن التالي</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>اختر الكل</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>البيانات</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>المراجع الخارجية</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>كارثة</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>أزالة</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>حرف او رمز</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation type="vanished">العنوان النسبي</translation>
+        <translation>العنوان النسبي</translation>
     </message>
 </context>
 <context>
     <name>XDisasmViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation type="vanished">الخط</translation>
+        <translation>الخط</translation>
     </message>
     <message>
         <source>Syntax</source>
-        <translation type="vanished">بناء الجملة</translation>
+        <translation>بناء الجملة</translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation>الأحرف الكبيرة</translation>
+    </message>
+    <message>
+        <source>Show colons in addresses</source>
+        <translation>إظهار النقطتين في العناوين</translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation>تسليط الضوء</translation>
+    </message>
+    <message>
+        <source>Colors</source>
+        <translation>الالوان</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation type="vanished">حلل</translation>
+        <translation>حلل</translation>
     </message>
     <message>
         <source>Labels</source>
-        <translation type="vanished">ملصقات</translation>
+        <translation>ملصقات</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">اذهب إلى</translation>
+        <translation>اذهب إلى</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">نقطة الدخول</translation>
+        <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation type="vanished">عنوان افتراضي</translation>
+        <translation>عنوان افتراضي</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">العنوان الظاهري النسبي</translation>
+        <translation>العنوان الظاهري النسبي</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation type="vanished">إزاحة الملف</translation>
+        <translation>إزاحة الملف</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
+        <translation>تفريغ إلى ملف</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation type="vanished">إلى البيانات</translation>
+        <translation>إلى البيانات</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">مسودة بيانات</translation>
+        <translation>مسودة بيانات</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">حفظ التفريغ</translation>
+        <translation>حفظ التفريغ</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsEngine</name>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation type="vanished">لا يمكنني تحميل الملف</translation>
+        <translation>لا يمكنني تحميل الملف</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsOptionsWidget</name>
     <message>
         <source>Structs</source>
-        <translation type="vanished">الهياكل</translation>
+        <translation>الهياكل</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">الدليل مفتوح</translation>
+        <translation>الدليل مفتوح</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Prototype</source>
-        <translation type="vanished">النموذج المبدئي</translation>
+        <translation>النموذج المبدئي</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Array</source>
-        <translation type="vanished">مجموعة مصفوفة</translation>
+        <translation>مجموعة مصفوفة</translation>
     </message>
     <message>
         <source>Variable</source>
-        <translation type="vanished">عامل</translation>
+        <translation>عامل</translation>
     </message>
     <message>
         <source>Pointer</source>
-        <translation type="vanished">المؤشر</translation>
+        <translation>المؤشر</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation type="vanished">لا يمكن قراءة الذاكرة على العنوان</translation>
+        <translation>لا يمكن قراءة الذاكرة على العنوان</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">نتيجة</translation>
+        <translation>نتيجة</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation type="vanished">الملفات</translation>
+        <translation>الملفات</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">كل الملفات</translation>
+        <translation>كل الملفات</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation type="vanished">عدد</translation>
+        <translation>عدد</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation type="vanished">المجموع</translation>
+        <translation>المجموع</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation type="vanished">حالة</translation>
+        <translation>الحالة</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Save diagram</source>
-        <translation type="vanished">حفظ الرسم التخطيطي</translation>
+        <translation>حفظ الرسم التخطيطي</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation type="vanished">المناطق</translation>
+        <translation>المناطق</translation>
+    </message>
+    <message>
+        <source>Diagram</source>
+        <translation>رسم بياني</translation>
+    </message>
+    <message>
+        <source>Grid</source>
+        <translation>شبكة</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">بايت</translation>
+        <translation>بايت</translation>
     </message>
     <message>
         <source>Byte</source>
-        <translation type="vanished">بايت</translation>
+        <translation>بايت</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
-    </message>
-    <message>
-        <source>Images</source>
-        <translation type="vanished">الصور</translation>
-    </message>
-    <message>
-        <source>Documents</source>
-        <translation type="vanished">وثائق</translation>
+        <translation>سلاسل</translation>
     </message>
 </context>
 <context>
     <name>XExtractorWidget</name>
     <message>
+        <source>Extract</source>
+        <translation>أستخراج</translation>
+    </message>
+    <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ الكل</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">تفحص بعمق</translation>
+        <translation>فحص عميق</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">خيارات</translation>
+        <translation>خيارات</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation>اتبع في</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
+        <translation>تفريغ إلى ملف</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">حفظ التفريغ</translation>
+        <translation>حفظ التفريغ</translation>
     </message>
 </context>
 <context>
     <name>XFileInfo</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">نقطة الدخول</translation>
+        <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation type="vanished">اسم الملف</translation>
+        <translation>اسم الملف</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation type="vanished">نظام تشغيل</translation>
+        <translation>نظام تشغيل</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation type="vanished">هندسة معمارية</translation>
+        <translation>هندسة معمارية</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation type="vanished">الوضع</translation>
+        <translation>الوضع</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Endianness</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>packed</source>
-        <translation type="vanished">معباه</translation>
+        <translation>معباه</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation type="vanished">غير معبأ</translation>
+        <translation>غير معبأ</translation>
     </message>
     <message>
         <source>File type</source>
-        <translation type="vanished">نوع الملف</translation>
+        <translation>نوع الملف</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation type="vanished">العنوان النسبي</translation>
+        <translation>العنوان النسبي</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">بايت</translation>
+        <translation>بايت</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
+        <translation>استمارة</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation type="vanished">طريقة</translation>
+        <translation>طريقة</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation type="vanished">تعليق</translation>
+        <translation>تعليق</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation type="vanished">نص</translation>
+        <translation>نص</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="vanished">احفظ الملف</translation>
+        <translation>احفظ الملف</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">ملفات نصية</translation>
+        <translation>ملفات نصية</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">كل الملفات</translation>
+        <translation>كل الملفات</translation>
     </message>
 </context>
 <context>
     <name>XFormats</name>
     <message>
         <source>obfuscator</source>
-        <translation type="vanished">التعتيم</translation>
+        <translation>التعتيم</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation type="vanished">أداة</translation>
+        <translation>أداة</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation type="vanished">أرشيف</translation>
+        <translation>أرشيف</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation type="vanished">شهادة</translation>
+        <translation>شهادة</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation type="vanished">مترجم</translation>
+        <translation>مترجم</translation>
     </message>
     <message>
         <source>Converter</source>
-        <translation type="vanished">محول</translation>
+        <translation>محول</translation>
     </message>
     <message>
         <source>Cryptor</source>
-        <translation type="vanished">كريبتور</translation>
+        <translation>كريبتور</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation type="vanished">البيانات</translation>
+        <translation>البيانات</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation type="vanished">قاعدة البيانات</translation>
+        <translation>قاعدة البيانات</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation type="vanished">بيانات التصحيح</translation>
+        <translation>بيانات التصحيح</translation>
     </message>
     <message>
         <source>protection</source>
-        <translation type="vanished">الحماية</translation>
+        <translation>الحماية</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation type="vanished">موسع</translation>
+        <translation>موسع</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation type="vanished">صيغة</translation>
+        <translation>صيغة</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation type="vanished">نوعي</translation>
+        <translation>نوعي</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="vanished">صورة</translation>
+        <translation>صورة</translation>
     </message>
     <message>
         <source>Installer</source>
-        <translation type="vanished">المثبت</translation>
+        <translation>المثبت</translation>
     </message>
     <message>
         <source>Installer data</source>
-        <translation type="vanished">بيانات المثبت</translation>
+        <translation>بيانات المثبت</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation type="vanished">نجار</translation>
+        <translation>نجار</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">لغة</translation>
+        <translation>لغة</translation>
     </message>
     <message>
         <source>Library</source>
-        <translation type="vanished">مكتبة</translation>
+        <translation>مكتبة</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation type="vanished">رابط</translation>
+        <translation>رابط</translation>
     </message>
     <message>
         <source>compressor</source>
-        <translation type="vanished">ضاغط</translation>
+        <translation>ضاغط</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation type="vanished">نظام تشغيل</translation>
+        <translation>نظام تشغيل</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Packer</source>
-        <translation type="vanished">باكر</translation>
+        <translation>باكر</translation>
     </message>
     <message>
         <source>Player</source>
-        <translation type="vanished">لاعب</translation>
+        <translation>لاعب</translation>
     </message>
     <message>
         <source>Protection</source>
-        <translation type="vanished">حماية</translation>
+        <translation>حماية</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation type="vanished">حامية</translation>
+        <translation>حامية</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation type="vanished">بيانات الحامي</translation>
+        <translation>بيانات الحامي</translation>
     </message>
     <message>
         <source>data</source>
-        <translation type="vanished">البيانات</translation>
+        <translation>البيانات</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation type="vanished">أداة التوقيع</translation>
+        <translation>أداة التوقيع</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation type="vanished">مصدر الرمز</translation>
+        <translation>مصدر الرمز</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation type="vanished">كعب</translation>
+        <translation>كعب</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation type="vanished">آلة افتراضية</translation>
+        <translation>آلة افتراضية</translation>
     </message>
 </context>
 <context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>تذييل</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation type="vanished">طريقة</translation>
+        <translation>طريقة</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation type="vanished">حرف او رمز</translation>
+        <translation>حرف او رمز</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="vanished">اعادة البدء</translation>
+        <translation>البدء</translation>
+    </message>
+    <message>
+        <source>End</source>
+        <translation>النهاية</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
+        <translation>تفريغ إلى ملف</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation type="vanished">بحث عن التالي</translation>
+        <translation>بحث عن التالي</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation type="vanished">اختر الكل</translation>
+        <translation>اختر الكل</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>البيانات</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation></translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">اذهب إلى</translation>
+        <translation>اذهب إلى</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation type="vanished">اختيار</translation>
+        <translation>اختيار</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation type="vanished">تجد</translation>
+        <translation>جد</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="vanished">يختار</translation>
+        <translation>يختار</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation>اتبع في</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>تعديل</translation>
+    </message>
+    <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation type="vanished">الخط</translation>
+        <translation>الخط</translation>
+    </message>
+    <message>
+        <source>Show colons in addresses</source>
+        <translation>إظهار النقطتين في العناوين</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
+        <translation>استمارة</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>مفتش البيانات</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation type="vanished">اسم</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation type="vanished">قيمة</translation>
-    </message>
-    <message>
-        <source>Cursor</source>
-        <translation type="vanished">المؤشر</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation type="vanished">اختيار</translation>
+        <translation>اختيار</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
 </context>
 <context>
     <name>XIcon</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
 </context>
 <context>
     <name>XInfoDB</name>
     <message>
+        <source>Address</source>
+        <translation>عنوان</translation>
+    </message>
+    <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
-        <source>File</source>
-        <translation type="vanished">ملف</translation>
+        <source>Paused</source>
+        <translation></translation>
     </message>
     <message>
-        <source>Label</source>
-        <translation type="vanished">ملصق</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation type="vanished">نقطة الدخول</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation type="vanished">يصدر</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation type="vanished">يستورد</translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation type="vanished">البيانات</translation>
-    </message>
-    <message>
-        <source>Object</source>
-        <translation type="vanished">هدف</translation>
+        <source>Running</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XInfoDBOptionsWidget</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">معلومات</translation>
+        <translation>معلومات</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">الدليل مفتوح</translation>
+        <translation>الدليل مفتوح</translation>
+    </message>
+</context>
+<context>
+    <name>XInfoMenu</name>
+    <message>
+        <source>Database</source>
+        <translation>قاعدة البيانات</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>يستورد</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>تصدير</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>واضح</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>أحفظ</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>كل الملفات</translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation>افتح الملف</translation>
+    </message>
+    <message>
+        <source>Are you sure?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XJpeg</name>
     <message>
         <source>Data</source>
-        <translation type="vanished">البيانات</translation>
+        <translation>البيانات</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation type="vanished">هدف</translation>
+        <translation>هدف</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
+    </message>
+</context>
+<context>
+    <name>XLHA</name>
+    <message>
+        <source>Header</source>
+        <translation>رأس</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>واضح</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation type="vanished">قطعة</translation>
+        <translation>قطعة</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
 </context>
 <context>
     <name>XMIMEWidget</name>
     <message>
         <source>All</source>
-        <translation type="vanished">الجميع</translation>
+        <translation>الجميع</translation>
     </message>
 </context>
 <context>
     <name>XMP3</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Dump all</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ الكل</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation type="vanished">إزاحة الملف</translation>
+        <translation>إزاحة الملف</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation type="vanished">عنوان افتراضي</translation>
+        <translation>عنوان افتراضي</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">العنوان الظاهري النسبي</translation>
+        <translation>العنوان الظاهري النسبي</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation type="vanished">الوضع</translation>
+        <translation>الوضع</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Endianness</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation type="vanished">هندسة معمارية</translation>
+        <translation>هندسة معمارية</translation>
+    </message>
+    <message>
+        <source>Show all</source>
+        <translation>أضهار الكل</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>معلومة</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
+        <translation>تفريغ إلى ملف</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation type="vanished">أحمق</translation>
+        <translation>تفريغ</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">حفظ التفريغ</translation>
+        <translation>حفظ التفريغ</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">مسودة بيانات</translation>
+        <translation>مسودة بيانات</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
+        <translation>استمارة</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation type="vanished">الوضع</translation>
-    </message>
-    <message>
-        <source>Symbols</source>
-        <translation type="vanished">حرف او رمز</translation>
+        <translation>الوضع</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">يقرأ فقط</translation>
+        <translation>يقرأ فقط</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
 </context>
 <context>
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
+        <translation>استمارة</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation>أحصل</translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation>مفتاح ال API</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Automatic</source>
-        <translation type="vanished">تلقائي</translation>
+        <translation>تلقائي</translation>
+    </message>
+    <message>
+        <source>Recent files</source>
+        <translation>الملفات الأخيرة</translation>
+    </message>
+    <message>
+        <source>Code pages</source>
+        <translation>كود الصفحات</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">واضح</translation>
+        <translation>واضح</translation>
+    </message>
+    <message>
+        <source>Images</source>
+        <translation>الصور</translation>
+    </message>
+    <message>
+        <source>Documents</source>
+        <translation>وثائق</translation>
     </message>
 </context>
 <context>
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation type="vanished">ابق على القمة</translation>
+        <translation>ابق على القمة</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation type="vanished">تطبيق واحد</translation>
+        <translation>تطبيق واحد</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation type="vanished">أسلوب</translation>
+        <translation>أسلوب</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">لغة</translation>
+        <translation>لغة</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation type="vanished">إظهار الشعار</translation>
+        <translation>إظهار الشعار</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation type="vanished">الخط</translation>
+        <translation>الخط</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation type="vanished">حفظ الدليل الأخير</translation>
+        <translation>حفظ الدليل الأخير</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation type="vanished">احفظ النسخة الاحتياطية</translation>
+        <translation>احفظ النسخة الاحتياطية</translation>
+    </message>
+    <message>
+        <source>Save history</source>
+        <translation>أحفظ التأريخ</translation>
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation type="vanished">أضف إلى قائمة السياق</translation>
+        <translation>أضف إلى قائمة السياق</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">تقصير</translation>
+        <translation>افتراضي</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">نعم</translation>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">يلغي</translation>
+        <translation>يلغي</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation type="vanished">مظهر خارجي</translation>
+        <translation>مظهر خارجي</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">ملف</translation>
+        <translation>ملف</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation type="vanished">يرجى تشغيل البرنامج كمسؤول</translation>
+        <translation>يرجى تشغيل البرنامج كمسؤول</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation type="vanished">معلومة</translation>
+        <translation>معلومة</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation type="vanished">الرجاء إعادة تشغيل التطبيق</translation>
+        <translation>الرجاء إعادة تشغيل التطبيق</translation>
     </message>
 </context>
 <context>
     <name>XPDF</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation type="vanished">هدف</translation>
+        <translation>هدف</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>تذييل</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
     <message>
         <source>Application</source>
-        <translation type="vanished">تطبيق</translation>
+        <translation>تطبيق</translation>
     </message>
     <message>
         <source>Console</source>
-        <translation type="vanished">وحدة التحكم</translation>
+        <translation>وحدة التحكم</translation>
     </message>
     <message>
         <source>Driver</source>
-        <translation type="vanished">سائق</translation>
+        <translation>تعريف</translation>
     </message>
     <message>
         <source>Boot application</source>
-        <translation type="vanished">تطبيق التمهيد</translation>
+        <translation>تطبيق التمهيد</translation>
     </message>
     <message>
         <source>Runtime driver</source>
-        <translation type="vanished">سائق وقت التشغيل</translation>
+        <translation>وقت تشغيل التعريف</translation>
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation type="vanished">سائق خدمة التمهيد</translation>
+        <translation>سائق خدمة التمهيد</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation type="vanished">الجزء</translation>
+        <translation>الجزء</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">تراكب</translation>
+        <translation>تراكب</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation type="vanished">لا يمكن فتح ملف</translation>
+        <translation>لا يمكن فتح ملف</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation type="vanished">تم توقيع الملف والتحقق من التوقيع</translation>
+        <translation>تم توقيع الملف والتحقق من التوقيع</translation>
     </message>
     <message>
         <source>The file is not signed</source>
-        <translation type="vanished">الملف غير موقع</translation>
+        <translation>الملف غير موقع</translation>
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation type="vanished">التوقيع موجود ، لكنه غير مسموح به على وجه التحديد</translation>
+        <translation>التوقيع موجود ، لكنه غير مسموح به على وجه التحديد</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation type="vanished">التوقيع موجود ولكن غير موثوق به</translation>
+        <translation>التوقيع موجود ولكن غير موثوق به</translation>
     </message>
     <message>
         <source>The signature error</source>
-        <translation type="vanished">خطأ التوقيع</translation>
+        <translation>خطأ التوقيع</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>نقطة الدخول</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>تصدير</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>يستورد</translation>
+    </message>
+    <message>
+        <source>Relocs</source>
+        <translation>ينتقل</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>المصادر</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>شهادة</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation type="vanished">البيانات</translation>
+        <translation>البيانات</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">مجهول</translation>
+        <translation>مجهول</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Action</source>
-        <translation type="vanished">عمل</translation>
+        <translation>عمل</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">ملف</translation>
+        <translation>ملف</translation>
     </message>
     <message>
         <source>View</source>
-        <translation type="vanished">رأي</translation>
+        <translation>رأي</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">سلسلة</translation>
+        <translation>سلسلة</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">سلاسل</translation>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">إمضاء</translation>
+        <translation>إمضاء</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">التوقيعات</translation>
+        <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Struct</source>
+        <translation>هيكل</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">عرافة</translation>
+        <translation>عرافة</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">كارثة</translation>
+        <translation>كارثة</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="vanished">تصحيح</translation>
+        <translation>تصحيح</translation>
+    </message>
+    <message>
+        <source>Trace</source>
+        <translation>تعقب</translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation>تحريك</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">المصحح</translation>
+        <translation>المصحح</translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation>Register</translation>
+    </message>
+    <message>
+        <source>Register</source>
+        <translation>Register</translation>
     </message>
     <message>
         <source>Stack</source>
-        <translation type="vanished">كومة</translation>
+        <translation>كومة</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation type="vanished">أرشيف</translation>
+        <translation>أرشيف</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation type="vanished">طاولة</translation>
+        <translation>طاولة</translation>
     </message>
     <message>
         <source>Process</source>
-        <translation type="vanished">معالجة</translation>
+        <translation>معالجة</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation type="vanished">ذاكرة</translation>
+        <translation>ذاكرة</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">ينسخ</translation>
+        <translation>ينسخ</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>تعديل</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation type="vanished">تجد</translation>
+        <translation>جد</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">اذهب إلى</translation>
+        <translation>اذهب إلى</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation type="vanished">أدوات</translation>
+        <translation>أدوات</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">يساعد</translation>
+        <translation>يساعد</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="vanished">يختار</translation>
+        <translation>يختار</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation type="vanished">اختيار</translation>
+        <translation>اختيار</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation>اتبع في</translation>
+    </message>
+    <message>
+        <source>Show in</source>
+        <translation>أضهر في</translation>
+    </message>
+    <message>
+        <source>Breakpoint</source>
+        <translation>نقطة توقف</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation type="vanished">الوحدات</translation>
+        <translation>الوحدات</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">خريطة الذاكرة</translation>
+        <translation>خريطة الذاكرة</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">قيمة</translation>
+        <translation>قيمة</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation type="vanished">يحرر</translation>
+        <translation>محرر</translation>
+    </message>
+    <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Analyze</source>
+        <translation>حلل</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation type="vanished">تبين</translation>
+        <translation>أضهر</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">افتح</translation>
+        <translation>افتح</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
+    </message>
+    <message>
+        <source>Save as</source>
+        <translation>أحفظ بأسم</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">قريب</translation>
+        <translation>قريب</translation>
     </message>
     <message>
         <source>Print</source>
-        <translation type="vanished">مطبعة</translation>
+        <translation>مطبعة</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation type="vanished">مخرج</translation>
+        <translation>مخرج</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">تفريغ إلى ملف</translation>
+        <translation>تفريغ إلى ملف</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
+    </message>
+    <message>
+        <source>End</source>
+        <translation>النهاية</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="vanished">اعادة البدء</translation>
+        <translation>البدء</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">نقطة الدخول</translation>
+        <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">عوض</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">مقاس</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">كود التشغيل</translation>
+        <translation>كود التشغيل</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">شطب</translation>
+        <translation>شطب</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">اسم</translation>
+        <translation>اسم</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>التالي</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>البيانات</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="vanished">الجميع</translation>
+        <translation>الجميع</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation type="vanished">يربط</translation>
+        <translation>يربط</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation type="vanished">فصل</translation>
+        <translation>فصل</translation>
     </message>
     <message>
         <source>CPU</source>
-        <translation type="vanished">وحدة المعالجة المركزية</translation>
+        <translation>وحدة المعالجة المركزية</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation type="vanished">سجل</translation>
+        <translation>سجل</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation type="vanished">نقاط التوقف</translation>
+        <translation>نقاط التوقف</translation>
+    </message>
+    <message>
+        <source>Callstack</source>
+        <translation>Callstack</translation>
     </message>
     <message>
         <source>Threads</source>
-        <translation type="vanished">الخيوط</translation>
+        <translation>الخيوط</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation type="vanished">مقابض</translation>
+        <translation>مقابض</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation type="vanished">حرف او رمز</translation>
+        <translation>حرف او رمز</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation type="vanished">الاختصارات</translation>
+        <translation>الاختصارات</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">خيارات</translation>
+        <translation>خيارات</translation>
     </message>
     <message>
         <source>About</source>
-        <translation type="vanished">عن</translation>
+        <translation>عن</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation type="vanished">اسم الملف</translation>
+        <translation>اسم الملف</translation>
     </message>
     <message>
         <source>Structs</source>
-        <translation type="vanished">الهياكل</translation>
+        <translation>الهياكل</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation type="vanished">مشاهد</translation>
+        <translation>مشاهد</translation>
+    </message>
+    <message>
+        <source>Folder</source>
+        <translation>مجلد</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation type="vanished">يركض</translation>
+        <translation>تشغيل</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation type="vanished">يوقف</translation>
+        <translation>يوقف</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation type="vanished">خطوة الى</translation>
+        <translation>خطوة الى</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation type="vanished">خطوة أكثر</translation>
+        <translation>خطوة أكثر</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">قف</translation>
+        <translation>قف</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation type="vanished">اعادة البدء</translation>
+        <translation>اعادة البدء</translation>
     </message>
     <message>
         <source>Toggle</source>
-        <translation type="vanished">تبديل</translation>
+        <translation>تبديل</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">غير قادر علي</translation>
+        <translation>غير قادر علي</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">تجزئة</translation>
+        <translation>تجزئة</translation>
+    </message>
+    <message>
+        <source>Full screen</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>المراجع الخارجية</translation>
+    </message>
+    <message>
+        <source>Bookmark</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>أزالة</translation>
     </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">ملفات نصية</translation>
+        <translation>ملفات نصية</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">كل الملفات</translation>
+        <translation>كل الملفات</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation type="vanished">لا يمكن حفظ الملف</translation>
+        <translation>لا يمكن حفظ الملف</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">افتح الملف</translation>
+        <translation>افتح الملف</translation>
     </message>
 </context>
 <context>
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
-    </message>
-    <message>
-        <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation type="vanished">واضح</translation>
+        <translation>استمارة</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">عنوان</translation>
+        <translation>عنوان</translation>
     </message>
     <message>
-        <source>Size</source>
-        <translation type="vanished">مقاس</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation type="vanished">نوع</translation>
+        <source>Module</source>
+        <translation>وحدة</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation type="vanished">رمز</translation>
+        <translation>رمز</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation type="vanished">حرف او رمز</translation>
+        <translation>حرف او رمز</translation>
     </message>
 </context>
 <context>
     <name>XTiff</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">رأس</translation>
+        <translation>رأس</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation type="vanished">طاولة</translation>
+        <translation>طاولة</translation>
     </message>
 </context>
 <context>
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">استمارة</translation>
+        <translation>استمارة</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation type="vanished">موقع إلكتروني</translation>
+        <translation>موقع إلكتروني</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation>اعادة الفحص</translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation>أضهار الكشوفات</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">يحفظ</translation>
+        <translation>أحفظ</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">إعادة تحميل</translation>
+        <translation>إعادة تحميل</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation type="vanished">معلومة</translation>
+        <translation>معلومة</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation>رفع الملف للتحليل؟</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">مسح</translation>
+        <translation>فحص</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">إصدار</translation>
+        <translation>إصدار</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>تأريخ</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">نتيجة</translation>
+        <translation>نتيجة</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation>الرجاء استخدام مفتاح API صالح</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">خيارات</translation>
+        <translation>خيارات</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation type="vanished">أداة التوقيع</translation>
+        <translation>أداة التوقيع</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">خطأ</translation>
+        <translation>خطأ</translation>
+    </message>
+</context>
+<context>
+    <name>XVisualizationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>استمارة</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>نوع</translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Height</source>
+        <translation>تسليط الضوء</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>إعادة تحميل</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>أحفظ</translation>
+    </message>
+    <message>
+        <source>Block size</source>
+        <translation>حجم الملف</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>طريقة</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation>المناطق</translation>
+    </message>
+    <message>
+        <source>Highlights</source>
+        <translation>تسليط الضوء</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>غير قادر علي</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XZlib</name>
+    <message>
+        <source>Header</source>
+        <translation>رأس</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>تذييل</translation>
+    </message>
+</context>
+<context>
+    <name>YARAWidgetAdvanced</name>
+    <message>
+        <source>Rules</source>
+        <translation>الوحدات</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>أحفظ</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>فحص</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Offset</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>حجم</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>اسم</translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation>ملفات نصية</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>كل الملفات</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطأ</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>لا يمكن حفظ الملف</translation>
+    </message>
+</context>
+<context>
+    <name>YARA_Widget</name>
+    <message>
+        <source>Rules</source>
+        <translation>الوحدات</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>فحص</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>قف</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation>مللي ثانية</translation>
     </message>
 </context>
 </TS>

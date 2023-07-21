@@ -5,304 +5,375 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">Фильтр</translation>
+        <translation>Фильтр</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation type="vanished">Дерево</translation>
+        <translation>Дерево</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation type="vanished">Таблица</translation>
+        <translation>Таблица</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">Открыть</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation type="vanished">Имя файла</translation>
+        <translation>Имя файла</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
+        <translation>Дамп в файл</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="vanished">Сохранить файл</translation>
+        <translation>Сохранить файл</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation type="vanished">Невозможно сохранить файл</translation>
+        <translation>Невозможно сохранить файл</translation>
     </message>
 </context>
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation type="vanished">Экстрактор</translation>
+        <translation>Экстрактор</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
 </context>
 <context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
-        <translation type="vanished">Файл</translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">Фильтр</translation>
+        <translation>Фильтр</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation type="vanished">Экстрактор</translation>
+        <translation>Экстрактор</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation type="vanished">Сразу сканировать</translation>
+        <translation>Сразу сканировать</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">Все типы</translation>
+        <translation>Все типы</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation type="vanished">База данных</translation>
+        <translation>База данных</translation>
+    </message>
+    <message>
+        <source>YARA</source>
+        <translation></translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation type="vanished">Редактор</translation>
+        <translation>Редактор</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation type="vanished">Шрифт</translation>
+        <translation>Шрифт</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">Открыть папку</translation>
+        <translation>Открыть папку</translation>
+    </message>
+</context>
+<context>
+    <name>DIEWidgetAdvanced</name>
+    <message>
+        <source>Form</source>
+        <translation>Форма</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Тип</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Рекурсивное сканирование</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>Глубокий анализ</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Эвристическое сканирование</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>Подробно</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Все типы</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатуры</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Сканировать</translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation>Текстовые файлы</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>Все файлы</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Ошибка</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>Невозможно сохранить файл</translation>
     </message>
 </context>
 <context>
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="vanished">Папка</translation>
+        <translation>Папка</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation type="vanished">Журнал</translation>
+        <translation>Журнал</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">Все типы</translation>
+        <translation>Все типы</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">Стоп</translation>
+        <translation>Стоп</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">мс</translation>
+        <translation>мс</translation>
     </message>
     <message>
         <source>Copy as</source>
-        <translation type="vanished">Копировать как</translation>
+        <translation>Копировать как</translation>
     </message>
 </context>
 <context>
     <name>DiE_Script</name>
     <message>
         <source>Cannot load database</source>
-        <translation type="vanished">Не удается загрузить базу данных</translation>
+        <translation>Не удается загрузить базу данных</translation>
     </message>
 </context>
 <context>
@@ -336,560 +407,779 @@
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation type="vanished">Архив</translation>
+        <translation>Архив</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">Открыть</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation type="vanished">Пробелы</translation>
+        <translation>Пробелы</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation type="vanished">Верхний регистр</translation>
+        <translation>Верхний регистр</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation type="vanished">Маска</translation>
+        <translation>Маска</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">Относительный виртуальный адрес</translation>
+        <translation>Относительный виртуальный адрес</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">Байты</translation>
+        <translation>Байты</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">Опкод</translation>
+        <translation>Опкод</translation>
+    </message>
+</context>
+<context>
+    <name>DialogBookmarks</name>
+    <message>
+        <source>Bookmarks</source>
+        <translation>Закладки</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
+    </message>
+    <message>
+        <source>Location</source>
+        <translation>Действие</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Размер</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>Цвета</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Имя</translation>
+    </message>
+    <message>
+        <source>Background</source>
+        <translation>Фон</translation>
     </message>
 </context>
 <context>
     <name>DialogCreateViewModel</name>
     <message>
         <source>Create view model</source>
-        <translation type="vanished">Создать модель вида</translation>
+        <translation>Создать модель вида</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation type="vanished">Сканирование папки</translation>
+        <translation>Сканирование папки</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="vanished">Папка</translation>
+        <translation>Папка</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation type="vanished">Подкаталоги</translation>
+        <translation>Подкаталоги</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">Все типы</translation>
+        <translation>Все типы</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">Очистить</translation>
+        <translation>Очистить</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">Открыть папку</translation>
+        <translation>Открыть папку</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">мс</translation>
+        <translation>мс</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation type="vanished">Текстовые документы</translation>
+        <translation>Текстовые документы</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanProcess</name>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
+    </message>
+</context>
+<context>
+    <name>DialogDIESignatures</name>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатуры</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Только чтение</translation>
+    </message>
+    <message>
+        <source>Run</source>
+        <translation>Запустить</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Отладка</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Рекурсивное сканирование</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>Глубокий анализ</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>Подробно</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Эвристическое сканирование</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Далее</translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation>Тип сортировки</translation>
+    </message>
+    <message>
+        <source>Show options</source>
+        <translation>Показать в</translation>
+    </message>
+    <message>
+        <source>Show version</source>
+        <translation>Показать в</translation>
+    </message>
+    <message>
+        <source>Clear result</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>База данных</translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation>Отладчик</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation>мс</translation>
+    </message>
+</context>
+<context>
+    <name>DialogDIESignaturesElapsed</name>
+    <message>
+        <source>Elapsed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Script</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogDataInspector</name>
+    <message>
+        <source>Data inspector</source>
+        <translation>Инспектор данных</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>Только чтение</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Имя</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Значение</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">Demangle</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation type="vanished">Метки</translation>
+        <translation>Метки</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">Перейти к</translation>
+        <translation>Перейти к</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation type="vanished">Опкоды</translation>
+        <translation>Опкоды</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation type="vanished">Вызовы</translation>
+        <translation>Вызовы</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation type="vanished">Переходы</translation>
+        <translation>Переходы</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation type="vanished">Ссылка в</translation>
+        <translation>Ссылка в</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation type="vanished">Ссылка из</translation>
+        <translation>Ссылка из</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation type="vanished">Дамп</translation>
+        <translation>Дамп</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogEditString</name>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Keep size</source>
-        <translation type="vanished">Сохранять размер</translation>
+        <translation>Сохранять размер</translation>
     </message>
     <message>
         <source>C Strings</source>
-        <translation type="vanished">C строки</translation>
+        <translation>C строки</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <source>Bytes available</source>
-        <translation type="vanished">Байт доступно</translation>
-    </message>
-</context>
-<context>
-    <name>DialogElapsed</name>
-    <message>
-        <source>Elapsed</source>
-        <translation type="vanished">Прошло</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="vanished">ОК</translation>
-    </message>
-    <message>
-        <source>Time</source>
-        <translation type="vanished">Время</translation>
-    </message>
-    <message>
-        <source>Script</source>
-        <translation type="vanished">Скрипт</translation>
+        <translation>Байт доступно</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropyProcess</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">Процесс</translation>
+        <translation>Процесс</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogFindText</name>
     <message>
         <source>Find</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation type="vanished">Учитывать регистр</translation>
+        <translation>Учитывать регистр</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation type="vanished">Перейти к адресу</translation>
+        <translation>Перейти к адресу</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation type="vanished">Виртуальный адрес</translation>
+        <translation>Виртуальный адрес</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">Относительный виртуальный адрес</translation>
+        <translation>Относительный виртуальный адрес</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation type="vanished">Неверный</translation>
+        <translation>Неверный</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogHashProcess</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">Процесс</translation>
+        <translation>Процесс</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation type="vanished">Пробелы</translation>
+        <translation>Пробелы</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation type="vanished">Верхний регистр</translation>
+        <translation>Верхний регистр</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation type="vanished">Маска</translation>
+        <translation>Маска</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
-    </message>
-</context>
-<context>
-    <name>DialogLog</name>
-    <message>
-        <source>Log</source>
-        <translation type="vanished">Журнал</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogMIME</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="vanished">Сохранить файл</translation>
+        <translation>Сохранить файл</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">Текстовые файлы</translation>
+        <translation>Текстовые файлы</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">Все файлы</translation>
+        <translation>Все файлы</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation type="vanished">Пробелы</translation>
+        <translation>Пробелы</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation type="vanished">Верхний регистр</translation>
+        <translation>Верхний регистр</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation type="vanished">Маска</translation>
+        <translation>Маска</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">Относительный виртуальный адрес</translation>
+        <translation>Относительный виртуальный адрес</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">Байты</translation>
+        <translation>Байты</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">Опкод</translation>
+        <translation>Опкод</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search strings</source>
-        <translation type="vanished">Поиск строк</translation>
+        <translation>Поиск строк</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation type="vanished">Поиск сигнатур</translation>
+        <translation>Поиск сигнатур</translation>
+    </message>
+    <message>
+        <source>Search values</source>
+        <translation>Поиск значений</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation type="vanished">Создать модель вида</translation>
+        <translation>Создать модель вида</translation>
+    </message>
+</context>
+<context>
+    <name>DialogNFDScan</name>
+    <message>
+        <source>Scan</source>
+        <translation>Сканировать</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
+    </message>
+</context>
+<context>
+    <name>DialogNFDScanDirectory</name>
+    <message>
+        <source>Directory scan</source>
+        <translation>Сканирование папки</translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation>Папка</translation>
+    </message>
+    <message>
+        <source>Subdirectories</source>
+        <translation>Подкаталоги</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Рекурсивное сканирование</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>Глубокий анализ</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Эвристическое сканирование</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>Подробно</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Все типы</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Сканировать</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Очистить</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>Открыть папку</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation>мс</translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation>Текстовые документы</translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation>Сохранить</translation>
+    </message>
+</context>
+<context>
+    <name>DialogNFDScanProcess</name>
+    <message>
+        <source>Text documents</source>
+        <translation>Текстовые документы</translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation>Сохранить</translation>
     </message>
 </context>
 <context>
@@ -927,848 +1217,811 @@
     <name>DialogProcessData</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">Процесс</translation>
+        <translation>Процесс</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation type="vanished">Поиск с</translation>
+        <translation>Поиск с</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation type="vanished">Учитывать регистр</translation>
+        <translation>Учитывать регистр</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Порядок байт</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation type="vanished">Начало</translation>
+        <translation>Начало</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation type="vanished">Курсор</translation>
+        <translation>Курсор</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchValues</name>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation type="vanished">Секция</translation>
+        <translation>Секция</translation>
     </message>
 </context>
 <context>
     <name>DialogSelectStyle</name>
     <message>
         <source>Style</source>
-        <translation type="unfinished">Стиль</translation>
+        <translation>Стиль</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation type="vanished">Сочетания клавиш</translation>
+        <translation>Сочетания клавиш</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">Фильтр</translation>
+        <translation>Фильтр</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">Очистить</translation>
+        <translation>Очистить</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">По умолчанию</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation type="vanished">Сочетание клавиш</translation>
+        <translation>Сочетание клавиш</translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation type="vanished">Невозможно создать ссылку</translation>
+        <translation>Невозможно создать ссылку</translation>
+    </message>
+</context>
+<context>
+    <name>DialogShowData</name>
+    <message>
+        <source>Data</source>
+        <translation>Данные</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation type="vanished">Рисунок</translation>
+        <translation>Рисунок</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
-    </message>
-</context>
-<context>
-    <name>DialogSignatures</name>
-    <message>
-        <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
-    </message>
-    <message>
-        <source>Run</source>
-        <translation type="vanished">Запустить</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation type="vanished">Отладка</translation>
-    </message>
-    <message>
-        <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
-    </message>
-    <message>
-        <source>Find</source>
-        <translation type="vanished">Поиск</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="vanished">Далее</translation>
-    </message>
-    <message>
-        <source>Detect</source>
-        <translation type="vanished">Детект</translation>
-    </message>
-    <message>
-        <source>Show type</source>
-        <translation type="vanished">Показать тип</translation>
-    </message>
-    <message>
-        <source>Show options</source>
-        <translation type="vanished">Показать настройки</translation>
-    </message>
-    <message>
-        <source>Show version</source>
-        <translation type="vanished">Показать версию</translation>
-    </message>
-    <message>
-        <source>Clear result</source>
-        <translation type="vanished">Очистить результат</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
-    </message>
-    <message>
-        <source>Database</source>
-        <translation type="vanished">База данных</translation>
-    </message>
-    <message>
-        <source>Debugger</source>
-        <translation type="vanished">Отладчик</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation type="vanished">мс</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">Все типы</translation>
+        <translation>Все типы</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">Результат</translation>
+        <translation>Результат</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation type="vanished">Сканирование папки</translation>
+        <translation>Сканирование папки</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="vanished">Папка</translation>
+        <translation>Папка</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation type="vanished">Подкаталоги</translation>
+        <translation>Подкаталоги</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">Все типы</translation>
+        <translation>Все типы</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">Очистить</translation>
+        <translation>Очистить</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">Открыть папку</translation>
+        <translation>Открыть папку</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">мс</translation>
+        <translation>мс</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation type="vanished">Текстовые документы</translation>
+        <translation>Текстовые документы</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation type="vanished">Текстовые документы</translation>
+        <translation>Текстовые документы</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation type="vanished">Текстовые документы</translation>
+        <translation>Текстовые документы</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">Результат</translation>
+        <translation>Результат</translation>
     </message>
 </context>
 <context>
     <name>DialogUnpackFile</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">Процесс</translation>
+        <translation>Процесс</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDisasmReferences</name>
+    <message>
+        <source>Dialog</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
-        <translation type="vanished">Цвета</translation>
+        <translation>Цвета</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation type="vanished">Текст</translation>
+        <translation>Текст</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation type="vanished">Фон</translation>
+        <translation>Фон</translation>
     </message>
 </context>
 <context>
     <name>DialogXDynStructs</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogXExtractor</name>
     <message>
         <source>Extractor</source>
-        <translation type="vanished">Экстрактор</translation>
+        <translation>Экстрактор</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfo</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfoProcess</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">Процесс</translation>
+        <translation>Процесс</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DialogXInfoDBTransferProcess</name>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <source>Import</source>
-        <translation type="vanished">Импорт</translation>
+        <source>Analyze</source>
+        <translation>Анализировать</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>Символы</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Очистить</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">Экспорт</translation>
+        <translation>Экспорт</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>Импорт</translation>
     </message>
 </context>
 <context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
-        <translation type="vanished">Символы</translation>
+        <translation>Символы</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Bind</source>
-        <translation type="vanished">Связывать</translation>
+        <translation>Связывать</translation>
     </message>
 </context>
 <context>
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation type="vanished">Экстрактор</translation>
+        <translation>Экстрактор</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation type="vanished">Секции</translation>
+        <translation>Секции</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">Demangle</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
+        <translation>Дамп в файл</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation type="vanished">сжатый</translation>
+        <translation>сжатый</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation type="vanished">несжатый</translation>
+        <translation>несжатый</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation type="vanished">Очистить</translation>
+        <translation>Очистить</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">мс</translation>
+        <translation>мс</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation type="vanished">Рекурсивно</translation>
+        <translation>Рекурсивно</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation type="vanished">Невозможно сохранить файл</translation>
+        <translation>Невозможно сохранить файл</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation type="vanished">Сдампить всё</translation>
+        <translation>Сдампить всё</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">Текстовые файлы</translation>
+        <translation>Текстовые файлы</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">Все файлы</translation>
+        <translation>Все файлы</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation type="vanished">Дамп</translation>
+        <translation>Дамп</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">Сохранить дамп</translation>
+        <translation>Сохранить дамп</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">Сырые данные</translation>
+        <translation>Сырые данные</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation type="vanished">Тип файла</translation>
+        <translation>Тип файла</translation>
     </message>
     <message>
         <source>File size</source>
-        <translation type="vanished">Размер файла</translation>
+        <translation>Размер файла</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation type="vanished">Базовый адрес</translation>
+        <translation>Базовый адрес</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">Точка входа</translation>
-    </message>
-    <message>
-        <source>File info</source>
-        <translation type="vanished">Информация о файле</translation>
-    </message>
-    <message>
-        <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation type="vanished">Hex</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation type="vanished">Строки</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
-    </message>
-    <message>
-        <source>Extractor</source>
-        <translation type="vanished">Экстрактор</translation>
+        <translation>Точка входа</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>File info</source>
+        <translation>Информация о файле</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Строки</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>Экстрактор</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Энтропия</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатуры</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Хеш</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Карта памяти</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>Дизассемблировать</translation>
+    </message>
+    <message>
+        <source>Visualisation</source>
+        <translation></translation>
     </message>
     <message>
         <source>Files</source>
-        <translation type="vanished">Файлы</translation>
+        <translation>Файлы</translation>
     </message>
     <message>
         <source>Unpack</source>
-        <translation type="vanished">сжатый</translation>
+        <translation>Распаковать</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">Экспорт</translation>
+        <translation>Экспорт</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="vanished">Импорт</translation>
+        <translation>Импорт</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation type="vanished">Ресурсы</translation>
+        <translation>Ресурсы</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation type="vanished">Секции</translation>
+        <translation>Секции</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation type="vanished">Отметка даты и времени</translation>
+        <translation>Отметка даты и времени</translation>
     </message>
     <message>
         <source>Size of image</source>
-        <translation type="vanished">Размер изображения</translation>
+        <translation>Размер изображения</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation type="vanished">Манифест</translation>
+        <translation>Манифест</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">Версия</translation>
+        <translation>Версия</translation>
     </message>
     <message>
         <source>Programs</source>
-        <translation type="vanished">Программ</translation>
+        <translation>Программ</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation type="vanished">Команды</translation>
+        <translation>Команды</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation type="vanished">Сегменты</translation>
+        <translation>Сегменты</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation type="vanished">Библиотеки</translation>
+        <translation>Библиотеки</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Порядок байт</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation type="vanished">Режим</translation>
+        <translation>Режим</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation type="vanished">Архитектура</translation>
+        <translation>Архитектура</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation type="vanished">Автоматически</translation>
+        <translation>Автоматически</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">Открыть папку</translation>
+        <translation>Открыть папку</translation>
     </message>
 </context>
 <context>
@@ -1814,3432 +2067,3769 @@
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation type="vanished">Импорт</translation>
+        <translation>Импорт</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">Все типы</translation>
+        <translation>Все типы</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation type="vanished">Эвристика</translation>
+        <translation>Эвристика</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">Результат</translation>
+        <translation>Результат</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>Экстрактор</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
-    </message>
-</context>
-<context>
-    <name>LiteMainWindow</name>
-    <message>
-        <source>File name</source>
-        <translation type="unfinished">Имя файла</translation>
-    </message>
-    <message>
-        <source>Recursive scan</source>
-        <translation type="unfinished">Рекурсивное сканирование</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation type="unfinished">Глубокий анализ</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation type="unfinished">Эвристическое сканирование</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation type="unfinished">Подробно</translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation type="unfinished">Все типы</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation type="unfinished">Сканировать</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation type="unfinished">Выход</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation type="unfinished">мс</translation>
-    </message>
-    <message>
-        <source>Open file</source>
-        <translation type="unfinished">Открыть файл</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="unfinished">Все файлы</translation>
+        <translation>Редактировать</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
+        <translation>Форма</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">Опкод</translation>
+        <translation>Опкод</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation type="vanished">Экстрактор</translation>
+        <translation>Экстрактор</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation type="vanished">Команды</translation>
+        <translation>Команды</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation type="vanished">Сегменты</translation>
+        <translation>Сегменты</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation type="vanished">Секции</translation>
+        <translation>Секции</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation type="vanished">Rebase</translation>
+        <translation>Rebase</translation>
     </message>
     <message>
         <source>Binding</source>
-        <translation type="vanished">Привязка</translation>
+        <translation>Привязка</translation>
     </message>
     <message>
         <source>Weak binding</source>
-        <translation type="vanished">Слабое связывание</translation>
+        <translation>Слабое связывание</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation type="vanished">Ленивая привязка</translation>
+        <translation>Ленивая привязка</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">Экспорт</translation>
+        <translation>Экспорт</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation type="vanished">Таблица строк</translation>
+        <translation>Таблица строк</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation type="vanished">Таблица символов</translation>
+        <translation>Таблица символов</translation>
     </message>
     <message>
         <source>Table of contents</source>
-        <translation type="vanished">Таблица с содержимым</translation>
+        <translation>Таблица с содержимым</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation type="vanished">Модули</translation>
+        <translation>Модули</translation>
     </message>
     <message>
         <source>External references</source>
-        <translation type="vanished">Внешние ссылки</translation>
+        <translation>Внешние ссылки</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
-        <translation type="vanished">Косвенные символы</translation>
+        <translation>Косвенные символы</translation>
     </message>
     <message>
         <source>Local relocation</source>
-        <translation type="vanished">Локальное перемещение</translation>
+        <translation>Локальное перемещение</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation type="vanished">Функции</translation>
+        <translation>Функции</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation type="vanished">Данные в коде</translation>
+        <translation>Данные в коде</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">Demangle</translation>
+        <translation>Demangle</translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation type="vanished">Экстрактор</translation>
+        <translation>Экстрактор</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>Экстрактор</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation type="vanished">Сегменты</translation>
+        <translation>Сегменты</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
+    </message>
+</context>
+<context>
+    <name>NFDOptionsWidget</name>
+    <message>
+        <source>Scan after open</source>
+        <translation>Сразу сканировать</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Рекурсивное сканирование</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>Глубокий анализ</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Эвристическое сканирование</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>Подробно</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Все типы</translation>
+    </message>
+</context>
+<context>
+    <name>NFDWidgetAdvanced</name>
+    <message>
+        <source>Type</source>
+        <translation>Тип</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>Рекурсивное сканирование</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>Глубокий анализ</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>Эвристическое сканирование</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>Подробно</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>Все типы</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Сканировать</translation>
+    </message>
+    <message>
+        <source>Heuristic</source>
+        <translation>Эвристика</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Результат</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Имя</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Значение</translation>
     </message>
 </context>
 <context>
     <name>NFD_Widget</name>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation type="vanished">Папка</translation>
+        <translation>Папка</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">Все типы</translation>
+        <translation>Все типы</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">Стоп</translation>
+        <translation>Стоп</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation type="vanished">мс</translation>
+        <translation>мс</translation>
     </message>
 </context>
 <context>
     <name>PDFWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
-        <translation type="vanished">Секция</translation>
+        <translation>Секция</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation type="vanished">Относительный адрес</translation>
+        <translation>Относительный адрес</translation>
     </message>
     <message>
         <source>Virtual size</source>
-        <translation type="vanished">Виртуальный размер</translation>
+        <translation>Виртуальный размер</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation type="vanished">Смещение в файле</translation>
+        <translation>Смещение в файле</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation type="vanished">Флаги</translation>
+        <translation>Флаги</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">Точка входа</translation>
+        <translation>Точка входа</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">Экспорт</translation>
+        <translation>Экспорт</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="vanished">Импорт</translation>
+        <translation>Импорт</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation type="vanished">Ресурсы</translation>
+        <translation>Ресурсы</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation type="vanished">Исключения</translation>
+        <translation>Исключения</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation type="vanished">Relocs</translation>
+        <translation>Relocs</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="vanished">Отладка</translation>
+        <translation>Отладка</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation type="vanished">Загрузочная конфигурация</translation>
+        <translation>Загрузочная конфигурация</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation type="vanished">Связанный импорт</translation>
+        <translation>Связанный импорт</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation type="vanished">Отложенный импорт</translation>
+        <translation>Отложенный импорт</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">Язык</translation>
+        <translation>Язык</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation type="vanished">Сертификат</translation>
+        <translation>Сертификат</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation type="vanished">Статус</translation>
+        <translation>Статус</translation>
     </message>
     <message>
         <source>Program name</source>
-        <translation type="vanished">Название программы</translation>
+        <translation>Название программы</translation>
     </message>
     <message>
         <source>Publisher</source>
-        <translation type="vanished">Издатель</translation>
+        <translation>Издатель</translation>
     </message>
     <message>
         <source>More info</source>
-        <translation type="vanished">Больше информации</translation>
+        <translation>Больше информации</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation type="vanished">Серийный номер</translation>
+        <translation>Серийный номер</translation>
     </message>
     <message>
         <source>Issuer</source>
-        <translation type="vanished">Эмитент</translation>
+        <translation>Эмитент</translation>
     </message>
     <message>
         <source>Subject</source>
-        <translation type="vanished">Тема</translation>
+        <translation>Тема</translation>
     </message>
     <message>
         <source>Algorithm</source>
-        <translation type="vanished">Алгоритм</translation>
+        <translation>Алгоритм</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">Версия</translation>
+        <translation>Версия</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation type="vanished">Число</translation>
+        <translation>Число</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
 </context>
 <context>
     <name>PEToolsWidget</name>
     <message>
         <source>Tools</source>
-        <translation type="vanished">Инструменты</translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Добавить</translation>
+        <translation>Добавить</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation type="vanished">Дамп</translation>
+        <translation>Дамп</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">Сохранить дамп</translation>
+        <translation>Сохранить дамп</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">Сырые данные</translation>
+        <translation>Сырые данные</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation type="vanished">Дамп</translation>
+        <translation>Дамп</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation type="vanished">Сдампить всё</translation>
+        <translation>Сдампить всё</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation type="vanished">Показать правильно</translation>
+        <translation>Показать правильно</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation type="vanished">Таблица</translation>
+        <translation>Таблица</translation>
     </message>
     <message>
         <source>Extract all icons</source>
-        <translation type="vanished">Извлечь все иконки</translation>
+        <translation>Извлечь все иконки</translation>
     </message>
     <message>
         <source>Extract all cursors</source>
-        <translation type="vanished">Извлечь все курсоры</translation>
+        <translation>Извлечь все курсоры</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation type="vanished">Дерево</translation>
+        <translation>Дерево</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation type="vanished">Формат</translation>
+        <translation>Формат</translation>
     </message>
     <message>
         <source>Check</source>
-        <translation type="vanished">Проверить</translation>
+        <translation>Проверить</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation type="vanished">Экстрактор</translation>
+        <translation>Экстрактор</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation type="vanished">Инструменты</translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation type="vanished">Секции</translation>
+        <translation>Секции</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">Экспорт</translation>
+        <translation>Экспорт</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="vanished">Импорт</translation>
+        <translation>Импорт</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation type="vanished">Ресурсы</translation>
+        <translation>Ресурсы</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation type="vanished">Таблица строк</translation>
+        <translation>Таблица строк</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">Версия</translation>
+        <translation>Версия</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation type="vanished">Манифест</translation>
+        <translation>Манифест</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation type="vanished">Исключения</translation>
+        <translation>Исключения</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation type="vanished">Сертификат</translation>
+        <translation>Сертификат</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation type="vanished">Relocs</translation>
+        <translation>Relocs</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="vanished">Отладка</translation>
+        <translation>Отладка</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation type="vanished">Обратные вызовы</translation>
+        <translation>Обратные вызовы</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation type="vanished">Загрузочная конфигурация</translation>
+        <translation>Загрузочная конфигурация</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation type="vanished">Связанный импорт</translation>
+        <translation>Связанный импорт</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation type="vanished">Отложенный импорт</translation>
+        <translation>Отложенный импорт</translation>
     </message>
     <message>
         <source>Metadata</source>
-        <translation type="vanished">Метаданные</translation>
+        <translation>Метаданные</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation type="vanished">Вычислить</translation>
+        <translation>Вычислить</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
+        <translation>Дамп в файл</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">Demangle</translation>
+        <translation>Demangle</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation type="vanished">Число</translation>
+        <translation>Число</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation type="vanished">Название библиотеки</translation>
+        <translation>Название библиотеки</translation>
     </message>
     <message>
         <source>Interpreter</source>
-        <translation type="vanished">Интерпретатор</translation>
+        <translation>Интерпретатор</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">Версия</translation>
+        <translation>Версия</translation>
     </message>
     <message>
         <source>Length</source>
-        <translation type="vanished">Длина</translation>
+        <translation>Длина</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation type="vanished">Ошибка чтения</translation>
+        <translation>Ошибка чтения</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation type="vanished">Ошибка записи</translation>
+        <translation>Ошибка записи</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation type="vanished">Невозможно открыть файл</translation>
+        <translation>Невозможно открыть файл</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation type="vanished">Документы</translation>
+        <translation>Документы</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation type="vanished">Рисунки</translation>
+        <translation>Рисунки</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation type="vanished">Имя файла экспорта</translation>
+        <translation>Имя файла экспорта</translation>
     </message>
 </context>
 <context>
     <name>QwtPolarRenderer</name>
     <message>
         <source>Documents</source>
-        <translation type="vanished">Документы</translation>
+        <translation>Документы</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation type="vanished">Рисунки</translation>
+        <translation>Рисунки</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation type="vanished">Имя файла экспорта</translation>
+        <translation>Имя файла экспорта</translation>
     </message>
 </context>
 <context>
     <name>ScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation type="vanished">Результат</translation>
+        <translation>Результат</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation type="vanished">Поиск сигнатур</translation>
+        <translation>Поиск сигнатур</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">Открыть папку</translation>
+        <translation>Открыть папку</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Порядок байт</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">Файл</translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation type="vanished">Следовать в</translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>C Strings</source>
-        <translation type="vanished">C строки</translation>
+        <translation>C строки</translation>
     </message>
     <message>
         <source>Links</source>
-        <translation type="vanished">Линки</translation>
+        <translation>Линки</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">Фильтр</translation>
+        <translation>Фильтр</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation type="vanished">Следовать в</translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation type="vanished">Строка</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation type="vanished">Адрес</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">Demangle</translation>
+        <translation>Demangle</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation type="vanished">Невозможно сохранить файл</translation>
+        <translation>Невозможно сохранить файл</translation>
     </message>
 </context>
 <context>
     <name>SearchValuesWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>Values</source>
+        <translation>Значения</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation type="vanished">Следовать в</translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">Точка входа</translation>
+        <translation>Точка входа</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation type="vanished">Имя секции</translation>
+        <translation>Имя секции</translation>
     </message>
     <message>
         <source>Import hash</source>
-        <translation type="vanished">Хеш импорта</translation>
+        <translation>Хеш импорта</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation type="vanished">Секция кода</translation>
+        <translation>Секция кода</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation type="vanished">Секция точки входа</translation>
+        <translation>Секция точки входа</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation type="vanished">Архив</translation>
+        <translation>Архив</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation type="vanished">Ресурсы</translation>
+        <translation>Ресурсы</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation type="vanished">Сканирование файла</translation>
+        <translation>Сканирование файла</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation type="vanished">Сканирование устройства</translation>
+        <translation>Сканирование устройства</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation type="vanished">Сканирование памяти</translation>
+        <translation>Сканирование памяти</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation type="vanished">Сканирование папки</translation>
+        <translation>Сканирование папки</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation type="vanished">Сразу сканировать</translation>
+        <translation>Сразу сканировать</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation type="vanished">Рекурсивное сканирование</translation>
+        <translation>Рекурсивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation type="vanished">Эвристическое сканирование</translation>
+        <translation>Эвристическое сканирование</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation type="vanished">Подробно</translation>
+        <translation>Подробно</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation type="vanished">Все типы</translation>
+        <translation>Все типы</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
 </context>
 <context>
     <name>XAboutWidget</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
+    </message>
+    <message>
+        <source>Follow me</source>
+        <translation></translation>
     </message>
     <message>
         <source>Check updates</source>
-        <translation type="vanished">Проверить обновления</translation>
+        <translation>Проверить обновления</translation>
     </message>
     <message>
         <source>Thanks</source>
-        <translation type="vanished">Благодарности</translation>
+        <translation>Благодарности</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation type="vanished">Веб-сайт</translation>
+        <translation>Веб-сайт</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation type="vanished">Библиотеки</translation>
+        <translation>Библиотеки</translation>
+    </message>
+    <message>
+        <source>Update information</source>
+        <translation>Обновить информацию</translation>
+    </message>
+    <message>
+        <source>New version available</source>
+        <translation>Доступна новая версия</translation>
+    </message>
+    <message>
+        <source>Go to download page?</source>
+        <translation>Перейти на страницу загрузки?</translation>
+    </message>
+    <message>
+        <source>No update available</source>
+        <translation>Нет доступных обновлений</translation>
+    </message>
+    <message>
+        <source>Network error</source>
+        <translation>Ошибка сети</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation type="vanished">Информация</translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <source>The value copied to clipboard</source>
-        <translation type="vanished">Значение скопировано в буфер обмена</translation>
+        <translation>Значение скопировано в буфер обмена</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>8-bit</source>
-        <translation type="vanished">8-битный</translation>
+        <translation>8-битный</translation>
     </message>
     <message>
         <source>16-bit</source>
-        <translation type="vanished">16-битный</translation>
+        <translation>16-битный</translation>
     </message>
     <message>
         <source>32-bit</source>
-        <translation type="vanished">32-битный</translation>
+        <translation>32-битный</translation>
     </message>
     <message>
         <source>64-bit</source>
-        <translation type="vanished">64-битный</translation>
+        <translation>64-битный</translation>
     </message>
     <message>
         <source>128-bit</source>
-        <translation type="vanished">128-битный</translation>
+        <translation>128-битный</translation>
+    </message>
+    <message>
+        <source>256-bit</source>
+        <translation>256-битный</translation>
     </message>
     <message>
         <source>Region</source>
-        <translation type="vanished">Область</translation>
+        <translation>Область</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation type="vanished">Архив</translation>
+        <translation>Архив</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation type="vanished">Документ</translation>
+        <translation>Документ</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="vanished">Рисунок</translation>
+        <translation>Рисунок</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>Видео</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation type="vanished">Аудио</translation>
+        <translation>Аудио</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation type="vanished">Текст</translation>
+        <translation>Текст</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Сигнатура</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation type="vanished">Ошибка чтения</translation>
+        <translation>Ошибка чтения</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation type="vanished">Максимум</translation>
+        <translation>Максимум</translation>
     </message>
     <message>
         <source>Invalid signature</source>
-        <translation type="vanished">Неправильная сигнатура</translation>
+        <translation>Неправильная сигнатура</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation type="vanished">Ошибка записи</translation>
+        <translation>Ошибка записи</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">По умолчанию</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">Байты</translation>
+        <translation>Байты</translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation>КиБ</translation>
     </message>
     <message>
         <source>kB</source>
-        <translation type="vanished">кБ</translation>
+        <translation>кБ</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>МиБ</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation type="vanished">МБ</translation>
+        <translation>МБ</translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation>ГиБ</translation>
     </message>
     <message>
         <source>GB</source>
-        <translation type="vanished">ГБ</translation>
+        <translation>ГБ</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation>ТиБ</translation>
     </message>
     <message>
         <source>TB</source>
-        <translation type="vanished">ТБ</translation>
+        <translation>ТБ</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation type="vanished">Архивная запись</translation>
+        <translation>Архивная запись</translation>
     </message>
     <message>
         <source>Resource</source>
-        <translation type="vanished">Ресурс</translation>
+        <translation>Ресурс</translation>
     </message>
 </context>
 <context>
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
 </context>
 <context>
     <name>XCapstone</name>
     <message>
         <source>Invalid opcode</source>
-        <translation type="vanished">Неверный опкод</translation>
+        <translation>Неверный опкод</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation type="vanished">Флаги</translation>
+        <translation>Флаги</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation type="vanished">Автоматически</translation>
+        <translation>Автоматически</translation>
     </message>
 </context>
 <context>
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation type="vanished">Режим</translation>
+        <translation>Режим</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Dump</source>
-        <translation type="vanished">Дамп</translation>
+        <translation>Дамп</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">Сохранить дамп</translation>
+        <translation>Сохранить дамп</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">Сырые данные</translation>
+        <translation>Сырые данные</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation type="vanished">Ничего не найдено</translation>
+        <translation>Ничего не найдено</translation>
     </message>
 </context>
 <context>
     <name>XDialogProcess</name>
     <message>
         <source>Process</source>
-        <translation type="vanished">Процесс</translation>
+        <translation>Процесс</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation type="vanished">Метка</translation>
+        <translation>Метка</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">Байты</translation>
+        <translation>Байты</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">Опкод</translation>
+        <translation>Опкод</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">Байты</translation>
+        <translation>Байты</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">Опкод</translation>
+        <translation>Опкод</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation type="vanished">Символ</translation>
+        <translation>Символ</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation type="vanished">Комментарий</translation>
+        <translation>Комментарий</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation type="vanished">Точка входа</translation>
-    </message>
-    <message>
-        <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
-    </message>
-    <message>
-        <source>Hex signature</source>
-        <translation type="vanished">16-ричная сигнатура</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation type="vanished">Строка</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation type="vanished">Значение</translation>
-    </message>
-    <message>
-        <source>Find next</source>
-        <translation type="vanished">Найти далее</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation type="vanished">Выбрать все</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">Перейти к</translation>
+        <translation>Перейти к</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <source>Analyze</source>
+        <translation>Анализировать</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="vanished">Выбрать</translation>
+        <translation>Выбрать</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation type="vanished">Следовать в</translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
+        <translation>Редактировать</translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation>Дамп в файл</translation>
+    </message>
+    <message>
+        <source>Hex signature</source>
+        <translation>16-ричная сигнатура</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Сигнатура</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Строка</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Значение</translation>
+    </message>
+    <message>
+        <source>Find next</source>
+        <translation>Найти далее</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>Выбрать все</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Данные</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>Внешние ссылки</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>Дизассемблировать</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>Символы</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Точка входа</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation type="vanished">Относительный адрес</translation>
+        <translation>Относительный адрес</translation>
     </message>
 </context>
 <context>
     <name>XDisasmViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation type="vanished">Шрифт</translation>
+        <translation>Шрифт</translation>
     </message>
     <message>
         <source>Syntax</source>
-        <translation type="vanished">Синтаксис</translation>
+        <translation>Синтаксис</translation>
     </message>
     <message>
         <source>Uppercase</source>
-        <translation type="vanished">Верхний регистр</translation>
+        <translation>Верхний регистр</translation>
     </message>
     <message>
         <source>Show colons in addresses</source>
-        <translation type="vanished">Разделитель в адресе</translation>
+        <translation>Разделитель в адресе</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation type="vanished">Подсветка синтаксиса</translation>
+        <translation>Подсветка синтаксиса</translation>
     </message>
     <message>
         <source>Colors</source>
-        <translation type="vanished">Цвета</translation>
+        <translation>Цвета</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation type="vanished">Анализировать</translation>
+        <translation>Анализировать</translation>
     </message>
     <message>
         <source>Labels</source>
-        <translation type="vanished">Метки</translation>
+        <translation>Метки</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">Перейти к</translation>
+        <translation>Перейти к</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">Точка входа</translation>
+        <translation>Точка входа</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation type="vanished">Виртуальный адрес</translation>
+        <translation>Виртуальный адрес</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">Относительный виртуальный адрес</translation>
+        <translation>Относительный виртуальный адрес</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation type="vanished">Смещение в файле</translation>
+        <translation>Смещение в файле</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
+        <translation>Дамп в файл</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation type="vanished">К данным</translation>
+        <translation>К данным</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">Сырые данные</translation>
+        <translation>Сырые данные</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">Сохранить дамп</translation>
+        <translation>Сохранить дамп</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsEngine</name>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation type="vanished">Невозможно загрузить файл</translation>
+        <translation>Невозможно загрузить файл</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsOptionsWidget</name>
     <message>
         <source>Structs</source>
-        <translation type="vanished">Структуры</translation>
+        <translation>Структуры</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">Открыть папку</translation>
+        <translation>Открыть папку</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsWidget</name>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Prototype</source>
-        <translation type="vanished">Прототип</translation>
+        <translation>Прототип</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Array</source>
-        <translation type="vanished">Массив</translation>
+        <translation>Массив</translation>
     </message>
     <message>
         <source>Variable</source>
-        <translation type="vanished">Переменная</translation>
+        <translation>Переменная</translation>
     </message>
     <message>
         <source>Pointer</source>
-        <translation type="vanished">Указатель</translation>
+        <translation>Указатель</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation type="vanished">Невозможно прочитать память по адресу</translation>
+        <translation>Невозможно прочитать память по адресу</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">Результат</translation>
+        <translation>Результат</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation type="vanished">Файлы</translation>
+        <translation>Файлы</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">Все файлы</translation>
+        <translation>Все файлы</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation type="vanished">Число</translation>
+        <translation>Число</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation type="vanished">Всего</translation>
+        <translation>Всего</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation type="vanished">Статус</translation>
+        <translation>Статус</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Save diagram</source>
-        <translation type="vanished">Сохранить график</translation>
+        <translation>Сохранить график</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation type="vanished">Регионы</translation>
+        <translation>Регионы</translation>
     </message>
     <message>
         <source>Diagram</source>
-        <translation type="vanished">Диаграмма</translation>
+        <translation>Диаграмма</translation>
     </message>
     <message>
         <source>Grid</source>
-        <translation type="vanished">Сетка</translation>
+        <translation>Сетка</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">Байты</translation>
+        <translation>Байты</translation>
     </message>
     <message>
         <source>Byte</source>
-        <translation type="vanished">Байт</translation>
+        <translation>Байт</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
-    </message>
-    <message>
-        <source>Images</source>
-        <translation type="vanished">Рисунки</translation>
-    </message>
-    <message>
-        <source>Documents</source>
-        <translation type="vanished">Документы</translation>
+        <translation>Строки</translation>
     </message>
 </context>
 <context>
     <name>XExtractorWidget</name>
     <message>
         <source>Extract</source>
-        <translation type="vanished">Извлечь</translation>
+        <translation>Извлечь</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation type="vanished">Сдампить всё</translation>
+        <translation>Сдампить всё</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation type="vanished">Глубокий анализ</translation>
+        <translation>Глубокий анализ</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">Настройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation type="vanished">Следовать в</translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
+        <translation>Дамп в файл</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">Сохранить дамп</translation>
+        <translation>Сохранить дамп</translation>
     </message>
 </context>
 <context>
     <name>XFileInfo</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">Точка входа</translation>
+        <translation>Точка входа</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation type="vanished">Имя файла</translation>
+        <translation>Имя файла</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation type="vanished">Операционная система</translation>
+        <translation>Операционная система</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation type="vanished">Архитектура</translation>
+        <translation>Архитектура</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation type="vanished">Режим</translation>
+        <translation>Режим</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Порядок байт</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>packed</source>
-        <translation type="vanished">сжатый</translation>
+        <translation>сжатый</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation type="vanished">несжатый</translation>
+        <translation>несжатый</translation>
     </message>
     <message>
         <source>File type</source>
-        <translation type="vanished">Тип файла</translation>
+        <translation>Тип файла</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation type="vanished">Относительный адрес</translation>
+        <translation>Относительный адрес</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation type="vanished">Байты</translation>
+        <translation>Байты</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation type="vanished">Метод</translation>
+        <translation>Метод</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation type="vanished">Комментарий</translation>
+        <translation>Комментарий</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation type="vanished">Текст</translation>
+        <translation>Текст</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation type="vanished">Сохранить файл</translation>
+        <translation>Сохранить файл</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">Текстовые файлы</translation>
+        <translation>Текстовые файлы</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">Все файлы</translation>
+        <translation>Все файлы</translation>
     </message>
 </context>
 <context>
     <name>XFormats</name>
     <message>
         <source>obfuscator</source>
-        <translation type="vanished">обфускатор</translation>
+        <translation>обфускатор</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation type="vanished">Инструмент</translation>
+        <translation>Инструмент</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation type="vanished">Архив</translation>
+        <translation>Архив</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation type="vanished">Сертификат</translation>
+        <translation>Сертификат</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation type="vanished">Компилятор</translation>
+        <translation>Компилятор</translation>
     </message>
     <message>
         <source>Converter</source>
-        <translation type="vanished">Конвертер</translation>
+        <translation>Конвертер</translation>
     </message>
     <message>
         <source>Cryptor</source>
-        <translation type="vanished">Криптор</translation>
+        <translation>Криптор</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation type="vanished">Данные</translation>
+        <translation>Данные</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation type="vanished">База данных</translation>
+        <translation>База данных</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation type="vanished">Отладочная информация</translation>
+        <translation>Отладочная информация</translation>
     </message>
     <message>
         <source>protection</source>
-        <translation type="vanished">защита</translation>
+        <translation>защита</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation type="vanished">расширение</translation>
+        <translation>расширение</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation type="vanished">Формат</translation>
+        <translation>Формат</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation type="vanished">Обобщенный</translation>
+        <translation>Обобщенный</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="vanished">Рисунок</translation>
+        <translation>Рисунок</translation>
     </message>
     <message>
         <source>Installer</source>
-        <translation type="vanished">Установщик</translation>
+        <translation>Установщик</translation>
     </message>
     <message>
         <source>Installer data</source>
-        <translation type="vanished">Данные установщика</translation>
+        <translation>Данные установщика</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation type="vanished">Джойнер</translation>
+        <translation>Джойнер</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">Язык</translation>
+        <translation>Язык</translation>
     </message>
     <message>
         <source>Library</source>
-        <translation type="vanished">Библиотека</translation>
+        <translation>Библиотека</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation type="vanished">Линковщик</translation>
+        <translation>Линковщик</translation>
     </message>
     <message>
         <source>compressor</source>
-        <translation type="vanished">упаковщик</translation>
+        <translation>упаковщик</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation type="vanished">Операционная система</translation>
+        <translation>Операционная система</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Packer</source>
-        <translation type="vanished">Упаковщик</translation>
+        <translation>Упаковщик</translation>
     </message>
     <message>
         <source>Player</source>
-        <translation type="vanished">Игрок</translation>
+        <translation>Игрок</translation>
     </message>
     <message>
         <source>Protection</source>
-        <translation type="vanished">Защита</translation>
+        <translation>Защита</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation type="vanished">Протектор</translation>
+        <translation>Протектор</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation type="vanished">Данные протектора</translation>
+        <translation>Данные протектора</translation>
     </message>
     <message>
         <source>data</source>
-        <translation type="vanished">данные</translation>
+        <translation>данные</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation type="vanished">Инструмент подписания</translation>
+        <translation>Инструмент подписания</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation type="vanished">Исходный код</translation>
+        <translation>Исходный код</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation type="vanished">Заглушка</translation>
+        <translation>Заглушка</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation type="vanished">Виртуальная машина</translation>
+        <translation>Виртуальная машина</translation>
     </message>
 </context>
 <context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Footer</source>
-        <translation type="vanished">Футер</translation>
+        <translation>Футер</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation type="vanished">Метод</translation>
+        <translation>Метод</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation type="vanished">Символы</translation>
+        <translation>Символы</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="vanished">Начало</translation>
+        <translation>Начало</translation>
     </message>
     <message>
         <source>End</source>
-        <translation type="vanished">Конец</translation>
+        <translation>Конец</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
+        <translation>Дамп в файл</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation type="vanished">Найти далее</translation>
+        <translation>Найти далее</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation type="vanished">Выбрать все</translation>
+        <translation>Выбрать все</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Данные</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation>Список</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">Перейти к</translation>
+        <translation>Перейти к</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation type="vanished">Выделение</translation>
+        <translation>Выделение</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="vanished">Выбрать</translation>
+        <translation>Выбрать</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation type="vanished">Следовать в</translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
+        <translation>Редактировать</translation>
+    </message>
+    <message>
+        <source>Bookmarks</source>
+        <translation>Закладки</translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation>Ширина</translation>
     </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation type="vanished">Шрифт</translation>
+        <translation>Шрифт</translation>
     </message>
     <message>
         <source>Show colons in addresses</source>
-        <translation type="vanished">Разделитель в адресе</translation>
-    </message>
-    <message>
-        <source>Blinking cursor</source>
-        <translation type="vanished">Мигающий курсор</translation>
+        <translation>Разделитель в адресе</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <source>Data inspector</source>
-        <translation type="vanished">Инспектор данных</translation>
+        <translation>Инспектор данных</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation type="vanished">Имя</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation type="vanished">Значение</translation>
-    </message>
-    <message>
-        <source>Cursor</source>
-        <translation type="vanished">Курсор</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation type="vanished">Выделение</translation>
+        <translation>Выделение</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
 </context>
 <context>
     <name>XIcon</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
 </context>
 <context>
     <name>XInfoDB</name>
     <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
+    </message>
+    <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
-        <source>File</source>
-        <translation type="vanished">Файл</translation>
+        <source>Paused</source>
+        <translation></translation>
     </message>
     <message>
-        <source>User</source>
-        <translation type="vanished">Пользователь</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation type="vanished">Метка</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation type="vanished">Точка входа</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation type="vanished">Экспорт</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation type="vanished">Импорт</translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation type="vanished">Данные</translation>
-    </message>
-    <message>
-        <source>Object</source>
-        <translation type="vanished">Объект</translation>
-    </message>
-    <message>
-        <source>Function</source>
-        <translation type="vanished">Функция</translation>
+        <source>Running</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XInfoDBOptionsWidget</name>
     <message>
         <source>Info</source>
-        <translation type="vanished">Инфо</translation>
+        <translation>Инфо</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation type="vanished">Открыть папку</translation>
+        <translation>Открыть папку</translation>
+    </message>
+</context>
+<context>
+    <name>XInfoMenu</name>
+    <message>
+        <source>Database</source>
+        <translation>База данных</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>Импорт</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>Экспорт</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Очистить</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>Все файлы</translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation>Открыть файл</translation>
+    </message>
+    <message>
+        <source>Are you sure?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XJpeg</name>
     <message>
         <source>Data</source>
-        <translation type="vanished">Данные</translation>
+        <translation>Данные</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation type="vanished">Объект</translation>
+        <translation>Объект</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
+    </message>
+</context>
+<context>
+    <name>XLHA</name>
+    <message>
+        <source>Header</source>
+        <translation>Заголовок</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Очистить</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation type="vanished">Сегмент</translation>
+        <translation>Сегмент</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
 </context>
 <context>
     <name>XMIMEWidget</name>
     <message>
         <source>All</source>
-        <translation type="vanished">Все</translation>
+        <translation>Все</translation>
     </message>
 </context>
 <context>
     <name>XMP3</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Dump all</source>
-        <translation type="vanished">Сдампить всё</translation>
+        <translation>Сдампить всё</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation type="vanished">Смещение в файле</translation>
+        <translation>Смещение в файле</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation type="vanished">Виртуальный адрес</translation>
+        <translation>Виртуальный адрес</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation type="vanished">Относительный виртуальный адрес</translation>
+        <translation>Относительный виртуальный адрес</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation type="vanished">Режим</translation>
+        <translation>Режим</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation type="vanished">Порядок байт</translation>
+        <translation>Порядок байт</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation type="vanished">Архитектура</translation>
+        <translation>Архитектура</translation>
     </message>
     <message>
         <source>Show all</source>
-        <translation type="vanished">Показать всё</translation>
+        <translation>Показать всё</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Информация</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
+        <translation>Дамп в файл</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation type="vanished">Дамп</translation>
+        <translation>Дамп</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation type="vanished">Сохранить дамп</translation>
+        <translation>Сохранить дамп</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation type="vanished">Сырые данные</translation>
+        <translation>Сырые данные</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation type="vanished">Режим</translation>
-    </message>
-    <message>
-        <source>Symbols</source>
-        <translation type="vanished">Символы</translation>
+        <translation>Режим</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation type="vanished">Только чтение</translation>
+        <translation>Только чтение</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
 </context>
 <context>
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <source>Get</source>
-        <translation type="vanished">Получить</translation>
+        <translation>Получить</translation>
     </message>
     <message>
         <source>API key</source>
-        <translation type="vanished">API-ключ</translation>
+        <translation>API-ключ</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Automatic</source>
-        <translation type="vanished">Автоматически</translation>
+        <translation>Автоматически</translation>
     </message>
     <message>
         <source>Recent files</source>
-        <translation type="vanished">Недавние файлы</translation>
+        <translation>Недавние файлы</translation>
     </message>
     <message>
         <source>Code pages</source>
-        <translation type="vanished">Кодовые страницы</translation>
+        <translation>Кодовые страницы</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">Очистить</translation>
+        <translation>Очистить</translation>
+    </message>
+    <message>
+        <source>Images</source>
+        <translation>Рисунки</translation>
+    </message>
+    <message>
+        <source>Documents</source>
+        <translation>Документы</translation>
     </message>
 </context>
 <context>
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation type="vanished">Поверх всех окон</translation>
+        <translation>Поверх всех окон</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation type="vanished">Запускать только одну копию приложения</translation>
+        <translation>Запускать только одну копию приложения</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation type="vanished">Стиль</translation>
+        <translation>Стиль</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">Язык</translation>
+        <translation>Язык</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation type="vanished">Показать логотип</translation>
+        <translation>Показать логотип</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation type="vanished">Шрифт</translation>
+        <translation>Шрифт</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation type="vanished">Поминть папку последнего сканирования</translation>
+        <translation>Помнить папку последнего сканирования</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation type="vanished">Сохранять резервную копию</translation>
+        <translation>Сохранять резервную копию</translation>
     </message>
     <message>
         <source>Save history</source>
-        <translation type="vanished">Сохранить историю</translation>
+        <translation>Сохранить историю</translation>
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation type="vanished">Добавить программу в контекстное меню</translation>
+        <translation>Добавить программу в контекстное меню</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">По умолчанию</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">ОК</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation type="vanished">Внешний вид</translation>
+        <translation>Внешний вид</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">Файл</translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation type="vanished">Пожалуйста, запустите программу от имени администратора</translation>
+        <translation>Пожалуйста, запустите программу от имени администратора</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation type="vanished">Информация</translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation type="vanished">Пожалуйста, перезапустите приложение</translation>
+        <translation>Пожалуйста, перезапустите приложение</translation>
     </message>
 </context>
 <context>
     <name>XPDF</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation type="vanished">Объект</translation>
+        <translation>Объект</translation>
     </message>
     <message>
         <source>Footer</source>
-        <translation type="vanished">Футер</translation>
+        <translation>Футер</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
         <source>Application</source>
-        <translation type="vanished">Приложение</translation>
+        <translation>Приложение</translation>
     </message>
     <message>
         <source>Console</source>
-        <translation type="vanished">Консоль</translation>
+        <translation>Консоль</translation>
     </message>
     <message>
         <source>Driver</source>
-        <translation type="vanished">Драйвер</translation>
+        <translation>Драйвер</translation>
     </message>
     <message>
         <source>Boot application</source>
-        <translation type="vanished">Загрузочное приложение</translation>
+        <translation>Загрузочное приложение</translation>
     </message>
     <message>
         <source>Runtime driver</source>
-        <translation type="vanished">Драйвер времени выполнения</translation>
+        <translation>Драйвер времени выполнения</translation>
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation type="vanished">Драйвер службы загрузки</translation>
+        <translation>Драйвер службы загрузки</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation type="vanished">Секция</translation>
+        <translation>Секция</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation type="vanished">Оверлей</translation>
+        <translation>Оверлей</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation type="vanished">Невозможно открыть файл</translation>
+        <translation>Невозможно открыть файл</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation type="vanished">Файл подписан, подпись проверена.</translation>
+        <translation>Файл подписан, подпись проверена.</translation>
     </message>
     <message>
         <source>The file is not signed</source>
-        <translation type="vanished">Файл не подписан</translation>
+        <translation>Файл не подписан</translation>
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation type="vanished">Подпись присутствует, но специально не разрешена</translation>
+        <translation>Подпись присутствует, но специально не разрешена</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation type="vanished">Подпись присутствует, но не доверяет</translation>
+        <translation>Подпись присутствует, но не доверяет</translation>
     </message>
     <message>
         <source>The signature error</source>
-        <translation type="vanished">Ошибка подписи</translation>
+        <translation>Ошибка подписи</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Точка входа</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>Экспорт</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>Импорт</translation>
+    </message>
+    <message>
+        <source>Relocs</source>
+        <translation>Relocs</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>Ресурсы</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>Сертификат</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation type="vanished">Данные</translation>
+        <translation>Данные</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="vanished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Action</source>
-        <translation type="vanished">Действие</translation>
+        <translation>Действие</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">Файл</translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <source>View</source>
-        <translation type="vanished">Вид</translation>
+        <translation>Вид</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Строка</translation>
+        <translation>Строка</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation type="vanished">Строки</translation>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation type="vanished">Сигнатура</translation>
+        <translation>Сигнатура</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation type="vanished">Сигнатуры</translation>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Struct</source>
-        <translation type="vanished">Структура</translation>
+        <translation>Структура</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">Hex</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation type="vanished">Дизассемблировать</translation>
+        <translation>Дизассемблировать</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="vanished">Отладка</translation>
+        <translation>Отладка</translation>
+    </message>
+    <message>
+        <source>Trace</source>
+        <translation></translation>
     </message>
     <message>
         <source>Animate</source>
-        <translation type="vanished">Анимация</translation>
+        <translation>Анимация</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">Отладчик</translation>
+        <translation>Отладчик</translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation>Регистр</translation>
     </message>
     <message>
         <source>Register</source>
-        <translation type="vanished">Регистр</translation>
+        <translation>Регистр</translation>
     </message>
     <message>
         <source>Stack</source>
-        <translation type="vanished">Стек</translation>
+        <translation>Стек</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation type="vanished">Архив</translation>
+        <translation>Архив</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation type="vanished">Таблица</translation>
+        <translation>Таблица</translation>
     </message>
     <message>
         <source>Process</source>
-        <translation type="vanished">Процесс</translation>
+        <translation>Процесс</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation type="vanished">Память</translation>
+        <translation>Память</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation type="vanished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation type="vanished">Перейти к</translation>
+        <translation>Перейти к</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation type="vanished">Инструменты</translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">Справка</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="vanished">Выбрать</translation>
+        <translation>Выбрать</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation type="vanished">Выделение</translation>
+        <translation>Выделение</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation type="vanished">Следовать в</translation>
+        <translation>Следовать в</translation>
     </message>
     <message>
         <source>Show in</source>
-        <translation type="vanished">Показать в</translation>
+        <translation>Показать в</translation>
     </message>
     <message>
         <source>Breakpoint</source>
-        <translation type="vanished">Контрольная точка</translation>
+        <translation>Контрольная точка</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation type="vanished">Модули</translation>
+        <translation>Модули</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation type="vanished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation type="vanished">Редактор</translation>
+        <translation>Редактор</translation>
+    </message>
+    <message>
+        <source>Bookmarks</source>
+        <translation>Закладки</translation>
+    </message>
+    <message>
+        <source>Analyze</source>
+        <translation>Анализировать</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation type="vanished">Показывать</translation>
+        <translation>Показывать</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">Открыть</translation>
+        <translation>Открыть</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Save as</source>
-        <translation type="vanished">Сохранить как</translation>
+        <translation>Сохранить как</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <source>Print</source>
-        <translation type="vanished">Распечатать</translation>
+        <translation>Распечатать</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation type="vanished">Выход</translation>
+        <translation>Выход</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation type="vanished">Дамп в файл</translation>
+        <translation>Дамп в файл</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>End</source>
-        <translation type="vanished">Конец</translation>
+        <translation>Конец</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="vanished">Начало</translation>
+        <translation>Начало</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation type="vanished">Точка входа</translation>
+        <translation>Точка входа</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation type="vanished">Смещение</translation>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Размер</translation>
+        <translation>Размер</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation type="vanished">Опкод</translation>
+        <translation>Опкод</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation type="vanished">Demangle</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Далее</translation>
+        <translation>Далее</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Данные</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="vanished">Все</translation>
+        <translation>Все</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation type="vanished">Прикрепить</translation>
+        <translation>Прикрепить</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation type="vanished">Отсоединить</translation>
+        <translation>Отсоединить</translation>
     </message>
     <message>
         <source>CPU</source>
-        <translation type="vanished">Процессор</translation>
+        <translation>Процессор</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation type="vanished">Журнал</translation>
+        <translation>Журнал</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation type="vanished">Контрольные точки</translation>
+        <translation>Контрольные точки</translation>
     </message>
     <message>
         <source>Callstack</source>
-        <translation type="vanished">Стек вызовов</translation>
+        <translation>Стек вызовов</translation>
     </message>
     <message>
         <source>Threads</source>
-        <translation type="vanished">Потоки</translation>
+        <translation>Потоки</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation type="vanished">Хэндлы</translation>
+        <translation>Хэндлы</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation type="vanished">Символы</translation>
+        <translation>Символы</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation type="vanished">Сочетания клавиш</translation>
+        <translation>Сочетания клавиш</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">Настройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <source>About</source>
-        <translation type="vanished">О программе</translation>
+        <translation>О программе</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation type="vanished">Имя файла</translation>
+        <translation>Имя файла</translation>
     </message>
     <message>
         <source>Structs</source>
-        <translation type="vanished">Структуры</translation>
+        <translation>Структуры</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation type="vanished">Просмотрщик</translation>
+        <translation>Просмотрщик</translation>
     </message>
     <message>
         <source>Folder</source>
-        <translation type="vanished">Директория</translation>
+        <translation>Директория</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation type="vanished">Запустить</translation>
+        <translation>Запустить</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation type="vanished">Пауза</translation>
+        <translation>Пауза</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation type="vanished">Шаг внутрь</translation>
+        <translation>Шаг внутрь</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation type="vanished">Шаг поверх</translation>
+        <translation>Шаг поверх</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">Стоп</translation>
+        <translation>Стоп</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation type="vanished">Рестарт</translation>
+        <translation>Рестарт</translation>
     </message>
     <message>
         <source>Toggle</source>
-        <translation type="vanished">Переключать</translation>
+        <translation>Переключать</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation type="vanished">Энтропия</translation>
+        <translation>Энтропия</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation type="vanished">Хеш</translation>
+        <translation>Хеш</translation>
+    </message>
+    <message>
+        <source>Full screen</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>Внешние ссылки</translation>
+    </message>
+    <message>
+        <source>Bookmark</source>
+        <translation>Закладка</translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation>Список</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
     </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation type="vanished">Текстовые файлы</translation>
+        <translation>Текстовые файлы</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation type="vanished">Все файлы</translation>
+        <translation>Все файлы</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation type="vanished">Невозможно сохранить файл</translation>
+        <translation>Невозможно сохранить файл</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">Открыть файл</translation>
+        <translation>Открыть файл</translation>
     </message>
 </context>
 <context>
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
-    </message>
-    <message>
-        <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation type="vanished">Очистить</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
-        <source>Size</source>
-        <translation type="vanished">Размер</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="vanished">Источник</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation type="vanished">Тип</translation>
+        <source>Module</source>
+        <translation>Модуль</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation type="vanished">Символ</translation>
+        <translation>Символ</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation type="vanished">Символы</translation>
+        <translation>Символы</translation>
     </message>
 </context>
 <context>
     <name>XTiff</name>
     <message>
         <source>Header</source>
-        <translation type="vanished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation type="vanished">Таблица</translation>
+        <translation>Таблица</translation>
     </message>
 </context>
 <context>
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">Форма</translation>
-    </message>
-    <message>
-        <source>Rescan</source>
-        <translation type="vanished">Пересканировать</translation>
-    </message>
-    <message>
-        <source>Show detects</source>
-        <translation type="vanished">Показать обнаружение</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation type="vanished">Веб-сайт</translation>
+        <translation>Веб-сайт</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation>Пересканировать</translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation>Показать обнаружение</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation type="vanished">Информация</translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation type="vanished">Загрузить файл для анализа?</translation>
+        <translation>Загрузить файл для анализа?</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Сканировать</translation>
+        <translation>Сканировать</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="vanished">Версия</translation>
+        <translation>Версия</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="vanished">Дата</translation>
+        <translation>Дата</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="vanished">Результат</translation>
+        <translation>Результат</translation>
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation type="vanished">Пожалуйста, используйте действительный ключ API-ключ</translation>
+        <translation>Пожалуйста, используйте действительный ключ API-ключ</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">Настройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation type="vanished">Онлайн-инструменты</translation>
+        <translation>Онлайн-инструменты</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
+        <translation>Ошибка</translation>
+    </message>
+</context>
+<context>
+    <name>XVisualizationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Форма</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Тип</translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation>Ширина</translation>
+    </message>
+    <message>
+        <source>Height</source>
+        <translation>Подсветка синтаксиса</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>Обновить</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Block size</source>
+        <translation>Размер файла</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>Метод</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation>Регионы</translation>
+    </message>
+    <message>
+        <source>Highlights</source>
+        <translation>Подсветка синтаксиса</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Энтропия</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
+    </message>
+</context>
+<context>
+    <name>XZlib</name>
+    <message>
+        <source>Header</source>
+        <translation>Заголовок</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>Футер</translation>
+    </message>
+</context>
+<context>
+    <name>YARAWidgetAdvanced</name>
+    <message>
+        <source>Rules</source>
+        <translation>Модули</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Сохранить</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Сканировать</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Смещение</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Размер</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Имя</translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation>Текстовые файлы</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>Все файлы</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Ошибка</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>Невозможно сохранить файл</translation>
+    </message>
+</context>
+<context>
+    <name>YARA_Widget</name>
+    <message>
+        <source>Rules</source>
+        <translation>Модули</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Сканировать</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Стоп</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation>мс</translation>
     </message>
 </context>
 </TS>
