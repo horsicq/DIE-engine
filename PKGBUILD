@@ -77,7 +77,7 @@ package() {
 
   echo -e "${_prefix}Creating the package base"
   install -d "$pkgdir"/{opt/"${_pkgname}",usr/bin,usr/share/pixmaps}
-  install -d "$pkgdir/opt/${_pkgname}"/{lang,qss,info,db,signatures,images}
+  install -d "$pkgdir/opt/${_pkgname}"/{lang,qss,info,db,signatures,images,yara_rules}
 
   echo -e "${_prefix}Copying the package binaries"
   install -Dm 755 build/release/die -t "$pkgdir"/opt/"${_pkgname}"
