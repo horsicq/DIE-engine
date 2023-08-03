@@ -29,8 +29,8 @@ public:
     ConsoleOutput(QObject *pParent = nullptr);
 
 public slots:
-    void errorMessage(QString sErrorMessage);
-    void infoMessage(QString sInfoMessage);
+    void errorMessage(const QString &sErrorMessage);
+    void infoMessage(const QString &sInfoMessage);
 };
 
 #endif  // CONSOLEOUTPUT_H
