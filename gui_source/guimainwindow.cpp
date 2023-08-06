@@ -84,6 +84,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     ui->widgetFormats->setGlobal(&g_xShortcuts, &g_xOptions);
 
     connect(&g_xOptions, SIGNAL(openFile(QString)), this, SLOT(_process(QString)));
+    connect(&g_xOptions, SIGNAL(errorMessage(QString)), this, SLOT(errorMessageSlot(QString)));
 
     g_pRecentFilesMenu = g_xOptions.createRecentFilesMenu(this);
 
@@ -194,6 +195,11 @@ void GuiMainWindow::setAdvanced(bool bState)
     }
 
     ui->widgetFormats->setAdvanced(bState);
+}
+
+void GuiMainWindow::errorMessageSlot(const QString &sText)
+{
+    QMessageBox::critical(this, tr("Error"), sText);
 }
 
 void GuiMainWindow::_process(const QString &sName)

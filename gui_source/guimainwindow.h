@@ -74,6 +74,7 @@ private slots:
     void updateShortcuts();
     void adjustFile();
     void setAdvanced(bool bState);
+    void errorMessageSlot(const QString &sText);
 
 public slots:
     void _process(const QString &sName);
