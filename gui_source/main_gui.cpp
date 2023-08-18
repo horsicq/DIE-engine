@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
         if (xOptions.getValue(XOptions::ID_VIEW_SELECTSTYLE).toBool()) {
             DialogSelectStyle dialogSelectStyle;
             dialogSelectStyle.exec();
-            int nStyleCode = dialogSelectStyle.getStyleCode();
+            qint32 nStyleCode = dialogSelectStyle.getStyleCode();
 
             if (nStyleCode == 2) {
                 xOptions.setValue(XOptions::ID_VIEW_QSS, "orange_fix");
