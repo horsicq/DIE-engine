@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
         app.enableSingleInstance();
     }
 
-    int nResult = 0;
+    qint32 nResult = 0;
 
     if (app.isPrimary()) {
         if (xOptions.getValue(XOptions::ID_VIEW_SELECTSTYLE).toBool()) {
