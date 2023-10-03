@@ -73,17 +73,7 @@ DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::Dialog
 
     _data.sLogoPath = ":/images/about.png";
     _data.sUpdatesLink = "https://github.com/horsicq/DIE-engine/releases";
-
-#ifndef QT_DEBUG
-    _data.sThanksPath = XOptions().getApplicationDataPath() + QDir::separator() + "images" + QDir::separator() + "thanks";
-#else
-    QDir dir(XOptions().getApplicationDataPath());
-
-    dir.cdUp();
-    dir.cdUp();
-
-    _data.sThanksPath = dir.absolutePath() + QDir::separator() + "images" + QDir::separator() + "thanks";
-#endif
+    _data.sThanksLink = "https://github.com/horsicq/DIE-engine/blob/master/THANKS.md";
 
     ui->widgetAbout->setData(_data);
 }
