@@ -621,6 +621,20 @@
     </td>
 </tr>
 <tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/KDSS.png" /></td>
+    <td>
+      <p>
+        <big><b>KDSS</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/KDSS-Research">KDSS-Research</a>
+      </p>
+      <p>
+        Twitter: <a href="https://twitter.com/KdssSupport">KdssSupport</a>
+      </p>
+    </td>
+</tr>
+<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/ktgkbh.png" /></td>
     <td>
       <p>
