@@ -8,6 +8,7 @@ TARGET = die
 XCONFIG += use_dex
 XCONFIG += use_pdf
 XCONFIG += use_archive
+XCONFIG += use_yara
 
 macx {
     TARGET = DiE
