@@ -202,6 +202,9 @@ int main(int argc, char *argv[])
     QCommandLineOption clDatabase(QStringList() << "D"
                                                 << "database",
                                   "Set database<path>.", "path");
+    QCommandLineOption clCustomDatabase(QStringList() << "C"
+                                                << "customdatabase",
+                                  "Set custom database<path>.", "path");
     QCommandLineOption clShowDatabase(QStringList() << "s"
                                                     << "showdatabase",
                                       "Show database.");
@@ -225,6 +228,7 @@ int main(int argc, char *argv[])
     parser.addOption(clResultAsCSV);
     parser.addOption(clResultAsTSV);
     parser.addOption(clDatabase);
+    parser.addOption(clCustomDatabase);
     parser.addOption(clShowDatabase);
     parser.addOption(clShowMethods);
 
@@ -252,9 +256,14 @@ int main(int argc, char *argv[])
     scanOptions.sSpecial = parser.value(clSpecial);
 
     QString sDatabase = parser.value(clDatabase);
+    QString sCustomDatabase = parser.value(clCustomDatabase);
 
     if (sDatabase == "") {
         sDatabase = XOptions().getApplicationDataPath() + QDir::separator() + "db";
+    }
+
+    if (sCustomDatabase == "") {
+        sCustomDatabase = XOptions().getApplicationDataPath() + QDir::separator() + "db_custom";
     }
 
     ConsoleOutput consoleOutput;
@@ -268,11 +277,13 @@ int main(int argc, char *argv[])
 
     if (parser.isSet(clShowDatabase)) {
         if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(sDatabase);
+            bDbLoaded = die_script.loadDatabase(sDatabase, true);
+            die_script.loadDatabase(sCustomDatabase, false);
             bIsDbUsed = true;
         }
 
         printf("Database: %s\n", sDatabase.toUtf8().data());
+        printf("Custom database: %s\n", sCustomDatabase.toUtf8().data());
 
         QList<DiE_Script::SIGNATURE_STATE> list = die_script.getSignatureStates();
 
@@ -301,7 +312,8 @@ int main(int argc, char *argv[])
         }
     } else if (listArgs.count()) {
         if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(sDatabase);
+            bDbLoaded = die_script.loadDatabase(sDatabase, true);
+            die_script.loadDatabase(sCustomDatabase, false);
             bIsDbUsed = true;
         }
 

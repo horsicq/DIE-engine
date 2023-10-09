@@ -36,6 +36,7 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     g_xOptions.addID(XOptions::ID_SCAN_VERBOSE, true);
     g_xOptions.addID(XOptions::ID_SCAN_ALLTYPES, false);
     g_xOptions.addID(XOptions::ID_SCAN_DATABASEPATH, "$data/db");
+    g_xOptions.addID(XOptions::ID_SCAN_CUSTOMDATABASEPATH, "$data/db_custom");
 
     g_xOptions.load();
 
@@ -51,7 +52,8 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     XOptions::setMonoFont(ui->plainTextEditResult);
 
     g_pDieScript = new DiE_Script;
-    g_pDieScript->loadDatabase(XOptions().getApplicationDataPath() + QDir::separator() + "db");
+    g_pDieScript->loadDatabase(g_xOptions.getDatabasePath(), true);
+    g_pDieScript->loadDatabase(g_xOptions.getCustomDatabasePath(), false);
 
     if (QCoreApplication::arguments().count() > 1) {
         QString sFileName = QCoreApplication::arguments().at(1);
