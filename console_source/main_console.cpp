@@ -203,8 +203,8 @@ int main(int argc, char *argv[])
                                                 << "database",
                                   "Set database<path>.", "path");
     QCommandLineOption clCustomDatabase(QStringList() << "C"
-                                                << "customdatabase",
-                                  "Set custom database<path>.", "path");
+                                                      << "customdatabase",
+                                        "Set custom database<path>.", "path");
     QCommandLineOption clShowDatabase(QStringList() << "s"
                                                     << "showdatabase",
                                       "Show database.");
