@@ -243,8 +243,8 @@
         <translation>Veritabanı</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>Veritabanı yüklenemiyor</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -484,8 +484,16 @@
         <translation>Renkler</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>Ad</translation>
+        <source>Comment</source>
+        <translation>Yorum</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Ofset</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>İptal</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>Metin</translation>
+        <source>Registers</source>
+        <translation>Yazmaç</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>Renkler</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>Analiz Et</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Disasm</translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>Semboller</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>Kapat</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>Fonksiyonlar</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>Referanslar</translation>
     </message>
 </context>
 <context>
@@ -1932,8 +1949,8 @@
         <translation>Disasm</translation>
     </message>
     <message>
-        <source>Visualisation</source>
-        <translation></translation>
+        <source>Visualization</source>
+        <translation>Görselleştirme</translation>
     </message>
     <message>
         <source>Files</source>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>Çıkış</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Hata</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>Adres</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation>Ofset</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>Bilgi</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Özyinelemeli tarama</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>Bilgi</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation>Görselleştirme</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Özet</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>İmzalar</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>Ayıklayıcı</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Ara</translation>
     </message>
 </context>
 <context>
@@ -3275,6 +3316,10 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
+        <source>Type</source>
+        <translation>Tip</translation>
+    </message>
+    <message>
         <source>C Strings</source>
         <translation>C Dizgeleri</translation>
     </message>
@@ -3485,16 +3530,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Check updates</source>
-        <translation>Güncellemeleri denetle</translation>
-    </message>
-    <message>
         <source>Thanks</source>
         <translation>Teşekkürler</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>İnternet sitesi</translation>
+        <source>Check updates</source>
+        <translation>Güncellemeleri denetle</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3562,6 +3603,10 @@
     <message>
         <source>Region</source>
         <translation>Bölge</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>İşlem</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3838,6 +3883,10 @@
         <translation>Düzenle</translation>
     </message>
     <message>
+        <source>Bookmarks</source>
+        <translation>Yer imleri</translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation>Dosyaya dök</translation>
     </message>
@@ -3874,6 +3923,10 @@
         <translation>Referanslar</translation>
     </message>
     <message>
+        <source>All</source>
+        <translation>Tümü</translation>
+    </message>
+    <message>
         <source>Disasm</source>
         <translation>Disasm</translation>
     </message>
@@ -3886,12 +3939,32 @@
         <translation>Semboller</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>Fonksiyonlar</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Temizle</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation>Yeni</translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation>Liste</translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>Entry point</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>Göreceli adres</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiket</translation>
     </message>
 </context>
 <context>
@@ -4363,6 +4436,10 @@
         <translation>Çevirici</translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation>Cryptor</translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation>Cryptor</translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>Sanal makine</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4545,6 +4634,10 @@
     <message>
         <source>Symbols</source>
         <translation>Semboller</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>Veri denetçisi</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4971,6 +5064,10 @@
 <context>
     <name>XOptions</name>
     <message>
+        <source>Cannot find file</source>
+        <translation>Dosya yüklenemiyor</translation>
+    </message>
+    <message>
         <source>Automatic</source>
         <translation>Otomatik</translation>
     </message>
@@ -5372,6 +5469,10 @@
         <translation>Analiz Et</translation>
     </message>
     <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>Göster</translation>
     </message>
@@ -5492,6 +5593,14 @@
         <translation>Semboller</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>Fonksiyonlar</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Temizle</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>Kısayollar</translation>
     </message>
@@ -5575,6 +5684,10 @@
         <source>Remove</source>
         <translation>Kaldır</translation>
     </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>Veri denetçisi</translation>
+    </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
@@ -5618,12 +5731,20 @@
         <translation>Adres</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation>Modül</translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>Sembol</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Boyut</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Ad</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5760,6 +5881,13 @@
     </message>
 </context>
 <context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>Başlat</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>Bilgi</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>Modüller</translation>

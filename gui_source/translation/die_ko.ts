@@ -243,8 +243,8 @@
         <translation>데이터베이스</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>데이터베이스를 로드할 수 없습니다.</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -484,8 +484,16 @@
         <translation>색상</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>이름</translation>
+        <source>Comment</source>
+        <translation>주석</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>취소</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>텍스트</translation>
+        <source>Registers</source>
+        <translation>레지스터</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>색상</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>분석</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>디스어셈</translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>심볼</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>닫기</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>함수</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>외부 참조</translation>
     </message>
 </context>
 <context>
@@ -1932,7 +1949,7 @@
         <translation>디스어셈</translation>
     </message>
     <message>
-        <source>Visualisation</source>
+        <source>Visualization</source>
         <translation></translation>
     </message>
     <message>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>끝내기</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>오류</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>주소</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>재귀적 검색</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>정보</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>해시</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>시그니처</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>검색</translation>
     </message>
 </context>
 <context>
@@ -3275,6 +3316,10 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
+        <source>Type</source>
+        <translation>유형</translation>
+    </message>
+    <message>
         <source>C Strings</source>
         <translation>C 문자열</translation>
     </message>
@@ -3485,16 +3530,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Check updates</source>
-        <translation>업데이트 확인</translation>
-    </message>
-    <message>
         <source>Thanks</source>
         <translation>감사</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>웹사이트</translation>
+        <source>Check updates</source>
+        <translation>업데이트 확인</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3562,6 +3603,10 @@
     <message>
         <source>Region</source>
         <translation>지역</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>프로세스</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3838,6 +3883,10 @@
         <translation>편집</translation>
     </message>
     <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation>파일로 덤프</translation>
     </message>
@@ -3874,6 +3923,10 @@
         <translation>외부 참조</translation>
     </message>
     <message>
+        <source>All</source>
+        <translation>모두</translation>
+    </message>
+    <message>
         <source>Disasm</source>
         <translation>디스어셈</translation>
     </message>
@@ -3886,12 +3939,32 @@
         <translation>심볼</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>함수</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>지우기</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>진입 지점</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>상대 주소</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>레이블</translation>
     </message>
 </context>
 <context>
@@ -4363,6 +4436,10 @@
         <translation>변환기</translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation>크립터</translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation>크립터</translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>가상 기기</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4545,6 +4634,10 @@
     <message>
         <source>Symbols</source>
         <translation>심볼</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>데이터 검사기</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4971,6 +5064,10 @@
 <context>
     <name>XOptions</name>
     <message>
+        <source>Cannot find file</source>
+        <translation>파일을 로드할 수 없습니다</translation>
+    </message>
+    <message>
         <source>Automatic</source>
         <translation>자동적 인</translation>
     </message>
@@ -5372,6 +5469,10 @@
         <translation>분석</translation>
     </message>
     <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>보여주기</translation>
     </message>
@@ -5492,6 +5593,14 @@
         <translation>심볼</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>함수</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>지우기</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>바로가기</translation>
     </message>
@@ -5575,6 +5684,10 @@
         <source>Remove</source>
         <translation></translation>
     </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>데이터 검사기</translation>
+    </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
@@ -5618,12 +5731,20 @@
         <translation>주소</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation>모듈</translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>심볼</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5760,6 +5881,13 @@
     </message>
 </context>
 <context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>재시작</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>모듈</translation>

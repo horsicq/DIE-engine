@@ -243,8 +243,8 @@
         <translation>دیتابیس</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>نمیتوان دیتابیس را لود کرد</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -484,8 +484,16 @@
         <translation>رنگ ها</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>نام</translation>
+        <source>Comment</source>
+        <translation>کامنت</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>ادرس حافظه</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>لغو</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>متن</translation>
+        <source>Registers</source>
+        <translation>رجیستر</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>رنگ ها</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>انالیز</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>سمبل ها</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>بستن</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>بخش ها</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1932,8 +1949,8 @@
         <translation></translation>
     </message>
     <message>
-        <source>Visualisation</source>
-        <translation></translation>
+        <source>Visualization</source>
+        <translation>مجازی سازی</translation>
     </message>
     <message>
         <source>Files</source>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>خروج</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطا</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2363,7 +2384,7 @@
     </message>
     <message>
         <source>Functions</source>
-        <translation></translation>
+        <translation>بخش ها</translation>
     </message>
     <message>
         <source>Data in code</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>ادرس حافظه</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>ادرس حافظه</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>اطلاعات</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>اسکن تجهیز</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>اطلاعات</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation>مجازی سازی</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>هش</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>امضا کننده</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>استخراج کننده</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>جستجو</translation>
     </message>
 </context>
 <context>
@@ -3275,6 +3316,10 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
+        <source>Type</source>
+        <translation>نوع</translation>
+    </message>
+    <message>
         <source>C Strings</source>
         <translation>رشته</translation>
     </message>
@@ -3485,16 +3530,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Check updates</source>
-        <translation>چک کردن به روز رسانی</translation>
-    </message>
-    <message>
         <source>Thanks</source>
         <translation>ممنون</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>وبسایت</translation>
+        <source>Check updates</source>
+        <translation>چک کردن به روز رسانی</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3562,6 +3603,10 @@
     <message>
         <source>Region</source>
         <translation>ریجن</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation></translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3838,6 +3883,10 @@
         <translation>ویرایش</translation>
     </message>
     <message>
+        <source>Bookmarks</source>
+        <translation>بوک مارک ها</translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation></translation>
     </message>
@@ -3874,6 +3923,10 @@
         <translation></translation>
     </message>
     <message>
+        <source>All</source>
+        <translation>همه</translation>
+    </message>
+    <message>
         <source>Disasm</source>
         <translation></translation>
     </message>
@@ -3886,12 +3939,32 @@
         <translation>سمبل ها</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>بخش ها</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>پاک کردن</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation>جدید</translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation>لیست</translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>نقطه شروع</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>آدرس نسبی</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>برچسب</translation>
     </message>
 </context>
 <context>
@@ -4363,6 +4436,10 @@
         <translation></translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation></translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>ماشین مجازی</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4545,6 +4634,10 @@
     <message>
         <source>Symbols</source>
         <translation>سمبل ها</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>دیتا در کد</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4971,6 +5064,10 @@
 <context>
     <name>XOptions</name>
     <message>
+        <source>Cannot find file</source>
+        <translation>نمیتوان فایل را لود کرد</translation>
+    </message>
+    <message>
         <source>Automatic</source>
         <translation>خودکار</translation>
     </message>
@@ -5372,6 +5469,10 @@
         <translation>انالیز</translation>
     </message>
     <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>دیدن</translation>
     </message>
@@ -5492,6 +5593,14 @@
         <translation>سمبل ها</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>بخش ها</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>پاک کردن</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>میانبر ها</translation>
     </message>
@@ -5575,6 +5684,10 @@
         <source>Remove</source>
         <translation>حذف</translation>
     </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>دیتا در کد</translation>
+    </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
@@ -5618,12 +5731,20 @@
         <translation>ادرس حافظه</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation>ماژول</translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>سمبل</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>سایز</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>نام</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5760,6 +5881,13 @@
     </message>
 </context>
 <context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>شروع</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>اطلاعات</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>ماژول ها</translation>

@@ -243,8 +243,8 @@
         <translation>База данных</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>Не удается загрузить базу данных</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -484,8 +484,16 @@
         <translation>Цвета</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>Имя</translation>
+        <source>Comment</source>
+        <translation>Комментарий</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Смещение</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>Отмена</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>Текст</translation>
+        <source>Registers</source>
+        <translation>Регистр</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>Цвета</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>Анализировать</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Дизассемблировать</translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>Символы</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>Закрыть</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>Функции</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>Упоминания</translation>
     </message>
 </context>
 <context>
@@ -1932,8 +1949,8 @@
         <translation>Дизассемблировать</translation>
     </message>
     <message>
-        <source>Visualisation</source>
-        <translation></translation>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
     </message>
     <message>
         <source>Files</source>
@@ -1969,7 +1986,7 @@
     </message>
     <message>
         <source>Size of image</source>
-        <translation>Размер изображения</translation>
+        <translation>Размер образа</translation>
     </message>
     <message>
         <source>Manifest</source>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>Выход</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>Адрес</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation>Смещение</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>Инфо</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Рекурсивное сканирование</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>Инфо</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation>Визуализация</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Хеш</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>Сигнатуры</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>Экстрактор</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Поиск</translation>
     </message>
 </context>
 <context>
@@ -3275,6 +3316,10 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
+        <source>Type</source>
+        <translation>Тип</translation>
+    </message>
+    <message>
         <source>C Strings</source>
         <translation>C строки</translation>
     </message>
@@ -3482,19 +3527,15 @@
     </message>
     <message>
         <source>Follow me</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Проверить обновления</translation>
+        <translation>Следовать за мной</translation>
     </message>
     <message>
         <source>Thanks</source>
         <translation>Благодарности</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>Веб-сайт</translation>
+        <source>Check updates</source>
+        <translation>Проверить обновления</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3562,6 +3603,10 @@
     <message>
         <source>Region</source>
         <translation>Область</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>Процесс</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3838,6 +3883,10 @@
         <translation>Редактировать</translation>
     </message>
     <message>
+        <source>Bookmarks</source>
+        <translation>Закладки</translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation>Дамп в файл</translation>
     </message>
@@ -3871,7 +3920,11 @@
     </message>
     <message>
         <source>References</source>
-        <translation>Внешние ссылки</translation>
+        <translation>Упоминания</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Все</translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -3886,12 +3939,32 @@
         <translation>Символы</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>Функции</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Очистить</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation>Новый</translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation>Список</translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>Точка входа</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>Относительный адрес</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Метка</translation>
     </message>
 </context>
 <context>
@@ -4363,6 +4436,10 @@
         <translation>Конвертер</translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation>Криптор</translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation>Криптор</translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>Виртуальная машина</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4547,6 +4636,10 @@
         <translation>Символы</translation>
     </message>
     <message>
+        <source>Data inspector</source>
+        <translation>Инспектор данных</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Смещение</translation>
     </message>
@@ -4596,7 +4689,7 @@
     </message>
     <message>
         <source>New</source>
-        <translation></translation>
+        <translation>Новый</translation>
     </message>
     <message>
         <source>List</source>
@@ -4696,11 +4789,11 @@
     </message>
     <message>
         <source>Paused</source>
-        <translation></translation>
+        <translation>На паузе</translation>
     </message>
     <message>
         <source>Running</source>
-        <translation></translation>
+        <translation>Запущено</translation>
     </message>
 </context>
 <context>
@@ -4970,6 +5063,10 @@
 </context>
 <context>
     <name>XOptions</name>
+    <message>
+        <source>Cannot find file</source>
+        <translation>Невозможно загрузить файл</translation>
+    </message>
     <message>
         <source>Automatic</source>
         <translation>Автоматически</translation>
@@ -5261,7 +5358,7 @@
     </message>
     <message>
         <source>Trace</source>
-        <translation></translation>
+        <translation>Трассировать</translation>
     </message>
     <message>
         <source>Animate</source>
@@ -5372,6 +5469,10 @@
         <translation>Анализировать</translation>
     </message>
     <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>Показывать</translation>
     </message>
@@ -5381,7 +5482,7 @@
     </message>
     <message>
         <source>New</source>
-        <translation></translation>
+        <translation>Новый</translation>
     </message>
     <message>
         <source>Save</source>
@@ -5492,6 +5593,14 @@
         <translation>Символы</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>Функции</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Очистить</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>Сочетания клавиш</translation>
     </message>
@@ -5557,11 +5666,11 @@
     </message>
     <message>
         <source>Full screen</source>
-        <translation></translation>
+        <translation>Полный экран</translation>
     </message>
     <message>
         <source>References</source>
-        <translation>Внешние ссылки</translation>
+        <translation>Упоминания</translation>
     </message>
     <message>
         <source>Bookmark</source>
@@ -5574,6 +5683,10 @@
     <message>
         <source>Remove</source>
         <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>Инспектор данных</translation>
     </message>
 </context>
 <context>
@@ -5618,12 +5731,20 @@
         <translation>Адрес</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation>Модуль</translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>Символ</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Размер</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Имя</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5760,6 +5881,13 @@
     </message>
 </context>
 <context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>Начало</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>Инфо</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>Модули</translation>

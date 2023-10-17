@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(die VERSION 3.08 LANGUAGES CXX)
+project(die VERSION 3.09 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -32,13 +32,7 @@ find_package(Qt5 COMPONENTS ScriptTools REQUIRED)
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
-
-if(LINUX)
-    add_definitions(-DUSE_YARA)
-endif()
-if(WIN32)
-    add_definitions(-DUSE_YARA)
-endif()
+add_definitions(-DUSE_YARA)
 
 include(${PROJECT_SOURCE_DIR}/../XMIMEWidget/xmimewidget.cmake)
 include(${PROJECT_SOURCE_DIR}/../FormatWidgets/formatwidgets.cmake)

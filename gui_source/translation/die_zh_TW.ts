@@ -243,8 +243,8 @@
         <translation>資料庫</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>無法加載數據庫</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -484,8 +484,16 @@
         <translation></translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>名稱</translation>
+        <source>Comment</source>
+        <translation>註解</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>位址</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>取消</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>文字</translation>
+        <source>Registers</source>
+        <translation>區域</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation></translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>分析</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>反組譯</translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>符號</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>關閉</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>職能</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>外部參考</translation>
     </message>
 </context>
 <context>
@@ -1932,7 +1949,7 @@
         <translation>反組譯</translation>
     </message>
     <message>
-        <source>Visualisation</source>
+        <source>Visualization</source>
         <translation></translation>
     </message>
     <message>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>退出</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>位址</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation>偏移</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>位址</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>資訊</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>遞歸掃描</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>資訊</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>雜湊值</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>簽章</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜尋</translation>
     </message>
 </context>
 <context>
@@ -3275,6 +3316,10 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
+        <source>Type</source>
+        <translation>類型</translation>
+    </message>
+    <message>
         <source>C Strings</source>
         <translation>字串</translation>
     </message>
@@ -3485,16 +3530,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Check updates</source>
-        <translation>檢查更新</translation>
-    </message>
-    <message>
         <source>Thanks</source>
         <translation>特別感謝</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>網站</translation>
+        <source>Check updates</source>
+        <translation>檢查更新</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3562,6 +3603,10 @@
     <message>
         <source>Region</source>
         <translation>地區</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>處理</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3838,6 +3883,10 @@
         <translation>編輯</translation>
     </message>
     <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation>轉存到檔案</translation>
     </message>
@@ -3874,6 +3923,10 @@
         <translation>外部參考</translation>
     </message>
     <message>
+        <source>All</source>
+        <translation>所有</translation>
+    </message>
+    <message>
         <source>Disasm</source>
         <translation>反組譯</translation>
     </message>
@@ -3886,12 +3939,32 @@
         <translation>符號</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>職能</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>清除</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>入口點</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>相對位址</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>標簽</translation>
     </message>
 </context>
 <context>
@@ -4363,6 +4436,10 @@
         <translation>轉換器</translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation>加密器</translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation>加密器</translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>虛擬機</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4545,6 +4634,10 @@
     <message>
         <source>Symbols</source>
         <translation>符號</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>代碼中的數據</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4971,6 +5064,10 @@
 <context>
     <name>XOptions</name>
     <message>
+        <source>Cannot find file</source>
+        <translation>無法加載文件</translation>
+    </message>
+    <message>
         <source>Automatic</source>
         <translation>自動</translation>
     </message>
@@ -5372,6 +5469,10 @@
         <translation>分析</translation>
     </message>
     <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>展示</translation>
     </message>
@@ -5492,6 +5593,14 @@
         <translation>符號</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>職能</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>清除</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>捷徑</translation>
     </message>
@@ -5575,6 +5684,10 @@
         <source>Remove</source>
         <translation></translation>
     </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>代碼中的數據</translation>
+    </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
@@ -5618,12 +5731,20 @@
         <translation>位址</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>象徵</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>大小</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名稱</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5760,6 +5881,13 @@
     </message>
 </context>
 <context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>重新開始</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>資訊</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>模塊</translation>

@@ -243,8 +243,8 @@
         <translation>מסד נתונים</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>לא ניתן לטעון את מסד הנתונים</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -484,8 +484,16 @@
         <translation></translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>שם</translation>
+        <source>Comment</source>
+        <translation>תגובה</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>כתובת</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>בטל</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>טֶקסט</translation>
+        <source>Registers</source>
+        <translation>אזורים</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation></translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>אבחן</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>פירוק לפקודות</translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>סמלים</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>סגור</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>פונקציות</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>הפניות חיצוניות</translation>
     </message>
 </context>
 <context>
@@ -1932,7 +1949,7 @@
         <translation>פירוק לפקודות</translation>
     </message>
     <message>
-        <source>Visualisation</source>
+        <source>Visualization</source>
         <translation></translation>
     </message>
     <message>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>יציאה</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>כתובת</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation>היסט</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>מידע</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>סריקה רקורסיבית</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>מידע</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>חתימות</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>חפש</translation>
     </message>
 </context>
 <context>
@@ -3275,6 +3316,10 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
+        <source>Type</source>
+        <translation>סוג</translation>
+    </message>
+    <message>
         <source>C Strings</source>
         <translation>מחרוזות</translation>
     </message>
@@ -3485,16 +3530,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Check updates</source>
-        <translation>בדוק עדכונים</translation>
-    </message>
-    <message>
         <source>Thanks</source>
         <translation>תודה</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>אתר אינטרנט</translation>
+        <source>Check updates</source>
+        <translation>בדוק עדכונים</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3562,6 +3603,10 @@
     <message>
         <source>Region</source>
         <translation>אזור</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>תהליך</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3838,6 +3883,10 @@
         <translation>עריכה</translation>
     </message>
     <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation>יצא כקובץ הרצה לקובץ</translation>
     </message>
@@ -3874,6 +3923,10 @@
         <translation>הפניות חיצוניות</translation>
     </message>
     <message>
+        <source>All</source>
+        <translation>הכל</translation>
+    </message>
+    <message>
         <source>Disasm</source>
         <translation>פירוק לפקודות</translation>
     </message>
@@ -3886,12 +3939,32 @@
         <translation>סמלים</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>פונקציות</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>נקה</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>כתובת תחילת הריצה</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>כתובת יחסית</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>תווית</translation>
     </message>
 </context>
 <context>
@@ -4363,6 +4436,10 @@
         <translation>ממיר</translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation>מצפין</translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation>מצפין</translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>מכונה וירטואלית</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4545,6 +4634,10 @@
     <message>
         <source>Symbols</source>
         <translation>סמלים</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>נתונים בקוד</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4971,6 +5064,10 @@
 <context>
     <name>XOptions</name>
     <message>
+        <source>Cannot find file</source>
+        <translation>לא ניתן לטעון קובץ</translation>
+    </message>
+    <message>
         <source>Automatic</source>
         <translation>אוֹטוֹמָטִי</translation>
     </message>
@@ -5372,6 +5469,10 @@
         <translation>אבחן</translation>
     </message>
     <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>הופעה</translation>
     </message>
@@ -5492,6 +5593,14 @@
         <translation>סמלים</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>פונקציות</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>נקה</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>קיצורי דרך</translation>
     </message>
@@ -5575,6 +5684,10 @@
         <source>Remove</source>
         <translation></translation>
     </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>נתונים בקוד</translation>
+    </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
@@ -5618,12 +5731,20 @@
         <translation>כתובת</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>סֵמֶל</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>גודל</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>שם</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5760,6 +5881,13 @@
     </message>
 </context>
 <context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>אתחול</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>מידע</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>מודולים</translation>

@@ -1,5 +1,5 @@
 pkgname=detect-it-easy
-pkgver=3.08
+pkgver=3.09
 pkgrel=1
 pkgdesc='Detect It Easy, or abbreviated "DIE" is a program for determining types of files'
 arch=('x86_64')
@@ -77,7 +77,7 @@ package() {
 
   echo -e "${_prefix}Creating the package base"
   install -d "$pkgdir"/{opt/"${_pkgname}",usr/bin,usr/share/pixmaps}
-  install -d "$pkgdir/opt/${_pkgname}"/{lang,qss,info,db,db_custom,signatures,images,yara_rules}
+  install -d "$pkgdir/opt/${_pkgname}"/{lang,qss,info,db,signatures,images,yara_rules}
 
   echo -e "${_prefix}Copying the package binaries"
   install -Dm 755 build/release/die -t "$pkgdir"/opt/"${_pkgname}"
@@ -89,7 +89,6 @@ package() {
   install -Dm 644 XStyles/qss/* -t "$pkgdir"/opt/"${_pkgname}"/qss
   cp -r XInfoDB/info/* -t "$pkgdir"/opt/"${_pkgname}"/info/
   cp -r Detect-It-Easy/db/* -t "$pkgdir"/opt/"${_pkgname}"/db/
-  cp -r Detect-It-Easy/db_custom/* -t "$pkgdir"/opt/"${_pkgname}"/db_custom/
   cp -r XYara/yara_rules/* -t "$pkgdir"/opt/"${_pkgname}"/yara_rules/
   install -Dm 644 signatures/crypto.db -t "$pkgdir"/opt/"${_pkgname}"/signatures
   cp -r images/* -t "$pkgdir"/opt/"${_pkgname}"/images/

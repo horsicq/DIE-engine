@@ -243,8 +243,8 @@
         <translation>قاعدة البيانات</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>لا يمكن تحميل قاعدة البيانات</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -484,8 +484,16 @@
         <translation>الالوان</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>اسم</translation>
+        <source>Comment</source>
+        <translation>تعليق</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>عنوان</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>يلغي</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>نص</translation>
+        <source>Registers</source>
+        <translation>Register</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>الالوان</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>حلل</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>كارثة</translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>حرف او رمز</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>قريب</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>المهام</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>المراجع الخارجية</translation>
     </message>
 </context>
 <context>
@@ -1932,7 +1949,7 @@
         <translation>كارثة</translation>
     </message>
     <message>
-        <source>Visualisation</source>
+        <source>Visualization</source>
         <translation></translation>
     </message>
     <message>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>مخرج</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطأ</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>عنوان</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation>Offset</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>معلومات</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>مسح تكراري</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>معلومات</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>تجزئة</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>التوقيعات</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>مستخرج</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>بحث</translation>
     </message>
 </context>
 <context>
@@ -3275,6 +3316,10 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
+        <source>Type</source>
+        <translation>نوع</translation>
+    </message>
+    <message>
         <source>C Strings</source>
         <translation>C Strings</translation>
     </message>
@@ -3485,16 +3530,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Check updates</source>
-        <translation>تفقد التحديث</translation>
-    </message>
-    <message>
         <source>Thanks</source>
         <translation>شكرا</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>موقع إلكتروني</translation>
+        <source>Check updates</source>
+        <translation>تفقد التحديث</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3562,6 +3603,10 @@
     <message>
         <source>Region</source>
         <translation>منطقة</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>معالجة</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3838,6 +3883,10 @@
         <translation>تعديل</translation>
     </message>
     <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation>تفريغ إلى ملف</translation>
     </message>
@@ -3874,6 +3923,10 @@
         <translation>المراجع الخارجية</translation>
     </message>
     <message>
+        <source>All</source>
+        <translation>الجميع</translation>
+    </message>
+    <message>
         <source>Disasm</source>
         <translation>كارثة</translation>
     </message>
@@ -3886,12 +3939,32 @@
         <translation>حرف او رمز</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>المهام</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>واضح</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>نقطة الدخول</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>العنوان النسبي</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>ملصق</translation>
     </message>
 </context>
 <context>
@@ -4363,6 +4436,10 @@
         <translation>محول</translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation>كريبتور</translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation>كريبتور</translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>آلة افتراضية</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4545,6 +4634,10 @@
     <message>
         <source>Symbols</source>
         <translation>حرف او رمز</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>مفتش البيانات</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4971,6 +5064,10 @@
 <context>
     <name>XOptions</name>
     <message>
+        <source>Cannot find file</source>
+        <translation>لا يمكنني تحميل الملف</translation>
+    </message>
+    <message>
         <source>Automatic</source>
         <translation>تلقائي</translation>
     </message>
@@ -5372,6 +5469,10 @@
         <translation>حلل</translation>
     </message>
     <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>أضهر</translation>
     </message>
@@ -5492,6 +5593,14 @@
         <translation>حرف او رمز</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>المهام</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>واضح</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>الاختصارات</translation>
     </message>
@@ -5575,6 +5684,10 @@
         <source>Remove</source>
         <translation>أزالة</translation>
     </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>مفتش البيانات</translation>
+    </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
@@ -5618,12 +5731,20 @@
         <translation>عنوان</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation>وحدة</translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>رمز</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>حجم</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>اسم</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5760,6 +5881,13 @@
     </message>
 </context>
 <context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>البدء</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>معلومات</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>الوحدات</translation>

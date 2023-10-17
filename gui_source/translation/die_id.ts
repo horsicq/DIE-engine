@@ -243,8 +243,8 @@
         <translation>Basis data</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>Tidak dapat memuat basis data</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -484,8 +484,16 @@
         <translation></translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>Nama</translation>
+        <source>Comment</source>
+        <translation>Komentar</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Alamat</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>Batal</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>Teks</translation>
+        <source>Registers</source>
+        <translation>Region</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation></translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>Analisa</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Mengulik</translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>Simbol</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>Tutup</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>Fungsi</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>Referensi eksternal</translation>
     </message>
 </context>
 <context>
@@ -1932,7 +1949,7 @@
         <translation>Mengulik</translation>
     </message>
     <message>
-        <source>Visualisation</source>
+        <source>Visualization</source>
         <translation></translation>
     </message>
     <message>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>Keluar</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Kesalahan</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>Alamat</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation>Offset</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Pemindaian rekursif</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>Info</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>Markah</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Cari</translation>
     </message>
 </context>
 <context>
@@ -3275,6 +3316,10 @@
 <context>
     <name>SearchStringsWidget</name>
     <message>
+        <source>Type</source>
+        <translation>Tipe</translation>
+    </message>
+    <message>
         <source>C Strings</source>
         <translation>String</translation>
     </message>
@@ -3485,16 +3530,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Check updates</source>
-        <translation>Periksa pembaruan</translation>
-    </message>
-    <message>
         <source>Thanks</source>
         <translation>Terimakasih</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>Situs web</translation>
+        <source>Check updates</source>
+        <translation>Periksa pembaruan</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3562,6 +3603,10 @@
     <message>
         <source>Region</source>
         <translation>Wilayah</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>Proses</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3838,6 +3883,10 @@
         <translation>Edit</translation>
     </message>
     <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Dump to file</source>
         <translation>Buang ke file</translation>
     </message>
@@ -3874,6 +3923,10 @@
         <translation>Referensi eksternal</translation>
     </message>
     <message>
+        <source>All</source>
+        <translation>Semua</translation>
+    </message>
+    <message>
         <source>Disasm</source>
         <translation>Mengulik</translation>
     </message>
@@ -3886,12 +3939,32 @@
         <translation>Simbol</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>Fungsi</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Bersihkan</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>Titik masuk</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>Alamat relatif</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Label</translation>
     </message>
 </context>
 <context>
@@ -4363,6 +4436,10 @@
         <translation>Konverter</translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation>Kriptor</translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation>Kriptor</translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>Mesin virtual</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4545,6 +4634,10 @@
     <message>
         <source>Symbols</source>
         <translation>Simbol</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>Data dalam kode</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4971,6 +5064,10 @@
 <context>
     <name>XOptions</name>
     <message>
+        <source>Cannot find file</source>
+        <translation>Tidak dapat memuat file</translation>
+    </message>
+    <message>
         <source>Automatic</source>
         <translation>Otomatis</translation>
     </message>
@@ -5372,6 +5469,10 @@
         <translation>Analisa</translation>
     </message>
     <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>Menunjukkan</translation>
     </message>
@@ -5492,6 +5593,14 @@
         <translation>Simbol</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>Fungsi</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Bersihkan</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>Jalan pintas</translation>
     </message>
@@ -5575,6 +5684,10 @@
         <source>Remove</source>
         <translation></translation>
     </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>Data dalam kode</translation>
+    </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
@@ -5618,12 +5731,20 @@
         <translation>Alamat</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>Simbol</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Ukuran</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nama</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5760,6 +5881,13 @@
     </message>
 </context>
 <context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>Mengulang kembali</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>Modul</translation>

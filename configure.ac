@@ -1,4 +1,4 @@
-AC_INIT([Detect It Easy], 3.08)
+AC_INIT([Detect It Easy], 3.09)
 AC_PROG_CC
 AC_LANG(C++)
 PKG_CHECK_MODULES(Qt5Core,              [Qt5Core >= 5.2.0],             [], [AC_MSG_ERROR([Qt5Core >= 5.2.0] is required.)])

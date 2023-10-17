@@ -108,7 +108,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -173,7 +173,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -243,8 +243,8 @@
         <translation>Base de données</translation>
     </message>
     <message>
-        <source>YARA</source>
-        <translation></translation>
+        <source>Custom database</source>
+        <translation>Impossible de charger la base de données</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -465,7 +465,7 @@
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>Favoris</translation>
     </message>
     <message>
         <source>OK</source>
@@ -484,8 +484,16 @@
         <translation>Couleurs</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>Nom</translation>
+        <source>Comment</source>
+        <translation>Commentaire</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1542,13 +1550,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmReferences</name>
-    <message>
-        <source>Dialog</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
@@ -1563,8 +1564,12 @@
         <translation>Annuler</translation>
     </message>
     <message>
-        <source>Text</source>
-        <translation>Texte</translation>
+        <source>Registers</source>
+        <translation>Enregistrer</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>Couleurs</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1622,6 +1627,10 @@
         <translation>Analyser</translation>
     </message>
     <message>
+        <source>Disasm</source>
+        <translation>Désassembler</translation>
+    </message>
+    <message>
         <source>Symbols</source>
         <translation>Symboles</translation>
     </message>
@@ -1651,6 +1660,14 @@
     <message>
         <source>Close</source>
         <translation>Fermer</translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation>Les fonctions</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>Références</translation>
     </message>
 </context>
 <context>
@@ -1730,7 +1747,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -1932,8 +1949,8 @@
         <translation>Désassembler</translation>
     </message>
     <message>
-        <source>Visualisation</source>
-        <translation></translation>
+        <source>Visualization</source>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Files</source>
@@ -1941,7 +1958,7 @@
     </message>
     <message>
         <source>Unpack</source>
-        <translation></translation>
+        <translation>Décompresser</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -2053,6 +2070,10 @@
     <message>
         <source>Exit</source>
         <translation>Sortie</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Erreur</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2179,7 +2200,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2283,7 +2304,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2426,7 +2447,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2452,12 +2473,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Address</source>
-        <translation>Adresse</translation>
+        <source>Number</source>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
         <translation>Offset</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2527,7 +2552,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2635,6 +2660,10 @@
 <context>
     <name>NFD_Widget</name>
     <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Analyse récursive</translation>
     </message>
@@ -2706,12 +2735,24 @@
         <translation>Info</translation>
     </message>
     <message>
+        <source>Visualization</source>
+        <translation>Visualisation</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
         <translation>Signatures</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>Extracteur</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Chercher</translation>
     </message>
 </context>
 <context>
@@ -2987,7 +3028,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -3249,7 +3290,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Afficher les intrants</translation>
+        <translation>Suivre en</translation>
     </message>
     <message>
         <source>Name</source>
@@ -3274,6 +3315,10 @@
 </context>
 <context>
     <name>SearchStringsWidget</name>
+    <message>
+        <source>Type</source>
+        <translation>Type</translation>
+    </message>
     <message>
         <source>C Strings</source>
         <translation>Chaîne C</translation>
@@ -3300,7 +3345,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Afficher les intrants</translation>
+        <translation>Suivre en</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -3359,7 +3404,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Afficher les intrants</translation>
+        <translation>Suivre en</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3482,19 +3527,15 @@
     </message>
     <message>
         <source>Follow me</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Check updates</source>
-        <translation>Vérifier les mises à jour</translation>
+        <translation>Suivez moi</translation>
     </message>
     <message>
         <source>Thanks</source>
         <translation>Remerciements</translation>
     </message>
     <message>
-        <source>Website</source>
-        <translation>Site Internet</translation>
+        <source>Check updates</source>
+        <translation>Vérifier les mises à jour</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3502,23 +3543,23 @@
     </message>
     <message>
         <source>Update information</source>
-        <translation></translation>
+        <translation>Mettre à jour les informations</translation>
     </message>
     <message>
         <source>New version available</source>
-        <translation></translation>
+        <translation>Nouvelle version disponible</translation>
     </message>
     <message>
         <source>Go to download page?</source>
-        <translation></translation>
+        <translation>Aller a la page de téléchargement?</translation>
     </message>
     <message>
         <source>No update available</source>
-        <translation></translation>
+        <translation>Aucune mise à jour disponible</translation>
     </message>
     <message>
         <source>Network error</source>
-        <translation></translation>
+        <translation>Erreur de réseau</translation>
     </message>
     <message>
         <source>Information</source>
@@ -3557,11 +3598,15 @@
     </message>
     <message>
         <source>256-bit</source>
-        <translation></translation>
+        <translation>256 bits</translation>
     </message>
     <message>
         <source>Region</source>
         <translation>Région</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>Traiter</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -3831,11 +3876,15 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Afficher les intrants</translation>
+        <translation>Suivre en</translation>
     </message>
     <message>
         <source>Edit</source>
         <translation>Éditer</translation>
+    </message>
+    <message>
+        <source>Bookmarks</source>
+        <translation>Favoris</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3871,7 +3920,11 @@
     </message>
     <message>
         <source>References</source>
-        <translation>Références externes</translation>
+        <translation>Références</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Tout</translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -3886,12 +3939,32 @@
         <translation>Symboles</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>Les fonctions</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Nettoyer</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation>Nouvelle</translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation>Liste</translation>
+    </message>
+    <message>
         <source>Entry point</source>
         <translation>Point d&apos;entrée</translation>
     </message>
     <message>
         <source>Relative address</source>
         <translation>Adresse relative</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Étiquette</translation>
     </message>
 </context>
 <context>
@@ -4191,7 +4264,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Afficher les intrants</translation>
+        <translation>Suivre en</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -4363,6 +4436,10 @@
         <translation>Convertisseur</translation>
     </message>
     <message>
+        <source>Crypter</source>
+        <translation>Crypteur</translation>
+    </message>
+    <message>
         <source>Cryptor</source>
         <translation>Crypteur</translation>
     </message>
@@ -4474,6 +4551,18 @@
         <source>Virtual machine</source>
         <translation>Machine virtuelle</translation>
     </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XGzip</name>
@@ -4547,6 +4636,10 @@
         <translation>Symboles</translation>
     </message>
     <message>
+        <source>Data inspector</source>
+        <translation>Inspecteur de données</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Offset</translation>
     </message>
@@ -4596,11 +4689,11 @@
     </message>
     <message>
         <source>New</source>
-        <translation></translation>
+        <translation>Nouvelle</translation>
     </message>
     <message>
         <source>List</source>
-        <translation></translation>
+        <translation>Liste</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -4624,7 +4717,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Afficher les intrants</translation>
+        <translation>Suivre en</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -4632,11 +4725,11 @@
     </message>
     <message>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>Favoris</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation></translation>
+        <translation>Largeur</translation>
     </message>
 </context>
 <context>
@@ -4696,11 +4789,11 @@
     </message>
     <message>
         <source>Paused</source>
-        <translation></translation>
+        <translation>En Pause</translation>
     </message>
     <message>
         <source>Running</source>
-        <translation></translation>
+        <translation>En marche</translation>
     </message>
 </context>
 <context>
@@ -4970,6 +5063,10 @@
 </context>
 <context>
     <name>XOptions</name>
+    <message>
+        <source>Cannot find file</source>
+        <translation>Impossible de charger le fichier</translation>
+    </message>
     <message>
         <source>Automatic</source>
         <translation>Automatique</translation>
@@ -5333,7 +5430,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Afficher les intrants</translation>
+        <translation>Suivre en</translation>
     </message>
     <message>
         <source>Show in</source>
@@ -5365,11 +5462,15 @@
     </message>
     <message>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>Favoris</translation>
     </message>
     <message>
         <source>Analyze</source>
         <translation>Analyser</translation>
+    </message>
+    <message>
+        <source>Hardware</source>
+        <translation></translation>
     </message>
     <message>
         <source>Show</source>
@@ -5381,7 +5482,7 @@
     </message>
     <message>
         <source>New</source>
-        <translation></translation>
+        <translation>Nouvelle</translation>
     </message>
     <message>
         <source>Save</source>
@@ -5492,6 +5593,14 @@
         <translation>Symboles</translation>
     </message>
     <message>
+        <source>Functions</source>
+        <translation>Les fonctions</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Nettoyer</translation>
+    </message>
+    <message>
         <source>Shortcuts</source>
         <translation>Raccourcis</translation>
     </message>
@@ -5557,23 +5666,27 @@
     </message>
     <message>
         <source>Full screen</source>
-        <translation></translation>
+        <translation>Plein ecran</translation>
     </message>
     <message>
         <source>References</source>
-        <translation>Références externes</translation>
+        <translation>Références</translation>
     </message>
     <message>
         <source>Bookmark</source>
-        <translation></translation>
+        <translation>Ajouter aux favoris</translation>
     </message>
     <message>
         <source>List</source>
-        <translation></translation>
+        <translation>Liste</translation>
     </message>
     <message>
         <source>Remove</source>
         <translation>Enlever</translation>
+    </message>
+    <message>
+        <source>Data inspector</source>
+        <translation>Inspecteur de données</translation>
     </message>
 </context>
 <context>
@@ -5618,12 +5731,20 @@
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>Module</source>
-        <translation>Module</translation>
-    </message>
-    <message>
         <source>Symbol</source>
         <translation>Symbole</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Taille</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nom</translation>
+    </message>
+    <message>
+        <source>Code</source>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -5720,7 +5841,7 @@
     </message>
     <message>
         <source>Width</source>
-        <translation></translation>
+        <translation>Largeur</translation>
     </message>
     <message>
         <source>Height</source>
@@ -5756,7 +5877,14 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>Visualisation</translation>
+    </message>
+</context>
+<context>
+    <name>XYara</name>
+    <message>
+        <source>Start</source>
+        <translation>Commencer</translation>
     </message>
 </context>
 <context>
@@ -5815,6 +5943,10 @@
 </context>
 <context>
     <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
     <message>
         <source>Rules</source>
         <translation>Modules</translation>
