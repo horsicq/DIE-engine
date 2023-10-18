@@ -49,6 +49,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY, true);
     g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP, true);
     g_xOptions.addID(XOptions::ID_FILE_SAVERECENTFILES, true);
+    g_xOptions.addID(XOptions::ID_VIEW_FONT, "");
 #ifdef Q_OS_WIN
     g_xOptions.addID(XOptions::ID_FILE_CONTEXT, "*");
 #endif
