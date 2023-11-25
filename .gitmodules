@@ -154,3 +154,6 @@
 [submodule "yara_widget"]
 	path = yara_widget
 	url = https://github.com/horsicq/yara_widget
+[submodule "XDataConvertorWidget"]
+	path = XDataConvertorWidget
+	url = https://github.com/horsicq/XDataConvertorWidget
