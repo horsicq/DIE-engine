@@ -303,7 +303,7 @@ int main(int argc, char *argv[])
 
         printf("Methods:\n");
 
-        QList<XFileInfo::METHOD> listMethods = XFileInfo::getMethodNames(fileType);
+        QList<XFileInfo::METHOD_DATA> listMethods = XFileInfo::getMethodNames(fileType);
 
         qint32 nNumberOfMethods = listMethods.count();
 
