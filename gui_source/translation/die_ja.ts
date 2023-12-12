@@ -244,7 +244,7 @@
     </message>
     <message>
         <source>Custom database</source>
-        <translation>データベースを読み込めません</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Editor</source>
@@ -462,6 +462,33 @@
     </message>
 </context>
 <context>
+    <name>DialogBits8</name>
+    <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>16 進数</translation>
+    </message>
+    <message>
+        <source>Signed</source>
+        <translation>署名</translation>
+    </message>
+    <message>
+        <source>Unsigned</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
@@ -497,7 +524,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation>背景</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1191,6 +1218,13 @@
     </message>
 </context>
 <context>
+    <name>DialogNFDWidgetAdvanced</name>
+    <message>
+        <source>Close</source>
+        <translation>閉じる</translation>
+    </message>
+</context>
+<context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
@@ -1226,6 +1260,52 @@
     <message>
         <source>Process</source>
         <translation>プロセス</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+</context>
+<context>
+    <name>DialogRemove</name>
+    <message>
+        <source>Remove</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>サイズ</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>16 進数</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+</context>
+<context>
+    <name>DialogResize</name>
+    <message>
+        <source>Resize</source>
+        <translation>サイズを保持</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>サイズ</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>16 進数</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1550,7 +1630,7 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmViewColors</name>
+    <name>DialogViewColors</name>
     <message>
         <source>Colors</source>
         <translation>色</translation>
@@ -1564,16 +1644,23 @@
         <translation>キャンセル</translation>
     </message>
     <message>
-        <source>Registers</source>
-        <translation>レジスター</translation>
-    </message>
-    <message>
         <source>Color</source>
         <translation>色</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation>背景</translation>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDataConvertor</name>
+    <message>
+        <source>Data convertor</source>
+        <translation>データ インスペクター</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1672,6 +1759,13 @@
 </context>
 <context>
     <name>DialogXVirusTotal</name>
+    <message>
+        <source>Close</source>
+        <translation>閉じる</translation>
+    </message>
+</context>
+<context>
+    <name>DialogYARAWidgetAdvanced</name>
     <message>
         <source>Close</source>
         <translation>閉じる</translation>
@@ -3653,6 +3747,14 @@
         <translation>無効な 署名</translation>
     </message>
     <message>
+        <source>true</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>書き込みエラー</translation>
     </message>
@@ -3674,7 +3776,7 @@
     </message>
     <message>
         <source>MiB</source>
-        <translation></translation>
+        <translation>MB</translation>
     </message>
     <message>
         <source>MB</source>
@@ -3682,7 +3784,7 @@
     </message>
     <message>
         <source>GiB</source>
-        <translation></translation>
+        <translation>GB</translation>
     </message>
     <message>
         <source>GB</source>
@@ -3750,6 +3852,48 @@
     </message>
 </context>
 <context>
+    <name>XDataConvertor</name>
+    <message>
+        <source>Read error</source>
+        <translation>読み取りエラー</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>書き込みエラー</translation>
+    </message>
+    <message>
+        <source>Cannot resize</source>
+        <translation>ファイルを開けません</translation>
+    </message>
+</context>
+<context>
+    <name>XDataConvertorWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>フォーム</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>方法</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>16 進数</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>サイズ</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>エントロピー</translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation>ダンプ</translation>
+    </message>
+</context>
+<context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
@@ -3765,6 +3909,13 @@
     <message>
         <source>Mode</source>
         <translation>モード</translation>
+    </message>
+</context>
+<context>
+    <name>XDeviceTableEditView</name>
+    <message>
+        <source>Cannot resize</source>
+        <translation>ファイルを開けません</translation>
     </message>
 </context>
 <context>
@@ -3992,6 +4143,58 @@
     <message>
         <source>Colors</source>
         <translation>色</translation>
+    </message>
+    <message>
+        <source>Arrows</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>すべて</translation>
+    </message>
+    <message>
+        <source>Selected</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation>レジスター</translation>
+    </message>
+    <message>
+        <source>Numbers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcodes</source>
+        <translation>Opcode</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>外部参照</translation>
+    </message>
+    <message>
+        <source>General registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Instruction pointer register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags register</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4437,7 +4640,7 @@
     </message>
     <message>
         <source>Crypter</source>
-        <translation>暗号化</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Cryptor</source>
@@ -4640,6 +4843,14 @@
         <translation>データ インスペクター</translation>
     </message>
     <message>
+        <source>Data convertor</source>
+        <translation>データ インスペクター</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>オフセット</translation>
     </message>
@@ -4688,12 +4899,24 @@
         <translation>メモリ マップ</translation>
     </message>
     <message>
+        <source>Remove</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resize</source>
+        <translation>サイズを保持</translation>
+    </message>
+    <message>
         <source>New</source>
         <translation></translation>
     </message>
     <message>
         <source>List</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -4780,12 +5003,36 @@
 <context>
     <name>XInfoDB</name>
     <message>
-        <source>Address</source>
-        <translation>アドレス</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>不明</translation>
+    </message>
+    <message>
+        <source>Function enter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Function leave</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step into</source>
+        <translation>ステップ イン</translation>
+    </message>
+    <message>
+        <source>Step over</source>
+        <translation>ステップ オーバー</translation>
+    </message>
+    <message>
+        <source>Trace into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Paused</source>
@@ -4882,8 +5129,35 @@
         <translation>コピー</translation>
     </message>
     <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>消去</translation>
+    </message>
+</context>
+<context>
+    <name>XLineEditValidator</name>
+    <message>
+        <source>Bytes</source>
+        <translation>バイト</translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation>GB</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5065,7 +5339,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation>ファイルを読み込めません</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5685,8 +5959,20 @@
         <translation></translation>
     </message>
     <message>
+        <source>Resize</source>
+        <translation>サイズを保持</translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>データ インスペクター</translation>
+    </message>
+    <message>
+        <source>Data convertor</source>
+        <translation>データ インスペクター</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
     </message>
 </context>
 <context>

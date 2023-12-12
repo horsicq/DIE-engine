@@ -80,7 +80,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -96,7 +96,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -216,7 +216,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -224,7 +224,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -244,7 +244,7 @@
     </message>
     <message>
         <source>Custom database</source>
-        <translation>Не удается загрузить базу данных</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Editor</source>
@@ -271,7 +271,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -279,7 +279,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -326,7 +326,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -334,7 +334,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -462,6 +462,33 @@
     </message>
 </context>
 <context>
+    <name>DialogBits8</name>
+    <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Signed</source>
+        <translation>Сигнатура</translation>
+    </message>
+    <message>
+        <source>Unsigned</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
+    </message>
+</context>
+<context>
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
@@ -497,7 +524,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation>Фон</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -515,7 +542,7 @@
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Сканирование папки</translation>
+        <translation>Скан папки</translation>
     </message>
     <message>
         <source>Directory</source>
@@ -527,7 +554,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -535,7 +562,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -613,7 +640,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -625,7 +652,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Find</source>
@@ -729,7 +756,7 @@
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Close</source>
@@ -763,7 +790,7 @@
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Opcodes</source>
@@ -938,7 +965,7 @@
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1028,7 +1055,7 @@
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1116,7 +1143,7 @@
     <name>DialogNFDScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Сканирование папки</translation>
+        <translation>Скан папки</translation>
     </message>
     <message>
         <source>Directory</source>
@@ -1128,7 +1155,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1136,7 +1163,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -1191,6 +1218,13 @@
     </message>
 </context>
 <context>
+    <name>DialogNFDWidgetAdvanced</name>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
+    </message>
+</context>
+<context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
@@ -1210,7 +1244,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Online tools</source>
@@ -1226,6 +1260,52 @@
     <message>
         <source>Process</source>
         <translation>Процесс</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+</context>
+<context>
+    <name>DialogRemove</name>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Размер</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Отмена</translation>
+    </message>
+</context>
+<context>
+    <name>DialogResize</name>
+    <message>
+        <source>Resize</source>
+        <translation>Размер файла</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Размер</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1406,7 +1486,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1414,7 +1494,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -1437,7 +1517,7 @@
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Сканирование папки</translation>
+        <translation>Скан папки</translation>
     </message>
     <message>
         <source>Directory</source>
@@ -1449,7 +1529,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1457,7 +1537,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -1550,7 +1630,7 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmViewColors</name>
+    <name>DialogViewColors</name>
     <message>
         <source>Colors</source>
         <translation>Цвета</translation>
@@ -1564,16 +1644,23 @@
         <translation>Отмена</translation>
     </message>
     <message>
-        <source>Registers</source>
-        <translation>Регистр</translation>
-    </message>
-    <message>
         <source>Color</source>
         <translation>Цвета</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation>Фон</translation>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDataConvertor</name>
+    <message>
+        <source>Data convertor</source>
+        <translation>Инспектор данных</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ОК</translation>
     </message>
 </context>
 <context>
@@ -1628,7 +1715,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -1678,6 +1765,13 @@
     </message>
 </context>
 <context>
+    <name>DialogYARAWidgetAdvanced</name>
+    <message>
+        <source>Close</source>
+        <translation>Закрыть</translation>
+    </message>
+</context>
+<context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
@@ -1715,7 +1809,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1731,7 +1825,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -1775,7 +1869,7 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -1914,7 +2008,7 @@
     </message>
     <message>
         <source>File info</source>
-        <translation>Информация о файле</translation>
+        <translation>О файле</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1946,7 +2040,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Visualization</source>
@@ -1982,7 +2076,7 @@
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation>Отметка даты и времени</translation>
+        <translation>Отметка времени</translation>
     </message>
     <message>
         <source>Size of image</source>
@@ -2099,7 +2193,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -2107,7 +2201,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -2150,7 +2244,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
 </context>
 <context>
@@ -2172,7 +2266,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -2188,7 +2282,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -2224,7 +2318,7 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
 </context>
 <context>
@@ -2276,7 +2370,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -2292,7 +2386,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -2400,7 +2494,7 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -2419,7 +2513,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -2435,7 +2529,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -2524,7 +2618,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -2540,7 +2634,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -2587,7 +2681,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -2595,7 +2689,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -2614,7 +2708,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -2622,7 +2716,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -2665,7 +2759,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -2673,7 +2767,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -2724,7 +2818,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -2827,7 +2921,7 @@
     </message>
     <message>
         <source>Load config</source>
-        <translation>Загрузочная конфигурация</translation>
+        <translation>Загрузочный конфиг</translation>
     </message>
     <message>
         <source>Bound import</source>
@@ -2879,7 +2973,7 @@
     </message>
     <message>
         <source>More info</source>
-        <translation>Больше информации</translation>
+        <translation>Больше инфы</translation>
     </message>
     <message>
         <source>Serial number</source>
@@ -2956,7 +3050,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -2972,7 +3066,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -3100,7 +3194,7 @@
     </message>
     <message>
         <source>Load config</source>
-        <translation>Загрузочная конфигурация</translation>
+        <translation>Загрузочный конфиг</translation>
     </message>
     <message>
         <source>Bound import</source>
@@ -3124,7 +3218,7 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3290,7 +3384,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Следовать в</translation>
+        <translation>Представить в</translation>
     </message>
     <message>
         <source>Name</source>
@@ -3345,11 +3439,11 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Следовать в</translation>
+        <translation>Представить в</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3404,7 +3498,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Следовать в</translation>
+        <translation>Представить в</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3412,7 +3506,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
 </context>
 <context>
@@ -3470,19 +3564,19 @@
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation>Сканирование файла</translation>
+        <translation>Скан файла</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>Сканирование устройства</translation>
+        <translation>Скан устройства</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>Сканирование памяти</translation>
+        <translation>Скан памяти</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>Сканирование папки</translation>
+        <translation>Скан папки</translation>
     </message>
 </context>
 <context>
@@ -3493,7 +3587,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Рекурсивное сканирование</translation>
+        <translation>Рекурсивный скан</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -3501,7 +3595,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>Эвристическое сканирование</translation>
+        <translation>Эвристический скан</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -3527,7 +3621,7 @@
     </message>
     <message>
         <source>Follow me</source>
-        <translation>Следовать за мной</translation>
+        <translation>Подпишись на меня!</translation>
     </message>
     <message>
         <source>Thanks</source>
@@ -3653,6 +3747,14 @@
         <translation>Неправильная сигнатура</translation>
     </message>
     <message>
+        <source>true</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>Ошибка записи</translation>
     </message>
@@ -3750,6 +3852,48 @@
     </message>
 </context>
 <context>
+    <name>XDataConvertor</name>
+    <message>
+        <source>Read error</source>
+        <translation>Ошибка чтения</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Ошибка записи</translation>
+    </message>
+    <message>
+        <source>Cannot resize</source>
+        <translation>Невозможно открыть файл</translation>
+    </message>
+</context>
+<context>
+    <name>XDataConvertorWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Форма</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>Метод</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Размер</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Энтропия</translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation>Дамп</translation>
+    </message>
+</context>
+<context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
@@ -3765,6 +3909,13 @@
     <message>
         <source>Mode</source>
         <translation>Режим</translation>
+    </message>
+</context>
+<context>
+    <name>XDeviceTableEditView</name>
+    <message>
+        <source>Cannot resize</source>
+        <translation>Невозможно открыть файл</translation>
     </message>
 </context>
 <context>
@@ -3876,11 +4027,11 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Следовать в</translation>
+        <translation>Представить в</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Bookmarks</source>
@@ -3928,7 +4079,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -3987,11 +4138,63 @@
     </message>
     <message>
         <source>Highlight</source>
-        <translation>Подсветка синтаксиса</translation>
+        <translation>Цветовое представление</translation>
     </message>
     <message>
         <source>Colors</source>
         <translation>Цвета</translation>
+    </message>
+    <message>
+        <source>Arrows</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Все</translation>
+    </message>
+    <message>
+        <source>Selected</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation>Регистр</translation>
+    </message>
+    <message>
+        <source>Numbers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcodes</source>
+        <translation>Опкоды</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>Упоминания</translation>
+    </message>
+    <message>
+        <source>General registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Instruction pointer register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags register</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4046,7 +4249,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>To data</source>
@@ -4099,7 +4302,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Prototype</source>
@@ -4264,7 +4467,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Следовать в</translation>
+        <translation>Представить в</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -4437,7 +4640,7 @@
     </message>
     <message>
         <source>Crypter</source>
-        <translation>Криптор</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Cryptor</source>
@@ -4640,6 +4843,14 @@
         <translation>Инспектор данных</translation>
     </message>
     <message>
+        <source>Data convertor</source>
+        <translation>Инспектор данных</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Смещение</translation>
     </message>
@@ -4681,11 +4892,19 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Memory map</source>
         <translation>Карта памяти</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Resize</source>
+        <translation>Размер файла</translation>
     </message>
     <message>
         <source>New</source>
@@ -4694,6 +4913,10 @@
     <message>
         <source>List</source>
         <translation>Список</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Строки</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -4717,11 +4940,11 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Следовать в</translation>
+        <translation>Представить в</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Bookmarks</source>
@@ -4780,12 +5003,36 @@
 <context>
     <name>XInfoDB</name>
     <message>
-        <source>Address</source>
-        <translation>Адрес</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>Неизвестно</translation>
+    </message>
+    <message>
+        <source>Function enter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Function leave</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step into</source>
+        <translation>Шаг внутрь</translation>
+    </message>
+    <message>
+        <source>Step over</source>
+        <translation>Шаг поверх</translation>
+    </message>
+    <message>
+        <source>Trace into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
     </message>
     <message>
         <source>Paused</source>
@@ -4882,8 +5129,35 @@
         <translation>Копировать</translation>
     </message>
     <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>Очистить</translation>
+    </message>
+</context>
+<context>
+    <name>XLineEditValidator</name>
+    <message>
+        <source>Bytes</source>
+        <translation>Байты</translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation>КиБ</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>МиБ</translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation>ГиБ</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation>ТиБ</translation>
     </message>
 </context>
 <context>
@@ -5065,7 +5339,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation>Невозможно загрузить файл</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5100,7 +5374,7 @@
     </message>
     <message>
         <source>Single application</source>
-        <translation>Запускать только одну копию приложения</translation>
+        <translation>Запускать одну копию приложения</translation>
     </message>
     <message>
         <source>Style</source>
@@ -5120,7 +5394,7 @@
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>Помнить папку последнего сканирования</translation>
+        <translation>Помнить папку последнего скана</translation>
     </message>
     <message>
         <source>Save backup</source>
@@ -5242,11 +5516,11 @@
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation>Подпись присутствует, но специально не разрешена</translation>
+        <translation>Подпись присутствует, но специально не разрешена.</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation>Подпись присутствует, но не доверяет</translation>
+        <translation>Подпись присутствует, но не прошла проверку.</translation>
     </message>
     <message>
         <source>The signature error</source>
@@ -5350,7 +5624,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Дизассемблировать</translation>
+        <translation>Дизасм</translation>
     </message>
     <message>
         <source>Debug</source>
@@ -5402,7 +5676,7 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Изменить</translation>
     </message>
     <message>
         <source>Find</source>
@@ -5430,7 +5704,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Следовать в</translation>
+        <translation>Представить в</translation>
     </message>
     <message>
         <source>Show in</source>
@@ -5685,8 +5959,20 @@
         <translation>Удалить</translation>
     </message>
     <message>
+        <source>Resize</source>
+        <translation>Размер файла</translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>Инспектор данных</translation>
+    </message>
+    <message>
+        <source>Data convertor</source>
+        <translation>Инспектор данных</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5845,7 +6131,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>Подсветка синтаксиса</translation>
+        <translation>Цветовое представление</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -5869,7 +6155,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>Подсветка синтаксиса</translation>
+        <translation>Цветовое представление</translation>
     </message>
     <message>
         <source>Entropy</source>

@@ -244,7 +244,7 @@
     </message>
     <message>
         <source>Custom database</source>
-        <translation>نمیتوان دیتابیس را لود کرد</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Editor</source>
@@ -462,6 +462,33 @@
     </message>
 </context>
 <context>
+    <name>DialogBits8</name>
+    <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>هگز</translation>
+    </message>
+    <message>
+        <source>Signed</source>
+        <translation>امضا کننده</translation>
+    </message>
+    <message>
+        <source>Unsigned</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>لغو</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>باشه</translation>
+    </message>
+</context>
+<context>
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
@@ -497,7 +524,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation>پس زمینه</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -767,7 +794,7 @@
     </message>
     <message>
         <source>Opcodes</source>
-        <translation></translation>
+        <translation>کد عملیات</translation>
     </message>
     <message>
         <source>Calls</source>
@@ -1191,6 +1218,13 @@
     </message>
 </context>
 <context>
+    <name>DialogNFDWidgetAdvanced</name>
+    <message>
+        <source>Close</source>
+        <translation>بستن</translation>
+    </message>
+</context>
+<context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
@@ -1226,6 +1260,52 @@
     <message>
         <source>Process</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>لغو</translation>
+    </message>
+</context>
+<context>
+    <name>DialogRemove</name>
+    <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>سایز</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>هگز</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>باشه</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>لغو</translation>
+    </message>
+</context>
+<context>
+    <name>DialogResize</name>
+    <message>
+        <source>Resize</source>
+        <translation>حجم فایل</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>سایز</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>هگز</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>باشه</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1550,7 +1630,7 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmViewColors</name>
+    <name>DialogViewColors</name>
     <message>
         <source>Colors</source>
         <translation>رنگ ها</translation>
@@ -1564,16 +1644,23 @@
         <translation>لغو</translation>
     </message>
     <message>
-        <source>Registers</source>
-        <translation>رجیستر</translation>
-    </message>
-    <message>
         <source>Color</source>
         <translation>رنگ ها</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation>پس زمینه</translation>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDataConvertor</name>
+    <message>
+        <source>Data convertor</source>
+        <translation>دیتا در کد</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>باشه</translation>
     </message>
 </context>
 <context>
@@ -1672,6 +1759,13 @@
 </context>
 <context>
     <name>DialogXVirusTotal</name>
+    <message>
+        <source>Close</source>
+        <translation>بستن</translation>
+    </message>
+</context>
+<context>
+    <name>DialogYARAWidgetAdvanced</name>
     <message>
         <source>Close</source>
         <translation>بستن</translation>
@@ -3653,6 +3747,14 @@
         <translation>خطای امضا کننده</translation>
     </message>
     <message>
+        <source>true</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>خطا در نوشتن</translation>
     </message>
@@ -3674,7 +3776,7 @@
     </message>
     <message>
         <source>MiB</source>
-        <translation></translation>
+        <translation>مگابایت</translation>
     </message>
     <message>
         <source>MB</source>
@@ -3682,7 +3784,7 @@
     </message>
     <message>
         <source>GiB</source>
-        <translation></translation>
+        <translation>گیگابایت</translation>
     </message>
     <message>
         <source>GB</source>
@@ -3690,7 +3792,7 @@
     </message>
     <message>
         <source>TiB</source>
-        <translation></translation>
+        <translation>ترابایت</translation>
     </message>
     <message>
         <source>TB</source>
@@ -3750,6 +3852,48 @@
     </message>
 </context>
 <context>
+    <name>XDataConvertor</name>
+    <message>
+        <source>Read error</source>
+        <translation>خطای خواندن</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>خطا در نوشتن</translation>
+    </message>
+    <message>
+        <source>Cannot resize</source>
+        <translation>نمیتوان فایل را باز کرد</translation>
+    </message>
+</context>
+<context>
+    <name>XDataConvertorWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>فرم</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>متود</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>هگز</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>سایز</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
@@ -3765,6 +3909,13 @@
     <message>
         <source>Mode</source>
         <translation>حالت</translation>
+    </message>
+</context>
+<context>
+    <name>XDeviceTableEditView</name>
+    <message>
+        <source>Cannot resize</source>
+        <translation>نمیتوان فایل را باز کرد</translation>
     </message>
 </context>
 <context>
@@ -3992,6 +4143,58 @@
     <message>
         <source>Colors</source>
         <translation>رنگ ها</translation>
+    </message>
+    <message>
+        <source>Arrows</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>همه</translation>
+    </message>
+    <message>
+        <source>Selected</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation>رجیستر</translation>
+    </message>
+    <message>
+        <source>Numbers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcodes</source>
+        <translation>کد عملیات</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>General registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Instruction pointer register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags register</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4640,6 +4843,14 @@
         <translation>دیتا در کد</translation>
     </message>
     <message>
+        <source>Data convertor</source>
+        <translation>دیتا در کد</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation></translation>
     </message>
@@ -4688,12 +4899,24 @@
         <translation>نقشه حافظه</translation>
     </message>
     <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>Resize</source>
+        <translation>حجم فایل</translation>
+    </message>
+    <message>
         <source>New</source>
         <translation>جدید</translation>
     </message>
     <message>
         <source>List</source>
         <translation>لیست</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>رشته</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -4780,12 +5003,36 @@
 <context>
     <name>XInfoDB</name>
     <message>
-        <source>Address</source>
-        <translation>ادرس حافظه</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>ناشناخته</translation>
+    </message>
+    <message>
+        <source>Function enter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Function leave</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>ادرس حافظه</translation>
     </message>
     <message>
         <source>Paused</source>
@@ -4882,8 +5129,35 @@
         <translation>کپی</translation>
     </message>
     <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>پاک کردن</translation>
+    </message>
+</context>
+<context>
+    <name>XLineEditValidator</name>
+    <message>
+        <source>Bytes</source>
+        <translation>بایت ها</translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>مگابایت</translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation>گیگابایت</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation>ترابایت</translation>
     </message>
 </context>
 <context>
@@ -5065,7 +5339,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation>نمیتوان فایل را لود کرد</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5685,8 +5959,20 @@
         <translation>حذف</translation>
     </message>
     <message>
+        <source>Resize</source>
+        <translation>حجم فایل</translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>دیتا در کد</translation>
+    </message>
+    <message>
+        <source>Data convertor</source>
+        <translation>دیتا در کد</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
     </message>
 </context>
 <context>

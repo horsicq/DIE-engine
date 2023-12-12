@@ -244,7 +244,7 @@
     </message>
     <message>
         <source>Custom database</source>
-        <translation>Nie można załadować bazy danych</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Editor</source>
@@ -462,6 +462,33 @@
     </message>
 </context>
 <context>
+    <name>DialogBits8</name>
+    <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Heksadecymalnie</translation>
+    </message>
+    <message>
+        <source>Signed</source>
+        <translation>Sygnatura</translation>
+    </message>
+    <message>
+        <source>Unsigned</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anuluj</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
@@ -497,7 +524,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation>Tło</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1191,6 +1218,13 @@
     </message>
 </context>
 <context>
+    <name>DialogNFDWidgetAdvanced</name>
+    <message>
+        <source>Close</source>
+        <translation>Zamknij</translation>
+    </message>
+</context>
+<context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
@@ -1226,6 +1260,52 @@
     <message>
         <source>Process</source>
         <translation>Proces</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anuluj</translation>
+    </message>
+</context>
+<context>
+    <name>DialogRemove</name>
+    <message>
+        <source>Remove</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Rozmiar</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Heksadecymalnie</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Anuluj</translation>
+    </message>
+</context>
+<context>
+    <name>DialogResize</name>
+    <message>
+        <source>Resize</source>
+        <translation>Zachowaj rozmiar</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Rozmiar</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Heksadecymalnie</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1550,7 +1630,7 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmViewColors</name>
+    <name>DialogViewColors</name>
     <message>
         <source>Colors</source>
         <translation>Kolory</translation>
@@ -1564,16 +1644,23 @@
         <translation>Anuluj</translation>
     </message>
     <message>
-        <source>Registers</source>
-        <translation>Rejestr</translation>
-    </message>
-    <message>
         <source>Color</source>
         <translation>Kolory</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation>Tło</translation>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDataConvertor</name>
+    <message>
+        <source>Data convertor</source>
+        <translation>Inspektor danych</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1672,6 +1759,13 @@
 </context>
 <context>
     <name>DialogXVirusTotal</name>
+    <message>
+        <source>Close</source>
+        <translation>Zamknij</translation>
+    </message>
+</context>
+<context>
+    <name>DialogYARAWidgetAdvanced</name>
     <message>
         <source>Close</source>
         <translation>Zamknij</translation>
@@ -3653,6 +3747,14 @@
         <translation>Nieprawidłowa sygnatura</translation>
     </message>
     <message>
+        <source>true</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>Błąd zapisu</translation>
     </message>
@@ -3750,6 +3852,48 @@
     </message>
 </context>
 <context>
+    <name>XDataConvertor</name>
+    <message>
+        <source>Read error</source>
+        <translation>Błąd odczytu</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Błąd zapisu</translation>
+    </message>
+    <message>
+        <source>Cannot resize</source>
+        <translation>Nie można otworzyć pliku</translation>
+    </message>
+</context>
+<context>
+    <name>XDataConvertorWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formularz</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>Metoda</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Heksadecymalnie</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Rozmiar</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropia</translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation>Zrzut</translation>
+    </message>
+</context>
+<context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
@@ -3765,6 +3909,13 @@
     <message>
         <source>Mode</source>
         <translation>Tryb</translation>
+    </message>
+</context>
+<context>
+    <name>XDeviceTableEditView</name>
+    <message>
+        <source>Cannot resize</source>
+        <translation>Nie można otworzyć pliku</translation>
     </message>
 </context>
 <context>
@@ -3992,6 +4143,58 @@
     <message>
         <source>Colors</source>
         <translation>Kolory</translation>
+    </message>
+    <message>
+        <source>Arrows</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Wszystko</translation>
+    </message>
+    <message>
+        <source>Selected</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation>Rejestr</translation>
+    </message>
+    <message>
+        <source>Numbers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcodes</source>
+        <translation>Opkody</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>Zewnętrzne referencje</translation>
+    </message>
+    <message>
+        <source>General registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Instruction pointer register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags register</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4437,7 +4640,7 @@
     </message>
     <message>
         <source>Crypter</source>
-        <translation>Kryptor</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Cryptor</source>
@@ -4640,6 +4843,14 @@
         <translation>Inspektor danych</translation>
     </message>
     <message>
+        <source>Data convertor</source>
+        <translation>Inspektor danych</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Adres</translation>
     </message>
@@ -4688,12 +4899,24 @@
         <translation>Mapa pamięci</translation>
     </message>
     <message>
+        <source>Remove</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resize</source>
+        <translation>Zachowaj rozmiar</translation>
+    </message>
+    <message>
         <source>New</source>
         <translation></translation>
     </message>
     <message>
         <source>List</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Ciągi</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -4780,12 +5003,36 @@
 <context>
     <name>XInfoDB</name>
     <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>Nieznany</translation>
+    </message>
+    <message>
+        <source>Function enter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Function leave</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step into</source>
+        <translation>Wejdź do</translation>
+    </message>
+    <message>
+        <source>Step over</source>
+        <translation>Przejdź nad</translation>
+    </message>
+    <message>
+        <source>Trace into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
     </message>
     <message>
         <source>Paused</source>
@@ -4882,8 +5129,35 @@
         <translation>Kopiuj</translation>
     </message>
     <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>Wyczyść</translation>
+    </message>
+</context>
+<context>
+    <name>XLineEditValidator</name>
+    <message>
+        <source>Bytes</source>
+        <translation>Bajty</translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation>KiB</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>MiB</translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation>GiB</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation>TiB</translation>
     </message>
 </context>
 <context>
@@ -5065,7 +5339,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation>Nie można załadować pliku</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5685,8 +5959,20 @@
         <translation></translation>
     </message>
     <message>
+        <source>Resize</source>
+        <translation>Zachowaj rozmiar</translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>Inspektor danych</translation>
+    </message>
+    <message>
+        <source>Data convertor</source>
+        <translation>Inspektor danych</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
     </message>
 </context>
 <context>

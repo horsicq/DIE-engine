@@ -244,7 +244,7 @@
     </message>
     <message>
         <source>Custom database</source>
-        <translation>لا يمكن تحميل قاعدة البيانات</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Editor</source>
@@ -462,6 +462,33 @@
     </message>
 </context>
 <context>
+    <name>DialogBits8</name>
+    <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>عرافة</translation>
+    </message>
+    <message>
+        <source>Signed</source>
+        <translation>إمضاء</translation>
+    </message>
+    <message>
+        <source>Unsigned</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>يلغي</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
+    </message>
+</context>
+<context>
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
@@ -497,7 +524,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation>الخلفية</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1191,6 +1218,13 @@
     </message>
 </context>
 <context>
+    <name>DialogNFDWidgetAdvanced</name>
+    <message>
+        <source>Close</source>
+        <translation>قريب</translation>
+    </message>
+</context>
+<context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
@@ -1226,6 +1260,52 @@
     <message>
         <source>Process</source>
         <translation>معالجة</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>يلغي</translation>
+    </message>
+</context>
+<context>
+    <name>DialogRemove</name>
+    <message>
+        <source>Remove</source>
+        <translation>أزالة</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>حجم</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>عرافة</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>يلغي</translation>
+    </message>
+</context>
+<context>
+    <name>DialogResize</name>
+    <message>
+        <source>Resize</source>
+        <translation>حجم الملف</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>حجم</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>عرافة</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1550,7 +1630,7 @@
     </message>
 </context>
 <context>
-    <name>DialogXDisasmViewColors</name>
+    <name>DialogViewColors</name>
     <message>
         <source>Colors</source>
         <translation>الالوان</translation>
@@ -1564,16 +1644,23 @@
         <translation>يلغي</translation>
     </message>
     <message>
-        <source>Registers</source>
-        <translation>Register</translation>
-    </message>
-    <message>
         <source>Color</source>
         <translation>الالوان</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation>الخلفية</translation>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDataConvertor</name>
+    <message>
+        <source>Data convertor</source>
+        <translation>مفتش البيانات</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>نعم</translation>
     </message>
 </context>
 <context>
@@ -1672,6 +1759,13 @@
 </context>
 <context>
     <name>DialogXVirusTotal</name>
+    <message>
+        <source>Close</source>
+        <translation>قريب</translation>
+    </message>
+</context>
+<context>
+    <name>DialogYARAWidgetAdvanced</name>
     <message>
         <source>Close</source>
         <translation>قريب</translation>
@@ -3653,6 +3747,14 @@
         <translation>توقيع غير صالح</translation>
     </message>
     <message>
+        <source>true</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Write error</source>
         <translation>خطأ الكتابة</translation>
     </message>
@@ -3750,6 +3852,48 @@
     </message>
 </context>
 <context>
+    <name>XDataConvertor</name>
+    <message>
+        <source>Read error</source>
+        <translation>قراءة خطأ</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>خطأ الكتابة</translation>
+    </message>
+    <message>
+        <source>Cannot resize</source>
+        <translation>لا يمكن فتح ملف</translation>
+    </message>
+</context>
+<context>
+    <name>XDataConvertorWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>استمارة</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>طريقة</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>عرافة</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>حجم</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>غير قادر علي</translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation>تفريغ</translation>
+    </message>
+</context>
+<context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
@@ -3765,6 +3909,13 @@
     <message>
         <source>Mode</source>
         <translation>الوضع</translation>
+    </message>
+</context>
+<context>
+    <name>XDeviceTableEditView</name>
+    <message>
+        <source>Cannot resize</source>
+        <translation>لا يمكن فتح ملف</translation>
     </message>
 </context>
 <context>
@@ -3992,6 +4143,58 @@
     <message>
         <source>Colors</source>
         <translation>الالوان</translation>
+    </message>
+    <message>
+        <source>Arrows</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>الجميع</translation>
+    </message>
+    <message>
+        <source>Selected</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation>Register</translation>
+    </message>
+    <message>
+        <source>Numbers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcodes</source>
+        <translation>أكواد التشغيل</translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation>المراجع الخارجية</translation>
+    </message>
+    <message>
+        <source>General registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Instruction pointer register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags register</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4437,7 +4640,7 @@
     </message>
     <message>
         <source>Crypter</source>
-        <translation>كريبتور</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Cryptor</source>
@@ -4640,6 +4843,14 @@
         <translation>مفتش البيانات</translation>
     </message>
     <message>
+        <source>Data convertor</source>
+        <translation>مفتش البيانات</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Offset</translation>
     </message>
@@ -4688,12 +4899,24 @@
         <translation>خريطة الذاكرة</translation>
     </message>
     <message>
+        <source>Remove</source>
+        <translation>أزالة</translation>
+    </message>
+    <message>
+        <source>Resize</source>
+        <translation>حجم الملف</translation>
+    </message>
+    <message>
         <source>New</source>
         <translation></translation>
     </message>
     <message>
         <source>List</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>سلاسل</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -4780,12 +5003,36 @@
 <context>
     <name>XInfoDB</name>
     <message>
-        <source>Address</source>
-        <translation>عنوان</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>مجهول</translation>
+    </message>
+    <message>
+        <source>Function enter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Function leave</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step into</source>
+        <translation>خطوة الى</translation>
+    </message>
+    <message>
+        <source>Step over</source>
+        <translation>خطوة أكثر</translation>
+    </message>
+    <message>
+        <source>Trace into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>عنوان</translation>
     </message>
     <message>
         <source>Paused</source>
@@ -4882,8 +5129,35 @@
         <translation>ينسخ</translation>
     </message>
     <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>واضح</translation>
+    </message>
+</context>
+<context>
+    <name>XLineEditValidator</name>
+    <message>
+        <source>Bytes</source>
+        <translation>بايت</translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation>كليوبت</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>ميجابت</translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation>غيغابت</translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation>تيرا بت</translation>
     </message>
 </context>
 <context>
@@ -5065,7 +5339,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation>لا يمكنني تحميل الملف</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5685,8 +5959,20 @@
         <translation>أزالة</translation>
     </message>
     <message>
+        <source>Resize</source>
+        <translation>حجم الملف</translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>مفتش البيانات</translation>
+    </message>
+    <message>
+        <source>Data convertor</source>
+        <translation>مفتش البيانات</translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
     </message>
 </context>
 <context>

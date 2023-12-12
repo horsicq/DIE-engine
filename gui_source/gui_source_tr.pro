@@ -1,5 +1,6 @@
 TRANSLATIONS = \
     translation/die_ar.ts \
+    translation/die_bn.ts \
     translation/die_de.ts \
     translation/die_es.ts \
     translation/die_fa.ts \
@@ -20,6 +21,7 @@ TRANSLATIONS = \
     translation/die_zh_TW.ts
 
 FORMS += \
+    $$PWD/../Controls/dialogbits8.ui \
     $$PWD/../FormatDialogs/dialogdatainspector.ui \
     $$PWD/../FormatDialogs/dialogdump.ui \
     $$PWD/../FormatDialogs/dialogdumpprocess.ui \
@@ -27,6 +29,8 @@ FORMS += \
     $$PWD/../FormatDialogs/dialogfindtext.ui \
     $$PWD/../FormatDialogs/dialoggotoaddress.ui \
     $$PWD/../FormatDialogs/dialoghexsignature.ui \
+    $$PWD/../FormatDialogs/dialogremove.ui \
+    $$PWD/../FormatDialogs/dialogresize.ui \
     $$PWD/../FormatDialogs/dialogsearch.ui \
     $$PWD/../FormatDialogs/dialogsearchprocess.ui \
     $$PWD/../FormatDialogs/dialogshowdata.ui \
@@ -78,6 +82,8 @@ FORMS += \
     $$PWD/../StaticScan/heurwidget.ui \
     $$PWD/../StaticScan/staticscanoptionswidget.ui \
     $$PWD/../XAboutWidget/xaboutwidget.ui \
+    $$PWD/../XDataConvertorWidget/dialogxdataconvertor.ui \
+    $$PWD/../XDataConvertorWidget/xdataconvertorwidget.ui \
     $$PWD/../XDemangleWidget/dialogdemangle.ui \
     $$PWD/../XDemangleWidget/xdemanglewidget.ui \
     $$PWD/../XDisasm/dialogasmsignature.ui \
@@ -87,8 +93,6 @@ FORMS += \
     $$PWD/../XDisasm/xdisasmwidget.ui \
     $$PWD/../XDisasmView/dialogmultidisasm.ui \
     $$PWD/../XDisasmView/dialogmultidisasmsignature.ui \
-    $$PWD/../XDisasmView/dialogxdisasmreferences.ui \
-    $$PWD/../XDisasmView/dialogxdisasmviewcolors.ui \
     $$PWD/../XDisasmView/xdisasmviewoptionswidget.ui \
     $$PWD/../XDisasmView/xmultidisasmwidget.ui \
     $$PWD/../XDynStructsWidget/dialogxdynstructs.ui \
@@ -118,6 +122,7 @@ FORMS += \
     $$PWD/../XOnlineTools/dialogxvirustotal.ui \
     $$PWD/../XOnlineTools/xonlinetoolsoptionswidget.ui \
     $$PWD/../XOnlineTools/xvirustotalwidget.ui \
+    $$PWD/../XOptions/dialogviewcolors.ui \
     $$PWD/../XOptions/xoptionswidget.ui \
     $$PWD/../XShortcuts/dialogshortcuts.ui \
     $$PWD/../XSymbolsWidget/dialogbookmarks.ui \
@@ -144,14 +149,16 @@ FORMS += \
     $$PWD/../lite_source/litemainwindow.ui \
     $$PWD/../nfd_widget/dialognfdscan.ui \
     $$PWD/../nfd_widget/dialognfdscandirectory.ui \
+    $$PWD/../nfd_widget/dialognfdwidgetadvanced.ui \
     $$PWD/../nfd_widget/nfd_widget.ui \
     $$PWD/../nfd_widget/nfdoptionswidget.ui \
     $$PWD/../nfd_widget/nfdwidgetadvanced.ui \
+    $$PWD/../yara_widget/dialogyarawidgetadvanced.ui \
     $$PWD/../yara_widget/yara_widget.ui \
     $$PWD/../yara_widget/yarawidgetadvanced.ui
 
 SOURCES += \
-    $$PWD/../Controls/hexvalidator.cpp \
+    $$PWD/../Controls/dialogbits8.cpp \
     $$PWD/../Controls/subclassofqstyleditemdelegate.cpp \
     $$PWD/../Controls/xabstracttableview.cpp \
     $$PWD/../Controls/xcomboboxex.cpp \
@@ -160,12 +167,15 @@ SOURCES += \
     $$PWD/../Controls/xdevicetableview.cpp \
     $$PWD/../Controls/xhtml.cpp \
     $$PWD/../Controls/xlineedithex.cpp \
+    $$PWD/../Controls/xlineeditvalidator.cpp \
     $$PWD/../FormatDialogs/dialogdatainspector.cpp \
     $$PWD/../FormatDialogs/dialogdumpprocess.cpp \
     $$PWD/../FormatDialogs/dialogeditstring.cpp \
     $$PWD/../FormatDialogs/dialogfindtext.cpp \
     $$PWD/../FormatDialogs/dialoggotoaddress.cpp \
     $$PWD/../FormatDialogs/dialoghexsignature.cpp \
+    $$PWD/../FormatDialogs/dialogremove.cpp \
+    $$PWD/../FormatDialogs/dialogresize.cpp \
     $$PWD/../FormatDialogs/dialogsearch.cpp \
     $$PWD/../FormatDialogs/dialogsearchprocess.cpp \
     $$PWD/../FormatDialogs/dialogshowdata.cpp \
@@ -246,6 +256,7 @@ SOURCES += \
     $$PWD/../Formats/video/xriff.cpp \
     $$PWD/../Formats/xbinary.cpp \
     $$PWD/../Formats/xcom.cpp \
+    $$PWD/../Formats/xdataconvertor.cpp \
     $$PWD/../Formats/xelf.cpp \
     $$PWD/../Formats/xformats.cpp \
     $$PWD/../Formats/xiodevice.cpp \
@@ -284,6 +295,9 @@ SOURCES += \
     $$PWD/../XCppfilt/xcppfilt.cpp \
     $$PWD/../XDEX/xandroidbinary.cpp \
     $$PWD/../XDEX/xdex.cpp \
+    $$PWD/../XDataConvertorWidget/dialogxdataconvertor.cpp \
+    $$PWD/../XDataConvertorWidget/dialogxdataconvertorprocess.cpp \
+    $$PWD/../XDataConvertorWidget/xdataconvertorwidget.cpp \
     $$PWD/../XDecompiler/xdecompiler.cpp \
     $$PWD/../XDemangle/xdemangle.cpp \
     $$PWD/../XDemangleWidget/dialogdemangle.cpp \
@@ -297,8 +311,6 @@ SOURCES += \
     $$PWD/../XDisasm/xdisasmwidget.cpp \
     $$PWD/../XDisasmView/dialogmultidisasm.cpp \
     $$PWD/../XDisasmView/dialogmultidisasmsignature.cpp \
-    $$PWD/../XDisasmView/dialogxdisasmreferences.cpp \
-    $$PWD/../XDisasmView/dialogxdisasmviewcolors.cpp \
     $$PWD/../XDisasmView/xdisasmview.cpp \
     $$PWD/../XDisasmView/xdisasmviewoptionswidget.cpp \
     $$PWD/../XDisasmView/xmultidisasmwidget.cpp \
@@ -347,6 +359,7 @@ SOURCES += \
     $$PWD/../XOnlineTools/xonlinetoolsoptionswidget.cpp \
     $$PWD/../XOnlineTools/xvirustotal.cpp \
     $$PWD/../XOnlineTools/xvirustotalwidget.cpp \
+    $$PWD/../XOptions/dialogviewcolors.cpp \
     $$PWD/../XOptions/xoptions.cpp \
     $$PWD/../XOptions/xoptionswidget.cpp \
     $$PWD/../XPDF/xpdf.cpp \
@@ -532,10 +545,11 @@ SOURCES += \
     $$PWD/../nfd_widget/dialognfdscan.cpp \
     $$PWD/../nfd_widget/dialognfdscandirectory.cpp \
     $$PWD/../nfd_widget/dialognfdscanprocess.cpp \
+    $$PWD/../nfd_widget/dialognfdwidgetadvanced.cpp \
     $$PWD/../nfd_widget/nfd_widget.cpp \
     $$PWD/../nfd_widget/nfdoptionswidget.cpp \
     $$PWD/../nfd_widget/nfdwidgetadvanced.cpp \
+    $$PWD/../yara_widget/dialogyarawidgetadvanced.cpp \
     $$PWD/../yara_widget/xyaradialogprocess.cpp \
     $$PWD/../yara_widget/yara_widget.cpp \
     $$PWD/../yara_widget/yarawidgetadvanced.cpp
-
