@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>Signature</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>Action</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>Type de tri</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Afficher les intrants</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Afficher les intrants</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Enregistrer le résultat</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation>Enlever</translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>Offset</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>Taille</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>Annuler</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>Invalide</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>Taille</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>Erreur de lecture</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Erreur d&apos;écriture</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>Ne peut pas ouvrir le fichier</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>Maximum</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>Régions</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>Segments</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>Sections</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>Signature invalide</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Erreur d&apos;écriture</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Erreur d&apos;écriture</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>Erreur d&apos;écriture</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>Ne peut pas ouvrir le fichier</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>Méthode</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>Erreur</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>Adresse relative</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Étiquette</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>Section</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>Inconnu</translation>
@@ -5167,6 +5195,10 @@
         <translation>Segment</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>Section</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Inconnu</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>Taille du fichier</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>Inspecteur de données</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>Surligner</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6143,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation>Taille du fichier</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Method</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>Surligner</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>

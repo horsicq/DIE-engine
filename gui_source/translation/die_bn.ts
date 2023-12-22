@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>স্বাক্ষর</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>ক্রিয়া</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>সাজানোর ধরন</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>দেখাও</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>দেখাও</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>ফলাফল সংরক্ষণ করুন</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation>অপসারণ</translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>অফসেট</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>আকার</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>বাতিল করুন</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>অবৈধ</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>আকার</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>ত্রুটি পড়া</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>ভুল লিখুন</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>ফাইলটি খুলতে পারছি না</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>সর্বোচ্চ</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>অঞ্চলগুলো</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>অংশগুলো</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>বিভাগগুলো</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>অবৈধ স্বাক্ষর</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>ভুল লিখুন</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>ভুল লিখুন</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>ভুল লিখুন</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>ফাইলটি খুলতে পারছি না</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>পদ্ধতি</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>ত্রুটি</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>তথ্য</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>আপেক্ষিক ঠিকানা</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>আখ্যা দেত্তন</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>বিভাগ</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>অজানা</translation>
@@ -5167,6 +5195,10 @@
         <translation>অংশ</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>বিভাগ</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>অজানা</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>ফাইলের আকার</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>উপাত্তের পরিদর্শক</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>লক্ষণীয় করা</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6143,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation>ফাইলের আকার</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Method</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>লক্ষণীয় করা</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>

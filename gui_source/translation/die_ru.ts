@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>Сигнатура</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>Действие</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>Тип сортировки</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Показать в</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Показать в</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Сохранить</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation>Удалить</translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>Смещение</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>Размер</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>Отмена</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>Неверный</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>Размер</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>Ошибка чтения</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Ошибка записи</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>Невозможно открыть файл</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>Максимум</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>Регионы</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>Сегменты</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>Секции</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>Неправильная сигнатура</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Ошибка записи</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Ошибка записи</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>Ошибка записи</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>Невозможно открыть файл</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>Метод</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>Ошибка</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Инфо</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>Относительный адрес</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Метка</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>Секция</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>Неизвестно</translation>
@@ -5167,6 +5195,10 @@
         <translation>Сегмент</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>Секция</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Неизвестно</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>Размер файла</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>Инспектор данных</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>Цветовое представление</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6143,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation>Размер файла</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Method</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>Цветовое представление</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>

@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>시그니처</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>액션</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>정렬 유형</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>로고 표시</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>유효한 표시</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>결과 저장</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation></translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>크기</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>취소</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>무효함</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>크기</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>읽기 오류</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>쓰기 오류</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>파일을 열 수 없습니다</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>최대</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>영역</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>세그먼트</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>섹션</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>유효하지 않은 시그니처</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>쓰기 오류</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>쓰기 오류</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>쓰기 오류</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>파일을 열 수 없습니다</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>방법</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>오류</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>상대 주소</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>레이블</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>섹션</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>알 수 없음</translation>
@@ -5167,6 +5195,10 @@
         <translation>세그먼트</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>섹션</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>알 수 없음</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>크기 유지</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>데이터 검사기</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>하이라이트</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>하이라이트</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>

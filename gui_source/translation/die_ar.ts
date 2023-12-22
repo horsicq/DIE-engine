@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>إمضاء</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>عمل</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>نوع الفرز</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>أضهر في</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>أضهر في</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>حفظ النتيجة</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation>أزالة</translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>Offset</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>حجم</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>يلغي</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>غير صالح</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>حجم</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>قراءة خطأ</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>خطأ الكتابة</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>لا يمكن فتح ملف</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>أقصى</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>المناطق</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>شرائح</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>الأقسام</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>توقيع غير صالح</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>خطأ الكتابة</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>خطأ الكتابة</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>خطأ الكتابة</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>لا يمكن فتح ملف</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>طريقة</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>خطأ</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>معلومات</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>العنوان النسبي</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>ملصق</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>الجزء</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>مجهول</translation>
@@ -5167,6 +5195,10 @@
         <translation>قطعة</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>الجزء</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>مجهول</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>حجم الملف</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>مفتش البيانات</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>تسليط الضوء</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6143,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation>حجم الملف</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Method</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>تسليط الضوء</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>

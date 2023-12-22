@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>署名</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>操作</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>並び替え種別</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>ロゴを表示</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>有効を表示</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>結果を保存</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation></translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>オフセット</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>サイズ</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>キャンセル</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>無効</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>サイズ</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>読み取りエラー</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>書き込みエラー</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>ファイルを開けません</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>最大</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>領域</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>セグメント</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>セクション</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>無効な 署名</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>書き込みエラー</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>書き込みエラー</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>書き込みエラー</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>ファイルを開けません</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>方法</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>エラー</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>情報</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>相対アドレス</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>ラベル</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>セクション</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>不明</translation>
@@ -5167,6 +5195,10 @@
         <translation>セグメント</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>セクション</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>不明</translation>
     </message>
@@ -5961,6 +5993,10 @@
     <message>
         <source>Resize</source>
         <translation>サイズを保持</translation>
+    </message>
+    <message>
+        <source>Conditional</source>
+        <translation></translation>
     </message>
     <message>
         <source>Data inspector</source>

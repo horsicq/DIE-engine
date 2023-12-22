@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>Markah</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>Tindakan</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>Jenis pengurutan</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Tampilkan logo</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Tampilkan yang valid</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Simpan hasil</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation></translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>Offset</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>Ukuran</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>Batal</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>Tidak valid</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>Ukuran</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>Kesalahan baca</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Kesalahan penulisan</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>Tidak dapat membuka file</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>Maksimum</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>Region</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>Segmen</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>Bagian</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Kesalahan penulisan</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Kesalahan penulisan</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>Kesalahan penulisan</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>Tidak dapat membuka file</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>Metode</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>Kesalahan</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>Alamat relatif</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Label</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>Bagian</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>Tidak diketahui</translation>
@@ -5167,6 +5195,10 @@
         <translation>Segmen</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>Bagian</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Tidak diketahui</translation>
     </message>
@@ -5960,6 +5992,10 @@
     </message>
     <message>
         <source>Resize</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Conditional</source>
         <translation></translation>
     </message>
     <message>

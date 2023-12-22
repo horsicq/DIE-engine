@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>签名</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>处理</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>排序类型</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>显示到</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>显示到</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>保存结果</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation>移除</translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>偏移</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>大小</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>取消</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>无效</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>大小</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>读取错误</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>写入错误</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>无法打开文件</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>最大值</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>区域</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>段</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>节</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>无效的签名</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>写入错误</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>写入错误</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>写入错误</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>无法打开文件</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>方法</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>错误</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>信息</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>相对地址(RA)</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>标签</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>节</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>未知</translation>
@@ -5167,6 +5195,10 @@
         <translation>段</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>节</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>未知</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>文件大小</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>数据检查器</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>高亮</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6143,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation>文件大小</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Method</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>高亮</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>

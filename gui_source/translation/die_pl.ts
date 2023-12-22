@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>Sygnatura</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>Akcja</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>Rodzaj sortowania</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Pokaż w</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Pokaż w</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Zapisz wynik</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation></translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>Rozmiar</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>Anuluj</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>Niepoprawny</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>Rozmiar</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>Błąd odczytu</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Błąd zapisu</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>Nie można otworzyć pliku</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>Maksymalny</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>Regiony</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>Segmenty</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>Sekcje</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>Nieprawidłowa sygnatura</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Błąd zapisu</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Błąd zapisu</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>Błąd zapisu</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>Nie można otworzyć pliku</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>Metoda</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>Błąd</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Informacje</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>Adres względny</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etykieta</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>Sekcja</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>Nieznany</translation>
@@ -5167,6 +5195,10 @@
         <translation>Segment</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>Sekcja</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Nieznany</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>Zachowaj rozmiar</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>Inspektor danych</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>Podświetl</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>Podświetl</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>

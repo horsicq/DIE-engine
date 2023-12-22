@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>Сигнатура</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>Дія</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>Тип сортування</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Показати в</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Показати в</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Зберегти результат</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation>Видалити</translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>Зміщення</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>Розмір</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>Скасувати</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>Невірний</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>Розмір</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>Помилка читання</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Помилка запису</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>Не вдалося відкрити файл</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>Максимум</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>Регіони</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>Сегменти</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>Секції</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>Невірний підпис</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Помилка запису</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Помилка запису</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>Помилка запису</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>Не вдалося відкрити файл</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>Метод</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>Помилка</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Інфо</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>Відносна адреса</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Мітка</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>Секція</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>Невідомо</translation>
@@ -5167,6 +5195,10 @@
         <translation>Сегмент</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>Секція</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Невідомо</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>Розмір файлу</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>Інспектор даних</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>Виділяти</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6143,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation>Розмір файлу</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Method</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>Виділяти</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>

@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>Chữ ký</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>Hoạt động</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>Sắp xếp loại</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Hiển thị biểu trưng</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Hiển thị hợp lệ</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Lưu kết quả</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation></translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>Khoảng cách</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>Kích thước</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>không hợp lệ</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>Kích thước</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>Đọc lỗi</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Ghi lỗi</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>Không thể mở tập tin</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>Tối đa</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>Vùng</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>Đoạn</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>Mục</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Ghi lỗi</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Ghi lỗi</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>Ghi lỗi</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>Không thể mở tập tin</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>phương pháp</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>Lỗi</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Thông tin</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>Địa chỉ tương đối</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Nhãn</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>Mục</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>không xác định</translation>
@@ -5167,6 +5195,10 @@
         <translation>Đoạn</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>Mục</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>không xác định</translation>
     </message>
@@ -5960,6 +5992,10 @@
     </message>
     <message>
         <source>Resize</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Conditional</source>
         <translation></translation>
     </message>
     <message>

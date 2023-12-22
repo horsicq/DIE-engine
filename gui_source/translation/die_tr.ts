@@ -473,7 +473,7 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation>İmza</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unsigned</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>Eylem</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Size</source>
@@ -668,19 +668,19 @@
     </message>
     <message>
         <source>Show type</source>
-        <translation>Sıralama türü</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation>Göster</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation>Göster</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Sonucu kaydet</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -1273,6 +1273,10 @@
         <translation>Kaldır</translation>
     </message>
     <message>
+        <source>Offset</source>
+        <translation>Ofset</translation>
+    </message>
+    <message>
         <source>Size</source>
         <translation>Boyut</translation>
     </message>
@@ -1287,6 +1291,10 @@
     <message>
         <source>Cancel</source>
         <translation>İptal</translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation>Geçersiz</translation>
     </message>
 </context>
 <context>
@@ -3288,14 +3296,6 @@
         <translation>Boyut</translation>
     </message>
     <message>
-        <source>Read error</source>
-        <translation>Okuma hatası</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Yazma hatası</translation>
-    </message>
-    <message>
         <source>Cannot open file</source>
         <translation>Dosya açılmıyor</translation>
     </message>
@@ -3743,8 +3743,24 @@
         <translation>Maksimum</translation>
     </message>
     <message>
+        <source>Regions</source>
+        <translation>Bölge</translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation>Segmentler</translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation>Bölümler</translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>Geçersiz imza</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>Yazma hatası</translation>
     </message>
     <message>
         <source>true</source>
@@ -3753,10 +3769,6 @@
     <message>
         <source>false</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>Yazma hatası</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3862,6 +3874,10 @@
         <translation>Yazma hatası</translation>
     </message>
     <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot resize</source>
         <translation>Dosya açılmıyor</translation>
     </message>
@@ -3875,6 +3891,14 @@
     <message>
         <source>Method</source>
         <translation>Metod</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3950,6 +3974,10 @@
     <message>
         <source>Error</source>
         <translation>Hata</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Bilgi</translation>
     </message>
 </context>
 <context>
@@ -4112,10 +4140,6 @@
     <message>
         <source>Relative address</source>
         <translation>Göreceli adres</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etiket</translation>
     </message>
 </context>
 <context>
@@ -4347,6 +4371,10 @@
 </context>
 <context>
     <name>XELF</name>
+    <message>
+        <source>Section</source>
+        <translation>Bölüm</translation>
+    </message>
     <message>
         <source>Unknown</source>
         <translation>Bilinmeyen</translation>
@@ -5167,6 +5195,10 @@
         <translation>Segment</translation>
     </message>
     <message>
+        <source>Section</source>
+        <translation>Bölüm</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Bilinmeyen</translation>
     </message>
@@ -5963,6 +5995,10 @@
         <translation>Dosya boyutu</translation>
     </message>
     <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Data inspector</source>
         <translation>Veri denetçisi</translation>
     </message>
@@ -6131,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation>Vurgula</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6143,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation>Dosya boyutu</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Method</source>
@@ -6155,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation>Vurgula</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Entropy</source>
