@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Filter</source>
@@ -244,7 +244,7 @@
     </message>
     <message>
         <source>Custom database</source>
-        <translation></translation>
+        <translation>Özel veritabanı</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -267,7 +267,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -465,7 +465,7 @@
     <name>DialogBits8</name>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>Bitler</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -473,11 +473,11 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation></translation>
+        <translation>İşaretli</translation>
     </message>
     <message>
         <source>Unsigned</source>
-        <translation></translation>
+        <translation>İşaretsiz</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation></translation>
+        <translation>Konum</translation>
     </message>
     <message>
         <source>Size</source>
@@ -508,7 +508,7 @@
     </message>
     <message>
         <source>Color</source>
-        <translation>Renkler</translation>
+        <translation>Renk</translation>
     </message>
     <message>
         <source>Comment</source>
@@ -524,7 +524,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>Arkaplan</translation>
     </message>
 </context>
 <context>
@@ -664,23 +664,23 @@
     </message>
     <message>
         <source>Detect</source>
-        <translation></translation>
+        <translation>Tespit et</translation>
     </message>
     <message>
         <source>Show type</source>
-        <translation></translation>
+        <translation>Türünü göster</translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation></translation>
+        <translation>Seçenekleri göster</translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation></translation>
+        <translation>Sürüm bilgisini göster</translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation></translation>
+        <translation>Sonucu temizle</translation>
     </message>
     <message>
         <source>Close</source>
@@ -703,7 +703,7 @@
     <name>DialogDIESignaturesElapsed</name>
     <message>
         <source>Elapsed</source>
-        <translation></translation>
+        <translation>Geçen</translation>
     </message>
     <message>
         <source>OK</source>
@@ -711,11 +711,11 @@
     </message>
     <message>
         <source>Time</source>
-        <translation></translation>
+        <translation>Zaman</translation>
     </message>
     <message>
         <source>Script</source>
-        <translation></translation>
+        <translation>Betik</translation>
     </message>
 </context>
 <context>
@@ -1301,7 +1301,7 @@
     <name>DialogResize</name>
     <message>
         <source>Resize</source>
-        <translation>Dosya boyutu</translation>
+        <translation>Yeniden boyutlandır</translation>
     </message>
     <message>
         <source>Size</source>
@@ -1653,18 +1653,18 @@
     </message>
     <message>
         <source>Color</source>
-        <translation>Renkler</translation>
+        <translation>Renk</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>Arkaplan</translation>
     </message>
 </context>
 <context>
     <name>DialogXDataConvertor</name>
     <message>
         <source>Data convertor</source>
-        <translation>Veri denetçisi</translation>
+        <translation>Veri dönüştürücüsü</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1787,7 +1787,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Bind</source>
@@ -1985,7 +1985,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Value</source>
@@ -2132,7 +2132,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -2197,7 +2197,7 @@
     <name>HeurWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -2576,7 +2576,7 @@
     <name>MultiSearch</name>
     <message>
         <source>Number</source>
-        <translation></translation>
+        <translation>Sayı</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -2592,7 +2592,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>String</source>
@@ -2712,7 +2712,7 @@
     <name>NFDWidgetAdvanced</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -2941,7 +2941,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Address</source>
@@ -3249,7 +3249,7 @@
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Count</source>
@@ -3356,7 +3356,7 @@
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Endianness</source>
@@ -3411,7 +3411,7 @@
     <name>SearchStringsWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>C Strings</source>
@@ -3470,7 +3470,7 @@
     <name>SearchValuesWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>String</source>
@@ -3557,7 +3557,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
 </context>
 <context>
@@ -3621,7 +3621,7 @@
     </message>
     <message>
         <source>Follow me</source>
-        <translation></translation>
+        <translation>Beni izle</translation>
     </message>
     <message>
         <source>Thanks</source>
@@ -3764,11 +3764,11 @@
     </message>
     <message>
         <source>true</source>
-        <translation></translation>
+        <translation>true</translation>
     </message>
     <message>
         <source>false</source>
-        <translation></translation>
+        <translation>false</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3875,11 +3875,11 @@
     </message>
     <message>
         <source>Invalid size</source>
-        <translation></translation>
+        <translation>Geçersiz boy</translation>
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation>Dosya açılmıyor</translation>
+        <translation>Yeniden boyutlandırılamıyor</translation>
     </message>
 </context>
 <context>
@@ -3894,11 +3894,11 @@
     </message>
     <message>
         <source>Encode</source>
-        <translation></translation>
+        <translation>Encode</translation>
     </message>
     <message>
         <source>Decode</source>
-        <translation></translation>
+        <translation>Decode</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3939,7 +3939,7 @@
     <name>XDeviceTableEditView</name>
     <message>
         <source>Cannot resize</source>
-        <translation>Dosya açılmıyor</translation>
+        <translation>Yeniden boyutlandırılamıyor</translation>
     </message>
 </context>
 <context>
@@ -4170,7 +4170,7 @@
     </message>
     <message>
         <source>Arrows</source>
-        <translation></translation>
+        <translation>Oklar</translation>
     </message>
     <message>
         <source>All</source>
@@ -4178,15 +4178,15 @@
     </message>
     <message>
         <source>Selected</source>
-        <translation></translation>
+        <translation>Seçili</translation>
     </message>
     <message>
         <source>Registers</source>
-        <translation>Yazmaç</translation>
+        <translation>Yazmaçlar</translation>
     </message>
     <message>
         <source>Numbers</source>
-        <translation></translation>
+        <translation>Sayılar</translation>
     </message>
     <message>
         <source>Opcodes</source>
@@ -4198,34 +4198,34 @@
     </message>
     <message>
         <source>General registers</source>
-        <translation></translation>
+        <translation>Genel amaçlı yazmaçlar</translation>
     </message>
     <message>
         <source>Stack registers</source>
-        <translation></translation>
+        <translation>Yığın yazmaçları</translation>
     </message>
     <message>
         <source>Segment registers</source>
-        <translation></translation>
+        <translation>Segment yazmaçları</translation>
     </message>
     <message>
         <source>Debug registers</source>
-        <translation></translation>
+        <translation>Hata ayıklama yazmaçları</translation>
     </message>
     <message>
         <source>Instruction pointer register</source>
-        <translation></translation>
+        <translation>Instruction pointer yazmaçları</translation>
     </message>
     <message>
         <source>Flags register</source>
-        <translation></translation>
+        <translation>Bayrak yazmaçları</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Analyze</source>
@@ -4384,7 +4384,7 @@
     <name>XEntropyWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4459,7 +4459,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Dump all</source>
@@ -4554,7 +4554,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Endianness</source>
@@ -4601,7 +4601,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Method</source>
@@ -4668,7 +4668,7 @@
     </message>
     <message>
         <source>Crypter</source>
-        <translation></translation>
+        <translation>Crypter</translation>
     </message>
     <message>
         <source>Cryptor</source>
@@ -4784,15 +4784,15 @@
     </message>
     <message>
         <source>Virus</source>
-        <translation></translation>
+        <translation>Virüs</translation>
     </message>
     <message>
         <source>Trojan</source>
-        <translation></translation>
+        <translation>Truva atı</translation>
     </message>
     <message>
         <source>Malware</source>
-        <translation></translation>
+        <translation>Zararlı yazılım</translation>
     </message>
 </context>
 <context>
@@ -4810,7 +4810,7 @@
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Method</source>
@@ -4872,11 +4872,11 @@
     </message>
     <message>
         <source>Data convertor</source>
-        <translation>Veri denetçisi</translation>
+        <translation>Veri dönüştürücüsü</translation>
     </message>
     <message>
         <source>Multisearch</source>
-        <translation></translation>
+        <translation>Çoklu arama</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4932,7 +4932,7 @@
     </message>
     <message>
         <source>Resize</source>
-        <translation>Dosya boyutu</translation>
+        <translation>Yeniden boyutlandır</translation>
     </message>
     <message>
         <source>New</source>
@@ -5036,11 +5036,11 @@
     </message>
     <message>
         <source>Function enter</source>
-        <translation></translation>
+        <translation>İşlev başı</translation>
     </message>
     <message>
         <source>Function leave</source>
-        <translation></translation>
+        <translation>İşlev sonu</translation>
     </message>
     <message>
         <source>Step into</source>
@@ -5064,11 +5064,11 @@
     </message>
     <message>
         <source>Paused</source>
-        <translation></translation>
+        <translation>Duraklatıldı</translation>
     </message>
     <message>
         <source>Running</source>
-        <translation></translation>
+        <translation>Yürütülüyor</translation>
     </message>
 </context>
 <context>
@@ -5114,7 +5114,7 @@
     </message>
     <message>
         <source>Are you sure?</source>
-        <translation></translation>
+        <translation>Emin misiniz?</translation>
     </message>
 </context>
 <context>
@@ -5158,7 +5158,7 @@
     </message>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>Bitler</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -5255,7 +5255,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>File offset</source>
@@ -5334,7 +5334,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -5371,7 +5371,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation></translation>
+        <translation>Dosya bulunamıyor</translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5664,7 +5664,7 @@
     </message>
     <message>
         <source>Trace</source>
-        <translation>İz</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Animate</source>
@@ -5676,7 +5676,7 @@
     </message>
     <message>
         <source>Registers</source>
-        <translation>Yazmaç</translation>
+        <translation>Yazmaçlar</translation>
     </message>
     <message>
         <source>Register</source>
@@ -5776,7 +5776,7 @@
     </message>
     <message>
         <source>Hardware</source>
-        <translation></translation>
+        <translation>Donanım</translation>
     </message>
     <message>
         <source>Show</source>
@@ -5992,11 +5992,11 @@
     </message>
     <message>
         <source>Resize</source>
-        <translation>Dosya boyutu</translation>
+        <translation>Yeniden boyutlandır</translation>
     </message>
     <message>
         <source>Conditional</source>
-        <translation></translation>
+        <translation>Koşullu</translation>
     </message>
     <message>
         <source>Data inspector</source>
@@ -6004,11 +6004,11 @@
     </message>
     <message>
         <source>Data convertor</source>
-        <translation>Veri denetçisi</translation>
+        <translation>Veri dönüştürücüsü</translation>
     </message>
     <message>
         <source>Multisearch</source>
-        <translation></translation>
+        <translation>Çoklu arama</translation>
     </message>
 </context>
 <context>
@@ -6066,7 +6066,7 @@
     </message>
     <message>
         <source>Code</source>
-        <translation></translation>
+        <translation>Kod</translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -6159,7 +6159,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation>Tür</translation>
     </message>
     <message>
         <source>Width</source>
@@ -6167,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation></translation>
+        <translation>Boy</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6179,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation></translation>
+        <translation>Blok boyu</translation>
     </message>
     <message>
         <source>Method</source>
@@ -6191,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation></translation>
+        <translation>Öne çıkanlar</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -6224,7 +6224,7 @@
     <name>YARAWidgetAdvanced</name>
     <message>
         <source>Rules</source>
-        <translation>Modüller</translation>
+        <translation>Kurallar</translation>
     </message>
     <message>
         <source>Save</source>
@@ -6271,7 +6271,7 @@
     </message>
     <message>
         <source>Rules</source>
-        <translation>Modüller</translation>
+        <translation>Kurallar</translation>
     </message>
     <message>
         <source>Scan</source>

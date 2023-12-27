@@ -29,10 +29,15 @@ find_package(Qt5 COMPONENTS Network REQUIRED)
 find_package(Qt5 COMPONENTS Script REQUIRED)
 find_package(Qt5 COMPONENTS ScriptTools REQUIRED)
 
+option(WITH_YARA "Use Yara" ON)
+
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
-add_definitions(-DUSE_YARA)
+
+if(WITH_YARA)
+  add_definitions(-DUSE_YARA)
+endif()
 
 include(${PROJECT_SOURCE_DIR}/../XMIMEWidget/xmimewidget.cmake)
 include(${PROJECT_SOURCE_DIR}/../FormatWidgets/formatwidgets.cmake)
@@ -75,7 +80,10 @@ target_link_libraries(${PROJECT_NAME} lzma)
 target_link_libraries(${PROJECT_NAME} zlib)
 target_link_libraries(${PROJECT_NAME} capstone)
 target_link_libraries(${PROJECT_NAME} cppfilt)
-target_link_libraries(${PROJECT_NAME} yara)
+
+if(WITH_YARA)
+  target_link_libraries(${PROJECT_NAME} yara)
+endif()
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)

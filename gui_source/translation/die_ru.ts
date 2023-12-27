@@ -244,7 +244,7 @@
     </message>
     <message>
         <source>Custom database</source>
-        <translation></translation>
+        <translation>Пользовательская база данных</translation>
     </message>
     <message>
         <source>Editor</source>
@@ -373,7 +373,7 @@
     <name>DiE_Script</name>
     <message>
         <source>Cannot load database</source>
-        <translation>Не удается загрузить базу данных</translation>
+        <translation>Не удаётся загрузить базу данных</translation>
     </message>
 </context>
 <context>
@@ -465,7 +465,7 @@
     <name>DialogBits8</name>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>Биты</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -473,11 +473,11 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation></translation>
+        <translation>Подписано</translation>
     </message>
     <message>
         <source>Unsigned</source>
-        <translation></translation>
+        <translation>Без подписи</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -500,7 +500,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation></translation>
+        <translation>Расположение</translation>
     </message>
     <message>
         <source>Size</source>
@@ -508,7 +508,7 @@
     </message>
     <message>
         <source>Color</source>
-        <translation>Цвета</translation>
+        <translation>Цвет</translation>
     </message>
     <message>
         <source>Comment</source>
@@ -524,7 +524,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>Фон</translation>
     </message>
 </context>
 <context>
@@ -664,23 +664,23 @@
     </message>
     <message>
         <source>Detect</source>
-        <translation></translation>
+        <translation>Определить</translation>
     </message>
     <message>
         <source>Show type</source>
-        <translation></translation>
+        <translation>Показать тип</translation>
     </message>
     <message>
         <source>Show options</source>
-        <translation></translation>
+        <translation>Показать параметры</translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation></translation>
+        <translation>Показать версию</translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation></translation>
+        <translation>Очистить результат</translation>
     </message>
     <message>
         <source>Close</source>
@@ -703,7 +703,7 @@
     <name>DialogDIESignaturesElapsed</name>
     <message>
         <source>Elapsed</source>
-        <translation></translation>
+        <translation>Прошло</translation>
     </message>
     <message>
         <source>OK</source>
@@ -711,11 +711,11 @@
     </message>
     <message>
         <source>Time</source>
-        <translation></translation>
+        <translation>Время</translation>
     </message>
     <message>
         <source>Script</source>
-        <translation></translation>
+        <translation>Скрипт</translation>
     </message>
 </context>
 <context>
@@ -1301,7 +1301,7 @@
     <name>DialogResize</name>
     <message>
         <source>Resize</source>
-        <translation>Размер файла</translation>
+        <translation>Изменить размер</translation>
     </message>
     <message>
         <source>Size</source>
@@ -1653,18 +1653,18 @@
     </message>
     <message>
         <source>Color</source>
-        <translation>Цвета</translation>
+        <translation>Цвет</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>Фон</translation>
     </message>
 </context>
 <context>
     <name>DialogXDataConvertor</name>
     <message>
         <source>Data convertor</source>
-        <translation>Инспектор данных</translation>
+        <translation>Конвертер данных</translation>
     </message>
     <message>
         <source>OK</source>
@@ -2576,7 +2576,7 @@
     <name>MultiSearch</name>
     <message>
         <source>Number</source>
-        <translation></translation>
+        <translation>Номер</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -3764,11 +3764,11 @@
     </message>
     <message>
         <source>true</source>
-        <translation></translation>
+        <translation>истина</translation>
     </message>
     <message>
         <source>false</source>
-        <translation></translation>
+        <translation>ложь</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3875,11 +3875,11 @@
     </message>
     <message>
         <source>Invalid size</source>
-        <translation></translation>
+        <translation>Неверный размер</translation>
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation>Невозможно открыть файл</translation>
+        <translation>Невозможно изменить размер</translation>
     </message>
 </context>
 <context>
@@ -3894,11 +3894,11 @@
     </message>
     <message>
         <source>Encode</source>
-        <translation></translation>
+        <translation>Кодировать</translation>
     </message>
     <message>
         <source>Decode</source>
-        <translation></translation>
+        <translation>Декодировать</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3939,7 +3939,7 @@
     <name>XDeviceTableEditView</name>
     <message>
         <source>Cannot resize</source>
-        <translation>Невозможно открыть файл</translation>
+        <translation>Невозможно изменить размер</translation>
     </message>
 </context>
 <context>
@@ -4170,7 +4170,7 @@
     </message>
     <message>
         <source>Arrows</source>
-        <translation></translation>
+        <translation>Стрелки</translation>
     </message>
     <message>
         <source>All</source>
@@ -4178,15 +4178,15 @@
     </message>
     <message>
         <source>Selected</source>
-        <translation></translation>
+        <translation>Выбрано</translation>
     </message>
     <message>
         <source>Registers</source>
-        <translation>Регистр</translation>
+        <translation>Регистры</translation>
     </message>
     <message>
         <source>Numbers</source>
-        <translation></translation>
+        <translation>Номера</translation>
     </message>
     <message>
         <source>Opcodes</source>
@@ -4198,27 +4198,27 @@
     </message>
     <message>
         <source>General registers</source>
-        <translation></translation>
+        <translation>Общие регистры</translation>
     </message>
     <message>
         <source>Stack registers</source>
-        <translation></translation>
+        <translation>Регистры стека</translation>
     </message>
     <message>
         <source>Segment registers</source>
-        <translation></translation>
+        <translation>Сегментные регистры</translation>
     </message>
     <message>
         <source>Debug registers</source>
-        <translation></translation>
+        <translation>Регистры отладки</translation>
     </message>
     <message>
         <source>Instruction pointer register</source>
-        <translation></translation>
+        <translation>Регистр указателя инструкций</translation>
     </message>
     <message>
         <source>Flags register</source>
-        <translation></translation>
+        <translation>Регистр флагов</translation>
     </message>
 </context>
 <context>
@@ -4668,7 +4668,7 @@
     </message>
     <message>
         <source>Crypter</source>
-        <translation></translation>
+        <translation>Шифровальщик</translation>
     </message>
     <message>
         <source>Cryptor</source>
@@ -4784,15 +4784,15 @@
     </message>
     <message>
         <source>Virus</source>
-        <translation></translation>
+        <translation>Вирус</translation>
     </message>
     <message>
         <source>Trojan</source>
-        <translation></translation>
+        <translation>Троян</translation>
     </message>
     <message>
         <source>Malware</source>
-        <translation></translation>
+        <translation>Вредоносное ПО</translation>
     </message>
 </context>
 <context>
@@ -4872,11 +4872,11 @@
     </message>
     <message>
         <source>Data convertor</source>
-        <translation>Инспектор данных</translation>
+        <translation>Конвертер данных</translation>
     </message>
     <message>
         <source>Multisearch</source>
-        <translation></translation>
+        <translation>Мультипоиск</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -4932,7 +4932,7 @@
     </message>
     <message>
         <source>Resize</source>
-        <translation>Размер файла</translation>
+        <translation>Изменить размер</translation>
     </message>
     <message>
         <source>New</source>
@@ -5036,11 +5036,11 @@
     </message>
     <message>
         <source>Function enter</source>
-        <translation></translation>
+        <translation>Вход в функцию</translation>
     </message>
     <message>
         <source>Function leave</source>
-        <translation></translation>
+        <translation>Выход из функции</translation>
     </message>
     <message>
         <source>Step into</source>
@@ -5114,7 +5114,7 @@
     </message>
     <message>
         <source>Are you sure?</source>
-        <translation></translation>
+        <translation>Вы уверены?</translation>
     </message>
 </context>
 <context>
@@ -5158,7 +5158,7 @@
     </message>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>Биты</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -5371,7 +5371,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation></translation>
+        <translation>Не удаётся найти файл</translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5676,7 +5676,7 @@
     </message>
     <message>
         <source>Registers</source>
-        <translation>Регистр</translation>
+        <translation>Регистры</translation>
     </message>
     <message>
         <source>Register</source>
@@ -5776,7 +5776,7 @@
     </message>
     <message>
         <source>Hardware</source>
-        <translation></translation>
+        <translation>Аппаратное обеспечение</translation>
     </message>
     <message>
         <source>Show</source>
@@ -5992,11 +5992,11 @@
     </message>
     <message>
         <source>Resize</source>
-        <translation>Размер файла</translation>
+        <translation>Изменить размер</translation>
     </message>
     <message>
         <source>Conditional</source>
-        <translation></translation>
+        <translation>Условный</translation>
     </message>
     <message>
         <source>Data inspector</source>
@@ -6004,11 +6004,11 @@
     </message>
     <message>
         <source>Data convertor</source>
-        <translation>Инспектор данных</translation>
+        <translation>Конвертер данных</translation>
     </message>
     <message>
         <source>Multisearch</source>
-        <translation></translation>
+        <translation>Мультипоиск</translation>
     </message>
 </context>
 <context>
@@ -6066,7 +6066,7 @@
     </message>
     <message>
         <source>Code</source>
-        <translation></translation>
+        <translation>Код</translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -6167,7 +6167,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation></translation>
+        <translation>Высота</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6179,7 +6179,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation></translation>
+        <translation>Размер блока</translation>
     </message>
     <message>
         <source>Method</source>
@@ -6191,7 +6191,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation></translation>
+        <translation>Основные моменты</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -6224,7 +6224,7 @@
     <name>YARAWidgetAdvanced</name>
     <message>
         <source>Rules</source>
-        <translation>Модули</translation>
+        <translation>Правила</translation>
     </message>
     <message>
         <source>Save</source>
@@ -6271,7 +6271,7 @@
     </message>
     <message>
         <source>Rules</source>
-        <translation>Модули</translation>
+        <translation>Правила</translation>
     </message>
     <message>
         <source>Scan</source>
