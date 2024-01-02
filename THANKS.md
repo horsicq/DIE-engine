@@ -1,5 +1,13 @@
 <p><table>
 <tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/4kusNick.png" /></td>
+    <td>
+      <p>
+        <big><b>4kusNick</b></big>
+      </p>
+    </td>
+</tr>
+<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/AdamHenault.png" /></td>
     <td>
       <p>
@@ -137,6 +145,23 @@
       </p>
       <p>
         Twitter: <a href="https://twitter.com/PELock">PELock</a>
+      </p>
+    </td>
+</tr>
+<tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/blue-devil.png" /></td>
+    <td>
+      <p>
+        <big><b>blue-devil</b></big>
+      </p>
+      <p>
+        Website: <a href="http://www.sctzine.com">http://www.sctzine.com</a>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/blue-devil">blue-devil</a>
+      </p>
+      <p>
+        Twitter: <a href="https://twitter.com/bluedevilSCT">bluedevilSCT</a>
       </p>
     </td>
 </tr>
@@ -695,6 +720,31 @@
     </td>
 </tr>
 <tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/miT231-spec.png" /></td>
+    <td>
+      <p>
+        <big><b>miT231-spec</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/miT231-spec">miT231-spec</a>
+      </p>
+    </td>
+</tr>
+<tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/modz2014.png" /></td>
+    <td>
+      <p>
+        <big><b>modz2014</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/modz2014">modz2014</a>
+      </p>
+      <p>
+        Twitter: <a href="https://twitter.com/modz2014">modz2014</a>
+      </p>
+    </td>
+</tr>
+<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/Murcielago.png" /></td>
     <td>
       <p>
@@ -853,39 +903,6 @@
     <td>
       <p>
         <big><b>Zorn</b></big>
-      </p>
-    </td>
-</tr>
-<tr>
-    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/4kusNick.png" /></td>
-    <td>
-      <p>
-        <big><b>4kusNick</b></big>
-      </p>
-    </td>
-</tr>
-<tr>
-    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/miT231-spec.png" /></td>
-    <td>
-      <p>
-        <big><b>miT231-spec</b></big>
-      </p>
-      <p>
-        GitHub: <a href="https://github.com/miT231-spec">miT231-spec</a>
-      </p>
-    </td>
-</tr>
-<tr>
-    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/modz2014.png" /></td>
-    <td>
-      <p>
-        <big><b>modz2014</b></big>
-      </p>
-      <p>
-        GitHub: <a href="https://github.com/modz2014">modz2014</a>
-      </p>
-      <p>
-        Twitter: <a href="https://twitter.com/modz2014">modz2014</a>
       </p>
     </td>
 </tr>
