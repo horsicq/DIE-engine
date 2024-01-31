@@ -26,6 +26,8 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
 {
     ui->setupUi(this);
 
+    XOptions::registerCodecs();
+
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 
     g_xOptions.setName(X_OPTIONSFILELITE);

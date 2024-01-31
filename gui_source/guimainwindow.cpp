@@ -28,6 +28,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 #ifdef USE_YARA
     XYara::initialize();
 #endif
+    XOptions::registerCodecs();
+
     g_bFullScreen = false;
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));

@@ -156,6 +156,8 @@ int main(int argc, char *argv[])
 
     QCoreApplication app(argc, argv);
 
+    XOptions::registerCodecs();
+
     QCommandLineParser parser;
     QString sDescription;
     sDescription.append(QString("%1 v%2\n").arg(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
