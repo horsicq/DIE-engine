@@ -1,11 +1,8 @@
 [Desktop Entry]
-Version=#VERSION#
 Type=Application
 Name=Detect It Easy
 Comment=Detect It Easy, or abbreviated "DIE" is a program for determining types of files.
-TryExec=die
 Exec=die %F
 Icon=detect-it-easy
-Terminal=false
 Categories=Development;
 MimeType=application/octet-stream;
