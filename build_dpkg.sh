@@ -42,7 +42,6 @@ if [ -z "$X_ERROR" ]; then
         cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
         cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
         cp -f $X_SOURCE_PATH/LINUX/die.desktop                              $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
-        sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/die.desktop
         cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                                $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
         cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
         cp -Rf $X_SOURCE_PATH/XInfoDB/info/                                 $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
