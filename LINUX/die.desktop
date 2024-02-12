@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Detect It Easy
-Comment=Detect It Easy, or abbreviated "DIE" is a program for determining types of files.
+Comment=Advanced file analyzer
 Exec=die %F
 Icon=detect-it-easy
 Categories=Development;
