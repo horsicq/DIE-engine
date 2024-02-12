@@ -6,3 +6,4 @@ Exec=die %F
 Icon=detect-it-easy
 Categories=Development;
 MimeType=application/octet-stream;
+StartupWMClass=die
