@@ -39,7 +39,6 @@ call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Core
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5OpenGL
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Svg
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Sql
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Script
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5ScriptTools
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Network
