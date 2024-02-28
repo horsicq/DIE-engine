@@ -344,14 +344,6 @@
     </td>
 </tr>
 <tr>
-    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/ekse0x.png" /></td>
-    <td>
-      <p>
-        <big><b>ekse0x</b></big>
-      </p>
-    </td>
-</tr>
-<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/ELF_7719116.png" /></td>
     <td>
       <p>
