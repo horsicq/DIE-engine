@@ -168,54 +168,22 @@ int main(int argc, char *argv[])
 
     parser.addPositionalArgument("target", "The file or directory to open.");
 
-    QCommandLineOption clRecursiveScan(QStringList() << "r"
-                                                     << "recursivescan",
-                                       "Recursive scan.");
-    QCommandLineOption clDeepScan(QStringList() << "d"
-                                                << "deepscan",
-                                  "Deep scan.");
-    QCommandLineOption clHeuristicScan(QStringList() << "u"
-                                                     << "heuristicscan",
-                                       "Heuristic scan.");
-    QCommandLineOption clVerbose(QStringList() << "b"
-                                               << "verbose",
-                                 "Verbose.");
-    QCommandLineOption clAllTypesScan(QStringList() << "a"
-                                                    << "alltypes",
-                                      "Scan all types.");
-    QCommandLineOption clEntropy(QStringList() << "e"
-                                               << "entropy",
-                                 "Show entropy.");
-    QCommandLineOption clInfo(QStringList() << "i"
-                                            << "info",
-                              "Show file info.");
-    QCommandLineOption clResultAsXml(QStringList() << "x"
-                                                   << "xml",
-                                     "Result as XML.");
-    QCommandLineOption clResultAsJson(QStringList() << "j"
-                                                    << "json",
-                                      "Result as JSON.");
-    QCommandLineOption clResultAsCSV(QStringList() << "c"
-                                                   << "csv",
-                                     "Result as CSV.");
-    QCommandLineOption clResultAsTSV(QStringList() << "t"
-                                                   << "tsv",
-                                     "Result as TSV.");
-    QCommandLineOption clDatabase(QStringList() << "D"
-                                                << "database",
-                                  "Set database<path>.", "path");
-    QCommandLineOption clCustomDatabase(QStringList() << "C"
-                                                      << "customdatabase",
-                                        "Set custom database<path>.", "path");
-    QCommandLineOption clShowDatabase(QStringList() << "s"
-                                                    << "showdatabase",
-                                      "Show database.");
-    QCommandLineOption clSpecial(QStringList() << "S"
-                                               << "special",
-                                 "Special file info for <method>. For example -S \"Hash\".", "method");
-    QCommandLineOption clShowMethods(QStringList() << "m"
-                                                   << "showmethods",
-                                     "Show all special methods for the file.");
+    QCommandLineOption clRecursiveScan(QStringList() << "r" << "recursivescan", "Recursive scan.");
+    QCommandLineOption clDeepScan(QStringList() << "d" << "deepscan", "Deep scan.");
+    QCommandLineOption clHeuristicScan(QStringList() << "u" << "heuristicscan", "Heuristic scan.");
+    QCommandLineOption clVerbose(QStringList() << "b" << "verbose", "Verbose.");
+    QCommandLineOption clAllTypesScan(QStringList() << "a" << "alltypes", "Scan all types.");
+    QCommandLineOption clEntropy(QStringList() << "e" << "entropy", "Show entropy.");
+    QCommandLineOption clInfo(QStringList() << "i" << "info", "Show file info.");
+    QCommandLineOption clResultAsXml(QStringList() << "x" << "xml", "Result as XML.");
+    QCommandLineOption clResultAsJson(QStringList() << "j" << "json", "Result as JSON.");
+    QCommandLineOption clResultAsCSV(QStringList() << "c" << "csv", "Result as CSV.");
+    QCommandLineOption clResultAsTSV(QStringList() << "t" << "tsv", "Result as TSV.");
+    QCommandLineOption clDatabase(QStringList() << "D" << "database", "Set database<path>.", "path");
+    QCommandLineOption clCustomDatabase(QStringList() << "C" << "customdatabase", "Set custom database<path>.", "path");
+    QCommandLineOption clShowDatabase(QStringList() << "s" << "showdatabase", "Show database.");
+    QCommandLineOption clSpecial(QStringList() << "S" << "special", "Special file info for <method>. For example -S \"Hash\".", "method");
+    QCommandLineOption clShowMethods(QStringList() << "m" << "showmethods", "Show all special methods for the file.");
 
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
