@@ -1,4 +1,4 @@
-/* Copyright (c) 2020-2023 hors<horsicq@gmail.com>
+/* Copyright (c) 2020-2024 hors<horsicq@gmail.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -113,7 +113,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOpti
 
             QList<XBinary::SCANSTRUCT> listResult = DiE_Script::convert(&(scanResult.listRecords));
 
-            ScanItemModel model(&listResult);
+            ScanItemModel model(&listResult, 1, true);
 
             XBinary::FORMATTYPE formatType = XBinary::FORMATTYPE_TEXT;
 
@@ -121,6 +121,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOpti
             else if (pScanOptions->bResultAsJSON) formatType = XBinary::FORMATTYPE_JSON;
             else if (pScanOptions->bResultAsTSV) formatType = XBinary::FORMATTYPE_TSV;
             else if (pScanOptions->bResultAsXML) formatType = XBinary::FORMATTYPE_XML;
+            else if (pScanOptions->bResultAsPlainText) formatType = XBinary::FORMATTYPE_PLAINTEXT;
 
             if (formatType != XBinary::FORMATTYPE_TEXT) {
                 printf("%s\n", model.toString(formatType).toUtf8().data());
@@ -179,6 +180,7 @@ int main(int argc, char *argv[])
     QCommandLineOption clResultAsJson(QStringList() << "j" << "json", "Result as JSON.");
     QCommandLineOption clResultAsCSV(QStringList() << "c" << "csv", "Result as CSV.");
     QCommandLineOption clResultAsTSV(QStringList() << "t" << "tsv", "Result as TSV.");
+    QCommandLineOption clResultAsPlainText(QStringList() << "p" << "plaintext", "Result as Plain Text.");
     QCommandLineOption clDatabase(QStringList() << "D" << "database", "Set database<path>.", "path");
     QCommandLineOption clCustomDatabase(QStringList() << "C" << "customdatabase", "Set custom database<path>.", "path");
     QCommandLineOption clShowDatabase(QStringList() << "s" << "showdatabase", "Show database.");
@@ -197,6 +199,7 @@ int main(int argc, char *argv[])
     parser.addOption(clResultAsJson);
     parser.addOption(clResultAsCSV);
     parser.addOption(clResultAsTSV);
+    parser.addOption(clResultAsPlainText);
     parser.addOption(clDatabase);
     parser.addOption(clCustomDatabase);
     parser.addOption(clShowDatabase);
@@ -222,6 +225,7 @@ int main(int argc, char *argv[])
     scanOptions.bResultAsJSON = parser.isSet(clResultAsJson);
     scanOptions.bResultAsCSV = parser.isSet(clResultAsCSV);
     scanOptions.bResultAsTSV = parser.isSet(clResultAsTSV);
+    scanOptions.bResultAsPlainText = parser.isSet(clResultAsPlainText);
 
     scanOptions.sSpecial = parser.value(clSpecial);
 

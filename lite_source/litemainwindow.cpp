@@ -1,4 +1,4 @@
-/* Copyright (c) 2020-2023 hors<horsicq@gmail.com>
+/* Copyright (c) 2020-2024 hors<horsicq@gmail.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -99,7 +99,7 @@ void LiteMainWindow::processFile(const QString &sFileName)
 
         QList<XBinary::SCANSTRUCT> listResult = DiE_Script::convert(&(scanResult.listRecords));
 
-        ScanItemModel model(&listResult);
+        ScanItemModel model(&listResult, 1, false);
 
         ui->plainTextEditResult->setPlainText(model.toFormattedString());
 
