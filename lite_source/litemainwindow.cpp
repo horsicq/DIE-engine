@@ -97,9 +97,7 @@ void LiteMainWindow::processFile(const QString &sFileName)
 
         DiE_Script::SCAN_RESULT scanResult = g_pDieScript->scanFile(sFileName, &scanOptions);
 
-        QList<XBinary::SCANSTRUCT> listResult = DiE_Script::convert(&(scanResult.listRecords));
-
-        ScanItemModel model(&listResult, 1, false);
+        ScanItemModel model(&(scanResult.listRecords), 1, false);
 
         ui->plainTextEditResult->setPlainText(model.toFormattedString());
 

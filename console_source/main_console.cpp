@@ -111,9 +111,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOpti
         } else {
             DiE_Script::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions);
 
-            QList<XBinary::SCANSTRUCT> listResult = DiE_Script::convert(&(scanResult.listRecords));
-
-            ScanItemModel model(&listResult, 1, true);
+            ScanItemModel model(&(scanResult.listRecords), 1, true);
 
             XBinary::FORMATTYPE formatType = XBinary::FORMATTYPE_TEXT;
 
