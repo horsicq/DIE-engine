@@ -50,6 +50,7 @@ int main(int argc, char *argv[])
     }
 
     XSingleApplication app(argc, argv);
+    app.setDesktopFileName("die");
 
 #ifndef Q_OS_WIN
     QApplication::setWindowIcon(QIcon(":/images/main.png"));
