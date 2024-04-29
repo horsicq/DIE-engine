@@ -30,6 +30,7 @@ public:
 
 public slots:
     void errorMessage(const QString &sErrorMessage);
+    void warningMessage(const QString &sWarningMessage);
     void infoMessage(const QString &sInfoMessage);
 };
 

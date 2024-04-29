@@ -182,6 +182,9 @@ int main(int argc, char *argv[])
     QCommandLineOption clAllTypesScan(QStringList() << "a"
                                                     << "alltypes",
                                       "Scan all types.");
+    QCommandLineOption clProfiling(QStringList() << "p"
+                                                    << "profiling",
+                                      "Profiling signatures.");
     QCommandLineOption clEntropy(QStringList() << "e"
                                                << "entropy",
                                  "Show entropy.");
@@ -224,6 +227,7 @@ int main(int argc, char *argv[])
     parser.addOption(clHeuristicScan);
     parser.addOption(clVerbose);
     parser.addOption(clAllTypesScan);
+    parser.addOption(clProfiling);
     parser.addOption(clEntropy);
     parser.addOption(clInfo);
     parser.addOption(clSpecial);
@@ -251,6 +255,7 @@ int main(int argc, char *argv[])
     scanOptions.bIsHeuristicScan = parser.isSet(clHeuristicScan);
     scanOptions.bIsVerbose = parser.isSet(clVerbose);
     scanOptions.bAllTypesScan = parser.isSet(clAllTypesScan);
+    scanOptions.bIsProfiling = parser.isSet(clProfiling);
     scanOptions.bShowEntropy = parser.isSet(clEntropy);
     scanOptions.bShowExtraInfo = parser.isSet(clInfo);
     scanOptions.bResultAsXML = parser.isSet(clResultAsXml);

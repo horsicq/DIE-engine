@@ -30,6 +30,12 @@ void ConsoleOutput::errorMessage(const QString &sErrorMessage)
     printf("%s\n", _sText.toUtf8().data());
 }
 
+void ConsoleOutput::warningMessage(const QString &sWarningMessage)
+{
+    QString _sText = sWarningMessage;
+    printf("%s\n", _sText.toUtf8().data());
+}
+
 void ConsoleOutput::infoMessage(const QString &sInfoMessage)
 {
     QString _sText = sInfoMessage;
