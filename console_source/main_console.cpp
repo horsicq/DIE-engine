@@ -183,8 +183,8 @@ int main(int argc, char *argv[])
                                                     << "alltypes",
                                       "Scan all types.");
     QCommandLineOption clProfiling(QStringList() << "p"
-                                                    << "profiling",
-                                      "Profiling signatures.");
+                                                 << "profiling",
+                                   "Profiling signatures.");
     QCommandLineOption clEntropy(QStringList() << "e"
                                                << "entropy",
                                  "Show entropy.");
