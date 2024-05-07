@@ -182,7 +182,7 @@ int main(int argc, char *argv[])
     QCommandLineOption clAllTypesScan(QStringList() << "a"
                                                     << "alltypes",
                                       "Scan all types.");
-    QCommandLineOption clProfiling(QStringList() << "p"
+    QCommandLineOption clProfiling(QStringList() << "l"
                                                  << "profiling",
                                    "Profiling signatures.");
     QCommandLineOption clEntropy(QStringList() << "e"
@@ -217,7 +217,7 @@ int main(int argc, char *argv[])
                                       "Show database.");
     QCommandLineOption clSpecial(QStringList() << "S"
                                                << "special",
-                                 "Special file info for <method>. For example -S \"Hash\".", "method");
+                                 "Special file info for <method>. For example -S \"Hash\" or -S \"Hash#MD5\".", "method");
     QCommandLineOption clShowMethods(QStringList() << "m"
                                                    << "showmethods",
                                      "Show all special methods for the file.");
@@ -314,12 +314,12 @@ int main(int argc, char *argv[])
 
         printf("Methods:\n");
 
-        QList<XFileInfo::METHOD_DATA> listMethods = XFileInfo::getMethodNames(fileType);
+        QList<QString> listMethods = XFileInfo::getMethodNames(fileType);
 
         qint32 nNumberOfMethods = listMethods.count();
 
         for (qint32 i = 0; i < nNumberOfMethods; i++) {
-            printf("\t%s\n", listMethods.at(i).sName.toUtf8().data());
+            printf("\t%s\n", listMethods.at(i).toUtf8().data());
         }
     } else if (listArgs.count()) {
         if (!bIsDbUsed) {
