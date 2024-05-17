@@ -26,6 +26,8 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GRO
 {
     ui->setupUi(this);
 
+    setWindowFlags(Qt::Window);
+
     g_pDIEOptionsWidget = new DIEOptionsWidget(this);
     g_pSearchSignaturesOptionsWidget = new SearchSignaturesOptionsWidget(this);
     g_pXHexViewOptionsWidget = new XHexViewOptionsWidget(this);

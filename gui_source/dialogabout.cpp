@@ -26,6 +26,8 @@ DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::Dialog
 {
     ui->setupUi(this);
 
+    setWindowFlags(Qt::Window);
+
     XAboutWidget::DATA _data = {};
 
     _data.sInfo +=

@@ -25,6 +25,8 @@ DialogSelectStyle::DialogSelectStyle(QWidget *pParent) : QDialog(pParent), ui(ne
 {
     ui->setupUi(this);
 
+    setWindowFlags(Qt::Window);
+
     nStyleCode = 0;
 }
 
