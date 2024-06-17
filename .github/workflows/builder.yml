@@ -26,7 +26,7 @@ jobs:
           target: 'desktop'
           arch: 'win32_msvc2019'
           dir: ${{ github.workspace }}
-          modules: qtscript qtscripttools
+          modules: qtscript
 
       - name: Setup environment variables and run build script
         shell: cmd
