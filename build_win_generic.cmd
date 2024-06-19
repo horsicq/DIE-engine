@@ -7,7 +7,7 @@ call %X_SOURCE_PATH%\build_tools\windows.cmd make_build %X_SOURCE_PATH%\die_sour
 cd %X_SOURCE_PATH%\gui_source
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro 
 cd %X_SOURCE_PATH%
-
+echo "Check files"
 call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\die.exe
 
 IF NOT [%X_ERROR%] == [] goto exit
