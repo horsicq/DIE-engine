@@ -46,12 +46,13 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_VIEW_ADVANCED, false);
     g_xOptions.addID(XOptions::ID_VIEW_STYLE, "Fusion");
     g_xOptions.addID(XOptions::ID_VIEW_LANG, "System");
+    g_xOptions.addID(XOptions::ID_VIEW_FONT_CONTROLS, XOptions::getDefaultFont().toString());
+    g_xOptions.addID(XOptions::ID_VIEW_FONT_TABLES, XOptions::getMonoFont().toString());
     g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP, false);
     g_xOptions.addID(XOptions::ID_VIEW_SINGLEAPPLICATION, false);
     g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY, true);
     g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP, true);
     g_xOptions.addID(XOptions::ID_FILE_SAVERECENTFILES, true);
-    g_xOptions.addID(XOptions::ID_VIEW_FONT, "");
 #ifdef Q_OS_WIN
     g_xOptions.addID(XOptions::ID_FILE_CONTEXT, "*");
 #endif
@@ -93,7 +94,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
 
-    adjust();
+    adjustView();
     memset(shortCuts, 0, sizeof shortCuts);
     updateShortcuts();
 
@@ -143,8 +144,8 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
 
     dialogOptions.exec();
 
-    adjust();
-    ui->widgetFormats->adjustView();
+    adjustView();
+
     adjustFile();
 }
 
@@ -160,9 +161,12 @@ QString GuiMainWindow::getCurrentFileName()
     return ui->lineEditFileName->text();
 }
 
-void GuiMainWindow::adjust()
+void GuiMainWindow::adjustView()
 {
     g_xOptions.adjustStayOnTop(this);
+    g_xOptions.adjustWidget(this, XOptions::ID_VIEW_FONT_CONTROLS);
+
+    ui->widgetFormats->adjustView();
 }
 
 void GuiMainWindow::updateShortcuts()
