@@ -70,7 +70,7 @@ private slots:
     void fullScreenSlot();
 
     QString getCurrentFileName();
-    void adjustView();
+    virtual void adjustView();
     void updateShortcuts();
     void adjustFile();
     void setAdvanced(bool bState);
