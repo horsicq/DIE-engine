@@ -22,11 +22,9 @@
 
 #include "ui_dialogabout.h"
 
-DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::DialogAbout)
+DialogAbout::DialogAbout(QWidget *pParent) : XShortcutsDialog(pParent), ui(new Ui::DialogAbout)
 {
     ui->setupUi(this);
-
-    setWindowFlags(Qt::Window);
 
     XAboutWidget::DATA _data = {};
 
