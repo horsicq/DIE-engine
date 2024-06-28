@@ -256,7 +256,7 @@ int main(int argc, char *argv[])
     scanOptions.bIsVerbose = parser.isSet(clVerbose);
     scanOptions.bAllTypesScan = parser.isSet(clAllTypesScan);
     scanOptions.bIsProfiling = parser.isSet(clProfiling);
-    scanOptions.nBufferSize = 2 * 1024 * 1024; // TODO
+    scanOptions.nBufferSize = 2 * 1024 * 1024;  // TODO
     scanOptions.bShowEntropy = parser.isSet(clEntropy);
     scanOptions.bShowExtraInfo = parser.isSet(clInfo);
     scanOptions.bResultAsXML = parser.isSet(clResultAsXml);

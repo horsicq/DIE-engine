@@ -40,13 +40,18 @@ public:
     explicit DialogAbout(QWidget *pParent = nullptr);
     ~DialogAbout();
 
-    virtual void adjustView() {}
+    virtual void adjustView()
+    {
+    }
 
 private slots:
     void on_pushButtonOK_clicked();
 
 protected:
-    virtual void registerShortcuts(bool bState) { Q_UNUSED(bState) }
+    virtual void registerShortcuts(bool bState)
+    {
+        Q_UNUSED(bState)
+    }
 
 private:
     Ui::DialogAbout *ui;
