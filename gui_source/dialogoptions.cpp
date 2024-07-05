@@ -22,7 +22,7 @@
 
 #include "ui_dialogoptions.h"
 
-DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId) : XShortcutsDialog(pParent), ui(new Ui::DialogOptions)
+DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId) : XShortcutsDialog(pParent, false), ui(new Ui::DialogOptions)
 {
     ui->setupUi(this);
 
