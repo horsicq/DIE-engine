@@ -157,3 +157,6 @@
 [submodule "XDataConvertorWidget"]
 	path = XDataConvertorWidget
 	url = https://github.com/horsicq/XDataConvertorWidget
+[submodule "XScanEngine"]
+	path = XScanEngine
+	url = https://github.com/horsicq/XScanEngine
