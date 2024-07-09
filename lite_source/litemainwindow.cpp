@@ -85,7 +85,7 @@ void LiteMainWindow::processFile(const QString &sFileName)
     ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
 
     if (sFileName != "") {
-        DiE_Script::OPTIONS scanOptions = {};
+        XBinary::SCAN_OPTIONS scanOptions = {};
         scanOptions.bIsDeepScan = ui->checkBoxDeepScan->isChecked();
         scanOptions.bIsHeuristicScan = ui->checkBoxHeuristicScan->isChecked();
         scanOptions.bIsVerbose = ui->checkBoxVerbose->isChecked();
@@ -95,7 +95,7 @@ void LiteMainWindow::processFile(const QString &sFileName)
         scanOptions.bShowVersion = true;
         scanOptions.bShowOptions = true;
 
-        DiE_Script::SCAN_RESULT scanResult = g_pDieScript->scanFile(sFileName, &scanOptions);
+        XBinary::SCAN_RESULT scanResult = g_pDieScript->scanFile(sFileName, &scanOptions);
 
         ScanItemModel model(&(scanResult.listRecords), 1, false);
 

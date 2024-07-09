@@ -30,7 +30,7 @@
 #include "xfileinfo.h"
 #include "xoptions.h"
 
-XOptions::CR ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOptions, DiE_Script *pDieScript)
+XOptions::CR ScanFiles(QList<QString> *pListArgs, XBinary::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
 {
     XOptions::CR result = XOptions::CR_SUCCESS;
 
@@ -109,7 +109,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, DiE_Script::OPTIONS *pScanOpti
             printf("%s", sResult.toUtf8().data());
             printf("\n");
         } else {
-            DiE_Script::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions);
+            XBinary::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions);
 
             ScanItemModel model(&(scanResult.listRecords), 1, true);
 
@@ -245,7 +245,7 @@ int main(int argc, char *argv[])
 
     QList<QString> listArgs = parser.positionalArguments();
 
-    DiE_Script::OPTIONS scanOptions = {};
+    XBinary::SCAN_OPTIONS scanOptions = {};
 
     scanOptions.bShowType = true;
     scanOptions.bShowOptions = true;
