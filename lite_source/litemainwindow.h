@@ -27,6 +27,7 @@
 #include "../global.h"
 #include "die_script.h"
 #include "xoptions.h"
+#include "scanitemmodel.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

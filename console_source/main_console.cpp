@@ -29,8 +29,9 @@
 #include "entropyprocess.h"
 #include "xfileinfo.h"
 #include "xoptions.h"
+#include "scanitemmodel.h"
 
-XOptions::CR ScanFiles(QList<QString> *pListArgs, XBinary::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
+XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
 {
     XOptions::CR result = XOptions::CR_SUCCESS;
 
@@ -109,7 +110,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, XBinary::SCAN_OPTIONS *pScanOp
             printf("%s", sResult.toUtf8().data());
             printf("\n");
         } else {
-            XBinary::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions);
+            XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions);
 
             ScanItemModel model(&(scanResult.listRecords), 1, true);
 
@@ -245,7 +246,7 @@ int main(int argc, char *argv[])
 
     QList<QString> listArgs = parser.positionalArguments();
 
-    XBinary::SCAN_OPTIONS scanOptions = {};
+    XScanEngine::SCAN_OPTIONS scanOptions = {};
 
     scanOptions.bShowType = true;
     scanOptions.bShowOptions = true;
