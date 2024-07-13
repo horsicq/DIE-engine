@@ -617,6 +617,17 @@
     </td>
 </tr>
 <tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/SpriteOvO.png" /></td>
+    <td>
+      <p>
+        <big><b>SpriteOvO</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/SpriteOvO">SpriteOvO</a>
+      </p>
+    </td>
+</tr>
+<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/d3dm4u5.png" /></td>
     <td>
       <p>
@@ -659,6 +670,23 @@
       </p>
       <p>
         GitHub: <a href="https://github.com/keowu">keowu</a>
+      </p>
+    </td>
+</tr>
+<tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/Dan0xE.png" /></td>
+    <td>
+      <p>
+        <big><b>Dan0xE</b></big>
+      </p>
+      <p>
+        Website: <a href="https://dev.to/ubervisor">https://dev.to/ubervisor</a>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/Dan0xE">Dan0xE</a>
+      </p>
+      <p>
+        Twitter: <a href="https://twitter.com/dan0xe">dan0xe</a>
       </p>
     </td>
 </tr>
@@ -762,6 +790,20 @@
       </p>
       <p>
         GitHub: <a href="https://github.com/miT231-spec">miT231-spec</a>
+      </p>
+    </td>
+</tr>
+<tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/hmstk.png" /></td>
+    <td>
+      <p>
+        <big><b>Derick Estrada</b></big>
+      </p>
+      <p>
+        Website: <a href="hamsteri.co">hamsteri.co</a>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/hmstk">hmstk</a>
       </p>
     </td>
 </tr>
