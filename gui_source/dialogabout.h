@@ -40,9 +40,7 @@ public:
     explicit DialogAbout(QWidget *pParent = nullptr);
     ~DialogAbout();
 
-    virtual void adjustView()
-    {
-    }
+    virtual void adjustView();
 
 private slots:
     void on_pushButtonOK_clicked();

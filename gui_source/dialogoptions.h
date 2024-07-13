@@ -44,9 +44,7 @@ public:
     explicit DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId);
     ~DialogOptions();
 
-    virtual void adjustView()
-    {
-    }
+    virtual void adjustView();
 
 protected:
     virtual void registerShortcuts(bool bState)
