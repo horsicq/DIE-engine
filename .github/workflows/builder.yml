@@ -9,7 +9,6 @@ env:
   SRC_PATH: ${{ github.workspace }}/src
   SRC_PATH_WIN: ${{ github.workspace }}\src
   RELEASE_PATH: ${{ github.workspace }}/src/release
-  RELEASE_PATH_WIN: ${{ github.workspace }}\src\release
 
 # the jobs are based on these notes:
 # https://github.com/horsicq/Detect-It-Easy/blob/master/docs/BUILD.md
@@ -148,7 +147,24 @@ jobs:
 
           echo on
           call "%X_SOURCE_PATH%\build_win_generic_check.cmd"
-          
+
+      - name: Upload Release as Artifact
+        if: github.event_name != 'release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows64-artifact
+          path: |
+            ${{ env.RELEASE_PATH }}/*.zip
+
+      - name: Upload Release as Download
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ${{ env.RELEASE_PATH }}/*.zip
+
   build-windows-64:
     runs-on: windows-2019
     steps:
@@ -189,3 +205,19 @@ jobs:
           echo on
           call "%X_SOURCE_PATH%\build_win_generic_check.cmd"
 
+      - name: Upload Release as Artifact
+        if: github.event_name != 'release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows64-artifact
+          path: |
+            ${{ env.RELEASE_PATH }}/*.zip
+
+      - name: Upload Release as Download
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ${{ env.RELEASE_PATH }}/*.zip
