@@ -155,7 +155,6 @@ jobs:
           name: windows64-artifact
           path: |
             ${{ env.RELEASE_PATH }}/*.zip
-            ${{ env.RELEASE_PATH }}/*.exe
 
       - name: Upload Release as Download
         if: github.event_name == 'release'
@@ -165,7 +164,6 @@ jobs:
         with:
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
-            ${{ env.RELEASE_PATH }}/*.exe
 
   build-windows-64:
     runs-on: windows-2019
@@ -214,7 +212,6 @@ jobs:
           name: windows64-artifact
           path: |
             ${{ env.RELEASE_PATH }}/*.zip
-            ${{ env.RELEASE_PATH }}/*.exe
 
       - name: Upload Release as Download
         if: github.event_name == 'release'
@@ -224,4 +221,3 @@ jobs:
         with:
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
-            ${{ env.RELEASE_PATH }}/*.exe
