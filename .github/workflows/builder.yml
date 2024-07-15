@@ -7,7 +7,9 @@ on:
 
 env:
   SRC_PATH: ${{ github.workspace }}/src
+  SRC_PATH_WIN: ${{ github.workspace }}\src
   RELEASE_PATH: ${{ github.workspace }}/src/release
+  RELEASE_PATH_WIN: ${{ github.workspace }}\src\release
 
 # the jobs are based on these notes:
 # https://github.com/horsicq/Detect-It-Easy/blob/master/docs/BUILD.md
@@ -141,7 +143,7 @@ jobs:
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
           set X_BUILD_PREFIX="win32"
-          set X_SOURCE_PATH="${{ env.SRC_PATH }}"
+          set X_SOURCE_PATH="${{ env.SRC_PATH_WIN }}"
           for /f "delims=" %%x in ('type "%X_SOURCE_PATH%\release_version.txt"') do set X_RELEASE_VERSION=%%x
 
           echo on
@@ -181,8 +183,9 @@ jobs:
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
           set X_BUILD_PREFIX="win64"
-          set X_SOURCE_PATH="${{ env.SRC_PATH }}"
+          set X_SOURCE_PATH="${{ env.SRC_PATH_WIN }}"
           for /f "delims=" %%x in ('type "%X_SOURCE_PATH%\release_version.txt"') do set X_RELEASE_VERSION=%%x
 
           echo on
           call "%X_SOURCE_PATH%\build_win_generic_check.cmd"
+
