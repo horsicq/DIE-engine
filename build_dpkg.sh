@@ -1,4 +1,9 @@
 #!/bin/bash -x
+
+# Enable 'set -e' to ensure the script exits immediately if any command returns a non-zero exit code.
+# This is particularly useful so that github can correctly indicate the status of the process!
+set -e
+
 export QMAKE_PATH=/usr/bin/qmake
 
 export X_SOURCE_PATH=$PWD
