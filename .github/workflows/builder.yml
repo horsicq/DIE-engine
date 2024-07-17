@@ -13,6 +13,41 @@ env:
 # the jobs are based on these notes:
 # https://github.com/horsicq/Detect-It-Easy/blob/master/docs/BUILD.md
 jobs:
+  build-ubuntu-24:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev-tools libqt5svg5-dev qtchooser qt5-qmake build-essential -y
+
+      - name: Build
+        working-directory: ${{ env.SRC_PATH }}
+        run: |
+          bash -x build_dpkg.sh
+
+      - name: Upload Release as Artifact
+        if: github.event_name != 'release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ubuntu24-artifact
+          path: |
+            ${{ env.RELEASE_PATH }}/*.deb
+
+      - name: Upload Release as Download
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ${{ env.RELEASE_PATH }}/*.deb
+
   build-ubuntu-22:
     runs-on: ubuntu-22.04
     steps:
