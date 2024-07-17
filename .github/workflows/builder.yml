@@ -141,18 +141,29 @@ jobs:
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
-          set X_BUILD_PREFIX="win32"
+          set X_BUILD_NAME=die
+          set X_BUILD_PREFIX=win32
           set X_SOURCE_PATH=${{ env.SRC_PATH_WIN }}
           for /f "delims=" %%x in ('type "%X_SOURCE_PATH%\release_version.txt"') do set X_RELEASE_VERSION=%%x
 
           echo on
           call "%X_SOURCE_PATH%\build_win_generic_check.cmd"
 
+          dir "%X_SOURCE_PATH%\release\*.zip" >nul 2>&1
+          if %ERRORLEVEL% neq 0 (
+            echo "ZIP file does not exist"
+            exit /b 1
+          )
+
       - name: Upload Release as Artifact
         if: github.event_name != 'release'
         uses: actions/upload-artifact@v4
         with:
-          name: windows64-artifact
+          name: windows32-artifact
+          # it is commented because as there is no install.iss there is no need to put the exe
+          #path: |
+          #  ${{ env.RELEASE_PATH }}/*.zip
+          #  ${{ env.RELEASE_PATH }}/*.exe
           path: |
             ${{ env.RELEASE_PATH }}/*.zip
 
@@ -161,6 +172,11 @@ jobs:
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # it is commented because as there is no install.iss there is no need to put the exe
+        #with:
+        #  files: |
+        #    ${{ env.RELEASE_PATH }}/*.zip
+        #    ${{ env.RELEASE_PATH }}/*.exe
         with:
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
@@ -198,18 +214,29 @@ jobs:
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
-          set X_BUILD_PREFIX="win64"
+          set X_BUILD_NAME=die
+          set X_BUILD_PREFIX=win64
           set X_SOURCE_PATH=${{ env.SRC_PATH_WIN }}
           for /f "delims=" %%x in ('type "%X_SOURCE_PATH%\release_version.txt"') do set X_RELEASE_VERSION=%%x
 
           echo on
           call "%X_SOURCE_PATH%\build_win_generic_check.cmd"
 
+          dir "%X_SOURCE_PATH%\release\*.zip" >nul 2>&1
+          if %ERRORLEVEL% neq 0 (
+            echo "ZIP file does not exist"
+            exit /b 1
+          )
+
       - name: Upload Release as Artifact
         if: github.event_name != 'release'
         uses: actions/upload-artifact@v4
         with:
           name: windows64-artifact
+          # it is commented because as there is no install.iss there is no need to put the exe
+          #path: |
+          #  ${{ env.RELEASE_PATH }}/*.zip
+          #  ${{ env.RELEASE_PATH }}/*.exe
           path: |
             ${{ env.RELEASE_PATH }}/*.zip
 
@@ -218,6 +245,11 @@ jobs:
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # it is commented because as there is no install.iss there is no need to put the exe
+        #with:
+        #  files: |
+        #    ${{ env.RELEASE_PATH }}/*.zip
+        #    ${{ env.RELEASE_PATH }}/*.exe
         with:
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
