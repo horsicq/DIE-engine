@@ -97,7 +97,7 @@ void LiteMainWindow::processFile(const QString &sFileName)
 
         XScanEngine::SCAN_RESULT scanResult = g_pDieScript->scanFile(sFileName, &scanOptions);
 
-        ScanItemModel model(&(scanResult.listRecords), 1, false);
+        ScanItemModel model(&scanOptions, &(scanResult.listRecords), 1);
 
         ui->plainTextEditResult->setPlainText(model.toFormattedString());
 
