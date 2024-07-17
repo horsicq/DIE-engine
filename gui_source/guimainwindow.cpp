@@ -149,7 +149,6 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
     dialogOptions.exec();
 
     adjustView();
-
     adjustFile();
 }
 
