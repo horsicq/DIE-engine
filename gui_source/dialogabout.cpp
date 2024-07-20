@@ -85,7 +85,6 @@ DialogAbout::~DialogAbout()
 
 void DialogAbout::adjustView()
 {
-
 }
 
 void DialogAbout::on_pushButtonOK_clicked()
