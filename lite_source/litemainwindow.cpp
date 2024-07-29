@@ -26,27 +26,30 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
 {
     ui->setupUi(this);
 
+    g_bInit = false;
+
     XOptions::registerCodecs();
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 
     g_xOptions.setName(X_OPTIONSFILELITE);
 
-    g_xOptions.addID(XOptions::ID_SCAN_RECURSIVE, true);
-    g_xOptions.addID(XOptions::ID_SCAN_DEEP, true);
-    g_xOptions.addID(XOptions::ID_SCAN_HEURISTIC, false);
-    g_xOptions.addID(XOptions::ID_SCAN_VERBOSE, true);
-    g_xOptions.addID(XOptions::ID_SCAN_ALLTYPES, false);
+    g_xOptions.addID(XOptions::ID_SCAN_FLAG_RECURSIVE, true);
+    g_xOptions.addID(XOptions::ID_SCAN_FLAG_DEEP, true);
+    g_xOptions.addID(XOptions::ID_SCAN_FLAG_HEURISTIC, false);
+    g_xOptions.addID(XOptions::ID_SCAN_FLAG_VERBOSE, true);
+    g_xOptions.addID(XOptions::ID_SCAN_FLAG_ALLTYPES, false);
     g_xOptions.addID(XOptions::ID_SCAN_DATABASEPATH, "$data/db");
+    g_xOptions.addID(XOptions::ID_SCAN_EXTRADATABASEPATH, "$data/db_extra");
     g_xOptions.addID(XOptions::ID_SCAN_CUSTOMDATABASEPATH, "$data/db_custom");
 
     g_xOptions.load();
 
-    ui->checkBoxRecursiveScan->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_RECURSIVE).toBool());
-    ui->checkBoxDeepScan->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_DEEP).toBool());
-    ui->checkBoxHeuristicScan->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_HEURISTIC).toBool());
-    ui->checkBoxVerbose->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_VERBOSE).toBool());
-    ui->checkBoxAllTypesScan->setChecked(g_xOptions.getValue(XOptions::ID_SCAN_ALLTYPES).toBool());
+    ui->comboBoxFlags->setData(XScanEngine::getScanFlags(), XComboBoxEx::CBTYPE_FLAGS, 0, tr("Flags"));
+
+    quint64 nFlags = XScanEngine::getScanFlagsFromGlobalOptions(&g_xOptions);
+
+    ui->comboBoxFlags->setValue(nFlags);
 
     setAcceptDrops(true);
     installEventFilter(this);
@@ -54,8 +57,6 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     XOptions::setMonoFont(ui->plainTextEditResult);
 
     g_pDieScript = new DiE_Script;
-    g_pDieScript->loadDatabase(g_xOptions.getDatabasePath(), true);
-    g_pDieScript->loadDatabase(g_xOptions.getCustomDatabasePath(), false);
 
     if (QCoreApplication::arguments().count() > 1) {
         QString sFileName = QCoreApplication::arguments().at(1);
@@ -65,12 +66,10 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
 }
 
 LiteMainWindow::~LiteMainWindow()
-{
-    g_xOptions.setValue(XOptions::ID_SCAN_RECURSIVE, ui->checkBoxRecursiveScan->isChecked());
-    g_xOptions.setValue(XOptions::ID_SCAN_DEEP, ui->checkBoxDeepScan->isChecked());
-    g_xOptions.setValue(XOptions::ID_SCAN_HEURISTIC, ui->checkBoxHeuristicScan->isChecked());
-    g_xOptions.setValue(XOptions::ID_SCAN_VERBOSE, ui->checkBoxVerbose->isChecked());
-    g_xOptions.setValue(XOptions::ID_SCAN_ALLTYPES, ui->checkBoxAllTypesScan->isChecked());
+{ 
+    quint64 nFlags=ui->comboBoxFlags->getValue().toULongLong();
+
+    XScanEngine::setScanFlagsToGlobalOptions(&g_xOptions, nFlags);
 
     g_xOptions.save();
 
@@ -80,34 +79,22 @@ LiteMainWindow::~LiteMainWindow()
 
 void LiteMainWindow::processFile(const QString &sFileName)
 {
+    QString _sFileName = sFileName;
+
     ui->plainTextEditResult->clear();
 
-    ui->lineEditFileName->setText(QDir().toNativeSeparators(sFileName));
+    _sFileName = QDir().toNativeSeparators(_sFileName);
 
-    if (sFileName != "") {
-        XScanEngine::SCAN_OPTIONS scanOptions = {};
-        scanOptions.bIsDeepScan = ui->checkBoxDeepScan->isChecked();
-        scanOptions.bIsHeuristicScan = ui->checkBoxHeuristicScan->isChecked();
-        scanOptions.bIsVerbose = ui->checkBoxVerbose->isChecked();
-        scanOptions.bAllTypesScan = ui->checkBoxAllTypesScan->isChecked();
-        scanOptions.bIsRecursiveScan = ui->checkBoxRecursiveScan->isChecked();
-        scanOptions.bShowType = true;
-        scanOptions.bShowVersion = true;
-        scanOptions.bShowOptions = true;
+    ui->lineEditFileName->setText(_sFileName);
 
-        XScanEngine::SCAN_RESULT scanResult = g_pDieScript->scanFile(sFileName, &scanOptions);
+    XFormats::setFileTypeComboBox(XBinary::FT_UNKNOWN, _sFileName, ui->comboBoxType);
 
-        ScanItemModel model(&scanOptions, &(scanResult.listRecords), 1);
-
-        ui->plainTextEditResult->setPlainText(model.toFormattedString());
-
-        ui->labelScanTime->setText(QString("%1 %2").arg(scanResult.nScanTime).arg(tr("msec")));
-    }
+    process();
 }
 
 void LiteMainWindow::on_pushButtonScan_clicked()
 {
-    processFile(ui->lineEditFileName->text());
+    process();
 }
 
 void LiteMainWindow::on_pushButtonExit_clicked()
@@ -123,6 +110,40 @@ void LiteMainWindow::on_pushButtonOpenFile_clicked()
 
     if (!sFileName.isEmpty()) {
         processFile(sFileName);
+    }
+}
+
+void LiteMainWindow::process()
+{
+    QString _sFileName = ui->lineEditFileName->text().trimmed();
+
+    if (_sFileName != "") {
+        XScanEngine::SCAN_OPTIONS scanOptions = {};
+
+        scanOptions.bShowType = true;
+        scanOptions.bShowVersion = true;
+        scanOptions.bShowInfo = true;
+        scanOptions.fileType = (XBinary::FT)(ui->comboBoxType->currentData().toInt());
+
+        quint64 nFlags=ui->comboBoxFlags->getValue().toULongLong();
+        XScanEngine::setScanFlags(&scanOptions, nFlags);
+
+        if (!g_bInit) {
+            g_pDieScript->initDatabase();
+            g_pDieScript->loadDatabase(&scanOptions, g_xOptions.getDatabasePath(), "main");
+            g_pDieScript->loadDatabase(&scanOptions, g_xOptions.getExtraDatabasePath(), "extra");
+            g_pDieScript->loadDatabase(&scanOptions, g_xOptions.getCustomDatabasePath(), "custom");
+
+            g_bInit = true;
+        }
+
+        XScanEngine::SCAN_RESULT scanResult = g_pDieScript->scanFile(_sFileName, &scanOptions);
+
+        ScanItemModel model(&scanOptions, &(scanResult.listRecords), 1);
+
+        ui->plainTextEditResult->setPlainText(model.toFormattedString());
+
+        ui->labelScanTime->setText(QString("%1 %2").arg(scanResult.nScanTime).arg(tr("msec")));
     }
 }
 

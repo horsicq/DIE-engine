@@ -78,7 +78,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pSc
             }
 
             printf("%s", sResult.toUtf8().data());
-        } else if ((pScanOptions->bShowExtraInfo) || (pScanOptions->sSpecial != "")) {
+        } else if ((pScanOptions->bShowFileInfo) || (pScanOptions->sSpecial != "")) {
             QString sResult;
 
             XFileInfo::OPTIONS options = {};
@@ -207,10 +207,13 @@ int main(int argc, char *argv[])
     QCommandLineOption clResultAsPlainText(QStringList() << "p"
                                                          << "plaintext",
                                            "Result as Plain Text.");
-    QCommandLineOption clDatabase(QStringList() << "D"
+    QCommandLineOption clDatabaseMain(QStringList() << "D"
                                                 << "database",
                                   "Set database<path>.", "path");
-    QCommandLineOption clCustomDatabase(QStringList() << "C"
+    QCommandLineOption clDatabaseExtra(QStringList() << "E"
+                                                      << "extradatabase",
+                                        "Set extra database<path>.", "path");
+    QCommandLineOption clDatabaseCustom(QStringList() << "C"
                                                       << "customdatabase",
                                         "Set custom database<path>.", "path");
     QCommandLineOption clShowDatabase(QStringList() << "s"
@@ -237,8 +240,9 @@ int main(int argc, char *argv[])
     parser.addOption(clResultAsCSV);
     parser.addOption(clResultAsTSV);
     parser.addOption(clResultAsPlainText);
-    parser.addOption(clDatabase);
-    parser.addOption(clCustomDatabase);
+    parser.addOption(clDatabaseMain);
+    parser.addOption(clDatabaseExtra);
+    parser.addOption(clDatabaseCustom);
     parser.addOption(clShowDatabase);
     parser.addOption(clShowMethods);
 
@@ -249,17 +253,17 @@ int main(int argc, char *argv[])
     XScanEngine::SCAN_OPTIONS scanOptions = {};
 
     scanOptions.bShowType = true;
-    scanOptions.bShowOptions = true;
+    scanOptions.bShowInfo = true;
     scanOptions.bShowVersion = true;
     scanOptions.bIsRecursiveScan = parser.isSet(clRecursiveScan);
     scanOptions.bIsDeepScan = parser.isSet(clDeepScan);
     scanOptions.bIsHeuristicScan = parser.isSet(clHeuristicScan);
     scanOptions.bIsVerbose = parser.isSet(clVerbose);
-    scanOptions.bAllTypesScan = parser.isSet(clAllTypesScan);
-    scanOptions.bIsProfiling = parser.isSet(clProfiling);
+    scanOptions.bIsAllTypesScan = parser.isSet(clAllTypesScan);
+    scanOptions.bLogProfiling = parser.isSet(clProfiling);
     scanOptions.nBufferSize = 2 * 1024 * 1024;  // TODO
     scanOptions.bShowEntropy = parser.isSet(clEntropy);
-    scanOptions.bShowExtraInfo = parser.isSet(clInfo);
+    scanOptions.bShowFileInfo = parser.isSet(clInfo);
     scanOptions.bResultAsXML = parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON = parser.isSet(clResultAsJson);
     scanOptions.bResultAsCSV = parser.isSet(clResultAsCSV);
@@ -269,21 +273,27 @@ int main(int argc, char *argv[])
 
     scanOptions.sSpecial = parser.value(clSpecial);
 
-    QString sDatabase = parser.value(clDatabase);
-    QString sCustomDatabase = parser.value(clCustomDatabase);
+    QString sDatabaseMain = parser.value(clDatabaseMain);
+    QString sDatabaseExtra = parser.value(clDatabaseExtra);
+    QString sDatabaseCustom = parser.value(clDatabaseCustom);
 
-    if (sDatabase == "") {
-        sDatabase = XOptions().getApplicationDataPath() + QDir::separator() + "db";
+    if (sDatabaseMain == "") {
+        sDatabaseMain = XOptions().getApplicationDataPath() + QDir::separator() + "db";
     }
 
-    if (sCustomDatabase == "") {
-        sCustomDatabase = XOptions().getApplicationDataPath() + QDir::separator() + "db_custom";
+    if (sDatabaseExtra == "") {
+        sDatabaseExtra = XOptions().getApplicationDataPath() + QDir::separator() + "db_extra";
+    }
+
+    if (sDatabaseCustom == "") {
+        sDatabaseCustom = XOptions().getApplicationDataPath() + QDir::separator() + "db_custom";
     }
 
     ConsoleOutput consoleOutput;
     DiE_Script die_script;
 
     QObject::connect(&die_script, SIGNAL(errorMessage(QString)), &consoleOutput, SLOT(errorMessage(QString)));
+    QObject::connect(&die_script, SIGNAL(warningMessage(QString)), &consoleOutput, SLOT(warningMessage(QString)));
     QObject::connect(&die_script, SIGNAL(infoMessage(QString)), &consoleOutput, SLOT(infoMessage(QString)));
 
     bool bIsDbUsed = false;
@@ -291,13 +301,16 @@ int main(int argc, char *argv[])
 
     if (parser.isSet(clShowDatabase)) {
         if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(sDatabase, true);
-            die_script.loadDatabase(sCustomDatabase, false);
+            die_script.initDatabase();
+            bDbLoaded = die_script.loadDatabase(&scanOptions, sDatabaseMain, "main", nullptr);
+            die_script.loadDatabase(&scanOptions, sDatabaseExtra, "extra", nullptr);
+            die_script.loadDatabase(&scanOptions, sDatabaseCustom, "custom", nullptr);
             bIsDbUsed = true;
         }
 
-        printf("Database: %s\n", sDatabase.toUtf8().data());
-        printf("Custom database: %s\n", sCustomDatabase.toUtf8().data());
+        printf("Main database: %s\n", sDatabaseMain.toUtf8().data());
+        printf("Extra database: %s\n", sDatabaseMain.toUtf8().data());
+        printf("Custom database: %s\n", sDatabaseCustom.toUtf8().data());
 
         QList<DiE_Script::SIGNATURE_STATE> list = die_script.getSignatureStates();
 
@@ -326,8 +339,10 @@ int main(int argc, char *argv[])
         }
     } else if (listArgs.count()) {
         if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(sDatabase, true);
-            die_script.loadDatabase(sCustomDatabase, false);
+            die_script.initDatabase();
+            bDbLoaded = die_script.loadDatabase(&scanOptions, sDatabaseMain, "main", nullptr);
+            die_script.loadDatabase(&scanOptions, sDatabaseExtra, "extra", nullptr);
+            die_script.loadDatabase(&scanOptions, sDatabaseCustom, "custom", nullptr);
             bIsDbUsed = true;
         }
 

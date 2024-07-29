@@ -37,6 +37,11 @@ FORMS += \
     include(../XOptions/xoptions.pri)
 }
 
+!contains(XCONFIG, xcomboboxex) {
+    XCONFIG += xcomboboxex
+    include(../Controls/xcomboboxex.pri)
+}
+
 win32 {
     RC_ICONS = ../icons/lite.ico
     CONFIG -= embed_manifest_exe

@@ -49,6 +49,7 @@ private slots:
     void on_pushButtonScan_clicked();
     void on_pushButtonExit_clicked();
     void on_pushButtonOpenFile_clicked();
+    void process();
 
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
@@ -60,5 +61,6 @@ private:
     Ui::LiteMainWindow *ui;
     DiE_Script *g_pDieScript;
     XOptions g_xOptions;
+    bool g_bInit;
 };
 #endif  // LITEMAINWINDOW_H
