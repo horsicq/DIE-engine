@@ -46,10 +46,12 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     g_xOptions.load();
 
     ui->comboBoxFlags->setData(XScanEngine::getScanFlags(), XComboBoxEx::CBTYPE_FLAGS, 0, tr("Flags"));
+    ui->comboBoxFlags->setValue(XScanEngine::getScanFlagsFromGlobalOptions(&g_xOptions));
 
-    quint64 nFlags = XScanEngine::getScanFlagsFromGlobalOptions(&g_xOptions);
+    ui->comboBoxDatabases->setData(XScanEngine::getDatabases(), XComboBoxEx::CBTYPE_FLAGS, 0, tr("Databases"));
+    ui->comboBoxDatabases->setValue(XScanEngine::getDatabasesFromGlobalOptions(&g_xOptions));
 
-    ui->comboBoxFlags->setValue(nFlags);
+    ui->comboBoxDatabases->setItemEnabled(1, false);
 
     setAcceptDrops(true);
     installEventFilter(this);
@@ -66,10 +68,9 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
 }
 
 LiteMainWindow::~LiteMainWindow()
-{ 
-    quint64 nFlags=ui->comboBoxFlags->getValue().toULongLong();
-
-    XScanEngine::setScanFlagsToGlobalOptions(&g_xOptions, nFlags);
+{
+    XScanEngine::setScanFlagsToGlobalOptions(&g_xOptions, ui->comboBoxFlags->getValue().toULongLong());
+    XScanEngine::setDatabasesToGlobalOptions(&g_xOptions, ui->comboBoxDatabases->getValue().toULongLong());
 
     g_xOptions.save();
 
@@ -125,8 +126,8 @@ void LiteMainWindow::process()
         scanOptions.bShowInfo = true;
         scanOptions.fileType = (XBinary::FT)(ui->comboBoxType->currentData().toInt());
 
-        quint64 nFlags=ui->comboBoxFlags->getValue().toULongLong();
-        XScanEngine::setScanFlags(&scanOptions, nFlags);
+        XScanEngine::setScanFlags(&scanOptions, ui->comboBoxFlags->getValue().toULongLong());
+        XScanEngine::setDatabases(&scanOptions, ui->comboBoxDatabases->getValue().toULongLong());
 
         if (!g_bInit) {
             g_bInit = g_pDieScript->loadDatabaseFromGlobalOptions(&g_xOptions);

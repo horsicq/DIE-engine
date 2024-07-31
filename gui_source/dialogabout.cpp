@@ -91,3 +91,8 @@ void DialogAbout::on_pushButtonOK_clicked()
 {
     this->close();
 }
+
+void DialogAbout::registerShortcuts(bool bState)
+{
+    Q_UNUSED(bState)
+}

@@ -208,11 +208,11 @@ int main(int argc, char *argv[])
                                                          << "plaintext",
                                            "Result as Plain Text.");
     QCommandLineOption clDatabaseMain(QStringList() << "D"
-                                                << "database",
-                                  "Set database<path>.", "path");
+                                                    << "database",
+                                      "Set database<path>.", "path");
     QCommandLineOption clDatabaseExtra(QStringList() << "E"
-                                                      << "extradatabase",
-                                        "Set extra database<path>.", "path");
+                                                     << "extradatabase",
+                                       "Set extra database<path>.", "path");
     QCommandLineOption clDatabaseCustom(QStringList() << "C"
                                                       << "customdatabase",
                                         "Set custom database<path>.", "path");

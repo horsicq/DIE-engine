@@ -73,6 +73,16 @@
        </widget>
       </item>
       <item>
+       <widget class="XComboBoxEx" name="comboBoxDatabases">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
