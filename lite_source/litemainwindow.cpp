@@ -39,9 +39,9 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     g_xOptions.addID(XOptions::ID_SCAN_FLAG_HEURISTIC, false);
     g_xOptions.addID(XOptions::ID_SCAN_FLAG_VERBOSE, true);
     g_xOptions.addID(XOptions::ID_SCAN_FLAG_ALLTYPES, false);
-    g_xOptions.addID(XOptions::ID_SCAN_DATABASEPATH, "$data/db");
-    g_xOptions.addID(XOptions::ID_SCAN_EXTRADATABASEPATH, "$data/db_extra");
-    g_xOptions.addID(XOptions::ID_SCAN_CUSTOMDATABASEPATH, "$data/db_custom");
+    g_xOptions.addID(XOptions::ID_SCAN_DATABASE_MAIN_PATH, "$data/db");
+    g_xOptions.addID(XOptions::ID_SCAN_DATABASE_EXTRA_PATH, "$data/db_extra");
+    g_xOptions.addID(XOptions::ID_SCAN_DATABASE_CUSTOM_PATH, "$data/db_custom");
 
     g_xOptions.load();
 
@@ -129,12 +129,7 @@ void LiteMainWindow::process()
         XScanEngine::setScanFlags(&scanOptions, nFlags);
 
         if (!g_bInit) {
-            g_pDieScript->initDatabase();
-            g_pDieScript->loadDatabase(&scanOptions, g_xOptions.getDatabasePath(), "main");
-            g_pDieScript->loadDatabase(&scanOptions, g_xOptions.getExtraDatabasePath(), "extra");
-            g_pDieScript->loadDatabase(&scanOptions, g_xOptions.getCustomDatabasePath(), "custom");
-
-            g_bInit = true;
+            g_bInit = g_pDieScript->loadDatabaseFromGlobalOptions(&g_xOptions);
         }
 
         XScanEngine::SCAN_RESULT scanResult = g_pDieScript->scanFile(_sFileName, &scanOptions);
