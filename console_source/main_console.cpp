@@ -275,6 +275,7 @@ int main(int argc, char *argv[])
     scanOptions.bResultAsTSV = parser.isSet(clResultAsTSV);
     scanOptions.bResultAsPlainText = parser.isSet(clResultAsPlainText);
     scanOptions.bIsHighlight = true;
+    scanOptions.bIsSort = true;
 
     scanOptions.sSpecial = parser.value(clSpecial);
 
