@@ -256,6 +256,8 @@ int main(int argc, char *argv[])
 
     XScanEngine::SCAN_OPTIONS scanOptions = {};
 
+    scanOptions.bUseCustomDatabase = true;
+    scanOptions.bUseExtraDatabase = true;
     scanOptions.bShowType = true;
     scanOptions.bShowInfo = true;
     scanOptions.bShowVersion = true;

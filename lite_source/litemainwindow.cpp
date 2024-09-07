@@ -121,6 +121,8 @@ void LiteMainWindow::process()
     if (_sFileName != "") {
         XScanEngine::SCAN_OPTIONS scanOptions = {};
 
+        scanOptions.bUseCustomDatabase = true;
+        scanOptions.bUseExtraDatabase = true;
         scanOptions.bShowType = true;
         scanOptions.bShowVersion = true;
         scanOptions.bShowInfo = true;
