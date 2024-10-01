@@ -7,5 +7,8 @@
         <file>icons/Binary.16.16.png</file>
         <file>icons/BreakpointDisabled.16.16.png</file>
         <file>icons/BreakpointEnabled.16.16.png</file>
+        <file>icons/Download.16.16.png</file>
+        <file>icons/Image.16.16.png</file>
+        <file>icons/Save.16.16.png</file>
     </qresource>
 </RCC>
