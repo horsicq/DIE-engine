@@ -18,5 +18,11 @@
         <file>icons/String.16.16.png</file>
         <file>icons/Value.16.16.png</file>
         <file>icons/Entry.16.16.png</file>
+        <file>icons/Copy.16.16.png</file>
+        <file>icons/Entropy.16.16.png</file>
+        <file>icons/Hash.16.16.png</file>
+        <file>icons/Mime.16.16.png</file>
+        <file>icons/Virustotal.16.16.png</file>
+        <file>icons/Yara.16.16.png</file>
     </qresource>
 </RCC>
