@@ -24,5 +24,8 @@
         <file>icons/Mime.16.16.png</file>
         <file>icons/Virustotal.16.16.png</file>
         <file>icons/Yara.16.16.png</file>
+        <file>icons/Edit.16.16.png</file>
+        <file>icons/Backwards.16.16.png</file>
+        <file>icons/Forwards.16.16.png</file>
     </qresource>
 </RCC>
