@@ -55,12 +55,12 @@ public:
     ~GuiMainWindow();
 
 private slots:
-    void on_pushButtonExit_clicked();
-    void on_pushButtonAbout_clicked();
-    void on_pushButtonShortcuts_clicked();
-    void on_pushButtonOptions_clicked();
-    void on_pushButtonOpenFile_clicked();
-    void on_pushButtonDemangle_clicked();
+    void on_toolButtonExit_clicked();
+    void on_toolButtonAbout_clicked();
+    void on_toolButtonShortcuts_clicked();
+    void on_toolButtonOptions_clicked();
+    void on_toolButtonOpenFile_clicked();
+    void on_toolButtonDemangle_clicked();
     void on_toolButtonRecentFiles_clicked();
     void on_checkBoxAdvanced_toggled(bool bChecked);
     void on_lineEditFileName_returnPressed();

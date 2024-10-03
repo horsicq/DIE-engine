@@ -129,12 +129,12 @@ GuiMainWindow::~GuiMainWindow()
 #endif
 }
 
-void GuiMainWindow::on_pushButtonExit_clicked()
+void GuiMainWindow::on_toolButtonExit_clicked()
 {
     exitSlot();
 }
 
-void GuiMainWindow::on_pushButtonAbout_clicked()
+void GuiMainWindow::on_toolButtonAbout_clicked()
 {
     DialogAbout dialogAbout(this);
     dialogAbout.setGlobal(&g_xShortcuts, &g_xOptions);
@@ -142,7 +142,7 @@ void GuiMainWindow::on_pushButtonAbout_clicked()
     dialogAbout.exec();
 }
 
-void GuiMainWindow::on_pushButtonOptions_clicked()
+void GuiMainWindow::on_toolButtonOptions_clicked()
 {
     DialogOptions dialogOptions(this, &g_xOptions, XOptions::GROUPID_FILE);
     dialogOptions.setGlobal(&g_xShortcuts, &g_xOptions);
@@ -153,7 +153,7 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
     adjustFile();
 }
 
-void GuiMainWindow::on_pushButtonDemangle_clicked()
+void GuiMainWindow::on_toolButtonDemangle_clicked()
 {
     DialogDemangle dialogDemangle(this);
 
@@ -199,10 +199,10 @@ void GuiMainWindow::adjustFile()
 void GuiMainWindow::setAdvanced(bool bState)
 {
     if (bState) {
-        ui->pushButtonDemangle->show();
+        ui->toolButtonDemangle->show();
 
     } else {
-        ui->pushButtonDemangle->hide();
+        ui->toolButtonDemangle->hide();
     }
 
     ui->widgetFormats->setAdvanced(bState);
@@ -251,12 +251,12 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
     }
 }
 
-void GuiMainWindow::on_pushButtonOpenFile_clicked()
+void GuiMainWindow::on_toolButtonOpenFile_clicked()
 {
     openFileSlot();
 }
 
-void GuiMainWindow::on_pushButtonShortcuts_clicked()
+void GuiMainWindow::on_toolButtonShortcuts_clicked()
 {
     DialogShortcuts dialogShortcuts(this);
     dialogShortcuts.setGlobal(&g_xShortcuts, &g_xOptions);

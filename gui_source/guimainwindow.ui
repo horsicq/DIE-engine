@@ -44,7 +44,13 @@
         <widget class="QLineEdit" name="lineEditFileName"/>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButtonOpenFile">
+        <widget class="QToolButton" name="toolButtonOpenFile">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string notr="true">...</string>
          </property>
@@ -93,7 +99,13 @@
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButtonDemangle">
+            <widget class="QToolButton" name="toolButtonDemangle">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="text">
               <string>Demangle</string>
              </property>
@@ -113,28 +125,52 @@
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButtonShortcuts">
+            <widget class="QToolButton" name="toolButtonShortcuts">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="text">
               <string>Shortcuts</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButtonOptions">
+            <widget class="QToolButton" name="toolButtonOptions">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="text">
               <string>Options</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButtonAbout">
+            <widget class="QToolButton" name="toolButtonAbout">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="text">
               <string>About</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButtonExit">
+            <widget class="QToolButton" name="toolButtonExit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="text">
               <string>Exit</string>
              </property>
