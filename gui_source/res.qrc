@@ -27,5 +27,9 @@
         <file>icons/Edit.16.16.png</file>
         <file>icons/Backwards.16.16.png</file>
         <file>icons/Forwards.16.16.png</file>
+        <file>icons/Add.16.16.png</file>
+        <file>icons/Options.16.16.png</file>
+        <file>icons/List.16.16.png</file>
+        <file>icons/Openfile.16.16.png</file>
     </qresource>
 </RCC>

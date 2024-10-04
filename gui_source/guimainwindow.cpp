@@ -25,6 +25,25 @@
 GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
 {
     ui->setupUi(this);
+
+    XOptions::adjustToolButton(ui->toolButtonAbout, XOptions::ICONTYPE_INFO);
+    XOptions::adjustToolButton(ui->toolButtonOptions, XOptions::ICONTYPE_OPTIONS);
+    XOptions::adjustToolButton(ui->toolButtonDemangle, XOptions::ICONTYPE_DEMANGLE);
+    XOptions::adjustToolButton(ui->toolButtonExit, XOptions::ICONTYPE_EXIT);
+    XOptions::adjustToolButton(ui->toolButtonOpenFile, XOptions::ICONTYPE_OPENFILE, Qt::ToolButtonIconOnly);
+    XOptions::adjustToolButton(ui->toolButtonShortcuts, XOptions::ICONTYPE_SHORTCUTS);
+    XOptions::adjustToolButton(ui->toolButtonRecentFiles, XOptions::ICONTYPE_LIST, Qt::ToolButtonIconOnly);
+
+    ui->toolButtonAbout->setToolTip(tr("About"));
+    ui->toolButtonOptions->setToolTip(tr("Options"));
+    ui->toolButtonDemangle->setToolTip(tr("Demangle"));
+    ui->toolButtonExit->setToolTip(tr("Exit"));
+    ui->toolButtonOpenFile->setToolTip(tr("Open file"));
+    ui->toolButtonShortcuts->setToolTip(tr("Shortcuts"));
+    ui->toolButtonRecentFiles->setToolTip(tr("Recent files"));
+    ui->lineEditFileName->setToolTip(tr("File name"));
+    ui->checkBoxAdvanced->setToolTip(tr("Advanced"));
+
 #ifdef USE_YARA
     XYara::initialize();
 #endif
