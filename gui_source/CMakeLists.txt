@@ -34,6 +34,7 @@ option(WITH_YARA "Use Yara" ON)
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
+add_definitions(-DUSE_DIE)
 
 if(WITH_YARA)
   add_definitions(-DUSE_YARA)
