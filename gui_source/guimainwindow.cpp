@@ -27,11 +27,11 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     ui->setupUi(this);
 
     XOptions::adjustToolButton(ui->toolButtonAbout, XOptions::ICONTYPE_INFO);
-    XOptions::adjustToolButton(ui->toolButtonOptions, XOptions::ICONTYPE_OPTIONS);
+    XOptions::adjustToolButton(ui->toolButtonOptions, XOptions::ICONTYPE_OPTION);
     XOptions::adjustToolButton(ui->toolButtonDemangle, XOptions::ICONTYPE_DEMANGLE);
     XOptions::adjustToolButton(ui->toolButtonExit, XOptions::ICONTYPE_EXIT);
     XOptions::adjustToolButton(ui->toolButtonOpenFile, XOptions::ICONTYPE_OPENFILE, Qt::ToolButtonIconOnly);
-    XOptions::adjustToolButton(ui->toolButtonShortcuts, XOptions::ICONTYPE_SHORTCUTS);
+    XOptions::adjustToolButton(ui->toolButtonShortcuts, XOptions::ICONTYPE_SHORTCUT);
     XOptions::adjustToolButton(ui->toolButtonRecentFiles, XOptions::ICONTYPE_LIST, Qt::ToolButtonIconOnly);
 
     ui->toolButtonAbout->setToolTip(tr("About"));

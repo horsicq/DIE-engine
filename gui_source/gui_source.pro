@@ -66,7 +66,7 @@ include(../build.pri)
 }
 
 RESOURCES += \
-    res.qrc
+    rsrc.qrc
 
 win32 {
     RC_ICONS = ../icons/main.ico
