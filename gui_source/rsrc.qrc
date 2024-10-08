@@ -33,5 +33,6 @@
         <file>icons/Shortcut.16.16.png</file>
         <file>icons/Demangle.16.16.png</file>
         <file>icons/Exit.16.16.png</file>
+        <file>icons/Goto.16.16.png</file>
     </qresource>
 </RCC>

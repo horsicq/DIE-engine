@@ -59,7 +59,7 @@ set(PROJECT_SOURCES
             guimainwindow.cpp
             guimainwindow.ui
             main_gui.cpp
-            res.qrc
+            rsrc.qrc
 )
 
 if(APPLE)
