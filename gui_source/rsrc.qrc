@@ -30,5 +30,8 @@
         <file>icons/Value.16.16.png</file>
         <file>icons/Virustotal.16.16.png</file>
         <file>icons/Yara.16.16.png</file>
+        <file>icons/Shortcut.16.16.png</file>
+        <file>icons/Demangle.16.16.png</file>
+        <file>icons/Exit.16.16.png</file>
     </qresource>
 </RCC>
