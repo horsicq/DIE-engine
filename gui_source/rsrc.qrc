@@ -34,5 +34,16 @@
         <file>icons/Demangle.16.16.png</file>
         <file>icons/Exit.16.16.png</file>
         <file>icons/Goto.16.16.png</file>
+        <file>icons/Section.16.16.png</file>
+        <file>icons/Segment.16.16.png</file>
+        <file>icons/Exception.16.16.png</file>
+        <file>icons/Certificate.16.16.png</file>
+        <file>icons/Debug.16.16.png</file>
+        <file>icons/Header.16.16.png</file>
+        <file>icons/Library.16.16.png</file>
+        <file>icons/Symbol.16.16.png</file>
+        <file>icons/Table.16.16.png</file>
+        <file>icons/DotNet.16.16.png</file>
+        <file>icons/Metadata.16.16.png</file>
     </qresource>
 </RCC>
