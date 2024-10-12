@@ -46,5 +46,7 @@
         <file>icons/DotNet.16.16.png</file>
         <file>icons/Metadata.16.16.png</file>
         <file>icons/Resource.16.16.png</file>
+        <file>icons/TLS.16.16.png</file>
+        <file>icons/Select.16.16.png</file>
     </qresource>
 </RCC>
