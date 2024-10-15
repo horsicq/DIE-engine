@@ -61,8 +61,15 @@ DialogOptions::~DialogOptions()
     delete ui;
 }
 
+void DialogOptions::setGlobal(XShortcuts *pShortcuts, XOptions *pXOptions)
+{
+    ui->widgetOptions->setGlobal(pShortcuts, pXOptions);
+    XShortcutsDialog::setGlobal(pShortcuts, pXOptions);
+}
+
 void DialogOptions::adjustView()
 {
+    ui->widgetOptions->adjustView();
 }
 
 void DialogOptions::registerShortcuts(bool bState)

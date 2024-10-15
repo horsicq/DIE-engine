@@ -189,6 +189,9 @@ int main(int argc, char *argv[])
     QCommandLineOption clProfiling(QStringList() << "l"
                                                  << "profiling",
                                    "Profiling signatures.");
+    QCommandLineOption clHideUnknown(QStringList() << "U"
+                                                   << "hideunknown",
+                                     "Hide unknown.");
     QCommandLineOption clEntropy(QStringList() << "e"
                                                << "entropy",
                                  "Show entropy.");
@@ -236,6 +239,7 @@ int main(int argc, char *argv[])
     parser.addOption(clAggresiveScan);
     parser.addOption(clAllTypesScan);
     parser.addOption(clProfiling);
+    parser.addOption(clHideUnknown);
     parser.addOption(clEntropy);
     parser.addOption(clInfo);
     parser.addOption(clSpecial);
@@ -267,6 +271,7 @@ int main(int argc, char *argv[])
     scanOptions.bIsVerbose = parser.isSet(clVerbose);
     scanOptions.bIsAggressiveScan = parser.isSet(clAggresiveScan);
     scanOptions.bIsAllTypesScan = parser.isSet(clAllTypesScan);
+    scanOptions.bHideUnknown = parser.isSet(clHideUnknown);
     scanOptions.bLogProfiling = parser.isSet(clProfiling);
     scanOptions.nBufferSize = 2 * 1024 * 1024;  // TODO
     scanOptions.bShowEntropy = parser.isSet(clEntropy);

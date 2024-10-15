@@ -43,6 +43,7 @@ class DialogOptions : public XShortcutsDialog {
 public:
     explicit DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId);
     ~DialogOptions();
+    void setGlobal(XShortcuts *pShortcuts, XOptions *pXOptions);
 
     virtual void adjustView();
 
