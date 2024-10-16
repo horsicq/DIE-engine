@@ -54,5 +54,7 @@
         <file>icons/Export.16.16.png</file>
         <file>icons/Import.16.16.png</file>
         <file>icons/Data.16.16.png</file>
+        <file>icons/NFD.16.16.png</file>
+        <file>icons/DIE.16.16.png</file>
     </qresource>
 </RCC>
