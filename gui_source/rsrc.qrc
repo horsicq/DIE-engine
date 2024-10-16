@@ -32,7 +32,7 @@
         <file>icons/Metadata.16.16.png</file>
         <file>icons/Mime.16.16.png</file>
         <file>icons/Offset.16.16.png</file>
-        <file>icons/Openfile.16.16.png</file>
+        <file>icons/Open.16.16.png</file>
         <file>icons/Option.16.16.png</file>
         <file>icons/Refresh.16.16.png</file>
         <file>icons/Resource.16.16.png</file>
@@ -51,5 +51,8 @@
         <file>icons/Value.16.16.png</file>
         <file>icons/Virustotal.16.16.png</file>
         <file>icons/Yara.16.16.png</file>
+        <file>icons/Export.16.16.png</file>
+        <file>icons/Import.16.16.png</file>
+        <file>icons/Data.16.16.png</file>
     </qresource>
 </RCC>

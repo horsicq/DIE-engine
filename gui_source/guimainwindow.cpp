@@ -30,7 +30,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     XOptions::adjustToolButton(ui->toolButtonOptions, XOptions::ICONTYPE_OPTION);
     XOptions::adjustToolButton(ui->toolButtonDemangle, XOptions::ICONTYPE_DEMANGLE);
     XOptions::adjustToolButton(ui->toolButtonExit, XOptions::ICONTYPE_EXIT);
-    XOptions::adjustToolButton(ui->toolButtonOpenFile, XOptions::ICONTYPE_OPENFILE, Qt::ToolButtonIconOnly);
+    XOptions::adjustToolButton(ui->toolButtonOpenFile, XOptions::ICONTYPE_OPEN, Qt::ToolButtonIconOnly);
     XOptions::adjustToolButton(ui->toolButtonShortcuts, XOptions::ICONTYPE_SHORTCUT);
     XOptions::adjustToolButton(ui->toolButtonRecentFiles, XOptions::ICONTYPE_LIST, Qt::ToolButtonIconOnly);
 
