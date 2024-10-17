@@ -123,30 +123,30 @@ jobs:
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
 
-  build-osx:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-         submodules: 'recursive'
-         path: ${{ env.SRC_PATH }}
+# build-osx:
+#   runs-on: macos-latest
+#   steps:
+#     - uses: actions/checkout@v4
+#       with:
+#        submodules: 'recursive'
+#        path: ${{ env.SRC_PATH }}
 
-      - name: Install Qt
-        uses: jurplel/install-qt-action@v4
-        with:
-          version: '5.15.2'
-          host: 'mac'
-          target: 'desktop'
-          arch: 'clang_64'
-          # I make it match what build_mac.sh expects. Although I could also use Qt5_DIR
-          #dir: ${{ env.HOME }}
-          dir: /Users/runner
-          modules: qtscript
+#     - name: Install Qt
+#       uses: jurplel/install-qt-action@v4
+#       with:
+#         version: '5.15.2'
+#         host: 'mac'
+#         target: 'desktop'
+#         arch: 'clang_64'
+#         # I make it match what build_mac.sh expects. Although I could also use Qt5_DIR
+#         #dir: ${{ env.HOME }}
+#         dir: /Users/runner
+#         modules: qtscript
 
-      - name: Build
-        working-directory: ${{ env.SRC_PATH }}
-        run: |
-          bash -x build_mac.sh
+#     - name: Build
+#       working-directory: ${{ env.SRC_PATH }}
+#       run: |
+#         bash -x build_mac.sh
 
   build-windows-32:
     runs-on: windows-2019
