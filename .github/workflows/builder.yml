@@ -23,7 +23,6 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      # according to what I understood from the jurplel/install-qt-action documentation it is better to install this way for ubuntu
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -59,7 +58,6 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      # according to what I understood from the jurplel/install-qt-action documentation it is better to install this way for ubuntu
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -95,7 +93,6 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      # according to what I understood from the jurplel/install-qt-action documentation it is better to install this way for ubuntu
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -123,30 +120,40 @@ jobs:
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
 
-# build-osx:
-#   runs-on: macos-latest
-#   steps:
-#     - uses: actions/checkout@v4
-#       with:
-#        submodules: 'recursive'
-#        path: ${{ env.SRC_PATH }}
+  build-ubuntu-24-10:
+    runs-on: ubuntu-24.10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
 
-#     - name: Install Qt
-#       uses: jurplel/install-qt-action@v4
-#       with:
-#         version: '5.15.2'
-#         host: 'mac'
-#         target: 'desktop'
-#         arch: 'clang_64'
-#         # I make it match what build_mac.sh expects. Although I could also use Qt5_DIR
-#         #dir: ${{ env.HOME }}
-#         dir: /Users/runner
-#         modules: qtscript
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev-tools libqt5svg5-dev qtchooser qt5-qmake build-essential -y
 
-#     - name: Build
-#       working-directory: ${{ env.SRC_PATH }}
-#       run: |
-#         bash -x build_mac.sh
+      - name: Build
+        working-directory: ${{ env.SRC_PATH }}
+        run: |
+          bash -x build_dpkg.sh
+
+      - name: Upload Release as Artifact
+        if: github.event_name != 'release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ubuntu24-10-artifact
+          path: |
+            ${{ env.RELEASE_PATH }}/*.deb
+
+      - name: Upload Release as Download
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ${{ env.RELEASE_PATH }}/*.deb
 
   build-windows-32:
     runs-on: windows-2019
@@ -200,10 +207,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows32-artifact
-          # it is commented because as there is no install.iss there is no need to put the exe
-          #path: |
-          #  ${{ env.RELEASE_PATH }}/*.zip
-          #  ${{ env.RELEASE_PATH }}/*.exe
           path: |
             ${{ env.RELEASE_PATH }}/*.zip
 
@@ -212,11 +215,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # it is commented because as there is no install.iss there is no need to put the exe
-        #with:
-        #  files: |
-        #    ${{ env.RELEASE_PATH }}/*.zip
-        #    ${{ env.RELEASE_PATH }}/*.exe
         with:
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
@@ -273,10 +271,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows64-artifact
-          # it is commented because as there is no install.iss there is no need to put the exe
-          #path: |
-          #  ${{ env.RELEASE_PATH }}/*.zip
-          #  ${{ env.RELEASE_PATH }}/*.exe
           path: |
             ${{ env.RELEASE_PATH }}/*.zip
 
@@ -285,11 +279,31 @@ jobs:
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # it is commented because as there is no install.iss there is no need to put the exe
-        #with:
-        #  files: |
-        #    ${{ env.RELEASE_PATH }}/*.zip
-        #    ${{ env.RELEASE_PATH }}/*.exe
         with:
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
+
+# build-osx:
+#   runs-on: macos-latest
+#   steps:
+#     - uses: actions/checkout@v4
+#       with:
+#        submodules: 'recursive'
+#        path: ${{ env.SRC_PATH }}
+
+#     - name: Install Qt
+#       uses: jurplel/install-qt-action@v4
+#       with:
+#         version: '5.15.2'
+#         host: 'mac'
+#         target: 'desktop'
+#         arch: 'clang_64'
+#         # I make it match what build_mac.sh expects. Although I could also use Qt5_DIR
+#         #dir: ${{ env.HOME }}
+#         dir: /Users/runner
+#         modules: qtscript
+
+#     - name: Build
+#       working-directory: ${{ env.SRC_PATH }}
+#       run: |
+#         bash -x build_mac.sh
