@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   release:
     types: [created]
+  schedule:
+    - cron: '0 0 * * MON'
 
 env:
   SRC_PATH: ${{ github.workspace }}/src
