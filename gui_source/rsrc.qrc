@@ -57,5 +57,7 @@
         <file>icons/Data.16.16.png</file>
         <file>icons/NFD.16.16.png</file>
         <file>icons/DIE.16.16.png</file>
+        <file>icons/Version.16.16.png</file>
+        <file>icons/Manifest.16.16.png</file>
     </qresource>
 </RCC>
