@@ -7,9 +7,9 @@ else
     X_PREFIX="$1"
 fi
 
-mkdir -p  $X_PREFIX/lib/bin
-mkdir -p  $X_PREFIX/lib/share/applications
-mkdir -p  $X_PREFIX/lib/share/icons
+mkdir -p  $X_PREFIX/bin
+mkdir -p  $X_PREFIX/share/applications
+mkdir -p  $X_PREFIX/share/icons
 mkdir -p  $X_PREFIX/lib/die
 mkdir -p  $X_PREFIX/lib/die/signatures
 
