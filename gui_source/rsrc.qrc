@@ -61,5 +61,6 @@
         <file>icons/Manifest.16.16.png</file>
         <file>icons/Action.16.16.png</file>
         <file>icons/Follow.16.16.png</file>
+        <file>icons/Reloc.16.16.png</file>
     </qresource>
 </RCC>

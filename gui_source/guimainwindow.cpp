@@ -98,12 +98,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xShortcuts.addId(X_ID_FILE_EXIT);
     g_xShortcuts.addId(X_ID_VIEW_FULLSCREEN);
 
-    g_xShortcuts.addGroup(XShortcuts::GROUPID_STRINGS);
-    g_xShortcuts.addGroup(XShortcuts::GROUPID_SIGNATURES);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_HEX);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_DISASM);
-    g_xShortcuts.addGroup(XShortcuts::GROUPID_ARCHIVE);
-    g_xShortcuts.addGroup(XShortcuts::GROUPID_SCAN);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_TABLE);
     g_xShortcuts.load();
 
