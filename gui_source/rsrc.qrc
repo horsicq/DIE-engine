@@ -64,5 +64,9 @@
         <file>icons/Reloc.16.16.png</file>
         <file>icons/Next.16.16.png</file>
         <file>icons/All.16.16.png</file>
+        <file>icons/Path.16.16.png</file>
+        <file>icons/Note.16.16.png</file>
+        <file>icons/Function.16.16.png</file>
+        <file>icons/Script.16.16.png</file>
     </qresource>
 </RCC>
