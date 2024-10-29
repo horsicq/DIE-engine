@@ -71,5 +71,6 @@
         <file>icons/Patch.16.16.png</file>
         <file>icons/Remove.16.16.png</file>
         <file>icons/Resize.16.16.png</file>
+        <file>icons/Code.16.16.png</file>
     </qresource>
 </RCC>
