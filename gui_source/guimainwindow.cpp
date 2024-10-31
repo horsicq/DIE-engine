@@ -233,7 +233,7 @@ void GuiMainWindow::_process(const QString &sName)
     if (sName != "") {
         ui->lineEditFileName->setText(QDir().toNativeSeparators(sName));
 
-        ui->widgetFormats->setName(sName, g_xOptions.isScanAfterOpen());
+        ui->widgetFormats->setFileName(sName, g_xOptions.isScanAfterOpen());
 
         adjustFile();
     }
