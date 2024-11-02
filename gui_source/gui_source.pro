@@ -9,6 +9,7 @@ XCONFIG += use_dex
 XCONFIG += use_pdf
 XCONFIG += use_archive
 XCONFIG += use_yara
+XCONFIG += use_die
 
 macx {
     TARGET = DiE
@@ -65,7 +66,7 @@ include(../build.pri)
 }
 
 RESOURCES += \
-    res.qrc
+    rsrc.qrc
 
 win32 {
     RC_ICONS = ../icons/main.ico
