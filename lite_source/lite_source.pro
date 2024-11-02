@@ -8,7 +8,6 @@ TARGET = diel
 XCONFIG += use_dex
 XCONFIG += use_pdf
 XCONFIG += use_archive
-XCONFIG += use_die
 
 macx {
     TARGET = DiEL
@@ -36,11 +35,6 @@ FORMS += \
 !contains(XCONFIG, xoptions) {
     XCONFIG += xoptions
     include(../XOptions/xoptions.pri)
-}
-
-!contains(XCONFIG, xcomboboxex) {
-    XCONFIG += xcomboboxex
-    include(../Controls/xcomboboxex.pri)
 }
 
 win32 {

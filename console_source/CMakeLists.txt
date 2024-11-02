@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(diec VERSION 3.09 LANGUAGES CXX)
+project(diec VERSION 3.10 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -25,7 +25,6 @@ find_package(Qt5 COMPONENTS Script REQUIRED)
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
-add_definitions(-DUSE_DIE)
 
 include(${PROJECT_SOURCE_DIR}/../die_script/die_script.cmake)
 include(${PROJECT_SOURCE_DIR}/../XOptions/xoptions.cmake)

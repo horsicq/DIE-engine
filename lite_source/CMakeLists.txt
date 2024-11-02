@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(diel VERSION 3.09 LANGUAGES CXX)
+project(diel VERSION 3.10 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -26,16 +26,13 @@ find_package(Qt5 COMPONENTS Script REQUIRED)
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
-add_definitions(-DUSE_DIE)
 
 include(${PROJECT_SOURCE_DIR}/../die_script/die_script.cmake)
 include(${PROJECT_SOURCE_DIR}/../XOptions/xoptions.cmake)
-include(${PROJECT_SOURCE_DIR}/../Controls/xcomboboxex.cmake)
 
 set(PROJECT_SOURCES
             ${DIE_SCRIPT_SOURCES}
             ${XOPTIONS_SOURCES}
-            ${XCOMBOBOXEX_SOURCES}
             main_lite.cpp
             litemainwindow.cpp
             litemainwindow.ui

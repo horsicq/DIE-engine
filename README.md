@@ -12,3 +12,11 @@ GUI & console sources for Detect It Easy(DiE): https://github.com/horsicq/Detect
 
 ![alt text](https://github.com/horsicq/Detect-It-Easy/blob/master/mascots/logo.png "logo")
 
+
+# Thanks to all the people who already contributed!
+
+<a href="https://github.com/horsicq/DIE-engine/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=horsicq/DIE-engine" />
+</a>
+
+

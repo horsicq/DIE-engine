@@ -27,6 +27,23 @@
     </td>
 </tr>
 <tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/rmusser.png" /></td>
+    <td>
+      <p>
+        <big><b>Robert Musser</b></big>
+      </p>
+      <p>
+        Website: <a href="https://rmusser.net/">https://rmusser.net/</a>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/rmusser01">rmusser01</a>
+      </p>
+      <p>
+        Twitter: <a href="https://twitter.com/r_o_b_e_r_t_1">r_o_b_e_r_t_1</a>
+      </p>
+    </td>
+</tr>
+<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/void.png" /></td>
     <td>
       <p>
@@ -442,6 +459,17 @@
     </td>
 </tr>
 <tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/sapdragon.png" /></td>
+    <td>
+      <p>
+        <big><b>sapdragon</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/sapdragon">sapdragon</a>
+      </p>
+    </td>
+</tr>
+<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/BAHEK.png" /></td>
     <td>
       <p>
@@ -498,6 +526,23 @@
       </p>
       <p>
         Twitter: <a href="https://twitter.com/frenchyeti">frenchyeti</a>
+      </p>
+    </td>
+</tr>
+<tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/elastic.png" /></td>
+    <td>
+      <p>
+        <big><b>elastic</b></big>
+      </p>
+      <p>
+        Website: <a href="https://www.elastic.co">https://www.elastic.co</a>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/elastic">elastic</a>
+      </p>
+      <p>
+        Twitter: <a href="https://twitter.com/elastic">elastic</a>
       </p>
     </td>
 </tr>
@@ -722,6 +767,23 @@
       </p>
       <p>
         GitHub: <a href="https://github.com/greenozon">greenozon</a>
+      </p>
+    </td>
+</tr>
+<tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/xchwarze.png" /></td>
+    <td>
+      <p>
+        <big><b>xchwarze</b></big>
+      </p>
+      <p>
+        Website: <a href="Indetectables.net">Indetectables.net</a>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/xchwarze">xchwarze</a>
+      </p>
+      <p>
+        Twitter: <a href="https://twitter.com/indetectables">indetectables</a>
       </p>
     </td>
 </tr>

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(die VERSION 3.09 LANGUAGES CXX)
+project(die VERSION 3.10 LANGUAGES CXX)
 
 include_guard(DIRECTORY)
 
@@ -34,7 +34,6 @@ option(WITH_YARA "Use Yara" ON)
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
-add_definitions(-DUSE_DIE)
 
 if(WITH_YARA)
   add_definitions(-DUSE_YARA)
@@ -59,7 +58,7 @@ set(PROJECT_SOURCES
             guimainwindow.cpp
             guimainwindow.ui
             main_gui.cpp
-            rsrc.qrc
+            res.qrc
 )
 
 if(APPLE)
