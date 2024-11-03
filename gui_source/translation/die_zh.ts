@@ -5,6495 +5,6495 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation></translation>
+        <translation>过滤器</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation></translation>
+        <translation>表格</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation></translation>
+        <translation>打开</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation></translation>
+        <translation>文件名</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation></translation>
+        <translation>转储到文件</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation></translation>
+        <translation>保存文件</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation></translation>
+        <translation>无法保存文件</translation>
     </message>
 </context>
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
     <name>Binary_Script</name>
     <message>
         <source>Invalid handle</source>
-        <translation></translation>
+        <translation>无效句柄</translation>
     </message>
 </context>
 <context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
-        <translation></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation></translation>
+        <translation>打开后扫描</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation></translation>
+        <translation>递归扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation></translation>
+        <translation>主动扫描</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>详细</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation></translation>
+        <translation>所有类型</translation>
     </message>
     <message>
         <source>Profiling</source>
-        <translation></translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>Sort</source>
-        <translation></translation>
+        <translation>排序</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation></translation>
+        <translation>高亮</translation>
     </message>
     <message>
         <source>Hide unknown</source>
-        <translation></translation>
+        <translation>十六进制签名</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation></translation>
+        <translation>缓存大小</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation></translation>
+        <translation>数据库</translation>
     </message>
     <message>
         <source>Extra database</source>
-        <translation></translation>
+        <translation>附加数据</translation>
     </message>
     <message>
         <source>Custom database</source>
-        <translation></translation>
+        <translation>自定义数据库</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation></translation>
+        <translation>打开目录</translation>
     </message>
 </context>
 <context>
     <name>DIEWidgetAdvanced</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation></translation>
+        <translation>数据库</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Signature name</source>
-        <translation></translation>
+        <translation>签名名称</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation></translation>
+        <translation>文本文件</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation></translation>
+        <translation>无法保存文件</translation>
     </message>
 </context>
 <context>
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation></translation>
+        <translation>日志</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation></translation>
+        <translation>停止</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation></translation>
+        <translation>数据库</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>毫秒</translation>
     </message>
     <message>
         <source>Copy as</source>
-        <translation></translation>
+        <translation>复制为</translation>
     </message>
 </context>
 <context>
     <name>DiE_Script</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Cannot load database</source>
-        <translation></translation>
+        <translation>无法加载数据库</translation>
     </message>
 </context>
 <context>
     <name>DiE_ScriptEngine</name>
     <message>
         <source>Cannot find</source>
-        <translation></translation>
+        <translation>无法获取</translation>
     </message>
 </context>
 <context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
-        <translation></translation>
+        <translation>关于</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Bugreports</source>
-        <translation></translation>
+        <translation>错误报告</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation></translation>
+        <translation>网站</translation>
     </message>
     <message>
         <source>Donate</source>
-        <translation></translation>
+        <translation>捐赠</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation></translation>
+        <translation>源代码</translation>
     </message>
 </context>
 <context>
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation></translation>
+        <translation>存档</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation></translation>
+        <translation>打开</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation></translation>
+        <translation>空格</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation></translation>
+        <translation>顶部</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation></translation>
+        <translation>通配符</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation></translation>
+        <translation>相对虚拟地址（RVA）</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation></translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation></translation>
+        <translation>操作码</translation>
     </message>
 </context>
 <context>
     <name>DialogBits8</name>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>位</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Signed</source>
-        <translation></translation>
+        <translation>已签名</translation>
     </message>
     <message>
         <source>Unsigned</source>
-        <translation></translation>
+        <translation>未签名</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>书签集</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Location</source>
-        <translation></translation>
+        <translation>定位</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Color</source>
-        <translation></translation>
+        <translation>颜色</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation></translation>
+        <translation>注释</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>背景</translation>
     </message>
 </context>
 <context>
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation></translation>
+        <translation>目录扫描</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation></translation>
+        <translation>子目录</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation></translation>
+        <translation>打开目录</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>毫秒</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation></translation>
+        <translation>文本文档</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation></translation>
+        <translation>保存结果</translation>
     </message>
 </context>
 <context>
     <name>DialogDIESignatures</name>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation></translation>
+        <translation>运行</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation></translation>
+        <translation>调试</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation></translation>
+        <translation>递归扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>详细</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Profiling</source>
-        <translation></translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation></translation>
+        <translation>查找</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation></translation>
+        <translation>下一个</translation>
     </message>
     <message>
         <source>Detect</source>
-        <translation></translation>
+        <translation>检测</translation>
     </message>
     <message>
         <source>Show type</source>
-        <translation></translation>
+        <translation>显示类型</translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation></translation>
+        <translation>显示版本</translation>
     </message>
     <message>
         <source>Show info</source>
-        <translation></translation>
+        <translation>显示信息</translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation></translation>
+        <translation>清除结果</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation></translation>
+        <translation>数据库</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation></translation>
+        <translation>调试器</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>毫秒</translation>
     </message>
 </context>
 <context>
     <name>DialogDIESignaturesElapsed</name>
     <message>
         <source>Elapsed</source>
-        <translation></translation>
+        <translation>经过</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation></translation>
+        <translation>时间</translation>
     </message>
     <message>
         <source>Script</source>
-        <translation></translation>
+        <translation>脚本</translation>
     </message>
 </context>
 <context>
     <name>DialogDataInspector</name>
     <message>
         <source>Data inspector</source>
-        <translation></translation>
+        <translation>数据检查器</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>字节序</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Unicode</source>
-        <translation></translation>
+        <translation>Unicode</translation>
     </message>
     <message>
         <source>Binary</source>
-        <translation></translation>
+        <translation>二进制</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation></translation>
+        <translation>符号重组</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
     <name>DialogDieHexViewer</name>
     <message>
         <source>Scripts</source>
-        <translation></translation>
+        <translation>脚本</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation></translation>
+        <translation>标签</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation></translation>
+        <translation>转到</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation></translation>
+        <translation>指令集</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation></translation>
+        <translation>调用</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation></translation>
+        <translation>跳转</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation></translation>
+        <translation>引用至</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation></translation>
+        <translation>引用于</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation></translation>
+        <translation>转储</translation>
     </message>
 </context>
 <context>
     <name>DialogEditString</name>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Keep size</source>
-        <translation></translation>
+        <translation>保持大小</translation>
     </message>
     <message>
         <source>Null-terminated</source>
-        <translation></translation>
+        <translation>空终止符</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Bytes available</source>
-        <translation></translation>
+        <translation>可用字节</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogFindText</name>
     <message>
         <source>Find</source>
-        <translation></translation>
+        <translation>查找</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation></translation>
+        <translation>区分大小写</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation></translation>
+        <translation>转到地址</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation></translation>
+        <translation>虚拟地址（VA）</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation></translation>
+        <translation>相对虚拟地址（RVA）</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation></translation>
+        <translation>无效</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation></translation>
+        <translation>空格</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation></translation>
+        <translation>顶部</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation></translation>
+        <translation>通配符</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogMIME</name>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation></translation>
+        <translation>保存文件</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation></translation>
+        <translation>文本文件</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation></translation>
+        <translation>空格</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation></translation>
+        <translation>顶部</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation></translation>
+        <translation>通配符</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation></translation>
+        <translation>相对虚拟地址（RVA）</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation></translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation></translation>
+        <translation>操作码</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search strings</source>
-        <translation></translation>
+        <translation>搜索字符串</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation></translation>
+        <translation>搜索签名</translation>
     </message>
     <message>
         <source>Search values</source>
-        <translation></translation>
+        <translation>搜索值</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation></translation>
+        <translation>创建视图模型</translation>
     </message>
 </context>
 <context>
     <name>DialogNFDScan</name>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogNFDScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation></translation>
+        <translation>目录扫描</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation></translation>
+        <translation>子目录</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation></translation>
+        <translation>打开目录</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>毫秒</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation></translation>
+        <translation>文本文档</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation></translation>
+        <translation>保存结果</translation>
     </message>
 </context>
 <context>
     <name>DialogNFDScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation></translation>
+        <translation>文本文档</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation></translation>
+        <translation>保存结果</translation>
     </message>
 </context>
 <context>
     <name>DialogNFDWidgetAdvanced</name>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
-        <translation></translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation></translation>
+        <translation>在线工具</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
 </context>
 <context>
     <name>DialogRemove</name>
     <message>
         <source>Remove</source>
-        <translation></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation></translation>
+        <translation>无效</translation>
     </message>
 </context>
 <context>
     <name>DialogResize</name>
     <message>
         <source>Resize</source>
-        <translation></translation>
+        <translation>调整</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation></translation>
+        <translation>区分大小写</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>字节序</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation></translation>
+        <translation>开始</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation></translation>
+        <translation>光标</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchValues</name>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
 </context>
 <context>
     <name>DialogSelectStyle</name>
     <message>
         <source>Style</source>
-        <translation></translation>
+        <translation>样式</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation></translation>
+        <translation>快捷键</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation></translation>
+        <translation>过滤器</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation></translation>
+        <translation>默认</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation></translation>
+        <translation>快捷键</translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation></translation>
+        <translation>无法设置快捷键</translation>
     </message>
 </context>
 <context>
     <name>DialogShowData</name>
     <message>
         <source>Data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
     <message>
         <source>Group</source>
-        <translation></translation>
+        <translation>组</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Plain Text</source>
-        <translation></translation>
+        <translation>纯文本</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation></translation>
+        <translation>镜像</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation></translation>
+        <translation>递归扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>详细</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation></translation>
+        <translation>所有类型</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation></translation>
+        <translation>目录扫描</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation></translation>
+        <translation>子目录</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation></translation>
+        <translation>递归扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>详细</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation></translation>
+        <translation>所有类型</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation></translation>
+        <translation>打开目录</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>毫秒</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation></translation>
+        <translation>文本文档</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation></translation>
+        <translation>保存结果</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation></translation>
+        <translation>文本文档</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation></translation>
+        <translation>保存结果</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation></translation>
+        <translation>文本文档</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation></translation>
+        <translation>保存结果</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
 </context>
 <context>
     <name>DialogViewColors</name>
     <message>
         <source>Colors</source>
-        <translation></translation>
+        <translation>颜色</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Color</source>
-        <translation></translation>
+        <translation>颜色</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>背景</translation>
     </message>
 </context>
 <context>
     <name>DialogVisualization</name>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogXDataConvertor</name>
     <message>
         <source>Data convertor</source>
-        <translation></translation>
+        <translation>数据转换器</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
     <name>DialogXDynStructs</name>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogXExtractor</name>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfo</name>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogXInfoDBTransferProcess</name>
     <message>
         <source>Analyze</source>
-        <translation></translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation></translation>
+        <translation>符号</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>导出</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Scan for IAT</source>
-        <translation></translation>
+        <translation>扫描 IAT</translation>
     </message>
     <message>
         <source>Get IAT</source>
-        <translation></translation>
+        <translation>获取 IAT</translation>
     </message>
 </context>
 <context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
-        <translation></translation>
+        <translation>符号</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation></translation>
+        <translation>函数</translation>
     </message>
     <message>
         <source>References</source>
-        <translation></translation>
+        <translation>引用</translation>
     </message>
 </context>
 <context>
     <name>DialogXVirusTotal</name>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DialogYARAWidgetAdvanced</name>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>DumpProcess</name>
     <message>
         <source>Invalid offset</source>
-        <translation></translation>
+        <translation>无效偏移</translation>
     </message>
     <message>
         <source>Invalid size</source>
-        <translation></translation>
+        <translation>无效的大小</translation>
     </message>
     <message>
         <source>Cannot read file</source>
-        <translation></translation>
+        <translation>无法读取文件</translation>
     </message>
     <message>
         <source>Cannot fix dump file</source>
-        <translation></translation>
+        <translation>无法修复转储文件</translation>
     </message>
     <message>
         <source>Cannot open dump file</source>
-        <translation></translation>
+        <translation>无法打开转储文件</translation>
     </message>
     <message>
         <source>Cannot write data to file</source>
-        <translation></translation>
+        <translation>无法将数据写入文件</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Bind</source>
-        <translation></translation>
+        <translation>绑定</translation>
     </message>
 </context>
 <context>
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation></translation>
+        <translation>已加壳</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation></translation>
+        <translation>未加壳</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>毫秒</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation></translation>
+        <translation>递归</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation></translation>
+        <translation>无法保存文件</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation></translation>
+        <translation>转储全部</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation></translation>
+        <translation>文本文件</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation></translation>
+        <translation>转储</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation></translation>
+        <translation>保存转储</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation></translation>
+        <translation>原始数据</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation></translation>
+        <translation>文件类型</translation>
     </message>
     <message>
         <source>File size</source>
-        <translation></translation>
+        <translation>文件大小</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation></translation>
+        <translation>基址（BA）</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation></translation>
+        <translation>入口点</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>File info</source>
-        <translation></translation>
+        <translation>文件信息</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Unpack</source>
-        <translation></translation>
+        <translation>解包</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>导出</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation></translation>
+        <translation>资源</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation></translation>
+        <translation>时间戳</translation>
     </message>
     <message>
         <source>Size of image</source>
-        <translation></translation>
+        <translation>镜像大小</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation></translation>
+        <translation>清单文件</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation></translation>
+        <translation>版本</translation>
     </message>
     <message>
         <source>Programs</source>
-        <translation></translation>
+        <translation>程序</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation></translation>
+        <translation>指令</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation></translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation></translation>
+        <translation>库</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>字节序</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation></translation>
+        <translation>架构</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Scan engine</source>
-        <translation></translation>
+        <translation>扫描引擎</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation></translation>
+        <translation>存档</translation>
     </message>
     <message>
         <source>Binary</source>
-        <translation></translation>
+        <translation>二进制</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation></translation>
+        <translation>打开目录</translation>
     </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
     <message>
         <source>File name</source>
-        <translation></translation>
+        <translation>文件名</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation></translation>
+        <translation>高级选项</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation></translation>
+        <translation>符号重组</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation></translation>
+        <translation>快捷键</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation></translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>About</source>
-        <translation></translation>
+        <translation>关于</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation></translation>
+        <translation>退出</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation></translation>
+        <translation>打开文件</translation>
     </message>
     <message>
         <source>Recent files</source>
-        <translation></translation>
+        <translation>最近打开文件</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
 </context>
 <context>
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>导入</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation></translation>
+        <translation>递归扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>详细</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation></translation>
+        <translation>所有类型</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation></translation>
+        <translation>启发式</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation></translation>
+        <translation>编辑</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation></translation>
+        <translation>操作码</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation></translation>
+        <translation>指令</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation></translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation></translation>
+        <translation>变基</translation>
     </message>
     <message>
         <source>Binding</source>
-        <translation></translation>
+        <translation>捆绑</translation>
     </message>
     <message>
         <source>Weak binding</source>
-        <translation></translation>
+        <translation>弱绑定</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation></translation>
+        <translation>延迟绑定</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>导出</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation></translation>
+        <translation>字符串表</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation></translation>
+        <translation>符号表</translation>
     </message>
     <message>
         <source>Table of contents</source>
-        <translation></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation></translation>
+        <translation>模块</translation>
     </message>
     <message>
         <source>External references</source>
-        <translation></translation>
+        <translation>外部参考</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
-        <translation></translation>
+        <translation>间接符号</translation>
     </message>
     <message>
         <source>Local relocation</source>
-        <translation></translation>
+        <translation>局部重定位</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation></translation>
+        <translation>函数</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation></translation>
+        <translation>代码中的数据</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation></translation>
+        <translation>符号重组</translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation></translation>
+        <translation>转储</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Number</source>
-        <translation></translation>
+        <translation>数字</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation></translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
 </context>
 <context>
     <name>NFDOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation></translation>
+        <translation>打开后扫描</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation></translation>
+        <translation>递归扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>详细</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation></translation>
+        <translation>所有类型</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation></translation>
+        <translation>高亮</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation></translation>
+        <translation>缓存大小</translation>
     </message>
 </context>
 <context>
     <name>NFDWidgetAdvanced</name>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation></translation>
+        <translation>启发式</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
     <message>
         <source>Heuristics</source>
-        <translation></translation>
+        <translation>启发式</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
 </context>
 <context>
     <name>NFD_Widget</name>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation></translation>
+        <translation>停止</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>毫秒</translation>
     </message>
 </context>
 <context>
     <name>PDFWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation></translation>
+        <translation>相对地址（RA）</translation>
     </message>
     <message>
         <source>Virtual size</source>
-        <translation></translation>
+        <translation>虚拟大小</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation></translation>
+        <translation>文件偏移</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation></translation>
+        <translation>入口点</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>导出</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation></translation>
+        <translation>资源</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation></translation>
+        <translation>异常</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation></translation>
+        <translation>重新定位</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation></translation>
+        <translation>调试</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation></translation>
+        <translation>加载配置</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation></translation>
+        <translation>绑定导入</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation></translation>
+        <translation>延迟导入</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation></translation>
+        <translation>标签</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation></translation>
+        <translation>说明</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation></translation>
+        <translation>语言</translation>
     </message>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation></translation>
+        <translation>证书</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation></translation>
+        <translation>状态</translation>
     </message>
     <message>
         <source>Program name</source>
-        <translation></translation>
+        <translation>程序名称</translation>
     </message>
     <message>
         <source>Publisher</source>
-        <translation></translation>
+        <translation>出版商</translation>
     </message>
     <message>
         <source>More info</source>
-        <translation></translation>
+        <translation>更多信息</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation></translation>
+        <translation>序列号</translation>
     </message>
     <message>
         <source>Issuer</source>
-        <translation></translation>
+        <translation>发行人</translation>
     </message>
     <message>
         <source>Subject</source>
-        <translation></translation>
+        <translation>主题</translation>
     </message>
     <message>
         <source>Algorithm</source>
-        <translation></translation>
+        <translation>算法</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation></translation>
+        <translation>版本</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation></translation>
+        <translation>计数</translation>
     </message>
     <message>
         <source>Sorted</source>
-        <translation></translation>
+        <translation>已排序</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
 </context>
 <context>
     <name>PEToolsWidget</name>
     <message>
         <source>Tools</source>
-        <translation></translation>
+        <translation>工具集</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation></translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation></translation>
+        <translation>转储</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation></translation>
+        <translation>保存转储</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation></translation>
+        <translation>原始数据</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation></translation>
+        <translation>转储</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation></translation>
+        <translation>字符串表</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation></translation>
+        <translation>转储全部</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation></translation>
+        <translation>显示有效项</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation></translation>
+        <translation>表格</translation>
     </message>
     <message>
         <source>Extract all icons</source>
-        <translation></translation>
+        <translation>提取所有图标</translation>
     </message>
     <message>
         <source>Extract all cursors</source>
-        <translation></translation>
+        <translation>提取所有光标</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation></translation>
+        <translation>目录</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation></translation>
+        <translation>格式</translation>
     </message>
     <message>
         <source>Check</source>
-        <translation></translation>
+        <translation>查看</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation></translation>
+        <translation>提取器</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation></translation>
+        <translation>工具集</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>导出</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation></translation>
+        <translation>资源</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation></translation>
+        <translation>版本</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation></translation>
+        <translation>清单文件</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation></translation>
+        <translation>异常</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation></translation>
+        <translation>证书</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation></translation>
+        <translation>重新定位</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation></translation>
+        <translation>调试</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation></translation>
+        <translation>回调</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation></translation>
+        <translation>加载配置</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation></translation>
+        <translation>绑定导入</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation></translation>
+        <translation>延迟导入</translation>
     </message>
     <message>
         <source>Metadata</source>
-        <translation></translation>
+        <translation>元数据</translation>
     </message>
     <message>
         <source>Metadata table</source>
-        <translation></translation>
+        <translation>元数据表</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation></translation>
+        <translation>计算</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation></translation>
+        <translation>转储到文件</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation></translation>
+        <translation>符号重组</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation></translation>
+        <translation>计数</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation></translation>
+        <translation>库名称</translation>
     </message>
     <message>
         <source>Interpreter</source>
-        <translation></translation>
+        <translation>解释器</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation></translation>
+        <translation>版本</translation>
     </message>
     <message>
         <source>Length</source>
-        <translation></translation>
+        <translation>长度</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation></translation>
+        <translation>无法打开文件</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation></translation>
+        <translation>文档</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation></translation>
+        <translation>镜像</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation></translation>
+        <translation>导出文件名称</translation>
     </message>
 </context>
 <context>
     <name>QwtPolarRenderer</name>
     <message>
         <source>Documents</source>
-        <translation></translation>
+        <translation>文档</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation></translation>
+        <translation>镜像</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation></translation>
+        <translation>导出文件名称</translation>
     </message>
 </context>
 <context>
     <name>ScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation></translation>
+        <translation>搜索签名</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation></translation>
+        <translation>打开目录</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>File</source>
-        <translation></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>字节序</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>跟进</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>Null-terminated</source>
-        <translation></translation>
+        <translation>空终止符</translation>
     </message>
     <message>
         <source>Links</source>
-        <translation></translation>
+        <translation>链接</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Mask</source>
-        <translation></translation>
+        <translation>掩码</translation>
     </message>
     <message>
         <source>Regular expression</source>
-        <translation></translation>
+        <translation>正则表达式</translation>
     </message>
     <message>
         <source>Min length</source>
-        <translation></translation>
+        <translation>最小长度</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>跟进</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation></translation>
+        <translation>符号重组</translation>
     </message>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation></translation>
+        <translation>无法保存文件</translation>
     </message>
 </context>
 <context>
     <name>SearchValuesWidget</name>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation></translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Search string</source>
-        <translation></translation>
+        <translation>搜索字符串</translation>
     </message>
     <message>
         <source>Search signature</source>
-        <translation></translation>
+        <translation>搜索签名</translation>
     </message>
     <message>
         <source>Search value</source>
-        <translation></translation>
+        <translation>搜索值</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Values</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation></translation>
+        <translation>调试数据</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation></translation>
+        <translation>入口点</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation></translation>
+        <translation>节名称</translation>
     </message>
     <message>
         <source>Import hash</source>
-        <translation></translation>
+        <translation>导入哈希</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation></translation>
+        <translation>代码段</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation></translation>
+        <translation>入口点段</translation>
     </message>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation></translation>
+        <translation>存档</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation></translation>
+        <translation>资源</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation></translation>
+        <translation>文件扫描</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation></translation>
+        <translation>设备扫描</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation></translation>
+        <translation>内存扫描</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation></translation>
+        <translation>目录扫描</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation></translation>
+        <translation>打开后扫描</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation></translation>
+        <translation>递归扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>详细</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation></translation>
+        <translation>所有类型</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
 </context>
 <context>
     <name>XAPK</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>通用</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Package</source>
-        <translation></translation>
+        <translation>包</translation>
     </message>
 </context>
 <context>
     <name>XAboutWidget</name>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Follow me</source>
-        <translation></translation>
+        <translation>跟随我</translation>
     </message>
     <message>
         <source>Thanks</source>
-        <translation></translation>
+        <translation>致谢名单</translation>
     </message>
     <message>
         <source>Check updates</source>
-        <translation></translation>
+        <translation>检查更新</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation></translation>
+        <translation>库</translation>
     </message>
     <message>
         <source>Update information</source>
-        <translation></translation>
+        <translation>更新信息</translation>
     </message>
     <message>
         <source>New version available</source>
-        <translation></translation>
+        <translation>发现新版本</translation>
     </message>
     <message>
         <source>Go to download page?</source>
-        <translation></translation>
+        <translation>前往下载页面？</translation>
     </message>
     <message>
         <source>No update available</source>
-        <translation></translation>
+        <translation>未发现更新</translation>
     </message>
     <message>
         <source>Network error</source>
-        <translation></translation>
+        <translation>网络错误</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>The value copied to clipboard</source>
-        <translation></translation>
+        <translation>复制值到剪贴板</translation>
     </message>
 </context>
 <context>
     <name>XAbstractTableView</name>
     <message>
         <source>Invalid font</source>
-        <translation></translation>
+        <translation>无效字体</translation>
     </message>
 </context>
 <context>
     <name>XAmigaHunk</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation></translation>
+        <translation>对象</translation>
     </message>
 </context>
 <context>
     <name>XArchive</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation></translation>
+        <translation>存档</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation></translation>
+        <translation>扩展器</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>8-bit</source>
-        <translation></translation>
+        <translation>8 位</translation>
     </message>
     <message>
         <source>16-bit</source>
-        <translation></translation>
+        <translation>16 位</translation>
     </message>
     <message>
         <source>32-bit</source>
-        <translation></translation>
+        <translation>32 位</translation>
     </message>
     <message>
         <source>64-bit</source>
-        <translation></translation>
+        <translation>64 位</translation>
     </message>
     <message>
         <source>128-bit</source>
-        <translation></translation>
+        <translation>128 位</translation>
     </message>
     <message>
         <source>256-bit</source>
-        <translation></translation>
+        <translation>256 位</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
     <message>
         <source>Region</source>
-        <translation></translation>
+        <translation>区域</translation>
     </message>
     <message>
         <source>Process</source>
-        <translation></translation>
+        <translation>进程</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation></translation>
+        <translation>存档</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation></translation>
+        <translation>音频</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation></translation>
+        <translation>文档</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation></translation>
+        <translation>镜像</translation>
     </message>
     <message>
         <source>Plain Text</source>
-        <translation></translation>
+        <translation>纯文本</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation></translation>
+        <translation>文本</translation>
     </message>
     <message>
         <source>Video</source>
-        <translation></translation>
+        <translation>视频</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation></translation>
+        <translation>读取错误</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation></translation>
+        <translation>最大值</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation></translation>
+        <translation>区域</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation></translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Objects</source>
-        <translation></translation>
+        <translation>对象</translation>
     </message>
     <message>
         <source>Maps</source>
-        <translation></translation>
+        <translation>地图</translation>
     </message>
     <message>
         <source>Invalid signature</source>
-        <translation></translation>
+        <translation>无效的签名</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation></translation>
+        <translation>写入错误</translation>
     </message>
     <message>
         <source>true</source>
-        <translation></translation>
+        <translation>真</translation>
     </message>
     <message>
         <source>false</source>
-        <translation></translation>
+        <translation>假</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation></translation>
+        <translation>默认</translation>
     </message>
     <message>
         <source>Multiplatform</source>
-        <translation></translation>
+        <translation>多平台</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation></translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>KiB</source>
-        <translation></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <source>kB</source>
-        <translation></translation>
+        <translation>kB</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation></translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation></translation>
+        <translation>MB</translation>
     </message>
     <message>
         <source>GiB</source>
-        <translation></translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <source>GB</source>
-        <translation></translation>
+        <translation>GB</translation>
     </message>
     <message>
         <source>TiB</source>
-        <translation></translation>
+        <translation>TiB</translation>
     </message>
     <message>
         <source>TB</source>
-        <translation></translation>
+        <translation>TB</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation></translation>
+        <translation>存档记录</translation>
     </message>
     <message>
         <source>Resource</source>
-        <translation></translation>
+        <translation>资源</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation></translation>
+        <translation>调试数据</translation>
     </message>
 </context>
 <context>
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
 </context>
 <context>
     <name>XCapstone</name>
     <message>
         <source>Invalid opcode</source>
-        <translation></translation>
+        <translation>无效的操作码</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation></translation>
+        <translation>标志</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Main module</source>
-        <translation></translation>
+        <translation>主模块</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
 </context>
 <context>
     <name>XDOS16</name>
     <message>
         <source>Loader</source>
-        <translation></translation>
+        <translation>加载器</translation>
     </message>
     <message>
         <source>Payload</source>
-        <translation></translation>
+        <translation>载荷</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
 </context>
 <context>
     <name>XDataConvertor</name>
     <message>
         <source>Read error</source>
-        <translation></translation>
+        <translation>读取错误</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation></translation>
+        <translation>写入错误</translation>
     </message>
     <message>
         <source>Invalid size</source>
-        <translation></translation>
+        <translation>无效的大小</translation>
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation></translation>
+        <translation>无法调整大小</translation>
     </message>
 </context>
 <context>
     <name>XDataConvertorWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation></translation>
+        <translation>方法</translation>
     </message>
     <message>
         <source>Encode</source>
-        <translation></translation>
+        <translation>编码</translation>
     </message>
     <message>
         <source>Decode</source>
-        <translation></translation>
+        <translation>解码</translation>
     </message>
     <message>
         <source>Input</source>
-        <translation></translation>
+        <translation>输入</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation></translation>
+        <translation>转储</translation>
     </message>
     <message>
         <source>Output</source>
-        <translation></translation>
+        <translation>输出</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation></translation>
+        <translation>自动</translation>
     </message>
 </context>
 <context>
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableEditView</name>
     <message>
         <source>Open file</source>
-        <translation></translation>
+        <translation>打开文件</translation>
     </message>
     <message>
         <source>Patch</source>
-        <translation></translation>
+        <translation>补丁</translation>
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation></translation>
+        <translation>无法调整大小</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Save dump</source>
-        <translation></translation>
+        <translation>保存转储</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation></translation>
+        <translation>原始数据</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation></translation>
+        <translation>转储</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation></translation>
+        <translation>未找到</translation>
     </message>
 </context>
 <context>
     <name>XDialogProcess</name>
     <message>
         <source>Process</source>
-        <translation></translation>
+        <translation>进程</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation></translation>
+        <translation>高级选项</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation></translation>
+        <translation>标签</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation></translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation></translation>
+        <translation>操作码</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation></translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation></translation>
+        <translation>操作码</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation></translation>
+        <translation>注释</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation></translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>书签集</translation>
     </message>
     <message>
         <source>All</source>
-        <translation></translation>
+        <translation>所有</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation></translation>
+        <translation>符号</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation></translation>
+        <translation>函数</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>New</source>
-        <translation></translation>
+        <translation>新</translation>
     </message>
     <message>
         <source>List</source>
-        <translation></translation>
+        <translation>列表</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation></translation>
+        <translation>相对地址（RA）</translation>
     </message>
 </context>
 <context>
     <name>XDisasmViewOptionsWidget</name>
     <message>
         <source>Syntax</source>
-        <translation></translation>
+        <translation>语法</translation>
     </message>
     <message>
         <source>Uppercase</source>
-        <translation></translation>
+        <translation>大写字母</translation>
     </message>
     <message>
         <source>Show colons in addresses</source>
-        <translation></translation>
+        <translation>地址中显示冒号</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation></translation>
+        <translation>高亮</translation>
     </message>
     <message>
         <source>Colors</source>
-        <translation></translation>
+        <translation>颜色</translation>
     </message>
     <message>
         <source>Arrows</source>
-        <translation></translation>
+        <translation>箭头</translation>
     </message>
     <message>
         <source>All</source>
-        <translation></translation>
+        <translation>所有</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation></translation>
+        <translation>已选择</translation>
     </message>
     <message>
         <source>Registers</source>
-        <translation></translation>
+        <translation>寄存器</translation>
     </message>
     <message>
         <source>Numbers</source>
-        <translation></translation>
+        <translation>数字</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation></translation>
+        <translation>指令集</translation>
     </message>
     <message>
         <source>References</source>
-        <translation></translation>
+        <translation>引用</translation>
     </message>
     <message>
         <source>General registers</source>
-        <translation></translation>
+        <translation>通用寄存器</translation>
     </message>
     <message>
         <source>Stack registers</source>
-        <translation></translation>
+        <translation>栈寄存器</translation>
     </message>
     <message>
         <source>Segment registers</source>
-        <translation></translation>
+        <translation>段寄存器</translation>
     </message>
     <message>
         <source>Debug registers</source>
-        <translation></translation>
+        <translation>调试寄存器</translation>
     </message>
     <message>
         <source>Instruction pointer register</source>
-        <translation></translation>
+        <translation>指令指针寄存器</translation>
     </message>
     <message>
         <source>Flags register</source>
-        <translation></translation>
+        <translation>标志寄存器</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation></translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>Labels</source>
-        <translation></translation>
+        <translation>标签</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation></translation>
+        <translation>转到</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation></translation>
+        <translation>入口点</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation></translation>
+        <translation>虚拟地址（VA）</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation></translation>
+        <translation>相对虚拟地址（RVA）</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation></translation>
+        <translation>文件偏移</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation></translation>
+        <translation>转储到文件</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation></translation>
+        <translation>到数据</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation></translation>
+        <translation>原始数据</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation></translation>
+        <translation>保存转储</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsEngine</name>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation></translation>
+        <translation>无法加载文件</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsOptionsWidget</name>
     <message>
         <source>Structs</source>
-        <translation></translation>
+        <translation>结构</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation></translation>
+        <translation>打开目录</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Prototype</source>
-        <translation></translation>
+        <translation>原型</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Array</source>
-        <translation></translation>
+        <translation>数组</translation>
     </message>
     <message>
         <source>Variable</source>
-        <translation></translation>
+        <translation>变量</translation>
     </message>
     <message>
         <source>Pointer</source>
-        <translation></translation>
+        <translation>指针</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation></translation>
+        <translation>无法读取地址处的内存</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Section</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation></translation>
+        <translation>字符串表</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation></translation>
+        <translation>库</translation>
     </message>
     <message>
         <source>Run path</source>
-        <translation></translation>
+        <translation>运行路径</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation></translation>
+        <translation>符号表</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Save diagram</source>
-        <translation></translation>
+        <translation>保存图表</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation></translation>
+        <translation>区域</translation>
     </message>
     <message>
         <source>Diagram</source>
-        <translation></translation>
+        <translation>图解</translation>
     </message>
     <message>
         <source>Grid</source>
-        <translation></translation>
+        <translation>网格</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation></translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation></translation>
+        <translation>计数</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation></translation>
+        <translation>总计</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Byte</source>
-        <translation></translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation></translation>
+        <translation>状态</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
 </context>
 <context>
     <name>XExtractorWidget</name>
     <message>
         <source>Extract</source>
-        <translation></translation>
+        <translation>提取</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation></translation>
+        <translation>转储全部</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation></translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation></translation>
+        <translation>保存转储</translation>
     </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation></translation>
+        <translation>注释</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation></translation>
+        <translation>方法</translation>
     </message>
     <message>
         <source>Output</source>
-        <translation></translation>
+        <translation>输出</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation></translation>
+        <translation>文本</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation></translation>
+        <translation>保存文件</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation></translation>
+        <translation>文本文件</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
 </context>
 <context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Footer</source>
-        <translation></translation>
+        <translation>页脚</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation></translation>
+        <translation>方法</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation></translation>
+        <translation>区域</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
 </context>
 <context>
     <name>XHeaderView</name>
     <message>
         <source>Filter</source>
-        <translation></translation>
+        <translation>过滤器</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation></translation>
+        <translation>符号</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Location</source>
-        <translation></translation>
+        <translation>定位</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation></translation>
+        <translation>宽度</translation>
     </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Show colons in addresses</source>
-        <translation></translation>
+        <translation>地址中显示冒号</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Data inspector</source>
-        <translation></translation>
+        <translation>数据检查器</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
 </context>
 <context>
     <name>XIcon</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
     <name>XInfoDB</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Function enter</source>
-        <translation></translation>
+        <translation>函数入口</translation>
     </message>
     <message>
         <source>Function leave</source>
-        <translation></translation>
+        <translation>函数返回</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation></translation>
+        <translation>步进</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation></translation>
+        <translation>步出</translation>
     </message>
     <message>
         <source>Trace into</source>
-        <translation></translation>
+        <translation>跟踪进入</translation>
     </message>
     <message>
         <source>Trace over</source>
-        <translation></translation>
+        <translation>跟踪越过</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Paused</source>
-        <translation></translation>
+        <translation>已暂停</translation>
     </message>
     <message>
         <source>Running</source>
-        <translation></translation>
+        <translation>运行中</translation>
     </message>
 </context>
 <context>
     <name>XInfoDBOptionsWidget</name>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation></translation>
+        <translation>打开目录</translation>
     </message>
 </context>
 <context>
     <name>XInfoMenu</name>
     <message>
         <source>Database</source>
-        <translation></translation>
+        <translation>数据库</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>导出</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Load</source>
-        <translation></translation>
+        <translation>加载器</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation></translation>
+        <translation>打开文件</translation>
     </message>
     <message>
         <source>Are you sure?</source>
-        <translation></translation>
+        <translation>你确定吗？</translation>
     </message>
 </context>
 <context>
     <name>XJAR</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>通用</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Package</source>
-        <translation></translation>
+        <translation>包</translation>
     </message>
 </context>
 <context>
     <name>XJpeg</name>
     <message>
         <source>Data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Map</source>
-        <translation></translation>
+        <translation>地图</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation></translation>
+        <translation>对象</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
 </context>
 <context>
     <name>XLHA</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>位</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
 </context>
 <context>
     <name>XLineEditValidator</name>
     <message>
         <source>Bytes</source>
-        <translation></translation>
+        <translation>字节</translation>
     </message>
     <message>
         <source>KiB</source>
-        <translation></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation></translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <source>GiB</source>
-        <translation></translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <source>TiB</source>
-        <translation></translation>
+        <translation>TiB</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation></translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>通用</translation>
     </message>
     <message>
         <source>Bundle</source>
-        <translation></translation>
+        <translation>句柄</translation>
     </message>
 </context>
 <context>
     <name>XMIMEWidget</name>
     <message>
         <source>All</source>
-        <translation></translation>
+        <translation>所有</translation>
     </message>
 </context>
 <context>
     <name>XMP3</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation></translation>
+        <translation>转储全部</translation>
     </message>
     <message>
         <source>Show all</source>
-        <translation></translation>
+        <translation>全部显示</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation></translation>
+        <translation>文件偏移</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation></translation>
+        <translation>虚拟地址（VA）</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation></translation>
+        <translation>相对虚拟地址（RVA）</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>字节序</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation></translation>
+        <translation>架构</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation></translation>
+        <translation>查找</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation></translation>
+        <translation>转储</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation></translation>
+        <translation>保存转储</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation></translation>
+        <translation>原始数据</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation></translation>
+        <translation>只读</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>下次访问</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>上次访问</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
 </context>
 <context>
     <name>XNPM</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>通用</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Package</source>
-        <translation></translation>
+        <translation>包</translation>
     </message>
 </context>
 <context>
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Get</source>
-        <translation></translation>
+        <translation>获取</translation>
     </message>
     <message>
         <source>API key</source>
-        <translation></translation>
+        <translation>API 密钥</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation></translation>
+        <translation>无法获取 文件</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation></translation>
+        <translation>自动</translation>
     </message>
     <message>
         <source>Recent files</source>
-        <translation></translation>
+        <translation>最近打开文件</translation>
     </message>
     <message>
         <source>Code pages</source>
-        <translation></translation>
+        <translation>代码页</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation></translation>
+        <translation>镜像</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation></translation>
+        <translation>文档</translation>
     </message>
 </context>
 <context>
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation></translation>
+        <translation>窗口置顶</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation></translation>
+        <translation>单个应用程序</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation></translation>
+        <translation>样式</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation></translation>
+        <translation>语言</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation></translation>
+        <translation>显示徽标</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation></translation>
+        <translation>保存到上次目录</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation></translation>
+        <translation>保存备份</translation>
     </message>
     <message>
         <source>Save history</source>
-        <translation></translation>
+        <translation>保存历史</translation>
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation></translation>
+        <translation>添加到上下文菜单</translation>
     </message>
     <message>
         <source>Controls</source>
-        <translation></translation>
+        <translation>控件</translation>
     </message>
     <message>
         <source>Table views</source>
-        <translation></translation>
+        <translation>表格试图</translation>
     </message>
     <message>
         <source>Tree views</source>
-        <translation></translation>
+        <translation>目录视图</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Text editors</source>
-        <translation></translation>
+        <translation>文本编辑器</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation></translation>
+        <translation>默认</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation></translation>
+        <translation>外观</translation>
     </message>
     <message>
         <source>File</source>
-        <translation></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Fonts</source>
-        <translation></translation>
+        <translation>字体</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation></translation>
+        <translation>请以管理员身份运行程序</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation></translation>
+        <translation>请重启应用程序</translation>
     </message>
 </context>
 <context>
     <name>XPDF</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation></translation>
+        <translation>对象</translation>
     </message>
     <message>
         <source>Footer</source>
-        <translation></translation>
+        <translation>页脚</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
     <message>
         <source>Application</source>
-        <translation></translation>
+        <translation>应用</translation>
     </message>
     <message>
         <source>Console</source>
-        <translation></translation>
+        <translation>控制台</translation>
     </message>
     <message>
         <source>Driver</source>
-        <translation></translation>
+        <translation>驱动</translation>
     </message>
     <message>
         <source>Boot application</source>
-        <translation></translation>
+        <translation>引导应用程序</translation>
     </message>
     <message>
         <source>Runtime driver</source>
-        <translation></translation>
+        <translation>运行时驱动程序</translation>
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation></translation>
+        <translation>引导服务驱动程序</translation>
     </message>
     <message>
         <source>Invalid address of entry point</source>
-        <translation></translation>
+        <translation>入口点地址无效</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation></translation>
+        <translation>节</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation></translation>
+        <translation>无法打开文件</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation></translation>
+        <translation>该文件已被签名并且签名已被验证</translation>
     </message>
     <message>
         <source>The file is not signed</source>
-        <translation></translation>
+        <translation>该文件未被签名</translation>
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation></translation>
+        <translation>签名存在，但已被显式禁用</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation></translation>
+        <translation>签名存在，但不受信任</translation>
     </message>
     <message>
         <source>The signature error</source>
-        <translation></translation>
+        <translation>签名错误</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation></translation>
+        <translation>入口点</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>导出</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>导入</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation></translation>
+        <translation>重新定位</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation></translation>
+        <translation>资源</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation></translation>
+        <translation>证书</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation></translation>
+        <translation>无效</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
 </context>
 <context>
     <name>XScanEngine</name>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>obfuscator</source>
-        <translation></translation>
+        <translation>混淆器</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation></translation>
+        <translation>工具</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation></translation>
+        <translation>存档</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation></translation>
+        <translation>证书</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation></translation>
+        <translation>编译器</translation>
     </message>
     <message>
         <source>Converter</source>
-        <translation></translation>
+        <translation>转换器</translation>
     </message>
     <message>
         <source>Crypter</source>
-        <translation></translation>
+        <translation>密码器</translation>
     </message>
     <message>
         <source>Cryptor</source>
-        <translation></translation>
+        <translation>加密库</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation></translation>
+        <translation>数据库</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation></translation>
+        <translation>调试数据</translation>
     </message>
     <message>
         <source>protection</source>
-        <translation></translation>
+        <translation>保护器</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation></translation>
+        <translation>扩展器</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation></translation>
+        <translation>格式</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation></translation>
+        <translation>通用</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation></translation>
+        <translation>镜像</translation>
     </message>
     <message>
         <source>Installer</source>
-        <translation></translation>
+        <translation>安装程序</translation>
     </message>
     <message>
         <source>Installer data</source>
-        <translation></translation>
+        <translation>安装程序数据</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation></translation>
+        <translation>合并工具</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation></translation>
+        <translation>语言</translation>
     </message>
     <message>
         <source>Library</source>
-        <translation></translation>
+        <translation>库</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation></translation>
+        <translation>链接程序</translation>
     </message>
     <message>
         <source>compressor</source>
-        <translation></translation>
+        <translation>压缩工具</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation></translation>
+        <translation>操作系统</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Packer</source>
-        <translation></translation>
+        <translation>打包工具</translation>
     </message>
     <message>
         <source>Platform</source>
-        <translation></translation>
+        <translation>平台</translation>
     </message>
     <message>
         <source>Player</source>
-        <translation></translation>
+        <translation>播放器</translation>
     </message>
     <message>
         <source>Protection</source>
-        <translation></translation>
+        <translation>保护</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation></translation>
+        <translation>保护器</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation></translation>
+        <translation>保护器数据</translation>
     </message>
     <message>
         <source>data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation></translation>
+        <translation>签名工具</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation></translation>
+        <translation>源代码</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation></translation>
+        <translation>存根</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation></translation>
+        <translation>虚拟机</translation>
     </message>
     <message>
         <source>Virus</source>
-        <translation></translation>
+        <translation>病毒</translation>
     </message>
     <message>
         <source>Trojan</source>
-        <translation></translation>
+        <translation>木马</translation>
     </message>
     <message>
         <source>Malware</source>
-        <translation></translation>
+        <translation>恶意软件</translation>
     </message>
     <message>
         <source>Package</source>
-        <translation></translation>
+        <translation>包</translation>
     </message>
     <message>
         <source>Licensing</source>
-        <translation></translation>
+        <translation>许可</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation></translation>
+        <translation>递归扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation></translation>
+        <translation>深度扫描</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation></translation>
+        <translation>启发式扫描</translation>
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation></translation>
+        <translation>主动扫描</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>详细</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation></translation>
+        <translation>所有类型</translation>
     </message>
     <message>
         <source>Main</source>
-        <translation></translation>
+        <translation>主要</translation>
     </message>
     <message>
         <source>Extra</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation></translation>
+        <translation>自定义</translation>
     </message>
     <message>
         <source>File scan</source>
-        <translation></translation>
+        <translation>文件扫描</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation></translation>
+        <translation>设备扫描</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation></translation>
+        <translation>内存扫描</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation></translation>
+        <translation>目录扫描</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Action</source>
-        <translation></translation>
+        <translation>处理</translation>
     </message>
     <message>
         <source>File</source>
-        <translation></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>View</source>
-        <translation></translation>
+        <translation>查看</translation>
     </message>
     <message>
         <source>String</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation></translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation></translation>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Struct</source>
-        <translation></translation>
+        <translation>结构体</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation></translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation></translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation></translation>
+        <translation>调试</translation>
     </message>
     <message>
         <source>Trace</source>
-        <translation></translation>
+        <translation>跟踪</translation>
     </message>
     <message>
         <source>Animate</source>
-        <translation></translation>
+        <translation>动画</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation></translation>
+        <translation>调试器</translation>
     </message>
     <message>
         <source>Registers</source>
-        <translation></translation>
+        <translation>寄存器</translation>
     </message>
     <message>
         <source>Register</source>
-        <translation></translation>
+        <translation>寄存器</translation>
     </message>
     <message>
         <source>Stack</source>
-        <translation></translation>
+        <translation>栈</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation></translation>
+        <translation>存档</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation></translation>
+        <translation>表格</translation>
     </message>
     <message>
         <source>Process</source>
-        <translation></translation>
+        <translation>进程</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation></translation>
+        <translation>内存</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation></translation>
+        <translation>查找</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation></translation>
+        <translation>转到</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation></translation>
+        <translation>工具集</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation></translation>
+        <translation>帮助</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation></translation>
+        <translation>选择</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation></translation>
+        <translation>选区</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation></translation>
+        <translation>跟进</translation>
     </message>
     <message>
         <source>Show in</source>
-        <translation></translation>
+        <translation>显示到</translation>
     </message>
     <message>
         <source>Breakpoint</source>
-        <translation></translation>
+        <translation>断点</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation></translation>
+        <translation>模块</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation></translation>
+        <translation>内存映射</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Editor</source>
-        <translation></translation>
+        <translation>编辑器</translation>
     </message>
     <message>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>书签集</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation></translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>Hardware</source>
-        <translation></translation>
+        <translation>硬件</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation></translation>
+        <translation>显示</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation></translation>
+        <translation>打开</translation>
     </message>
     <message>
         <source>New</source>
-        <translation></translation>
+        <translation>新</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Save as</source>
-        <translation></translation>
+        <translation>保存为</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation></translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Print</source>
-        <translation></translation>
+        <translation>打印</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation></translation>
+        <translation>退出</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation></translation>
+        <translation>转储到文件</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>End</source>
-        <translation></translation>
+        <translation>结束</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation></translation>
+        <translation>开始</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation></translation>
+        <translation>入口点</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Scripts</source>
-        <translation></translation>
+        <translation>脚本</translation>
     </message>
     <message>
         <source>Patch</source>
-        <translation></translation>
+        <translation>补丁</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation></translation>
+        <translation>操作码</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation></translation>
+        <translation>符号重组</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation></translation>
+        <translation>下一个</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
     <message>
         <source>All</source>
-        <translation></translation>
+        <translation>所有</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation></translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation></translation>
+        <translation>分离</translation>
     </message>
     <message>
         <source>CPU</source>
-        <translation></translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation></translation>
+        <translation>日志</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation></translation>
+        <translation>断点集</translation>
     </message>
     <message>
         <source>Callstack</source>
-        <translation></translation>
+        <translation>调用栈</translation>
     </message>
     <message>
         <source>Threads</source>
-        <translation></translation>
+        <translation>线程</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation></translation>
+        <translation>句柄</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation></translation>
+        <translation>符号</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation></translation>
+        <translation>函数</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation></translation>
+        <translation>快捷键</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation></translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>About</source>
-        <translation></translation>
+        <translation>关于</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation></translation>
+        <translation>文件名</translation>
     </message>
     <message>
         <source>Structs</source>
-        <translation></translation>
+        <translation>结构</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation></translation>
+        <translation>查看器</translation>
     </message>
     <message>
         <source>Folder</source>
-        <translation></translation>
+        <translation>文件夹</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation></translation>
+        <translation>运行</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation></translation>
+        <translation>暂停</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation></translation>
+        <translation>步进</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation></translation>
+        <translation>步出</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation></translation>
+        <translation>停止</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation></translation>
+        <translation>重新开始</translation>
     </message>
     <message>
         <source>Toggle</source>
-        <translation></translation>
+        <translation>切换</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation></translation>
+        <translation>哈希</translation>
     </message>
     <message>
         <source>Full screen</source>
-        <translation></translation>
+        <translation>全屏</translation>
     </message>
     <message>
         <source>References</source>
-        <translation></translation>
+        <translation>引用</translation>
     </message>
     <message>
         <source>Bookmark</source>
-        <translation></translation>
+        <translation>书签</translation>
     </message>
     <message>
         <source>List</source>
-        <translation></translation>
+        <translation>列表</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Resize</source>
-        <translation></translation>
+        <translation>调整</translation>
     </message>
     <message>
         <source>Conditional</source>
-        <translation></translation>
+        <translation>条件</translation>
     </message>
     <message>
         <source>Data inspector</source>
-        <translation></translation>
+        <translation>数据检查器</translation>
     </message>
     <message>
         <source>Data convertor</source>
-        <translation></translation>
+        <translation>数据转换器</translation>
     </message>
     <message>
         <source>Multisearch</source>
-        <translation></translation>
+        <translation>多重搜索</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation></translation>
+        <translation>文本文件</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation></translation>
+        <translation>无法保存文件</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation></translation>
+        <translation>打开文件</translation>
     </message>
 </context>
 <context>
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation></translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>Symbol</source>
-        <translation></translation>
+        <translation>符号</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Code</source>
-        <translation></translation>
+        <translation>代码</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation></translation>
+        <translation>符号</translation>
     </message>
 </context>
 <context>
     <name>XTiff</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation></translation>
+        <translation>表格</translation>
     </message>
 </context>
 <context>
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation></translation>
+        <translation>网站</translation>
     </message>
     <message>
         <source>Rescan</source>
-        <translation></translation>
+        <translation>重新扫描</translation>
     </message>
     <message>
         <source>Show detects</source>
-        <translation></translation>
+        <translation>显示检测</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>First</source>
-        <translation></translation>
+        <translation>第一个</translation>
     </message>
     <message>
         <source>Last</source>
-        <translation></translation>
+        <translation>末尾</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation></translation>
+        <translation>上传这个文件以进行分析？</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation></translation>
+        <translation>版本</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation></translation>
+        <translation>日期</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation></translation>
+        <translation>请使用有效的 API Key</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation></translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation></translation>
+        <translation>在线工具</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
 </context>
 <context>
     <name>XVisualization</name>
     <message>
         <source>None</source>
-        <translation></translation>
+        <translation>无</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation></translation>
+        <translation>信息熵</translation>
     </message>
     <message>
         <source>Gradient</source>
-        <translation></translation>
+        <translation>梯度</translation>
     </message>
     <message>
         <source>Zeros</source>
-        <translation></translation>
+        <translation>零填充</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation></translation>
+        <translation>文本</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation></translation>
+        <translation>未知</translation>
     </message>
 </context>
 <context>
     <name>XVisualizationWidget</name>
     <message>
         <source>Form</source>
-        <translation></translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation></translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation></translation>
+        <translation>镜像</translation>
     </message>
     <message>
         <source>Schema</source>
-        <translation></translation>
+        <translation>架构</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation></translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation></translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Methods</source>
-        <translation></translation>
+        <translation>方法</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation></translation>
+        <translation>方法</translation>
     </message>
     <message>
         <source>Block size</source>
-        <translation></translation>
+        <translation>块大小</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation></translation>
+        <translation>宽度</translation>
     </message>
     <message>
         <source>Height</source>
-        <translation></translation>
+        <translation>高度</translation>
     </message>
     <message>
         <source>Zoom</source>
-        <translation></translation>
+        <translation>缩放</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation></translation>
+        <translation>区域</translation>
     </message>
     <message>
         <source>Highlights</source>
-        <translation></translation>
+        <translation>高亮</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation></translation>
+        <translation>可视化</translation>
     </message>
 </context>
 <context>
     <name>XYara</name>
     <message>
         <source>Start</source>
-        <translation></translation>
+        <translation>开始</translation>
     </message>
 </context>
 <context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
-        <translation></translation>
+        <translation>文件头</translation>
     </message>
     <message>
         <source>Data</source>
-        <translation></translation>
+        <translation>数据</translation>
     </message>
     <message>
         <source>Footer</source>
-        <translation></translation>
+        <translation>页脚</translation>
     </message>
 </context>
 <context>
     <name>YARAWidgetAdvanced</name>
     <message>
         <source>Rules</source>
-        <translation></translation>
+        <translation>规则</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation></translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation></translation>
+        <translation>结果</translation>
     </message>
     <message>
         <source>Matches</source>
-        <translation></translation>
+        <translation>匹配项</translation>
     </message>
     <message>
         <source>Rule name</source>
-        <translation></translation>
+        <translation>规则名称</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation></translation>
+        <translation>偏移</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation></translation>
+        <translation>文本文件</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation></translation>
+        <translation>所有文件</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation></translation>
+        <translation>无法保存文件</translation>
     </message>
 </context>
 <context>
     <name>YARA_Widget</name>
     <message>
         <source>Info</source>
-        <translation></translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Rules</source>
-        <translation></translation>
+        <translation>规则</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation></translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>毫秒</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation></translation>
+        <translation>停止</translation>
     </message>
 </context>
 </TS>

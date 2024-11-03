@@ -7481,52 +7481,52 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1066"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1067"/>
         <source>Aggressive scan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1067"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1069"/>
         <source>Verbose</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1068"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1070"/>
         <source>All types</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1159"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1161"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1160"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1162"/>
         <source>Extra</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1161"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1163"/>
         <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1227"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1229"/>
         <source>File scan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1238"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1240"/>
         <source>Device scan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1246"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1248"/>
         <source>Memory scan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1253"/>
+        <location filename="../../../_mylibs/XScanEngine/xscanengine.cpp" line="1255"/>
         <source>Directory scan</source>
         <translation type="unfinished"></translation>
     </message>
