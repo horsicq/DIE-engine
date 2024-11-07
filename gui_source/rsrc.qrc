@@ -74,6 +74,8 @@
         <file>icons/Code.16.16.png</file>
         <file>icons/Reference.16.16.png</file>
         <file>icons/Bookmark.16.16.png</file>
+        <file>icons/Convertor.16.16.png</file>
+        <file>icons/Inspector.16.16.png</file>
         <file>images/about.png</file>
     </qresource>
 </RCC>
