@@ -10,7 +10,7 @@ create_image_app_dir die
 cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PATH/release/appDir/usr/bin/
 #cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/appDir/usr/bin/
 #cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/appDir/usr/bin/
-cp -f $X_SOURCE_PATH/LINUX/die.desktop                              $X_SOURCE_PATH/release/appDir/usr/share/applications/
+cp -f $X_SOURCE_PATH/LINUX/io.github.horsicq.detect-it-easy.desktop $X_SOURCE_PATH/release/appDir/usr/share/applications/
 cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                                $X_SOURCE_PATH/release/appDir/usr/share/icons/
 cp -Rf $X_SOURCE_PATH/images/                                       $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/appDir/usr/lib/die/
@@ -23,7 +23,7 @@ cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PA
 
 cd $X_SOURCE_PATH/release
 
-linuxdeployqt $X_SOURCE_PATH/release/appDir/usr/share/applications/die.desktop -appimage -always-overwrite
+linuxdeployqt $X_SOURCE_PATH/release/appDir/usr/share/applications/io.github.horsicq.detect-it-easy.desktop -appimage -always-overwrite
 #mv *.AppImage die_${X_RELEASE_VERSION}.AppImage
 
 cd $X_SOURCE_PATH

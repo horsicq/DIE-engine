@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 
 #ifdef Q_OS_LINUX
 #if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
-    app.setDesktopFileName("die");
+    app.setDesktopFileName("io.github.horsicq.detect-it-easy");
 #endif
 #endif
 
