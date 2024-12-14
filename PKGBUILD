@@ -76,7 +76,7 @@ package() {
   cd "$_srcname" || return
 
   echo -e "${_prefix}Creating the package base"
-  install -d "$pkgdir"/{opt/"${_pkgname}",usr/bin,usr/share/icons}
+  install -d "$pkgdir"/{opt/"${_pkgname}",usr/bin,usr/share/icons,usr/share/metainfo}
   install -d "$pkgdir/opt/${_pkgname}"/{lang,qss,info,db,signatures,images,yara_rules}
 
   echo -e "${_prefix}Copying the package binaries"
@@ -104,5 +104,8 @@ package() {
   echo -e "${_prefix}Setting up desktop shortcuts"
   install -Dm 644 LINUX/io.github.horsicq.detect-it-easy.desktop -t "$pkgdir"/usr/share/applications
   
+  echo -e "${_prefix}Setting up metainfo file"
+  install -Dm 644 LINUX/io.github.horsicq.detect-it-easy.metainfo.xml -t "$pkgdir"/usr/share/metainfo
+
   install -Dm 644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }

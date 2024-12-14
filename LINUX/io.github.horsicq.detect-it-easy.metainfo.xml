@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2024 horsicq -->
+<component type="desktop-application">
+  <id>io.github.horsicq.detect-it-easy</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Detect It Easy</name>
+  <developer_name>horsicq</developer_name>
+  <update_contact>horsicq@gmail.com</update_contact>
+  <summary>Advanced file analyzer</summary>
+  <description>
+    <p>Detect It Easy, or abbreviated "DIE" is a program to analyze files you load into the application.</p>
+    <p>It detects, among other things, the compiler and linker used, signatures, and other information about files.</p>
+    <p>The program has been designed specifically to reveal file signatures and how they are packed.</p>
+    <p>Some of the binary formats supported:</p>
+    <ul>
+      <li>MS-DOS: DOS MZ</li>
+      <li>Windows: Portable Executable (PE)</li>
+      <li>*Nix: Executable and Linkable Format (ELF)</li>
+      <li>macOS: Mach Object (Mach-O)</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">io.github.horsicq.detect-it-easy.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/guihkx/flatpak-app-detect-it-easy/ef62b241881138f43ce7004b5a6760d5f6c24deb/screenshots/main_window_basic_view.png</image>
+      <caption>Main window (basic view)</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/guihkx/flatpak-app-detect-it-easy/ef62b241881138f43ce7004b5a6760d5f6c24deb/screenshots/disassembly_window_advanced_view.png</image>
+      <caption>Disassembly window (advanced view)</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://horsicq.github.io/#detect-it-easydie</url>
+  <url type="bugtracker">https://github.com/horsicq/Detect-It-Easy/issues</url>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="3.10" date="2024-11-03">
+      <url>https://raw.githubusercontent.com/horsicq/Detect-It-Easy/refs/heads/master/changelog.txt</url>
+    </release>
+  </releases>
+  <provides>
+    <binary>die</binary>
+    <binary>diec</binary>
+    <binary>diel</binary>
+  </provides>
+</component>
