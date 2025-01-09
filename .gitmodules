@@ -160,3 +160,6 @@
 [submodule "XScanEngine"]
 	path = XScanEngine
 	url = https://github.com/horsicq/XScanEngine
+[submodule "XDisasmCore"]
+	path = XDisasmCore
+	url = https://github.com/horsicq/XDisasmCore.git
