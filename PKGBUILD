@@ -18,15 +18,16 @@ depends=(
   'graphite'
   'icu'
   'krb5'
-  'qt6-base'
-  'qt6-svg'
+  'qt5-base'
+  'qt5-script'
+  'qt5-svg'
   'systemd-libs'
 )
 makedepends=(
   'coreutils'
   'git'
   'imagemagick'
-  'qt6-tools'
+  'qt5-tools'
 )
 _srcname="DIE-engine"
 source=(
@@ -59,7 +60,7 @@ build() {
   for _subdir in $_subdirs; do
     pushd "$_subdir" || return
     echo -e "${_prefix}${_prefix}Building $_subdir"
-    qmake6 PREFIX=/usr QMAKE_CFLAGS="${CFLAGS}" QMAKE_CXXFLAGS="${CXXFLAGS}" QMAKE_LFLAGS="${LDFLAGS}" "$_subdir.pro"
+    qmake-qt5 PREFIX=/usr QMAKE_CFLAGS="${CFLAGS}" QMAKE_CXXFLAGS="${CXXFLAGS}" QMAKE_LFLAGS="${LDFLAGS}" "$_subdir.pro"
     make -f Makefile clean
     make -f Makefile
     popd || return
@@ -67,8 +68,8 @@ build() {
 
   echo -e "${_prefix}${_prefix}Running Qt's Linguist tool chain for gui_source"
   cd gui_source || return
-  /usr/lib/qt6/bin/lupdate gui_source_tr.pro
-  /usr/lib/qt6/bin/lrelease gui_source_tr.pro
+  lupdate gui_source_tr.pro
+  lrelease gui_source_tr.pro
 }
 
 package() {
