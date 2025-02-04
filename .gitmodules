@@ -43,9 +43,6 @@
 [submodule "XEntropyWidget"]
 	path = XEntropyWidget
 	url = https://github.com/horsicq/XEntropyWidget.git
-[submodule "XDisasm"]
-	path = XDisasm
-	url = https://github.com/horsicq/XDisasm.git
 [submodule "XCapstone"]
 	path = XCapstone
 	url = https://github.com/horsicq/XCapstone.git
