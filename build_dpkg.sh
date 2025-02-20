@@ -27,6 +27,8 @@ if [ -z "$X_ERROR" ]; then
         create_deb_app_dir die
         
         export X_PACKAGENAME='detectiteasy'
+        export X_PRIORITY='optional'
+        export X_SECTION='devel'
         export X_MAINTAINER='hors <horsicq@gmail.com>'
         
         export X_HOMEPAGE='http://ntinfo.biz'
