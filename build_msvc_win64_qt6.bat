@@ -1,4 +1,19 @@
-set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
+set VS_EDITIONS=Community Professional Enterprise
+
+set VSVARS_PATH=
+for %%E in (%VS_EDITIONS%) do (
+    IF EXIST "C:\Program Files\Microsoft Visual Studio\2022\%%E\VC\Auxiliary\Build\vcvars64.bat" (
+        set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\%%E\VC\Auxiliary\Build\vcvars64.bat"
+        goto :found_vs
+    )
+)
+
+:found_vs
+IF NOT DEFINED VSVARS_PATH (
+    echo "Visual Studio 2022 not found. Please ensure it is installed."
+    goto exit
+)
+
 set QMAKE_PATH="C:\Qt\6.6.1\msvc2019_64\bin\qmake.exe"
 set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
