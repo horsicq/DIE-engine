@@ -6,4 +6,5 @@ Exec=die %F
 Icon=io.github.horsicq.detect-it-easy
 Categories=Development;
 MimeType=application/octet-stream;
+Keywords=die;
 StartupWMClass=die
