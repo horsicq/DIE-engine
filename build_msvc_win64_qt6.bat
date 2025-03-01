@@ -9,6 +9,11 @@ for %%V in (%VS_VERSIONS%) do (
             set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat"
             goto :found_vs
         )
+		
+        if exist "C:\Program Files (x86)\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat" (
+            set "VSVARS_PATH=C:\Program Files (x86)\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat"
+            goto :found_vs
+        )
     )
 )
 
