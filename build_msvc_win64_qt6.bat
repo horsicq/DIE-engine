@@ -1,20 +1,37 @@
+set VS_VERSIONS=2022 2019 2017
 set VS_EDITIONS=Community Professional Enterprise
+set QT_BASE_PATH="C:\Qt"
 
 set VSVARS_PATH=
-for %%E in (%VS_EDITIONS%) do (
-    IF EXIST "C:\Program Files\Microsoft Visual Studio\2022\%%E\VC\Auxiliary\Build\vcvars64.bat" (
-        set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\%%E\VC\Auxiliary\Build\vcvars64.bat"
-        goto :found_vs
+for %%V in (%VS_VERSIONS%) do (
+    for %%E in (%VS_EDITIONS%) do (
+        IF EXIST "C:\Program Files\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat" (
+            set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat"
+            goto :found_vs
+        )
     )
 )
 
 :found_vs
 IF NOT DEFINED VSVARS_PATH (
-    echo "Visual Studio 2022 not found. Please ensure it is installed."
+    echo "Visual Studio 2022, 2019, or 2017 not found. Please ensure one of them is installed."
     goto exit
 )
 
-set QMAKE_PATH="C:\Qt\6.6.1\msvc2019_64\bin\qmake.exe"
+set QMAKE_PATH=
+for /D %%Q in (%QT_BASE_PATH%\6.*) do (
+    IF EXIST "%%Q\msvc2019_64\bin\qmake.exe" (
+        set QMAKE_PATH="%%Q\msvc2019_64\bin\qmake.exe"
+        goto :found_qt
+    )
+)
+
+:found_qt
+IF NOT DEFINED QMAKE_PATH (
+    echo "Qt 6.x version not found. Please ensure it is installed."
+    goto exit
+)
+
 set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
