@@ -37,7 +37,7 @@ DialogAbout::~DialogAbout()
 bool DialogAbout::eventFilter(QObject* obj, QEvent* event)
 {
     if (event->type() == QEvent::ApplicationPaletteChange) {
-        updateLinkColors();
+        WebLinks();
     }
     return XShortcutsDialog::eventFilter(obj, event);
 }
