@@ -22,65 +22,52 @@
 
 #include "ui_dialogabout.h"
 
-DialogAbout::DialogAbout(QWidget *pParent) : XShortcutsDialog(pParent, false), ui(new Ui::DialogAbout)
+DialogAbout::DialogAbout(QWidget* pParent) : XShortcutsDialog(pParent, false), ui(new Ui::DialogAbout)
 {
     ui->setupUi(this);
+    qApp->installEventFilter(this);
+    WebLinks();
+}
+
+DialogAbout::~DialogAbout()
+{
+    delete ui;
+}
+
+bool DialogAbout::eventFilter(QObject* obj, QEvent* event)
+{
+    if (event->type() == QEvent::ApplicationPaletteChange) {
+        updateLinkColors();
+    }
+    return XShortcutsDialog::eventFilter(obj, event);
+}
+
+void DialogAbout::WebLinks()
+{
+    bool isDarkMode = (palette().color(QPalette::Window).value() < 128);
+
+    QString hyperlinkColor = isDarkMode ? "#66A1E7" : "#0000ff";
 
     XAboutWidget::DATA _data = {};
 
-    _data.sInfo +=
-        QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span></p>").arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION, false));
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span></p>").arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION, false));
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2006-2008 Hellsp@wn</span></p>");
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2012-2024 Hors</span></p>");
-    _data.sInfo += QString(
-                       "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; "
-                       "color:#ff0000;\">horsicq@gmail.com</span></a></p>")
-                       .arg(tr("Bugreports"));
-    _data.sInfo += QString(
-                       "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; "
-                       "color:#ff0000;\">http://ntinfo.biz</span></a></p>")
-                       .arg(tr("Website"));
-    _data.sInfo +=
-        QString(
-            "<p align=\"center\"><span style=\" font-weight:600;\">%1(Paypal): </span><a href=\"ntinfo.re@gmail.com\"><span style=\" text-decoration: underline; "
-            "color:#ff0000;\">ntinfo.re@gmail.com</span></a></p>")
-            .arg(tr("Donate"));
-    _data.sInfo +=
-        QString(
-            "<p align=\"center\"><span style=\" font-weight:600;\">%1(BTC): </span><a href=\"3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo\"><span style=\" text-decoration: "
-            "underline; color:#ff0000;\">3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</span></a></p>")
-            .arg(tr("Donate"));
-    _data.sInfo +=
-        QString(
-            "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/DIE-engine\"><span style=\" text-decoration: "
-            "underline; color:#ff0000;\">https://github.com/horsicq/DIE-engine</span></a></p>")
-            .arg(tr("Source code"));
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; color:%2;\">horsicq@gmail.com</span></a></p>").arg(tr("Bugreports"), hyperlinkColor);
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; color:%2;\">http://ntinfo.biz</span></a></p>").arg(tr("Website"), hyperlinkColor);
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1(Paypal): </span><a href=\"ntinfo.re@gmail.com\"><span style=\" text-decoration: underline; color:%2;\">ntinfo.re@gmail.com</span></a></p>").arg(tr("Donate"), hyperlinkColor);
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1(BTC): </span><a href=\"3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo\"><span style=\" text-decoration: underline; color:%2;\">3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</span></a></p>").arg(tr("Donate"), hyperlinkColor);
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/DIE-engine\"><span style=\" text-decoration: underline; color:%2;\">https://github.com/horsicq/DIE-engine</span></a></p>").arg(tr("Source code"), hyperlinkColor);
 
-    _data.sLibraries +=
-        QString(
-            "<p align=\"center\"><span style=\" font-weight:600;\">QT Library %1 </span><a href=\"http://qt-project.org\"><span style=\" text-decoration: "
-            "underline; color:#ff0000;\">http://qt-project.org</span></a></p>")
-            .arg(QT_VERSION_STR);
-    _data.sLibraries +=
-        QString(
-            "<p align=\"center\"><span style=\" font-weight:600;\">QWT Library %1 </span><a href=\"http://qwt.sourceforge.net\"><span style=\" text-decoration: "
-            "underline; color:#ff0000;\">http://qwt.sourceforge.net</span></a></p>")
-            .arg(QWT_VERSION_STR);
-    _data.sLibraries += QString(
-                            "<p align=\"center\"><span style=\" font-weight:600;\">Capstone %1.%2.%3 </span><a href=\"http://www.capstone-engine.org\"><span style=\" "
-                            "text-decoration: underline; color:#ff0000;\">http://www.capstone-engine.org</span></a></p>")
-                            .arg(QString::number(CS_VERSION_MAJOR), QString::number(CS_VERSION_MINOR), QString::number(CS_VERSION_EXTRA));
+    _data.sLibraries += QString("<p align=\"center\"><span style=\" font-weight:600;\">QT Library %1 </span><a href=\"http://qt-project.org\"><span style=\" text-decoration: underline; color:%2;\">http://qt-project.org</span></a></p>").arg(QT_VERSION_STR, hyperlinkColor);
+    _data.sLibraries += QString("<p align=\"center\"><span style=\" font-weight:600;\">QWT Library %1 </span><a href=\"http://qwt.sourceforge.net\"><span style=\" text-decoration: underline; color:%2;\">http://qwt.sourceforge.net</span></a></p>").arg(QWT_VERSION_STR, hyperlinkColor);
+    _data.sLibraries += QString("<p align=\"center\"><span style=\" font-weight:600;\">Capstone %1.%2.%3 </span><a href=\"http://www.capstone-engine.org\"><span style=\" text-decoration: underline; color:%2;\">http://www.capstone-engine.org</span></a></p>").arg(QString::number(CS_VERSION_MAJOR), QString::number(CS_VERSION_MINOR), QString::number(CS_VERSION_EXTRA), hyperlinkColor);
 
     _data.sLogoPath = ":/images/about.png";
     _data.sUpdatesLink = "https://github.com/horsicq/DIE-engine/releases";
     _data.sThanksLink = "https://github.com/horsicq/DIE-engine/blob/master/THANKS.md";
 
     ui->widgetAbout->setData(_data);
-}
-
-DialogAbout::~DialogAbout()
-{
-    delete ui;
 }
 
 void DialogAbout::adjustView()
