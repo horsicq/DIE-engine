@@ -42,7 +42,6 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
       - name: Upload Release as Download
-        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -81,7 +80,6 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
       - name: Upload Release as Download
-        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -120,7 +118,6 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
       - name: Upload Release as Download
-        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -159,7 +156,6 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
       - name: Upload Release as Download
-        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -227,7 +223,6 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.zip
 
       - name: Upload Release as Download
-        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -295,7 +290,6 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.zip
 
       - name: Upload Release as Download
-        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
