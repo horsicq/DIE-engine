@@ -42,9 +42,10 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
       - name: Upload Release as Download
+        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
-          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: Beta
           release_name: Beta
@@ -80,9 +81,10 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
       - name: Upload Release as Download
+        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
-          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: Beta
           release_name: Beta
@@ -118,9 +120,10 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
       - name: Upload Release as Download
+        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
-          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: Beta
           release_name: Beta
@@ -156,9 +159,10 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
       - name: Upload Release as Download
+        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
-          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: Beta
           release_name: Beta
@@ -166,7 +170,7 @@ jobs:
           prerelease: true
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
-            
+
   build-windows-32:
     runs-on: windows-2019
     steps:
@@ -223,9 +227,10 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.zip
 
       - name: Upload Release as Download
+        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
-          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: Beta
           release_name: Beta
@@ -290,9 +295,10 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.zip
 
       - name: Upload Release as Download
+        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         env:
-          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: Beta
           release_name: Beta
