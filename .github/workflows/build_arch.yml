@@ -21,6 +21,12 @@ jobs:
           pacman -Syu --noconfirm
           pacman -S --noconfirm qt5-base qt5-script qt5-svg qt5-tools base-devel git
 
+      - name: Create user
+        run: |
+          useradd builduser -m 
+          passwd -d builduser 
+          printf 'builduser ALL=(ALL) ALL\n' | tee -a /etc/sudoers 
+
       - name: Clone DIE-engine
         run: |
           git clone --recursive https://github.com/horsicq/DIE-engine
@@ -29,8 +35,8 @@ jobs:
         run: |
           pwd
           cd DIE-engine
-          bash -x build_archpkg.sh
-
+          sudo -u builduser bash -c 'bash -x build_archpkg.sh'
+          
       - name: Upload Release as Artifact
         if: github.event_name != 'release'
         uses: actions/upload-artifact@v4
