@@ -7,11 +7,6 @@ on:
   schedule:
     - cron: '0 0 * * MON'
 
-env:
-  SRC_PATH: ${{ github.workspace }}/src
-  SRC_PATH_WIN: ${{ github.workspace }}\src
-  RELEASE_PATH: ${{ github.workspace }}/src/release
-
 # the jobs are based on these notes:
 # https://github.com/horsicq/Detect-It-Easy/blob/master/docs/BUILD.md
 jobs:
@@ -28,13 +23,12 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          mkdir ${{ env.SRC_PATH }}
-          cd ${{ env.SRC_PATH }}
           git clone --recursive https://github.com/horsicq/DIE-engine
 
       - name: Build
-        working-directory: ${{ env.SRC_PATH }}
         run: |
+          pwd
+          cd DIE-engine
           bash -x build_archpkg.sh
 
       - name: Upload Release as Artifact
@@ -43,7 +37,7 @@ jobs:
         with:
           name: arch-artifact
           path: |
-            ${{ env.RELEASE_PATH }}/*.pkg.tar.zst
+            release/*.pkg.tar.zst
 
       - name: Upload Release as Download
         uses: softprops/action-gh-release@v2
@@ -55,4 +49,4 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            ${{ env.RELEASE_PATH }}/*.pkg.tar.zst
+            release/*.pkg.tar.zst
