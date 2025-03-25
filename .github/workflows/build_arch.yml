@@ -1,4 +1,4 @@
-name: Build DIE-engine
+name: Build Arch
 
 on:
   workflow_dispatch:
