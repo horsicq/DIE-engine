@@ -172,14 +172,15 @@ jobs:
     container: archlinux:base-devel
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: 'recursive'
-          path: ${{ env.SRC_PATH }}
-
+      
       - name: Install dependencies
         run: |
           pacman -Syu --noconfirm
           pacman -S --noconfirm qt5-base qt5-script qt5-svg qt5-tools base-devel git
+
+      - name: Clone DIE-engine
+        run: |
+          git clone --recursive https://github.com/horsicq/DIE-engine
 
       - name: Build
         working-directory: ${{ env.SRC_PATH }}
