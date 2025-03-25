@@ -28,7 +28,7 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          cd ${{ env.RELEASE_PATH }}
+          cd ${{ env.SRC_PATH }}
           git clone --recursive https://github.com/horsicq/DIE-engine
 
       - name: Build
