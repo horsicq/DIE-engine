@@ -29,7 +29,7 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          git clone --recursive https://github.com/horsicq/DIE-engine
+          sudo -u builduser bash -c 'git clone --recursive https://github.com/horsicq/DIE-engine'
 
       - name: Build
         run: |
