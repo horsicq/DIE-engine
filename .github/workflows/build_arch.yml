@@ -29,10 +29,10 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          sudo -u builduser bash -c 'cd $HOME'
-          sudo -u builduser bash -c 'pwd'
+          cd $HOME
+          pwd
           git clone --recursive https://github.com/horsicq/DIE-engine'
-          sudo chown -R builduser directory DIE-engine
+          sudo chown -R builduser directory $HOME/DIE-engine
 
       - name: Build
         run: |
