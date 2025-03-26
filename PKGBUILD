@@ -98,11 +98,11 @@ package() {
   ln -s /opt/"${_pkgname}"/diec "$pkgdir"/usr/bin/diec
   ln -s /opt/"${_pkgname}"/diel "$pkgdir"/usr/bin/diel
 
-  echo -e "${_prefix}Setting up desktop icon"
-  install -Dm 644 LINUX/hicolor/48x48/apps/detect-it-easy.png -t "$pkgdir"/usr/share/pixmaps
-
   echo -e "${_prefix}Setting up desktop shortcuts"
-  install -Dm 644 LINUX/die.desktop -t "$pkgdir"/usr/share/applications
+  install -Dm 644 LINUX/io.github.horsicq.detect-it-easy.desktop -t "$pkgdir"/usr/share/applications
+  
+  echo -e "${_prefix}Setting up metainfo file"
+  install -Dm 644 LINUX/io.github.horsicq.detect-it-easy.metainfo.xml -t "$pkgdir"/usr/share/metainfo
   
   install -Dm 644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
