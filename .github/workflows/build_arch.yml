@@ -31,10 +31,10 @@ jobs:
         run: |
           cd $HOME 
           git clone --recursive https://github.com/horsicq/DIE-engine
-          chmod -R 755 $HOME/DIE-engine
 
       - name: Build
         run: |
+          sudo chown -R builduser /__w/DIE-engine/DIE-engine
           sudo -u builduser bash -c 'bash -x build_archpkg.sh'
           
       - name: Upload Release as Artifact
