@@ -32,7 +32,7 @@ jobs:
           cd $HOME
           pwd
           git clone --recursive https://github.com/horsicq/DIE-engine
-          sudo chown -R builduser directory $HOME/DIE-engine
+          sudo chown -R builduser $HOME/DIE-engine
 
       - name: Build
         run: |
