@@ -12,31 +12,26 @@ on:
 jobs:
   build-arch:
     runs-on: ubuntu-latest
-    container: archlinux:base-devel
+    container: burningdaylight/mingw-arch:latest
     steps:
       - uses: actions/checkout@v4
       
       - name: Install dependencies
         run: |
           pacman -Syu --noconfirm
+          pacman -Sy archlinux-keyring --noconfirm
           pacman -S --noconfirm qt5-base qt5-script qt5-svg qt5-tools base-devel git
-
-      - name: Create user
-        run: |
-          useradd builduser -m 
-          passwd -d builduser 
-          printf 'builduser ALL=(ALL) ALL\n' | tee -a /etc/sudoers 
 
       - name: Clone DIE-engine
         run: |
-          sudo -u builduser bash -c 'cd ~'
-          sudo -u builduser bash -c 'pwd'
-          sudo -u builduser bash -c 'git clone --recursive https://github.com/horsicq/DIE-engine'
+          sudo -u devel bash -c 'cd $HOME'
+          sudo -u devel bash -c 'pwd'
+          sudo -u devel bash -c 'git clone --recursive https://github.com/horsicq/DIE-engine'
 
       - name: Build
         run: |
           pwd
-          sudo -u builduser bash -c 'cd ~/DIE-engine'
+          sudo -u builduser bash -c 'cd $HOME/DIE-engine'
           sudo -u builduser bash -c 'bash -x build_archpkg.sh'
           
       - name: Upload Release as Artifact
@@ -45,7 +40,7 @@ jobs:
         with:
           name: arch-artifact
           path: |
-            release/*.pkg.tar.zst
+            $HOME/DIE-engine/release/*.pkg.tar.zst
 
       - name: Upload Release as Download
         uses: softprops/action-gh-release@v2
@@ -57,4 +52,4 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            release/*.pkg.tar.zst
+            $HOME/DIE-engine/release/*.pkg.tar.zst
