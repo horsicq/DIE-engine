@@ -37,7 +37,8 @@ jobs:
       - name: Build
         run: |
           pwd
-          sudo -u builduser bash -c 'cd DIE-engine'
+          ls
+          cd DIE-engine
           sudo -u builduser bash -c 'bash -x build_archpkg.sh'
           
       - name: Upload Release as Artifact
