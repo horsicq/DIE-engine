@@ -31,7 +31,7 @@ jobs:
         run: |
           cd $HOME 
           git clone --recursive https://github.com/horsicq/DIE-engine
-          sudo chown -R builduser $HOME/DIE-engine
+          chown -R 755 $HOME/DIE-engine
 
       - name: Build
         run: |
