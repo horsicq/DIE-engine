@@ -29,7 +29,7 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          cd $HOME
+          cd $HOME 
           pwd
           git clone --recursive https://github.com/horsicq/DIE-engine
           sudo chown -R builduser $HOME/DIE-engine
@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: |
           pwd
-          sudo -u builduser bash -c 'cd $HOME/DIE-engine'
+          sudo -u builduser bash -c 'cd DIE-engine'
           sudo -u builduser bash -c 'bash -x build_archpkg.sh'
           
       - name: Upload Release as Artifact
