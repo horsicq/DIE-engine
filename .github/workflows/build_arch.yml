@@ -43,7 +43,7 @@ jobs:
         with:
           name: arch-artifact
           path: |
-            $HOME/DIE-engine/release/*.pkg.tar.zst
+            /__w/DIE-engine/DIE-engine/release/*.pkg.tar.zst
 
       - name: Upload Release as Download
         uses: softprops/action-gh-release@v2
@@ -55,4 +55,4 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            $HOME/DIE-engine/release/*.pkg.tar.zst
+            /__w/DIE-engine/DIE-engine/release/*.pkg.tar.zst
