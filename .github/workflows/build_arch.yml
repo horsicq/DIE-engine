@@ -25,7 +25,7 @@ jobs:
         run: |
           useradd builduser -m 
           passwd -d builduser 
-          printf 'builduser ALL=(ALL) ALL\n' | tee -a /etc/sudoers 
+          echo 'builduser ALL=(ALL) ALL' | tee -a /etc/sudoers 
 
       - name: Clone DIE-engine
         run: |
