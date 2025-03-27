@@ -2,7 +2,7 @@
 mkdir release
 cp -f PKGBUILD release/
 cd release
-makepkg -Acs OPTIONS=-debug 
+makepkg -Acs
 rm -Rf PKGBUILD
 rm -Rf DIE-engine
 cd ..
