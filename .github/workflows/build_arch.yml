@@ -15,7 +15,7 @@ jobs:
     container: archlinux:base-devel
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install dependencies
         run: |
           pacman -Syu --noconfirm
@@ -44,6 +44,8 @@ jobs:
           name: arch-artifact
           path: |
             /__w/DIE-engine/DIE-engine/release/*.pkg.tar.zst
+          exclude: |
+            /__w/DIE-engine/DIE-engine/release/detect-it-easy-debug-3.10-1-x86_64.pkg.tar.zst
 
       - name: Upload Release as Download
         uses: softprops/action-gh-release@v2
@@ -56,3 +58,5 @@ jobs:
           prerelease: true
           files: |
             /__w/DIE-engine/DIE-engine/release/*.pkg.tar.zst
+          exclude: |
+            /__w/DIE-engine/DIE-engine/release/detect-it-easy-debug-3.10-1-x86_64.pkg.tar.zst
