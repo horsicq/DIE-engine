@@ -37,15 +37,6 @@ jobs:
         run: |
           sudo chown -R builduser /__w/DIE-engine/DIE-engine
           sudo -u builduser bash -c 'bash -x build_archpkg.sh'
-          
-      - name: Upload Release as Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: arch-artifact
-          path: |
-            /__w/DIE-engine/DIE-engine/release/*.pkg.tar.zst
-          exclude: |
-            /__w/DIE-engine/DIE-engine/release/detect-it-easy-debug-3.10-1-x86_64.pkg.tar.zst
 
       - name: Upload Release as Download
         uses: softprops/action-gh-release@v2
