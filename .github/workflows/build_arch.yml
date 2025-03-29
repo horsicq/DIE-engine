@@ -44,10 +44,7 @@ jobs:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
           tag_name: Beta
-          release_name: Beta
           draft: false
           prerelease: true
           files: |
-            /__w/DIE-engine/DIE-engine/release/*.pkg.tar.zst
-          exclude: |
-            /__w/DIE-engine/DIE-engine/release/detect-it-easy-debug-3.10-1-x86_64.pkg.tar.zst
+            /__w/DIE-engine/DIE-engine/release/*.pkg.tar.zst detect-it-easy-3.*-x86_64.pkg.tar.zst
