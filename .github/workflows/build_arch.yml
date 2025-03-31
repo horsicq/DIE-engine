@@ -47,4 +47,4 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            /__w/DIE-engine/DIE-engine/release/*.pkg.tar.zst detect-it-easy-3.*-x86_64.pkg.tar.zst
+            /__w/DIE-engine/DIE-engine/release/detect-it-easy-3.*-x86_64.pkg.tar.zst
