@@ -33,14 +33,6 @@ jobs:
         run: |
           bash -x build_dpkg.sh
 
-      - name: Upload Release as Artifact
-        if: github.event_name != 'release'
-        uses: actions/upload-artifact@v4
-        with:
-          name: ubuntu24-artifact
-          path: |
-            ${{ env.RELEASE_PATH }}/*.deb
-
       - name: Upload Release as Download
         uses: softprops/action-gh-release@v2
         env:
