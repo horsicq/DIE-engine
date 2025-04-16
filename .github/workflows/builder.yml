@@ -101,35 +101,6 @@ jobs:
           prerelease: true
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
-
-  build-ubuntu-20:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v4
-        with:
-         submodules: 'recursive'
-         path: ${{ env.SRC_PATH }}
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev-tools libqt5svg5-dev qt5-default build-essential -y
-
-      - name: Build
-        working-directory: ${{ env.SRC_PATH }}
-        run: |
-          bash -x build_dpkg.sh
-
-      - name: Upload Release as Download
-        uses: softprops/action-gh-release@v2
-        env:
-          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-        with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
-          files: |
-            ${{ env.RELEASE_PATH }}/*.deb
             
   build-windows-32:
     runs-on: windows-2019
