@@ -186,7 +186,9 @@ int main(int argc, char *argv[])
     QCommandLineOption clAllTypesScan(QStringList() << "a"
                                                     << "alltypes",
                                       "Scan all types.");
-    QCommandLineOption clFormatResult(QStringList() << "f" << "format", "Format result.");
+    QCommandLineOption clFormatResult(QStringList() << "f"
+                                                    << "format",
+                                      "Format result.");
     QCommandLineOption clProfiling(QStringList() << "l"
                                                  << "profiling",
                                    "Profiling signatures.");
