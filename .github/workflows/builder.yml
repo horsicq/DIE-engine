@@ -223,8 +223,6 @@ jobs:
     runs-on: ubuntu-latest
     container: archlinux:base-devel
     steps:
-      - uses: actions/checkout@v4
-
       - name: Install dependencies
         run: |
           pacman -Syu --noconfirm
