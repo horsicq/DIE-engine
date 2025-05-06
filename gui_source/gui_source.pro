@@ -14,7 +14,7 @@ XCONFIG += use_die
 macx {
     TARGET = DiE
 }
-
+DEFINES += NOMINMAX
 include(../build.pri)
 
 #linux {

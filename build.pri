@@ -62,6 +62,4 @@ contains(DEFINES, CREATE_PDB) {
     QMAKE_LFLAGS += /DEBUG 
 }
 
-win32 {
-    DEFINES  += NOMINMAX
-}
+
