@@ -244,7 +244,7 @@ jobs:
         shell: cmd
         working-directory: ${{ env.SRC_PATH }}
         run: |
-          set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+          set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
           set QMAKE_PATH="${{ github.workspace }}\Qt\6.8.3\msvc2022_64\bin\qmake.exe"
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
@@ -302,7 +302,7 @@ jobs:
           sudo chown -R builduser /__w/DIE-engine/DIE-engine
           cd /__w/DIE-engine/DIE-engine
           pwd
-          ls
+          ls | xargs
           sudo -u builduser bash -c 'bash -x build_archpkg.sh'
           rm -Rf /__w/DIE-engine/DIE-engine/release/*debug*
 
