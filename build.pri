@@ -63,5 +63,5 @@ contains(DEFINES, CREATE_PDB) {
 }
 
 win32 {
-    QMAKE_CXXFLAGS  += /DNOMINMAX
+    DEFINES  += NOMINMAX
 }
