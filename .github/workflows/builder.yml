@@ -218,6 +218,64 @@ jobs:
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
             
+  build-windows-64-qt6:
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v4
+        with:
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+        with:
+          msbuild-architecture: x64
+          vs-version: '[16.0,17.0)'
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.8.3'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2022_64'
+          dir: ${{ github.workspace }}
+          modules: qtscript
+
+      - name: Build
+        shell: cmd
+        working-directory: ${{ env.SRC_PATH }}
+        run: |
+          set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+          set QMAKE_PATH="${{ github.workspace }}\Qt\6.8.3\msvc2022_64\bin\qmake.exe"
+          set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
+          set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
+
+          set X_BUILD_NAME=die
+          set X_BUILD_PREFIX=win64_qt6
+          set X_SOURCE_PATH=${{ env.SRC_PATH_WIN }}
+          for /f "delims=" %%x in ('type "%X_SOURCE_PATH%\release_version.txt"') do set X_RELEASE_VERSION=%%x
+
+          echo on
+          call "%X_SOURCE_PATH%\build_win_generic_check.cmd"
+
+          dir "%X_SOURCE_PATH%\release\*.zip" >nul 2>&1
+          if %ERRORLEVEL% neq 0 (
+            echo "ZIP file does not exist"
+            exit /b 1
+          )
+
+      - name: Upload Release as Download
+        uses: softprops/action-gh-release@v2
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ env.RELEASE_PATH }}/*.zip
+            
             
   build-arch:
     runs-on: ubuntu-latest
@@ -237,12 +295,14 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          cd $HOME 
+          cd $HOME
+          pwd
           git clone --recursive https://github.com/horsicq/DIE-engine
           
       - name: Build
         run: |
           sudo chown -R builduser /__w/DIE-engine/DIE-engine
+          pwd
           sudo -u builduser bash -c 'bash -x build_archpkg.sh'
           rm -Rf /__w/DIE-engine/DIE-engine/release/*debug*
 
