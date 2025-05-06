@@ -239,6 +239,7 @@ jobs:
           target: 'desktop'
           arch: 'win64_msvc2022_64'
           dir: ${{ github.workspace }}
+          modules: core5compat
 
       - name: Build
         shell: cmd
@@ -300,11 +301,12 @@ jobs:
       - name: Build
         run: |
           sudo chown -R builduser /__w/DIE-engine/DIE-engine
-          cd /__w/DIE-engine/DIE-engine
+          sudo chown -R builduser /github/home/DIE-engine
+          cd /github/home/DIE-engine
           pwd
-          ls | xargs
           sudo -u builduser bash -c 'bash -x build_archpkg.sh'
           rm -Rf /__w/DIE-engine/DIE-engine/release/*debug*
+          rm -Rf /github/home/DIE-engine/release/*debug*
 
       - name: Upload Release as Download
         uses: softprops/action-gh-release@v2
