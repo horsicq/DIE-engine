@@ -230,7 +230,6 @@ jobs:
         uses: microsoft/setup-msbuild@v2
         with:
           msbuild-architecture: x64
-          vs-version: '[16.0,17.0)'
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -301,9 +300,10 @@ jobs:
       - name: Build
         run: |
           sudo chown -R builduser /__w/DIE-engine/DIE-engine
-          pwd
           cd /__w/DIE-engine/DIE-engine
-          sudo -u builduser bash -c 'bash -x /__w/DIE-engine/DIE-engine/build_archpkg.sh'
+          pwd
+          ls
+          sudo -u builduser bash -c 'bash -x build_archpkg.sh'
           rm -Rf /__w/DIE-engine/DIE-engine/release/*debug*
 
       - name: Upload Release as Download
