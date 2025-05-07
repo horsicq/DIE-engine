@@ -37,7 +37,7 @@ call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Gui
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Core
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Core5Compat
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Network
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Qml.dll
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Qml
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin platforms qwindows
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qjpeg
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qtiff
