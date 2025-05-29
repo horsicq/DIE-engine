@@ -17,10 +17,22 @@ env:
 
 jobs:
   build-ubuntu:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ matrix.docker_image }}
     strategy:
       matrix:
-        os: [ubuntu-24.10, ubuntu-25.04, ubuntu-25.10]
+        docker_image:
+          - ubuntu:24.10
+          - ubuntu:25.04
+          - ubuntu:25.10
+        include:
+          - docker_image: ubuntu:24.10
+            tag: ubuntu-24.10
+          - docker_image: ubuntu:25.04
+            tag: ubuntu-25.04
+          - docker_image: ubuntu:25.10
+            tag: ubuntu-25.10
     steps:
       - name: Checkout with submodules
         uses: actions/checkout@v4
@@ -30,8 +42,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y \
+          apt-get update
+          apt-get install -y \
             qtbase5-dev \
             qtscript5-dev \
             qttools5-dev-tools \
