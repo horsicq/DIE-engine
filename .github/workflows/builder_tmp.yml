@@ -18,9 +18,9 @@ jobs:
     strategy:
       matrix:
         docker_image:
-          - ubuntu:24.10
+#          - ubuntu:24.10
           - ubuntu:25.04
-          - ubuntu:25.10
+#          - ubuntu:25.10
         include:
           - docker_image: ubuntu:24.10
             tag: ubuntu-24.10
