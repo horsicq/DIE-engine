@@ -39,7 +39,8 @@ jobs:
             libqt5svg5-dev \
             qtchooser \
             qt5-qmake \
-            build-essential
+            build-essential \
+            git
             
       - name: Clone DIE-engine
         run: |
