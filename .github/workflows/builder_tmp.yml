@@ -7,11 +7,6 @@ on:
   schedule:
     - cron: '0 0 * * MON'
 
-env:
-  SRC_PATH: ${{ github.workspace }}/src
-  SRC_PATH_WIN: ${{ github.workspace }}\src
-  RELEASE_PATH: ${{ github.workspace }}/src/release
-
 # The jobs are based on the official build notes:
 # https://github.com/horsicq/Detect-It-Easy/blob/master/docs/BUILD.md
 
@@ -34,12 +29,6 @@ jobs:
           - docker_image: ubuntu:25.10
             tag: ubuntu-25.10
     steps:
-      - name: Checkout with submodules
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          path: ${{ env.SRC_PATH }}
-
       - name: Install dependencies
         run: |
           apt-get update
@@ -51,10 +40,17 @@ jobs:
             qtchooser \
             qt5-qmake \
             build-essential
+            
+      - name: Clone DIE-engine
+        run: |
+          cd $HOME
+          pwd
+          git clone --recursive https://github.com/horsicq/DIE-engine
 
       - name: Build .deb package
-        working-directory: ${{ env.SRC_PATH }}
-        run: bash -x build_dpkg.sh
+        run: |
+          cd /github/home/DIE-engine
+          bash -x build_dpkg.sh
 
       - name: Upload .deb to Release
         uses: softprops/action-gh-release@v2
@@ -64,4 +60,4 @@ jobs:
           tag_name: Beta
           draft: false
           prerelease: true
-          files: ${{ env.RELEASE_PATH }}/*.deb
+          files: /github/home/DIE-engine/release/*.deb
