@@ -103,7 +103,7 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
             
   build-windows-32:
-    runs-on: windows-latest
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
         with:
@@ -161,7 +161,7 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.zip
 
   build-windows-64:
-    runs-on: windows-latest
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
         with:
