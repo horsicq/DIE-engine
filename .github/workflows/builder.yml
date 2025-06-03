@@ -110,11 +110,10 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v2
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
         with:
-          msbuild-architecture: x86
-          vs-version: '[16.0,17.0)'
+         arch: x86
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -168,11 +167,10 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v2
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
         with:
-          msbuild-architecture: x64
-          vs-version: '[16.0,17.0)'
+         arch: x64
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -226,10 +224,10 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v2
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
         with:
-          msbuild-architecture: x64
+         arch: x64
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
