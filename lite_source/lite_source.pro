@@ -15,6 +15,7 @@ macx {
 }
 
 include(../build.pri)
+DEFINES += NOMINMAX
 
 XCONFIG += use_capstone_x86
 

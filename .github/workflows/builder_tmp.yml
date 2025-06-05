@@ -1,0 +1,65 @@
+name: Build DIE-engine tmp
+
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+  schedule:
+    - cron: '0 0 * * MON'
+
+# The jobs are based on the official build notes:
+# https://github.com/horsicq/Detect-It-Easy/blob/master/docs/BUILD.md
+
+jobs:
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ matrix.docker_image }}
+    strategy:
+      matrix:
+        docker_image:
+#          - ubuntu:24.10
+          - ubuntu:25.04
+#          - ubuntu:25.10
+        include:
+          - docker_image: ubuntu:24.10
+            tag: ubuntu-24.10
+          - docker_image: ubuntu:25.04
+            tag: ubuntu-25.04
+          - docker_image: ubuntu:25.10
+            tag: ubuntu-25.10
+    steps:
+      - name: Install dependencies
+        run: |
+          apt-get update
+          apt-get upgrade -y
+          apt-get install -y \
+            qtbase5-dev \
+            qtscript5-dev \
+            qttools5-dev-tools \
+            libqt5svg5-dev \
+            qtchooser \
+            qt5-qmake \
+            build-essential \
+            git
+            
+      - name: Clone DIE-engine
+        run: |
+          cd $HOME
+          pwd
+          git clone --recursive https://github.com/horsicq/DIE-engine
+
+      - name: Build .deb package
+        run: |
+          cd /github/home/DIE-engine
+          bash -x build_dpkg.sh
+
+      - name: Upload .deb to Release
+        uses: softprops/action-gh-release@v2
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: /github/home/DIE-engine/release/*.deb

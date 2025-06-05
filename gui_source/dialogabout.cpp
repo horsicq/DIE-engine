@@ -1,4 +1,4 @@
-/* Copyright (c) 2020-2024 hors<horsicq@gmail.com>
+/* Copyright (c) 2020-2025 hors<horsicq@gmail.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -58,6 +58,7 @@ void DialogAbout::WebLinks()
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1(Paypal): </span><a href=\"ntinfo.re@gmail.com\"><span style=\" text-decoration: underline; color:%2;\">ntinfo.re@gmail.com</span></a></p>").arg(tr("Donate"), hyperlinkColor);
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1(BTC): </span><a href=\"3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo\"><span style=\" text-decoration: underline; color:%2;\">3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</span></a></p>").arg(tr("Donate"), hyperlinkColor);
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/DIE-engine\"><span style=\" text-decoration: underline; color:%2;\">https://github.com/horsicq/DIE-engine</span></a></p>").arg(tr("Source code"), hyperlinkColor);
+
 
     _data.sLibraries += QString("<p align=\"center\"><span style=\" font-weight:600;\">QT Library %1 </span><a href=\"http://qt-project.org\"><span style=\" text-decoration: underline; color:%2;\">http://qt-project.org</span></a></p>").arg(QT_VERSION_STR, hyperlinkColor);
     _data.sLibraries += QString("<p align=\"center\"><span style=\" font-weight:600;\">QWT Library %1 </span><a href=\"http://qwt.sourceforge.net\"><span style=\" text-decoration: underline; color:%2;\">http://qwt.sourceforge.net</span></a></p>").arg(QWT_VERSION_STR, hyperlinkColor);

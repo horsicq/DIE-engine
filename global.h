@@ -1,4 +1,4 @@
-/* Copyright (c) 2020-2023 hors<horsicq@gmail.com>
+/* Copyright (c) 2020-2025 hors<horsicq@gmail.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,7 @@
 #define X_APPLICATIONDISPLAYNAMELITE "Detect It Easy Lite"
 #define X_APPLICATIONNAME "die"
 #define X_APPLICATIONNAMELITE "diel"
-#define X_APPLICATIONVERSION "3.10"
+#define X_APPLICATIONVERSION "3.11"
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "die.ini"

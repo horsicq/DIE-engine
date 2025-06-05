@@ -61,3 +61,5 @@ contains(DEFINES, CREATE_PDB) {
     QMAKE_CXXFLAGS += /Zi
     QMAKE_LFLAGS += /DEBUG 
 }
+
+

@@ -14,6 +14,8 @@ XCONFIG += use_die
 macx {
     TARGET = DiE
 }
+DEFINES += NOMINMAX
+include(../build.pri)
 
 #linux {
 #    TARGET = dieg
@@ -37,8 +39,6 @@ FORMS += \
     dialogoptions.ui \
     dialogselectstyle.ui \
     guimainwindow.ui
-
-include(../build.pri)
 
 !contains(XCONFIG, xmimewidget) {
     XCONFIG += xmimewidget

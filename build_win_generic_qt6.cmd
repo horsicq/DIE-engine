@@ -32,15 +32,12 @@ xcopy %X_SOURCE_PATH%\XInfoDB\info %X_SOURCE_PATH%\release\%X_BUILD_NAME%\info /
 xcopy %X_SOURCE_PATH%\signatures\crypto.db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures\
 xcopy %X_SOURCE_PATH%\XYara\yara_rules %X_SOURCE_PATH%\release\%X_BUILD_NAME%\yara_rules /E /I
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Gui
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Core
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5OpenGL
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Svg
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Sql
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Script
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5ScriptTools
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Network
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Widgets
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Gui
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Core
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Core5Compat
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Network
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Qml
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin platforms qwindows
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qjpeg
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qtiff
