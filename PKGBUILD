@@ -13,11 +13,9 @@ conflicts=(
 )
 depends=(
   'freetype2'
-  'gcc-libs'
   'glib2'
   'glibc'
   'graphite'
-  'hicolor-icon-theme'
   'icu'
   'krb5'
   'qt5-base'
@@ -26,7 +24,9 @@ depends=(
   'systemd-libs'
 )
 makedepends=(
+  'coreutils'
   'git'
+  'imagemagick'
   'qt5-tools'
 )
 _srcname="DIE-engine"
@@ -43,8 +43,8 @@ _bold='\e[1m'
 _prefix=" ${_bold}${_color}==>${_stop} "
 
 prepare() {
-  cd "$srcdir/$_srcname"
-  git submodule update --init --recursive
+    cd "$srcdir/$_srcname"
+    git submodule update --init --recursive
 }
 
 build() {
@@ -76,7 +76,7 @@ package() {
   cd "$_srcname" || return
 
   echo -e "${_prefix}Creating the package base"
-  install -d "$pkgdir"/{opt/"${_pkgname}",usr/bin,usr/share/icons}
+  install -d "$pkgdir"/{opt/"${_pkgname}",usr/bin,usr/share/pixmaps}
   install -d "$pkgdir/opt/${_pkgname}"/{lang,qss,info,db,signatures,images,yara_rules}
 
   echo -e "${_prefix}Copying the package binaries"
@@ -98,12 +98,9 @@ package() {
   ln -s /opt/"${_pkgname}"/diec "$pkgdir"/usr/bin/diec
   ln -s /opt/"${_pkgname}"/diel "$pkgdir"/usr/bin/diel
 
-  echo -e "${_prefix}Setting up desktop icons"
-  cp -r LINUX/hicolor "$pkgdir"/usr/share/icons
-
   echo -e "${_prefix}Setting up desktop shortcuts"
   install -Dm 644 LINUX/io.github.horsicq.detect-it-easy.desktop -t "$pkgdir"/usr/share/applications
-
+  
   echo -e "${_prefix}Setting up metainfo file"
   install -Dm 644 LINUX/io.github.horsicq.detect-it-easy.metainfo.xml -t "$pkgdir"/usr/share/metainfo
   
