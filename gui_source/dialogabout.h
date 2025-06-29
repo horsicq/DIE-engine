@@ -39,8 +39,7 @@ class DialogAbout : public XShortcutsDialog {
 public:
     explicit DialogAbout(QWidget *pParent = nullptr);
     ~DialogAbout();
-	bool eventFilter(QObject *obj, QEvent *event);
-    void WebLinks();
+
     virtual void adjustView();
 
 private slots:
