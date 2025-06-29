@@ -52,7 +52,7 @@ void DialogAbout::WebLinks()
 
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span></p>").arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION, false));
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2006-2008 Hellsp@wn</span></p>");
-    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2012-2024 Hors</span></p>");
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2012-2025 Hors</span></p>");
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; color:%2;\">horsicq@gmail.com</span></a></p>").arg(tr("Bugreports"), hyperlinkColor);
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; color:%2;\">http://ntinfo.biz</span></a></p>").arg(tr("Website"), hyperlinkColor);
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">%1(Paypal): </span><a href=\"ntinfo.re@gmail.com\"><span style=\" text-decoration: underline; color:%2;\">ntinfo.re@gmail.com</span></a></p>").arg(tr("Donate"), hyperlinkColor);
