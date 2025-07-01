@@ -6,6 +6,8 @@ on:
     types: [created]
   schedule:
     - cron: '0 0 * * MON'
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 env:
   SRC_PATH: ${{ github.workspace }}/src
