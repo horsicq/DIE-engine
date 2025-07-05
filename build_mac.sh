@@ -1,8 +1,24 @@
 #!/bin/sh -x
-export QMAKE_PATH=$HOME/Qt/5.15.2/clang_64/bin/qmake
 
-# Enable 'set -e' to ensure the script exits immediately if any command returns a non-zero exit code.
-# This is particularly useful so that github can correctly indicate the status of the process!
+#Locate Qt 5.x automatically
+QT_BASE_PATH="$HOME/Qt"
+QMAKE_PATH=""
+
+for dir in "$QT_BASE_PATH"/5.*; do
+    if [ -x "$dir/clang_64/bin/qmake" ]; then
+        QMAKE_PATH="$dir/clang_64/bin/qmake"
+        break
+    fi
+done
+
+if [ -z "$QMAKE_PATH" ]; then
+    echo "Qt 5.x version not found. Please ensure it is installed under $QT_BASE_PATH."
+    exit 1
+fi
+
+export QMAKE_PATH
+
+# Ensure the script exits immediately if any command fails
 set -e
 
 export X_SOURCE_PATH=$PWD
@@ -11,7 +27,7 @@ export X_RELEASE_VERSION=$(cat "release_version.txt")
 
 source build_tools/mac.sh
 
-check_file $QMAKE_PATH
+check_file "$QMAKE_PATH"
 
 if [ -z "$X_ERROR" ]; then
     make_init
@@ -29,7 +45,7 @@ if [ -z "$X_ERROR" ]; then
         cp -Rf $X_SOURCE_PATH/XStyles/qss                   $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/XInfoDB/info                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db             $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom      $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
+        cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom      $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/images                        $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/XYara/yara_rules              $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
         
