@@ -55,6 +55,7 @@ jobs:
           bash -x build_dpkg.sh
 
       - name: Upload .deb to Release
+        if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v2
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
