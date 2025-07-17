@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui dbus
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,6 +22,7 @@ include(../build.pri)
 #}
 
 SOURCES += \
+    DesktopIntegrationHelper.cpp \
     dialogabout.cpp \
     dialogoptions.cpp \
     dialogselectstyle.cpp \
@@ -29,6 +30,7 @@ SOURCES += \
     main_gui.cpp
 
 HEADERS += \
+    DesktopIntegrationHelper.h \
     dialogabout.h \
     dialogoptions.h \
     dialogselectstyle.h \
@@ -69,6 +71,7 @@ RESOURCES += \
     rsrc.qrc
 
 win32 {
+    LIBS += -lole32 -lshlwapi -luser32
     RC_ICONS = ../icons/main.ico
     CONFIG -= embed_manifest_exe
     QMAKE_MANIFEST = windows.manifest.xml

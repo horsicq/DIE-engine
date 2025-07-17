@@ -19,12 +19,17 @@
  * SOFTWARE.
  */
 #include "guimainwindow.h"
-
+#include "DesktopIntegrationHelper.h"
 #include "ui_guimainwindow.h"
 
 GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
 {
     ui->setupUi(this);
+
+    DesktopIntegrationHelper::Initialize(this);
+    connect(ui->widgetFormats, SIGNAL(scanProgress(int)), this, SLOT(updateTaskbarProgress(int)));
+    connect(ui->widgetFormats, SIGNAL(scanStarted()), this, SLOT(onScanStarted()));
+    connect(ui->widgetFormats, SIGNAL(scanFinished()), this, SLOT(onScanFinished()));
 
     XOptions::adjustToolButton(ui->toolButtonAbout, XOptions::ICONTYPE_INFO);
     XOptions::adjustToolButton(ui->toolButtonOptions, XOptions::ICONTYPE_OPTION);
@@ -328,3 +333,66 @@ void GuiMainWindow::fullScreenSlot()
         showNormal();
     }
 }
+
+void GuiMainWindow::updateTaskbarProgress(int value)
+{
+    if (value < m_nTaskbarProgress || value > 99) return;
+
+    const int maxStep = 5;
+    if ((value - m_nTaskbarProgress) > maxStep) {
+        value = m_nTaskbarProgress + maxStep;
+    }
+
+    m_nTaskbarProgress = value;
+
+#ifdef _WIN32
+    if (DesktopIntegrationHelper::IsAvailable()) {
+        DesktopIntegrationHelper::SetProgressValue(m_nTaskbarProgress, 100);
+    }
+#endif
+}
+
+void GuiMainWindow::onScanStarted()
+{
+    m_nTaskbarProgress = 0;
+
+#ifdef _WIN32
+    if (DesktopIntegrationHelper::IsAvailable()) {
+        DesktopIntegrationHelper::SetProgressState(TBPF_NORMAL);
+        DesktopIntegrationHelper::SetProgressValue(0, 100);
+    }
+#endif
+}
+
+void GuiMainWindow::onScanFinished()
+{
+
+    m_nTaskbarProgress = 100;
+
+#ifdef _WIN32
+    if (!DesktopIntegrationHelper::IsAvailable()) {
+        return;
+    }
+
+    if (QThread::currentThread() != QCoreApplication::instance()->thread()) {
+        QMetaObject::invokeMethod(this, [this]() { onScanFinished(); }, Qt::QueuedConnection);
+        return;
+    }
+
+    if (isVisible()) {
+        DesktopIntegrationHelper::SetProgressValue(100, 100);
+        DesktopIntegrationHelper::SetProgressState(TBPF_NOPROGRESS);
+        DesktopIntegrationHelper::FlashTaskbar(true, 3);
+    } else {
+        qDebug() << "Main window is not visible, skipping taskbar operations";
+    }
+#endif
+
+    DesktopIntegrationHelper::ShowToastNotification(
+        QStringLiteral("Scan Completed"),
+        QStringLiteral("MyApp.ScanNotifier"),
+        QSystemTrayIcon::Information,
+        5000
+        );
+}
+
