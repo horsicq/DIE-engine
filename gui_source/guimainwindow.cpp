@@ -390,7 +390,7 @@ void GuiMainWindow::onScanFinished()
 /* TODO
     DesktopIntegrationHelper::ShowToastNotification(
         QStringLiteral("Scan Completed"),
-        QStringLiteral("MyApp.ScanNotifier"),
+        QStringLiteral("Detect-It-Easy.ScanNotifier"),
         QSystemTrayIcon::Information,
         5000
         );
