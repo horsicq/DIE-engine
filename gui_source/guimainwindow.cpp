@@ -19,7 +19,7 @@
  * SOFTWARE.
  */
 #include "guimainwindow.h"
-#include "DesktopIntegrationHelper.h"
+#include "desktopintegrationhelper.h"
 #include "ui_guimainwindow.h"
 
 GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
