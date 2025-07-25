@@ -387,12 +387,13 @@ void GuiMainWindow::onScanFinished()
         qDebug() << "Main window is not visible, skipping taskbar operations";
     }
 #endif
-
+/* TODO
     DesktopIntegrationHelper::ShowToastNotification(
         QStringLiteral("Scan Completed"),
         QStringLiteral("MyApp.ScanNotifier"),
         QSystemTrayIcon::Information,
         5000
         );
+    */
 }
 
