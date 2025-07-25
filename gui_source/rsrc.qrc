@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>icons/Add.16.16.png</file>
+		<file>icons/main.ico</file>
         <file>icons/Address.16.16.png</file>
         <file>icons/Backward.16.16.png</file>
         <file>icons/Binary.16.16.png</file>
