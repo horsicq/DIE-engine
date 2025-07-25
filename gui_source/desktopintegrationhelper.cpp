@@ -19,7 +19,7 @@
  * SOFTWARE.
  */
 
-#include "DesktopIntegrationHelper.h"
+#include "desktopintegrationhelper.h"
 #include <QDebug>
 #include <QIcon>
 #include <QSystemTrayIcon>
