@@ -2,6 +2,7 @@
 
 #include <QSystemTrayIcon>
 #include <QWidget>
+#include <QPointer>
 
 #ifdef _WIN32
 #include <windows.h>
@@ -52,13 +53,6 @@ private:
     ITaskbarList3* m_taskbarList = nullptr;
     bool m_comInitialized = false;
 #endif
-    QSystemTrayIcon* m_trayIcon = nullptr;
+    QPointer<QSystemTrayIcon> m_trayIcon;
 };
 
-#ifdef _WIN32
-#include <windows.h>
-#include <shobjidl.h>
-#include <shlobj.h>
-#include <propkey.h>
-#include <propvarutil.h>
-#endif
