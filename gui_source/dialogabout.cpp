@@ -75,8 +75,6 @@ void DialogAbout::WebLinks()
                        "text-decoration: underline; color:%2;\">https://github.com/horsicq/DIE-engine</span></a></p>")
                        .arg(tr("Source code"), hyperlinkColor);
 
-
-
     _data.sLogoPath = ":/images/about.png";
     _data.sUpdatesLink = "https://github.com/horsicq/DIE-engine/releases";
     _data.sThanksLink = "https://github.com/horsicq/DIE-engine/blob/master/THANKS.md";
