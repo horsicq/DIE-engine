@@ -167,7 +167,7 @@ bool DesktopIntegrationHelper::IsAvailable() {
     bool available = instance.m_trayIcon != nullptr;
 #endif
     if (!available) {
-        qDebug() << "DesktopIntegrationHelper not available";
+        qDebug() << "DesktopIntegrationHelper is not available";
     }
     return available;
 }
@@ -339,7 +339,7 @@ void DesktopIntegrationHelper::ShowToastNotification(const QString& message, con
     qDebug() << "Tray icon valid:" << (instance.m_trayIcon != nullptr);
 
     if (!QSystemTrayIcon::isSystemTrayAvailable() || !instance.m_trayIcon) {
-        qDebug() << "System tray not available or icon is null";
+        qDebug() << "System tray is not available or icon is null";
         return;
     }
 
