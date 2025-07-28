@@ -123,7 +123,7 @@ bool DesktopIntegrationHelper::InitializeInternal(QWidget* widget) {
             }
         });
         m_trayIcon->show();
-        qDebug() << "System tray icon initialized and shown";
+        qDebug() << "System tray icon initialized and displayed";
     }
 
 #ifdef WIN32
