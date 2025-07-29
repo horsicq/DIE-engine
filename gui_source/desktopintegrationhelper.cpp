@@ -20,18 +20,6 @@
  */
 
 #include "desktopintegrationhelper.h"
-#include <QDebug>
-#include <QIcon>
-#include <QSystemTrayIcon>
-#include <QWidget>
-#include <QProcess>
-
-#ifdef WIN32
-#include <Windows.h>
-#include <ShlObj.h>
-#include <PropIdl.h>
-#include <Shobjidl.h>
-#endif
 
 DesktopIntegrationHelper::DesktopIntegrationHelper()
     : m_widget(nullptr),
@@ -347,5 +335,136 @@ void DesktopIntegrationHelper::ShowToastNotification(const QString& message, con
     instance.m_trayIcon->setVisible(true);
     instance.m_trayIcon->showMessage(appId, message, icon, timeoutMs);
 #endif
+}
+
+QString DesktopIntegrationHelper::normalizeFileName(const QString& fileName)
+{
+    QString result = fileName;
+    result.remove(QRegularExpression("\\(\\d+\\)"));
+    return result;
+}
+
+void DesktopIntegrationHelper::monitorPath(const QString& folder)
+{
+    QMetaObject::invokeMethod(qApp, [this, folder]() {
+        QFileSystemWatcher* watcher = new QFileSystemWatcher(qApp);
+        watcher->addPath(folder);
+
+        QDir path(folder);
+        for (const QFileInfo& info : path.entryInfoList(QDir::Files | QDir::NoDotAndDotDot)) {
+            m_knownFiles.insert(info.absoluteFilePath());
+        }
+
+        connect(watcher, &QFileSystemWatcher::directoryChanged, this, [this, folder]() {
+            QDir path(folder);
+            QFileInfoList currentFiles = path.entryInfoList(QDir::Files | QDir::NoDotAndDotDot);
+            QSet<QString> currentSet;
+
+            for (const QFileInfo& info : currentFiles) {
+                currentSet.insert(info.absoluteFilePath());
+            }
+
+            QSet<QString> newFiles = currentSet - m_knownFiles;
+            m_knownFiles = currentSet;
+
+            for (const QString& fullPath : newFiles) {
+                QFileInfo info(fullPath);
+                QString fileName = info.fileName();
+
+                const bool isFinalFile = !fileName.endsWith(".crdownload") &&
+                                         !fileName.endsWith(".part") &&
+                                         !fileName.endsWith(".tmp") &&
+                                         !fileName.endsWith(".download");
+
+                if (isFinalFile) {
+                    QDateTime now = QDateTime::currentDateTimeUtc();
+                    QString normalized = normalizeFileName(fileName);
+
+                    bool alreadyHandled = false;
+                    for (auto it = m_recentFiles.begin(); it != m_recentFiles.end(); ++it) {
+                        QString pastNormalized = normalizeFileName(QFileInfo(it.key()).fileName());
+                        if (pastNormalized == normalized && it.value().secsTo(now) < 10) {
+                            alreadyHandled = true;
+                            break;
+                        }
+                    }
+
+                    if (!alreadyHandled) {
+                        m_recentFiles.insert(fullPath, now);
+                        qDebug() << "[Download complete] Debounced file:" << fileName;
+                        if (m_callback)
+                            m_callback(fullPath);
+                    } else {
+                        qDebug() << "[Suppressed variant] Too similar to recent file:" << fileName;
+                    }
+                } else {
+                    qDebug() << "[Download in progress] Incomplete temp file:" << fileName;
+                }
+            }
+        });
+    }, Qt::QueuedConnection);
+}
+
+QStringList DesktopIntegrationHelper::detectBrowserDownloadFolders() {
+    QStringList paths;
+
+    QString stdDownloads = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
+    if (!stdDownloads.isEmpty()) paths << stdDownloads;
+
+    QString home = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
+
+#ifdef Q_OS_WIN
+
+    QString chromePref = home + "/AppData/Local/Google/Chrome/User Data/Default/Preferences";
+
+    QString firefoxProfiles = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)
+                              + "/Mozilla/Firefox/Profiles/";
+
+#elif defined(Q_OS_MAC)
+
+    QString chromePref = home + "/Library/Application Support/Google/Chrome/Default/Preferences";
+
+    QString firefoxProfiles = home + "/Library/Application Support/Firefox/Profiles/";
+
+#elif defined(Q_OS_LINUX)
+
+    QString chromePref = home + "/.config/google-chrome/Default/Preferences";
+    if (!QFile::exists(chromePref))
+        chromePref = home + "/.config/chromium/Default/Preferences";
+
+    QString firefoxProfiles = home + "/.mozilla/firefox/";
+#endif
+
+    QFile chromeFile(chromePref);
+    if (chromeFile.exists() && chromeFile.open(QIODevice::ReadOnly)) {
+        QJsonDocument doc = QJsonDocument::fromJson(chromeFile.readAll());
+        chromeFile.close();
+
+        QString chromePath = doc["download"]["default_directory"].toString();
+        if (!chromePath.isEmpty()) paths << QDir::cleanPath(chromePath);
+    }
+
+    QDir dir(firefoxProfiles);
+    for (const QString& profile : dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
+        QString prefs = dir.filePath(profile + "/prefs.js");
+        QFile f(prefs);
+        if (f.open(QIODevice::ReadOnly)) {
+            while (!f.atEnd()) {
+                QByteArray line = f.readLine();
+                if (line.contains("browser.download.dir")) {
+                    int start = line.indexOf("\"");
+                    int end = line.lastIndexOf("\"");
+                    if (start > 0 && end > start) {
+                        QString ffPath = QString::fromUtf8(line.mid(start + 1, end - start - 1));
+                        paths << QDir::cleanPath(ffPath);
+                    }
+                    break;
+                }
+            }
+            f.close();
+        }
+    }
+
+    return paths.removeDuplicates(), paths;
 }
 
