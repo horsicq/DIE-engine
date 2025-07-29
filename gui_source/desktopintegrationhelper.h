@@ -3,6 +3,15 @@
 #include <QSystemTrayIcon>
 #include <QWidget>
 #include <QPointer>
+#include <QDebug>
+#include <QIcon>
+#include <QProcess>
+#include <QRegularExpression>
+#include <QStandardPaths>
+#include <QDir>
+#include <QJsonDocument>
+#include <QFileSystemWatcher>
+#include <QCoreApplication>
 
 #ifdef _WIN32
 #include <windows.h>
@@ -12,7 +21,7 @@
 #include <propvarutil.h>
 #endif
 
-class DesktopIntegrationHelper {
+class DesktopIntegrationHelper : public QObject{
 public:
     struct JumpListTask {
         std::wstring exePath;
@@ -23,6 +32,10 @@ public:
     static bool Initialize(QWidget* widget);
     static void Uninitialize();
     static bool IsAvailable();
+	static QStringList detectBrowserDownloadFolders();
+	QString normalizeFileName(const QString& fileName);
+    void monitorPath(const QString &path);
+
 
 #ifdef _WIN32
     static void SetProgressValue(int value, int max);
@@ -53,6 +66,9 @@ private:
     ITaskbarList3* m_taskbarList = nullptr;
     bool m_comInitialized = false;
 #endif
+    std::function<void(const QString &)> m_callback;
+    QStringList m_paths;
+    QMap<QString, QDateTime> m_recentFiles;
+    QSet<QString> m_knownFiles;
     QPointer<QSystemTrayIcon> m_trayIcon;
 };
-
