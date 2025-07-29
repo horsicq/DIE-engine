@@ -366,7 +366,6 @@ void GuiMainWindow::onScanStarted()
 
 void GuiMainWindow::onScanFinished()
 {
-
     m_nTaskbarProgress = 100;
 
 #ifdef _WIN32
@@ -375,7 +374,8 @@ void GuiMainWindow::onScanFinished()
     }
 
     if (QThread::currentThread() != QCoreApplication::instance()->thread()) {
-        QMetaObject::invokeMethod(this, [this]() { onScanFinished(); }, Qt::QueuedConnection);
+        QMetaObject::invokeMethod(
+            this, [this]() { onScanFinished(); }, Qt::QueuedConnection);
         return;
     }
 
@@ -387,13 +387,12 @@ void GuiMainWindow::onScanFinished()
         qDebug() << "Main window is not visible, skipping taskbar operations";
     }
 #endif
-/* TODO
-    DesktopIntegrationHelper::ShowToastNotification(
-        QStringLiteral("Scan Completed"),
-        QStringLiteral("Detect-It-Easy.ScanNotifier"),
-        QSystemTrayIcon::Information,
-        5000
-        );
-    */
+    /* TODO
+        DesktopIntegrationHelper::ShowToastNotification(
+            QStringLiteral("Scan Completed"),
+            QStringLiteral("Detect-It-Easy.ScanNotifier"),
+            QSystemTrayIcon::Information,
+            5000
+            );
+        */
 }
-

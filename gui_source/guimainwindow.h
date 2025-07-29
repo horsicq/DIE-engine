@@ -65,9 +65,9 @@ private slots:
     void on_checkBoxAdvanced_toggled(bool bChecked);
     void on_lineEditFileName_returnPressed();
 
-    void onScanStarted();         // Add this line
-    void onScanFinished();        // Add this line
-    void updateTaskbarProgress(int value); // Already added from a previous step
+    void onScanStarted();                   // Add this line
+    void onScanFinished();                  // Add this line
+    void updateTaskbarProgress(int value);  // Already added from a previous step
 
     void exitSlot();
     void openFileSlot();
@@ -95,6 +95,6 @@ private:
     QMenu *g_pRecentFilesMenu;
     QShortcut *shortCuts[__SC_SIZE];
     bool g_bFullScreen;
-    qint32 m_nTaskbarProgress; // Add this line
+    qint32 m_nTaskbarProgress;  // Add this line
 };
 #endif  // GUIMAINWINDOW_H
