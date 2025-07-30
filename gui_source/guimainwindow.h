@@ -34,6 +34,8 @@
 #include "xyara.h"
 #endif
 
+extern GuiMainWindow* g_pMainWindow;
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class GuiMainWindow;
@@ -65,9 +67,9 @@ private slots:
     void on_checkBoxAdvanced_toggled(bool bChecked);
     void on_lineEditFileName_returnPressed();
 
-    void onScanStarted();                   // Add this line
-    void onScanFinished();                  // Add this line
-    void updateTaskbarProgress(int value);  // Already added from a previous step
+    void onScanStarted();                   
+    void onScanFinished();                  
+    void updateTaskbarProgress(int value);
 
     void exitSlot();
     void openFileSlot();
@@ -87,6 +89,10 @@ protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
     void dragMoveEvent(QDragMoveEvent *event) override;
     void dropEvent(QDropEvent *event) override;
+#ifdef Q_OS_WIN
+    void changeEvent(QEvent* event) override;
+    void closeEvent(QCloseEvent* event) override;
+#endif
 
 private:
     Ui::GuiMainWindow *ui;
@@ -95,6 +101,6 @@ private:
     QMenu *g_pRecentFilesMenu;
     QShortcut *shortCuts[__SC_SIZE];
     bool g_bFullScreen;
-    qint32 m_nTaskbarProgress;  // Add this line
+    qint32 m_nTaskbarProgress; 
 };
 #endif  // GUIMAINWINDOW_H

@@ -22,9 +22,12 @@
 #include "desktopintegrationhelper.h"
 #include "ui_guimainwindow.h"
 
+GuiMainWindow* g_pMainWindow = nullptr;
+
 GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
 {
     ui->setupUi(this);
+    g_pMainWindow = this;
 
     DesktopIntegrationHelper::Initialize(this);
     connect(ui->widgetFormats, SIGNAL(scanProgress(int)), this, SLOT(updateTaskbarProgress(int)));
@@ -95,6 +98,11 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, "$data/yara_rules");
 #endif
     g_xOptions.load();
+#ifdef Q_OS_WIN
+    if (g_xOptions.getValue(XOptions::ID_FILE_ENABLETRAYMONITORING).toBool()) {
+      g_xOptions.setupTrayIconAndDownloadMonitoring(this, false);
+    }
+#endif
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
     g_xShortcuts.setNative(g_xOptions.isNative(), g_xOptions.getApplicationDataPath());
@@ -396,3 +404,28 @@ void GuiMainWindow::onScanFinished()
             );
         */
 }
+
+#ifdef Q_OS_WIN
+void GuiMainWindow::closeEvent(QCloseEvent* event) {
+  qDebug() << "[Debug] closeEvent triggered.";
+  if (g_xOptions.isTrayMonitoringActive()) {
+    event->ignore();        
+    this->hide();           
+  }
+  else {
+    QMainWindow::closeEvent(event);  
+  }
+}
+
+
+void GuiMainWindow::changeEvent(QEvent* event)
+{
+  if (event->type() == QEvent::WindowStateChange) {
+    if (isMinimized() && g_xOptions.isTrayMonitoringActive()) {
+      QTimer::singleShot(250, this, &GuiMainWindow::hide); 
+    }
+  }
+  QMainWindow::changeEvent(event);
+}
+
+#endif
