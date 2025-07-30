@@ -111,35 +111,6 @@ bool DesktopIntegrationHelper::InitializeInternal(QWidget* widget) {
 #endif
 }
 
-/*
-void DesktopIntegrationHelper::Uninitialize() {
-    auto& instance = GetInstance();
-#ifdef WIN32
-    if (instance.m_taskbarList) {
-        if (instance.m_widget) {
-            instance.m_taskbarList->SetProgressState((HWND)instance.m_widget->winId(), TBPF_NOPROGRESS);
-            instance.m_taskbarList->SetOverlayIcon((HWND)instance.m_widget->winId(), nullptr, L"");
-        }
-        instance.m_taskbarList->Release();
-        instance.m_taskbarList = nullptr;
-    }
-#endif
-    if (instance.m_trayIcon) {
-        instance.m_trayIcon->hide();
-        delete instance.m_trayIcon;
-        instance.m_trayIcon = nullptr;
-
-    }
-#ifdef WIN32
-    if (instance.m_comInitialized) {
-        CoUninitialize();
-        instance.m_comInitialized = false;
-    }
-#endif
-    instance.m_widget = nullptr;
-}
-*/
-
 void DesktopIntegrationHelper::Uninitialize() {
     auto& instance = GetInstance();
 #ifdef WIN32
