@@ -34,7 +34,6 @@
 #include "xyara.h"
 #endif
 
-extern GuiMainWindow* g_pMainWindow;
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -103,4 +102,6 @@ private:
     bool g_bFullScreen;
     qint32 m_nTaskbarProgress; 
 };
+extern GuiMainWindow* g_pMainWindow;
+
 #endif  // GUIMAINWINDOW_H
