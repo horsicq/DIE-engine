@@ -23,6 +23,9 @@
 
 #include "xshortcutsdialog.h"
 #include <QMessageBox>
+#include <QCoreApplication>
+#include <QDate>
+#include <QDebug>
 
 #include "../global.h"
 #include "capstone/capstone.h"
