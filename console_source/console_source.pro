@@ -11,7 +11,6 @@ TARGET = diec
 CONFIG += console
 CONFIG -= app_bundle
 
-DEFINES += NOMINMAX
 include(../build.pri)
 
 XCONFIG += use_capstone_x86
