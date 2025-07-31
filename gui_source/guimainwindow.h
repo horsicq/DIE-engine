@@ -29,7 +29,9 @@
 #include "dialogoptions.h"
 #include "dialogshortcuts.h"
 #include "dialogselectstyle.h"
+#include "qsystemtrayicon.h"
 #include "xoptions.h"
+#include "xoptionswidget.h"
 #ifdef USE_YARA
 #include "xyara.h"
 #endif
@@ -39,6 +41,7 @@ namespace Ui {
 class GuiMainWindow;
 }
 QT_END_NAMESPACE
+
 
 class GuiMainWindow : public QMainWindow {
     Q_OBJECT
@@ -51,6 +54,7 @@ class GuiMainWindow : public QMainWindow {
     };
 
 public:
+
     GuiMainWindow(QWidget *pParent = nullptr);
     ~GuiMainWindow();
 
@@ -65,9 +69,9 @@ private slots:
     void on_checkBoxAdvanced_toggled(bool bChecked);
     void on_lineEditFileName_returnPressed();
 
-    void onScanStarted();                   // Add this line
-    void onScanFinished();                  // Add this line
-    void updateTaskbarProgress(int value);  // Already added from a previous step
+    void onScanStarted();
+    void onScanFinished();
+    void updateTaskbarProgress(int value);
 
     void exitSlot();
     void openFileSlot();
@@ -79,7 +83,6 @@ private slots:
     void adjustFile();
     void setAdvanced(bool bState);
     void errorMessageSlot(const QString &sText);
-
 public slots:
     void _process(const QString &sName);
 
@@ -87,7 +90,10 @@ protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
     void dragMoveEvent(QDragMoveEvent *event) override;
     void dropEvent(QDropEvent *event) override;
-
+#ifdef Q_OS_WIN
+    void changeEvent(QEvent* event) override;
+    void closeEvent(QCloseEvent *event) override;
+#endif
 private:
     Ui::GuiMainWindow *ui;
     XOptions g_xOptions;
@@ -95,6 +101,7 @@ private:
     QMenu *g_pRecentFilesMenu;
     QShortcut *shortCuts[__SC_SIZE];
     bool g_bFullScreen;
-    qint32 m_nTaskbarProgress;  // Add this line
+    qint32 m_nTaskbarProgress;
 };
+extern GuiMainWindow* g_pMainWindow;
 #endif  // GUIMAINWINDOW_H

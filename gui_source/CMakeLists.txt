@@ -58,6 +58,7 @@ set(PROJECT_SOURCES
             dialogselectstyle.ui
             guimainwindow.cpp
             guimainwindow.ui
+			desktopintegrationhelper.cpp
             main_gui.cpp
             rsrc.qrc
 )
