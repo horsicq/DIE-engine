@@ -53,10 +53,10 @@ void DialogAbout::WebLinks()
     XAboutWidget::DATA _data = {};
 
     _data.sInfo +=
-        QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span></p>").arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION, false));
+        QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span></p>")
+            .arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION, false));
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2006-2008 Hellsp@wn</span></p>");
-    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2012-%1 Hors</span></p>")
-                  .arg(QDate::currentDate().year());    
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2012-2025 Hors</span></p>");
     _data.sInfo += QString(
                        "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; "
                        "color:%2;\">horsicq@gmail.com</span></a></p>")
@@ -77,6 +77,19 @@ void DialogAbout::WebLinks()
                        "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/DIE-engine\"><span style=\" "
                        "text-decoration: underline; color:%2;\">https://github.com/horsicq/DIE-engine</span></a></p>")
                        .arg(tr("Source code"), hyperlinkColor);
+
+    _data.sLibraries += QString(
+                            "<p align=\"center\"><span style=\" font-weight:600;\">QT Library %1 </span><a href=\"http://qt-project.org\"><span style=\" text-decoration: underline; "
+                            "color:%2;\">http://qt-project.org</span></a></p>")
+                            .arg(QT_VERSION_STR, hyperlinkColor);
+    _data.sLibraries += QString(
+                            "<p align=\"center\"><span style=\" font-weight:600;\">QWT Library %1 </span><a href=\"http://qwt.sourceforge.net\"><span style=\" text-decoration: underline; "
+                            "color:%2;\">http://qwt.sourceforge.net</span></a></p>")
+                            .arg(QWT_VERSION_STR, hyperlinkColor);
+    _data.sLibraries += QString(
+                            "<p align=\"center\"><span style=\" font-weight:600;\">Capstone %1.%2.%3 </span><a href=\"http://www.capstone-engine.org\"><span style=\" text-decoration: underline; "
+                            "color:%4;\">http://www.capstone-engine.org</span></a></p>")
+                            .arg(QString::number(CS_VERSION_MAJOR), QString::number(CS_VERSION_MINOR), QString::number(CS_VERSION_EXTRA), hyperlinkColor);
 
     _data.sLogoPath = ":/images/about.png";
     _data.sUpdatesLink = "https://github.com/horsicq/DIE-engine/releases";
