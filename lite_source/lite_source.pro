@@ -14,8 +14,8 @@ macx {
     TARGET = DiEL
 }
 
-include(../build.pri)
 DEFINES += NOMINMAX
+include(../build.pri)
 
 XCONFIG += use_capstone_x86
 
