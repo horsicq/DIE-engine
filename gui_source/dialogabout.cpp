@@ -31,7 +31,7 @@ DialogAbout::DialogAbout(QWidget *pParent) : XShortcutsDialog(pParent, false), u
     _data.sInfo +=
         QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span></p>").arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION, false));
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2006-2008 Hellsp@wn</span></p>");
-    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2012-%1 Hors</span></p>") .arg(QDate::currentDate().year());
+    _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2012-%1 Hors</span></p>").arg(QDate::currentDate().year());
     _data.sInfo += QString(
                        "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; "
                        "color:#ff0000;\">horsicq@gmail.com</span></a></p>")
