@@ -163,3 +163,6 @@
 [submodule "XRegionsWidget"]
 	path = XRegionsWidget
 	url = https://github.com/horsicq/XRegionsWidget.git
+[submodule "XStaticUnpacker"]
+	path = XStaticUnpacker
+	url = https://github.com/horsicq/XStaticUnpacker
