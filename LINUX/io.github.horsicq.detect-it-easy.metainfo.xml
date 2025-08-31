@@ -25,11 +25,11 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/guihkx/flatpak-app-detect-it-easy/ef62b241881138f43ce7004b5a6760d5f6c24deb/screenshots/main_window_basic_view.png</image>
+      <image>https://raw.githubusercontent.com/horsicq/DIE-engine/13a4a65fcd8aa1f7c24f239620727008ed5e6cae/LINUX/screenshots/main_window_basic_view.png</image>
       <caption>Main window (basic view)</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/guihkx/flatpak-app-detect-it-easy/ef62b241881138f43ce7004b5a6760d5f6c24deb/screenshots/disassembly_window_advanced_view.png</image>
+      <image>https://raw.githubusercontent.com/horsicq/DIE-engine/13a4a65fcd8aa1f7c24f239620727008ed5e6cae/LINUX/screenshots/disassembly_window_advanced_view.png</image>
       <caption>Disassembly window (advanced view)</caption>
     </screenshot>
   </screenshots>
