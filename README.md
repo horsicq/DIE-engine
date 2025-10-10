@@ -10,7 +10,7 @@ GUI & console sources for Detect It Easy(DiE): https://github.com/horsicq/Detect
 
 - [PELock Software Protection & Reverse Engineering](https://www.pelock.com)
 
-![alt text](https://github.com/horsicq/Detect-It-Easy/blob/master/mascots/logo.png "logo")
+![alt text](https://github.com/horsicq/Detect-It-Easy/blob/master/docs/logo2.png "logo")
 
 
 # Thanks to all the people who already contributed!
