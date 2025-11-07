@@ -234,6 +234,10 @@ int main(int argc, char *argv[])
     QCommandLineOption clShowMethods(QStringList() << "m"
                                                    << "showmethods",
                                      "Show all special methods for the file.");
+    QCommandLineOption clTest(QStringList() << "test",
+                              "Test signatures in <directory>.", "directory");
+    QCommandLineOption clAddTest(QStringList() << "addtest",
+                                 "Add test: --addtest <filename> <detect_string> <directory>.", "filename", "");
 
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
@@ -257,6 +261,8 @@ int main(int argc, char *argv[])
     parser.addOption(clDatabaseCustom);
     parser.addOption(clShowDatabase);
     parser.addOption(clShowMethods);
+    parser.addOption(clTest);
+    parser.addOption(clAddTest);
 
     parser.process(app);
 
@@ -294,6 +300,8 @@ int main(int argc, char *argv[])
     QString sDatabaseMain = parser.value(clDatabaseMain);
     QString sDatabaseExtra = parser.value(clDatabaseExtra);
     QString sDatabaseCustom = parser.value(clDatabaseCustom);
+    QString sTestDirectory = parser.value(clTest);
+    QString sAddTestFilename = parser.value(clAddTest);
 
     if (sDatabaseMain == "") {
         sDatabaseMain = XOptions().getApplicationDataPath() + QDir::separator() + "db";
@@ -355,7 +363,42 @@ int main(int argc, char *argv[])
         for (qint32 i = 0; i < nNumberOfMethods; i++) {
             printf("\t%s\n", listMethods.at(i).toUtf8().data());
         }
-    } else if (listArgs.count()) {
+    } else if (parser.isSet(clTest)) {
+        if (!bIsDbUsed) {
+            die_script.initDatabase();
+            bDbLoaded = die_script.loadDatabase(sDatabaseMain, DiE_ScriptEngine::DT_MAIN, nullptr);
+            die_script.loadDatabase(sDatabaseExtra, DiE_ScriptEngine::DT_EXTRA, nullptr);
+            die_script.loadDatabase(sDatabaseCustom, DiE_ScriptEngine::DT_CUSTOM, nullptr);
+            bIsDbUsed = true;
+        }
+
+        QList<QString> testList;
+        testList.append(sTestDirectory);
+        nResult = ScanFiles(&testList, &scanOptions, &die_script);
+    } else if (parser.isSet(clAddTest)) {
+        if (!bIsDbUsed) {
+            die_script.initDatabase();
+            bDbLoaded = die_script.loadDatabase(sDatabaseMain, DiE_ScriptEngine::DT_MAIN, nullptr);
+            die_script.loadDatabase(sDatabaseExtra, DiE_ScriptEngine::DT_EXTRA, nullptr);
+            die_script.loadDatabase(sDatabaseCustom, DiE_ScriptEngine::DT_CUSTOM, nullptr);
+            bIsDbUsed = true;
+        }
+
+        if (listArgs.count() >= 2) {
+            QString sDetectString = listArgs.at(0);
+            QString sDirectory = listArgs.at(1);
+            printf("Adding test for file '%s' with detect string '%s' in directory '%s'\n", 
+                   sAddTestFilename.toUtf8().data(), 
+                   sDetectString.toUtf8().data(), 
+                   sDirectory.toUtf8().data());
+            QList<QString> testList;
+            testList.append(sDirectory);
+            nResult = ScanFiles(&testList, &scanOptions, &die_script);
+        } else {
+            printf("Error: --addtest requires <filename> <detect_string> <directory>\n");
+            nResult = XOptions::CR_INVALIDPARAMETER;
+        }
+    }else if (listArgs.count()) {
         if (!bIsDbUsed) {
             die_script.initDatabase();
             bDbLoaded = die_script.loadDatabase(sDatabaseMain, DiE_ScriptEngine::DT_MAIN, nullptr);
