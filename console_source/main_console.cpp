@@ -234,10 +234,8 @@ int main(int argc, char *argv[])
     QCommandLineOption clShowMethods(QStringList() << "m"
                                                    << "showmethods",
                                      "Show all special methods for the file.");
-    QCommandLineOption clTest(QStringList() << "test",
-                              "Test signatures in <directory>.", "directory");
-    QCommandLineOption clAddTest(QStringList() << "addtest",
-                                 "Add test: --addtest <filename> <detect_string> <directory>.", "filename", "");
+    QCommandLineOption clTest(QStringList() << "test", "Test signatures in <directory>.", "directory");
+    QCommandLineOption clAddTest(QStringList() << "addtest", "Add test: --addtest <filename> <detect_string> <directory>.", "filename", "");
 
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
@@ -387,9 +385,7 @@ int main(int argc, char *argv[])
         if (listArgs.count() >= 2) {
             QString sDetectString = listArgs.at(0);
             QString sDirectory = listArgs.at(1);
-            printf("Adding test for file '%s' with detect string '%s' in directory '%s'\n", 
-                   sAddTestFilename.toUtf8().data(), 
-                   sDetectString.toUtf8().data(), 
+            printf("Adding test for file '%s' with detect string '%s' in directory '%s'\n", sAddTestFilename.toUtf8().data(), sDetectString.toUtf8().data(),
                    sDirectory.toUtf8().data());
             QList<QString> testList;
             testList.append(sDirectory);
@@ -398,7 +394,7 @@ int main(int argc, char *argv[])
             printf("Error: --addtest requires <filename> <detect_string> <directory>\n");
             nResult = XOptions::CR_INVALIDPARAMETER;
         }
-    }else if (listArgs.count()) {
+    } else if (listArgs.count()) {
         if (!bIsDbUsed) {
             die_script.initDatabase();
             bDbLoaded = die_script.loadDatabase(sDatabaseMain, DiE_ScriptEngine::DT_MAIN, nullptr);
