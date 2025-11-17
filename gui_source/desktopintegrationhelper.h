@@ -15,13 +15,14 @@
 #include <QThread>
 #include <functional>
 
-#ifdef _WIN32
+#ifdef Q_OS_WIN
 #include <windows.h>
 #include <shobjidl.h>
 #include <shlobj.h>
 #include <propkey.h>
 #include <propvarutil.h>
 #endif
+
 
 class DesktopIntegrationHelper : public QObject{
 public:
@@ -48,7 +49,7 @@ public:
     static QString formatSpeed(qint64 bytesPerSecond);
     static QString formatDownloadProgress(const QString& filePath, qint64 received, qint64 total, qint64 speed = 0);
 
-#ifdef _WIN32
+#ifdef Q_OS_WIN
     static void SetProgressValue(int value, int max);
     static void SetProgressState(TBPFLAG state);
     static void SetOverlayIcon(HICON hIcon, LPCWSTR description);
@@ -71,7 +72,7 @@ private:
     DesktopIntegrationHelper& operator=(const DesktopIntegrationHelper&) = delete;
     static DesktopIntegrationHelper& GetInstance();
     void setProgressCallbackInternal(std::function<void(const QString&, qint64, qint64)> callback);
-
+    QList<std::function<void(const QString &)>> m_callbacks;
     bool InitializeInternal(QWidget* widget);
     void UninitializeInternal();
     bool IsAvailableInternal() const;
@@ -80,8 +81,8 @@ private:
     void addPathInternal(const QString &path);
     void setCallbackInternal(std::function<void(const QString &)> callback);
     void ShowToastNotificationInternal(const QString& message, const QString& appId, QSystemTrayIcon::MessageIcon icon, int timeoutMs);
-
-#ifdef _WIN32
+    void addCallbackInternal(std::function<void(const QString &)> callback);
+#ifdef Q_OS_WIN
     void SetProgressValueInternal(int value, int max);
     void SetProgressStateInternal(TBPFLAG state);
     void SetOverlayIconInternal(HICON hIcon, LPCWSTR description);
@@ -101,10 +102,11 @@ private:
 
     // Members
     QWidget* m_widget = nullptr;
-#ifdef _WIN32
+#ifdef Q_OS_WIN
     ITaskbarList3* m_taskbarList = nullptr;
     bool m_comInitialized = false;
 #endif
+    QSet<QString> m_activeDownloads;
     QSystemTrayIcon* m_trayIcon = nullptr;
     QStringList m_paths;
     QMap<QString, QDateTime> m_recentFiles;

@@ -345,6 +345,11 @@ void DesktopIntegrationHelper::setCallback(std::function<void(const QString &)> 
     instance.setCallbackInternal(callback);
 }
 
+void DesktopIntegrationHelper::addCallbackInternal(std::function<void(const QString &)> callback) {
+        m_callbacks.append(callback);
+    }
+
+
 void DesktopIntegrationHelper::startMonitoring() {
     DesktopIntegrationHelper& instance = GetInstance();
     instance.startMonitoringInternal();
@@ -395,6 +400,8 @@ void DesktopIntegrationHelper::monitorPath(const QString& folder)
             }
 
             QSet<QString> newFiles = currentSet - m_knownFiles;
+            QSet<QString> removedFiles = m_knownFiles - currentSet;
+
             m_knownFiles = currentSet;
 
             for (const QString& fullPath : newFiles) {
@@ -411,36 +418,105 @@ void DesktopIntegrationHelper::monitorPath(const QString& folder)
                     QString normalized = normalizeFileName(fileName);
 
                     bool alreadyHandled = false;
-                    for (auto it = m_recentFiles.begin(); it != m_recentFiles.end(); ++it) {
-                        QString pastNormalized = normalizeFileName(QFileInfo(it.key()).fileName());
-                        if (pastNormalized == normalized && it.value().secsTo(now) < 10) {
-                            alreadyHandled = true;
-                            break;
+
+                    // Check if we were tracking a .crdownload version of this file
+                    QString possibleCrdownload = fullPath + ".crdownload";
+                    if (m_activeDownloads.contains(possibleCrdownload)) {
+                        qDebug() << "[Download complete] Detected completion via rename:" << fileName;
+                        m_activeDownloads.remove(possibleCrdownload);
+                    } else {
+                        // Check recent files for duplicates
+                        for (auto it = m_recentFiles.begin(); it != m_recentFiles.end(); ++it) {
+                            QString pastNormalized = normalizeFileName(QFileInfo(it.key()).fileName());
+                            if (pastNormalized == normalized && it.value().secsTo(now) < 10) {
+                                alreadyHandled = true;
+                                break;
+                            }
                         }
                     }
 
                     if (!alreadyHandled) {
-                        m_recentFiles.insert(fullPath, now);
-                        qDebug() << "[Download complete] Debounced file:" << fileName;
-                        if (m_callback)
-                            m_callback(fullPath);
+                        qDebug() << "[Download complete] File detected:" << fileName;
+
+                        std::thread([this, fullPath, fileName, now]() {
+                            qDebug() << "[File Stability] Waiting for file to stabilize:" << fileName;
+
+                            // Wait up to 5 seconds for file to be readable and non-zero
+                            bool fileReady = false;
+                            for (int attempt = 0; attempt < 50 && m_running; attempt++) {
+                                QFileInfo check(fullPath);
+
+                                // Check if file exists and has size
+                                if (!check.exists()) {
+                                    qDebug() << "[File Stability] Attempt" << attempt << "- File doesn't exist yet";
+                                    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                                    continue;
+                                }
+
+                                qint64 fileSize = check.size();
+                                if (fileSize == 0) {
+                                    qDebug() << "[File Stability] Attempt" << attempt << "- File is empty (0 bytes)";
+                                    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                                    continue;
+                                }
+
+                                // Try to open file to ensure it's not locked
+                                QFile testFile(fullPath);
+                                if (!testFile.open(QIODevice::ReadOnly)) {
+                                    qDebug() << "[File Stability] Attempt" << attempt << "- Cannot open file (locked?)";
+                                    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                                    continue;
+                                }
+
+                                // Try to read first 16 bytes
+                                QByteArray testRead = testFile.read(16);
+                                testFile.close();
+
+                                if (testRead.isEmpty()) {
+                                    qDebug() << "[File Stability] Attempt" << attempt << "- Cannot read from file";
+                                    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                                    continue;
+                                }
+
+                                // File is ready!
+                                qDebug() << "[File Stability] ✓ File is stable and readable - Size:" << fileSize << "bytes";
+                                fileReady = true;
+                                break;
+                            }
+
+                            if (fileReady) {
+                                // Give OS one more moment to fully release the file
+                                std::this_thread::sleep_for(std::chrono::milliseconds(200));
+
+                                // Now trigger the callback
+                                QMetaObject::invokeMethod(qApp, [this, fullPath, now]() {
+                                    m_recentFiles.insert(fullPath, now);
+                                    if (m_callback) {
+                                        qDebug() << "[Download complete] ✓ Triggering callback for stable file";
+                                        m_callback(fullPath);
+                                    }
+                                }, Qt::QueuedConnection);
+                            } else {
+                                qDebug() << "[File Stability] ✗ File not ready after 5 seconds, skipping";
+                            }
+                        }).detach();
                     } else {
                         qDebug() << "[Suppressed variant] Too similar to recent file:" << fileName;
                     }
-                } else {
+
+            } else {
                     qDebug() << "[Download in progress] Incomplete temp file:" << fileName;
 
-                    // Use std::thread with proper Qt thread communication
+                    // Track this as an active download
+                    m_activeDownloads.insert(fullPath);
+
                     std::thread([this, fullPath]() {
                         QFileInfo info(fullPath);
                         qint64 lastSize = 0;
                         qint64 expectedSize = -1;
                         qint64 totalSize = -1;
                         bool hasReliableTotal = false;
-                        QDateTime startTime = QDateTime::currentDateTime();
-                        QDateTime lastProgressTime = startTime;
 
-                        // Try to get the actual file size from the download URL
                         QUrl url = getUrlForCrdownloadFile(fullPath);
                         if (url.isValid()) {
                             expectedSize = getRemoteFileSize(url);
@@ -451,37 +527,22 @@ void DesktopIntegrationHelper::monitorPath(const QString& folder)
                             }
                         }
 
-                        for (int i = 0; i < 300 && m_running; ++i) { // Extended for large files
+                        for (int i = 0; i < 300 && m_running; ++i) {
                             QFile file(fullPath);
                             if (!file.exists()) {
-                                qDebug() << "[Progress] File no longer exists, download likely complete";
+                                qDebug() << "[Progress] File no longer exists - likely renamed to final name";
                                 break;
                             }
 
                             qint64 currentSize = file.size();
 
-                            // Report progress whenever size changes
                             if (currentSize != lastSize && m_progressCallback) {
                                 QDateTime now = QDateTime::currentDateTime();
-
-                                // Calculate download speed (update every 2 seconds minimum)
                                 qint64 speed = 0;
-                                if (lastProgressTime.secsTo(now) >= 2) {
-                                    qint64 timeDiff = lastProgressTime.msecsTo(now);
-                                    qint64 bytesDiff = currentSize - lastSize;
-                                    if (timeDiff > 0) {
-                                        speed = (bytesDiff * 1000) / timeDiff; // bytes per second
-                                    }
-                                    lastProgressTime = now;
-                                }
 
-                                // Use QMetaObject::invokeMethod to safely call the callback on the main thread
                                 QMetaObject::invokeMethod(qApp, [this, fullPath, currentSize, totalSize, hasReliableTotal, speed]() {
                                     if (m_progressCallback) {
-                                        // Pass the speed as additional info (you can extend the callback signature)
                                         m_progressCallback(fullPath, currentSize, hasReliableTotal ? totalSize : -1);
-
-                                        // Format and display the progress
                                         QString displayText = formatDownloadProgress(fullPath, currentSize, hasReliableTotal ? totalSize : -1, speed);
                                         qDebug() << "[Progress]" << displayText;
                                     }
@@ -490,20 +551,23 @@ void DesktopIntegrationHelper::monitorPath(const QString& folder)
                                 lastSize = currentSize;
                             }
 
-                            // Check if download appears stalled
                             if (i > 20 && currentSize == lastSize && currentSize > 0) {
-                                qDebug() << "[Progress] No size change detected, waiting for completion...";
-                                std::this_thread::sleep_for(std::chrono::seconds(3));
+                                qDebug() << "[Progress] No size change detected, download may be complete";
+                                std::this_thread::sleep_for(std::chrono::seconds(2));
 
-                                // Double check if still no change
-                                if (file.size() == currentSize) {
-                                    qDebug() << "[Progress] Download appears complete at:" << formatBytes(currentSize);
+                                if (!file.exists()) {
+                                    qDebug() << "[Progress] File disappeared - waiting for final file to appear";
                                     break;
                                 }
                             }
 
                             std::this_thread::sleep_for(std::chrono::milliseconds(500));
                         }
+
+                        // Remove from active downloads when monitoring ends
+                        QMetaObject::invokeMethod(qApp, [this, fullPath]() {
+                            m_activeDownloads.remove(fullPath);
+                        }, Qt::QueuedConnection);
 
                         qDebug() << "[Progress] Monitoring ended for:" << QFileInfo(fullPath).fileName();
                     }).detach();
