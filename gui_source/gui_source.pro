@@ -20,6 +20,7 @@ macx {
 #}
 
 SOURCES += \
+    desktopintegrationhelper.cpp \
     dialogabout.cpp \
     dialogoptions.cpp \
     dialogselectstyle.cpp \
@@ -27,6 +28,7 @@ SOURCES += \
     main_gui.cpp
 
 HEADERS += \
+    desktopintegrationhelper.h \
     dialogabout.h \
     dialogoptions.h \
     dialogselectstyle.h \

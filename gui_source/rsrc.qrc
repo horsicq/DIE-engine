@@ -79,5 +79,6 @@
         <file>icons/Convertor.16.16.png</file>
         <file>icons/Inspector.16.16.png</file>
         <file>images/about.png</file>
+        <file>icons/main.ico</file>
     </qresource>
 </RCC>
