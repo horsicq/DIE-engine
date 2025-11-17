@@ -30,8 +30,7 @@
 #include <QProcess>
 #include <QFileSystemWatcher>
 #include <QtConcurrent>
-
-#ifdef WIN32
+#ifdef Q_OS_WIN
 #include <Windows.h>
 #include <ShlObj.h>
 #include <PropIdl.h>
@@ -45,19 +44,16 @@ DesktopIntegrationHelper::DesktopIntegrationHelper()
     m_trayIcon(nullptr),
     m_running(false)
 {
-#ifdef WIN32
+#ifdef Q_OS_WIN
     m_taskbarList = nullptr;
     m_comInitialized = false;
 #endif
 }
 
 void DesktopIntegrationHelper::SetTrayIcon(QSystemTrayIcon* trayIcon) {
-    qDebug() << "[Helper] Tray icon injected.";
     GetInstance().m_trayIcon = trayIcon;
 }
 
-
-// Implementation
 DesktopIntegrationHelper::~DesktopIntegrationHelper() {
     Uninitialize();
 }
@@ -71,47 +67,34 @@ bool DesktopIntegrationHelper::Initialize(QWidget* widget) {
     return GetInstance().InitializeInternal(widget);
 }
 
-
 bool DesktopIntegrationHelper::InitializeInternal(QWidget* widget) {
-    qDebug() << "Initializing DesktopIntegrationHelper";
     if (m_widget != nullptr) {
-        qDebug() << "DesktopIntegrationHelper already initialized";
         return false;
     }
     if (!widget) {
-        qDebug() << "Invalid widget provided for initialization";
         return false;
     }
     m_widget = widget;
-
-#ifdef WIN32
+#ifdef Q_OS_WIN
     HRESULT hr = CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED);
     if (FAILED(hr) && hr != S_FALSE) {
-        qDebug() << "COM initialization failed with HRESULT: " << hr;
         m_comInitialized = false;
     } else {
         m_comInitialized = (hr == S_OK || hr == S_FALSE);
-        qDebug() << "COM initialized successfully";
-
         hr = CoCreateInstance(CLSID_TaskbarList, nullptr, CLSCTX_INPROC_SERVER,
                               IID_PPV_ARGS(&m_taskbarList));
         if (SUCCEEDED(hr)) {
             hr = m_taskbarList->HrInit();
             if (FAILED(hr)) {
-                qDebug() << "ITaskbarList3 initialization failed with HRESULT: " << hr;
                 m_taskbarList->Release();
                 m_taskbarList = nullptr;
-            } else {
-                qDebug() << "ITaskbarList3 initialized successfully";
             }
         } else {
-            qDebug() << "Failed to create ITaskbarList3 with HRESULT: " << hr;
             m_taskbarList = nullptr;
         }
     }
 #endif
-
-#ifdef WIN32
+#ifdef Q_OS_WIN
     return m_taskbarList != nullptr;
 #else
     return true;
@@ -120,7 +103,7 @@ bool DesktopIntegrationHelper::InitializeInternal(QWidget* widget) {
 
 void DesktopIntegrationHelper::Uninitialize() {
     auto& instance = GetInstance();
-#ifdef WIN32
+#ifdef Q_OS_WIN
     if (instance.m_taskbarList) {
         if (instance.m_widget) {
             instance.m_taskbarList->SetProgressState((HWND)instance.m_widget->winId(), TBPF_NOPROGRESS);
@@ -130,8 +113,7 @@ void DesktopIntegrationHelper::Uninitialize() {
         instance.m_taskbarList = nullptr;
     }
 #endif
-
-#ifdef WIN32
+#ifdef Q_OS_WIN
     if (instance.m_comInitialized) {
         CoUninitialize();
         instance.m_comInitialized = false;
@@ -142,18 +124,15 @@ void DesktopIntegrationHelper::Uninitialize() {
 
 bool DesktopIntegrationHelper::IsAvailable() {
     auto& instance = GetInstance();
-#ifdef WIN32
+#ifdef Q_OS_WIN
     bool available = instance.m_taskbarList != nullptr || instance.m_trayIcon != nullptr;
 #else
     bool available = instance.m_trayIcon != nullptr;
 #endif
-    if (!available) {
-        qDebug() << "DesktopIntegrationHelper not available";
-    }
     return available;
 }
 
-#ifdef WIN32
+#ifdef Q_OS_WIN
 void DesktopIntegrationHelper::SetProgressValue(int value, int max) {
     auto& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget) {
@@ -241,7 +220,6 @@ bool DesktopIntegrationHelper::AddJumpListTasks(const std::vector<JumpListTask>&
     if (FAILED(hr)) {
         return false;
     }
-
     UINT maxSlots;
     IObjectArray* pRemoved = nullptr;
     hr = pDestList->BeginList(&maxSlots, IID_PPV_ARGS(&pRemoved));
@@ -251,7 +229,6 @@ bool DesktopIntegrationHelper::AddJumpListTasks(const std::vector<JumpListTask>&
         pDestList->Release();
         return false;
     }
-
     IObjectCollection* pCollection = nullptr;
     hr = CoCreateInstance(CLSID_EnumerableObjectCollection, nullptr, CLSCTX_INPROC_SERVER,
                           IID_PPV_ARGS(&pCollection));
@@ -259,7 +236,6 @@ bool DesktopIntegrationHelper::AddJumpListTasks(const std::vector<JumpListTask>&
         pDestList->Release();
         return false;
     }
-
     for (const auto& task : tasks) {
         IShellLink* pLink = nullptr;
         hr = CoCreateInstance(CLSID_ShellLink, nullptr, CLSCTX_INPROC_SERVER,
@@ -270,25 +246,16 @@ bool DesktopIntegrationHelper::AddJumpListTasks(const std::vector<JumpListTask>&
             pLink->SetDescription(task.description.c_str());
             pCollection->AddObject(pLink);
             pLink->Release();
-        } else {
-            qDebug() << "Failed to create IShellLink for JumpList task: " << hr;
         }
     }
-
     IObjectArray* pTaskArray = nullptr;
     hr = pCollection->QueryInterface(IID_PPV_ARGS(&pTaskArray));
     if (SUCCEEDED(hr)) {
-        hr = pDestList->AddUserTasks(pTaskArray);
-        if (FAILED(hr)) {
-        }
+        pDestList->AddUserTasks(pTaskArray);
         pTaskArray->Release();
-    } else {
     }
     pCollection->Release();
-
     hr = pDestList->CommitList();
-    if (FAILED(hr)) {
-    }
     pDestList->Release();
     return SUCCEEDED(hr);
 }
@@ -300,29 +267,23 @@ void DesktopIntegrationHelper::ShowToastNotification(const QString& message,
                                                      int timeoutMs)
 {
     auto& instance = GetInstance();
-
 #ifdef Q_OS_LINUX
     QString command = QString("notify-send -t %1 \"%2\" \"%3\"")
                           .arg(timeoutMs).arg(appId, message);
-    int result = std::system(command.toUtf8().constData());
-    if (result != 0) {
-    }
+    std::system(command.toUtf8().constData());
 #else
     if (!QSystemTrayIcon::isSystemTrayAvailable()) {
         return;
     }
-
     if (!instance.m_trayIcon) {
         return;
     }
-
     if (!instance.m_trayIcon->isVisible()) {
         instance.m_trayIcon->setVisible(true);
     }
     instance.m_trayIcon->showMessage(appId, message, icon, timeoutMs);
 #endif
 }
-
 
 void DesktopIntegrationHelper::addPath(const QString &path) {
     DesktopIntegrationHelper& instance = GetInstance();
@@ -346,9 +307,8 @@ void DesktopIntegrationHelper::setCallback(std::function<void(const QString &)> 
 }
 
 void DesktopIntegrationHelper::addCallbackInternal(std::function<void(const QString &)> callback) {
-        m_callbacks.append(callback);
-    }
-
+    m_callbacks.append(callback);
+}
 
 void DesktopIntegrationHelper::startMonitoring() {
     DesktopIntegrationHelper& instance = GetInstance();
@@ -384,48 +344,35 @@ void DesktopIntegrationHelper::monitorPath(const QString& folder)
     QMetaObject::invokeMethod(qApp, [this, folder]() {
         QFileSystemWatcher* watcher = new QFileSystemWatcher(qApp);
         watcher->addPath(folder);
-
         QDir path(folder);
         for (const QFileInfo& info : path.entryInfoList(QDir::Files | QDir::NoDotAndDotDot)) {
             m_knownFiles.insert(info.absoluteFilePath());
         }
-
         connect(watcher, &QFileSystemWatcher::directoryChanged, this, [this, folder]() {
             QDir path(folder);
             QFileInfoList currentFiles = path.entryInfoList(QDir::Files | QDir::NoDotAndDotDot);
             QSet<QString> currentSet;
-
             for (const QFileInfo& info : currentFiles) {
                 currentSet.insert(info.absoluteFilePath());
             }
-
             QSet<QString> newFiles = currentSet - m_knownFiles;
             QSet<QString> removedFiles = m_knownFiles - currentSet;
-
             m_knownFiles = currentSet;
-
             for (const QString& fullPath : newFiles) {
                 QFileInfo info(fullPath);
                 QString fileName = info.fileName();
-
                 const bool isFinalFile = !fileName.endsWith(".crdownload") &&
                                          !fileName.endsWith(".part") &&
                                          !fileName.endsWith(".tmp") &&
                                          !fileName.endsWith(".download");
-
                 if (isFinalFile) {
                     QDateTime now = QDateTime::currentDateTimeUtc();
                     QString normalized = normalizeFileName(fileName);
-
                     bool alreadyHandled = false;
-
-                    // Check if we were tracking a .crdownload version of this file
                     QString possibleCrdownload = fullPath + ".crdownload";
                     if (m_activeDownloads.contains(possibleCrdownload)) {
-                        qDebug() << "[Download complete] Detected completion via rename:" << fileName;
                         m_activeDownloads.remove(possibleCrdownload);
                     } else {
-                        // Check recent files for duplicates
                         for (auto it = m_recentFiles.begin(); it != m_recentFiles.end(); ++it) {
                             QString pastNormalized = normalizeFileName(QFileInfo(it.key()).fileName());
                             if (pastNormalized == normalized && it.value().secsTo(now) < 10) {
@@ -434,142 +381,88 @@ void DesktopIntegrationHelper::monitorPath(const QString& folder)
                             }
                         }
                     }
-
                     if (!alreadyHandled) {
-                        qDebug() << "[Download complete] File detected:" << fileName;
-
                         std::thread([this, fullPath, fileName, now]() {
-                            qDebug() << "[File Stability] Waiting for file to stabilize:" << fileName;
-
-                            // Wait up to 5 seconds for file to be readable and non-zero
                             bool fileReady = false;
                             for (int attempt = 0; attempt < 50 && m_running; attempt++) {
                                 QFileInfo check(fullPath);
-
-                                // Check if file exists and has size
                                 if (!check.exists()) {
-                                    qDebug() << "[File Stability] Attempt" << attempt << "- File doesn't exist yet";
                                     std::this_thread::sleep_for(std::chrono::milliseconds(100));
                                     continue;
                                 }
-
                                 qint64 fileSize = check.size();
                                 if (fileSize == 0) {
-                                    qDebug() << "[File Stability] Attempt" << attempt << "- File is empty (0 bytes)";
                                     std::this_thread::sleep_for(std::chrono::milliseconds(100));
                                     continue;
                                 }
-
-                                // Try to open file to ensure it's not locked
                                 QFile testFile(fullPath);
                                 if (!testFile.open(QIODevice::ReadOnly)) {
-                                    qDebug() << "[File Stability] Attempt" << attempt << "- Cannot open file (locked?)";
                                     std::this_thread::sleep_for(std::chrono::milliseconds(100));
                                     continue;
                                 }
-
-                                // Try to read first 16 bytes
                                 QByteArray testRead = testFile.read(16);
                                 testFile.close();
-
                                 if (testRead.isEmpty()) {
-                                    qDebug() << "[File Stability] Attempt" << attempt << "- Cannot read from file";
                                     std::this_thread::sleep_for(std::chrono::milliseconds(100));
                                     continue;
                                 }
-
-                                // File is ready!
-                                qDebug() << "[File Stability] ✓ File is stable and readable - Size:" << fileSize << "bytes";
                                 fileReady = true;
                                 break;
                             }
-
                             if (fileReady) {
-                                // Give OS one more moment to fully release the file
                                 std::this_thread::sleep_for(std::chrono::milliseconds(200));
-
-                                // Now trigger the callback
                                 QMetaObject::invokeMethod(qApp, [this, fullPath, now]() {
                                     m_recentFiles.insert(fullPath, now);
                                     if (m_callback) {
-                                        qDebug() << "[Download complete] ✓ Triggering callback for stable file";
                                         m_callback(fullPath);
                                     }
                                 }, Qt::QueuedConnection);
-                            } else {
-                                qDebug() << "[File Stability] ✗ File not ready after 5 seconds, skipping";
                             }
                         }).detach();
-                    } else {
-                        qDebug() << "[Suppressed variant] Too similar to recent file:" << fileName;
                     }
-
-            } else {
-                    qDebug() << "[Download in progress] Incomplete temp file:" << fileName;
-
-                    // Track this as an active download
+                } else {
                     m_activeDownloads.insert(fullPath);
-
                     std::thread([this, fullPath]() {
                         QFileInfo info(fullPath);
                         qint64 lastSize = 0;
                         qint64 expectedSize = -1;
                         qint64 totalSize = -1;
                         bool hasReliableTotal = false;
-
                         QUrl url = getUrlForCrdownloadFile(fullPath);
                         if (url.isValid()) {
                             expectedSize = getRemoteFileSize(url);
                             if (expectedSize > 0) {
                                 totalSize = expectedSize;
                                 hasReliableTotal = true;
-                                qDebug() << "[Progress] Found reliable total size:" << formatBytes(totalSize);
                             }
                         }
-
                         for (int i = 0; i < 300 && m_running; ++i) {
                             QFile file(fullPath);
                             if (!file.exists()) {
-                                qDebug() << "[Progress] File no longer exists - likely renamed to final name";
                                 break;
                             }
-
                             qint64 currentSize = file.size();
-
                             if (currentSize != lastSize && m_progressCallback) {
                                 QDateTime now = QDateTime::currentDateTime();
                                 qint64 speed = 0;
-
                                 QMetaObject::invokeMethod(qApp, [this, fullPath, currentSize, totalSize, hasReliableTotal, speed]() {
                                     if (m_progressCallback) {
                                         m_progressCallback(fullPath, currentSize, hasReliableTotal ? totalSize : -1);
-                                        QString displayText = formatDownloadProgress(fullPath, currentSize, hasReliableTotal ? totalSize : -1, speed);
-                                        qDebug() << "[Progress]" << displayText;
                                     }
                                 }, Qt::QueuedConnection);
-
                                 lastSize = currentSize;
                             }
-
                             if (i > 20 && currentSize == lastSize && currentSize > 0) {
-                                qDebug() << "[Progress] No size change detected, download may be complete";
                                 std::this_thread::sleep_for(std::chrono::seconds(2));
-
                                 if (!file.exists()) {
-                                    qDebug() << "[Progress] File disappeared - waiting for final file to appear";
                                     break;
                                 }
                             }
-
                             std::this_thread::sleep_for(std::chrono::milliseconds(500));
                         }
-
-                        // Remove from active downloads when monitoring ends
                         QMetaObject::invokeMethod(qApp, [this, fullPath]() {
                             m_activeDownloads.remove(fullPath);
                         }, Qt::QueuedConnection);
-
-                        qDebug() << "[Progress] Monitoring ended for:" << QFileInfo(fullPath).fileName();
                     }).detach();
                 }
             }
@@ -577,12 +470,10 @@ void DesktopIntegrationHelper::monitorPath(const QString& folder)
     }, Qt::QueuedConnection);
 }
 
-// Helper function to format bytes like browsers do
 QString DesktopIntegrationHelper::formatBytes(qint64 bytes) {
     constexpr qint64 KB = 1024;
     constexpr qint64 MB = 1024 * KB;
     constexpr qint64 GB = 1024 * MB;
-
     if (bytes < KB)
         return QString::number(bytes) + " B";
     else if (bytes < MB)
@@ -593,53 +484,38 @@ QString DesktopIntegrationHelper::formatBytes(qint64 bytes) {
         return QString::number(bytes / double(GB), 'f', 2) + " GB";
 }
 
-// Helper function to format download speed
 QString DesktopIntegrationHelper::formatSpeed(qint64 bytesPerSecond) {
     if (bytesPerSecond <= 0) return "";
     return formatBytes(bytesPerSecond) + "/s";
 }
 
-// Format progress display like browsers do
 QString DesktopIntegrationHelper::formatDownloadProgress(const QString& filePath, qint64 received, qint64 total, qint64 speed) {
     QFileInfo info(filePath);
     QString fileName = info.fileName();
-
     QString receivedStr = formatBytes(received);
     QString progressText;
-
     if (total > 0) {
-        // We have a reliable total size - show "X of Y MB"
         QString totalStr = formatBytes(total);
         double percentage = (100.0 * received) / total;
-
         progressText = QString("%1 — %2 of %3").arg(fileName, receivedStr, totalStr);
-
-        // Add percentage if it's reasonable
         if (percentage >= 1.0 && percentage <= 100.0) {
             progressText += QString(" (%1%)").arg(QString::number(percentage, 'f', 1));
         }
     } else {
-        // No reliable total size - just show downloaded amount
         progressText = QString("%1 — %2 downloaded").arg(fileName, receivedStr);
     }
-
-    // Add speed if available
     if (speed > 0) {
         QString speedStr = formatSpeed(speed);
         progressText += QString(" — %1").arg(speedStr);
     }
-
     return progressText;
 }
 
 QStringList DesktopIntegrationHelper::detectBrowserDownloadFolders() {
     QStringList paths;
-
     QString stdDownloads = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
     if (!stdDownloads.isEmpty()) paths << QDir::cleanPath(stdDownloads);
-
     QString home = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
-
 #ifdef Q_OS_WIN
     QString chromeUserData = home + "/AppData/Local/Google/Chrome/User Data/";
     QString firefoxProfiles = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)
@@ -653,8 +529,6 @@ QStringList DesktopIntegrationHelper::detectBrowserDownloadFolders() {
         chromeUserData = home + "/.config/chromium/";
     QString firefoxProfiles = home + "/.mozilla/firefox/";
 #endif
-
-    // 🔍 Scan all Chrome profiles
     QDir chromeDir(chromeUserData);
     for (const QString& profile : chromeDir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
         QString prefsPath = chromeDir.filePath(profile + "/Preferences");
@@ -662,13 +536,10 @@ QStringList DesktopIntegrationHelper::detectBrowserDownloadFolders() {
         if (prefsFile.exists() && prefsFile.open(QIODevice::ReadOnly)) {
             QJsonDocument doc = QJsonDocument::fromJson(prefsFile.readAll());
             prefsFile.close();
-
             QString chromePath = doc["download"]["default_directory"].toString();
             if (!chromePath.isEmpty()) paths << QDir::cleanPath(chromePath);
         }
     }
-
-    // 🔍 Scan Firefox profiles
     QDir dir(firefoxProfiles);
     for (const QString& profile : dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
         QString prefs = dir.filePath(profile + "/prefs.js");
@@ -689,7 +560,6 @@ QStringList DesktopIntegrationHelper::detectBrowserDownloadFolders() {
             f.close();
         }
     }
-
     return paths.removeDuplicates(), paths;
 }
 
@@ -697,31 +567,25 @@ QUrl DesktopIntegrationHelper::getUrlForCrdownloadFile(const QString& fullPath)
 {
     QString home = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
     QString chromeUserData = home + "/AppData/Local/Google/Chrome/User Data/";
-
     QDir chromeDir(chromeUserData);
     for (const QString& profile : chromeDir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
         QString prefsPath = chromeDir.filePath(profile + "/Preferences");
         QFile prefsFile(prefsPath);
         if (!prefsFile.exists() || !prefsFile.open(QIODevice::ReadOnly)) continue;
-
         QJsonDocument doc = QJsonDocument::fromJson(prefsFile.readAll());
         prefsFile.close();
-
         QJsonObject root = doc.object();
         QJsonObject downloads = root.value("download").toObject();
-        QJsonArray items = downloads.value("download_items").toArray(); // May vary by Chrome version
-
+        QJsonArray items = downloads.value("download_items").toArray();
         for (const QJsonValue& item : items) {
             QJsonObject obj = item.toObject();
             QString targetPath = obj.value("target_path").toString();
             QString url = obj.value("url").toString();
-
             if (QDir::cleanPath(targetPath) == QDir::cleanPath(fullPath)) {
                 return QUrl(url);
             }
         }
     }
-
     return QUrl();
 }
 
@@ -730,14 +594,11 @@ qint64 DesktopIntegrationHelper::getRemoteFileSize(const QUrl& url)
     QNetworkAccessManager manager;
     QNetworkRequest request(url);
     QNetworkReply* reply = manager.head(request);
-
     QEventLoop loop;
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     loop.exec();
-
     QVariant lengthHeader = reply->header(QNetworkRequest::ContentLengthHeader);
     reply->deleteLater();
-
     return lengthHeader.isValid() ? lengthHeader.toLongLong() : -1;
 }
 
