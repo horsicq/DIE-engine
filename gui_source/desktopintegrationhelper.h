@@ -14,6 +14,8 @@
 #include <QStringList>
 #include <QThread>
 #include <functional>
+#include <thread>
+#include <chrono>
 
 #ifdef Q_OS_WIN
 #include <windows.h>
