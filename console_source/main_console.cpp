@@ -370,9 +370,7 @@ int main(int argc, char *argv[])
             bIsDbUsed = true;
         }
 
-        QList<QString> testList;
-        testList.append(sTestDirectory);
-        nResult = ScanFiles(&testList, &scanOptions, &die_script);
+        // TODO
     } else if (parser.isSet(clAddTest)) {
         if (!bIsDbUsed) {
             die_script.initDatabase();
@@ -387,9 +385,8 @@ int main(int argc, char *argv[])
             QString sDirectory = listArgs.at(1);
             printf("Adding test for file '%s' with detect string '%s' in directory '%s'\n", sAddTestFilename.toUtf8().data(), sDetectString.toUtf8().data(),
                    sDirectory.toUtf8().data());
-            QList<QString> testList;
-            testList.append(sDirectory);
-            nResult = ScanFiles(&testList, &scanOptions, &die_script);
+
+            // TODO
         } else {
             printf("Error: --addtest requires <filename> <detect_string> <directory>\n");
             nResult = XOptions::CR_INVALIDPARAMETER;
