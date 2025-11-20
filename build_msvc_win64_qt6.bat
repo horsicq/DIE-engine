@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 set VS_VERSIONS=18 2022 2019 2017
 set VS_EDITIONS=Community Professional Enterprise
-set QT_BASE_PATH="H:\Qt"
+set QT_BASE_PATH="C:\Qt"
 
 set VSVARS_PATH=
 
