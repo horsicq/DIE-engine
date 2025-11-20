@@ -1,33 +1,42 @@
-set VS_VERSIONS=2022 2019 2017
+@echo off
+setlocal enabledelayedexpansion
+
+set VS_VERSIONS=18 2022 2019 2017
 set VS_EDITIONS=Community Professional Enterprise
-set QT_BASE_PATH="C:\Qt"
+set QT_BASE_PATH="H:\Qt"
 
 set VSVARS_PATH=
-for %%V in (%VS_VERSIONS%) do (
-    for %%E in (%VS_EDITIONS%) do (
-        IF EXIST "C:\Program Files\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat" (
-            set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat"
-            goto :found_vs
-        )
-		
-        if exist "C:\Program Files (x86)\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat" (
-            set "VSVARS_PATH=C:\Program Files (x86)\Microsoft Visual Studio\%%V\%%E\VC\Auxiliary\Build\vcvars64.bat"
-            goto :found_vs
+
+for /f "tokens=*" %%a in (
+    'reg query "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall" /s /f "Visual Studio" ^| findstr "HKEY"'
+) do (
+    for /f "tokens=2*" %%b in (
+        'reg query "%%a" /v InstallLocation 2^>nul ^| findstr /i "InstallLocation"'
+    ) do (
+        if not "%%c"=="" (
+            if exist "%%c\VC\Auxiliary\Build\vcvars64.bat" (
+                set VSVARS_PATH="%%c\VC\Auxiliary\Build\vcvars64.bat"
+                goto :found_vs
+            )
         )
     )
 )
 
 :found_vs
-IF NOT DEFINED VSVARS_PATH (
-    echo "Visual Studio 2022, 2019, or 2017 not found. Please ensure one of them is installed."
-    goto exit
+if not defined VSVARS_PATH (
+    echo Visual Studio not found in registry or known paths.
+    goto :exit
 )
+
+call %VSVARS_PATH%
 
 set QMAKE_PATH=
 for /D %%Q in (%QT_BASE_PATH%\6.*) do (
-    IF EXIST "%%Q\msvc2019_64\bin\qmake.exe" (
-        set QMAKE_PATH="%%Q\msvc2019_64\bin\qmake.exe"
-        goto :found_qt
+    for /D %%K in (%%Q\msvc*_64 %%Q\msvc*_arm64) do (
+        if exist "%%K\bin\qmake.exe" (
+            set QMAKE_PATH="%%K\bin\qmake.exe"
+            goto :found_qt
+        )
     )
 )
 
@@ -46,7 +55,6 @@ set X_BUILD_PREFIX=win64_qt6
 set /p X_RELEASE_VERSION=<%X_SOURCE_PATH%\release_version.txt
 
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_init
-
 IF NOT [%X_ERROR%] == [] goto exit
 
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_build %X_SOURCE_PATH%\die_source.pro
@@ -56,15 +64,12 @@ call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro
 cd %X_SOURCE_PATH%
 
 call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\die.exe
-
 IF NOT [%X_ERROR%] == [] goto exit
 
 call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diec.exe
-
 IF NOT [%X_ERROR%] == [] goto exit
 
 call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diel.exe
-
 IF NOT [%X_ERROR%] == [] goto exit
 
 mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
@@ -80,7 +85,6 @@ xcopy %X_SOURCE_PATH%\images %X_SOURCE_PATH%\release\%X_BUILD_NAME%\images /E /I
 xcopy %X_SOURCE_PATH%\XYara\yara_rules %X_SOURCE_PATH%\release\%X_BUILD_NAME%\yara_rules /E /I
 
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt die.exe
-
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_release
 
 :exit
