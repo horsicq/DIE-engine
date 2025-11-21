@@ -38,6 +38,11 @@ HEADERS += \
     include(../XFileInfo/xfileinfo.pri)
 }
 
+!contains(XCONFIG, xlineedithex) {
+    XCONFIG += xlineedithex
+    include(../Controls/xlineedithex.pri)
+}
+
 !contains(XCONFIG, xoptions) {
     XCONFIG += xoptions
     include(../XOptions/xoptions.pri)
@@ -55,3 +60,4 @@ win32 {
 
 DISTFILES += \
     CMakeLists.txt
+
