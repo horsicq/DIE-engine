@@ -55,3 +55,5 @@ win32 {
 
 DISTFILES += \
     CMakeLists.txt
+
+
