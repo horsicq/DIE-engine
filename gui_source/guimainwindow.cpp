@@ -19,19 +19,12 @@
  * SOFTWARE.
  */
 #include "guimainwindow.h"
-#include "desktopintegrationhelper.h"
-#include "ui_guimainwindow.h"
 
-GuiMainWindow* g_pMainWindow = nullptr;
+#include "ui_guimainwindow.h"
 
 GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
 {
     ui->setupUi(this);
-    g_pMainWindow = this;
-    DesktopIntegrationHelper::Initialize(this);
-    connect(ui->widgetFormats, SIGNAL(scanProgress(int)), this, SLOT(updateTaskbarProgress(int)));
-    connect(ui->widgetFormats, SIGNAL(scanStarted()), this, SLOT(onScanStarted()));
-    connect(ui->widgetFormats, SIGNAL(scanFinished()), this, SLOT(onScanFinished()));
 
     XOptions::adjustToolButton(ui->toolButtonAbout, XOptions::ICONTYPE_INFO);
     XOptions::adjustToolButton(ui->toolButtonOptions, XOptions::ICONTYPE_OPTION);
@@ -97,11 +90,6 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, "$data/yara_rules");
 #endif
     g_xOptions.load();
-#ifdef Q_OS_WIN
-    if (g_xOptions.getValue(XOptions::ID_FILE_ENABLETRAYMONITORING).toBool()) {
-        g_xOptions.setupTrayIconAndDownloadMonitoring(this, false);  // false = no launch notification
-    }
-#endif
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
     g_xShortcuts.setNative(g_xOptions.isNative(), g_xOptions.getApplicationDataPath());
@@ -340,89 +328,3 @@ void GuiMainWindow::fullScreenSlot()
         showNormal();
     }
 }
-
-void GuiMainWindow::updateTaskbarProgress(int value)
-{
-    if (value < m_nTaskbarProgress || value > 99) return;
-
-    const int maxStep = 5;
-    if ((value - m_nTaskbarProgress) > maxStep) {
-        value = m_nTaskbarProgress + maxStep;
-    }
-
-    m_nTaskbarProgress = value;
-
-#ifdef _WIN32
-    if (DesktopIntegrationHelper::IsAvailable()) {
-        DesktopIntegrationHelper::SetProgressValue(m_nTaskbarProgress, 100);
-    }
-#endif
-}
-
-void GuiMainWindow::onScanStarted()
-{
-    m_nTaskbarProgress = 0;
-
-#ifdef _WIN32
-    if (DesktopIntegrationHelper::IsAvailable()) {
-        DesktopIntegrationHelper::SetProgressState(TBPF_NORMAL);
-        DesktopIntegrationHelper::SetProgressValue(0, 100);
-    }
-#endif
-}
-
-void GuiMainWindow::onScanFinished()
-{
-
-    m_nTaskbarProgress = 100;
-
-#ifdef _WIN32
-    if (!DesktopIntegrationHelper::IsAvailable()) {
-        return;
-    }
-
-    if (QThread::currentThread() != QCoreApplication::instance()->thread()) {
-        QMetaObject::invokeMethod(this, [this]() { onScanFinished(); }, Qt::QueuedConnection);
-        return;
-    }
-
-    if (isVisible()) {
-        DesktopIntegrationHelper::SetProgressValue(100, 100);
-        DesktopIntegrationHelper::SetProgressState(TBPF_NOPROGRESS);
-        DesktopIntegrationHelper::FlashTaskbar(true, 3);
-    } else {
-        qDebug() << "Main window is not visible, skipping taskbar operations";
-    }
-#endif
-    /* TODO
-    DesktopIntegrationHelper::ShowToastNotification(
-        QStringLiteral("Scan Completed"),
-        QStringLiteral("Detect-It-Easy.ScanNotifier"),
-        QSystemTrayIcon::Information,
-        5000
-        );
-    */
-}
-#ifdef Q_OS_WIN
-void GuiMainWindow::closeEvent(QCloseEvent* event) {
-    qDebug() << "[Debug] closeEvent triggered.";
-    if (g_xOptions.isTrayMonitoringActive()) {
-        event->ignore();        // Don’t let the window actually close
-        this->hide();           // Disappear into tray
-    } else {
-        QMainWindow::closeEvent(event);  // Proceed with default close
-    }
-}
-
-
-void GuiMainWindow::changeEvent(QEvent* event)
-{
-    if (event->type() == QEvent::WindowStateChange) {
-        if (isMinimized() && g_xOptions.isTrayMonitoringActive()) {
-            QTimer::singleShot(250, this, &GuiMainWindow::hide);  // Optional delay to smooth transition
-        }
-    }
-    QMainWindow::changeEvent(event);
-}
-
-#endif

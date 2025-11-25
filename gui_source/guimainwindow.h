@@ -65,10 +65,6 @@ private slots:
     void on_checkBoxAdvanced_toggled(bool bChecked);
     void on_lineEditFileName_returnPressed();
 
-    void onScanStarted();
-    void onScanFinished();
-    void updateTaskbarProgress(int value);
-
     void exitSlot();
     void openFileSlot();
     void fullScreenSlot();
@@ -87,10 +83,7 @@ protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
     void dragMoveEvent(QDragMoveEvent *event) override;
     void dropEvent(QDropEvent *event) override;
-#ifdef Q_OS_WIN
-    void changeEvent(QEvent* event) override;
-    void closeEvent(QCloseEvent *event) override;
-#endif
+
 private:
     Ui::GuiMainWindow *ui;
     XOptions g_xOptions;
@@ -98,7 +91,5 @@ private:
     QMenu *g_pRecentFilesMenu;
     QShortcut *shortCuts[__SC_SIZE];
     bool g_bFullScreen;
-    qint32 m_nTaskbarProgress;
 };
-extern GuiMainWindow* g_pMainWindow;
 #endif  // GUIMAINWINDOW_H
