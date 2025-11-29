@@ -66,6 +66,11 @@ include(../build.pri)
     include(../XAboutWidget/xaboutwidget.pri)
 }
 
+!contains(XCONFIG, xstyles) {
+    XCONFIG += xstyles
+    include(../../_mylibs/XStyles/xstyles.pri)
+}
+
 RESOURCES += \
     rsrc.qrc
 
