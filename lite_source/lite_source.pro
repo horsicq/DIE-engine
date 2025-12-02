@@ -29,9 +29,10 @@ HEADERS += \
 FORMS += \
     litemainwindow.ui
 	
-win32:qtHaveModule(widgets) {
-    HEADERS += ../gui_source/desktopintegrationhelper.h
-    SOURCES += ../gui_source/desktopintegrationhelper.cpp
+win32 {
+    HEADERS += $$PWD/../gui_source/desktopintegrationhelper.h
+    SOURCES += $$PWD/../gui_source/desktopintegrationhelper.cpp
+    INCLUDEPATH += $$PWD/../gui_source
 }
 
 !contains(XCONFIG, die_script) {
