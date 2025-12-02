@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 set VS_VERSIONS=18 2022 2019 2017
 set VS_EDITIONS=Community Professional Enterprise
-set QT_BASE_PATH="H:\Qt"
+set QT_BASE_PATH="C:\Qt"
 
 set VSVARS_PATH=
 
@@ -31,10 +31,14 @@ if not defined VSVARS_PATH (
 call %VSVARS_PATH%
 
 set QMAKE_PATH=
+set JOM_PATH=
 for /D %%Q in (%QT_BASE_PATH%\6.*) do (
     for /D %%K in (%%Q\msvc*_64 %%Q\msvc*_arm64) do (
         if exist "%%K\bin\qmake.exe" (
             set QMAKE_PATH="%%K\bin\qmake.exe"
+            if exist "%%Q\..\Tools\QtCreator\bin\jom\jom.exe" (
+                set JOM_PATH="%%Q\..\Tools\QtCreator\bin\jom\jom.exe"
+            )
             goto :found_qt
         )
     )
@@ -45,6 +49,14 @@ IF NOT DEFINED QMAKE_PATH (
     echo "Qt 6.x version not found. Please ensure it is installed."
     goto exit
 )
+
+IF NOT DEFINED JOM_PATH (
+    if exist %QT_BASE_PATH%\Tools\QtCreator\bin\jom\jom.exe (
+        set JOM_PATH=%QT_BASE_PATH%\Tools\QtCreator\bin\jom\jom.exe
+    )
+)
+
+set BUILD_JOBS=%NUMBER_OF_PROCESSORS%
 
 set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
