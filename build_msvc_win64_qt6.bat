@@ -1,9 +1,17 @@
 @echo off
 setlocal enabledelayedexpansion
 
+set FLAG=%~1
+set DEFINE=
+if /I "%FLAG%"=="native" (
+    set DEFINE=X_BUILD_INSTALL
+) else if /I "%FLAG%"=="pdb" (
+    set DEFINE=CREATE_PDB
+)
+
 set VS_VERSIONS=18 2022 2019 2017
 set VS_EDITIONS=Community Professional Enterprise
-set QT_BASE_PATH="C:\Qt"
+set QT_BASE_PATH="H:\Qt"
 
 set VSVARS_PATH=
 
@@ -31,14 +39,10 @@ if not defined VSVARS_PATH (
 call %VSVARS_PATH%
 
 set QMAKE_PATH=
-set JOM_PATH=
 for /D %%Q in (%QT_BASE_PATH%\6.*) do (
     for /D %%K in (%%Q\msvc*_64 %%Q\msvc*_arm64) do (
         if exist "%%K\bin\qmake.exe" (
             set QMAKE_PATH="%%K\bin\qmake.exe"
-            if exist "%%Q\..\Tools\QtCreator\bin\jom\jom.exe" (
-                set JOM_PATH="%%Q\..\Tools\QtCreator\bin\jom\jom.exe"
-            )
             goto :found_qt
         )
     )
@@ -49,14 +53,6 @@ IF NOT DEFINED QMAKE_PATH (
     echo "Qt 6.x version not found. Please ensure it is installed."
     goto exit
 )
-
-IF NOT DEFINED JOM_PATH (
-    if exist %QT_BASE_PATH%\Tools\QtCreator\bin\jom\jom.exe (
-        set JOM_PATH=%QT_BASE_PATH%\Tools\QtCreator\bin\jom\jom.exe
-    )
-)
-
-set BUILD_JOBS=%NUMBER_OF_PROCESSORS%
 
 set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
@@ -69,7 +65,7 @@ set /p X_RELEASE_VERSION=<%X_SOURCE_PATH%\release_version.txt
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_init
 IF NOT [%X_ERROR%] == [] goto exit
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_build %X_SOURCE_PATH%\die_source.pro
+call "%X_SOURCE_PATH%\build_tools\windows.cmd" make_build "%X_SOURCE_PATH%\die_source.pro" %DEFINE%
 
 cd %X_SOURCE_PATH%\gui_source
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro 
@@ -78,11 +74,12 @@ cd %X_SOURCE_PATH%
 call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\die.exe
 IF NOT [%X_ERROR%] == [] goto exit
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diec.exe
-IF NOT [%X_ERROR%] == [] goto exit
-
-call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diel.exe
-IF NOT [%X_ERROR%] == [] goto exit
+IF NOT "%1"=="native" (
+    call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diec.exe
+    IF NOT [%X_ERROR%] == [] goto exit
+    call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diel.exe
+    IF NOT [%X_ERROR%] == [] goto exit
+)
 
 mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
 
