@@ -1,14 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set FLAG=%~1
-set DEFINE=
-if /I "%FLAG%"=="native" (
-    set DEFINE=X_BUILD_INSTALL
-) else if /I "%FLAG%"=="pdb" (
-    set DEFINE=CREATE_PDB
-)
-
 set VS_VERSIONS=18 2022 2019 2017
 set VS_EDITIONS=Community Professional Enterprise
 set QT_BASE_PATH="C:\Qt"
@@ -65,7 +57,7 @@ set /p X_RELEASE_VERSION=<%X_SOURCE_PATH%\release_version.txt
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_init
 IF NOT [%X_ERROR%] == [] goto exit
 
-call "%X_SOURCE_PATH%\build_tools\windows.cmd" make_build "%X_SOURCE_PATH%\die_source.pro" %DEFINE%
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_build %X_SOURCE_PATH%\die_source.pro
 
 cd %X_SOURCE_PATH%\gui_source
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro 
@@ -74,12 +66,11 @@ cd %X_SOURCE_PATH%
 call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\die.exe
 IF NOT [%X_ERROR%] == [] goto exit
 
-IF NOT "%1"=="native" (
-    call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diec.exe
-    IF NOT [%X_ERROR%] == [] goto exit
-    call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diel.exe
-    IF NOT [%X_ERROR%] == [] goto exit
-)
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diec.exe
+IF NOT [%X_ERROR%] == [] goto exit
+
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diel.exe
+IF NOT [%X_ERROR%] == [] goto exit
 
 mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
 

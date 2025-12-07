@@ -75,9 +75,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP, true);
     g_xOptions.addID(XOptions::ID_FILE_SAVERECENTFILES, true);
 #ifdef Q_OS_WIN
-    if (!g_xOptions.isNative()) {
-        g_xOptions.addID(XOptions::ID_FILE_CONTEXT, "*");
-    }
+    g_xOptions.addID(XOptions::ID_FILE_CONTEXT, "*");
 #endif
 
     DIEOptionsWidget::setDefaultValues(&g_xOptions);
@@ -89,17 +87,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
     g_xOptions.addID(XOptions::ID_SCAN_ENGINE, "auto");
 #ifdef USE_YARA
-    QString yaraPath;
-#ifdef Q_OS_WIN
-    if (g_xOptions.isNative()) {
-        yaraPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/yara_rules";
-    } else {
-        yaraPath = "$data/yara_rules";
-    }
-#else
-    yaraPath = "$data/yara_rules";
-#endif 
-    g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, yaraPath);
+    g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, "$data/yara_rules");
 #endif
     g_xOptions.load();
 
