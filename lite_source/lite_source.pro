@@ -47,7 +47,7 @@ FORMS += \
 win32 {
     RC_ICONS = ../icons/lite.ico
     CONFIG -= embed_manifest_exe
-    QMAKE_MANIFEST = windows.manifest.xml
+    QMAKE_MANIFEST = $$PWD/windows.manifest.xml
     VERSION = 3.11
     QMAKE_TARGET_COMPANY = NTInfo
     QMAKE_TARGET_PRODUCT = Detect It Easy
