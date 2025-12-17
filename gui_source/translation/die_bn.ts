@@ -84,11 +84,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Info</source>
@@ -136,13 +136,6 @@
     </message>
 </context>
 <context>
-    <name>Binary_Script</name>
-    <message>
-        <source>Invalid handle</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
@@ -176,11 +169,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Info</source>
@@ -238,28 +231,24 @@
         <translation>পুনরাবৃত্তি স্ক্যান</translation>
     </message>
     <message>
+        <source>Aggressive scan</source>
+        <translation>আক্রমণাত্মক স্ক্যান</translation>
+    </message>
+    <message>
         <source>Deep scan</source>
         <translation>গভীরভাবে নির্ণয় করা</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
-    </message>
-    <message>
-        <source>Aggressive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
         <translation>ভার্বোস</translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>সব ধরনের</translation>
+        <source>Heuristic scan</source>
+        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
     </message>
     <message>
-        <source>Profiling</source>
-        <translation></translation>
+        <source>All types</source>
+        <translation>সব ধরনের</translation>
     </message>
     <message>
         <source>Sort</source>
@@ -270,12 +259,20 @@
         <translation>লক্ষণীয় করা</translation>
     </message>
     <message>
+        <source>Format result</source>
+        <translation>ফলাফল সংরক্ষণ করুন</translation>
+    </message>
+    <message>
+        <source>Profiling</source>
+        <translation>প্রোফাইলিং</translation>
+    </message>
+    <message>
         <source>Hide unknown</source>
-        <translation></translation>
+        <translation>অজানা লুকান</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation>ফাইলের আকার</translation>
+        <translation>বাফারের আকার</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -287,11 +284,11 @@
     </message>
     <message>
         <source>Extra database</source>
-        <translation></translation>
+        <translation>অতিরিক্ত ডাটাবেস</translation>
     </message>
     <message>
         <source>Custom database</source>
-        <translation></translation>
+        <translation>স্বনির্ধারিত ডাটাবেস</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -389,7 +386,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>মিলিসেকেন্ড</translation>
     </message>
     <message>
         <source>Copy as</source>
@@ -411,7 +408,7 @@
     <name>DiE_ScriptEngine</name>
     <message>
         <source>Cannot find</source>
-        <translation></translation>
+        <translation>খুঁজে পাওয়া যায়নি</translation>
     </message>
 </context>
 <context>
@@ -503,7 +500,7 @@
     <name>DialogBits8</name>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>বিট</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -511,11 +508,11 @@
     </message>
     <message>
         <source>Signed</source>
-        <translation></translation>
+        <translation>স্বাক্ষরিত</translation>
     </message>
     <message>
         <source>Unsigned</source>
-        <translation></translation>
+        <translation>অস্বাক্ষরিত</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -538,7 +535,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>ক্রিয়া</translation>
+        <translation>অবস্থান</translation>
     </message>
     <message>
         <source>Size</source>
@@ -546,7 +543,7 @@
     </message>
     <message>
         <source>Color</source>
-        <translation>রংগুলো</translation>
+        <translation>রং</translation>
     </message>
     <message>
         <source>Comment</source>
@@ -562,6 +559,21 @@
     </message>
     <message>
         <source>Background</source>
+        <translation>পটভূমি</translation>
+    </message>
+</context>
+<context>
+    <name>DialogCreateViewModel</name>
+    <message>
+        <source>Error</source>
+        <translation>ত্রুটি</translation>
+    </message>
+    <message>
+        <source>Invalid parameters provided</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File name cannot be empty</source>
         <translation></translation>
     </message>
 </context>
@@ -605,7 +617,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>মিলিসেকেন্ড</translation>
     </message>
     <message>
         <source>Text documents</source>
@@ -656,7 +668,7 @@
     </message>
     <message>
         <source>Profiling</source>
-        <translation></translation>
+        <translation>প্রোফাইলিং</translation>
     </message>
     <message>
         <source>Find</source>
@@ -668,23 +680,23 @@
     </message>
     <message>
         <source>Detect</source>
-        <translation></translation>
+        <translation>সনাক্ত করুন</translation>
     </message>
     <message>
         <source>Show type</source>
-        <translation></translation>
+        <translation>ধরন দেখান</translation>
     </message>
     <message>
         <source>Show version</source>
-        <translation></translation>
+        <translation>সংস্করণ দেখান</translation>
     </message>
     <message>
         <source>Show info</source>
-        <translation></translation>
+        <translation>তথ্য দেখান</translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation></translation>
+        <translation>ফলাফল পরিষ্কার করুন</translation>
     </message>
     <message>
         <source>Close</source>
@@ -696,18 +708,18 @@
     </message>
     <message>
         <source>Debugger</source>
-        <translation>সংশোধনকারী</translation>
+        <translation>ডিবাগ(সংশোধন)</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>মিলিসেকেন্ড</translation>
     </message>
 </context>
 <context>
     <name>DialogDIESignaturesElapsed</name>
     <message>
         <source>Elapsed</source>
-        <translation></translation>
+        <translation>অতিবাহিত</translation>
     </message>
     <message>
         <source>OK</source>
@@ -715,7 +727,7 @@
     </message>
     <message>
         <source>Time</source>
-        <translation></translation>
+        <translation>সময়</translation>
     </message>
     <message>
         <source>Script</source>
@@ -725,8 +737,8 @@
 <context>
     <name>DialogDataInspector</name>
     <message>
-        <source>Data inspector</source>
-        <translation>উপাত্তের পরিদর্শক</translation>
+        <source>Inspector</source>
+        <translation>পরিদর্শক</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -738,7 +750,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>এন্ডিয়াননেস</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -762,7 +774,7 @@
     </message>
     <message>
         <source>Binary</source>
-        <translation></translation>
+        <translation>বাইনারি</translation>
     </message>
 </context>
 <context>
@@ -802,7 +814,7 @@
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>আখ্যা দেত্তনগুলো</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Go to</source>
@@ -833,30 +845,23 @@
     </message>
     <message>
         <source>Calls</source>
-        <translation>কলগুলো</translation>
+        <translation>কলের স্তূপ</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation>লাফ দেয়</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation>Ref তে</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation>থেকে Ref</translation>
+        <translation>থেকে অনুসন্ধান করুন</translation>
     </message>
     <message>
         <source>Cancel</source>
         <translation>বাতিল করুন</translation>
-    </message>
-</context>
-<context>
-    <name>DialogDumpProcess</name>
-    <message>
-        <source>Dump</source>
-        <translation>অস্বস্তিকর জায়গা</translation>
     </message>
 </context>
 <context>
@@ -871,7 +876,7 @@
     </message>
     <message>
         <source>Null-terminated</source>
-        <translation></translation>
+        <translation>নাল-সমাপ্ত</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1072,72 +1077,6 @@
     </message>
 </context>
 <context>
-    <name>DialogMultiDisasmSignature</name>
-    <message>
-        <source>Signature</source>
-        <translation>স্বাক্ষর</translation>
-    </message>
-    <message>
-        <source>Spaces</source>
-        <translation>স্পেস</translation>
-    </message>
-    <message>
-        <source>Upper</source>
-        <translation>উপরের</translation>
-    </message>
-    <message>
-        <source>Wildcard</source>
-        <translation>ওয়াইল্ডকার্ড</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>স্ক্যান</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>অনুলিপি</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>ঠিক আছে</translation>
-    </message>
-    <message>
-        <source>Relative virtual address</source>
-        <translation>আপেক্ষিক ভার্চুয়াল ঠিকানা</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>ঠিকানা</translation>
-    </message>
-    <message>
-        <source>Bytes</source>
-        <translation>বাইটগুলো</translation>
-    </message>
-    <message>
-        <source>Opcode</source>
-        <translation>অপকোড</translation>
-    </message>
-</context>
-<context>
-    <name>DialogMultiSearchProcess</name>
-    <message>
-        <source>Search strings</source>
-        <translation>অনুসন্ধান স্ট্রিং</translation>
-    </message>
-    <message>
-        <source>Search signatures</source>
-        <translation>স্বাক্ষর অনুসন্ধান করুন</translation>
-    </message>
-    <message>
-        <source>Search values</source>
-        <translation>অনুসন্ধান মানগুলো</translation>
-    </message>
-    <message>
-        <source>Create view model</source>
-        <translation>ভিউ মডেল তৈরি করুন</translation>
-    </message>
-</context>
-<context>
     <name>DialogNFDScan</name>
     <message>
         <source>Scan</source>
@@ -1188,19 +1127,8 @@
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>মিলিসেকেন্ড</translation>
     </message>
-    <message>
-        <source>Text documents</source>
-        <translation>পাঠ্য নথি</translation>
-    </message>
-    <message>
-        <source>Save result</source>
-        <translation>ফলাফল সংরক্ষণ করুন</translation>
-    </message>
-</context>
-<context>
-    <name>DialogNFDScanProcess</name>
     <message>
         <source>Text documents</source>
         <translation>পাঠ্য নথি</translation>
@@ -1283,7 +1211,7 @@
     <name>DialogResize</name>
     <message>
         <source>Resize</source>
-        <translation>ফাইলের আকার</translation>
+        <translation>আকার পরিবর্তন</translation>
     </message>
     <message>
         <source>Size</source>
@@ -1342,7 +1270,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>এন্ডিয়াননেস</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -1355,17 +1283,6 @@
     <message>
         <source>Cursor</source>
         <translation>কার্সার</translation>
-    </message>
-</context>
-<context>
-    <name>DialogSearchProcess</name>
-    <message>
-        <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
     </message>
 </context>
 <context>
@@ -1458,7 +1375,7 @@
     </message>
     <message>
         <source>Group</source>
-        <translation></translation>
+        <translation>গ্রুপ</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -1474,18 +1391,86 @@
     </message>
     <message>
         <source>Plain Text</source>
-        <translation></translation>
+        <translation>সাধারণ টেক্সট</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation>ছবি</translation>
+        <translation>ইমেজ</translation>
+    </message>
+    <message>
+        <source>Image information</source>
+        <translation>হালনাগাদ তথ্য</translation>
     </message>
     <message>
         <source>Close</source>
         <translation>বন্ধ</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>ত্রুটি</translation>
+    </message>
+    <message>
+        <source>Image file does not exist: %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to load image: %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom In</source>
+        <translation>জুম</translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation>জুম</translation>
+    </message>
+    <message>
+        <source>Actual Size</source>
+        <translation>ভার্চুয়াল আকার</translation>
+    </message>
+    <message>
+        <source>Ctrl+0</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fit to Window</source>
+        <translation>মূল জানালা</translation>
+    </message>
+    <message>
+        <source>F</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>অনুলিপি</translation>
+    </message>
+    <message>
+        <source>Save As...</source>
+        <translation>সংরক্ষণ করুন</translation>
+    </message>
+    <message>
+        <source>Save Image</source>
+        <translation>সংরক্ষণ করুন</translation>
+    </message>
+    <message>
+        <source>Images (*.png *.jpg *.jpeg *.bmp *.gif)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to save image to %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No image loaded</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size: %1 x %2 | Format: %3 | Zoom: %4%</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1579,7 +1564,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>মিলিসেকেন্ড</translation>
     </message>
     <message>
         <source>Text documents</source>
@@ -1644,11 +1629,11 @@
     </message>
     <message>
         <source>Color</source>
-        <translation>রংগুলো</translation>
+        <translation>রং</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>পটভূমি</translation>
     </message>
 </context>
 <context>
@@ -1666,7 +1651,7 @@
     <name>DialogXDataConvertor</name>
     <message>
         <source>Data convertor</source>
-        <translation>উপাত্তের পরিদর্শক</translation>
+        <translation>ডেটা রূপান্তরক</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1703,45 +1688,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXInfoDBTransferProcess</name>
-    <message>
-        <source>Analyze</source>
-        <translation>বিশ্লেষণ</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
-    </message>
-    <message>
-        <source>Symbols</source>
-        <translation>প্রতীকগুলো</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>পরিষ্কার</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>অপসারণ</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation>রপ্তানি</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>আমদানি</translation>
-    </message>
-    <message>
-        <source>Scan for IAT</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Get IAT</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
@@ -1750,14 +1696,6 @@
     <message>
         <source>Close</source>
         <translation>বন্ধ</translation>
-    </message>
-    <message>
-        <source>Functions</source>
-        <translation>ফাংশন</translation>
-    </message>
-    <message>
-        <source>References</source>
-        <translation>তথ্যসূত্র</translation>
     </message>
 </context>
 <context>
@@ -1778,27 +1716,27 @@
     <name>DumpProcess</name>
     <message>
         <source>Invalid offset</source>
-        <translation></translation>
+        <translation>অবৈধ অফসেট</translation>
     </message>
     <message>
         <source>Invalid size</source>
-        <translation>অবৈধ স্বাক্ষর</translation>
+        <translation>অবৈধ আকার</translation>
     </message>
     <message>
         <source>Cannot read file</source>
-        <translation></translation>
+        <translation>ফাইল পড়া যায়নি</translation>
     </message>
     <message>
         <source>Cannot fix dump file</source>
-        <translation></translation>
+        <translation>ডাম্প ফাইল ঠিক করা যায়নি</translation>
     </message>
     <message>
         <source>Cannot open dump file</source>
-        <translation></translation>
+        <translation>ডাম্প ফাইল খোলা যায়নি</translation>
     </message>
     <message>
         <source>Cannot write data to file</source>
-        <translation></translation>
+        <translation>ফাইলে ডেটা লেখা যায়নি</translation>
     </message>
 </context>
 <context>
@@ -1847,11 +1785,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Info</source>
@@ -1933,7 +1871,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>মিলিসেকেন্ড</translation>
     </message>
 </context>
 <context>
@@ -1987,7 +1925,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>মূল তথ্য</translation>
+        <translation>র&apos; ডেটা</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2082,7 +2020,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Export</source>
@@ -2138,7 +2076,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>এন্ডিয়াননেস</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -2162,7 +2100,7 @@
     </message>
     <message>
         <source>Binary</source>
-        <translation></translation>
+        <translation>বাইনারি</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -2304,11 +2242,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2356,7 +2294,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -2412,11 +2350,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2508,7 +2446,7 @@
     </message>
     <message>
         <source>Modules</source>
-        <translation>মডিউলগুলো</translation>
+        <translation>মডিউলসমূহ</translation>
     </message>
     <message>
         <source>External references</source>
@@ -2563,11 +2501,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2615,42 +2553,22 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Number</source>
-        <translation></translation>
+        <source>Search strings</source>
+        <translation>স্ট্রিং অনুসন্ধান</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>অফসেট</translation>
+        <source>Search signatures</source>
+        <translation>স্বাক্ষর অনুসন্ধান করুন</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>ঠিকানা</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>আকার</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>টাইপ</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation>মান</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>নাম</translation>
+        <source>Search values</source>
+        <translation>অনুসন্ধান মানগুলো</translation>
     </message>
 </context>
 <context>
@@ -2672,11 +2590,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2728,7 +2646,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -2758,12 +2676,16 @@
         <translation>সব ধরনের</translation>
     </message>
     <message>
+        <source>Format result</source>
+        <translation>ফলাফল সংরক্ষণ করুন</translation>
+    </message>
+    <message>
         <source>Highlight</source>
         <translation>লক্ষণীয় করা</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation>ফাইলের আকার</translation>
+        <translation>বাফারের আকার</translation>
     </message>
 </context>
 <context>
@@ -2790,11 +2712,23 @@
     </message>
     <message>
         <source>Heuristics</source>
-        <translation></translation>
+        <translation>হিউরিস্টিক্স</translation>
     </message>
     <message>
-        <source>Result</source>
-        <translation>ফলাফল</translation>
+        <source>Text files</source>
+        <translation>পাঠ্য ফাইল</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>সকল নথি</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>ত্রুটি</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>ফাইল সংরক্ষণ করা যাবে না</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2829,7 +2763,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>মিলিসেকেন্ড</translation>
     </message>
 </context>
 <context>
@@ -2927,7 +2861,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Entry point</source>
@@ -2971,11 +2905,11 @@
     </message>
     <message>
         <source>Tags</source>
-        <translation></translation>
+        <translation>ট্যাগ</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation></translation>
+        <translation>বর্ণনা</translation>
     </message>
     <message>
         <source>Type</source>
@@ -3047,7 +2981,7 @@
     </message>
     <message>
         <source>Sorted</source>
-        <translation></translation>
+        <translation>সাজানো</translation>
     </message>
 </context>
 <context>
@@ -3077,7 +3011,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -3085,7 +3019,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>মূল তথ্য</translation>
+        <translation>র&apos; ডেটা</translation>
     </message>
 </context>
 <context>
@@ -3144,11 +3078,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -3264,11 +3198,11 @@
     </message>
     <message>
         <source>Metadata table</source>
-        <translation></translation>
+        <translation>মেটাডেটা টেবিল</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Calculate</source>
@@ -3346,8 +3280,364 @@
         <translation>আকার</translation>
     </message>
     <message>
+        <source>Unknown</source>
+        <translation>অজানা</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>স্বাক্ষর</translation>
+    </message>
+    <message>
+        <source>Chunk</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Box</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Візуалізація</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>হেক্স</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>বিচ্ছিন্নতা</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>হ্যাশ</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>স্ট্রিং সমূহ</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>স্বাক্ষরগুলো</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation>অঞ্চলগুলো</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>মস্তিষ্কের মানচিত্র</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>প্রতীকগুলো</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>এনট্রপি</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>নিষ্কাশনকারী</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>অনুসন্ধান করুন</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>ফাইল</translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation>সম্পদ</translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation>অঞ্চল</translation>
+    </message>
+    <message>
+        <source>Debug data</source>
+        <translation>উপাত্তের সংশোধন</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Section</source>
+        <translation>বিভাগ</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation>অংশ</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>ফুটার</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>বস্তু</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>টেবিল</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>প্রক্রিয়া</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>সংরক্ষণাগার</translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation>শ্রুতি</translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation>দলিল</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>ইমেজ</translation>
+    </message>
+    <message>
+        <source>Plain Text</source>
+        <translation>সাধারণ টেক্সট</translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation>পাঠ্য</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>ভিডিও</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>তথ্য</translation>
+    </message>
+    <message>
+        <source>Encrypted</source>
+        <translation>ক্রিপ্টার</translation>
+    </message>
+    <message>
         <source>Cannot open file</source>
         <translation>ফাইলটি খুলতে পারছি না</translation>
+    </message>
+    <message>
+        <source>Architecture</source>
+        <translation>স্থাপত্য</translation>
+    </message>
+    <message>
+        <source>Raw</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>গঠন</translation>
+    </message>
+    <message>
+        <source>Heuristic</source>
+        <translation>হিউরিস্টিক (অনুসন্ধানমূলক)</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>এন্ট্রি পয়েন্ট</translation>
+    </message>
+    <message>
+        <source>Section name</source>
+        <translation>বিভাগের নাম</translation>
+    </message>
+    <message>
+        <source>Import hash</source>
+        <translation>আমদানি হ্যাশ</translation>
+    </message>
+    <message>
+        <source>Code section</source>
+        <translation>সংকেতপদ্ধতির অংশ</translation>
+    </message>
+    <message>
+        <source>Entry point section</source>
+        <translation>এন্ট্রি পয়েন্ট বিভাগ</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>সম্পদগুলো</translation>
+    </message>
+    <message>
+        <source>Obfuscator</source>
+        <translation>অবস্কিউফিকেটর</translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation>টুল</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>সনদপত্র</translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation>কম্পাইলার</translation>
+    </message>
+    <message>
+        <source>Compressor</source>
+        <translation>কম্প্রেসর</translation>
+    </message>
+    <message>
+        <source>Converter</source>
+        <translation>রূপান্তরকারী</translation>
+    </message>
+    <message>
+        <source>Crypter</source>
+        <translation>ক্রিপ্টার</translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
+        <translation>ক্রিপ্টর</translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>তথ্যশালা</translation>
+    </message>
+    <message>
+        <source>Protection</source>
+        <translation>সুরক্ষা</translation>
+    </message>
+    <message>
+        <source>Extender</source>
+        <translation>প্রসারক</translation>
+    </message>
+    <message>
+        <source>Generic</source>
+        <translation>বর্গীয়</translation>
+    </message>
+    <message>
+        <source>Installer</source>
+        <translation>ইনস্টলার</translation>
+    </message>
+    <message>
+        <source>Installer data</source>
+        <translation>ইনস্টলার ডেটা</translation>
+    </message>
+    <message>
+        <source>Joiner</source>
+        <translation>যোগদানকারী</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>ভাষা</translation>
+    </message>
+    <message>
+        <source>Library</source>
+        <translation>গ্রন্থাগার</translation>
+    </message>
+    <message>
+        <source>Linker</source>
+        <translation>সংযুক্তকারী</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>লোডার</translation>
+    </message>
+    <message>
+        <source>Operation system</source>
+        <translation>অপারেটিং সিস্টেম</translation>
+    </message>
+    <message>
+        <source>Packer</source>
+        <translation>ভরক (Packer)</translation>
+    </message>
+    <message>
+        <source>Platform</source>
+        <translation>প্ল্যাটফর্ম</translation>
+    </message>
+    <message>
+        <source>Player</source>
+        <translation>ক্রীড়ক</translation>
+    </message>
+    <message>
+        <source>Protector</source>
+        <translation>সুরক্ষাকারী</translation>
+    </message>
+    <message>
+        <source>Protector data</source>
+        <translation>সুরক্ষাকারী তথ্য</translation>
+    </message>
+    <message>
+        <source>data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Sign tool</source>
+        <translation>সাইন টুল</translation>
+    </message>
+    <message>
+        <source>Source code</source>
+        <translation>সোর্স কোড</translation>
+    </message>
+    <message>
+        <source>Stub</source>
+        <translation>অসম্পূর্ণ</translation>
+    </message>
+    <message>
+        <source>Virtual machine</source>
+        <translation>ভার্চুয়াল মেশিন</translation>
+    </message>
+    <message>
+        <source>Virus</source>
+        <translation>ভাইরাস</translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation>ট্রোজান</translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation>ম্যালওয়্যার</translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation>প্যাকেজ</translation>
+    </message>
+    <message>
+        <source>Licensing</source>
+        <translation>লাইসেন্সিং</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>দূষিত ডেটা</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>ব্যক্তিগত তথ্য</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>লেখক</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>স্রষ্টা</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>প্রযোজক</translation>
     </message>
 </context>
 <context>
@@ -3413,6 +3703,10 @@
         <translation>অনুসন্ধান করুন</translation>
     </message>
     <message>
+        <source>Patch</source>
+        <translation>প্যাচ</translation>
+    </message>
+    <message>
         <source>File</source>
         <translation>ফাইল</translation>
     </message>
@@ -3422,7 +3716,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>এন্ডিয়াননেস</translation>
     </message>
     <message>
         <source>Info</source>
@@ -3436,40 +3730,12 @@
         <source>Signatures</source>
         <translation>স্বাক্ষরগুলো</translation>
     </message>
-    <message>
-        <source>Copy</source>
-        <translation>অনুলিপি</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation>অনুসরণ করুন</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>নাম</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>স্বাক্ষর</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>ঠিকানা</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>অফসেট</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>হেক্স</translation>
-    </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>Null-terminated</source>
-        <translation></translation>
+        <translation>নাল-সমাপ্ত</translation>
     </message>
     <message>
         <source>Links</source>
@@ -3493,15 +3759,15 @@
     </message>
     <message>
         <source>Mask</source>
-        <translation></translation>
+        <translation>মাস্ক</translation>
     </message>
     <message>
         <source>Regular expression</source>
-        <translation></translation>
+        <translation>নিয়মিত অভিব্যক্তি</translation>
     </message>
     <message>
         <source>Min length</source>
-        <translation></translation>
+        <translation>সর্বনিম্ন দৈর্ঘ্য</translation>
     </message>
     <message>
         <source>Result</source>
@@ -3510,26 +3776,6 @@
     <message>
         <source>Strings</source>
         <translation>স্ট্রিং সমূহ</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation>অনুসরণ করুন</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>সম্পাদনা করুন</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>হেক্স</translation>
-    </message>
-    <message>
-        <source>Demangle</source>
-        <translation>Demangle</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3572,15 +3818,15 @@
     </message>
     <message>
         <source>Search string</source>
-        <translation></translation>
+        <translation>স্ট্রিং অনুসন্ধান</translation>
     </message>
     <message>
         <source>Search signature</source>
-        <translation></translation>
+        <translation>স্বাক্ষর অনুসন্ধান</translation>
     </message>
     <message>
         <source>Search value</source>
-        <translation></translation>
+        <translation>মান অনুসন্ধান</translation>
     </message>
     <message>
         <source>Result</source>
@@ -3589,61 +3835,6 @@
     <message>
         <source>Values</source>
         <translation>মানগুলো</translation>
-    </message>
-</context>
-<context>
-    <name>SpecAbstract</name>
-    <message>
-        <source>Unknown</source>
-        <translation>অজানা</translation>
-    </message>
-    <message>
-        <source>Header</source>
-        <translation>হেডার</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>আস্তরণ</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>উপাত্তের সংশোধন</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>এন্ট্রি পয়েন্ট</translation>
-    </message>
-    <message>
-        <source>Section name</source>
-        <translation>বিভাগের নাম</translation>
-    </message>
-    <message>
-        <source>Import hash</source>
-        <translation>আমদানি হ্যাশ</translation>
-    </message>
-    <message>
-        <source>Code section</source>
-        <translation>সংকেতপদ্ধতির অংশ</translation>
-    </message>
-    <message>
-        <source>Entry point section</source>
-        <translation>এন্ট্রি পয়েন্ট বিভাগ</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>সংরক্ষণাগার</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>সম্পদগুলো</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>টাইপ</translation>
     </message>
 </context>
 <context>
@@ -3711,7 +3902,7 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>ভরক (Packer)</translation>
+        <translation>প্যাকেজ</translation>
     </message>
 </context>
 <context>
@@ -3729,12 +3920,16 @@
         <translation>ধন্যবাদ</translation>
     </message>
     <message>
-        <source>Check updates</source>
+        <source>Check for updates</source>
         <translation>নতুন পরিবর্তন খতিয়ে দেখা</translation>
     </message>
     <message>
         <source>Libraries</source>
         <translation>গ্রন্থাগার সমূহ</translation>
+    </message>
+    <message>
+        <source>Social Media</source>
+        <translation></translation>
     </message>
     <message>
         <source>Update information</source>
@@ -3769,7 +3964,7 @@
     <name>XAbstractTableView</name>
     <message>
         <source>Invalid font</source>
-        <translation></translation>
+        <translation>অবৈধ ফন্ট</translation>
     </message>
 </context>
 <context>
@@ -3781,6 +3976,14 @@
     <message>
         <source>Object</source>
         <translation>বস্তু</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>টেবিল</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -3796,6 +3999,21 @@
     <message>
         <source>extender</source>
         <translation>প্রসারক</translation>
+    </message>
+</context>
+<context>
+    <name>XBMP</name>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Bitmap Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -3829,54 +4047,6 @@
         <translation>২৫৬-বিট</translation>
     </message>
     <message>
-        <source>Data</source>
-        <translation>উপাত্ত</translation>
-    </message>
-    <message>
-        <source>Region</source>
-        <translation>অঞ্চল</translation>
-    </message>
-    <message>
-        <source>Process</source>
-        <translation>প্রক্রিয়া</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>সংরক্ষণাগার</translation>
-    </message>
-    <message>
-        <source>Audio</source>
-        <translation>শ্রুতি</translation>
-    </message>
-    <message>
-        <source>Document</source>
-        <translation>দলিল</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>ছবি</translation>
-    </message>
-    <message>
-        <source>Plain Text</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>স্বাক্ষর</translation>
-    </message>
-    <message>
-        <source>Text</source>
-        <translation>পাঠ্য</translation>
-    </message>
-    <message>
-        <source>Video</source>
-        <translation>ভিডিও</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
-    </message>
-    <message>
         <source>Read error</source>
         <translation>ত্রুটি পড়া</translation>
     </message>
@@ -3898,10 +4068,18 @@
     </message>
     <message>
         <source>Objects</source>
-        <translation></translation>
+        <translation>বস্তুসমূহ</translation>
     </message>
     <message>
         <source>Maps</source>
+        <translation>মানচিত্রসমূহ</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Streams</source>
         <translation></translation>
     </message>
     <message>
@@ -3914,11 +4092,31 @@
     </message>
     <message>
         <source>true</source>
-        <translation></translation>
+        <translation>সত্য</translation>
     </message>
     <message>
         <source>false</source>
-        <translation></translation>
+        <translation>মিথ্যা</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>তথ্য</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>সতর্কতা</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>ত্রুটি</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>দূষিত ডেটা</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3926,7 +4124,7 @@
     </message>
     <message>
         <source>Multiplatform</source>
-        <translation></translation>
+        <translation>বহুমঞ্চ</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -3965,24 +4163,8 @@
         <translation>টিবি (TB)</translation>
     </message>
     <message>
-        <source>Header</source>
-        <translation>হেডার</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>আস্তরণ</translation>
-    </message>
-    <message>
-        <source>Archive record</source>
-        <translation>সংরক্ষণাগার নথি</translation>
-    </message>
-    <message>
-        <source>Resource</source>
-        <translation>সম্পদ</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>উপাত্তের সংশোধন</translation>
+        <source>Total</source>
+        <translation>মোট</translation>
     </message>
 </context>
 <context>
@@ -3991,12 +4173,28 @@
         <source>Unknown</source>
         <translation>অজানা</translation>
     </message>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
 </context>
 <context>
-    <name>XCapstone</name>
+    <name>XCab</name>
     <message>
-        <source>Invalid opcode</source>
-        <translation>অবৈধ opcode</translation>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -4014,7 +4212,7 @@
     </message>
     <message>
         <source>Main module</source>
-        <translation></translation>
+        <translation>প্রধান মডিউল</translation>
     </message>
     <message>
         <source>Header</source>
@@ -4022,41 +4220,49 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
     <name>XDOS16</name>
     <message>
         <source>Loader</source>
-        <translation></translation>
+        <translation>লোডার</translation>
     </message>
     <message>
         <source>Payload</source>
-        <translation></translation>
+        <translation>পেলোড</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Segment %1</source>
+        <translation>অংশ</translation>
     </message>
     <message>
         <source>Data</source>
         <translation>উপাত্ত</translation>
     </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
 </context>
 <context>
     <name>XDataConvertor</name>
-    <message>
-        <source>Read error</source>
-        <translation>ত্রুটি পড়া</translation>
-    </message>
     <message>
         <source>Write error</source>
         <translation>ভুল লিখুন</translation>
     </message>
     <message>
         <source>Invalid size</source>
-        <translation>অবৈধ স্বাক্ষর</translation>
+        <translation>অবৈধ আকার</translation>
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation>ফাইলটি খুলতে পারছি না</translation>
+        <translation>আকার পরিবর্তন করা যায়নি</translation>
     </message>
 </context>
 <context>
@@ -4071,11 +4277,11 @@
     </message>
     <message>
         <source>Encode</source>
-        <translation></translation>
+        <translation>এনকোড</translation>
     </message>
     <message>
         <source>Decode</source>
-        <translation></translation>
+        <translation>ডিকোড</translation>
     </message>
     <message>
         <source>Input</source>
@@ -4095,7 +4301,7 @@
     </message>
     <message>
         <source>Output</source>
-        <translation></translation>
+        <translation>আউটপুট</translation>
     </message>
 </context>
 <context>
@@ -4119,32 +4325,32 @@
 <context>
     <name>XDeviceTableEditView</name>
     <message>
-        <source>Open file</source>
-        <translation>ফাইল খুলুন</translation>
-    </message>
-    <message>
-        <source>Patch</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Cannot resize</source>
-        <translation>ফাইলটি খুলতে পারছি না</translation>
-    </message>
-</context>
-<context>
-    <name>XDeviceTableView</name>
-    <message>
         <source>Save dump</source>
         <translation>ডাম্প সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>মূল তথ্য</translation>
+        <translation>র&apos; ডেটা</translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation>ফাইল খুলুন</translation>
+    </message>
+    <message>
+        <source>Patch</source>
+        <translation>প্যাচ</translation>
+    </message>
+    <message>
+        <source>Cannot resize</source>
+        <translation>আকার পরিবর্তন করা যায়নি</translation>
     </message>
     <message>
         <source>Dump</source>
         <translation>অস্বস্তিকর জায়গা</translation>
     </message>
+</context>
+<context>
+    <name>XDeviceTableView</name>
     <message>
         <source>Nothing found</source>
         <translation>কোনকিছু পাওয়া যায়নি</translation>
@@ -4185,7 +4391,7 @@
     </message>
     <message>
         <source>Label</source>
-        <translation>আখ্যা দেত্তন</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -4219,46 +4425,6 @@
         <translation>অফসেট</translation>
     </message>
     <message>
-        <source>Analyze</source>
-        <translation>বিশ্লেষণ</translation>
-    </message>
-    <message>
-        <source>Bookmarks</source>
-        <translation>পুস্তক-চিহ্ন সমূহ</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>সব</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>অপসারণ</translation>
-    </message>
-    <message>
-        <source>Symbols</source>
-        <translation>প্রতীকগুলো</translation>
-    </message>
-    <message>
-        <source>Functions</source>
-        <translation>ফাংশন</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>পরিষ্কার</translation>
-    </message>
-    <message>
-        <source>New</source>
-        <translation>নতুন</translation>
-    </message>
-    <message>
-        <source>List</source>
-        <translation>সূচী</translation>
-    </message>
-    <message>
         <source>Relative address</source>
         <translation>আপেক্ষিক ঠিকানা</translation>
     </message>
@@ -4287,7 +4453,7 @@
     </message>
     <message>
         <source>Arrows</source>
-        <translation></translation>
+        <translation>তীর</translation>
     </message>
     <message>
         <source>All</source>
@@ -4295,7 +4461,7 @@
     </message>
     <message>
         <source>Selected</source>
-        <translation></translation>
+        <translation>নির্বাচিত</translation>
     </message>
     <message>
         <source>Registers</source>
@@ -4303,7 +4469,7 @@
     </message>
     <message>
         <source>Numbers</source>
-        <translation></translation>
+        <translation>সংখ্যা</translation>
     </message>
     <message>
         <source>Opcodes</source>
@@ -4315,11 +4481,11 @@
     </message>
     <message>
         <source>General registers</source>
-        <translation></translation>
+        <translation>সাধারণ রেজিস্টার</translation>
     </message>
     <message>
         <source>Stack registers</source>
-        <translation></translation>
+        <translation>স্ট্যাক রেজিস্টার</translation>
     </message>
     <message>
         <source>Segment registers</source>
@@ -4327,7 +4493,7 @@
     </message>
     <message>
         <source>Debug registers</source>
-        <translation></translation>
+        <translation>ডিবাগ রেজিস্টার</translation>
     </message>
     <message>
         <source>Instruction pointer register</source>
@@ -4335,7 +4501,7 @@
     </message>
     <message>
         <source>Flags register</source>
-        <translation></translation>
+        <translation>ফ্ল্যাগ রেজিস্টার</translation>
     </message>
 </context>
 <context>
@@ -4350,11 +4516,11 @@
     </message>
     <message>
         <source>Labels</source>
-        <translation>আখ্যা দেত্তনগুলো</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -4394,11 +4560,11 @@
     </message>
     <message>
         <source>To data</source>
-        <translation>ডেটাতে</translation>
+        <translation>উপাত্ত</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>মূল তথ্য</translation>
+        <translation>র&apos; ডেটা</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -4489,12 +4655,8 @@
 <context>
     <name>XELF</name>
     <message>
-        <source>Section</source>
-        <translation>বিভাগ</translation>
-    </message>
-    <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -4510,7 +4672,7 @@
     </message>
     <message>
         <source>Run path</source>
-        <translation></translation>
+        <translation>চালানোর পথ</translation>
     </message>
     <message>
         <source>Symbol table</source>
@@ -4593,6 +4755,13 @@
     </message>
 </context>
 <context>
+    <name>XExtractor</name>
+    <message>
+        <source>Mode is not available for this file type</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>XExtractorWidget</name>
     <message>
         <source>Extract</source>
@@ -4611,12 +4780,12 @@
         <translation>স্ক্যান</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <source>All</source>
+        <translation>সব</translation>
     </message>
     <message>
-        <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <source>Deep scan</source>
+        <translation>গভীরভাবে নির্ণয় করা</translation>
     </message>
     <message>
         <source>Type</source>
@@ -4633,14 +4802,6 @@
     <message>
         <source>Size</source>
         <translation>আকার</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>অফসেট</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>ঠিকানা</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -4675,7 +4836,7 @@
     </message>
     <message>
         <source>Output</source>
-        <translation></translation>
+        <translation>আউটপুট</translation>
     </message>
     <message>
         <source>Text</source>
@@ -4699,6 +4860,72 @@
     </message>
 </context>
 <context>
+    <name>XFormats</name>
+    <message>
+        <source>Cannot unpack</source>
+        <translation>বস্তাবন্দী না</translation>
+    </message>
+    <message>
+        <source>Invalid CRC</source>
+        <translation>অবৈধ</translation>
+    </message>
+    <message>
+        <source>Cannot decompress</source>
+        <translation>অধিবেশন খুলতে পারবেন না</translation>
+    </message>
+    <message>
+        <source>Cannot create</source>
+        <translation>আকার পরিবর্তন করা যায়নি</translation>
+    </message>
+</context>
+<context>
+    <name>XGif</name>
+    <message>
+        <source>Signature</source>
+        <translation>স্বাক্ষর</translation>
+    </message>
+    <message>
+        <source>Logical Screen Descriptor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Global Color Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trailer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>ইমেজ</translation>
+    </message>
+    <message>
+        <source>Graphic Control Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Application Extension</source>
+        <translation>আবেদন</translation>
+    </message>
+    <message>
+        <source>Plain Text Extension</source>
+        <translation>সাধারণ টেক্সট</translation>
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation>সংস্করণ</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
+</context>
+<context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
@@ -4707,6 +4934,18 @@
     <message>
         <source>Footer</source>
         <translation>ফুটার</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>অজানা</translation>
     </message>
 </context>
 <context>
@@ -4788,18 +5027,6 @@
         <source>Offset</source>
         <translation>অফসেট</translation>
     </message>
-    <message>
-        <source>Location</source>
-        <translation>ক্রিয়া</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation>মোড</translation>
-    </message>
-    <message>
-        <source>Width</source>
-        <translation>প্রস্থ</translation>
-    </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
@@ -4815,8 +5042,8 @@
         <translation>ফর্ম</translation>
     </message>
     <message>
-        <source>Data inspector</source>
-        <translation>উপাত্তের পরিদর্শক</translation>
+        <source>Inspector</source>
+        <translation>পরিদর্শক</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -4827,16 +5054,12 @@
         <translation>শুধুমাত্র পাঠযোগ্য</translation>
     </message>
     <message>
-        <source>Hex</source>
-        <translation>হেক্স</translation>
-    </message>
-    <message>
         <source>Type</source>
         <translation>টাইপ</translation>
     </message>
     <message>
-        <source>Mode</source>
-        <translation>মোড</translation>
+        <source>Base</source>
+        <translation>ভিত্তি</translation>
     </message>
 </context>
 <context>
@@ -4844,6 +5067,18 @@
     <message>
         <source>Header</source>
         <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Entries</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Icon</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -4854,11 +5089,11 @@
     </message>
     <message>
         <source>Function enter</source>
-        <translation></translation>
+        <translation>ফাংশনে প্রবেশ</translation>
     </message>
     <message>
         <source>Function leave</source>
-        <translation></translation>
+        <translation>ফাংশন ত্যাগ</translation>
     </message>
     <message>
         <source>Step into</source>
@@ -4870,11 +5105,11 @@
     </message>
     <message>
         <source>Trace into</source>
-        <translation></translation>
+        <translation>ট্রেসে প্রবেশ</translation>
     </message>
     <message>
         <source>Trace over</source>
-        <translation></translation>
+        <translation>ট্রেস ওভার</translation>
     </message>
     <message>
         <source>Address</source>
@@ -4915,16 +5150,12 @@
         <translation>রপ্তানি</translation>
     </message>
     <message>
-        <source>Clear</source>
-        <translation>পরিষ্কার</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>সংরক্ষণ</translation>
     </message>
     <message>
         <source>Load</source>
-        <translation></translation>
+        <translation>লোড</translation>
     </message>
     <message>
         <source>All files</source>
@@ -4933,10 +5164,6 @@
     <message>
         <source>Open file</source>
         <translation>ফাইল খুলুন</translation>
-    </message>
-    <message>
-        <source>Are you sure?</source>
-        <translation></translation>
     </message>
 </context>
 <context>
@@ -4951,7 +5178,7 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>ভরক (Packer)</translation>
+        <translation>প্যাকেজ</translation>
     </message>
 </context>
 <context>
@@ -4960,28 +5187,28 @@
         <source>Data</source>
         <translation>উপাত্ত</translation>
     </message>
+    <message>
+        <source>Signature</source>
+        <translation>স্বাক্ষর</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
 </context>
 <context>
     <name>XLE</name>
+    <message>
+        <source>Unknown</source>
+        <translation>অজানা</translation>
+    </message>
     <message>
         <source>Header</source>
         <translation>হেডার</translation>
     </message>
     <message>
-        <source>Map</source>
-        <translation></translation>
-    </message>
-    <message>
         <source>Object</source>
         <translation>বস্তু</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>আস্তরণ</translation>
-    </message>
-    <message>
-        <source>Unknown</source>
-        <translation>অজানা</translation>
     </message>
 </context>
 <context>
@@ -4989,6 +5216,14 @@
     <message>
         <source>Header</source>
         <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -4999,7 +5234,7 @@
     </message>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>বিট</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -5032,24 +5267,12 @@
 <context>
     <name>XMACH</name>
     <message>
-        <source>Segment</source>
-        <translation>অংশ</translation>
-    </message>
-    <message>
-        <source>Section</source>
-        <translation>বিভাগ</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>অজানা</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
-    <message>
-        <source>Unknown</source>
-        <translation>অজানা</translation>
-    </message>
     <message>
         <source>Header</source>
         <translation>হেডার</translation>
@@ -5059,8 +5282,12 @@
         <translation></translation>
     </message>
     <message>
+        <source>Unknown</source>
+        <translation>অজানা</translation>
+    </message>
+    <message>
         <source>Bundle</source>
-        <translation>হ্যান্ডেল</translation>
+        <translation>বান্ডেল</translation>
     </message>
 </context>
 <context>
@@ -5076,6 +5303,25 @@
         <source>Header</source>
         <translation>হেডার</translation>
     </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
+</context>
+<context>
+    <name>XMP4</name>
+    <message>
+        <source>Boxes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
 </context>
 <context>
     <name>XMSDOS</name>
@@ -5084,8 +5330,12 @@
         <translation>হেডার</translation>
     </message>
     <message>
+        <source>Image</source>
+        <translation>ইমেজ</translation>
+    </message>
+    <message>
         <source>Overlay</source>
-        <translation>আস্তরণ</translation>
+        <translation>ওভারলে</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5095,16 +5345,20 @@
 <context>
     <name>XMemoryMapWidget</name>
     <message>
-        <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <source>Show all</source>
+        <translation>সবগুলো দেখান</translation>
     </message>
     <message>
         <source>Dump all</source>
         <translation>অস্বস্তিকর সব</translation>
     </message>
     <message>
-        <source>Show all</source>
-        <translation>সবগুলো দেখান</translation>
+        <source>Save</source>
+        <translation>সংরক্ষণ</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>পুনরায় লোড করুন</translation>
     </message>
     <message>
         <source>File offset</source>
@@ -5124,7 +5378,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation></translation>
+        <translation>এন্ডিয়াননেস</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -5172,7 +5426,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>মূল তথ্য</translation>
+        <translation>র&apos; ডেটা</translation>
     </message>
 </context>
 <context>
@@ -5195,11 +5449,31 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>পদ্ধতি</translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation>দেখুন</translation>
+    </message>
+    <message>
+        <source>Compact</source>
+        <translation>সংক্ষিপ্ত</translation>
+    </message>
+    <message>
+        <source>Full</source>
+        <translation>সম্পূর্ণ</translation>
+    </message>
+    <message>
+        <source>Analyzed</source>
+        <translation>বিশ্লেষণ করা হয়েছে</translation>
     </message>
 </context>
 <context>
@@ -5207,6 +5481,18 @@
     <message>
         <source>Unknown</source>
         <translation>অজানা</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation>অংশ</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -5221,7 +5507,7 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>ভরক (Packer)</translation>
+        <translation>প্যাকেজ</translation>
     </message>
 </context>
 <context>
@@ -5243,7 +5529,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation></translation>
+        <translation>ফাইল খুঁজে পাওয়া যায়নি</translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5256,6 +5542,10 @@
     <message>
         <source>Code pages</source>
         <translation>সংকেতপদ্ধতির পাতাগুলো</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>অজানা</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -5309,16 +5599,20 @@
         <translation>প্রসঙ্গ মেনুতে যোগ করুন</translation>
     </message>
     <message>
-        <source>Controls</source>
+        <source>Set system environment variable</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation>নিয়ন্ত্রণ</translation>
     </message>
     <message>
         <source>Table views</source>
-        <translation></translation>
+        <translation>টেবিল ভিউ</translation>
     </message>
     <message>
         <source>Tree views</source>
-        <translation></translation>
+        <translation>ট্রি ভিউ</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -5330,7 +5624,7 @@
     </message>
     <message>
         <source>Text editors</source>
-        <translation></translation>
+        <translation>টেক্সট সম্পাদক</translation>
     </message>
     <message>
         <source>Default</source>
@@ -5354,7 +5648,7 @@
     </message>
     <message>
         <source>Fonts</source>
-        <translation></translation>
+        <translation>ফন্ট</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5376,16 +5670,44 @@
 <context>
     <name>XPDF</name>
     <message>
+        <source>Unknown</source>
+        <translation>অজানা</translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation>দলিল</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>স্বাক্ষর</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>ফুটার</translation>
+    </message>
+    <message>
         <source>Header</source>
         <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
     </message>
     <message>
         <source>Object</source>
         <translation>বস্তু</translation>
     </message>
     <message>
-        <source>Footer</source>
-        <translation>ফুটার</translation>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Raw image data</source>
+        <translation>র&apos; ডেটা</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -5407,6 +5729,10 @@
         <translation>চালক</translation>
     </message>
     <message>
+        <source>Native</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Boot application</source>
         <translation>বুট অ্যাপ্লিকেশন</translation>
     </message>
@@ -5417,22 +5743,6 @@
     <message>
         <source>Boot service driver</source>
         <translation>বুট সার্ভিস ড্রাইভার</translation>
-    </message>
-    <message>
-        <source>Invalid address of entry point</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Header</source>
-        <translation>হেডার</translation>
-    </message>
-    <message>
-        <source>Section</source>
-        <translation>বিভাগ</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>আস্তরণ</translation>
     </message>
     <message>
         <source>Cannot open file</source>
@@ -5463,50 +5773,50 @@
         <translation>ত্রুটি</translation>
     </message>
     <message>
-        <source>Entry point</source>
-        <translation>এন্ট্রি পয়েন্ট</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation>রপ্তানি</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>আমদানি</translation>
-    </message>
-    <message>
-        <source>Relocs</source>
-        <translation>Relocs</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>সম্পদগুলো</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>সনদপত্র</translation>
-    </message>
-    <message>
         <source>Invalid</source>
         <translation>অবৈধ</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Section</source>
+        <translation>বিভাগ</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation>সম্পদ</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
-        <source>Header</source>
-        <translation>হেডার</translation>
+        <source>Signature</source>
+        <translation>স্বাক্ষর</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
-        <source>Header</source>
-        <translation>হেডার</translation>
+        <source>Signature</source>
+        <translation>স্বাক্ষর</translation>
     </message>
     <message>
         <source>Data</source>
         <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -5518,170 +5828,6 @@
     <message>
         <source>Size</source>
         <translation>আকার</translation>
-    </message>
-    <message>
-        <source>obfuscator</source>
-        <translation>অস্পষ্টকারী</translation>
-    </message>
-    <message>
-        <source>Tool</source>
-        <translation>টুল</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>সংরক্ষণাগার</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>সনদপত্র</translation>
-    </message>
-    <message>
-        <source>Compiler</source>
-        <translation>কম্পাইলার</translation>
-    </message>
-    <message>
-        <source>Converter</source>
-        <translation>রূপান্তরকারী</translation>
-    </message>
-    <message>
-        <source>Crypter</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Cryptor</source>
-        <translation>ক্রিপ্টর</translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation>উপাত্ত</translation>
-    </message>
-    <message>
-        <source>Database</source>
-        <translation>তথ্যশালা</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>উপাত্তের সংশোধন</translation>
-    </message>
-    <message>
-        <source>protection</source>
-        <translation>সুরক্ষা</translation>
-    </message>
-    <message>
-        <source>extender</source>
-        <translation>প্রসারক</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>গঠন</translation>
-    </message>
-    <message>
-        <source>Generic</source>
-        <translation>বর্গীয়</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>ছবি</translation>
-    </message>
-    <message>
-        <source>Installer</source>
-        <translation>ইনস্টলার</translation>
-    </message>
-    <message>
-        <source>Installer data</source>
-        <translation>ইনস্টলার ডেটা</translation>
-    </message>
-    <message>
-        <source>Joiner</source>
-        <translation>যোগদানকারী</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>ভাষা</translation>
-    </message>
-    <message>
-        <source>Library</source>
-        <translation>গ্রন্থাগার</translation>
-    </message>
-    <message>
-        <source>Linker</source>
-        <translation>সংযুক্তকারী</translation>
-    </message>
-    <message>
-        <source>compressor</source>
-        <translation>সংকোচকারী</translation>
-    </message>
-    <message>
-        <source>Operation system</source>
-        <translation>অপারেটিং সিস্টেম</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>আস্তরণ</translation>
-    </message>
-    <message>
-        <source>Packer</source>
-        <translation>ভরক (Packer)</translation>
-    </message>
-    <message>
-        <source>Platform</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Player</source>
-        <translation>ক্রীড়ক</translation>
-    </message>
-    <message>
-        <source>Protection</source>
-        <translation>সুরক্ষা</translation>
-    </message>
-    <message>
-        <source>Protector</source>
-        <translation>সুরক্ষাকারী</translation>
-    </message>
-    <message>
-        <source>Protector data</source>
-        <translation>সুরক্ষাকারী তথ্য</translation>
-    </message>
-    <message>
-        <source>data</source>
-        <translation>উপাত্ত</translation>
-    </message>
-    <message>
-        <source>Sign tool</source>
-        <translation>সাইন টুল</translation>
-    </message>
-    <message>
-        <source>Source code</source>
-        <translation>সোর্স কোড</translation>
-    </message>
-    <message>
-        <source>Stub</source>
-        <translation>অসম্পূর্ণ</translation>
-    </message>
-    <message>
-        <source>Virtual machine</source>
-        <translation>ভার্চুয়াল মেশিন</translation>
-    </message>
-    <message>
-        <source>Virus</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>ভরক (Packer)</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation></translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -5697,7 +5843,7 @@
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>আক্রমণাত্মক স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -5709,15 +5855,15 @@
     </message>
     <message>
         <source>Main</source>
-        <translation></translation>
+        <translation>প্রধান</translation>
     </message>
     <message>
         <source>Extra</source>
-        <translation></translation>
+        <translation>অতিরিক্ত</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation></translation>
+        <translation>স্বনির্ধারিত</translation>
     </message>
     <message>
         <source>File scan</source>
@@ -5743,8 +5889,20 @@
         <translation>হেডার</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>অজানা</translation>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
+    <message>
+        <source>Invalid data</source>
+        <translation>অবৈধ ফন্ট</translation>
+    </message>
+    <message>
+        <source>Unexpected end of data</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5786,6 +5944,10 @@
         <translation>হেক্স</translation>
     </message>
     <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
         <source>Disasm</source>
         <translation>বিচ্ছিন্নতা</translation>
     </message>
@@ -5803,7 +5965,7 @@
     </message>
     <message>
         <source>Debugger</source>
-        <translation>সংশোধনকারী</translation>
+        <translation>ডিবাগ(সংশোধন)</translation>
     </message>
     <message>
         <source>Registers</source>
@@ -5879,7 +6041,7 @@
     </message>
     <message>
         <source>Modules</source>
-        <translation>মডিউলগুলো</translation>
+        <translation>মডিউলসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -5907,7 +6069,23 @@
     </message>
     <message>
         <source>Hardware</source>
-        <translation></translation>
+        <translation>হার্ডওয়্যার</translation>
+    </message>
+    <message>
+        <source>Location</source>
+        <translation>অবস্থান</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>মোড</translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation>প্রস্থ</translation>
+    </message>
+    <message>
+        <source>Base</source>
+        <translation>ভিত্তি</translation>
     </message>
     <message>
         <source>Show</source>
@@ -5975,7 +6153,7 @@
     </message>
     <message>
         <source>Patch</source>
-        <translation></translation>
+        <translation>প্যাচ</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -5992,10 +6170,6 @@
     <message>
         <source>Next</source>
         <translation>পরবর্তী</translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation>উপাত্ত</translation>
     </message>
     <message>
         <source>All</source>
@@ -6131,23 +6305,23 @@
     </message>
     <message>
         <source>Resize</source>
-        <translation>ফাইলের আকার</translation>
+        <translation>আকার পরিবর্তন</translation>
     </message>
     <message>
         <source>Conditional</source>
-        <translation></translation>
+        <translation>শর্তাধীন</translation>
     </message>
     <message>
-        <source>Data inspector</source>
-        <translation>উপাত্তের পরিদর্শক</translation>
+        <source>Inspector</source>
+        <translation>পরিদর্শক</translation>
     </message>
     <message>
-        <source>Data convertor</source>
-        <translation>উপাত্তের পরিদর্শক</translation>
+        <source>Convertor</source>
+        <translation>রূপান্তরক</translation>
     </message>
     <message>
         <source>Multisearch</source>
-        <translation></translation>
+        <translation>বহু অনুসন্ধান</translation>
     </message>
     <message>
         <source>Visualization</source>
@@ -6192,28 +6366,27 @@
         <translation>সংরক্ষণ</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>ঠিকানা</translation>
-    </message>
-    <message>
-        <source>Symbol</source>
-        <translation>প্রতীক</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>আকার</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>নাম</translation>
-    </message>
-    <message>
-        <source>Code</source>
-        <translation></translation>
+        <source>Reload</source>
+        <translation>পুনরায় লোড করুন</translation>
     </message>
     <message>
         <source>Symbols</source>
         <translation>প্রতীকগুলো</translation>
+    </message>
+</context>
+<context>
+    <name>XTAR</name>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -6225,6 +6398,14 @@
     <message>
         <source>Table</source>
         <translation>টেবিল</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
@@ -6255,11 +6436,11 @@
     </message>
     <message>
         <source>First</source>
-        <translation></translation>
+        <translation>প্রথম</translation>
     </message>
     <message>
         <source>Last</source>
-        <translation></translation>
+        <translation>শেষ</translation>
     </message>
     <message>
         <source>Information</source>
@@ -6306,7 +6487,7 @@
     <name>XVisualization</name>
     <message>
         <source>None</source>
-        <translation></translation>
+        <translation>কিছু না</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -6314,11 +6495,11 @@
     </message>
     <message>
         <source>Gradient</source>
-        <translation></translation>
+        <translation>গ্রেডিয়েন্ট</translation>
     </message>
     <message>
         <source>Zeros</source>
-        <translation></translation>
+        <translation>শূন্য</translation>
     </message>
     <message>
         <source>Text</source>
@@ -6345,7 +6526,7 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>ছবি</translation>
+        <translation>ইমেজ</translation>
     </message>
     <message>
         <source>Schema</source>
@@ -6361,7 +6542,7 @@
     </message>
     <message>
         <source>Methods</source>
-        <translation></translation>
+        <translation>পদ্ধতি</translation>
     </message>
     <message>
         <source>Method</source>
@@ -6369,7 +6550,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation></translation>
+        <translation>ব্লকের আকার</translation>
     </message>
     <message>
         <source>Width</source>
@@ -6377,11 +6558,11 @@
     </message>
     <message>
         <source>Height</source>
-        <translation></translation>
+        <translation>উচ্চতা</translation>
     </message>
     <message>
         <source>Zoom</source>
-        <translation></translation>
+        <translation>জুম</translation>
     </message>
     <message>
         <source>Regions</source>
@@ -6389,7 +6570,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation></translation>
+        <translation>হাইলাইট</translation>
     </message>
     <message>
         <source>Visualization</source>
@@ -6404,6 +6585,21 @@
     </message>
 </context>
 <context>
+    <name>XZip</name>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -6414,15 +6610,34 @@
         <translation>উপাত্ত</translation>
     </message>
     <message>
-        <source>Footer</source>
-        <translation>ফুটার</translation>
+        <source>Adler32</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>X_Ar</name>
+    <message>
+        <source>Header</source>
+        <translation>হেডার</translation>
+    </message>
+    <message>
+        <source>Record</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>উপাত্ত</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>ওভারলে</translation>
     </message>
 </context>
 <context>
     <name>YARAWidgetAdvanced</name>
     <message>
         <source>Rules</source>
-        <translation>মডিউলগুলো</translation>
+        <translation>নিয়মাবলী</translation>
     </message>
     <message>
         <source>Save</source>
@@ -6438,11 +6653,11 @@
     </message>
     <message>
         <source>Matches</source>
-        <translation></translation>
+        <translation>মিল</translation>
     </message>
     <message>
         <source>Rule name</source>
-        <translation></translation>
+        <translation>নিয়মের নাম</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -6481,7 +6696,7 @@
     </message>
     <message>
         <source>Rules</source>
-        <translation>মডিউলগুলো</translation>
+        <translation>নিয়মাবলী</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -6489,7 +6704,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation></translation>
+        <translation>মিলিসেকেন্ড</translation>
     </message>
     <message>
         <source>Stop</source>

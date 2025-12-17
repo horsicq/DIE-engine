@@ -136,13 +136,6 @@
     </message>
 </context>
 <context>
-    <name>Binary_Script</name>
-    <message>
-        <source>Invalid handle</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
@@ -238,28 +231,24 @@
         <translation>بازگشتی</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>اسکن عمیق</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>اسکن تجهیز</translation>
-    </message>
-    <message>
         <source>Aggressive scan</source>
         <translation>اسکن تجهیز</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>اسکن عمیق</translation>
     </message>
     <message>
         <source>Verbose</source>
         <translation></translation>
     </message>
     <message>
-        <source>All types</source>
-        <translation>همه فرمت ها</translation>
+        <source>Heuristic scan</source>
+        <translation>اسکن تجهیز</translation>
     </message>
     <message>
-        <source>Profiling</source>
-        <translation></translation>
+        <source>All types</source>
+        <translation>همه فرمت ها</translation>
     </message>
     <message>
         <source>Sort</source>
@@ -268,6 +257,14 @@
     <message>
         <source>Highlight</source>
         <translation>های لایت</translation>
+    </message>
+    <message>
+        <source>Format result</source>
+        <translation>ذخیره نتایج</translation>
+    </message>
+    <message>
+        <source>Profiling</source>
+        <translation></translation>
     </message>
     <message>
         <source>Hide unknown</source>
@@ -566,6 +563,21 @@
     </message>
 </context>
 <context>
+    <name>DialogCreateViewModel</name>
+    <message>
+        <source>Error</source>
+        <translation>خطا</translation>
+    </message>
+    <message>
+        <source>Invalid parameters provided</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File name cannot be empty</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
@@ -725,8 +737,8 @@
 <context>
     <name>DialogDataInspector</name>
     <message>
-        <source>Data inspector</source>
-        <translation>دیتا در کد</translation>
+        <source>Inspector</source>
+        <translation></translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -802,7 +814,7 @@
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>برچسب ها</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Go to</source>
@@ -837,7 +849,7 @@
     </message>
     <message>
         <source>Jumps</source>
-        <translation>پرش ها</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Ref to</source>
@@ -845,18 +857,11 @@
     </message>
     <message>
         <source>Ref from</source>
-        <translation></translation>
+        <translation>جستجو از</translation>
     </message>
     <message>
         <source>Cancel</source>
         <translation>لغو</translation>
-    </message>
-</context>
-<context>
-    <name>DialogDumpProcess</name>
-    <message>
-        <source>Dump</source>
-        <translation></translation>
     </message>
 </context>
 <context>
@@ -1072,72 +1077,6 @@
     </message>
 </context>
 <context>
-    <name>DialogMultiDisasmSignature</name>
-    <message>
-        <source>Signature</source>
-        <translation>امضا کننده</translation>
-    </message>
-    <message>
-        <source>Spaces</source>
-        <translation>فضاها</translation>
-    </message>
-    <message>
-        <source>Upper</source>
-        <translation>حروف بزرگ</translation>
-    </message>
-    <message>
-        <source>Wildcard</source>
-        <translation>عام</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>اسکن</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>کپی</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>باشه</translation>
-    </message>
-    <message>
-        <source>Relative virtual address</source>
-        <translation>آدرس مجازی نسبی</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>ادرس حافظه</translation>
-    </message>
-    <message>
-        <source>Bytes</source>
-        <translation>بایت ها</translation>
-    </message>
-    <message>
-        <source>Opcode</source>
-        <translation>کد عملیات</translation>
-    </message>
-</context>
-<context>
-    <name>DialogMultiSearchProcess</name>
-    <message>
-        <source>Search strings</source>
-        <translation>جستجوی رشته</translation>
-    </message>
-    <message>
-        <source>Search signatures</source>
-        <translation>جستجوی امضا</translation>
-    </message>
-    <message>
-        <source>Search values</source>
-        <translation>جستجوی مقدار</translation>
-    </message>
-    <message>
-        <source>Create view model</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogNFDScan</name>
     <message>
         <source>Scan</source>
@@ -1190,17 +1129,6 @@
         <source>msec</source>
         <translation>میلی‌ثانیه</translation>
     </message>
-    <message>
-        <source>Text documents</source>
-        <translation>سند متنی</translation>
-    </message>
-    <message>
-        <source>Save result</source>
-        <translation>ذخیره نتایج</translation>
-    </message>
-</context>
-<context>
-    <name>DialogNFDScanProcess</name>
     <message>
         <source>Text documents</source>
         <translation>سند متنی</translation>
@@ -1358,17 +1286,6 @@
     </message>
 </context>
 <context>
-    <name>DialogSearchProcess</name>
-    <message>
-        <source>Search</source>
-        <translation>جستجو</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>لغو</translation>
-    </message>
-</context>
-<context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
@@ -1484,8 +1401,76 @@
         <translation>عکس</translation>
     </message>
     <message>
+        <source>Image information</source>
+        <translation>به روزرسانی اطلاعات</translation>
+    </message>
+    <message>
         <source>Close</source>
         <translation>بستن</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطا</translation>
+    </message>
+    <message>
+        <source>Image file does not exist: %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to load image: %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom In</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Actual Size</source>
+        <translation>سایز مجازی</translation>
+    </message>
+    <message>
+        <source>Ctrl+0</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fit to Window</source>
+        <translation>پنجره اصلی</translation>
+    </message>
+    <message>
+        <source>F</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>کپی</translation>
+    </message>
+    <message>
+        <source>Save As...</source>
+        <translation>ذخیره به عنوان</translation>
+    </message>
+    <message>
+        <source>Save Image</source>
+        <translation>ذخیره به عنوان</translation>
+    </message>
+    <message>
+        <source>Images (*.png *.jpg *.jpeg *.bmp *.gif)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to save image to %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No image loaded</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size: %1 x %2 | Format: %3 | Zoom: %4%</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1666,7 +1651,7 @@
     <name>DialogXDataConvertor</name>
     <message>
         <source>Data convertor</source>
-        <translation>دیتا در کد</translation>
+        <translation></translation>
     </message>
     <message>
         <source>OK</source>
@@ -1703,45 +1688,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXInfoDBTransferProcess</name>
-    <message>
-        <source>Analyze</source>
-        <translation>انالیز</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Symbols</source>
-        <translation>سمبل ها</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>پاک کردن</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>حذف</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation>وارد كردن</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>وارد كردن</translation>
-    </message>
-    <message>
-        <source>Scan for IAT</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Get IAT</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
@@ -1750,14 +1696,6 @@
     <message>
         <source>Close</source>
         <translation>بستن</translation>
-    </message>
-    <message>
-        <source>Functions</source>
-        <translation>فانکشن‌ها</translation>
-    </message>
-    <message>
-        <source>References</source>
-        <translation>ارجاع‌ها</translation>
     </message>
 </context>
 <context>
@@ -2621,36 +2559,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Number</source>
-        <translation>عدد</translation>
+        <source>Search strings</source>
+        <translation>جستجوی رشته</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>آفست</translation>
+        <source>Search signatures</source>
+        <translation>جستجوی امضا</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>ادرس حافظه</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>سایز</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>نوع</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>رشته</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation>مقدار</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>نام</translation>
+        <source>Search values</source>
+        <translation>جستجوی مقدار</translation>
     </message>
 </context>
 <context>
@@ -2758,6 +2676,10 @@
         <translation>همه فرمت ها</translation>
     </message>
     <message>
+        <source>Format result</source>
+        <translation>ذخیره نتایج</translation>
+    </message>
+    <message>
         <source>Highlight</source>
         <translation>های لایت</translation>
     </message>
@@ -2793,8 +2715,20 @@
         <translation></translation>
     </message>
     <message>
-        <source>Result</source>
-        <translation>نتیجه</translation>
+        <source>Text files</source>
+        <translation>فایل های متنی</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>همه فایل ها</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطا</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>نمیتوان فایل را ذخیره کرد</translation>
     </message>
     <message>
         <source>Name</source>
@@ -3346,8 +3280,364 @@
         <translation>سایز</translation>
     </message>
     <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>امضا کننده</translation>
+    </message>
+    <message>
+        <source>Chunk</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Box</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>مجازی سازی</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>هگز</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>هش</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>رشته</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>امضا کننده</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation>ریجن</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>نقشه حافظه</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>سمبل ها</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>انتروپی</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>استخراج کننده</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>جستجو</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>فایل</translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation>منبع</translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation>ریجن</translation>
+    </message>
+    <message>
+        <source>Debug data</source>
+        <translation>دیباگ داده</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Section</source>
+        <translation>بخش</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation>سگمنت</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>پا ضفحه</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>شئ</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>فهرست</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>ارشیو</translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation>صدا</translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation>سند</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>عکس</translation>
+    </message>
+    <message>
+        <source>Plain Text</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation>متن</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>ویدیو</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>اطلاعات</translation>
+    </message>
+    <message>
+        <source>Encrypted</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Cannot open file</source>
         <translation>نمیتوان فایل را باز کرد</translation>
+    </message>
+    <message>
+        <source>Architecture</source>
+        <translation>معماری</translation>
+    </message>
+    <message>
+        <source>Raw</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>فرمت</translation>
+    </message>
+    <message>
+        <source>Heuristic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>نقطه شروع</translation>
+    </message>
+    <message>
+        <source>Section name</source>
+        <translation>نام بخش</translation>
+    </message>
+    <message>
+        <source>Import hash</source>
+        <translation>وارد کردن هش</translation>
+    </message>
+    <message>
+        <source>Code section</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entry point section</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>منابع</translation>
+    </message>
+    <message>
+        <source>Obfuscator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation>ابزار</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>مدرک</translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation>کامپایلر</translation>
+    </message>
+    <message>
+        <source>Compressor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Converter</source>
+        <translation>مبدل</translation>
+    </message>
+    <message>
+        <source>Crypter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>دیتابیس</translation>
+    </message>
+    <message>
+        <source>Protection</source>
+        <translation>محافظت</translation>
+    </message>
+    <message>
+        <source>Extender</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Generic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Installer</source>
+        <translation>نصب کننده</translation>
+    </message>
+    <message>
+        <source>Installer data</source>
+        <translation>نصب کنندخ اطلاعات</translation>
+    </message>
+    <message>
+        <source>Joiner</source>
+        <translation>اتصال دهنده</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>زبان</translation>
+    </message>
+    <message>
+        <source>Library</source>
+        <translation>کتابخانه</translation>
+    </message>
+    <message>
+        <source>Linker</source>
+        <translation>لینک کننده</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Operation system</source>
+        <translation>سیستم عامل</translation>
+    </message>
+    <message>
+        <source>Packer</source>
+        <translation>پک کننده</translation>
+    </message>
+    <message>
+        <source>Platform</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Player</source>
+        <translation>پلیر</translation>
+    </message>
+    <message>
+        <source>Protector</source>
+        <translation>حفاظت کننده</translation>
+    </message>
+    <message>
+        <source>Protector data</source>
+        <translation>محافظت کننده اطلاعات</translation>
+    </message>
+    <message>
+        <source>data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Sign tool</source>
+        <translation>ابزار امضا</translation>
+    </message>
+    <message>
+        <source>Source code</source>
+        <translation>سورس کد</translation>
+    </message>
+    <message>
+        <source>Stub</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virtual machine</source>
+        <translation>ماشین مجازی</translation>
+    </message>
+    <message>
+        <source>Virus</source>
+        <translation>ویروس</translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation>تروجان</translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation>پک کننده</translation>
+    </message>
+    <message>
+        <source>Licensing</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3413,6 +3703,10 @@
         <translation>جستجو</translation>
     </message>
     <message>
+        <source>Patch</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>File</source>
         <translation>فایل</translation>
     </message>
@@ -3435,34 +3729,6 @@
     <message>
         <source>Signatures</source>
         <translation>امضا کننده</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>کپی</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation>نمایش در</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>نام</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>امضا کننده</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>ادرس حافظه</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>آفست</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>هگز</translation>
     </message>
 </context>
 <context>
@@ -3509,26 +3775,6 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>رشته</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation>نمایش در</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>ویرایش</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>هگز</translation>
-    </message>
-    <message>
-        <source>Demangle</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>String</source>
         <translation>رشته</translation>
     </message>
     <message>
@@ -3589,61 +3835,6 @@
     <message>
         <source>Values</source>
         <translation>مقادیر</translation>
-    </message>
-</context>
-<context>
-    <name>SpecAbstract</name>
-    <message>
-        <source>Unknown</source>
-        <translation>ناشناخته</translation>
-    </message>
-    <message>
-        <source>Header</source>
-        <translation>هدر</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>دیباگ داده</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>نقطه شروع</translation>
-    </message>
-    <message>
-        <source>Section name</source>
-        <translation>نام بخش</translation>
-    </message>
-    <message>
-        <source>Import hash</source>
-        <translation>وارد کردن هش</translation>
-    </message>
-    <message>
-        <source>Code section</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Entry point section</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>رشته</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>ارشیو</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>منابع</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>نوع</translation>
     </message>
 </context>
 <context>
@@ -3729,12 +3920,16 @@
         <translation>ممنون</translation>
     </message>
     <message>
-        <source>Check updates</source>
+        <source>Check for updates</source>
         <translation>چک کردن به روز رسانی</translation>
     </message>
     <message>
         <source>Libraries</source>
         <translation>کتابخانه ها</translation>
+    </message>
+    <message>
+        <source>Social Media</source>
+        <translation></translation>
     </message>
     <message>
         <source>Update information</source>
@@ -3782,6 +3977,14 @@
         <source>Object</source>
         <translation>شئ</translation>
     </message>
+    <message>
+        <source>Table</source>
+        <translation>فهرست</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XArchive</name>
@@ -3796,6 +3999,21 @@
     <message>
         <source>extender</source>
         <translation>extender</translation>
+    </message>
+</context>
+<context>
+    <name>XBMP</name>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Bitmap Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3829,54 +4047,6 @@
         <translation>256-بیت</translation>
     </message>
     <message>
-        <source>Data</source>
-        <translation>دیتا</translation>
-    </message>
-    <message>
-        <source>Region</source>
-        <translation>ریجن</translation>
-    </message>
-    <message>
-        <source>Process</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>ارشیو</translation>
-    </message>
-    <message>
-        <source>Audio</source>
-        <translation>صدا</translation>
-    </message>
-    <message>
-        <source>Document</source>
-        <translation>سند</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>عکس</translation>
-    </message>
-    <message>
-        <source>Plain Text</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>امضا کننده</translation>
-    </message>
-    <message>
-        <source>Text</source>
-        <translation>متن</translation>
-    </message>
-    <message>
-        <source>Video</source>
-        <translation>ویدیو</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>امضا کننده</translation>
-    </message>
-    <message>
         <source>Read error</source>
         <translation>خطای خواندن</translation>
     </message>
@@ -3905,6 +4075,14 @@
         <translation></translation>
     </message>
     <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Streams</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Invalid signature</source>
         <translation>خطای امضا کننده</translation>
     </message>
@@ -3919,6 +4097,26 @@
     <message>
         <source>false</source>
         <translation>غلط</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>اطلاعات</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطا</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
     <message>
         <source>Default</source>
@@ -3965,24 +4163,8 @@
         <translation>ترابایت</translation>
     </message>
     <message>
-        <source>Header</source>
-        <translation>هدر</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Archive record</source>
-        <translation>ارشیو رکورد</translation>
-    </message>
-    <message>
-        <source>Resource</source>
-        <translation>منبع</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>دیباگ داده</translation>
+        <source>Total</source>
+        <translation>کل</translation>
     </message>
 </context>
 <context>
@@ -3991,11 +4173,27 @@
         <source>Unknown</source>
         <translation>ناشناخته</translation>
     </message>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
 </context>
 <context>
-    <name>XCapstone</name>
+    <name>XCab</name>
     <message>
-        <source>Invalid opcode</source>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
         <translation></translation>
     </message>
 </context>
@@ -4029,23 +4227,31 @@
     <name>XDOS16</name>
     <message>
         <source>Loader</source>
-        <translation></translation>
+        <translation>هدر</translation>
     </message>
     <message>
         <source>Payload</source>
         <translation></translation>
     </message>
     <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Segment %1</source>
+        <translation>سگمنت</translation>
+    </message>
+    <message>
         <source>Data</source>
         <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XDataConvertor</name>
-    <message>
-        <source>Read error</source>
-        <translation>خطای خواندن</translation>
-    </message>
     <message>
         <source>Write error</source>
         <translation>خطا در نوشتن</translation>
@@ -4119,6 +4325,14 @@
 <context>
     <name>XDeviceTableEditView</name>
     <message>
+        <source>Save dump</source>
+        <translation>ذخیره بکاپ</translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation>داده خام</translation>
+    </message>
+    <message>
         <source>Open file</source>
         <translation>باز کردن فایل</translation>
     </message>
@@ -4130,21 +4344,13 @@
         <source>Cannot resize</source>
         <translation>امکان تغییر سایز وجود ندارد</translation>
     </message>
-</context>
-<context>
-    <name>XDeviceTableView</name>
-    <message>
-        <source>Save dump</source>
-        <translation>ذخیره بکاپ</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>داده خام</translation>
-    </message>
     <message>
         <source>Dump</source>
         <translation></translation>
     </message>
+</context>
+<context>
+    <name>XDeviceTableView</name>
     <message>
         <source>Nothing found</source>
         <translation>چیزی پیدا نشد</translation>
@@ -4185,7 +4391,7 @@
     </message>
     <message>
         <source>Label</source>
-        <translation>برچسب</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -4217,46 +4423,6 @@
     <message>
         <source>Offset</source>
         <translation>آفست</translation>
-    </message>
-    <message>
-        <source>Analyze</source>
-        <translation>انالیز</translation>
-    </message>
-    <message>
-        <source>Bookmarks</source>
-        <translation>بوک مارک ها</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>همه</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>حذف</translation>
-    </message>
-    <message>
-        <source>Symbols</source>
-        <translation>سمبل ها</translation>
-    </message>
-    <message>
-        <source>Functions</source>
-        <translation>فانکشن‌ها</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>پاک کردن</translation>
-    </message>
-    <message>
-        <source>New</source>
-        <translation>جدید</translation>
-    </message>
-    <message>
-        <source>List</source>
-        <translation>لیست</translation>
     </message>
     <message>
         <source>Relative address</source>
@@ -4350,7 +4516,7 @@
     </message>
     <message>
         <source>Labels</source>
-        <translation>برچسب ها</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -4394,7 +4560,7 @@
     </message>
     <message>
         <source>To data</source>
-        <translation></translation>
+        <translation>دیتا</translation>
     </message>
     <message>
         <source>Raw data</source>
@@ -4488,10 +4654,6 @@
 </context>
 <context>
     <name>XELF</name>
-    <message>
-        <source>Section</source>
-        <translation>بخش</translation>
-    </message>
     <message>
         <source>Overlay</source>
         <translation></translation>
@@ -4593,6 +4755,13 @@
     </message>
 </context>
 <context>
+    <name>XExtractor</name>
+    <message>
+        <source>Mode is not available for this file type</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>XExtractorWidget</name>
     <message>
         <source>Extract</source>
@@ -4611,12 +4780,12 @@
         <translation>اسکن</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>اسکن عمیق</translation>
+        <source>All</source>
+        <translation>همه</translation>
     </message>
     <message>
-        <source>Heuristic scan</source>
-        <translation>اسکن تجهیز</translation>
+        <source>Deep scan</source>
+        <translation>اسکن عمیق</translation>
     </message>
     <message>
         <source>Type</source>
@@ -4633,14 +4802,6 @@
     <message>
         <source>Size</source>
         <translation>سایز</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>آفست</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>ادرس حافظه</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -4699,6 +4860,72 @@
     </message>
 </context>
 <context>
+    <name>XFormats</name>
+    <message>
+        <source>Cannot unpack</source>
+        <translation>پک نشده</translation>
+    </message>
+    <message>
+        <source>Invalid CRC</source>
+        <translation>نامعتبر</translation>
+    </message>
+    <message>
+        <source>Cannot decompress</source>
+        <translation>نمیتوان جلسه را باز کرد</translation>
+    </message>
+    <message>
+        <source>Cannot create</source>
+        <translation>امکان تغییر سایز وجود ندارد</translation>
+    </message>
+</context>
+<context>
+    <name>XGif</name>
+    <message>
+        <source>Signature</source>
+        <translation>امضا کننده</translation>
+    </message>
+    <message>
+        <source>Logical Screen Descriptor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Global Color Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trailer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>عکس</translation>
+    </message>
+    <message>
+        <source>Graphic Control Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Application Extension</source>
+        <translation>اپلیکیشن</translation>
+    </message>
+    <message>
+        <source>Plain Text Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation>ورژن</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
@@ -4707,6 +4934,18 @@
     <message>
         <source>Footer</source>
         <translation>پا ضفحه</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
     </message>
 </context>
 <context>
@@ -4788,18 +5027,6 @@
         <source>Offset</source>
         <translation>آفست</translation>
     </message>
-    <message>
-        <source>Location</source>
-        <translation>عمل</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation>حالت</translation>
-    </message>
-    <message>
-        <source>Width</source>
-        <translation>طول</translation>
-    </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
@@ -4815,8 +5042,8 @@
         <translation>فرم</translation>
     </message>
     <message>
-        <source>Data inspector</source>
-        <translation>دیتا در کد</translation>
+        <source>Inspector</source>
+        <translation></translation>
     </message>
     <message>
         <source>Strings</source>
@@ -4827,16 +5054,12 @@
         <translation>فقط خواندنی</translation>
     </message>
     <message>
-        <source>Hex</source>
-        <translation>هگز</translation>
-    </message>
-    <message>
         <source>Type</source>
         <translation>نوع</translation>
     </message>
     <message>
-        <source>Mode</source>
-        <translation>حالت</translation>
+        <source>Base</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4844,6 +5067,18 @@
     <message>
         <source>Header</source>
         <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Entries</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Icon</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4915,10 +5150,6 @@
         <translation>وارد كردن</translation>
     </message>
     <message>
-        <source>Clear</source>
-        <translation>پاک کردن</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>ذخیره</translation>
     </message>
@@ -4933,10 +5164,6 @@
     <message>
         <source>Open file</source>
         <translation>باز کردن فایل</translation>
-    </message>
-    <message>
-        <source>Are you sure?</source>
-        <translation>آیا مطمئن هستید؟</translation>
     </message>
 </context>
 <context>
@@ -4960,28 +5187,28 @@
         <source>Data</source>
         <translation>دیتا</translation>
     </message>
-</context>
-<context>
-    <name>XLE</name>
     <message>
-        <source>Header</source>
-        <translation>هدر</translation>
-    </message>
-    <message>
-        <source>Map</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Object</source>
-        <translation>شئ</translation>
+        <source>Signature</source>
+        <translation>امضا کننده</translation>
     </message>
     <message>
         <source>Overlay</source>
         <translation></translation>
     </message>
+</context>
+<context>
+    <name>XLE</name>
     <message>
         <source>Unknown</source>
         <translation>ناشناخته</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>شئ</translation>
     </message>
 </context>
 <context>
@@ -4989,6 +5216,14 @@
     <message>
         <source>Header</source>
         <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5032,14 +5267,6 @@
 <context>
     <name>XMACH</name>
     <message>
-        <source>Segment</source>
-        <translation>سگمنت</translation>
-    </message>
-    <message>
-        <source>Section</source>
-        <translation>بخش</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>ناشناخته</translation>
     </message>
@@ -5047,16 +5274,16 @@
 <context>
     <name>XMACHOFat</name>
     <message>
-        <source>Unknown</source>
-        <translation>ناشناخته</translation>
-    </message>
-    <message>
         <source>Header</source>
         <translation>هدر</translation>
     </message>
     <message>
         <source>Universal</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
     </message>
     <message>
         <source>Bundle</source>
@@ -5076,12 +5303,35 @@
         <source>Header</source>
         <translation>هدر</translation>
     </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMP4</name>
+    <message>
+        <source>Boxes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
         <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>عکس</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5095,16 +5345,20 @@
 <context>
     <name>XMemoryMapWidget</name>
     <message>
-        <source>Save</source>
-        <translation>ذخیره</translation>
+        <source>Show all</source>
+        <translation>دیدن همه</translation>
     </message>
     <message>
         <source>Dump all</source>
         <translation></translation>
     </message>
     <message>
-        <source>Show all</source>
-        <translation>دیدن همه</translation>
+        <source>Save</source>
+        <translation>ذخیره</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>لود دوباره</translation>
     </message>
     <message>
         <source>File offset</source>
@@ -5201,12 +5455,44 @@
         <source>Previous visited</source>
         <translation></translation>
     </message>
+    <message>
+        <source>Method</source>
+        <translation>متود</translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation>مشاهده</translation>
+    </message>
+    <message>
+        <source>Compact</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Full</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Analyzed</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
         <translation>ناشناخته</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation>سگمنت</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5258,6 +5544,10 @@
         <translation></translation>
     </message>
     <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>پاک کردن</translation>
     </message>
@@ -5307,6 +5597,10 @@
     <message>
         <source>Add to context menu</source>
         <translation>اضافه کردن به منوی راست کلیک</translation>
+    </message>
+    <message>
+        <source>Set system environment variable</source>
+        <translation></translation>
     </message>
     <message>
         <source>Controls</source>
@@ -5376,16 +5670,44 @@
 <context>
     <name>XPDF</name>
     <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation>سند</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>امضا کننده</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>پا ضفحه</translation>
+    </message>
+    <message>
         <source>Header</source>
         <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
     </message>
     <message>
         <source>Object</source>
         <translation>شئ</translation>
     </message>
     <message>
-        <source>Footer</source>
-        <translation>پا ضفحه</translation>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Raw image data</source>
+        <translation>داده خام</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5407,6 +5729,10 @@
         <translation>درایور</translation>
     </message>
     <message>
+        <source>Native</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Boot application</source>
         <translation></translation>
     </message>
@@ -5416,22 +5742,6 @@
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Invalid address of entry point</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Header</source>
-        <translation>هدر</translation>
-    </message>
-    <message>
-        <source>Section</source>
-        <translation>بخش</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
         <translation></translation>
     </message>
     <message>
@@ -5463,50 +5773,50 @@
         <translation>خطا</translation>
     </message>
     <message>
-        <source>Entry point</source>
-        <translation>نقطه شروع</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation>وارد كردن</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>وارد كردن</translation>
-    </message>
-    <message>
-        <source>Relocs</source>
-        <translation>لود دوباره</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>منابع</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>مدرک</translation>
-    </message>
-    <message>
         <source>Invalid</source>
         <translation>نامعتبر</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Section</source>
+        <translation>بخش</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation>منبع</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
-        <source>Header</source>
-        <translation>هدر</translation>
+        <source>Signature</source>
+        <translation>امضا کننده</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
-        <source>Header</source>
-        <translation>هدر</translation>
+        <source>Signature</source>
+        <translation>امضا کننده</translation>
     </message>
     <message>
         <source>Data</source>
         <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5518,170 +5828,6 @@
     <message>
         <source>Size</source>
         <translation>سایز</translation>
-    </message>
-    <message>
-        <source>obfuscator</source>
-        <translation>مبهم ساز</translation>
-    </message>
-    <message>
-        <source>Tool</source>
-        <translation>ابزار</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>ارشیو</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>مدرک</translation>
-    </message>
-    <message>
-        <source>Compiler</source>
-        <translation>کامپایلر</translation>
-    </message>
-    <message>
-        <source>Converter</source>
-        <translation>مبدل</translation>
-    </message>
-    <message>
-        <source>Crypter</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Cryptor</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation>دیتا</translation>
-    </message>
-    <message>
-        <source>Database</source>
-        <translation>دیتابیس</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>دیباگ داده</translation>
-    </message>
-    <message>
-        <source>protection</source>
-        <translation>حفاظت</translation>
-    </message>
-    <message>
-        <source>extender</source>
-        <translation>extender</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>فرمت</translation>
-    </message>
-    <message>
-        <source>Generic</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>عکس</translation>
-    </message>
-    <message>
-        <source>Installer</source>
-        <translation>نصب کننده</translation>
-    </message>
-    <message>
-        <source>Installer data</source>
-        <translation>نصب کنندخ اطلاعات</translation>
-    </message>
-    <message>
-        <source>Joiner</source>
-        <translation>اتصال دهنده</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>زبان</translation>
-    </message>
-    <message>
-        <source>Library</source>
-        <translation>کتابخانه</translation>
-    </message>
-    <message>
-        <source>Linker</source>
-        <translation>لینک کننده</translation>
-    </message>
-    <message>
-        <source>compressor</source>
-        <translation>کمپرسور</translation>
-    </message>
-    <message>
-        <source>Operation system</source>
-        <translation>سیستم عامل</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Packer</source>
-        <translation>پک کننده</translation>
-    </message>
-    <message>
-        <source>Platform</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Player</source>
-        <translation>پلیر</translation>
-    </message>
-    <message>
-        <source>Protection</source>
-        <translation>محافظت</translation>
-    </message>
-    <message>
-        <source>Protector</source>
-        <translation>حفاظت کننده</translation>
-    </message>
-    <message>
-        <source>Protector data</source>
-        <translation>محافظت کننده اطلاعات</translation>
-    </message>
-    <message>
-        <source>data</source>
-        <translation>دیتا</translation>
-    </message>
-    <message>
-        <source>Sign tool</source>
-        <translation>ابزار امضا</translation>
-    </message>
-    <message>
-        <source>Source code</source>
-        <translation>سورس کد</translation>
-    </message>
-    <message>
-        <source>Stub</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Virtual machine</source>
-        <translation>ماشین مجازی</translation>
-    </message>
-    <message>
-        <source>Virus</source>
-        <translation>ویروس</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>تروجان</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>پک کننده</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation></translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -5743,8 +5889,20 @@
         <translation>هدر</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>ناشناخته</translation>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid data</source>
+        <translation>نامعتبر</translation>
+    </message>
+    <message>
+        <source>Unexpected end of data</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5784,6 +5942,10 @@
     <message>
         <source>Hex</source>
         <translation>هگز</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -5867,7 +6029,7 @@
     </message>
     <message>
         <source>Follow in</source>
-        <translation>نمایش در</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Show in</source>
@@ -5908,6 +6070,22 @@
     <message>
         <source>Hardware</source>
         <translation>سخت‌افزار</translation>
+    </message>
+    <message>
+        <source>Location</source>
+        <translation>عمل</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>حالت</translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation>طول</translation>
+    </message>
+    <message>
+        <source>Base</source>
+        <translation></translation>
     </message>
     <message>
         <source>Show</source>
@@ -5992,10 +6170,6 @@
     <message>
         <source>Next</source>
         <translation>بعدی</translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation>دیتا</translation>
     </message>
     <message>
         <source>All</source>
@@ -6138,12 +6312,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Data inspector</source>
-        <translation>دیتا در کد</translation>
+        <source>Inspector</source>
+        <translation></translation>
     </message>
     <message>
-        <source>Data convertor</source>
-        <translation>دیتا در کد</translation>
+        <source>Convertor</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multisearch</source>
@@ -6192,28 +6366,27 @@
         <translation>ذخیره</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>ادرس حافظه</translation>
-    </message>
-    <message>
-        <source>Symbol</source>
-        <translation>سمبل</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>سایز</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>نام</translation>
-    </message>
-    <message>
-        <source>Code</source>
-        <translation></translation>
+        <source>Reload</source>
+        <translation>لود دوباره</translation>
     </message>
     <message>
         <source>Symbols</source>
         <translation>سمبل ها</translation>
+    </message>
+</context>
+<context>
+    <name>XTAR</name>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -6225,6 +6398,14 @@
     <message>
         <source>Table</source>
         <translation>فهرست</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -6404,6 +6585,21 @@
     </message>
 </context>
 <context>
+    <name>XZip</name>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -6414,8 +6610,27 @@
         <translation>دیتا</translation>
     </message>
     <message>
-        <source>Footer</source>
-        <translation>پا ضفحه</translation>
+        <source>Adler32</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>X_Ar</name>
+    <message>
+        <source>Header</source>
+        <translation>هدر</translation>
+    </message>
+    <message>
+        <source>Record</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>دیتا</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
     </message>
 </context>
 <context>

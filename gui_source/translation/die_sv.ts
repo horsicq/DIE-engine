@@ -136,13 +136,6 @@
     </message>
 </context>
 <context>
-    <name>Binary_Script</name>
-    <message>
-        <source>Invalid handle</source>
-        <translation>Ogiltig handle</translation>
-    </message>
-</context>
-<context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
@@ -238,40 +231,44 @@
         <translation>Rekursiv skan</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Djup skanning</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>Heuristisk skanning</translation>
-    </message>
-    <message>
         <source>Aggressive scan</source>
         <translation>Rekursiv skan</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>Djup skanning</translation>
     </message>
     <message>
         <source>Verbose</source>
         <translation>Extra detailjerad</translation>
     </message>
     <message>
+        <source>Heuristic scan</source>
+        <translation>Heuristisk skanning</translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Alla typer</translation>
     </message>
     <message>
-        <source>Profiling</source>
-        <translation>Profilera</translation>
-    </message>
-    <message>
         <source>Sort</source>
-        <translation>Sorterad</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Highlight</source>
         <translation>Markera</translation>
     </message>
     <message>
+        <source>Format result</source>
+        <translation>Spara resultat</translation>
+    </message>
+    <message>
+        <source>Profiling</source>
+        <translation>Profilera</translation>
+    </message>
+    <message>
         <source>Hide unknown</source>
-        <translation>Okänd</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Buffer size</source>
@@ -287,7 +284,7 @@
     </message>
     <message>
         <source>Extra database</source>
-        <translation>Skräddarsydd databas</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Custom database</source>
@@ -338,7 +335,7 @@
     </message>
     <message>
         <source>Signature name</source>
-        <translation>Signatur</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Text files</source>
@@ -566,6 +563,21 @@
     </message>
 </context>
 <context>
+    <name>DialogCreateViewModel</name>
+    <message>
+        <source>Error</source>
+        <translation>Fel</translation>
+    </message>
+    <message>
+        <source>Invalid parameters provided</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File name cannot be empty</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
@@ -680,7 +692,7 @@
     </message>
     <message>
         <source>Show info</source>
-        <translation>Visa i</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -725,8 +737,8 @@
 <context>
     <name>DialogDataInspector</name>
     <message>
-        <source>Data inspector</source>
-        <translation>Data-inspektör</translation>
+        <source>Inspector</source>
+        <translation></translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -802,7 +814,7 @@
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>Etiketter</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Go to</source>
@@ -833,30 +845,23 @@
     </message>
     <message>
         <source>Calls</source>
-        <translation>Anrop</translation>
+        <translation>Anropsstack</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation>Hopp</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation>Reference till</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation>Reference från</translation>
+        <translation>Sök från</translation>
     </message>
     <message>
         <source>Cancel</source>
         <translation>Avbryt</translation>
-    </message>
-</context>
-<context>
-    <name>DialogDumpProcess</name>
-    <message>
-        <source>Dump</source>
-        <translation>Dumpa</translation>
     </message>
 </context>
 <context>
@@ -1072,72 +1077,6 @@
     </message>
 </context>
 <context>
-    <name>DialogMultiDisasmSignature</name>
-    <message>
-        <source>Signature</source>
-        <translation>Signatur</translation>
-    </message>
-    <message>
-        <source>Spaces</source>
-        <translation>Mellanrum</translation>
-    </message>
-    <message>
-        <source>Upper</source>
-        <translation>Större</translation>
-    </message>
-    <message>
-        <source>Wildcard</source>
-        <translation>Jokertecken</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Skanna</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>Kopiera</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Relative virtual address</source>
-        <translation>Relativ virtual address</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Address</translation>
-    </message>
-    <message>
-        <source>Bytes</source>
-        <translation>Bytes</translation>
-    </message>
-    <message>
-        <source>Opcode</source>
-        <translation>Opkod</translation>
-    </message>
-</context>
-<context>
-    <name>DialogMultiSearchProcess</name>
-    <message>
-        <source>Search strings</source>
-        <translation>Sök strängar</translation>
-    </message>
-    <message>
-        <source>Search signatures</source>
-        <translation>Sök signaturer</translation>
-    </message>
-    <message>
-        <source>Search values</source>
-        <translation>Sök värden</translation>
-    </message>
-    <message>
-        <source>Create view model</source>
-        <translation>Skapa vy-modell</translation>
-    </message>
-</context>
-<context>
     <name>DialogNFDScan</name>
     <message>
         <source>Scan</source>
@@ -1190,17 +1129,6 @@
         <source>msec</source>
         <translation>msec</translation>
     </message>
-    <message>
-        <source>Text documents</source>
-        <translation>Text dokument</translation>
-    </message>
-    <message>
-        <source>Save result</source>
-        <translation>Spara resultat</translation>
-    </message>
-</context>
-<context>
-    <name>DialogNFDScanProcess</name>
     <message>
         <source>Text documents</source>
         <translation>Text dokument</translation>
@@ -1358,17 +1286,6 @@
     </message>
 </context>
 <context>
-    <name>DialogSearchProcess</name>
-    <message>
-        <source>Search</source>
-        <translation>Söka</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Avbryt</translation>
-    </message>
-</context>
-<context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
@@ -1484,8 +1401,76 @@
         <translation>Image</translation>
     </message>
     <message>
+        <source>Image information</source>
+        <translation>Uppdatera information</translation>
+    </message>
+    <message>
         <source>Close</source>
         <translation>Stäng</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Fel</translation>
+    </message>
+    <message>
+        <source>Image file does not exist: %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to load image: %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom In</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Actual Size</source>
+        <translation>Virtuell storklek</translation>
+    </message>
+    <message>
+        <source>Ctrl+0</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fit to Window</source>
+        <translation>MainWindow</translation>
+    </message>
+    <message>
+        <source>F</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiera</translation>
+    </message>
+    <message>
+        <source>Save As...</source>
+        <translation>Spara som</translation>
+    </message>
+    <message>
+        <source>Save Image</source>
+        <translation>Spara som</translation>
+    </message>
+    <message>
+        <source>Images (*.png *.jpg *.jpeg *.bmp *.gif)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to save image to %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No image loaded</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size: %1 x %2 | Format: %3 | Zoom: %4%</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1703,45 +1688,6 @@
     </message>
 </context>
 <context>
-    <name>DialogXInfoDBTransferProcess</name>
-    <message>
-        <source>Analyze</source>
-        <translation>Analysera</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>Ta-isär</translation>
-    </message>
-    <message>
-        <source>Symbols</source>
-        <translation>Symboler</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>Rensa</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>Ta bort</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation>Exportera</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Importera</translation>
-    </message>
-    <message>
-        <source>Scan for IAT</source>
-        <translation>Skanna för Importadresstabell</translation>
-    </message>
-    <message>
-        <source>Get IAT</source>
-        <translation>Ta reda på Importadresstabell</translation>
-    </message>
-</context>
-<context>
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
@@ -1750,14 +1696,6 @@
     <message>
         <source>Close</source>
         <translation>Stäng</translation>
-    </message>
-    <message>
-        <source>Functions</source>
-        <translation>Funktioner</translation>
-    </message>
-    <message>
-        <source>References</source>
-        <translation>Referenser</translation>
     </message>
 </context>
 <context>
@@ -2621,36 +2559,16 @@
 <context>
     <name>MultiSearch</name>
     <message>
-        <source>Number</source>
-        <translation>Nummer</translation>
+        <source>Search strings</source>
+        <translation>Sök strängar</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Plats</translation>
+        <source>Search signatures</source>
+        <translation>Sök signaturer</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Address</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Storlek</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Typ</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>Sträng</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation>Värde</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>Namn</translation>
+        <source>Search values</source>
+        <translation>Sök värden</translation>
     </message>
 </context>
 <context>
@@ -2758,6 +2676,10 @@
         <translation>Alla typer</translation>
     </message>
     <message>
+        <source>Format result</source>
+        <translation>Spara resultat</translation>
+    </message>
+    <message>
         <source>Highlight</source>
         <translation>Markera</translation>
     </message>
@@ -2790,11 +2712,23 @@
     </message>
     <message>
         <source>Heuristics</source>
-        <translation>Heuristisk</translation>
+        <translation></translation>
     </message>
     <message>
-        <source>Result</source>
-        <translation>Resultat</translation>
+        <source>Text files</source>
+        <translation>Text filer</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>Alla filer</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Fel</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>Kunde inte spara filen</translation>
     </message>
     <message>
         <source>Name</source>
@@ -3346,8 +3280,364 @@
         <translation>Storlek</translation>
     </message>
     <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Signatur</translation>
+    </message>
+    <message>
+        <source>Chunk</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Box</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>Visualization</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>Ta-isär</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Hash</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Strängar</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Signaturer</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation>Regioner</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Minnesmapp</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>Symboler</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropi</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>Extraherare</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Söka</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>Fil</translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation>Resurs</translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation>Region</translation>
+    </message>
+    <message>
+        <source>Debug data</source>
+        <translation>Avlusa data</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Section</source>
+        <translation>Sektion</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation>Segment</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>Sid-o-fot</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>Objekt</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>Tabell</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>Process</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>Arkivera</translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation>Ljud</translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation>Dokument</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>Image</translation>
+    </message>
+    <message>
+        <source>Plain Text</source>
+        <translation>Plain Text</translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation>Text</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>Video</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
+        <source>Encrypted</source>
+        <translation>Krypterare</translation>
+    </message>
+    <message>
         <source>Cannot open file</source>
         <translation>Kunde inte öppna fil</translation>
+    </message>
+    <message>
+        <source>Architecture</source>
+        <translation>Arkitektur</translation>
+    </message>
+    <message>
+        <source>Raw</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>Format</translation>
+    </message>
+    <message>
+        <source>Heuristic</source>
+        <translation>Heuristisk</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Startnings punkt</translation>
+    </message>
+    <message>
+        <source>Section name</source>
+        <translation>Sektions namn</translation>
+    </message>
+    <message>
+        <source>Import hash</source>
+        <translation>Importera hash</translation>
+    </message>
+    <message>
+        <source>Code section</source>
+        <translation>Kod sektion</translation>
+    </message>
+    <message>
+        <source>Entry point section</source>
+        <translation>Sektion av startnings punkt</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>Resurser</translation>
+    </message>
+    <message>
+        <source>Obfuscator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation>Verktyg</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>Certifikat</translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation>Kompilator</translation>
+    </message>
+    <message>
+        <source>Compressor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Converter</source>
+        <translation>Konverterare</translation>
+    </message>
+    <message>
+        <source>Crypter</source>
+        <translation>Krypterare</translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
+        <translation>Krypterare</translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>Databas</translation>
+    </message>
+    <message>
+        <source>Protection</source>
+        <translation>Skydd</translation>
+    </message>
+    <message>
+        <source>Extender</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Generic</source>
+        <translation>Generisk</translation>
+    </message>
+    <message>
+        <source>Installer</source>
+        <translation>Installerare</translation>
+    </message>
+    <message>
+        <source>Installer data</source>
+        <translation>Installerarens data</translation>
+    </message>
+    <message>
+        <source>Joiner</source>
+        <translation>Tilläggare</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Språk</translation>
+    </message>
+    <message>
+        <source>Library</source>
+        <translation>Bibliotek</translation>
+    </message>
+    <message>
+        <source>Linker</source>
+        <translation>Linkare</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Operation system</source>
+        <translation>Operativsystem</translation>
+    </message>
+    <message>
+        <source>Packer</source>
+        <translation>In-packare</translation>
+    </message>
+    <message>
+        <source>Platform</source>
+        <translation>Platform</translation>
+    </message>
+    <message>
+        <source>Player</source>
+        <translation>Spelare</translation>
+    </message>
+    <message>
+        <source>Protector</source>
+        <translation>Skyddare</translation>
+    </message>
+    <message>
+        <source>Protector data</source>
+        <translation>Skyddningsdata</translation>
+    </message>
+    <message>
+        <source>data</source>
+        <translation>data</translation>
+    </message>
+    <message>
+        <source>Sign tool</source>
+        <translation>Signerings-verktyg</translation>
+    </message>
+    <message>
+        <source>Source code</source>
+        <translation>Källkod</translation>
+    </message>
+    <message>
+        <source>Stub</source>
+        <translation>Stub</translation>
+    </message>
+    <message>
+        <source>Virtual machine</source>
+        <translation>Virtuell maskin</translation>
+    </message>
+    <message>
+        <source>Virus</source>
+        <translation>Virus</translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation>Trojansk-Häst</translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation>Malware</translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation>Packet</translation>
+    </message>
+    <message>
+        <source>Licensing</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3413,6 +3703,10 @@
         <translation>Söka</translation>
     </message>
     <message>
+        <source>Patch</source>
+        <translation>Patch</translation>
+    </message>
+    <message>
         <source>File</source>
         <translation>Fil</translation>
     </message>
@@ -3435,34 +3729,6 @@
     <message>
         <source>Signatures</source>
         <translation>Signaturer</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>Kopiera</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation>Föj inuti</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>Namn</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>Signatur</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Address</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>Plats</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>Hex</translation>
     </message>
 </context>
 <context>
@@ -3501,7 +3767,7 @@
     </message>
     <message>
         <source>Min length</source>
-        <translation>Längd</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Result</source>
@@ -3510,26 +3776,6 @@
     <message>
         <source>Strings</source>
         <translation>Strängar</translation>
-    </message>
-    <message>
-        <source>Follow in</source>
-        <translation>Föj inuti</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>Ändra</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>Hex</translation>
-    </message>
-    <message>
-        <source>Demangle</source>
-        <translation>Avmanglera</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>Sträng</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3572,15 +3818,15 @@
     </message>
     <message>
         <source>Search string</source>
-        <translation>Sök strängar</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Search signature</source>
-        <translation>Sök signaturer</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Search value</source>
-        <translation>Sök värden</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Result</source>
@@ -3589,61 +3835,6 @@
     <message>
         <source>Values</source>
         <translation>Värden</translation>
-    </message>
-</context>
-<context>
-    <name>SpecAbstract</name>
-    <message>
-        <source>Unknown</source>
-        <translation>Okänd</translation>
-    </message>
-    <message>
-        <source>Header</source>
-        <translation>Header</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>Över-lager</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>Avlusa data</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Startnings punkt</translation>
-    </message>
-    <message>
-        <source>Section name</source>
-        <translation>Sektions namn</translation>
-    </message>
-    <message>
-        <source>Import hash</source>
-        <translation>Importera hash</translation>
-    </message>
-    <message>
-        <source>Code section</source>
-        <translation>Kod sektion</translation>
-    </message>
-    <message>
-        <source>Entry point section</source>
-        <translation>Sektion av startnings punkt</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>Sträng</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>Arkivera</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>Resurser</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Typ</translation>
     </message>
 </context>
 <context>
@@ -3729,12 +3920,16 @@
         <translation>Tack</translation>
     </message>
     <message>
-        <source>Check updates</source>
+        <source>Check for updates</source>
         <translation>Kontrollera Uppdateringar</translation>
     </message>
     <message>
         <source>Libraries</source>
         <translation>Bibliotek</translation>
+    </message>
+    <message>
+        <source>Social Media</source>
+        <translation></translation>
     </message>
     <message>
         <source>Update information</source>
@@ -3782,6 +3977,14 @@
         <source>Object</source>
         <translation>Objekt</translation>
     </message>
+    <message>
+        <source>Table</source>
+        <translation>Tabell</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
 </context>
 <context>
     <name>XArchive</name>
@@ -3796,6 +3999,21 @@
     <message>
         <source>extender</source>
         <translation>förlängare</translation>
+    </message>
+</context>
+<context>
+    <name>XBMP</name>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Bitmap Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -3829,54 +4047,6 @@
         <translation>256-bit</translation>
     </message>
     <message>
-        <source>Data</source>
-        <translation>Data</translation>
-    </message>
-    <message>
-        <source>Region</source>
-        <translation>Region</translation>
-    </message>
-    <message>
-        <source>Process</source>
-        <translation>Process</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>Arkivera</translation>
-    </message>
-    <message>
-        <source>Audio</source>
-        <translation>Ljud</translation>
-    </message>
-    <message>
-        <source>Document</source>
-        <translation>Dokument</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>Image</translation>
-    </message>
-    <message>
-        <source>Plain Text</source>
-        <translation>Plain Text</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>Signatur</translation>
-    </message>
-    <message>
-        <source>Text</source>
-        <translation>Text</translation>
-    </message>
-    <message>
-        <source>Video</source>
-        <translation>Video</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>Signaturer</translation>
-    </message>
-    <message>
         <source>Read error</source>
         <translation>Läs-fel</translation>
     </message>
@@ -3898,10 +4068,18 @@
     </message>
     <message>
         <source>Objects</source>
-        <translation>Objekt</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Maps</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Streams</source>
         <translation></translation>
     </message>
     <message>
@@ -3919,6 +4097,26 @@
     <message>
         <source>false</source>
         <translation>falskt</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Fel</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
     <message>
         <source>Default</source>
@@ -3965,24 +4163,8 @@
         <translation>TB</translation>
     </message>
     <message>
-        <source>Header</source>
-        <translation>Header</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>Över-lager</translation>
-    </message>
-    <message>
-        <source>Archive record</source>
-        <translation>Arkiverings rekord</translation>
-    </message>
-    <message>
-        <source>Resource</source>
-        <translation>Resurs</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>Avlusa data</translation>
+        <source>Total</source>
+        <translation>Sammanlagt</translation>
     </message>
 </context>
 <context>
@@ -3991,12 +4173,28 @@
         <source>Unknown</source>
         <translation>Okänd</translation>
     </message>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
 </context>
 <context>
-    <name>XCapstone</name>
+    <name>XCab</name>
     <message>
-        <source>Invalid opcode</source>
-        <translation>Ogiltig opkod</translation>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -4014,7 +4212,7 @@
     </message>
     <message>
         <source>Main module</source>
-        <translation>Moduler</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -4033,19 +4231,27 @@
     </message>
     <message>
         <source>Payload</source>
-        <translation>Ladda om</translation>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Segment %1</source>
+        <translation>Segment</translation>
     </message>
     <message>
         <source>Data</source>
         <translation>Data</translation>
     </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
 </context>
 <context>
     <name>XDataConvertor</name>
-    <message>
-        <source>Read error</source>
-        <translation>Läs-fel</translation>
-    </message>
     <message>
         <source>Write error</source>
         <translation>Skriv-fel</translation>
@@ -4119,6 +4325,14 @@
 <context>
     <name>XDeviceTableEditView</name>
     <message>
+        <source>Save dump</source>
+        <translation>Spara dump</translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation>Rå data</translation>
+    </message>
+    <message>
         <source>Open file</source>
         <translation>Öppna fil</translation>
     </message>
@@ -4130,21 +4344,13 @@
         <source>Cannot resize</source>
         <translation>Kunde inte ändra storleken</translation>
     </message>
-</context>
-<context>
-    <name>XDeviceTableView</name>
-    <message>
-        <source>Save dump</source>
-        <translation>Spara dump</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>Rå data</translation>
-    </message>
     <message>
         <source>Dump</source>
         <translation>Dumpa</translation>
     </message>
+</context>
+<context>
+    <name>XDeviceTableView</name>
     <message>
         <source>Nothing found</source>
         <translation>Ingenting hittat</translation>
@@ -4185,7 +4391,7 @@
     </message>
     <message>
         <source>Label</source>
-        <translation>Etikett</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -4217,46 +4423,6 @@
     <message>
         <source>Offset</source>
         <translation>Plats</translation>
-    </message>
-    <message>
-        <source>Analyze</source>
-        <translation>Analysera</translation>
-    </message>
-    <message>
-        <source>Bookmarks</source>
-        <translation>Bokmärken</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>Alla</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>Ta-isär</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>Ta bort</translation>
-    </message>
-    <message>
-        <source>Symbols</source>
-        <translation>Symboler</translation>
-    </message>
-    <message>
-        <source>Functions</source>
-        <translation>Funktioner</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>Rensa</translation>
-    </message>
-    <message>
-        <source>New</source>
-        <translation>Ny</translation>
-    </message>
-    <message>
-        <source>List</source>
-        <translation>Lista</translation>
     </message>
     <message>
         <source>Relative address</source>
@@ -4350,7 +4516,7 @@
     </message>
     <message>
         <source>Labels</source>
-        <translation>Etiketter</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -4394,7 +4560,7 @@
     </message>
     <message>
         <source>To data</source>
-        <translation>Till data</translation>
+        <translation>data</translation>
     </message>
     <message>
         <source>Raw data</source>
@@ -4488,10 +4654,6 @@
 </context>
 <context>
     <name>XELF</name>
-    <message>
-        <source>Section</source>
-        <translation>Sektion</translation>
-    </message>
     <message>
         <source>Overlay</source>
         <translation>Över-lager</translation>
@@ -4593,6 +4755,13 @@
     </message>
 </context>
 <context>
+    <name>XExtractor</name>
+    <message>
+        <source>Mode is not available for this file type</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>XExtractorWidget</name>
     <message>
         <source>Extract</source>
@@ -4611,12 +4780,12 @@
         <translation>Skanna</translation>
     </message>
     <message>
-        <source>Deep scan</source>
-        <translation>Djup skanning</translation>
+        <source>All</source>
+        <translation>Alla</translation>
     </message>
     <message>
-        <source>Heuristic scan</source>
-        <translation>Heuristisk skanning</translation>
+        <source>Deep scan</source>
+        <translation>Djup skanning</translation>
     </message>
     <message>
         <source>Type</source>
@@ -4633,14 +4802,6 @@
     <message>
         <source>Size</source>
         <translation>Storlek</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>Plats</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Address</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -4699,6 +4860,72 @@
     </message>
 </context>
 <context>
+    <name>XFormats</name>
+    <message>
+        <source>Cannot unpack</source>
+        <translation>inte packad</translation>
+    </message>
+    <message>
+        <source>Invalid CRC</source>
+        <translation>Ogiltig</translation>
+    </message>
+    <message>
+        <source>Cannot decompress</source>
+        <translation>Kunde inte öppna session</translation>
+    </message>
+    <message>
+        <source>Cannot create</source>
+        <translation>Kunde inte ändra storleken</translation>
+    </message>
+</context>
+<context>
+    <name>XGif</name>
+    <message>
+        <source>Signature</source>
+        <translation>Signatur</translation>
+    </message>
+    <message>
+        <source>Logical Screen Descriptor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Global Color Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trailer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>Image</translation>
+    </message>
+    <message>
+        <source>Graphic Control Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Application Extension</source>
+        <translation>Applikation</translation>
+    </message>
+    <message>
+        <source>Plain Text Extension</source>
+        <translation>Plain Text</translation>
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation>Version</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
+</context>
+<context>
     <name>XGzip</name>
     <message>
         <source>Header</source>
@@ -4707,6 +4934,18 @@
     <message>
         <source>Footer</source>
         <translation>Sid-o-fot</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
     </message>
 </context>
 <context>
@@ -4788,18 +5027,6 @@
         <source>Offset</source>
         <translation>Plats</translation>
     </message>
-    <message>
-        <source>Location</source>
-        <translation>Plats</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation>Module</translation>
-    </message>
-    <message>
-        <source>Width</source>
-        <translation>Bredd</translation>
-    </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
@@ -4815,8 +5042,8 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>Data inspector</source>
-        <translation>Data-inspektör</translation>
+        <source>Inspector</source>
+        <translation></translation>
     </message>
     <message>
         <source>Strings</source>
@@ -4827,16 +5054,12 @@
         <translation>Enbart-Läs</translation>
     </message>
     <message>
-        <source>Hex</source>
-        <translation>Hex</translation>
-    </message>
-    <message>
         <source>Type</source>
         <translation>Typ</translation>
     </message>
     <message>
-        <source>Mode</source>
-        <translation>Module</translation>
+        <source>Base</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -4844,6 +5067,18 @@
     <message>
         <source>Header</source>
         <translation>Header</translation>
+    </message>
+    <message>
+        <source>Entries</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Icon</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -4915,10 +5150,6 @@
         <translation>Exportera</translation>
     </message>
     <message>
-        <source>Clear</source>
-        <translation>Rensa</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>Spara</translation>
     </message>
@@ -4933,10 +5164,6 @@
     <message>
         <source>Open file</source>
         <translation>Öppna fil</translation>
-    </message>
-    <message>
-        <source>Are you sure?</source>
-        <translation>Är du helt säker?</translation>
     </message>
 </context>
 <context>
@@ -4960,28 +5187,28 @@
         <source>Data</source>
         <translation>Data</translation>
     </message>
-</context>
-<context>
-    <name>XLE</name>
     <message>
-        <source>Header</source>
-        <translation>Header</translation>
-    </message>
-    <message>
-        <source>Map</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Object</source>
-        <translation>Objekt</translation>
+        <source>Signature</source>
+        <translation>Signatur</translation>
     </message>
     <message>
         <source>Overlay</source>
         <translation>Över-lager</translation>
     </message>
+</context>
+<context>
+    <name>XLE</name>
     <message>
         <source>Unknown</source>
         <translation>Okänd</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>Objekt</translation>
     </message>
 </context>
 <context>
@@ -4989,6 +5216,14 @@
     <message>
         <source>Header</source>
         <translation>Header</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -5032,24 +5267,12 @@
 <context>
     <name>XMACH</name>
     <message>
-        <source>Segment</source>
-        <translation>Segment</translation>
-    </message>
-    <message>
-        <source>Section</source>
-        <translation>Sektion</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>Okänd</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
-    <message>
-        <source>Unknown</source>
-        <translation>Okänd</translation>
-    </message>
     <message>
         <source>Header</source>
         <translation>Header</translation>
@@ -5059,8 +5282,12 @@
         <translation>Universal</translation>
     </message>
     <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
+    </message>
+    <message>
         <source>Bundle</source>
-        <translation>Handles</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5076,12 +5303,35 @@
         <source>Header</source>
         <translation>Header</translation>
     </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
+</context>
+<context>
+    <name>XMP4</name>
+    <message>
+        <source>Boxes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
         <translation>Header</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>Image</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5095,16 +5345,20 @@
 <context>
     <name>XMemoryMapWidget</name>
     <message>
-        <source>Save</source>
-        <translation>Spara</translation>
+        <source>Show all</source>
+        <translation>Visa allt</translation>
     </message>
     <message>
         <source>Dump all</source>
         <translation>Dumpa alltihop</translation>
     </message>
     <message>
-        <source>Show all</source>
-        <translation>Visa allt</translation>
+        <source>Save</source>
+        <translation>Spara</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>Ladda om</translation>
     </message>
     <message>
         <source>File offset</source>
@@ -5201,12 +5455,44 @@
         <source>Previous visited</source>
         <translation></translation>
     </message>
+    <message>
+        <source>Method</source>
+        <translation>Metod</translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation>vy</translation>
+    </message>
+    <message>
+        <source>Compact</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Full</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Analyzed</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
         <translation>Okänd</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation>Segment</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -5258,6 +5544,10 @@
         <translation>Kod sidor</translation>
     </message>
     <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>Rensa</translation>
     </message>
@@ -5307,6 +5597,10 @@
     <message>
         <source>Add to context menu</source>
         <translation>Lägg till, till kontext menyn</translation>
+    </message>
+    <message>
+        <source>Set system environment variable</source>
+        <translation></translation>
     </message>
     <message>
         <source>Controls</source>
@@ -5376,16 +5670,44 @@
 <context>
     <name>XPDF</name>
     <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation>Dokument</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Signatur</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>Sid-o-fot</translation>
+    </message>
+    <message>
         <source>Header</source>
         <translation>Header</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Object</source>
         <translation>Objekt</translation>
     </message>
     <message>
-        <source>Footer</source>
-        <translation>Sid-o-fot</translation>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Raw image data</source>
+        <translation>Rå data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -5407,6 +5729,10 @@
         <translation>Drivrutin</translation>
     </message>
     <message>
+        <source>Native</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Boot application</source>
         <translation>Boot applikation</translation>
     </message>
@@ -5417,22 +5743,6 @@
     <message>
         <source>Boot service driver</source>
         <translation>Boot service drivrutin</translation>
-    </message>
-    <message>
-        <source>Invalid address of entry point</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Header</source>
-        <translation>Header</translation>
-    </message>
-    <message>
-        <source>Section</source>
-        <translation>Sektion</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>Över-lager</translation>
     </message>
     <message>
         <source>Cannot open file</source>
@@ -5463,50 +5773,50 @@
         <translation>Fel</translation>
     </message>
     <message>
-        <source>Entry point</source>
-        <translation>Startnings punkt</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation>Exportera</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Importera</translation>
-    </message>
-    <message>
-        <source>Relocs</source>
-        <translation>Relocs</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>Resurser</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>Certifikat</translation>
-    </message>
-    <message>
         <source>Invalid</source>
         <translation>Ogiltig</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Section</source>
+        <translation>Sektion</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation>Resurs</translation>
     </message>
 </context>
 <context>
     <name>XPNG</name>
     <message>
-        <source>Header</source>
-        <translation>Header</translation>
+        <source>Signature</source>
+        <translation>Signatur</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
     <name>XRar</name>
     <message>
-        <source>Header</source>
-        <translation>Header</translation>
+        <source>Signature</source>
+        <translation>Signatur</translation>
     </message>
     <message>
         <source>Data</source>
         <translation>Data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -5518,170 +5828,6 @@
     <message>
         <source>Size</source>
         <translation>Storlek</translation>
-    </message>
-    <message>
-        <source>obfuscator</source>
-        <translation>obfuskator</translation>
-    </message>
-    <message>
-        <source>Tool</source>
-        <translation>Verktyg</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>Arkivera</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>Certifikat</translation>
-    </message>
-    <message>
-        <source>Compiler</source>
-        <translation>Kompilator</translation>
-    </message>
-    <message>
-        <source>Converter</source>
-        <translation>Konverterare</translation>
-    </message>
-    <message>
-        <source>Crypter</source>
-        <translation>Krypterare</translation>
-    </message>
-    <message>
-        <source>Cryptor</source>
-        <translation>Krypterare</translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation>Data</translation>
-    </message>
-    <message>
-        <source>Database</source>
-        <translation>Databas</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation>Avlusa data</translation>
-    </message>
-    <message>
-        <source>protection</source>
-        <translation>skydd</translation>
-    </message>
-    <message>
-        <source>extender</source>
-        <translation>förlängare</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>Format</translation>
-    </message>
-    <message>
-        <source>Generic</source>
-        <translation>Generisk</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>Image</translation>
-    </message>
-    <message>
-        <source>Installer</source>
-        <translation>Installerare</translation>
-    </message>
-    <message>
-        <source>Installer data</source>
-        <translation>Installerarens data</translation>
-    </message>
-    <message>
-        <source>Joiner</source>
-        <translation>Tilläggare</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>Språk</translation>
-    </message>
-    <message>
-        <source>Library</source>
-        <translation>Bibliotek</translation>
-    </message>
-    <message>
-        <source>Linker</source>
-        <translation>Linkare</translation>
-    </message>
-    <message>
-        <source>compressor</source>
-        <translation>inpackare</translation>
-    </message>
-    <message>
-        <source>Operation system</source>
-        <translation>Operativsystem</translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>Över-lager</translation>
-    </message>
-    <message>
-        <source>Packer</source>
-        <translation>In-packare</translation>
-    </message>
-    <message>
-        <source>Platform</source>
-        <translation>Platform</translation>
-    </message>
-    <message>
-        <source>Player</source>
-        <translation>Spelare</translation>
-    </message>
-    <message>
-        <source>Protection</source>
-        <translation>Skydd</translation>
-    </message>
-    <message>
-        <source>Protector</source>
-        <translation>Skyddare</translation>
-    </message>
-    <message>
-        <source>Protector data</source>
-        <translation>Skyddningsdata</translation>
-    </message>
-    <message>
-        <source>data</source>
-        <translation>data</translation>
-    </message>
-    <message>
-        <source>Sign tool</source>
-        <translation>Signerings-verktyg</translation>
-    </message>
-    <message>
-        <source>Source code</source>
-        <translation>Källkod</translation>
-    </message>
-    <message>
-        <source>Stub</source>
-        <translation>Stub</translation>
-    </message>
-    <message>
-        <source>Virtual machine</source>
-        <translation>Virtuell maskin</translation>
-    </message>
-    <message>
-        <source>Virus</source>
-        <translation>Virus</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>Trojansk-Häst</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>Malware</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>Packet</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation></translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -5713,7 +5859,7 @@
     </message>
     <message>
         <source>Extra</source>
-        <translation>Extrahera</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Custom</source>
@@ -5743,8 +5889,20 @@
         <translation>Header</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>Okänd</translation>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
+    <message>
+        <source>Invalid data</source>
+        <translation>Ogiltig font</translation>
+    </message>
+    <message>
+        <source>Unexpected end of data</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -5784,6 +5942,10 @@
     <message>
         <source>Hex</source>
         <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -5910,6 +6072,22 @@
         <translation>Hårdvaru</translation>
     </message>
     <message>
+        <source>Location</source>
+        <translation>Plats</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>Module</translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation>Bredd</translation>
+    </message>
+    <message>
+        <source>Base</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Show</source>
         <translation>Visa</translation>
     </message>
@@ -5992,10 +6170,6 @@
     <message>
         <source>Next</source>
         <translation>Nästa</translation>
-    </message>
-    <message>
-        <source>Data</source>
-        <translation>Data</translation>
     </message>
     <message>
         <source>All</source>
@@ -6138,12 +6312,12 @@
         <translation>Om</translation>
     </message>
     <message>
-        <source>Data inspector</source>
-        <translation>Data-inspektör</translation>
+        <source>Inspector</source>
+        <translation></translation>
     </message>
     <message>
-        <source>Data convertor</source>
-        <translation>Data konverterare</translation>
+        <source>Convertor</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multisearch</source>
@@ -6192,28 +6366,27 @@
         <translation>Spara</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Address</translation>
-    </message>
-    <message>
-        <source>Symbol</source>
-        <translation>Symbol</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Storlek</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>Namn</translation>
-    </message>
-    <message>
-        <source>Code</source>
-        <translation>Kod</translation>
+        <source>Reload</source>
+        <translation>Ladda om</translation>
     </message>
     <message>
         <source>Symbols</source>
         <translation>Symboler</translation>
+    </message>
+</context>
+<context>
+    <name>XTAR</name>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -6225,6 +6398,14 @@
     <message>
         <source>Table</source>
         <translation>Tabell</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -6361,7 +6542,7 @@
     </message>
     <message>
         <source>Methods</source>
-        <translation>Metod</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Method</source>
@@ -6404,6 +6585,21 @@
     </message>
 </context>
 <context>
+    <name>XZip</name>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
+    </message>
+</context>
+<context>
     <name>XZlib</name>
     <message>
         <source>Header</source>
@@ -6414,8 +6610,27 @@
         <translation>Data</translation>
     </message>
     <message>
-        <source>Footer</source>
-        <translation>Sid-o-fot</translation>
+        <source>Adler32</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>X_Ar</name>
+    <message>
+        <source>Header</source>
+        <translation>Header</translation>
+    </message>
+    <message>
+        <source>Record</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Över-lager</translation>
     </message>
 </context>
 <context>
@@ -6438,11 +6653,11 @@
     </message>
     <message>
         <source>Matches</source>
-        <translation>Matcha stor/liten bokstav</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Rule name</source>
-        <translation>filnamn</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Offset</source>
