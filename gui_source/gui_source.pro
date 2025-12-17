@@ -10,6 +10,7 @@ XCONFIG += use_pdf
 XCONFIG += use_archive
 XCONFIG += use_yara
 XCONFIG += use_die
+XCONFIG += use_xsimd
 
 macx {
     TARGET = DiE
