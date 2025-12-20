@@ -81,6 +81,7 @@ target_link_libraries(${PROJECT_NAME} lzma)
 target_link_libraries(${PROJECT_NAME} zlib)
 target_link_libraries(${PROJECT_NAME} capstone)
 target_link_libraries(${PROJECT_NAME} cppfilt)
+target_link_libraries(${PROJECT_NAME} ppmd)
 
 if(WITH_YARA)
   target_link_libraries(${PROJECT_NAME} yara)

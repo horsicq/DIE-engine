@@ -58,6 +58,7 @@ target_link_libraries(${PROJECT_NAME} bzip2)
 target_link_libraries(${PROJECT_NAME} lzma)
 target_link_libraries(${PROJECT_NAME} zlib)
 target_link_libraries(${PROJECT_NAME} capstone_x86)
+target_link_libraries(${PROJECT_NAME} ppmd)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Core)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
