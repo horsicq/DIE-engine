@@ -26,6 +26,16 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 {
     ui->setupUi(this);
 
+#ifdef USE_XSIMD
+    xsimd_init();
+#endif
+
+#ifdef USE_YARA
+    XYara::initialize();
+#endif
+
+    XOptions::registerCodecs();
+
     XOptions::adjustToolButton(ui->toolButtonAbout, XOptions::ICONTYPE_INFO);
     XOptions::adjustToolButton(ui->toolButtonOptions, XOptions::ICONTYPE_OPTION);
     XOptions::adjustToolButton(ui->toolButtonDemangle, XOptions::ICONTYPE_DEMANGLE);
@@ -43,11 +53,6 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     ui->toolButtonRecentFiles->setToolTip(tr("Recent files"));
     ui->lineEditFileName->setToolTip(tr("File name"));
     ui->checkBoxAdvanced->setToolTip(tr("Advanced"));
-
-#ifdef USE_YARA
-    XYara::initialize();
-#endif
-    XOptions::registerCodecs();
 
     g_bFullScreen = false;
 
@@ -164,6 +169,9 @@ GuiMainWindow::~GuiMainWindow()
     delete ui;
 #ifdef USE_YARA
     XYara::finalize();
+#endif
+#ifdef USE_XSIMD
+    xsimd_cleanup();
 #endif
 }
 
