@@ -114,7 +114,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     }
 #else
     yaraPath = "$data/yara_rules";
-#endif 
+#endif
     g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, yaraPath);
 #endif
     g_xOptions.load();
