@@ -69,7 +69,7 @@ include(../build.pri)
 
 !contains(XCONFIG, xstyles) {
     XCONFIG += xstyles
-    include(../../_mylibs/XStyles/xstyles.pri)
+    include(../XStyles/xstyles.pri)
 }
 
 RESOURCES += \

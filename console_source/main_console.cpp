@@ -192,6 +192,9 @@ int main(int argc, char *argv[])
     QCommandLineOption clProfiling(QStringList() << "l"
                                                  << "profiling",
                                    "Profiling signatures.");
+    QCommandLineOption clMessages(QStringList() << "g"
+                                                 << "messages",
+                                   "Show messages.");
     QCommandLineOption clHideUnknown(QStringList() << "U"
                                                    << "hideunknown",
                                      "Hide unknown.");
@@ -245,6 +248,7 @@ int main(int argc, char *argv[])
     parser.addOption(clAllTypesScan);
     parser.addOption(clFormatResult);
     parser.addOption(clProfiling);
+    parser.addOption(clMessages);
     parser.addOption(clHideUnknown);
     parser.addOption(clEntropy);
     parser.addOption(clInfo);
@@ -316,9 +320,11 @@ int main(int argc, char *argv[])
     ConsoleOutput consoleOutput;
     DiE_Script die_script;
 
-    QObject::connect(&die_script, SIGNAL(errorMessage(QString)), &consoleOutput, SLOT(errorMessage(QString)));
-    QObject::connect(&die_script, SIGNAL(warningMessage(QString)), &consoleOutput, SLOT(warningMessage(QString)));
-    QObject::connect(&die_script, SIGNAL(infoMessage(QString)), &consoleOutput, SLOT(infoMessage(QString)));
+    if (parser.isSet(clMessages)) {
+        QObject::connect(&die_script, SIGNAL(errorMessage(QString)), &consoleOutput, SLOT(errorMessage(QString)));
+        QObject::connect(&die_script, SIGNAL(warningMessage(QString)), &consoleOutput, SLOT(warningMessage(QString)));
+        QObject::connect(&die_script, SIGNAL(infoMessage(QString)), &consoleOutput, SLOT(infoMessage(QString)));
+    }
 
     bool bIsDbUsed = false;
     bool bDbLoaded = false;
