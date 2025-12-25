@@ -91,7 +91,6 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 #ifdef USE_XSIMD
 #ifdef Q_PROCESSOR_X86
     g_xOptions.addID(XOptions::ID_FEATURE_SSE2, true);
-    g_xOptions.addID(XOptions::ID_FEATURE_AVX, true);
     g_xOptions.addID(XOptions::ID_FEATURE_AVX2, true);
 #endif
 #endif
