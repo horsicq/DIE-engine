@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
     QCommandLineOption clProfiling(QStringList() << "l"
                                                  << "profiling",
                                    "Profiling signatures.");
-    QCommandLineOption clMessages(QStringList() << "g"
+    QCommandLineOption clMessages(QStringList() << "M"
                                                  << "messages",
                                    "Show messages.");
     QCommandLineOption clHideUnknown(QStringList() << "U"
