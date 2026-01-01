@@ -52,12 +52,12 @@ protected:
 
 private:
     Ui::DialogOptions *ui;
-    DIEOptionsWidget *g_pDIEOptionsWidget;
-    SearchSignaturesOptionsWidget *g_pSearchSignaturesOptionsWidget;
-    XHexViewOptionsWidget *g_pXHexViewOptionsWidget;
-    XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;
-    XOnlineToolsOptionsWidget *g_pXOnlineToolsOptionsWidget;
-    XInfoDBOptionsWidget *g_pXInfoDBOptionsWidget;
+    DIEOptionsWidget *m_pDIEOptionsWidget;
+    SearchSignaturesOptionsWidget *m_pSearchSignaturesOptionsWidget;
+    XHexViewOptionsWidget *m_pXHexViewOptionsWidget;
+    XDisasmViewOptionsWidget *m_pXDisasmViewOptionsWidget;
+    XOnlineToolsOptionsWidget *m_pXOnlineToolsOptionsWidget;
+    XInfoDBOptionsWidget *m_pXInfoDBOptionsWidget;
 };
 
 #endif  // DIALOGOPTIONS_H
