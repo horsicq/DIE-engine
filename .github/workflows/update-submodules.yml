@@ -1,0 +1,39 @@
+name: Update Submodules
+
+on: 
+  workflow_dispatch:
+
+jobs: 
+  update-submodules: 
+    runs-on:  ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          token: ${{ secrets.RELEASE_TOKEN }}
+
+      - name: Update submodules to latest
+        run: |
+          git submodule update --remote --merge
+
+      - name: Check for changes
+        id:  check_changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if:  steps. check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Update submodules to latest versions"
+          git push
