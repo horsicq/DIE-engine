@@ -30,6 +30,9 @@
 #include "dialogshortcuts.h"
 #include "dialogselectstyle.h"
 #include "xoptions.h"
+#if defined(Q_OS_WIN) && defined(X_BUILD_INSTALL)
+#include "xupdate.h"
+#endif
 #ifdef USE_YARA
 #include "xyara.h"
 #endif
@@ -75,6 +78,10 @@ private slots:
     void adjustFile();
     void setAdvanced(bool bState);
     void errorMessageSlot(const QString &sText);
+#if defined(Q_OS_WIN) && defined(X_BUILD_INSTALL)
+    void checkMsixResources();
+    void launchResourceDownloader(const QString &targetPath);
+#endif
 
 public slots:
     void _process(const QString &sName);

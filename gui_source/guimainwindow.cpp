@@ -117,7 +117,9 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, yaraPath);
 #endif
     g_xOptions.load();
-
+#if defined(Q_OS_WIN) && defined(X_BUILD_INSTALL)
+    checkMsixResources();
+#endif
     g_xShortcuts.setName(X_SHORTCUTSFILE);
     g_xShortcuts.setNative(g_xOptions.isNative(), g_xOptions.getApplicationDataPath());
 
@@ -358,3 +360,47 @@ void GuiMainWindow::fullScreenSlot()
         showNormal();
     }
 }
+
+#if defined(Q_OS_WIN) && defined(X_BUILD_INSTALL)
+void GuiMainWindow::checkMsixResources()
+{
+    if (g_xOptions.isMsixPackage()) {
+        QString localStatePath = g_xOptions.getApplicationDataPath();
+        // Check for db directory
+        QString dbPath = localStatePath + QDir::separator() + "db";
+        bool dbExists = QDir(dbPath).exists();
+        // Check for yara_rules directory
+        QString yaraPath = localStatePath + QDir::separator() + "yara_rules";
+        bool yaraExists = QDir(yaraPath).exists();
+        if (!dbExists || !yaraExists) {
+            // Resources missing - launch the downloader
+            QString missingResources;
+            if (!dbExists) missingResources += "Database (db)\n";
+            if (!yaraExists) missingResources += "YARA Rules (yara_rules)\n";
+            QMessageBox::StandardButton reply = QMessageBox::question(
+                this,
+                tr("Missing Resources"),
+                tr("The following resources are missing from the MSIX package:\n\n") +
+                    missingResources +
+                    tr("\nPath: ") + localStatePath +
+                    tr("\n\nWould you like to download them now?"),
+                QMessageBox::Yes | QMessageBox::No
+                );
+            if (reply == QMessageBox::Yes) {
+                launchResourceDownloader(localStatePath);
+            } else {
+            }
+        } else {
+            // Both exist - optionally verify they're not empty
+        }
+    }
+}
+
+void GuiMainWindow::launchResourceDownloader(const QString &targetPath)
+{
+    XUpdate *updateDialog = new XUpdate(this, targetPath);
+    updateDialog->setWindowModality(Qt::ApplicationModal);
+    updateDialog->setAttribute(Qt::WA_DeleteOnClose);
+    updateDialog->show();
+}
+#endif // Q_OS_WIN && X_BUILD_INSTALL
