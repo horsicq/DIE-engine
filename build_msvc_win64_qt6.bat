@@ -11,7 +11,7 @@ if /I "%FLAG%"=="native" (
 
 set VS_VERSIONS=18 2022 2019 2017
 set VS_EDITIONS=Community Professional Enterprise
-set QT_BASE_PATH=C:\Qt
+set QT_BASE_PATH="C:\Qt"
 
 set VSVARS_PATH=
 
@@ -53,17 +53,6 @@ IF NOT DEFINED QMAKE_PATH (
     echo "Qt 6.x version not found. Please ensure it is installed."
     goto exit
 )
-
-set JOM_PATH=
-for /R "%QT_BASE_PATH%\Tools\QtCreator\bin\jom" %%F in (jom.exe) do (
-    set JOM_PATH="%%F"
-    goto :found_jom
-)
-
-:found_jom
-
-for /f %%a in ('powershell -command "(Get-CimInstance Win32_Processor).NumberOfLogicalProcessors"') do set BUILD_JOBS=%%a
-if "%BUILD_JOBS%"=="" set BUILD_JOBS=4
 
 set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"

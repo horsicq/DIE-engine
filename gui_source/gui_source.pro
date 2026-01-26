@@ -1,8 +1,8 @@
 QT       += core gui
-
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
+
 TARGET = die
 
 XCONFIG += use_dex
@@ -40,6 +40,7 @@ FORMS += \
     guimainwindow.ui
 
 DEFINES  += NOMINMAX
+
 include(../build.pri)
 
 !contains(XCONFIG, xmimewidget) {
@@ -84,6 +85,15 @@ win32 {
     QMAKE_TARGET_PRODUCT = Detect It Easy
     QMAKE_TARGET_DESCRIPTION = Detect It Easy (DiE)
     QMAKE_TARGET_COPYRIGHT = horsicq@gmail.com
+
+    contains(DEFINES, X_BUILD_INSTALL) {
+        LIBS += -lwinhttp
+
+        !contains(XCONFIG, xupdate) {
+            XCONFIG += xupdate
+            include(../XUpdate/xupdate.pri)
+        }
+    }
 }
 
 macx {
