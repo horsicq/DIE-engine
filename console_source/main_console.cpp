@@ -31,6 +31,64 @@
 #include "xoptions.h"
 #include "scanitemmodel.h"
 
+void progressCallback(void *pUserData, XBinary::PDSTRUCT *pPdStruct)
+{
+    Q_UNUSED(pUserData)
+
+    if (pPdStruct) {
+        printf("\r");
+        
+        // Display percentage for each valid progress level
+        bool bFirst = true;
+        for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
+            if (pPdStruct->_pdRecord[i].bIsValid) {
+                qint32 nPercent = 0;
+                if (pPdStruct->_pdRecord[i].nTotal > 0) {
+                    nPercent = (qint32)((pPdStruct->_pdRecord[i].nCurrent * 100) / pPdStruct->_pdRecord[i].nTotal);
+                    if (nPercent > 100) nPercent = 100;
+                }
+                printf("[%3d%%]", nPercent);
+                bFirst = false;
+            }
+        }
+        
+        if (!bFirst) {
+            printf(" : ");
+            
+            // Display status for each valid level
+            bool bFirstStatus = true;
+            for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
+                if (pPdStruct->_pdRecord[i].bIsValid) {
+                    if (!bFirstStatus) printf("|");
+                    if (!pPdStruct->_pdRecord[i].sStatus.isEmpty()) {
+                        printf("%s", pPdStruct->_pdRecord[i].sStatus.toUtf8().data());
+                    } else {
+                        printf("-");
+                    }
+                    bFirstStatus = false;
+                }
+            }
+        }
+        
+        fflush(stdout);
+        
+        // Check if all valid levels are complete
+        bool bAllComplete = true;
+        for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
+            if (pPdStruct->_pdRecord[i].bIsValid) {
+                if (pPdStruct->_pdRecord[i].nTotal > 0 && pPdStruct->_pdRecord[i].nCurrent < pPdStruct->_pdRecord[i].nTotal) {
+                    bAllComplete = false;
+                    break;
+                }
+            }
+        }
+        
+        if (bAllComplete) {
+            printf("\n");
+        }
+    }
+}
+
 XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
 {
     XOptions::CR result = XOptions::CR_SUCCESS;
@@ -110,7 +168,11 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pSc
             printf("%s", sResult.toUtf8().data());
             printf("\n");
         } else {
-            XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions);
+            XBinary::PDSTRUCT pdStruct = XBinary::createPdStruct();
+            pdStruct.pCallback = progressCallback;
+            pdStruct.pCallbackUserData = nullptr;
+
+            XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions, &pdStruct);
 
             ScanItemModel model(pScanOptions, &(scanResult.listRecords), 1);
 
@@ -168,77 +230,31 @@ int main(int argc, char *argv[])
 
     parser.addPositionalArgument("target", "The file or directory to open.");
 
-    QCommandLineOption clRecursiveScan(QStringList() << "r"
-                                                     << "recursivescan",
-                                       "Recursive scan.");
-    QCommandLineOption clDeepScan(QStringList() << "d"
-                                                << "deepscan",
-                                  "Deep scan.");
-    QCommandLineOption clHeuristicScan(QStringList() << "u"
-                                                     << "heuristicscan",
-                                       "Heuristic scan.");
-    QCommandLineOption clVerbose(QStringList() << "b"
-                                               << "verbose",
-                                 "Verbose.");
-    QCommandLineOption clAggresiveScan(QStringList() << "g"
-                                                     << "aggressivecscan",
-                                       "Aggressive scan.");
-    QCommandLineOption clAllTypesScan(QStringList() << "a"
-                                                    << "alltypes",
-                                      "Scan all types.");
-    QCommandLineOption clFormatResult(QStringList() << "f"
-                                                    << "format",
-                                      "Format result.");
-    QCommandLineOption clProfiling(QStringList() << "l"
-                                                 << "profiling",
-                                   "Profiling signatures.");
-    QCommandLineOption clMessages(QStringList() << "M"
-                                                << "messages",
-                                  "Show messages.");
-    QCommandLineOption clHideUnknown(QStringList() << "U"
-                                                   << "hideunknown",
-                                     "Hide unknown.");
-    QCommandLineOption clEntropy(QStringList() << "e"
-                                               << "entropy",
-                                 "Show entropy.");
-    QCommandLineOption clInfo(QStringList() << "i"
-                                            << "info",
-                              "Show file info.");
-    QCommandLineOption clResultAsXml(QStringList() << "x"
-                                                   << "xml",
-                                     "Result as XML.");
-    QCommandLineOption clResultAsJson(QStringList() << "j"
-                                                    << "json",
-                                      "Result as JSON.");
-    QCommandLineOption clResultAsCSV(QStringList() << "c"
-                                                   << "csv",
-                                     "Result as CSV.");
-    QCommandLineOption clResultAsTSV(QStringList() << "t"
-                                                   << "tsv",
-                                     "Result as TSV.");
-    QCommandLineOption clResultAsPlainText(QStringList() << "p"
-                                                         << "plaintext",
-                                           "Result as Plain Text.");
-    QCommandLineOption clDatabaseMain(QStringList() << "D"
-                                                    << "database",
-                                      "Set database<path>.", "path");
-    QCommandLineOption clDatabaseExtra(QStringList() << "E"
-                                                     << "extradatabase",
-                                       "Set extra database<path>.", "path");
-    QCommandLineOption clDatabaseCustom(QStringList() << "C"
-                                                      << "customdatabase",
-                                        "Set custom database<path>.", "path");
-    QCommandLineOption clShowDatabase(QStringList() << "s"
-                                                    << "showdatabase",
-                                      "Show database.");
-    QCommandLineOption clSpecial(QStringList() << "S"
-                                               << "special",
-                                 "Special file info for <method>. For example -S \"Hash\" or -S \"Hash#MD5\".", "method");
-    QCommandLineOption clShowMethods(QStringList() << "m"
-                                                   << "showmethods",
-                                     "Show all special methods for the file.");
-    QCommandLineOption clTest(QStringList() << "test", "Test signatures in <directory>.", "directory");
-    QCommandLineOption clAddTest(QStringList() << "addtest", "Add test: --addtest <filename> <detect_string> <directory>.", "filename", "");
+    QCommandLineOption clRecursiveScan = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_RECURSIVESCAN);
+    QCommandLineOption clDeepScan = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_DEEPSCAN);
+    QCommandLineOption clHeuristicScan = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_HEURISTICSCAN);
+    QCommandLineOption clVerbose = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_VERBOSE);
+    QCommandLineOption clAggresiveScan = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_AGGRESSIVESCAN);
+    QCommandLineOption clAllTypesScan = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_ALLTYPES);
+    QCommandLineOption clFormatResult = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_FORMAT);
+    QCommandLineOption clProfiling = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_PROFILING);
+    QCommandLineOption clMessages = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_MESSAGES);
+    QCommandLineOption clHideUnknown = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_HIDEUNKNOWN);
+    QCommandLineOption clEntropy = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_ENTROPY);
+    QCommandLineOption clInfo = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_INFO);
+    QCommandLineOption clResultAsXml = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_XML);
+    QCommandLineOption clResultAsJson = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_JSON);
+    QCommandLineOption clResultAsCSV = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_CSV);
+    QCommandLineOption clResultAsTSV = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_TSV);
+    QCommandLineOption clResultAsPlainText = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_PLAINTEXT);
+    QCommandLineOption clDatabaseMain = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_DATABASE);
+    QCommandLineOption clDatabaseExtra = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_EXTRADATABASE);
+    QCommandLineOption clDatabaseCustom = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_CUSTOMDATABASE);
+    QCommandLineOption clShowDatabase = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_SHOWDATABASE);
+    QCommandLineOption clSpecial = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_SPECIAL);
+    QCommandLineOption clShowMethods = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_SHOWMETHODS);
+    QCommandLineOption clTest = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_TEST);
+    QCommandLineOption clAddTest = XScanEngine::getCommandLineOption(XScanEngine::CONSOLE_OPTION_ID_ADDTEST);
 
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
