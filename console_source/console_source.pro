@@ -51,7 +51,7 @@ win32 {
     QMAKE_TARGET_COMPANY = NTInfo
     QMAKE_TARGET_PRODUCT = Detect It Easy
     QMAKE_TARGET_DESCRIPTION = Detect It Easy (DiE)
-    QMAKE_TARGET_COPYRIGHT = horsicq@gmail.com
+    QMAKE_TARGET_COPYRIGHT = Copyright (C) 2012-2026 Hors
 }
 
 DISTFILES += \
