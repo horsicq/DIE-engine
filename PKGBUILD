@@ -1,5 +1,5 @@
 pkgname=detect-it-easy
-pkgver=3.11
+pkgver=3.20
 pkgrel=1
 pkgdesc='Detect It Easy, or abbreviated "DIE" is a program for determining types of files'
 arch=('x86_64')

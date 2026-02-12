@@ -49,7 +49,7 @@ win32 {
     RC_ICONS = ../icons/lite.ico
     CONFIG -= embed_manifest_exe
     QMAKE_MANIFEST = $$PWD/windows.manifest.xml
-    VERSION = 3.11
+    VERSION = 3.20
     QMAKE_TARGET_COMPANY = NTInfo
     QMAKE_TARGET_PRODUCT = Detect It Easy
     QMAKE_TARGET_DESCRIPTION = Detect It Easy (DiE)
