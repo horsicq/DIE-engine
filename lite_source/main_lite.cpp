@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
     }
 
     QApplication app(argc, argv);
-    LiteMainWindow w;
-    w.show();
+    LiteMainWindow liteWindow;
+    liteWindow.show();
     return app.exec();
 }
