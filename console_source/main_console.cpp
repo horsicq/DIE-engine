@@ -218,6 +218,8 @@ int main(int argc, char *argv[])
 
     QCoreApplication app(argc, argv);
 
+    app.setProperty("dataPathAlt0", "/opt/detect-it-easy");
+
     XOptions::registerCodecs();
 
     QCommandLineParser parser;

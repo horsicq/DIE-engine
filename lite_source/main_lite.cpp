@@ -48,7 +48,9 @@ int main(int argc, char *argv[])
     }
 
     QApplication app(argc, argv);
-    LiteMainWindow liteWindow;
-    liteWindow.show();
+    app.setProperty("dataPathAlt0", "/opt/detect-it-easy");
+
+    LiteMainWindow w;
+    w.show();
     return app.exec();
 }

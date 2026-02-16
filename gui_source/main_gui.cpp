@@ -51,6 +51,8 @@ int main(int argc, char *argv[])
 
     XSingleApplication app(argc, argv);
 
+    app.setProperty("dataPathAlt0", "/opt/detect-it-easy");
+
 #ifdef Q_OS_LINUX
 #if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
     app.setDesktopFileName("io.github.horsicq.detect-it-easy");
