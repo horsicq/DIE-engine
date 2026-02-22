@@ -37,7 +37,7 @@ void progressCallback(void *pUserData, XBinary::PDSTRUCT *pPdStruct)
 
     if (pPdStruct) {
         printf("\r");
-        
+
         // Display percentage for each valid progress level
         bool bFirst = true;
         for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
@@ -51,10 +51,10 @@ void progressCallback(void *pUserData, XBinary::PDSTRUCT *pPdStruct)
                 bFirst = false;
             }
         }
-        
+
         if (!bFirst) {
             printf(" : ");
-            
+
             // Display status for each valid level
             bool bFirstStatus = true;
             for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
@@ -69,9 +69,9 @@ void progressCallback(void *pUserData, XBinary::PDSTRUCT *pPdStruct)
                 }
             }
         }
-        
+
         fflush(stdout);
-        
+
         // Check if all valid levels are complete
         bool bAllComplete = true;
         for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
@@ -82,7 +82,7 @@ void progressCallback(void *pUserData, XBinary::PDSTRUCT *pPdStruct)
                 }
             }
         }
-        
+
         if (bAllComplete) {
             printf("\n");
         }
@@ -169,7 +169,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pSc
             printf("\n");
         } else {
             XBinary::PDSTRUCT pdStruct = XBinary::createPdStruct();
-            //pdStruct.pCallback = progressCallback;
+            // pdStruct.pCallback = progressCallback;
             pdStruct.pCallbackUserData = nullptr;
 
             XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions, &pdStruct);
