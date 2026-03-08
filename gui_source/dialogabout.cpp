@@ -34,41 +34,41 @@ DialogAbout::DialogAbout(QWidget *pParent) : XShortcutsDialog(pParent, false), u
     _data.sInfo += QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2012-%1 Hors</span></p>").arg(QDate::currentDate().year());
     _data.sInfo += QString(
                        "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; "
-                       "color:#ff8000;\">horsicq@gmail.com</span></a></p>")
+                       "color:#ff0000;\">horsicq@gmail.com</span></a></p>")
                        .arg(tr("Bugreports"));
     _data.sInfo += QString(
                        "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; "
-                       "color:#ff8000;\">http://ntinfo.biz</span></a></p>")
+                       "color:#ff0000;\">http://ntinfo.biz</span></a></p>")
                        .arg(tr("Website"));
     _data.sInfo +=
         QString(
             "<p align=\"center\"><span style=\" font-weight:600;\">%1(Paypal): </span><a href=\"ntinfo.re@gmail.com\"><span style=\" text-decoration: underline; "
-            "color:#ff8000;\">ntinfo.re@gmail.com</span></a></p>")
+            "color:#ff0000;\">ntinfo.re@gmail.com</span></a></p>")
             .arg(tr("Donate"));
     _data.sInfo +=
         QString(
             "<p align=\"center\"><span style=\" font-weight:600;\">%1(BTC): </span><a href=\"3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo\"><span style=\" text-decoration: "
-            "underline; color:#ff8000;\">3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</span></a></p>")
+            "underline; color:#ff0000;\">3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</span></a></p>")
             .arg(tr("Donate"));
     _data.sInfo +=
         QString(
             "<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/DIE-engine\"><span style=\" text-decoration: "
-            "underline; color:#ff8000;\">https://github.com/horsicq/DIE-engine</span></a></p>")
+            "underline; color:#ff0000;\">https://github.com/horsicq/DIE-engine</span></a></p>")
             .arg(tr("Source code"));
 
     _data.sLibraries +=
         QString(
             "<p align=\"center\"><span style=\" font-weight:600;\">QT Library %1 </span><a href=\"http://qt-project.org\"><span style=\" text-decoration: "
-            "underline; color:#ff8000;\">http://qt-project.org</span></a></p>")
+            "underline; color:#ff0000;\">http://qt-project.org</span></a></p>")
             .arg(QT_VERSION_STR);
     _data.sLibraries +=
         QString(
             "<p align=\"center\"><span style=\" font-weight:600;\">QWT Library %1 </span><a href=\"http://qwt.sourceforge.net\"><span style=\" text-decoration: "
-            "underline; color:#ff8000;\">http://qwt.sourceforge.net</span></a></p>")
+            "underline; color:#ff0000;\">http://qwt.sourceforge.net</span></a></p>")
             .arg(QWT_VERSION_STR);
     _data.sLibraries += QString(
                             "<p align=\"center\"><span style=\" font-weight:600;\">Capstone %1.%2.%3 </span><a href=\"http://www.capstone-engine.org\"><span style=\" "
-                            "text-decoration: underline; color:#ff8000;\">http://www.capstone-engine.org</span></a></p>")
+                            "text-decoration: underline; color:#ff0000;\">http://www.capstone-engine.org</span></a></p>")
                             .arg(QString::number(CS_VERSION_MAJOR), QString::number(CS_VERSION_MINOR), QString::number(CS_VERSION_EXTRA));
 
     _data.sLogoPath = ":/images/about.png";
