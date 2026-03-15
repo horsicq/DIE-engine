@@ -7,9 +7,9 @@ source build_tools/linux.sh
 
 create_image_app_dir die
 
-cp -f $X_SOURCE_PATH/build/debug/die $X_SOURCE_PATH/release/appDir/usr/bin/
-#cp -f $X_SOURCE_PATH/build/debug/diec $X_SOURCE_PATH/release/appDir/usr/bin/
-#cp -f $X_SOURCE_PATH/build/debug/diel $X_SOURCE_PATH/release/appDir/usr/bin/
+cp -f $X_SOURCE_PATH/build/release/die $X_SOURCE_PATH/release/appDir/usr/bin/
+#cp -f $X_SOURCE_PATH/build/release/diec $X_SOURCE_PATH/release/appDir/usr/bin/
+#cp -f $X_SOURCE_PATH/build/release/diel $X_SOURCE_PATH/release/appDir/usr/bin/
 
 cp -f $X_SOURCE_PATH/LINUX/io.github.horsicq.detect-it-easy.desktop $X_SOURCE_PATH/release/appDir/usr/share/applications/
 cp -Rf $X_SOURCE_PATH/LINUX/hicolor/ $X_SOURCE_PATH/release/appDir/usr/share/icons/
