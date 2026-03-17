@@ -350,9 +350,9 @@ int main(int argc, char *argv[])
     if (parser.isSet(clShowDatabase)) {
         if (!bIsDbUsed) {
             die_script.initDatabase();
-            bDbLoaded = die_script.loadDatabase(sDatabaseMain, DiE_ScriptEngine::DT_MAIN, nullptr);
-            die_script.loadDatabase(sDatabaseExtra, DiE_ScriptEngine::DT_EXTRA, nullptr);
-            die_script.loadDatabase(sDatabaseCustom, DiE_ScriptEngine::DT_CUSTOM, nullptr);
+            bDbLoaded = die_script.loadDatabase(sDatabaseMain, XScanEngine::DT_MAIN, false, nullptr);
+            die_script.loadDatabase(sDatabaseExtra, XScanEngine::DT_EXTRA, false, nullptr);
+            die_script.loadDatabase(sDatabaseCustom, XScanEngine::DT_CUSTOM, false, nullptr);
             bIsDbUsed = true;
         }
 
@@ -388,9 +388,9 @@ int main(int argc, char *argv[])
     } else if (parser.isSet(clTest)) {
         if (!bIsDbUsed) {
             die_script.initDatabase();
-            bDbLoaded = die_script.loadDatabase(sDatabaseMain, DiE_ScriptEngine::DT_MAIN, nullptr);
-            die_script.loadDatabase(sDatabaseExtra, DiE_ScriptEngine::DT_EXTRA, nullptr);
-            die_script.loadDatabase(sDatabaseCustom, DiE_ScriptEngine::DT_CUSTOM, nullptr);
+            bDbLoaded = die_script.loadDatabase(sDatabaseMain, XScanEngine::DT_MAIN, false, nullptr);
+            die_script.loadDatabase(sDatabaseExtra, XScanEngine::DT_EXTRA, false, nullptr);
+            die_script.loadDatabase(sDatabaseCustom, XScanEngine::DT_CUSTOM, false, nullptr);
             bIsDbUsed = true;
         }
 
@@ -398,9 +398,9 @@ int main(int argc, char *argv[])
     } else if (parser.isSet(clAddTest)) {
         if (!bIsDbUsed) {
             die_script.initDatabase();
-            bDbLoaded = die_script.loadDatabase(sDatabaseMain, DiE_ScriptEngine::DT_MAIN, nullptr);
-            die_script.loadDatabase(sDatabaseExtra, DiE_ScriptEngine::DT_EXTRA, nullptr);
-            die_script.loadDatabase(sDatabaseCustom, DiE_ScriptEngine::DT_CUSTOM, nullptr);
+            bDbLoaded = die_script.loadDatabase(sDatabaseMain, XScanEngine::DT_MAIN, false, nullptr);
+            die_script.loadDatabase(sDatabaseExtra, XScanEngine::DT_EXTRA, false, nullptr);
+            die_script.loadDatabase(sDatabaseCustom, XScanEngine::DT_CUSTOM, false, nullptr);
             bIsDbUsed = true;
         }
 
@@ -418,9 +418,9 @@ int main(int argc, char *argv[])
     } else if (listArgs.count()) {
         if (!bIsDbUsed) {
             die_script.initDatabase();
-            bDbLoaded = die_script.loadDatabase(sDatabaseMain, DiE_ScriptEngine::DT_MAIN, nullptr);
-            die_script.loadDatabase(sDatabaseExtra, DiE_ScriptEngine::DT_EXTRA, nullptr);
-            die_script.loadDatabase(sDatabaseCustom, DiE_ScriptEngine::DT_CUSTOM, nullptr);
+            bDbLoaded = die_script.loadDatabase(sDatabaseMain, XScanEngine::DT_MAIN, false, nullptr);
+            die_script.loadDatabase(sDatabaseExtra, XScanEngine::DT_EXTRA, false, nullptr);
+            die_script.loadDatabase(sDatabaseCustom, XScanEngine::DT_CUSTOM, false, nullptr);
         }
 
         nResult = ScanFiles(&listArgs, &scanOptions, &die_script);
