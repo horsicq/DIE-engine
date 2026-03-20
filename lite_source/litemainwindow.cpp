@@ -127,12 +127,15 @@ void LiteMainWindow::process()
         scanOptions.bShowVersion = true;
         scanOptions.bShowInfo = true;
         scanOptions.fileType = (XBinary::FT)(ui->comboBoxType->currentData().toInt());
+        scanOptions.sMainDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DATABASE_MAIN_PATH).toString();
+        scanOptions.sExtraDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DATABASE_EXTRA_PATH).toString();
+        scanOptions.sCustomDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DATABASE_CUSTOM_PATH).toString();
 
         XScanEngine::setScanFlags(&scanOptions, ui->comboBoxFlags->getValue().toULongLong());
         XScanEngine::setDatabases(&scanOptions, ui->comboBoxDatabases->getValue().toULongLong());
 
         if (!g_bInit) {
-            g_bInit = g_pDieScript->loadDatabaseFromGlobalOptions(&g_xOptions);
+            g_bInit = g_pDieScript->loadDatabase(&scanOptions, nullptr);
         }
 
         XScanEngine::SCAN_RESULT scanResult = g_pDieScript->scanFile(_sFileName, &scanOptions);

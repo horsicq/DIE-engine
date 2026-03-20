@@ -317,22 +317,22 @@ int main(int argc, char *argv[])
 
     scanOptions.sSpecial = parser.value(clSpecial);
 
-    QString sDatabaseMain = parser.value(clDatabaseMain);
-    QString sDatabaseExtra = parser.value(clDatabaseExtra);
-    QString sDatabaseCustom = parser.value(clDatabaseCustom);
+    scanOptions.sMainDatabasePath = parser.value(clDatabaseMain);
+    scanOptions.sExtraDatabasePath = parser.value(clDatabaseExtra);
+    scanOptions.sCustomDatabasePath = parser.value(clDatabaseCustom);
     QString sTestDirectory = parser.value(clTest);
     QString sAddTestFilename = parser.value(clAddTest);
 
-    if (sDatabaseMain == "") {
-        sDatabaseMain = XOptions().getApplicationDataPath() + QDir::separator() + "db";
+    if (scanOptions.sMainDatabasePath == "") {
+        scanOptions.sMainDatabasePath = XOptions().getApplicationDataPath() + QDir::separator() + "db";
     }
 
-    if (sDatabaseExtra == "") {
-        sDatabaseExtra = XOptions().getApplicationDataPath() + QDir::separator() + "db_extra";
+    if (scanOptions.sExtraDatabasePath == "") {
+        scanOptions.sExtraDatabasePath = XOptions().getApplicationDataPath() + QDir::separator() + "db_extra";
     }
 
-    if (sDatabaseCustom == "") {
-        sDatabaseCustom = XOptions().getApplicationDataPath() + QDir::separator() + "db_custom";
+    if (scanOptions.sCustomDatabasePath == "") {
+        scanOptions.sCustomDatabasePath = XOptions().getApplicationDataPath() + QDir::separator() + "db_custom";
     }
 
     ConsoleOutput consoleOutput;
@@ -349,16 +349,13 @@ int main(int argc, char *argv[])
 
     if (parser.isSet(clShowDatabase)) {
         if (!bIsDbUsed) {
-            die_script.initDatabase();
-            bDbLoaded = die_script.loadDatabase(sDatabaseMain, XScanEngine::DT_MAIN, false, nullptr);
-            die_script.loadDatabase(sDatabaseExtra, XScanEngine::DT_EXTRA, false, nullptr);
-            die_script.loadDatabase(sDatabaseCustom, XScanEngine::DT_CUSTOM, false, nullptr);
+            bDbLoaded = die_script.loadDatabase(nullptr);
             bIsDbUsed = true;
         }
 
-        printf("Main database: %s\n", sDatabaseMain.toUtf8().data());
-        printf("Extra database: %s\n", sDatabaseMain.toUtf8().data());
-        printf("Custom database: %s\n", sDatabaseCustom.toUtf8().data());
+        printf("Main database: %s\n", scanOptions.sMainDatabasePath.toUtf8().data());
+        printf("Extra database: %s\n", scanOptions.sExtraDatabasePath.toUtf8().data());
+        printf("Custom database: %s\n",  scanOptions.sCustomDatabasePath.toUtf8().data());
 
         QList<DiE_Script::SIGNATURE_STATE> list = die_script.getSignatureStates();
 
@@ -387,20 +384,14 @@ int main(int argc, char *argv[])
         }
     } else if (parser.isSet(clTest)) {
         if (!bIsDbUsed) {
-            die_script.initDatabase();
-            bDbLoaded = die_script.loadDatabase(sDatabaseMain, XScanEngine::DT_MAIN, false, nullptr);
-            die_script.loadDatabase(sDatabaseExtra, XScanEngine::DT_EXTRA, false, nullptr);
-            die_script.loadDatabase(sDatabaseCustom, XScanEngine::DT_CUSTOM, false, nullptr);
+            bDbLoaded = die_script.loadDatabase(nullptr);
             bIsDbUsed = true;
         }
 
         // TODO
     } else if (parser.isSet(clAddTest)) {
         if (!bIsDbUsed) {
-            die_script.initDatabase();
-            bDbLoaded = die_script.loadDatabase(sDatabaseMain, XScanEngine::DT_MAIN, false, nullptr);
-            die_script.loadDatabase(sDatabaseExtra, XScanEngine::DT_EXTRA, false, nullptr);
-            die_script.loadDatabase(sDatabaseCustom, XScanEngine::DT_CUSTOM, false, nullptr);
+            bDbLoaded = die_script.loadDatabase(nullptr);
             bIsDbUsed = true;
         }
 
@@ -417,10 +408,7 @@ int main(int argc, char *argv[])
         }
     } else if (listArgs.count()) {
         if (!bIsDbUsed) {
-            die_script.initDatabase();
-            bDbLoaded = die_script.loadDatabase(sDatabaseMain, XScanEngine::DT_MAIN, false, nullptr);
-            die_script.loadDatabase(sDatabaseExtra, XScanEngine::DT_EXTRA, false, nullptr);
-            die_script.loadDatabase(sDatabaseCustom, XScanEngine::DT_CUSTOM, false, nullptr);
+            bDbLoaded = die_script.loadDatabase(nullptr);
         }
 
         nResult = ScanFiles(&listArgs, &scanOptions, &die_script);

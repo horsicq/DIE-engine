@@ -294,7 +294,8 @@ SOURCES += \
     $$PWD/../XArchive/xrar.cpp \
     $$PWD/../XArchive/xsevenzip.cpp \
     $$PWD/../XArchive/xtar.cpp \
-    $$PWD/../XArchive/xtgz.cpp \
+    $$PWD/../XArchive/xtarcompressed.cpp \
+    $$PWD/../XArchive/xtar_gz.cpp \
     $$PWD/../XArchive/xzip.cpp \
     $$PWD/../XArchive/xzlib.cpp \
     $$PWD/../XCapstone/xcapstone.cpp \
