@@ -271,10 +271,6 @@
         <translation>Bilinmeyeni sakla</translation>
     </message>
     <message>
-        <source>Buffer size</source>
-        <translation>Arabellek boyu</translation>
-    </message>
-    <message>
         <source>Scan</source>
         <translation>Tara</translation>
     </message>
@@ -398,10 +394,6 @@
     <message>
         <source>Unknown</source>
         <translation>Bilinmeyen</translation>
-    </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>Veritabanı yüklenemiyor</translation>
     </message>
 </context>
 <context>
@@ -1628,6 +1620,22 @@
         <translation>İptal</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>Metin düzenleyicileri</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>Arkaplan</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>Grup</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Dizge</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>Renk</translation>
     </message>
@@ -2152,6 +2160,27 @@
     <message>
         <source>All files</source>
         <translation>Bütün Dosyalar</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>Kaynaklar</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3312,6 +3341,10 @@
         <translation>Disasm</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation>Arşiv</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Özet</translation>
     </message>
@@ -3400,10 +3433,6 @@
         <translation>İşlem</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>Arşiv</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>Ses</translation>
     </message>
@@ -3438,6 +3467,10 @@
     <message>
         <source>Cannot open file</source>
         <translation>Dosya açılmıyor</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>Okuma hatası</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3480,12 +3513,20 @@
         <translation>Kaynaklar</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>Otomatik</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
         <translation>Obfuscator</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>Araç</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Yazar</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3502,6 +3543,14 @@
     <message>
         <source>Converter</source>
         <translation>Çevirici</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>Bozuk veri</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>Yaratıcı</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3548,6 +3597,10 @@
         <translation>Kitaplık</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>Lisanslama</translation>
+    </message>
+    <message>
         <source>Linker</source>
         <translation>Bağlayıcı</translation>
     </message>
@@ -3556,12 +3609,24 @@
         <translation>Yükleyici</translation>
     </message>
     <message>
+        <source>Malware</source>
+        <translation>Zararlı yazılım</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>İşletim sistemi</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>Paket</translation>
+    </message>
+    <message>
         <source>Packer</source>
         <translation>Paketleyici</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>Kişisel veri</translation>
     </message>
     <message>
         <source>Platform</source>
@@ -3570,6 +3635,10 @@
     <message>
         <source>Player</source>
         <translation>Oynatıcı</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>Üretici</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3596,48 +3665,16 @@
         <translation>Stub</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>Truva atı</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>Sanal makine</translation>
     </message>
     <message>
         <source>Virus</source>
         <translation>Virüs</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>Truva atı</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>Zararlı yazılım</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>Paket</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation>Lisanslama</translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation>Bozuk veri</translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation>Kişisel veri</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation>Yazar</translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation>Yaratıcı</translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation>Üretici</translation>
     </message>
 </context>
 <context>
@@ -3784,6 +3821,30 @@
     <message>
         <source>Cannot save file</source>
         <translation>Dosya kayıt edilemiyor</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Dizge ara</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>Hiçbirşey Bulunamadı</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3961,13 +4022,6 @@
     </message>
 </context>
 <context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>Geçersiz yazı tipi</translation>
-    </message>
-</context>
-<context>
     <name>XAmigaHunk</name>
     <message>
         <source>Unknown</source>
@@ -4121,6 +4175,10 @@
     <message>
         <source>Default</source>
         <translation>Varsayılan</translation>
+    </message>
+    <message>
+        <source>ARM</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multiplatform</source>
@@ -4864,10 +4922,6 @@
     <message>
         <source>Cannot unpack</source>
         <translation>paketlenmemiş</translation>
-    </message>
-    <message>
-        <source>Invalid CRC</source>
-        <translation>Geçersiz</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
@@ -5627,6 +5681,18 @@
         <translation>Metin düzenleyicileri</translation>
     </message>
     <message>
+        <source>Read buffer size</source>
+        <translation>Arabellek boyu</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>Arabellek boyu</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Default</source>
         <translation>Varsayılan</translation>
     </message>
@@ -5649,6 +5715,10 @@
     <message>
         <source>Fonts</source>
         <translation>Yazı tipleri</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>İmzalar</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5702,8 +5772,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>Ham veri</translation>
+        <source>Image</source>
+        <translation>Görüntü</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5785,12 +5859,12 @@
         <translation>Bölüm</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>Kaplama</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>Kaynak</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Kaplama</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>Veritabanı yüklenemiyor</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Ofset</translation>
     </message>
@@ -5830,8 +5908,24 @@
         <translation>Boy</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>Okuma hatası</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Özyinelemeli tarama</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>Kaplama</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>Kaynaklar</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>Agresif tarama</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5903,6 +5997,14 @@
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>Veritabanı yüklenemiyor</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>Geçersiz yazı tipi</translation>
     </message>
 </context>
 <context>

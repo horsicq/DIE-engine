@@ -271,10 +271,6 @@
         <translation>十六进制签名</translation>
     </message>
     <message>
-        <source>Buffer size</source>
-        <translation>缓存大小</translation>
-    </message>
-    <message>
         <source>Scan</source>
         <translation>扫描</translation>
     </message>
@@ -398,10 +394,6 @@
     <message>
         <source>Unknown</source>
         <translation>未知</translation>
-    </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>无法加载数据库</translation>
     </message>
 </context>
 <context>
@@ -1628,6 +1620,22 @@
         <translation>取消</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>文本编辑器</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>背景</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>组</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>字符串</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>颜色</translation>
     </message>
@@ -2152,6 +2160,27 @@
     <message>
         <source>All files</source>
         <translation>所有文件</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>资源</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3312,6 +3341,10 @@
         <translation>反汇编</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation>存档</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>哈希</translation>
     </message>
@@ -3400,10 +3433,6 @@
         <translation>进程</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>存档</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>音频</translation>
     </message>
@@ -3438,6 +3467,10 @@
     <message>
         <source>Cannot open file</source>
         <translation>无法打开文件</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>读取错误</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3480,12 +3513,20 @@
         <translation>资源</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>自动</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
         <translation>混淆器</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>工具</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>作者</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3502,6 +3543,14 @@
     <message>
         <source>Converter</source>
         <translation>转换器</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>损坏的数据</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>创建者</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3548,6 +3597,10 @@
         <translation>库</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>许可</translation>
+    </message>
+    <message>
         <source>Linker</source>
         <translation>链接程序</translation>
     </message>
@@ -3556,12 +3609,24 @@
         <translation>加载器</translation>
     </message>
     <message>
+        <source>Malware</source>
+        <translation>恶意软件</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>操作系统</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>包</translation>
+    </message>
+    <message>
         <source>Packer</source>
         <translation>打包工具</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>个人数据</translation>
     </message>
     <message>
         <source>Platform</source>
@@ -3570,6 +3635,10 @@
     <message>
         <source>Player</source>
         <translation>播放器</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>生产者</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3596,48 +3665,16 @@
         <translation>存根</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>木马</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>虚拟机</translation>
     </message>
     <message>
         <source>Virus</source>
         <translation>病毒</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>木马</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>恶意软件</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>包</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation>许可</translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation>损坏的数据</translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation>个人数据</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation>作者</translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation>创建者</translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation>生产者</translation>
     </message>
 </context>
 <context>
@@ -3784,6 +3821,30 @@
     <message>
         <source>Cannot save file</source>
         <translation>无法保存文件</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>搜索字符串</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>未找到</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3961,13 +4022,6 @@
     </message>
 </context>
 <context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>无效字体</translation>
-    </message>
-</context>
-<context>
     <name>XAmigaHunk</name>
     <message>
         <source>Unknown</source>
@@ -4121,6 +4175,10 @@
     <message>
         <source>Default</source>
         <translation>默认</translation>
+    </message>
+    <message>
+        <source>ARM</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multiplatform</source>
@@ -4864,10 +4922,6 @@
     <message>
         <source>Cannot unpack</source>
         <translation>未加壳</translation>
-    </message>
-    <message>
-        <source>Invalid CRC</source>
-        <translation>无效</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
@@ -5627,6 +5681,18 @@
         <translation>文本编辑器</translation>
     </message>
     <message>
+        <source>Read buffer size</source>
+        <translation>缓存大小</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>缓存大小</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Default</source>
         <translation>默认</translation>
     </message>
@@ -5649,6 +5715,10 @@
     <message>
         <source>Fonts</source>
         <translation>字体</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>签名</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5702,8 +5772,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>原始数据</translation>
+        <source>Image</source>
+        <translation>镜像</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5785,12 +5859,12 @@
         <translation>节</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>附加</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>资源</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>附加</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>无法加载数据库</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>偏移</translation>
     </message>
@@ -5830,8 +5908,24 @@
         <translation>大小</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>读取错误</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>递归扫描</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>附加</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>资源</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>主动扫描</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5903,6 +5997,14 @@
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>无法加载数据库</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>无效字体</translation>
     </message>
 </context>
 <context>

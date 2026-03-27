@@ -5,7 +5,7 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Type</source>
@@ -53,7 +53,7 @@
     </message>
     <message>
         <source>File name</source>
-        <translation>filnamn</translation>
+        <translation>Filnamn</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -69,7 +69,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Kunde inte spara filen</translation>
+        <translation>Kan inte spara fil</translation>
     </message>
 </context>
 <context>
@@ -80,15 +80,15 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Info</source>
@@ -96,7 +96,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -104,7 +104,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -132,7 +132,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
 </context>
 <context>
@@ -150,7 +150,7 @@
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
 </context>
 <context>
@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Save</source>
@@ -169,11 +169,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Info</source>
@@ -181,7 +181,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -201,7 +201,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -213,14 +213,14 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Skanna för öppna</translation>
+        <translation>Skanna efter öppning</translation>
     </message>
     <message>
         <source>Flags</source>
@@ -228,11 +228,11 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Rekursiv skanning</translation>
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Aggressiv skanning</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -240,7 +240,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Extra detailjerad</translation>
+        <translation>Utförlig</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
@@ -252,7 +252,7 @@
     </message>
     <message>
         <source>Sort</source>
-        <translation></translation>
+        <translation>Sortera</translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -260,19 +260,15 @@
     </message>
     <message>
         <source>Format result</source>
-        <translation>Spara resultat</translation>
+        <translation>Formatera resultat</translation>
     </message>
     <message>
         <source>Profiling</source>
-        <translation>Profilera</translation>
+        <translation>Profilering</translation>
     </message>
     <message>
         <source>Hide unknown</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Buffer size</source>
-        <translation>Buffer storlek</translation>
+        <translation>Dölj okända</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -284,22 +280,22 @@
     </message>
     <message>
         <source>Extra database</source>
-        <translation></translation>
+        <translation>Extra databas</translation>
     </message>
     <message>
         <source>Custom database</source>
-        <translation>Skräddarsydd databas</translation>
+        <translation>Anpassad databas</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Öppna mapp</translation>
+        <translation>Öppna katalog</translation>
     </message>
 </context>
 <context>
     <name>DIEWidgetAdvanced</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -335,11 +331,11 @@
     </message>
     <message>
         <source>Signature name</source>
-        <translation></translation>
+        <translation>Signaturnamn</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>Text filer</translation>
+        <translation>Textfiler</translation>
     </message>
     <message>
         <source>All files</source>
@@ -351,7 +347,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Kunde inte spara filen</translation>
+        <translation>Kan inte spara fil</translation>
     </message>
 </context>
 <context>
@@ -362,7 +358,7 @@
     </message>
     <message>
         <source>Directory</source>
-        <translation>Mapp</translation>
+        <translation>Katalog</translation>
     </message>
     <message>
         <source>Log</source>
@@ -374,7 +370,7 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation>Stop</translation>
+        <translation>Stoppa</translation>
     </message>
     <message>
         <source>Flags</source>
@@ -386,7 +382,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>ms</translation>
     </message>
     <message>
         <source>Copy as</source>
@@ -399,16 +395,12 @@
         <source>Unknown</source>
         <translation>Okänd</translation>
     </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>Kunde inte ladda databas</translation>
-    </message>
 </context>
 <context>
     <name>DiE_ScriptEngine</name>
     <message>
         <source>Cannot find</source>
-        <translation>Kunde inte hitta</translation>
+        <translation>Kan inte hitta</translation>
     </message>
 </context>
 <context>
@@ -423,11 +415,11 @@
     </message>
     <message>
         <source>Bugreports</source>
-        <translation>Bugrapporter</translation>
+        <translation>Felrapporter</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>Websajt</translation>
+        <translation>Webbplats</translation>
     </message>
     <message>
         <source>Donate</source>
@@ -442,7 +434,7 @@
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation>Arkivera</translation>
+        <translation>Arkiv</translation>
     </message>
     <message>
         <source>Open</source>
@@ -465,11 +457,11 @@
     </message>
     <message>
         <source>Upper</source>
-        <translation>Större</translation>
+        <translation>Övre</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Jokertecken</translation>
+        <translation>Wildcard</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -481,11 +473,11 @@
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Relativ virtual address</translation>
+        <translation>Relativ virtuell adress</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -512,7 +504,7 @@
     </message>
     <message>
         <source>Unsigned</source>
-        <translation>O-signerad</translation>
+        <translation>Osignerad</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -551,11 +543,11 @@
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Background</source>
@@ -581,15 +573,15 @@
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Mapp skann</translation>
+        <translation>Katalogskanning</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Mapp</translation>
+        <translation>Katalog</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Undermappar</translation>
+        <translation>Underkataloger</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -613,15 +605,15 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Öppna mapp</translation>
+        <translation>Öppna katalog</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>ms</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Text dokument</translation>
+        <translation>Textdokument</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -640,7 +632,7 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Run</source>
@@ -648,11 +640,11 @@
     </message>
     <message>
         <source>Debug</source>
-        <translation>Avlusa</translation>
+        <translation>Debugga</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Rekursiv skanning</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -660,7 +652,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Extra detailjerad</translation>
+        <translation>Utförlig</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
@@ -668,11 +660,11 @@
     </message>
     <message>
         <source>Profiling</source>
-        <translation>Profilera</translation>
+        <translation>Profilering</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Hitta</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Next</source>
@@ -680,7 +672,7 @@
     </message>
     <message>
         <source>Detect</source>
-        <translation>Upptäcka</translation>
+        <translation>Detektera</translation>
     </message>
     <message>
         <source>Show type</source>
@@ -688,15 +680,15 @@
     </message>
     <message>
         <source>Show version</source>
-        <translation>Visa versionen</translation>
+        <translation>Visa version</translation>
     </message>
     <message>
         <source>Show info</source>
-        <translation></translation>
+        <translation>Visa info</translation>
     </message>
     <message>
         <source>Clear result</source>
-        <translation>Rensa Resultat</translation>
+        <translation>Rensa resultat</translation>
     </message>
     <message>
         <source>Close</source>
@@ -708,18 +700,18 @@
     </message>
     <message>
         <source>Debugger</source>
-        <translation>Avlusare</translation>
+        <translation>Debugger</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>ms</translation>
     </message>
 </context>
 <context>
     <name>DialogDIESignaturesElapsed</name>
     <message>
         <source>Elapsed</source>
-        <translation>Kvar</translation>
+        <translation>Förfluten tid</translation>
     </message>
     <message>
         <source>OK</source>
@@ -738,11 +730,11 @@
     <name>DialogDataInspector</name>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspektör</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Close</source>
@@ -750,11 +742,11 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianess</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
@@ -781,7 +773,7 @@
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>Avmanglera</translation>
+        <translation>Avmangla</translation>
     </message>
     <message>
         <source>OK</source>
@@ -803,7 +795,7 @@
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Close</source>
@@ -830,14 +822,14 @@
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Opcodes</source>
@@ -888,7 +880,7 @@
     </message>
     <message>
         <source>Bytes available</source>
-        <translation>Bytes kvar</translation>
+        <translation>Tillgängliga bytes</translation>
     </message>
 </context>
 <context>
@@ -906,11 +898,11 @@
     <name>DialogFindText</name>
     <message>
         <source>Find</source>
-        <translation>Hitta</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>Matcha stor/liten bokstav</translation>
+        <translation>Matcha versaler/gemener</translation>
     </message>
     <message>
         <source>OK</source>
@@ -925,11 +917,11 @@
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation>Gå till addess</translation>
+        <translation>Gå till adress</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -945,7 +937,7 @@
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Virtuell address</translation>
+        <translation>Virtuell adress</translation>
     </message>
     <message>
         <source>Value</source>
@@ -953,11 +945,11 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Relativ virtual address</translation>
+        <translation>Relativ virtuell adress</translation>
     </message>
     <message>
         <source>Invalid</source>
@@ -979,7 +971,7 @@
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation>Ändra</translation>
+        <translation>Redigera</translation>
     </message>
     <message>
         <source>Close</source>
@@ -998,11 +990,11 @@
     </message>
     <message>
         <source>Upper</source>
-        <translation>Större</translation>
+        <translation>Övre</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>Jokertecken</translation>
+        <translation>Wildcard</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1035,7 +1027,7 @@
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1058,7 +1050,7 @@
     </message>
     <message>
         <source>Text files</source>
-        <translation>Text filer</translation>
+        <translation>Textfiler</translation>
     </message>
     <message>
         <source>All files</source>
@@ -1069,7 +1061,7 @@
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1091,15 +1083,15 @@
     <name>DialogNFDScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Mapp skann</translation>
+        <translation>Katalogskanning</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Mapp</translation>
+        <translation>Katalog</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Undermappar</translation>
+        <translation>Underkataloger</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1123,15 +1115,15 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Öppna mapp</translation>
+        <translation>Öppna katalog</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>ms</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Text dokument</translation>
+        <translation>Textdokument</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -1149,7 +1141,7 @@
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
-        <translation>Inställningar</translation>
+        <translation>Alternativ</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1165,11 +1157,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Verktyg online</translation>
+        <translation>Online-verktyg</translation>
     </message>
     <message>
         <source>Info</source>
@@ -1184,7 +1176,7 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
@@ -1234,7 +1226,7 @@
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>String</source>
@@ -1242,7 +1234,7 @@
     </message>
     <message>
         <source>Match case</source>
-        <translation>Matcha stor/liten bokstav</translation>
+        <translation>Matcha versaler/gemener</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -1270,7 +1262,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianess</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -1282,7 +1274,7 @@
     </message>
     <message>
         <source>Cursor</source>
-        <translation>Pekare</translation>
+        <translation>Markör</translation>
     </message>
 </context>
 <context>
@@ -1311,7 +1303,7 @@
     <name>DialogSearchValues</name>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1364,7 +1356,7 @@
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation>Kunde inte sätta genväg</translation>
+        <translation>Kan inte ange genväg</translation>
     </message>
 </context>
 <context>
@@ -1391,18 +1383,18 @@
     </message>
     <message>
         <source>Plain Text</source>
-        <translation>Plain Text</translation>
+        <translation>Vanlig text</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>Bild</translation>
     </message>
     <message>
         <source>Image information</source>
-        <translation>Uppdatera information</translation>
+        <translation>Uppdateringsinformation</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1422,15 +1414,15 @@
     </message>
     <message>
         <source>Zoom In</source>
-        <translation></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <source>Zoom Out</source>
-        <translation></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <source>Actual Size</source>
-        <translation>Virtuell storklek</translation>
+        <translation>Virtuell storlek</translation>
     </message>
     <message>
         <source>Ctrl+0</source>
@@ -1438,7 +1430,7 @@
     </message>
     <message>
         <source>Fit to Window</source>
-        <translation>MainWindow</translation>
+        <translation>Huvudfönster</translation>
     </message>
     <message>
         <source>F</source>
@@ -1481,7 +1473,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Rekursiv skanning</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1493,7 +1485,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Extra detailjerad</translation>
+        <translation>Utförlig</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1512,19 +1504,19 @@
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>Mapp skann</translation>
+        <translation>Katalogskanning</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>Mapp</translation>
+        <translation>Katalog</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>Undermappar</translation>
+        <translation>Underkataloger</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Rekursiv skanning</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -1536,7 +1528,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Extra detailjerad</translation>
+        <translation>Utförlig</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1560,15 +1552,15 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Öppna mapp</translation>
+        <translation>Öppna katalog</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>ms</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Text dokument</translation>
+        <translation>Textdokument</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -1579,7 +1571,7 @@
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation>Text dokument</translation>
+        <translation>Textdokument</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -1602,7 +1594,7 @@
     </message>
     <message>
         <source>Text documents</source>
-        <translation>Text dokument</translation>
+        <translation>Textdokument</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -1628,6 +1620,22 @@
         <translation>Avbryt</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>Textredigerare</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>Bakgrund</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>Grupp</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Sträng</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>Färg</translation>
     </message>
@@ -1640,7 +1648,7 @@
     <name>DialogVisualization</name>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1651,7 +1659,7 @@
     <name>DialogXDataConvertor</name>
     <message>
         <source>Data convertor</source>
-        <translation>Data konverterare</translation>
+        <translation>Datakonverterare</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1716,7 +1724,7 @@
     <name>DumpProcess</name>
     <message>
         <source>Invalid offset</source>
-        <translation>Ogiltig plats</translation>
+        <translation>Ogiltig offset</translation>
     </message>
     <message>
         <source>Invalid size</source>
@@ -1724,19 +1732,19 @@
     </message>
     <message>
         <source>Cannot read file</source>
-        <translation>Kunde inte läsa fil</translation>
+        <translation>Kan inte läsa fil</translation>
     </message>
     <message>
         <source>Cannot fix dump file</source>
-        <translation>Kunde inte fixa dump-fil</translation>
+        <translation>Kan inte laga dumpfil</translation>
     </message>
     <message>
         <source>Cannot open dump file</source>
-        <translation>Kunde inte öppna dump-fil</translation>
+        <translation>Kan inte öppna dumpfil</translation>
     </message>
     <message>
         <source>Cannot write data to file</source>
-        <translation>Kunde inte skriva data till fil</translation>
+        <translation>Kan inte skriva data till fil</translation>
     </message>
 </context>
 <context>
@@ -1751,14 +1759,14 @@
     </message>
     <message>
         <source>Bind</source>
-        <translation>Binda</translation>
+        <translation>Bind</translation>
     </message>
 </context>
 <context>
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1777,7 +1785,7 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1785,11 +1793,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Info</source>
@@ -1797,7 +1805,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -1805,7 +1813,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -1821,7 +1829,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -1833,11 +1841,11 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sektions</translation>
+        <translation>Sektioner</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -1871,7 +1879,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>ms</translation>
     </message>
 </context>
 <context>
@@ -1897,11 +1905,11 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Kunde inte spara filen</translation>
+        <translation>Kan inte spara fil</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Dumpa alltihop</translation>
+        <translation>Dumpa allt</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1909,7 +1917,7 @@
     </message>
     <message>
         <source>Text files</source>
-        <translation>Text filer</translation>
+        <translation>Textfiler</translation>
     </message>
     <message>
         <source>All files</source>
@@ -1925,7 +1933,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Rå data</translation>
+        <translation>Rådata</translation>
     </message>
     <message>
         <source>Name</source>
@@ -1933,7 +1941,7 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Type</source>
@@ -1952,31 +1960,31 @@
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation>Typ av fil</translation>
+        <translation>Filtyp</translation>
     </message>
     <message>
         <source>File size</source>
-        <translation>Storlek av fil</translation>
+        <translation>Filstorlek</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation>Bas address</translation>
+        <translation>Basadress</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Startnings punkt</translation>
+        <translation>Startpunkt</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>File info</source>
-        <translation>Fil information</translation>
+        <translation>Filinfo</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1988,7 +1996,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2008,7 +2016,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Files</source>
@@ -2020,7 +2028,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Export</source>
@@ -2036,15 +2044,15 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sektions</translation>
+        <translation>Sektioner</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation>stämpel: Tid datum</translation>
+        <translation>Tidsstämpel</translation>
     </message>
     <message>
         <source>Size of image</source>
-        <translation>Storlek av image</translation>
+        <translation>Bildstorlek</translation>
     </message>
     <message>
         <source>Manifest</source>
@@ -2060,7 +2068,7 @@
     </message>
     <message>
         <source>Commands</source>
-        <translation>Kommando</translation>
+        <translation>Kommandon</translation>
     </message>
     <message>
         <source>Segments</source>
@@ -2076,11 +2084,11 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianess</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -2092,11 +2100,11 @@
     </message>
     <message>
         <source>Scan engine</source>
-        <translation></translation>
+        <translation>Skanningsmotor</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>Arkivera</translation>
+        <translation>Arkiv</translation>
     </message>
     <message>
         <source>Binary</source>
@@ -2104,22 +2112,22 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Öppna mapp</translation>
+        <translation>Öppna katalog</translation>
     </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
     <message>
         <source>File name</source>
-        <translation>filnamn</translation>
+        <translation>Filnamn</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>Avancerad</translation>
+        <translation>Avancerat</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Avmanglera</translation>
+        <translation>Avmangla</translation>
     </message>
     <message>
         <source>Shortcuts</source>
@@ -2127,7 +2135,7 @@
     </message>
     <message>
         <source>Options</source>
-        <translation>Inställningar</translation>
+        <translation>Alternativ</translation>
     </message>
     <message>
         <source>About</source>
@@ -2143,7 +2151,7 @@
     </message>
     <message>
         <source>Recent files</source>
-        <translation>Senaste använda filer</translation>
+        <translation>Senaste filer</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2152,6 +2160,27 @@
     <message>
         <source>All files</source>
         <translation>Alla filer</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>Resurser</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -2169,7 +2198,7 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Rekursiv skanning</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -2181,7 +2210,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Extra detailjerad</translation>
+        <translation>Utförlig</translation>
     </message>
     <message>
         <source>All types</source>
@@ -2220,14 +2249,14 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
 </context>
 <context>
@@ -2238,15 +2267,15 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2254,7 +2283,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2262,7 +2291,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2278,7 +2307,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2290,22 +2319,22 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Ändra</translation>
+        <translation>Redigera</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
 </context>
 <context>
@@ -2316,11 +2345,11 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -2335,7 +2364,7 @@
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
 </context>
 <context>
@@ -2346,15 +2375,15 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2362,7 +2391,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2370,7 +2399,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2386,7 +2415,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2398,11 +2427,11 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>Kommando</translation>
+        <translation>Kommandon</translation>
     </message>
     <message>
         <source>Segments</source>
@@ -2410,11 +2439,11 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sektions</translation>
+        <translation>Sektioner</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation>Ändra bas</translation>
+        <translation>Rebase</translation>
     </message>
     <message>
         <source>Binding</source>
@@ -2422,11 +2451,11 @@
     </message>
     <message>
         <source>Weak binding</source>
-        <translation>Svag Bindning</translation>
+        <translation>Svag bindning</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation>Lat bindning</translation>
+        <translation>Lazy binding</translation>
     </message>
     <message>
         <source>Export</source>
@@ -2434,11 +2463,11 @@
     </message>
     <message>
         <source>String table</source>
-        <translation>Strängstabell</translation>
+        <translation>Strängtabell</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation>Symbolstabell</translation>
+        <translation>Symboltabell</translation>
     </message>
     <message>
         <source>Table of contents</source>
@@ -2450,7 +2479,7 @@
     </message>
     <message>
         <source>External references</source>
-        <translation>External</translation>
+        <translation>Externa referenser</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
@@ -2458,7 +2487,7 @@
     </message>
     <message>
         <source>Local relocation</source>
-        <translation>Plats för relokation</translation>
+        <translation>Lokal relokering</translation>
     </message>
     <message>
         <source>Functions</source>
@@ -2478,11 +2507,11 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Ändra</translation>
+        <translation>Redigera</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Avmanglera</translation>
+        <translation>Avmangla</translation>
     </message>
 </context>
 <context>
@@ -2493,7 +2522,7 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -2501,11 +2530,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2513,7 +2542,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2521,7 +2550,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2537,7 +2566,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2549,11 +2578,11 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -2575,7 +2604,7 @@
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
 </context>
 <context>
@@ -2586,15 +2615,15 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2602,7 +2631,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2610,7 +2639,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2626,7 +2655,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2638,7 +2667,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Segments</source>
@@ -2646,18 +2675,18 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>NFDOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Skanna för öppna</translation>
+        <translation>Skanna efter öppning</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Rekursiv skanning</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -2669,7 +2698,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Extra detailjerad</translation>
+        <translation>Utförlig</translation>
     </message>
     <message>
         <source>All types</source>
@@ -2677,7 +2706,7 @@
     </message>
     <message>
         <source>Format result</source>
-        <translation>Spara resultat</translation>
+        <translation>Formatera resultat</translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -2685,7 +2714,7 @@
     </message>
     <message>
         <source>Buffer size</source>
-        <translation>Buffer storlek</translation>
+        <translation>Bufferstorlek</translation>
     </message>
 </context>
 <context>
@@ -2712,11 +2741,11 @@
     </message>
     <message>
         <source>Heuristics</source>
-        <translation></translation>
+        <translation>Heuristik</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>Text filer</translation>
+        <translation>Textfiler</translation>
     </message>
     <message>
         <source>All files</source>
@@ -2728,7 +2757,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Kunde inte spara filen</translation>
+        <translation>Kan inte spara fil</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2747,7 +2776,7 @@
     </message>
     <message>
         <source>Directory</source>
-        <translation>Mapp</translation>
+        <translation>Katalog</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2755,7 +2784,7 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation>Stop</translation>
+        <translation>Stoppa</translation>
     </message>
     <message>
         <source>Flags</source>
@@ -2763,7 +2792,7 @@
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>ms</translation>
     </message>
 </context>
 <context>
@@ -2782,7 +2811,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2794,7 +2823,7 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2802,7 +2831,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2818,7 +2847,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
 </context>
 <context>
@@ -2833,15 +2862,15 @@
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Relativ address</translation>
+        <translation>Relativ adress</translation>
     </message>
     <message>
         <source>Virtual size</source>
-        <translation>Virtuell storklek</translation>
+        <translation>Virtuell storlek</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Filen&apos;s position</translation>
+        <translation>Fil-offset</translation>
     </message>
     <message>
         <source>Size</source>
@@ -2861,11 +2890,11 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Startnings punkt</translation>
+        <translation>Startpunkt</translation>
     </message>
     <message>
         <source>Export</source>
@@ -2889,7 +2918,7 @@
     </message>
     <message>
         <source>Debug</source>
-        <translation>Avlusa</translation>
+        <translation>Debugga</translation>
     </message>
     <message>
         <source>Load config</source>
@@ -2897,19 +2926,19 @@
     </message>
     <message>
         <source>Bound import</source>
-        <translation>bindnings Import</translation>
+        <translation>Bunden import</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>imports-Fördröjning</translation>
+        <translation>Fördröjd import</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation>Nyckelord</translation>
+        <translation>Taggar</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>Beksrivning</translation>
+        <translation>Beskrivning</translation>
     </message>
     <message>
         <source>Type</source>
@@ -2917,7 +2946,7 @@
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2925,7 +2954,7 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Language</source>
@@ -2949,27 +2978,27 @@
     </message>
     <message>
         <source>Publisher</source>
-        <translation>Publicerare</translation>
+        <translation>Utgivare</translation>
     </message>
     <message>
         <source>More info</source>
-        <translation>Mer information</translation>
+        <translation>Mer info</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation>Serial nummer</translation>
+        <translation>Serienummer</translation>
     </message>
     <message>
         <source>Issuer</source>
-        <translation>Issuer</translation>
+        <translation>Utfärdare</translation>
     </message>
     <message>
         <source>Subject</source>
-        <translation>Subjekt</translation>
+        <translation>Ämne</translation>
     </message>
     <message>
         <source>Algorithm</source>
-        <translation>algoritm</translation>
+        <translation>Algoritm</translation>
     </message>
     <message>
         <source>Version</source>
@@ -2977,7 +3006,7 @@
     </message>
     <message>
         <source>Count</source>
-        <translation>Räkna</translation>
+        <translation>Antal</translation>
     </message>
     <message>
         <source>Sorted</source>
@@ -2988,7 +3017,7 @@
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
 </context>
 <context>
@@ -2999,7 +3028,7 @@
     </message>
     <message>
         <source>Add</source>
-        <translation>Addera</translation>
+        <translation>Lägg till</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -3011,7 +3040,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -3019,7 +3048,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Rå data</translation>
+        <translation>Rådata</translation>
     </message>
 </context>
 <context>
@@ -3030,7 +3059,7 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Save</source>
@@ -3042,15 +3071,15 @@
     </message>
     <message>
         <source>String table</source>
-        <translation>Strängstabell</translation>
+        <translation>Strängtabell</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Dumpa alltihop</translation>
+        <translation>Dumpa allt</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation>Visa enbart giltiga</translation>
+        <translation>Visa giltiga</translation>
     </message>
     <message>
         <source>Table</source>
@@ -3062,7 +3091,7 @@
     </message>
     <message>
         <source>Extract all cursors</source>
-        <translation>Extrahera alla pekare</translation>
+        <translation>Extrahera alla markörer</translation>
     </message>
     <message>
         <source>Tree</source>
@@ -3078,11 +3107,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -3094,7 +3123,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3102,7 +3131,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -3114,7 +3143,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -3126,7 +3155,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Tools</source>
@@ -3138,7 +3167,7 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sektions</translation>
+        <translation>Sektioner</translation>
     </message>
     <message>
         <source>Export</source>
@@ -3174,11 +3203,11 @@
     </message>
     <message>
         <source>Debug</source>
-        <translation>Avlusa</translation>
+        <translation>Debugga</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation>Tillbakaringningar</translation>
+        <translation>Callbacks</translation>
     </message>
     <message>
         <source>Load config</source>
@@ -3186,11 +3215,11 @@
     </message>
     <message>
         <source>Bound import</source>
-        <translation>bindnings Import</translation>
+        <translation>Bunden import</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>imports-Fördröjning</translation>
+        <translation>Fördröjd import</translation>
     </message>
     <message>
         <source>Metadata</source>
@@ -3202,11 +3231,11 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation>Räkna ut</translation>
+        <translation>Beräkna</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -3218,7 +3247,7 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Ändra</translation>
+        <translation>Redigera</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3226,7 +3255,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Avmanglera</translation>
+        <translation>Avmangla</translation>
     </message>
 </context>
 <context>
@@ -3237,11 +3266,11 @@
     </message>
     <message>
         <source>Count</source>
-        <translation>Räkna</translation>
+        <translation>Antal</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>String</source>
@@ -3249,7 +3278,7 @@
     </message>
     <message>
         <source>Library name</source>
-        <translation>Biblioteks namn</translation>
+        <translation>Biblioteksnamn</translation>
     </message>
     <message>
         <source>Interpreter</source>
@@ -3273,7 +3302,7 @@
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Size</source>
@@ -3301,7 +3330,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3309,7 +3338,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>Arkiv</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -3329,7 +3362,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -3345,11 +3378,11 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>File</source>
@@ -3365,7 +3398,7 @@
     </message>
     <message>
         <source>Debug data</source>
-        <translation>Avlusa data</translation>
+        <translation>Debug-data</translation>
     </message>
     <message>
         <source>Stream</source>
@@ -3385,7 +3418,7 @@
     </message>
     <message>
         <source>Footer</source>
-        <translation>Sid-o-fot</translation>
+        <translation>Sidfot</translation>
     </message>
     <message>
         <source>Object</source>
@@ -3400,10 +3433,6 @@
         <translation>Process</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>Arkivera</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>Ljud</translation>
     </message>
@@ -3413,11 +3442,11 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>Bild</translation>
     </message>
     <message>
         <source>Plain Text</source>
-        <translation>Plain Text</translation>
+        <translation>Vanlig text</translation>
     </message>
     <message>
         <source>Text</source>
@@ -3437,7 +3466,11 @@
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Kunde inte öppna fil</translation>
+        <translation>Kan inte öppna fil</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>Läsfel</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3457,35 +3490,43 @@
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Startnings punkt</translation>
+        <translation>Startpunkt</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation>Sektions namn</translation>
+        <translation>Sektionsnamn</translation>
     </message>
     <message>
         <source>Import hash</source>
-        <translation>Importera hash</translation>
+        <translation>Import-hash</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation>Kod sektion</translation>
+        <translation>Kodsektion</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation>Sektion av startnings punkt</translation>
+        <translation>Sektion för startpunkt</translation>
     </message>
     <message>
         <source>Resources</source>
         <translation>Resurser</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>Automatisk</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
-        <translation></translation>
+        <translation>Obfuskator</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>Verktyg</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Författare</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3497,11 +3538,19 @@
     </message>
     <message>
         <source>Compressor</source>
-        <translation></translation>
+        <translation>Kompressor</translation>
     </message>
     <message>
         <source>Converter</source>
         <translation>Konverterare</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>Skadad data</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>Skapare</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3521,7 +3570,7 @@
     </message>
     <message>
         <source>Extender</source>
-        <translation></translation>
+        <translation>Extender</translation>
     </message>
     <message>
         <source>Generic</source>
@@ -3533,11 +3582,11 @@
     </message>
     <message>
         <source>Installer data</source>
-        <translation>Installerarens data</translation>
+        <translation>Installationsdata</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation>Tilläggare</translation>
+        <translation>Joiner</translation>
     </message>
     <message>
         <source>Language</source>
@@ -3548,28 +3597,48 @@
         <translation>Bibliotek</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>Licensiering</translation>
+    </message>
+    <message>
         <source>Linker</source>
-        <translation>Linkare</translation>
+        <translation>Länkare</translation>
     </message>
     <message>
         <source>Loader</source>
-        <translation>Header</translation>
+        <translation>Laddare</translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation>Skadlig kod</translation>
     </message>
     <message>
         <source>Operation system</source>
         <translation>Operativsystem</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>Paket</translation>
+    </message>
+    <message>
         <source>Packer</source>
-        <translation>In-packare</translation>
+        <translation>Packare</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>Personlig data</translation>
     </message>
     <message>
         <source>Platform</source>
-        <translation>Platform</translation>
+        <translation>Plattform</translation>
     </message>
     <message>
         <source>Player</source>
         <translation>Spelare</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>Producent</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3577,7 +3646,7 @@
     </message>
     <message>
         <source>Protector data</source>
-        <translation>Skyddningsdata</translation>
+        <translation>Skyddsdata</translation>
     </message>
     <message>
         <source>data</source>
@@ -3585,7 +3654,7 @@
     </message>
     <message>
         <source>Sign tool</source>
-        <translation>Signerings-verktyg</translation>
+        <translation>Signeringsverktyg</translation>
     </message>
     <message>
         <source>Source code</source>
@@ -3596,48 +3665,16 @@
         <translation>Stub</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>Trojan</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>Virtuell maskin</translation>
     </message>
     <message>
         <source>Virus</source>
         <translation>Virus</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>Trojansk-Häst</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>Malware</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>Packet</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation></translation>
     </message>
 </context>
 <context>
@@ -3648,11 +3685,11 @@
     </message>
     <message>
         <source>Images</source>
-        <translation>Images</translation>
+        <translation>Bilder</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>Exportera Fil Namn</translation>
+        <translation>Exportfilnamn</translation>
     </message>
 </context>
 <context>
@@ -3663,11 +3700,11 @@
     </message>
     <message>
         <source>Images</source>
-        <translation>Images</translation>
+        <translation>Bilder</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>Exportera Fil Namn</translation>
+        <translation>Exportfilnamn</translation>
     </message>
 </context>
 <context>
@@ -3681,7 +3718,7 @@
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Search signatures</source>
@@ -3689,7 +3726,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Öppna mapp</translation>
+        <translation>Öppna katalog</translation>
     </message>
 </context>
 <context>
@@ -3700,7 +3737,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Patch</source>
@@ -3716,7 +3753,7 @@
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianess</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Info</source>
@@ -3739,7 +3776,7 @@
     </message>
     <message>
         <source>Links</source>
-        <translation>Links</translation>
+        <translation>Länkar</translation>
     </message>
     <message>
         <source>Save</source>
@@ -3747,7 +3784,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Type</source>
@@ -3755,19 +3792,19 @@
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Mask</source>
-        <translation></translation>
+        <translation>Mask</translation>
     </message>
     <message>
         <source>Regular expression</source>
-        <translation></translation>
+        <translation>Reguljärt uttryck</translation>
     </message>
     <message>
         <source>Min length</source>
-        <translation></translation>
+        <translation>Minsta längd</translation>
     </message>
     <message>
         <source>Result</source>
@@ -3783,7 +3820,31 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Kunde inte spara filen</translation>
+        <translation>Kan inte spara fil</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Sök sträng</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>Inget hittades</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3806,7 +3867,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Söka</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Type</source>
@@ -3814,19 +3875,19 @@
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Search string</source>
-        <translation></translation>
+        <translation>Sök sträng</translation>
     </message>
     <message>
         <source>Search signature</source>
-        <translation></translation>
+        <translation>Sök signatur</translation>
     </message>
     <message>
         <source>Search value</source>
-        <translation></translation>
+        <translation>Sök värde</translation>
     </message>
     <message>
         <source>Result</source>
@@ -3841,30 +3902,30 @@
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation>Fil skanning</translation>
+        <translation>Filskanning</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>Skanna enhet</translation>
+        <translation>Enhetsskanning</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>Minnes-skan</translation>
+        <translation>Minnesskanning</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>Mapp skann</translation>
+        <translation>Katalogskanning</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>Skanna för öppna</translation>
+        <translation>Skanna efter öppning</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Rekursiv skanning</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -3876,7 +3937,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Extra detailjerad</translation>
+        <translation>Utförlig</translation>
     </message>
     <message>
         <source>All types</source>
@@ -3894,7 +3955,7 @@
     <name>XAPK</name>
     <message>
         <source>Universal</source>
-        <translation>Universal</translation>
+        <translation>Universell</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -3902,7 +3963,7 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>Packet</translation>
+        <translation>Paket</translation>
     </message>
 </context>
 <context>
@@ -3921,7 +3982,7 @@
     </message>
     <message>
         <source>Check for updates</source>
-        <translation>Kontrollera Uppdateringar</translation>
+        <translation>Sök efter uppdateringar</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -3933,7 +3994,7 @@
     </message>
     <message>
         <source>Update information</source>
-        <translation>Uppdatera information</translation>
+        <translation>Uppdateringsinformation</translation>
     </message>
     <message>
         <source>New version available</source>
@@ -3941,15 +4002,15 @@
     </message>
     <message>
         <source>Go to download page?</source>
-        <translation>Vill du gå till nerladdnings sidan?</translation>
+        <translation>Gå till nedladdningssidan?</translation>
     </message>
     <message>
         <source>No update available</source>
-        <translation>Inga uppdatering</translation>
+        <translation>Ingen uppdatering tillgänglig</translation>
     </message>
     <message>
         <source>Network error</source>
-        <translation>Nätverks-fel</translation>
+        <translation>Nätverksfel</translation>
     </message>
     <message>
         <source>Information</source>
@@ -3957,14 +4018,7 @@
     </message>
     <message>
         <source>The value copied to clipboard</source>
-        <translation>Kopierade värdet till urklipp</translation>
-    </message>
-</context>
-<context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>Ogiltig font</translation>
+        <translation>Värdet kopierat till urklipp</translation>
     </message>
 </context>
 <context>
@@ -3983,7 +4037,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -3994,11 +4048,11 @@
     </message>
     <message>
         <source>Archive</source>
-        <translation>Arkivera</translation>
+        <translation>Arkiv</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation>förlängare</translation>
+        <translation>extender</translation>
     </message>
 </context>
 <context>
@@ -4013,7 +4067,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -4024,31 +4078,31 @@
     </message>
     <message>
         <source>8-bit</source>
-        <translation>8-bit</translation>
+        <translation>8-bitars</translation>
     </message>
     <message>
         <source>16-bit</source>
-        <translation>16-bit</translation>
+        <translation>16-bitars</translation>
     </message>
     <message>
         <source>32-bit</source>
-        <translation>32-bit</translation>
+        <translation>32-bitars</translation>
     </message>
     <message>
         <source>64-bit</source>
-        <translation>64-bit</translation>
+        <translation>64-bitars</translation>
     </message>
     <message>
         <source>128-bit</source>
-        <translation>128-bit</translation>
+        <translation>128-bitars</translation>
     </message>
     <message>
         <source>256-bit</source>
-        <translation>256-bit</translation>
+        <translation>256-bitars</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>Läs-fel</translation>
+        <translation>Läsfel</translation>
     </message>
     <message>
         <source>Maximum</source>
@@ -4064,15 +4118,15 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>Sektions</translation>
+        <translation>Sektioner</translation>
     </message>
     <message>
         <source>Objects</source>
-        <translation></translation>
+        <translation>Objekt</translation>
     </message>
     <message>
         <source>Maps</source>
-        <translation></translation>
+        <translation>Kartor</translation>
     </message>
     <message>
         <source>Data</source>
@@ -4088,7 +4142,7 @@
     </message>
     <message>
         <source>Write error</source>
-        <translation>Skriv-fel</translation>
+        <translation>Skrivfel</translation>
     </message>
     <message>
         <source>true</source>
@@ -4104,7 +4158,7 @@
     </message>
     <message>
         <source>Warning</source>
-        <translation></translation>
+        <translation>Varning</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4112,19 +4166,23 @@
     </message>
     <message>
         <source>Corrupted data</source>
-        <translation></translation>
+        <translation>Skadad data</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Default</source>
         <translation>Standard</translation>
     </message>
     <message>
+        <source>ARM</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Multiplatform</source>
-        <translation>Multiplatform</translation>
+        <translation>Multiplattform</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -4164,7 +4222,7 @@
     </message>
     <message>
         <source>Total</source>
-        <translation>Sammanlagt</translation>
+        <translation>Totalt</translation>
     </message>
 </context>
 <context>
@@ -4194,7 +4252,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -4212,7 +4270,7 @@
     </message>
     <message>
         <source>Main module</source>
-        <translation></translation>
+        <translation>Huvudmodul</translation>
     </message>
     <message>
         <source>Header</source>
@@ -4220,18 +4278,18 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>XDOS16</name>
     <message>
         <source>Loader</source>
-        <translation>Header</translation>
+        <translation>Laddare</translation>
     </message>
     <message>
         <source>Payload</source>
-        <translation></translation>
+        <translation>Payload</translation>
     </message>
     <message>
         <source>Header</source>
@@ -4247,14 +4305,14 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>XDataConvertor</name>
     <message>
         <source>Write error</source>
-        <translation>Skriv-fel</translation>
+        <translation>Skrivfel</translation>
     </message>
     <message>
         <source>Invalid size</source>
@@ -4262,14 +4320,14 @@
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation>Kunde inte ändra storleken</translation>
+        <translation>Kan inte ändra storlek</translation>
     </message>
 </context>
 <context>
     <name>XDataConvertorWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Method</source>
@@ -4277,7 +4335,7 @@
     </message>
     <message>
         <source>Encode</source>
-        <translation>Enkoda</translation>
+        <translation>Koda</translation>
     </message>
     <message>
         <source>Decode</source>
@@ -4285,7 +4343,7 @@
     </message>
     <message>
         <source>Input</source>
-        <translation>Input</translation>
+        <translation>Indata</translation>
     </message>
     <message>
         <source>Size</source>
@@ -4301,7 +4359,7 @@
     </message>
     <message>
         <source>Output</source>
-        <translation>Resultat</translation>
+        <translation>Utdata</translation>
     </message>
 </context>
 <context>
@@ -4319,7 +4377,7 @@
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
 </context>
 <context>
@@ -4330,7 +4388,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Rå data</translation>
+        <translation>Rådata</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -4342,7 +4400,7 @@
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation>Kunde inte ändra storleken</translation>
+        <translation>Kan inte ändra storlek</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -4353,7 +4411,7 @@
     <name>XDeviceTableView</name>
     <message>
         <source>Nothing found</source>
-        <translation>Ingenting hittat</translation>
+        <translation>Inget hittades</translation>
     </message>
 </context>
 <context>
@@ -4364,7 +4422,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation>Avancerad</translation>
+        <translation>Avancerat</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -4383,11 +4441,11 @@
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Label</source>
@@ -4406,7 +4464,7 @@
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -4422,11 +4480,11 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>Relativ address</translation>
+        <translation>Relativ adress</translation>
     </message>
 </context>
 <context>
@@ -4437,11 +4495,11 @@
     </message>
     <message>
         <source>Uppercase</source>
-        <translation>Versal</translation>
+        <translation>Versaler</translation>
     </message>
     <message>
         <source>Show colons in addresses</source>
-        <translation>Visa kolonner i addresser</translation>
+        <translation>Visa kolon i adresser</translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -4461,11 +4519,11 @@
     </message>
     <message>
         <source>Selected</source>
-        <translation>Markerade</translation>
+        <translation>Valda</translation>
     </message>
     <message>
         <source>Registers</source>
-        <translation>Registrer</translation>
+        <translation>Register</translation>
     </message>
     <message>
         <source>Numbers</source>
@@ -4481,27 +4539,27 @@
     </message>
     <message>
         <source>General registers</source>
-        <translation>Generiska registrer</translation>
+        <translation>Allmänna register</translation>
     </message>
     <message>
         <source>Stack registers</source>
-        <translation>Stack registrer</translation>
+        <translation>Stackregister</translation>
     </message>
     <message>
         <source>Segment registers</source>
-        <translation>Segmentets registrer</translation>
+        <translation>Segmentregister</translation>
     </message>
     <message>
         <source>Debug registers</source>
-        <translation>Avlusa register</translation>
+        <translation>Debug-register</translation>
     </message>
     <message>
         <source>Instruction pointer register</source>
-        <translation>Instruktionspekare till registret</translation>
+        <translation>Instruktionspekarregister</translation>
     </message>
     <message>
         <source>Flags register</source>
-        <translation>Flaggs registrer</translation>
+        <translation>Flagg-register</translation>
     </message>
 </context>
 <context>
@@ -4520,7 +4578,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -4528,19 +4586,19 @@
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Startnings punkt</translation>
+        <translation>Startpunkt</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Virtuell address</translation>
+        <translation>Virtuell adress</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Relativ virtual address</translation>
+        <translation>Relativ virtuell adress</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>Filen&apos;s position</translation>
+        <translation>Fil-offset</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -4556,7 +4614,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>To data</source>
@@ -4564,7 +4622,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Rå data</translation>
+        <translation>Rådata</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -4583,7 +4641,7 @@
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation>Kunde inte ladda fil</translation>
+        <translation>Kan inte ladda fil</translation>
     </message>
 </context>
 <context>
@@ -4594,7 +4652,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Öppna mapp</translation>
+        <translation>Öppna katalog</translation>
     </message>
 </context>
 <context>
@@ -4609,7 +4667,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Prototype</source>
@@ -4637,7 +4695,7 @@
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation>Kunde inte läsa minne på adress</translation>
+        <translation>Kan inte läsa minne på adress</translation>
     </message>
     <message>
         <source>Result</source>
@@ -4656,7 +4714,7 @@
     <name>XELF</name>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -4664,7 +4722,7 @@
     </message>
     <message>
         <source>String table</source>
-        <translation>Strängstabell</translation>
+        <translation>Strängtabell</translation>
     </message>
     <message>
         <source>Libraries</source>
@@ -4672,11 +4730,11 @@
     </message>
     <message>
         <source>Run path</source>
-        <translation></translation>
+        <translation>Körningssökväg</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation>Symbolstabell</translation>
+        <translation>Symboltabell</translation>
     </message>
 </context>
 <context>
@@ -4707,7 +4765,7 @@
     </message>
     <message>
         <source>Grid</source>
-        <translation>lattis</translation>
+        <translation>Rutnät</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -4719,11 +4777,11 @@
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>Räkna</translation>
+        <translation>Antal</translation>
     </message>
     <message>
         <source>Size</source>
@@ -4731,11 +4789,11 @@
     </message>
     <message>
         <source>Total</source>
-        <translation>Sammanlagt</translation>
+        <translation>Totalt</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Byte</source>
@@ -4769,7 +4827,7 @@
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Dumpa alltihop</translation>
+        <translation>Dumpa allt</translation>
     </message>
     <message>
         <source>Save</source>
@@ -4793,11 +4851,11 @@
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Inställningar</translation>
+        <translation>Alternativ</translation>
     </message>
     <message>
         <source>Size</source>
@@ -4812,7 +4870,7 @@
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Comment</source>
@@ -4836,7 +4894,7 @@
     </message>
     <message>
         <source>Output</source>
-        <translation>Resultat</translation>
+        <translation>Utdata</translation>
     </message>
     <message>
         <source>Text</source>
@@ -4852,7 +4910,7 @@
     </message>
     <message>
         <source>Text files</source>
-        <translation>Text filer</translation>
+        <translation>Textfiler</translation>
     </message>
     <message>
         <source>All files</source>
@@ -4866,16 +4924,12 @@
         <translation>inte packad</translation>
     </message>
     <message>
-        <source>Invalid CRC</source>
-        <translation>Ogiltig</translation>
-    </message>
-    <message>
         <source>Cannot decompress</source>
-        <translation>Kunde inte öppna session</translation>
+        <translation>Kan inte öppna session</translation>
     </message>
     <message>
         <source>Cannot create</source>
-        <translation>Kunde inte ändra storleken</translation>
+        <translation>Kan inte ändra storlek</translation>
     </message>
 </context>
 <context>
@@ -4898,7 +4952,7 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>Bild</translation>
     </message>
     <message>
         <source>Graphic Control Extension</source>
@@ -4914,7 +4968,7 @@
     </message>
     <message>
         <source>Plain Text Extension</source>
-        <translation>Plain Text</translation>
+        <translation>Vanlig text</translation>
     </message>
     <message>
         <source>Extension</source>
@@ -4922,7 +4976,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -4933,7 +4987,7 @@
     </message>
     <message>
         <source>Footer</source>
-        <translation>Sid-o-fot</translation>
+        <translation>Sidfot</translation>
     </message>
     <message>
         <source>Stream</source>
@@ -4968,11 +5022,11 @@
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
@@ -5002,7 +5056,7 @@
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -5013,7 +5067,7 @@
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -5025,25 +5079,25 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Show colons in addresses</source>
-        <translation>Visa kolonner i addresser</translation>
+        <translation>Visa kolon i adresser</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspektör</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -5051,7 +5105,7 @@
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Type</source>
@@ -5059,7 +5113,7 @@
     </message>
     <message>
         <source>Base</source>
-        <translation></translation>
+        <translation>Bas</translation>
     </message>
 </context>
 <context>
@@ -5078,7 +5132,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5089,31 +5143,31 @@
     </message>
     <message>
         <source>Function enter</source>
-        <translation>Funktionens inträdes-punkt</translation>
+        <translation>Funktion start</translation>
     </message>
     <message>
         <source>Function leave</source>
-        <translation>Funktionens lämnings-punkt</translation>
+        <translation>Funktion slut</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation>Ta ett steg in i</translation>
+        <translation>Stega in i</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>Ta ett steg över</translation>
+        <translation>Stega över</translation>
     </message>
     <message>
         <source>Trace into</source>
-        <translation>Spåra in</translation>
+        <translation>Trace in i</translation>
     </message>
     <message>
         <source>Trace over</source>
-        <translation>Spåra över</translation>
+        <translation>Trace över</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Paused</source>
@@ -5132,7 +5186,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>Öppna mapp</translation>
+        <translation>Öppna katalog</translation>
     </message>
 </context>
 <context>
@@ -5155,7 +5209,7 @@
     </message>
     <message>
         <source>Load</source>
-        <translation></translation>
+        <translation>Ladda</translation>
     </message>
     <message>
         <source>All files</source>
@@ -5170,7 +5224,7 @@
     <name>XJAR</name>
     <message>
         <source>Universal</source>
-        <translation>Universal</translation>
+        <translation>Universell</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5178,7 +5232,7 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>Packet</translation>
+        <translation>Paket</translation>
     </message>
 </context>
 <context>
@@ -5193,7 +5247,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5223,7 +5277,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5279,7 +5333,7 @@
     </message>
     <message>
         <source>Universal</source>
-        <translation>Universal</translation>
+        <translation>Universell</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5287,7 +5341,7 @@
     </message>
     <message>
         <source>Bundle</source>
-        <translation></translation>
+        <translation>Bunt</translation>
     </message>
 </context>
 <context>
@@ -5305,7 +5359,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5320,7 +5374,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5331,11 +5385,11 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>Bild</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5346,11 +5400,11 @@
     <name>XMemoryMapWidget</name>
     <message>
         <source>Show all</source>
-        <translation>Visa allt</translation>
+        <translation>Visa alla</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>Dumpa alltihop</translation>
+        <translation>Dumpa allt</translation>
     </message>
     <message>
         <source>Save</source>
@@ -5362,23 +5416,23 @@
     </message>
     <message>
         <source>File offset</source>
-        <translation>Filen&apos;s position</translation>
+        <translation>Fil-offset</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>Virtuell address</translation>
+        <translation>Virtuell adress</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>Relativ virtual address</translation>
+        <translation>Relativ virtuell adress</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>Endianess</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -5386,7 +5440,7 @@
     </message>
     <message>
         <source>Find</source>
-        <translation>Hitta</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Type</source>
@@ -5394,15 +5448,15 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Size</source>
@@ -5426,18 +5480,18 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Rå data</translation>
+        <translation>Rådata</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>Enbart-Läs</translation>
+        <translation>Skrivskyddad</translation>
     </message>
     <message>
         <source>Type</source>
@@ -5445,15 +5499,15 @@
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Nästa besökta</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Föregående besökta</translation>
     </message>
     <message>
         <source>Method</source>
@@ -5461,19 +5515,19 @@
     </message>
     <message>
         <source>View</source>
-        <translation>vy</translation>
+        <translation>Visa</translation>
     </message>
     <message>
         <source>Compact</source>
-        <translation></translation>
+        <translation>Kompakt</translation>
     </message>
     <message>
         <source>Full</source>
-        <translation></translation>
+        <translation>Fullständig</translation>
     </message>
     <message>
         <source>Analyzed</source>
-        <translation></translation>
+        <translation>Analyserad</translation>
     </message>
 </context>
 <context>
@@ -5492,14 +5546,14 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>XNPM</name>
     <message>
         <source>Universal</source>
-        <translation>Universal</translation>
+        <translation>Universell</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5507,29 +5561,29 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>Packet</translation>
+        <translation>Paket</translation>
     </message>
 </context>
 <context>
     <name>XOnlineToolsOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Get</source>
-        <translation>Få</translation>
+        <translation>Hämta</translation>
     </message>
     <message>
         <source>API key</source>
-        <translation>API Nyckel</translation>
+        <translation>API-nyckel</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation>Kunde inte hitta fil</translation>
+        <translation>Kan inte hitta fil</translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5537,11 +5591,11 @@
     </message>
     <message>
         <source>Recent files</source>
-        <translation>Senaste använda filer</translation>
+        <translation>Senaste filer</translation>
     </message>
     <message>
         <source>Code pages</source>
-        <translation>Kod sidor</translation>
+        <translation>Kodsidor</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5553,7 +5607,7 @@
     </message>
     <message>
         <source>Images</source>
-        <translation>Images</translation>
+        <translation>Bilder</translation>
     </message>
     <message>
         <source>Documents</source>
@@ -5564,11 +5618,11 @@
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation>Alltid-överst</translation>
+        <translation>Alltid överst</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation>Enbart en applikation</translation>
+        <translation>Enskild applikation</translation>
     </message>
     <message>
         <source>Style</source>
@@ -5584,7 +5638,7 @@
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>Spara senaste mappen</translation>
+        <translation>Spara senaste katalogen</translation>
     </message>
     <message>
         <source>Save backup</source>
@@ -5596,7 +5650,7 @@
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation>Lägg till, till kontext menyn</translation>
+        <translation>Lägg till i snabbmenyn</translation>
     </message>
     <message>
         <source>Set system environment variable</source>
@@ -5608,11 +5662,11 @@
     </message>
     <message>
         <source>Table views</source>
-        <translation>Tabell-vy</translation>
+        <translation>Tabellvyer</translation>
     </message>
     <message>
         <source>Tree views</source>
-        <translation>Träd-vy</translation>
+        <translation>Trädvyer</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -5620,11 +5674,23 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Text editors</source>
-        <translation>Text redigerare</translation>
+        <translation>Textredigerare</translation>
+    </message>
+    <message>
+        <source>Read buffer size</source>
+        <translation>Bufferstorlek</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>Bufferstorlek</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
     </message>
     <message>
         <source>Default</source>
@@ -5648,7 +5714,11 @@
     </message>
     <message>
         <source>Fonts</source>
-        <translation>Fonter</translation>
+        <translation>Typsnitt</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>Signaturer</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5656,7 +5726,7 @@
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation>Var vänlig och kör programmet som administratör</translation>
+        <translation>Vänligen kör programmet som administratör</translation>
     </message>
     <message>
         <source>Information</source>
@@ -5664,7 +5734,7 @@
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>Var vänlig och starta om applikationen</translation>
+        <translation>Vänligen starta om applikationen</translation>
     </message>
 </context>
 <context>
@@ -5683,7 +5753,7 @@
     </message>
     <message>
         <source>Footer</source>
-        <translation>Sid-o-fot</translation>
+        <translation>Sidfot</translation>
     </message>
     <message>
         <source>Header</source>
@@ -5702,12 +5772,16 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>Rå data</translation>
+        <source>Image</source>
+        <translation>Bild</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5734,23 +5808,23 @@
     </message>
     <message>
         <source>Boot application</source>
-        <translation>Boot applikation</translation>
+        <translation>Boot-applikation</translation>
     </message>
     <message>
         <source>Runtime driver</source>
-        <translation>Startsdrivrutin</translation>
+        <translation>Runtime-drivrutin</translation>
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation>Boot service drivrutin</translation>
+        <translation>Drivrutin för boot-tjänst</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Kunde inte öppna fil</translation>
+        <translation>Kan inte öppna fil</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation>Filen är signerad, och verifierad</translation>
+        <translation>Filen är signerad och signaturen har verifierats</translation>
     </message>
     <message>
         <source>The file is not signed</source>
@@ -5758,15 +5832,15 @@
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation>Signaturen existerar, dock är den inte tillåten</translation>
+        <translation>Signaturen finns, men är specifikt spärrad</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation>Signaturen existerar, men är inte betrodd</translation>
+        <translation>Signaturen finns, men är inte betrodd</translation>
     </message>
     <message>
         <source>The signature error</source>
-        <translation>Signaturs-fel</translation>
+        <translation>Signaturfel</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5785,12 +5859,12 @@
         <translation>Sektion</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>Över-lager</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>Resurs</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5801,7 +5875,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5816,22 +5890,42 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>Kan inte ladda databas</translation>
+    </message>
+    <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
         <translation>Storlek</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>Läsfel</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Rekursiv skanning</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>Overlay</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>Resurser</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>Aggressiv skanning</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5843,11 +5937,11 @@
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>Rekursiv skan</translation>
+        <translation>Aggressiv skanning</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Extra detailjerad</translation>
+        <translation>Utförlig</translation>
     </message>
     <message>
         <source>All types</source>
@@ -5855,31 +5949,31 @@
     </message>
     <message>
         <source>Main</source>
-        <translation></translation>
+        <translation>Huvud</translation>
     </message>
     <message>
         <source>Extra</source>
-        <translation></translation>
+        <translation>Extra</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation></translation>
+        <translation>Anpassad</translation>
     </message>
     <message>
         <source>File scan</source>
-        <translation>Fil skanning</translation>
+        <translation>Filskanning</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>Skanna enhet</translation>
+        <translation>Enhetsskanning</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>Minnes-skan</translation>
+        <translation>Minnesskanning</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>Mapp skann</translation>
+        <translation>Katalogskanning</translation>
     </message>
 </context>
 <context>
@@ -5894,22 +5988,30 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Invalid data</source>
-        <translation>Ogiltig font</translation>
+        <translation>Ogiltigt typsnitt</translation>
     </message>
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>Kan inte ladda databas</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>Ogiltigt typsnitt</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Action</source>
-        <translation>Verkan</translation>
+        <translation>Åtgärd</translation>
     </message>
     <message>
         <source>File</source>
@@ -5917,7 +6019,7 @@
     </message>
     <message>
         <source>View</source>
-        <translation>vy</translation>
+        <translation>Visa</translation>
     </message>
     <message>
         <source>String</source>
@@ -5949,15 +6051,15 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Ta-isär</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Avlusa</translation>
+        <translation>Debugga</translation>
     </message>
     <message>
         <source>Trace</source>
-        <translation>Spåra</translation>
+        <translation>Trace</translation>
     </message>
     <message>
         <source>Animate</source>
@@ -5965,11 +6067,11 @@
     </message>
     <message>
         <source>Debugger</source>
-        <translation>Avlusare</translation>
+        <translation>Debugger</translation>
     </message>
     <message>
         <source>Registers</source>
-        <translation>Registrer</translation>
+        <translation>Register</translation>
     </message>
     <message>
         <source>Register</source>
@@ -5981,7 +6083,7 @@
     </message>
     <message>
         <source>Archive</source>
-        <translation>Arkivera</translation>
+        <translation>Arkiv</translation>
     </message>
     <message>
         <source>Table</source>
@@ -6001,11 +6103,11 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Ändra</translation>
+        <translation>Redigera</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>Hitta</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>Go to</source>
@@ -6021,15 +6123,15 @@
     </message>
     <message>
         <source>Select</source>
-        <translation>Markera</translation>
+        <translation>Välj</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>Selektion</translation>
+        <translation>Markering</translation>
     </message>
     <message>
         <source>Follow in</source>
-        <translation>Föj inuti</translation>
+        <translation>Följ i</translation>
     </message>
     <message>
         <source>Show in</source>
@@ -6037,7 +6139,7 @@
     </message>
     <message>
         <source>Breakpoint</source>
-        <translation>Breakpoint</translation>
+        <translation>Brytpunkt</translation>
     </message>
     <message>
         <source>Modules</source>
@@ -6045,7 +6147,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>Minnesmapp</translation>
+        <translation>Minneskarta</translation>
     </message>
     <message>
         <source>Value</source>
@@ -6069,7 +6171,7 @@
     </message>
     <message>
         <source>Hardware</source>
-        <translation>Hårdvaru</translation>
+        <translation>Hårdvara</translation>
     </message>
     <message>
         <source>Location</source>
@@ -6077,7 +6179,7 @@
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Width</source>
@@ -6085,7 +6187,7 @@
     </message>
     <message>
         <source>Base</source>
-        <translation></translation>
+        <translation>Bas</translation>
     </message>
     <message>
         <source>Show</source>
@@ -6113,7 +6215,7 @@
     </message>
     <message>
         <source>Print</source>
-        <translation>Printa ut</translation>
+        <translation>Skriv ut</translation>
     </message>
     <message>
         <source>Exit</source>
@@ -6125,7 +6227,7 @@
     </message>
     <message>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>End</source>
@@ -6137,11 +6239,11 @@
     </message>
     <message>
         <source>Entry point</source>
-        <translation>Startnings punkt</translation>
+        <translation>Startpunkt</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
@@ -6161,7 +6263,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Avmanglera</translation>
+        <translation>Avmangla</translation>
     </message>
     <message>
         <source>Name</source>
@@ -6181,7 +6283,7 @@
     </message>
     <message>
         <source>Detach</source>
-        <translation>Koopla loss</translation>
+        <translation>Koppla loss</translation>
     </message>
     <message>
         <source>CPU</source>
@@ -6193,7 +6295,7 @@
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation>Breakpoints</translation>
+        <translation>Brytpunkter</translation>
     </message>
     <message>
         <source>Callstack</source>
@@ -6225,7 +6327,7 @@
     </message>
     <message>
         <source>Options</source>
-        <translation>Inställningar</translation>
+        <translation>Alternativ</translation>
     </message>
     <message>
         <source>About</source>
@@ -6233,7 +6335,7 @@
     </message>
     <message>
         <source>File name</source>
-        <translation>filnamn</translation>
+        <translation>Filnamn</translation>
     </message>
     <message>
         <source>Structs</source>
@@ -6241,7 +6343,7 @@
     </message>
     <message>
         <source>Viewer</source>
-        <translation>Vy-visare</translation>
+        <translation>Visare</translation>
     </message>
     <message>
         <source>Folder</source>
@@ -6257,15 +6359,15 @@
     </message>
     <message>
         <source>Step into</source>
-        <translation>Ta ett steg in i</translation>
+        <translation>Stega in i</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>Ta ett steg över</translation>
+        <translation>Stega över</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Stop</translation>
+        <translation>Stoppa</translation>
     </message>
     <message>
         <source>Restart</source>
@@ -6285,7 +6387,7 @@
     </message>
     <message>
         <source>Full screen</source>
-        <translation>Fullskärm</translation>
+        <translation>Helskärm</translation>
     </message>
     <message>
         <source>References</source>
@@ -6309,15 +6411,15 @@
     </message>
     <message>
         <source>Conditional</source>
-        <translation>Om</translation>
+        <translation>Villkorlig</translation>
     </message>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspektör</translation>
     </message>
     <message>
         <source>Convertor</source>
-        <translation></translation>
+        <translation>Konverterare</translation>
     </message>
     <message>
         <source>Multisearch</source>
@@ -6325,7 +6427,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
 </context>
 <context>
@@ -6336,7 +6438,7 @@
     </message>
     <message>
         <source>Text files</source>
-        <translation>Text filer</translation>
+        <translation>Textfiler</translation>
     </message>
     <message>
         <source>All files</source>
@@ -6348,7 +6450,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Kunde inte spara filen</translation>
+        <translation>Kan inte spara fil</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -6359,7 +6461,7 @@
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Save</source>
@@ -6386,7 +6488,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -6405,18 +6507,18 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>XVirusTotalWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>Websajt</translation>
+        <translation>Webbplats</translation>
     </message>
     <message>
         <source>Rescan</source>
@@ -6424,7 +6526,7 @@
     </message>
     <message>
         <source>Show detects</source>
-        <translation>Visa upphittade resultat</translation>
+        <translation>Visa detekteringar</translation>
     </message>
     <message>
         <source>Save</source>
@@ -6436,11 +6538,11 @@
     </message>
     <message>
         <source>First</source>
-        <translation></translation>
+        <translation>Första</translation>
     </message>
     <message>
         <source>Last</source>
-        <translation></translation>
+        <translation>Sista</translation>
     </message>
     <message>
         <source>Information</source>
@@ -6448,7 +6550,7 @@
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation>Vill du ladda upp filen för analys?</translation>
+        <translation>Ladda upp filen för analys?</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -6468,15 +6570,15 @@
     </message>
     <message>
         <source>Please use valid API key</source>
-        <translation>Var vänlig och ange en giltig API-nyckel</translation>
+        <translation>Vänligen använd en giltig API-nyckel</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Inställningar</translation>
+        <translation>Alternativ</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Verktyg online</translation>
+        <translation>Online-verktyg</translation>
     </message>
     <message>
         <source>Error</source>
@@ -6487,7 +6589,7 @@
     <name>XVisualization</name>
     <message>
         <source>None</source>
-        <translation></translation>
+        <translation>Ingen</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -6514,7 +6616,7 @@
     <name>XVisualizationWidget</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulär</translation>
     </message>
     <message>
         <source>Save</source>
@@ -6526,7 +6628,7 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>Bild</translation>
     </message>
     <message>
         <source>Schema</source>
@@ -6538,11 +6640,11 @@
     </message>
     <message>
         <source>Mode</source>
-        <translation>Module</translation>
+        <translation>Läge</translation>
     </message>
     <message>
         <source>Methods</source>
-        <translation></translation>
+        <translation>Metoder</translation>
     </message>
     <message>
         <source>Method</source>
@@ -6550,7 +6652,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation>Block Storlek</translation>
+        <translation>Blockstorlek</translation>
     </message>
     <message>
         <source>Width</source>
@@ -6562,7 +6664,7 @@
     </message>
     <message>
         <source>Zoom</source>
-        <translation></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <source>Regions</source>
@@ -6574,7 +6676,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Visualization</translation>
+        <translation>Visualisering</translation>
     </message>
 </context>
 <context>
@@ -6596,7 +6698,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -6630,7 +6732,7 @@
     </message>
     <message>
         <source>Overlay</source>
-        <translation>Över-lager</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -6653,15 +6755,15 @@
     </message>
     <message>
         <source>Matches</source>
-        <translation></translation>
+        <translation>Matchningar</translation>
     </message>
     <message>
         <source>Rule name</source>
-        <translation></translation>
+        <translation>Regelnamn</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>Plats</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
@@ -6673,7 +6775,7 @@
     </message>
     <message>
         <source>Text files</source>
-        <translation>Text filer</translation>
+        <translation>Textfiler</translation>
     </message>
     <message>
         <source>All files</source>
@@ -6685,7 +6787,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>Kunde inte spara filen</translation>
+        <translation>Kan inte spara fil</translation>
     </message>
 </context>
 <context>
@@ -6704,11 +6806,11 @@
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>ms</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Stop</translation>
+        <translation>Stoppa</translation>
     </message>
 </context>
 </TS>

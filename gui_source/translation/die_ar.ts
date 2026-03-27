@@ -271,10 +271,6 @@
         <translation>إخفاء المجهول</translation>
     </message>
     <message>
-        <source>Buffer size</source>
-        <translation>حجم المخزن المؤقت</translation>
-    </message>
-    <message>
         <source>Scan</source>
         <translation>فحص</translation>
     </message>
@@ -398,10 +394,6 @@
     <message>
         <source>Unknown</source>
         <translation>مجهول</translation>
-    </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>لا يمكن تحميل قاعدة البيانات</translation>
     </message>
 </context>
 <context>
@@ -1628,6 +1620,22 @@
         <translation>إلغاء</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>محررات النصوص</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>خلفية</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>مجموعة</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>نص</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>لون</translation>
     </message>
@@ -2152,6 +2160,27 @@
     <message>
         <source>All files</source>
         <translation>كل الملفات</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>المصادر</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3312,6 +3341,10 @@
         <translation>فك التجميع</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation>أرشيف</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>التجزئة</translation>
     </message>
@@ -3400,10 +3433,6 @@
         <translation>معالجة</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>أرشيف</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>صوت</translation>
     </message>
@@ -3438,6 +3467,10 @@
     <message>
         <source>Cannot open file</source>
         <translation>لا يمكن فتح ملف</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>خطأ في القراءة</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3480,12 +3513,20 @@
         <translation>المصادر</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>تلقائي</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
         <translation>المموه</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>أداة</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>المؤلف</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3502,6 +3543,14 @@
     <message>
         <source>Converter</source>
         <translation>محول</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>بيانات تالفة</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>المنشئ</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3548,6 +3597,10 @@
         <translation>مكتبة</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>الترخيص</translation>
+    </message>
+    <message>
         <source>Linker</source>
         <translation>رابط</translation>
     </message>
@@ -3556,12 +3609,24 @@
         <translation>المحمل</translation>
     </message>
     <message>
+        <source>Malware</source>
+        <translation>برامج ضارة</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>نظام تشغيل</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>حزمة</translation>
+    </message>
+    <message>
         <source>Packer</source>
         <translation>رازم</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>بيانات شخصية</translation>
     </message>
     <message>
         <source>Platform</source>
@@ -3570,6 +3635,10 @@
     <message>
         <source>Player</source>
         <translation>مشغل</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>المنتج</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3596,48 +3665,16 @@
         <translation>عقب</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>حصان طروادة</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>جهاز افتراضي</translation>
     </message>
     <message>
         <source>Virus</source>
         <translation>فايروس</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>حصان طروادة</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>برامج ضارة</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>حزمة</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation>الترخيص</translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation>بيانات تالفة</translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation>بيانات شخصية</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation>المؤلف</translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation>المنشئ</translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation>المنتج</translation>
     </message>
 </context>
 <context>
@@ -3784,6 +3821,30 @@
     <message>
         <source>Cannot save file</source>
         <translation>لا يمكن حفظ الملف</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>بحث عن نص</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>لم يتم العثور على شيء</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3961,13 +4022,6 @@
     </message>
 </context>
 <context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>خط غير صالح</translation>
-    </message>
-</context>
-<context>
     <name>XAmigaHunk</name>
     <message>
         <source>Unknown</source>
@@ -4121,6 +4175,10 @@
     <message>
         <source>Default</source>
         <translation>افتراضي</translation>
+    </message>
+    <message>
+        <source>ARM</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multiplatform</source>
@@ -4864,10 +4922,6 @@
     <message>
         <source>Cannot unpack</source>
         <translation>غير محزوم</translation>
-    </message>
-    <message>
-        <source>Invalid CRC</source>
-        <translation>غير صالح</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
@@ -5627,6 +5681,18 @@
         <translation>محررات النصوص</translation>
     </message>
     <message>
+        <source>Read buffer size</source>
+        <translation>حجم المخزن المؤقت</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>حجم المخزن المؤقت</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Default</source>
         <translation>افتراضي</translation>
     </message>
@@ -5649,6 +5715,10 @@
     <message>
         <source>Fonts</source>
         <translation>الخطوط</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>التوقيعات</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5702,8 +5772,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>بيانات خام</translation>
+        <source>Image</source>
+        <translation>صورة</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5785,12 +5859,12 @@
         <translation>القسم</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>طبقة</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>مصدر</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>طبقة</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>لا يمكن تحميل قاعدة البيانات</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>الإزاحة</translation>
     </message>
@@ -5830,8 +5908,24 @@
         <translation>الحجم</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>خطأ في القراءة</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>مسح تكراري</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>طبقة</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>المصادر</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>فحص عدواني</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5903,6 +5997,14 @@
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>لا يمكن تحميل قاعدة البيانات</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>خط غير صالح</translation>
     </message>
 </context>
 <context>

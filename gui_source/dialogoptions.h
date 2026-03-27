@@ -26,7 +26,7 @@
 #include <QMessageBox>
 
 #include "../global.h"
-#include "dieoptionswidget.h"
+#include "xscanengineoptionswidget.h"
 #include "searchsignaturesoptionswidget.h"
 #include "xdisasmviewoptionswidget.h"
 #include "xhexviewoptionswidget.h"
@@ -52,7 +52,7 @@ protected:
 
 private:
     Ui::DialogOptions *ui;
-    DIEOptionsWidget *m_pDIEOptionsWidget;
+    XScanEngineOptionsWidget *m_pScanEngineOptionsWidget;
     SearchSignaturesOptionsWidget *m_pSearchSignaturesOptionsWidget;
     XHexViewOptionsWidget *m_pXHexViewOptionsWidget;
     XDisasmViewOptionsWidget *m_pXDisasmViewOptionsWidget;

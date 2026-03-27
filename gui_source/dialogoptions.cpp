@@ -26,7 +26,7 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GRO
 {
     ui->setupUi(this);
 
-    m_pDIEOptionsWidget = new DIEOptionsWidget(this);
+    m_pScanEngineOptionsWidget = new XScanEngineOptionsWidget(this);
     m_pSearchSignaturesOptionsWidget = new SearchSignaturesOptionsWidget(this);
     m_pXHexViewOptionsWidget = new XHexViewOptionsWidget(this);
     m_pXDisasmViewOptionsWidget = new XDisasmViewOptionsWidget(this);
@@ -35,8 +35,8 @@ DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GRO
 
     ui->widgetOptions->setOptions(pOptions, X_APPLICATIONDISPLAYNAME);
 
-    ui->widgetOptions->addPage(m_pDIEOptionsWidget, tr("Scan"));
-    m_pDIEOptionsWidget->setOptions(pOptions);
+    ui->widgetOptions->addPage(m_pScanEngineOptionsWidget, tr("Scan"));
+    m_pScanEngineOptionsWidget->setOptions(pOptions);
 
     ui->widgetOptions->addPage(m_pSearchSignaturesOptionsWidget, tr("Signatures"));
     m_pSearchSignaturesOptionsWidget->setOptions(pOptions);

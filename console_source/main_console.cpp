@@ -174,7 +174,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pSc
 
             XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions, &pdStruct);
 
-            ScanItemModel model(pScanOptions, &(scanResult.listRecords), 1);
+            ScanItemModel model(pScanOptions, &(scanResult.listRecords), 1, nullptr);
 
             XBinary::FORMATTYPE formatType = XBinary::FORMATTYPE_TEXT;
 
@@ -304,7 +304,6 @@ int main(int argc, char *argv[])
     scanOptions.bFormatResult = parser.isSet(clFormatResult);
     scanOptions.bHideUnknown = parser.isSet(clHideUnknown);
     scanOptions.bLogProfiling = parser.isSet(clProfiling);
-    scanOptions.nBufferSize = 2 * 1024 * 1024;  // TODO
     scanOptions.bShowEntropy = parser.isSet(clEntropy);
     scanOptions.bShowFileInfo = parser.isSet(clInfo);
     scanOptions.bResultAsXML = parser.isSet(clResultAsXml);
@@ -312,7 +311,6 @@ int main(int argc, char *argv[])
     scanOptions.bResultAsCSV = parser.isSet(clResultAsCSV);
     scanOptions.bResultAsTSV = parser.isSet(clResultAsTSV);
     scanOptions.bResultAsPlainText = parser.isSet(clResultAsPlainText);
-    scanOptions.bIsHighlight = true;
     scanOptions.bIsSort = true;
 
     scanOptions.sSpecial = parser.value(clSpecial);

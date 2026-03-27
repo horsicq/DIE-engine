@@ -84,11 +84,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Info</source>
@@ -169,11 +169,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Info</source>
@@ -232,7 +232,7 @@
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>Analyse récursive</translation>
+        <translation>Scan aggressif</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -252,7 +252,7 @@
     </message>
     <message>
         <source>Sort</source>
-        <translation></translation>
+        <translation>Trier</translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -268,11 +268,7 @@
     </message>
     <message>
         <source>Hide unknown</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Buffer size</source>
-        <translation>Taille du fichier</translation>
+        <translation>Masquer l&apos;inconnu</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -398,10 +394,6 @@
     <message>
         <source>Unknown</source>
         <translation>Inconnu</translation>
-    </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>Impossible de charger la base de données</translation>
     </message>
 </context>
 <context>
@@ -535,7 +527,7 @@
     </message>
     <message>
         <source>Location</source>
-        <translation>Action</translation>
+        <translation>Emplacement</translation>
     </message>
     <message>
         <source>Size</source>
@@ -559,7 +551,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>Arrière plan</translation>
     </message>
 </context>
 <context>
@@ -738,7 +730,7 @@
     <name>DialogDataInspector</name>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspecteur</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -774,7 +766,7 @@
     </message>
     <message>
         <source>Binary</source>
-        <translation></translation>
+        <translation>Binaire</translation>
     </message>
 </context>
 <context>
@@ -876,7 +868,7 @@
     </message>
     <message>
         <source>Null-terminated</source>
-        <translation></translation>
+        <translation>Terminé par un caractère nul</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1375,7 +1367,7 @@
     </message>
     <message>
         <source>Group</source>
-        <translation></translation>
+        <translation>Groupe</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -1628,12 +1620,28 @@
         <translation>Annuler</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>Éditeurs de texte</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>Arrière plan</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>Groupe</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Ligne de texte</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>Couleur</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>Arrière plan</translation>
     </message>
 </context>
 <context>
@@ -1716,7 +1724,7 @@
     <name>DumpProcess</name>
     <message>
         <source>Invalid offset</source>
-        <translation></translation>
+        <translation>Décalage invalide</translation>
     </message>
     <message>
         <source>Invalid size</source>
@@ -1785,11 +1793,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2092,7 +2100,7 @@
     </message>
     <message>
         <source>Scan engine</source>
-        <translation></translation>
+        <translation>Moteur d&apos;analyse</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -2100,7 +2108,7 @@
     </message>
     <message>
         <source>Binary</source>
-        <translation></translation>
+        <translation>Binaire</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -2152,6 +2160,27 @@
     <message>
         <source>All files</source>
         <translation>Tout les fichiers</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>Ressources</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -2242,11 +2271,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2350,11 +2379,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2501,11 +2530,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2590,11 +2619,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2685,7 +2714,7 @@
     </message>
     <message>
         <source>Buffer size</source>
-        <translation>Taille du fichier</translation>
+        <translation>Taille du tampon</translation>
     </message>
 </context>
 <context>
@@ -2712,7 +2741,7 @@
     </message>
     <message>
         <source>Heuristics</source>
-        <translation></translation>
+        <translation>Heuristique</translation>
     </message>
     <message>
         <source>Text files</source>
@@ -3078,11 +3107,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -3198,7 +3227,7 @@
     </message>
     <message>
         <source>Metadata table</source>
-        <translation></translation>
+        <translation>Tableau de métadonnées</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -3312,6 +3341,10 @@
         <translation>Désassembler</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation>Archive</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Hash</translation>
     </message>
@@ -3400,10 +3433,6 @@
         <translation>Traiter</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>Archive</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>Audio</translation>
     </message>
@@ -3438,6 +3467,10 @@
     <message>
         <source>Cannot open file</source>
         <translation>Ne peut pas ouvrir le fichier</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>Erreur de lecture</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3480,12 +3513,20 @@
         <translation>Ressources</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>Automatique</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
-        <translation></translation>
+        <translation>Obfuscateur</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>Outil</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Auteur</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3497,11 +3538,19 @@
     </message>
     <message>
         <source>Compressor</source>
-        <translation></translation>
+        <translation>Compresseur</translation>
     </message>
     <message>
         <source>Converter</source>
         <translation>Convertisseur</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>Données corrompues</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>Créateur</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3521,7 +3570,7 @@
     </message>
     <message>
         <source>Extender</source>
-        <translation></translation>
+        <translation>Extenseur</translation>
     </message>
     <message>
         <source>Generic</source>
@@ -3548,6 +3597,10 @@
         <translation>Bibliothèque</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>Licences</translation>
+    </message>
+    <message>
         <source>Linker</source>
         <translation>Lier</translation>
     </message>
@@ -3556,20 +3609,36 @@
         <translation>Chargeur</translation>
     </message>
     <message>
+        <source>Malware</source>
+        <translation>Logiciel malveillant</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Le système d&apos;exploitation</translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation>Package</translation>
     </message>
     <message>
         <source>Packer</source>
         <translation>Packer</translation>
     </message>
     <message>
+        <source>Personal data</source>
+        <translation>Données personnelles</translation>
+    </message>
+    <message>
         <source>Platform</source>
-        <translation></translation>
+        <translation>Plate-forme</translation>
     </message>
     <message>
         <source>Player</source>
         <translation>Joueur</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>Producteur</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3596,48 +3665,16 @@
         <translation>Squelette</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>Troie</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>Machine virtuelle</translation>
     </message>
     <message>
         <source>Virus</source>
         <translation>Virus</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>Package</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation>Licences</translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation></translation>
     </message>
 </context>
 <context>
@@ -3735,7 +3772,7 @@
     <name>SearchStringsWidget</name>
     <message>
         <source>Null-terminated</source>
-        <translation></translation>
+        <translation>Terminé par un caractère nul</translation>
     </message>
     <message>
         <source>Links</source>
@@ -3759,7 +3796,7 @@
     </message>
     <message>
         <source>Mask</source>
-        <translation></translation>
+        <translation>Masque</translation>
     </message>
     <message>
         <source>Regular expression</source>
@@ -3767,7 +3804,7 @@
     </message>
     <message>
         <source>Min length</source>
-        <translation></translation>
+        <translation>Longueur minimum</translation>
     </message>
     <message>
         <source>Result</source>
@@ -3784,6 +3821,30 @@
     <message>
         <source>Cannot save file</source>
         <translation>Ne peut pas sauvegarder le fichier</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Chaîne de recherche</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>Rien de trouvé</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3961,13 +4022,6 @@
     </message>
 </context>
 <context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>Fonte invalide</translation>
-    </message>
-</context>
-<context>
     <name>XAmigaHunk</name>
     <message>
         <source>Unknown</source>
@@ -4068,11 +4122,11 @@
     </message>
     <message>
         <source>Objects</source>
-        <translation></translation>
+        <translation>Objets</translation>
     </message>
     <message>
         <source>Maps</source>
-        <translation></translation>
+        <translation>Cartes</translation>
     </message>
     <message>
         <source>Data</source>
@@ -4104,7 +4158,7 @@
     </message>
     <message>
         <source>Warning</source>
-        <translation></translation>
+        <translation>Avertissement</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4112,7 +4166,7 @@
     </message>
     <message>
         <source>Corrupted data</source>
-        <translation></translation>
+        <translation>Données corrompues</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -4121,6 +4175,10 @@
     <message>
         <source>Default</source>
         <translation>Défaut</translation>
+    </message>
+    <message>
+        <source>ARM</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multiplatform</source>
@@ -4212,7 +4270,7 @@
     </message>
     <message>
         <source>Main module</source>
-        <translation></translation>
+        <translation>Module principal</translation>
     </message>
     <message>
         <source>Header</source>
@@ -4465,7 +4523,7 @@
     </message>
     <message>
         <source>Registers</source>
-        <translation>Enregistrer</translation>
+        <translation>Registres</translation>
     </message>
     <message>
         <source>Numbers</source>
@@ -4481,7 +4539,7 @@
     </message>
     <message>
         <source>General registers</source>
-        <translation></translation>
+        <translation>Registre generaux</translation>
     </message>
     <message>
         <source>Stack registers</source>
@@ -4489,7 +4547,7 @@
     </message>
     <message>
         <source>Segment registers</source>
-        <translation></translation>
+        <translation>Registres de segments</translation>
     </message>
     <message>
         <source>Debug registers</source>
@@ -4497,11 +4555,11 @@
     </message>
     <message>
         <source>Instruction pointer register</source>
-        <translation></translation>
+        <translation>Registre pointeur d&apos;instruction</translation>
     </message>
     <message>
         <source>Flags register</source>
-        <translation></translation>
+        <translation>Registre à drapeaux</translation>
     </message>
 </context>
 <context>
@@ -4672,7 +4730,7 @@
     </message>
     <message>
         <source>Run path</source>
-        <translation></translation>
+        <translation>Chemin d&apos;exécution</translation>
     </message>
     <message>
         <source>Symbol table</source>
@@ -4866,10 +4924,6 @@
         <translation>pas compressé</translation>
     </message>
     <message>
-        <source>Invalid CRC</source>
-        <translation>Invalide</translation>
-    </message>
-    <message>
         <source>Cannot decompress</source>
         <translation>Impossible d&apos;ouvrir la session</translation>
     </message>
@@ -5043,7 +5097,7 @@
     </message>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspecteur</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -5059,7 +5113,7 @@
     </message>
     <message>
         <source>Base</source>
-        <translation></translation>
+        <translation>Base</translation>
     </message>
 </context>
 <context>
@@ -5155,7 +5209,7 @@
     </message>
     <message>
         <source>Load</source>
-        <translation></translation>
+        <translation>Charger</translation>
     </message>
     <message>
         <source>All files</source>
@@ -5287,7 +5341,7 @@
     </message>
     <message>
         <source>Bundle</source>
-        <translation></translation>
+        <translation>Paquet</translation>
     </message>
 </context>
 <context>
@@ -5449,11 +5503,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Visite suivante</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Visite précédente</translation>
     </message>
     <message>
         <source>Method</source>
@@ -5465,15 +5519,15 @@
     </message>
     <message>
         <source>Compact</source>
-        <translation></translation>
+        <translation>Compact</translation>
     </message>
     <message>
         <source>Full</source>
-        <translation></translation>
+        <translation>Plein</translation>
     </message>
     <message>
         <source>Analyzed</source>
-        <translation></translation>
+        <translation>Analyser</translation>
     </message>
 </context>
 <context>
@@ -5627,6 +5681,18 @@
         <translation>Éditeurs de texte</translation>
     </message>
     <message>
+        <source>Read buffer size</source>
+        <translation>Taille du tampon</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>Taille du tampon</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Default</source>
         <translation>Défaut</translation>
     </message>
@@ -5649,6 +5715,10 @@
     <message>
         <source>Fonts</source>
         <translation>Fonte</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>Signatures</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5702,8 +5772,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>Données brutes</translation>
+        <source>Image</source>
+        <translation>Image</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5785,12 +5859,12 @@
         <translation>Section</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>Superposition</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>Ressource</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Superposition</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>Impossible de charger la base de données</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Offset</translation>
     </message>
@@ -5830,8 +5908,24 @@
         <translation>Taille</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>Erreur de lecture</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Analyse récursive</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>Superposition</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>Ressources</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>Scan aggressif</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5843,7 +5937,7 @@
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>Analyse récursive</translation>
+        <translation>Scan aggressif</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -5855,7 +5949,7 @@
     </message>
     <message>
         <source>Main</source>
-        <translation></translation>
+        <translation>Principal(e)</translation>
     </message>
     <message>
         <source>Extra</source>
@@ -5863,7 +5957,7 @@
     </message>
     <message>
         <source>Custom</source>
-        <translation></translation>
+        <translation>Custom</translation>
     </message>
     <message>
         <source>File scan</source>
@@ -5903,6 +5997,14 @@
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>Impossible de charger la base de données</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>Fonte invalide</translation>
     </message>
 </context>
 <context>
@@ -5969,7 +6071,7 @@
     </message>
     <message>
         <source>Registers</source>
-        <translation>Enregistrer</translation>
+        <translation>Registres</translation>
     </message>
     <message>
         <source>Register</source>
@@ -6069,11 +6171,11 @@
     </message>
     <message>
         <source>Hardware</source>
-        <translation></translation>
+        <translation>Matériel informatique</translation>
     </message>
     <message>
         <source>Location</source>
-        <translation>Action</translation>
+        <translation>Emplacement</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -6085,7 +6187,7 @@
     </message>
     <message>
         <source>Base</source>
-        <translation></translation>
+        <translation>Base</translation>
     </message>
     <message>
         <source>Show</source>
@@ -6313,11 +6415,11 @@
     </message>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspecteur</translation>
     </message>
     <message>
         <source>Convertor</source>
-        <translation></translation>
+        <translation>Convertisseur</translation>
     </message>
     <message>
         <source>Multisearch</source>
@@ -6436,7 +6538,7 @@
     </message>
     <message>
         <source>First</source>
-        <translation></translation>
+        <translation>Premier</translation>
     </message>
     <message>
         <source>Last</source>
@@ -6495,7 +6597,7 @@
     </message>
     <message>
         <source>Gradient</source>
-        <translation></translation>
+        <translation>Gradient</translation>
     </message>
     <message>
         <source>Zeros</source>
@@ -6542,7 +6644,7 @@
     </message>
     <message>
         <source>Methods</source>
-        <translation></translation>
+        <translation>Methode</translation>
     </message>
     <message>
         <source>Method</source>
@@ -6550,7 +6652,7 @@
     </message>
     <message>
         <source>Block size</source>
-        <translation></translation>
+        <translation>Taille de bloc</translation>
     </message>
     <message>
         <source>Width</source>
@@ -6558,7 +6660,7 @@
     </message>
     <message>
         <source>Height</source>
-        <translation></translation>
+        <translation>Hauteur</translation>
     </message>
     <message>
         <source>Zoom</source>
@@ -6570,7 +6672,7 @@
     </message>
     <message>
         <source>Highlights</source>
-        <translation></translation>
+        <translation>Surligner</translation>
     </message>
     <message>
         <source>Visualization</source>

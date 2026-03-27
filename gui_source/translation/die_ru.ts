@@ -271,10 +271,6 @@
         <translation>Скрыть неизвестное</translation>
     </message>
     <message>
-        <source>Buffer size</source>
-        <translation>Размер буфера</translation>
-    </message>
-    <message>
         <source>Scan</source>
         <translation>Сканировать</translation>
     </message>
@@ -398,10 +394,6 @@
     <message>
         <source>Unknown</source>
         <translation>Неизвестно</translation>
-    </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>Не удаётся загрузить базу данных</translation>
     </message>
 </context>
 <context>
@@ -1628,6 +1620,22 @@
         <translation>Отмена</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>Текстовые редакторы</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>Фон</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>Группа</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Строка</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>Цвет</translation>
     </message>
@@ -2152,6 +2160,27 @@
     <message>
         <source>All files</source>
         <translation>Все файлы</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>Ресурсы</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3312,6 +3341,10 @@
         <translation>Дизасм</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation>Архив</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Хеш</translation>
     </message>
@@ -3400,10 +3433,6 @@
         <translation>Процесс</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>Архив</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>Аудио</translation>
     </message>
@@ -3438,6 +3467,10 @@
     <message>
         <source>Cannot open file</source>
         <translation>Невозможно открыть файл</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>Ошибка чтения</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3480,12 +3513,20 @@
         <translation>Ресурсы</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>Автоматически</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
         <translation>Обфускатор</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>Инструмент</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Автор</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3502,6 +3543,14 @@
     <message>
         <source>Converter</source>
         <translation>Конвертер</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>Поврежденные данные</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>Создатель</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3548,6 +3597,10 @@
         <translation>Библиотека</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>Лицензирование</translation>
+    </message>
+    <message>
         <source>Linker</source>
         <translation>Линковщик</translation>
     </message>
@@ -3556,12 +3609,24 @@
         <translation>Загрузчик</translation>
     </message>
     <message>
+        <source>Malware</source>
+        <translation>Вредоносное ПО</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Операционная система</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>Пакет</translation>
+    </message>
+    <message>
         <source>Packer</source>
         <translation>Упаковщик</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>Персональные данные</translation>
     </message>
     <message>
         <source>Platform</source>
@@ -3570,6 +3635,10 @@
     <message>
         <source>Player</source>
         <translation>Игрок</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>Производитель</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3596,48 +3665,16 @@
         <translation>Заглушка</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>Троян</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>Виртуальная машина</translation>
     </message>
     <message>
         <source>Virus</source>
         <translation>Вирус</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>Троян</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>Вредоносное ПО</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>Пакет</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation>Лицензирование</translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation>Поврежденные данные</translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation>Персональные данные</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation>Автор</translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation>Создатель</translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation>Производитель</translation>
     </message>
 </context>
 <context>
@@ -3784,6 +3821,30 @@
     <message>
         <source>Cannot save file</source>
         <translation>Невозможно сохранить файл</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Поиск строки</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>Ничего не найдено</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3961,13 +4022,6 @@
     </message>
 </context>
 <context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>Неверный шрифт</translation>
-    </message>
-</context>
-<context>
     <name>XAmigaHunk</name>
     <message>
         <source>Unknown</source>
@@ -4121,6 +4175,10 @@
     <message>
         <source>Default</source>
         <translation>По умолчанию</translation>
+    </message>
+    <message>
+        <source>ARM</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multiplatform</source>
@@ -4864,10 +4922,6 @@
     <message>
         <source>Cannot unpack</source>
         <translation>несжатый</translation>
-    </message>
-    <message>
-        <source>Invalid CRC</source>
-        <translation>Неверный</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
@@ -5627,6 +5681,18 @@
         <translation>Текстовые редакторы</translation>
     </message>
     <message>
+        <source>Read buffer size</source>
+        <translation>Размер буфера</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>Размер буфера</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Default</source>
         <translation>По умолчанию</translation>
     </message>
@@ -5649,6 +5715,10 @@
     <message>
         <source>Fonts</source>
         <translation>Шрифты</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>Сигнатуры</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5702,8 +5772,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>Сырые данные</translation>
+        <source>Image</source>
+        <translation>Рисунок</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5785,12 +5859,12 @@
         <translation>Секция</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>Оверлей</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>Ресурс</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Оверлей</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>Не удаётся загрузить базу данных</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Смещение</translation>
     </message>
@@ -5830,8 +5908,24 @@
         <translation>Размер</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>Ошибка чтения</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Рекурсивный скан</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>Оверлей</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>Ресурсы</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>Агрессивное сканирование</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5903,6 +5997,14 @@
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>Не удаётся загрузить базу данных</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>Неверный шрифт</translation>
     </message>
 </context>
 <context>

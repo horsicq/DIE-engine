@@ -39,9 +39,9 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     g_xOptions.addID(XOptions::ID_SCAN_FLAG_HEURISTIC, false);
     g_xOptions.addID(XOptions::ID_SCAN_FLAG_VERBOSE, true);
     g_xOptions.addID(XOptions::ID_SCAN_FLAG_ALLTYPES, false);
-    g_xOptions.addID(XOptions::ID_SCAN_DATABASE_MAIN_PATH, "$data/db");
-    g_xOptions.addID(XOptions::ID_SCAN_DATABASE_EXTRA_PATH, "$data/db_extra");
-    g_xOptions.addID(XOptions::ID_SCAN_DATABASE_CUSTOM_PATH, "$data/db_custom");
+    g_xOptions.addID(XOptions::ID_SCAN_DIE_DATABASE_MAIN_PATH, "$data/db");
+    g_xOptions.addID(XOptions::ID_SCAN_DIE_DATABASE_EXTRA_PATH, "$data/db_extra");
+    g_xOptions.addID(XOptions::ID_SCAN_DIE_DATABASE_CUSTOM_PATH, "$data/db_custom");
 
     g_xOptions.load();
 
@@ -127,9 +127,9 @@ void LiteMainWindow::process()
         scanOptions.bShowVersion = true;
         scanOptions.bShowInfo = true;
         scanOptions.fileType = (XBinary::FT)(ui->comboBoxType->currentData().toInt());
-        scanOptions.sMainDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DATABASE_MAIN_PATH).toString();
-        scanOptions.sExtraDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DATABASE_EXTRA_PATH).toString();
-        scanOptions.sCustomDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DATABASE_CUSTOM_PATH).toString();
+        scanOptions.sMainDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DIE_DATABASE_MAIN_PATH).toString();
+        scanOptions.sExtraDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DIE_DATABASE_EXTRA_PATH).toString();
+        scanOptions.sCustomDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DIE_DATABASE_CUSTOM_PATH).toString();
 
         XScanEngine::setScanFlags(&scanOptions, ui->comboBoxFlags->getValue().toULongLong());
         XScanEngine::setDatabases(&scanOptions, ui->comboBoxDatabases->getValue().toULongLong());
@@ -140,7 +140,7 @@ void LiteMainWindow::process()
 
         XScanEngine::SCAN_RESULT scanResult = g_pDieScript->scanFile(_sFileName, &scanOptions);
 
-        ScanItemModel model(&scanOptions, &(scanResult.listRecords), 1);
+        ScanItemModel model(&scanOptions, &(scanResult.listRecords), 1, nullptr);
 
         ui->plainTextEditResult->setPlainText(model.toFormattedString());
 

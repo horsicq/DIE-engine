@@ -271,10 +271,6 @@
         <translation>Unbekannt verstecken</translation>
     </message>
     <message>
-        <source>Buffer size</source>
-        <translation>Buffergröße</translation>
-    </message>
-    <message>
         <source>Scan</source>
         <translation>Scan</translation>
     </message>
@@ -398,10 +394,6 @@
     <message>
         <source>Unknown</source>
         <translation>Unbekannt</translation>
-    </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>Datenbank kann nicht geladen werden</translation>
     </message>
 </context>
 <context>
@@ -1628,6 +1620,22 @@
         <translation>Abbrechen</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>Texteditor</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>Hintergrund</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>Gruppe</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>String</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>Farbe</translation>
     </message>
@@ -2152,6 +2160,27 @@
     <message>
         <source>All files</source>
         <translation>Alle Dateien</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>Ressourcen</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3312,6 +3341,10 @@
         <translation>Disassembler</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation>Archiv</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Hash</translation>
     </message>
@@ -3400,10 +3433,6 @@
         <translation>Prozess</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>Archiv</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>Audio</translation>
     </message>
@@ -3438,6 +3467,10 @@
     <message>
         <source>Cannot open file</source>
         <translation>Kann die Datei nicht öffnen</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>Lesefehler</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3480,12 +3513,20 @@
         <translation>Ressourcen</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>Automatisch</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
         <translation>Verschleierer</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>Werkzeug</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Autor</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3502,6 +3543,14 @@
     <message>
         <source>Converter</source>
         <translation>Konverter</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>Beschädigte Daten</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>Ersteller</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3548,6 +3597,10 @@
         <translation>Bibliothek</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>Lizenzierung</translation>
+    </message>
+    <message>
         <source>Linker</source>
         <translation>Linker</translation>
     </message>
@@ -3556,12 +3609,24 @@
         <translation>Lader</translation>
     </message>
     <message>
+        <source>Malware</source>
+        <translation>Malware</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Betriebssystem</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>Paket</translation>
+    </message>
+    <message>
         <source>Packer</source>
         <translation>Packer</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>Personenbezogene Daten</translation>
     </message>
     <message>
         <source>Platform</source>
@@ -3570,6 +3635,10 @@
     <message>
         <source>Player</source>
         <translation>Spieler</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>Hersteller</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3596,48 +3665,16 @@
         <translation>Stub</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>Trojaner</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>Virtuelle Maschine</translation>
     </message>
     <message>
         <source>Virus</source>
         <translation>Virus</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>Trojaner</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>Malware</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>Paket</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation>Lizenzierung</translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation>Beschädigte Daten</translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation>Personenbezogene Daten</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation>Autor</translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation>Ersteller</translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation>Hersteller</translation>
     </message>
 </context>
 <context>
@@ -3784,6 +3821,30 @@
     <message>
         <source>Cannot save file</source>
         <translation>Kann die Datei nicht speichern</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Suche String</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>Nichts gefunden</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3961,13 +4022,6 @@
     </message>
 </context>
 <context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>Ungültige Schriftart</translation>
-    </message>
-</context>
-<context>
     <name>XAmigaHunk</name>
     <message>
         <source>Unknown</source>
@@ -4121,6 +4175,10 @@
     <message>
         <source>Default</source>
         <translation>Standard</translation>
+    </message>
+    <message>
+        <source>ARM</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multiplatform</source>
@@ -4864,10 +4922,6 @@
     <message>
         <source>Cannot unpack</source>
         <translation>Nicht gepackt</translation>
-    </message>
-    <message>
-        <source>Invalid CRC</source>
-        <translation>Ungültig</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
@@ -5627,6 +5681,18 @@
         <translation>Texteditor</translation>
     </message>
     <message>
+        <source>Read buffer size</source>
+        <translation>Buffergröße</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>Buffergröße</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Default</source>
         <translation>Standard</translation>
     </message>
@@ -5649,6 +5715,10 @@
     <message>
         <source>Fonts</source>
         <translation>Schriftarten</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>Signaturen</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5702,8 +5772,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>Rohdaten</translation>
+        <source>Image</source>
+        <translation>Speicherabbild</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5785,12 +5859,12 @@
         <translation>Bereich</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>Overlay</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>Ressource</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>Datenbank kann nicht geladen werden</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Offset</translation>
     </message>
@@ -5830,8 +5908,24 @@
         <translation>Größe</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>Lesefehler</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Rekursiver Scan</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>Overlay</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>Ressourcen</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>Aggressiver Scan</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5903,6 +5997,14 @@
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>Datenbank kann nicht geladen werden</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>Ungültige Schriftart</translation>
     </message>
 </context>
 <context>

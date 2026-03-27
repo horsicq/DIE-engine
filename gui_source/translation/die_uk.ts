@@ -271,10 +271,6 @@
         <translation>Приховати невідомі</translation>
     </message>
     <message>
-        <source>Buffer size</source>
-        <translation>Розмір буферу</translation>
-    </message>
-    <message>
         <source>Scan</source>
         <translation>Сканувати</translation>
     </message>
@@ -398,10 +394,6 @@
     <message>
         <source>Unknown</source>
         <translation>Невідомо</translation>
-    </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>Не вдалося завантажити базу даних</translation>
     </message>
 </context>
 <context>
@@ -1628,6 +1620,22 @@
         <translation>Скасувати</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>Текстові редактори</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>Фон</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>Групувати</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Рядок</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>Колір</translation>
     </message>
@@ -2152,6 +2160,27 @@
     <message>
         <source>All files</source>
         <translation>Всі файли</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>Ресурси</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3312,6 +3341,10 @@
         <translation>Дизасемблер</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation>Архів</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Хеш</translation>
     </message>
@@ -3400,10 +3433,6 @@
         <translation>Процес</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>Архів</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>Аудіо</translation>
     </message>
@@ -3438,6 +3467,10 @@
     <message>
         <source>Cannot open file</source>
         <translation>Не вдалося відкрити файл</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>Помилка читання</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3480,12 +3513,20 @@
         <translation>Ресурси</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>Автоматично</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
         <translation>Обфускатор</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>Інструмент</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Автор</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3502,6 +3543,14 @@
     <message>
         <source>Converter</source>
         <translation>Конвертор</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>Пошкоджені дані</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>Творець</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3548,6 +3597,10 @@
         <translation>Бібліотека</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>Ліцензування</translation>
+    </message>
+    <message>
         <source>Linker</source>
         <translation>Лінкер</translation>
     </message>
@@ -3556,12 +3609,24 @@
         <translation>Лоадер</translation>
     </message>
     <message>
+        <source>Malware</source>
+        <translation>Шкідливе програмне забезпечення</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Операційна система</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>Пакет</translation>
+    </message>
+    <message>
         <source>Packer</source>
         <translation>Пакувальник</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>Персональні дані</translation>
     </message>
     <message>
         <source>Platform</source>
@@ -3570,6 +3635,10 @@
     <message>
         <source>Player</source>
         <translation>Гравець</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>Продюсер</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3596,48 +3665,16 @@
         <translation>Заглушка</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>Троян</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>Віртуальна машина</translation>
     </message>
     <message>
         <source>Virus</source>
         <translation>Вірус</translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation>Троян</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>Шкідливе програмне забезпечення</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>Пакет</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation>Ліцензування</translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation>Пошкоджені дані</translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation>Персональні дані</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation>Автор</translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation>Творець</translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation>Продюсер</translation>
     </message>
 </context>
 <context>
@@ -3784,6 +3821,30 @@
     <message>
         <source>Cannot save file</source>
         <translation>Не вдалося зберегти файл</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Пошук рядку</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>Нічого не знайдено</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3961,13 +4022,6 @@
     </message>
 </context>
 <context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>Невірний шрифт</translation>
-    </message>
-</context>
-<context>
     <name>XAmigaHunk</name>
     <message>
         <source>Unknown</source>
@@ -4121,6 +4175,10 @@
     <message>
         <source>Default</source>
         <translation>За замовчуванням</translation>
+    </message>
+    <message>
+        <source>ARM</source>
+        <translation></translation>
     </message>
     <message>
         <source>Multiplatform</source>
@@ -4864,10 +4922,6 @@
     <message>
         <source>Cannot unpack</source>
         <translation>незапакований</translation>
-    </message>
-    <message>
-        <source>Invalid CRC</source>
-        <translation>Невірний</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
@@ -5627,6 +5681,18 @@
         <translation>Текстові редактори</translation>
     </message>
     <message>
+        <source>Read buffer size</source>
+        <translation>Розмір буферу</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>Розмір буферу</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Default</source>
         <translation>За замовчуванням</translation>
     </message>
@@ -5649,6 +5715,10 @@
     <message>
         <source>Fonts</source>
         <translation>Шрифти</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>Сигнатури</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5702,8 +5772,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>Сирі дані</translation>
+        <source>Image</source>
+        <translation>Малюнок</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5785,12 +5859,12 @@
         <translation>Секція</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>Оверлей</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>Ресурс</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Оверлей</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>Не вдалося завантажити базу даних</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Зміщення</translation>
     </message>
@@ -5830,8 +5908,24 @@
         <translation>Розмір</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>Помилка читання</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Рекурсивне сканування</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>Оверлей</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>Ресурси</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>Агресивне сканування</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5903,6 +5997,14 @@
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>Не вдалося завантажити базу даних</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>Невірний шрифт</translation>
     </message>
 </context>
 <context>

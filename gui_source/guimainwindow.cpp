@@ -95,7 +95,12 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 #endif
 #endif
 
-    DIEOptionsWidget::setDefaultValues(&g_xOptions);
+    g_xOptions.addID(XOptions::ID_SCAN_ENGINE_DIE_ENABLED, true);
+#ifdef USE_YARA
+    g_xOptions.addID(XOptions::ID_SCAN_ENGINE_YARA_ENABLED, true);
+#endif
+
+    XScanEngineOptionsWidget::setDefaultValues(&g_xOptions);
     SearchSignaturesOptionsWidget::setDefaultValues(&g_xOptions);
     XHexViewOptionsWidget::setDefaultValues(&g_xOptions);
     XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
@@ -103,19 +108,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     XInfoDBOptionsWidget::setDefaultValues(&g_xOptions);
 
     g_xOptions.addID(XOptions::ID_SCAN_ENGINE, "auto");
-#ifdef USE_YARA
-    QString yaraPath;
-#ifdef Q_OS_WIN
-    if (g_xOptions.isNative()) {
-        yaraPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/yara_rules";
-    } else {
-        yaraPath = "$data/yara_rules";
-    }
-#else
-    yaraPath = "$data/yara_rules";
-#endif
-    g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, yaraPath);
-#endif
+
     g_xOptions.load();
 #if defined(Q_OS_WIN) && defined(X_BUILD_INSTALL)
     checkMsixResources();

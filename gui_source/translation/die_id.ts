@@ -84,11 +84,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Info</source>
@@ -128,7 +128,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -169,11 +169,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Info</source>
@@ -209,7 +209,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -232,7 +232,7 @@
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation>Pemindaian agresif</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -240,7 +240,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Verbose</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
@@ -252,7 +252,7 @@
     </message>
     <message>
         <source>Sort</source>
-        <translation></translation>
+        <translation>Urutkan</translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -260,19 +260,15 @@
     </message>
     <message>
         <source>Format result</source>
-        <translation>Simpan hasil</translation>
+        <translation>Hasil format</translation>
     </message>
     <message>
         <source>Profiling</source>
-        <translation></translation>
+        <translation>Profil</translation>
     </message>
     <message>
         <source>Hide unknown</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Buffer size</source>
-        <translation>Ukuran file</translation>
+        <translation>Sembunyikan yang tidak diketahui</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -284,7 +280,7 @@
     </message>
     <message>
         <source>Extra database</source>
-        <translation></translation>
+        <translation>Basis data ekstra</translation>
     </message>
     <message>
         <source>Custom database</source>
@@ -335,7 +331,7 @@
     </message>
     <message>
         <source>Signature name</source>
-        <translation></translation>
+        <translation>Nama tanda tangan</translation>
     </message>
     <message>
         <source>Text files</source>
@@ -399,16 +395,12 @@
         <source>Unknown</source>
         <translation>Tidak diketahui</translation>
     </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>Tidak dapat memuat basis data</translation>
-    </message>
 </context>
 <context>
     <name>DiE_ScriptEngine</name>
     <message>
         <source>Cannot find</source>
-        <translation></translation>
+        <translation>Tidak dapat menemukan</translation>
     </message>
 </context>
 <context>
@@ -500,7 +492,7 @@
     <name>DialogBits8</name>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>Bit</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -512,7 +504,7 @@
     </message>
     <message>
         <source>Unsigned</source>
-        <translation></translation>
+        <translation>Tidak bertanda</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -527,7 +519,7 @@
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>Bookmark</translation>
     </message>
     <message>
         <source>OK</source>
@@ -660,7 +652,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Verbose</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
@@ -668,7 +660,7 @@
     </message>
     <message>
         <source>Profiling</source>
-        <translation></translation>
+        <translation>Profil</translation>
     </message>
     <message>
         <source>Find</source>
@@ -692,7 +684,7 @@
     </message>
     <message>
         <source>Show info</source>
-        <translation></translation>
+        <translation>Tampilkan info</translation>
     </message>
     <message>
         <source>Clear result</source>
@@ -738,7 +730,7 @@
     <name>DialogDataInspector</name>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspektur</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -770,11 +762,11 @@
     </message>
     <message>
         <source>Unicode</source>
-        <translation></translation>
+        <translation>Unicode</translation>
     </message>
     <message>
         <source>Binary</source>
-        <translation></translation>
+        <translation>Biner</translation>
     </message>
 </context>
 <context>
@@ -845,7 +837,7 @@
     </message>
     <message>
         <source>Calls</source>
-        <translation>Panggilan balik</translation>
+        <translation>Tumpukan panggilan</translation>
     </message>
     <message>
         <source>Jumps</source>
@@ -876,7 +868,7 @@
     </message>
     <message>
         <source>Null-terminated</source>
-        <translation></translation>
+        <translation>Diakhiri null</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1169,7 +1161,7 @@
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Alat penanda</translation>
+        <translation>Alat online</translation>
     </message>
     <message>
         <source>Info</source>
@@ -1375,7 +1367,7 @@
     </message>
     <message>
         <source>Group</source>
-        <translation></translation>
+        <translation>Grup</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -1391,7 +1383,7 @@
     </message>
     <message>
         <source>Plain Text</source>
-        <translation></translation>
+        <translation>Teks Biasa</translation>
     </message>
 </context>
 <context>
@@ -1422,11 +1414,11 @@
     </message>
     <message>
         <source>Zoom In</source>
-        <translation></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <source>Zoom Out</source>
-        <translation></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <source>Actual Size</source>
@@ -1493,7 +1485,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Verbose</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1536,7 +1528,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Verbose</translation>
     </message>
     <message>
         <source>All types</source>
@@ -1628,6 +1620,22 @@
         <translation>Batal</translation>
     </message>
     <message>
+        <source>Text color</source>
+        <translation>Editor teks</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>Latar belakang</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>Grup</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>String</translation>
+    </message>
+    <message>
         <source>Color</source>
         <translation>Warna</translation>
     </message>
@@ -1669,7 +1677,7 @@
     <name>DialogXExtractor</name>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1716,7 +1724,7 @@
     <name>DumpProcess</name>
     <message>
         <source>Invalid offset</source>
-        <translation></translation>
+        <translation>Offset tidak valid</translation>
     </message>
     <message>
         <source>Invalid size</source>
@@ -1724,19 +1732,19 @@
     </message>
     <message>
         <source>Cannot read file</source>
-        <translation></translation>
+        <translation>Tidak dapat membaca file</translation>
     </message>
     <message>
         <source>Cannot fix dump file</source>
-        <translation></translation>
+        <translation>Tidak dapat memperbaiki file dump</translation>
     </message>
     <message>
         <source>Cannot open dump file</source>
-        <translation></translation>
+        <translation>Tidak dapat membuka file dump</translation>
     </message>
     <message>
         <source>Cannot write data to file</source>
-        <translation></translation>
+        <translation>Tidak dapat menulis data ke file</translation>
     </message>
 </context>
 <context>
@@ -1785,11 +1793,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Info</source>
@@ -1829,7 +1837,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -1996,7 +2004,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Signatures</source>
@@ -2016,7 +2024,7 @@
     </message>
     <message>
         <source>Unpack</source>
-        <translation></translation>
+        <translation>Buka kemasan</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -2092,7 +2100,7 @@
     </message>
     <message>
         <source>Scan engine</source>
-        <translation></translation>
+        <translation>Mesin pemindai</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -2100,7 +2108,7 @@
     </message>
     <message>
         <source>Binary</source>
-        <translation></translation>
+        <translation>Biner</translation>
     </message>
     <message>
         <source>Open directory</source>
@@ -2115,7 +2123,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation></translation>
+        <translation>Lanjutan</translation>
     </message>
     <message>
         <source>Demangle</source>
@@ -2153,6 +2161,27 @@
         <source>All files</source>
         <translation>Semua file</translation>
     </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>Sumber</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>HashProcess</name>
@@ -2181,7 +2210,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Verbose</translation>
     </message>
     <message>
         <source>All types</source>
@@ -2242,11 +2271,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2286,7 +2315,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2350,11 +2379,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2394,7 +2423,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2501,11 +2530,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2545,7 +2574,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2590,11 +2619,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2634,7 +2663,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2669,7 +2698,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Verbose</translation>
     </message>
     <message>
         <source>All types</source>
@@ -2677,7 +2706,7 @@
     </message>
     <message>
         <source>Format result</source>
-        <translation>Simpan hasil</translation>
+        <translation>Hasil format</translation>
     </message>
     <message>
         <source>Highlight</source>
@@ -2685,7 +2714,7 @@
     </message>
     <message>
         <source>Buffer size</source>
-        <translation>Ukuran file</translation>
+        <translation>Ukuran buffer</translation>
     </message>
 </context>
 <context>
@@ -2712,7 +2741,7 @@
     </message>
     <message>
         <source>Heuristics</source>
-        <translation></translation>
+        <translation>Heuristik</translation>
     </message>
     <message>
         <source>Text files</source>
@@ -2814,7 +2843,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2905,11 +2934,11 @@
     </message>
     <message>
         <source>Tags</source>
-        <translation></translation>
+        <translation>Tag</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation></translation>
+        <translation>Deskripsi</translation>
     </message>
     <message>
         <source>Type</source>
@@ -2981,7 +3010,7 @@
     </message>
     <message>
         <source>Sorted</source>
-        <translation></translation>
+        <translation>Terurut</translation>
     </message>
 </context>
 <context>
@@ -3078,11 +3107,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -3122,7 +3151,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -3198,7 +3227,7 @@
     </message>
     <message>
         <source>Metadata table</source>
-        <translation></translation>
+        <translation>Tabel metadata</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -3312,6 +3341,10 @@
         <translation>Mengulik</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation>Arsip</translation>
+    </message>
+    <message>
         <source>Hash</source>
         <translation>Hash</translation>
     </message>
@@ -3341,7 +3374,7 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>Ekstrak</translation>
+        <translation>Ekstraktor</translation>
     </message>
     <message>
         <source>Search</source>
@@ -3385,7 +3418,7 @@
     </message>
     <message>
         <source>Footer</source>
-        <translation></translation>
+        <translation>Kaki</translation>
     </message>
     <message>
         <source>Object</source>
@@ -3400,12 +3433,8 @@
         <translation>Proses</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>Arsip</translation>
-    </message>
-    <message>
         <source>Audio</source>
-        <translation></translation>
+        <translation>Audio</translation>
     </message>
     <message>
         <source>Document</source>
@@ -3417,7 +3446,7 @@
     </message>
     <message>
         <source>Plain Text</source>
-        <translation></translation>
+        <translation>Teks Biasa</translation>
     </message>
     <message>
         <source>Text</source>
@@ -3425,7 +3454,7 @@
     </message>
     <message>
         <source>Video</source>
-        <translation></translation>
+        <translation>Video</translation>
     </message>
     <message>
         <source>Info</source>
@@ -3433,11 +3462,15 @@
     </message>
     <message>
         <source>Encrypted</source>
-        <translation></translation>
+        <translation>Crypter</translation>
     </message>
     <message>
         <source>Cannot open file</source>
         <translation>Tidak dapat membuka file</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>Kesalahan baca</translation>
     </message>
     <message>
         <source>Architecture</source>
@@ -3480,12 +3513,20 @@
         <translation>Sumber</translation>
     </message>
     <message>
+        <source>Auto</source>
+        <translation>Otomatis</translation>
+    </message>
+    <message>
         <source>Obfuscator</source>
-        <translation></translation>
+        <translation>Obfuscator</translation>
     </message>
     <message>
         <source>Tool</source>
         <translation>Alat</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Penulis</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -3497,15 +3538,23 @@
     </message>
     <message>
         <source>Compressor</source>
-        <translation></translation>
+        <translation>Kompresor</translation>
     </message>
     <message>
         <source>Converter</source>
         <translation>Konverter</translation>
     </message>
     <message>
+        <source>Corrupted data</source>
+        <translation>Data rusak</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>Pencipta</translation>
+    </message>
+    <message>
         <source>Crypter</source>
-        <translation></translation>
+        <translation>Crypter</translation>
     </message>
     <message>
         <source>Cryptor</source>
@@ -3521,7 +3570,7 @@
     </message>
     <message>
         <source>Extender</source>
-        <translation></translation>
+        <translation>Perpanjangan</translation>
     </message>
     <message>
         <source>Generic</source>
@@ -3548,28 +3597,48 @@
         <translation>Pustaka</translation>
     </message>
     <message>
+        <source>Licensing</source>
+        <translation>Lisensi</translation>
+    </message>
+    <message>
         <source>Linker</source>
         <translation>Penghubung</translation>
     </message>
     <message>
         <source>Loader</source>
-        <translation>Tajuk</translation>
+        <translation>Pemuat</translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation>Malware</translation>
     </message>
     <message>
         <source>Operation system</source>
         <translation>Sistem operasi</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>Paket</translation>
+    </message>
+    <message>
         <source>Packer</source>
         <translation>Pengepak</translation>
     </message>
     <message>
+        <source>Personal data</source>
+        <translation>Data pribadi</translation>
+    </message>
+    <message>
         <source>Platform</source>
-        <translation></translation>
+        <translation>Platform</translation>
     </message>
     <message>
         <source>Player</source>
         <translation>Pemain</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>Produsen</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -3596,48 +3665,16 @@
         <translation>Potongan</translation>
     </message>
     <message>
+        <source>Trojan</source>
+        <translation>Trojan</translation>
+    </message>
+    <message>
         <source>Virtual machine</source>
         <translation>Mesin virtual</translation>
     </message>
     <message>
         <source>Virus</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Trojan</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>Pengepak</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation></translation>
+        <translation>Virus</translation>
     </message>
 </context>
 <context>
@@ -3704,7 +3741,7 @@
     </message>
     <message>
         <source>Patch</source>
-        <translation></translation>
+        <translation>Patch</translation>
     </message>
     <message>
         <source>File</source>
@@ -3735,7 +3772,7 @@
     <name>SearchStringsWidget</name>
     <message>
         <source>Null-terminated</source>
-        <translation></translation>
+        <translation>Diakhiri null</translation>
     </message>
     <message>
         <source>Links</source>
@@ -3759,15 +3796,15 @@
     </message>
     <message>
         <source>Mask</source>
-        <translation></translation>
+        <translation>Masker</translation>
     </message>
     <message>
         <source>Regular expression</source>
-        <translation></translation>
+        <translation>Ekspresi reguler</translation>
     </message>
     <message>
         <source>Min length</source>
-        <translation></translation>
+        <translation>Panjang minimal</translation>
     </message>
     <message>
         <source>Result</source>
@@ -3784,6 +3821,30 @@
     <message>
         <source>Cannot save file</source>
         <translation>Tidak dapat menyimpan file</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Cari string</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>Tidak ada yang ditemukan</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3818,15 +3879,15 @@
     </message>
     <message>
         <source>Search string</source>
-        <translation></translation>
+        <translation>Cari string</translation>
     </message>
     <message>
         <source>Search signature</source>
-        <translation></translation>
+        <translation>Cari tanda tangan</translation>
     </message>
     <message>
         <source>Search value</source>
-        <translation></translation>
+        <translation>Cari nilai</translation>
     </message>
     <message>
         <source>Result</source>
@@ -3876,7 +3937,7 @@
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Verbose</translation>
     </message>
     <message>
         <source>All types</source>
@@ -3894,7 +3955,7 @@
     <name>XAPK</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>Universal</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -3902,7 +3963,7 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>Pengepak</translation>
+        <translation>Paket</translation>
     </message>
 </context>
 <context>
@@ -3941,7 +4002,7 @@
     </message>
     <message>
         <source>Go to download page?</source>
-        <translation></translation>
+        <translation>Pergi ke halaman unduhan?</translation>
     </message>
     <message>
         <source>No update available</source>
@@ -3958,13 +4019,6 @@
     <message>
         <source>The value copied to clipboard</source>
         <translation>Nilai disalin ke clipboard</translation>
-    </message>
-</context>
-<context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation></translation>
     </message>
 </context>
 <context>
@@ -4044,7 +4098,7 @@
     </message>
     <message>
         <source>256-bit</source>
-        <translation></translation>
+        <translation>256-bit</translation>
     </message>
     <message>
         <source>Read error</source>
@@ -4068,11 +4122,11 @@
     </message>
     <message>
         <source>Objects</source>
-        <translation></translation>
+        <translation>Objek</translation>
     </message>
     <message>
         <source>Maps</source>
-        <translation></translation>
+        <translation>Peta</translation>
     </message>
     <message>
         <source>Data</source>
@@ -4092,11 +4146,11 @@
     </message>
     <message>
         <source>true</source>
-        <translation></translation>
+        <translation>benar</translation>
     </message>
     <message>
         <source>false</source>
-        <translation></translation>
+        <translation>salah</translation>
     </message>
     <message>
         <source>Info</source>
@@ -4104,7 +4158,7 @@
     </message>
     <message>
         <source>Warning</source>
-        <translation></translation>
+        <translation>Peringatan</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4112,7 +4166,7 @@
     </message>
     <message>
         <source>Corrupted data</source>
-        <translation></translation>
+        <translation>Data rusak</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -4123,8 +4177,12 @@
         <translation>Bawaan</translation>
     </message>
     <message>
-        <source>Multiplatform</source>
+        <source>ARM</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Multiplatform</source>
+        <translation>Multiplatform</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -4132,7 +4190,7 @@
     </message>
     <message>
         <source>KiB</source>
-        <translation></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <source>kB</source>
@@ -4140,7 +4198,7 @@
     </message>
     <message>
         <source>MiB</source>
-        <translation>MB</translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <source>MB</source>
@@ -4148,7 +4206,7 @@
     </message>
     <message>
         <source>GiB</source>
-        <translation>GB</translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <source>GB</source>
@@ -4156,11 +4214,11 @@
     </message>
     <message>
         <source>TiB</source>
-        <translation></translation>
+        <translation>TiB</translation>
     </message>
     <message>
         <source>TB</source>
-        <translation></translation>
+        <translation>TB</translation>
     </message>
     <message>
         <source>Total</source>
@@ -4212,7 +4270,7 @@
     </message>
     <message>
         <source>Main module</source>
-        <translation></translation>
+        <translation>Modul utama</translation>
     </message>
     <message>
         <source>Header</source>
@@ -4227,11 +4285,11 @@
     <name>XDOS16</name>
     <message>
         <source>Loader</source>
-        <translation>Tajuk</translation>
+        <translation>Pemuat</translation>
     </message>
     <message>
         <source>Payload</source>
-        <translation></translation>
+        <translation>Payload</translation>
     </message>
     <message>
         <source>Header</source>
@@ -4277,15 +4335,15 @@
     </message>
     <message>
         <source>Encode</source>
-        <translation></translation>
+        <translation>Enkode</translation>
     </message>
     <message>
         <source>Decode</source>
-        <translation></translation>
+        <translation>Dekode</translation>
     </message>
     <message>
         <source>Input</source>
-        <translation></translation>
+        <translation>Masukan</translation>
     </message>
     <message>
         <source>Size</source>
@@ -4301,7 +4359,7 @@
     </message>
     <message>
         <source>Output</source>
-        <translation></translation>
+        <translation>Keluaran</translation>
     </message>
 </context>
 <context>
@@ -4338,7 +4396,7 @@
     </message>
     <message>
         <source>Patch</source>
-        <translation></translation>
+        <translation>Patch</translation>
     </message>
     <message>
         <source>Cannot resize</source>
@@ -4364,7 +4422,7 @@
     </message>
     <message>
         <source>Advanced</source>
-        <translation></translation>
+        <translation>Lanjutan</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -4437,7 +4495,7 @@
     </message>
     <message>
         <source>Uppercase</source>
-        <translation></translation>
+        <translation>Huruf besar</translation>
     </message>
     <message>
         <source>Show colons in addresses</source>
@@ -4453,7 +4511,7 @@
     </message>
     <message>
         <source>Arrows</source>
-        <translation></translation>
+        <translation>Panah</translation>
     </message>
     <message>
         <source>All</source>
@@ -4465,7 +4523,7 @@
     </message>
     <message>
         <source>Registers</source>
-        <translation>Region</translation>
+        <translation>Register</translation>
     </message>
     <message>
         <source>Numbers</source>
@@ -4481,27 +4539,27 @@
     </message>
     <message>
         <source>General registers</source>
-        <translation></translation>
+        <translation>Register umum</translation>
     </message>
     <message>
         <source>Stack registers</source>
-        <translation></translation>
+        <translation>Register tumpukan</translation>
     </message>
     <message>
         <source>Segment registers</source>
-        <translation></translation>
+        <translation>Register segmen</translation>
     </message>
     <message>
         <source>Debug registers</source>
-        <translation></translation>
+        <translation>Register debug</translation>
     </message>
     <message>
         <source>Instruction pointer register</source>
-        <translation></translation>
+        <translation>Register penunjuk instruksi</translation>
     </message>
     <message>
         <source>Flags register</source>
-        <translation></translation>
+        <translation>Register bendera</translation>
     </message>
 </context>
 <context>
@@ -4672,7 +4730,7 @@
     </message>
     <message>
         <source>Run path</source>
-        <translation></translation>
+        <translation>Jalur eksekusi</translation>
     </message>
     <message>
         <source>Symbol table</source>
@@ -4703,11 +4761,11 @@
     </message>
     <message>
         <source>Diagram</source>
-        <translation></translation>
+        <translation>Diagram</translation>
     </message>
     <message>
         <source>Grid</source>
-        <translation></translation>
+        <translation>Kisi</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -4836,7 +4894,7 @@
     </message>
     <message>
         <source>Output</source>
-        <translation></translation>
+        <translation>Keluaran</translation>
     </message>
     <message>
         <source>Text</source>
@@ -4864,10 +4922,6 @@
     <message>
         <source>Cannot unpack</source>
         <translation>tidak dikemas</translation>
-    </message>
-    <message>
-        <source>Invalid CRC</source>
-        <translation>Tidak valid</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
@@ -4914,7 +4968,7 @@
     </message>
     <message>
         <source>Plain Text Extension</source>
-        <translation></translation>
+        <translation>Teks Biasa</translation>
     </message>
     <message>
         <source>Extension</source>
@@ -4933,7 +4987,7 @@
     </message>
     <message>
         <source>Footer</source>
-        <translation></translation>
+        <translation>Kaki</translation>
     </message>
     <message>
         <source>Stream</source>
@@ -5043,7 +5097,7 @@
     </message>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspektur</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -5059,7 +5113,7 @@
     </message>
     <message>
         <source>Base</source>
-        <translation></translation>
+        <translation>Basis</translation>
     </message>
 </context>
 <context>
@@ -5105,11 +5159,11 @@
     </message>
     <message>
         <source>Trace into</source>
-        <translation></translation>
+        <translation>Trace ke dalam</translation>
     </message>
     <message>
         <source>Trace over</source>
-        <translation></translation>
+        <translation>Trace melompati</translation>
     </message>
     <message>
         <source>Address</source>
@@ -5155,7 +5209,7 @@
     </message>
     <message>
         <source>Load</source>
-        <translation></translation>
+        <translation>Muat</translation>
     </message>
     <message>
         <source>All files</source>
@@ -5170,7 +5224,7 @@
     <name>XJAR</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>Universal</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5178,7 +5232,7 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>Pengepak</translation>
+        <translation>Paket</translation>
     </message>
 </context>
 <context>
@@ -5234,7 +5288,7 @@
     </message>
     <message>
         <source>Bits</source>
-        <translation></translation>
+        <translation>Bit</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -5249,19 +5303,19 @@
     </message>
     <message>
         <source>KiB</source>
-        <translation></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation>MB</translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <source>GiB</source>
-        <translation>GB</translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <source>TiB</source>
-        <translation></translation>
+        <translation>TiB</translation>
     </message>
 </context>
 <context>
@@ -5279,7 +5333,7 @@
     </message>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>Universal</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5287,7 +5341,7 @@
     </message>
     <message>
         <source>Bundle</source>
-        <translation></translation>
+        <translation>Bundel</translation>
     </message>
 </context>
 <context>
@@ -5449,11 +5503,11 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation></translation>
+        <translation>Kunjungan berikutnya</translation>
     </message>
     <message>
         <source>Previous visited</source>
-        <translation></translation>
+        <translation>Kunjungan sebelumnya</translation>
     </message>
     <message>
         <source>Method</source>
@@ -5465,15 +5519,15 @@
     </message>
     <message>
         <source>Compact</source>
-        <translation></translation>
+        <translation>Padat</translation>
     </message>
     <message>
         <source>Full</source>
-        <translation></translation>
+        <translation>Penuh</translation>
     </message>
     <message>
         <source>Analyzed</source>
-        <translation></translation>
+        <translation>Teranalisis</translation>
     </message>
 </context>
 <context>
@@ -5499,7 +5553,7 @@
     <name>XNPM</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>Universal</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5507,7 +5561,7 @@
     </message>
     <message>
         <source>Package</source>
-        <translation>Pengepak</translation>
+        <translation>Paket</translation>
     </message>
 </context>
 <context>
@@ -5518,7 +5572,7 @@
     </message>
     <message>
         <source>Get</source>
-        <translation></translation>
+        <translation>Dapatkan</translation>
     </message>
     <message>
         <source>API key</source>
@@ -5604,15 +5658,15 @@
     </message>
     <message>
         <source>Controls</source>
-        <translation></translation>
+        <translation>Kontrol</translation>
     </message>
     <message>
         <source>Table views</source>
-        <translation></translation>
+        <translation>Tampilan tabel</translation>
     </message>
     <message>
         <source>Tree views</source>
-        <translation></translation>
+        <translation>Tampilan pohon</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -5624,6 +5678,18 @@
     </message>
     <message>
         <source>Text editors</source>
+        <translation>Editor teks</translation>
+    </message>
+    <message>
+        <source>Read buffer size</source>
+        <translation>Ukuran buffer</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>Ukuran buffer</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
         <translation></translation>
     </message>
     <message>
@@ -5648,7 +5714,11 @@
     </message>
     <message>
         <source>Fonts</source>
-        <translation></translation>
+        <translation>Font</translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5683,7 +5753,7 @@
     </message>
     <message>
         <source>Footer</source>
-        <translation></translation>
+        <translation>Kaki</translation>
     </message>
     <message>
         <source>Header</source>
@@ -5702,8 +5772,12 @@
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>Data mentah</translation>
+        <source>Image</source>
+        <translation>Gambar</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5726,7 +5800,7 @@
     </message>
     <message>
         <source>Driver</source>
-        <translation></translation>
+        <translation>Driver</translation>
     </message>
     <message>
         <source>Native</source>
@@ -5785,12 +5859,12 @@
         <translation>Bagian</translation>
     </message>
     <message>
-        <source>Overlay</source>
-        <translation>Overlay</translation>
-    </message>
-    <message>
         <source>Resource</source>
         <translation>Sumber</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>Tidak dapat memuat basis data</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>Offset</translation>
     </message>
@@ -5830,8 +5908,24 @@
         <translation>Ukuran</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>Kesalahan baca</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
         <translation>Pemindaian rekursif</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>Overlay</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>Sumber</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>Pemindaian agresif</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5843,11 +5937,11 @@
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>Pemindaian rekursif</translation>
+        <translation>Pemindaian agresif</translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation></translation>
+        <translation>Verbose</translation>
     </message>
     <message>
         <source>All types</source>
@@ -5855,15 +5949,15 @@
     </message>
     <message>
         <source>Main</source>
-        <translation></translation>
+        <translation>Utama</translation>
     </message>
     <message>
         <source>Extra</source>
-        <translation></translation>
+        <translation>Ekstra</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation></translation>
+        <translation>Kustom</translation>
     </message>
     <message>
         <source>File scan</source>
@@ -5898,11 +5992,19 @@
     </message>
     <message>
         <source>Invalid data</source>
-        <translation>Tidak valid</translation>
+        <translation>Font tidak valid</translation>
     </message>
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>Tidak dapat memuat basis data</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>Font tidak valid</translation>
     </message>
 </context>
 <context>
@@ -5957,11 +6059,11 @@
     </message>
     <message>
         <source>Trace</source>
-        <translation></translation>
+        <translation>Trace</translation>
     </message>
     <message>
         <source>Animate</source>
-        <translation></translation>
+        <translation>Animasi</translation>
     </message>
     <message>
         <source>Debugger</source>
@@ -5969,11 +6071,11 @@
     </message>
     <message>
         <source>Registers</source>
-        <translation>Region</translation>
+        <translation>Register</translation>
     </message>
     <message>
         <source>Register</source>
-        <translation></translation>
+        <translation>Daftar</translation>
     </message>
     <message>
         <source>Stack</source>
@@ -6037,7 +6139,7 @@
     </message>
     <message>
         <source>Breakpoint</source>
-        <translation></translation>
+        <translation>Titik henti</translation>
     </message>
     <message>
         <source>Modules</source>
@@ -6057,11 +6159,11 @@
     </message>
     <message>
         <source>Editor</source>
-        <translation></translation>
+        <translation>Editor</translation>
     </message>
     <message>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>Bookmark</translation>
     </message>
     <message>
         <source>Analyze</source>
@@ -6085,7 +6187,7 @@
     </message>
     <message>
         <source>Base</source>
-        <translation></translation>
+        <translation>Basis</translation>
     </message>
     <message>
         <source>Show</source>
@@ -6153,7 +6255,7 @@
     </message>
     <message>
         <source>Patch</source>
-        <translation></translation>
+        <translation>Patch</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -6197,7 +6299,7 @@
     </message>
     <message>
         <source>Callstack</source>
-        <translation></translation>
+        <translation>Tumpukan panggilan</translation>
     </message>
     <message>
         <source>Threads</source>
@@ -6245,7 +6347,7 @@
     </message>
     <message>
         <source>Folder</source>
-        <translation></translation>
+        <translation>Folder</translation>
     </message>
     <message>
         <source>Run</source>
@@ -6293,7 +6395,7 @@
     </message>
     <message>
         <source>Bookmark</source>
-        <translation></translation>
+        <translation>Bookmark</translation>
     </message>
     <message>
         <source>List</source>
@@ -6313,15 +6415,15 @@
     </message>
     <message>
         <source>Inspector</source>
-        <translation></translation>
+        <translation>Inspektur</translation>
     </message>
     <message>
         <source>Convertor</source>
-        <translation></translation>
+        <translation>Konverter</translation>
     </message>
     <message>
         <source>Multisearch</source>
-        <translation></translation>
+        <translation>Pencarian ganda</translation>
     </message>
     <message>
         <source>Visualization</source>
@@ -6436,11 +6538,11 @@
     </message>
     <message>
         <source>First</source>
-        <translation></translation>
+        <translation>Pertama</translation>
     </message>
     <message>
         <source>Last</source>
-        <translation></translation>
+        <translation>Terakhir</translation>
     </message>
     <message>
         <source>Information</source>
@@ -6476,7 +6578,7 @@
     </message>
     <message>
         <source>Online tools</source>
-        <translation>Alat penanda</translation>
+        <translation>Alat online</translation>
     </message>
     <message>
         <source>Error</source>
@@ -6487,7 +6589,7 @@
     <name>XVisualization</name>
     <message>
         <source>None</source>
-        <translation></translation>
+        <translation>Tidak ada</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -6495,11 +6597,11 @@
     </message>
     <message>
         <source>Gradient</source>
-        <translation></translation>
+        <translation>Gradien</translation>
     </message>
     <message>
         <source>Zeros</source>
-        <translation></translation>
+        <translation>Nol</translation>
     </message>
     <message>
         <source>Text</source>
@@ -6530,7 +6632,7 @@
     </message>
     <message>
         <source>Schema</source>
-        <translation></translation>
+        <translation>Skema</translation>
     </message>
     <message>
         <source>Type</source>
@@ -6542,7 +6644,7 @@
     </message>
     <message>
         <source>Methods</source>
-        <translation></translation>
+        <translation>Metode</translation>
     </message>
     <message>
         <source>Method</source>
@@ -6562,7 +6664,7 @@
     </message>
     <message>
         <source>Zoom</source>
-        <translation></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <source>Regions</source>
@@ -6653,11 +6755,11 @@
     </message>
     <message>
         <source>Matches</source>
-        <translation></translation>
+        <translation>Kecocokan</translation>
     </message>
     <message>
         <source>Rule name</source>
-        <translation></translation>
+        <translation>Nama aturan</translation>
     </message>
     <message>
         <source>Offset</source>

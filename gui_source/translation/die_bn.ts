@@ -9,11 +9,11 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>ছাঁকনি</translation>
+        <translation>ফিল্টার</translation>
     </message>
     <message>
         <source>Tree</source>
@@ -25,7 +25,7 @@
     </message>
     <message>
         <source>Open</source>
-        <translation>খোলা</translation>
+        <translation>খুলুন</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -37,7 +37,7 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>Copy</source>
-        <translation>অনুলিপি</translation>
+        <translation>কপি</translation>
     </message>
     <message>
         <source>File name</source>
@@ -57,11 +57,11 @@
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>অস্বস্তিকর ফাইল</translation>
+        <translation>ফাইলে ডাম্প করুন</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>ফাইল সংরক্ষণ</translation>
+        <translation>ফাইল সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Error</source>
@@ -69,7 +69,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>ফাইল সংরক্ষণ করা যাবে না</translation>
+        <translation>ফাইল সংরক্ষণ করা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
@@ -84,7 +84,7 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -96,7 +96,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -104,7 +104,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -112,15 +112,15 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -128,11 +128,11 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
 </context>
 <context>
@@ -165,11 +165,11 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -181,7 +181,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -193,15 +193,15 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -209,34 +209,34 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
 </context>
 <context>
     <name>DIEOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>খোলার পরে স্ক্যান করুন</translation>
+        <translation>খোলার পর স্ক্যান করুন</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>রিকার্সিভ স্ক্যান</translation>
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>আক্রমণাত্মক স্ক্যান</translation>
+        <translation>আগ্রাসী স্ক্যান</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -244,23 +244,23 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>সব ধরনের</translation>
+        <translation>সব ধরন</translation>
     </message>
     <message>
         <source>Sort</source>
-        <translation></translation>
+        <translation>সাজান</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation>লক্ষণীয় করা</translation>
+        <translation>হাইলাইট</translation>
     </message>
     <message>
         <source>Format result</source>
-        <translation>ফলাফল সংরক্ষণ করুন</translation>
+        <translation>ফলাফল ফরম্যাট করুন</translation>
     </message>
     <message>
         <source>Profiling</source>
@@ -271,16 +271,12 @@
         <translation>অজানা লুকান</translation>
     </message>
     <message>
-        <source>Buffer size</source>
-        <translation>বাফারের আকার</translation>
-    </message>
-    <message>
         <source>Scan</source>
         <translation>স্ক্যান</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>তথ্যশালা</translation>
+        <translation>ডাটাবেস</translation>
     </message>
     <message>
         <source>Extra database</source>
@@ -288,11 +284,11 @@
     </message>
     <message>
         <source>Custom database</source>
-        <translation>স্বনির্ধারিত ডাটাবেস</translation>
+        <translation>কাস্টম ডাটাবেস</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>ডিরেক্টরি খুলুন</translation>
+        <translation>ডাইরেক্টরি খুলুন</translation>
     </message>
 </context>
 <context>
@@ -303,11 +299,11 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -315,15 +311,15 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>তথ্যশালা</translation>
+        <translation>ডাটাবেস</translation>
     </message>
     <message>
         <source>Result</source>
@@ -335,15 +331,15 @@
     </message>
     <message>
         <source>Signature name</source>
-        <translation></translation>
+        <translation>স্বাক্ষরের নাম</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>পাঠ্য ফাইল</translation>
+        <translation>টেক্সট ফাইল</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
     <message>
         <source>Error</source>
@@ -351,22 +347,22 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>ফাইল সংরক্ষণ করা যাবে না</translation>
+        <translation>ফাইল সংরক্ষণ করা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
     <name>DIE_Widget</name>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>বিবিধ তথ্যসম্বলি</translation>
+        <translation>ডাইরেক্টরি</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>ঘটনার তথ্যশালা</translation>
+        <translation>লগ</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -374,15 +370,15 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation>থামো</translation>
+        <translation>থামুন</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>তথ্যশালা</translation>
+        <translation>ডাটাবেস</translation>
     </message>
     <message>
         <source>msec</source>
@@ -390,7 +386,7 @@
     </message>
     <message>
         <source>Copy as</source>
-        <translation>হিসাবে অনুলিপি</translation>
+        <translation>হিসাবে কপি করুন</translation>
     </message>
 </context>
 <context>
@@ -399,23 +395,19 @@
         <source>Unknown</source>
         <translation>অজানা</translation>
     </message>
-    <message>
-        <source>Cannot load database</source>
-        <translation>ডাটাবেস লোড করা যাবে না</translation>
-    </message>
 </context>
 <context>
     <name>DiE_ScriptEngine</name>
     <message>
         <source>Cannot find</source>
-        <translation>খুঁজে পাওয়া যায়নি</translation>
+        <translation>খুঁজে পাওয়া যাচ্ছে না</translation>
     </message>
 </context>
 <context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
-        <translation>সম্পর্ক</translation>
+        <translation>সম্পর্কিত</translation>
     </message>
     <message>
         <source>OK</source>
@@ -423,7 +415,7 @@
     </message>
     <message>
         <source>Bugreports</source>
-        <translation>ত্রুটি প্রতিবেদন</translation>
+        <translation>বাগ রিপোর্ট</translation>
     </message>
     <message>
         <source>Website</source>
@@ -442,11 +434,11 @@
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation>সংরক্ষণাগার</translation>
+        <translation>আর্কাইভ</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>খোলা</translation>
+        <translation>খুলুন</translation>
     </message>
     <message>
         <source>Close</source>
@@ -465,7 +457,7 @@
     </message>
     <message>
         <source>Upper</source>
-        <translation>উপরের</translation>
+        <translation>আপার</translation>
     </message>
     <message>
         <source>Wildcard</source>
@@ -473,7 +465,7 @@
     </message>
     <message>
         <source>Copy</source>
-        <translation>অনুলিপি</translation>
+        <translation>কপি</translation>
     </message>
     <message>
         <source>OK</source>
@@ -489,7 +481,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>বাইটগুলো</translation>
+        <translation>বাইট</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -512,11 +504,11 @@
     </message>
     <message>
         <source>Unsigned</source>
-        <translation>অস্বাক্ষরিত</translation>
+        <translation>আন-স্বাক্ষরিত</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
     <message>
         <source>OK</source>
@@ -527,7 +519,7 @@
     <name>DialogBookmarks</name>
     <message>
         <source>Bookmarks</source>
-        <translation>পুস্তক-চিহ্ন সমূহ</translation>
+        <translation>বুকমার্কসমূহ</translation>
     </message>
     <message>
         <source>OK</source>
@@ -543,7 +535,7 @@
     </message>
     <message>
         <source>Color</source>
-        <translation>রং</translation>
+        <translation>রঙ</translation>
     </message>
     <message>
         <source>Comment</source>
@@ -581,15 +573,15 @@
     <name>DialogDIEScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>বিবিধ তথ্যসম্বলি স্ক্যান</translation>
+        <translation>ডাইরেক্টরি স্ক্যান</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>বিবিধ তথ্যসম্বলি</translation>
+        <translation>ডাইরেক্টরি</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>সাব-ডিরেক্টরি</translation>
+        <translation>সাব-ডাইরেক্টরি</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -597,11 +589,11 @@
     </message>
     <message>
         <source>Clear</source>
-        <translation>পরিষ্কার</translation>
+        <translation>পরিষ্কার করুন</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>OK</source>
@@ -609,11 +601,11 @@
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>ডিরেক্টরি খুলুন</translation>
+        <translation>ডাইরেক্টরি খুলুন</translation>
     </message>
     <message>
         <source>msec</source>
@@ -621,7 +613,7 @@
     </message>
     <message>
         <source>Text documents</source>
-        <translation>পাঠ্য নথি</translation>
+        <translation>টেক্সট নথি</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -632,11 +624,11 @@
     <name>DialogDIESignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -648,15 +640,15 @@
     </message>
     <message>
         <source>Debug</source>
-        <translation>ডিবাগ(সংশোধন)</translation>
+        <translation>ডিবাগ</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>রিকার্সিভ স্ক্যান</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -664,7 +656,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>Profiling</source>
@@ -672,7 +664,7 @@
     </message>
     <message>
         <source>Find</source>
-        <translation>অনুসন্ধান</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Next</source>
@@ -680,7 +672,7 @@
     </message>
     <message>
         <source>Detect</source>
-        <translation>সনাক্ত করুন</translation>
+        <translation>শনাক্ত করুন</translation>
     </message>
     <message>
         <source>Show type</source>
@@ -704,11 +696,11 @@
     </message>
     <message>
         <source>Database</source>
-        <translation>তথ্যশালা</translation>
+        <translation>ডাটাবেস</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>ডিবাগ(সংশোধন)</translation>
+        <translation>ডিবাগ</translation>
     </message>
     <message>
         <source>msec</source>
@@ -731,14 +723,14 @@
     </message>
     <message>
         <source>Script</source>
-        <translation></translation>
+        <translation>স্ক্রিপ্ট</translation>
     </message>
 </context>
 <context>
     <name>DialogDataInspector</name>
     <message>
         <source>Inspector</source>
-        <translation>পরিদর্শক</translation>
+        <translation>ইন্সপেক্টর</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -770,7 +762,7 @@
     </message>
     <message>
         <source>Unicode</source>
-        <translation></translation>
+        <translation>ইউনিকোড</translation>
     </message>
     <message>
         <source>Binary</source>
@@ -781,7 +773,7 @@
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation>ডিম্যাঙ্গল</translation>
     </message>
     <message>
         <source>OK</source>
@@ -792,7 +784,7 @@
     <name>DialogDieHexViewer</name>
     <message>
         <source>Scripts</source>
-        <translation></translation>
+        <translation>স্ক্রিপ্টসমূহ</translation>
     </message>
     <message>
         <source>OK</source>
@@ -803,7 +795,7 @@
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Close</source>
@@ -818,7 +810,7 @@
     </message>
     <message>
         <source>Go to</source>
-        <translation>যাও</translation>
+        <translation>যান</translation>
     </message>
     <message>
         <source>Close</source>
@@ -837,15 +829,15 @@
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation>অপকোড সমূহ</translation>
+        <translation>অপকোডসমূহ</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation>কলের স্তূপ</translation>
+        <translation>কলস্ট্যাক</translation>
     </message>
     <message>
         <source>Jumps</source>
@@ -857,18 +849,18 @@
     </message>
     <message>
         <source>Ref from</source>
-        <translation>থেকে অনুসন্ধান করুন</translation>
+        <translation>থেকে খুঁজুন</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
 </context>
 <context>
     <name>DialogEditString</name>
     <message>
         <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
+        <translation>স্ট্রিং</translation>
     </message>
     <message>
         <source>Keep size</source>
@@ -876,7 +868,7 @@
     </message>
     <message>
         <source>Null-terminated</source>
-        <translation>নাল-সমাপ্ত</translation>
+        <translation>নাল-টার্মিনেটেড</translation>
     </message>
     <message>
         <source>OK</source>
@@ -884,11 +876,11 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
     <message>
         <source>Bytes available</source>
-        <translation>বাইটগুলো ব্যবহারযোগ্য</translation>
+        <translation>বাইট উপলব্ধ</translation>
     </message>
 </context>
 <context>
@@ -906,11 +898,11 @@
     <name>DialogFindText</name>
     <message>
         <source>Find</source>
-        <translation>অনুসন্ধান</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>সমকক্ষ ধরন</translation>
+        <translation>কেস মেলান</translation>
     </message>
     <message>
         <source>OK</source>
@@ -918,7 +910,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
 </context>
 <context>
@@ -941,7 +933,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
     <message>
         <source>Virtual address</source>
@@ -961,7 +953,7 @@
     </message>
     <message>
         <source>Invalid</source>
-        <translation>অবৈধ</translation>
+        <translation>অকার্যকর</translation>
     </message>
 </context>
 <context>
@@ -979,7 +971,7 @@
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation>সম্পাদনা করুন</translation>
+        <translation>সম্পাদনা</translation>
     </message>
     <message>
         <source>Close</source>
@@ -998,7 +990,7 @@
     </message>
     <message>
         <source>Upper</source>
-        <translation>উপরের</translation>
+        <translation>আপার</translation>
     </message>
     <message>
         <source>Wildcard</source>
@@ -1010,7 +1002,7 @@
     </message>
     <message>
         <source>Copy</source>
-        <translation>অনুলিপি</translation>
+        <translation>কপি</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1035,7 +1027,7 @@
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1046,7 +1038,7 @@
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1054,22 +1046,22 @@
     </message>
     <message>
         <source>Save file</source>
-        <translation>ফাইল সংরক্ষণ</translation>
+        <translation>ফাইল সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>পাঠ্য ফাইল</translation>
+        <translation>টেক্সট ফাইল</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1091,15 +1083,15 @@
     <name>DialogNFDScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>বিবিধ তথ্যসম্বলি স্ক্যান</translation>
+        <translation>ডাইরেক্টরি স্ক্যান</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>বিবিধ তথ্যসম্বলি</translation>
+        <translation>ডাইরেক্টরি</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>সাব-ডিরেক্টরি</translation>
+        <translation>সাব-ডাইরেক্টরি</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1107,11 +1099,11 @@
     </message>
     <message>
         <source>Clear</source>
-        <translation>পরিষ্কার</translation>
+        <translation>পরিষ্কার করুন</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1119,11 +1111,11 @@
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>ডিরেক্টরি খুলুন</translation>
+        <translation>ডাইরেক্টরি খুলুন</translation>
     </message>
     <message>
         <source>msec</source>
@@ -1131,7 +1123,7 @@
     </message>
     <message>
         <source>Text documents</source>
-        <translation>পাঠ্য নথি</translation>
+        <translation>টেক্সট নথি</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -1149,7 +1141,7 @@
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
-        <translation>বিকল্প</translation>
+        <translation>বিকল্পসমূহ</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1157,7 +1149,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -1165,11 +1157,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation>অনলাইন টুলস</translation>
+        <translation>অনলাইন সরঞ্জাম</translation>
     </message>
     <message>
         <source>Info</source>
@@ -1180,7 +1172,7 @@
     <name>DialogRemove</name>
     <message>
         <source>Remove</source>
-        <translation>অপসারণ</translation>
+        <translation>সরিয়ে ফেলুন</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -1200,18 +1192,18 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation>অবৈধ</translation>
+        <translation>অকার্যকর</translation>
     </message>
 </context>
 <context>
     <name>DialogResize</name>
     <message>
         <source>Resize</source>
-        <translation>আকার পরিবর্তন</translation>
+        <translation>রিসাইজ</translation>
     </message>
     <message>
         <source>Size</source>
@@ -1227,22 +1219,22 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
+        <translation>স্ট্রিং</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>সমকক্ষ ধরন</translation>
+        <translation>কেস মেলান</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -1258,15 +1250,15 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation>থেকে অনুসন্ধান করুন</translation>
+        <translation>থেকে খুঁজুন</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Endianness</source>
@@ -1278,7 +1270,7 @@
     </message>
     <message>
         <source>Begin</source>
-        <translation>শুরু করুন</translation>
+        <translation>শুরু</translation>
     </message>
     <message>
         <source>Cursor</source>
@@ -1289,7 +1281,7 @@
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1300,7 +1292,7 @@
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1311,7 +1303,7 @@
     <name>DialogSearchValues</name>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1322,7 +1314,7 @@
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation>বিভাগ</translation>
+        <translation>সেকশন</translation>
     </message>
 </context>
 <context>
@@ -1336,15 +1328,15 @@
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation>শর্টকাটগুলো</translation>
+        <translation>শর্টকাটসমূহ</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>ছাঁকনি</translation>
+        <translation>ফিল্টার</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>পরিষ্কার</translation>
+        <translation>পরিষ্কার করুন</translation>
     </message>
     <message>
         <source>Default</source>
@@ -1364,7 +1356,7 @@
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation>সহজতর পদ্ধতি সেট করা যাবে না</translation>
+        <translation>শর্টকাট সেট করা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
@@ -1379,7 +1371,7 @@
     </message>
     <message>
         <source>Copy</source>
-        <translation>অনুলিপি</translation>
+        <translation>কপি</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1391,18 +1383,18 @@
     </message>
     <message>
         <source>Plain Text</source>
-        <translation>সাধারণ টেক্সট</translation>
+        <translation>প্লেইন টেক্সট</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation>ইমেজ</translation>
+        <translation>ছবি</translation>
     </message>
     <message>
         <source>Image information</source>
-        <translation>হালনাগাদ তথ্য</translation>
+        <translation>আপডেট তথ্য</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1438,7 +1430,7 @@
     </message>
     <message>
         <source>Fit to Window</source>
-        <translation>মূল জানালা</translation>
+        <translation>মূল উইন্ডো</translation>
     </message>
     <message>
         <source>F</source>
@@ -1446,15 +1438,15 @@
     </message>
     <message>
         <source>Copy</source>
-        <translation>অনুলিপি</translation>
+        <translation>কপি</translation>
     </message>
     <message>
         <source>Save As...</source>
-        <translation>সংরক্ষণ করুন</translation>
+        <translation>হিসাবে সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>সংরক্ষণ করুন</translation>
+        <translation>হিসাবে সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Images (*.png *.jpg *.jpeg *.bmp *.gif)</source>
@@ -1481,15 +1473,15 @@
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>রিকার্সিভ স্ক্যান</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -1497,7 +1489,7 @@
     </message>
     <message>
         <source>All types</source>
-        <translation>সব ধরনের</translation>
+        <translation>সব ধরন</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1512,27 +1504,27 @@
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>বিবিধ তথ্যসম্বলি স্ক্যান</translation>
+        <translation>ডাইরেক্টরি স্ক্যান</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>বিবিধ তথ্যসম্বলি</translation>
+        <translation>ডাইরেক্টরি</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>সাব-ডিরেক্টরি</translation>
+        <translation>সাব-ডাইরেক্টরি</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>রিকার্সিভ স্ক্যান</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -1540,7 +1532,7 @@
     </message>
     <message>
         <source>All types</source>
-        <translation>সব ধরনের</translation>
+        <translation>সব ধরন</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1548,11 +1540,11 @@
     </message>
     <message>
         <source>Clear</source>
-        <translation>পরিষ্কার</translation>
+        <translation>পরিষ্কার করুন</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1560,7 +1552,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>ডিরেক্টরি খুলুন</translation>
+        <translation>ডাইরেক্টরি খুলুন</translation>
     </message>
     <message>
         <source>msec</source>
@@ -1568,7 +1560,7 @@
     </message>
     <message>
         <source>Text documents</source>
-        <translation>পাঠ্য নথি</translation>
+        <translation>টেক্সট নথি</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -1579,7 +1571,7 @@
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Text documents</source>
-        <translation>পাঠ্য নথি</translation>
+        <translation>টেক্সট নথি</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -1594,7 +1586,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1602,7 +1594,7 @@
     </message>
     <message>
         <source>Text documents</source>
-        <translation>পাঠ্য নথি</translation>
+        <translation>টেক্সট নথি</translation>
     </message>
     <message>
         <source>Save result</source>
@@ -1617,7 +1609,7 @@
     <name>DialogViewColors</name>
     <message>
         <source>Colors</source>
-        <translation>রংগুলো</translation>
+        <translation>রঙসমূহ</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1625,11 +1617,27 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
+    </message>
+    <message>
+        <source>Text color</source>
+        <translation>টেক্সট এডিটর</translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation>পটভূমি</translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation>গ্রুপ</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>স্ট্রিং</translation>
     </message>
     <message>
         <source>Color</source>
-        <translation>রং</translation>
+        <translation>রঙ</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1640,7 +1648,7 @@
     <name>DialogVisualization</name>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1651,7 +1659,7 @@
     <name>DialogXDataConvertor</name>
     <message>
         <source>Data convertor</source>
-        <translation>ডেটা রূপান্তরক</translation>
+        <translation>ডাটা কনভার্টার</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1669,7 +1677,7 @@
     <name>DialogXExtractor</name>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1691,7 +1699,7 @@
     <name>DialogXSymbols</name>
     <message>
         <source>Symbols</source>
-        <translation>প্রতীকগুলো</translation>
+        <translation>প্রতীকসমূহ</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1716,27 +1724,27 @@
     <name>DumpProcess</name>
     <message>
         <source>Invalid offset</source>
-        <translation>অবৈধ অফসেট</translation>
+        <translation>অকার্যকর অফসেট</translation>
     </message>
     <message>
         <source>Invalid size</source>
-        <translation>অবৈধ আকার</translation>
+        <translation>অকার্যকর আকার</translation>
     </message>
     <message>
         <source>Cannot read file</source>
-        <translation>ফাইল পড়া যায়নি</translation>
+        <translation>ফাইল পড়া যাচ্ছে না</translation>
     </message>
     <message>
         <source>Cannot fix dump file</source>
-        <translation>ডাম্প ফাইল ঠিক করা যায়নি</translation>
+        <translation>ডাম্প ফাইল ঠিক করা যাচ্ছে না</translation>
     </message>
     <message>
         <source>Cannot open dump file</source>
-        <translation>ডাম্প ফাইল খোলা যায়নি</translation>
+        <translation>ডাম্প ফাইল খোলা যাচ্ছে না</translation>
     </message>
     <message>
         <source>Cannot write data to file</source>
-        <translation>ফাইলে ডেটা লেখা যায়নি</translation>
+        <translation>ফাইলে ডাটা লেখা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
@@ -1747,11 +1755,11 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Bind</source>
-        <translation>বাঁধাই করা</translation>
+        <translation>বাইন্ড</translation>
     </message>
 </context>
 <context>
@@ -1762,7 +1770,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Header</source>
@@ -1781,11 +1789,11 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -1797,7 +1805,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -1805,7 +1813,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -1813,15 +1821,15 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -1829,15 +1837,15 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>বিভাগগুলো</translation>
+        <translation>সেকশনসমূহ</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -1852,22 +1860,22 @@
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation>বস্তাবন্দী</translation>
+        <translation>প্যাক করা</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>বস্তাবন্দী না</translation>
+        <translation>প্যাক করা নেই</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation>পরিষ্কার</translation>
+        <translation>পরিষ্কার করুন</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>msec</source>
@@ -1878,11 +1886,11 @@
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation>পুনরাবৃত্তি</translation>
+        <translation>রিকার্সিভ</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1897,27 +1905,27 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>ফাইল সংরক্ষণ করা যাবে না</translation>
+        <translation>ফাইল সংরক্ষণ করা যাচ্ছে না</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>অস্বস্তিকর সব</translation>
+        <translation>সব ডাম্প করুন</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>পাঠ্য ফাইল</translation>
+        <translation>টেক্সট ফাইল</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>অস্বস্তিকর জায়গা</translation>
+        <translation>ডাম্প</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -1925,7 +1933,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>র&apos; ডেটা</translation>
+        <translation>র ডাটা</translation>
     </message>
     <message>
         <source>Name</source>
@@ -1937,7 +1945,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Value</source>
@@ -1945,7 +1953,7 @@
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
 </context>
 <context>
@@ -1960,7 +1968,7 @@
     </message>
     <message>
         <source>Base address</source>
-        <translation>মূল ঠিকানা</translation>
+        <translation>বেস ঠিকানা</translation>
     </message>
     <message>
         <source>Entry point</source>
@@ -1968,19 +1976,19 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>File info</source>
-        <translation>ফাইল তথ্য</translation>
+        <translation>ফাইলের তথ্য</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -1988,7 +1996,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -1996,11 +2004,11 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2008,11 +2016,11 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation>নথি পত্র</translation>
+        <translation>ফাইলসমূহ</translation>
     </message>
     <message>
         <source>Unpack</source>
@@ -2032,15 +2040,15 @@
     </message>
     <message>
         <source>Resources</source>
-        <translation>সম্পদগুলো</translation>
+        <translation>রিসোর্সসমূহ</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>বিভাগগুলো</translation>
+        <translation>সেকশনসমূহ</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation>সময় তারিখ স্ট্যাম্প</translation>
+        <translation>সময় ও তারিখের স্ট্যাম্প</translation>
     </message>
     <message>
         <source>Size of image</source>
@@ -2048,7 +2056,7 @@
     </message>
     <message>
         <source>Manifest</source>
-        <translation>উদ্ভিন্ন</translation>
+        <translation>ম্যানিফেস্ট</translation>
     </message>
     <message>
         <source>Version</source>
@@ -2056,19 +2064,19 @@
     </message>
     <message>
         <source>Programs</source>
-        <translation>অনুষ্ঠানেগুলো</translation>
+        <translation>প্রোগ্রামসমূহ</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>সংকেতগুলো</translation>
+        <translation>কমান্ড</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>অংশগুলো</translation>
+        <translation>সেগমেন্টসমূহ</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>গ্রন্থাগার সমূহ</translation>
+        <translation>লাইব্রেরিসমূহ</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2084,19 +2092,19 @@
     </message>
     <message>
         <source>Architecture</source>
-        <translation>স্থাপত্য</translation>
+        <translation>আর্কিটেকচার</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Scan engine</source>
-        <translation></translation>
+        <translation>স্ক্যান ইঞ্জিন</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>সংরক্ষণাগার</translation>
+        <translation>আর্কাইভ</translation>
     </message>
     <message>
         <source>Binary</source>
@@ -2104,7 +2112,7 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>ডিরেক্টরি খুলুন</translation>
+        <translation>ডাইরেক্টরি খুলুন</translation>
     </message>
 </context>
 <context>
@@ -2119,23 +2127,23 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation>ডিম্যাঙ্গল</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>শর্টকাটগুলো</translation>
+        <translation>শর্টকাটসমূহ</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>বিকল্প</translation>
+        <translation>বিকল্পসমূহ</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>সম্পর্ক</translation>
+        <translation>সম্পর্কিত</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>প্রস্থান করুন</translation>
+        <translation>প্রস্থান</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -2143,7 +2151,7 @@
     </message>
     <message>
         <source>Recent files</source>
-        <translation>সাম্প্রতিক নথিপত্র</translation>
+        <translation>সাম্প্রতিক ফাইল</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2151,7 +2159,28 @@
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation>রিসোর্সসমূহ</translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package:
+
+</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+Path: </source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -2165,19 +2194,19 @@
     <name>HeurWidget</name>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>রিকার্সিভ স্ক্যান</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -2185,11 +2214,11 @@
     </message>
     <message>
         <source>All types</source>
-        <translation>সব ধরনের</translation>
+        <translation>সব ধরন</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2197,7 +2226,7 @@
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক)</translation>
+        <translation>হিউরিস্টিক</translation>
     </message>
     <message>
         <source>Result</source>
@@ -2220,7 +2249,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
 </context>
 <context>
@@ -2242,7 +2271,7 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -2254,7 +2283,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2262,7 +2291,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2270,15 +2299,15 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2286,11 +2315,11 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -2298,7 +2327,7 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>সম্পাদনা করুন</translation>
+        <translation>সম্পাদনা</translation>
     </message>
 </context>
 <context>
@@ -2350,7 +2379,7 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -2362,7 +2391,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2370,7 +2399,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2378,15 +2407,15 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2394,39 +2423,39 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>সংকেতগুলো</translation>
+        <translation>কমান্ড</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>অংশগুলো</translation>
+        <translation>সেগমেন্টসমূহ</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>বিভাগগুলো</translation>
+        <translation>সেকশনসমূহ</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation></translation>
+        <translation>রিবেস</translation>
     </message>
     <message>
         <source>Binding</source>
-        <translation>বাঁধাই</translation>
+        <translation>বাইন্ডিং</translation>
     </message>
     <message>
         <source>Weak binding</source>
-        <translation>দুর্বল বাঁধাই</translation>
+        <translation>দুর্বল বাইন্ডিং</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation>স্লথ যুক্তওন</translation>
+        <translation>লেজি বাইন্ডিং</translation>
     </message>
     <message>
         <source>Export</source>
@@ -2442,7 +2471,7 @@
     </message>
     <message>
         <source>Table of contents</source>
-        <translation>সুচিপত্র</translation>
+        <translation>সূচিপত্র</translation>
     </message>
     <message>
         <source>Modules</source>
@@ -2450,7 +2479,7 @@
     </message>
     <message>
         <source>External references</source>
-        <translation>বাহ্যিক তথ্যসূত্র</translation>
+        <translation>বাহ্যিক রেফারেন্স</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
@@ -2462,11 +2491,11 @@
     </message>
     <message>
         <source>Functions</source>
-        <translation>ফাংশন</translation>
+        <translation>ফাংশনসমূহ</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation>সংকেতপদ্ধতিতে উপাত্ত</translation>
+        <translation>কোডে উপাত্ত</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -2478,11 +2507,11 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>সম্পাদনা করুন</translation>
+        <translation>সম্পাদনা</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation>ডিম্যাঙ্গল</translation>
     </message>
 </context>
 <context>
@@ -2497,11 +2526,11 @@
     </message>
     <message>
         <source>Dump</source>
-        <translation>অস্বস্তিকর জায়গা</translation>
+        <translation>ডাম্প</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -2513,7 +2542,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2521,7 +2550,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2529,15 +2558,15 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2545,11 +2574,11 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -2560,15 +2589,15 @@
     <name>MultiSearch</name>
     <message>
         <source>Search strings</source>
-        <translation>স্ট্রিং অনুসন্ধান</translation>
+        <translation>স্ট্রিং খুঁজুন</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>স্বাক্ষর অনুসন্ধান করুন</translation>
+        <translation>স্বাক্ষরসমূহ খুঁজুন</translation>
     </message>
     <message>
         <source>Search values</source>
-        <translation>অনুসন্ধান মানগুলো</translation>
+        <translation>মানসমূহ খুঁজুন</translation>
     </message>
 </context>
 <context>
@@ -2590,7 +2619,7 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -2602,7 +2631,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2610,7 +2639,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2618,15 +2647,15 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2634,15 +2663,15 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>অংশগুলো</translation>
+        <translation>সেগমেন্টসমূহ</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -2653,19 +2682,19 @@
     <name>NFDOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>খোলার পরে স্ক্যান করুন</translation>
+        <translation>খোলার পর স্ক্যান করুন</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>রিকার্সিভ স্ক্যান</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -2673,26 +2702,26 @@
     </message>
     <message>
         <source>All types</source>
-        <translation>সব ধরনের</translation>
+        <translation>সব ধরন</translation>
     </message>
     <message>
         <source>Format result</source>
-        <translation>ফলাফল সংরক্ষণ করুন</translation>
+        <translation>ফলাফল ফরম্যাট করুন</translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation>লক্ষণীয় করা</translation>
+        <translation>হাইলাইট</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation>বাফারের আকার</translation>
+        <translation>বাফার আকার</translation>
     </message>
 </context>
 <context>
     <name>NFDWidgetAdvanced</name>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2700,27 +2729,27 @@
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক)</translation>
+        <translation>হিউরিস্টিক</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
     <message>
         <source>Heuristics</source>
-        <translation>হিউরিস্টিক্স</translation>
+        <translation>হিউরিস্টিকস</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>পাঠ্য ফাইল</translation>
+        <translation>টেক্সট ফাইল</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2728,7 +2757,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>ফাইল সংরক্ষণ করা যাবে না</translation>
+        <translation>ফাইল সংরক্ষণ করা যাচ্ছে না</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2747,7 +2776,7 @@
     </message>
     <message>
         <source>Directory</source>
-        <translation>বিবিধ তথ্যসম্বলি</translation>
+        <translation>ডাইরেক্টরি</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -2755,11 +2784,11 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation>থামো</translation>
+        <translation>থামুন</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
     <message>
         <source>msec</source>
@@ -2778,11 +2807,11 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -2790,7 +2819,7 @@
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -2802,7 +2831,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -2810,22 +2839,22 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
-        <translation>বিভাগ</translation>
+        <translation>সেকশন</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2849,7 +2878,7 @@
     </message>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2877,7 +2906,7 @@
     </message>
     <message>
         <source>Resources</source>
-        <translation>সম্পদগুলো</translation>
+        <translation>রিসোর্সসমূহ</translation>
     </message>
     <message>
         <source>Exceptions</source>
@@ -2885,23 +2914,23 @@
     </message>
     <message>
         <source>Relocs</source>
-        <translation>Relocs</translation>
+        <translation>রিলোকস</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>ডিবাগ(সংশোধন)</translation>
+        <translation>ডিবাগ</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>লোড কনফিগারেশন</translation>
+        <translation>কনফিগারেশন লোড করুন</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>আবদ্ধ আমদানি</translation>
+        <translation>বাউন্ড ইম্পোর্ট</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>বিলম্ব আমদানি</translation>
+        <translation>ডেলে ইম্পোর্ট</translation>
     </message>
     <message>
         <source>Tags</source>
@@ -2913,7 +2942,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Address</source>
@@ -2933,19 +2962,19 @@
     </message>
     <message>
         <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
+        <translation>স্ট্রিং</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>সনদপত্র</translation>
+        <translation>সার্টিফিকেট</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>পদমর্যাদা</translation>
+        <translation>অবস্থা</translation>
     </message>
     <message>
         <source>Program name</source>
-        <translation>অনুষ্ঠানের নাম</translation>
+        <translation>প্রোগ্রামের নাম</translation>
     </message>
     <message>
         <source>Publisher</source>
@@ -2953,11 +2982,11 @@
     </message>
     <message>
         <source>More info</source>
-        <translation>অধিক তথ্য</translation>
+        <translation>আরও তথ্য</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation>ক্রমিক সংখ্যা</translation>
+        <translation>সিরিয়াল নম্বর</translation>
     </message>
     <message>
         <source>Issuer</source>
@@ -2995,19 +3024,19 @@
     <name>PEToolsWidget</name>
     <message>
         <source>Tools</source>
-        <translation>টুলস</translation>
+        <translation>সরঞ্জামসমূহ</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>যোগ</translation>
+        <translation>যোগ করুন</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>অপসারণ</translation>
+        <translation>সরিয়ে ফেলুন</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>অস্বস্তিকর জায়গা</translation>
+        <translation>ডাম্প</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -3019,7 +3048,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>র&apos; ডেটা</translation>
+        <translation>র ডাটা</translation>
     </message>
 </context>
 <context>
@@ -3034,11 +3063,11 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>অস্বস্তিকর জায়গা</translation>
+        <translation>ডাম্প</translation>
     </message>
     <message>
         <source>String table</source>
@@ -3046,11 +3075,11 @@
     </message>
     <message>
         <source>Dump all</source>
-        <translation>অস্বস্তিকর সব</translation>
+        <translation>সব ডাম্প করুন</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation>বৈধ দেখান</translation>
+        <translation>বৈধগুলো দেখান</translation>
     </message>
     <message>
         <source>Table</source>
@@ -3058,11 +3087,11 @@
     </message>
     <message>
         <source>Extract all icons</source>
-        <translation>icons নিষ্কাশন করা</translation>
+        <translation>সব আইকন নিষ্কাশন করুন</translation>
     </message>
     <message>
         <source>Extract all cursors</source>
-        <translation>cursors নিষ্কাশন করা</translation>
+        <translation>সব কার্সার নিষ্কাশন করুন</translation>
     </message>
     <message>
         <source>Tree</source>
@@ -3070,15 +3099,15 @@
     </message>
     <message>
         <source>Format</source>
-        <translation>গঠন</translation>
+        <translation>ফরম্যাট</translation>
     </message>
     <message>
         <source>Check</source>
-        <translation>খতিয়ে দেখা</translation>
+        <translation>চেক করুন</translation>
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -3094,7 +3123,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3102,19 +3131,19 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -3122,15 +3151,15 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>টুলস</translation>
+        <translation>সরঞ্জামসমূহ</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3138,7 +3167,7 @@
     </message>
     <message>
         <source>Sections</source>
-        <translation>বিভাগগুলো</translation>
+        <translation>সেকশনসমূহ</translation>
     </message>
     <message>
         <source>Export</source>
@@ -3150,7 +3179,7 @@
     </message>
     <message>
         <source>Resources</source>
-        <translation>সম্পদগুলো</translation>
+        <translation>রিসোর্সসমূহ</translation>
     </message>
     <message>
         <source>Version</source>
@@ -3158,7 +3187,7 @@
     </message>
     <message>
         <source>Manifest</source>
-        <translation>উদ্ভিন্ন</translation>
+        <translation>ম্যানিফেস্ট</translation>
     </message>
     <message>
         <source>Exceptions</source>
@@ -3166,31 +3195,31 @@
     </message>
     <message>
         <source>Certificate</source>
-        <translation>সনদপত্র</translation>
+        <translation>সার্টিফিকেট</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation>Relocs</translation>
+        <translation>রিলোকস</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>ডিবাগ(সংশোধন)</translation>
+        <translation>ডিবাগ</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation>কলব্যাক</translation>
+        <translation>কলব্যাকসমূহ</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>লোড কনফিগারেশন</translation>
+        <translation>কনফিগারেশন লোড করুন</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>আবদ্ধ আমদানি</translation>
+        <translation>বাউন্ড ইম্পোর্ট</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>বিলম্ব আমদানি</translation>
+        <translation>ডেলে ইম্পোর্ট</translation>
     </message>
     <message>
         <source>Metadata</source>
@@ -3198,7 +3227,7 @@
     </message>
     <message>
         <source>Metadata table</source>
-        <translation>মেটাডেটা টেবিল</translation>
+        <translation>মেটাডাটা টেবিল</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -3206,7 +3235,7 @@
     </message>
     <message>
         <source>Calculate</source>
-        <translation>হিসাব করুন</translation>
+        <translation>গণনা করুন</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -3218,22 +3247,22 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>সম্পাদনা করুন</translation>
+        <translation>সম্পাদনা</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>অস্বস্তিকর ফাইল</translation>
+        <translation>ফাইলে ডাম্প করুন</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation>ডিম্যাঙ্গল</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Count</source>
@@ -3245,15 +3274,15 @@
     </message>
     <message>
         <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
+        <translation>স্ট্রিং</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation>গ্রন্থাগারের নাম</translation>
+        <translation>লাইব্রেরির নাম</translation>
     </message>
     <message>
         <source>Interpreter</source>
-        <translation>দোভাষী</translation>
+        <translation>ইন্টারপ্রেটার</translation>
     </message>
     <message>
         <source>Name</source>
@@ -3301,7 +3330,7 @@
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3309,7 +3338,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>আর্কাইভ</translation>
     </message>
     <message>
         <source>Hash</source>
@@ -3317,23 +3350,23 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation>অঞ্চলগুলো</translation>
+        <translation>অঞ্চলসমূহ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>প্রতীকগুলো</translation>
+        <translation>প্রতীকসমূহ</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -3341,11 +3374,11 @@
     </message>
     <message>
         <source>Extractor</source>
-        <translation>নিষ্কাশনকারী</translation>
+        <translation>এক্সট্রাক্টর</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -3357,7 +3390,7 @@
     </message>
     <message>
         <source>Resource</source>
-        <translation>সম্পদ</translation>
+        <translation>রিসোর্স</translation>
     </message>
     <message>
         <source>Region</source>
@@ -3365,7 +3398,7 @@
     </message>
     <message>
         <source>Debug data</source>
-        <translation>উপাত্তের সংশোধন</translation>
+        <translation>ডিবাগ ডাটা</translation>
     </message>
     <message>
         <source>Stream</source>
@@ -3373,7 +3406,7 @@
     </message>
     <message>
         <source>Section</source>
-        <translation>বিভাগ</translation>
+        <translation>সেকশন</translation>
     </message>
     <message>
         <source>Data</source>
@@ -3381,7 +3414,7 @@
     </message>
     <message>
         <source>Segment</source>
-        <translation>অংশ</translation>
+        <translation>সেগমেন্ট</translation>
     </message>
     <message>
         <source>Footer</source>
@@ -3389,7 +3422,7 @@
     </message>
     <message>
         <source>Object</source>
-        <translation>বস্তু</translation>
+        <translation>অবজেক্ট</translation>
     </message>
     <message>
         <source>Table</source>
@@ -3397,31 +3430,27 @@
     </message>
     <message>
         <source>Process</source>
-        <translation>প্রক্রিয়া</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>সংরক্ষণাগার</translation>
+        <translation>প্রসেস</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation>শ্রুতি</translation>
+        <translation>অডিও</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>দলিল</translation>
+        <translation>নথি</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>ইমেজ</translation>
+        <translation>ছবি</translation>
     </message>
     <message>
         <source>Plain Text</source>
-        <translation>সাধারণ টেক্সট</translation>
+        <translation>প্লেইন টেক্সট</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>পাঠ্য</translation>
+        <translation>টেক্সট</translation>
     </message>
     <message>
         <source>Video</source>
@@ -3437,11 +3466,15 @@
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>ফাইলটি খুলতে পারছি না</translation>
+        <translation>ফাইল খোলা যাচ্ছে না</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>পঠন ত্রুটি</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>স্থাপত্য</translation>
+        <translation>আর্কিটেকচার</translation>
     </message>
     <message>
         <source>Raw</source>
@@ -3449,11 +3482,11 @@
     </message>
     <message>
         <source>Format</source>
-        <translation>গঠন</translation>
+        <translation>ফরম্যাট</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক)</translation>
+        <translation>হিউরিস্টিক</translation>
     </message>
     <message>
         <source>Entry point</source>
@@ -3461,7 +3494,7 @@
     </message>
     <message>
         <source>Section name</source>
-        <translation>বিভাগের নাম</translation>
+        <translation>সেকশনের নাম</translation>
     </message>
     <message>
         <source>Import hash</source>
@@ -3469,27 +3502,35 @@
     </message>
     <message>
         <source>Code section</source>
-        <translation>সংকেতপদ্ধতির অংশ</translation>
+        <translation>কোড সেকশন</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation>এন্ট্রি পয়েন্ট বিভাগ</translation>
+        <translation>এন্ট্রি পয়েন্ট সেকশন</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>সম্পদগুলো</translation>
+        <translation>রিসোর্সসমূহ</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>স্বয়ংক্রিয়</translation>
     </message>
     <message>
         <source>Obfuscator</source>
-        <translation>অবস্কিউফিকেটর</translation>
+        <translation>অবফাসকেটর</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation>টুল</translation>
+        <translation>সরঞ্জাম</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>লেখক</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>সনদপত্র</translation>
+        <translation>সার্টিফিকেট</translation>
     </message>
     <message>
         <source>Compiler</source>
@@ -3501,7 +3542,15 @@
     </message>
     <message>
         <source>Converter</source>
-        <translation>রূপান্তরকারী</translation>
+        <translation>কনভার্টার</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>দূষিত ডাটা</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>স্রষ্টা</translation>
     </message>
     <message>
         <source>Crypter</source>
@@ -3513,7 +3562,7 @@
     </message>
     <message>
         <source>Database</source>
-        <translation>তথ্যশালা</translation>
+        <translation>ডাটাবেস</translation>
     </message>
     <message>
         <source>Protection</source>
@@ -3521,11 +3570,11 @@
     </message>
     <message>
         <source>Extender</source>
-        <translation>প্রসারক</translation>
+        <translation>এক্সটেন্ডার</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation>বর্গীয়</translation>
+        <translation>সাধারণ</translation>
     </message>
     <message>
         <source>Installer</source>
@@ -3533,11 +3582,11 @@
     </message>
     <message>
         <source>Installer data</source>
-        <translation>ইনস্টলার ডেটা</translation>
+        <translation>ইনস্টলার ডাটা</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation>যোগদানকারী</translation>
+        <translation>জয়নার</translation>
     </message>
     <message>
         <source>Language</source>
@@ -3545,23 +3594,39 @@
     </message>
     <message>
         <source>Library</source>
-        <translation>গ্রন্থাগার</translation>
+        <translation>লাইব্রেরি</translation>
+    </message>
+    <message>
+        <source>Licensing</source>
+        <translation>লাইসেন্সিং</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation>সংযুক্তকারী</translation>
+        <translation>লিঙ্কার</translation>
     </message>
     <message>
         <source>Loader</source>
         <translation>লোডার</translation>
     </message>
     <message>
+        <source>Malware</source>
+        <translation>ম্যালওয়্যার</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>অপারেটিং সিস্টেম</translation>
     </message>
     <message>
+        <source>Package</source>
+        <translation>প্যাকেজ</translation>
+    </message>
+    <message>
         <source>Packer</source>
-        <translation>ভরক (Packer)</translation>
+        <translation>প্যাকার</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>ব্যক্তিগত উপাত্ত</translation>
     </message>
     <message>
         <source>Platform</source>
@@ -3569,15 +3634,19 @@
     </message>
     <message>
         <source>Player</source>
-        <translation>ক্রীড়ক</translation>
+        <translation>প্লেয়ার</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>প্রযোজক</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation>সুরক্ষাকারী</translation>
+        <translation>প্রোটেক্টর</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation>সুরক্ষাকারী তথ্য</translation>
+        <translation>প্রোটেক্টর ডাটা</translation>
     </message>
     <message>
         <source>data</source>
@@ -3593,7 +3662,11 @@
     </message>
     <message>
         <source>Stub</source>
-        <translation>অসম্পূর্ণ</translation>
+        <translation>স্টাব</translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation>ট্রোজান</translation>
     </message>
     <message>
         <source>Virtual machine</source>
@@ -3603,71 +3676,35 @@
         <source>Virus</source>
         <translation>ভাইরাস</translation>
     </message>
-    <message>
-        <source>Trojan</source>
-        <translation>ট্রোজান</translation>
-    </message>
-    <message>
-        <source>Malware</source>
-        <translation>ম্যালওয়্যার</translation>
-    </message>
-    <message>
-        <source>Package</source>
-        <translation>প্যাকেজ</translation>
-    </message>
-    <message>
-        <source>Licensing</source>
-        <translation>লাইসেন্সিং</translation>
-    </message>
-    <message>
-        <source>Corrupted data</source>
-        <translation>দূষিত ডেটা</translation>
-    </message>
-    <message>
-        <source>Personal data</source>
-        <translation>ব্যক্তিগত তথ্য</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation>লেখক</translation>
-    </message>
-    <message>
-        <source>Creator</source>
-        <translation>স্রষ্টা</translation>
-    </message>
-    <message>
-        <source>Producer</source>
-        <translation>প্রযোজক</translation>
-    </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>দলিলগুলো</translation>
+        <translation>নথিপত্র</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>ছবিগুলো</translation>
+        <translation>ছবিসমূহ</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>ফাইলের নাম রপ্তানি করুন</translation>
+        <translation>রপ্তানি ফাইলের নাম</translation>
     </message>
 </context>
 <context>
     <name>QwtPolarRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>দলিলগুলো</translation>
+        <translation>নথিপত্র</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>ছবিগুলো</translation>
+        <translation>ছবিসমূহ</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>ফাইলের নাম রপ্তানি করুন</translation>
+        <translation>রপ্তানি ফাইলের নাম</translation>
     </message>
 </context>
 <context>
@@ -3685,22 +3722,22 @@
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>স্বাক্ষর অনুসন্ধান করুন</translation>
+        <translation>স্বাক্ষরসমূহ খুঁজুন</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>ডিরেক্টরি খুলুন</translation>
+        <translation>ডাইরেক্টরি খুলুন</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Patch</source>
@@ -3712,7 +3749,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Endianness</source>
@@ -3728,30 +3765,30 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>Null-terminated</source>
-        <translation>নাল-সমাপ্ত</translation>
+        <translation>নাল-টার্মিনেটেড</translation>
     </message>
     <message>
         <source>Links</source>
-        <translation>সংযুক্তসমূহ</translation>
+        <translation>লিঙ্কসমূহ</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -3763,7 +3800,7 @@
     </message>
     <message>
         <source>Regular expression</source>
-        <translation>নিয়মিত অভিব্যক্তি</translation>
+        <translation>রেগুলার এক্সপ্রেশন</translation>
     </message>
     <message>
         <source>Min length</source>
@@ -3775,7 +3812,7 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3783,14 +3820,38 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>ফাইল সংরক্ষণ করা যাবে না</translation>
+        <translation>ফাইল সংরক্ষণ করা যাচ্ছে না</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>স্ট্রিং খুঁজুন</translation>
+    </message>
+    <message>
+        <source>%1 strings found</source>
+        <translation>কিছু পাওয়া যায়নি</translation>
+    </message>
+    <message>
+        <source>Sorting...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 strings found (%2 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings (%3 ms)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>%1 / %2 strings</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>SearchValuesWidget</name>
     <message>
         <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
+        <translation>স্ট্রিং</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3802,15 +3863,15 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>অনুসন্ধান করুন</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -3818,15 +3879,15 @@
     </message>
     <message>
         <source>Search string</source>
-        <translation>স্ট্রিং অনুসন্ধান</translation>
+        <translation>স্ট্রিং খুঁজুন</translation>
     </message>
     <message>
         <source>Search signature</source>
-        <translation>স্বাক্ষর অনুসন্ধান</translation>
+        <translation>স্বাক্ষর খুঁজুন</translation>
     </message>
     <message>
         <source>Search value</source>
-        <translation>মান অনুসন্ধান</translation>
+        <translation>মান খুঁজুন</translation>
     </message>
     <message>
         <source>Result</source>
@@ -3834,7 +3895,7 @@
     </message>
     <message>
         <source>Values</source>
-        <translation>মানগুলো</translation>
+        <translation>মানসমূহ</translation>
     </message>
 </context>
 <context>
@@ -3849,30 +3910,30 @@
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>মস্তিষ্কের স্ক্যান</translation>
+        <translation>মেমরি স্ক্যান</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>বিবিধ তথ্যসম্বলি স্ক্যান</translation>
+        <translation>ডাইরেক্টরি স্ক্যান</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>খোলার পরে স্ক্যান করুন</translation>
+        <translation>খোলার পর স্ক্যান করুন</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>রিকার্সিভ স্ক্যান</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -3880,21 +3941,21 @@
     </message>
     <message>
         <source>All types</source>
-        <translation>সব ধরনের</translation>
+        <translation>সব ধরন</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
 </context>
 <context>
     <name>XAPK</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>সার্বজনীন</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -3921,11 +3982,11 @@
     </message>
     <message>
         <source>Check for updates</source>
-        <translation>নতুন পরিবর্তন খতিয়ে দেখা</translation>
+        <translation>আপডেট চেক করুন</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>গ্রন্থাগার সমূহ</translation>
+        <translation>লাইব্রেরিসমূহ</translation>
     </message>
     <message>
         <source>Social Media</source>
@@ -3933,7 +3994,7 @@
     </message>
     <message>
         <source>Update information</source>
-        <translation>হালনাগাদ তথ্য</translation>
+        <translation>আপডেট তথ্য</translation>
     </message>
     <message>
         <source>New version available</source>
@@ -3941,11 +4002,11 @@
     </message>
     <message>
         <source>Go to download page?</source>
-        <translation>ডাউনলোড পৃষ্ঠায় যান?</translation>
+        <translation>ডাউনলোড পেজে যাবেন?</translation>
     </message>
     <message>
         <source>No update available</source>
-        <translation>নতুন কোন সংস্করণ হয়নি</translation>
+        <translation>কোন আপডেট নেই</translation>
     </message>
     <message>
         <source>Network error</source>
@@ -3957,14 +4018,7 @@
     </message>
     <message>
         <source>The value copied to clipboard</source>
-        <translation>মানটি ক্লিপবোর্ডে অনুলিপি করা হয়েছে</translation>
-    </message>
-</context>
-<context>
-    <name>XAbstractTableView</name>
-    <message>
-        <source>Invalid font</source>
-        <translation>অবৈধ ফন্ট</translation>
+        <translation>মানটি ক্লিপবোর্ডে কপি করা হয়েছে</translation>
     </message>
 </context>
 <context>
@@ -3975,7 +4029,7 @@
     </message>
     <message>
         <source>Object</source>
-        <translation>বস্তু</translation>
+        <translation>অবজেক্ট</translation>
     </message>
     <message>
         <source>Table</source>
@@ -3994,11 +4048,11 @@
     </message>
     <message>
         <source>Archive</source>
-        <translation>সংরক্ষণাগার</translation>
+        <translation>আর্কাইভ</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation>প্রসারক</translation>
+        <translation>এক্সটেন্ডার</translation>
     </message>
 </context>
 <context>
@@ -4048,7 +4102,7 @@
     </message>
     <message>
         <source>Read error</source>
-        <translation>ত্রুটি পড়া</translation>
+        <translation>পঠন ত্রুটি</translation>
     </message>
     <message>
         <source>Maximum</source>
@@ -4056,23 +4110,23 @@
     </message>
     <message>
         <source>Regions</source>
-        <translation>অঞ্চলগুলো</translation>
+        <translation>অঞ্চলসমূহ</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>অংশগুলো</translation>
+        <translation>সেগমেন্টসমূহ</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>বিভাগগুলো</translation>
+        <translation>সেকশনসমূহ</translation>
     </message>
     <message>
         <source>Objects</source>
-        <translation>বস্তুসমূহ</translation>
+        <translation>অবজেক্টসমূহ</translation>
     </message>
     <message>
         <source>Maps</source>
-        <translation>মানচিত্রসমূহ</translation>
+        <translation>ম্যাপসমূহ</translation>
     </message>
     <message>
         <source>Data</source>
@@ -4084,11 +4138,11 @@
     </message>
     <message>
         <source>Invalid signature</source>
-        <translation>অবৈধ স্বাক্ষর</translation>
+        <translation>অকার্যকর স্বাক্ষর</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>ভুল লিখুন</translation>
+        <translation>লেখন ত্রুটি</translation>
     </message>
     <message>
         <source>true</source>
@@ -4104,7 +4158,7 @@
     </message>
     <message>
         <source>Warning</source>
-        <translation>সতর্কতা</translation>
+        <translation>সতর্কবার্তা</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4112,7 +4166,7 @@
     </message>
     <message>
         <source>Corrupted data</source>
-        <translation>দূষিত ডেটা</translation>
+        <translation>দূষিত ডাটা</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -4123,32 +4177,36 @@
         <translation>ডিফল্ট</translation>
     </message>
     <message>
+        <source>ARM</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Multiplatform</source>
-        <translation>বহুমঞ্চ</translation>
+        <translation>মাল্টিপ্ল্যাটফর্ম</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>বাইটগুলো</translation>
+        <translation>বাইট</translation>
     </message>
     <message>
         <source>KiB</source>
-        <translation>কেআইবি (Kibibyte)</translation>
+        <translation>কেআইবি</translation>
     </message>
     <message>
         <source>kB</source>
-        <translation>কে বি (কিলোবাইট)</translation>
+        <translation>কেবি</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation>এমআইবি (Mebibyte)</translation>
+        <translation>এমআইবি</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>এমবি (মেগাবাইট)</translation>
+        <translation>এমবি</translation>
     </message>
     <message>
         <source>GiB</source>
-        <translation>জিআইবি(Gibibyte)</translation>
+        <translation>জিআইবি</translation>
     </message>
     <message>
         <source>GB</source>
@@ -4156,11 +4214,11 @@
     </message>
     <message>
         <source>TiB</source>
-        <translation>টিআইবি (tebibyte)</translation>
+        <translation>টিআইবি</translation>
     </message>
     <message>
         <source>TB</source>
-        <translation>টিবি (TB)</translation>
+        <translation>টিবি</translation>
     </message>
     <message>
         <source>Total</source>
@@ -4201,7 +4259,7 @@
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation>পতাকা</translation>
+        <translation>ফ্ল্যাগ</translation>
     </message>
 </context>
 <context>
@@ -4239,7 +4297,7 @@
     </message>
     <message>
         <source>Segment %1</source>
-        <translation>অংশ</translation>
+        <translation>সেগমেন্ট</translation>
     </message>
     <message>
         <source>Data</source>
@@ -4254,15 +4312,15 @@
     <name>XDataConvertor</name>
     <message>
         <source>Write error</source>
-        <translation>ভুল লিখুন</translation>
+        <translation>লেখন ত্রুটি</translation>
     </message>
     <message>
         <source>Invalid size</source>
-        <translation>অবৈধ আকার</translation>
+        <translation>অকার্যকর আকার</translation>
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation>আকার পরিবর্তন করা যায়নি</translation>
+        <translation>আকার পরিবর্তন করা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
@@ -4297,7 +4355,7 @@
     </message>
     <message>
         <source>Dump</source>
-        <translation>অস্বস্তিকর জায়গা</translation>
+        <translation>ডাম্প</translation>
     </message>
     <message>
         <source>Output</source>
@@ -4330,7 +4388,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>র&apos; ডেটা</translation>
+        <translation>র ডাটা</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -4342,25 +4400,25 @@
     </message>
     <message>
         <source>Cannot resize</source>
-        <translation>আকার পরিবর্তন করা যায়নি</translation>
+        <translation>আকার পরিবর্তন করা যাচ্ছে না</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>অস্বস্তিকর জায়গা</translation>
+        <translation>ডাম্প</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Nothing found</source>
-        <translation>কোনকিছু পাওয়া যায়নি</translation>
+        <translation>কিছু পাওয়া যায়নি</translation>
     </message>
 </context>
 <context>
     <name>XDialogProcess</name>
     <message>
         <source>Process</source>
-        <translation>প্রক্রিয়া</translation>
+        <translation>প্রসেস</translation>
     </message>
     <message>
         <source>Advanced</source>
@@ -4368,7 +4426,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4395,7 +4453,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>বাইটগুলো</translation>
+        <translation>বাইট</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -4410,7 +4468,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>বাইটগুলো</translation>
+        <translation>বাইট</translation>
     </message>
     <message>
         <source>Opcode</source>
@@ -4433,7 +4491,7 @@
     <name>XDisasmViewOptionsWidget</name>
     <message>
         <source>Syntax</source>
-        <translation>বাক্য গঠন</translation>
+        <translation>সিনট্যাক্স</translation>
     </message>
     <message>
         <source>Uppercase</source>
@@ -4445,15 +4503,15 @@
     </message>
     <message>
         <source>Highlight</source>
-        <translation>লক্ষণীয় করা</translation>
+        <translation>হাইলাইট</translation>
     </message>
     <message>
         <source>Colors</source>
-        <translation>রংগুলো</translation>
+        <translation>রঙসমূহ</translation>
     </message>
     <message>
         <source>Arrows</source>
-        <translation>তীর</translation>
+        <translation>তীরচিহ্ন</translation>
     </message>
     <message>
         <source>All</source>
@@ -4465,19 +4523,19 @@
     </message>
     <message>
         <source>Registers</source>
-        <translation>নিবন্ধন</translation>
+        <translation>রেজিস্টারসমূহ</translation>
     </message>
     <message>
         <source>Numbers</source>
-        <translation>সংখ্যা</translation>
+        <translation>সংখ্যাসমূহ</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation>অপকোড সমূহ</translation>
+        <translation>অপকোডসমূহ</translation>
     </message>
     <message>
         <source>References</source>
-        <translation>তথ্যসূত্র</translation>
+        <translation>রেফারেন্সসমূহ</translation>
     </message>
     <message>
         <source>General registers</source>
@@ -4485,11 +4543,11 @@
     </message>
     <message>
         <source>Stack registers</source>
-        <translation>স্ট্যাক রেজিস্টার</translation>
+        <translation>স্ট্যাক রেজিস্টারসমূহ</translation>
     </message>
     <message>
         <source>Segment registers</source>
-        <translation></translation>
+        <translation>সেগমেন্ট রেজিস্টারসমূহ</translation>
     </message>
     <message>
         <source>Debug registers</source>
@@ -4497,7 +4555,7 @@
     </message>
     <message>
         <source>Instruction pointer register</source>
-        <translation></translation>
+        <translation>ইন্সট্রাকশন পয়েন্টার রেজিস্টার</translation>
     </message>
     <message>
         <source>Flags register</source>
@@ -4508,11 +4566,11 @@
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation>বিশ্লেষণ</translation>
+        <translation>বিশ্লেষণ করুন</translation>
     </message>
     <message>
         <source>Labels</source>
@@ -4524,7 +4582,7 @@
     </message>
     <message>
         <source>Go to</source>
-        <translation>যাও</translation>
+        <translation>যান</translation>
     </message>
     <message>
         <source>Entry point</source>
@@ -4544,7 +4602,7 @@
     </message>
     <message>
         <source>Copy</source>
-        <translation>অনুলিপি</translation>
+        <translation>কপি</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -4552,11 +4610,11 @@
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>অস্বস্তিকর ফাইল</translation>
+        <translation>ফাইলে ডাম্প করুন</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>To data</source>
@@ -4564,7 +4622,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>র&apos; ডেটা</translation>
+        <translation>র ডাটা</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -4583,18 +4641,18 @@
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation>ফাইল লোড করা যাবে না</translation>
+        <translation>ফাইল লোড করা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsOptionsWidget</name>
     <message>
         <source>Structs</source>
-        <translation>Structs</translation>
+        <translation>স্ট্রাক্টসমূহ</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>ডিরেক্টরি খুলুন</translation>
+        <translation>ডাইরেক্টরি খুলুন</translation>
     </message>
 </context>
 <context>
@@ -4609,23 +4667,23 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Prototype</source>
-        <translation>আদিরূপ</translation>
+        <translation>প্রোটোটাইপ</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Array</source>
-        <translation>পৃষ্ঠানুযায়ী সাজান</translation>
+        <translation>অ্যারে</translation>
     </message>
     <message>
         <source>Variable</source>
-        <translation>পরিবর্তনশীল</translation>
+        <translation>ভ্যারিয়েবল</translation>
     </message>
     <message>
         <source>Pointer</source>
@@ -4637,7 +4695,7 @@
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation>ঠিকানায় মেমরি পড়তে পারে না</translation>
+        <translation>ঠিকানায় মেমরি পড়া যাচ্ছে না</translation>
     </message>
     <message>
         <source>Result</source>
@@ -4645,11 +4703,11 @@
     </message>
     <message>
         <source>Files</source>
-        <translation>নথি পত্র</translation>
+        <translation>ফাইলসমূহ</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
 </context>
 <context>
@@ -4668,11 +4726,11 @@
     </message>
     <message>
         <source>Libraries</source>
-        <translation>গ্রন্থাগার সমূহ</translation>
+        <translation>লাইব্রেরিসমূহ</translation>
     </message>
     <message>
         <source>Run path</source>
-        <translation>চালানোর পথ</translation>
+        <translation>রান পাথ</translation>
     </message>
     <message>
         <source>Symbol table</source>
@@ -4687,7 +4745,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Save diagram</source>
@@ -4699,11 +4757,11 @@
     </message>
     <message>
         <source>Regions</source>
-        <translation>অঞ্চলগুলো</translation>
+        <translation>অঞ্চলসমূহ</translation>
     </message>
     <message>
         <source>Diagram</source>
-        <translation>রেখাচিত্র</translation>
+        <translation>ডায়াগ্রাম</translation>
     </message>
     <message>
         <source>Grid</source>
@@ -4711,11 +4769,11 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>বাইটগুলো</translation>
+        <translation>বাইট</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -4743,7 +4801,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation>পদমর্যাদা</translation>
+        <translation>অবস্থা</translation>
     </message>
     <message>
         <source>Name</source>
@@ -4751,7 +4809,7 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
 </context>
 <context>
@@ -4765,15 +4823,15 @@
     <name>XExtractorWidget</name>
     <message>
         <source>Extract</source>
-        <translation>নিষ্কাশন করা</translation>
+        <translation>নিষ্কাশন</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>অস্বস্তিকর সব</translation>
+        <translation>সব ডাম্প করুন</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -4785,11 +4843,11 @@
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -4797,7 +4855,7 @@
     </message>
     <message>
         <source>Options</source>
-        <translation>বিকল্প</translation>
+        <translation>বিকল্পসমূহ</translation>
     </message>
     <message>
         <source>Size</source>
@@ -4824,11 +4882,11 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Method</source>
@@ -4840,7 +4898,7 @@
     </message>
     <message>
         <source>Text</source>
-        <translation>পাঠ্য</translation>
+        <translation>টেক্সট</translation>
     </message>
     <message>
         <source>Info</source>
@@ -4848,34 +4906,30 @@
     </message>
     <message>
         <source>Save file</source>
-        <translation>ফাইল সংরক্ষণ</translation>
+        <translation>ফাইল সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>পাঠ্য ফাইল</translation>
+        <translation>টেক্সট ফাইল</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
 </context>
 <context>
     <name>XFormats</name>
     <message>
         <source>Cannot unpack</source>
-        <translation>বস্তাবন্দী না</translation>
-    </message>
-    <message>
-        <source>Invalid CRC</source>
-        <translation>অবৈধ</translation>
+        <translation>প্যাক করা নেই</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
-        <translation>অধিবেশন খুলতে পারবেন না</translation>
+        <translation>সেশন খোলা যাচ্ছে না</translation>
     </message>
     <message>
         <source>Cannot create</source>
-        <translation>আকার পরিবর্তন করা যায়নি</translation>
+        <translation>আকার পরিবর্তন করা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
@@ -4898,7 +4952,7 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>ইমেজ</translation>
+        <translation>ছবি</translation>
     </message>
     <message>
         <source>Graphic Control Extension</source>
@@ -4910,11 +4964,11 @@
     </message>
     <message>
         <source>Application Extension</source>
-        <translation>আবেদন</translation>
+        <translation>অ্যাপ্লিকেশন</translation>
     </message>
     <message>
         <source>Plain Text Extension</source>
-        <translation>সাধারণ টেক্সট</translation>
+        <translation>প্লেইন টেক্সট</translation>
     </message>
     <message>
         <source>Extension</source>
@@ -4952,7 +5006,7 @@
     <name>XHashWidget</name>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -4960,7 +5014,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Method</source>
@@ -4984,7 +5038,7 @@
     </message>
     <message>
         <source>Regions</source>
-        <translation>অঞ্চলগুলো</translation>
+        <translation>অঞ্চলসমূহ</translation>
     </message>
     <message>
         <source>Name</source>
@@ -4995,7 +5049,7 @@
     <name>XHeaderView</name>
     <message>
         <source>Filter</source>
-        <translation>ছাঁকনি</translation>
+        <translation>ফিল্টার</translation>
     </message>
 </context>
 <context>
@@ -5021,7 +5075,7 @@
     </message>
     <message>
         <source>Symbols</source>
-        <translation>প্রতীকগুলো</translation>
+        <translation>প্রতীকসমূহ</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -5043,11 +5097,11 @@
     </message>
     <message>
         <source>Inspector</source>
-        <translation>পরিদর্শক</translation>
+        <translation>ইন্সপেক্টর</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Readonly</source>
@@ -5055,11 +5109,11 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Base</source>
-        <translation>ভিত্তি</translation>
+        <translation>বেস</translation>
     </message>
 </context>
 <context>
@@ -5089,7 +5143,7 @@
     </message>
     <message>
         <source>Function enter</source>
-        <translation>ফাংশনে প্রবেশ</translation>
+        <translation>ফাংশন প্রবেশ</translation>
     </message>
     <message>
         <source>Function leave</source>
@@ -5097,15 +5151,15 @@
     </message>
     <message>
         <source>Step into</source>
-        <translation>পদার্পণ করা</translation>
+        <translation>স্টেপ ইনটু</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>ধাপ উপরে</translation>
+        <translation>স্টেপ ওভার</translation>
     </message>
     <message>
         <source>Trace into</source>
-        <translation>ট্রেসে প্রবেশ</translation>
+        <translation>ট্রেস ইনটু</translation>
     </message>
     <message>
         <source>Trace over</source>
@@ -5121,7 +5175,7 @@
     </message>
     <message>
         <source>Running</source>
-        <translation>চলমান</translation>
+        <translation>চলছে</translation>
     </message>
 </context>
 <context>
@@ -5132,14 +5186,14 @@
     </message>
     <message>
         <source>Open directory</source>
-        <translation>ডিরেক্টরি খুলুন</translation>
+        <translation>ডাইরেক্টরি খুলুন</translation>
     </message>
 </context>
 <context>
     <name>XInfoMenu</name>
     <message>
         <source>Database</source>
-        <translation>তথ্যশালা</translation>
+        <translation>ডাটাবেস</translation>
     </message>
     <message>
         <source>Import</source>
@@ -5151,7 +5205,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Load</source>
@@ -5159,7 +5213,7 @@
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -5170,7 +5224,7 @@
     <name>XJAR</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>সার্বজনীন</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5208,7 +5262,7 @@
     </message>
     <message>
         <source>Object</source>
-        <translation>বস্তু</translation>
+        <translation>অবজেক্ট</translation>
     </message>
 </context>
 <context>
@@ -5230,7 +5284,7 @@
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation>অনুলিপি</translation>
+        <translation>কপি</translation>
     </message>
     <message>
         <source>Bits</source>
@@ -5238,30 +5292,30 @@
     </message>
     <message>
         <source>Clear</source>
-        <translation>পরিষ্কার</translation>
+        <translation>পরিষ্কার করুন</translation>
     </message>
 </context>
 <context>
     <name>XLineEditValidator</name>
     <message>
         <source>Bytes</source>
-        <translation>বাইটগুলো</translation>
+        <translation>বাইট</translation>
     </message>
     <message>
         <source>KiB</source>
-        <translation>কেআইবি (Kibibyte)</translation>
+        <translation>কেআইবি</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation>এমআইবি (Mebibyte)</translation>
+        <translation>এমআইবি</translation>
     </message>
     <message>
         <source>GiB</source>
-        <translation>জিআইবি(Gibibyte)</translation>
+        <translation>জিআইবি</translation>
     </message>
     <message>
         <source>TiB</source>
-        <translation>টিআইবি (tebibyte)</translation>
+        <translation>টিআইবি</translation>
     </message>
 </context>
 <context>
@@ -5279,7 +5333,7 @@
     </message>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>সার্বজনীন</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5331,7 +5385,7 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>ইমেজ</translation>
+        <translation>ছবি</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5346,15 +5400,15 @@
     <name>XMemoryMapWidget</name>
     <message>
         <source>Show all</source>
-        <translation>সবগুলো দেখান</translation>
+        <translation>সব দেখান</translation>
     </message>
     <message>
         <source>Dump all</source>
-        <translation>অস্বস্তিকর সব</translation>
+        <translation>সব ডাম্প করুন</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -5382,19 +5436,19 @@
     </message>
     <message>
         <source>Architecture</source>
-        <translation>স্থাপত্য</translation>
+        <translation>আর্কিটেকচার</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>অনুসন্ধান</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -5418,7 +5472,7 @@
     </message>
     <message>
         <source>Dump</source>
-        <translation>অস্বস্তিকর জায়গা</translation>
+        <translation>ডাম্প</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -5426,7 +5480,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>র&apos; ডেটা</translation>
+        <translation>র ডাটা</translation>
     </message>
 </context>
 <context>
@@ -5441,7 +5495,7 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -5449,7 +5503,7 @@
     </message>
     <message>
         <source>Next visited</source>
-        <translation>পূর্ববর্তী পরিদর্শিত</translation>
+        <translation>পরবর্তী পরিদর্শিত</translation>
     </message>
     <message>
         <source>Previous visited</source>
@@ -5461,15 +5515,15 @@
     </message>
     <message>
         <source>View</source>
-        <translation>দেখুন</translation>
+        <translation>ভিউ</translation>
     </message>
     <message>
         <source>Compact</source>
-        <translation>সংক্ষিপ্ত</translation>
+        <translation>কমপ্যাক্ট</translation>
     </message>
     <message>
         <source>Full</source>
-        <translation>সম্পূর্ণ</translation>
+        <translation>পূর্ণ</translation>
     </message>
     <message>
         <source>Analyzed</source>
@@ -5488,7 +5542,7 @@
     </message>
     <message>
         <source>Segment</source>
-        <translation>অংশ</translation>
+        <translation>সেগমেন্ট</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5499,7 +5553,7 @@
     <name>XNPM</name>
     <message>
         <source>Universal</source>
-        <translation></translation>
+        <translation>সার্বজনীন</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5518,7 +5572,7 @@
     </message>
     <message>
         <source>Get</source>
-        <translation>পাওয়া</translation>
+        <translation>নিন</translation>
     </message>
     <message>
         <source>API key</source>
@@ -5529,7 +5583,7 @@
     <name>XOptions</name>
     <message>
         <source>Cannot find file</source>
-        <translation>ফাইল খুঁজে পাওয়া যায়নি</translation>
+        <translation>ফাইল খুঁজে পাওয়া যাচ্ছে না</translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -5537,11 +5591,11 @@
     </message>
     <message>
         <source>Recent files</source>
-        <translation>সাম্প্রতিক নথিপত্র</translation>
+        <translation>সাম্প্রতিক ফাইল</translation>
     </message>
     <message>
         <source>Code pages</source>
-        <translation>সংকেতপদ্ধতির পাতাগুলো</translation>
+        <translation>কোড পেজ</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5549,26 +5603,26 @@
     </message>
     <message>
         <source>Clear</source>
-        <translation>পরিষ্কার</translation>
+        <translation>পরিষ্কার করুন</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>ছবিগুলো</translation>
+        <translation>ছবিসমূহ</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation>দলিলগুলো</translation>
+        <translation>নথিপত্র</translation>
     </message>
 </context>
 <context>
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation>উপরে অবস্থান করুন</translation>
+        <translation>সবার উপরে রাখুন</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation>একক আবেদন</translation>
+        <translation>একক অ্যাপ্লিকেশন</translation>
     </message>
     <message>
         <source>Style</source>
@@ -5584,7 +5638,7 @@
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>শেষ ডিরেক্টরি সংরক্ষণ করুন</translation>
+        <translation>শেষ ডাইরেক্টরি সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Save backup</source>
@@ -5596,7 +5650,7 @@
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation>প্রসঙ্গ মেনুতে যোগ করুন</translation>
+        <translation>কনটেক্সট মেনুতে যোগ করুন</translation>
     </message>
     <message>
         <source>Set system environment variable</source>
@@ -5620,11 +5674,23 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Text editors</source>
-        <translation>টেক্সট সম্পাদক</translation>
+        <translation>টেক্সট এডিটর</translation>
+    </message>
+    <message>
+        <source>Read buffer size</source>
+        <translation>বাফার আকার</translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation>বাফার আকার</translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
     </message>
     <message>
         <source>Default</source>
@@ -5636,7 +5702,7 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>বাতিল করুন</translation>
+        <translation>বাতিল</translation>
     </message>
     <message>
         <source>Appearance</source>
@@ -5651,12 +5717,16 @@
         <translation>ফন্ট</translation>
     </message>
     <message>
+        <source>Features</source>
+        <translation>স্বাক্ষরসমূহ</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>ত্রুটি</translation>
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation>প্রশাসক হিসাবে প্রোগ্রাম চালান</translation>
+        <translation>অনুগ্রহ করে প্রোগ্রামটি অ্যাডমিনিস্ট্রেটর হিসেবে চালান</translation>
     </message>
     <message>
         <source>Information</source>
@@ -5675,7 +5745,7 @@
     </message>
     <message>
         <source>Document</source>
-        <translation>দলিল</translation>
+        <translation>নথি</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -5695,15 +5765,19 @@
     </message>
     <message>
         <source>Object</source>
-        <translation>বস্তু</translation>
+        <translation>অবজেক্ট</translation>
     </message>
     <message>
         <source>Stream</source>
         <translation></translation>
     </message>
     <message>
-        <source>Raw image data</source>
-        <translation>র&apos; ডেটা</translation>
+        <source>Image</source>
+        <translation>ছবি</translation>
+    </message>
+    <message>
+        <source>Color palette (PAL)</source>
+        <translation></translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5718,7 +5792,7 @@
     </message>
     <message>
         <source>Application</source>
-        <translation>আবেদন</translation>
+        <translation>অ্যাপ্লিকেশন</translation>
     </message>
     <message>
         <source>Console</source>
@@ -5726,7 +5800,7 @@
     </message>
     <message>
         <source>Driver</source>
-        <translation>চালক</translation>
+        <translation>ড্রাইভার</translation>
     </message>
     <message>
         <source>Native</source>
@@ -5746,11 +5820,11 @@
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>ফাইলটি খুলতে পারছি না</translation>
+        <translation>ফাইল খোলা যাচ্ছে না</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation>ফাইলটি স্বাক্ষরিত এবং স্বাক্ষর যাচাই করা হয়েছে</translation>
+        <translation>ফাইলটি স্বাক্ষরিত এবং স্বাক্ষরটি যাচাই করা হয়েছে</translation>
     </message>
     <message>
         <source>The file is not signed</source>
@@ -5758,11 +5832,11 @@
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation>স্বাক্ষর উপস্থিত আছে, কিন্তু বিশেষভাবে অননুমোদিত</translation>
+        <translation>স্বাক্ষরটি উপস্থিত, তবে বিশেষভাবে নিষিদ্ধ</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation>স্বাক্ষর বর্তমান, কিন্তু বিশ্বস্ত নয়</translation>
+        <translation>স্বাক্ষরটি উপস্থিত, তবে বিশ্বস্ত নয়</translation>
     </message>
     <message>
         <source>The signature error</source>
@@ -5774,7 +5848,7 @@
     </message>
     <message>
         <source>Invalid</source>
-        <translation>অবৈধ</translation>
+        <translation>অকার্যকর</translation>
     </message>
     <message>
         <source>Header</source>
@@ -5782,15 +5856,15 @@
     </message>
     <message>
         <source>Section</source>
-        <translation>বিভাগ</translation>
+        <translation>সেকশন</translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation>রিসোর্স</translation>
     </message>
     <message>
         <source>Overlay</source>
         <translation>ওভারলে</translation>
-    </message>
-    <message>
-        <source>Resource</source>
-        <translation>সম্পদ</translation>
     </message>
 </context>
 <context>
@@ -5822,6 +5896,10 @@
 <context>
     <name>XScanEngine</name>
     <message>
+        <source>Cannot load database</source>
+        <translation>ডাটাবেস লোড করা যাচ্ছে না</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>অফসেট</translation>
     </message>
@@ -5830,20 +5908,36 @@
         <translation>আকার</translation>
     </message>
     <message>
+        <source>Last error</source>
+        <translation>পঠন ত্রুটি</translation>
+    </message>
+    <message>
         <source>Recursive scan</source>
-        <translation>পুনরাবৃত্তি স্ক্যান</translation>
+        <translation>রিকার্সিভ স্ক্যান</translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation>ওভারলে</translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation>রিসোর্সসমূহ</translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation>আগ্রাসী স্ক্যান</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>গভীরভাবে নির্ণয় করা</translation>
+        <translation>গভীর স্ক্যান</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>হিউরিস্টিক (অনুসন্ধানমূলক) স্ক্যান</translation>
+        <translation>হিউরিস্টিক স্ক্যান</translation>
     </message>
     <message>
         <source>Aggressive scan</source>
-        <translation>আক্রমণাত্মক স্ক্যান</translation>
+        <translation>আগ্রাসী স্ক্যান</translation>
     </message>
     <message>
         <source>Verbose</source>
@@ -5851,7 +5945,7 @@
     </message>
     <message>
         <source>All types</source>
-        <translation>সব ধরনের</translation>
+        <translation>সব ধরন</translation>
     </message>
     <message>
         <source>Main</source>
@@ -5863,7 +5957,7 @@
     </message>
     <message>
         <source>Custom</source>
-        <translation>স্বনির্ধারিত</translation>
+        <translation>কাস্টম</translation>
     </message>
     <message>
         <source>File scan</source>
@@ -5875,11 +5969,11 @@
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>মস্তিষ্কের স্ক্যান</translation>
+        <translation>মেমরি স্ক্যান</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>বিবিধ তথ্যসম্বলি স্ক্যান</translation>
+        <translation>ডাইরেক্টরি স্ক্যান</translation>
     </message>
 </context>
 <context>
@@ -5898,18 +5992,26 @@
     </message>
     <message>
         <source>Invalid data</source>
-        <translation>অবৈধ ফন্ট</translation>
+        <translation>অকার্যকর ফন্ট</translation>
     </message>
     <message>
         <source>Unexpected end of data</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation>ডাটাবেস লোড করা যাচ্ছে না</translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation>অকার্যকর ফন্ট</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Action</source>
-        <translation>ক্রিয়া</translation>
+        <translation>কাজ</translation>
     </message>
     <message>
         <source>File</source>
@@ -5917,15 +6019,15 @@
     </message>
     <message>
         <source>View</source>
-        <translation>দেখুন</translation>
+        <translation>ভিউ</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>স্ট্রিং (string)</translation>
+        <translation>স্ট্রিং</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>স্ট্রিং সমূহ</translation>
+        <translation>স্ট্রিংসমূহ</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -5933,11 +6035,11 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>স্বাক্ষরগুলো</translation>
+        <translation>স্বাক্ষরসমূহ</translation>
     </message>
     <message>
         <source>Struct</source>
-        <translation>স্ট্রাক (Struct)</translation>
+        <translation>স্ট্রাক্ট</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -5949,39 +6051,39 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>বিচ্ছিন্নতা</translation>
+        <translation>ডিসঅ্যাসেম্বলি</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>ডিবাগ(সংশোধন)</translation>
+        <translation>ডিবাগ</translation>
     </message>
     <message>
         <source>Trace</source>
-        <translation>ট্রেস (Trace)</translation>
+        <translation>ট্রেস</translation>
     </message>
     <message>
         <source>Animate</source>
-        <translation>জীবন্তসদৃশ</translation>
+        <translation>অ্যানিমেট</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>ডিবাগ(সংশোধন)</translation>
+        <translation>ডিবাগ</translation>
     </message>
     <message>
         <source>Registers</source>
-        <translation>নিবন্ধন</translation>
+        <translation>রেজিস্টারসমূহ</translation>
     </message>
     <message>
         <source>Register</source>
-        <translation>নিবন্ধন</translation>
+        <translation>রেজিস্টার</translation>
     </message>
     <message>
         <source>Stack</source>
-        <translation>স্তূপ</translation>
+        <translation>স্ট্যাক</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>সংরক্ষণাগার</translation>
+        <translation>আর্কাইভ</translation>
     </message>
     <message>
         <source>Table</source>
@@ -5989,31 +6091,31 @@
     </message>
     <message>
         <source>Process</source>
-        <translation>প্রক্রিয়া</translation>
+        <translation>প্রসেস</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation>মস্তিষ্ক</translation>
+        <translation>মেমরি</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>অনুলিপি</translation>
+        <translation>কপি</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>সম্পাদনা করুন</translation>
+        <translation>সম্পাদনা</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>অনুসন্ধান</translation>
+        <translation>খুঁজুন</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>যাও</translation>
+        <translation>যান</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>টুলস</translation>
+        <translation>সরঞ্জামসমূহ</translation>
     </message>
     <message>
         <source>Help</source>
@@ -6033,7 +6135,7 @@
     </message>
     <message>
         <source>Show in</source>
-        <translation>দেখাও</translation>
+        <translation>এ দেখান</translation>
     </message>
     <message>
         <source>Breakpoint</source>
@@ -6045,7 +6147,7 @@
     </message>
     <message>
         <source>Memory map</source>
-        <translation>মস্তিষ্কের মানচিত্র</translation>
+        <translation>মেমরি ম্যাপ</translation>
     </message>
     <message>
         <source>Value</source>
@@ -6061,11 +6163,11 @@
     </message>
     <message>
         <source>Bookmarks</source>
-        <translation>পুস্তক-চিহ্ন সমূহ</translation>
+        <translation>বুকমার্কসমূহ</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation>বিশ্লেষণ</translation>
+        <translation>বিশ্লেষণ করুন</translation>
     </message>
     <message>
         <source>Hardware</source>
@@ -6085,7 +6187,7 @@
     </message>
     <message>
         <source>Base</source>
-        <translation>ভিত্তি</translation>
+        <translation>বেস</translation>
     </message>
     <message>
         <source>Show</source>
@@ -6093,7 +6195,7 @@
     </message>
     <message>
         <source>Open</source>
-        <translation>খোলা</translation>
+        <translation>খুলুন</translation>
     </message>
     <message>
         <source>New</source>
@@ -6101,11 +6203,11 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Save as</source>
-        <translation>সংরক্ষণ করুন</translation>
+        <translation>হিসাবে সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Close</source>
@@ -6113,15 +6215,15 @@
     </message>
     <message>
         <source>Print</source>
-        <translation>ছাপা</translation>
+        <translation>প্রিন্ট</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>প্রস্থান করুন</translation>
+        <translation>প্রস্থান</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>অস্বস্তিকর ফাইল</translation>
+        <translation>ফাইলে ডাম্প করুন</translation>
     </message>
     <message>
         <source>Address</source>
@@ -6133,7 +6235,7 @@
     </message>
     <message>
         <source>Start</source>
-        <translation>শুরু করুন</translation>
+        <translation>শুরু</translation>
     </message>
     <message>
         <source>Entry point</source>
@@ -6149,7 +6251,7 @@
     </message>
     <message>
         <source>Scripts</source>
-        <translation></translation>
+        <translation>স্ক্রিপ্টসমূহ</translation>
     </message>
     <message>
         <source>Patch</source>
@@ -6161,7 +6263,7 @@
     </message>
     <message>
         <source>Demangle</source>
-        <translation>Demangle</translation>
+        <translation>ডিম্যাঙ্গল</translation>
     </message>
     <message>
         <source>Name</source>
@@ -6177,7 +6279,7 @@
     </message>
     <message>
         <source>Attach</source>
-        <translation>সংযুক্ত করা</translation>
+        <translation>সংযুক্ত করুন</translation>
     </message>
     <message>
         <source>Detach</source>
@@ -6185,51 +6287,51 @@
     </message>
     <message>
         <source>CPU</source>
-        <translation>সিপিইউ(কেন্দ্রীয় প্রক্রিয়াজাতকরণ ইউনিট)</translation>
+        <translation>সিপিইউ</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>ঘটনার তথ্যশালা</translation>
+        <translation>লগ</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation>ব্রেকপয়েন্টগুলো</translation>
+        <translation>ব্রেকপয়েন্টসমূহ</translation>
     </message>
     <message>
         <source>Callstack</source>
-        <translation>কলের স্তূপ</translation>
+        <translation>কলস্ট্যাক</translation>
     </message>
     <message>
         <source>Threads</source>
-        <translation>থ্রেডগুলো (Threads)</translation>
+        <translation>থ্রেডসমূহ</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation>হ্যান্ডেল</translation>
+        <translation>হ্যান্ডেলসমূহ</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>প্রতীকগুলো</translation>
+        <translation>প্রতীকসমূহ</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>ফাংশন</translation>
+        <translation>ফাংশনসমূহ</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>পরিষ্কার</translation>
+        <translation>পরিষ্কার করুন</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>শর্টকাটগুলো</translation>
+        <translation>শর্টকাটসমূহ</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>বিকল্প</translation>
+        <translation>বিকল্পসমূহ</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>সম্পর্ক</translation>
+        <translation>সম্পর্কিত</translation>
     </message>
     <message>
         <source>File name</source>
@@ -6237,11 +6339,11 @@
     </message>
     <message>
         <source>Structs</source>
-        <translation>Structs</translation>
+        <translation>স্ট্রাক্টসমূহ</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation>দর্শক</translation>
+        <translation>ভিউয়ার</translation>
     </message>
     <message>
         <source>Folder</source>
@@ -6257,23 +6359,23 @@
     </message>
     <message>
         <source>Step into</source>
-        <translation>পদার্পণ করা</translation>
+        <translation>স্টেপ ইনটু</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>ধাপ উপরে</translation>
+        <translation>স্টেপ ওভার</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>থামো</translation>
+        <translation>থামুন</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation>আবার শুরু</translation>
+        <translation>রিস্টার্ট</translation>
     </message>
     <message>
         <source>Toggle</source>
-        <translation>টগল (Toggle)</translation>
+        <translation>টগল</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -6289,58 +6391,58 @@
     </message>
     <message>
         <source>References</source>
-        <translation>তথ্যসূত্র</translation>
+        <translation>রেফারেন্সসমূহ</translation>
     </message>
     <message>
         <source>Bookmark</source>
-        <translation>পুস্তক-চিহ্ন</translation>
+        <translation>বুকমার্ক</translation>
     </message>
     <message>
         <source>List</source>
-        <translation>সূচী</translation>
+        <translation>তালিকা</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>অপসারণ</translation>
+        <translation>সরিয়ে ফেলুন</translation>
     </message>
     <message>
         <source>Resize</source>
-        <translation>আকার পরিবর্তন</translation>
+        <translation>রিসাইজ</translation>
     </message>
     <message>
         <source>Conditional</source>
-        <translation>শর্তাধীন</translation>
+        <translation>শর্তসাপেক্ষ</translation>
     </message>
     <message>
         <source>Inspector</source>
-        <translation>পরিদর্শক</translation>
+        <translation>ইন্সপেক্টর</translation>
     </message>
     <message>
         <source>Convertor</source>
-        <translation>রূপান্তরক</translation>
+        <translation>কনভার্টার</translation>
     </message>
     <message>
         <source>Multisearch</source>
-        <translation>বহু অনুসন্ধান</translation>
+        <translation>মাল্টি-সার্চ</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>পাঠ্য ফাইল</translation>
+        <translation>টেক্সট ফাইল</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
     <message>
         <source>Error</source>
@@ -6348,7 +6450,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>ফাইল সংরক্ষণ করা যাবে না</translation>
+        <translation>ফাইল সংরক্ষণ করা যাচ্ছে না</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -6363,7 +6465,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6371,7 +6473,7 @@
     </message>
     <message>
         <source>Symbols</source>
-        <translation>প্রতীকগুলো</translation>
+        <translation>প্রতীকসমূহ</translation>
     </message>
 </context>
 <context>
@@ -6420,15 +6522,15 @@
     </message>
     <message>
         <source>Rescan</source>
-        <translation>পুনরায় স্ক্যান করা</translation>
+        <translation>পুনরায় স্ক্যান</translation>
     </message>
     <message>
         <source>Show detects</source>
-        <translation>সনাক্তকরণ দেখান</translation>
+        <translation>শনাক্তকরণ দেখান</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6448,7 +6550,7 @@
     </message>
     <message>
         <source>Upload the file for analyze?</source>
-        <translation>বিশ্লেষণের জন্য ফাইল আপলোড করবেন?</translation>
+        <translation>বিশ্লেষণের জন্য ফাইলটি আপলোড করবেন?</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -6472,11 +6574,11 @@
     </message>
     <message>
         <source>Options</source>
-        <translation>বিকল্প</translation>
+        <translation>বিকল্পসমূহ</translation>
     </message>
     <message>
         <source>Online tools</source>
-        <translation>অনলাইন টুলস</translation>
+        <translation>অনলাইন সরঞ্জাম</translation>
     </message>
     <message>
         <source>Error</source>
@@ -6499,11 +6601,11 @@
     </message>
     <message>
         <source>Zeros</source>
-        <translation>শূন্য</translation>
+        <translation>শূন্যসমূহ</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>পাঠ্য</translation>
+        <translation>টেক্সট</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -6518,7 +6620,7 @@
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -6526,15 +6628,15 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>ইমেজ</translation>
+        <translation>ছবি</translation>
     </message>
     <message>
         <source>Schema</source>
-        <translation></translation>
+        <translation>স্কিমা</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>টাইপ</translation>
+        <translation>ধরন</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -6542,7 +6644,7 @@
     </message>
     <message>
         <source>Methods</source>
-        <translation>পদ্ধতি</translation>
+        <translation>পদ্ধতিসমূহ</translation>
     </message>
     <message>
         <source>Method</source>
@@ -6566,22 +6668,22 @@
     </message>
     <message>
         <source>Regions</source>
-        <translation>অঞ্চলগুলো</translation>
+        <translation>অঞ্চলসমূহ</translation>
     </message>
     <message>
         <source>Highlights</source>
-        <translation>হাইলাইট</translation>
+        <translation>হাইলাইটসমূহ</translation>
     </message>
     <message>
         <source>Visualization</source>
-        <translation>Візуалізація</translation>
+        <translation>ভিজ্যুয়ালাইজেশন</translation>
     </message>
 </context>
 <context>
     <name>XYara</name>
     <message>
         <source>Start</source>
-        <translation>শুরু করুন</translation>
+        <translation>শুরু</translation>
     </message>
 </context>
 <context>
@@ -6637,11 +6739,11 @@
     <name>YARAWidgetAdvanced</name>
     <message>
         <source>Rules</source>
-        <translation>নিয়মাবলী</translation>
+        <translation>নিয়মসমূহ</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>সংরক্ষণ</translation>
+        <translation>সংরক্ষণ করুন</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -6673,11 +6775,11 @@
     </message>
     <message>
         <source>Text files</source>
-        <translation>পাঠ্য ফাইল</translation>
+        <translation>টেক্সট ফাইল</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>সকল নথি</translation>
+        <translation>সব ফাইল</translation>
     </message>
     <message>
         <source>Error</source>
@@ -6685,7 +6787,7 @@
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>ফাইল সংরক্ষণ করা যাবে না</translation>
+        <translation>ফাইল সংরক্ষণ করা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
@@ -6696,7 +6798,7 @@
     </message>
     <message>
         <source>Rules</source>
-        <translation>নিয়মাবলী</translation>
+        <translation>নিয়মসমূহ</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -6708,7 +6810,7 @@
     </message>
     <message>
         <source>Stop</source>
-        <translation>থামো</translation>
+        <translation>থামুন</translation>
     </message>
 </context>
 </TS>
