@@ -353,7 +353,7 @@ int main(int argc, char *argv[])
 
         printf("Main database: %s\n", scanOptions.sMainDatabasePath.toUtf8().data());
         printf("Extra database: %s\n", scanOptions.sExtraDatabasePath.toUtf8().data());
-        printf("Custom database: %s\n",  scanOptions.sCustomDatabasePath.toUtf8().data());
+        printf("Custom database: %s\n", scanOptions.sCustomDatabasePath.toUtf8().data());
 
         QList<DiE_Script::SIGNATURE_STATE> list = die_script.getSignatureStates();
 
