@@ -103,5 +103,6 @@ macx {
 DISTFILES += \
     ../CMakeLists.txt \
     ../README.md \
+    ../LICENSE \
     ../release_version.txt \
     CMakeLists.txt
