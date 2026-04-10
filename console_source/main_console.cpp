@@ -367,9 +367,9 @@ int main(int argc, char *argv[])
     if (parser.isSet(clShowMethods)) {
         XBinary::FT fileType = XBinary::FT_UNKNOWN;
 
-        if (listArgs.count()) {
-            fileType = XBinary::getPrefFileType(listArgs.at(0));
-        }
+        // if (listArgs.count()) {
+        //     fileType = XFormats::getPrefFileType(listArgs.at(0));
+        // }
 
         printf("Methods:\n");
 
