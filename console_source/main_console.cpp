@@ -253,8 +253,8 @@ int main(int argc, char *argv[])
     QCommandLineOption clDatabaseExtra = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_EXTRADATABASE);
     QCommandLineOption clDatabaseCustom = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CUSTOMDATABASE);
     QCommandLineOption clShowDatabase = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_SHOWDATABASE);
-    QCommandLineOption clSpecial = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_SPECIAL);
-    QCommandLineOption clShowMethods = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_SHOWMETHODS);
+    QCommandLineOption clStruct = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_STRUCT);
+    QCommandLineOption clShowStructs = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_SHOWSTRUCTS);
     QCommandLineOption clTest = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST);
     QCommandLineOption clAddTest = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_ADDTEST);
 
@@ -270,7 +270,7 @@ int main(int argc, char *argv[])
     parser.addOption(clHideUnknown);
     parser.addOption(clEntropy);
     parser.addOption(clInfo);
-    parser.addOption(clSpecial);
+    parser.addOption(clStruct);
     parser.addOption(clResultAsXml);
     parser.addOption(clResultAsJson);
     parser.addOption(clResultAsCSV);
@@ -280,7 +280,7 @@ int main(int argc, char *argv[])
     parser.addOption(clDatabaseExtra);
     parser.addOption(clDatabaseCustom);
     parser.addOption(clShowDatabase);
-    parser.addOption(clShowMethods);
+    parser.addOption(clShowStructs);
     parser.addOption(clTest);
     parser.addOption(clAddTest);
 
@@ -313,7 +313,7 @@ int main(int argc, char *argv[])
     scanOptions.bResultAsPlainText = parser.isSet(clResultAsPlainText);
     scanOptions.bIsSort = true;
 
-    scanOptions.sSpecial = parser.value(clSpecial);
+    scanOptions.sSpecial = parser.value(clStruct);
 
     scanOptions.sMainDatabasePath = parser.value(clDatabaseMain);
     scanOptions.sExtraDatabasePath = parser.value(clDatabaseExtra);
@@ -364,14 +364,14 @@ int main(int argc, char *argv[])
         }
     }
 
-    if (parser.isSet(clShowMethods)) {
+    if (parser.isSet(clShowStructs)) {
         XBinary::FT fileType = XBinary::FT_UNKNOWN;
 
         // if (listArgs.count()) {
         //     fileType = XFormats::getPrefFileType(listArgs.at(0));
         // }
 
-        printf("Methods:\n");
+        printf("Structures:\n");
 
         QList<QString> listMethods = XFileInfo::getMethodNames(fileType);
 
