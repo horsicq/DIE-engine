@@ -96,6 +96,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 #endif
 
     g_xOptions.addID(XOptions::ID_SCAN_ENGINE_DIE_ENABLED, true);
+    g_xOptions.addID(XOptions::ID_SCAN_ENGINE_NFD_ENABLED, true);
+    g_xOptions.addID(XOptions::ID_SCAN_ENGINE_PEID_ENABLED, true);
 #ifdef USE_YARA
     g_xOptions.addID(XOptions::ID_SCAN_ENGINE_YARA_ENABLED, true);
 #endif
