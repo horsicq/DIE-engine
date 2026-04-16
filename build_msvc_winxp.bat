@@ -4,6 +4,7 @@ set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 
 set X_SOURCE_PATH=%~dp0
 set X_BUILD_NAME=die
+set X_PORTABLE=1
 set X_BUILD_PREFIX=winxp
 set /p X_RELEASE_VERSION=<%X_SOURCE_PATH%\release_version.txt
 

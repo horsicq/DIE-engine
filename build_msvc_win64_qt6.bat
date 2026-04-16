@@ -70,6 +70,7 @@ set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
 set X_SOURCE_PATH=%~dp0
 set X_BUILD_NAME=die
+set X_PORTABLE=1
 set X_BUILD_PREFIX=win64_qt6
 set /p X_RELEASE_VERSION=<%X_SOURCE_PATH%\release_version.txt
 
