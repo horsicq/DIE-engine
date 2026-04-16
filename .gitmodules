@@ -169,3 +169,6 @@
 [submodule "build_tools"]
 	path = build_tools
 	url = https://github.com/horsicq/build_tools.git
+[submodule "peid_widget"]
+	path = peid_widget
+	url = https://github.com/horsicq/peid_widget
