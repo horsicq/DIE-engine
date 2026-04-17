@@ -77,7 +77,7 @@ package() {
 
   echo -e "${_prefix}Creating the package base"
   install -d "$pkgdir"/{opt/"${_pkgname}",usr/bin,usr/share/icons}
-  install -d "$pkgdir/opt/${_pkgname}"/{lang,qss,info,db,signatures,images,yara_rules}
+  install -d "$pkgdir/opt/${_pkgname}"/{lang,qss,info,db,db_extra,signatures,images,yara_rules,peid}
 
   echo -e "${_prefix}Copying the package binaries"
   install -Dm 755 build/release/die -t "$pkgdir"/opt/"${_pkgname}"
@@ -89,7 +89,9 @@ package() {
   install -Dm 644 XStyles/qss/* -t "$pkgdir"/opt/"${_pkgname}"/qss
   cp -r XInfoDB/info/* -t "$pkgdir"/opt/"${_pkgname}"/info/
   cp -r Detect-It-Easy/db/* -t "$pkgdir"/opt/"${_pkgname}"/db/
+  cp -r Detect-It-Easy/db_extra/* -t "$pkgdir"/opt/"${_pkgname}"/db_extra/
   cp -r XYara/yara_rules/* -t "$pkgdir"/opt/"${_pkgname}"/yara_rules/
+  cp -r XPEID/peid/* -t "$pkgdir"/opt/"${_pkgname}"/peid/
   install -Dm 644 signatures/crypto.db -t "$pkgdir"/opt/"${_pkgname}"/signatures
   cp -r images/* -t "$pkgdir"/opt/"${_pkgname}"/images/
 

@@ -32,6 +32,7 @@ xcopy %X_SOURCE_PATH%\Detect-It-Easy\db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\d
 xcopy %X_SOURCE_PATH%\Detect-It-Easy\info %X_SOURCE_PATH%\release\%X_BUILD_NAME%\info /E /I
 xcopy %X_SOURCE_PATH%\signatures\crypto.db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures\
 xcopy %X_SOURCE_PATH%\images %X_SOURCE_PATH%\release\%X_BUILD_NAME%\images /E /I
+xcopy %X_SOURCE_PATH%\XPEID\peid %X_SOURCE_PATH%\release\%X_BUILD_NAME%\peid /E /I
 
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Gui
