@@ -56,6 +56,7 @@ if [ -z "$X_ERROR" ]; then
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base/signatures/
         cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/$X_BUILD_NAME/base/signatures/
         cp -Rf $X_SOURCE_PATH/images                                        $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
+        cp -Rf $X_SOURCE_PATH/XPEID/peid/                                   $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         
         create_run_shell $X_SOURCE_PATH/release/$X_BUILD_NAME/die.sh die
         create_run_shell $X_SOURCE_PATH/release/$X_BUILD_NAME/diec.sh diec
