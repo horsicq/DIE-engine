@@ -37,7 +37,7 @@ jobs:
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -67,7 +67,7 @@ jobs:
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -97,7 +97,7 @@ jobs:
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -155,7 +155,7 @@ jobs:
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -213,7 +213,7 @@ jobs:
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -271,7 +271,7 @@ jobs:
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -316,7 +316,7 @@ jobs:
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@v2
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -329,7 +329,7 @@ jobs:
 # build-osx:
 #   runs-on: macos-latest
 #   steps:
-#     - uses: actions/checkout@v4
+#     - uses: actions/checkout@v6
 #       with:
 #        submodules: 'recursive'
 #        path: ${{ env.SRC_PATH }}
