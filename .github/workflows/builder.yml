@@ -20,7 +20,7 @@ jobs:
   build-ubuntu-24:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -50,7 +50,7 @@ jobs:
   build-ubuntu-24-arm:
     runs-on: ubuntu-24.04-arm
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -80,7 +80,7 @@ jobs:
   build-ubuntu-22:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -110,7 +110,7 @@ jobs:
   build-windows-32:
     runs-on: windows-2025
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -168,7 +168,7 @@ jobs:
   build-windows-64:
     runs-on: windows-2025
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -226,7 +226,7 @@ jobs:
   build-windows-64-qt6:
     runs-on: windows-2025
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
