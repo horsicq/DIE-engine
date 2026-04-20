@@ -116,6 +116,17 @@
     </td>
 </tr>
 <tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/Avroke.png" /></td>
+    <td>
+      <p>
+        <big><b>Avroke</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/Avroke">Avroke</a>
+      </p>
+    </td>
+</tr>
+<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/ASL.png" /></td>
     <td>
       <p>
@@ -597,6 +608,17 @@
     </td>
 </tr>
 <tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/janiyk.png" /></td>
+    <td>
+      <p>
+        <big><b>janiyk</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/janiyk">janiyk</a>
+      </p>
+    </td>
+</tr>
+<tr>
     <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/JasonHood.png" /></td>
     <td>
       <p>
@@ -644,6 +666,12 @@
     <td>
       <p>
         <big><b>Jiří Vinopal</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/Dump-GUY">Dump-GUY</a>
+      </p>
+      <p>
+        Twitter: <a href="https://twitter.com/vinopaljiri">vinopaljiri</a>
       </p>
     </td>
 </tr>
@@ -707,6 +735,17 @@
       </p>
       <p>
         Twitter: <a href="https://twitter.com/KdssSupport">KdssSupport</a>
+      </p>
+    </td>
+</tr>
+<tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/k-sajo.png" /></td>
+    <td>
+      <p>
+        <big><b>k-sajo</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/k-sajo">k-sajo</a>
       </p>
     </td>
 </tr>
@@ -968,6 +1007,17 @@
     <td>
       <p>
         <big><b>user_</b></big>
+      </p>
+    </td>
+</tr>
+<tr>
+    <td><img src="https://github.com/horsicq/DIE-engine/blob/master/images/thanks/vasilywarmare.png" /></td>
+    <td>
+      <p>
+        <big><b>vasilywarmare</b></big>
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/vasilywarmare">vasilywarmare</a>
       </p>
     </td>
 </tr>

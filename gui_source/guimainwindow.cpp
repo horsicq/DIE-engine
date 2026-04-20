@@ -373,8 +373,8 @@ void GuiMainWindow::checkMsixResources()
             if (!dbExists) missingResources += "Database (db)\n";
             if (!yaraExists) missingResources += "YARA Rules (yara_rules)\n";
             QMessageBox::StandardButton reply = QMessageBox::question(this, tr("Missing Resources"),
-                                                                      tr("The following resources are missing from the MSIX package:\n\n") + missingResources +
-                                                                          tr("\nPath: ") + localStatePath + tr("\n\nWould you like to download them now?"),
+                                                                      tr("The following resources are missing from the MSIX package") + QString(":\n\n") + missingResources +
+                                                                          QString("\n") + tr("Path") + QString(": ") + localStatePath + tr("\n\nWould you like to download them now?"),
                                                                       QMessageBox::Yes | QMessageBox::No);
             if (reply == QMessageBox::Yes) {
                 launchResourceDownloader(localStatePath);
