@@ -24,7 +24,6 @@ TRANSLATIONS = \
 FORMS += \
     $$PWD/../Controls/dialogbits8.ui \
     $$PWD/../FormatDialogs/dialogdatainspector.ui \
-    $$PWD/../FormatDialogs/dialogdump.ui \
     $$PWD/../FormatDialogs/dialogeditstring.ui \
     $$PWD/../FormatDialogs/dialogfindtext.ui \
     $$PWD/../FormatDialogs/dialoggotoaddress.ui \
@@ -32,10 +31,18 @@ FORMS += \
     $$PWD/../FormatDialogs/dialogremove.ui \
     $$PWD/../FormatDialogs/dialogresize.ui \
     $$PWD/../FormatDialogs/dialogsearch.ui \
-    $$PWD/../FormatDialogs/dialogsearchprocess.ui \
     $$PWD/../FormatDialogs/dialogshowdata.ui \
     $$PWD/../FormatDialogs/dialogtextinfo.ui \
+    $$PWD/../FormatDialogs/dialogwidget.ui \
     $$PWD/../FormatDialogs/xdialogprocess.ui \
+    $$PWD/../FormatWidgets/AbstractWidgets/dialogsetgenericwidget.ui \
+    $$PWD/../FormatWidgets/AbstractWidgets/dialogxmainwidget.ui \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenericdisasmwidget.ui \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenericheaderwidget.ui \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenerichexwidget.ui \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenerictablehexwidget.ui \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenerictablewidget.ui \
+    $$PWD/../FormatWidgets/AbstractWidgets/xmainwidget.ui \
     $$PWD/../FormatWidgets/Binary/binarywidget.ui \
     $$PWD/../FormatWidgets/Binary/dialogbinary.ui \
     $$PWD/../FormatWidgets/DEX/dexsectionheaderwidget.ui \
@@ -70,6 +77,12 @@ FORMS += \
     $$PWD/../FormatWidgets/SearchStrings/searchstringswidget.ui \
     $$PWD/../FormatWidgets/SearchValues/dialogsearchvalues.ui \
     $$PWD/../FormatWidgets/SearchValues/searchvalueswidget.ui \
+    $$PWD/../FormatWidgets/XAbstractWidgets/dialogxstruct.ui \
+    $$PWD/../FormatWidgets/XAbstractWidgets/dialogxstructchooser.ui \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xgenericheaderwidget.ui \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xgenerictablewidget.ui \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xmainwidget.ui \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xstructwidget.ui \
     $$PWD/../FormatWidgets/dialogmodelinfo.ui \
     $$PWD/../FormatWidgets/dialogsectionheader.ui \
     $$PWD/../FormatWidgets/formatswidget.ui \
@@ -85,13 +98,8 @@ FORMS += \
     $$PWD/../XDataConvertorWidget/xdataconvertorwidget.ui \
     $$PWD/../XDemangleWidget/dialogdemangle.ui \
     $$PWD/../XDemangleWidget/xdemanglewidget.ui \
-    $$PWD/../XDisasm/dialogasmsignature.ui \
-    $$PWD/../XDisasm/dialogdisasm.ui \
-    $$PWD/../XDisasm/dialogdisasmlabels.ui \
-    $$PWD/../XDisasm/dialogdisasmprocess.ui \
-    $$PWD/../XDisasm/xdisasmwidget.ui \
+    $$PWD/../XDisasmView/Widgets/dialogmultidisasmsignature.ui \
     $$PWD/../XDisasmView/dialogmultidisasm.ui \
-    $$PWD/../XDisasmView/dialogmultidisasmsignature.ui \
     $$PWD/../XDisasmView/xdisasmviewoptionswidget.ui \
     $$PWD/../XDisasmView/xmultidisasmwidget.ui \
     $$PWD/../XDynStructsWidget/dialogxdynstructs.ui \
@@ -119,6 +127,13 @@ FORMS += \
     $$PWD/../XOnlineTools/xvirustotalwidget.ui \
     $$PWD/../XOptions/dialogviewcolors.ui \
     $$PWD/../XOptions/xoptionswidget.ui \
+    $$PWD/../XRegionsWidget/xregionswidget.ui \
+    $$PWD/../XScanEngine/dialogxscanenginedirectory.ui \
+    $$PWD/../XScanEngine/dialogxscanengineelapsed.ui \
+    $$PWD/../XScanEngine/dialogxscansort.ui \
+    $$PWD/../XScanEngine/xscanengineoptionswidget.ui \
+    $$PWD/../XScanEngine/xscanenginewidget.ui \
+    $$PWD/../XScanEngine/xscansortwidget.ui \
     $$PWD/../XShortcuts/dialogshortcuts.ui \
     $$PWD/../XSymbolsWidget/dialogbookmarks.ui \
     $$PWD/../XSymbolsWidget/dialogxsymbols.ui \
@@ -126,9 +141,12 @@ FORMS += \
     $$PWD/../XVisualizationWidget/dialogvisualization.ui \
     $$PWD/../XVisualizationWidget/xvisualizationwidget.ui \
     $$PWD/../archive_widget/archive_widget.ui \
+    $$PWD/../archive_widget/archiveexplorerwidget.ui \
     $$PWD/../archive_widget/dialogarchive.ui \
     $$PWD/../archive_widget/dialogshowimage.ui \
     $$PWD/../archive_widget/dialogshowtext.ui \
+    $$PWD/../archive_widget/xarchivewidget.ui \
+    $$PWD/../archive_widget/xgenericarchivewidget.ui \
     $$PWD/../die_widget/dialogdiehexviewer.ui \
     $$PWD/../die_widget/dialogdiescandirectory.ui \
     $$PWD/../die_widget/dialogdiesignatures.ui \
@@ -152,21 +170,37 @@ FORMS += \
     $$PWD/../yara_widget/yarawidgetadvanced.ui
 
 SOURCES += \
+    $$PWD/../Controls/XFControls/xfflagsdialog.cpp \
+    $$PWD/../Controls/XFControls/xflistdialog.cpp \
+    $$PWD/../Controls/XFControls/xfsizedialog.cpp \
+    $$PWD/../Controls/XFControls/xfstringdialog.cpp \
+    $$PWD/../Controls/XFControls/xftableview.cpp \
+    $$PWD/../Controls/XFControls/xftreeview.cpp \
+    $$PWD/../Controls/XFControls/xfvaluedialog.cpp \
     $$PWD/../Controls/dialogbits8.cpp \
     $$PWD/../Controls/subclassofqstyleditemdelegate.cpp \
     $$PWD/../Controls/xabstracttableview.cpp \
+    $$PWD/../Controls/xbinaryview.cpp \
     $$PWD/../Controls/xcomboboxex.cpp \
     $$PWD/../Controls/xdatetimeeditx.cpp \
     $$PWD/../Controls/xdevicetableeditview.cpp \
     $$PWD/../Controls/xdevicetableview.cpp \
     $$PWD/../Controls/xheaderview.cpp \
     $$PWD/../Controls/xhtml.cpp \
+    $$PWD/../Controls/xlineedit_num.cpp \
+    $$PWD/../Controls/xlineedit_num_validator.cpp \
     $$PWD/../Controls/xlineedithex.cpp \
     $$PWD/../Controls/xlineeditvalidator.cpp \
+    $$PWD/../Controls/xmodel.cpp \
+    $$PWD/../Controls/xmodel_archiverecords.cpp \
+    $$PWD/../Controls/xmodel_binary.cpp \
+    $$PWD/../Controls/xmodel_fparts.cpp \
+    $$PWD/../Controls/xmodel_hex.cpp \
+    $$PWD/../Controls/xmodel_msrecord.cpp \
+    $$PWD/../Controls/xmodel_streams.cpp \
     $$PWD/../Controls/xsortfilterproxymodel.cpp \
     $$PWD/../Controls/xtableview.cpp \
     $$PWD/../FormatDialogs/dialogdatainspector.cpp \
-    $$PWD/../FormatDialogs/dialogdumpprocess.cpp \
     $$PWD/../FormatDialogs/dialogeditstring.cpp \
     $$PWD/../FormatDialogs/dialogfindtext.cpp \
     $$PWD/../FormatDialogs/dialoggotoaddress.cpp \
@@ -174,12 +208,35 @@ SOURCES += \
     $$PWD/../FormatDialogs/dialogremove.cpp \
     $$PWD/../FormatDialogs/dialogresize.cpp \
     $$PWD/../FormatDialogs/dialogsearch.cpp \
-    $$PWD/../FormatDialogs/dialogsearchprocess.cpp \
     $$PWD/../FormatDialogs/dialogshowdata.cpp \
     $$PWD/../FormatDialogs/dialogtextinfo.cpp \
+    $$PWD/../FormatDialogs/dialogwidget.cpp \
     $$PWD/../FormatDialogs/dumpprocess.cpp \
     $$PWD/../FormatDialogs/searchprocess.cpp \
     $$PWD/../FormatDialogs/xdialogprocess.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/generic_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xarchives_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xdex_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xelf_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xformats_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xle_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xmach_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xmsdos_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xne_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xpe_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/Structs/xsevenzip_defs.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/dialogsetgenericwidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/dialogxmainwidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xdialogprocessdata.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xformatwidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenericdisasmwidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenericheaderwidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenerichexwidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenerictablehexwidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xgenerictablewidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xmainwidget.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xmainwidgetadvanced.cpp \
+    $$PWD/../FormatWidgets/AbstractWidgets/xprocessdata.cpp \
     $$PWD/../FormatWidgets/Binary/binary_defs.cpp \
     $$PWD/../FormatWidgets/Binary/binarywidget.cpp \
     $$PWD/../FormatWidgets/Binary/dialogbinary.cpp \
@@ -208,7 +265,6 @@ SOURCES += \
     $$PWD/../FormatWidgets/MSDOS/dialogmsdos.cpp \
     $$PWD/../FormatWidgets/MSDOS/msdos_defs.cpp \
     $$PWD/../FormatWidgets/MSDOS/msdoswidget.cpp \
-    $$PWD/../FormatWidgets/MultiSearch/dialogmultisearchprocess.cpp \
     $$PWD/../FormatWidgets/MultiSearch/multisearch.cpp \
     $$PWD/../FormatWidgets/NE/dialogne.cpp \
     $$PWD/../FormatWidgets/NE/ne_defs.cpp \
@@ -231,6 +287,15 @@ SOURCES += \
     $$PWD/../FormatWidgets/SearchStrings/searchstringswidget.cpp \
     $$PWD/../FormatWidgets/SearchValues/dialogsearchvalues.cpp \
     $$PWD/../FormatWidgets/SearchValues/searchvalueswidget.cpp \
+    $$PWD/../FormatWidgets/XAbstractWidgets/dialogxstruct.cpp \
+    $$PWD/../FormatWidgets/XAbstractWidgets/dialogxstructchooser.cpp \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xgenericabstractwidget.cpp \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xgenericheaderwidget.cpp \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xgenerictablewidget.cpp \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xgetdatarecordsprocess.cpp \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xmainwidget.cpp \
+    $$PWD/../FormatWidgets/XAbstractWidgets/xstructwidget.cpp \
+    $$PWD/../FormatWidgets/XFWidgets/xfwidget.cpp \
     $$PWD/../FormatWidgets/dialogmodelinfo.cpp \
     $$PWD/../FormatWidgets/dialogprocessdata.cpp \
     $$PWD/../FormatWidgets/dialogsectionheader.cpp \
@@ -240,7 +305,11 @@ SOURCES += \
     $$PWD/../FormatWidgets/processdata.cpp \
     $$PWD/../FormatWidgets/toolswidget.cpp \
     $$PWD/../Formats/audio/xmp3.cpp \
+    $$PWD/../Formats/audio/xwav.cpp \
+    $$PWD/../Formats/audio/xxm.cpp \
+    $$PWD/../Formats/example/example_class.cpp \
     $$PWD/../Formats/exec/xamigahunk.cpp \
+    $$PWD/../Formats/exec/xatarist.cpp \
     $$PWD/../Formats/exec/xcom.cpp \
     $$PWD/../Formats/exec/xelf.cpp \
     $$PWD/../Formats/exec/xle.cpp \
@@ -248,19 +317,61 @@ SOURCES += \
     $$PWD/../Formats/exec/xmsdos.cpp \
     $$PWD/../Formats/exec/xne.cpp \
     $$PWD/../Formats/exec/xpe.cpp \
+    $$PWD/../Formats/formats/xder.cpp \
+    $$PWD/../Formats/formats/xdjvu.cpp \
+    $$PWD/../Formats/formats/xjavaclass.cpp \
+    $$PWD/../Formats/formats/xpyc.cpp \
+    $$PWD/../Formats/formats/xriff.cpp \
+    $$PWD/../Formats/formats/xttf.cpp \
     $$PWD/../Formats/images/xbmp.cpp \
     $$PWD/../Formats/images/xgif.cpp \
+    $$PWD/../Formats/images/xicc.cpp \
     $$PWD/../Formats/images/xicon.cpp \
     $$PWD/../Formats/images/xjpeg.cpp \
     $$PWD/../Formats/images/xpng.cpp \
     $$PWD/../Formats/images/xtiff.cpp \
+    $$PWD/../Formats/images/xwebp.cpp \
     $$PWD/../Formats/subdevice.cpp \
+    $$PWD/../Formats/texts/xtext.cpp \
+    $$PWD/../Formats/video/xavi.cpp \
     $$PWD/../Formats/video/xmp4.cpp \
-    $$PWD/../Formats/video/xriff.cpp \
     $$PWD/../Formats/xbinary.cpp \
     $$PWD/../Formats/xdataconvertor.cpp \
+    $$PWD/../Formats/xfmodel.cpp \
+    $$PWD/../Formats/xfmodel_header.cpp \
+    $$PWD/../Formats/xfmodel_table.cpp \
     $$PWD/../Formats/xformats.cpp \
+    $$PWD/../Formats/xftree_model.cpp \
     $$PWD/../Formats/xiodevice.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_amiga.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_apk.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_archive.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_atarist.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_binary.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_cfbf.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_com.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_dex.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_dos16m.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_dos4g.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_elf.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_image.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_ipa.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_jar.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_javaclass.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_jpeg.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_le.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_lx.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_mach.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_machofat.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_msdos.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_ne.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_npm.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_pdf.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_pe.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_png.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_rar.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_text.cpp \
+    $$PWD/../SpecAbstract/modules/nfd_zip.cpp \
     $$PWD/../SpecAbstract/signatures.cpp \
     $$PWD/../SpecAbstract/specabstract.cpp \
     $$PWD/../SpecAbstract/staticscan.cpp \
@@ -275,49 +386,107 @@ SOURCES += \
     $$PWD/../StaticScan/staticscanitemmodel.cpp \
     $$PWD/../StaticScan/staticscanoptionswidget.cpp \
     $$PWD/../XAboutWidget/xaboutwidget.cpp \
+    $$PWD/../XArchive/Algos/brotlideclib.cpp \
+    $$PWD/../XArchive/Algos/xacedecoder.cpp \
+    $$PWD/../XArchive/Algos/xaesdecoder.cpp \
+    $$PWD/../XArchive/Algos/xarjdecoder.cpp \
+    $$PWD/../XArchive/Algos/xascii85decoder.cpp \
+    $$PWD/../XArchive/Algos/xbcj2decoder.cpp \
+    $$PWD/../XArchive/Algos/xblake2sp.cpp \
+    $$PWD/../XArchive/Algos/xbrotlidecoder.cpp \
+    $$PWD/../XArchive/Algos/xbzip2decoder.cpp \
+    $$PWD/../XArchive/Algos/xcompressdecoder.cpp \
+    $$PWD/../XArchive/Algos/xdeflatedecoder.cpp \
+    $$PWD/../XArchive/Algos/ximplodedecoder.cpp \
+    $$PWD/../XArchive/Algos/xit214decoder.cpp \
+    $$PWD/../XArchive/Algos/xlzhdecoder.cpp \
+    $$PWD/../XArchive/Algos/xlzmadecoder.cpp \
+    $$PWD/../XArchive/Algos/xlzodecoder.cpp \
+    $$PWD/../XArchive/Algos/xlzssdecoder.cpp \
+    $$PWD/../XArchive/Algos/xlzwdecoder.cpp \
+    $$PWD/../XArchive/Algos/xppmd7model.cpp \
+    $$PWD/../XArchive/Algos/xppmddecoder.cpp \
+    $$PWD/../XArchive/Algos/xppmdmodel.cpp \
+    $$PWD/../XArchive/Algos/xppmdrangedecoder.cpp \
+    $$PWD/../XArchive/Algos/xrardecoder.cpp \
+    $$PWD/../XArchive/Algos/xreducedecoder.cpp \
+    $$PWD/../XArchive/Algos/xsha256decoder.cpp \
+    $$PWD/../XArchive/Algos/xshrinkdecoder.cpp \
+    $$PWD/../XArchive/Algos/xstoredecoder.cpp \
+    $$PWD/../XArchive/Algos/xucldecoder.cpp \
+    $$PWD/../XArchive/Algos/xzipcryptodecoder.cpp \
+    $$PWD/../XArchive/Algos/xzstddecoder.cpp \
+    $$PWD/../XArchive/Algos/zstddeclib.cpp \
     $$PWD/../XArchive/x_ar.cpp \
+    $$PWD/../XArchive/xace.cpp \
     $$PWD/../XArchive/xapk.cpp \
     $$PWD/../XArchive/xapks.cpp \
     $$PWD/../XArchive/xarchive.cpp \
     $$PWD/../XArchive/xarchives.cpp \
+    $$PWD/../XArchive/xarj.cpp \
+    $$PWD/../XArchive/xbrotli.cpp \
+    $$PWD/../XArchive/xbzip2.cpp \
     $$PWD/../XArchive/xcab.cpp \
+    $$PWD/../XArchive/xcfbf.cpp \
     $$PWD/../XArchive/xcompress.cpp \
     $$PWD/../XArchive/xcompresseddevice.cpp \
+    $$PWD/../XArchive/xcompressz.cpp \
+    $$PWD/../XArchive/xcpio.cpp \
     $$PWD/../XArchive/xdeb.cpp \
+    $$PWD/../XArchive/xdecompress.cpp \
+    $$PWD/../XArchive/xdmg.cpp \
     $$PWD/../XArchive/xdos16.cpp \
+    $$PWD/../XArchive/xfreearc.cpp \
     $$PWD/../XArchive/xgzip.cpp \
     $$PWD/../XArchive/xipa.cpp \
+    $$PWD/../XArchive/xiso9660.cpp \
     $$PWD/../XArchive/xjar.cpp \
     $$PWD/../XArchive/xlha.cpp \
+    $$PWD/../XArchive/xlzip.cpp \
+    $$PWD/../XArchive/xlzo.cpp \
     $$PWD/../XArchive/xmachofat.cpp \
+    $$PWD/../XArchive/xminidump.cpp \
     $$PWD/../XArchive/xnpm.cpp \
     $$PWD/../XArchive/xrar.cpp \
+    $$PWD/../XArchive/xseaarc.cpp \
     $$PWD/../XArchive/xsevenzip.cpp \
+    $$PWD/../XArchive/xsquashfs.cpp \
+    $$PWD/../XArchive/xszdd.cpp \
     $$PWD/../XArchive/xtar.cpp \
-    $$PWD/../XArchive/xtarcompressed.cpp \
+    $$PWD/../XArchive/xtar_bzip2.cpp \
+    $$PWD/../XArchive/xtar_compress.cpp \
     $$PWD/../XArchive/xtar_gz.cpp \
+    $$PWD/../XArchive/xtar_lzip.cpp \
+    $$PWD/../XArchive/xtar_lzma.cpp \
+    $$PWD/../XArchive/xtar_lzop.cpp \
+    $$PWD/../XArchive/xtar_xz.cpp \
+    $$PWD/../XArchive/xtar_zstd.cpp \
+    $$PWD/../XArchive/xtarcompressed.cpp \
+    $$PWD/../XArchive/xtgz.cpp \
+    $$PWD/../XArchive/xudf.cpp \
+    $$PWD/../XArchive/xxz.cpp \
     $$PWD/../XArchive/xzip.cpp \
     $$PWD/../XArchive/xzlib.cpp \
+    $$PWD/../XArchive/xzstd.cpp \
     $$PWD/../XCapstone/xcapstone.cpp \
     $$PWD/../XCppfilt/xcppfilt.cpp \
     $$PWD/../XDEX/xandroidbinary.cpp \
     $$PWD/../XDEX/xdex.cpp \
     $$PWD/../XDataConvertorWidget/dialogxdataconvertor.cpp \
-    $$PWD/../XDataConvertorWidget/dialogxdataconvertorprocess.cpp \
     $$PWD/../XDataConvertorWidget/xdataconvertorwidget.cpp \
+    $$PWD/../XDecompiler/arch/xabstractparser.cpp \
+    $$PWD/../XDecompiler/arch/xx86parser.cpp \
     $$PWD/../XDecompiler/xdecompiler.cpp \
     $$PWD/../XDemangle/xdemangle.cpp \
     $$PWD/../XDemangleWidget/dialogdemangle.cpp \
     $$PWD/../XDemangleWidget/xdemanglewidget.cpp \
-    $$PWD/../XDisasm/dialogasmsignature.cpp \
-    $$PWD/../XDisasm/dialogdisasm.cpp \
-    $$PWD/../XDisasm/dialogdisasmlabels.cpp \
-    $$PWD/../XDisasm/dialogdisasmprocess.cpp \
-    $$PWD/../XDisasm/xdisasm.cpp \
-    $$PWD/../XDisasm/xdisasmmodel.cpp \
-    $$PWD/../XDisasm/xdisasmwidget.cpp \
+    $$PWD/../XDisasmCore/Modules/capstone_bridge.cpp \
+    $$PWD/../XDisasmCore/Modules/x7zip_properties.cpp \
+    $$PWD/../XDisasmCore/Modules/xmacho_commands.cpp \
+    $$PWD/../XDisasmCore/xdisasmabstract.cpp \
+    $$PWD/../XDisasmCore/xdisasmcore.cpp \
+    $$PWD/../XDisasmView/Widgets/dialogmultidisasmsignature.cpp \
     $$PWD/../XDisasmView/dialogmultidisasm.cpp \
-    $$PWD/../XDisasmView/dialogmultidisasmsignature.cpp \
     $$PWD/../XDisasmView/xdisasmview.cpp \
     $$PWD/../XDisasmView/xdisasmviewoptionswidget.cpp \
     $$PWD/../XDisasmView/xmultidisasmwidget.cpp \
@@ -326,31 +495,28 @@ SOURCES += \
     $$PWD/../XDynStructsWidget/xdynstructsoptionswidget.cpp \
     $$PWD/../XDynStructsWidget/xdynstructswidget.cpp \
     $$PWD/../XEntropyWidget/dialogentropy.cpp \
-    $$PWD/../XEntropyWidget/dialogentropyprocess.cpp \
     $$PWD/../XEntropyWidget/entropyprocess.cpp \
     $$PWD/../XEntropyWidget/xentropywidget.cpp \
     $$PWD/../XExtractor/xextractor.cpp \
-    $$PWD/../XExtractorWidget/dialogextractorprocess.cpp \
+    $$PWD/../XExtractor/xmodel_extractor.cpp \
     $$PWD/../XExtractorWidget/dialogxextractor.cpp \
     $$PWD/../XExtractorWidget/xextractorwidget.cpp \
     $$PWD/../XFileInfo/dialogxfileinfo.cpp \
-    $$PWD/../XFileInfo/dialogxfileinfoprocess.cpp \
     $$PWD/../XFileInfo/xfileinfo.cpp \
     $$PWD/../XFileInfo/xfileinfoitem.cpp \
     $$PWD/../XFileInfo/xfileinfomodel.cpp \
     $$PWD/../XFileInfo/xfileinfowidget.cpp \
     $$PWD/../XGithub/xgithub.cpp \
     $$PWD/../XHashWidget/dialoghash.cpp \
-    $$PWD/../XHashWidget/dialoghashprocess.cpp \
     $$PWD/../XHashWidget/hashprocess.cpp \
     $$PWD/../XHashWidget/xhashwidget.cpp \
     $$PWD/../XHexEdit/dialoghexedit.cpp \
     $$PWD/../XHexEdit/xhexedit.cpp \
     $$PWD/../XHexView/dialoghexview.cpp \
     $$PWD/../XHexView/xhexview.cpp \
+    $$PWD/../XHexView/xhexviewex.cpp \
     $$PWD/../XHexView/xhexviewoptionswidget.cpp \
     $$PWD/../XHexView/xhexviewwidget.cpp \
-    $$PWD/../XInfoDB/dialogxinfodbtransferprocess.cpp \
     $$PWD/../XInfoDB/xinfodb.cpp \
     $$PWD/../XInfoDB/xinfodboptionswidget.cpp \
     $$PWD/../XInfoDB/xinfodbtransfer.cpp \
@@ -362,15 +528,19 @@ SOURCES += \
     $$PWD/../XMemoryMapWidget/xmemorymapwidget.cpp \
     $$PWD/../XOnlineTools/dialogxvirustotal.cpp \
     $$PWD/../XOnlineTools/xonlinetools.cpp \
-    $$PWD/../XOnlineTools/xonlinetoolsdialogprocess.cpp \
     $$PWD/../XOnlineTools/xonlinetoolsoptionswidget.cpp \
     $$PWD/../XOnlineTools/xvirustotal.cpp \
     $$PWD/../XOnlineTools/xvirustotalwidget.cpp \
     $$PWD/../XOptions/codecs/codec_cp437.cpp \
     $$PWD/../XOptions/dialogviewcolors.cpp \
+    $$PWD/../XOptions/xcolorstring.cpp \
+    $$PWD/../XOptions/xconsoloutput.cpp \
     $$PWD/../XOptions/xoptions.cpp \
     $$PWD/../XOptions/xoptionswidget.cpp \
+    $$PWD/../XOptions/xprocesswatch.cpp \
+    $$PWD/../XOptions/xthreadobject.cpp \
     $$PWD/../XPDF/xpdf.cpp \
+    $$PWD/../XPEID/xpeid.cpp \
     $$PWD/../XQwt/3rdparty/qwt/src/qwt.cpp \
     $$PWD/../XQwt/3rdparty/qwt/src/qwt_abstract_legend.cpp \
     $$PWD/../XQwt/3rdparty/qwt/src/qwt_abstract_scale.cpp \
@@ -494,21 +664,67 @@ SOURCES += \
     $$PWD/../XQwt/3rdparty/qwt/src/qwt_weeding_curve_fitter.cpp \
     $$PWD/../XQwt/3rdparty/qwt/src/qwt_wheel.cpp \
     $$PWD/../XQwt/3rdparty/qwt/src/qwt_widget_overlay.cpp \
+    $$PWD/../XRegionsWidget/xregionitem.cpp \
+    $$PWD/../XRegionsWidget/xregionsmodel.cpp \
+    $$PWD/../XRegionsWidget/xregionswidget.cpp \
+    $$PWD/../XScanEngine/dialogxscanenginedirectory.cpp \
+    $$PWD/../XScanEngine/dialogxscanengineelapsed.cpp \
+    $$PWD/../XScanEngine/dialogxscansort.cpp \
+    $$PWD/../XScanEngine/modules/amiga_script.cpp \
+    $$PWD/../XScanEngine/modules/apk_script.cpp \
+    $$PWD/../XScanEngine/modules/archive_script.cpp \
+    $$PWD/../XScanEngine/modules/atarist_script.cpp \
+    $$PWD/../XScanEngine/modules/binary_script.cpp \
+    $$PWD/../XScanEngine/modules/cfbf_script.cpp \
+    $$PWD/../XScanEngine/modules/com_script.cpp \
+    $$PWD/../XScanEngine/modules/dex_script.cpp \
+    $$PWD/../XScanEngine/modules/dos16m_script.cpp \
+    $$PWD/../XScanEngine/modules/dos4g_script.cpp \
+    $$PWD/../XScanEngine/modules/elf_script.cpp \
+    $$PWD/../XScanEngine/modules/image_script.cpp \
+    $$PWD/../XScanEngine/modules/ipa_script.cpp \
+    $$PWD/../XScanEngine/modules/iso9660_script.cpp \
+    $$PWD/../XScanEngine/modules/jar_script.cpp \
+    $$PWD/../XScanEngine/modules/javaclass_script.cpp \
+    $$PWD/../XScanEngine/modules/jpeg_script.cpp \
+    $$PWD/../XScanEngine/modules/le_script.cpp \
+    $$PWD/../XScanEngine/modules/lx_script.cpp \
+    $$PWD/../XScanEngine/modules/mach_script.cpp \
+    $$PWD/../XScanEngine/modules/machofat_script.cpp \
+    $$PWD/../XScanEngine/modules/msdos_script.cpp \
+    $$PWD/../XScanEngine/modules/ne_script.cpp \
+    $$PWD/../XScanEngine/modules/npm_script.cpp \
+    $$PWD/../XScanEngine/modules/pdf_script.cpp \
+    $$PWD/../XScanEngine/modules/pe_script.cpp \
+    $$PWD/../XScanEngine/modules/png_script.cpp \
+    $$PWD/../XScanEngine/modules/pyc_script.cpp \
+    $$PWD/../XScanEngine/modules/rar_script.cpp \
+    $$PWD/../XScanEngine/modules/zip_script.cpp \
     $$PWD/../XScanEngine/scanitem.cpp \
     $$PWD/../XScanEngine/scanitemmodel.cpp \
     $$PWD/../XScanEngine/xscanengine.cpp \
+    $$PWD/../XScanEngine/xscanengineconsole.cpp \
+    $$PWD/../XScanEngine/xscanengineoptionswidget.cpp \
+    $$PWD/../XScanEngine/xscanengineprocess.cpp \
+    $$PWD/../XScanEngine/xscanenginewidget.cpp \
+    $$PWD/../XScanEngine/xscansortwidget.cpp \
     $$PWD/../XShortcuts/dialogshortcuts.cpp \
     $$PWD/../XShortcuts/xshortcuts.cpp \
     $$PWD/../XShortcuts/xshortcutsdialog.cpp \
+    $$PWD/../XShortcuts/xshortcutsobject.cpp \
     $$PWD/../XShortcuts/xshortcutstscrollarea.cpp \
     $$PWD/../XShortcuts/xshortcutswidget.cpp \
     $$PWD/../XSingleApplication/xsingleapplication.cpp \
+    $$PWD/../XStaticUnpacker/xinnosetup.cpp \
+    $$PWD/../XStaticUnpacker/xnsis.cpp \
+    $$PWD/../XStaticUnpacker/xupx.cpp \
     $$PWD/../XSymbolsWidget/dialogbookmarks.cpp \
     $$PWD/../XSymbolsWidget/dialogxsymbols.cpp \
+    $$PWD/../XSymbolsWidget/xmodel_xsymbol.cpp \
     $$PWD/../XSymbolsWidget/xsymbolswidget.cpp \
+    $$PWD/../XUpdate/main.cpp \
     $$PWD/../XUpdate/xupdate.cpp \
     $$PWD/../XVisualizationWidget/dialogvisualization.cpp \
-    $$PWD/../XVisualizationWidget/dialogvisualizationprocess.cpp \
     $$PWD/../XVisualizationWidget/xfilearrow.cpp \
     $$PWD/../XVisualizationWidget/xfiledescription.cpp \
     $$PWD/../XVisualizationWidget/xfileimage.cpp \
@@ -517,6 +733,7 @@ SOURCES += \
     $$PWD/../XVisualizationWidget/xvisualizationwidget.cpp \
     $$PWD/../XYara/xyara.cpp \
     $$PWD/../archive_widget/archive_widget.cpp \
+    $$PWD/../archive_widget/archiveexplorerwidget.cpp \
     $$PWD/../archive_widget/createviewmodelprocess.cpp \
     $$PWD/../archive_widget/dialogarchive.cpp \
     $$PWD/../archive_widget/dialogcreateviewmodel.cpp \
@@ -524,33 +741,18 @@ SOURCES += \
     $$PWD/../archive_widget/dialogshowtext.cpp \
     $$PWD/../archive_widget/dialogunpackfile.cpp \
     $$PWD/../archive_widget/unpackfileprocess.cpp \
+    $$PWD/../archive_widget/xarchivewidget.cpp \
+    $$PWD/../archive_widget/xgenericarchivewidget.cpp \
     $$PWD/../console_source/consoleoutput.cpp \
     $$PWD/../console_source/main_console.cpp \
-    $$PWD/../die_script/amiga_script.cpp \
-    $$PWD/../die_script/apk_script.cpp \
-    $$PWD/../die_script/archive_script.cpp \
-    $$PWD/../die_script/binary_script.cpp \
-    $$PWD/../die_script/com_script.cpp \
-    $$PWD/../die_script/dex_script.cpp \
     $$PWD/../die_script/die_script.cpp \
+    $$PWD/../die_script/die_scriptdatabaseupdate.cpp \
     $$PWD/../die_script/die_scriptengine.cpp \
-    $$PWD/../die_script/elf_script.cpp \
     $$PWD/../die_script/global_script.cpp \
-    $$PWD/../die_script/ipa_script.cpp \
-    $$PWD/../die_script/jar_script.cpp \
-    $$PWD/../die_script/le_script.cpp \
-    $$PWD/../die_script/lx_script.cpp \
-    $$PWD/../die_script/mach_script.cpp \
-    $$PWD/../die_script/msdos_script.cpp \
-    $$PWD/../die_script/ne_script.cpp \
-    $$PWD/../die_script/npm_script.cpp \
-    $$PWD/../die_script/pe_script.cpp \
     $$PWD/../die_script/util_script.cpp \
     $$PWD/../die_script/xscriptengine.cpp \
-    $$PWD/../die_script/zip_script.cpp \
     $$PWD/../die_widget/dialogdiehexviewer.cpp \
     $$PWD/../die_widget/dialogdiescandirectory.cpp \
-    $$PWD/../die_widget/dialogdiescanprocess.cpp \
     $$PWD/../die_widget/dialogdiesignatures.cpp \
     $$PWD/../die_widget/dialogdiesignatureselapsed.cpp \
     $$PWD/../die_widget/die_highlighter.cpp \
@@ -558,6 +760,7 @@ SOURCES += \
     $$PWD/../die_widget/die_widget.cpp \
     $$PWD/../die_widget/dieoptionswidget.cpp \
     $$PWD/../die_widget/diewidgetadvanced.cpp \
+    desktopintegrationhelper.cpp \
     dialogabout.cpp \
     dialogoptions.cpp \
     dialogselectstyle.cpp \
@@ -567,14 +770,16 @@ SOURCES += \
     $$PWD/../lite_source/main_lite.cpp \
     $$PWD/../nfd_widget/dialognfdscan.cpp \
     $$PWD/../nfd_widget/dialognfdscandirectory.cpp \
-    $$PWD/../nfd_widget/dialognfdscanprocess.cpp \
     $$PWD/../nfd_widget/dialognfdwidgetadvanced.cpp \
     $$PWD/../nfd_widget/nfd_widget.cpp \
     $$PWD/../nfd_widget/nfdoptionswidget.cpp \
     $$PWD/../nfd_widget/nfdwidgetadvanced.cpp \
+    $$PWD/../peid_widget/peid_widget.cpp \
     $$PWD/../yara_widget/dialogyarawidgetadvanced.cpp \
     $$PWD/../yara_widget/xyaradialogprocess.cpp \
     $$PWD/../yara_widget/yara_widget.cpp \
     $$PWD/../yara_widget/yarawidgetadvanced.cpp
+
+
 
 

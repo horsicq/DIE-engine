@@ -322,15 +322,15 @@ int main(int argc, char *argv[])
     QString sAddTestFilename = parser.value(clAddTest);
 
     if (scanOptions.sMainDatabasePath == "") {
-        scanOptions.sMainDatabasePath = XOptions().getApplicationDataPath() + QDir::separator() + "db";
+        scanOptions.sMainDatabasePath = "$data/db";
     }
 
     if (scanOptions.sExtraDatabasePath == "") {
-        scanOptions.sExtraDatabasePath = XOptions().getApplicationDataPath() + QDir::separator() + "db_extra";
+        scanOptions.sExtraDatabasePath = "$data/db_extra";
     }
 
     if (scanOptions.sCustomDatabasePath == "") {
-        scanOptions.sCustomDatabasePath = XOptions().getApplicationDataPath() + QDir::separator() + "db_custom";
+        scanOptions.sCustomDatabasePath = "$data/db_custom";
     }
 
     ConsoleOutput consoleOutput;

@@ -2,6 +2,57 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="ko">
 <context>
+    <name>ArchiveExplorerWidget</name>
+    <message>
+        <source>Archive Explorer</source>
+        <translation>Archive Explorer</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>문자열</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>엔트로피</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>해시</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>파일 이름</translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation>파일로 덤프</translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation>파일 저장</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>오류</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>파일을 저장할 수 없음</translation>
+    </message>
+    <message>
+        <source>Cannot open archive</source>
+        <translation>Cannot open archive</translation>
+    </message>
+</context>
+<context>
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
@@ -133,6 +184,24 @@
     <message>
         <source>Search</source>
         <translation>검색</translation>
+    </message>
+</context>
+<context>
+    <name>Binary_Script</name>
+    <message>
+        <source>Invalid handle</source>
+        <translation>유효하지 않은 핸들</translation>
+    </message>
+    <message>
+        <source>Unknown compression method</source>
+        <translation>Unknown compression method</translation>
+    </message>
+</context>
+<context>
+    <name>Capstone_Bridge</name>
+    <message>
+        <source>Invalid opcode</source>
+        <translation>유효하지 않은 옵코드</translation>
     </message>
 </context>
 <context>
@@ -397,6 +466,65 @@
     </message>
 </context>
 <context>
+    <name>DiE_ScriptDatabaseUpdate</name>
+    <message>
+        <source>Network error while checking for database updates</source>
+        <translation>Network error while checking for database updates</translation>
+    </message>
+    <message>
+        <source>Failed to get remote database info</source>
+        <translation>Failed to get remote database info</translation>
+    </message>
+    <message>
+        <source>No %1 found in release</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Updating main database</source>
+        <translation>데이터베이스를 로드할 수 없음</translation>
+    </message>
+    <message>
+        <source>Main database updated successfully</source>
+        <translation>Main database updated successfully</translation>
+    </message>
+    <message>
+        <source>Updating extra database</source>
+        <translation>추가 데이터베이스</translation>
+    </message>
+    <message>
+        <source>Extra database updated successfully</source>
+        <translation>Extra database updated successfully</translation>
+    </message>
+    <message>
+        <source>Failed to create temporary directory</source>
+        <translation>Failed to create temporary directory</translation>
+    </message>
+    <message>
+        <source>Failed to download file</source>
+        <translation>Failed to open downloaded zip file</translation>
+    </message>
+    <message>
+        <source>Downloaded file is empty</source>
+        <translation>Downloaded file is empty</translation>
+    </message>
+    <message>
+        <source>Failed to open downloaded zip file</source>
+        <translation>Failed to open downloaded zip file</translation>
+    </message>
+    <message>
+        <source>Downloaded file is not a valid ZIP archive</source>
+        <translation>Downloaded file is not a valid ZIP archive</translation>
+    </message>
+    <message>
+        <source>Failed to initialize ZIP unpacking</source>
+        <translation>Failed to initialize ZIP unpacking</translation>
+    </message>
+    <message>
+        <source>Failed to extract archive: no files extracted</source>
+        <translation>Failed to extract archive: no files extracted</translation>
+    </message>
+</context>
+<context>
     <name>DiE_ScriptEngine</name>
     <message>
         <source>Cannot find</source>
@@ -443,49 +571,6 @@
     <message>
         <source>Close</source>
         <translation>닫기</translation>
-    </message>
-</context>
-<context>
-    <name>DialogAsmSignature</name>
-    <message>
-        <source>Signature</source>
-        <translation>서명</translation>
-    </message>
-    <message>
-        <source>Spaces</source>
-        <translation>공백</translation>
-    </message>
-    <message>
-        <source>Upper</source>
-        <translation>위쪽</translation>
-    </message>
-    <message>
-        <source>Wildcard</source>
-        <translation>와일드카드</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>복사</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>확인</translation>
-    </message>
-    <message>
-        <source>Relative virtual address</source>
-        <translation>상대 가상 주소 (RVA)</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>주소</translation>
-    </message>
-    <message>
-        <source>Bytes</source>
-        <translation>바이트</translation>
-    </message>
-    <message>
-        <source>Opcode</source>
-        <translation>옵코드</translation>
     </message>
 </context>
 <context>
@@ -562,11 +647,11 @@
     </message>
     <message>
         <source>Invalid parameters provided</source>
-        <translation></translation>
+        <translation>Invalid parameters provided</translation>
     </message>
     <message>
         <source>File name cannot be empty</source>
-        <translation></translation>
+        <translation>File name cannot be empty</translation>
     </message>
 </context>
 <context>
@@ -792,71 +877,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDisasm</name>
-    <message>
-        <source>Disasm</source>
-        <translation>디스어셈블</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>닫기</translation>
-    </message>
-</context>
-<context>
-    <name>DialogDisasmLabels</name>
-    <message>
-        <source>Labels</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Go to</source>
-        <translation>이동</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>닫기</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>이름</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>주소</translation>
-    </message>
-</context>
-<context>
-    <name>DialogDisasmProcess</name>
-    <message>
-        <source>Disasm</source>
-        <translation>디스어셈블</translation>
-    </message>
-    <message>
-        <source>Opcodes</source>
-        <translation>옵코드</translation>
-    </message>
-    <message>
-        <source>Calls</source>
-        <translation>콜 스택</translation>
-    </message>
-    <message>
-        <source>Jumps</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Ref to</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Ref from</source>
-        <translation>다음에서 검색</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>취소</translation>
-    </message>
-</context>
-<context>
     <name>DialogEditString</name>
     <message>
         <source>String</source>
@@ -1069,6 +1089,53 @@
     </message>
 </context>
 <context>
+    <name>DialogMultiDisasmSignature</name>
+    <message>
+        <source>Signature</source>
+        <translation>서명</translation>
+    </message>
+    <message>
+        <source>Spaces</source>
+        <translation>공백</translation>
+    </message>
+    <message>
+        <source>Upper</source>
+        <translation>위쪽</translation>
+    </message>
+    <message>
+        <source>Wildcard</source>
+        <translation>와일드카드</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Relative virtual address</source>
+        <translation>상대 가상 주소 (RVA)</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <source>Bytes</source>
+        <translation>바이트</translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation>옵코드</translation>
+    </message>
+</context>
+<context>
     <name>DialogNFDScan</name>
     <message>
         <source>Scan</source>
@@ -1077,57 +1144,6 @@
     <message>
         <source>Close</source>
         <translation>닫기</translation>
-    </message>
-</context>
-<context>
-    <name>DialogNFDScanDirectory</name>
-    <message>
-        <source>Directory scan</source>
-        <translation>디렉토리 검색</translation>
-    </message>
-    <message>
-        <source>Directory</source>
-        <translation>디렉토리</translation>
-    </message>
-    <message>
-        <source>Subdirectories</source>
-        <translation>하위 디렉토리</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>검색</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>지우기</translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation>저장</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>확인</translation>
-    </message>
-    <message>
-        <source>Flags</source>
-        <translation>플래그</translation>
-    </message>
-    <message>
-        <source>Open directory</source>
-        <translation>디렉토리 열기</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>msec</translation>
-    </message>
-    <message>
-        <source>Text documents</source>
-        <translation>텍스트 문서</translation>
-    </message>
-    <message>
-        <source>Save result</source>
-        <translation>결과 저장</translation>
     </message>
 </context>
 <context>
@@ -1325,6 +1341,21 @@
     </message>
 </context>
 <context>
+    <name>DialogSetGenericWidget</name>
+    <message>
+        <source>Structs</source>
+        <translation>구조체</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+</context>
+<context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
@@ -1394,7 +1425,7 @@
     </message>
     <message>
         <source>Image information</source>
-        <translation>업데이트 정보</translation>
+        <translation>Image information</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1405,64 +1436,64 @@
         <translation>오류</translation>
     </message>
     <message>
-        <source>Image file does not exist: %1</source>
+        <source>Image file does not exist</source>
         <translation></translation>
     </message>
     <message>
-        <source>Failed to load image: %1</source>
-        <translation></translation>
+        <source>Failed to load image</source>
+        <translation>Failed to save image to %1</translation>
     </message>
     <message>
         <source>Zoom In</source>
-        <translation>확대/축소</translation>
+        <translation>Zoom In</translation>
     </message>
     <message>
         <source>Zoom Out</source>
-        <translation>확대/축소</translation>
+        <translation>Zoom Out</translation>
     </message>
     <message>
         <source>Actual Size</source>
-        <translation>가상 크기</translation>
-    </message>
-    <message>
-        <source>Ctrl+0</source>
-        <translation></translation>
+        <translation>Actual Size</translation>
     </message>
     <message>
         <source>Fit to Window</source>
-        <translation>메인 윈도우</translation>
-    </message>
-    <message>
-        <source>F</source>
-        <translation></translation>
+        <translation>Fit to Window</translation>
     </message>
     <message>
         <source>Copy</source>
         <translation>복사</translation>
     </message>
     <message>
-        <source>Save As...</source>
+        <source>Save as</source>
         <translation>다른 이름으로 저장</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>다른 이름으로 저장</translation>
+        <translation>Save Image</translation>
     </message>
     <message>
-        <source>Images (*.png *.jpg *.jpeg *.bmp *.gif)</source>
-        <translation></translation>
+        <source>Images</source>
+        <translation>이미지</translation>
     </message>
     <message>
         <source>Failed to save image to %1</source>
-        <translation></translation>
+        <translation>Failed to save image to %1</translation>
     </message>
     <message>
         <source>No image loaded</source>
-        <translation></translation>
+        <translation>No image loaded</translation>
     </message>
     <message>
-        <source>Size: %1 x %2 | Format: %3 | Zoom: %4%</source>
-        <translation></translation>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>형식</translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation>확대/축소</translation>
     </message>
 </context>
 <context>
@@ -1621,11 +1652,11 @@
     </message>
     <message>
         <source>Text color</source>
-        <translation>텍스트 편집기</translation>
+        <translation>Text color</translation>
     </message>
     <message>
         <source>Background color</source>
-        <translation>배경</translation>
+        <translation>Background color</translation>
     </message>
     <message>
         <source>Group</source>
@@ -1649,6 +1680,17 @@
     <message>
         <source>Visualization</source>
         <translation>시각화</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>닫기</translation>
+    </message>
+</context>
+<context>
+    <name>DialogWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1693,6 +1735,124 @@
     <message>
         <source>Close</source>
         <translation>닫기</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXMainWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>대화 상자</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXScanEngineDirectory</name>
+    <message>
+        <source>Directory scan</source>
+        <translation>디렉토리 검색</translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation>디렉토리</translation>
+    </message>
+    <message>
+        <source>Subdirectories</source>
+        <translation>하위 디렉토리</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>지우기</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation>플래그</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>디렉토리 열기</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation>msec</translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation>텍스트 문서</translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation>결과 저장</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXScanEngineElapsed</name>
+    <message>
+        <source>Elapsed</source>
+        <translation>경과 시간</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>시간</translation>
+    </message>
+    <message>
+        <source>Script</source>
+        <translation>스크립트</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXScanSort</name>
+    <message>
+        <source>Collection</source>
+        <translation>Collection</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>닫기</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXStruct</name>
+    <message>
+        <source>Structs</source>
+        <translation>구조체</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXStructChooser</name>
+    <message>
+        <source>Dialog</source>
+        <translation>대화 상자</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
     </message>
 </context>
 <context>
@@ -1851,6 +2011,13 @@
         <source>Unknown</source>
         <translation>알 수 없음</translation>
     </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+</context>
+<context>
+    <name>EXAMPLE_CLASS</name>
     <message>
         <source>Header</source>
         <translation>헤더</translation>
@@ -2163,24 +2330,21 @@
     </message>
     <message>
         <source>Missing Resources</source>
-        <translation>리소스</translation>
+        <translation>Missing Resources</translation>
     </message>
     <message>
-        <source>The following resources are missing from the MSIX package:
-
-</source>
+        <source>The following resources are missing from the MSIX package</source>
         <translation></translation>
     </message>
     <message>
-        <source>
-Path: </source>
-        <translation></translation>
+        <source>Path</source>
+        <translation>Path</translation>
     </message>
     <message>
         <source>
 
 Would you like to download them now?</source>
-        <translation></translation>
+        <translation>Would you like to download them now?</translation>
     </message>
 </context>
 <context>
@@ -2679,45 +2843,6 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
-    <name>NFDOptionsWidget</name>
-    <message>
-        <source>Scan after open</source>
-        <translation>열기 후 검색</translation>
-    </message>
-    <message>
-        <source>Recursive scan</source>
-        <translation>재귀적 검색</translation>
-    </message>
-    <message>
-        <source>Deep scan</source>
-        <translation>정밀 검사</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
-    </message>
-    <message>
-        <source>Verbose</source>
-        <translation>상세 정보</translation>
-    </message>
-    <message>
-        <source>All types</source>
-        <translation>모든 유형</translation>
-    </message>
-    <message>
-        <source>Format result</source>
-        <translation>결과 형식</translation>
-    </message>
-    <message>
-        <source>Highlight</source>
-        <translation>하이라이트</translation>
-    </message>
-    <message>
-        <source>Buffer size</source>
-        <translation>버퍼 크기</translation>
-    </message>
-</context>
-<context>
     <name>NFDWidgetAdvanced</name>
     <message>
         <source>Save</source>
@@ -2766,33 +2891,6 @@ Would you like to download them now?</source>
     <message>
         <source>Value</source>
         <translation>값</translation>
-    </message>
-</context>
-<context>
-    <name>NFD_Widget</name>
-    <message>
-        <source>Info</source>
-        <translation>정보</translation>
-    </message>
-    <message>
-        <source>Directory</source>
-        <translation>디렉토리</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>검색</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation>중지</translation>
-    </message>
-    <message>
-        <source>Flags</source>
-        <translation>플래그</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation>msec</translation>
     </message>
 </context>
 <context>
@@ -3261,16 +3359,64 @@ Would you like to download them now?</source>
 <context>
     <name>QObject</name>
     <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Compressed size</source>
+        <translation>Compressed size</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Stream offset</source>
+        <translation>Stream offset</translation>
+    </message>
+    <message>
+        <source>Stream size</source>
+        <translation>Stream size</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>메서드</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <source>V.Size</source>
+        <translation>V.Size</translation>
+    </message>
+    <message>
+        <source>Part</source>
+        <translation>Part</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Compress</source>
+        <translation>Compress</translation>
+    </message>
+    <message>
+        <source>U.Size</source>
+        <translation>U.Size</translation>
+    </message>
+    <message>
         <source>Type</source>
         <translation>유형</translation>
     </message>
     <message>
         <source>Count</source>
         <translation>개수</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>오프셋</translation>
     </message>
     <message>
         <source>String</source>
@@ -3285,10 +3431,6 @@ Would you like to download them now?</source>
         <translation>인터프리터</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>이름</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>버전</translation>
     </message>
@@ -3301,16 +3443,24 @@ Would you like to download them now?</source>
         <translation>값</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>주소</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>크기</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Table Directory</source>
+        <translation>Table Directory</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>테이블</translation>
+    </message>
+    <message>
+        <source>Tag</source>
+        <translation>Tag</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3318,23 +3468,15 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Chunk</source>
-        <translation></translation>
+        <translation>Chunk</translation>
     </message>
     <message>
         <source>Box</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Box</translation>
     </message>
     <message>
         <source>Visualization</source>
         <translation>시각화</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -3402,7 +3544,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Stream</source>
-        <translation></translation>
+        <translation>Stream</translation>
     </message>
     <message>
         <source>Section</source>
@@ -3423,10 +3565,6 @@ Would you like to download them now?</source>
     <message>
         <source>Object</source>
         <translation>개체</translation>
-    </message>
-    <message>
-        <source>Table</source>
-        <translation>테이블</translation>
     </message>
     <message>
         <source>Process</source>
@@ -3462,7 +3600,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Encrypted</source>
-        <translation>크립터</translation>
+        <translation>Encrypted</translation>
     </message>
     <message>
         <source>Cannot open file</source>
@@ -3478,7 +3616,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Raw</source>
-        <translation></translation>
+        <translation>Raw</translation>
     </message>
     <message>
         <source>Format</source>
@@ -3514,7 +3652,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Auto</source>
-        <translation>자동</translation>
+        <translation>Auto</translation>
     </message>
     <message>
         <source>Obfuscator</source>
@@ -3823,28 +3961,24 @@ Would you like to download them now?</source>
         <translation>파일을 저장할 수 없음</translation>
     </message>
     <message>
-        <source>Searching...</source>
+        <source>Searching</source>
         <translation>문자열 검색</translation>
     </message>
     <message>
-        <source>%1 strings found</source>
+        <source>strings found</source>
         <translation>검색 결과 없음</translation>
     </message>
     <message>
-        <source>Sorting...</source>
-        <translation></translation>
+        <source>Sorting</source>
+        <translation>정렬</translation>
     </message>
     <message>
-        <source>%1 strings found (%2 ms)</source>
-        <translation></translation>
+        <source>msec</source>
+        <translation>msec</translation>
     </message>
     <message>
-        <source>%1 / %2 strings (%3 ms)</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>%1 / %2 strings</source>
-        <translation></translation>
+        <source>strings</source>
+        <translation>문자열</translation>
     </message>
 </context>
 <context>
@@ -3952,6 +4086,17 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XACE</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
     <name>XAPK</name>
     <message>
         <source>Universal</source>
@@ -3964,6 +4109,32 @@ Would you like to download them now?</source>
     <message>
         <source>Package</source>
         <translation>패키지</translation>
+    </message>
+</context>
+<context>
+    <name>XARJ</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XAVI</name>
+    <message>
+        <source>RIFF Header</source>
+        <translation>RIFF Header</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
     </message>
 </context>
 <context>
@@ -3990,7 +4161,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Social Media</source>
-        <translation></translation>
+        <translation>Social Media</translation>
     </message>
     <message>
         <source>Update information</source>
@@ -4056,6 +4227,116 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XArchiveWidget</name>
+    <message>
+        <source>Archive</source>
+        <translation>아카이브</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>필터</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>문자열</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>엔트로피</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>해시</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>파일 이름</translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation>파일로 덤프</translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation>파일 저장</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>오류</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>파일을 저장할 수 없음</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>Hex view not implemented yet</source>
+        <translation>Hex view not implemented yet</translation>
+    </message>
+    <message>
+        <source>Strings view not implemented yet</source>
+        <translation>Strings view not implemented yet</translation>
+    </message>
+    <message>
+        <source>Entropy view not implemented yet</source>
+        <translation>Entropy view not implemented yet</translation>
+    </message>
+    <message>
+        <source>Hash view not implemented yet</source>
+        <translation>Hash view not implemented yet</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Compressed</source>
+        <translation>Compressed</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>메서드</translation>
+    </message>
+</context>
+<context>
+    <name>XAtariST</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation>텍스트</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+</context>
+<context>
     <name>XBMP</name>
     <message>
         <source>Header</source>
@@ -4063,7 +4344,30 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Bitmap Data</source>
-        <translation></translation>
+        <translation>Bitmap Data</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XBZIP2</name>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation>Stream</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -4134,7 +4438,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Streams</source>
-        <translation></translation>
+        <translation>Streams</translation>
     </message>
     <message>
         <source>Invalid signature</source>
@@ -4175,10 +4479,6 @@ Would you like to download them now?</source>
     <message>
         <source>Default</source>
         <translation>기본값</translation>
-    </message>
-    <message>
-        <source>ARM</source>
-        <translation></translation>
     </message>
     <message>
         <source>Multiplatform</source>
@@ -4226,6 +4526,40 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XBrotli</name>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation>Stream</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XCFBF</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
@@ -4234,6 +4568,17 @@ Would you like to download them now?</source>
     <message>
         <source>Header</source>
         <translation>헤더</translation>
+    </message>
+</context>
+<context>
+    <name>XCPIO</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
     </message>
 </context>
 <context>
@@ -4248,7 +4593,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Stream</source>
-        <translation></translation>
+        <translation>Stream</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -4263,6 +4608,29 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XCompressZ</name>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation>Stream</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
@@ -4272,6 +4640,17 @@ Would you like to download them now?</source>
         <source>Main module</source>
         <translation>메인 모듈</translation>
     </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XDJVU</name>
     <message>
         <source>Header</source>
         <translation>헤더</translation>
@@ -4296,7 +4675,7 @@ Would you like to download them now?</source>
         <translation>헤더</translation>
     </message>
     <message>
-        <source>Segment %1</source>
+        <source>Segment</source>
         <translation>세그먼트</translation>
     </message>
     <message>
@@ -4363,6 +4742,17 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XDecompress</name>
+    <message>
+        <source>Invalid CRC</source>
+        <translation>Invalid CRC</translation>
+    </message>
+    <message>
+        <source>Unknown compression method</source>
+        <translation>Unknown compression method</translation>
+    </message>
+</context>
+<context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
@@ -4421,8 +4811,16 @@ Would you like to download them now?</source>
         <translation>프로세스</translation>
     </message>
     <message>
+        <source>Elapsed:</source>
+        <translation>경과 시간</translation>
+    </message>
+    <message>
         <source>Advanced</source>
         <translation>고급</translation>
+    </message>
+    <message>
+        <source>Remaining:</source>
+        <translation>Remaining:</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -4435,29 +4833,6 @@ Would you like to download them now?</source>
     <message>
         <source>Info</source>
         <translation>정보</translation>
-    </message>
-</context>
-<context>
-    <name>XDisasmModel</name>
-    <message>
-        <source>Address</source>
-        <translation>주소</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>오프셋</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Bytes</source>
-        <translation>바이트</translation>
-    </message>
-    <message>
-        <source>Opcode</source>
-        <translation>옵코드</translation>
     </message>
 </context>
 <context>
@@ -4560,77 +4935,6 @@ Would you like to download them now?</source>
     <message>
         <source>Flags register</source>
         <translation>플래그 레지스터</translation>
-    </message>
-</context>
-<context>
-    <name>XDisasmWidget</name>
-    <message>
-        <source>Type</source>
-        <translation>유형</translation>
-    </message>
-    <message>
-        <source>Analyze</source>
-        <translation>분석</translation>
-    </message>
-    <message>
-        <source>Labels</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Overlay</source>
-        <translation>오버레이</translation>
-    </message>
-    <message>
-        <source>Go to</source>
-        <translation>이동</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>진입 지점</translation>
-    </message>
-    <message>
-        <source>Virtual address</source>
-        <translation>가상 주소</translation>
-    </message>
-    <message>
-        <source>Relative virtual address</source>
-        <translation>상대 가상 주소 (RVA)</translation>
-    </message>
-    <message>
-        <source>File offset</source>
-        <translation>파일 오프셋</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>복사</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>서명</translation>
-    </message>
-    <message>
-        <source>Dump to file</source>
-        <translation>파일로 덤프</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>디스어셈블</translation>
-    </message>
-    <message>
-        <source>To data</source>
-        <translation>데이터</translation>
-    </message>
-    <message>
-        <source>Raw data</source>
-        <translation>원시 데이터</translation>
-    </message>
-    <message>
-        <source>Save dump</source>
-        <translation>덤프 저장</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>오류</translation>
     </message>
 </context>
 <context>
@@ -4816,7 +5120,7 @@ Would you like to download them now?</source>
     <name>XExtractor</name>
     <message>
         <source>Mode is not available for this file type</source>
-        <translation></translation>
+        <translation>Mode is not available for this file type</translation>
     </message>
 </context>
 <context>
@@ -4864,6 +5168,204 @@ Would you like to download them now?</source>
     <message>
         <source>Save dump</source>
         <translation>덤프 저장</translation>
+    </message>
+</context>
+<context>
+    <name>XFFlagsDialog</name>
+    <message>
+        <source>Edit Flags</source>
+        <translation>Edit Flags</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>값</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+</context>
+<context>
+    <name>XFListDialog</name>
+    <message>
+        <source>Select Value</source>
+        <translation>Select Value</translation>
+    </message>
+    <message>
+        <source>Current</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+</context>
+<context>
+    <name>XFModel</name>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>유형</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>값</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>주석</translation>
+    </message>
+</context>
+<context>
+    <name>XFModel_table</name>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+</context>
+<context>
+    <name>XFREEARC</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XFSizeDialog</name>
+    <message>
+        <source>Edit Size</source>
+        <translation>Edit Size</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Dec</source>
+        <translation>디코드</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+</context>
+<context>
+    <name>XFStringDialog</name>
+    <message>
+        <source>Edit String</source>
+        <translation>Edit String</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+</context>
+<context>
+    <name>XFTreeModel</name>
+    <message>
+        <source>TABLE</source>
+        <translation>TABLE</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>유형</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+</context>
+<context>
+    <name>XFValueDialog</name>
+    <message>
+        <source>Edit Value</source>
+        <translation>Edit Value</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Dec</source>
+        <translation>디코드</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>유형</translation>
+    </message>
+</context>
+<context>
+    <name>XFWidget</name>
+    <message>
+        <source>Show Offsets</source>
+        <translation>Show Offsets</translation>
+    </message>
+    <message>
+        <source>Show Presentation</source>
+        <translation>Show Presentation</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
     </message>
 </context>
 <context>
@@ -4918,18 +5420,288 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XFormatWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation>시각화</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>디스어셈블</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>해시</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>문자열</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>서명</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation>영역</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>메모리 맵</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>심볼</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>엔트로피</translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation>추출기</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>도구</translation>
+    </message>
+    <message>
+        <source>String table</source>
+        <translation>문자열 테이블</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>리소스</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>테이블</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>인증서</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>내보내기</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation>옵코드</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>값</translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation>플래그</translation>
+    </message>
+    <message>
+        <source>Position</source>
+        <translation>위치</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>문자열</translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation>심볼</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>오류</translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation>파일을 저장할 수 없음</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation>텍스트 파일</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation>모든 파일</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>유형</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>주석</translation>
+    </message>
+</context>
+<context>
     <name>XFormats</name>
     <message>
         <source>Cannot unpack</source>
-        <translation>패킹되지 않음</translation>
+        <translation>Cannot unpack</translation>
+    </message>
+    <message>
+        <source>Path traversal detected</source>
+        <translation>Path traversal detected</translation>
     </message>
     <message>
         <source>Cannot decompress</source>
-        <translation>세션을 열 수 없음</translation>
+        <translation>Cannot decompress</translation>
     </message>
     <message>
         <source>Cannot create</source>
-        <translation>크기를 조정할 수 없음</translation>
+        <translation>Cannot create</translation>
+    </message>
+</context>
+<context>
+    <name>XGenericArchiveWidget</name>
+    <message>
+        <source>Archive</source>
+        <translation>아카이브</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>필터</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Compressed</source>
+        <translation>Compressed</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>메서드</translation>
+    </message>
+</context>
+<context>
+    <name>XGenericDisasmWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>폼</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>다시 로드</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+</context>
+<context>
+    <name>XGenericHeaderWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>폼</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>다시 로드</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>유형</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>값</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>주석</translation>
+    </message>
+</context>
+<context>
+    <name>XGenericHexWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>폼</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>다시 로드</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+</context>
+<context>
+    <name>XGenericTableWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>폼</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>다시 로드</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation>디맹글</translation>
     </message>
 </context>
 <context>
@@ -4940,15 +5712,15 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Logical Screen Descriptor</source>
-        <translation></translation>
+        <translation>Logical Screen Descriptor</translation>
     </message>
     <message>
         <source>Global Color Table</source>
-        <translation></translation>
+        <translation>Global Color Table</translation>
     </message>
     <message>
         <source>Trailer</source>
-        <translation></translation>
+        <translation>Trailer</translation>
     </message>
     <message>
         <source>Image</source>
@@ -4956,23 +5728,23 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Graphic Control Extension</source>
-        <translation></translation>
+        <translation>Graphic Control Extension</translation>
     </message>
     <message>
         <source>Comment Extension</source>
-        <translation></translation>
+        <translation>Comment Extension</translation>
     </message>
     <message>
         <source>Application Extension</source>
-        <translation>애플리케이션</translation>
+        <translation>Application Extension</translation>
     </message>
     <message>
         <source>Plain Text Extension</source>
-        <translation>일반 텍스트</translation>
+        <translation>Plain Text Extension</translation>
     </message>
     <message>
         <source>Extension</source>
-        <translation>버전</translation>
+        <translation>Extension</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -4991,7 +5763,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Stream</source>
-        <translation></translation>
+        <translation>Stream</translation>
     </message>
     <message>
         <source>Data</source>
@@ -5117,6 +5889,25 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XISO9660</name>
+    <message>
+        <source>Reserved</source>
+        <translation>Reserved</translation>
+    </message>
+    <message>
+        <source>Primary Volume Descriptor</source>
+        <translation>Primary Volume Descriptor</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
     <name>XIcon</name>
     <message>
         <source>Header</source>
@@ -5124,11 +5915,11 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Entries</source>
-        <translation></translation>
+        <translation>Entries</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation></translation>
+        <translation>Icon</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -5185,6 +5976,14 @@ Would you like to download them now?</source>
         <translation>정보</translation>
     </message>
     <message>
+        <source>Info database update URL</source>
+        <translation>Info database update URL</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation>Update</translation>
+    </message>
+    <message>
         <source>Open directory</source>
         <translation>디렉토리 열기</translation>
     </message>
@@ -5233,6 +6032,41 @@ Would you like to download them now?</source>
     <message>
         <source>Package</source>
         <translation>패키지</translation>
+    </message>
+</context>
+<context>
+    <name>XJavaClass</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Constant pool</source>
+        <translation>Constant pool</translation>
+    </message>
+    <message>
+        <source>Class info</source>
+        <translation>Class info</translation>
+    </message>
+    <message>
+        <source>Interfaces</source>
+        <translation>Interfaces</translation>
+    </message>
+    <message>
+        <source>Fields</source>
+        <translation>Fields</translation>
+    </message>
+    <message>
+        <source>Methods</source>
+        <translation>메서드</translation>
+    </message>
+    <message>
+        <source>Attributes</source>
+        <translation>Attributes</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
     </message>
 </context>
 <context>
@@ -5319,6 +6153,52 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XLzip</name>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation>Stream</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation>푸터</translation>
+    </message>
+</context>
+<context>
+    <name>XLzo</name>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation>Stream</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
     <name>XMACH</name>
     <message>
         <source>Unknown</source>
@@ -5366,7 +6246,7 @@ Would you like to download them now?</source>
     <name>XMP4</name>
     <message>
         <source>Boxes</source>
-        <translation></translation>
+        <translation>Boxes</translation>
     </message>
     <message>
         <source>Header</source>
@@ -5394,6 +6274,37 @@ Would you like to download them now?</source>
     <message>
         <source>Unknown</source>
         <translation>알 수 없음</translation>
+    </message>
+</context>
+<context>
+    <name>XMainWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>폼</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>다시 로드</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Sync</source>
+        <translation>동기화</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>읽기 전용</translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation>다음 방문</translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation>이전 방문</translation>
     </message>
 </context>
 <context>
@@ -5481,6 +6392,149 @@ Would you like to download them now?</source>
     <message>
         <source>Raw data</source>
         <translation>원시 데이터</translation>
+    </message>
+</context>
+<context>
+    <name>XMiniDump</name>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation>디렉토리</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XModel_Binary</name>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>유형</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>값</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>주석</translation>
+    </message>
+</context>
+<context>
+    <name>XModel_Extractor</name>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation>영역</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation>메서드</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>유형</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+</context>
+<context>
+    <name>XModel_MSRecord</name>
+    <message>
+        <source>Patch</source>
+        <translation>패치</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation>영역</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>문자열</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>서명</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>값</translation>
+    </message>
+</context>
+<context>
+    <name>XModel_XSymbol</name>
+    <message>
+        <source>Offset</source>
+        <translation>오프셋</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation>영역</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>크기</translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation>심볼</translation>
     </message>
 </context>
 <context>
@@ -5654,7 +6708,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Set system environment variable</source>
-        <translation></translation>
+        <translation>Set system environment variable</translation>
     </message>
     <message>
         <source>Controls</source>
@@ -5682,11 +6736,11 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Read buffer size</source>
-        <translation>버퍼 크기</translation>
+        <translation>Read buffer size</translation>
     </message>
     <message>
         <source>File buffer size</source>
-        <translation>버퍼 크기</translation>
+        <translation>File buffer size</translation>
     </message>
     <message>
         <source>AVX2</source>
@@ -5718,7 +6772,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Features</source>
-        <translation>서명</translation>
+        <translation>Features</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5769,14 +6823,14 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Stream</source>
-        <translation></translation>
+        <translation>Stream</translation>
     </message>
     <message>
         <source>Image</source>
         <translation>이미지</translation>
     </message>
     <message>
-        <source>Color palette (PAL)</source>
+        <source>Color palette</source>
         <translation></translation>
     </message>
     <message>
@@ -5804,7 +6858,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Native</source>
-        <translation></translation>
+        <translation>Native</translation>
     </message>
     <message>
         <source>Boot application</source>
@@ -5879,6 +6933,25 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XPYC</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Code Object</source>
+        <translation>Code Object</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
     <name>XRar</name>
     <message>
         <source>Signature</source>
@@ -5891,6 +6964,89 @@ Would you like to download them now?</source>
     <message>
         <source>Overlay</source>
         <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XRegionsModel</name>
+    <message>
+        <source>File offset</source>
+        <translation>파일 오프셋</translation>
+    </message>
+    <message>
+        <source>File size</source>
+        <translation>파일 크기</translation>
+    </message>
+    <message>
+        <source>Virtual address</source>
+        <translation>가상 주소</translation>
+    </message>
+    <message>
+        <source>Virtual size</source>
+        <translation>가상 크기</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation>플래그</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>정보</translation>
+    </message>
+</context>
+<context>
+    <name>XRegionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>폼</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>다시 로드</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>저장</translation>
+    </message>
+</context>
+<context>
+    <name>XRiff</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+    <message>
+        <source>Chunks</source>
+        <translation>Chunks</translation>
+    </message>
+</context>
+<context>
+    <name>XSEAARC</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XSZDD</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Compressed Data</source>
+        <translation>Compressed Data</translation>
     </message>
 </context>
 <context>
@@ -5909,7 +7065,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Last error</source>
-        <translation>읽기 오류</translation>
+        <translation>Last error</translation>
     </message>
     <message>
         <source>Recursive scan</source>
@@ -5917,15 +7073,15 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Overlay scan</source>
-        <translation>오버레이</translation>
+        <translation>Overlay scan</translation>
     </message>
     <message>
         <source>Resource scan</source>
-        <translation>리소스</translation>
+        <translation>Resource scan</translation>
     </message>
     <message>
         <source>Archive scan</source>
-        <translation>능동 탐색</translation>
+        <translation>Archive scan</translation>
     </message>
     <message>
         <source>Deep scan</source>
@@ -5959,6 +7115,288 @@ Would you like to download them now?</source>
         <source>Custom</source>
         <translation>사용자 정의</translation>
     </message>
+</context>
+<context>
+    <name>XScanEngineOptionsWidget</name>
+    <message>
+        <source>Scan after open</source>
+        <translation>열기 후 검색</translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation>플래그</translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation>재귀적 검색</translation>
+    </message>
+    <message>
+        <source>Aggressive scan</source>
+        <translation>능동 탐색</translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation>정밀 검사</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>상세 정보</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation>휴리스틱 검색</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>모든 유형</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>리소스</translation>
+    </message>
+    <message>
+        <source>Archives</source>
+        <translation>Archives</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+    <message>
+        <source>Format result</source>
+        <translation>결과 형식</translation>
+    </message>
+    <message>
+        <source>Profiling</source>
+        <translation>프로파일링</translation>
+    </message>
+    <message>
+        <source>Hide unknown</source>
+        <translation>알 수 없는 항목 숨기기</translation>
+    </message>
+    <message>
+        <source>Sort</source>
+        <translation>정렬</translation>
+    </message>
+    <message>
+        <source>Use cache</source>
+        <translation>Use cache</translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation>하이라이트</translation>
+    </message>
+    <message>
+        <source>Colors</source>
+        <translation>색상</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>데이터베이스</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation>Update</translation>
+    </message>
+    <message>
+        <source>Extra database</source>
+        <translation>추가 데이터베이스</translation>
+    </message>
+    <message>
+        <source>Custom database</source>
+        <translation>사용자 정의 데이터베이스</translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation>디렉토리 열기</translation>
+    </message>
+    <message>
+        <source>APK tool</source>
+        <translation>APK tool</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>아카이브</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>작성자</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>인증서</translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation>컴파일러</translation>
+    </message>
+    <message>
+        <source>Compressor</source>
+        <translation>압축기</translation>
+    </message>
+    <message>
+        <source>Converter</source>
+        <translation>변환기</translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation>손상된 데이터</translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation>제작자</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>디버그</translation>
+    </message>
+    <message>
+        <source>Debug data</source>
+        <translation>디버그 데이터</translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation>문서</translation>
+    </message>
+    <message>
+        <source>DOS extender</source>
+        <translation>DOS extender</translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>형식</translation>
+    </message>
+    <message>
+        <source>Game engine</source>
+        <translation>Game engine</translation>
+    </message>
+    <message>
+        <source>Generic</source>
+        <translation>일반</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>이미지</translation>
+    </message>
+    <message>
+        <source>Installer</source>
+        <translation>인스톨러</translation>
+    </message>
+    <message>
+        <source>Installer data</source>
+        <translation>인스톨러 데이터</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>언어</translation>
+    </message>
+    <message>
+        <source>Library</source>
+        <translation>라이브러리</translation>
+    </message>
+    <message>
+        <source>Licensing</source>
+        <translation>라이선싱</translation>
+    </message>
+    <message>
+        <source>Linker</source>
+        <translation>링커</translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation>로더</translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation>멀웨어</translation>
+    </message>
+    <message>
+        <source>Obfuscator</source>
+        <translation>난독기</translation>
+    </message>
+    <message>
+        <source>Operation system</source>
+        <translation>운영 체제</translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation>패키지</translation>
+    </message>
+    <message>
+        <source>PE tool</source>
+        <translation>PE tool</translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation>개인 데이터</translation>
+    </message>
+    <message>
+        <source>Platform</source>
+        <translation>플랫폼</translation>
+    </message>
+    <message>
+        <source>Player</source>
+        <translation>플레이어</translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation>제작자</translation>
+    </message>
+    <message>
+        <source>Protector data</source>
+        <translation>프로텍터 데이터</translation>
+    </message>
+    <message>
+        <source>Protection</source>
+        <translation>보호</translation>
+    </message>
+    <message>
+        <source>ROM</source>
+        <translation>ROM</translation>
+    </message>
+    <message>
+        <source>SFX data</source>
+        <translation>SFX data</translation>
+    </message>
+    <message>
+        <source>Sign tool</source>
+        <translation>서명 도구</translation>
+    </message>
+    <message>
+        <source>Source code</source>
+        <translation>소스 코드</translation>
+    </message>
+    <message>
+        <source>Stub</source>
+        <translation>스텁</translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation>도구</translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation>트로이 목마</translation>
+    </message>
+    <message>
+        <source>Virtual machine</source>
+        <translation>가상 머신</translation>
+    </message>
+    <message>
+        <source>Virus</source>
+        <translation>바이러스</translation>
+    </message>
+</context>
+<context>
+    <name>XScanEngineProcess</name>
     <message>
         <source>File scan</source>
         <translation>파일 검색</translation>
@@ -5977,6 +7415,84 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XScanEngineWidget</name>
+    <message>
+        <source>Directory</source>
+        <translation>디렉토리</translation>
+    </message>
+    <message>
+        <source>Collection</source>
+        <translation>Collection</translation>
+    </message>
+    <message>
+        <source>Log</source>
+        <translation>로그</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>서명</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation>플래그</translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>데이터베이스</translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation>msec</translation>
+    </message>
+</context>
+<context>
+    <name>XScanSortWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>폼</translation>
+    </message>
+    <message>
+        <source>...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>필터</translation>
+    </message>
+    <message>
+        <source>All file types</source>
+        <translation>All file types</translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation>모든 유형</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>결과</translation>
+    </message>
+    <message>
+        <source>Catalog</source>
+        <translation>Catalog</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>검색</translation>
+    </message>
+    <message>
+        <source>Open Directory</source>
+        <translation>Open Directory</translation>
+    </message>
+</context>
+<context>
     <name>XSevenZip</name>
     <message>
         <source>Header</source>
@@ -5992,19 +7508,19 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Invalid data</source>
-        <translation>유효하지 않은 글꼴</translation>
+        <translation>Invalid data</translation>
     </message>
     <message>
         <source>Unexpected end of data</source>
-        <translation></translation>
+        <translation>Unexpected end of data</translation>
     </message>
     <message>
         <source>Cannot unpack data</source>
-        <translation>데이터베이스를 로드할 수 없음</translation>
+        <translation>Cannot unpack data</translation>
     </message>
     <message>
         <source>Invalid format data</source>
-        <translation>유효하지 않은 글꼴</translation>
+        <translation>Invalid format data</translation>
     </message>
 </context>
 <context>
@@ -6286,10 +7802,6 @@ Would you like to download them now?</source>
         <translation>분리</translation>
     </message>
     <message>
-        <source>CPU</source>
-        <translation>CPU</translation>
-    </message>
-    <message>
         <source>Log</source>
         <translation>로그</translation>
     </message>
@@ -6458,6 +7970,48 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XSquashfs</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+</context>
+<context>
+    <name>XStructWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>폼</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Sync</source>
+        <translation>동기화</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>읽기 전용</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>다시 로드</translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation>다음 방문</translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation>이전 방문</translation>
+    </message>
+</context>
+<context>
     <name>XSymbolsWidget</name>
     <message>
         <source>Form</source>
@@ -6492,6 +8046,35 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XTTF</name>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Table Directory</source>
+        <translation>Table Directory</translation>
+    </message>
+</context>
+<context>
+    <name>XText</name>
+    <message>
+        <source>Text content</source>
+        <translation>Text content</translation>
+    </message>
+</context>
+<context>
+    <name>XThreadObject</name>
+    <message>
+        <source>Process</source>
+        <translation>프로세스</translation>
+    </message>
+</context>
+<context>
     <name>XTiff</name>
     <message>
         <source>Header</source>
@@ -6508,6 +8091,115 @@ Would you like to download them now?</source>
     <message>
         <source>Overlay</source>
         <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XUDF</name>
+    <message>
+        <source>Anchor Volume Descriptor</source>
+        <translation>Anchor Volume Descriptor</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XUPX</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XUpdate</name>
+    <message>
+        <source>Cannot find ZIP asset %1 in release %2.</source>
+        <translation>Cannot find ZIP asset %1 in release %2.</translation>
+    </message>
+    <message>
+        <source>Downloading %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to download</source>
+        <translation>Failed to open downloaded zip file</translation>
+    </message>
+    <message>
+        <source>Extracting %1</source>
+        <translation>추출</translation>
+    </message>
+    <message>
+        <source>Cannot create temporary unpack directory.</source>
+        <translation>Cannot create temporary unpack directory.</translation>
+    </message>
+    <message>
+        <source>Invalid ZIP archive</source>
+        <translation>유효하지 않은 크기</translation>
+    </message>
+    <message>
+        <source>Cannot open downloaded ZIP</source>
+        <translation>파일을 열 수 없음</translation>
+    </message>
+    <message>
+        <source>updated successfully.</source>
+        <translation>Main database updated successfully</translation>
+    </message>
+    <message>
+        <source>Failed to extract %1.</source>
+        <translation>Failed to extract %1.</translation>
+    </message>
+    <message>
+        <source>Unsupported GitHub release URL</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Checking %1</source>
+        <translation>확인</translation>
+    </message>
+    <message>
+        <source>Cannot fetch release metadata for %1.</source>
+        <translation>Cannot fetch release metadata for %1.</translation>
+    </message>
+    <message>
+        <source>Invalid release body for %1. Expected date=yyyy-MM-dd.</source>
+        <translation>Invalid release body for %1. Expected date=yyyy-MM-dd.</translation>
+    </message>
+    <message>
+        <source>No local info.ini for %1. Bootstrapping from GitHub release %2.</source>
+        <translation>No local info.ini for %1. Bootstrapping from GitHub release %2.</translation>
+    </message>
+    <message>
+        <source>Cannot read local info.ini for %1, skipping.</source>
+        <translation>Cannot read local info.ini for %1, skipping.</translation>
+    </message>
+    <message>
+        <source>Updating</source>
+        <translation>Update</translation>
+    </message>
+    <message>
+        <source>local</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>remote</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>is up to date</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -6680,7 +8372,65 @@ Would you like to download them now?</source>
     </message>
 </context>
 <context>
+    <name>XXM</name>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XXZ</name>
+    <message>
+        <source>Stream Header</source>
+        <translation>Stream Header</translation>
+    </message>
+    <message>
+        <source>Stream Footer</source>
+        <translation>Stream Footer</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
+    </message>
+</context>
+<context>
     <name>XYara</name>
+    <message>
+        <source>Invalid YARA compiler</source>
+        <translation>Invalid YARA compiler</translation>
+    </message>
+    <message>
+        <source>Cannot open rules file</source>
+        <translation>Cannot open rules file</translation>
+    </message>
+    <message>
+        <source>Cannot create YARA compiler</source>
+        <translation>Cannot create YARA compiler</translation>
+    </message>
+    <message>
+        <source>No YARA rules were loaded</source>
+        <translation>No YARA rules were loaded</translation>
+    </message>
+    <message>
+        <source>YARA rules path not found</source>
+        <translation>YARA rules path not found</translation>
+    </message>
+    <message>
+        <source>Cannot build YARA rules</source>
+        <translation>Cannot build YARA rules</translation>
+    </message>
+    <message>
+        <source>Cannot open scan target</source>
+        <translation>Cannot open scan target</translation>
+    </message>
+    <message>
+        <source>YARA scan failed</source>
+        <translation>YARA scan failed</translation>
+    </message>
     <message>
         <source>Start</source>
         <translation>시작</translation>
@@ -6690,7 +8440,7 @@ Would you like to download them now?</source>
     <name>XZip</name>
     <message>
         <source>Stream</source>
-        <translation></translation>
+        <translation>Stream</translation>
     </message>
     <message>
         <source>Data</source>
@@ -6713,7 +8463,30 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Adler32</source>
-        <translation></translation>
+        <translation>Adler32</translation>
+    </message>
+</context>
+<context>
+    <name>XZstd</name>
+    <message>
+        <source>Unknown</source>
+        <translation>알 수 없음</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>헤더</translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation>Stream</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>데이터</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation>오버레이</translation>
     </message>
 </context>
 <context>
@@ -6724,7 +8497,7 @@ Would you like to download them now?</source>
     </message>
     <message>
         <source>Record</source>
-        <translation></translation>
+        <translation>Record</translation>
     </message>
     <message>
         <source>Data</source>
@@ -6811,6 +8584,133 @@ Would you like to download them now?</source>
     <message>
         <source>Stop</source>
         <translation>중지</translation>
+    </message>
+</context>
+<context>
+    <name></name>
+    <message>
+        <source>Add alignment</source>
+        <translation>정렬 추가</translation>
+    </message>
+    <message>
+        <source>Archive record</source>
+        <translation>아카이브 레코드</translation>
+    </message>
+    <message>
+        <source>Buffer size</source>
+        <translation>버퍼 크기</translation>
+    </message>
+    <message>
+        <source>CPU</source>
+        <translation>CPU</translation>
+    </message>
+    <message>
+        <source>Cannot get PDB age</source>
+        <translation>PDB 연령을 가져올 수 없음</translation>
+    </message>
+    <message>
+        <source>Cannot get PDB name</source>
+        <translation>PDB 이름을 가져올 수 없음</translation>
+    </message>
+    <message>
+        <source>Cannot load MSDIA library</source>
+        <translation>MSDIA 라이브러리를 로드할 수 없음</translation>
+    </message>
+    <message>
+        <source>Cannot load data from PDB</source>
+        <translation>PDB에서 데이터를 로드할 수 없음</translation>
+    </message>
+    <message>
+        <source>Cannot open session</source>
+        <translation>세션을 열 수 없음</translation>
+    </message>
+    <message>
+        <source>Databases</source>
+        <translation>데이터베이스</translation>
+    </message>
+    <message>
+        <source>Dependencies</source>
+        <translation>종속성</translation>
+    </message>
+    <message>
+        <source>Export type</source>
+        <translation>내보내기 유형</translation>
+    </message>
+    <message>
+        <source>File saved</source>
+        <translation>파일 저장됨</translation>
+    </message>
+    <message>
+        <source>Fix offsets</source>
+        <translation>오프셋 수정</translation>
+    </message>
+    <message>
+        <source>Fix types</source>
+        <translation>유형 수정</translation>
+    </message>
+    <message>
+        <source>Get element</source>
+        <translation>요소 가져오기</translation>
+    </message>
+    <message>
+        <source>Invalid font</source>
+        <translation>유효하지 않은 글꼴</translation>
+    </message>
+    <message>
+        <source>MainWindow</source>
+        <translation>메인 윈도우</translation>
+    </message>
+    <message>
+        <source>Map</source>
+        <translation>맵</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>아니요</translation>
+    </message>
+    <message>
+        <source>One operand</source>
+        <translation>단일 피연산자</translation>
+    </message>
+    <message>
+        <source>Opcode group</source>
+        <translation>옵코드 그룹</translation>
+    </message>
+    <message>
+        <source>SFX</source>
+        <translation>SFX</translation>
+    </message>
+    <message>
+        <source>SZDD Header</source>
+        <translation>SZDD Header</translation>
+    </message>
+    <message>
+        <source>Segment %1</source>
+        <translation>Segment %1</translation>
+    </message>
+    <message>
+        <source>Show comments</source>
+        <translation>주석 표시</translation>
+    </message>
+    <message>
+        <source>Sort elements</source>
+        <translation>요소 정렬</translation>
+    </message>
+    <message>
+        <source>Sort type</source>
+        <translation>정렬 유형</translation>
+    </message>
+    <message>
+        <source>Struct and unions</source>
+        <translation>구조체 및 공용체</translation>
+    </message>
+    <message>
+        <source>Two operands</source>
+        <translation>두 개의 피연산자</translation>
+    </message>
+    <message>
+        <source>UNKNOWN</source>
+        <translation>UNKNOWN</translation>
     </message>
 </context>
 </TS>
