@@ -168,6 +168,9 @@
       <p>
         GitHub: <a href="https://github.com/BJNFNE">BJNFNE</a>
       </p>
+      </p>
+          X:      <a href="https://x.com/BJNFNE">BJNFNE</a>
+      </p>
     </td>
 </tr>
 <tr>
