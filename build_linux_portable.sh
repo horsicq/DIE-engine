@@ -32,7 +32,7 @@ if [ -z "$X_ERROR" ]; then
         cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         
         cp -R $X_QT_INSTALL_PLUGINS/platforms/libqxcb.so                    $X_SOURCE_PATH/release/$X_BUILD_NAME/base/platforms/
-        cp -R $X_QT_INSTALL_PLUGINS/sqldrivers/qsqlite.dll                  $X_SOURCE_PATH/release/$X_BUILD_NAME/base/sqldrivers/
+        cp -R $X_QT_INSTALL_PLUGINS/sqldrivers/libqsqlite.so                $X_SOURCE_PATH/release/$X_BUILD_NAME/base/sqldrivers/
         
         cp -Lr $X_QT_INSTALL_LIBS/libQt5Core.so.5                           $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
         cp -Lr $X_QT_INSTALL_LIBS/libQt5Svg.so.5                            $X_SOURCE_PATH/release/$X_BUILD_NAME/base/

@@ -36,6 +36,7 @@ xcopy %X_SOURCE_PATH%\XPEID\peid %X_SOURCE_PATH%\release\%X_BUILD_NAME%\peid /E 
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Widgets
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Gui
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Core
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Concurrent
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Core5Compat
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Network
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt6Qml
