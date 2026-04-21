@@ -89,7 +89,7 @@ void progressCallback(void *pUserData, XBinary::PDSTRUCT *pPdStruct)
     }
 }
 
-XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript)
+XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript, XBinary::PDSTRUCT *pPdStruct)
 {
     XOptions::CR result = XOptions::CR_SUCCESS;
 
@@ -168,11 +168,10 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pSc
             printf("%s", sResult.toUtf8().data());
             printf("\n");
         } else {
-            XBinary::PDSTRUCT pdStruct = XBinary::createPdStruct();
             // pdStruct.pCallback = progressCallback;
-            pdStruct.pCallbackUserData = nullptr;
+            //pdStruct.pCallbackUserData = nullptr;
 
-            XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions, &pdStruct);
+            XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions, pPdStruct);
 
             ScanItemModel model(pScanOptions, &(scanResult.listRecords), 1, nullptr);
 
@@ -221,6 +220,8 @@ int main(int argc, char *argv[])
     app.setProperty("dataPathAlt0", "/opt/detect-it-easy");
 
     XOptions::registerCodecs();
+
+    XBinary::PDSTRUCT pdStruct = XBinary::createPdStruct();
 
     QCommandLineParser parser;
     QString sDescription;
@@ -347,7 +348,7 @@ int main(int argc, char *argv[])
 
     if (parser.isSet(clShowDatabase)) {
         if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(nullptr);
+            bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
             bIsDbUsed = true;
         }
 
@@ -382,14 +383,14 @@ int main(int argc, char *argv[])
         }
     } else if (parser.isSet(clTest)) {
         if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(nullptr);
+            bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
             bIsDbUsed = true;
         }
 
         // TODO
     } else if (parser.isSet(clAddTest)) {
         if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(nullptr);
+            bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
             bIsDbUsed = true;
         }
 
@@ -406,10 +407,10 @@ int main(int argc, char *argv[])
         }
     } else if (listArgs.count()) {
         if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(nullptr);
+            bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
         }
 
-        nResult = ScanFiles(&listArgs, &scanOptions, &die_script);
+        nResult = ScanFiles(&listArgs, &scanOptions, &die_script, &pdStruct);
     } else if (!parser.isSet(clShowDatabase)) {
         parser.showHelp();
         Q_UNREACHABLE();
