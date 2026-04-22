@@ -38,14 +38,43 @@
   <url type="bugtracker">https://github.com/horsicq/Detect-It-Easy/issues</url>
   <content_rating type="oars-1.1"/>
   <releases>
-    <release version="3.21" date="2026-04-21">
-      <url>https://raw.githubusercontent.com/horsicq/Detect-It-Easy/refs/heads/master/changelog.txt</url>
+    <release version="3.21" date="2026-04-22">
+      <description>
+        <ul>
+          <li>Fix console output</li>
+          <li>Fix some translations</li>
+        </ul>
+      </description>
     </release>
     <release version="3.20" date="2026-04-20">
-      <url>https://raw.githubusercontent.com/horsicq/Detect-It-Easy/refs/heads/master/changelog.txt</url>
+      <description>
+        <ul>
+          <li>Build instructions for openSuse, Fedora, Arch Linux, WSL</li>
+          <li>Microsoft Store port</li>
+          <li>Downloads/tray monitoring, system env. variable</li>
+          <li>Configurable BufferSize</li>
+          <li>Improved Heuristic module for PE by DosX_dev</li>
+          <li>New detects and optimization of all scripts (thanks to DosX_dev, hypn0, Kae, BJNFNE and all contributors)</li>
+          <li>New scanning method: PEiD</li>
+          <li>Some GUI changes</li>
+          <li>Many bugs have been fixed</li>
+          <li>Add AVX2 and SSE2 optimization</li>
+        </ul>
+      </description>
     </release>
     <release version="3.10" date="2024-11-03">
-      <url>https://raw.githubusercontent.com/horsicq/Detect-It-Easy/refs/heads/master/changelog.txt</url>
+      <description>
+        <ul>
+          <li>Bundle for Ubuntu 24.04 and 24.10</li>
+          <li>APK/DEX/NPM/Amiga support</li>
+          <li>Improved "Visualization" widget</li>
+          <li>Improved Heuristic module for PE (thanks to DosX_dev)</li>
+          <li>New "extra" database for not basic detections</li>
+          <li>New detects and optimization of all scripts (thanks to DosX_dev, hypn0, Kae and all contributors)</li>
+          <li>Some GUI changes</li>
+          <li>Many bugs have been fixed</li>
+        </ul>
+      </description>
     </release>
   </releases>
   <provides>
