@@ -52,6 +52,7 @@ if [ -z "$X_ERROR" ]; then
         cp -Rf $X_SOURCE_PATH/XInfoDB/info/                                 $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
         cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/                            $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
 		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom/                     $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
+		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_extra/                      $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
         cp -Rf $X_SOURCE_PATH/XPEID/peid/                                   $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
         cp -Rf $X_SOURCE_PATH/XYara/yara_rules/                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/lang/

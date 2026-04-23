@@ -19,6 +19,7 @@ cp -Rf $X_SOURCE_PATH/XStyles/qss/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/XInfoDB/info/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_extra/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/XYara/yara_rules/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
 cp -Rf $X_SOURCE_PATH/XPEID/peid/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
 
