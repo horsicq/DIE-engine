@@ -15,22 +15,31 @@ set QT_BASE_PATH=C:\Qt
 
 set VSVARS_PATH=
 
-for /f "tokens=*" %%a in (
-    'reg query "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall" /s /f "Visual Studio" ^| findstr "HKEY"'
-) do (
-    for /f "tokens=2*" %%b in (
-        'reg query "%%a" /v InstallLocation 2^>nul ^| findstr /i "InstallLocation"'
+if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" (
+    "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -property installationPath > "%TEMP%\vs_path.tmp" 2>nul
+    set /p _VS_PATH= < "%TEMP%\vs_path.tmp"
+    del "%TEMP%\vs_path.tmp" 2>nul
+    if defined _VS_PATH if exist "!_VS_PATH!\VC\Auxiliary\Build\vcvars64.bat" set VSVARS_PATH="!_VS_PATH!\VC\Auxiliary\Build\vcvars64.bat"
+)
+
+if not defined VSVARS_PATH (
+    for /f "tokens=*" %%a in (
+        'reg query "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall" /s /f "Visual Studio" ^| findstr "HKEY"'
     ) do (
-        if not "%%c"=="" (
-            if exist "%%c\VC\Auxiliary\Build\vcvars64.bat" (
-                set VSVARS_PATH="%%c\VC\Auxiliary\Build\vcvars64.bat"
-                goto :found_vs
+        if not defined VSVARS_PATH (
+            for /f "tokens=2*" %%b in (
+                'reg query "%%a" /v InstallLocation 2^>nul ^| findstr /i "InstallLocation"'
+            ) do (
+                if not "%%c"=="" (
+                    if exist "%%c\VC\Auxiliary\Build\vcvars64.bat" (
+                        if not defined VSVARS_PATH set VSVARS_PATH="%%c\VC\Auxiliary\Build\vcvars64.bat"
+                    )
+                )
             )
         )
     )
 )
 
-:found_vs
 if not defined VSVARS_PATH (
     echo Visual Studio not found in registry or known paths.
     goto :exit

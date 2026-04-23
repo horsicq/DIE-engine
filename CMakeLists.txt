@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.10)
 project(DetectItEasy)
 
 if(WIN32)
-    set (CMAKE_PREFIX_PATH "C:/Qt/5.15.2/msvc2019/")
+    set (CMAKE_PREFIX_PATH "C:/Qt/6.11.0/msvc2022_64/")
 endif()
 
 if(APPLE)
