@@ -169,7 +169,7 @@ XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pSc
             printf("\n");
         } else {
             // pdStruct.pCallback = progressCallback;
-            //pdStruct.pCallbackUserData = nullptr;
+            // pdStruct.pCallbackUserData = nullptr;
 
             XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions, pPdStruct);
 
