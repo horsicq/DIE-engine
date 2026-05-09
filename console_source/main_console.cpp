@@ -257,7 +257,7 @@ int main(int argc, char *argv[])
     QCommandLineOption clStruct = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_STRUCT);
     QCommandLineOption clShowStructs = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_SHOWSTRUCTS);
     QCommandLineOption clTest = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST);
-    QCommandLineOption clCreateTest = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST);
+    QCommandLineOption clAddTest = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST);
 
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
@@ -283,7 +283,7 @@ int main(int argc, char *argv[])
     parser.addOption(clShowDatabase);
     parser.addOption(clShowStructs);
     parser.addOption(clTest);
-    parser.addOption(clCreateTest);
+    parser.addOption(clAddTest);
 
     parser.process(app);
 
@@ -320,7 +320,7 @@ int main(int argc, char *argv[])
     scanOptions.sExtraDatabasePath = parser.value(clDatabaseExtra);
     scanOptions.sCustomDatabasePath = parser.value(clDatabaseCustom);
     QString sTestDirectory = parser.value(clTest);
-    QString sAddTestFilename = parser.value(clCreateTest);
+    QString sAddTestFilename = parser.value(clAddTest);
 
     if (scanOptions.sMainDatabasePath == "") {
         scanOptions.sMainDatabasePath = "$data/db";
@@ -388,7 +388,7 @@ int main(int argc, char *argv[])
         }
 
         // TODO
-    } else if (parser.isSet(clCreateTest)) {
+    } else if (parser.isSet(clAddTest)) {
         if (!bIsDbUsed) {
             bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
             bIsDbUsed = true;
