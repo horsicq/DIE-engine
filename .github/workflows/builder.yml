@@ -5,12 +5,9 @@ on:
   release:
     types: [created]
   schedule:
-    - cron: '0 0 * * MON'
+    - cron: '0 0 * * *'
   pull_request:
     types: [opened, synchronize, reopened]
-
-permissions:
-  contents: read
 
 env:
   SRC_PATH: ${{ github.workspace }}/src
@@ -23,10 +20,10 @@ jobs:
   build-ubuntu-24:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          submodules: 'recursive'
-          path: ${{ env.SRC_PATH }}
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
 
       - name: Install dependencies
         run: |
@@ -38,21 +35,25 @@ jobs:
         run: |
           bash -x build_dpkg.sh
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          name: die-engine-ubuntu-24
-          path: |
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
             ${{ env.RELEASE_PATH }}/*.deb
-          if-no-files-found: error
-
+            
   build-ubuntu-24-arm:
     runs-on: ubuntu-24.04-arm
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          submodules: 'recursive'
-          path: ${{ env.SRC_PATH }}
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
 
       - name: Install dependencies
         run: |
@@ -64,21 +65,25 @@ jobs:
         run: |
           bash -x build_dpkg.sh
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          name: die-engine-ubuntu-24-arm
-          path: |
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
             ${{ env.RELEASE_PATH }}/*.deb
-          if-no-files-found: error
 
   build-ubuntu-22:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          submodules: 'recursive'
-          path: ${{ env.SRC_PATH }}
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
 
       - name: Install dependencies
         run: |
@@ -90,26 +95,30 @@ jobs:
         run: |
           bash -x build_dpkg.sh
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          name: die-engine-ubuntu-22
-          path: |
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
             ${{ env.RELEASE_PATH }}/*.deb
-          if-no-files-found: error
-
+            
   build-windows-32:
-    runs-on: windows-2022
+    runs-on: windows-2025
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          submodules: 'recursive'
-          path: ${{ env.SRC_PATH }}
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
 
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
         with:
-          arch: x86
+         arch: x86
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -125,7 +134,7 @@ jobs:
         shell: cmd
         working-directory: ${{ env.SRC_PATH }}
         run: |
-          set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars32.bat"
+          set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars32.bat"
           set QMAKE_PATH="${{ github.workspace }}\Qt\5.15.2\msvc2019\bin\qmake.exe"
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
@@ -144,26 +153,30 @@ jobs:
             exit /b 1
           )
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          name: die-engine-windows-x86
-          path: |
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
             ${{ env.RELEASE_PATH }}/*.zip
-          if-no-files-found: error
 
   build-windows-64:
-    runs-on: windows-2022
+    runs-on: windows-2025
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          submodules: 'recursive'
-          path: ${{ env.SRC_PATH }}
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
 
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
         with:
-          arch: x64
+         arch: x64
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -179,7 +192,7 @@ jobs:
         shell: cmd
         working-directory: ${{ env.SRC_PATH }}
         run: |
-          set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+          set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
           set QMAKE_PATH="${{ github.workspace }}\Qt\5.15.2\msvc2019_64\bin\qmake.exe"
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
@@ -198,26 +211,30 @@ jobs:
             exit /b 1
           )
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          name: die-engine-windows-x64
-          path: |
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
             ${{ env.RELEASE_PATH }}/*.zip
-          if-no-files-found: error
-
+            
   build-windows-64-qt6:
-    runs-on: windows-2022
+    runs-on: windows-2025
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          submodules: 'recursive'
-          path: ${{ env.SRC_PATH }}
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
 
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
         with:
-          arch: x64
+         arch: x64
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -252,14 +269,19 @@ jobs:
             exit /b 1
           )
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          name: die-engine-windows-x64-qt6
-          path: |
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
             ${{ env.RELEASE_PATH }}/*.zip
-          if-no-files-found: error
-
+            
+            
   build-arch:
     runs-on: ubuntu-latest
     container: archlinux:base-devel
@@ -272,16 +294,16 @@ jobs:
 
       - name: Create user
         run: |
-          useradd builduser -m
-          passwd -d builduser
-          echo 'builduser ALL=(ALL) ALL' | tee -a /etc/sudoers
+          useradd builduser -m 
+          passwd -d builduser 
+          echo 'builduser ALL=(ALL) ALL' | tee -a /etc/sudoers 
 
       - name: Clone DIE-engine
         run: |
           cd $HOME
           pwd
           git clone --recursive https://github.com/horsicq/DIE-engine
-
+          
       - name: Build
         run: |
           sudo chown -R builduser /__w/DIE-engine/DIE-engine
@@ -292,42 +314,39 @@ jobs:
           rm -Rf /__w/DIE-engine/DIE-engine/release/*debug*
           rm -Rf /github/home/DIE-engine/release/*debug*
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: die-engine-arch
-          path: |
-            /github/home/DIE-engine/release/*.pkg.tar.zst
-          if-no-files-found: error
-
-  publish-release:
-    if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    needs:
-      - build-ubuntu-24
-      - build-ubuntu-24-arm
-      - build-ubuntu-22
-      - build-windows-32
-      - build-windows-64
-      - build-windows-64-qt6
-      - build-arch
-    permissions:
-      contents: write
-    steps:
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: release-assets
-          merge-multiple: true
-
       - name: Upload Release as Download
-        uses: softprops/action-gh-release@v2
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          token: ${{ secrets.RELEASE_TOKEN || github.token }}
           tag_name: Beta
-          target_commitish: ${{ github.sha }}
           draft: false
           prerelease: true
-          fail_on_unmatched_files: true
           files: |
-            release-assets/*
+            /github/home/DIE-engine/release/*.pkg.tar.zst
+
+# build-osx:
+#   runs-on: macos-latest
+#   steps:
+#     - uses: actions/checkout@v6
+#       with:
+#        submodules: 'recursive'
+#        path: ${{ env.SRC_PATH }}
+
+#     - name: Install Qt
+#       uses: jurplel/install-qt-action@v4
+#       with:
+#         version: '5.15.2'
+#         host: 'mac'
+#         target: 'desktop'
+#         arch: 'clang_64'
+#         # I make it match what build_mac.sh expects. Although I could also use Qt5_DIR
+#         #dir: ${{ env.HOME }}
+#         dir: /Users/runner
+#         modules: qtscript
+
+#     - name: Build
+#       working-directory: ${{ env.SRC_PATH }}
+#       run: |
+#         bash -x build_mac.sh
