@@ -748,7 +748,7 @@ SOURCES += \
     $$PWD/../die_script/die_script.cpp \
     $$PWD/../die_script/die_scriptdatabaseupdate.cpp \
     $$PWD/../die_script/die_scriptengine.cpp \
-    $$PWD/../die_script/global_script.cpp \
+    $$PWD/../die_script/die_global_script.cpp \
     $$PWD/../die_script/util_script.cpp \
     $$PWD/../die_script/xscriptengine.cpp \
     $$PWD/../die_widget/dialogdiehexviewer.cpp \
