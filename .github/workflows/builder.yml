@@ -33,7 +33,7 @@ jobs:
       - name: Build
         working-directory: ${{ env.SRC_PATH }}
         run: |
-          bash -x build_dpkg.sh
+          bash -ex build_dpkg.sh
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
@@ -63,7 +63,7 @@ jobs:
       - name: Build
         working-directory: ${{ env.SRC_PATH }}
         run: |
-          bash -x build_dpkg.sh
+          bash -ex build_dpkg.sh
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
@@ -93,7 +93,7 @@ jobs:
       - name: Build
         working-directory: ${{ env.SRC_PATH }}
         run: |
-          bash -x build_dpkg.sh
+          bash -ex build_dpkg.sh
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
