@@ -1,20 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set FLAG=%~1
-set DEFINE=
-if /I "%FLAG%"=="native" (
-    set DEFINE=X_BUILD_INSTALL
-) else if /I "%FLAG%"=="pdb" (
-    set DEFINE=CREATE_PDB
-)
-
-set VS_VERSIONS=18 2022 2019 2017
-set VS_EDITIONS=Community Professional Enterprise
 set QT_BASE_PATH=C:\Qt
 
 set VSVARS_PATH=
-
 if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" (
     "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -property installationPath > "%TEMP%\vs_path.tmp" 2>nul
     set /p _VS_PATH= < "%TEMP%\vs_path.tmp"
@@ -41,82 +30,36 @@ if not defined VSVARS_PATH (
 )
 
 if not defined VSVARS_PATH (
-    echo Visual Studio not found in registry or known paths.
+    echo Visual Studio not found.
     goto :exit
 )
 
 call %VSVARS_PATH%
 
-set QMAKE_PATH=
+set QT_PREFIX_PATH=
 for /D %%Q in (%QT_BASE_PATH%\6.*) do (
     for /D %%K in (%%Q\msvc*_64 %%Q\msvc*_arm64) do (
         if exist "%%K\bin\qmake.exe" (
-            set QMAKE_PATH="%%K\bin\qmake.exe"
+            set QT_PREFIX_PATH=%%K
             goto :found_qt
         )
     )
 )
 
 :found_qt
-IF NOT DEFINED QMAKE_PATH (
-    echo "Qt 6.x version not found. Please ensure it is installed."
-    goto exit
+if not defined QT_PREFIX_PATH (
+    echo Qt 6.x not found under %QT_BASE_PATH%.
+    goto :exit
 )
-
-set JOM_PATH=
-for /R "%QT_BASE_PATH%\Tools\QtCreator\bin\jom" %%F in (jom.exe) do (
-    set JOM_PATH="%%F"
-    goto :found_jom
-)
-
-:found_jom
-
-for /f %%a in ('powershell -command "(Get-CimInstance Win32_Processor).NumberOfLogicalProcessors"') do set BUILD_JOBS=%%a
-if "%BUILD_JOBS%"=="" set BUILD_JOBS=4
 
 set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
-set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
 set X_SOURCE_PATH=%~dp0
 set X_BUILD_NAME=die
-set X_PORTABLE=1
 set X_BUILD_PREFIX=win64_qt6
 set /p X_RELEASE_VERSION=<%X_SOURCE_PATH%\release_version.txt
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_init
-IF NOT [%X_ERROR%] == [] goto exit
-
-call "%X_SOURCE_PATH%\build_tools\windows.cmd" make_build "%X_SOURCE_PATH%\die_source.pro" %DEFINE%
-
-cd %X_SOURCE_PATH%\gui_source
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro 
-cd %X_SOURCE_PATH%
-
-call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\die.exe
-IF NOT [%X_ERROR%] == [] goto exit
-
-IF NOT "%1"=="native" (
-    call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diec.exe
-    IF NOT [%X_ERROR%] == [] goto exit
-    call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diel.exe
-    IF NOT [%X_ERROR%] == [] goto exit
-)
-
-mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
-
-copy %X_SOURCE_PATH%\build\release\die.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-copy %X_SOURCE_PATH%\build\release\diec.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-copy %X_SOURCE_PATH%\build\release\diel.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-xcopy %X_SOURCE_PATH%\XStyles\qss %X_SOURCE_PATH%\release\%X_BUILD_NAME%\qss /E /I
-xcopy %X_SOURCE_PATH%\Detect-It-Easy\db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\db /E /I
-xcopy %X_SOURCE_PATH%\Detect-It-Easy\db_extra %X_SOURCE_PATH%\release\%X_BUILD_NAME%\db_extra /E /I
-xcopy %X_SOURCE_PATH%\Detect-It-Easy\info %X_SOURCE_PATH%\release\%X_BUILD_NAME%\info /E /I
-xcopy %X_SOURCE_PATH%\signatures\crypto.db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures\
-xcopy %X_SOURCE_PATH%\images %X_SOURCE_PATH%\release\%X_BUILD_NAME%\images /E /I
-xcopy %X_SOURCE_PATH%\XYara\yara_rules %X_SOURCE_PATH%\release\%X_BUILD_NAME%\yara_rules /E /I
-
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt die.exe
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_release
+call %X_SOURCE_PATH%\build_win_generic_qt6.cmd
 
 :exit
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_clear
+endlocal

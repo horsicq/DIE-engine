@@ -1,72 +1,76 @@
-#!/bin/bash -x
-export QMAKE_PATH=/usr/bin/qmake
-
+#!/bin/bash -e
 export X_SOURCE_PATH=$PWD
 export X_BUILD_NAME=die_linux_portable
 export X_RELEASE_VERSION=$(cat "release_version.txt")
 
-source build_tools/linux.sh
+BUILD_DIR=$(mktemp -d)
+STAGE_DIR=$(mktemp -d)
+RELEASE_DIR="$X_SOURCE_PATH/release"
 
-check_file $QMAKE_PATH
+cleanup() { rm -rf "$BUILD_DIR" "$STAGE_DIR"; }
+trap cleanup EXIT
 
-if [ -z "$X_ERROR" ]; then
-    make_init
-    
-    if [ ! -f "$X_SOURCE_PATH/build/release/die" ]; then
-        make_build "$X_SOURCE_PATH/die_source.pro"
-        cd "$X_SOURCE_PATH/gui_source"
-        make_translate "gui_source_tr.pro"
-        cd "$X_SOURCE_PATH"
-    fi
-    
-    check_file "$X_SOURCE_PATH/build/release/die"
-    check_file "$X_SOURCE_PATH/build/release/diec"
-    check_file "$X_SOURCE_PATH/build/release/diel"
-    if [ -z "$X_ERROR" ]; then
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base/platforms
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base/sqldrivers
-    
-        cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        
-        cp -R $X_QT_INSTALL_PLUGINS/platforms/libqxcb.so                    $X_SOURCE_PATH/release/$X_BUILD_NAME/base/platforms/
-        cp -R $X_QT_INSTALL_PLUGINS/sqldrivers/libqsqlite.so                $X_SOURCE_PATH/release/$X_BUILD_NAME/base/sqldrivers/
-        
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5Core.so.5                           $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5Svg.so.5                            $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5Gui.so.5                            $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5Sql.so.5                            $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5Widgets.so.5                        $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5OpenGL.so.5                         $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5DBus.so.5                           $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5XcbQpa.so.5                         $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5ScriptTools.so.5                    $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5Script.so.5                         $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Lr $X_QT_INSTALL_LIBS/libQt5Network.so.5                        $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
+mkdir -p "$RELEASE_DIR"
+PACKAGE_NAME="die_${X_RELEASE_VERSION}_portable"
+PACKAGE_DIR="$RELEASE_DIR/$PACKAGE_NAME"
+rm -rf "$PACKAGE_DIR"
+mkdir -p "$PACKAGE_DIR/base/platforms" "$PACKAGE_DIR/base/sqldrivers"
 
-        cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Rf $X_SOURCE_PATH/XInfoDB/info/                                 $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/                            $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom/                     $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_extra/                      $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Rf $X_SOURCE_PATH/XYara/yara_rules/                             $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base/lang/
-        cp -f $X_SOURCE_PATH/gui_source/translation/*.qm                    $X_SOURCE_PATH/release/$X_BUILD_NAME/base/lang/
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/base/signatures/
-        cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/$X_BUILD_NAME/base/signatures/
-        cp -Rf $X_SOURCE_PATH/images                                        $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        cp -Rf $X_SOURCE_PATH/XPEID/peid/                                   $X_SOURCE_PATH/release/$X_BUILD_NAME/base/
-        
-        create_run_shell $X_SOURCE_PATH/release/$X_BUILD_NAME/die.sh die
-        create_run_shell $X_SOURCE_PATH/release/$X_BUILD_NAME/diec.sh diec
-        create_run_shell $X_SOURCE_PATH/release/$X_BUILD_NAME/diel.sh diel
+QT_PREFIX_PATH="${1:-}"
+CMAKE_ARGS=(-S "$X_SOURCE_PATH" -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE=Release)
+[ -n "$QT_PREFIX_PATH" ] && CMAKE_ARGS+=(-DCMAKE_PREFIX_PATH="$QT_PREFIX_PATH")
 
-        cd $X_SOURCE_PATH/release
-        make_targz $X_BUILD_NAME $X_SOURCE_PATH/release/die_${X_RELEASE_VERSION}_portable_${X_OS_VERSION}_${X_ARCHITECTURE}
-        cd $X_SOURCE_PATH
+echo "Configuring..."
+cmake "${CMAKE_ARGS[@]}"
 
-        make_clear
-    fi
+echo "Building..."
+cmake --build "$BUILD_DIR" -- -j$(nproc)
+
+cmake --install "$BUILD_DIR" --prefix "$STAGE_DIR"
+
+cp -f "$STAGE_DIR/bin/die"   "$PACKAGE_DIR/base/"
+cp -f "$STAGE_DIR/bin/diec"  "$PACKAGE_DIR/base/"
+cp -f "$STAGE_DIR/bin/diel"  "$PACKAGE_DIR/base/"
+
+if [ -n "$QT_PREFIX_PATH" ]; then
+    X_QT_INSTALL_LIBS="$QT_PREFIX_PATH/lib"
+    X_QT_INSTALL_PLUGINS="$QT_PREFIX_PATH/plugins"
+    for lib in libQt5Core libQt5Gui libQt5Widgets libQt5Svg libQt5Sql libQt5Network \
+               libQt5OpenGL libQt5DBus libQt5XcbQpa libQt5Script libQt5ScriptTools \
+               libQt5Concurrent libQt5PrintSupport; do
+        lib_file=$(find "$X_QT_INSTALL_LIBS" -maxdepth 1 -name "${lib}.so.5" 2>/dev/null | head -1)
+        [ -n "$lib_file" ] && cp -Lf "$lib_file" "$PACKAGE_DIR/base/"
+    done
+    [ -f "$X_QT_INSTALL_PLUGINS/platforms/libqxcb.so" ] && \
+        cp -f "$X_QT_INSTALL_PLUGINS/platforms/libqxcb.so" "$PACKAGE_DIR/base/platforms/"
+    [ -f "$X_QT_INSTALL_PLUGINS/sqldrivers/libqsqlite.so" ] && \
+        cp -f "$X_QT_INSTALL_PLUGINS/sqldrivers/libqsqlite.so" "$PACKAGE_DIR/base/sqldrivers/"
 fi
+
+# Copy data from cmake install staging (qss, db, info, yara, images, lang)
+[ -d "$STAGE_DIR/lib/die/" ] && cp -Rf "$STAGE_DIR/lib/die/." "$PACKAGE_DIR/base/"
+# Fallback: copy assets directly if cmake install didn't include them
+[ ! -d "$PACKAGE_DIR/base/qss" ]        && cp -Rf "$X_SOURCE_PATH/XStyles/qss/"               "$PACKAGE_DIR/base/qss/"
+[ ! -d "$PACKAGE_DIR/base/info" ]       && cp -Rf "$X_SOURCE_PATH/XInfoDB/info/"              "$PACKAGE_DIR/base/info/"
+[ ! -d "$PACKAGE_DIR/base/db" ]         && cp -Rf "$X_SOURCE_PATH/Detect-It-Easy/db/"         "$PACKAGE_DIR/base/db/"
+[ ! -d "$PACKAGE_DIR/base/yara_rules" ] && cp -Rf "$X_SOURCE_PATH/XYara/yara_rules/"          "$PACKAGE_DIR/base/yara_rules/"
+[ ! -d "$PACKAGE_DIR/base/images" ]     && cp -Rf "$X_SOURCE_PATH/images/"                    "$PACKAGE_DIR/base/images/"
+if [ -f "$X_SOURCE_PATH/signatures/crypto.db" ]; then
+    mkdir -p "$PACKAGE_DIR/base/signatures"
+    cp -f "$X_SOURCE_PATH/signatures/crypto.db" "$PACKAGE_DIR/base/signatures/"
+fi
+
+for bin in die diec diel; do
+    cat > "$PACKAGE_DIR/${bin}.sh" <<EOF
+#!/bin/sh
+CWD=\$(dirname \$0)
+export LD_LIBRARY_PATH="\$CWD/base:\$LD_LIBRARY_PATH"
+"\$CWD/base/$bin" "\$@"
+EOF
+    chmod +x "$PACKAGE_DIR/${bin}.sh"
+done
+
+cd "$RELEASE_DIR"
+tar -czf "${PACKAGE_NAME}.tar.gz" "$PACKAGE_NAME"
+rm -rf "$PACKAGE_DIR"
+echo "Created: $RELEASE_DIR/${PACKAGE_NAME}.tar.gz"

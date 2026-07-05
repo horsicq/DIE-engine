@@ -107,49 +107,6 @@ jobs:
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
             
-
-  build-appimage:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v6
-        with:
-         submodules: 'recursive'
-         path: ${{ env.SRC_PATH }}
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev-tools libqt5svg5-dev qtchooser qt5-qmake build-essential -y
-          wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
-          chmod +x linuxdeploy-x86_64.AppImage
-          sudo mv linuxdeploy-x86_64.AppImage /usr/local/bin/linuxdeploy
-          sudo chmod +x /usr/local/bin/linuxdeploy
-          wget https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage
-          chmod +x linuxdeploy-plugin-qt-x86_64.AppImage
-          sudo mv linuxdeploy-plugin-qt-x86_64.AppImage /usr/local/bin/linuxdeploy-plugin-qt
-
-
-      - name: Build
-        working-directory: ${{ env.SRC_PATH }}
-        run: |
-          chmod a+x configure
-          ./configure
-          make
-          chmod a+x create_appimage.sh
-          ./create_appimage.sh
-
-      - name: Upload Release as Download
-        if: github.event_name != 'pull_request'
-        uses: softprops/action-gh-release@v3
-        env:
-          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-        with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
-          files: |
-            ${{ env.RELEASE_PATH }}/*.AppImage
-
   build-windows-32:
     runs-on: windows-2025
     steps:

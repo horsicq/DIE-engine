@@ -1,68 +1,69 @@
-#!/bin/bash -x
-export QMAKE_PATH=/usr/bin/qmake
-
-# Enable 'set -e' to ensure the script exits immediately if any command returns a non-zero exit code.
-# This is particularly useful so that github can correctly indicate the status of the process!
-set -e
-
+#!/bin/bash -e
 export X_SOURCE_PATH=$PWD
-export X_BUILD_NAME=die_linux_portable
 export X_RELEASE_VERSION=$(cat "release_version.txt")
 
-source build_tools/linux.sh
+BUILD_DIR=$(mktemp -d)
+WORK_DIR=$(mktemp -d)
+RELEASE_DIR="$X_SOURCE_PATH/release"
 
-check_file $QMAKE_PATH
+cleanup() { rm -rf "$BUILD_DIR" "$WORK_DIR"; }
+trap cleanup EXIT
 
-if [ -z "$X_ERROR" ]; then
-    make_init
-    make_build "$X_SOURCE_PATH/die_source.pro"
-    cd "$X_SOURCE_PATH/gui_source"
-    make_translate "gui_source_tr.pro"
-    cd "$X_SOURCE_PATH"
+mkdir -p "$RELEASE_DIR"
 
-    check_file "$X_SOURCE_PATH/build/release/die"
-    check_file "$X_SOURCE_PATH/build/release/diec"
-    check_file "$X_SOURCE_PATH/build/release/diel"
-    if [ -z "$X_ERROR" ]; then
-        create_deb_app_dir die
-        
-        export X_PACKAGENAME='detectiteasy'
-        export X_PRIORITY='optional'
-        export X_SECTION='devel'
-        export X_MAINTAINER='hors <horsicq@gmail.com>'
-        
-        export X_HOMEPAGE='http://ntinfo.biz'
-        export X_DESCRIPTION='Detect It Easy is a program for determining types of files.'
-        
-        BASE_DEPENDS='libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5scripttools5, libqt5script5, libqt5network5, libqt5sql5'
-        
-        export X_DEPENDS="$BASE_DEPENDS"
-        
-        create_deb_control $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
-        
-        #cp -f $X_SOURCE_PATH/LICENSE                                        $X_SOURCE_PATH/release/$X_BUILD_NAME/
-        
-        cp -f $X_SOURCE_PATH/build/release/die                              $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
-        cp -f $X_SOURCE_PATH/build/release/diec                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
-        cp -f $X_SOURCE_PATH/build/release/diel                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
-        cp -f $X_SOURCE_PATH/LINUX/io.github.horsicq.detect-it-easy.desktop $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
-        cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                                $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
-        cp -f $X_SOURCE_PATH/LINUX/io.github.horsicq.detect-it-easy.metainfo.xml $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/metainfo/
-        cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
-        cp -Rf $X_SOURCE_PATH/XInfoDB/info/                                 $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
-        cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/                            $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
-		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom/                     $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
-		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_extra/                      $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
-        cp -Rf $X_SOURCE_PATH/XPEID/peid/                                   $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
-        cp -Rf $X_SOURCE_PATH/XYara/yara_rules/                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/lang/
-        cp -f $X_SOURCE_PATH/gui_source/translation/*.qm                    $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/lang/
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/signatures
-        cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/signatures/
-        cp -Rf $X_SOURCE_PATH/images                                        $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/die/
+QT_PREFIX_PATH="${1:-}"
+CMAKE_ARGS=(-S "$X_SOURCE_PATH" -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE=Release)
+[ -n "$QT_PREFIX_PATH" ] && CMAKE_ARGS+=(-DCMAKE_PREFIX_PATH="$QT_PREFIX_PATH")
 
-        make_deb
-        mv $X_SOURCE_PATH/release/$X_BUILD_NAME.deb $X_SOURCE_PATH/release/die_${X_RELEASE_VERSION}_${X_OS_VERSION}_${X_ARCHITECTURE}.deb
-        make_clear
-    fi
+echo "Configuring..."
+cmake "${CMAKE_ARGS[@]}"
+
+echo "Building..."
+cmake --build "$BUILD_DIR" -- -j$(nproc)
+
+# Install into debian staging tree
+STAGE_USR="$WORK_DIR/usr"
+cmake --install "$BUILD_DIR" --prefix "$STAGE_USR"
+
+# Ensure expected paths exist
+mkdir -p "$WORK_DIR/usr/bin"
+mkdir -p "$WORK_DIR/usr/lib/die/lang"
+mkdir -p "$WORK_DIR/usr/share/applications"
+mkdir -p "$WORK_DIR/usr/share/icons"
+mkdir -p "$WORK_DIR/usr/share/metainfo"
+
+# Copy assets not covered by cmake install (db, db_extra, peid, etc.)
+[ -d "$X_SOURCE_PATH/Detect-It-Easy/db_extra" ] && \
+    cp -Rf "$X_SOURCE_PATH/Detect-It-Easy/db_extra/." "$WORK_DIR/usr/lib/die/db_extra/"
+
+# lang: cmake installs to prefix/lang; move to usr/lib/die/lang
+if [ -d "$STAGE_USR/lang" ]; then
+    cp -f "$STAGE_USR/lang/"*.qm "$WORK_DIR/usr/lib/die/lang/" 2>/dev/null || true
+    rm -rf "$STAGE_USR/lang"
 fi
+
+# crypto.db
+if [ -f "$X_SOURCE_PATH/signatures/crypto.db" ]; then
+    mkdir -p "$WORK_DIR/usr/lib/die/signatures"
+    cp -f "$X_SOURCE_PATH/signatures/crypto.db" "$WORK_DIR/usr/lib/die/signatures/"
+fi
+
+# Build DEBIAN/control
+ARCH=$(dpkg --print-architecture 2>/dev/null || echo amd64)
+mkdir -p "$WORK_DIR/DEBIAN"
+cat > "$WORK_DIR/DEBIAN/control" <<EOF
+Package: detectiteasy
+Version: ${X_RELEASE_VERSION}
+Architecture: ${ARCH}
+Maintainer: hors <horsicq@gmail.com>
+Homepage: http://ntinfo.biz
+Section: devel
+Priority: optional
+Description: Detect It Easy is a program for determining types of files.
+Depends: libqt5core5a, libqt5gui5, libqt5widgets5, libqt5svg5, libqt5sql5, libqt5network5, libqt5opengl5, libqt5dbus5
+EOF
+
+OS_VERSION=$(lsb_release -cs 2>/dev/null || echo linux)
+DEB_NAME="die_${X_RELEASE_VERSION}_${OS_VERSION}_${ARCH}.deb"
+dpkg-deb --build "$WORK_DIR" "$RELEASE_DIR/$DEB_NAME"
+echo "Created: $RELEASE_DIR/$DEB_NAME"

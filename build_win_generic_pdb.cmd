@@ -1,58 +1,41 @@
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_init
+set "X_BUILD_DIR=%TEMP%\die_cmake_%X_BUILD_PREFIX%_pdb"
+set "X_INSTALL_DIR=%X_SOURCE_PATH%release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_pdb"
 
-IF NOT [%X_ERROR%] == [] goto exit
+if exist "%X_INSTALL_DIR%" rmdir /s /q "%X_INSTALL_DIR%"
+if exist "%X_BUILD_DIR%"   rmdir /s /q "%X_BUILD_DIR%"
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_build_pdb %X_SOURCE_PATH%\die_source.pro
+cmake -S "%X_SOURCE_PATH%" -B "%X_BUILD_DIR%" ^
+    -G "NMake Makefiles" ^
+    -DCMAKE_BUILD_TYPE=RelWithDebInfo ^
+    -DCMAKE_PREFIX_PATH="%QT_PREFIX_PATH%"
+if errorlevel 1 goto :exit
 
-cd %X_SOURCE_PATH%\gui_source
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro 
-cd %X_SOURCE_PATH%
+cmake --build "%X_BUILD_DIR%"
+if errorlevel 1 goto :exit
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\die.exe
+cmake --install "%X_BUILD_DIR%" --prefix "%X_INSTALL_DIR%"
+if errorlevel 1 goto :exit
 
-IF NOT [%X_ERROR%] == [] goto exit
+if not exist "%X_INSTALL_DIR%\die.exe"  ( echo die.exe not found  & goto :exit )
+if not exist "%X_INSTALL_DIR%\diec.exe" ( echo diec.exe not found & goto :exit )
+if not exist "%X_INSTALL_DIR%\diel.exe" ( echo diel.exe not found & goto :exit )
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diec.exe
+xcopy "%X_SOURCE_PATH%Detect-It-Easy\db"        "%X_INSTALL_DIR%\db\"          /E /I /Y
+xcopy "%X_SOURCE_PATH%Detect-It-Easy\db_extra"  "%X_INSTALL_DIR%\db_extra\"    /E /I /Y
+xcopy "%X_SOURCE_PATH%XStyles\qss"              "%X_INSTALL_DIR%\qss\"         /E /I /Y
+xcopy "%X_SOURCE_PATH%XInfoDB\info"             "%X_INSTALL_DIR%\info\"        /E /I /Y
+xcopy "%X_SOURCE_PATH%XYara\yara_rules"         "%X_INSTALL_DIR%\yara_rules\"  /E /I /Y
+xcopy "%X_SOURCE_PATH%images"                   "%X_INSTALL_DIR%\images\"      /E /I /Y
+if exist "%X_SOURCE_PATH%signatures\crypto.db" (
+    mkdir "%X_INSTALL_DIR%\signatures" 2>nul
+    copy  "%X_SOURCE_PATH%signatures\crypto.db" "%X_INSTALL_DIR%\signatures\"
+)
 
-IF NOT [%X_ERROR%] == [] goto exit
-
-call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\diel.exe
-
-IF NOT [%X_ERROR%] == [] goto exit
-
-mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
-
-copy %X_SOURCE_PATH%\build\release\die.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-copy %X_SOURCE_PATH%\build\release\diec.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-copy %X_SOURCE_PATH%\build\release\die.pdb %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-copy %X_SOURCE_PATH%\build\release\diec.pdb %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-copy %X_SOURCE_PATH%\build\release\diel.pdb %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-xcopy %X_SOURCE_PATH%\XStyles\qss %X_SOURCE_PATH%\release\%X_BUILD_NAME%\qss /E /I
-xcopy %X_SOURCE_PATH%\Detect-It-Easy\db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\db /E /I
-xcopy %X_SOURCE_PATH%\Detect-It-Easy\db_extra %X_SOURCE_PATH%\release\%X_BUILD_NAME%\db_extra /E /I
-xcopy %X_SOURCE_PATH%\Detect-It-Easy\info %X_SOURCE_PATH%\release\%X_BUILD_NAME%\info /E /I
-xcopy %X_SOURCE_PATH%\signatures\crypto.db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures\
-xcopy %X_SOURCE_PATH%\images %X_SOURCE_PATH%\release\%X_BUILD_NAME%\images /E /I
-xcopy %X_SOURCE_PATH%\XPEID\peid %X_SOURCE_PATH%\release\%X_BUILD_NAME%\peid /E /I
-
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Gui
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Core
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Concurrent
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5OpenGL
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Svg
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Script
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5ScriptTools
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Network
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin platforms qwindows
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qjpeg
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qtiff
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qico
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qgif
-call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_redist
-
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_release
+if exist %SEVENZIP_PATH% (
+    if exist "%X_SOURCE_PATH%release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_pdb_%X_RELEASE_VERSION%.zip" ^
+        del /f /q "%X_SOURCE_PATH%release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_pdb_%X_RELEASE_VERSION%.zip"
+    %SEVENZIP_PATH% a -tzip "%X_SOURCE_PATH%release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_pdb_%X_RELEASE_VERSION%.zip" "%X_INSTALL_DIR%\*"
+)
 
 :exit
-call %X_SOURCE_PATH%\build_tools\windows.cmd make_clear
+if exist "%X_BUILD_DIR%" rmdir /s /q "%X_BUILD_DIR%"

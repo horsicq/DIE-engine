@@ -1,43 +1,82 @@
-#!/bin/sh -x
-export QMAKE_PATH=$HOME/Qt/5.15.2/clang_64/bin/qmake
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Enable 'set -e' to ensure the script exits immediately if any command returns a non-zero exit code.
-# This is particularly useful so that github can correctly indicate the status of the process!
-set -e
+X_SOURCE_PATH=$PWD
+X_BUILD_NAME=die_mac_portable
+X_RELEASE_VERSION=$(cat "release_version.txt")
 
-export X_SOURCE_PATH=$PWD
-export X_BUILD_NAME=die_mac_portable
-export X_RELEASE_VERSION=$(cat "release_version.txt")
+BUILD_DIR=$(mktemp -d)
+RELEASE_DIR="$X_SOURCE_PATH/release"
 
-source build_tools/mac.sh
+cleanup() { rm -rf "$BUILD_DIR"; }
+trap cleanup EXIT
 
-check_file $QMAKE_PATH
+mkdir -p "$RELEASE_DIR"
 
-if [ -z "$X_ERROR" ]; then
-    make_init
-    make_build "$X_SOURCE_PATH/die_source.pro"
-    cd "$X_SOURCE_PATH/gui_source"
-    make_translate "gui_source_tr.pro" die
-    cd "$X_SOURCE_PATH"
+QT_PREFIX_PATH="${1:-${QT_PREFIX_PATH:-$HOME/Qt/5.15.2/clang_64}}"
+CMAKE_ARGS=(
+    -S "$X_SOURCE_PATH"
+    -B "$BUILD_DIR"
+    -DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_PREFIX_PATH="$QT_PREFIX_PATH"
+    -DCMAKE_OSX_ARCHITECTURES="${CMAKE_OSX_ARCHITECTURES:-x86_64}"
+)
 
-    check_file "$X_SOURCE_PATH/build/release/DiE.app/Contents/MacOS/DiE"
-    if [ -z "$X_ERROR" ]; then
-        cp -R "$X_SOURCE_PATH/build/release/DiE.app"        "$X_SOURCE_PATH/release/$X_BUILD_NAME"
-        cp -R "$X_SOURCE_PATH/build/release/diec"           "$X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/MacOS/"
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/signatures
-        cp -R $X_SOURCE_PATH/signatures/crypto.db           $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/signatures/
-        cp -Rf $X_SOURCE_PATH/XStyles/qss                   $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-        cp -Rf $X_SOURCE_PATH/XInfoDB/info                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-        cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db             $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom      $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-		cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_extra       $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-        cp -Rf $X_SOURCE_PATH/XPEID/peid                    $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-        cp -Rf $X_SOURCE_PATH/images                        $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-        cp -Rf $X_SOURCE_PATH/XYara/yara_rules              $X_SOURCE_PATH/release/$X_BUILD_NAME/DiE.app/Contents/Resources/
-        
-        deploy_qt DiE
+echo "Configuring..."
+cmake "${CMAKE_ARGS[@]}"
 
-        make_release DiE
-        make_clear
-    fi
+echo "Building..."
+cmake --build "$BUILD_DIR" --config Release -- -j$(sysctl -n hw.logicalcpu)
+
+APP_BUNDLE=""
+for candidate in \
+    "$BUILD_DIR/src/gui/die.app" \
+    "$BUILD_DIR/src/gui/DetectItEasy.app" \
+    "$BUILD_DIR/src/gui/Release/die.app"
+do
+    [ -d "$candidate" ] && APP_BUNDLE="$candidate" && break
+done
+
+if [ -z "$APP_BUNDLE" ]; then
+    echo "ERROR: app bundle not found under $BUILD_DIR" >&2
+    exit 1
 fi
+
+RESOURCES="$APP_BUNDLE/Contents/Resources"
+mkdir -p "$RESOURCES/signatures"
+
+cp -Rf "$X_SOURCE_PATH/XStyles/qss"             "$RESOURCES/"
+cp -Rf "$X_SOURCE_PATH/XInfoDB/info"            "$RESOURCES/"
+cp -Rf "$X_SOURCE_PATH/Detect-It-Easy/db"       "$RESOURCES/"
+[ -d "$X_SOURCE_PATH/Detect-It-Easy/db_extra" ] && cp -Rf "$X_SOURCE_PATH/Detect-It-Easy/db_extra" "$RESOURCES/"
+cp -Rf "$X_SOURCE_PATH/XYara/yara_rules"        "$RESOURCES/"
+cp -Rf "$X_SOURCE_PATH/images"                  "$RESOURCES/"
+[ -f "$X_SOURCE_PATH/signatures/crypto.db" ]   && cp -f "$X_SOURCE_PATH/signatures/crypto.db" "$RESOURCES/signatures/"
+
+# Copy diec into the bundle
+DIEC_BIN=$(find "$BUILD_DIR/src/console" -maxdepth 2 -name "diec" -type f | head -1)
+[ -n "$DIEC_BIN" ] && cp -f "$DIEC_BIN" "$APP_BUNDLE/Contents/MacOS/"
+
+# macdeployqt (handled by cmake POST_BUILD, but run again as safety net)
+MACDEPLOYQT=""
+for candidate in \
+    "$QT_PREFIX_PATH/bin/macdeployqt" \
+    "$QT_PREFIX_PATH/../bin/macdeployqt"
+do
+    [ -x "$candidate" ] && MACDEPLOYQT="$candidate" && break
+done
+
+if [ -n "$MACDEPLOYQT" ]; then
+    "$MACDEPLOYQT" "$APP_BUNDLE" -always-overwrite
+fi
+
+PACKAGE_DIR="$RELEASE_DIR/$X_BUILD_NAME"
+rm -rf "$PACKAGE_DIR"
+mkdir -p "$PACKAGE_DIR"
+cp -R "$APP_BUNDLE" "$PACKAGE_DIR/"
+
+cd "$RELEASE_DIR"
+ZIP_NAME="die_${X_RELEASE_VERSION}_mac_portable.zip"
+zip -r "$ZIP_NAME" "$X_BUILD_NAME"
+rm -rf "$PACKAGE_DIR"
+echo "Created: $RELEASE_DIR/$ZIP_NAME"
