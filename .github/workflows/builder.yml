@@ -151,7 +151,7 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.AppImage
 
   build-windows-32:
-    runs-on: windows-2025
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v6
         with:
@@ -209,7 +209,7 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.zip
 
   build-windows-64:
-    runs-on: windows-2025
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v6
         with:
