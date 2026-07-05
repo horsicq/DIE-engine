@@ -164,6 +164,7 @@ jobs:
         run: |
           git -C build_tools fetch --depth 1 origin ${{ env.BUILD_TOOLS_REV }}
           git -C build_tools checkout --detach ${{ env.BUILD_TOOLS_REV }}
+          (Get-Content build_tools/cmake/cpp_standart_setup.cmake) -replace '/FI"iterator"', '/FIiterator' | Set-Content build_tools/cmake/cpp_standart_setup.cmake
 
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
@@ -228,6 +229,7 @@ jobs:
         run: |
           git -C build_tools fetch --depth 1 origin ${{ env.BUILD_TOOLS_REV }}
           git -C build_tools checkout --detach ${{ env.BUILD_TOOLS_REV }}
+          (Get-Content build_tools/cmake/cpp_standart_setup.cmake) -replace '/FI"iterator"', '/FIiterator' | Set-Content build_tools/cmake/cpp_standart_setup.cmake
 
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
@@ -292,6 +294,7 @@ jobs:
         run: |
           git -C build_tools fetch --depth 1 origin ${{ env.BUILD_TOOLS_REV }}
           git -C build_tools checkout --detach ${{ env.BUILD_TOOLS_REV }}
+          (Get-Content build_tools/cmake/cpp_standart_setup.cmake) -replace '/FI"iterator"', '/FIiterator' | Set-Content build_tools/cmake/cpp_standart_setup.cmake
 
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
