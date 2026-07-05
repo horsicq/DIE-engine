@@ -1,0 +1,8589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="vi">
+<context>
+    <name>ArchiveExplorerWidget</name>
+    <message>
+        <source>Archive Explorer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot open archive</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>Archive_widget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tree</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>BinaryWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>Binary_Script</name>
+    <message>
+        <source>Invalid handle</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown compression method</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>Capstone_Bridge</name>
+    <message>
+        <source>Invalid opcode</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>CreateViewModelProcess</name>
+    <message>
+        <source>File</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DEXSectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DEXWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DIEOptionsWidget</name>
+    <message>
+        <source>Scan after open</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Aggressive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sort</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Profiling</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hide unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extra database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Custom database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DIEWidgetAdvanced</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DIE_Widget</name>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Log</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy as</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DiE_Script</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DiE_ScriptDatabaseUpdate</name>
+    <message>
+        <source>Network error while checking for database updates</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to get remote database info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No %1 found in release</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Updating main database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Main database updated successfully</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Updating extra database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extra database updated successfully</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to create temporary directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to download file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Downloaded file is empty</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to open downloaded zip file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Downloaded file is not a valid ZIP archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to initialize ZIP unpacking</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to extract archive: no files extracted</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DiE_ScriptEngine</name>
+    <message>
+        <source>Cannot find</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogAbout</name>
+    <message>
+        <source>About</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bugreports</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Donate</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Source code</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogArchive</name>
+    <message>
+        <source>Archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogBits8</name>
+    <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unsigned</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogBookmarks</name>
+    <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Location</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Background</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogCreateViewModel</name>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid parameters provided</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File name cannot be empty</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogDIEScanDirectory</name>
+    <message>
+        <source>Directory scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Subdirectories</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogDIESignatures</name>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Run</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Profiling</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Detect</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show version</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogDIESignaturesElapsed</name>
+    <message>
+        <source>Elapsed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Script</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogDataInspector</name>
+    <message>
+        <source>Inspector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Endianness</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unicode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Binary</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogDemangle</name>
+    <message>
+        <source>Demangle</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogDieHexViewer</name>
+    <message>
+        <source>Scripts</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogEditString</name>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Keep size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Null-terminated</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bytes available</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogEntropy</name>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogFindText</name>
+    <message>
+        <source>Find</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogGoToAddress</name>
+    <message>
+        <source>Go to address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virtual address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Relative virtual address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogHash</name>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogHexEdit</name>
+    <message>
+        <source>Edit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogHexSignature</name>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Spaces</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Upper</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Wildcard</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogHexView</name>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogMIME</name>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogMemoryMap</name>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogModelInfo</name>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogMultiDisasm</name>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogMultiDisasmSignature</name>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Spaces</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Upper</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Wildcard</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Relative virtual address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bytes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogNFDScan</name>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogNFDWidgetAdvanced</name>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogOptions</name>
+    <message>
+        <source>Options</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogRemove</name>
+    <message>
+        <source>Remove</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogResize</name>
+    <message>
+        <source>Resize</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogSearch</name>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Match case</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search from</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Endianness</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Begin</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cursor</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogSearchSignatures</name>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogSearchStrings</name>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogSearchValues</name>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogSectionHeader</name>
+    <message>
+        <source>Section</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogSelectStyle</name>
+    <message>
+        <source>Style</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogSetGenericWidget</name>
+    <message>
+        <source>Structs</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogShortcuts</name>
+    <message>
+        <source>Shortcuts</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Shortcut</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot set shortcut</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogShowData</name>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Plain Text</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogShowImage</name>
+    <message>
+        <source>Image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image information</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image file does not exist</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to load image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom In</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Actual Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fit to Window</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save as</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save Image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Images</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to save image to %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No image loaded</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogStaticScan</name>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogStaticScanDirectory</name>
+    <message>
+        <source>Directory scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Subdirectories</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogStaticScanProcess</name>
+    <message>
+        <source>Text documents</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogTextInfo</name>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogViewColors</name>
+    <message>
+        <source>Colors</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text color</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Background color</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Group</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Background</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogVisualization</name>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogWidget</name>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDataConvertor</name>
+    <message>
+        <source>Data convertor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXDynStructs</name>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXExtractor</name>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXFileInfo</name>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXMainWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXScanEngineDirectory</name>
+    <message>
+        <source>Directory scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Subdirectories</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXScanEngineElapsed</name>
+    <message>
+        <source>Elapsed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Script</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXScanSort</name>
+    <message>
+        <source>Collection</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXStruct</name>
+    <message>
+        <source>Structs</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXStructChooser</name>
+    <message>
+        <source>Dialog</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXSymbols</name>
+    <message>
+        <source>Symbols</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DialogYARAWidgetAdvanced</name>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>DumpProcess</name>
+    <message>
+        <source>Invalid offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot read file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot fix dump file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot open dump file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot write data to file</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>ELFProcessData</name>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bind</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>ELFSectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>ELFWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>EXAMPLE_CLASS</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>EntropyProcess</name>
+    <message>
+        <source>packed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>not packed</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>FormResult</name>
+    <message>
+        <source>Clear</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>FormStaticScan</name>
+    <message>
+        <source>Recursive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>FormatWidget</name>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump all</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>FormatsWidget</name>
+    <message>
+        <source>File type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Base address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unpack</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Time date stamp</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size of image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Manifest</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Programs</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Commands</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Endianness</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Architecture</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan engine</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Binary</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>GuiMainWindow</name>
+    <message>
+        <source>File name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Advanced</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Shortcuts</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recent files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Missing Resources</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>The following resources are missing from the MSIX package</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Path</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>
+
+Would you like to download them now?</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>HashProcess</name>
+    <message>
+        <source>Import</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>HeurWidget</name>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>InvWidget</name>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>LESectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>LEWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>MACHOFATWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>MACHProcessData</name>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>MACHSectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>MACHWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Commands</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Rebase</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Binding</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Weak binding</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Lazy binding</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbol table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table of contents</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Modules</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>External references</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Indirect symbols</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Local relocation</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data in code</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>MSDOSWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>MultiSearch</name>
+    <message>
+        <source>Search strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search values</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>NESectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>NEWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>NFDWidgetAdvanced</name>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristics</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>PDFWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>PEProcessData</name>
+    <message>
+        <source>Section</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Relative address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virtual size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Exceptions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Relocs</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Load config</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bound import</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Delay import</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Description</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Program name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Publisher</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>More info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Serial number</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Issuer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Subject</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Algorithm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Count</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sorted</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>PESectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>PEToolsWidget</name>
+    <message>
+        <source>Tools</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>PEWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump all</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show valid</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extract all icons</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extract all cursors</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tree</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Check</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Manifest</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Exceptions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Relocs</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Callbacks</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Load config</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bound import</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Delay import</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Metadata</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Metadata table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Calculate</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compressed size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>V.Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Part</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compress</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>U.Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Count</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Library name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Interpreter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Length</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table Directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tag</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Chunk</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Box</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Section</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Plain Text</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Encrypted</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot open file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Architecture</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Raw</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Section name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Import hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Code section</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entry point section</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Obfuscator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compressor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Converter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Crypter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Protection</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extender</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Generic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Installer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Installer data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Joiner</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Library</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Licensing</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Linker</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Operation system</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Packer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Platform</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Player</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Protector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Protector data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sign tool</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Source code</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stub</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virtual machine</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>QwtPlotRenderer</name>
+    <message>
+        <source>Documents</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Images</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Export File Name</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>QwtPolarRenderer</name>
+    <message>
+        <source>Documents</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Images</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Export File Name</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>ScanItemModel</name>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>SearchSignaturesOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>SearchSignaturesWidget</name>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Patch</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Endianness</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>SearchStringsWidget</name>
+    <message>
+        <source>Null-terminated</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Links</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mask</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Regular expression</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Min length</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Searching</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>strings found</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sorting</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>strings</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>SearchValuesWidget</name>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search string</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Values</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>StaticScan</name>
+    <message>
+        <source>File scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Device scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>StaticScanOptionsWidget</name>
+    <message>
+        <source>Scan after open</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>ToolsWidget</name>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XACE</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XAPK</name>
+    <message>
+        <source>Universal</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XARJ</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XAVI</name>
+    <message>
+        <source>RIFF Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Follow me</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Check for updates</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Social Media</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Update information</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>New version available</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Go to download page?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No update available</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Network error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>The value copied to clipboard</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XAmigaHunk</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XArchive</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>extender</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XArchiveWidget</name>
+    <message>
+        <source>Archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex view not implemented yet</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings view not implemented yet</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy view not implemented yet</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash view not implemented yet</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compressed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XAtariST</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XBMP</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bitmap Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XBZIP2</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XBinary</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>8-bit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>16-bit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>32-bit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>64-bit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>128-bit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>256-bit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Maximum</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segments</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sections</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Objects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Maps</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Streams</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>true</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Multiplatform</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bytes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>kB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>MB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>GB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XBrotli</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XCFBF</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XCOM</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XCPIO</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XCab</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XComboBoxEx</name>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XCompressZ</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDEX</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Main module</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDJVU</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDOS16</name>
+    <message>
+        <source>Loader</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Payload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDataConvertor</name>
+    <message>
+        <source>Write error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot resize</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDataConvertorWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Decode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Input</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Output</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDecompress</name>
+    <message>
+        <source>Invalid CRC</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown compression method</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDemangle</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDemangleWidget</name>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDeviceTableEditView</name>
+    <message>
+        <source>Save dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Patch</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot resize</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDeviceTableView</name>
+    <message>
+        <source>Nothing found</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Elapsed:</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Advanced</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Remaining:</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDisasmView</name>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bytes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Relative address</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDisasmViewOptionsWidget</name>
+    <message>
+        <source>Syntax</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show colons in addresses</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Colors</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Arrows</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Selected</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Numbers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcodes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>General registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Instruction pointer register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags register</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDynStructsEngine</name>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot load file</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDynStructsOptionsWidget</name>
+    <message>
+        <source>Structs</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XDynStructsWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Prototype</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Array</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Variable</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Pointer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot read memory at address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XELF</name>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Run path</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbol table</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XEntropyWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save diagram</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Diagram</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Grid</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bytes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Count</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Byte</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XExtractor</name>
+    <message>
+        <source>Mode is not available for this file type</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XExtractorWidget</name>
+    <message>
+        <source>Extract</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump all</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFFlagsDialog</name>
+    <message>
+        <source>Edit Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFListDialog</name>
+    <message>
+        <source>Select Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Current</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFModel</name>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFModel_table</name>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFREEARC</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFSizeDialog</name>
+    <message>
+        <source>Edit Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dec</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFStringDialog</name>
+    <message>
+        <source>Edit String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFTreeModel</name>
+    <message>
+        <source>TABLE</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFValueDialog</name>
+    <message>
+        <source>Edit Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dec</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFWidget</name>
+    <message>
+        <source>Show Offsets</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show Presentation</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFileInfoWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Output</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFormatWidget</name>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extractor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Position</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XFormats</name>
+    <message>
+        <source>Cannot unpack</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Path traversal detected</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot decompress</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot create</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XGenericArchiveWidget</name>
+    <message>
+        <source>Archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compressed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XGenericDisasmWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XGenericHeaderWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XGenericHexWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XGenericTableWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XGif</name>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Logical Screen Descriptor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Global Color Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trailer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Graphic Control Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Application Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Plain Text Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XGzip</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XHashWidget</name>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XHeaderView</name>
+    <message>
+        <source>Filter</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XHexEdit</name>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XHexView</name>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XHexViewOptionsWidget</name>
+    <message>
+        <source>Show colons in addresses</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XHexViewWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Inspector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Base</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XISO9660</name>
+    <message>
+        <source>Reserved</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Primary Volume Descriptor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XIcon</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entries</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Icon</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XInfoDB</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Function enter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Function leave</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Paused</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Running</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XInfoDBOptionsWidget</name>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info database update URL</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XInfoMenu</name>
+    <message>
+        <source>Database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Load</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XJAR</name>
+    <message>
+        <source>Universal</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XJavaClass</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Constant pool</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Class info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Interfaces</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fields</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Methods</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Attributes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XJpeg</name>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XLE</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XLHA</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XLineEditHEX</name>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bits</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XLineEditValidator</name>
+    <message>
+        <source>Bytes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>KiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>GiB</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>TiB</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XLzip</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XLzo</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMACH</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMACHOFat</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Universal</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bundle</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMIMEWidget</name>
+    <message>
+        <source>All</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMP3</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMP4</name>
+    <message>
+        <source>Boxes</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMSDOS</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMainWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sync</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMemoryMapWidget</name>
+    <message>
+        <source>Show all</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump all</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virtual address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Relative virtual address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Endianness</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Architecture</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Raw data</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMiniDump</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XModel_Binary</name>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XModel_Extractor</name>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XModel_MSRecord</name>
+    <message>
+        <source>Patch</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XModel_XSymbol</name>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Region</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XMultiDisasmWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compact</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Full</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Analyzed</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XNE</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Segment</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XNPM</name>
+    <message>
+        <source>Universal</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XOptions</name>
+    <message>
+        <source>Cannot find file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recent files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Code pages</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Images</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Documents</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XOptionsWidget</name>
+    <message>
+        <source>Stay on top</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Single application</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Style</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show logo</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save last directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save backup</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save history</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Add to context menu</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Set system environment variable</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Controls</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table views</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tree views</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text editors</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Read buffer size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File buffer size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>AVX2</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Appearance</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fonts</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Features</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Please run the program as an administrator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Please restart the application</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XPDF</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Footer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Color palette</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XPE</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Application</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Driver</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Native</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Boot application</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Runtime driver</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Boot service driver</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot open file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>The file is signed and the signature was verified</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>The file is not signed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>The signature is present, but specifically disallowed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>The signature is present, but not trusted</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>The signature error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Section</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resource</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XPNG</name>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XPYC</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Code Object</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XRar</name>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XRegionsModel</name>
+    <message>
+        <source>File offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virtual address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virtual size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XRegionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XRiff</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Chunks</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XSEAARC</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XSZDD</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compressed Data</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XScanEngine</name>
+    <message>
+        <source>Cannot load database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Last error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resource scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Archive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Aggressive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extra</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XScanEngineOptionsWidget</name>
+    <message>
+        <source>Scan after open</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Recursive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Aggressive scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Deep scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Archives</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Profiling</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hide unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sort</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Use cache</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Colors</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extra database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Custom database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>APK tool</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compressor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Converter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Corrupted data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Creator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>DOS extender</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Game engine</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Generic</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Installer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Installer data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Library</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Licensing</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Linker</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Loader</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Malware</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Obfuscator</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Operation system</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Package</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>PE tool</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Personal data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Platform</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Player</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Producer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Protector data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Protection</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>ROM</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>SFX data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sign tool</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Source code</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stub</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trojan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virtual machine</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Virus</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XScanEngineProcess</name>
+    <message>
+        <source>File scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Device scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XScanEngineWidget</name>
+    <message>
+        <source>Directory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Collection</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Log</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Flags</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XScanSortWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All file types</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All types</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Catalog</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open Directory</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XSevenZip</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unexpected end of data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot unpack data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid format data</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XShortcuts</name>
+    <message>
+        <source>Action</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Struct</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Trace</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Animate</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Registers</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Go to</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Selection</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Breakpoint</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Modules</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Editor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bookmarks</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Analyze</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hardware</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Location</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Base</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save as</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Print</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>End</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scripts</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Patch</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Attach</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Detach</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Log</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Breakpoints</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Callstack</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Threads</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Handles</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Shortcuts</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Structs</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Viewer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Folder</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Run</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Pause</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step into</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Step over</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Restart</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Toggle</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Full screen</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>References</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Bookmark</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>List</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Resize</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Conditional</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Inspector</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Convertor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Multisearch</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XShortcutsWidget</name>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Open file</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XSquashfs</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XStructWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Sync</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Next visited</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Previous visited</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XSymbolsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XTAR</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XTTF</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table Directory</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XText</name>
+    <message>
+        <source>Text content</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XThreadObject</name>
+    <message>
+        <source>Process</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XTiff</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XUDF</name>
+    <message>
+        <source>Anchor Volume Descriptor</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XUPX</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XUpdate</name>
+    <message>
+        <source>Cannot find ZIP asset %1 in release %2.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Downloading %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to download</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Extracting %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot create temporary unpack directory.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid ZIP archive</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot open downloaded ZIP</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>updated successfully.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Failed to extract %1.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unsupported GitHub release URL</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Checking %1</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot fetch release metadata for %1.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Invalid release body for %1. Expected date=yyyy-MM-dd.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No local info.ini for %1. Bootstrapping from GitHub release %2.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot read local info.ini for %1, skipping.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Updating</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>local</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>remote</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>is up to date</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>First</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XVisualization</name>
+    <message>
+        <source>None</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Gradient</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zeros</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XVisualizationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Schema</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Methods</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Method</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Block size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Height</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Highlights</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Visualization</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XXM</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XXZ</name>
+    <message>
+        <source>Stream Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream Footer</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XYara</name>
+    <message>
+        <source>Invalid YARA compiler</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot open rules file</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot create YARA compiler</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>No YARA rules were loaded</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>YARA rules path not found</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot build YARA rules</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot open scan target</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>YARA scan failed</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XZip</name>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XZlib</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Adler32</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>XZstd</name>
+    <message>
+        <source>Unknown</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stream</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>X_Ar</name>
+    <message>
+        <source>Header</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Record</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>YARAWidgetAdvanced</name>
+    <message>
+        <source>Rules</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Matches</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Rule name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Cannot save file</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>YARA_Widget</name>
+    <message>
+        <source>Info</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Rules</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>msec</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation></translation>
+    </message>
+</context>
+</TS>
