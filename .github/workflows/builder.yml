@@ -13,6 +13,7 @@ env:
   SRC_PATH: ${{ github.workspace }}/src
   SRC_PATH_WIN: ${{ github.workspace }}\src
   RELEASE_PATH: ${{ github.workspace }}/src/release
+  BUILD_TOOLS_REV: 1908e7d4140e069539906f5919c83fade275ec92
 
 # the jobs are based on these notes:
 # https://github.com/horsicq/Detect-It-Easy/blob/master/docs/BUILD.md
@@ -158,6 +159,12 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
+      - name: Use fixed build tools
+        working-directory: ${{ env.SRC_PATH }}
+        run: |
+          git -C build_tools fetch --depth 1 origin ${{ env.BUILD_TOOLS_REV }}
+          git -C build_tools checkout --detach ${{ env.BUILD_TOOLS_REV }}
+
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
         with:
@@ -216,6 +223,12 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
+      - name: Use fixed build tools
+        working-directory: ${{ env.SRC_PATH }}
+        run: |
+          git -C build_tools fetch --depth 1 origin ${{ env.BUILD_TOOLS_REV }}
+          git -C build_tools checkout --detach ${{ env.BUILD_TOOLS_REV }}
+
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
         with:
@@ -273,6 +286,12 @@ jobs:
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
+
+      - name: Use fixed build tools
+        working-directory: ${{ env.SRC_PATH }}
+        run: |
+          git -C build_tools fetch --depth 1 origin ${{ env.BUILD_TOOLS_REV }}
+          git -C build_tools checkout --detach ${{ env.BUILD_TOOLS_REV }}
 
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
