@@ -353,9 +353,14 @@ jobs:
           sudo chown -R builduser /github/home/DIE-engine
           cd /github/home/DIE-engine
           pwd
-          sudo -u builduser bash -c 'bash -x build_archpkg.sh'
+          sudo -u builduser bash -c 'bash -ex build_archpkg.sh'
           rm -Rf /__w/DIE-engine/DIE-engine/release/*debug*
           rm -Rf /github/home/DIE-engine/release/*debug*
+
+          if ! ls /github/home/DIE-engine/release/*.pkg.tar.zst >/dev/null 2>&1; then
+            echo "Package file does not exist"
+            exit 1
+          fi
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
