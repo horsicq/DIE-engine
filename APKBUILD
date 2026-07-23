@@ -30,6 +30,11 @@ options="!check"
 
 
 build() {
+    pwd
+    ls -la
+    ls -la src
+    test -f src/CMakeLists.txt
+
     cmake \
         -B build \
         -G "Unix Makefiles" \
