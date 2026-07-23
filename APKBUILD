@@ -16,6 +16,8 @@ depends="
 "
 
 makedepends="
+    build-base
+    ninja
     cmake
     qt5-qtbase-dev
     qt5-qtscript-dev
@@ -30,6 +32,7 @@ options="!check"
 build() {
     cmake \
         -B build \
+        -G "Unix Makefiles" \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_C_FLAGS_RELEASE="-O3 -DNDEBUG" \
