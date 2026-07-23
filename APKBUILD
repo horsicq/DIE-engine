@@ -2,7 +2,7 @@ pkgname=detect-it-easy
 pkgver=4.0.0
 pkgrel=0
 
-pkgdesc="PLACEHOLDER"
+pkgdesc="Detect It Easy (DIE) is a program for determining types of files"
 
 arch="x86_64"
 license="MIT"
