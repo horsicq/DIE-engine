@@ -4,7 +4,7 @@ pkgrel=0
 
 pkgdesc="Detect It Easy (DIE) is a program for determining types of files"
 url="https://github.com/horsicq/Detect-It-Easy"
-maintainer="horsicq"
+maintainer="horsicq <horsicq@gmail.com>"
 
 arch="x86_64"
 license="MIT"
