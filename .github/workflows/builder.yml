@@ -398,3 +398,68 @@ jobs:
 #       working-directory: ${{ env.SRC_PATH }}
 #       run: |
 #         bash -x build_mac.sh
+
+  build-alpine:
+    runs-on: ubuntu-latest
+
+    container:
+      image: alpine:latest
+
+    steps:
+      - name: Install dependencies
+        run: |
+          apk update
+          apk add \
+            alpine-sdk \
+            sudo \
+            bash \
+            git \
+            cmake \
+            pkgconf \
+            qt5-qtbase-dev \
+            qt5-qtscript-dev \
+            qt5-qttools-dev \
+            qt5-qtsvg-dev
+
+      - name: Create build user
+        run: |
+          adduser -D builduser
+          adduser builduser abuild
+          echo "builduser ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+      - name: Clone DIE-engine
+        run: |
+          git clone --recursive https://github.com/horsicq/DIE-engine.git /home/builduser/DIE-engine
+          chown -R builduser:abuild /home/builduser/DIE-engine
+
+      - name: Prepare abuild directory
+        run: |
+          mkdir -p /home/builduser/.abuild
+          chown -R builduser:abuild /home/builduser/.abuild
+
+      - name: Build Alpine APK
+        run: |
+          sudo -u builduser bash -c "
+            cd /home/builduser/DIE-engine
+            chmod +x build_alpinepkg.sh
+            bash -x build_alpinepkg.sh
+          "
+
+      - name: Verify APK
+        run: |
+          if ! ls /home/builduser/DIE-engine/release/*.apk >/dev/null 2>&1; then
+            echo "APK file does not exist"
+            exit 1
+          fi
+
+          ls -lah /home/builduser/DIE-engine/release/
+
+      - name: Upload Release APK
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            /home/builduser/DIE-engine/release/*.apk
