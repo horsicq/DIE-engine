@@ -463,3 +463,81 @@ jobs:
          # prerelease: true
           ##files: |
             #/home/builduser/DIE-engine/release/*.apk
+
+  build-fedora:
+    runs-on: ubuntu-latest
+
+    container:
+      image: fedora:latest
+
+    steps:
+      - name: Install dependencies
+        run: |
+          dnf update -y
+          dnf install -y \
+            git \
+            cmake \
+            gcc-c++ \
+            make \
+            rpm-build \
+            rpmdevtools \
+            qt5-qtbase-devel \
+            qt5-qtscript-devel \
+            qt5-qtsvg-devel \
+            qt5-qttools-devel
+
+      - name: Create build user
+        run: |
+          useradd -m builduser
+
+      - name: Clone DIE-engine
+        run: |
+          git clone --recursive https://github.com/horsicq/DIE-engine.git /home/builduser/DIE-engine
+          chown -R builduser:builduser /home/builduser/DIE-engine
+
+      - name: Build Release and RPM
+        run: |
+          sudo -u builduser bash -c "
+            set -ex
+
+            cd /home/builduser/DIE-engine
+
+            mkdir -p build
+
+            cmake \
+              -B build \
+              -DCMAKE_BUILD_TYPE=Release \
+              -DCMAKE_INSTALL_PREFIX=/usr
+
+            cmake --build build -j\$(nproc)
+
+            cd build
+
+            cpack -G RPM
+          "
+
+      - name: Collect RPM
+        run: |
+          mkdir -p /home/builduser/DIE-engine/release
+
+          find /home/builduser/DIE-engine/build \
+            -name "*.rpm" \
+            -exec cp {} /home/builduser/DIE-engine/release/ \;
+
+          ls -lah /home/builduser/DIE-engine/release
+
+      - name: Verify RPM
+        run: |
+          if ! ls /home/builduser/DIE-engine/release/*.rpm >/dev/null 2>&1; then
+            echo "RPM package missing"
+            exit 1
+          fi
+
+      - name: Upload RPM Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            /home/builduser/DIE-engine/release/*.rpm
