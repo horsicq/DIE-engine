@@ -134,7 +134,7 @@ jobs:
         run: |
           chmod a+x configure
           ./configure
-          make
+          make -j$(nproc)
           chmod a+x create_appimage.sh
           ./create_appimage.sh
 
