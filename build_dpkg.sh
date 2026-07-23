@@ -19,7 +19,7 @@ echo "Configuring..."
 cmake "${CMAKE_ARGS[@]}"
 
 echo "Building..."
-cmake --build "$BUILD_DIR" -- -j$(nproc)
+cmake --build "$BUILD_DIR" --parallel $(nproc)
 
 # Install into debian staging tree
 STAGE_USR="$WORK_DIR/usr"
