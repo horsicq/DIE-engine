@@ -542,6 +542,81 @@ jobs:
           files: |
             /home/builduser/DIE-engine/release/*.rpm
 
+  build-fedora-arm64:
+    runs-on: ubuntu-24.04-arm
+
+    container:
+      image: fedora:latest
+
+    steps:
+      - name: Install dependencies
+        run: |
+          dnf update -y
+          dnf install -y \
+            git \
+            cmake \
+            gcc-c++ \
+            make \
+            rpm-build \
+            rpmdevtools \
+            qt5-qtbase-devel \
+            qt5-qtscript-devel \
+            qt5-qtsvg-devel \
+            qt5-qttools-devel
+
+      - name: Clone DIE-engine
+        run: |
+          git clone --recursive \
+            https://github.com/horsicq/DIE-engine.git \
+            /opt/DIE-engine
+
+      - name: Build Release and RPM
+        run: |
+          cd /opt/DIE-engine
+
+          cmake \
+            -S . \
+            -B build \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_INSTALL_PREFIX=/usr
+
+          cmake --build build -j$(nproc)
+
+          cd build
+
+          cpack -G RPM
+
+      - name: Collect RPM
+        run: |
+          mkdir -p release
+
+          RPM=$(find /opt/DIE-engine/build \
+            -name "*.rpm" | head -n1)
+
+          if [ -z "$RPM" ]; then
+            echo "No RPM package found"
+            exit 1
+          fi
+
+          cp "$RPM" \
+            release/DetectItEasy-fedora-qt5-aarch64.rpm
+
+          ls -lah release
+
+      - name: Verify RPM
+        run: |
+          test -f release/DetectItEasy-fedora-qt5-aarch64.rpm
+
+      - name: Upload RPM Release
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            release/*.rpm
+
   build-opensuse:
     runs-on: ubuntu-latest
 
