@@ -541,3 +541,76 @@ jobs:
           prerelease: true
           files: |
             /home/builduser/DIE-engine/release/*.rpm
+
+  build-opensuse:
+    runs-on: ubuntu-latest
+
+    container:
+      image: opensuse/leap:latest
+
+    steps:
+      - name: Install dependencies
+        run: |
+          zypper refresh
+          zypper install -y \
+            git \
+            cmake \
+            gcc-c++ \
+            make \
+            rpm-build \
+            rpmdevtools \
+            libqt5-qtbase-devel \
+            libqt5-qttools-devel \
+            libqt5-qtsvg-devel \
+            libqt5-qtscript-devel
+
+      - name: Clone DIE-engine
+        run: |
+          cd $HOME 
+          git clone --recursive https://github.com/horsicq/DIE-engine
+          cd DIE-engine
+
+      - name: Build RPM
+        run: |
+          cd $HOME/DIE-engine
+
+          pwd
+          ls -la
+
+          cmake \
+          -S . \
+          -B build \
+          -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_INSTALL_PREFIX=/usr
+
+          cmake --build build -j$(nproc)
+
+          cd build
+          cpack -G RPM
+
+
+      - name: Collect RPM
+        run: |
+          mkdir -p release
+
+          find $HOME/DIE-engine/build \
+          -name '*.rpm' \
+          -exec cp {} release/DIE-engine-opensuse-qt5-x86_64.rpm \;
+
+          ls -lah release
+
+          ls -lah release
+
+      - name: Verify RPM
+        run: |
+          test -f release/DIE-engine-opensuse-qt5-x86_64.rpm
+
+      - name: Upload RPM Release
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            release/*.rpm
