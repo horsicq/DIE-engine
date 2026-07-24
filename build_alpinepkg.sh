@@ -12,7 +12,13 @@ mkdir -p "$ROOT/release"
 mkdir -p "$HOME/.abuild"
 
 if [ ! -f "$HOME/.abuild/abuild.conf" ]; then
-    abuild-keygen -a -i -n
+    abuild-keygen -n
+
+    cp "$HOME/.abuild"/*.rsa.pub /etc/apk/keys/
+
+    cat > "$HOME/.abuild/abuild.conf" <<EOF
+PACKAGER_PRIVKEY="$HOME/.abuild/"$(basename "$HOME"/.abuild/*.rsa)
+EOF
 fi
 
 # Build APK using APKBUILD from repository root
