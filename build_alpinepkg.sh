@@ -5,37 +5,49 @@ ROOT="$(pwd)"
 
 echo "Building Alpine package in: $ROOT"
 
-# Create release directory
 mkdir -p "$ROOT/release"
 
-# Setup abuild key for CI build
-mkdir -p "$HOME/.abuild"
-
-if [ ! -f "$HOME/.abuild/abuild.conf" ]; then
-    abuild-keygen -n
-
-    cp "$HOME/.abuild"/*.rsa.pub /etc/apk/keys/
-
-    cat > "$HOME/.abuild/abuild.conf" <<EOF
-PACKAGER_PRIVKEY="$HOME/.abuild/"$(basename "$HOME"/.abuild/*.rsa)
-EOF
+# Create build user if missing
+if ! id builduser >/dev/null 2>&1; then
+    adduser -D builduser
 fi
 
-# Build APK using APKBUILD from repository root
-abuild -r
+# Setup abuild directory
+mkdir -p /home/builduser/.abuild
+chown -R builduser:builduser /home/builduser/.abuild
+
+# Generate key as build user
+if [ ! -f /home/builduser/.abuild/abuild.conf ]; then
+    su builduser -c "abuild-keygen -n"
+
+    cp /home/builduser/.abuild/*.rsa.pub /etc/apk/keys/
+
+    cat > /home/builduser/.abuild/abuild.conf <<EOF
+PACKAGER_PRIVKEY="/home/builduser/.abuild/$(basename /home/builduser/.abuild/*.rsa)"
+EOF
+
+    chown builduser:builduser /home/builduser/.abuild/abuild.conf
+fi
+
+# Give build user ownership
+chown -R builduser:builduser "$ROOT"
+
+# Build APK as non-root
+su builduser -c "
+    cd '$ROOT'
+    abuild -r
+"
 
 # Copy generated APK
-find "$HOME/packages" \
+find /home/builduser/packages \
     -name "*.apk" \
     -exec cp {} "$ROOT/release/" \;
 
-# Remove debug packages
 rm -f "$ROOT/release"/*debug*.apk || true
 
 echo "Build output:"
 ls -lah "$ROOT/release"
 
-# Validate package exists
 if ! ls "$ROOT/release"/*.apk >/dev/null 2>&1; then
     echo "ERROR: APK package was not generated"
     exit 1
