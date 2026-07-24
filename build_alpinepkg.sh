@@ -12,6 +12,8 @@ if ! id builduser >/dev/null 2>&1; then
     adduser -D builduser
 fi
 
+adduser builduser abuild
+
 # Setup abuild directory
 mkdir -p /home/builduser/.abuild
 chown -R builduser:builduser /home/builduser/.abuild
