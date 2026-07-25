@@ -754,3 +754,73 @@ jobs:
           prerelease: true
           files: |
             release/*.rpm
+
+  build-s390x:
+    name: Build s390x
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action@v3
+
+
+      - name: Clone DIE-engine
+        run: |
+          git clone https://github.com/horsicq/DIE-engine.git --recursive ${{ env.SRC_PATH }}
+
+
+      - name: Build s390x
+        run: |
+          printf '%s\n' \
+            'set -ex' \
+            '' \
+            '# Install dependencies' \
+            'apt-get update' \
+            'DEBIAN_FRONTEND=noninteractive apt-get install -y \
+              build-essential \
+              cmake \
+              ninja-build \
+              git \
+              qtbase5-dev \
+              qtscript5-dev \
+              qttools5-dev \
+              qttools5-dev-tools \
+              libqt5svg5-dev \
+              qt5-qmake \
+              tar \
+              gzip' \
+            '' \
+            '# Check architecture' \
+            'uname -m' \
+            'cmake --version' \
+            '' \
+            '# Configure' \
+            'cd /src' \
+            'cmake -B build \
+              -DCMAKE_BUILD_TYPE=Release' \
+            '' \
+            '# Compile' \
+            'cmake --build build -j$(nproc)' \
+            '' \
+            '# Package' \
+            'mkdir -p package' \
+            'cp -a build/* package/ || true' \
+            'tar -czf detect-it-easy-s390x.tar.gz package' \
+          | docker run --rm -i \
+              --platform linux/s390x \
+              -v "${PWD}/${{ env.SRC_PATH }}:/src" \
+              -w /src \
+              s390x/ubuntu:24.04 \
+              bash
+
+      - name: Upload Release
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ env.SRC_PATH }}/detect-it-easy-s390x.tar.gz
