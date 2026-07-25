@@ -760,7 +760,6 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-
       - uses: actions/checkout@v6
         with:
           submodules: 'recursive'
@@ -825,3 +824,74 @@ jobs:
           prerelease: true
           files: |
             ${{ env.SRC_PATH }}/detect-it-easy-s390x.tar.gz
+
+
+  build-riscv64:
+    name: build-riscv64
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Clone DIE-engine
+        run: |
+          git clone https://github.com/horsicq/DIE-engine.git \
+            --recursive \
+            ${{ env.SRC_PATH }}
+
+      - name: Build riscv64
+        run: |
+          printf '%s\n' \
+            'set -ex' \
+            '' \
+            '# Install dependencies' \
+            'apt-get update' \
+            'DEBIAN_FRONTEND=noninteractive apt-get install -y \
+              build-essential \
+              cmake \
+              ninja-build \
+              git \
+              qtbase5-dev \
+              qtscript5-dev \
+              qttools5-dev \
+              qttools5-dev-tools \
+              libqt5svg5-dev \
+              qt5-qmake \
+              tar \
+              gzip' \
+            '' \
+            '# Check architecture' \
+            'uname -m' \
+            'cmake --version' \
+            '' \
+            '# Configure' \
+            'cd /src' \
+            'cmake -B build \
+              -DCMAKE_BUILD_TYPE=Release' \
+            '' \
+            '# Compile' \
+            'cmake --build build -j$(nproc)' \
+            '' \
+            '# Package' \
+            'mkdir -p package' \
+            'cp -a build/* package/ || true' \
+            'tar -czf detect-it-easy-riscv64.tar.gz package' \
+          | docker run --rm -i \
+              --platform linux/riscv64 \
+              -v "${PWD}/${{ env.SRC_PATH }}:/src" \
+              -w /src \
+              riscv64/ubuntu:24.04 \
+              bash
+
+      - name: Upload Release
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ env.SRC_PATH }}/detect-it-easy-riscv64.tar.gz
