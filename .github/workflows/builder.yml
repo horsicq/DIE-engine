@@ -760,14 +760,14 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
+
+      - uses: actions/checkout@v6
+        with:
+          submodules: 'recursive'
+          path: ${{ env.SRC_PATH }}
+
       - name: Setup QEMU
         uses: docker/setup-qemu-action@v3
-
-
-      - name: Clone DIE-engine
-        run: |
-          git clone https://github.com/horsicq/DIE-engine.git --recursive ${{ env.SRC_PATH }}
-
 
       - name: Build s390x
         run: |
@@ -796,6 +796,7 @@ jobs:
             '' \
             '# Configure' \
             'cd /src' \
+            'ls -la' \
             'cmake -B build \
               -DCMAKE_BUILD_TYPE=Release' \
             '' \
@@ -808,12 +809,12 @@ jobs:
             'tar -czf detect-it-easy-s390x.tar.gz package' \
           | docker run --rm -i \
               --platform linux/s390x \
-              -v "${PWD}/${{ env.SRC_PATH }}:/src" \
+              -v "${{ env.SRC_PATH }}:/src" \
               -w /src \
               s390x/ubuntu:24.04 \
               bash
 
-      - name: Upload Release
+      - name: Upload Release as Download
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v3
         env:
