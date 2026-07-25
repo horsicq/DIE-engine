@@ -879,7 +879,7 @@ jobs:
             'tar -czf detect-it-easy-riscv64.tar.gz package' \
           | docker run --rm -i \
               --platform linux/riscv64 \
-              -v "${PWD}/${{ env.SRC_PATH }}:/src" \
+              -v "${{ env.SRC_PATH }}:/src" \
               -w /src \
               riscv64/ubuntu:24.04 \
               bash
