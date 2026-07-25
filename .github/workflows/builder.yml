@@ -756,7 +756,7 @@ jobs:
             release/*.rpm
 
   build-s390x:
-    name: Build s390x
+    name: build-s390x
     runs-on: ubuntu-24.04
 
     steps:
