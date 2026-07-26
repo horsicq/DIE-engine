@@ -802,20 +802,15 @@ jobs:
             '# Compile' \
             'cmake --build build -j$(nproc)' \
             '' \
-          '# Package' \
-          'mkdir -p package' \
-          'cp -a build/src/gui/die package/ || true' \
-          'cp -a build/src/console/diec package/ || true' \
-          'cp -a build/src/lite/diel package/ || true' \
-          'for d in db db_extra db_min peid_rules yara_rules; do \
-          if [ -d "Detect-It-Easy/$d" ]; then \
+            '# Package' \
+            'mkdir -p package' \
+            'cp -a build/* package/ || true' \
+            'for d in db db_extra db_min peid_rules yara_rules; do \
+            if [ -d "Detect-It-Easy/$d" ]; then \
             cp -a "Detect-It-Easy/$d" package/; \
-          fi; \
-       done' \
-        'if [ -d "src/translations" ]; then \
-        cp -a "src/translations" package/; \
-       fi' \
-        'tar -czf detect-it-easy-s390x.tar.gz -C package .'
+            fi; \
+            done' \
+            'tar -czf detect-it-easy-s390x.tar.gz -C package .' \
           | docker run --rm -i \
               --platform linux/s390x \
               -v "${{ env.SRC_PATH }}:/src" \
@@ -883,20 +878,15 @@ jobs:
             '# Compile' \
             'cmake --build build -j$(nproc)' \
             '' \
-          '# Package' \
-          'mkdir -p package' \
-          'cp -a build/src/gui/die package/ || true' \
-          'cp -a build/src/console/diec package/ || true' \
-          'cp -a build/src/lite/diel package/ || true' \
-          'for d in db db_extra db_min peid_rules yara_rules; do \
-          if [ -d "Detect-It-Easy/$d" ]; then \
-            cp -a "Detect-It-Easy/$d" package/; \
-          fi; \
-       done' \
-        'if [ -d "src/translations" ]; then \
-        cp -a "src/translations" package/; \
-       fi' \
-        'tar -czf detect-it-easy-riscv64.tar.gz -C package .'
+            '# Package' \
+            'mkdir -p package' \
+            'cp -a build/* package/ || true' \
+            'for d in db db_extra db_min peid_rules yara_rules; do \
+                if [ -d "Detect-It-Easy/$d" ]; then \
+                  cp -a "Detect-It-Easy/$d" package/; \
+                fi; \
+             done' \
+            'tar -czf detect-it-easy-riscv64.tar.gz -C package .' \
           | docker run --rm -i \
               --platform linux/riscv64 \
               -v "${{ env.SRC_PATH }}:/src" \
