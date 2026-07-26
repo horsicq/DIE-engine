@@ -805,7 +805,12 @@ jobs:
             '# Package' \
             'mkdir -p package' \
             'cp -a build/* package/ || true' \
-            'tar -czf detect-it-easy-s390x.tar.gz package' \
+            'for d in db db_extra db_min peid_rules yara_rules; do \
+            if [ -d "Detect-It-Easy/$d" ]; then \
+            cp -a "Detect-It-Easy/$d" package/; \
+            fi; \
+            done' \
+            'tar -czf detect-it-easy-s390x.tar.gz -C package .' \
           | docker run --rm -i \
               --platform linux/s390x \
               -v "${{ env.SRC_PATH }}:/src" \
@@ -876,7 +881,12 @@ jobs:
             '# Package' \
             'mkdir -p package' \
             'cp -a build/* package/ || true' \
-            'tar -czf detect-it-easy-riscv64.tar.gz package' \
+            'for d in db db_extra db_min peid_rules yara_rules; do \
+                if [ -d "Detect-It-Easy/$d" ]; then \
+                  cp -a "Detect-It-Easy/$d" package/; \
+                fi; \
+             done' \
+            'tar -czf detect-it-easy-riscv64.tar.gz -C package .' \
           | docker run --rm -i \
               --platform linux/riscv64 \
               -v "${{ env.SRC_PATH }}:/src" \
