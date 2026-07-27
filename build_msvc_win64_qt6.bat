@@ -39,7 +39,7 @@ call %VSVARS_PATH%
 set QT_PREFIX_PATH=
 for /D %%Q in (%QT_BASE_PATH%\6.*) do (
     for /D %%K in (%%Q\msvc*_64 %%Q\msvc*_arm64) do (
-        if exist "%%K\bin\qmake.exe" (
+        if exist "%%K\lib\cmake\Qt6\Qt6Config.cmake" (
             set QT_PREFIX_PATH=%%K
             goto :found_qt
         )

@@ -4,6 +4,7 @@ FROM alpine:latest AS builder
 # Install build dependencies
 RUN apk add --no-cache \
     build-base \
+    cmake \
     qt5-qtbase-dev \
     qt5-qtscript-dev \
     qt5-qttools-dev \
@@ -21,12 +22,12 @@ COPY DIE-engine_src .
 # Fix the variable shadowing bug
 RUN sed -i 's/QString sResult = qApp->property/sResult = qApp->property/g' XOptions/xoptions.cpp
 
-# Initialize the build environment
-RUN cp -f build_tools/build.pri .
-
-# Build the engine
-RUN qmake die_source.pro "DEFINES+=QT_NO_DEBUG_OUTPUT" && \
-    make -j$(nproc)
+# Build the engine (binaries land in build/release like before)
+RUN cmake -B build \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS="-DQT_NO_DEBUG_OUTPUT" \
+        -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/build/build/release && \
+    cmake --build build -j$(nproc)
 
 # Strip symbols
 RUN strip build/release/diec

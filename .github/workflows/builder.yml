@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser qt5-qmake build-essential -y
+          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser build-essential -y
 
       - name: Build
         working-directory: ${{ env.SRC_PATH }}
@@ -58,7 +58,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser qt5-qmake build-essential -y
+          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser build-essential -y
 
       - name: Build
         working-directory: ${{ env.SRC_PATH }}
@@ -88,7 +88,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser qt5-qmake build-essential -y
+          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser build-essential -y
 
       - name: Build
         working-directory: ${{ env.SRC_PATH }}
@@ -119,7 +119,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser qt5-qmake build-essential -y
+          sudo apt-get install qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser build-essential -y
           wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
           chmod +x linuxdeploy-x86_64.AppImage
           sudo mv linuxdeploy-x86_64.AppImage /usr/local/bin/linuxdeploy
@@ -178,7 +178,7 @@ jobs:
         working-directory: ${{ env.SRC_PATH }}
         run: |
           set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars32.bat"
-          set QMAKE_PATH="${{ github.workspace }}\Qt\5.15.2\msvc2019\bin\qmake.exe"
+          set QT_PREFIX_PATH=${{ github.workspace }}\Qt\5.15.2\msvc2019
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
@@ -236,7 +236,7 @@ jobs:
         working-directory: ${{ env.SRC_PATH }}
         run: |
           set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
-          set QMAKE_PATH="${{ github.workspace }}\Qt\5.15.2\msvc2019_64\bin\qmake.exe"
+          set QT_PREFIX_PATH=${{ github.workspace }}\Qt\5.15.2\msvc2019_64
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
@@ -294,7 +294,7 @@ jobs:
         working-directory: ${{ env.SRC_PATH }}
         run: |
           set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
-          set QMAKE_PATH="${{ github.workspace }}\Qt\6.10.2\msvc2022_64\bin\qmake.exe"
+          set QT_PREFIX_PATH=${{ github.workspace }}\Qt\6.10.2\msvc2022_64
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
@@ -785,7 +785,6 @@ jobs:
               qttools5-dev \
               qttools5-dev-tools \
               libqt5svg5-dev \
-              qt5-qmake \
               tar \
               gzip' \
             '' \
@@ -862,7 +861,6 @@ jobs:
               qttools5-dev \
               qttools5-dev-tools \
               libqt5svg5-dev \
-              qt5-qmake \
               tar \
               gzip' \
             '' \
