@@ -1,174 +1,174 @@
-[submodule "Detect-It-Easy"]
-	path = Detect-It-Easy
+[submodule "dep/Detect-It-Easy"]
+	path = dep/Detect-It-Easy
 	url = https://github.com/horsicq/Detect-It-Easy.git
-[submodule "Formats"]
-	path = Formats
+[submodule "dep/Formats"]
+	path = dep/Formats
 	url = https://github.com/horsicq/Formats.git
-[submodule "SpecAbstract"]
-	path = SpecAbstract
+[submodule "dep/SpecAbstract"]
+	path = dep/SpecAbstract
 	url = https://github.com/horsicq/SpecAbstract.git
-[submodule "StaticScan"]
-	path = StaticScan
+[submodule "dep/StaticScan"]
+	path = dep/StaticScan
 	url = https://github.com/horsicq/StaticScan.git
-[submodule "XArchive"]
-	path = XArchive
+[submodule "dep/XArchive"]
+	path = dep/XArchive
 	url = https://github.com/horsicq/XArchive.git
-[submodule "XQwt"]
-	path = XQwt
+[submodule "dep/XQwt"]
+	path = dep/XQwt
 	url = https://github.com/horsicq/XQwt.git
-[submodule "XOptions"]
-	path = XOptions
+[submodule "dep/XOptions"]
+	path = dep/XOptions
 	url = https://github.com/horsicq/XOptions.git
-[submodule "XStyles"]
-	path = XStyles
+[submodule "dep/XStyles"]
+	path = dep/XStyles
 	url = https://github.com/horsicq/XStyles.git
-[submodule "XTranslation"]
-	path = XTranslation
+[submodule "dep/XTranslation"]
+	path = dep/XTranslation
 	url = https://github.com/horsicq/XTranslation.git
-[submodule "XDEX"]
-	path = XDEX
+[submodule "dep/XDEX"]
+	path = dep/XDEX
 	url = https://github.com/horsicq/XDEX.git
-[submodule "FormatDialogs"]
-	path = FormatDialogs
+[submodule "dep/FormatDialogs"]
+	path = dep/FormatDialogs
 	url = https://github.com/horsicq/FormatDialogs.git
-[submodule "FormatWidgets"]
-	path = FormatWidgets
+[submodule "dep/FormatWidgets"]
+	path = dep/FormatWidgets
 	url = https://github.com/horsicq/FormatWidgets.git
-[submodule "Controls"]
-	path = Controls
+[submodule "dep/Controls"]
+	path = dep/Controls
 	url = https://github.com/horsicq/Controls.git
-[submodule "XMemoryMapWidget"]
-	path = XMemoryMapWidget
+[submodule "dep/XMemoryMapWidget"]
+	path = dep/XMemoryMapWidget
 	url = https://github.com/horsicq/XMemoryMapWidget.git
-[submodule "XEntropyWidget"]
-	path = XEntropyWidget
+[submodule "dep/XEntropyWidget"]
+	path = dep/XEntropyWidget
 	url = https://github.com/horsicq/XEntropyWidget.git
-[submodule "XCapstone"]
-	path = XCapstone
+[submodule "dep/XCapstone"]
+	path = dep/XCapstone
 	url = https://github.com/horsicq/XCapstone.git
-[submodule "XHashWidget"]
-	path = XHashWidget
+[submodule "dep/XHashWidget"]
+	path = dep/XHashWidget
 	url = https://github.com/horsicq/XHashWidget.git
-[submodule "die_script"]
-	path = die_script
+[submodule "dep/die_script"]
+	path = dep/die_script
 	url = https://github.com/horsicq/die_script.git
-[submodule "die_widget"]
-	path = die_widget
+[submodule "dep/die_widget"]
+	path = dep/die_widget
 	url = https://github.com/horsicq/die_widget.git
-[submodule "nfd_widget"]
-	path = nfd_widget
+[submodule "dep/nfd_widget"]
+	path = dep/nfd_widget
 	url = https://github.com/horsicq/nfd_widget.git
-[submodule "archive_widget"]
-	path = archive_widget
+[submodule "dep/archive_widget"]
+	path = dep/archive_widget
 	url = https://github.com/horsicq/archive_widget.git
-[submodule "XMIME"]
-	path = XMIME
+[submodule "dep/XMIME"]
+	path = dep/XMIME
 	url = https://github.com/horsicq/XMIME.git
-[submodule "XSingleApplication"]
-	path = XSingleApplication
+[submodule "dep/XSingleApplication"]
+	path = dep/XSingleApplication
 	url = https://github.com/horsicq/XSingleApplication.git
-[submodule "XMIMEWidget"]
-	path = XMIMEWidget
+[submodule "dep/XMIMEWidget"]
+	path = dep/XMIMEWidget
 	url = https://github.com/horsicq/XMIMEWidget.git
-[submodule "XHexView"]
-	path = XHexView
+[submodule "dep/XHexView"]
+	path = dep/XHexView
 	url = https://github.com/horsicq/XHexView.git
-[submodule "XDisasmView"]
-	path = XDisasmView
+[submodule "dep/XDisasmView"]
+	path = dep/XDisasmView
 	url = https://github.com/horsicq/XDisasmView.git
-[submodule "XGithub"]
-	path = XGithub
+[submodule "dep/XGithub"]
+	path = dep/XGithub
 	url = https://github.com/horsicq/XGithub.git
-[submodule "XShortcuts"]
-	path = XShortcuts
+[submodule "dep/XShortcuts"]
+	path = dep/XShortcuts
 	url = https://github.com/horsicq/XShortcuts.git
-[submodule "XHexEdit"]
-	path = XHexEdit
+[submodule "dep/XHexEdit"]
+	path = dep/XHexEdit
 	url = https://github.com/horsicq/XHexEdit.git
-[submodule "signatures"]
-	path = signatures
+[submodule "dep/signatures"]
+	path = dep/signatures
 	url = https://github.com/horsicq/signatures.git
-[submodule "XDemangle"]
-	path = XDemangle
+[submodule "dep/XDemangle"]
+	path = dep/XDemangle
 	url = https://github.com/horsicq/XDemangle.git
-[submodule "XDemangleWidget"]
-	path = XDemangleWidget
+[submodule "dep/XDemangleWidget"]
+	path = dep/XDemangleWidget
 	url = https://github.com/horsicq/XDemangleWidget.git
-[submodule "XCppfilt"]
-	path = XCppfilt
+[submodule "dep/XCppfilt"]
+	path = dep/XCppfilt
 	url = https://github.com/horsicq/XCppfilt
-[submodule "XDynStructs"]
-	path = XDynStructs
+[submodule "dep/XDynStructs"]
+	path = dep/XDynStructs
 	url = https://github.com/horsicq/XDynStructs
-[submodule "XDynStructsEngine"]
-	path = XDynStructsEngine
+[submodule "dep/XDynStructsEngine"]
+	path = dep/XDynStructsEngine
 	url = https://github.com/horsicq/XDynStructsEngine
-[submodule "XDynStructsWidget"]
-	path = XDynStructsWidget
+[submodule "dep/XDynStructsWidget"]
+	path = dep/XDynStructsWidget
 	url = https://github.com/horsicq/XDynStructsWidget
-[submodule "XFileInfo"]
-	path = XFileInfo
+[submodule "dep/XFileInfo"]
+	path = dep/XFileInfo
 	url = https://github.com/horsicq/XFileInfo
-[submodule "XPDF"]
-	path = XPDF
+[submodule "dep/XPDF"]
+	path = dep/XPDF
 	url = https://github.com/horsicq/XPDF
-[submodule "XInfoDB"]
-	path = XInfoDB
+[submodule "dep/XInfoDB"]
+	path = dep/XInfoDB
 	url = https://github.com/horsicq/XInfoDB
-[submodule "XSymbolsWidget"]
-	path = XSymbolsWidget
+[submodule "dep/XSymbolsWidget"]
+	path = dep/XSymbolsWidget
 	url = https://github.com/horsicq/XSymbolsWidget
-[submodule "XOnlineTools"]
-	path = XOnlineTools
+[submodule "dep/XOnlineTools"]
+	path = dep/XOnlineTools
 	url = https://github.com/horsicq/XOnlineTools
-[submodule "XAboutWidget"]
-	path = XAboutWidget
+[submodule "dep/XAboutWidget"]
+	path = dep/XAboutWidget
 	url = https://github.com/horsicq/XAboutWidget
-[submodule "hex_templates"]
-	path = hex_templates
+[submodule "dep/hex_templates"]
+	path = dep/hex_templates
 	url = https://github.com/horsicq/hex_templates
-[submodule "XExtractorWidget"]
-	path = XExtractorWidget
+[submodule "dep/XExtractorWidget"]
+	path = dep/XExtractorWidget
 	url = https://github.com/horsicq/XExtractorWidget
-[submodule "XExtractor"]
-	path = XExtractor
+[submodule "dep/XExtractor"]
+	path = dep/XExtractor
 	url = https://github.com/horsicq/XExtractor
-[submodule "XUpdate"]
-	path = XUpdate
+[submodule "dep/XUpdate"]
+	path = dep/XUpdate
 	url = https://github.com/horsicq/XUpdate
-[submodule "XVisualizationWidget"]
-	path = XVisualizationWidget
+[submodule "dep/XVisualizationWidget"]
+	path = dep/XVisualizationWidget
 	url = https://github.com/horsicq/XVisualizationWidget
-[submodule "XDecompiler"]
-	path = XDecompiler
+[submodule "dep/XDecompiler"]
+	path = dep/XDecompiler
 	url = https://github.com/horsicq/XDecompiler
-[submodule "XYara"]
-	path = XYara
+[submodule "dep/XYara"]
+	path = dep/XYara
 	url = https://github.com/horsicq/XYara
-[submodule "yara_widget"]
-	path = yara_widget
+[submodule "dep/yara_widget"]
+	path = dep/yara_widget
 	url = https://github.com/horsicq/yara_widget
-[submodule "XDataConvertorWidget"]
-	path = XDataConvertorWidget
+[submodule "dep/XDataConvertorWidget"]
+	path = dep/XDataConvertorWidget
 	url = https://github.com/horsicq/XDataConvertorWidget
-[submodule "XScanEngine"]
-	path = XScanEngine
+[submodule "dep/XScanEngine"]
+	path = dep/XScanEngine
 	url = https://github.com/horsicq/XScanEngine
-[submodule "XDisasmCore"]
-	path = XDisasmCore
+[submodule "dep/XDisasmCore"]
+	path = dep/XDisasmCore
 	url = https://github.com/horsicq/XDisasmCore.git
-[submodule "XRegionsWidget"]
-	path = XRegionsWidget
+[submodule "dep/XRegionsWidget"]
+	path = dep/XRegionsWidget
 	url = https://github.com/horsicq/XRegionsWidget.git
-[submodule "XStaticUnpacker"]
-	path = XStaticUnpacker
+[submodule "dep/XStaticUnpacker"]
+	path = dep/XStaticUnpacker
 	url = https://github.com/horsicq/XStaticUnpacker
-[submodule "XPEID"]
-	path = XPEID
+[submodule "dep/XPEID"]
+	path = dep/XPEID
 	url = https://github.com/horsicq/XPEID
-[submodule "build_tools"]
-	path = build_tools
+[submodule "dep/build_tools"]
+	path = dep/build_tools
 	url = https://github.com/horsicq/build_tools.git
-[submodule "peid_widget"]
-	path = peid_widget
+[submodule "dep/peid_widget"]
+	path = dep/peid_widget
 	url = https://github.com/horsicq/peid_widget

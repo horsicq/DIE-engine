@@ -1,4 +1,4 @@
-include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/cpp_standart_setup.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../dep/build_tools/cmake/cpp_standart_setup.cmake)
 
 if(MSVC)
     add_compile_options(/FS)
@@ -11,11 +11,11 @@ add_definitions(-DUSE_ARCHIVE)
 add_definitions(-DUSE_DIE)
 add_definitions(-DUSE_XSIMD)
 
-include(${CMAKE_CURRENT_LIST_DIR}/../../die_script/die_script.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../dep/die_script/die_script.cmake)
 if(NOT DEFINED XOPTIONS_SOURCES)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../XOptions/xoptions.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/../../dep/XOptions/xoptions.cmake)
 endif()
-include(${CMAKE_CURRENT_LIST_DIR}/../../Controls/xcomboboxex.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../dep/Controls/xcomboboxex.cmake)
 
 if(UNIX AND NOT APPLE)
     include(GNUInstallDirs)
@@ -100,10 +100,10 @@ install(TARGETS DetectItEasyLite
 )
 
 if(APPLE)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/macdeployqt.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/../../dep/build_tools/cmake/macdeployqt.cmake)
 endif()
 
 if(WIN32)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/deploy_qt_windows.cmake)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/deploy_msvc.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/../../dep/build_tools/cmake/deploy_qt_windows.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/../../dep/build_tools/cmake/deploy_msvc.cmake)
 endif()

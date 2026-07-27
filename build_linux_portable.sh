@@ -50,14 +50,14 @@ fi
 # Copy data from cmake install staging (qss, db, info, yara, images, lang)
 [ -d "$STAGE_DIR/lib/die/" ] && cp -Rf "$STAGE_DIR/lib/die/." "$PACKAGE_DIR/base/"
 # Fallback: copy assets directly if cmake install didn't include them
-[ ! -d "$PACKAGE_DIR/base/qss" ]        && cp -Rf "$X_SOURCE_PATH/XStyles/qss/"               "$PACKAGE_DIR/base/qss/"
-[ ! -d "$PACKAGE_DIR/base/info" ]       && cp -Rf "$X_SOURCE_PATH/XInfoDB/info/"              "$PACKAGE_DIR/base/info/"
-[ ! -d "$PACKAGE_DIR/base/db" ]         && cp -Rf "$X_SOURCE_PATH/Detect-It-Easy/db/"         "$PACKAGE_DIR/base/db/"
-[ ! -d "$PACKAGE_DIR/base/yara_rules" ] && cp -Rf "$X_SOURCE_PATH/XYara/yara_rules/"          "$PACKAGE_DIR/base/yara_rules/"
+[ ! -d "$PACKAGE_DIR/base/qss" ]        && cp -Rf "$X_SOURCE_PATH/dep/XStyles/qss/"               "$PACKAGE_DIR/base/qss/"
+[ ! -d "$PACKAGE_DIR/base/info" ]       && cp -Rf "$X_SOURCE_PATH/dep/XInfoDB/info/"              "$PACKAGE_DIR/base/info/"
+[ ! -d "$PACKAGE_DIR/base/db" ]         && cp -Rf "$X_SOURCE_PATH/dep/Detect-It-Easy/db/"         "$PACKAGE_DIR/base/db/"
+[ ! -d "$PACKAGE_DIR/base/yara_rules" ] && cp -Rf "$X_SOURCE_PATH/dep/XYara/yara_rules/"          "$PACKAGE_DIR/base/yara_rules/"
 [ ! -d "$PACKAGE_DIR/base/images" ]     && cp -Rf "$X_SOURCE_PATH/images/"                    "$PACKAGE_DIR/base/images/"
-if [ -f "$X_SOURCE_PATH/signatures/crypto.db" ]; then
+if [ -f "$X_SOURCE_PATH/dep/signatures/crypto.db" ]; then
     mkdir -p "$PACKAGE_DIR/base/signatures"
-    cp -f "$X_SOURCE_PATH/signatures/crypto.db" "$PACKAGE_DIR/base/signatures/"
+    cp -f "$X_SOURCE_PATH/dep/signatures/crypto.db" "$PACKAGE_DIR/base/signatures/"
 fi
 
 for bin in die diec diel; do
