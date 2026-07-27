@@ -332,7 +332,7 @@ jobs:
       - name: Install dependencies
         run: |
           pacman -Syu --noconfirm
-          pacman -S --noconfirm qt5-base qt5-script qt5-svg qt5-tools base-devel git
+          pacman -S --noconfirm qt5-base qt5-script qt5-svg qt5-tools base-devel git cmake
           pacman -S --noconfirm imagemagick
 
       - name: Create user
