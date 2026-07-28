@@ -73,7 +73,7 @@ package() {
   cp -r dep/Detect-It-Easy/db_extra/* -t "$pkgdir"/opt/"${pkgname}"/db_extra/
   cp -r dep/XYara/yara_rules/* -t "$pkgdir"/opt/"${pkgname}"/yara_rules/
   cp -r dep/XPEID/peid/* -t "$pkgdir"/opt/"${pkgname}"/peid/
-  install -Dm 644 signatures/crypto.db -t "$pkgdir"/opt/"${pkgname}"/signatures
+  install -Dm 644 dep/signatures/crypto.db -t "$pkgdir"/opt/"${pkgname}"/signatures
   cp -r images/* -t "$pkgdir"/opt/"${pkgname}"/images/
 
   echo "${_prefix}Setting up /usr/bin launchers"
