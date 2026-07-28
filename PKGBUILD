@@ -67,7 +67,7 @@ package() {
 
   echo "${_prefix}Copying the package files"
   install -Dm 644 build/src/translations/*.qm -t "$pkgdir"/opt/"${pkgname}"/lang
-  install -Dm 644 XStyles/qss/* -t "$pkgdir"/opt/"${pkgname}"/qss
+  install -Dm 644 dep/XStyles/qss/* -t "$pkgdir"/opt/"${pkgname}"/qss
   cp -r XInfoDB/info/* -t "$pkgdir"/opt/"${pkgname}"/info/
   cp -r Detect-It-Easy/db/* -t "$pkgdir"/opt/"${pkgname}"/db/
   cp -r Detect-It-Easy/db_extra/* -t "$pkgdir"/opt/"${pkgname}"/db_extra/
