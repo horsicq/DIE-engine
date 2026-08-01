@@ -45,13 +45,13 @@ fi
 RESOURCES="$APP_BUNDLE/Contents/Resources"
 mkdir -p "$RESOURCES/signatures"
 
-cp -Rf "$X_SOURCE_PATH/dep/XStyles/qss"             "$RESOURCES/"
-cp -Rf "$X_SOURCE_PATH/dep/XInfoDB/info"            "$RESOURCES/"
-cp -Rf "$X_SOURCE_PATH/dep/Detect-It-Easy/db"       "$RESOURCES/"
-[ -d "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra" ] && cp -Rf "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra" "$RESOURCES/"
-cp -Rf "$X_SOURCE_PATH/dep/XYara/yara_rules"        "$RESOURCES/"
+cp -Rf "$X_SOURCE_PATH/XStyles/qss"             "$RESOURCES/"
+cp -Rf "$X_SOURCE_PATH/XInfoDB/info"            "$RESOURCES/"
+cp -Rf "$X_SOURCE_PATH/Detect-It-Easy/db"       "$RESOURCES/"
+[ -d "$X_SOURCE_PATH/Detect-It-Easy/db_extra" ] && cp -Rf "$X_SOURCE_PATH/Detect-It-Easy/db_extra" "$RESOURCES/"
+cp -Rf "$X_SOURCE_PATH/XYara/yara_rules"        "$RESOURCES/"
 cp -Rf "$X_SOURCE_PATH/images"                  "$RESOURCES/"
-[ -f "$X_SOURCE_PATH/dep/signatures/crypto.db" ]   && cp -f "$X_SOURCE_PATH/dep/signatures/crypto.db" "$RESOURCES/signatures/"
+[ -f "$X_SOURCE_PATH/signatures/crypto.db" ]   && cp -f "$X_SOURCE_PATH/signatures/crypto.db" "$RESOURCES/signatures/"
 
 # Copy diec into the bundle
 DIEC_BIN=$(find "$BUILD_DIR/src/console" -maxdepth 2 -name "diec" -type f | head -1)

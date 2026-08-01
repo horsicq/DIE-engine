@@ -1,4 +1,4 @@
-include(${CMAKE_CURRENT_LIST_DIR}/../../dep/build_tools/cmake/cpp_standart_setup.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/cpp_standart_setup.cmake)
 
 if(MSVC)
     add_compile_options(/FS)
@@ -20,10 +20,10 @@ if(WITH_YARA)
     add_definitions(-DUSE_YARA)
 endif()
 
-include(${CMAKE_CURRENT_LIST_DIR}/../../dep/XMIMEWidget/xmimewidget.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/../../dep/FormatWidgets/formatwidgets.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/../../dep/XSingleApplication/xsingleapplication.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/../../dep/XAboutWidget/xaboutwidget.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../XMIMEWidget/xmimewidget.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../FormatWidgets/formatwidgets.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../XSingleApplication/xsingleapplication.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../../XAboutWidget/xaboutwidget.cmake)
 
 if(UNIX AND NOT APPLE)
     include(GNUInstallDirs)
@@ -155,13 +155,13 @@ if(UNIX AND NOT APPLE)
         DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/metainfo"
         OPTIONAL
     )
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../dep/XStyles/qss"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../XStyles/qss"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../dep/XInfoDB/info"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../XInfoDB/info"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../dep/Detect-It-Easy/db"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../Detect-It-Easy/db"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../dep/XYara/yara_rules"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../XYara/yara_rules"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
     install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../images"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
@@ -182,10 +182,10 @@ else()
 endif()
 
 if(APPLE)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../dep/build_tools/cmake/macdeployqt.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/macdeployqt.cmake)
 endif()
 
 if(WIN32)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../dep/build_tools/cmake/deploy_qt_windows.cmake)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../dep/build_tools/cmake/deploy_msvc.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/deploy_qt_windows.cmake)
+    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/deploy_msvc.cmake)
 endif()
