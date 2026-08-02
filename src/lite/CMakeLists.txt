@@ -1,4 +1,4 @@
-include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/cpp_standart_setup.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/cpp_standart_setup.cmake)
 
 if(MSVC)
     add_compile_options(/FS)
@@ -11,17 +11,17 @@ add_definitions(-DUSE_ARCHIVE)
 add_definitions(-DUSE_DIE)
 add_definitions(-DUSE_XSIMD)
 
-include(${CMAKE_CURRENT_LIST_DIR}/../../die_script/die_script.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/die_script/die_script.cmake)
 if(NOT DEFINED XOPTIONS_SOURCES)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../XOptions/xoptions.cmake)
+    include(${CMAKE_SOURCE_DIR}/dep/XOptions/xoptions.cmake)
 endif()
-include(${CMAKE_CURRENT_LIST_DIR}/../../Controls/xcomboboxex.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/Controls/xcomboboxex.cmake)
 
 if(UNIX AND NOT APPLE)
     include(GNUInstallDirs)
 endif()
 
-set(DIEL_LITE_ICON "${CMAKE_CURRENT_LIST_DIR}/../../icons/lite.icns")
+set(DIEL_LITE_ICON "${CMAKE_SOURCE_DIR}/dep/icons/lite.icns")
 
 set(DIEL_SOURCES
     ${DIE_SCRIPT_SOURCES}
@@ -42,7 +42,7 @@ endif()
 
 if(WIN32 AND EXISTS "${X_WINDOWS_RESOURCE_ICON_RC_IN}")
     set(X_ORIGINAL_FILENAME "diel")
-    set(X_WINDOWS_ICON "${CMAKE_CURRENT_LIST_DIR}/../../icons/lite.ico")
+    set(X_WINDOWS_ICON "${CMAKE_SOURCE_DIR}/dep/icons/lite.ico")
     configure_file("${X_WINDOWS_RESOURCE_ICON_RC_IN}"
                    "${CMAKE_CURRENT_BINARY_DIR}/resource_diel.rc" @ONLY)
     configure_file("${X_RESOURCE_DIR}/windows/windows.manifest.xml"
@@ -100,10 +100,10 @@ install(TARGETS DetectItEasyLite
 )
 
 if(APPLE)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/macdeployqt.cmake)
+    include(${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/macdeployqt.cmake)
 endif()
 
 if(WIN32)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/deploy_qt_windows.cmake)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/deploy_msvc.cmake)
+    include(${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_qt_windows.cmake)
+    include(${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_msvc.cmake)
 endif()

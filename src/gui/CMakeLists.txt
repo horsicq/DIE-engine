@@ -1,4 +1,4 @@
-include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/cpp_standart_setup.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/cpp_standart_setup.cmake)
 
 if(MSVC)
     add_compile_options(/FS)
@@ -20,10 +20,10 @@ if(WITH_YARA)
     add_definitions(-DUSE_YARA)
 endif()
 
-include(${CMAKE_CURRENT_LIST_DIR}/../../XMIMEWidget/xmimewidget.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/../../FormatWidgets/formatwidgets.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/../../XSingleApplication/xsingleapplication.cmake)
-include(${CMAKE_CURRENT_LIST_DIR}/../../XAboutWidget/xaboutwidget.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/XMIMEWidget/xmimewidget.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/FormatWidgets/formatwidgets.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/XSingleApplication/xsingleapplication.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/XAboutWidget/xaboutwidget.cmake)
 
 if(UNIX AND NOT APPLE)
     include(GNUInstallDirs)
@@ -121,7 +121,7 @@ endif()
 if(UNIX AND NOT APPLE)
     set(DIE_RUNTIME_DESTINATION "${CMAKE_INSTALL_BINDIR}")
     set(DIE_DOC_DESTINATION "${CMAKE_INSTALL_DOCDIR}/detect-it-easy")
-    set(DIE_DESKTOP_TEMPLATE "${CMAKE_CURRENT_SOURCE_DIR}/../../res/linux/die.desktop.in")
+    set(DIE_DESKTOP_TEMPLATE "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/res/linux/die.desktop.in")
     set(DIE_DESKTOP_FILE "${CMAKE_CURRENT_BINARY_DIR}/die.desktop")
     if(EXISTS "${DIE_DESKTOP_TEMPLATE}")
         configure_file("${DIE_DESKTOP_TEMPLATE}" "${DIE_DESKTOP_FILE}" @ONLY)
@@ -138,8 +138,8 @@ install(TARGETS ${DIE_GUI_TARGET}
 
 if(UNIX AND NOT APPLE)
     install(FILES
-        "${CMAKE_CURRENT_SOURCE_DIR}/../../LICENSE"
-        "${CMAKE_CURRENT_SOURCE_DIR}/../../README.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/LICENSE"
+        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/README.md"
         DESTINATION ${DIE_DOC_DESTINATION}
         OPTIONAL
     )
@@ -147,33 +147,33 @@ if(UNIX AND NOT APPLE)
         install(FILES "${DIE_DESKTOP_FILE}"
             DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/applications")
     endif()
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../LINUX/hicolor/"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/LINUX/hicolor/"
         DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor"
         OPTIONAL
     )
-    install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/../../LINUX/io.github.horsicq.detect-it-easy.metainfo.xml"
+    install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/LINUX/io.github.horsicq.detect-it-easy.metainfo.xml"
         DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/metainfo"
         OPTIONAL
     )
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../XStyles/qss"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/XStyles/qss"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../XInfoDB/info"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/XInfoDB/info"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../Detect-It-Easy/db"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/Detect-It-Easy/db"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../XYara/yara_rules"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/XYara/yara_rules"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../images"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/images"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
 else()
     install(FILES
-        "${CMAKE_CURRENT_SOURCE_DIR}/../../LICENSE"
+        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/LICENSE"
         DESTINATION .
         RENAME LICENSE.txt
         OPTIONAL
     )
     install(FILES
-        "${CMAKE_CURRENT_SOURCE_DIR}/../../README.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/README.md"
         "${X_WINDOWS_ICON}"
         DESTINATION .
         OPTIONAL
@@ -182,10 +182,10 @@ else()
 endif()
 
 if(APPLE)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/macdeployqt.cmake)
+    include(${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/macdeployqt.cmake)
 endif()
 
 if(WIN32)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/deploy_qt_windows.cmake)
-    include(${CMAKE_CURRENT_LIST_DIR}/../../build_tools/cmake/deploy_msvc.cmake)
+    include(${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_qt_windows.cmake)
+    include(${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_msvc.cmake)
 endif()
