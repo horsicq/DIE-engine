@@ -3,7 +3,7 @@ export X_SOURCE_PATH=$PWD
 export X_RELEASE_VERSION=$(cat "release_version.txt")
 export VERSION=$X_RELEASE_VERSION
 
-source build_tools/linux.sh
+source dep/build_tools/linux.sh
 
 create_image_app_dir die
 
@@ -15,16 +15,16 @@ cp -f $X_SOURCE_PATH/LINUX/io.github.horsicq.detect-it-easy.desktop $X_SOURCE_PA
 cp -Rf $X_SOURCE_PATH/LINUX/hicolor/ $X_SOURCE_PATH/release/appDir/usr/share/icons/
 cp -f $X_SOURCE_PATH/LINUX/io.github.horsicq.detect-it-easy.metainfo.xml $X_SOURCE_PATH/release/appDir/usr/share/metainfo/
 cp -Rf $X_SOURCE_PATH/images/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -Rf $X_SOURCE_PATH/XStyles/qss/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -Rf $X_SOURCE_PATH/XInfoDB/info/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_extra/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -Rf $X_SOURCE_PATH/XYara/yara_rules/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -Rf $X_SOURCE_PATH/XPEID/peid/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+cp -Rf $X_SOURCE_PATH/dep/XStyles/qss/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+cp -Rf $X_SOURCE_PATH/dep/XInfoDB/info/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+cp -Rf $X_SOURCE_PATH/dep/Detect-It-Easy/db/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+cp -Rf $X_SOURCE_PATH/dep/Detect-It-Easy/db_custom/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+cp -Rf $X_SOURCE_PATH/dep/Detect-It-Easy/db_extra/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+cp -Rf $X_SOURCE_PATH/dep/XYara/yara_rules/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+cp -Rf $X_SOURCE_PATH/dep/XPEID/peid/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
 
 mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/die/signatures
-cp -f $X_SOURCE_PATH/signatures/crypto.db $X_SOURCE_PATH/release/appDir/usr/lib/die/signatures/
+cp -f $X_SOURCE_PATH/dep/signatures/crypto.db $X_SOURCE_PATH/release/appDir/usr/lib/die/signatures/
 
 mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/qt5/plugins/platforms
 cp /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so $X_SOURCE_PATH/release/appDir/usr/lib/qt5/plugins/platforms/

@@ -805,8 +805,8 @@ jobs:
             'mkdir -p package' \
             'cp -a build/* package/ || true' \
             'for d in db db_extra db_custom peid_rules yara_rules; do \
-            if [ -d "Detect-It-Easy/$d" ]; then \
-            cp -a "Detect-It-Easy/$d" package/; \
+            if [ -d "dep/Detect-It-Easy/$d" ]; then \
+            cp -a "dep/Detect-It-Easy/$d" package/; \
             fi; \
             done' \
             'tar -czf detect-it-easy-s390x.tar.gz -C package .' \
@@ -880,8 +880,8 @@ jobs:
             'mkdir -p package' \
             'cp -a build/* package/ || true' \
             'for d in db db_extra db_custom peid_rules yara_rules; do \
-                if [ -d "Detect-It-Easy/$d" ]; then \
-                  cp -a "Detect-It-Easy/$d" package/; \
+                if [ -d "dep/Detect-It-Easy/$d" ]; then \
+                  cp -a "dep/Detect-It-Easy/$d" package/; \
                 fi; \
              done' \
             'tar -czf detect-it-easy-riscv64.tar.gz -C package .' \
