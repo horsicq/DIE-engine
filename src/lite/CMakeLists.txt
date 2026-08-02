@@ -21,7 +21,7 @@ if(UNIX AND NOT APPLE)
     include(GNUInstallDirs)
 endif()
 
-set(DIEL_LITE_ICON "${CMAKE_SOURCE_DIR}/dep/icons/lite.icns")
+set(DIEL_LITE_ICON "${CMAKE_CURRENT_LIST_DIR}/../../icons/lite.icns")
 
 set(DIEL_SOURCES
     ${DIE_SCRIPT_SOURCES}
@@ -42,7 +42,7 @@ endif()
 
 if(WIN32 AND EXISTS "${X_WINDOWS_RESOURCE_ICON_RC_IN}")
     set(X_ORIGINAL_FILENAME "diel")
-    set(X_WINDOWS_ICON "${CMAKE_SOURCE_DIR}/dep/icons/lite.ico")
+    set(X_WINDOWS_ICON "${CMAKE_CURRENT_LIST_DIR}/../../icons/lite.ico")
     configure_file("${X_WINDOWS_RESOURCE_ICON_RC_IN}"
                    "${CMAKE_CURRENT_BINARY_DIR}/resource_diel.rc" @ONLY)
     configure_file("${X_RESOURCE_DIR}/windows/windows.manifest.xml"

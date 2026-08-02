@@ -54,7 +54,6 @@ set(X_MACOS_INFO_PLIST           "${X_RESOURCE_DIR}/macos/Info.plist")
 
 # --- Optional: packaging support via _mylibs ---
 set(DIE_DEPLOY_INIT "${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_init.cmake")
-
 if(EXISTS "${DIE_DEPLOY_INIT}")
     include("${DIE_DEPLOY_INIT}")
 else()
@@ -62,7 +61,7 @@ else()
 endif()
 
 # --- Translations ---
-set(DIE_TRANSLATION_HELPER "${CMAKE_CURRENT_LIST_DIR}/../build_tools/cmake/deploy_translation.cmake")
+set(DIE_TRANSLATION_HELPER "${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_translation.cmake")
 if(EXISTS "${DIE_TRANSLATION_HELPER}")
     include("${DIE_TRANSLATION_HELPER}")
 
@@ -102,12 +101,12 @@ if(EXISTS "${DIE_TRANSLATION_HELPER}")
 endif()
 
 # --- Library subdirectories ---
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XCppfilt"      XCppfilt)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XCapstone"     XCapstone)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XCapstone/x86" XCapstone_86)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XArchive"      XArchive)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XYara"         XYara)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/Formats/xsimd" XSIMD)
+add_subdirectory("${CMAKE_SOURCE_DIR}/dep/XCppfilt"      XCppfilt)
+add_subdirectory("${CMAKE_SOURCE_DIR}/dep/XCapstone"     XCapstone)
+add_subdirectory("${CMAKE_SOURCE_DIR}/dep/XCapstone/x86" XCapstone_86)
+add_subdirectory("${CMAKE_SOURCE_DIR}/dep/XArchive"      XArchive)
+add_subdirectory("${CMAKE_SOURCE_DIR}/dep/XYara"         XYara)
+add_subdirectory("${CMAKE_SOURCE_DIR}/dep/Formats/xsimd" XSIMD)
 
 # --- Executable targets ---
 add_subdirectory(gui)

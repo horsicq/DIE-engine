@@ -121,7 +121,7 @@ endif()
 if(UNIX AND NOT APPLE)
     set(DIE_RUNTIME_DESTINATION "${CMAKE_INSTALL_BINDIR}")
     set(DIE_DOC_DESTINATION "${CMAKE_INSTALL_DOCDIR}/detect-it-easy")
-    set(DIE_DESKTOP_TEMPLATE "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/res/linux/die.desktop.in")
+    set(DIE_DESKTOP_TEMPLATE "${CMAKE_CURRENT_SOURCE_DIR}/../../res/linux/die.desktop.in")
     set(DIE_DESKTOP_FILE "${CMAKE_CURRENT_BINARY_DIR}/die.desktop")
     if(EXISTS "${DIE_DESKTOP_TEMPLATE}")
         configure_file("${DIE_DESKTOP_TEMPLATE}" "${DIE_DESKTOP_FILE}" @ONLY)
@@ -138,8 +138,8 @@ install(TARGETS ${DIE_GUI_TARGET}
 
 if(UNIX AND NOT APPLE)
     install(FILES
-        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/LICENSE"
-        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/README.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../../LICENSE"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../../README.md"
         DESTINATION ${DIE_DOC_DESTINATION}
         OPTIONAL
     )
@@ -147,33 +147,33 @@ if(UNIX AND NOT APPLE)
         install(FILES "${DIE_DESKTOP_FILE}"
             DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/applications")
     endif()
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/LINUX/hicolor/"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../LINUX/hicolor/"
         DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor"
         OPTIONAL
     )
-    install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/LINUX/io.github.horsicq.detect-it-easy.metainfo.xml"
+    install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/../../LINUX/io.github.horsicq.detect-it-easy.metainfo.xml"
         DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/metainfo"
         OPTIONAL
     )
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/XStyles/qss"
+    install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XStyles/qss"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/XInfoDB/info"
+    install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XInfoDB/info"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/Detect-It-Easy/db"
+    install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/Detect-It-Easy/db"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/XYara/yara_rules"
+    install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XYara/yara_rules"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
-    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/images"
+    install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../images"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
 else()
     install(FILES
-        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/LICENSE"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../../LICENSE"
         DESTINATION .
         RENAME LICENSE.txt
         OPTIONAL
     )
     install(FILES
-        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_SOURCE_DIR}/dep/README.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../../README.md"
         "${X_WINDOWS_ICON}"
         DESTINATION .
         OPTIONAL
