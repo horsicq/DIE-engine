@@ -53,12 +53,9 @@ set(X_MACOS_INFO_PLIST_IN        "${X_RESOURCE_DIR}/macos/Info.plist.in")
 set(X_MACOS_INFO_PLIST           "${X_RESOURCE_DIR}/macos/Info.plist")
 
 # --- Optional: packaging support via _mylibs ---
-set(DIE_DEPLOY_INIT "${CMAKE_CURRENT_LIST_DIR}/../build_tools/cmake/deploy_init.cmake")
-if(EXISTS "${DIE_DEPLOY_INIT}"
-   AND EXISTS "${X_WINDOWS_RESOURCE_RC_IN}"
-   AND EXISTS "${X_WINDOWS_RESOURCE_ICON_RC_IN}"
-   AND EXISTS "${X_MACOS_ICON}"
-   AND EXISTS "${X_MACOS_INFO_PLIST_IN}")
+set(DIE_DEPLOY_INIT "${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_init.cmake")
+
+if(EXISTS "${DIE_DEPLOY_INIT}")
     include("${DIE_DEPLOY_INIT}")
 else()
     message(STATUS "Skipping deploy_init.cmake — packaging templates missing")
