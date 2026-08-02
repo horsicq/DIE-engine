@@ -105,12 +105,12 @@ if(EXISTS "${DIE_TRANSLATION_HELPER}")
 endif()
 
 # --- Library subdirectories ---
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../XCppfilt"      XCppfilt)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../XCapstone"     XCapstone)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../XCapstone/x86" XCapstone_86)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../XArchive"      XArchive)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../XYara"         XYara)
-add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../Formats/xsimd" XSIMD)
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XCppfilt"      XCppfilt)
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XCapstone"     XCapstone)
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XCapstone/x86" XCapstone_86)
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XArchive"      XArchive)
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/XYara"         XYara)
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../dep/Formats/xsimd" XSIMD)
 
 # --- Executable targets ---
 add_subdirectory(gui)
