@@ -12,6 +12,7 @@ endif()
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
+add_definitions(-DUSE_DWARF)
 add_definitions(-DUSE_DIE)
 add_definitions(-DUSE_XSIMD)
 
@@ -19,6 +20,9 @@ option(WITH_YARA "Use Yara" ON)
 if(WITH_YARA)
     add_definitions(-DUSE_YARA)
 endif()
+
+# Adds the xjs* sources to XPDF and defines USE_PDFJSEMUL (see xpdf.cmake)
+option(WITH_PDFJSEMUL "Use PDF JavaScript emulator" ON)
 
 include(${CMAKE_SOURCE_DIR}/dep/XMIMEWidget/xmimewidget.cmake)
 include(${CMAKE_SOURCE_DIR}/dep/FormatWidgets/formatwidgets.cmake)

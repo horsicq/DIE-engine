@@ -35,18 +35,6 @@ cp /usr/lib/x86_64-linux-gnu/qt5/plugins/imageformats/libqjpeg.so $X_SOURCE_PATH
 mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/qt5/plugins/printsupport
 cp /usr/lib/x86_64-linux-gnu/qt5/plugins/printsupport/libcupsprintersupport.so $X_SOURCE_PATH/release/appDir/usr/lib/qt5/plugins/printsupport/
 
-cd $X_SOURCE_PATH/release/appDir/usr/bin/
-
-ln -s ../lib/die/images images
-ln -s ../lib/die/qss qss
-ln -s ../lib/die/info info
-ln -s ../lib/die/db db
-ln -s ../lib/die/db_custom db_custom
-ln -s ../lib/die/db_extra db_extra
-ln -s ../lib/die/yara_rules yara_rules
-ln -s ../lib/die/peid peid
-ln -s ../lib/die/signatures signatures
-
 cd $X_SOURCE_PATH/release
 
 linuxdeploy \
