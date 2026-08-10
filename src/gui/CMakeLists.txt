@@ -12,7 +12,6 @@ endif()
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
-add_definitions(-DUSE_DWARF)
 add_definitions(-DUSE_DIE)
 add_definitions(-DUSE_XSIMD)
 
