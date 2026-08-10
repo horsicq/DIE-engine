@@ -57,8 +57,16 @@ set(DIE_GUI_SOURCES
     res.qrc
 )
 
-if(WIN32 AND EXISTS "${X_WINDOWS_RESOURCE_ICON_RC}")
-    list(APPEND DIE_GUI_SOURCES "${X_WINDOWS_RESOURCE_ICON_RC}")
+if(WIN32 AND EXISTS "${X_WINDOWS_RESOURCE_ICON_RC_IN}")
+    # X_ORIGINAL_FILENAME ("die") and X_WINDOWS_ICON (icons/main.ico) already carry the GUI's
+    # values from src/CMakeLists.txt, so unlike diec/diel nothing has to be overridden here.
+    # The manifest is copied beside the generated .rc because RT_MANIFEST resolves relative to
+    # the .rc file's own directory.
+    configure_file("${X_WINDOWS_RESOURCE_ICON_RC_IN}"
+                   "${CMAKE_CURRENT_BINARY_DIR}/resource_die.rc" @ONLY)
+    configure_file("${X_RESOURCE_DIR}/windows/windows.manifest.xml"
+                   "${CMAKE_CURRENT_BINARY_DIR}/windows.manifest.xml" COPYONLY)
+    list(APPEND DIE_GUI_SOURCES "${CMAKE_CURRENT_BINARY_DIR}/resource_die.rc")
 endif()
 
 if(APPLE AND EXISTS "${X_MACOS_ICON}")
@@ -78,6 +86,11 @@ set_target_properties(${DIE_GUI_TARGET} PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER "${MACOSX_BUNDLE_GUI_IDENTIFIER}"
     OUTPUT_NAME "die"
 )
+
+if(MSVC)
+    # The .rc already supplies RT_MANIFEST; keep the linker from embedding a competing one.
+    target_link_options(${DIE_GUI_TARGET} PRIVATE /MANIFEST:NO)
+endif()
 
 target_include_directories(${DIE_GUI_TARGET} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 

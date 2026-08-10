@@ -63,6 +63,11 @@ set_target_properties(DetectItEasyLite PROPERTIES
     OUTPUT_NAME "diel"
 )
 
+if(MSVC)
+    # The .rc already supplies RT_MANIFEST; keep the linker from embedding a competing one.
+    target_link_options(DetectItEasyLite PRIVATE /MANIFEST:NO)
+endif()
+
 target_include_directories(DetectItEasyLite PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(DetectItEasyLite PRIVATE
