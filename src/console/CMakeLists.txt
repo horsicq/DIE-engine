@@ -24,6 +24,7 @@ include(${CMAKE_SOURCE_DIR}/dep/die_script/die_script.cmake)
 include(${CMAKE_SOURCE_DIR}/dep/XOptions/xoptions.cmake)
 include(${CMAKE_SOURCE_DIR}/dep/XEntropyWidget/entropyprocess.cmake)
 include(${CMAKE_SOURCE_DIR}/dep/XFileInfo/xfileinfo.cmake)
+include(${CMAKE_SOURCE_DIR}/dep/XScanEngine/xscanengineconsole.cmake)
 
 if(UNIX AND NOT APPLE)
     include(GNUInstallDirs)
@@ -34,9 +35,8 @@ set(DIEC_SOURCES
     ${XOPTIONS_SOURCES}
     ${ENTROPYPROCESS_SOURCES}
     ${XFILEINFO_SOURCES}
+    ${XSCANENGINECONSOLE_SOURCES}
     main_console.cpp
-    consoleoutput.cpp
-    consoleoutput.h
 )
 
 if(WIN32 AND EXISTS "${X_WINDOWS_RESOURCE_RC_IN}")

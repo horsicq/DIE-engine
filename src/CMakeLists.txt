@@ -65,29 +65,31 @@ set(DIE_TRANSLATION_HELPER "${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_tra
 if(EXISTS "${DIE_TRANSLATION_HELPER}")
     include("${DIE_TRANSLATION_HELPER}")
 
+    set(DIE_TRANSLATION_DIR "${CMAKE_CURRENT_LIST_DIR}/gui/translation")
     set(DIE_TS_FILES
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_ar_AR.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_bn_BN.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_de_DE.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_es_ES.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_fa_FA.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_fr_FR.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_he_IL.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_id_ID.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_it_IT.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_ja_JP.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_ko_KR.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_pl_PL.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_pt_BR.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_pt_PT.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_ru_RU.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_sv_SE.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_tr_TR.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_uk_UA.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_vi_VN.ts"
+        "${DIE_TRANSLATION_DIR}/die_ar.ts"
+        "${DIE_TRANSLATION_DIR}/die_bn.ts"
+        "${DIE_TRANSLATION_DIR}/die_de.ts"
+        "${DIE_TRANSLATION_DIR}/die_es.ts"
+        "${DIE_TRANSLATION_DIR}/die_fa.ts"
+        "${DIE_TRANSLATION_DIR}/die_fr.ts"
+        "${DIE_TRANSLATION_DIR}/die_he.ts"
+        "${DIE_TRANSLATION_DIR}/die_id.ts"
+        "${DIE_TRANSLATION_DIR}/die_it.ts"
+        "${DIE_TRANSLATION_DIR}/die_ja.ts"
+        "${DIE_TRANSLATION_DIR}/die_ko.ts"
+        "${DIE_TRANSLATION_DIR}/die_pl.ts"
+        "${DIE_TRANSLATION_DIR}/die_pt_BR.ts"
+        "${DIE_TRANSLATION_DIR}/die_pt_PT.ts"
+        "${DIE_TRANSLATION_DIR}/die_ru.ts"
+        "${DIE_TRANSLATION_DIR}/die_sv.ts"
+        "${DIE_TRANSLATION_DIR}/die_tr.ts"
+        "${DIE_TRANSLATION_DIR}/die_uk.ts"
+        "${DIE_TRANSLATION_DIR}/die_vi.ts"
+        # Albanian is maintained in the newer locale-specific catalog.
         "${CMAKE_CURRENT_LIST_DIR}/../translations/die_sq_AL.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_zh_CN.ts"
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_zh_TW.ts"
+        "${DIE_TRANSLATION_DIR}/die_zh.ts"
+        "${DIE_TRANSLATION_DIR}/die_zh_TW.ts"
     )
 
     deploy_add_translations(

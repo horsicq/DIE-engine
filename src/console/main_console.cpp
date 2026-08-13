@@ -18,198 +18,233 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
 #include <QCommandLineOption>
 #include <QCommandLineParser>
 #include <QCoreApplication>
+#include <QDate>
 
 #include "../global.h"
-#include "consoleoutput.h"
 #include "die_script.h"
 #include "entropyprocess.h"
 #include "xfileinfo.h"
 #include "xoptions.h"
-#include "scanitemmodel.h"
+#include "xscanengineconsole.h"
 
-void progressCallback(void *pUserData, XBinary::PDSTRUCT *pPdStruct)
+// diec on the shared XScanEngineConsole. The overrides keep the established
+// die-specific behavior: EntropyProcess/XFileInfo output for -e/-i/-S,
+// the signature-state database listing, the --format flag (bFormatResult is
+// opt-in for diec, unlike the other scanners), and the --test/--createtest
+// stubs.
+class DIEConsole : public XScanEngineConsole {
+public:
+    DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QString &sDescription);
+
+protected:
+    virtual void addEngineOptions(QCommandLineParser *pParser);
+    virtual void applyEngineOptions(const QCommandLineParser *pParser, XScanEngine::SCAN_OPTIONS *pScanOptions);
+    virtual bool processEngineModes(const QCommandLineParser *pParser, const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions,
+                                    XBinary::PDSTRUCT *pPdStruct, qint32 *pnResult);
+    virtual XOptions::CR reportScanErrors(XScanEngine::SCAN_RESULT *pScanResult);
+    virtual XOptions::CR showDatabaseState(XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct);
+    virtual XOptions::CR showStructsOverview(const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct);
+    virtual XOptions::CR showFileEntropy(const QString &sFileName, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct);
+    virtual XOptions::CR showFileInfo(const QString &sFileName, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct);
+    virtual XOptions::CR showFileStruct(const QString &sFileName, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct);
+
+private:
+    XOptions::CR printFileInfo(const QString &sFileName, const QString &sString, XScanEngine::SCAN_OPTIONS *pScanOptions);
+
+    DiE_Script &m_dieScript;
+    QCommandLineOption m_clFormatResult;
+    QCommandLineOption m_clTest;
+    QCommandLineOption m_clCreateTest;
+};
+
+DIEConsole::DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QString &sDescription)
+    : XScanEngineConsole(app, dieScript, sDescription), m_dieScript(dieScript),
+      m_clFormatResult(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_FORMAT)), m_clTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST)),
+      m_clCreateTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST))
 {
-    Q_UNUSED(pUserData)
-
-    if (pPdStruct) {
-        printf("\r");
-
-        // Display percentage for each valid progress level
-        bool bFirst = true;
-        for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
-            if (pPdStruct->_pdRecord[i].bIsValid) {
-                qint32 nPercent = 0;
-                if (pPdStruct->_pdRecord[i].nTotal > 0) {
-                    nPercent = (qint32)((pPdStruct->_pdRecord[i].nCurrent * 100) / pPdStruct->_pdRecord[i].nTotal);
-                    if (nPercent > 100) nPercent = 100;
-                }
-                printf("[%3d%%]", nPercent);
-                bFirst = false;
-            }
-        }
-
-        if (!bFirst) {
-            printf(" : ");
-
-            // Display status for each valid level
-            bool bFirstStatus = true;
-            for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
-                if (pPdStruct->_pdRecord[i].bIsValid) {
-                    if (!bFirstStatus) printf("|");
-                    if (!pPdStruct->_pdRecord[i].sStatus.isEmpty()) {
-                        printf("%s", pPdStruct->_pdRecord[i].sStatus.toUtf8().data());
-                    } else {
-                        printf("-");
-                    }
-                    bFirstStatus = false;
-                }
-            }
-        }
-
-        fflush(stdout);
-
-        // Check if all valid levels are complete
-        bool bAllComplete = true;
-        for (qint32 i = 0; i < XBinary::N_NUMBER_PDRECORDS; i++) {
-            if (pPdStruct->_pdRecord[i].bIsValid) {
-                if (pPdStruct->_pdRecord[i].nTotal > 0 && pPdStruct->_pdRecord[i].nCurrent < pPdStruct->_pdRecord[i].nTotal) {
-                    bAllComplete = false;
-                    break;
-                }
-            }
-        }
-
-        if (bAllComplete) {
-            printf("\n");
-        }
-    }
 }
 
-XOptions::CR ScanFiles(QList<QString> *pListArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, DiE_Script *pDieScript, XBinary::PDSTRUCT *pPdStruct)
+void DIEConsole::addEngineOptions(QCommandLineParser *pParser)
+{
+    pParser->addOption(m_clFormatResult);
+    pParser->addOption(m_clTest);
+    pParser->addOption(m_clCreateTest);
+}
+
+void DIEConsole::applyEngineOptions(const QCommandLineParser *pParser, XScanEngine::SCAN_OPTIONS *pScanOptions)
+{
+    // diec formats detect strings with spaces only on request
+    pScanOptions->bFormatResult = pParser->isSet(m_clFormatResult);
+}
+
+bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions,
+                                    XBinary::PDSTRUCT *pPdStruct, qint32 *pnResult)
+{
+    bool bHandled = false;
+
+    if (pParser->isSet(m_clTest)) {
+        bool bDbLoaded = m_dieScript.loadDatabase(pScanOptions, pPdStruct);
+
+        // TODO
+
+        if (!bDbLoaded) {
+            *pnResult = XOptions::CR_CANNOTFINDDATABASE;
+        }
+
+        bHandled = true;
+    } else if (pParser->isSet(m_clCreateTest)) {
+        bool bDbLoaded = m_dieScript.loadDatabase(pScanOptions, pPdStruct);
+
+        if (listArgs.count() >= 2) {
+            QString sAddTestFilename = pParser->value(m_clCreateTest);
+            QString sDetectString = listArgs.at(0);
+            QString sDirectory = listArgs.at(1);
+            printf("Adding test for file '%s' with detect string '%s' in directory '%s'\n", sAddTestFilename.toUtf8().data(), sDetectString.toUtf8().data(),
+                   sDirectory.toUtf8().data());
+
+            // TODO
+        } else {
+            printf("Error: --addtest requires <filename> <detect_string> <directory>\n");
+            *pnResult = XOptions::CR_INVALIDPARAMETER;
+        }
+
+        if (!bDbLoaded) {
+            *pnResult = XOptions::CR_CANNOTFINDDATABASE;
+        }
+
+        bHandled = true;
+    }
+
+    return bHandled;
+}
+
+XOptions::CR DIEConsole::reportScanErrors(XScanEngine::SCAN_RESULT *pScanResult)
+{
+    // diec historically prints script errors but still exits with success
+    printf("%s", XScanEngine::getErrorsString(pScanResult).toUtf8().data());
+
+    return XOptions::CR_SUCCESS;
+}
+
+XOptions::CR DIEConsole::showDatabaseState(XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct)
+{
+    Q_UNUSED(pPdStruct)
+
+    printf("Main database: %s\n", pScanOptions->sMainDatabasePath.toUtf8().data());
+    printf("Extra database: %s\n", pScanOptions->sExtraDatabasePath.toUtf8().data());
+    printf("Custom database: %s\n", pScanOptions->sCustomDatabasePath.toUtf8().data());
+
+    QList<DiE_Script::SIGNATURE_STATE> list = m_dieScript.getSignatureStates();
+
+    qint32 nNumberOfRecords = list.count();
+
+    for (qint32 i = 0; i < nNumberOfRecords; i++) {
+        printf("\t%s: %d\n", XBinary::fileTypeIdToString(list.at(i).fileType).toUtf8().data(), list.at(i).nNumberOfSignatures);
+    }
+
+    return XOptions::CR_SUCCESS;
+}
+
+XOptions::CR DIEConsole::showStructsOverview(const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct)
+{
+    Q_UNUSED(listArgs)
+    Q_UNUSED(pScanOptions)
+    Q_UNUSED(pPdStruct)
+
+    printf("Structures:\n");
+
+    QList<QString> listMethods = XFileInfo::getMethodNames(XBinary::FT_UNKNOWN);
+
+    qint32 nNumberOfMethods = listMethods.count();
+
+    for (qint32 i = 0; i < nNumberOfMethods; i++) {
+        printf("\t%s\n", listMethods.at(i).toUtf8().data());
+    }
+
+    return XOptions::CR_SUCCESS;
+}
+
+XOptions::CR DIEConsole::showFileEntropy(const QString &sFileName, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct)
+{
+    Q_UNUSED(pPdStruct)
+
+    QString sResult;
+
+    EntropyProcess::DATA epData = EntropyProcess::processRegionsFile(sFileName);
+
+    if (pScanOptions->bResultAsJSON) {
+        sResult = EntropyProcess::dataToJsonString(&epData);
+    } else if (pScanOptions->bResultAsXML) {
+        sResult = EntropyProcess::dataToXmlString(&epData);
+    } else if (pScanOptions->bResultAsCSV) {
+        sResult = EntropyProcess::dataToCsvString(&epData);
+    } else if (pScanOptions->bResultAsTSV) {
+        sResult = EntropyProcess::dataToTsvString(&epData);
+    } else {
+        sResult = EntropyProcess::dataToPlainString(&epData);
+    }
+
+    printf("%s", sResult.toUtf8().data());
+
+    return XOptions::CR_SUCCESS;
+}
+
+XOptions::CR DIEConsole::printFileInfo(const QString &sFileName, const QString &sString, XScanEngine::SCAN_OPTIONS *pScanOptions)
 {
     XOptions::CR result = XOptions::CR_SUCCESS;
 
-    QList<QString> listFileNames;
+    QString sResult;
 
-    for (qint32 i = 0; i < pListArgs->count(); i++) {
-        QString sFileName = pListArgs->at(i);
+    XFileInfo::OPTIONS options = {};
 
-        if (QFileInfo::exists(sFileName)) {
-            XBinary::findFiles(sFileName, &listFileNames);
-        } else {
-            printf("Cannot find: %s\n", sFileName.toUtf8().data());
+    options.sString = sString;
 
-            result = XOptions::CR_CANNOTFINDFILE;
-        }
+    XFileInfoModel model;
+
+    if (!XFileInfo::processFile(sFileName, &model, options)) {
+        result = XOptions::CR_CANNOTOPENFILE;
     }
 
-    bool bShowFileName = listFileNames.count() > 1;
-
-    qint32 nNumberOfFiles = listFileNames.count();
-
-    for (qint32 i = 0; i < nNumberOfFiles; i++) {
-        QString sFileName = listFileNames.at(i);
-
-        if (bShowFileName) {
-            printf("%s:\n", QDir().toNativeSeparators(sFileName).toUtf8().data());
-        }
-
-        if (pScanOptions->bShowEntropy) {
-            QString sResult;
-
-            EntropyProcess::DATA epData = EntropyProcess::processRegionsFile(sFileName);
-
-            if (pScanOptions->bResultAsJSON) {
-                sResult = EntropyProcess::dataToJsonString(&epData);
-            } else if (pScanOptions->bResultAsXML) {
-                sResult = EntropyProcess::dataToXmlString(&epData);
-            } else if (pScanOptions->bResultAsCSV) {
-                sResult = EntropyProcess::dataToCsvString(&epData);
-            } else if (pScanOptions->bResultAsTSV) {
-                sResult = EntropyProcess::dataToTsvString(&epData);
-            } else {
-                sResult = EntropyProcess::dataToPlainString(&epData);
-            }
-
-            printf("%s", sResult.toUtf8().data());
-        } else if ((pScanOptions->bShowFileInfo) || (pScanOptions->sSpecial != "")) {
-            QString sResult;
-
-            XFileInfo::OPTIONS options = {};
-
-            if (pScanOptions->sSpecial != "") {
-                options.sString = pScanOptions->sSpecial;
-            } else {
-                options.sString = "Info";
-            }
-
-            XFileInfoModel model;
-
-            if (!XFileInfo::processFile(sFileName, &model, options)) {
-                result = XOptions::CR_CANNOTOPENFILE;
-            }
-
-            if (pScanOptions->bResultAsJSON) {
-                sResult = model.toJSON();
-            } else if (pScanOptions->bResultAsXML) {
-                sResult = model.toXML();
-            } else if (pScanOptions->bResultAsCSV) {
-                sResult = model.toCSV();
-            } else if (pScanOptions->bResultAsTSV) {
-                sResult = model.toTSV();
-            } else {
-                sResult = model.toFormattedString();
-            }
-
-            printf("%s", sResult.toUtf8().data());
-            printf("\n");
-        } else {
-            // pdStruct.pCallback = progressCallback;
-            // pdStruct.pCallbackUserData = nullptr;
-
-            XScanEngine::SCAN_RESULT scanResult = pDieScript->scanFile(sFileName, pScanOptions, pPdStruct);
-
-            ScanItemModel model(pScanOptions, &(scanResult.listRecords), 1, nullptr);
-
-            XBinary::FORMATTYPE formatType = XBinary::FORMATTYPE_TEXT;
-
-            if (pScanOptions->bResultAsCSV) formatType = XBinary::FORMATTYPE_CSV;
-            else if (pScanOptions->bResultAsJSON) formatType = XBinary::FORMATTYPE_JSON;
-            else if (pScanOptions->bResultAsTSV) formatType = XBinary::FORMATTYPE_TSV;
-            else if (pScanOptions->bResultAsXML) formatType = XBinary::FORMATTYPE_XML;
-            else if (pScanOptions->bResultAsPlainText) formatType = XBinary::FORMATTYPE_PLAINTEXT;
-
-            if (formatType != XBinary::FORMATTYPE_TEXT) {
-                printf("%s\n", model.toString(formatType).toUtf8().data());
-            } else {
-                // Colored text
-                model.coloredOutput();
-            }
-
-            //            QList<XBinary::SCANSTRUCT> listResult=DiE_Script::convert(&(scanResult.listRecords));
-
-            //            ScanItemModel model(&listResult);
-
-            //            printf("%s",model.toFormattedString().toUtf8().data());
-
-            if (scanResult.listErrors.count()) {
-                printf("%s", DiE_Script::getErrorsString(&scanResult).toUtf8().data());
-            }
-            printf("\n");
-        }
+    if (pScanOptions->bResultAsJSON) {
+        sResult = model.toJSON();
+    } else if (pScanOptions->bResultAsXML) {
+        sResult = model.toXML();
+    } else if (pScanOptions->bResultAsCSV) {
+        sResult = model.toCSV();
+    } else if (pScanOptions->bResultAsTSV) {
+        sResult = model.toTSV();
+    } else {
+        sResult = model.toFormattedString();
     }
+
+    printf("%s", sResult.toUtf8().data());
+    printf("\n");
 
     return result;
 }
 
+XOptions::CR DIEConsole::showFileInfo(const QString &sFileName, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct)
+{
+    Q_UNUSED(pPdStruct)
+
+    // diec lets an explicit -S structure win over the plain -i info dump
+    QString sString = (pScanOptions->sStruct != "") ? pScanOptions->sStruct : QString("Info");
+
+    return printFileInfo(sFileName, sString, pScanOptions);
+}
+
+XOptions::CR DIEConsole::showFileStruct(const QString &sFileName, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct)
+{
+    Q_UNUSED(pPdStruct)
+
+    return printFileInfo(sFileName, pScanOptions->sStruct, pScanOptions);
+}
+
 int main(int argc, char *argv[])
 {
-    qint32 nResult = XOptions::CR_SUCCESS;
-
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
     QCoreApplication::setOrganizationDomain(X_ORGANIZATIONDOMAIN);
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
@@ -219,206 +254,12 @@ int main(int argc, char *argv[])
 
     app.setProperty("dataPathAlt0", "/opt/detect-it-easy");
 
-    XOptions::registerCodecs();
-
-    XBinary::PDSTRUCT pdStruct = XBinary::createPdStruct();
-
-    QCommandLineParser parser;
     QString sDescription;
     sDescription.append(QString("%1 v%2\n").arg(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
     sDescription.append(QString("%1\n").arg("Copyright(C) 2006-2008 Hellsp@wn 2012-%1 hors<horsicq@gmail.com> Web: http://ntinfo.biz").arg(QDate::currentDate().year()));
-    parser.setApplicationDescription(sDescription);
-    parser.addHelpOption();
-    parser.addVersionOption();
 
-    parser.addPositionalArgument("target", "The file or directory to open.");
+    DiE_Script dieScript;
+    DIEConsole console(app, dieScript, sDescription);
 
-    QCommandLineOption clRecursiveScan = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_RECURSIVESCAN);
-    QCommandLineOption clDeepScan = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_DEEPSCAN);
-    QCommandLineOption clHeuristicScan = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_HEURISTICSCAN);
-    QCommandLineOption clVerbose = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_VERBOSE);
-    QCommandLineOption clAggresiveScan = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_AGGRESSIVESCAN);
-    QCommandLineOption clAllTypesScan = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_ALLTYPES);
-    QCommandLineOption clFormatResult = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_FORMAT);
-    QCommandLineOption clProfiling = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_PROFILING);
-    QCommandLineOption clMessages = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_MESSAGES);
-    QCommandLineOption clHideUnknown = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_HIDEUNKNOWN);
-    QCommandLineOption clEntropy = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_ENTROPY);
-    QCommandLineOption clInfo = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_INFO);
-    QCommandLineOption clResultAsXml = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_XML);
-    QCommandLineOption clResultAsJson = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_JSON);
-    QCommandLineOption clResultAsCSV = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CSV);
-    QCommandLineOption clResultAsTSV = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TSV);
-    QCommandLineOption clResultAsPlainText = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_PLAINTEXT);
-    QCommandLineOption clDatabaseMain = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_DATABASE);
-    QCommandLineOption clDatabaseExtra = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_EXTRADATABASE);
-    QCommandLineOption clDatabaseCustom = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CUSTOMDATABASE);
-    QCommandLineOption clShowDatabase = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_SHOWDATABASE);
-    QCommandLineOption clStruct = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_STRUCT);
-    QCommandLineOption clShowStructs = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_SHOWSTRUCTS);
-    QCommandLineOption clTest = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST);
-    QCommandLineOption clCreateTest = XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST);
-
-    parser.addOption(clRecursiveScan);
-    parser.addOption(clDeepScan);
-    parser.addOption(clHeuristicScan);
-    parser.addOption(clVerbose);
-    parser.addOption(clAggresiveScan);
-    parser.addOption(clAllTypesScan);
-    parser.addOption(clFormatResult);
-    parser.addOption(clProfiling);
-    parser.addOption(clMessages);
-    parser.addOption(clHideUnknown);
-    parser.addOption(clEntropy);
-    parser.addOption(clInfo);
-    parser.addOption(clStruct);
-    parser.addOption(clResultAsXml);
-    parser.addOption(clResultAsJson);
-    parser.addOption(clResultAsCSV);
-    parser.addOption(clResultAsTSV);
-    parser.addOption(clResultAsPlainText);
-    parser.addOption(clDatabaseMain);
-    parser.addOption(clDatabaseExtra);
-    parser.addOption(clDatabaseCustom);
-    parser.addOption(clShowDatabase);
-    parser.addOption(clShowStructs);
-    parser.addOption(clTest);
-    parser.addOption(clCreateTest);
-
-    parser.process(app);
-
-    QList<QString> listArgs = parser.positionalArguments();
-
-    XScanEngine::SCAN_OPTIONS scanOptions = {};
-
-    scanOptions.bUseCustomDatabase = true;
-    scanOptions.bUseExtraDatabase = true;
-    scanOptions.bShowType = true;
-    scanOptions.bShowInfo = true;
-    scanOptions.bShowVersion = true;
-    scanOptions.bIsRecursiveScan = parser.isSet(clRecursiveScan);
-    scanOptions.bIsDeepScan = parser.isSet(clDeepScan);
-    scanOptions.bIsHeuristicScan = parser.isSet(clHeuristicScan);
-    scanOptions.bIsVerbose = parser.isSet(clVerbose);
-    scanOptions.bIsAggressiveScan = parser.isSet(clAggresiveScan);
-    scanOptions.bIsAllTypesScan = parser.isSet(clAllTypesScan);
-    scanOptions.bFormatResult = parser.isSet(clFormatResult);
-    scanOptions.bHideUnknown = parser.isSet(clHideUnknown);
-    scanOptions.bLogProfiling = parser.isSet(clProfiling);
-    scanOptions.bShowEntropy = parser.isSet(clEntropy);
-    scanOptions.bShowFileInfo = parser.isSet(clInfo);
-    scanOptions.bResultAsXML = parser.isSet(clResultAsXml);
-    scanOptions.bResultAsJSON = parser.isSet(clResultAsJson);
-    scanOptions.bResultAsCSV = parser.isSet(clResultAsCSV);
-    scanOptions.bResultAsTSV = parser.isSet(clResultAsTSV);
-    scanOptions.bResultAsPlainText = parser.isSet(clResultAsPlainText);
-    scanOptions.bIsSort = true;
-
-    scanOptions.sSpecial = parser.value(clStruct);
-
-    scanOptions.sMainDatabasePath = parser.value(clDatabaseMain);
-    scanOptions.sExtraDatabasePath = parser.value(clDatabaseExtra);
-    scanOptions.sCustomDatabasePath = parser.value(clDatabaseCustom);
-    QString sTestDirectory = parser.value(clTest);
-    QString sAddTestFilename = parser.value(clCreateTest);
-
-    if (scanOptions.sMainDatabasePath == "") {
-        scanOptions.sMainDatabasePath = "$data/db";
-    }
-
-    if (scanOptions.sExtraDatabasePath == "") {
-        scanOptions.sExtraDatabasePath = "$data/db_extra";
-    }
-
-    if (scanOptions.sCustomDatabasePath == "") {
-        scanOptions.sCustomDatabasePath = "$data/db_custom";
-    }
-
-    ConsoleOutput consoleOutput;
-    DiE_Script die_script;
-
-    if (parser.isSet(clMessages)) {
-        QObject::connect(&die_script, SIGNAL(errorMessage(QString)), &consoleOutput, SLOT(errorMessage(QString)));
-        QObject::connect(&die_script, SIGNAL(warningMessage(QString)), &consoleOutput, SLOT(warningMessage(QString)));
-        QObject::connect(&die_script, SIGNAL(infoMessage(QString)), &consoleOutput, SLOT(infoMessage(QString)));
-    }
-
-    bool bIsDbUsed = false;
-    bool bDbLoaded = false;
-
-    if (parser.isSet(clShowDatabase)) {
-        if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
-            bIsDbUsed = true;
-        }
-
-        printf("Main database: %s\n", scanOptions.sMainDatabasePath.toUtf8().data());
-        printf("Extra database: %s\n", scanOptions.sExtraDatabasePath.toUtf8().data());
-        printf("Custom database: %s\n", scanOptions.sCustomDatabasePath.toUtf8().data());
-
-        QList<DiE_Script::SIGNATURE_STATE> list = die_script.getSignatureStates();
-
-        qint32 nNumberOfRecords = list.count();
-
-        for (qint32 i = 0; i < nNumberOfRecords; i++) {
-            printf("\t%s: %d\n", XBinary::fileTypeIdToString(list.at(i).fileType).toUtf8().data(), list.at(i).nNumberOfSignatures);
-        }
-    }
-
-    if (parser.isSet(clShowStructs)) {
-        XBinary::FT fileType = XBinary::FT_UNKNOWN;
-
-        // if (listArgs.count()) {
-        //     fileType = XFormats::getPrefFileType(listArgs.at(0));
-        // }
-
-        printf("Structures:\n");
-
-        QList<QString> listMethods = XFileInfo::getMethodNames(fileType);
-
-        qint32 nNumberOfMethods = listMethods.count();
-
-        for (qint32 i = 0; i < nNumberOfMethods; i++) {
-            printf("\t%s\n", listMethods.at(i).toUtf8().data());
-        }
-    } else if (parser.isSet(clTest)) {
-        if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
-            bIsDbUsed = true;
-        }
-
-        // TODO
-    } else if (parser.isSet(clCreateTest)) {
-        if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
-            bIsDbUsed = true;
-        }
-
-        if (listArgs.count() >= 2) {
-            QString sDetectString = listArgs.at(0);
-            QString sDirectory = listArgs.at(1);
-            printf("Adding test for file '%s' with detect string '%s' in directory '%s'\n", sAddTestFilename.toUtf8().data(), sDetectString.toUtf8().data(),
-                   sDirectory.toUtf8().data());
-
-            // TODO
-        } else {
-            printf("Error: --addtest requires <filename> <detect_string> <directory>\n");
-            nResult = XOptions::CR_INVALIDPARAMETER;
-        }
-    } else if (listArgs.count()) {
-        if (!bIsDbUsed) {
-            bDbLoaded = die_script.loadDatabase(&scanOptions, &pdStruct);
-        }
-
-        nResult = ScanFiles(&listArgs, &scanOptions, &die_script, &pdStruct);
-    } else if (!parser.isSet(clShowDatabase)) {
-        parser.showHelp();
-        Q_UNREACHABLE();
-    }
-
-    if (bIsDbUsed && (!bDbLoaded)) {
-        nResult = XOptions::CR_CANNOTFINDDATABASE;
-    }
-
-    return nResult;
+    return console.process();
 }

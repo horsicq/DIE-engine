@@ -628,7 +628,7 @@ jobs:
         run: |
           zypper --non-interactive modifyrepo --disable repo-openh264 || true
           zypper refresh
-          zypper install -y --allow-downgrade \
+          zypper install -y \
             git \
             cmake \
             gcc-c++ \
@@ -699,7 +699,7 @@ jobs:
         run: |
           zypper --non-interactive modifyrepo --disable repo-openh264 || true
           zypper refresh
-          zypper install -y --allow-downgrade \
+          zypper install -y \
             git \
             cmake \
             gcc-c++ \
