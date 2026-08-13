@@ -621,11 +621,12 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: opensuse/leap:latest
+      image: opensuse/leap:15.6
 
     steps:
       - name: Install dependencies
         run: |
+          zypper --non-interactive modifyrepo --disable repo-openh264 || true
           zypper refresh
           zypper install -y \
             git \
@@ -691,11 +692,12 @@ jobs:
     runs-on: ubuntu-24.04-arm
 
     container:
-      image: opensuse/leap:latest
+      image: opensuse/leap:15.6
 
     steps:
       - name: Install dependencies
         run: |
+          zypper --non-interactive modifyrepo --disable repo-openh264 || true
           zypper refresh
           zypper install -y \
             git \
