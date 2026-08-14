@@ -77,6 +77,79 @@ jobs:
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
 
+  build-ubuntu-24-ppc64le:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v4
+        with:
+          platforms: ppc64le
+
+      - name: Build
+        run: |
+          docker run --rm \
+            --platform linux/ppc64le \
+            -v "${{ github.workspace }}:/workspace" \
+            -w /workspace \
+            ubuntu:24.04 \
+            bash -ex -c '
+              apt-get update
+
+              apt-get install -y git qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser build-essential cmake
+
+              git clone --recursive https://github.com/horsicq/DIE-engine.git
+
+              cd DIE-engine
+
+              chmod a+x build_dpkg.sh
+
+              ./build_dpkg.sh
+            '
+
+      - name: Collect packages
+        run: |
+          mkdir -p "${{ env.RELEASE_PATH }}"
+
+          find DIE-engine \
+            -type f \
+            -name "*.deb" \
+            -exec cp {} "${{ env.RELEASE_PATH }}/" \;
+
+      - name: Verify package architecture
+        run: |
+          shopt -s nullglob
+          packages=("${{ env.RELEASE_PATH }}"/*.deb)
+
+          if [ ${#packages[@]} -eq 0 ]; then
+            echo "No .deb package was produced."
+            exit 1
+          fi
+
+          for package in "${packages[@]}"; do
+            echo "Package: $package"
+            echo "Architecture: $(dpkg-deb -f "$package" Architecture)"
+
+            if [ "$(dpkg-deb -f "$package" Architecture)" != "ppc64el" ]; then
+              echo "ERROR: Package is not ppc64el!"
+              exit 1
+            fi
+          done
+
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ env.RELEASE_PATH }}/*.deb
+
   build-ubuntu-22:
     runs-on: ubuntu-22.04
     steps:
