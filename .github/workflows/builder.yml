@@ -1021,7 +1021,6 @@ jobs:
       - uses: actions/checkout@v6
         with:
           submodules: 'recursive'
-          path: ${{ env.SRC_PATH }}
 
       - uses: cross-platform-actions/action@v0.25.0
         with:
@@ -1029,7 +1028,7 @@ jobs:
           version: '14.0'
           run: |
             sudo env IGNORE_OSVERSION=yes pkg update
-            sudo env IGNORE_OSVERSION=yes pkg install -y git cmake qt5 pkgconf bash
+            sudo env IGNORE_OSVERSION=yes pkg install -y git cmake qt5 qt5-linguisttools pkgconf bash
             
             mkdir build
             cd build
@@ -1046,8 +1045,8 @@ jobs:
             cp -R dep/Detect-It-Easy/db stage/usr/local/share/die/ || true
             cp -R dep/XInfoDB/info stage/usr/local/share/die/ || true
             
-            mkdir -p ${{ env.RELEASE_PATH }}
-            sudo pkg create -M manifest.ucl -r stage -o ${{ env.RELEASE_PATH }}
+            mkdir -p release
+            sudo pkg create -M manifest.ucl -r stage -o release
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
@@ -1059,4 +1058,4 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            ${{ env.RELEASE_PATH }}/*.pkg
+            release/*.pkg
