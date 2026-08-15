@@ -1028,22 +1028,19 @@ jobs:
           version: '14.0'
           run: |
             sudo env IGNORE_OSVERSION=yes pkg update
-            sudo env IGNORE_OSVERSION=yes pkg install -y git cmake qt5 qt5-linguisttools pkgconf bash
+            sudo env IGNORE_OSVERSION=yes pkg install -y git cmake qt5 qt5-script qt5-svg qt5-linguisttools pkgconf bash
+            
+            export PATH=$PATH:/usr/local/lib/qt5/bin
             
             mkdir build
             cd build
-            cmake .. -DCMAKE_BUILD_TYPE=Release
+            cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
             cmake --build . --config Release -j $(sysctl -n hw.ncpu)
+            
+            DESTDIR=../stage cmake --install .
             cd ..
             
-            mkdir -p stage/usr/local/bin
-            mkdir -p stage/usr/local/share/die
-            
-            find build -type f -name "die" -exec cp {} stage/usr/local/bin/ \;
-            find build -type f -name "diec" -exec cp {} stage/usr/local/bin/ \;
-            
-            cp -R dep/Detect-It-Easy/db stage/usr/local/share/die/ || true
-            cp -R dep/XInfoDB/info stage/usr/local/share/die/ || true
+            find stage -type f
             
             mkdir -p release
             sudo pkg create -M manifest.ucl -r stage -o release
