@@ -1037,13 +1037,17 @@ jobs:
             cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
             cmake --build . --config Release -j $(sysctl -n hw.ncpu)
             
-            DESTDIR=../stage cmake --install .
+            DESTDIR=$(pwd)/../stage cmake --install .
             cd ..
             
-            find stage -type f
+            mkdir -p stage/usr/local/bin
+            find build -type f -name "die" -exec cp -f {} stage/usr/local/bin/ \; || true
+            find build -type f -name "diec" -exec cp -f {} stage/usr/local/bin/ \; || true
+            
+            if [ -z "$(ls -A stage/usr/local/bin)" ]; then exit 1; fi
             
             mkdir -p release
-            sudo pkg create -M manifest.ucl -r stage -o release
+            pkg create -M manifest.ucl -r stage -o release
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
@@ -1054,5 +1058,4 @@ jobs:
           tag_name: Beta
           draft: false
           prerelease: true
-          files: |
-            release/*.pkg
+          files: release/*.pkg
