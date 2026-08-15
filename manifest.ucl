@@ -1,0 +1,8 @@
+name: "detect-it-easy"
+version: "4.0.0"
+origin: "security/detect-it-easy"
+comment: "Program for determining types of files"
+desc: "Detect It Easy (DiE) is a program for determining types of files."
+maintainer: "horsicq"
+www: "https://github.com/horsicq/Detect-It-Easy"
+prefix: "/usr/local"
