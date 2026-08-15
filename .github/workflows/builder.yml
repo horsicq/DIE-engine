@@ -904,7 +904,6 @@ jobs:
           files: |
             ${{ env.SRC_PATH }}/detect-it-easy-s390x.tar.gz
 
-
   build-riscv64:
     name: build-riscv64
     runs-on: ubuntu-24.04
@@ -1014,3 +1013,48 @@ jobs:
           prerelease: true
           files: |
             release/*.nar.xz
+
+  build-freebsd-pkg:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: cross-platform-actions/action@v0.25.0
+        with:
+          operating_system: freebsd
+          version: '14.0'
+          run: |
+            sudo env IGNORE_OSVERSION=yes pkg update
+            sudo env IGNORE_OSVERSION=yes pkg install -y git cmake qt5 pkgconf bash
+            git clone https://github.com/horsicq/DIE-engine.git --recursive
+            cd DIE-engine
+            mkdir build
+            cd build
+            cmake .. -DCMAKE_BUILD_TYPE=Release
+            cmake --build . --config Release -j $(sysctl -n hw.ncpu)
+            cd ..
+            mkdir -p stage/usr/local/bin
+            mkdir -p stage/usr/local/share/die
+            find DIE-engine/build -type f -name "die" -exec cp {} stage/usr/local/bin/ \;
+            find DIE-engine/build -type f -name "diec" -exec cp {} stage/usr/local/bin/ \;
+            cp -R DIE-engine/dep/Detect-It-Easy/db stage/usr/local/share/die/ || true
+            cp -R DIE-engine/dep/XInfoDB/info stage/usr/local/share/die/ || true
+            mkdir release_pkg
+            sudo pkg create -M DIE-engine/manifest.ucl -r stage -o release_pkg
+        env:
+          RELEASE_PATH: release_pkg
+
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ env.RELEASE_PATH }}/*.pkg
