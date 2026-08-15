@@ -978,3 +978,39 @@ jobs:
           prerelease: true
           files: |
             ${{ env.SRC_PATH }}/detect-it-easy-riscv64.tar.gz
+
+  build-nix:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone DIE-engine
+        run: |
+          git clone --recursive \
+            https://github.com/horsicq/DIE-engine.git
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v30
+        with:
+          extra_conf: |
+            experimental-features = nix-command flakes
+
+      - name: Build with Nix
+        run: |
+          nix-build DIE-engine/build.nix -o result
+
+      - name: Create Nix Release
+        run: |
+          mkdir -p release
+          nix-store --export $(nix-store -qR result) | xz -T0 > release/detect-it-easy-4.0.0-nix-closure.nar.xz
+
+      - name: Upload Release
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            release/*.nar.xz
