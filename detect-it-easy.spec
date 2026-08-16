@@ -1,5 +1,5 @@
 Name:           detect-it-easy
-Version:        3.21
+Version:        4.0.0
 Release:        1%{?dist}
 Summary:        Program for determining types of files
 
