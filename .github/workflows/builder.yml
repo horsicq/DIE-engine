@@ -1047,7 +1047,8 @@ jobs:
             if [ -z "$(ls -A stage/usr/local/bin)" ]; then exit 1; fi
             
             mkdir -p release
-            pkg create -M manifest.ucl -r stage -o release
+            find stage -type f | sed 's/^stage//' > plist
+            pkg create -M manifest.ucl -p plist -r stage -o release
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
