@@ -1022,8 +1022,8 @@ jobs:
         with:
           submodules: 'recursive'
 
-      - name: Build DiE for FreeBSD 
-      - uses: cross-platform-actions/action@v0.25.0
+      - name: Build DiE for FreeBSD
+        uses: cross-platform-actions/action@v0.25.0
         with:
           operating_system: freebsd
           version: '14.0'
