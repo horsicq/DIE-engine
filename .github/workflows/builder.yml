@@ -401,14 +401,13 @@ jobs:
     runs-on: windows-2022
     
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
          submodules: 'recursive'
-         path: ${{ env.SRC_PATH }}
 
       - name: Patch xsimd for ARM64
         shell: cmd
-        working-directory: ${{ env.SRC_PATH }}
         run: |
           if exist "dep\Formats\xsimd\src\xsimd_sse2.c" (
             type nul > "dep\Formats\xsimd\src\xsimd_sse2.c"
@@ -436,7 +435,6 @@ jobs:
 
       - name: Build with CMake & Package
         shell: cmd
-        working-directory: ${{ env.SRC_PATH }}
         run: |
           set "QT_HOST=${{ github.workspace }}\Qt\6.8.2\msvc2022_64"
           set "QT_TARGET=${{ github.workspace }}\Qt\6.8.2\msvc2022_arm64"
@@ -444,7 +442,7 @@ jobs:
 
           set "X_BUILD_NAME=die"
           set "X_BUILD_PREFIX=winarm64_qt6"
-          set "X_SOURCE_PATH=${{ github.workspace }}\DIE-engine"
+          set "X_SOURCE_PATH=${{ github.workspace }}"
 
           for /f "delims=" %%x in ('type "%X_SOURCE_PATH%\release_version.txt"') do set "X_RELEASE_VERSION=%%x"
 
@@ -509,7 +507,7 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            ${{ env.RELEASE_PATH }}\*.zip
+            ${{ github.workspace }}\release\*.zip
             
   build-arch:
     runs-on: ubuntu-latest
