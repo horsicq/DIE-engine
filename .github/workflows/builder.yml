@@ -401,8 +401,10 @@ jobs:
     runs-on: windows-2022
     
     steps:
-      - name: Clone DIE-engine Repository
-        run: git clone https://github.com/horsicq/DIE-engine.git --recursive
+      - uses: actions/checkout@v6
+        with:
+         submodules: 'recursive'
+         path: ${{ env.SRC_PATH }}
 
       - name: Patch xsimd for ARM64
         shell: cmd
