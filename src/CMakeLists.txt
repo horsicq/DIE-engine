@@ -25,7 +25,11 @@ endif()
 
 # --- Version from file ---
 file(STRINGS "${CMAKE_CURRENT_LIST_DIR}/../release_version.txt" X_PROJECT_VERSION)
-project(DetectItEasy VERSION ${X_PROJECT_VERSION} LANGUAGES CXX)
+# C as well as CXX: XArchive contributes C translation units directly (the Algos
+# zstd/bzip2/zlib amalgamations). Without C enabled, CMake emits no <CompileAs>
+# for them, MSBuild compiles them as C by extension, and they pull in a C++ STL
+# header -- "error STL1003: Unexpected compiler, expected C++ compiler".
+project(DetectItEasy VERSION ${X_PROJECT_VERSION} LANGUAGES C CXX)
 
 # --- Project identity variables ---
 set(X_COMPANYNAME    "ntinfo")

@@ -21,7 +21,7 @@ if not exist "%X_INSTALL_DIR%\diec.exe" ( echo diec.exe not found & goto :exit )
 if not exist "%X_INSTALL_DIR%\diel.exe" ( echo diel.exe not found & goto :exit )
 
 xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db"        "%X_INSTALL_DIR%\db\"          /E /I /Y
-xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db_extra"  "%X_INSTALL_DIR%\db_extra\"    /E /I /Y
+for /D %%D in ("%X_SOURCE_PATH%\Detect-It-Easy\db_extra\*") do xcopy "%%D" "%X_INSTALL_DIR%\db\%%~nxD\" /E /I /Y
 xcopy "%X_SOURCE_PATH%\XStyles\qss"              "%X_INSTALL_DIR%\qss\"         /E /I /Y
 xcopy "%X_SOURCE_PATH%\XInfoDB\info"             "%X_INSTALL_DIR%\info\"        /E /I /Y
 xcopy "%X_SOURCE_PATH%\XYara\yara_rules"         "%X_INSTALL_DIR%\yara_rules\"  /E /I /Y

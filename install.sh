@@ -26,6 +26,6 @@ cp -Rf $X_SOURCE_PATH/dep/XInfoDB/info/                                 $X_PREFI
 cp -Rf $X_SOURCE_PATH/dep/Detect-It-Easy/db/                            $X_PREFIX/lib/die/
 cp -Rf $X_SOURCE_PATH/dep/XYara/yara_rules/                             $X_PREFIX/lib/die/
 cp -Rf $X_SOURCE_PATH/dep/XPEID/peid/                                  $X_PREFIX/lib/die/
-cp -Rf $X_SOURCE_PATH/dep/Detect-It-Easy/db_extra/                     $X_PREFIX/lib/die/
+[ -d $X_SOURCE_PATH/dep/Detect-It-Easy/db_extra ] && cp -Rf $X_SOURCE_PATH/dep/Detect-It-Easy/db_extra/*/ $X_PREFIX/lib/die/db/
 cp -Rf $X_SOURCE_PATH/dep/Detect-It-Easy/db_custom/                     $X_PREFIX/lib/die/
 cp -Rf $X_SOURCE_PATH/images/                                       $X_PREFIX/lib/die/

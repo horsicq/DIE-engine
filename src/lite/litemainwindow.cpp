@@ -40,7 +40,6 @@ LiteMainWindow::LiteMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new 
     g_xOptions.addID(XOptions::ID_SCAN_FLAG_VERBOSE, true);
     g_xOptions.addID(XOptions::ID_SCAN_FLAG_ALLTYPES, false);
     g_xOptions.addID(XOptions::ID_SCAN_DIE_DATABASE_MAIN_PATH, "$data/db");
-    g_xOptions.addID(XOptions::ID_SCAN_DIE_DATABASE_EXTRA_PATH, "$data/db_extra");
     g_xOptions.addID(XOptions::ID_SCAN_DIE_DATABASE_CUSTOM_PATH, "$data/db_custom");
 
     g_xOptions.load();
@@ -122,13 +121,11 @@ void LiteMainWindow::process()
         XScanEngine::SCAN_OPTIONS scanOptions = {};
 
         scanOptions.bUseCustomDatabase = true;
-        scanOptions.bUseExtraDatabase = true;
         scanOptions.bShowType = true;
         scanOptions.bShowVersion = true;
         scanOptions.bShowInfo = true;
         scanOptions.fileType = (XBinary::FT)(ui->comboBoxType->currentData().toInt());
         scanOptions.sMainDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DIE_DATABASE_MAIN_PATH).toString();
-        scanOptions.sExtraDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DIE_DATABASE_EXTRA_PATH).toString();
         scanOptions.sCustomDatabasePath = g_xOptions.getValue(XOptions::ID_SCAN_DIE_DATABASE_CUSTOM_PATH).toString();
 
         XScanEngine::setScanFlags(&scanOptions, ui->comboBoxFlags->getValue().toULongLong());

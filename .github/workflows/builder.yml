@@ -990,11 +990,12 @@ jobs:
             '# Package' \
             'mkdir -p package' \
             'cp -a build/* package/ || true' \
-            'for d in db db_extra db_custom peid_rules yara_rules; do \
+            'for d in db db_custom peid_rules yara_rules; do \
             if [ -d "dep/Detect-It-Easy/$d" ]; then \
             cp -a "dep/Detect-It-Easy/$d" package/; \
             fi; \
             done' \
+            'if [ -d dep/Detect-It-Easy/db_extra ]; then cp -a dep/Detect-It-Easy/db_extra/*/ package/db/; fi' \
             'tar -czf detect-it-easy-s390x.tar.gz -C package .' \
           | docker run --rm -i \
               --platform linux/s390x \
@@ -1064,11 +1065,12 @@ jobs:
             '# Package' \
             'mkdir -p package' \
             'cp -a build/* package/ || true' \
-            'for d in db db_extra db_custom peid_rules yara_rules; do \
+            'for d in db db_custom peid_rules yara_rules; do \
                 if [ -d "dep/Detect-It-Easy/$d" ]; then \
                   cp -a "dep/Detect-It-Easy/$d" package/; \
                 fi; \
              done' \
+            'if [ -d dep/Detect-It-Easy/db_extra ]; then cp -a dep/Detect-It-Easy/db_extra/*/ package/db/; fi' \
             'tar -czf detect-it-easy-riscv64.tar.gz -C package .' \
           | docker run --rm -i \
               --platform linux/riscv64 \

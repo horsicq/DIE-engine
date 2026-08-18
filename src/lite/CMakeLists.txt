@@ -77,6 +77,7 @@ target_link_libraries(DetectItEasyLite PRIVATE
     capstone_x86
     ppmd
     xsimd
+    xarchive_7zip
     Qt${DIE_QT_MAJOR}::Widgets
     Qt${DIE_QT_MAJOR}::Concurrent
 )

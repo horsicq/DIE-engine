@@ -134,7 +134,6 @@ XOptions::CR DIEConsole::showDatabaseState(XScanEngine::SCAN_OPTIONS *pScanOptio
     Q_UNUSED(pPdStruct)
 
     printf("Main database: %s\n", pScanOptions->sMainDatabasePath.toUtf8().data());
-    printf("Extra database: %s\n", pScanOptions->sExtraDatabasePath.toUtf8().data());
     printf("Custom database: %s\n", pScanOptions->sCustomDatabasePath.toUtf8().data());
 
     QList<DiE_Script::SIGNATURE_STATE> list = m_dieScript.getSignatureStates();

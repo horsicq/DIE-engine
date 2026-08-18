@@ -45,14 +45,14 @@ RUN ldd build/release/diec | grep "=> /" | awk '{print $3}' | xargs -I {} cp -v 
 # Copy the database and rules from this repo (context)
 WORKDIR /build-context
 COPY . .
-RUN cp -r db db_extra db_custom yara_rules /dist/share/die/ && \
+RUN cp -r db db_custom yara_rules /dist/share/die/ && \
+    { [ -d db_extra ] && cp -r db_extra/*/ /dist/share/die/db/ || true; } && \
     cp -r DIE-engine_src/dep/XInfoDB/info /dist/share/die/info && \
     mkdir -p /dist/share/die/signatures && \
     cp DIE-engine_src/dep/signatures/crypto.db /dist/share/die/signatures/
 
 # Create symlinks in the dist directory
 RUN ln -s /usr/share/die/db /dist/opt/detect-it-easy/db && \
-    ln -s /usr/share/die/db_extra /dist/opt/detect-it-easy/db_extra && \
     ln -s /usr/share/die/db_custom /dist/opt/detect-it-easy/db_custom && \
     ln -s /usr/share/die/yara_rules /dist/opt/detect-it-easy/yara_rules && \
     ln -s /usr/share/die/info /dist/opt/detect-it-easy/info && \
