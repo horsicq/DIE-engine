@@ -398,7 +398,6 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.zip
 
   build-windows-arm64:
-    name: Build Windows ARM64
     runs-on: windows-2022
     
     steps:
