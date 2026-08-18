@@ -396,7 +396,119 @@ jobs:
           prerelease: true
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
-            
+
+  build-windows-arm64:
+    name: Build Windows ARM64
+    runs-on: windows-2022
+    
+    steps:
+      - name: Clone DIE-engine Repository
+        run: git clone https://github.com/horsicq/DIE-engine.git --recursive
+
+      - name: Patch xsimd for ARM64
+        shell: cmd
+        working-directory: ${{ env.SRC_PATH }}
+        run: |
+          if exist "dep\Formats\xsimd\src\xsimd_sse2.c" (
+            type nul > "dep\Formats\xsimd\src\xsimd_sse2.c"
+          )
+
+      - name: Install Qt (Host x64)
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.8.2'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2022_64'
+          dir: ${{ github.workspace }}
+          modules: qt5compat
+
+      - name: Install Qt (Target ARM64)
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.8.2'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2022_arm64_cross_compiled'
+          dir: ${{ github.workspace }}
+          modules: qt5compat
+
+      - name: Build with CMake & Package
+        shell: cmd
+        working-directory: ${{ env.SRC_PATH }}
+        run: |
+          set "QT_HOST=${{ github.workspace }}\Qt\6.8.2\msvc2022_64"
+          set "QT_TARGET=${{ github.workspace }}\Qt\6.8.2\msvc2022_arm64"
+          set "SEVENZIP_PATH=C:\Program Files\7-Zip\7z.exe"
+
+          set "X_BUILD_NAME=die"
+          set "X_BUILD_PREFIX=winarm64_qt6"
+          set "X_SOURCE_PATH=${{ github.workspace }}\DIE-engine"
+
+          for /f "delims=" %%x in ('type "%X_SOURCE_PATH%\release_version.txt"') do set "X_RELEASE_VERSION=%%x"
+
+          set "X_BUILD_DIR=%X_SOURCE_PATH%\build"
+          set "X_INSTALL_DIR=%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%"
+
+          if exist "%X_INSTALL_DIR%" rmdir /s /q "%X_INSTALL_DIR%"
+          if exist "%X_BUILD_DIR%" rmdir /s /q "%X_BUILD_DIR%"
+
+          cmake -S "%X_SOURCE_PATH%" -B "%X_BUILD_DIR%" -G "Visual Studio 17 2022" -A ARM64 -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="%QT_TARGET%" -DQT_HOST_PATH="%QT_HOST%"
+          if errorlevel 1 exit /b 1
+
+          cmake --build "%X_BUILD_DIR%" --config Release -j %NUMBER_OF_PROCESSORS%
+          if errorlevel 1 exit /b 1
+
+          cmake --install "%X_BUILD_DIR%" --config Release --prefix "%X_INSTALL_DIR%"
+          if errorlevel 1 exit /b 1
+
+          copy /Y "%QT_HOST%\bin\qtpaths.exe" "%QT_TARGET%\bin\qtpaths.exe"
+          if exist "%QT_HOST%\bin\qtpaths6.exe" copy /Y "%QT_HOST%\bin\qtpaths6.exe" "%QT_TARGET%\bin\qtpaths6.exe"
+
+          for /R "%X_INSTALL_DIR%" %%f in (*.exe) do (
+              "%QT_HOST%\bin\windeployqt.exe" --qtpaths "%QT_TARGET%\bin\qtpaths.exe" --release "%%f"
+          )
+
+          for %%D in (Qt6Core.dll Qt6Gui.dll Qt6Widgets.dll Qt6Network.dll Qt6Core5Compat.dll Qt6Svg.dll Qt6OpenGL.dll Qt6OpenGLWidgets.dll) do (
+              if not exist "%X_INSTALL_DIR%\%%D" (
+                  if exist "%QT_TARGET%\bin\%%D" copy /Y "%QT_TARGET%\bin\%%D" "%X_INSTALL_DIR%\"
+              )
+          )
+          if not exist "%X_INSTALL_DIR%\platforms" mkdir "%X_INSTALL_DIR%\platforms"
+          if not exist "%X_INSTALL_DIR%\platforms\qwindows.dll" (
+              copy /Y "%QT_TARGET%\plugins\platforms\qwindows.dll" "%X_INSTALL_DIR%\platforms\"
+          )
+
+          xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db"        "%X_INSTALL_DIR%\db\"          /E /I /Y
+          xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db_extra"  "%X_INSTALL_DIR%\db_extra\"    /E /I /Y
+          xcopy "%X_SOURCE_PATH%\XStyles\qss"              "%X_INSTALL_DIR%\qss\"         /E /I /Y
+          xcopy "%X_SOURCE_PATH%\XInfoDB\info"             "%X_INSTALL_DIR%\info\"        /E /I /Y
+          xcopy "%X_SOURCE_PATH%\XYara\yara_rules"         "%X_INSTALL_DIR%\yara_rules\"  /E /I /Y
+          xcopy "%X_SOURCE_PATH%\images"                   "%X_INSTALL_DIR%\images\"      /E /I /Y
+          
+          if exist "%X_SOURCE_PATH%\signatures\crypto.db" (
+              mkdir "%X_INSTALL_DIR%\signatures" 2>nul
+              copy  "%X_SOURCE_PATH%\signatures\crypto.db" "%X_INSTALL_DIR%\signatures\"
+          )
+
+          if exist "%SEVENZIP_PATH%" (
+              if exist "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip" (
+                  del /f /q "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip"
+              )
+              "%SEVENZIP_PATH%" a -tzip "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip" "%X_INSTALL_DIR%\*"
+          )
+
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ env.RELEASE_PATH }}\*.zip
             
   build-arch:
     runs-on: ubuntu-latest
