@@ -179,7 +179,6 @@ jobs:
           prerelease: true
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
-            
 
   build-appimage:
     runs-on: ubuntu-22.04
@@ -200,7 +199,6 @@ jobs:
           wget https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage
           chmod +x linuxdeploy-plugin-qt-x86_64.AppImage
           sudo mv linuxdeploy-plugin-qt-x86_64.AppImage /usr/local/bin/linuxdeploy-plugin-qt
-
 
       - name: Build
         working-directory: ${{ env.SRC_PATH }}
@@ -1118,3 +1116,45 @@ jobs:
           draft: false
           prerelease: true
           files: release/*.pkg
+
+  build-parrotos:
+    runs-on: ubuntu-latest
+    container:
+      image: parrotsec/core:rolling
+    steps:
+      - name: Install dependencies
+        run: |
+          echo "deb [trusted=yes] https://deb.parrot.sh/parrot parrot main contrib non-free" > /etc/apt/sources.list.d/parrot.list
+          apt-get update -y
+          apt-get install -y parrot-archive-keyring || true
+          
+          apt-get update -y
+          apt-get install -y git qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev build-essential cmake
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build
+        working-directory: ${{ github.workspace }}
+        run: |          
+          bash -ex build_dpkg.sh
+          
+          for file in release/die_*_linux_amd64.deb; do
+            if [ -f "$file" ]; then
+              mv "$file" "${file/_linux_/_parrotos_}"
+            fi
+          done
+
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ github.workspace }}/release/*.deb
