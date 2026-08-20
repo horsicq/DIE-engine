@@ -30,6 +30,7 @@ file(STRINGS "${CMAKE_CURRENT_LIST_DIR}/../release_version.txt" X_PROJECT_VERSIO
 # for them, MSBuild compiles them as C by extension, and they pull in a C++ STL
 # header -- "error STL1003: Unexpected compiler, expected C++ compiler".
 project(DetectItEasy VERSION ${X_PROJECT_VERSION} LANGUAGES C CXX)
+option(USE_DIE "Enable Detect It Easy integration" ON)
 
 # --- Project identity variables ---
 set(X_COMPANYNAME    "ntinfo")
