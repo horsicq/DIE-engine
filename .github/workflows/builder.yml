@@ -1138,6 +1138,7 @@ jobs:
 
       - name: Build
         working-directory: ${{ github.workspace }}
+        shell: bash
         run: |          
           bash -ex build_dpkg.sh
           
