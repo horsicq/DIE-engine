@@ -1202,15 +1202,24 @@ jobs:
 
   build-termux:
     runs-on: ubuntu-24.04-arm
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
-      - name: Build DiE(c)
+      - name: Create Output Directory on Host
         run: |
-          docker run --rm -v ${{ github.workspace }}:/workspace termux/termux-docker:aarch64 bash -c "
+          mkdir -p output_termux
+          chmod 777 output_termux
+
+      - name: Build DiE((c)
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            -v ${{ github.workspace }}/output_termux:/output \
+            termux/termux-docker:aarch64 bash -c "
             pkg update -y
             pkg install -y x11-repo
             pkg install -y clang cmake make tar qt6-qtbase qt6-qtsvg qt6-qtdeclarative qt6-qt5compat qt6-qttools
@@ -1218,27 +1227,27 @@ jobs:
             mkdir -p /data/data/com.termux/files/usr/lib/qt6/plugins/platformthemes
             touch /data/data/com.termux/files/usr/lib/qt6/plugins/platformthemes/libqgtk3.so
             
-            cd /workspace
+            cd ~
             
-            cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+            cmake -S /workspace -B build -DCMAKE_BUILD_TYPE=Release
             cmake --build build --target diec --parallel \$(nproc)
             
             mkdir -p release_termux/diec
             
             cp build/src/console/diec release_termux/diec/ 2>/dev/null || true
-            cp -r dep/Detect-It-Easy/db release_termux/diec/ 2>/dev/null || true
-            cp -r dep/Detect-It-Easy/db_custom release_termux/diec/ 2>/dev/null || true
-            cp -r dep/Detect-It-Easy/db_extra release_termux/diec/ 2>/dev/null || true
-            cp -r dep/Detect-It-Easy/info release_termux/diec/ 2>/dev/null || true
+            cp -r /workspace/dep/Detect-It-Easy/db release_termux/diec/ 2>/dev/null || true
+            cp -r /workspace/dep/Detect-It-Easy/db_custom release_termux/diec/ 2>/dev/null || true
+            cp -r /workspace/dep/Detect-It-Easy/db_extra release_termux/diec/ 2>/dev/null || true
+            cp -r /workspace/dep/Detect-It-Easy/info release_termux/diec/ 2>/dev/null || true
             
-            tar -czvf /workspace/DetectItEasy_Termux_CLI_aarch64.tar.gz -C release_termux diec
+            tar -czvf /output/DetectItEasy_Termux_CLI_aarch64.tar.gz -C release_termux diec
           "
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: DetectItEasy-Termux-CLI-aarch64
-          path: DetectItEasy_Termux_CLI_aarch64.tar.gz
+          path: output_termux/DetectItEasy_Termux_CLI_aarch64.tar.gz
 
       - name: Upload Release
         uses: softprops/action-gh-release@v2
@@ -1248,4 +1257,4 @@ jobs:
           tag_name: Beta
           draft: false
           prerelease: true
-          files: DetectItEasy_Termux_CLI_aarch64.tar.gz
+          files: output_termux/DetectItEasy_Termux_CLI_aarch64.tar.gz
