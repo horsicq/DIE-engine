@@ -1214,7 +1214,7 @@ jobs:
           mkdir -p output_termux
           chmod 777 output_termux
 
-      - name: Build DiE((c)
+      - name: Build DiE(c)
         run: |
           docker run --rm \
             -v ${{ github.workspace }}:/workspace \
@@ -1227,18 +1227,20 @@ jobs:
             mkdir -p /data/data/com.termux/files/usr/lib/qt6/plugins/platformthemes
             touch /data/data/com.termux/files/usr/lib/qt6/plugins/platformthemes/libqgtk3.so
             
-            cd ~
+            cp -r /workspace ~/DIE-engine
             
-            cmake -S /workspace -B build -DCMAKE_BUILD_TYPE=Release
+            cd ~/DIE-engine
+            
+            cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
             cmake --build build --target diec --parallel \$(nproc)
             
             mkdir -p release_termux/diec
             
             cp build/src/console/diec release_termux/diec/ 2>/dev/null || true
-            cp -r /workspace/dep/Detect-It-Easy/db release_termux/diec/ 2>/dev/null || true
-            cp -r /workspace/dep/Detect-It-Easy/db_custom release_termux/diec/ 2>/dev/null || true
-            cp -r /workspace/dep/Detect-It-Easy/db_extra release_termux/diec/ 2>/dev/null || true
-            cp -r /workspace/dep/Detect-It-Easy/info release_termux/diec/ 2>/dev/null || true
+            cp -r dep/Detect-It-Easy/db release_termux/diec/ 2>/dev/null || true
+            cp -r dep/Detect-It-Easy/db_custom release_termux/diec/ 2>/dev/null || true
+            cp -r dep/Detect-It-Easy/db_extra release_termux/diec/ 2>/dev/null || true
+            cp -r dep/Detect-It-Easy/info release_termux/diec/ 2>/dev/null || true
             
             tar -czvf /output/DetectItEasy_Termux_CLI_aarch64.tar.gz -C release_termux diec
           "
