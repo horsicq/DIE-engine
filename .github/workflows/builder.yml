@@ -78,13 +78,13 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
   build-ubuntu-24-ppc64le:
+    needs: [build-ubuntu-24-arm]
     runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v6
 
       - name: Set up QEMU
-        needs: [build-ubuntu-24-arm]
         uses: docker/setup-qemu-action@v4
         with:
           platforms: ppc64le
