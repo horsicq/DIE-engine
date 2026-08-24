@@ -174,16 +174,29 @@ if(UNIX AND NOT APPLE)
         DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/metainfo"
         OPTIONAL
     )
+    # X_RESOURCES, never CMAKE_INSTALL_LIBDIR. With -DCMAKE_INSTALL_PREFIX=/usr on
+    # Debian/Ubuntu the latter is the multiarch lib/x86_64-linux-gnu, and
+    # XOptions::convertPathName("$data/...") searches only /usr/lib/die,
+    # /usr/local/lib/die and /app/lib/die - so the database, styles, info and yara
+    # rules shipped in a .deb were invisible to the application that packaged them.
+    #
+    # Four of these five are also installed to ${X_RESOURCES} by the _mylibs
+    # fragments (XStyles/xstyles.cmake, XInfoDB/xinfodb.cmake,
+    # Detect-It-Easy/detectiteasy.cmake, XYara/xyara.cmake), each guarded by
+    # `if (DEFINED X_RESOURCES)` - which holds here, since cpp_standart_setup.cmake
+    # is included at the top of this file. They are kept rather than deleted so the
+    # install does not depend on which fragments a given option set pulls in; the
+    # duplicate lands on the same path. Only "images" has no fragment.
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XStyles/qss"
-        DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
+        DESTINATION "${X_RESOURCES}" OPTIONAL)
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XInfoDB/info"
-        DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
+        DESTINATION "${X_RESOURCES}" OPTIONAL)
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/Detect-It-Easy/db"
-        DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
+        DESTINATION "${X_RESOURCES}" OPTIONAL)
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XYara/yara_rules"
-        DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
+        DESTINATION "${X_RESOURCES}" OPTIONAL)
     install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../images"
-        DESTINATION "${CMAKE_INSTALL_LIBDIR}/die" OPTIONAL)
+        DESTINATION "${X_RESOURCES}" OPTIONAL)
 else()
     install(FILES
         "${CMAKE_CURRENT_SOURCE_DIR}/../../LICENSE"

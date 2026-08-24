@@ -92,7 +92,7 @@ if(EXISTS "${DIE_TRANSLATION_HELPER}")
         "${DIE_TRANSLATION_DIR}/die_uk.ts"
         "${DIE_TRANSLATION_DIR}/die_vi.ts"
         # Albanian is maintained in the newer locale-specific catalog.
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_sq_AL.ts"
+        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_sq.ts"
         "${DIE_TRANSLATION_DIR}/die_zh.ts"
         "${DIE_TRANSLATION_DIR}/die_zh_TW.ts"
     )

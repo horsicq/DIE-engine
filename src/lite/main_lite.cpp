@@ -37,7 +37,10 @@ int main(int argc, char *argv[])
 
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
     QCoreApplication::setOrganizationDomain(X_ORGANIZATIONDOMAIN);
-    QCoreApplication::setApplicationName(X_APPLICATIONNAMELITE);
+    // Deliberately X_APPLICATIONNAME, not X_APPLICATIONNAMELITE: this is the
+    // name XOptions::convertPathName("$data/...") probes, and nothing installs
+    // a database under "diel" - the lite build shares die's data directory.
+    QCoreApplication::setApplicationName(X_APPLICATIONNAME);
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
     if ((argc == 2) && ((QString(argv[1]) == "--version") || (QString(argv[1]) == "-v"))) {
