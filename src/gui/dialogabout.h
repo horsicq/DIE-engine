@@ -26,7 +26,6 @@
 
 #include "../global.h"
 #include "capstone/capstone.h"
-#include "qwt_global.h"
 #include "xoptions.h"
 
 namespace Ui {

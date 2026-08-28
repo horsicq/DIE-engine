@@ -104,7 +104,6 @@ target_link_libraries(${DIE_GUI_TARGET} PRIVATE
     cppfilt
     ppmd
     xsimd
-    xarchive_7zip
     Qt${DIE_QT_MAJOR}::Widgets
     Qt${DIE_QT_MAJOR}::Concurrent
     Qt${DIE_QT_MAJOR}::Network

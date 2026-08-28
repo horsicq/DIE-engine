@@ -56,10 +56,6 @@ endif()
 
 target_include_directories(diec PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
-# xarchive_7zip: XARCHIVE_SOURCES compiles xarchives_ip7z.cpp unconditionally,
-# whose 7-Zip entry points (UString, CPropVariant, CreateArchiver, ...) live in
-# the Algos amalgamations behind that OBJECT library. Omitting it links clean
-# for every other target and fails only here, with ~12 unresolved externals.
 target_link_libraries(diec PRIVATE
     xsimd
     bzip2
@@ -67,7 +63,6 @@ target_link_libraries(diec PRIVATE
     zlib
     capstone_x86
     ppmd
-    xarchive_7zip
     Qt${DIE_QT_MAJOR}::Core
     Qt${DIE_QT_MAJOR}::Concurrent
 )
