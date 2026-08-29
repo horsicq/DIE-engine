@@ -42,8 +42,8 @@ public:
 protected:
     virtual void addEngineOptions(QCommandLineParser *pParser);
     virtual void applyEngineOptions(const QCommandLineParser *pParser, XScanEngine::SCAN_OPTIONS *pScanOptions);
-    virtual bool processEngineModes(const QCommandLineParser *pParser, const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions,
-                                    XBinary::PDSTRUCT *pPdStruct, qint32 *pnResult);
+    virtual bool processEngineModes(const QCommandLineParser *pParser, const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct,
+                                    qint32 *pnResult);
     virtual XOptions::CR reportScanErrors(XScanEngine::SCAN_RESULT *pScanResult);
     virtual XOptions::CR showDatabaseState(XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct);
     virtual XOptions::CR showStructsOverview(const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct);
@@ -61,8 +61,10 @@ private:
 };
 
 DIEConsole::DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QString &sDescription)
-    : XScanEngineConsole(app, dieScript, sDescription), m_dieScript(dieScript),
-      m_clFormatResult(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_FORMAT)), m_clTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST)),
+    : XScanEngineConsole(app, dieScript, sDescription),
+      m_dieScript(dieScript),
+      m_clFormatResult(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_FORMAT)),
+      m_clTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST)),
       m_clCreateTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST))
 {
 }
@@ -80,8 +82,8 @@ void DIEConsole::applyEngineOptions(const QCommandLineParser *pParser, XScanEngi
     pScanOptions->bFormatResult = pParser->isSet(m_clFormatResult);
 }
 
-bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions,
-                                    XBinary::PDSTRUCT *pPdStruct, qint32 *pnResult)
+bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct,
+                                    qint32 *pnResult)
 {
     bool bHandled = false;
 
