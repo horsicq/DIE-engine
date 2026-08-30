@@ -89,6 +89,7 @@ cp -R "$APP_BUNDLE" "$PACKAGE_DIR/"
 
 cd "$RELEASE_DIR"
 ZIP_NAME="die_${X_RELEASE_VERSION}_mac_portable.zip"
-zip -r "$ZIP_NAME" "$X_BUILD_NAME"
+rm -f "$ZIP_NAME"
+zip -y -r "$ZIP_NAME" "$X_BUILD_NAME"
 rm -rf "$PACKAGE_DIR"
 echo "Created: $RELEASE_DIR/$ZIP_NAME"
