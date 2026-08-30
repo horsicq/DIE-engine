@@ -53,9 +53,15 @@ cp -Rf "$X_SOURCE_PATH/dep/XYara/yara_rules"        "$RESOURCES/"
 cp -Rf "$X_SOURCE_PATH/images"                  "$RESOURCES/"
 [ -f "$X_SOURCE_PATH/dep/signatures/crypto.db" ]   && cp -f "$X_SOURCE_PATH/dep/signatures/crypto.db" "$RESOURCES/signatures/"
 
-# Copy diec into the bundle
-DIEC_BIN=$(find "$BUILD_DIR/src/console" -maxdepth 2 -name "diec" -type f | head -1)
-[ -n "$DIEC_BIN" ] && cp -f "$DIEC_BIN" "$APP_BUNDLE/Contents/MacOS/"
+# Copy diec into its final bundle location before the last deployment pass.
+DIEC_BIN=$(find "$BUILD_DIR/src/console" -maxdepth 2 -name "diec" -type f -print -quit)
+if [ -z "$DIEC_BIN" ]; then
+    echo "ERROR: diec not found under $BUILD_DIR/src/console" >&2
+    exit 1
+fi
+
+BUNDLED_DIEC="$APP_BUNDLE/Contents/MacOS/diec"
+cp -f "$DIEC_BIN" "$BUNDLED_DIEC"
 
 # macdeployqt (handled by cmake POST_BUILD, but run again as safety net)
 MACDEPLOYQT=""
@@ -66,9 +72,15 @@ do
     [ -x "$candidate" ] && MACDEPLOYQT="$candidate" && break
 done
 
-if [ -n "$MACDEPLOYQT" ]; then
-    "$MACDEPLOYQT" "$APP_BUNDLE" -always-overwrite
+if [ -z "$MACDEPLOYQT" ]; then
+    echo "ERROR: macdeployqt not found under $QT_PREFIX_PATH" >&2
+    exit 1
 fi
+
+# Both Qt 5 and Qt 6 require non-main executables to be listed explicitly.
+"$MACDEPLOYQT" "$APP_BUNDLE" \
+    "-executable=$BUNDLED_DIEC" \
+    -always-overwrite
 
 PACKAGE_DIR="$RELEASE_DIR/$X_BUILD_NAME"
 rm -rf "$PACKAGE_DIR"
