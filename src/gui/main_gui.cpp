@@ -32,14 +32,6 @@ int main(int argc, char *argv[])
 #if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
     QApplication::setHighDpiScaleFactorRoundingPolicy(Qt::HighDpiScaleFactorRoundingPolicy::PassThrough);
 #endif
-#ifdef Q_OS_MAC
-#ifndef QT_DEBUG
-    QString sLibraryPath = QString(argv[0]);
-    sLibraryPath = sLibraryPath.remove("MacOS/DiE") + "PlugIns";
-    QCoreApplication::setLibraryPaths(QStringList(sLibraryPath));
-#endif
-#endif
-
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
     QCoreApplication::setOrganizationDomain(X_ORGANIZATIONDOMAIN);
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
