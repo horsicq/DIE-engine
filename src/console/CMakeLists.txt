@@ -13,11 +13,8 @@ if(MSVC)
     add_compile_options($<$<CONFIG:Debug>:/Z7> $<$<CONFIG:RelWithDebInfo>:/Z7>)
 endif()
 
-add_definitions(-DUSE_DEX)
-add_definitions(-DUSE_PDF)
 # Adds the xjs* sources to XPDF and defines USE_PDFJSEMUL (see xpdf.cmake)
 option(WITH_PDFJSEMUL "Use PDF JavaScript emulator" ON)
-add_definitions(-DUSE_ARCHIVE)
 add_definitions(-DUSE_XSIMD)
 
 include(${CMAKE_SOURCE_DIR}/dep/die_script/die_script.cmake)

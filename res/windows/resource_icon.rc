@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	DISCARDABLE	"C:/tmp_build/qt5/die_source/src/../icons/main.ico"
+IDI_ICON1	ICON	DISCARDABLE	"F:/ownCloud/prepare/qt5/die_source/src/../icons/main.ico"
 
 CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "windows.manifest.xml"
 VS_VERSION_INFO VERSIONINFO
