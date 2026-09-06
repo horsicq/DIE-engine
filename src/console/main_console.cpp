@@ -32,9 +32,7 @@
 
 // diec on the shared XScanEngineConsole. The overrides keep the established
 // die-specific behavior: EntropyProcess/XFileInfo output for -e/-i/-S,
-// the signature-state database listing, the --format flag (bFormatResult is
-// opt-in for diec, unlike the other scanners), and the --test/--createtest
-// stubs.
+// the signature-state database listing, and the --test/--createtest stubs.
 class DIEConsole : public XScanEngineConsole {
 public:
     DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QString &sDescription);
@@ -55,7 +53,6 @@ private:
     XOptions::CR printFileInfo(const QString &sFileName, const QString &sString, XScanEngine::SCAN_OPTIONS *pScanOptions);
 
     DiE_Script &m_dieScript;
-    QCommandLineOption m_clFormatResult;
     QCommandLineOption m_clTest;
     QCommandLineOption m_clCreateTest;
 };
@@ -63,7 +60,6 @@ private:
 DIEConsole::DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QString &sDescription)
     : XScanEngineConsole(app, dieScript, sDescription),
       m_dieScript(dieScript),
-      m_clFormatResult(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_FORMAT)),
       m_clTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST)),
       m_clCreateTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST))
 {
@@ -71,15 +67,16 @@ DIEConsole::DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QStri
 
 void DIEConsole::addEngineOptions(QCommandLineParser *pParser)
 {
-    pParser->addOption(m_clFormatResult);
     pParser->addOption(m_clTest);
     pParser->addOption(m_clCreateTest);
 }
 
 void DIEConsole::applyEngineOptions(const QCommandLineParser *pParser, XScanEngine::SCAN_OPTIONS *pScanOptions)
 {
-    // diec formats detect strings with spaces only on request
-    pScanOptions->bFormatResult = pParser->isSet(m_clFormatResult);
+    // Detect strings are always formatted; XScanEngineConsole already sets
+    // bFormatResult, so there is nothing engine-specific left to apply here.
+    Q_UNUSED(pParser)
+    Q_UNUSED(pScanOptions)
 }
 
 bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QStringList &listArgs, XScanEngine::SCAN_OPTIONS *pScanOptions, XBinary::PDSTRUCT *pPdStruct,

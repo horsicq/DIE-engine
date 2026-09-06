@@ -33,6 +33,28 @@
 #include <Shobjidl.h>
 #endif
 
+namespace {
+
+struct NotificationClickedHandler {
+    explicit NotificationClickedHandler(QWidget*& widget) : m_widget(widget)
+    {
+    }
+
+    void operator()() const
+    {
+        if (m_widget) {
+            qDebug() << "Notification clicked, raising main window";
+            m_widget->show();
+            m_widget->raise();
+            m_widget->activateWindow();
+        }
+    }
+
+    QWidget*& m_widget;
+};
+
+}  // namespace
+
 DesktopIntegrationHelper::DesktopIntegrationHelper() : m_widget(nullptr), m_trayIcon(nullptr)
 {
 #ifdef WIN32
@@ -114,14 +136,7 @@ bool DesktopIntegrationHelper::InitializeInternal(QWidget* widget)
             return false;
         }
         m_trayIcon->setToolTip(QString::fromWCharArray(L"MyApp"));
-        QObject::connect(m_trayIcon, &QSystemTrayIcon::messageClicked, m_widget, [this]() {
-            if (m_widget) {
-                qDebug() << "Notification clicked, raising main window";
-                m_widget->show();
-                m_widget->raise();
-                m_widget->activateWindow();
-            }
-        });
+        QObject::connect(m_trayIcon, &QSystemTrayIcon::messageClicked, m_widget, NotificationClickedHandler(m_widget));
         m_trayIcon->show();
         qDebug() << "System tray icon initialized and shown";
     }
@@ -135,7 +150,7 @@ bool DesktopIntegrationHelper::InitializeInternal(QWidget* widget)
 
 void DesktopIntegrationHelper::Uninitialize()
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
 #ifdef WIN32
     if (instance.m_taskbarList) {
         if (instance.m_widget) {
@@ -162,7 +177,7 @@ void DesktopIntegrationHelper::Uninitialize()
 
 bool DesktopIntegrationHelper::IsAvailable()
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
 #ifdef WIN32
     bool available = instance.m_taskbarList != nullptr || instance.m_trayIcon != nullptr;
 #else
@@ -177,7 +192,7 @@ bool DesktopIntegrationHelper::IsAvailable()
 #ifdef WIN32
 void DesktopIntegrationHelper::SetProgressValue(int value, int max)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget) {
         instance.m_taskbarList->SetProgressValue((HWND)instance.m_widget->winId(), value, max);
     }
@@ -185,7 +200,7 @@ void DesktopIntegrationHelper::SetProgressValue(int value, int max)
 
 void DesktopIntegrationHelper::SetProgressState(TBPFLAG state)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget) {
         instance.m_taskbarList->SetProgressState((HWND)instance.m_widget->winId(), state);
     }
@@ -193,7 +208,7 @@ void DesktopIntegrationHelper::SetProgressState(TBPFLAG state)
 
 void DesktopIntegrationHelper::SetOverlayIcon(HICON hIcon, LPCWSTR description)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget) {
         instance.m_taskbarList->SetOverlayIcon((HWND)instance.m_widget->winId(), hIcon, description);
     }
@@ -201,7 +216,7 @@ void DesktopIntegrationHelper::SetOverlayIcon(HICON hIcon, LPCWSTR description)
 
 void DesktopIntegrationHelper::ClearOverlayIcon()
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget) {
         instance.m_taskbarList->SetOverlayIcon((HWND)instance.m_widget->winId(), nullptr, L"");
     }
@@ -209,7 +224,7 @@ void DesktopIntegrationHelper::ClearOverlayIcon()
 
 void DesktopIntegrationHelper::FlashTaskbar(bool flash, int count)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_widget) {
         FLASHWINFO flashInfo = {sizeof(FLASHWINFO)};
         flashInfo.hwnd = (HWND)instance.m_widget->winId();
@@ -222,7 +237,7 @@ void DesktopIntegrationHelper::FlashTaskbar(bool flash, int count)
 
 bool DesktopIntegrationHelper::AddThumbnailButtons(THUMBBUTTON* buttons, UINT count)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget && count <= 7) {
         HRESULT hr = instance.m_taskbarList->ThumbBarAddButtons((HWND)instance.m_widget->winId(), count, buttons);
         return SUCCEEDED(hr);
@@ -232,7 +247,7 @@ bool DesktopIntegrationHelper::AddThumbnailButtons(THUMBBUTTON* buttons, UINT co
 
 bool DesktopIntegrationHelper::UpdateThumbnailButtons(THUMBBUTTON* buttons, UINT count)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget && count <= 7) {
         HRESULT hr = instance.m_taskbarList->ThumbBarUpdateButtons((HWND)instance.m_widget->winId(), count, buttons);
         return SUCCEEDED(hr);
@@ -242,7 +257,7 @@ bool DesktopIntegrationHelper::UpdateThumbnailButtons(THUMBBUTTON* buttons, UINT
 
 void DesktopIntegrationHelper::SetThumbnailTooltip(LPCWSTR tooltip)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget) {
         instance.m_taskbarList->SetThumbnailTooltip((HWND)instance.m_widget->winId(), tooltip);
     }
@@ -250,7 +265,7 @@ void DesktopIntegrationHelper::SetThumbnailTooltip(LPCWSTR tooltip)
 
 void DesktopIntegrationHelper::SetThumbnailClip(RECT* rect)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget) {
         instance.m_taskbarList->SetThumbnailClip((HWND)instance.m_widget->winId(), rect);
     }
@@ -258,7 +273,7 @@ void DesktopIntegrationHelper::SetThumbnailClip(RECT* rect)
 
 void DesktopIntegrationHelper::ClearThumbnailClip()
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     if (instance.m_taskbarList && instance.m_widget) {
         instance.m_taskbarList->SetThumbnailClip((HWND)instance.m_widget->winId(), nullptr);
     }
@@ -266,7 +281,7 @@ void DesktopIntegrationHelper::ClearThumbnailClip()
 
 bool DesktopIntegrationHelper::AddJumpListTasks(const std::vector<JumpListTask>& tasks)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
     ICustomDestinationList* pDestList = nullptr;
     HRESULT hr = CoCreateInstance(CLSID_DestinationList, nullptr, CLSCTX_INPROC_SERVER, IID_PPV_ARGS(&pDestList));
     if (FAILED(hr)) {
@@ -293,7 +308,7 @@ bool DesktopIntegrationHelper::AddJumpListTasks(const std::vector<JumpListTask>&
         return false;
     }
 
-    for (const auto& task : tasks) {
+    for (const JumpListTask& task : tasks) {
         IShellLink* pLink = nullptr;
         hr = CoCreateInstance(CLSID_ShellLink, nullptr, CLSCTX_INPROC_SERVER, IID_PPV_ARGS(&pLink));
         if (SUCCEEDED(hr)) {
@@ -331,7 +346,7 @@ bool DesktopIntegrationHelper::AddJumpListTasks(const std::vector<JumpListTask>&
 
 void DesktopIntegrationHelper::ShowToastNotification(const QString& message, const QString& appId, QSystemTrayIcon::MessageIcon icon, int timeoutMs)
 {
-    auto& instance = GetInstance();
+    DesktopIntegrationHelper& instance = GetInstance();
 
     qDebug() << "Showing toast notification";
 

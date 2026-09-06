@@ -87,6 +87,7 @@ public slots:
     void _process(const QString &sName);
 
 protected:
+    void closeEvent(QCloseEvent *pEvent) override;
     void dragEnterEvent(QDragEnterEvent *event) override;
     void dragMoveEvent(QDragMoveEvent *event) override;
     void dropEvent(QDropEvent *event) override;
@@ -97,6 +98,5 @@ private:
     XShortcuts g_xShortcuts;
     QMenu *g_pRecentFilesMenu;
     QShortcut *shortCuts[__SC_SIZE];
-    bool g_bFullScreen;
 };
 #endif  // GUIMAINWINDOW_H

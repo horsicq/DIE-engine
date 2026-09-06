@@ -20,6 +20,9 @@
  */
 #include "guimainwindow.h"
 
+#include <QFileInfo>
+#include <QMimeData>
+
 #include "ui_guimainwindow.h"
 
 GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
@@ -52,9 +55,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     ui->toolButtonShortcuts->setToolTip(tr("Shortcuts"));
     ui->toolButtonRecentFiles->setToolTip(tr("Recent files"));
     ui->lineEditFileName->setToolTip(tr("File name"));
+    ui->lineEditFileName->setClearButtonEnabled(true);
     ui->checkBoxAdvanced->setToolTip(tr("Advanced"));
-
-    g_bFullScreen = false;
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 
@@ -68,6 +70,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_VIEW_QSS, "");
 #endif
     g_xOptions.addID(XOptions::ID_VIEW_ADVANCED, false);
+    g_xOptions.addID(XOptions::ID_VIEW_SIZES, "");
     g_xOptions.addID(XOptions::ID_VIEW_STYLE, "Fusion");
     g_xOptions.addID(XOptions::ID_VIEW_LANG, "System");
     g_xOptions.addID(XOptions::ID_VIEW_FONT_CONTROLS, XOptions::getDefaultFont().toString());
@@ -142,16 +145,23 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
     bool bIsAdvanced = g_xOptions.getValue(XOptions::ID_VIEW_ADVANCED).toBool();
 
-    if (!bIsAdvanced) {
-        setAdvanced(bIsAdvanced);
-    }
-
+    // Apply the saved value to the checkbox and to the widgets in one place. This used to
+    // be split: setAdvanced() was called directly only for the "off" case and the "on" case
+    // was left to setChecked() emitting toggled(). That worked, but only for as long as the
+    // checkbox default in the .ui stayed unchecked - the two branches covered different
+    // halves of the same decision.
+    const bool bBlocked = ui->checkBoxAdvanced->blockSignals(true);
     ui->checkBoxAdvanced->setChecked(bIsAdvanced);
+    ui->checkBoxAdvanced->blockSignals(bBlocked);
 
-    if (QCoreApplication::arguments().count() > 1) {
-        QString sFileName = QCoreApplication::arguments().at(1);
+    setAdvanced(bIsAdvanced);
 
-        _process(sFileName);
+    {
+        QByteArray baGeometry = g_xOptions.getSizeRecord("MainWindow");
+
+        if (!baGeometry.isEmpty()) {
+            restoreGeometry(baGeometry);
+        }
     }
 }
 
@@ -169,6 +179,17 @@ GuiMainWindow::~GuiMainWindow()
 #ifdef USE_XSIMD
     xsimd_cleanup();
 #endif
+}
+
+void GuiMainWindow::closeEvent(QCloseEvent *pEvent)
+{
+    // All window/widget sizes go through XOptions (serialized into ID_VIEW_SIZES),
+    // so they honor the same native-vs-portable storage as every other option.
+    // Saved here rather than in the destructor: the window is still laid out at
+    // this point, and ~GuiMainWindow() runs g_xOptions.save() afterwards.
+    g_xOptions.setSizeRecord("MainWindow", saveGeometry());
+
+    QMainWindow::closeEvent(pEvent);
 }
 
 void GuiMainWindow::on_toolButtonExit_clicked()
@@ -198,6 +219,7 @@ void GuiMainWindow::on_toolButtonOptions_clicked()
 void GuiMainWindow::on_toolButtonDemangle_clicked()
 {
     DialogDemangle dialogDemangle(this);
+    dialogDemangle.setGlobal(&g_xShortcuts, &g_xOptions);
 
     dialogDemangle.exec();
 }
@@ -224,9 +246,9 @@ void GuiMainWindow::updateShortcuts()
         }
     }
 
-    if (!shortCuts[SC_OPENFILE]) shortCuts[SC_OPENFILE] = new QShortcut(g_xShortcuts.getShortcut(X_ID_FILE_OPEN), this, SLOT(openFileSlot()));
-    if (!shortCuts[SC_EXIT]) shortCuts[SC_EXIT] = new QShortcut(g_xShortcuts.getShortcut(X_ID_FILE_EXIT), this, SLOT(exitSlot()));
-    if (!shortCuts[SC_FULLSCREEN]) shortCuts[SC_FULLSCREEN] = new QShortcut(g_xShortcuts.getShortcut(X_ID_VIEW_FULLSCREEN), this, SLOT(fullScreenSlot()));
+    shortCuts[SC_OPENFILE] = new QShortcut(g_xShortcuts.getShortcut(X_ID_FILE_OPEN), this, SLOT(openFileSlot()));
+    shortCuts[SC_EXIT] = new QShortcut(g_xShortcuts.getShortcut(X_ID_FILE_EXIT), this, SLOT(exitSlot()));
+    shortCuts[SC_FULLSCREEN] = new QShortcut(g_xShortcuts.getShortcut(X_ID_VIEW_FULLSCREEN), this, SLOT(fullScreenSlot()));
 }
 
 void GuiMainWindow::adjustFile()
@@ -234,6 +256,10 @@ void GuiMainWindow::adjustFile()
     QString sFileName = getCurrentFileName();
 
     g_xOptions.setLastFileName(sFileName);
+
+    // The edit is narrow and elides long paths; the tooltip is the only place the
+    // whole name stays readable.
+    ui->lineEditFileName->setToolTip(sFileName.isEmpty() ? tr("File name") : sFileName);
 
     ui->toolButtonRecentFiles->setEnabled(g_xOptions.getRecentFiles().count());
 }
@@ -257,23 +283,65 @@ void GuiMainWindow::errorMessageSlot(const QString &sText)
 
 void GuiMainWindow::_process(const QString &sName)
 {
-    if (sName != "") {
-        ui->lineEditFileName->setText(QDir().toNativeSeparators(sName));
-
-        ui->widgetFormats->setFileName(sName, g_xOptions.isScanAfterOpen());
-
-        adjustFile();
+    if (sName.isEmpty()) {
+        return;
     }
+
+    // Reached from the command line, drag-and-drop, the recent files menu, a second
+    // instance and the name edit alike, so the path is not known to be usable here.
+    // Only outright missing paths and directories are rejected: block/character
+    // devices are legitimate targets for a binary identifier and QFileInfo::isFile()
+    // is false for them.
+    QFileInfo fileInfo(sName);
+
+    if (!fileInfo.exists()) {
+        errorMessageSlot(QString("%1: %2").arg(tr("Cannot find file"), sName));
+
+        return;
+    }
+
+    if (fileInfo.isDir()) {
+        errorMessageSlot(QString("%1: %2").arg(tr("Cannot open file"), sName));
+
+        return;
+    }
+
+    ui->lineEditFileName->setText(QDir().toNativeSeparators(sName));
+
+    ui->widgetFormats->setFileName(sName, g_xOptions.isScanAfterOpen());
+
+    adjustFile();
+}
+
+static bool _isLocalFileDrag(const QMimeData *pMimeData)
+{
+    bool bResult = false;
+
+    if (pMimeData->hasUrls()) {
+        QList<QUrl> urlList = pMimeData->urls();
+
+        if (urlList.count() && urlList.at(0).isLocalFile() && QFileInfo(urlList.at(0).toLocalFile()).isFile()) {
+            bResult = true;
+        }
+    }
+
+    return bResult;
 }
 
 void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event)
 {
-    event->acceptProposedAction();
+    // Accepting unconditionally advertised a drop the window cannot service: dropping
+    // selected text or a remote URL showed the "copy" cursor and then did nothing.
+    if (_isLocalFileDrag(event->mimeData())) {
+        event->acceptProposedAction();
+    }
 }
 
 void GuiMainWindow::dragMoveEvent(QDragMoveEvent *event)
 {
-    event->acceptProposedAction();
+    if (_isLocalFileDrag(event->mimeData())) {
+        event->acceptProposedAction();
+    }
 }
 
 void GuiMainWindow::dropEvent(QDropEvent *event)
@@ -286,9 +354,13 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
         if (urlList.count()) {
             QString sFileName = urlList.at(0).toLocalFile();
 
-            sFileName = XBinary::convertFileName(sFileName);
+            if (!sFileName.isEmpty()) {
+                sFileName = XBinary::convertFileName(sFileName);
 
-            _process(sFileName);
+                event->acceptProposedAction();
+
+                _process(sFileName);
+            }
         }
     }
 }
@@ -347,12 +419,13 @@ void GuiMainWindow::openFileSlot()
 void GuiMainWindow::fullScreenSlot()
 {
     // TODO mainWindow->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint)
-    g_bFullScreen = (!g_bFullScreen);
-
-    if (g_bFullScreen) {
-        showFullScreen();
-    } else {
+    // Ask the window, do not track the state in a member: the window manager can leave
+    // full screen without going through this slot (title bar, WM shortcut), after which
+    // a cached flag is inverted and the shortcut needs pressing twice to take effect.
+    if (isFullScreen()) {
         showNormal();
+    } else {
+        showFullScreen();
     }
 }
 

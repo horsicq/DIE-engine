@@ -22,10 +22,9 @@ endif()
 # Adds the xjs* sources to XPDF and defines USE_PDFJSEMUL (see xpdf.cmake)
 option(WITH_PDFJSEMUL "Use PDF JavaScript emulator" ON)
 
-include(${CMAKE_SOURCE_DIR}/dep/XMIMEWidget/xmimewidget.cmake)
-include(${CMAKE_SOURCE_DIR}/dep/FormatWidgets/formatwidgets.cmake)
-include(${CMAKE_SOURCE_DIR}/dep/XSingleApplication/xsingleapplication.cmake)
-include(${CMAKE_SOURCE_DIR}/dep/XAboutWidget/xaboutwidget.cmake)
+# The widget sources live in diegui.cmake so ../../tests can build the very same
+# list; only main() and the resources are added on top of it here.
+include(${CMAKE_CURRENT_LIST_DIR}/diegui.cmake)
 
 if(UNIX AND NOT APPLE)
     include(GNUInstallDirs)
@@ -33,24 +32,7 @@ endif()
 
 set(DIE_GUI_TARGET DetectItEasy)
 set(DIE_GUI_SOURCES
-    ${XMIMEWIDGET_SOURCES}
-    ${FORMATWIDGETS_SOURCES}
-    ${XSINGLEAPPLICATION_SOURCES}
-    ${XABOUTWIDGET_SOURCES}
-    dialogabout.cpp
-    dialogabout.h
-    dialogabout.ui
-    dialogoptions.cpp
-    dialogoptions.h
-    dialogoptions.ui
-    dialogselectstyle.cpp
-    dialogselectstyle.h
-    dialogselectstyle.ui
-    desktopintegrationhelper.cpp
-    desktopintegrationhelper.h
-    guimainwindow.cpp
-    guimainwindow.h
-    guimainwindow.ui
+    ${DIEGUI_SOURCES}
     main_gui.cpp
     rsrc.qrc
     res.qrc

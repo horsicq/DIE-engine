@@ -26,7 +26,8 @@
 
 int main(int argc, char *argv[])
 {
-#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0) && QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    // Qt 6 always scales; the attribute is deprecated there and does nothing.
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
 #if QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
@@ -109,6 +110,15 @@ int main(int argc, char *argv[])
         QObject::connect(&app, SIGNAL(messageText(QString)), &mainWindow, SLOT(_process(QString)));
 
         mainWindow.show();
+
+        // The window used to read QCoreApplication::arguments() from its own constructor.
+        // argv belongs to main(): a file passed on the command line now arrives through the
+        // same slot a second instance uses, against a window that is already on screen.
+        const QStringList listArguments = QCoreApplication::arguments();
+
+        if (listArguments.count() > 1) {
+            mainWindow._process(listArguments.at(1));
+        }
 
         nResult = app.exec();
     }
