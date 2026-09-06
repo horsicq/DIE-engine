@@ -71,37 +71,41 @@ if(EXISTS "${DIE_TRANSLATION_HELPER}")
     include("${DIE_TRANSLATION_HELPER}")
 
     set(DIE_TRANSLATION_DIR "${CMAKE_CURRENT_LIST_DIR}/gui/translation")
-    set(DIE_TS_FILES
-        "${DIE_TRANSLATION_DIR}/die_ar.ts"
-        "${DIE_TRANSLATION_DIR}/die_bn.ts"
-        "${DIE_TRANSLATION_DIR}/die_de.ts"
-        "${DIE_TRANSLATION_DIR}/die_es.ts"
-        "${DIE_TRANSLATION_DIR}/die_fa.ts"
-        "${DIE_TRANSLATION_DIR}/die_fr.ts"
-        "${DIE_TRANSLATION_DIR}/die_he.ts"
-        "${DIE_TRANSLATION_DIR}/die_id.ts"
-        "${DIE_TRANSLATION_DIR}/die_it.ts"
-        "${DIE_TRANSLATION_DIR}/die_ja.ts"
-        "${DIE_TRANSLATION_DIR}/die_ko.ts"
-        "${DIE_TRANSLATION_DIR}/die_pl.ts"
-        "${DIE_TRANSLATION_DIR}/die_pt_BR.ts"
-        "${DIE_TRANSLATION_DIR}/die_pt_PT.ts"
-        "${DIE_TRANSLATION_DIR}/die_ru.ts"
-        "${DIE_TRANSLATION_DIR}/die_sv.ts"
-        "${DIE_TRANSLATION_DIR}/die_tr.ts"
-        "${DIE_TRANSLATION_DIR}/die_uk.ts"
-        "${DIE_TRANSLATION_DIR}/die_vi.ts"
-        # Albanian is maintained in the newer locale-specific catalog.
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_sq.ts"
-        "${DIE_TRANSLATION_DIR}/die_zh.ts"
-        "${DIE_TRANSLATION_DIR}/die_zh_TW.ts"
+    set(DIE_XTRANSLATION_DIR
+        "${CMAKE_CURRENT_LIST_DIR}/../dep/XTranslation/dicts"
+    )
+
+    set(DIE_PO_FILES
+        "${DIE_XTRANSLATION_DIR}/dict_ar.po"
+        "${DIE_XTRANSLATION_DIR}/dict_bn.po"
+        "${DIE_XTRANSLATION_DIR}/dict_de.po"
+        "${DIE_XTRANSLATION_DIR}/dict_es.po"
+        "${DIE_XTRANSLATION_DIR}/dict_fa.po"
+        "${DIE_XTRANSLATION_DIR}/dict_fr.po"
+        "${DIE_XTRANSLATION_DIR}/dict_he.po"
+        "${DIE_XTRANSLATION_DIR}/dict_hi_IN.po"
+        "${DIE_XTRANSLATION_DIR}/dict_id.po"
+        "${DIE_XTRANSLATION_DIR}/dict_it.po"
+        "${DIE_XTRANSLATION_DIR}/dict_ja.po"
+        "${DIE_XTRANSLATION_DIR}/dict_ko.po"
+        "${DIE_XTRANSLATION_DIR}/dict_pl.po"
+        "${DIE_XTRANSLATION_DIR}/dict_pt-BR.po"
+        "${DIE_XTRANSLATION_DIR}/dict_pt-PT.po"
+        "${DIE_XTRANSLATION_DIR}/dict_ru.po"
+        "${DIE_XTRANSLATION_DIR}/dict_sq.po"
+        "${DIE_XTRANSLATION_DIR}/dict_sv.po"
+        "${DIE_XTRANSLATION_DIR}/dict_tr.po"
+        "${DIE_XTRANSLATION_DIR}/dict_uk.po"
+        "${DIE_XTRANSLATION_DIR}/dict_vi.po"
+        "${DIE_XTRANSLATION_DIR}/dict_zh.po"
+        "${DIE_XTRANSLATION_DIR}/dict_zh-TW.po"
     )
 
     deploy_add_translations(
         TARGET_NAME die_translations
         ADD_TO_ALL
         SOURCE_DIRS "${CMAKE_CURRENT_LIST_DIR}"
-        TS_FILES ${DIE_TS_FILES}
+        PO_FILES ${DIE_PO_FILES}
         INSTALL_DESTINATION lang
         WINDOWS_APPDATA_SUBDIR "${X_PROJECTNAME}"
     )
