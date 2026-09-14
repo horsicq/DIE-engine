@@ -74,11 +74,7 @@ endif()
 target_include_directories(DetectItEasyLite PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(DetectItEasyLite PRIVATE
-    bzip2
-    lzma
-    zlib
     capstone_x86
-    ppmd
     xsimd
     Qt${DIE_QT_MAJOR}::Widgets
     Qt${DIE_QT_MAJOR}::Concurrent

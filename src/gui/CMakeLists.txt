@@ -80,12 +80,8 @@ endif()
 target_include_directories(${DIE_GUI_TARGET} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(${DIE_GUI_TARGET} PRIVATE
-    bzip2
-    lzma
-    zlib
     capstone
     cppfilt
-    ppmd
     xsimd
     Qt${DIE_QT_MAJOR}::Widgets
     Qt${DIE_QT_MAJOR}::Concurrent

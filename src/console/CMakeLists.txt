@@ -55,11 +55,7 @@ target_include_directories(diec PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(diec PRIVATE
     xsimd
-    bzip2
-    lzma
-    zlib
     capstone_x86
-    ppmd
     Qt${DIE_QT_MAJOR}::Core
     Qt${DIE_QT_MAJOR}::Concurrent
 )
