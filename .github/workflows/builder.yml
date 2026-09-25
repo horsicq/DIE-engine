@@ -996,69 +996,100 @@ jobs:
 
   build-riscv64:
     name: build-riscv64
-    needs: [build-freebsd]
     runs-on: ubuntu-24.04
 
     steps:
-      - name: Setup QEMU
-        uses: docker/setup-qemu-action@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v6
 
-      - name: Clone DIE-engine
+      - name: Install Dependencies
         run: |
-          git clone https://github.com/horsicq/DIE-engine.git \
-            --recursive \
-            ${{ env.SRC_PATH }}
+          sudo dpkg --add-architecture riscv64
+          
+          sudo sed -i 's/^Types: deb/Types: deb\nArchitectures: amd64/' /etc/apt/sources.list.d/ubuntu.sources
+          sudo find /etc/apt/sources.list* -type f -name "*.list" -exec sed -i -E 's/^deb ([^\[])/deb [arch=amd64] \1/g' {} +
+          
+          cat <<EOF | sudo tee /etc/apt/sources.list.d/ubuntu-ports.sources
+          Types: deb
+          URIs: http://ports.ubuntu.com/ubuntu-ports/
+          Suites: noble noble-updates noble-backports noble-security
+          Components: main restricted universe multiverse
+          Architectures: riscv64
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          EOF
+          
+          sudo apt-get update
+          
+          sudo apt-get install -y \
+            build-essential \
+            crossbuild-essential-riscv64 \
+            git \
+            cmake \
+            dpkg-dev
+            
+          sudo apt-get install -y \
+            qtbase5-dev-tools \
+            qttools5-dev-tools \
+            qtchooser
+            
+          sudo apt-get install -y \
+            qtbase5-dev:riscv64 \
+            qtscript5-dev:riscv64 \
+            qttools5-dev:riscv64 \
+            libqt5svg5-dev:riscv64
 
-      - name: Build riscv64
+      - name: Build risc64
         run: |
-          printf '%s\n' \
-            'set -ex' \
-            '' \
-            '# Install dependencies' \
-            'apt-get update' \
-            'DEBIAN_FRONTEND=noninteractive apt-get install -y \
-              build-essential \
-              cmake \
-              ninja-build \
-              git \
-              qtbase5-dev \
-              qtscript5-dev \
-              qttools5-dev \
-              qttools5-dev-tools \
-              libqt5svg5-dev \
-              tar \
-              gzip' \
-            '' \
-            '# Check architecture' \
-            'uname -m' \
-            'cmake --version' \
-            '' \
-            '# Configure' \
-            'cd /src' \
-            'cmake -B build \
-              -DCMAKE_BUILD_TYPE=Release' \
-            '' \
-            '# Compile' \
-            'cmake --build build -j$(nproc)' \
-            '' \
-            '# Package' \
-            'mkdir -p package' \
-            'cp -a build/* package/ || true' \
-            'for d in db db_custom peid_rules yara_rules; do \
-                if [ -d "dep/Detect-It-Easy/$d" ]; then \
-                  cp -a "dep/Detect-It-Easy/$d" package/; \
-                fi; \
-             done' \
-            'if [ -d dep/Detect-It-Easy/db_extra ]; then cp -a dep/Detect-It-Easy/db_extra/*/ package/db/; fi' \
-            'tar -czf detect-it-easy-riscv64.tar.gz -C package .' \
-          | docker run --rm -i \
-              --platform linux/riscv64 \
-              -v "${{ env.SRC_PATH }}:/src" \
-              -w /src \
-              riscv64/ubuntu:24.04 \
-              bash
+          git clone --recursive https://github.com/horsicq/DIE-engine.git
+          cd DIE-engine
 
-      - name: Upload Release
+          export CC=riscv64-linux-gnu-gcc
+          export CXX=riscv64-linux-gnu-g++
+          export PKG_CONFIG_PATH=/usr/lib/riscv64-linux-gnu/pkgconfig
+          export CMAKE_PREFIX_PATH=/usr/lib/riscv64-linux-gnu
+          
+          sed -i '1i set(CMAKE_SYSTEM_NAME Linux)\nset(CMAKE_SYSTEM_PROCESSOR riscv64)\nset(X_PROJECT_ARCH riscv64)\nset(CPACK_DEBIAN_PACKAGE_ARCHITECTURE riscv64)\n' CMakeLists.txt
+          
+          sed -i 's/ARCH=$(dpkg --print-architecture.*/ARCH="riscv64"/g' build_dpkg.sh
+          
+          chmod a+x build_dpkg.sh
+          ./build_dpkg.sh
+
+      - name: Collect packages
+        run: |
+          mkdir -p "${{ env.RELEASE_PATH }}"
+
+          find DIE-engine \
+            -type f \
+            -name "*.deb" \
+            -exec cp {} "${{ env.RELEASE_PATH }}/" \;
+
+      - name: Verify package architecture
+        run: |
+          shopt -s nullglob
+          packages=("${{ env.RELEASE_PATH }}"/*.deb)
+
+          if [ ${#packages[@]} -eq 0 ]; then
+            echo "::error::No .deb packages found in the directory: ${{ env.RELEASE_PATH }}"
+            ls -la "${{ env.RELEASE_PATH }}" || echo "Directory does not exist."
+            exit 1
+          fi
+
+          echo "Found ${#packages[@]} package(s). Verifying architecture..."
+
+          for package in "${packages[@]}"; do
+            ARCH=$(dpkg-deb -f "$package" Architecture)
+            echo "Checking $package (Architecture: $ARCH)"
+            
+            if [ "$ARCH" != "riscv64" ]; then
+              echo "::error::Architecture mismatch in $package! Expected 'riscv64', but got '$ARCH'"
+              exit 1
+            fi
+          done
+          
+          echo "All packages verified successfully."
+
+      - name: Upload Release as Download
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v3
         env:
@@ -1068,7 +1099,7 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            ${{ env.SRC_PATH }}/detect-it-easy-riscv64.tar.gz
+            ${{ env.RELEASE_PATH }}/*.deb
 
   build-nix:
     runs-on: ubuntu-latest
