@@ -78,37 +78,66 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
 
   build-ubuntu-24-ppc64le:
-    needs: [build-ubuntu-24-arm]
     runs-on: ubuntu-24.04
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout Repository
+        uses: actions/checkout@v6
 
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v4
-        with:
-          platforms: ppc64le
-
-      - name: Build
+      - name: Install Dependencies
         run: |
-          docker run --rm \
-            --platform linux/ppc64le \
-            -v "${{ github.workspace }}:/workspace" \
-            -w /workspace \
-            ubuntu:24.04 \
-            bash -ex -c '
-              apt-get update
+          sudo dpkg --add-architecture ppc64el
+          
+          sudo sed -i 's/^Types: deb/Types: deb\nArchitectures: amd64/' /etc/apt/sources.list.d/ubuntu.sources
+          sudo find /etc/apt/sources.list* -type f -name "*.list" -exec sed -i -E 's/^deb ([^\[])/deb [arch=amd64] \1/g' {} +
+          
+          cat <<EOF | sudo tee /etc/apt/sources.list.d/ubuntu-ports.sources
+          Types: deb
+          URIs: http://ports.ubuntu.com/ubuntu-ports/
+          Suites: noble noble-updates noble-backports noble-security
+          Components: main restricted universe multiverse
+          Architectures: ppc64el
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          EOF
+          
+          sudo apt-get update
+          
+          sudo apt-get install -y \
+            build-essential \
+            crossbuild-essential-ppc64el \
+            git \
+            cmake \
+            dpkg-dev
+            
+          sudo apt-get install -y \
+            qtbase5-dev-tools \
+            qttools5-dev-tools \
+            qtchooser
+            
+          sudo apt-get install -y \
+            qtbase5-dev:ppc64el \
+            qtscript5-dev:ppc64el \
+            qttools5-dev:ppc64el \
+            libqt5svg5-dev:ppc64el
 
-              apt-get install -y git qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev qtchooser build-essential cmake
+      - name: Build DIE-engine
+        run: |
+          git clone --recursive https://github.com/horsicq/DIE-engine.git
+          cd DIE-engine
 
-              git clone --recursive https://github.com/horsicq/DIE-engine.git
-
-              cd DIE-engine
-
-              chmod a+x build_dpkg.sh
-
-              ./build_dpkg.sh
-            '
+          export CC=powerpc64le-linux-gnu-gcc
+          export CXX=powerpc64le-linux-gnu-g++
+          export PKG_CONFIG_PATH=/usr/lib/powerpc64le-linux-gnu/pkgconfig
+          export CMAKE_PREFIX_PATH=/usr/lib/powerpc64le-linux-gnu
+          
+          sed -i '1i set(CMAKE_SYSTEM_NAME Linux)\nset(CMAKE_SYSTEM_PROCESSOR ppc64le)\nset(X_PROJECT_ARCH ppc64le)\nset(CPACK_DEBIAN_PACKAGE_ARCHITECTURE ppc64el)\n' CMakeLists.txt
+          
+          sed -i 's/ARCH=$(dpkg --print-architecture.*/ARCH="ppc64el"/g' build_dpkg.sh
+          
+          sed -i 's/--parallel $(nproc)/-j $(nproc)/g' build_dpkg.sh
+          
+          chmod a+x build_dpkg.sh
+          ./build_dpkg.sh
 
       - name: Collect packages
         run: |
@@ -125,19 +154,24 @@ jobs:
           packages=("${{ env.RELEASE_PATH }}"/*.deb)
 
           if [ ${#packages[@]} -eq 0 ]; then
-            echo "No .deb package was produced."
+            echo "::error::No .deb packages found in the directory: ${{ env.RELEASE_PATH }}"
+            ls -la "${{ env.RELEASE_PATH }}" || echo "Directory does not exist."
             exit 1
           fi
 
-          for package in "${packages[@]}"; do
-            echo "Package: $package"
-            echo "Architecture: $(dpkg-deb -f "$package" Architecture)"
+          echo "Found ${#packages[@]} package(s). Verifying architecture..."
 
-            if [ "$(dpkg-deb -f "$package" Architecture)" != "ppc64el" ]; then
-              echo "ERROR: Package is not ppc64el!"
+          for package in "${packages[@]}"; do
+            ARCH=$(dpkg-deb -f "$package" Architecture)
+            echo "Checking $package (Architecture: $ARCH)"
+            
+            if [ "$ARCH" != "ppc64el" ]; then
+              echo "::error::Architecture mismatch in $package! Expected 'ppc64el', but got '$ARCH'"
               exit 1
             fi
           done
+          
+          echo "All packages verified successfully."
 
       - name: Upload Release as Download
         if: github.event_name != 'pull_request'
