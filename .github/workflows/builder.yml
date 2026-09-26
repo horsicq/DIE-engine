@@ -929,60 +929,61 @@ jobs:
           submodules: 'recursive'
           path: ${{ env.SRC_PATH }}
 
-      - name: Setup QEMU
-        uses: docker/setup-qemu-action@v3
+      - name: Install Dependencies
+        run: |
+          sudo dpkg --add-architecture s390x
+          
+          sudo sed -i 's/^Types: deb/Types: deb\nArchitectures: amd64/' /etc/apt/sources.list.d/ubuntu.sources
+          sudo find /etc/apt/sources.list* -type f -name "*.list" -exec sed -i -E 's/^deb ([^\[])/deb [arch=amd64] \1/g' {} +
+          
+          cat <<EOF | sudo tee /etc/apt/sources.list.d/ubuntu-ports.sources
+          Types: deb
+          URIs: http://ports.ubuntu.com/ubuntu-ports/
+          Suites: noble noble-updates noble-backports noble-security
+          Components: main restricted universe multiverse
+          Architectures: s390x
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          EOF
+          
+          sudo apt-get update
+          
+          sudo apt-get install -y \
+            build-essential \
+            crossbuild-essential-s390x \
+            git \
+            cmake \
+            dpkg-dev
+            
+          sudo apt-get install -y \
+            qtbase5-dev-tools \
+            qttools5-dev-tools \
+            qtchooser
+            
+          sudo apt-get install -y \
+            qtbase5-dev:s390x \
+            qtscript5-dev:s390x \
+            qttools5-dev:s390x \
+            libqt5svg5-dev:s390x
 
       - name: Build s390x
         run: |
-          printf '%s\n' \
-            'set -ex' \
-            '' \
-            '# Install dependencies' \
-            'apt-get update' \
-            'DEBIAN_FRONTEND=noninteractive apt-get install -y \
-              build-essential \
-              cmake \
-              ninja-build \
-              git \
-              qtbase5-dev \
-              qtscript5-dev \
-              qttools5-dev \
-              qttools5-dev-tools \
-              libqt5svg5-dev \
-              tar \
-              gzip' \
-            '' \
-            '# Check architecture' \
-            'uname -m' \
-            'cmake --version' \
-            '' \
-            '# Configure' \
-            'cd /src' \
-            'ls -la' \
-            'cmake -B build \
-              -DCMAKE_BUILD_TYPE=Release' \
-            '' \
-            '# Compile' \
-            'cmake --build build -j$(nproc)' \
-            '' \
-            '# Package' \
-            'mkdir -p package' \
-            'cp -a build/* package/ || true' \
-            'for d in db db_custom peid_rules yara_rules; do \
-            if [ -d "dep/Detect-It-Easy/$d" ]; then \
-            cp -a "dep/Detect-It-Easy/$d" package/; \
-            fi; \
-            done' \
-            'if [ -d dep/Detect-It-Easy/db_extra ]; then cp -a dep/Detect-It-Easy/db_extra/*/ package/db/; fi' \
-            'tar -czf detect-it-easy-s390x.tar.gz -C package .' \
-          | docker run --rm -i \
-              --platform linux/s390x \
-              -v "${{ env.SRC_PATH }}:/src" \
-              -w /src \
-              s390x/ubuntu:24.04 \
-              bash
+          cd ${{ env.SRC_PATH }}
 
-      - name: Upload Release as Download
+          export CC=s390x-linux-gnu-gcc
+          export CXX=s390x-linux-gnu-g++
+          export PKG_CONFIG_PATH=/usr/lib/s390x-linux-gnu/pkgconfig
+          export CMAKE_PREFIX_PATH=/usr/lib/s390x-linux-gnu
+          
+          sed -i '1i set(CMAKE_SYSTEM_NAME Linux)\nset(CMAKE_SYSTEM_PROCESSOR s390x)\nset(X_PROJECT_ARCH s390x)\nset(CPACK_DEBIAN_PACKAGE_ARCHITECTURE s390x)\n' CMakeLists.txt
+          
+          sed -i 's/ARCH=$(dpkg --print-architecture.*/ARCH="s390x"/g' build_dpkg.sh
+          
+          sed -i 's/--parallel $(nproc)/-j$(nproc)/g' build_dpkg.sh
+          
+          chmod a+x build_dpkg.sh
+          ./build_dpkg.sh
+
+      - name: Upload Release
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v3
         env:
@@ -992,7 +993,7 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            ${{ env.SRC_PATH }}/detect-it-easy-s390x.tar.gz
+            ${{ env.SRC_PATH }}/release/*.deb
 
   build-riscv64:
     name: build-riscv64
