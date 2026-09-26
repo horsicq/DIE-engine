@@ -63,7 +63,7 @@ fi
 for bin in die diec diel; do
     cat > "$PACKAGE_DIR/${bin}.sh" <<EOF
 #!/bin/sh
-CWD=\$(dirname \$0)
+CWD=\$(dirname "\$0")
 export LD_LIBRARY_PATH="\$CWD/base:\$LD_LIBRARY_PATH"
 "\$CWD/base/$bin" "\$@"
 EOF
