@@ -1,5 +1,6 @@
 set "X_BUILD_DIR=%TEMP%\die_cmake_%X_BUILD_PREFIX%"
 set "X_INSTALL_DIR=%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%"
+set "X_BUILD_RESULT=0"
 
 if exist "%X_INSTALL_DIR%" rmdir /s /q "%X_INSTALL_DIR%"
 if exist "%X_BUILD_DIR%"   rmdir /s /q "%X_BUILD_DIR%"
@@ -8,13 +9,13 @@ cmake -S "%X_SOURCE_PATH%" -B "%X_BUILD_DIR%" ^
     -G "NMake Makefiles" ^
     -DCMAKE_BUILD_TYPE=Release ^
     -DCMAKE_PREFIX_PATH="%QT_PREFIX_PATH%"
-if errorlevel 1 goto :exit
+if errorlevel 1 (set "X_BUILD_RESULT=1" & goto :exit)
 
 cmake --build "%X_BUILD_DIR%"
-if errorlevel 1 goto :exit
+if errorlevel 1 (set "X_BUILD_RESULT=1" & goto :exit)
 
 cmake --install "%X_BUILD_DIR%" --prefix "%X_INSTALL_DIR%"
-if errorlevel 1 goto :exit
+if errorlevel 1 (set "X_BUILD_RESULT=1" & goto :exit)
 
 xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db"        "%X_INSTALL_DIR%\db\"          /E /I /Y
 for /D %%D in ("%X_SOURCE_PATH%\Detect-It-Easy\db_extra\*") do xcopy "%%D" "%X_INSTALL_DIR%\db\%%~nxD\" /E /I /Y
@@ -35,3 +36,4 @@ if exist %SEVENZIP_PATH% (
 
 :exit
 if exist "%X_BUILD_DIR%" rmdir /s /q "%X_BUILD_DIR%"
+exit /b %X_BUILD_RESULT%
