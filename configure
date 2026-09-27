@@ -44,7 +44,7 @@ all:
 	cmake --build $BUILD_DIR -j$NPROC
 
 install:
-	bash -x install.sh $PREFIX
+	bash -x install.sh "$PREFIX"
 
 clean:
 	rm -rf $BUILD_DIR

@@ -352,9 +352,9 @@ void DesktopIntegrationHelper::ShowToastNotification(const QString& message, con
 
 #ifdef Q_OS_LINUX
     qDebug() << "Using notify-send for Linux notification";
-    QString command = QString("notify-send -t %1 \"%2\" \"%3\"").arg(timeoutMs).arg(appId, message);
-    qDebug() << "Executing notify-send command:" << command;
-    int result = std::system(command.toUtf8().constData());
+    const QStringList arguments = {"-t", QString::number(timeoutMs), "--", appId, message};
+    qDebug() << "Executing notify-send with arguments:" << arguments;
+    int result = QProcess::execute("notify-send", arguments);
     qDebug() << "notify-send returned code:" << result;
     if (result != 0) {
         qDebug() << "notify-send failed, ensure libnotify-bin is installed";
