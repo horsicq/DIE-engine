@@ -1,4 +1,5 @@
 #!/bin/bash -x
+set -e
 export X_SOURCE_PATH=$PWD
 
 if [ -z "$1" ]; then
