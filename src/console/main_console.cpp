@@ -32,7 +32,8 @@
 
 // diec on the shared XScanEngineConsole. The overrides keep the established
 // die-specific behavior: EntropyProcess/XFileInfo output for -e/-i/-S,
-// the signature-state database listing, and the --test/--createtest stubs.
+// the signature-state database listing, --createtar, and the
+// --test/--createtest stubs.
 class DIEConsole : public XScanEngineConsole {
 public:
     DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QString &sDescription);
@@ -55,13 +56,15 @@ private:
     DiE_Script &m_dieScript;
     QCommandLineOption m_clTest;
     QCommandLineOption m_clCreateTest;
+    QCommandLineOption m_clCreateTar;
 };
 
 DIEConsole::DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QString &sDescription)
     : XScanEngineConsole(app, dieScript, sDescription),
       m_dieScript(dieScript),
       m_clTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST)),
-      m_clCreateTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST))
+      m_clCreateTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST)),
+      m_clCreateTar(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETAR))
 {
 }
 
@@ -69,6 +72,7 @@ void DIEConsole::addEngineOptions(QCommandLineParser *pParser)
 {
     pParser->addOption(m_clTest);
     pParser->addOption(m_clCreateTest);
+    pParser->addOption(m_clCreateTar);
 }
 
 void DIEConsole::applyEngineOptions(const QCommandLineParser *pParser, XScanEngine::SCAN_OPTIONS *pScanOptions)
@@ -84,7 +88,21 @@ bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QSt
 {
     bool bHandled = false;
 
-    if (pParser->isSet(m_clTest)) {
+    if (pParser->isSet(m_clCreateTar)) {
+        // Packs the main database (-D, default $data/db) like cdie --createtar;
+        // the archive then works as -D/-C for both diec and cdie.
+        QString sDatabasePath = XOptions::convertPathName(pScanOptions->sMainDatabasePath);
+        QString sTarPath = pParser->value(m_clCreateTar);
+
+        if (m_dieScript.createDatabaseTar(sDatabasePath, sTarPath, pPdStruct)) {
+            printf("Successfully created TAR database: %s\n", sTarPath.toUtf8().data());
+        } else {
+            fprintf(stderr, "Failed to create TAR database from '%s' to '%s'\n", sDatabasePath.toUtf8().data(), sTarPath.toUtf8().data());
+            *pnResult = XOptions::CR_CANNOTFINDDATABASE;
+        }
+
+        bHandled = true;
+    } else if (pParser->isSet(m_clTest)) {
         bool bDbLoaded = m_dieScript.loadDatabase(pScanOptions, pPdStruct);
 
         // TODO
