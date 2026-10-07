@@ -62,7 +62,7 @@ Homepage: http://ntinfo.biz
 Section: devel
 Priority: optional
 Description: Detect It Easy is a program for determining types of files.
-Depends: libqt5core5a, libqt5gui5, libqt5widgets5, libqt5svg5, libqt5sql5, libqt5network5, libqt5opengl5, libqt5dbus5
+Depends: libqt5core5a, libqt5gui5, libqt5widgets5, libqt5svg5, libqt5sql5, libqt5network5, libqt5opengl5, libqt5dbus5, libqt5scripttools5, libqt5script5 
 EOF
 
 OS_VERSION=$(lsb_release -cs 2>/dev/null || echo linux)
