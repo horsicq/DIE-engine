@@ -401,7 +401,7 @@ jobs:
         working-directory: ${{ env.SRC_PATH }}
         run: |
           set VSVARS_PATH="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
-          set QT_PREFIX_PATH=${{ github.workspace }}\Qt\6.10.2\msvc2022_64
+          set QT_PREFIX_PATH=${{ github.workspace }}\Qt\6.12.0\msvc2022_64
           set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
           set INNOSETUP_PATH="C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 
