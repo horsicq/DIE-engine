@@ -79,6 +79,7 @@ if(EXISTS "${DIE_TRANSLATION_HELPER}")
         "${DIE_TRANSLATION_DIR}/die_fa.ts"
         "${DIE_TRANSLATION_DIR}/die_fr.ts"
         "${DIE_TRANSLATION_DIR}/die_he.ts"
+        "${DIE_TRANSLATION_DIR}/die_hy.ts"
         "${DIE_TRANSLATION_DIR}/die_id.ts"
         "${DIE_TRANSLATION_DIR}/die_it.ts"
         "${DIE_TRANSLATION_DIR}/die_ja.ts"
