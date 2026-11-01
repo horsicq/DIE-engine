@@ -32,6 +32,12 @@ if exist "%X_SOURCE_PATH%\signatures\crypto.db" (
     copy  "%X_SOURCE_PATH%\signatures\crypto.db" "%X_INSTALL_DIR%\signatures\"
 )
 
+rem Exclude UCRT API-set forwarders from the portable package.
+if exist "%X_INSTALL_DIR%\api-ms-win-crt-*.dll" (
+    del /f /q "%X_INSTALL_DIR%\api-ms-win-crt-*.dll"
+    if exist "%X_INSTALL_DIR%\api-ms-win-crt-*.dll" (set "X_BUILD_RESULT=1" & goto :exit)
+)
+
 if exist %SEVENZIP_PATH% (
     if exist "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip" ^
         del /f /q "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip"

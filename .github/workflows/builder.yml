@@ -1,6 +1,23 @@
 name: Build DIE-engine
 
 on:
+  workflow_call:
+    inputs:
+      release_tag:
+        description: Release tag to receive the build packages
+        required: false
+        type: string
+        default: Beta
+      release_draft:
+        description: Keep the release unpublished while packages are built
+        required: false
+        type: boolean
+        default: false
+      release_prerelease:
+        description: Mark the release as a prerelease
+        required: false
+        type: boolean
+        default: true
   workflow_dispatch:
   release:
     types: [created]
@@ -8,6 +25,9 @@ on:
     - cron: '0 0 * * *'
   pull_request:
     types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
 
 env:
   SRC_PATH: ${{ github.workspace }}/src
@@ -41,9 +61,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
             
@@ -71,9 +93,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
 
@@ -122,7 +146,11 @@ jobs:
 
       - name: Build DIE-engine
         run: |
-          git clone --recursive https://github.com/horsicq/DIE-engine.git
+          git clone --no-checkout "${{ github.server_url }}/${{ github.repository }}.git" DIE-engine
+          git -C DIE-engine fetch origin "$GITHUB_SHA"
+          git -C DIE-engine checkout --detach "$GITHUB_SHA"
+          git -C DIE-engine submodule sync --recursive
+          git -C DIE-engine submodule update --init --recursive
           cd DIE-engine
 
           export CC=powerpc64le-linux-gnu-gcc
@@ -179,9 +207,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
 
@@ -209,9 +239,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
 
@@ -250,9 +282,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.AppImage
 
@@ -264,11 +298,7 @@ jobs:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      - name: Setup MSVC
-        uses: ilammy/msvc-dev-cmd@v1
-        with:
-         arch: x86
-
+      # Install Python dependencies before activating the x86 compiler environment.
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
@@ -278,6 +308,11 @@ jobs:
           arch: 'win32_msvc2019'
           dir: ${{ github.workspace }}
           modules: qtscript
+
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+         arch: x86
 
       - name: Build
         shell: cmd
@@ -308,9 +343,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
 
@@ -366,9 +403,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
             
@@ -425,9 +464,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.zip
 
@@ -481,9 +522,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ github.workspace }}\release\*.zip
             
@@ -507,7 +550,13 @@ jobs:
         run: |
           cd $HOME
           pwd
-          git clone --recursive https://github.com/horsicq/DIE-engine
+          git clone --no-checkout "${{ github.server_url }}/${{ github.repository }}.git" DIE-engine
+          git -C DIE-engine fetch origin "$GITHUB_SHA"
+          git -C DIE-engine checkout --detach "$GITHUB_SHA"
+          git -C DIE-engine submodule sync --recursive
+          git -C DIE-engine submodule update --init --recursive
+          # makepkg clones the source declared in PKGBUILD independently.
+          sed -i "s|^source=.*|source=('DIE-engine::git+${{ github.server_url }}/${{ github.repository }}.git#commit=$GITHUB_SHA')|" DIE-engine/PKGBUILD
           
       - name: Build
         run: |
@@ -530,9 +579,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             /github/home/DIE-engine/release/*.pkg.tar.zst
 
@@ -654,7 +705,11 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          git clone --recursive https://github.com/horsicq/DIE-engine.git /home/builduser/DIE-engine
+          git clone --no-checkout "${{ github.server_url }}/${{ github.repository }}.git" /home/builduser/DIE-engine
+          git -C /home/builduser/DIE-engine fetch origin "$GITHUB_SHA"
+          git -C /home/builduser/DIE-engine checkout --detach "$GITHUB_SHA"
+          git -C /home/builduser/DIE-engine submodule sync --recursive
+          git -C /home/builduser/DIE-engine submodule update --init --recursive
           chown -R builduser:builduser /home/builduser/DIE-engine
 
       - name: Build Release and RPM
@@ -696,11 +751,14 @@ jobs:
           fi
 
       - name: Upload RPM Release
+        if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             /home/builduser/DIE-engine/release/*.rpm
 
@@ -728,9 +786,11 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          git clone --recursive \
-            https://github.com/horsicq/DIE-engine.git \
-            /opt/DIE-engine
+          git clone --no-checkout "${{ github.server_url }}/${{ github.repository }}.git" /opt/DIE-engine
+          git -C /opt/DIE-engine fetch origin "$GITHUB_SHA"
+          git -C /opt/DIE-engine checkout --detach "$GITHUB_SHA"
+          git -C /opt/DIE-engine submodule sync --recursive
+          git -C /opt/DIE-engine submodule update --init --recursive
 
       - name: Build Release and RPM
         run: |
@@ -773,9 +833,11 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             release/*.rpm
 
@@ -805,7 +867,11 @@ jobs:
       - name: Clone DIE-engine
         run: |
           cd $HOME 
-          git clone --recursive https://github.com/horsicq/DIE-engine
+          git clone --no-checkout "${{ github.server_url }}/${{ github.repository }}.git" DIE-engine
+          git -C DIE-engine fetch origin "$GITHUB_SHA"
+          git -C DIE-engine checkout --detach "$GITHUB_SHA"
+          git -C DIE-engine submodule sync --recursive
+          git -C DIE-engine submodule update --init --recursive
           cd DIE-engine
 
       - name: Build RPM
@@ -844,9 +910,11 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             release/*.rpm
 
@@ -875,9 +943,11 @@ jobs:
 
       - name: Clone DIE-engine
         run: |
-          git clone --recursive \
-            https://github.com/horsicq/DIE-engine \
-            $HOME/DIE-engine
+          git clone --no-checkout "${{ github.server_url }}/${{ github.repository }}.git" "$HOME/DIE-engine"
+          git -C "$HOME/DIE-engine" fetch origin "$GITHUB_SHA"
+          git -C "$HOME/DIE-engine" checkout --detach "$GITHUB_SHA"
+          git -C "$HOME/DIE-engine" submodule sync --recursive
+          git -C "$HOME/DIE-engine" submodule update --init --recursive
 
       - name: Build RPM
         run: |
@@ -913,9 +983,11 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             release/*.rpm
 
@@ -990,9 +1062,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.SRC_PATH }}/release/*.deb
 
@@ -1042,7 +1116,11 @@ jobs:
 
       - name: Build risc64
         run: |
-          git clone --recursive https://github.com/horsicq/DIE-engine.git
+          git clone --no-checkout "${{ github.server_url }}/${{ github.repository }}.git" DIE-engine
+          git -C DIE-engine fetch origin "$GITHUB_SHA"
+          git -C DIE-engine checkout --detach "$GITHUB_SHA"
+          git -C DIE-engine submodule sync --recursive
+          git -C DIE-engine submodule update --init --recursive
           cd DIE-engine
 
           export CC=riscv64-linux-gnu-gcc
@@ -1097,9 +1175,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
 
@@ -1109,13 +1189,16 @@ jobs:
     steps:
       - name: Clone DIE-engine
         run: |
-          git clone --recursive \
-            https://github.com/horsicq/DIE-engine.git
+          git clone --no-checkout "${{ github.server_url }}/${{ github.repository }}.git" DIE-engine
+          git -C DIE-engine fetch origin "$GITHUB_SHA"
+          git -C DIE-engine checkout --detach "$GITHUB_SHA"
+          git -C DIE-engine submodule sync --recursive
+          git -C DIE-engine submodule update --init --recursive
 
       - name: Install Nix
         uses: cachix/install-nix-action@v30
         with:
-          extra_conf: |
+          extra_nix_config: |
             experimental-features = nix-command flakes
 
       - name: Build with Nix
@@ -1125,17 +1208,20 @@ jobs:
       - name: Create Nix Release
         run: |
           mkdir -p release
-          nix-store --export $(nix-store -qR result) | xz -T0 > release/detect-it-easy-4.0.0-nix-closure.nar.xz
+          release_version=$(tr -d '\r\n' < DIE-engine/release_version.txt)
+          nix-store --export $(nix-store -qR result) | xz -T0 > "release/detect-it-easy-${release_version}-nix-closure.nar.xz"
 
       - name: Upload Release
         if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v3
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             release/*.nar.xz
 
@@ -1182,9 +1268,11 @@ jobs:
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: release/*.pkg
 
   build-parrotos:
@@ -1224,9 +1312,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ github.workspace }}/release/*.deb
 
@@ -1264,9 +1354,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: |
             ${{ github.workspace }}/release/*.deb
 
@@ -1322,11 +1414,14 @@ jobs:
           path: output_termux/DetectItEasy_Termux_CLI_aarch64.tar.gz
 
       - name: Upload Release
+        if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: Beta
-          draft: false
-          prerelease: true
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
           files: output_termux/DetectItEasy_Termux_CLI_aarch64.tar.gz
