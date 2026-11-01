@@ -1,0 +1,217 @@
+name: Make release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (must match release_version.txt; empty uses the file)'
+        required: false
+        type: string
+      prerelease:
+        description: 'Mark this version as a prerelease'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: make-release
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    outputs:
+      tag: ${{ steps.release.outputs.tag }}
+    steps:
+      - name: Checkout release commit
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+
+      - name: Validate version and prepare draft
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          REQUESTED_VERSION: ${{ inputs.version }}
+          RELEASE_COMMIT: ${{ github.sha }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import re
+          import subprocess
+
+          def fail(message):
+              raise SystemExit(f"::error::{message}")
+
+          def command(*args):
+              return subprocess.check_output(args, text=True)
+
+          version = Path("release_version.txt").read_text().strip()
+          if not re.fullmatch(r"[0-9]+\.[0-9]+(?:\.[0-9]+)?", version):
+              fail("release_version.txt must contain a numeric version such as 4.0.0.")
+          requested = os.environ["REQUESTED_VERSION"].strip()
+          if requested and requested != version:
+              fail(f"Requested version {requested!r} does not match release_version.txt ({version}).")
+
+          # These package formats keep their version separately from CMake.
+          package_versions = {
+              "PKGBUILD": r"^pkgver=([^\s]+)$",
+              "build.nix": r'^\s*version\s*=\s*"([^"]+)";',
+              "manifest.ucl": r'^version:\s*"([^"]+)"',
+          }
+          for filename, pattern in package_versions.items():
+              match = re.search(pattern, Path(filename).read_text(), re.MULTILINE)
+              if not match or match.group(1) != version:
+                  fail(f"Update the version in {filename} to {version} before releasing.")
+
+          commit = os.environ["RELEASE_COMMIT"]
+          tag_refs = command(
+              "git", "ls-remote", "--tags", "origin",
+              f"refs/tags/{version}", f"refs/tags/{version}^{{}}",
+          )
+          refs = dict(line.split()[::-1] for line in tag_refs.splitlines())
+          tagged_commit = refs.get(f"refs/tags/{version}^{{}}", refs.get(f"refs/tags/{version}"))
+          if tagged_commit and tagged_commit != commit:
+              fail(f"Tag {version} already points to another commit; it will not be moved.")
+
+          # Listing releases also finds unpublished drafts; API failures stop the job.
+          pages = json.loads(command(
+              "gh", "api", "--paginate", "--slurp",
+              f"repos/{os.environ['GH_REPO']}/releases?per_page=100",
+          ))
+          existing = next((release for page in pages for release in page
+                           if release["tag_name"] == version), None)
+          if existing:
+              if not existing["draft"]:
+                  fail(f"Release {version} is already published; it will not be overwritten.")
+              if existing["target_commitish"] != commit:
+                  fail(f"Draft {version} belongs to another commit; use a new version or remove that draft.")
+              print(f"Resuming draft {version} for {commit}.")
+          else:
+              subprocess.run([
+                  "gh", "release", "create", version,
+                  "--target", commit, "--title", version,
+                  "--draft", "--notes",
+                  "Please see the file [CHANGELOG](https://github.com/horsicq/Detect-It-Easy/blob/master/changelog.txt) for a detailed list of changes.",
+                  f"--prerelease={os.environ['PRERELEASE']}",
+              ], check=True)
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write(f"tag={version}\n")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
+              summary.write(f"Building release **{version}** from `{commit}`.\n\n")
+              summary.write("The release stays a draft until every build and upload succeeds.\n")
+          PY
+
+  build:
+    needs: [prepare, source]
+    permissions:
+      contents: write
+    uses: ./.github/workflows/builder.yml
+    with:
+      release_tag: ${{ needs.prepare.outputs.tag }}
+      release_draft: true
+      release_prerelease: ${{ inputs.prerelease }}
+
+  source:
+    name: Complete source archive
+    needs: prepare
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout release commit and all submodules
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          submodules: recursive
+          persist-credentials: false
+
+      - name: Archive complete source code
+        env:
+          RELEASE_TAG: ${{ needs.prepare.outputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -f dep/build_tools/scripts/git_archive_all.py ]]; then
+            echo "::error::Update dep/build_tools to a revision containing scripts/git_archive_all.py."
+            exit 1
+          fi
+          git submodule status --recursive > "$RUNNER_TEMP/source-submodules.txt"
+          if grep -Eq '^[-+U]' "$RUNNER_TEMP/source-submodules.txt"; then
+            echo "::error::Submodules must be initialized at their recorded commits."
+            exit 1
+          fi
+          # Include tracked sources from every submodule, even export-ignore files.
+          python3 dep/build_tools/scripts/git_archive_all.py \
+            --no-export-ignore \
+            --prefix "die_sourcecode_${RELEASE_TAG}/" \
+            "$RUNNER_TEMP/die_sourcecode_${RELEASE_TAG}.tar.gz"
+          test -s "$RUNNER_TEMP/die_sourcecode_${RELEASE_TAG}.tar.gz"
+
+      - name: Upload source archive to draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.prepare.outputs.tag }}
+        shell: bash
+        run: |
+          gh release upload "$RELEASE_TAG" \
+            "$RUNNER_TEMP/die_sourcecode_${RELEASE_TAG}.tar.gz" --clobber
+
+  publish:
+    needs: [prepare, build, source]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout release commit
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+
+      - name: Publish completed release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.prepare.outputs.tag }}
+          RELEASE_COMMIT: ${{ github.sha }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Recheck tags after the builds, which may take several hours.
+          tag_refs=$(git ls-remote --tags origin \
+            "refs/tags/$RELEASE_TAG" "refs/tags/$RELEASE_TAG^{}")
+          tag_commit=$(awk '
+            $2 !~ /\^\{\}$/ { direct = $1 }
+            $2 ~ /\^\{\}$/ { peeled = $1 }
+            END { print (peeled != "" ? peeled : direct) }
+          ' <<< "$tag_refs")
+          if [[ -n "$tag_commit" && "$tag_commit" != "$RELEASE_COMMIT" ]]; then
+            echo "::error::The release tag points to another commit; refusing to publish."
+            exit 1
+          fi
+          release=$(gh release view "$RELEASE_TAG" --json isDraft,targetCommitish,assets)
+          jq -e --arg commit "$RELEASE_COMMIT" \
+            '.isDraft and .targetCommitish == $commit and (.assets | length > 0)' \
+            <<< "$release" > /dev/null
+          printf '%s\n' "$release" > "$RUNNER_TEMP/release.json"
+          python3 .github/scripts/release_notes.py \
+            --release-json "$RUNNER_TEMP/release.json" \
+            --output "$RUNNER_TEMP/release-notes.md"
+          gh release edit "$RELEASE_TAG" --draft=false --prerelease="$PRERELEASE" \
+            --notes-file "$RUNNER_TEMP/release-notes.md"
+          url=$(gh release view "$RELEASE_TAG" --json url --jq '.url')
+          printf 'Published [%s](%s) from `%s`.\n' \
+            "$RELEASE_TAG" "$url" "$RELEASE_COMMIT" >> "$GITHUB_STEP_SUMMARY"
