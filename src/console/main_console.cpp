@@ -102,7 +102,23 @@ bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QSt
     pScanOptions->sMainDatabasePath = DieUpdater::resolveDatabasePath(pScanOptions->sMainDatabasePath);
 
     if (pParser->isSet(m_clExtraDatabase)) {
-        fprintf(stderr, "%s\n", qPrintable(tr("-E/--extradatabase was removed: diec uses only the main (-D) and custom (-C) databases")));
+        QString sOption = QString("-E");
+        QStringList listApplicationArguments = QCoreApplication::arguments();
+
+        for (qint32 i = 1; i < listApplicationArguments.count(); i++) {
+            if (listApplicationArguments.at(i) == QString("--extradatabase") || listApplicationArguments.at(i).startsWith(QString("--extradatabase="))) {
+                sOption = QString("--extradatabase");
+                break;
+            }
+
+            if (listApplicationArguments.at(i).startsWith(QString("-E"))) {
+                sOption = QString("-E");
+                break;
+            }
+        }
+
+        fprintf(stderr, "%s\n",
+                qPrintable(tr("%1 was removed: cdie uses only the main (-D) and custom (-C) databases").arg(sOption)));
         *pnResult = XOptions::CR_INVALIDPARAMETER;
         return true;
     }

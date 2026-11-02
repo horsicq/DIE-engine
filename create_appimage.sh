@@ -8,6 +8,9 @@ source dep/build_tools/linux.sh
 create_image_app_dir die
 
 cp -f $X_SOURCE_PATH/build/release/die $X_SOURCE_PATH/release/appDir/usr/bin/
+mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/die
+cp -f $X_SOURCE_PATH/build/release/die-update $X_SOURCE_PATH/release/appDir/usr/lib/die/
+ln -sf ../lib/die/die-update $X_SOURCE_PATH/release/appDir/usr/bin/die-update
 #cp -f $X_SOURCE_PATH/build/release/diec $X_SOURCE_PATH/release/appDir/usr/bin/
 #cp -f $X_SOURCE_PATH/build/release/diel $X_SOURCE_PATH/release/appDir/usr/bin/
 
@@ -41,6 +44,7 @@ linuxdeploy \
   --appdir $X_SOURCE_PATH/release/appDir \
   --plugin qt \
   --executable $X_SOURCE_PATH/release/appDir/usr/bin/die \
+  --executable $X_SOURCE_PATH/release/appDir/usr/lib/die/die-update \
   --output appimage
 
 cd $X_SOURCE_PATH

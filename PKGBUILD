@@ -16,6 +16,7 @@ depends=(
   'hicolor-icon-theme'
   'icu'
   'krb5'
+  'curl'
   'qt5-base'
   'qt5-script'
   'qt5-svg'
@@ -64,6 +65,7 @@ package() {
   install -Dm 755 build/release/die -t "$pkgdir"/opt/"${pkgname}"
   install -Dm 755 build/release/diec -t "$pkgdir"/opt/"${pkgname}"
   install -Dm 755 build/release/diel -t "$pkgdir"/opt/"${pkgname}"
+  install -Dm 755 build/release/die-update -t "$pkgdir"/opt/"${pkgname}"
 
   echo "${_prefix}Copying the package files"
   install -Dm 644 build/src/translations/*.qm -t "$pkgdir"/opt/"${pkgname}"/lang
@@ -80,6 +82,7 @@ package() {
   ln -s /opt/"${pkgname}"/die "$pkgdir"/usr/bin/die
   ln -s /opt/"${pkgname}"/diec "$pkgdir"/usr/bin/diec
   ln -s /opt/"${pkgname}"/diel "$pkgdir"/usr/bin/diel
+  ln -s /opt/"${pkgname}"/die-update "$pkgdir"/usr/bin/die-update
 
   echo "${_prefix}Setting up desktop icons"
   cp -r LINUX/hicolor "$pkgdir"/usr/share/icons

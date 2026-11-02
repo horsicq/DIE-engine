@@ -17,6 +17,8 @@ if errorlevel 1 (set "X_BUILD_RESULT=1" & goto :exit)
 cmake --install "%X_BUILD_DIR%" --prefix "%X_INSTALL_DIR%"
 if errorlevel 1 (set "X_BUILD_RESULT=1" & goto :exit)
 
+if not exist "%X_INSTALL_DIR%\die-update.exe" ( echo die-update.exe not found & set "X_BUILD_RESULT=1" & goto :exit )
+
 xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db"        "%X_INSTALL_DIR%\db\"          /E /I /Y
 for /D %%D in ("%X_SOURCE_PATH%\Detect-It-Easy\db_extra\*") do xcopy "%%D" "%X_INSTALL_DIR%\db\%%~nxD\" /E /I /Y
 xcopy "%X_SOURCE_PATH%\XStyles\qss"              "%X_INSTALL_DIR%\qss\"         /E /I /Y

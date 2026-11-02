@@ -31,6 +31,8 @@ cmake --install "$BUILD_DIR" --prefix "$STAGE_DIR"
 cp -f "$STAGE_DIR/bin/die"   "$PACKAGE_DIR/base/"
 cp -f "$STAGE_DIR/bin/diec"  "$PACKAGE_DIR/base/"
 cp -f "$STAGE_DIR/bin/diel"  "$PACKAGE_DIR/base/"
+cp -f "$STAGE_DIR/lib/die/die-update" "$PACKAGE_DIR/base/"
+touch "$PACKAGE_DIR/base/portable"
 
 if [ -n "$QT_PREFIX_PATH" ]; then
     X_QT_INSTALL_LIBS="$QT_PREFIX_PATH/lib"
@@ -60,7 +62,7 @@ if [ -f "$X_SOURCE_PATH/dep/signatures/crypto.db" ]; then
     cp -f "$X_SOURCE_PATH/dep/signatures/crypto.db" "$PACKAGE_DIR/base/signatures/"
 fi
 
-for bin in die diec diel; do
+for bin in die diec diel die-update; do
     cat > "$PACKAGE_DIR/${bin}.sh" <<EOF
 #!/bin/sh
 CWD=\$(dirname "\$0")

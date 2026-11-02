@@ -63,6 +63,15 @@ fi
 BUNDLED_DIEC="$APP_BUNDLE/Contents/MacOS/diec"
 cp -f "$DIEC_BIN" "$BUNDLED_DIEC"
 
+UPDATER_BIN=$(find "$BUILD_DIR/src/updater" -maxdepth 2 -name "die-update" -type f -print -quit)
+if [ -z "$UPDATER_BIN" ]; then
+    echo "ERROR: die-update not found under $BUILD_DIR/src/updater" >&2
+    exit 1
+fi
+
+BUNDLED_UPDATER="$APP_BUNDLE/Contents/MacOS/die-update"
+cp -f "$UPDATER_BIN" "$BUNDLED_UPDATER"
+
 # macdeployqt (handled by cmake POST_BUILD, but run again as safety net)
 MACDEPLOYQT=""
 for candidate in \
@@ -80,6 +89,7 @@ fi
 # Both Qt 5 and Qt 6 require non-main executables to be listed explicitly.
 "$MACDEPLOYQT" "$APP_BUNDLE" \
     "-executable=$BUNDLED_DIEC" \
+    "-executable=$BUNDLED_UPDATER" \
     -always-overwrite
 
 PACKAGE_DIR="$RELEASE_DIR/$X_BUILD_NAME"
