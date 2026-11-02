@@ -35,7 +35,10 @@ mkdir -p "$WORK_DIR/usr/share/metainfo"
 # Copy assets not covered by cmake install; fold db_extra into db
 if [ -d "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra" ]; then
     mkdir -p "$WORK_DIR/usr/lib/die/db"
-    cp -Rf "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra"/*/ "$WORK_DIR/usr/lib/die/db/"
+    for extra_dir in "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra"/*/; do
+        [ -d "$extra_dir" ] || continue
+        cp -Rf "$extra_dir" "$WORK_DIR/usr/lib/die/db/"
+    done
 fi
 
 # lang: cmake installs to prefix/lang; move to usr/lib/die/lang

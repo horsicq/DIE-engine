@@ -20,7 +20,6 @@ if errorlevel 1 (set "X_BUILD_RESULT=1" & goto :exit)
 if not exist "%X_INSTALL_DIR%\die.exe"  ( echo die.exe not found  & set "X_BUILD_RESULT=1" & goto :exit )
 if not exist "%X_INSTALL_DIR%\diec.exe" ( echo diec.exe not found & set "X_BUILD_RESULT=1" & goto :exit )
 if not exist "%X_INSTALL_DIR%\diel.exe" ( echo diel.exe not found & set "X_BUILD_RESULT=1" & goto :exit )
-if not exist "%X_INSTALL_DIR%\die-update.exe" ( echo die-update.exe not found & set "X_BUILD_RESULT=1" & goto :exit )
 
 xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db"        "%X_INSTALL_DIR%\db\"          /E /I /Y
 for /D %%D in ("%X_SOURCE_PATH%\Detect-It-Easy\db_extra\*") do xcopy "%%D" "%X_INSTALL_DIR%\db\%%~nxD\" /E /I /Y

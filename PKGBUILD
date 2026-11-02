@@ -65,14 +65,20 @@ package() {
   install -Dm 755 build/release/die -t "$pkgdir"/opt/"${pkgname}"
   install -Dm 755 build/release/diec -t "$pkgdir"/opt/"${pkgname}"
   install -Dm 755 build/release/diel -t "$pkgdir"/opt/"${pkgname}"
-  install -Dm 755 build/release/die-update -t "$pkgdir"/opt/"${pkgname}"
+  if [ -f build/release/die-update ]; then
+    install -Dm 755 build/release/die-update -t "$pkgdir"/opt/"${pkgname}"
+  fi
 
   echo "${_prefix}Copying the package files"
   install -Dm 644 build/src/translations/*.qm -t "$pkgdir"/opt/"${pkgname}"/lang
   install -Dm 644 dep/XStyles/qss/* -t "$pkgdir"/opt/"${pkgname}"/qss
   cp -r dep/XInfoDB/info/* -t "$pkgdir"/opt/"${pkgname}"/info/
   cp -r dep/Detect-It-Easy/db/* -t "$pkgdir"/opt/"${pkgname}"/db/
-  if [ -d dep/Detect-It-Easy/db_extra ]; then cp -r dep/Detect-It-Easy/db_extra/*/ -t "$pkgdir"/opt/"${pkgname}"/db/; fi
+  local extra_dir
+  for extra_dir in dep/Detect-It-Easy/db_extra/*/; do
+    [ -d "$extra_dir" ] || continue
+    cp -r "$extra_dir" -t "$pkgdir"/opt/"${pkgname}"/db/
+  done
   cp -r dep/XYara/yara_rules/* -t "$pkgdir"/opt/"${pkgname}"/yara_rules/
   cp -r dep/XPEID/peid/* -t "$pkgdir"/opt/"${pkgname}"/peid/
   install -Dm 644 dep/signatures/crypto.db -t "$pkgdir"/opt/"${pkgname}"/signatures
@@ -82,7 +88,9 @@ package() {
   ln -s /opt/"${pkgname}"/die "$pkgdir"/usr/bin/die
   ln -s /opt/"${pkgname}"/diec "$pkgdir"/usr/bin/diec
   ln -s /opt/"${pkgname}"/diel "$pkgdir"/usr/bin/diel
-  ln -s /opt/"${pkgname}"/die-update "$pkgdir"/usr/bin/die-update
+  if [ -f "$pkgdir/opt/${pkgname}/die-update" ]; then
+    ln -s /opt/"${pkgname}"/die-update "$pkgdir"/usr/bin/die-update
+  fi
 
   echo "${_prefix}Setting up desktop icons"
   cp -r LINUX/hicolor "$pkgdir"/usr/share/icons

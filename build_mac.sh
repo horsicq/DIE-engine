@@ -48,7 +48,10 @@ mkdir -p "$RESOURCES/signatures"
 cp -Rf "$X_SOURCE_PATH/dep/XStyles/qss"             "$RESOURCES/"
 cp -Rf "$X_SOURCE_PATH/dep/XInfoDB/info"            "$RESOURCES/"
 cp -Rf "$X_SOURCE_PATH/dep/Detect-It-Easy/db"       "$RESOURCES/"
-[ -d "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra" ] && cp -Rf "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra"/*/ "$RESOURCES/db/"
+for extra_dir in "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra"/*/; do
+    [ -d "$extra_dir" ] || continue
+    cp -Rf "$extra_dir" "$RESOURCES/db/"
+done
 cp -Rf "$X_SOURCE_PATH/dep/XYara/yara_rules"        "$RESOURCES/"
 cp -Rf "$X_SOURCE_PATH/images"                  "$RESOURCES/"
 [ -f "$X_SOURCE_PATH/dep/signatures/crypto.db" ]   && cp -f "$X_SOURCE_PATH/dep/signatures/crypto.db" "$RESOURCES/signatures/"
@@ -63,14 +66,16 @@ fi
 BUNDLED_DIEC="$APP_BUNDLE/Contents/MacOS/diec"
 cp -f "$DIEC_BIN" "$BUNDLED_DIEC"
 
-UPDATER_BIN=$(find "$BUILD_DIR/src/updater" -maxdepth 2 -name "die-update" -type f -print -quit)
-if [ -z "$UPDATER_BIN" ]; then
-    echo "ERROR: die-update not found under $BUILD_DIR/src/updater" >&2
-    exit 1
+MACDEPLOYQT_EXECUTABLES=("-executable=$BUNDLED_DIEC")
+# CMake can leave out the optional updater when its sources are unavailable.
+if [ -d "$BUILD_DIR/src/updater" ]; then
+    UPDATER_BIN=$(find "$BUILD_DIR/src/updater" -maxdepth 2 -name "die-update" -type f -print -quit)
+    if [ -n "$UPDATER_BIN" ]; then
+        BUNDLED_UPDATER="$APP_BUNDLE/Contents/MacOS/die-update"
+        cp -f "$UPDATER_BIN" "$BUNDLED_UPDATER"
+        MACDEPLOYQT_EXECUTABLES+=("-executable=$BUNDLED_UPDATER")
+    fi
 fi
-
-BUNDLED_UPDATER="$APP_BUNDLE/Contents/MacOS/die-update"
-cp -f "$UPDATER_BIN" "$BUNDLED_UPDATER"
 
 # macdeployqt (handled by cmake POST_BUILD, but run again as safety net)
 MACDEPLOYQT=""
@@ -88,8 +93,7 @@ fi
 
 # Both Qt 5 and Qt 6 require non-main executables to be listed explicitly.
 "$MACDEPLOYQT" "$APP_BUNDLE" \
-    "-executable=$BUNDLED_DIEC" \
-    "-executable=$BUNDLED_UPDATER" \
+    "${MACDEPLOYQT_EXECUTABLES[@]}" \
     -always-overwrite
 
 PACKAGE_DIR="$RELEASE_DIR/$X_BUILD_NAME"
