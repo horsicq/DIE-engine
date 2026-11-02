@@ -1,0 +1,114 @@
+name: Build DIE-engine for Apple
+
+on:
+  workflow_call:
+    inputs:
+      release_tag:
+        description: Release tag to receive the macOS packages
+        required: false
+        type: string
+        default: Beta
+      release_draft:
+        description: Keep the release unpublished while packages are built
+        required: false
+        type: boolean
+        default: false
+      release_prerelease:
+        description: Mark the release as a prerelease
+        required: false
+        type: boolean
+        default: true
+  workflow_dispatch:
+  release:
+    types: [created]
+  schedule:
+    - cron: '0 0 * * *'
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  build-macos:
+    name: macOS (${{ matrix.arch }}, Qt 6)
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-15-intel
+            arch: x86_64
+          - runner: macos-15
+            arch: arm64
+    env:
+      CMAKE_OSX_ARCHITECTURES: ${{ matrix.arch }}
+    steps:
+      - name: Checkout source and submodules
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          persist-credentials: false
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.8.3'
+          host: mac
+          target: desktop
+          arch: clang_64
+          modules: qt5compat
+          cache: true
+
+      - name: Build portable package
+        shell: bash
+        run: |
+          set -euo pipefail
+          # build_mac.sh merges db_extra/*/; keep the optional PE directory
+          # present even when the pinned database has no extra rules.
+          mkdir -p dep/Detect-It-Easy/db_extra/PE
+          bash -x build_mac.sh "$QT_ROOT_DIR"
+
+      - name: Name and verify package
+        id: package
+        shell: bash
+        run: |
+          set -euo pipefail
+          version=$(tr -d '\r\n' < release_version.txt)
+          archive="release/die_${version}_mac_portable_${CMAKE_OSX_ARCHITECTURES}_qt6.zip"
+          mv "release/die_${version}_mac_portable.zip" "$archive"
+          test -s "$archive"
+
+          verify_dir=$(mktemp -d)
+          trap 'rm -rf "$verify_dir"' EXIT
+          ditto -x -k "$archive" "$verify_dir"
+          bundle=$(find "$verify_dir/die_mac_portable" -maxdepth 1 -type d -name '*.app' -print -quit)
+          test -n "$bundle"
+          for executable in die diec; do
+            binary="$bundle/Contents/MacOS/$executable"
+            test -x "$binary"
+            test "$(lipo -archs "$binary")" = "$CMAKE_OSX_ARCHITECTURES"
+          done
+          env -u DYLD_LIBRARY_PATH -u DYLD_FRAMEWORK_PATH \
+            "$bundle/Contents/MacOS/diec" --version
+          printf 'path=%s\n' "$archive" >> "$GITHUB_OUTPUT"
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: die-macos-${{ matrix.arch }}-qt6
+          path: ${{ steps.package.outputs.path }}
+          if-no-files-found: error
+
+      # Standalone runs append Apple packages to the published Beta prerelease,
+      # matching builder.yml. make_release.yml supplies a versioned draft tag.
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ inputs.release_tag || 'Beta' }}
+          draft: ${{ inputs.release_draft || false }}
+          prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
+          target_commitish: ${{ github.sha }}
+          fail_on_unmatched_files: true
+          files: ${{ steps.package.outputs.path }}
