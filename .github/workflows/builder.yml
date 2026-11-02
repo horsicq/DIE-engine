@@ -1378,10 +1378,10 @@ jobs:
 
       - name: Build DiE(c)
         run: |
-          docker run --rm \
-            -v ${{ github.workspace }}:/workspace \
-            -v ${{ github.workspace }}/output_termux:/output \
-            termux/termux-docker:aarch64 bash -c "
+          docker run --rm -i \
+            -v "$GITHUB_WORKSPACE:/workspace" \
+            -v "$GITHUB_WORKSPACE/output_termux:/output" \
+            termux/termux-docker:aarch64 bash -euo pipefail <<'TERMUX_BUILD'
             pkg update -y
             pkg install -y x11-repo
             pkg install -y clang cmake make tar qt6-qtbase qt6-qtsvg qt6-qtdeclarative qt6-qt5compat qt6-qttools
@@ -1394,23 +1394,39 @@ jobs:
             cd ~/DIE-engine
             
             cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
-            cmake --build build --target diec --parallel \$(nproc)
+            cmake --build build --target diec --parallel $(nproc)
             
             mkdir -p release_termux/diec
             
-            cp build/src/console/diec release_termux/diec/ 2>/dev/null || true
-            cp -r dep/Detect-It-Easy/db release_termux/diec/ 2>/dev/null || true
-            cp -r dep/Detect-It-Easy/db_custom release_termux/diec/ 2>/dev/null || true
-            cp -r dep/Detect-It-Easy/db_extra release_termux/diec/ 2>/dev/null || true
-            cp -r dep/Detect-It-Easy/info release_termux/diec/ 2>/dev/null || true
+            test -s build/src/console/diec
+            test -x build/src/console/diec
+            cp build/src/console/diec release_termux/diec/
+            cp -r dep/Detect-It-Easy/db release_termux/diec/
+            for data_dir in db_custom db_extra info; do
+              if [ -d "dep/Detect-It-Easy/$data_dir" ]; then
+                cp -r "dep/Detect-It-Easy/$data_dir" release_termux/diec/
+              fi
+            done
             
             tar -czvf /output/DetectItEasy_Termux_CLI_aarch64.tar.gz -C release_termux diec
-          "
+          TERMUX_BUILD
+
+      - name: Verify Termux package
+        run: |
+          python3 - <<'PYTHON'
+          import tarfile
+
+          with tarfile.open("output_termux/DetectItEasy_Termux_CLI_aarch64.tar.gz", "r:gz") as archive:
+              executable = archive.getmember("diec/diec")
+              if not executable.isfile() or executable.size == 0 or not executable.mode & 0o111:
+                  raise SystemExit("Termux package must contain a nonempty executable diec/diec")
+          PYTHON
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: DetectItEasy-Termux-CLI-aarch64
+          if-no-files-found: error
           path: output_termux/DetectItEasy_Termux_CLI_aarch64.tar.gz
 
       - name: Upload Release
@@ -1423,5 +1439,5 @@ jobs:
           draft: ${{ inputs.release_draft || false }}
           prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
           target_commitish: ${{ github.sha }}
-          fail_on_unmatched_files: ${{ inputs.release_draft || false }}
+          fail_on_unmatched_files: true
           files: output_termux/DetectItEasy_Termux_CLI_aarch64.tar.gz
