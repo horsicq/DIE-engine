@@ -123,6 +123,16 @@ jobs:
       release_draft: true
       release_prerelease: ${{ inputs.prerelease }}
 
+  build-apple:
+    needs: [prepare, source]
+    permissions:
+      contents: write
+    uses: ./.github/workflows/builder_apple.yml
+    with:
+      release_tag: ${{ needs.prepare.outputs.tag }}
+      release_draft: true
+      release_prerelease: ${{ inputs.prerelease }}
+
   source:
     name: Complete source archive
     needs: prepare
@@ -170,7 +180,7 @@ jobs:
             "$RUNNER_TEMP/die_sourcecode_${RELEASE_TAG}.tar.gz" --clobber
 
   publish:
-    needs: [prepare, build, source]
+    needs: [prepare, build, build-apple, source]
     runs-on: ubuntu-24.04
     permissions:
       contents: write
@@ -206,6 +216,15 @@ jobs:
           jq -e --arg commit "$RELEASE_COMMIT" \
             '.isDraft and .targetCommitish == $commit and (.assets | length > 0)' \
             <<< "$release" > /dev/null
+          # Both native Apple builds must be present before publishing the draft.
+          if ! jq -e \
+            --arg intel "die_${RELEASE_TAG}_mac_portable_x86_64_qt6.zip" \
+            --arg arm64 "die_${RELEASE_TAG}_mac_portable_arm64_qt6.zip" \
+            '[.assets[].name] | index($intel) != null and index($arm64) != null' \
+            <<< "$release" > /dev/null; then
+            echo "::error::The release is missing the Intel or ARM64 macOS package."
+            exit 1
+          fi
           printf '%s\n' "$release" > "$RUNNER_TEMP/release.json"
           python3 .github/scripts/release_notes.py \
             --release-json "$RUNNER_TEMP/release.json" \
