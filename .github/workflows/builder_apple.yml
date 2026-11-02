@@ -18,6 +18,25 @@ on:
         required: false
         type: boolean
         default: true
+    secrets:
+      APPLE_CERTIFICATE_P12_BASE64:
+        description: Base64 Developer ID Application certificate and private key (.p12)
+        required: true
+      APPLE_CERTIFICATE_PASSWORD:
+        description: Password protecting the .p12 file
+        required: true
+      APPLE_NOTARY_KEY_P8:
+        description: App Store Connect Team API private key (.p8 contents)
+        required: true
+      APPLE_NOTARY_KEY_ID:
+        description: API key ID (may instead be configured as a repository variable)
+        required: false
+      APPLE_NOTARY_ISSUER_ID:
+        description: API issuer ID (may instead be configured as a repository variable)
+        required: false
+      APPLE_SIGNING_IDENTITY:
+        description: Optional Developer ID Application name or SHA-1 fingerprint
+        required: false
   workflow_dispatch:
   release:
     types: [created]
@@ -49,6 +68,16 @@ jobs:
         with:
           submodules: recursive
           persist-credentials: false
+
+      - name: Check signing configuration
+        if: github.event_name != 'pull_request'
+        env:
+          APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_NOTARY_KEY_P8: ${{ secrets.APPLE_NOTARY_KEY_P8 }}
+          APPLE_NOTARY_KEY_ID: ${{ secrets.APPLE_NOTARY_KEY_ID || vars.APPLE_NOTARY_KEY_ID }}
+          APPLE_NOTARY_ISSUER_ID: ${{ secrets.APPLE_NOTARY_ISSUER_ID || vars.APPLE_NOTARY_ISSUER_ID }}
+        run: python3 .github/scripts/sign_macos.py check
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -92,6 +121,34 @@ jobs:
           env -u DYLD_LIBRARY_PATH -u DYLD_FRAMEWORK_PATH \
             "$bundle/Contents/MacOS/diec" --version
           printf 'path=%s\n' "$archive" >> "$GITHUB_OUTPUT"
+
+      # PR artifacts stay unsigned. Every package uploaded to a release must
+      # have a Developer ID signature and a stapled Apple notarization ticket.
+      - name: Sign and notarize package
+        id: signing
+        if: github.event_name != 'pull_request'
+        timeout-minutes: 45
+        env:
+          APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_NOTARY_KEY_P8: ${{ secrets.APPLE_NOTARY_KEY_P8 }}
+          APPLE_NOTARY_KEY_ID: ${{ secrets.APPLE_NOTARY_KEY_ID || vars.APPLE_NOTARY_KEY_ID }}
+          APPLE_NOTARY_ISSUER_ID: ${{ secrets.APPLE_NOTARY_ISSUER_ID || vars.APPLE_NOTARY_ISSUER_ID }}
+          APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY || vars.APPLE_SIGNING_IDENTITY }}
+          PACKAGE_PATH: ${{ steps.package.outputs.path }}
+        run: python3 .github/scripts/sign_macos.py sign "$PACKAGE_PATH"
+
+      - name: Remove temporary signing credentials
+        if: always() && github.event_name != 'pull_request'
+        run: python3 .github/scripts/sign_macos.py cleanup
+
+      - name: Upload notarization diagnostics
+        if: always() && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: die-macos-notarization-${{ matrix.arch }}
+          path: ${{ runner.temp }}/die-apple-notarization/*.json
+          if-no-files-found: ignore
 
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
