@@ -21,11 +21,29 @@
 #include "guimainwindow.h"
 
 #include <QFileInfo>
+#include <QMessageBox>
 #include <QMimeData>
+#include <QProgressDialog>
 
+#include "dieupdater.h"
 #include "ui_guimainwindow.h"
 
-GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
+static void _applyUserDatabase(XOptions *pOptions)
+{
+    if (!pOptions || !pOptions->isIDPresent(XOptions::ID_SCAN_DIE_DATABASE_MAIN_PATH)) {
+        return;
+    }
+
+    QString sCurrent = pOptions->getValue(XOptions::ID_SCAN_DIE_DATABASE_MAIN_PATH).toString();
+    QString sResolved = DieUpdater::resolveDatabasePath(sCurrent);
+
+    if (sResolved != sCurrent) {
+        pOptions->setValue(XOptions::ID_SCAN_DIE_DATABASE_MAIN_PATH, sResolved);
+    }
+}
+
+GuiMainWindow::GuiMainWindow(QWidget *pParent)
+    : QMainWindow(pParent), ui(new Ui::GuiMainWindow), m_pUpdateProcess(nullptr), m_pUpdateProgress(nullptr)
 {
     ui->setupUi(this);
 
@@ -50,6 +68,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     ui->toolButtonAbout->setToolTip(tr("About"));
     ui->toolButtonOptions->setToolTip(tr("Options"));
     ui->toolButtonDemangle->setToolTip(tr("Demangle"));
+    ui->toolButtonUpdateDatabase->setToolTip(tr("Update database"));
     ui->toolButtonExit->setToolTip(tr("Exit"));
     ui->toolButtonOpenFile->setToolTip(tr("Open file"));
     ui->toolButtonShortcuts->setToolTip(tr("Shortcuts"));
@@ -115,6 +134,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_SCAN_ENGINE, "auto");
 
     g_xOptions.load();
+    _applyUserDatabase(&g_xOptions);
 #if defined(Q_OS_WIN) && defined(X_BUILD_INSTALL)
     checkMsixResources();
 #endif
@@ -167,6 +187,11 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
 GuiMainWindow::~GuiMainWindow()
 {
+    if (m_pUpdateProcess && (m_pUpdateProcess->state() != QProcess::NotRunning)) {
+        m_pUpdateProcess->kill();
+        m_pUpdateProcess->waitForFinished();
+    }
+
     g_xOptions.setValue(XOptions::ID_VIEW_ADVANCED, ui->checkBoxAdvanced->isChecked());
 
     g_xOptions.save();
@@ -222,6 +247,96 @@ void GuiMainWindow::on_toolButtonDemangle_clicked()
     dialogDemangle.setGlobal(&g_xShortcuts, &g_xOptions);
 
     dialogDemangle.exec();
+}
+
+void GuiMainWindow::on_toolButtonUpdateDatabase_clicked()
+{
+    if (m_pUpdateProcess) {
+        return;
+    }
+
+    QString sProgram = DieUpdater::getProgramPath();
+    if (!QFileInfo(sProgram).isFile()) {
+        QMessageBox::critical(this, tr("Update database"), tr("Cannot find the database updater: %1").arg(sProgram));
+        if (qApp->property("dieUpdateSmoke").toBool()) {
+            qApp->exit(DieUpdater::CANNOT_RUN);
+        }
+        return;
+    }
+
+    m_pUpdateProgress = new QProgressDialog(tr("Updating the signature database..."), QString(), 0, 0, this);
+    m_pUpdateProgress->setWindowTitle(tr("Update database"));
+    m_pUpdateProgress->setCancelButton(nullptr);
+    m_pUpdateProgress->setMinimumDuration(0);
+    m_pUpdateProgress->setWindowModality(Qt::WindowModal);
+    m_pUpdateProgress->show();
+
+    ui->toolButtonUpdateDatabase->setEnabled(false);
+    m_pUpdateProcess = new QProcess(this);
+    m_pUpdateProcess->setProcessChannelMode(QProcess::MergedChannels);
+    connect(m_pUpdateProcess, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(updateDatabaseFinished(int,QProcess::ExitStatus)));
+    connect(m_pUpdateProcess, SIGNAL(errorOccurred(QProcess::ProcessError)), this, SLOT(updateDatabaseError(QProcess::ProcessError)));
+    m_pUpdateProcess->start(sProgram, DieUpdater::getArguments(false, QString(), false));
+}
+
+void GuiMainWindow::updateDatabaseFinished(int nExitCode, QProcess::ExitStatus exitStatus)
+{
+    QString sOutput;
+    if (m_pUpdateProcess) {
+        sOutput = QString::fromUtf8(m_pUpdateProcess->readAll());
+        m_pUpdateProcess->deleteLater();
+        m_pUpdateProcess = nullptr;
+    }
+    if (m_pUpdateProgress) {
+        m_pUpdateProgress->close();
+        m_pUpdateProgress->deleteLater();
+        m_pUpdateProgress = nullptr;
+    }
+    ui->toolButtonUpdateDatabase->setEnabled(true);
+
+    bool bSuccess = (exitStatus == QProcess::NormalExit) && (nExitCode == 0);
+    if (bSuccess) {
+        _applyUserDatabase(&g_xOptions);
+        ui->widgetFormats->adjustView();
+        ui->widgetFormats->reloadData(true);
+    }
+
+    sOutput.replace(QChar('\r'), QChar('\n'));
+    sOutput = sOutput.trimmed();
+    if (sOutput.isEmpty()) {
+        sOutput = bSuccess ? tr("The database is up to date.") : tr("The database update failed (exit code %1).").arg(nExitCode);
+    }
+
+    if (qApp->property("dieUpdateSmoke").toBool()) {
+        qApp->exit(bSuccess ? 0 : nExitCode);
+    } else if (bSuccess) {
+        QMessageBox::information(this, tr("Update database"), sOutput);
+    } else {
+        QMessageBox::critical(this, tr("Update database"), sOutput);
+    }
+}
+
+void GuiMainWindow::updateDatabaseError(QProcess::ProcessError error)
+{
+    if ((error != QProcess::FailedToStart) || !m_pUpdateProcess) {
+        return;
+    }
+
+    QString sError = tr("Cannot run %1: %2").arg(DieUpdater::getProgramPath(), m_pUpdateProcess->errorString());
+    m_pUpdateProcess->deleteLater();
+    m_pUpdateProcess = nullptr;
+    if (m_pUpdateProgress) {
+        m_pUpdateProgress->close();
+        m_pUpdateProgress->deleteLater();
+        m_pUpdateProgress = nullptr;
+    }
+    ui->toolButtonUpdateDatabase->setEnabled(true);
+
+    if (qApp->property("dieUpdateSmoke").toBool()) {
+        qApp->exit(DieUpdater::CANNOT_RUN);
+    } else {
+        QMessageBox::critical(this, tr("Update database"), sError);
+    }
 }
 
 QString GuiMainWindow::getCurrentFileName()

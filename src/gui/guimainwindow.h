@@ -23,6 +23,7 @@
 
 #include <QFileDialog>
 #include <QMainWindow>
+#include <QProcess>
 
 #include "../global.h"
 #include "dialogabout.h"
@@ -42,6 +43,8 @@ namespace Ui {
 class GuiMainWindow;
 }
 QT_END_NAMESPACE
+
+class QProgressDialog;
 
 class GuiMainWindow : public QMainWindow {
     Q_OBJECT
@@ -64,6 +67,7 @@ private slots:
     void on_toolButtonOptions_clicked();
     void on_toolButtonOpenFile_clicked();
     void on_toolButtonDemangle_clicked();
+    void on_toolButtonUpdateDatabase_clicked();
     void on_toolButtonRecentFiles_clicked();
     void on_checkBoxAdvanced_toggled(bool bChecked);
     void on_lineEditFileName_returnPressed();
@@ -71,6 +75,8 @@ private slots:
     void exitSlot();
     void openFileSlot();
     void fullScreenSlot();
+    void updateDatabaseFinished(int nExitCode, QProcess::ExitStatus exitStatus);
+    void updateDatabaseError(QProcess::ProcessError error);
 
     QString getCurrentFileName();
     void adjustView();
@@ -98,5 +104,7 @@ private:
     XShortcuts g_xShortcuts;
     QMenu *g_pRecentFilesMenu;
     QShortcut *shortCuts[__SC_SIZE];
+    QProcess *m_pUpdateProcess;
+    QProgressDialog *m_pUpdateProgress;
 };
 #endif  // GUIMAINWINDOW_H

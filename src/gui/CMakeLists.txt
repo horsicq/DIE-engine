@@ -80,6 +80,7 @@ endif()
 target_include_directories(${DIE_GUI_TARGET} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(${DIE_GUI_TARGET} PRIVATE
+    die_updater_qt
     capstone
     cppfilt
     xsimd
@@ -91,6 +92,23 @@ target_link_libraries(${DIE_GUI_TARGET} PRIVATE
     Qt${DIE_QT_MAJOR}::Svg
     Qt${DIE_QT_MAJOR}::Sql
 )
+
+if(TARGET die_update)
+    add_dependencies(${DIE_GUI_TARGET} die_update)
+    if(APPLE)
+        add_custom_command(TARGET ${DIE_GUI_TARGET} POST_BUILD
+            COMMAND "${CMAKE_COMMAND}" -E copy_if_different
+                "$<TARGET_FILE:die_update>"
+                "$<TARGET_BUNDLE_CONTENT_DIR:${DIE_GUI_TARGET}>/MacOS/$<TARGET_FILE_NAME:die_update>"
+            VERBATIM)
+    else()
+        add_custom_command(TARGET ${DIE_GUI_TARGET} POST_BUILD
+            COMMAND "${CMAKE_COMMAND}" -E copy_if_different
+                "$<TARGET_FILE:die_update>"
+                "$<TARGET_FILE_DIR:${DIE_GUI_TARGET}>/$<TARGET_FILE_NAME:die_update>"
+            VERBATIM)
+    endif()
+endif()
 
 if(DIE_QT_MAJOR EQUAL 5)
     target_link_libraries(${DIE_GUI_TARGET} PRIVATE

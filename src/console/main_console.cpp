@@ -29,6 +29,7 @@
 #include "xfileinfo.h"
 #include "xoptions.h"
 #include "xscanengineconsole.h"
+#include "dieupdater.h"
 
 // diec on the shared XScanEngineConsole. The overrides keep the established
 // die-specific behavior: EntropyProcess/XFileInfo output for -e/-i/-S,
@@ -57,6 +58,9 @@ private:
     QCommandLineOption m_clTest;
     QCommandLineOption m_clCreateTest;
     QCommandLineOption m_clCreateTar;
+    QCommandLineOption m_clCheckUpdate;
+    QCommandLineOption m_clUpdate;
+    QCommandLineOption m_clExtraDatabase;
 };
 
 DIEConsole::DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QString &sDescription)
@@ -64,7 +68,11 @@ DIEConsole::DIEConsole(QCoreApplication &app, DiE_Script &dieScript, const QStri
       m_dieScript(dieScript),
       m_clTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_TEST)),
       m_clCreateTest(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETEST)),
-      m_clCreateTar(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETAR))
+      m_clCreateTar(XOptions::getCommandLineOption(XOptions::CONSOLE_OPTION_ID_CREATETAR)),
+      m_clCheckUpdate(QStringList() << "checkupdate", QCoreApplication::translate("DIEConsole", "Check for a database update (exit code 1: available)")),
+      m_clUpdate(QStringList() << "update", QCoreApplication::translate("DIEConsole", "Download and install a database update")),
+      m_clExtraDatabase(QStringList() << "E" << "extradatabase",
+                        QCoreApplication::translate("DIEConsole", "Removed extra database option"), "path")
 {
 }
 
@@ -73,6 +81,9 @@ void DIEConsole::addEngineOptions(QCommandLineParser *pParser)
     pParser->addOption(m_clTest);
     pParser->addOption(m_clCreateTest);
     pParser->addOption(m_clCreateTar);
+    pParser->addOption(m_clCheckUpdate);
+    pParser->addOption(m_clUpdate);
+    pParser->addOption(m_clExtraDatabase);
 }
 
 void DIEConsole::applyEngineOptions(const QCommandLineParser *pParser, XScanEngine::SCAN_OPTIONS *pScanOptions)
@@ -87,6 +98,44 @@ bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QSt
                                     qint32 *pnResult)
 {
     bool bHandled = false;
+
+    pScanOptions->sMainDatabasePath = DieUpdater::resolveDatabasePath(pScanOptions->sMainDatabasePath);
+
+    if (pParser->isSet(m_clExtraDatabase)) {
+        fprintf(stderr, "%s\n", qPrintable(tr("-E/--extradatabase was removed: diec uses only the main (-D) and custom (-C) databases")));
+        *pnResult = XOptions::CR_INVALIDPARAMETER;
+        return true;
+    }
+
+    bool bCheckUpdate = pParser->isSet(m_clCheckUpdate);
+    bool bUpdate = pParser->isSet(m_clUpdate);
+
+    if (bCheckUpdate || bUpdate) {
+        if (bCheckUpdate && bUpdate) {
+            fprintf(stderr, "%s\n", qPrintable(tr("--checkupdate and --update are mutually exclusive")));
+            *pnResult = XOptions::CR_INVALIDPARAMETER;
+        } else if (!listArgs.isEmpty() || pParser->isSet(m_clTest) || pParser->isSet(m_clCreateTest) || pParser->isSet(m_clCreateTar) ||
+                   pParser->isSet("customdatabase") || pParser->isSet("showdatabase") || pParser->isSet("showstructs") || pParser->isSet("entropy") ||
+                   pParser->isSet("info") || pParser->isSet("struct")) {
+            fprintf(stderr, "%s\n", qPrintable(tr("--checkupdate and --update take no target and no other mode")));
+            *pnResult = XOptions::CR_INVALIDPARAMETER;
+        } else {
+            bool bJson = pParser->isSet("json") || (pParser->isSet("format") && (pParser->value("format") == QString("json")));
+            QString sDatabase;
+            QString sError;
+
+            if (pParser->isSet("database")) {
+                sDatabase = pScanOptions->sMainDatabasePath;
+            }
+
+            *pnResult = DieUpdater::run(bCheckUpdate, sDatabase, bJson, &sError);
+            if ((*pnResult == DieUpdater::CANNOT_RUN) && !sError.isEmpty()) {
+                fprintf(stderr, "%s\n", sError.toUtf8().constData());
+            }
+        }
+
+        return true;
+    }
 
     if (pParser->isSet(m_clCreateTar)) {
         // Packs the main database (-D, default $data/db) like cdie --createtar;

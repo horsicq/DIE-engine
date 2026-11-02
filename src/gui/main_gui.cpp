@@ -20,6 +20,7 @@
  */
 #include <QApplication>
 #include <QStyleFactory>
+#include <QTimer>
 
 #include "guimainwindow.h"
 #include "xsingleapplication.h"
@@ -46,6 +47,10 @@ int main(int argc, char *argv[])
     }
 
     XSingleApplication app(argc, argv);
+
+    const QStringList listArguments = QCoreApplication::arguments();
+    const bool bUpdateSmoke = listArguments.contains(QString("--smoke-update"));
+    app.setProperty("dieUpdateSmoke", bUpdateSmoke);
 
     app.setProperty("dataPathAlt0", "/opt/detect-it-easy");
 
@@ -111,12 +116,14 @@ int main(int argc, char *argv[])
 
         mainWindow.show();
 
+        if (bUpdateSmoke) {
+            QTimer::singleShot(0, &mainWindow, SLOT(on_toolButtonUpdateDatabase_clicked()));
+        }
+
         // The window used to read QCoreApplication::arguments() from its own constructor.
         // argv belongs to main(): a file passed on the command line now arrives through the
         // same slot a second instance uses, against a window that is already on screen.
-        const QStringList listArguments = QCoreApplication::arguments();
-
-        if (listArguments.count() > 1) {
+        if ((listArguments.count() > 1) && !bUpdateSmoke) {
             mainWindow._process(listArguments.at(1));
         }
 

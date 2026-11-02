@@ -54,11 +54,21 @@ endif()
 target_include_directories(diec PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(diec PRIVATE
+    die_updater_qt
     xsimd
     capstone_x86
     Qt${DIE_QT_MAJOR}::Core
     Qt${DIE_QT_MAJOR}::Concurrent
 )
+
+if(TARGET die_update)
+    add_dependencies(diec die_update)
+    add_custom_command(TARGET diec POST_BUILD
+        COMMAND "${CMAKE_COMMAND}" -E copy_if_different
+            "$<TARGET_FILE:die_update>"
+            "$<TARGET_FILE_DIR:diec>/$<TARGET_FILE_NAME:die_update>"
+        VERBATIM)
+endif()
 
 if(DIE_QT_MAJOR EQUAL 5)
     target_link_libraries(diec PRIVATE Qt5::Script)

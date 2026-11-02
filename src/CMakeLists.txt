@@ -117,6 +117,7 @@ add_subdirectory("${CMAKE_SOURCE_DIR}/dep/XYara"         XYara)
 add_subdirectory("${CMAKE_SOURCE_DIR}/dep/Formats/xsimd" XSIMD)
 
 # --- Executable targets ---
+add_subdirectory(updater)
 add_subdirectory(gui)
 add_subdirectory(console)
 add_subdirectory(lite)
