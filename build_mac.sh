@@ -7,11 +7,14 @@ X_RELEASE_VERSION=$(cat "release_version.txt")
 
 BUILD_DIR=$(mktemp -d)
 RELEASE_DIR="$X_SOURCE_PATH/release"
+PKG_NAME="die_${X_RELEASE_VERSION}_mac.pkg"
 
 cleanup() { rm -rf "$BUILD_DIR"; }
 trap cleanup EXIT
 
 mkdir -p "$RELEASE_DIR"
+# A failed build must not leave an older installer looking like new output.
+rm -f "$RELEASE_DIR/$PKG_NAME"
 
 QT_PREFIX_PATH="${1:-${QT_PREFIX_PATH:-$HOME/Qt/5.15.2/clang_64}}"
 CMAKE_ARGS=(
@@ -100,10 +103,25 @@ PACKAGE_DIR="$RELEASE_DIR/$X_BUILD_NAME"
 rm -rf "$PACKAGE_DIR"
 mkdir -p "$PACKAGE_DIR"
 cp -R "$APP_BUNDLE" "$PACKAGE_DIR/"
+STAGED_APP="$PACKAGE_DIR/${APP_BUNDLE##*/}"
+
+# Package exactly the deployed bundle used by the portable ZIP. Signing and
+# notarization are performed separately by the release workflow.
+productbuild --component "$STAGED_APP" /Applications "$BUILD_DIR/$PKG_NAME"
+if [ ! -s "$BUILD_DIR/$PKG_NAME" ]; then
+    echo "ERROR: productbuild did not create a non-empty installer" >&2
+    exit 1
+fi
 
 cd "$RELEASE_DIR"
 ZIP_NAME="die_${X_RELEASE_VERSION}_mac_portable.zip"
 rm -f "$ZIP_NAME"
 zip -y -r "$ZIP_NAME" "$X_BUILD_NAME"
+if [ ! -s "$ZIP_NAME" ]; then
+    echo "ERROR: zip did not create a non-empty archive" >&2
+    exit 1
+fi
+mv -f "$BUILD_DIR/$PKG_NAME" "$RELEASE_DIR/$PKG_NAME"
 rm -rf "$PACKAGE_DIR"
 echo "Created: $RELEASE_DIR/$ZIP_NAME"
+echo "Created: $RELEASE_DIR/$PKG_NAME"

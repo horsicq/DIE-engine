@@ -18,26 +18,55 @@ on:
         required: false
         type: boolean
         default: true
+      require_signing:
+        description: Require signing credentials; unsigned builds never upload to releases
+        required: false
+        type: boolean
+        default: false
     secrets:
       APPLE_CERTIFICATE_P12_BASE64:
         description: Base64 Developer ID Application certificate and private key (.p12)
-        required: true
+        required: false
       APPLE_CERTIFICATE_PASSWORD:
         description: Password protecting the .p12 file
-        required: true
+        required: false
+      APPLE_INSTALLER_CERTIFICATE_P12_BASE64:
+        description: Base64 Developer ID Installer certificate and private key (.p12)
+        required: false
+      APPLE_INSTALLER_CERTIFICATE_PASSWORD:
+        description: Password protecting the installer .p12 file
+        required: false
       APPLE_NOTARY_KEY_P8:
         description: App Store Connect Team API private key (.p8 contents)
-        required: true
+        required: false
       APPLE_NOTARY_KEY_ID:
         description: API key ID (may instead be configured as a repository variable)
         required: false
       APPLE_NOTARY_ISSUER_ID:
         description: API issuer ID (may instead be configured as a repository variable)
         required: false
+      APPLE_NOTARY_APPLE_ID:
+        description: Apple ID for notarization instead of an App Store Connect API key
+        required: false
+      APPLE_NOTARY_PASSWORD:
+        description: App-specific password for Apple-ID notarization
+        required: false
+      APPLE_NOTARY_TEAM_ID:
+        description: Developer Team ID for Apple-ID notarization
+        required: false
       APPLE_SIGNING_IDENTITY:
         description: Optional Developer ID Application name or SHA-1 fingerprint
         required: false
+      APPLE_INSTALLER_SIGNING_IDENTITY:
+        description: Optional Developer ID Installer name or SHA-1 fingerprint
+        required: false
   workflow_dispatch:
+    inputs:
+      require_signing:
+        description: Require a signed and notarized build
+        required: false
+        type: boolean
+        default: false
   release:
     types: [created]
   schedule:
@@ -50,7 +79,7 @@ permissions:
 
 jobs:
   build-macos:
-    name: macOS (${{ matrix.arch }}, Qt 6)
+    name: macOS (${{ matrix.arch }}, Qt ${{ matrix.qt_major }})
     runs-on: ${{ matrix.runner }}
     strategy:
       fail-fast: false
@@ -58,8 +87,19 @@ jobs:
         include:
           - runner: macos-15-intel
             arch: x86_64
+            qt_major: 5
+            qt_version: '5.15.2'
+            qt_modules: qtscript
+          - runner: macos-15-intel
+            arch: x86_64
+            qt_major: 6
+            qt_version: '6.8.3'
+            qt_modules: qt5compat
           - runner: macos-15
             arch: arm64
+            qt_major: 6
+            qt_version: '6.8.3'
+            qt_modules: qt5compat
     env:
       CMAKE_OSX_ARCHITECTURES: ${{ matrix.arch }}
     steps:
@@ -70,43 +110,59 @@ jobs:
           persist-credentials: false
 
       - name: Check signing configuration
+        id: signing_config
         if: github.event_name != 'pull_request'
         env:
           APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_INSTALLER_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_P12_BASE64 }}
+          APPLE_INSTALLER_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_PASSWORD }}
           APPLE_NOTARY_KEY_P8: ${{ secrets.APPLE_NOTARY_KEY_P8 }}
           APPLE_NOTARY_KEY_ID: ${{ secrets.APPLE_NOTARY_KEY_ID || vars.APPLE_NOTARY_KEY_ID }}
           APPLE_NOTARY_ISSUER_ID: ${{ secrets.APPLE_NOTARY_ISSUER_ID || vars.APPLE_NOTARY_ISSUER_ID }}
-        run: python3 .github/scripts/sign_macos.py check
+          APPLE_NOTARY_APPLE_ID: ${{ secrets.APPLE_NOTARY_APPLE_ID || vars.APPLE_NOTARY_APPLE_ID }}
+          APPLE_NOTARY_PASSWORD: ${{ secrets.APPLE_NOTARY_PASSWORD }}
+          APPLE_NOTARY_TEAM_ID: ${{ secrets.APPLE_NOTARY_TEAM_ID || vars.APPLE_NOTARY_TEAM_ID }}
+          REQUIRE_SIGNING: ${{ inputs.require_signing || inputs.release_draft || github.event_name == 'release' || (inputs.release_tag && inputs.release_tag != 'Beta') }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$REQUIRE_SIGNING" == 'true' ]]; then
+            python3 .github/scripts/sign_macos.py check
+          else
+            python3 .github/scripts/sign_macos.py check --allow-unsigned
+          fi
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
-          version: '6.8.3'
+          version: ${{ matrix.qt_version }}
           host: mac
           target: desktop
           arch: clang_64
-          modules: qt5compat
+          modules: ${{ matrix.qt_modules }}
           cache: true
 
-      - name: Build portable package
+      - name: Build portable package and installer
         shell: bash
         run: |
           set -euo pipefail
-          # build_mac.sh merges db_extra/*/; keep the optional PE directory
-          # present even when the pinned database has no extra rules.
-          mkdir -p dep/Detect-It-Easy/db_extra/PE
-          bash -x build_mac.sh "$QT_ROOT_DIR"
+          bash build_mac.sh "$QT_ROOT_DIR"
 
       - name: Name and verify package
         id: package
         shell: bash
+        env:
+          QT_MAJOR: ${{ matrix.qt_major }}
         run: |
           set -euo pipefail
           version=$(tr -d '\r\n' < release_version.txt)
-          archive="release/die_${version}_mac_portable_${CMAKE_OSX_ARCHITECTURES}_qt6.zip"
+          archive="release/die_${version}_mac_portable_${CMAKE_OSX_ARCHITECTURES}_qt${QT_MAJOR}.zip"
+          installer="release/die_${version}_mac_${CMAKE_OSX_ARCHITECTURES}_qt${QT_MAJOR}.pkg"
           mv "release/die_${version}_mac_portable.zip" "$archive"
+          mv "release/die_${version}_mac.pkg" "$installer"
           test -s "$archive"
+          test -s "$installer"
 
           verify_dir=$(mktemp -d)
           trap 'rm -rf "$verify_dir"' EXIT
@@ -121,46 +177,57 @@ jobs:
           env -u DYLD_LIBRARY_PATH -u DYLD_FRAMEWORK_PATH \
             "$bundle/Contents/MacOS/diec" --version
           printf 'path=%s\n' "$archive" >> "$GITHUB_OUTPUT"
+          printf 'installer_path=%s\n' "$installer" >> "$GITHUB_OUTPUT"
 
-      # PR artifacts stay unsigned. Every package uploaded to a release must
+      # PRs and standalone runs without signing credentials produce unsigned
+      # artifacts. Every package uploaded to a release must
       # have a Developer ID signature and a stapled Apple notarization ticket.
-      - name: Sign and notarize package
+      - name: Sign and notarize packages
         id: signing
-        if: github.event_name != 'pull_request'
-        timeout-minutes: 45
+        if: steps.signing_config.outputs.enabled == 'true'
+        timeout-minutes: 75
         env:
           APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_INSTALLER_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_P12_BASE64 }}
+          APPLE_INSTALLER_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_PASSWORD }}
           APPLE_NOTARY_KEY_P8: ${{ secrets.APPLE_NOTARY_KEY_P8 }}
           APPLE_NOTARY_KEY_ID: ${{ secrets.APPLE_NOTARY_KEY_ID || vars.APPLE_NOTARY_KEY_ID }}
           APPLE_NOTARY_ISSUER_ID: ${{ secrets.APPLE_NOTARY_ISSUER_ID || vars.APPLE_NOTARY_ISSUER_ID }}
+          APPLE_NOTARY_APPLE_ID: ${{ secrets.APPLE_NOTARY_APPLE_ID || vars.APPLE_NOTARY_APPLE_ID }}
+          APPLE_NOTARY_PASSWORD: ${{ secrets.APPLE_NOTARY_PASSWORD }}
+          APPLE_NOTARY_TEAM_ID: ${{ secrets.APPLE_NOTARY_TEAM_ID || vars.APPLE_NOTARY_TEAM_ID }}
           APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY || vars.APPLE_SIGNING_IDENTITY }}
+          APPLE_INSTALLER_SIGNING_IDENTITY: ${{ secrets.APPLE_INSTALLER_SIGNING_IDENTITY || vars.APPLE_INSTALLER_SIGNING_IDENTITY }}
           PACKAGE_PATH: ${{ steps.package.outputs.path }}
-        run: python3 .github/scripts/sign_macos.py sign "$PACKAGE_PATH"
+          INSTALLER_PATH: ${{ steps.package.outputs.installer_path }}
+        run: python3 .github/scripts/sign_macos.py sign "$PACKAGE_PATH" "$INSTALLER_PATH"
 
       - name: Remove temporary signing credentials
-        if: always() && github.event_name != 'pull_request'
+        if: always() && steps.signing_config.outputs.enabled == 'true'
         run: python3 .github/scripts/sign_macos.py cleanup
 
       - name: Upload notarization diagnostics
-        if: always() && github.event_name != 'pull_request'
+        if: always() && steps.signing_config.outputs.enabled == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: die-macos-notarization-${{ matrix.arch }}
-          path: ${{ runner.temp }}/die-apple-notarization/*.json
+          name: die-macos-notarization-${{ matrix.arch }}-qt${{ matrix.qt_major }}
+          path: ${{ runner.temp }}/die-apple-notarization/**/*.json
           if-no-files-found: ignore
 
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
-          name: die-macos-${{ matrix.arch }}-qt6
-          path: ${{ steps.package.outputs.path }}
+          name: die-macos-${{ matrix.arch }}-qt${{ matrix.qt_major }}-${{ steps.signing.outcome == 'success' && 'signed' || 'unsigned' }}
+          path: |
+            ${{ steps.package.outputs.path }}
+            ${{ steps.package.outputs.installer_path }}
           if-no-files-found: error
 
-      # Standalone runs append Apple packages to the published Beta prerelease,
+      # Signed standalone runs append packages to the published Beta prerelease,
       # matching builder.yml. make_release.yml supplies a versioned draft tag.
       - name: Upload Release as Download
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && steps.signing.outcome == 'success'
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ inputs.release_tag || 'Beta' }}
@@ -168,4 +235,6 @@ jobs:
           prerelease: ${{ !inputs.release_tag || inputs.release_prerelease }}
           target_commitish: ${{ github.sha }}
           fail_on_unmatched_files: true
-          files: ${{ steps.package.outputs.path }}
+          files: |
+            ${{ steps.package.outputs.path }}
+            ${{ steps.package.outputs.installer_path }}
