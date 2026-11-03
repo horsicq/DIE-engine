@@ -5,6 +5,7 @@ import argparse
 import base64
 import binascii
 from datetime import datetime, timezone
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -44,11 +45,21 @@ MACH_O_MAGIC = {
     b"\xca\xfe\xba\xbf", b"\xbf\xba\xfe\xca",
 }
 SIGNING_TIMEOUT = 70 * 60  # Leave five minutes for cleanup before the CI step limit.
+NOTARY_POLL_TIMEOUT = 30 * 60
+NOTARY_POLL_INTERVAL = 15
+NOTARY_REQUEST_TIMEOUT = 60
+NOTARY_STATUS_FAILURES = 5
+NOTARY_LOG_ATTEMPTS = 3
 _signing_deadline = None
 
 
 class CommandTimeout(RuntimeError):
-    pass
+    def __init__(self, message, *, stdout="", stderr=""):
+        super().__init__(message)
+        # Keep partial output available to recover a submission ID. Never put
+        # credential-bearing tool output in the exception message or CI logs.
+        self.stdout = stdout
+        self.stderr = stderr
 
 
 class SigningTimeout(RuntimeError):
@@ -231,7 +242,8 @@ def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=())
     except subprocess.TimeoutExpired as error:
         stdout, stderr = stop_process(process)
         finish("timed_out", stdout or error.stdout, stderr or error.stderr, process.returncode)
-        raise CommandTimeout(f"{label} timed out after {timeout:.0f}s.") from None
+        raise CommandTimeout(f"{label} timed out after {timeout:.0f}s.",
+                             stdout=stdout or error.stdout, stderr=stderr or error.stderr) from None
     except BaseException:
         stdout, stderr = stop_process(process)
         finish("interrupted", stdout, stderr, process.returncode)
@@ -447,39 +459,182 @@ def sign_app(app, root, keychain, identity):
     run("codesign", "--verify", "--strict", "--verbose=2", diec)
 
 
+def notary_json(output):
+    try:
+        value = json.loads(output)
+        return value if isinstance(value, dict) else {}
+    except (ValueError, TypeError):
+        return {}
+
+
+def valid_submission_id(value):
+    return isinstance(value, str) and re.fullmatch(
+        r"[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}", value) is not None
+
+
+def write_notary_json(path, value):
+    temporary = path.with_suffix(".tmp")
+    temporary.write_text(json.dumps(value, indent=2))
+    temporary.replace(path)
+
+
+def restore_matching_notary_state(digest, diagnostics, kind):
+    # The CI restore step validates provenance and collects earlier attempts in
+    # a separate hash-indexed directory. A rebuilt/re-signed file may differ;
+    # only identical uploaded bytes are eligible for the earlier submission ID.
+    restored_file = Path(os.environ["RUNNER_TEMP"]) / "die-apple-notary-restored" / kind / f"{digest}.json"
+    if not restored_file.exists() and not restored_file.is_symlink():
+        return
+    if restored_file.is_symlink() or restored_file.stat().st_size > 16 * 1024:
+        raise RuntimeError(f"Invalid restored {kind} notarization state; refusing to upload again.")
+    restored = notary_json(restored_file.read_text())
+    if (restored.get("sha256") != digest
+            or restored.get("upload_state") not in ("submitted", "uncertain")
+            or ("id" in restored and not valid_submission_id(restored["id"]))
+            or ("id" not in restored and restored.get("upload_state") != "uncertain")
+            or ("status" in restored and restored["status"] not in ("In Progress", "Accepted", "Invalid", "Rejected"))):
+        raise RuntimeError(f"Invalid restored {kind} notarization state; refusing to upload again.")
+    # Never promote arbitrary artifact fields into the current diagnostics.
+    state = {name: restored[name] for name in ("sha256", "upload_state", "id", "status") if name in restored}
+    write_notary_json(diagnostics / "submission.json", state)
+    print(f"Restored {kind} notarization state for matching SHA-256 {digest}.", flush=True)
+
+
+def prepare_notary_submission(submission, auth, diagnostics, kind):
+    hasher = hashlib.sha256()
+    with submission.open("rb") as source:
+        for block in iter(lambda: source.read(1024 * 1024), b""):
+            hasher.update(block)
+    digest = hasher.hexdigest()
+    state_file = diagnostics / "submission.json"
+    if not state_file.exists():
+        restore_matching_notary_state(digest, diagnostics, kind)
+    if state_file.exists():
+        state = notary_json(state_file.read_text())
+        if state.get("sha256") != digest:
+            raise RuntimeError(f"Saved {kind} notarization state belongs to a different file; refusing to reuse or replace it.")
+        if not valid_submission_id(state.get("id")):
+            raise RuntimeError(f"The previous {kind} upload has no usable submission ID; "
+                               "Apple may have received it. Automatic resubmission is disabled.")
+        print(f"Resuming {kind} notarization with saved submission ID {state['id']}.", flush=True)
+        return state
+
+    # Record the attempt before making a request: losing its response must not
+    # cause a second upload of the same bytes on a subsequent invocation.
+    state = {"sha256": digest, "upload_state": "uncertain",
+             "upload_started_at": datetime.now(timezone.utc).isoformat()}
+    write_notary_json(state_file, state)
+    print(f"Uploading signed {kind} to Apple notarization once...", flush=True)
+    try:
+        result = run("xcrun", "notarytool", "submit", submission, *auth,
+                     "--no-wait", "--output-format", "json", check=False,
+                     timeout=35 * 60, phase=f"{kind}: upload notarization submission")
+        response = notary_json(result.stdout)
+        state["upload_returncode"] = result.returncode
+    except CommandTimeout as error:
+        response = notary_json(error.stdout)
+        state["upload_timed_out"] = True
+    submission_id = response.get("id")
+    if valid_submission_id(submission_id):
+        state["id"] = submission_id.lower()
+        if state.get("upload_returncode") == 0:
+            state["upload_state"] = "submitted"
+    # Persist the ID before any status query, even if submit ended with an error.
+    # Such an ID is useful for recovery but is not proof of a completed upload.
+    write_notary_json(state_file, state)
+    if not valid_submission_id(state.get("id")):
+        raise RuntimeError(f"The {kind} upload ended without a usable submission ID; "
+                           "Apple may have received it. Automatic resubmission is disabled. "
+                           "See submission.json in the notarization diagnostics.")
+    print(f"Saved {kind} notarization submission ID {state['id']}.", flush=True)
+    return state
+
+
+def poll_notary_submission(state, auth, diagnostics, kind):
+    submission_id = state["id"]
+    deadline = time.monotonic() + NOTARY_POLL_TIMEOUT
+    failures = 0
+    attempt = 0
+    while True:
+        available = deadline - time.monotonic()
+        if available <= 0:
+            raise RuntimeError(f"Timed out checking {kind} notarization {submission_id}. "
+                               "The submission ID is saved; no file was resubmitted.")
+        attempt += 1
+        response = {}
+        try:
+            result = run("xcrun", "notarytool", "info", submission_id, *auth,
+                         "--output-format", "json", check=False,
+                         timeout=remaining_timeout(min(NOTARY_REQUEST_TIMEOUT, available)),
+                         phase=f"{kind}: check notarization {submission_id}, attempt {attempt}")
+        except CommandTimeout:
+            pass
+        else:
+            if result.returncode == 0:
+                response = notary_json(result.stdout)
+        response_id = response.get("id")
+        if valid_submission_id(response_id) and response_id.lower() != submission_id.lower():
+            raise RuntimeError(f"Apple returned a different submission ID while checking {kind}; refusing to use its status.")
+        status = response.get("status")
+        if valid_submission_id(response_id) and status in ("In Progress", "Accepted", "Invalid", "Rejected"):
+            failures = 0
+            state.update(status=status, status_checked_at=datetime.now(timezone.utc).isoformat())
+            write_notary_json(diagnostics / "submission.json", state)
+            print(f"{kind} notarization {submission_id}: {status}.", flush=True)
+            if status != "In Progress":
+                return status
+            delay = NOTARY_POLL_INTERVAL
+        else:
+            failures += 1
+            if failures >= NOTARY_STATUS_FAILURES:
+                raise RuntimeError(f"Could not retrieve {kind} notarization status for {submission_id} "
+                                   f"after {failures} consecutive failures. The ID is saved; no file was resubmitted.")
+            delay = min(15 * 2 ** (failures - 1), 60)
+            print(f"::warning::Status request failed for {kind} notarization {submission_id}; "
+                  "retrying the same submission ID.", flush=True)
+        available = deadline - time.monotonic()
+        if available > 0:
+            time.sleep(remaining_timeout(min(delay, available)))
+
+
+def fetch_notary_log(submission_id, auth, diagnostics, kind):
+    log_file = diagnostics / "notarization-log.json"
+    partial = diagnostics / "notarization-log.partial"
+    try:
+        for attempt in range(1, NOTARY_LOG_ATTEMPTS + 1):
+            partial.unlink(missing_ok=True)
+            try:
+                result = run("xcrun", "notarytool", "log", submission_id, *auth, partial,
+                             check=False, timeout=NOTARY_REQUEST_TIMEOUT,
+                             phase=f"{kind}: retrieve notarization log {submission_id}, attempt {attempt}")
+            except CommandTimeout:
+                pass
+            else:
+                if result.returncode == 0 and partial.is_file():
+                    log = notary_json(partial.read_text(errors="replace"))
+                    log_id = log.get("jobId")
+                    if valid_submission_id(log_id) and log_id.lower() == submission_id.lower():
+                        write_notary_json(log_file, log)
+                        return
+            if attempt < NOTARY_LOG_ATTEMPTS:
+                print(f"::warning::Could not fetch the {kind} notarization log; retrying ID {submission_id}.", flush=True)
+                time.sleep(remaining_timeout(15 * attempt))
+        print(f"::warning::Apple's {kind} notarization log is unavailable after {NOTARY_LOG_ATTEMPTS} attempts. "
+              f"Submission ID {submission_id} is saved for later retrieval.", flush=True)
+    finally:
+        partial.unlink(missing_ok=True)
+
+
 def notarize_submission(submission, target, root, kind):
     diagnostics = Path(os.environ["RUNNER_TEMP"]) / "die-apple-notarization" / kind
     diagnostics.mkdir(parents=True, exist_ok=True)
     auth = notary_auth(root)
-    print(f"Submitting signed {kind} to Apple notarization...", flush=True)
-    result = run("xcrun", "notarytool", "submit", submission, *auth,
-                 "--wait", "--timeout", "30m", "--output-format", "json", check=False,
-                 timeout=35 * 60, phase=f"{kind}: upload and await Apple notarization")
-    try:
-        response = json.loads(result.stdout)
-        if not isinstance(response, dict):
-            raise ValueError
-    except ValueError:
-        raise RuntimeError("notarytool did not return a JSON result; "
-                           "check the notarization credentials and network access.") from None
-    (diagnostics / "submission.json").write_text(json.dumps(response, indent=2))
-    submission_id = response.get("id", "")
-    valid_id = isinstance(submission_id, str) and re.fullmatch(
-        r"[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}", submission_id)
-    status = response.get("status")
-    if valid_id and status in ("Accepted", "Invalid", "Rejected"):
-        # Logs exist only for completed submissions. A diagnostic download must
-        # not prevent an accepted app from being stapled if Apple's log API stalls.
-        try:
-            log = run("xcrun", "notarytool", "log", submission_id, *auth,
-                      diagnostics / "notarization-log.json", check=False,
-                      timeout=60, phase=f"{kind}: retrieve notarization log")
-        except CommandTimeout:
-            print("::warning::Apple's notarization log download timed out.", flush=True)
-        else:
-            if log.returncode:
-                print("::warning::Apple's notarization log was not available.", flush=True)
-    if result.returncode or not valid_id or response.get("status") != "Accepted":
+    state = prepare_notary_submission(submission, auth, diagnostics, kind)
+    status = poll_notary_submission(state, auth, diagnostics, kind)
+    # Only completed submissions have logs. A log outage must not undo a
+    # separately confirmed acceptance, nor turn a rejection into acceptance.
+    fetch_notary_log(state["id"], auth, diagnostics, kind)
+    if status != "Accepted":
         raise RuntimeError("Apple did not accept this submission. "
                            "See the notarization diagnostic artifact.")
     print(f"Apple accepted {kind} notarization; attaching and validating the ticket.", flush=True)

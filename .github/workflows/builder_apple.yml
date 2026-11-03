@@ -76,6 +76,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   build-macos:
@@ -102,6 +103,7 @@ jobs:
             qt_modules: qt5compat
     env:
       CMAKE_OSX_ARCHITECTURES: ${{ matrix.arch }}
+      QT_MAJOR: ${{ matrix.qt_major }}
     steps:
       - name: Checkout source and submodules
         uses: actions/checkout@v6
@@ -132,6 +134,14 @@ jobs:
           else
             python3 .github/scripts/sign_macos.py check --allow-unsigned
           fi
+
+      - name: Restore notarization IDs from previous attempts
+        id: notary_restore
+        if: steps.signing_config.outputs.enabled == 'true'
+        timeout-minutes: 5
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/notary_ci_state.py restore
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -222,11 +232,27 @@ jobs:
         timeout-minutes: 2
         run: python3 .github/scripts/stapler_network.py cleanup
 
+      # Keep a small state artifact separate from process reports. Each attempt
+      # retains earlier hashes as well as this attempt's app/installer IDs.
+      - name: Save notarization IDs for reruns
+        id: notary_save
+        if: always() && steps.notary_restore.outcome == 'success'
+        timeout-minutes: 2
+        run: python3 .github/scripts/notary_ci_state.py save
+
+      - name: Upload notarization IDs for reruns
+        if: always() && steps.notary_save.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: die-macos-notary-state-${{ matrix.arch }}-qt${{ matrix.qt_major }}-attempt-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/die-apple-notary-state/
+          if-no-files-found: error
+
       - name: Upload notarization diagnostics
         if: always() && steps.signing_config.outputs.enabled == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: die-macos-notarization-${{ matrix.arch }}-qt${{ matrix.qt_major }}
+          name: die-macos-notarization-${{ matrix.arch }}-qt${{ matrix.qt_major }}-attempt-${{ github.run_attempt }}
           path: |
             ${{ runner.temp }}/die-apple-notarization/**/*.json
             ${{ runner.temp }}/die-apple-notarization/**/*.txt
@@ -235,7 +261,7 @@ jobs:
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
-          name: die-macos-${{ matrix.arch }}-qt${{ matrix.qt_major }}-${{ steps.signing.outcome == 'success' && 'signed' || 'unsigned' }}
+          name: die-macos-${{ matrix.arch }}-qt${{ matrix.qt_major }}-${{ steps.signing.outcome == 'success' && 'signed' || 'unsigned' }}-attempt-${{ github.run_attempt }}
           path: |
             ${{ steps.package.outputs.path }}
             ${{ steps.package.outputs.installer_path }}

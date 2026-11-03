@@ -35,6 +35,7 @@ APPLE_ID = {
     "APPLE_NOTARY_TEAM_ID": "FAKETEAMID",
 }
 SUBMISSION_ID = "11111111-2222-3333-4444-555555555555"
+INSTALLER_SUBMISSION_ID = "11111111-2222-3333-4444-666666666666"
 APP_FINGERPRINT = "A" * 40
 INSTALLER_FINGERPRINT = "B" * 40
 INSTALLER_NAME = "Developer ID Installer: Test Developer (FAKETEAMID)"
@@ -241,13 +242,22 @@ class NotarizationTests(SigningTestCase):
         app.mkdir(exist_ok=True)
         package = self.root / "die.pkg"
         package.write_bytes(b"fake signed installer")
+        kind = "installer" if installer else "app"
+        shutil.rmtree(self.root / "die-apple-notarization" / kind, ignore_errors=True)
         calls = []
+        clock = [0.0]
 
         def fake_run(*args, **kwargs):
             calls.append(args)
+            if args[:3] == ("ditto", "-c", "-k"):
+                Path(args[-1]).write_bytes(b"fake signed app ZIP")
             if args[:3] == ("xcrun", "notarytool", "submit"):
                 return subprocess.CompletedProcess(args, submit_code, response, "fake-secret-stderr")
+            if args[:3] == ("xcrun", "notarytool", "info"):
+                return subprocess.CompletedProcess(args, 0, response, "fake-secret-stderr")
             if args[:3] == ("xcrun", "notarytool", "log"):
+                if log_code == 0:
+                    Path(args[-1]).write_text(json.dumps({"jobId": SUBMISSION_ID, "status": "Accepted", "issues": None}))
                 return subprocess.CompletedProcess(args, log_code, "", "fake-secret-stderr")
             return subprocess.CompletedProcess(args, 0, "", "")
 
@@ -255,6 +265,8 @@ class NotarizationTests(SigningTestCase):
         error = None
         with patch.dict(os.environ, {**CERTIFICATE, **credentials}), \
                 patch.object(sign_macos, "run", side_effect=fake_run), \
+                patch.object(sign_macos.time, "monotonic", side_effect=lambda: clock[0]), \
+                patch.object(sign_macos.time, "sleep", side_effect=lambda seconds: clock.__setitem__(0, clock[0] + seconds)), \
                 contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
             try:
                 if installer:
@@ -265,7 +277,7 @@ class NotarizationTests(SigningTestCase):
                 error = caught
         return calls, stdout.getvalue() + stderr.getvalue(), error
 
-    def test_both_auth_modes_reuse_credentials_for_submit_and_log(self):
+    def test_both_auth_modes_reuse_credentials_for_submit_info_and_log(self):
         response = json.dumps({"id": SUBMISSION_ID, "status": "Accepted"})
         for credentials, flag in ((API_KEY, "--key"), (APPLE_ID, "--apple-id"),
                                   ({**API_KEY, **APPLE_ID}, "--key")):
@@ -273,8 +285,10 @@ class NotarizationTests(SigningTestCase):
                 calls, output, error = self.invoke_notarize(credentials, response)
                 self.assertIsNone(error)
                 submit = next(call for call in calls if call[:3] == ("xcrun", "notarytool", "submit"))
+                info = next(call for call in calls if call[:3] == ("xcrun", "notarytool", "info"))
                 log = next(call for call in calls if call[:3] == ("xcrun", "notarytool", "log"))
-                auth = submit[4:submit.index("--wait")]
+                auth = submit[4:submit.index("--no-wait")]
+                self.assertEqual(auth, info[4:info.index("--output-format")])
                 self.assertEqual(auth, log[4:-1])
                 self.assertEqual(auth[0], flag)
                 if flag == "--apple-id":
@@ -301,7 +315,6 @@ class NotarizationTests(SigningTestCase):
             (json.dumps({"id": SUBMISSION_ID, "status": "Invalid"}), 0),
             (json.dumps({"id": SUBMISSION_ID, "status": "In Progress"}), 1),
             (json.dumps({"id": "not-a-submission-id", "status": "Accepted"}), 0),
-            (json.dumps({"id": SUBMISSION_ID, "status": "Accepted"}), 1),
             ("fake-secret-invalid-json", 1),
             ("[]", 0),
         )
@@ -343,7 +356,8 @@ class NotarizationTests(SigningTestCase):
             diagnostics = self.root / "die-apple-notarization" / kind
             self.assertEqual(json.loads((diagnostics / "submission.json").read_text())["status"], "Accepted")
             log = next(call for call in calls if call[:3] == ("xcrun", "notarytool", "log"))
-            self.assertEqual(log[-1], diagnostics / "notarization-log.json")
+            self.assertEqual(log[3], SUBMISSION_ID)
+            self.assertEqual(json.loads((diagnostics / "notarization-log.json").read_text())["jobId"], SUBMISSION_ID)
         self.assertTrue((self.root / "die-apple-notarization/app/submission.json").is_file())
 
 
@@ -411,8 +425,16 @@ class PackagePairTests(SigningTestCase):
             # Neither original may be replaced before the second submission succeeds.
             self.assertEqual(self.archive.read_bytes(), b"original ZIP")
             self.assertEqual(self.installer.read_bytes(), b"original PKG")
-            status = self.installer_status if Path(args[3]).suffix == ".pkg" else "Accepted"
-            output = json.dumps({"id": SUBMISSION_ID, "status": status})
+            self.assertIn("--no-wait", args)
+            self.assertNotIn("--wait", args)
+            submission_id = INSTALLER_SUBMISSION_ID if Path(args[3]).suffix == ".pkg" else SUBMISSION_ID
+            output = json.dumps({"id": submission_id, "status": "In Progress"})
+        elif args[:3] == ("xcrun", "notarytool", "info"):
+            status = self.installer_status if args[3] == INSTALLER_SUBMISSION_ID else "Accepted"
+            output = json.dumps({"id": args[3], "status": status})
+        elif args[:3] == ("xcrun", "notarytool", "log"):
+            status = self.installer_status if args[3] == INSTALLER_SUBMISSION_ID else "Accepted"
+            Path(args[-1]).write_text(json.dumps({"jobId": args[3], "status": status, "issues": None}))
         elif args[:3] == ("xcrun", "stapler", "staple"):
             target = Path(args[-1])
             if target.is_dir():

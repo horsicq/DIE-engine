@@ -127,6 +127,7 @@ jobs:
     needs: [prepare, source]
     permissions:
       contents: write
+      actions: read
     uses: ./.github/workflows/builder_apple.yml
     secrets:
       APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}

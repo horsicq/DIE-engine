@@ -168,13 +168,14 @@ class SubprocessTests(CommandTestCase):
                         "time.sleep(60)\n")
         started = time.monotonic()
         stack, output = self.captured()
-        with stack, self.assertRaises(sign_macos.CommandTimeout):
+        with stack, self.assertRaises(sign_macos.CommandTimeout) as error:
             sign_macos.run("xcrun", "stapler", "staple", "die.app", timeout=0.25,
                            phase="Staple app")
         self.assertLess(time.monotonic() - started, 3)
         diagnostics = self.diagnostics()
         self.assertEqual(diagnostics[-1]["status"], "timed_out")
         self.assertIn("waiting for CloudKit", json.dumps(diagnostics) + output.getvalue())
+        self.assertIn("waiting for CloudKit", error.exception.stdout)
         time.sleep(1.3)
         self.assertFalse(marker.exists(), "The timed-out tool left a child running")
 
@@ -241,13 +242,19 @@ class SubprocessTests(CommandTestCase):
 class NotaryDeadlineTests(CommandTestCase):
     def invoke(self, status, *, log_timeout=False):
         response = json.dumps({"id": SUBMISSION_ID, "status": status})
+        (self.root / "submission.zip").write_bytes(b"signed app ZIP")
+        clock = [0.0]
 
         def fake_run(*args, **kwargs):
             if args[:3] == ("xcrun", "notarytool", "submit"):
-                return subprocess.CompletedProcess(args, 0 if status != "In Progress" else 1,
-                                                   response, "sensitive-notary-output")
-            if args[:3] == ("xcrun", "notarytool", "log") and log_timeout:
-                raise sign_macos.CommandTimeout("Notarization log timed out")
+                return subprocess.CompletedProcess(args, 0,
+                    json.dumps({"id": SUBMISSION_ID, "status": "In Progress"}), "sensitive-notary-output")
+            if args[:3] == ("xcrun", "notarytool", "info"):
+                return subprocess.CompletedProcess(args, 0, response, "sensitive-notary-output")
+            if args[:3] == ("xcrun", "notarytool", "log"):
+                if log_timeout:
+                    raise sign_macos.CommandTimeout("Notarization log timed out")
+                Path(args[-1]).write_text(json.dumps({"jobId": SUBMISSION_ID, "status": status}))
             return subprocess.CompletedProcess(args, 0, "", "")
 
         stack, output = self.captured()
@@ -256,7 +263,9 @@ class NotaryDeadlineTests(CommandTestCase):
                 "APPLE_NOTARY_APPLE_ID": "test@example.invalid",
                 "APPLE_NOTARY_PASSWORD": "sensitive-notary-password",
                 "APPLE_NOTARY_TEAM_ID": "TESTTEAM"}), \
-                patch.object(sign_macos, "run", side_effect=fake_run) as run:
+                patch.object(sign_macos, "run", side_effect=fake_run) as run, \
+                patch.object(sign_macos.time, "monotonic", side_effect=lambda: clock[0]), \
+                patch.object(sign_macos.time, "sleep", side_effect=lambda seconds: clock.__setitem__(0, clock[0] + seconds)):
             try:
                 sign_macos.notarize_submission(self.root / "submission.zip", self.root / "die.app",
                                                self.root, "app")
