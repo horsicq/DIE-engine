@@ -19,6 +19,8 @@ SPEC.loader.exec_module(network)
 
 
 class NetworkTests(unittest.TestCase):
+    architecture = "x86_64"
+
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix="die-stapler-network-test-")
         self.addCleanup(self.temporary.cleanup)
@@ -34,7 +36,7 @@ class NetworkTests(unittest.TestCase):
             "GITHUB_ACTIONS": "true",
         }, clear=True))
         self.stack.enter_context(patch.object(network.sys, "platform", "darwin"))
-        self.stack.enter_context(patch.object(network.platform, "machine", return_value="x86_64"))
+        self.stack.enter_context(patch.object(network.platform, "machine", return_value=self.architecture))
         self.stack.enter_context(patch.object(network.subprocess, "run", side_effect=self.fake_run))
         self.stack.enter_context(contextlib.redirect_stdout(io.StringIO()))
 
@@ -73,11 +75,11 @@ class NetworkTests(unittest.TestCase):
         network.cleanup()
         self.assertEqual(len(self.commands()), 5)
 
-    def test_non_hosted_or_arm_runners_are_rejected_before_any_pf_command(self):
+    def test_unsupported_runners_are_rejected_before_any_pf_command(self):
         for changes in ({"RUNNER_ENVIRONMENT": "self-hosted"}, {"GITHUB_ACTIONS": "false"}):
             with self.subTest(changes=changes), patch.dict(os.environ, changes), self.assertRaises(RuntimeError):
                 network.enable()
-        with patch.object(network.platform, "machine", return_value="arm64"), self.assertRaises(RuntimeError):
+        with patch.object(network.platform, "machine", return_value="i386"), self.assertRaises(RuntimeError):
             network.enable()
         with patch.object(network.sys, "platform", "linux"), self.assertRaises(RuntimeError):
             network.enable()
@@ -179,6 +181,12 @@ class NetworkTests(unittest.TestCase):
         network.cleanup()
         self.assertFalse(network.state_dir().exists())
         self.assertEqual(self.calls, [])
+
+
+class Arm64NetworkTests(NetworkTests):
+    """Exercise every enable, failure-recovery, and cleanup path on Apple Silicon."""
+
+    architecture = "arm64"
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Temporarily use TCP for Apple ticket retrieval on hosted Intel macOS runners.
+"""Temporarily use TCP for Apple ticket retrieval on hosted macOS runners.
 
 Work around https://github.com/actions/runner-images/issues/14924 without
 replacing the main PF ruleset or disabling another service's packet filter.
@@ -25,11 +25,11 @@ def state_dir():
     return Path(os.environ["RUNNER_TEMP"]) / "die-stapler-network"
 
 
-def require_hosted_intel():
-    if (sys.platform != "darwin" or platform.machine() != "x86_64"
+def require_hosted_macos():
+    if (sys.platform != "darwin" or platform.machine() not in ("x86_64", "arm64")
             or os.environ.get("GITHUB_ACTIONS") != "true"
             or os.environ.get("RUNNER_ENVIRONMENT") != "github-hosted"):
-        raise RuntimeError("The stapler network workaround is only for GitHub-hosted Intel macOS runners.")
+        raise RuntimeError("The stapler network workaround is only for GitHub-hosted Intel or ARM64 macOS runners.")
 
 
 def pfctl(*args, output_file=None):
@@ -60,7 +60,7 @@ def save_state(root, state):
 
 
 def enable():
-    require_hosted_intel()
+    require_hosted_macos()
     root = state_dir()
     root.mkdir(mode=0o700)
     state = {"anchor": ANCHOR_PREFIX + secrets.token_hex(8), "enable_started": False}
@@ -76,14 +76,14 @@ def enable():
     output = pfctl("-E", output_file=root / "enable-output.txt")
     if not re.search(r'^\s*Token\s*:\s*([0-9]+)\s*$', output, re.MULTILINE):
         raise RuntimeError("pfctl did not return an enable token; cleanup will report the unreleased reference.")
-    print("Apple ticket retrieval will use HTTPS over TCP on this Intel runner.", flush=True)
+    print(f"Apple ticket retrieval will use HTTPS over TCP on this {platform.machine()} macOS runner.", flush=True)
 
 
 def cleanup():
     root = state_dir()
     if not root.exists():
         return
-    require_hosted_intel()
+    require_hosted_macos()
     state_file = root / "state.json"
     if not state_file.exists():
         # No mutation is made until the state has been written.
