@@ -50,13 +50,13 @@ class SimulatedProcess:
     def communicate(self, timeout):
         self.waits.append(timeout)
         if self.stopped:
-            return "partial productbuild output", ""
+            return "partial hdiutil output", ""
         if self.completed_at is not None and self.clock.now + timeout >= self.completed_at:
             self.clock.now = max(self.clock.now, self.completed_at)
             self.returncode = 0
-            return "signed installer created", ""
+            return "disk image created", ""
         self.clock.advance(timeout)
-        raise subprocess.TimeoutExpired("productbuild", timeout, output=b"partial productbuild output")
+        raise subprocess.TimeoutExpired("hdiutil", timeout, output=b"partial hdiutil output")
 
 
 class DiagnosticSchedulingTests(unittest.TestCase):
@@ -89,15 +89,15 @@ class DiagnosticSchedulingTests(unittest.TestCase):
             stopped.append(self.clock.now - child.started)
             child.stopped = True
             child.returncode = -9
-            return "partial productbuild output", ""
+            return "partial hdiutil output", ""
 
         result = error = None
         with patch.object(sign_macos.subprocess, "Popen", return_value=process), \
                 patch.object(sign_macos, "capture_process_diagnostics", side_effect=capture_process), \
                 patch.object(sign_macos, "stop_process", side_effect=stop_process):
             try:
-                result = sign_macos.run("productbuild", "--sign", "fake identity", "die.pkg",
-                                        timeout=timeout, phase="installer: build signed PKG",
+                result = sign_macos.run("hdiutil", "create", "-srcfolder", "fake contents", "die.dmg",
+                                        timeout=timeout, phase="dmg: create compressed disk image",
                                         diagnose_after=thresholds)
             except RuntimeError as caught:
                 error = caught
@@ -117,7 +117,7 @@ class DiagnosticSchedulingTests(unittest.TestCase):
         self.assertEqual(stopped, [])
         self.assertEqual(self.record()["status"], "succeeded")
 
-    def test_productbuild_can_finish_after_old_five_minute_limit(self):
+    def test_hdiutil_can_finish_after_old_five_minute_limit(self):
         process = SimulatedProcess(self.clock, completes_after=650)
         result, error, captures, stopped = self.run_process(process)
         self.assertIsNone(error)
@@ -141,7 +141,7 @@ class DiagnosticSchedulingTests(unittest.TestCase):
         self.assertEqual(self.record()["status"], "timed_out")
         self.assertEqual(self.record()["elapsed_seconds"], 900)
 
-    def test_unavailable_diagnostics_do_not_fail_successful_productbuild(self):
+    def test_unavailable_diagnostics_do_not_fail_successful_hdiutil(self):
         for failure in (OSError("diagnostic tool unavailable"), RuntimeError("sample timed out")):
             with self.subTest(failure=type(failure).__name__):
                 process = SimulatedProcess(self.clock, completes_after=100)
@@ -170,7 +170,7 @@ class DiagnosticSchedulingTests(unittest.TestCase):
         self.assertEqual(stopped, [70])
         self.assertLessEqual(self.record()["timeout_seconds"], 70)
 
-    def test_cancellation_during_sampling_still_stops_productbuild(self):
+    def test_cancellation_during_sampling_still_stops_hdiutil(self):
         process = SimulatedProcess(self.clock)
 
         def capture(child, directory, timeout):
@@ -186,7 +186,7 @@ class DiagnosticSchedulingTests(unittest.TestCase):
         with patch.object(sign_macos.subprocess, "Popen", return_value=process), \
                 patch.object(sign_macos, "capture_process_diagnostics", side_effect=capture), \
                 patch.object(sign_macos, "stop_process", side_effect=stop), self.assertRaises(KeyboardInterrupt):
-            sign_macos.run("productbuild", "die.pkg", timeout=900, diagnose_after=(60,))
+            sign_macos.run("hdiutil", "die.dmg", timeout=900, diagnose_after=(60,))
         self.assertEqual(stopped, [process.pid])
         self.assertEqual(self.record()["status"], "interrupted")
 
@@ -243,7 +243,7 @@ class ProcessCollectorTests(unittest.TestCase):
             self.assertNotIn("command", columns)
             self.assertNotIn("-e", args)
             return subprocess.CompletedProcess(args, 0,
-                "12345 100 12345 S 01:00 0:00 /usr/bin/productbuild\nprivate-notary-password\n", "")
+                "12345 100 12345 S 01:00 0:00 /usr/bin/hdiutil\nprivate-notary-password\n", "")
         self.assertEqual(args[0], "/usr/bin/sample")
         self.assertEqual(args[1], "12345")
         self.assertNotIn("sudo", args)
@@ -261,7 +261,7 @@ class ProcessCollectorTests(unittest.TestCase):
             sign_macos.capture_process_diagnostics(self.process, self.reports, timeout=20)
         self.assertEqual([args[0] for args, _ in self.calls], ["/bin/ps", "/usr/bin/sample"])
         self.assertTrue((self.reports / "process.json").is_file())
-        self.assertIn("productbuild", (self.reports / "ps.txt").read_text())
+        self.assertIn("hdiutil", (self.reports / "ps.txt").read_text())
         self.assertIn("SecKeyCreateSignature", (self.reports / "sample.txt").read_text())
         combined = self.artifact_text() + self.output.getvalue()
         for secret in ("private-notary-password", "private-certificate-password", "private-api-key"):

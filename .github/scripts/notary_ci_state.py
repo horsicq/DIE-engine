@@ -25,6 +25,9 @@ API_TIMEOUT = 45
 RESTORE_TIMEOUT = 240
 HASH = re.compile(r"[0-9a-f]{64}")
 UUID = re.compile(r"[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}")
+# Keep old PKG records for recovery history, but isolate them from DMG IDs.
+KINDS = ("app", "dmg", "installer")
+STATE_MEMBER = re.compile(r"state/(" + "|".join(KINDS) + r")/([0-9a-f]{64})\.json")
 _deadline = None
 
 
@@ -202,9 +205,9 @@ def read_archive(data, value, attempt):
                 if name in seen or entry.flag_bits & 1 or stat.S_ISLNK(entry.external_attr >> 16):
                     raise RuntimeError("Unsafe or duplicate member in notarization state archive.")
                 seen.add(name)
-                if entry.is_dir() and name in ("state/", "state/app/", "state/installer/"):
+                if entry.is_dir() and (name == "state/" or name in (f"state/{kind}/" for kind in KINDS)):
                     continue
-                match = re.fullmatch(r"state/(app|installer)/([0-9a-f]{64})\.json", name)
+                match = STATE_MEMBER.fullmatch(name)
                 if name != "manifest.json" and match is None:
                     raise RuntimeError("Unexpected member in notarization state archive.")
                 if entry.file_size > MAX_JSON_BYTES:
@@ -232,7 +235,7 @@ def read_restored():
         return records
     if root.is_symlink():
         raise RuntimeError("Refusing a symlinked notarization restore directory.")
-    for kind in ("app", "installer"):
+    for kind in KINDS:
         if (root / kind).is_symlink():
             raise RuntimeError("Refusing a symlinked notarization restore directory.")
         for path in sorted((root / kind).glob("*.json")):
@@ -284,7 +287,7 @@ def save():
     value = context()
     records = read_restored()
     diagnostics = Path(os.environ["RUNNER_TEMP"]) / "die-apple-notarization"
-    for kind in ("app", "installer"):
+    for kind in KINDS:
         path = diagnostics / kind / "submission.json"
         if path.exists() or path.is_symlink():
             if path.is_symlink():

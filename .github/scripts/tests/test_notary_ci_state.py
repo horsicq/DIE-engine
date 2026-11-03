@@ -145,6 +145,15 @@ class StateTests(unittest.TestCase):
             state.restore()
         self.assertFalse((self.root / "die-apple-notary-restored").exists())
 
+    def test_restore_keeps_dmg_and_legacy_installer_ids_separate_for_same_hash(self):
+        records = {("dmg", SHA): self.record(), ("installer", SHA): self.record(identifier=OTHER_ID)}
+        payload = self.archive(records, extra=[("state/dmg/", b""), ("state/installer/", b"")])
+        with patch.object(state, "api_bytes", side_effect=self.api([self.artifact()], {101: payload})):
+            state.restore()
+        root = self.root / "die-apple-notary-restored"
+        self.assertEqual(json.loads((root / "dmg" / f"{SHA}.json").read_text())["id"], ID)
+        self.assertEqual(json.loads((root / "installer" / f"{SHA}.json").read_text())["id"], OTHER_ID)
+
     def test_expired_wrong_run_or_wrong_commit_artifact_is_fatal(self):
         for override in (
             {"expired": True}, {"workflow_run": {"id": 999, "head_sha": "c" * 40}},
@@ -241,12 +250,30 @@ class StateTests(unittest.TestCase):
         saved = self.root / "die-apple-notary-state"
         self.assertEqual([path.name for path in saved.iterdir()], ["manifest.json"])
 
+    def test_save_keeps_current_dmg_separate_from_legacy_installer_history(self):
+        restored = self.root / "die-apple-notary-restored/installer"
+        restored.mkdir(parents=True)
+        (restored / f"{SHA}.json").write_text(json.dumps(self.record(identifier=OTHER_ID)))
+        current = self.root / "die-apple-notarization/dmg"
+        current.mkdir(parents=True)
+        (current / "submission.json").write_text(json.dumps(self.record()))
+        state.save()
+        saved = self.root / "die-apple-notary-state/state"
+        self.assertEqual(json.loads((saved / "dmg" / f"{SHA}.json").read_text())["id"], ID)
+        self.assertEqual(json.loads((saved / "installer" / f"{SHA}.json").read_text())["id"], OTHER_ID)
+
     def test_fresh_runner_restores_saved_artifact_and_reuses_id_without_upload(self):
+        self.assert_fresh_runner_reuses_id("app")
+
+    def test_fresh_runner_restores_dmg_artifact_and_reuses_id_without_upload(self):
+        self.assert_fresh_runner_reuses_id("dmg")
+
+    def assert_fresh_runner_reuses_id(self, kind):
         # Exercise the real save -> ZIP -> restore -> notarize path. Only the
         # remote GitHub and Apple services are replaced, not state integration.
-        payload = b"the exact signed application ZIP already submitted to Apple"
+        payload = b"the exact signed payload already submitted to Apple"
         digest = hashlib.sha256(payload).hexdigest()
-        current = self.root / "die-apple-notarization/app"
+        current = self.root / "die-apple-notarization" / kind
         current.mkdir(parents=True)
         (current / "submission.json").write_text(json.dumps(self.record(digest)))
         with patch.dict(os.environ, {"GITHUB_RUN_ATTEMPT": "1"}):
@@ -269,7 +296,7 @@ class StateTests(unittest.TestCase):
                 self.fail("A restored matching payload must never be uploaded again")
             if args[:3] == ("xcrun", "notarytool", "info"):
                 self.assertEqual(args[3], ID)
-                promoted = json.loads((fresh / "die-apple-notarization/app/submission.json").read_text())
+                promoted = json.loads((fresh / "die-apple-notarization" / kind / "submission.json").read_text())
                 self.assertEqual(promoted["sha256"], digest)
                 self.assertEqual(promoted["id"], ID)
                 return subprocess.CompletedProcess(args, 0, json.dumps({"id": ID, "status": "Accepted"}), "")
@@ -283,9 +310,10 @@ class StateTests(unittest.TestCase):
                 patch.object(state, "api_bytes", side_effect=self.api([self.artifact()], {101: archive_bytes.getvalue()})), \
                 patch.object(signer, "run", side_effect=apple):
             state.restore()
-            submission = fresh / "signed.zip"
+            submission = fresh / ("signed.dmg" if kind == "dmg" else "signed.zip")
             submission.write_bytes(payload)
-            signer.notarize_submission(submission, fresh / "die.app", fresh, "app")
+            target = submission if kind == "dmg" else fresh / "die.app"
+            signer.notarize_submission(submission, target, fresh, kind)
         self.assertEqual([call[:3] for call in calls], [
             ("xcrun", "notarytool", "info"), ("xcrun", "notarytool", "log"),
             ("xcrun", "stapler", "staple"), ("xcrun", "stapler", "validate"),

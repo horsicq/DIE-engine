@@ -132,8 +132,6 @@ jobs:
     secrets:
       APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
       APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
-      APPLE_INSTALLER_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_P12_BASE64 }}
-      APPLE_INSTALLER_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_PASSWORD }}
       APPLE_NOTARY_KEY_P8: ${{ secrets.APPLE_NOTARY_KEY_P8 }}
       APPLE_NOTARY_KEY_ID: ${{ secrets.APPLE_NOTARY_KEY_ID }}
       APPLE_NOTARY_ISSUER_ID: ${{ secrets.APPLE_NOTARY_ISSUER_ID }}
@@ -141,7 +139,6 @@ jobs:
       APPLE_NOTARY_PASSWORD: ${{ secrets.APPLE_NOTARY_PASSWORD }}
       APPLE_NOTARY_TEAM_ID: ${{ secrets.APPLE_NOTARY_TEAM_ID }}
       APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
-      APPLE_INSTALLER_SIGNING_IDENTITY: ${{ secrets.APPLE_INSTALLER_SIGNING_IDENTITY }}
     with:
       release_tag: ${{ needs.prepare.outputs.tag }}
       release_draft: true
@@ -231,17 +228,17 @@ jobs:
           jq -e --arg commit "$RELEASE_COMMIT" \
             '.isDraft and .targetCommitish == $commit and (.assets | length > 0)' \
             <<< "$release" > /dev/null
-          # Every Apple ZIP and installer must be present before publishing the draft.
+          # Every Apple ZIP and disk image must be present before publishing the draft.
           if ! jq -e \
             --arg intel_qt5 "die_${RELEASE_TAG}_mac_portable_x86_64_qt5.zip" \
             --arg intel "die_${RELEASE_TAG}_mac_portable_x86_64_qt6.zip" \
             --arg arm64 "die_${RELEASE_TAG}_mac_portable_arm64_qt6.zip" \
-            --arg intel_qt5_pkg "die_${RELEASE_TAG}_mac_x86_64_qt5.pkg" \
-            --arg intel_pkg "die_${RELEASE_TAG}_mac_x86_64_qt6.pkg" \
-            --arg arm64_pkg "die_${RELEASE_TAG}_mac_arm64_qt6.pkg" \
-            '[.assets[].name] as $names | [$intel_qt5, $intel, $arm64, $intel_qt5_pkg, $intel_pkg, $arm64_pkg] | all(.[]; . as $name | $names | index($name) != null)' \
+            --arg intel_qt5_dmg "die_${RELEASE_TAG}_mac_x86_64_qt5.dmg" \
+            --arg intel_dmg "die_${RELEASE_TAG}_mac_x86_64_qt6.dmg" \
+            --arg arm64_dmg "die_${RELEASE_TAG}_mac_arm64_qt6.dmg" \
+            '[.assets[].name] as $names | [$intel_qt5, $intel, $arm64, $intel_qt5_dmg, $intel_dmg, $arm64_dmg] | all(.[]; . as $name | $names | index($name) != null)' \
             <<< "$release" > /dev/null; then
-            echo "::error::The release requires ZIP and PKG files for Intel Qt 5, Intel Qt 6, and ARM64 Qt 6."
+            echo "::error::The release requires ZIP and DMG files for Intel Qt 5, Intel Qt 6, and ARM64 Qt 6."
             exit 1
           fi
           printf '%s\n' "$release" > "$RUNNER_TEMP/release.json"

@@ -14,12 +14,13 @@ import zipfile
 
 SCRIPT = Path(__file__).resolve().parents[3] / "build_mac.sh"
 ZIP_NAME = "die_4.0.0_mac_portable.zip"
-PKG_NAME = "die_4.0.0_mac.pkg"
+DMG_NAME = "die_4.0.0_mac.dmg"
 
 MOCK_TOOL = r'''
 import json
 import os
 from pathlib import Path
+import shutil
 import stat
 import sys
 import zipfile
@@ -91,21 +92,39 @@ elif name == "cp":
     if failure == "copy-stage" and args[0] == "-R":
         sys.exit(29)
     os.execv(os.environ["TEST_REAL_CP"], [os.environ["TEST_REAL_CP"], *args])
-elif name == "productbuild":
-    assert len(args) == 4 and args[0] == "--component", args
-    assert args[2] == "/Applications", args
-    app, output = Path(args[1]), Path(args[3])
-    assert (app / "Contents/MacOS/diec").is_file()
-    assert (app / "Contents/Resources/deployed.txt").is_file()
-    if failure == "productbuild":
-        output.write_text("partial installer")
+elif name == "ditto":
+    assert len(args) == 2, args
+    if failure == "ditto":
         sys.exit(29)
-    if failure == "missing-pkg":
-        sys.exit(0)
-    if failure == "empty-pkg":
-        output.touch()
+    shutil.copytree(args[0], args[1], symlinks=True)
+elif name == "hdiutil":
+    if args[0] == "verify":
+        assert len(args) == 2 and Path(args[1]).is_file(), args
+        if failure == "hdiutil-verify":
+            sys.exit(29)
     else:
-        output.write_text(json.dumps({"component": str(app), "manifest": snapshot(app)}))
+        assert args[:3] == ["create", "-volname", "Detect It Easy"], args
+        assert args[3] == "-srcfolder" and args[5:10] == ["-fs", "HFS+", "-format", "UDZO", "-ov"], args
+        assert len(args) == 11, args
+        directory, output = Path(args[4]), Path(args[-1])
+        assert stat.S_IMODE(directory.stat().st_mode) == 0o755
+        apps = list(directory.glob("*.app"))
+        assert len(apps) == 1, apps
+        app = apps[0]
+        assert sorted(path.name for path in directory.iterdir()) == sorted([app.name, "Applications"])
+        assert (directory / "Applications").is_symlink()
+        assert os.readlink(directory / "Applications") == "/Applications"
+        assert (app / "Contents/MacOS/diec").is_file()
+        assert (app / "Contents/Resources/deployed.txt").is_file()
+        if failure == "hdiutil-create":
+            output.write_text("partial disk image")
+            sys.exit(29)
+        if failure == "missing-dmg":
+            sys.exit(0)
+        if failure == "empty-dmg":
+            output.touch()
+        else:
+            output.write_text(json.dumps({"app": app.name, "manifest": snapshot(app)}))
 elif name == "zip":
     assert args[:2] == ["-y", "-r"], args
     archive, directory = map(Path, args[2:])
@@ -154,14 +173,15 @@ class MacPackagingTests(unittest.TestCase):
         self.mock = self.bin / "mock.py"
         self.mock.write_text(f"#!{sys.executable}\n" + MOCK_TOOL)
         self.mock.chmod(0o755)
-        for tool in ("cmake", "sysctl", "cp", "productbuild", "zip"):
+        for tool in ("cmake", "sysctl", "cp", "ditto", "hdiutil", "zip"):
             (self.bin / tool).symlink_to(self.mock)
         self.qt = self.root / "Qt with spaces"
         (self.qt / "bin").mkdir(parents=True)
         (self.qt / "bin/macdeployqt").symlink_to(self.mock)
         self.release = self.source / "release"
         self.release.mkdir()
-        (self.release / PKG_NAME).write_text("stale installer")
+        (self.release / DMG_NAME).write_text("stale disk image")
+        (self.release / ZIP_NAME).write_text("stale archive")
 
     def run_build(self, *, failure="", updater="absent", app="die.app", extras="absent", qt_argument=False):
         extra = self.source / "dep/Detect-It-Easy/db_extra"
@@ -190,16 +210,17 @@ class MacPackagingTests(unittest.TestCase):
         marker = self.root / "build-dir"
         if marker.exists():
             self.assertFalse(Path(marker.read_text()).exists(), "temporary build output was not cleaned")
+        self.assertFalse((self.release / "die_mac_portable").exists(), "packaging stage was not cleaned")
         return result
 
     def events(self):
         return [json.loads(line) for line in (self.root / "tools.jsonl").read_text().splitlines()]
 
     def assert_outputs(self, *, app="die.app", updater=False, extras=False):
-        package = json.loads((self.release / PKG_NAME).read_text())
+        package = json.loads((self.release / DMG_NAME).read_text())
         app_name = Path(app).name
         staged = self.release / "die_mac_portable" / app_name
-        self.assertEqual(package["component"], str(staged))
+        self.assertEqual(package["app"], app_name)
         self.assertFalse(staged.exists(), "successful build did not remove the staging directory")
         manifest = package["manifest"]
         with zipfile.ZipFile(self.release / ZIP_NAME) as archive:
@@ -218,7 +239,7 @@ class MacPackagingTests(unittest.TestCase):
                 else:
                     entry.update(kind="file", data=archive.read(item).decode())
                 zip_manifest[key] = entry
-        self.assertEqual(zip_manifest, manifest, "ZIP and installer must contain the same deployed app")
+        self.assertEqual(zip_manifest, manifest, "ZIP and DMG must contain the same deployed app")
         self.assertEqual(manifest["Contents/Info.plist"]["data"], "original app identity")
         self.assertEqual(manifest["Contents/MacOS/diec"]["mode"], 0o755)
         self.assertEqual(manifest["Contents/Frameworks/QtCore.framework/Versions/Current"]["kind"], "link")
@@ -233,8 +254,10 @@ class MacPackagingTests(unittest.TestCase):
         self.assertEqual(len(executables), 2 if updater else 1)
         self.assertTrue(any(arg.endswith("/diec") for arg in executables))
         self.assertEqual(any(arg.endswith("/die-update") for arg in executables), updater)
-        product = next(event for event in events if event["tool"] == "productbuild")
-        self.assertEqual(product["args"][:3], ["--component", str(staged), "/Applications"])
+        disk_image_events = [event for event in events if event["tool"] == "hdiutil"]
+        self.assertEqual([event["args"][0] for event in disk_image_events], ["create", "verify"])
+        self.assertEqual(disk_image_events[0]["args"][-1], disk_image_events[1]["args"][-1])
+        self.assertEqual(sorted(path.name for path in self.release.iterdir()), sorted([ZIP_NAME, DMG_NAME]))
 
     def test_both_packages_preserve_deployed_app_with_optional_inputs_absent(self):
         result = self.run_build()
@@ -267,14 +290,15 @@ class MacPackagingTests(unittest.TestCase):
                 result = self.run_build(failure=failure)
                 self.assertNotEqual(result.returncode, 0)
                 self.assertIn(diagnostic, result.stderr)
-                self.assertFalse((self.release / PKG_NAME).exists())
+                self.assertFalse((self.release / DMG_NAME).exists())
                 self.assertFalse((self.release / ZIP_NAME).exists())
-                self.assertFalse(any(event["tool"] == "productbuild" for event in self.events()))
+                self.assertFalse(any(event["tool"] == "hdiutil" for event in self.events()))
 
-    def test_build_and_copy_failures_propagate_and_remove_stale_installer(self):
-        for failure in ("configure", "build", "copy-extra", "copy-stage", "macdeployqt", "productbuild", "zip"):
+    def test_build_and_copy_failures_propagate_and_remove_stale_packages(self):
+        for failure in ("configure", "build", "copy-extra", "copy-stage", "macdeployqt", "ditto", "hdiutil-create", "hdiutil-verify", "zip"):
             with self.subTest(failure=failure):
-                (self.release / PKG_NAME).write_text("stale installer")
+                (self.release / DMG_NAME).write_text("stale disk image")
+                (self.release / ZIP_NAME).write_text("stale archive")
                 # Give each run fresh optional resources and a fresh tool log.
                 extra = self.source / "dep/Detect-It-Easy/db_extra"
                 if extra.exists():
@@ -282,26 +306,30 @@ class MacPackagingTests(unittest.TestCase):
                 (self.root / "tools.jsonl").unlink(missing_ok=True)
                 result = self.run_build(failure=failure, extras="present")
                 self.assertEqual(result.returncode, 29, result.stderr)
-                self.assertFalse((self.release / PKG_NAME).exists())
+                self.assertFalse((self.release / DMG_NAME).exists())
+                self.assertFalse((self.release / ZIP_NAME).exists())
                 events = self.events()
-                if failure not in ("productbuild", "zip"):
-                    self.assertFalse(any(event["tool"] == "productbuild" for event in events))
+                if failure not in ("hdiutil-create", "hdiutil-verify", "zip"):
+                    self.assertFalse(any(event["tool"] == "hdiutil" for event in events))
 
     def test_missing_deployment_tool_fails(self):
         result = self.run_build(failure="missing-macdeployqt")
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("macdeployqt not found", result.stderr)
-        self.assertFalse((self.release / PKG_NAME).exists())
+        self.assertFalse((self.release / DMG_NAME).exists())
+        self.assertFalse((self.release / ZIP_NAME).exists())
 
     def test_successful_tool_must_create_nonempty_output(self):
-        for failure, tool in (("missing-pkg", "productbuild"), ("empty-pkg", "productbuild"),
+        for failure, tool in (("missing-dmg", "hdiutil"), ("empty-dmg", "hdiutil"),
                               ("missing-zip", "zip"), ("empty-zip", "zip")):
             with self.subTest(failure=failure):
-                (self.release / PKG_NAME).write_text("stale installer")
+                (self.release / DMG_NAME).write_text("stale disk image")
+                (self.release / ZIP_NAME).write_text("stale archive")
                 result = self.run_build(failure=failure)
                 self.assertNotEqual(result.returncode, 0)
                 self.assertIn(f"ERROR: {tool} did not create a non-empty", result.stderr)
-                self.assertFalse((self.release / PKG_NAME).exists())
+                self.assertFalse((self.release / DMG_NAME).exists())
+                self.assertFalse((self.release / ZIP_NAME).exists())
 
 
 if __name__ == "__main__":

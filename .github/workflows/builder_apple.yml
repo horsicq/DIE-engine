@@ -30,12 +30,6 @@ on:
       APPLE_CERTIFICATE_PASSWORD:
         description: Password protecting the .p12 file
         required: false
-      APPLE_INSTALLER_CERTIFICATE_P12_BASE64:
-        description: Base64 Developer ID Installer certificate and private key (.p12)
-        required: false
-      APPLE_INSTALLER_CERTIFICATE_PASSWORD:
-        description: Password protecting the installer .p12 file
-        required: false
       APPLE_NOTARY_KEY_P8:
         description: App Store Connect Team API private key (.p8 contents)
         required: false
@@ -56,9 +50,6 @@ on:
         required: false
       APPLE_SIGNING_IDENTITY:
         description: Optional Developer ID Application name or SHA-1 fingerprint
-        required: false
-      APPLE_INSTALLER_SIGNING_IDENTITY:
-        description: Optional Developer ID Installer name or SHA-1 fingerprint
         required: false
   workflow_dispatch:
     inputs:
@@ -117,8 +108,6 @@ jobs:
         env:
           APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
-          APPLE_INSTALLER_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_P12_BASE64 }}
-          APPLE_INSTALLER_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_PASSWORD }}
           APPLE_NOTARY_KEY_P8: ${{ secrets.APPLE_NOTARY_KEY_P8 }}
           APPLE_NOTARY_KEY_ID: ${{ secrets.APPLE_NOTARY_KEY_ID || vars.APPLE_NOTARY_KEY_ID }}
           APPLE_NOTARY_ISSUER_ID: ${{ secrets.APPLE_NOTARY_ISSUER_ID || vars.APPLE_NOTARY_ISSUER_ID }}
@@ -153,13 +142,13 @@ jobs:
           modules: ${{ matrix.qt_modules }}
           cache: true
 
-      - name: Build portable package and installer
+      - name: Build portable ZIP and disk image
         shell: bash
         run: |
           set -euo pipefail
           bash build_mac.sh "$QT_ROOT_DIR"
 
-      - name: Name and verify package
+      - name: Name and verify packages
         id: package
         shell: bash
         env:
@@ -168,11 +157,11 @@ jobs:
           set -euo pipefail
           version=$(tr -d '\r\n' < release_version.txt)
           archive="release/die_${version}_mac_portable_${CMAKE_OSX_ARCHITECTURES}_qt${QT_MAJOR}.zip"
-          installer="release/die_${version}_mac_${CMAKE_OSX_ARCHITECTURES}_qt${QT_MAJOR}.pkg"
+          disk_image="release/die_${version}_mac_${CMAKE_OSX_ARCHITECTURES}_qt${QT_MAJOR}.dmg"
           mv "release/die_${version}_mac_portable.zip" "$archive"
-          mv "release/die_${version}_mac.pkg" "$installer"
+          mv "release/die_${version}_mac.dmg" "$disk_image"
           test -s "$archive"
-          test -s "$installer"
+          test -s "$disk_image"
 
           verify_dir=$(mktemp -d)
           trap 'rm -rf "$verify_dir"' EXIT
@@ -187,7 +176,7 @@ jobs:
           env -u DYLD_LIBRARY_PATH -u DYLD_FRAMEWORK_PATH \
             "$bundle/Contents/MacOS/diec" --version
           printf 'path=%s\n' "$archive" >> "$GITHUB_OUTPUT"
-          printf 'installer_path=%s\n' "$installer" >> "$GITHUB_OUTPUT"
+          printf 'disk_image_path=%s\n' "$disk_image" >> "$GITHUB_OUTPUT"
 
       # Apple's ticket service can lose connections on both Intel and ARM64.
       # Force TCP using the workaround from actions/runner-images#14924.
@@ -208,8 +197,6 @@ jobs:
         env:
           APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
-          APPLE_INSTALLER_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_P12_BASE64 }}
-          APPLE_INSTALLER_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_INSTALLER_CERTIFICATE_PASSWORD }}
           APPLE_NOTARY_KEY_P8: ${{ secrets.APPLE_NOTARY_KEY_P8 }}
           APPLE_NOTARY_KEY_ID: ${{ secrets.APPLE_NOTARY_KEY_ID || vars.APPLE_NOTARY_KEY_ID }}
           APPLE_NOTARY_ISSUER_ID: ${{ secrets.APPLE_NOTARY_ISSUER_ID || vars.APPLE_NOTARY_ISSUER_ID }}
@@ -217,10 +204,9 @@ jobs:
           APPLE_NOTARY_PASSWORD: ${{ secrets.APPLE_NOTARY_PASSWORD }}
           APPLE_NOTARY_TEAM_ID: ${{ secrets.APPLE_NOTARY_TEAM_ID || vars.APPLE_NOTARY_TEAM_ID }}
           APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY || vars.APPLE_SIGNING_IDENTITY }}
-          APPLE_INSTALLER_SIGNING_IDENTITY: ${{ secrets.APPLE_INSTALLER_SIGNING_IDENTITY || vars.APPLE_INSTALLER_SIGNING_IDENTITY }}
           PACKAGE_PATH: ${{ steps.package.outputs.path }}
-          INSTALLER_PATH: ${{ steps.package.outputs.installer_path }}
-        run: python3 .github/scripts/sign_macos.py sign "$PACKAGE_PATH" "$INSTALLER_PATH"
+          DISK_IMAGE_PATH: ${{ steps.package.outputs.disk_image_path }}
+        run: python3 .github/scripts/sign_macos.py sign "$PACKAGE_PATH" "$DISK_IMAGE_PATH"
 
       - name: Remove temporary signing credentials
         if: always() && steps.signing_config.outputs.enabled == 'true'
@@ -233,7 +219,7 @@ jobs:
         run: python3 .github/scripts/stapler_network.py cleanup
 
       # Keep a small state artifact separate from process reports. Each attempt
-      # retains earlier hashes as well as this attempt's app/installer IDs.
+      # retains earlier hashes as well as this attempt's app/disk image IDs.
       - name: Save notarization IDs for reruns
         id: notary_save
         if: always() && steps.notary_restore.outcome == 'success'
@@ -264,7 +250,7 @@ jobs:
           name: die-macos-${{ matrix.arch }}-qt${{ matrix.qt_major }}-${{ steps.signing.outcome == 'success' && 'signed' || 'unsigned' }}-attempt-${{ github.run_attempt }}
           path: |
             ${{ steps.package.outputs.path }}
-            ${{ steps.package.outputs.installer_path }}
+            ${{ steps.package.outputs.disk_image_path }}
           if-no-files-found: error
 
       # Signed standalone runs append packages to the published Beta prerelease,
@@ -280,4 +266,4 @@ jobs:
           fail_on_unmatched_files: true
           files: |
             ${{ steps.package.outputs.path }}
-            ${{ steps.package.outputs.installer_path }}
+            ${{ steps.package.outputs.disk_image_path }}

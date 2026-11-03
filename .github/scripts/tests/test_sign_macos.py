@@ -21,8 +21,6 @@ SPEC.loader.exec_module(sign_macos)
 CERTIFICATE = {
     "APPLE_CERTIFICATE_P12_BASE64": "ZmFrZS1jZXJ0aWZpY2F0ZQ==",
     "APPLE_CERTIFICATE_PASSWORD": "fake-certificate-password",
-    "APPLE_INSTALLER_CERTIFICATE_P12_BASE64": "ZmFrZS1pbnN0YWxsZXItY2VydGlmaWNhdGU=",
-    "APPLE_INSTALLER_CERTIFICATE_PASSWORD": "fake-installer-password",
 }
 API_KEY = {
     "APPLE_NOTARY_KEY_P8": "fake-api-private-key",
@@ -35,10 +33,10 @@ APPLE_ID = {
     "APPLE_NOTARY_TEAM_ID": "FAKETEAMID",
 }
 SUBMISSION_ID = "11111111-2222-3333-4444-555555555555"
-INSTALLER_SUBMISSION_ID = "11111111-2222-3333-4444-666666666666"
+DMG_SUBMISSION_ID = "11111111-2222-3333-4444-666666666666"
 APP_FINGERPRINT = "A" * 40
-INSTALLER_FINGERPRINT = "B" * 40
-INSTALLER_NAME = "Developer ID Installer: Test Developer (FAKETEAMID)"
+OTHER_FINGERPRINT = "B" * 40
+APP_NAME = "Developer ID Application: Test Developer (FAKETEAMID)"
 
 
 class SigningTestCase(unittest.TestCase):
@@ -91,8 +89,7 @@ class ConfigurationTests(SigningTestCase):
 
     def test_identity_and_whitespace_do_not_enable_signing(self):
         fields = dict.fromkeys(sign_macos.CORE_CREDENTIAL_FIELDS, " \n\t")
-        with patch.dict(os.environ, {**fields, "APPLE_SIGNING_IDENTITY": "fake optional identity",
-                                    "APPLE_INSTALLER_SIGNING_IDENTITY": "fake installer identity"}):
+        with patch.dict(os.environ, {**fields, "APPLE_SIGNING_IDENTITY": "fake optional identity"}):
             self.assertFalse(sign_macos.check_config(allow_unsigned=True))
             with self.assertRaises(RuntimeError):
                 sign_macos.check_config()
@@ -149,15 +146,15 @@ class ConfigurationTests(SigningTestCase):
             sign_macos.main()
         self.assertEqual(error.exception.code, 2)
         with self.assertRaises(RuntimeError):
-            sign_macos.sign_package(self.root / "absent.zip", self.root / "absent.pkg")
+            sign_macos.sign_package(self.root / "absent.zip", self.root / "absent.dmg")
 
     def test_only_check_writes_enabled_output(self):
         with patch.object(sign_macos, "cleanup") as cleanup:
             self.assertEqual(self.cli("cleanup")[0], 0)
             cleanup.assert_called_once_with()
         with patch.object(sign_macos, "sign_package") as sign_package:
-            self.assertEqual(self.cli("sign", "archive.zip", "installer.pkg")[0], 0)
-            sign_package.assert_called_once_with(Path("archive.zip"), Path("installer.pkg"))
+            self.assertEqual(self.cli("sign", "archive.zip", "disk_image.dmg")[0], 0)
+            sign_package.assert_called_once_with(Path("archive.zip"), Path("disk_image.dmg"))
         self.assertFalse(self.output.exists())
 
     def test_sign_cli_requires_both_paths(self):
@@ -169,80 +166,73 @@ class ConfigurationTests(SigningTestCase):
 
 
 class IdentityTests(SigningTestCase):
-    def invoke_import(self, installer_identities=None, selector=None):
+    def invoke_import(self, identities=None, selector=None):
         root = self.root / "identity-import"
         root.mkdir(exist_ok=True)
         calls = []
-        app_identity = f'1) {APP_FINGERPRINT} "Developer ID Application: Test Developer (FAKETEAMID)"\n'
-        installer_identity = f'2) {INSTALLER_FINGERPRINT} "{INSTALLER_NAME}"\n'
-        if installer_identities is None:
-            installer_identities = app_identity + installer_identity
+        if identities is None:
+            identities = f'1) {APP_FINGERPRINT} "{APP_NAME}"\n'
 
         def fake_run(*args, **kwargs):
             calls.append(args)
             output = ""
             if args[:2] == ("security", "find-identity"):
-                output = app_identity if "codesigning" in args else installer_identities
+                output = identities
             elif args == ("security", "list-keychains", "-d", "user"):
                 output = '"/fake/original.keychain-db"\n'
             return subprocess.CompletedProcess(args, 0, output, "")
 
         environment = dict(CERTIFICATE)
         if selector is not None:
-            environment["APPLE_INSTALLER_SIGNING_IDENTITY"] = selector
+            environment["APPLE_SIGNING_IDENTITY"] = selector
         with patch.dict(os.environ, environment), patch.object(sign_macos, "run", side_effect=fake_run):
             result = sign_macos.import_identities(root)
         return result, calls
 
-    def test_import_uses_separate_certificate_tools_and_identity_policies(self):
-        (keychain, application, installer), calls = self.invoke_import()
+    def test_import_only_requires_application_certificate_and_codesign_access(self):
+        (keychain, application), calls = self.invoke_import()
         self.assertEqual(application, APP_FINGERPRINT)
-        self.assertEqual(installer, INSTALLER_NAME)
         self.assertIn(("security", "find-identity", "-v", "-p", "codesigning", keychain), calls)
-        self.assertIn(("security", "find-identity", "-v", keychain), calls)
         imports = [call for call in calls if call[:2] == ("security", "import")]
-        self.assertEqual(len(imports), 2)
-        for call, certificate, password, tool in zip(imports,
-                (b"fake-certificate", b"fake-installer-certificate"),
-                (CERTIFICATE["APPLE_CERTIFICATE_PASSWORD"], CERTIFICATE["APPLE_INSTALLER_CERTIFICATE_PASSWORD"]),
-                ("/usr/bin/codesign", "/usr/bin/productbuild")):
-            self.assertEqual(Path(call[2]).read_bytes(), certificate)
-            self.assertEqual(call[call.index("-P") + 1], password)
-            self.assertEqual(call[call.index("-T") + 1], tool)
-            self.assertEqual(call[call.index("-k") + 1], keychain)
+        self.assertEqual(len(imports), 1)
+        call = imports[0]
+        self.assertEqual(Path(call[2]).read_bytes(), b"fake-certificate")
+        self.assertEqual(call[call.index("-P") + 1], CERTIFICATE["APPLE_CERTIFICATE_PASSWORD"])
+        self.assertEqual(call[call.index("-T") + 1], "/usr/bin/codesign")
+        self.assertEqual(call[call.index("-k") + 1], keychain)
         partition = next(call for call in calls if call[:2] == ("security", "set-key-partition-list"))
         self.assertEqual(partition[partition.index("-S") + 1], "apple-tool:,apple:")
 
-    def test_installer_name_or_fingerprint_selects_full_common_name(self):
-        identities = (f'1) {INSTALLER_FINGERPRINT} "{INSTALLER_NAME}"\n'
-                      f'2) {"C" * 40} "Developer ID Installer: Other Developer (OTHERTEAM)"\n')
-        for selector in (INSTALLER_NAME, INSTALLER_FINGERPRINT.lower()):
+    def test_application_name_or_fingerprint_selects_identity(self):
+        identities = (f'1) {APP_FINGERPRINT} "{APP_NAME}"\n'
+                      f'2) {OTHER_FINGERPRINT} "Developer ID Application: Other Developer (OTHERTEAM)"\n')
+        for selector in (APP_NAME, APP_FINGERPRINT.lower()):
             with self.subTest(selector=selector):
                 result, _ = self.invoke_import(identities, selector)
-                self.assertEqual(result[2], INSTALLER_NAME)
+                self.assertEqual(result[1], APP_FINGERPRINT)
 
-    def test_missing_ambiguous_or_unmatched_installer_identity_is_rejected(self):
-        identities = f'1) {INSTALLER_FINGERPRINT} "{INSTALLER_NAME}"\n'
+    def test_missing_ambiguous_or_unmatched_application_identity_is_rejected(self):
+        identities = f'1) {APP_FINGERPRINT} "{APP_NAME}"\n'
         cases = (
-            (f'1) {APP_FINGERPRINT} "Developer ID Application: Test Developer"\n', None),
-            (identities + f'2) {"C" * 40} "Developer ID Installer: Other Developer"\n', None),
-            (identities, "Developer ID Installer: Missing"),
+            (f'1) {OTHER_FINGERPRINT} "Developer ID Installer: Test Developer"\n', None),
+            (identities + f'2) {OTHER_FINGERPRINT} "Developer ID Application: Other Developer"\n', None),
+            (identities, "Developer ID Application: Missing"),
         )
         for output, selector in cases:
             with self.subTest(selector=selector, output=output), \
-                    self.assertRaisesRegex(RuntimeError, "Developer ID Installer identity"):
+                    self.assertRaisesRegex(RuntimeError, "Developer ID Application identity"):
                 self.invoke_import(output, selector)
 
 
 class NotarizationTests(SigningTestCase):
-    def invoke_notarize(self, credentials, response, *, submit_code=0, log_code=0, installer=False):
+    def invoke_notarize(self, credentials, response, *, submit_code=0, log_code=0, disk_image=False):
         signing_root = self.root / "signing"
         signing_root.mkdir(exist_ok=True)
         app = self.root / "die.app"
         app.mkdir(exist_ok=True)
-        package = self.root / "die.pkg"
-        package.write_bytes(b"fake signed installer")
-        kind = "installer" if installer else "app"
+        package = self.root / "die.dmg"
+        package.write_bytes(b"fake signed disk image")
+        kind = "dmg" if disk_image else "app"
         shutil.rmtree(self.root / "die-apple-notarization" / kind, ignore_errors=True)
         calls = []
         clock = [0.0]
@@ -269,8 +259,8 @@ class NotarizationTests(SigningTestCase):
                 patch.object(sign_macos.time, "sleep", side_effect=lambda seconds: clock.__setitem__(0, clock[0] + seconds)), \
                 contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
             try:
-                if installer:
-                    sign_macos.notarize_installer(package, signing_root)
+                if disk_image:
+                    sign_macos.notarize_disk_image(package, signing_root)
                 else:
                     sign_macos.notarize(app, signing_root)
             except RuntimeError as caught:
@@ -333,25 +323,26 @@ class NotarizationTests(SigningTestCase):
         self.assertNotIn("fake-secret", output)
         self.assertTrue(any(call[:3] == ("xcrun", "stapler", "staple") for call in calls))
 
-    def test_installer_submitted_directly_and_checked_as_installer(self):
+    def test_disk_image_submitted_directly_and_checked_as_disk_image(self):
         calls, output, error = self.invoke_notarize(
-            APPLE_ID, json.dumps({"id": SUBMISSION_ID, "status": "Accepted"}), installer=True)
+            APPLE_ID, json.dumps({"id": SUBMISSION_ID, "status": "Accepted"}), disk_image=True)
         self.assertIsNone(error)
-        package = self.root / "die.pkg"
+        package = self.root / "die.dmg"
         self.assertFalse(any(call[0] == "ditto" for call in calls))
         submit = next(call for call in calls if call[:3] == ("xcrun", "notarytool", "submit"))
         self.assertEqual(submit[3], package)
         self.assertIn(("xcrun", "stapler", "staple", package), calls)
         self.assertIn(("xcrun", "stapler", "validate", package), calls)
-        self.assertIn(("pkgutil", "--check-signature", package), calls)
-        self.assertIn(("spctl", "--assess", "--type", "install", "--verbose=2", package), calls)
+        self.assertIn(("codesign", "--verify", "--strict", "--verbose=2", package), calls)
+        self.assertIn(("hdiutil", "verify", package), calls)
+        self.assertIn(("spctl", "--assess", "--type", "open", "--context", "context:primary-signature", "--verbose=2", package), calls)
         for value in APPLE_ID.values():
             self.assertNotIn(value, output)
 
-    def test_app_and_installer_diagnostics_do_not_overwrite_each_other(self):
+    def test_app_and_disk_image_diagnostics_do_not_overwrite_each_other(self):
         response = json.dumps({"id": SUBMISSION_ID, "status": "Accepted"})
-        for kind in ("app", "installer"):
-            calls, _, error = self.invoke_notarize(APPLE_ID, response, installer=kind == "installer")
+        for kind in ("app", "dmg"):
+            calls, _, error = self.invoke_notarize(APPLE_ID, response, disk_image=kind == "dmg")
             self.assertIsNone(error)
             diagnostics = self.root / "die-apple-notarization" / kind
             self.assertEqual(json.loads((diagnostics / "submission.json").read_text())["status"], "Accepted")
@@ -365,9 +356,9 @@ class PackagePairTests(SigningTestCase):
     def setUp(self):
         super().setUp()
         self.archive = self.root / "package.zip"
-        self.installer = self.root / "package.pkg"
+        self.disk_image = self.root / "package.dmg"
         self.archive.write_bytes(b"original ZIP")
-        self.installer.write_bytes(b"original PKG")
+        self.disk_image.write_bytes(b"original DMG")
         fixture = self.root / "fixture"
         binaries = fixture / "die_mac_portable/die.app/Contents/MacOS"
         binaries.mkdir(parents=True)
@@ -376,14 +367,14 @@ class PackagePairTests(SigningTestCase):
         self.snapshots = {self.archive: fixture}
         self.calls = []
         self.output_fault = None
-        self.installer_status = "Accepted"
+        self.disk_image_status = "Accepted"
         self.signed_app = None
 
     def fake_import(self, root):
         keychain = root / "signing.keychain-db"
         keychain.write_bytes(b"fake keychain")
         (root / "certificate.p12").write_bytes(b"fake private certificate")
-        return keychain, APP_FINGERPRINT, INSTALLER_NAME
+        return keychain, APP_FINGERPRINT
 
     def fake_sign_app(self, app, root, keychain, identity):
         self.assertEqual(identity, APP_FINGERPRINT)
@@ -407,33 +398,49 @@ class PackagePairTests(SigningTestCase):
             self.snapshots[target] = snapshot
             kind = "zip" if source.name == "die_mac_portable" else "submission"
             self.write_output(target, kind, b"signed ZIP")
-        elif args[0] == "productbuild":
+        elif args[0] == "ditto":
+            source, target = Path(args[1]), Path(args[2])
+            self.assertTrue((source / "signed-marker").is_file())
+            self.assertTrue((source / "stapled-marker").is_file())
+            shutil.copytree(source, target, symlinks=True)
+        elif args[:2] == ("hdiutil", "create"):
             self.assertEqual(kwargs["timeout"], 900)
             self.assertEqual(kwargs["diagnose_after"], (60, 300, 840))
-            app = Path(args[args.index("--component") + 1])
-            self.assertEqual(app, self.signed_app)
+            staging = Path(args[args.index("-srcfolder") + 1])
+            app = staging / self.signed_app.name
             self.assertTrue((app / "signed-marker").is_file())
             self.assertTrue((app / "stapled-marker").is_file())
-            self.assertEqual(args[args.index("--component") + 2], "/Applications")
-            self.assertEqual(args[args.index("--sign") + 1], INSTALLER_NAME)
+            self.assertEqual({p.name for p in staging.iterdir()}, {self.signed_app.name, "Applications"})
+            self.assertEqual((staging / "Applications").readlink(), Path("/Applications"))
+            self.assertEqual(staging.stat().st_mode & 0o777, 0o755)
+            self.assertEqual(args[args.index("-format") + 1], "UDZO")
+            self.assertEqual(args[args.index("-fs") + 1], "HFS+")
+            self.write_output(Path(args[-1]), "dmg", b"unsigned DMG")
+        elif args[0] == "codesign" and "--sign" in args:
+            self.assertEqual(args[args.index("--sign") + 1], APP_FINGERPRINT)
             self.assertIn("--keychain", args)
             self.assertIn("--timestamp", args)
-            self.write_output(Path(args[-1]), "pkg", b"signed PKG")
+            target = Path(args[-1])
+            self.assertEqual(target.suffix, ".dmg")
+            self.assertEqual(target.read_bytes(), b"unsigned DMG")
+            target.write_bytes(b"signed DMG")
         elif args[:3] == ("xcrun", "notarytool", "submit"):
             self.assertEqual(kwargs["timeout"], 35 * 60)
             self.assertNotIn("diagnose_after", kwargs)
             # Neither original may be replaced before the second submission succeeds.
             self.assertEqual(self.archive.read_bytes(), b"original ZIP")
-            self.assertEqual(self.installer.read_bytes(), b"original PKG")
+            self.assertEqual(self.disk_image.read_bytes(), b"original DMG")
             self.assertIn("--no-wait", args)
             self.assertNotIn("--wait", args)
-            submission_id = INSTALLER_SUBMISSION_ID if Path(args[3]).suffix == ".pkg" else SUBMISSION_ID
+            if Path(args[3]).suffix == ".dmg":
+                self.assertEqual(Path(args[3]).read_bytes(), b"signed DMG")
+            submission_id = DMG_SUBMISSION_ID if Path(args[3]).suffix == ".dmg" else SUBMISSION_ID
             output = json.dumps({"id": submission_id, "status": "In Progress"})
         elif args[:3] == ("xcrun", "notarytool", "info"):
-            status = self.installer_status if args[3] == INSTALLER_SUBMISSION_ID else "Accepted"
+            status = self.disk_image_status if args[3] == DMG_SUBMISSION_ID else "Accepted"
             output = json.dumps({"id": args[3], "status": status})
         elif args[:3] == ("xcrun", "notarytool", "log"):
-            status = self.installer_status if args[3] == INSTALLER_SUBMISSION_ID else "Accepted"
+            status = self.disk_image_status if args[3] == DMG_SUBMISSION_ID else "Accepted"
             Path(args[-1]).write_text(json.dumps({"jobId": args[3], "status": status, "issues": None}))
         elif args[:3] == ("xcrun", "stapler", "staple"):
             target = Path(args[-1])
@@ -453,34 +460,83 @@ class PackagePairTests(SigningTestCase):
                 patch.object(sign_macos, "sign_app", side_effect=self.fake_sign_app), \
                 patch.object(sign_macos, "run", side_effect=self.fake_run), \
                 contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
-            sign_macos.sign_package(self.archive, self.installer)
+            sign_macos.sign_package(self.archive, self.disk_image)
         return stdout.getvalue() + stderr.getvalue()
 
     def assert_cleaned(self):
         self.assertFalse(sign_macos.signing_dir().exists())
         self.assertFalse(self.archive.with_suffix(".signed.zip").exists())
-        self.assertFalse(self.installer.with_suffix(".signed.pkg").exists())
+        self.assertFalse(self.disk_image.with_suffix(".signed.dmg").exists())
         self.assertTrue(any(call[:2] == ("security", "delete-keychain") for call in self.calls))
 
     def test_both_outputs_replaced_after_both_notarizations_are_accepted(self):
         output = self.invoke_signing()
         self.assertEqual(self.archive.read_bytes(), b"signed ZIP")
-        self.assertEqual(self.installer.read_bytes(), b"signed PKG")
+        self.assertEqual(self.disk_image.read_bytes(), b"signed DMG")
         submissions = [call for call in self.calls if call[:3] == ("xcrun", "notarytool", "submit")]
-        self.assertEqual([Path(call[3]).suffix for call in submissions], [".zip", ".pkg"])
-        self.assertTrue(any(call[:4] == ("spctl", "--assess", "--type", "install") for call in self.calls))
+        self.assertEqual([Path(call[3]).suffix for call in submissions], [".zip", ".dmg"])
+        self.assertTrue(any(call[:4] == ("spctl", "--assess", "--type", "open") for call in self.calls))
         for secret in (*CERTIFICATE.values(), *APPLE_ID.values(), "fake-tool-secret"):
             self.assertNotIn(secret, output)
         self.assert_cleaned()
 
-    def test_rejected_installer_preserves_both_originals_and_cleans_credentials(self):
-        self.installer_status = "Invalid"
+    def test_rejected_disk_image_preserves_both_originals_and_cleans_credentials(self):
+        self.disk_image_status = "Invalid"
         with self.assertRaisesRegex(RuntimeError, "Apple did not accept"):
             self.invoke_signing()
         self.assertEqual(self.archive.read_bytes(), b"original ZIP")
-        self.assertEqual(self.installer.read_bytes(), b"original PKG")
+        self.assertEqual(self.disk_image.read_bytes(), b"original DMG")
         self.assertFalse(any(call[:3] == ("xcrun", "stapler", "staple") and
-                             Path(call[-1]).suffix == ".pkg" for call in self.calls))
+                             Path(call[-1]).suffix == ".dmg" for call in self.calls))
+        self.assert_cleaned()
+
+    def test_disk_image_failures_preserve_both_originals_and_cleanup(self):
+        phases = (
+            "dmg: stage signed and stapled app",
+            "dmg: create compressed disk image",
+            "dmg: verify disk image before signing",
+            "dmg: sign disk image",
+            "dmg: verify signature before submission",
+            "dmg: stapler staple, attempt 1/3",
+            "dmg: stapler validate, attempt 1/3",
+            "dmg: verify signature after stapling",
+            "dmg: verify final disk image",
+            "dmg: Gatekeeper assessment",
+        )
+        fake_run = self.fake_run
+        for phase in phases:
+            with self.subTest(phase=phase):
+                self.calls.clear()
+                shutil.rmtree(self.root / "die-apple-notarization", ignore_errors=True)
+                shutil.rmtree(self.root / "snapshots", ignore_errors=True)
+
+                def fail_phase(*args, **kwargs):
+                    if kwargs.get("phase") == phase:
+                        raise RuntimeError("simulated DMG tool failure")
+                    return fake_run(*args, **kwargs)
+
+                with patch.object(self, "fake_run", side_effect=fail_phase), \
+                        self.assertRaisesRegex(RuntimeError, "simulated DMG tool failure"):
+                    self.invoke_signing()
+                self.assertEqual(self.archive.read_bytes(), b"original ZIP")
+                self.assertEqual(self.disk_image.read_bytes(), b"original DMG")
+                self.assert_cleaned()
+
+    def test_disk_image_creation_timeout_cleans_up_without_submitting_dmg(self):
+        fake_run = self.fake_run
+
+        def timeout_create(*args, **kwargs):
+            if args[:2] == ("hdiutil", "create"):
+                raise sign_macos.CommandTimeout("simulated disk image timeout")
+            return fake_run(*args, **kwargs)
+
+        with patch.object(self, "fake_run", side_effect=timeout_create), \
+                self.assertRaises(sign_macos.CommandTimeout):
+            self.invoke_signing()
+        self.assertEqual(self.archive.read_bytes(), b"original ZIP")
+        self.assertEqual(self.disk_image.read_bytes(), b"original DMG")
+        self.assertFalse(any(call[:3] == ("xcrun", "notarytool", "submit") and
+                             Path(call[3]).suffix == ".dmg" for call in self.calls))
         self.assert_cleaned()
 
     def test_stapler_timeouts_preserve_outputs_and_cleanup_runs_outside_deadline(self):
@@ -498,22 +554,22 @@ class PackagePairTests(SigningTestCase):
                 patch.object(sign_macos.time, "sleep"), self.assertRaises(RuntimeError):
             self.invoke_signing()
         self.assertEqual(self.archive.read_bytes(), b"original ZIP")
-        self.assertEqual(self.installer.read_bytes(), b"original PKG")
+        self.assertEqual(self.disk_image.read_bytes(), b"original DMG")
         self.assert_cleaned()
 
     def test_missing_or_empty_generated_output_preserves_both_originals(self):
-        for kind in ("zip", "pkg"):
+        for kind in ("zip", "dmg"):
             for failure in ("missing", "empty"):
                 with self.subTest(kind=kind, failure=failure):
                     self.output_fault = (kind, failure)
                     with self.assertRaisesRegex(RuntimeError, "nonempty output"):
                         self.invoke_signing()
                     self.assertEqual(self.archive.read_bytes(), b"original ZIP")
-                    self.assertEqual(self.installer.read_bytes(), b"original PKG")
+                    self.assertEqual(self.disk_image.read_bytes(), b"original DMG")
                     self.assert_cleaned()
 
     def test_missing_or_empty_input_is_rejected_before_import(self):
-        for target in (self.archive, self.installer):
+        for target in (self.archive, self.disk_image):
             original = target.read_bytes()
             for failure in ("missing", "empty"):
                 with self.subTest(target=target.name, failure=failure):
@@ -523,7 +579,7 @@ class PackagePairTests(SigningTestCase):
                     with patch.dict(os.environ, {**CERTIFICATE, **APPLE_ID}), \
                             patch.object(sign_macos, "import_identities") as identity_import, \
                             self.assertRaises((RuntimeError, OSError)):
-                        sign_macos.sign_package(self.archive, self.installer)
+                        sign_macos.sign_package(self.archive, self.disk_image)
                     identity_import.assert_not_called()
                     self.assertFalse(sign_macos.signing_dir().exists())
                     target.write_bytes(original)
@@ -545,8 +601,8 @@ class CredentialHandlingTests(SigningTestCase):
     def test_failed_identity_import_cleans_credentials_and_keeps_original_archive(self):
         archive = self.root / "package.zip"
         archive.write_bytes(b"original unsigned archive")
-        installer = self.root / "package.pkg"
-        installer.write_bytes(b"original unsigned installer")
+        disk_image = self.root / "package.dmg"
+        disk_image.write_bytes(b"original unsigned disk image")
 
         def failed_import(root):
             (root / "certificate.p12").write_bytes(b"fake-private-certificate")
@@ -556,12 +612,12 @@ class CredentialHandlingTests(SigningTestCase):
                 patch.object(sign_macos, "import_identities", side_effect=failed_import), \
                 patch.object(sign_macos, "run", side_effect=AssertionError("Unexpected external tool")), \
                 self.assertRaisesRegex(RuntimeError, "identity import failure"):
-            sign_macos.sign_package(archive, installer)
+            sign_macos.sign_package(archive, disk_image)
         self.assertFalse(sign_macos.signing_dir().exists())
         self.assertEqual(archive.read_bytes(), b"original unsigned archive")
-        self.assertEqual(installer.read_bytes(), b"original unsigned installer")
+        self.assertEqual(disk_image.read_bytes(), b"original unsigned disk image")
         self.assertFalse(archive.with_suffix(".signed.zip").exists())
-        self.assertFalse(installer.with_suffix(".signed.pkg").exists())
+        self.assertFalse(disk_image.with_suffix(".signed.dmg").exists())
 
 
 if __name__ == "__main__":

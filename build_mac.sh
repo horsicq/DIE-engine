@@ -7,14 +7,16 @@ X_RELEASE_VERSION=$(cat "release_version.txt")
 
 BUILD_DIR=$(mktemp -d)
 RELEASE_DIR="$X_SOURCE_PATH/release"
-PKG_NAME="die_${X_RELEASE_VERSION}_mac.pkg"
+ZIP_NAME="die_${X_RELEASE_VERSION}_mac_portable.zip"
+DMG_NAME="die_${X_RELEASE_VERSION}_mac.dmg"
+PACKAGE_DIR="$RELEASE_DIR/$X_BUILD_NAME"
 
-cleanup() { rm -rf "$BUILD_DIR"; }
+cleanup() { rm -rf "$BUILD_DIR" "$PACKAGE_DIR"; }
 trap cleanup EXIT
 
 mkdir -p "$RELEASE_DIR"
-# A failed build must not leave an older installer looking like new output.
-rm -f "$RELEASE_DIR/$PKG_NAME"
+# A failed build must not leave older packages looking like new output.
+rm -f "$RELEASE_DIR/$ZIP_NAME" "$RELEASE_DIR/$DMG_NAME"
 
 QT_PREFIX_PATH="${1:-${QT_PREFIX_PATH:-$HOME/Qt/5.15.2/clang_64}}"
 CMAKE_ARGS=(
@@ -99,29 +101,35 @@ fi
     "${MACDEPLOYQT_EXECUTABLES[@]}" \
     -always-overwrite
 
-PACKAGE_DIR="$RELEASE_DIR/$X_BUILD_NAME"
 rm -rf "$PACKAGE_DIR"
 mkdir -p "$PACKAGE_DIR"
 cp -R "$APP_BUNDLE" "$PACKAGE_DIR/"
 STAGED_APP="$PACKAGE_DIR/${APP_BUNDLE##*/}"
 
-# Package exactly the deployed bundle used by the portable ZIP. Signing and
-# notarization are performed separately by the release workflow.
-productbuild --component "$STAGED_APP" /Applications "$BUILD_DIR/$PKG_NAME"
-if [ ! -s "$BUILD_DIR/$PKG_NAME" ]; then
-    echo "ERROR: productbuild did not create a non-empty installer" >&2
+# Package exactly the deployed bundle used by the portable ZIP. The Applications
+# shortcut supports drag-and-drop installation from the mounted disk image.
+# Signing and notarization are performed separately by the release workflow.
+DMG_DIR="$BUILD_DIR/dmg"
+mkdir -p "$DMG_DIR"
+chmod 755 "$DMG_DIR"
+ditto "$STAGED_APP" "$DMG_DIR/${APP_BUNDLE##*/}"
+ln -s /Applications "$DMG_DIR/Applications"
+hdiutil create -volname "Detect It Easy" -srcfolder "$DMG_DIR" \
+    -fs HFS+ -format UDZO -ov "$BUILD_DIR/$DMG_NAME"
+if [ ! -s "$BUILD_DIR/$DMG_NAME" ]; then
+    echo "ERROR: hdiutil did not create a non-empty disk image" >&2
     exit 1
 fi
+hdiutil verify "$BUILD_DIR/$DMG_NAME"
 
 cd "$RELEASE_DIR"
-ZIP_NAME="die_${X_RELEASE_VERSION}_mac_portable.zip"
-rm -f "$ZIP_NAME"
-zip -y -r "$ZIP_NAME" "$X_BUILD_NAME"
-if [ ! -s "$ZIP_NAME" ]; then
+zip -y -r "$BUILD_DIR/$ZIP_NAME" "$X_BUILD_NAME"
+if [ ! -s "$BUILD_DIR/$ZIP_NAME" ]; then
     echo "ERROR: zip did not create a non-empty archive" >&2
     exit 1
 fi
-mv -f "$BUILD_DIR/$PKG_NAME" "$RELEASE_DIR/$PKG_NAME"
+mv -f "$BUILD_DIR/$ZIP_NAME" "$RELEASE_DIR/$ZIP_NAME"
+mv -f "$BUILD_DIR/$DMG_NAME" "$RELEASE_DIR/$DMG_NAME"
 rm -rf "$PACKAGE_DIR"
 echo "Created: $RELEASE_DIR/$ZIP_NAME"
-echo "Created: $RELEASE_DIR/$PKG_NAME"
+echo "Created: $RELEASE_DIR/$DMG_NAME"

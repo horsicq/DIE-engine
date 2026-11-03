@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sign and notarize macOS ZIP and PKG outputs for trusted CI builds."""
+"""Sign and notarize macOS ZIP and DMG outputs for trusted CI builds."""
 
 import argparse
 import base64
@@ -24,8 +24,6 @@ import time
 CERTIFICATE_FIELDS = (
     "APPLE_CERTIFICATE_P12_BASE64",
     "APPLE_CERTIFICATE_PASSWORD",
-    "APPLE_INSTALLER_CERTIFICATE_P12_BASE64",
-    "APPLE_INSTALLER_CERTIFICATE_PASSWORD",
 )
 API_KEY_FIELDS = (
     "APPLE_NOTARY_KEY_P8",
@@ -135,7 +133,7 @@ def capture_process_diagnostics(process, directory, *, timeout):
             return
         try:
             result = run(*args, check=False, env=diagnostic_env, timeout=min(15, available),
-                         phase=f"installer diagnostics: {name}")
+                         phase=f"signing diagnostics: {name}")
         except (SigningInterrupted, SigningTimeout):
             raise
         except (RuntimeError, OSError) as error:
@@ -160,7 +158,7 @@ def capture_process_diagnostics(process, directory, *, timeout):
     collect("ps", ("/bin/ps", "-g", str(process.pid), "-x", "-o",
                    "pid=,ppid=,pgid=,stat=,etime=,time=,comm="))
     if sys.platform == "darwin" and process.poll() is None:
-        # Unlike a whole-system spindump, sample targets only our productbuild
+        # Unlike a whole-system spindump, sample targets only our packaging
         # process. Permission failures are diagnostic results, not signing failures.
         with tempfile.TemporaryDirectory(prefix="die-process-sample-", dir=os.environ["RUNNER_TEMP"]) as scratch:
             raw_file = Path(scratch) / "sample.txt"
@@ -185,8 +183,13 @@ def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=())
     record = {"phase": label, "status": "started", "timeout_seconds": timeout,
               "started_at": datetime.now(timezone.utc).isoformat()}
     record_path.write_text(json.dumps(record, indent=2))
-    safe_output = (Path(str(args[0])).name in ("codesign", "ditto", "spctl", "productbuild", "pkgutil", "diec")
+    safe_output = (Path(str(args[0])).name in ("codesign", "ditto", "spctl", "hdiutil", "diec")
                    or args[:2] == ("xcrun", "stapler"))
+    # Public signatures, tickets, and disk images must be readable by the user
+    # installing them. Keep this process and credential tools at the private
+    # umask; change it only in children that create distribution files.
+    distribution_tool = (Path(str(args[0])).name in ("codesign", "ditto", "hdiutil")
+                         or args[:2] == ("xcrun", "stapler"))
 
     def finish(status, stdout="", stderr="", returncode=None):
         record.update(status=status, elapsed_seconds=round(time.monotonic() - started, 2),
@@ -203,13 +206,14 @@ def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=())
     try:
         process = subprocess.Popen([str(arg) for arg in args], text=True,
                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                   env=env, start_new_session=True)
+                                   env=env, start_new_session=True,
+                                   umask=0o022 if distribution_tool else -1)
     except OSError:
         finish("failed")
         raise RuntimeError(f"Could not start {label}.") from None
     try:
         # Sampling time counts against the original command deadline; it must
-        # never restart or extend the 15-minute PKG limit or total signing budget.
+        # never restart or extend the command limit or total signing budget.
         completed = False
         checkpoints = [point for point in sorted(set(diagnose_after)) if 0 < point < timeout]
         for point in checkpoints:
@@ -257,7 +261,7 @@ def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=())
 
 def stapler(action, target, *, kind):
     # Retry ticket-service/network failures, never invalid or revoked tickets.
-    # Validation still has to succeed for both the app and the installer.
+    # Validation still has to succeed for both the app and the disk image.
     for attempt in range(1, 4):
         phase = f"{kind}: stapler {action}, attempt {attempt}/3"
         try:
@@ -385,19 +389,16 @@ def import_identities(root):
     run("security", "create-keychain", "-p", password, keychain)
     run("security", "set-keychain-settings", "-lut", "21600", keychain)
     run("security", "unlock-keychain", "-p", password, keychain)
-    for prefix, name, tool in (
-        ("APPLE_CERTIFICATE", "application.p12", "/usr/bin/codesign"),
-        ("APPLE_INSTALLER_CERTIFICATE", "installer.p12", "/usr/bin/productbuild"),
-    ):
-        certificate = root / name
-        field = prefix + "_P12_BASE64"
-        try:
-            encoded = "".join(os.environ[field].split())
-            certificate.write_bytes(base64.b64decode(encoded, validate=True))
-        except (ValueError, binascii.Error):
-            raise RuntimeError(f"{field} is not valid base64.") from None
-        run("security", "import", certificate, "-k", keychain, "-P",
-            os.environ[prefix + "_PASSWORD"], "-t", "cert", "-f", "pkcs12", "-T", tool)
+    # Apps and disk images both use Developer ID Application certificates.
+    certificate = root / "application.p12"
+    field = "APPLE_CERTIFICATE_P12_BASE64"
+    try:
+        encoded = "".join(os.environ[field].split())
+        certificate.write_bytes(base64.b64decode(encoded, validate=True))
+    except (ValueError, binascii.Error):
+        raise RuntimeError(f"{field} is not valid base64.") from None
+    run("security", "import", certificate, "-k", keychain, "-P",
+        os.environ["APPLE_CERTIFICATE_PASSWORD"], "-t", "cert", "-f", "pkcs12", "-T", "/usr/bin/codesign")
     run("security", "set-key-partition-list", "-S", "apple-tool:,apple:",
         "-k", password, keychain)
     run("security", "list-keychains", "-d", "user", "-s", keychain, *original)
@@ -405,13 +406,7 @@ def import_identities(root):
         run("security", "find-identity", "-v", "-p", "codesigning", keychain).stdout,
         "Application", "APPLE_SIGNING_IDENTITY",
     )
-    # Installer certificates are excluded by the codesigning policy. Use the
-    # default basic X.509 policy, and pass productbuild the full Common Name.
-    installer = select_identity(
-        run("security", "find-identity", "-v", keychain).stdout,
-        "Installer", "APPLE_INSTALLER_SIGNING_IDENTITY",
-    )
-    return keychain, application[0], installer[1]
+    return keychain, application[0]
 
 
 def app_in(package):
@@ -653,11 +648,14 @@ def notarize(app, root):
         phase="app: Gatekeeper assessment")
 
 
-def notarize_installer(installer, root):
-    notarize_submission(installer, installer, root, "installer")
-    run("pkgutil", "--check-signature", installer, phase="installer: verify signature after stapling")
-    run("spctl", "--assess", "--type", "install", "--verbose=2", installer,
-        phase="installer: Gatekeeper assessment")
+def notarize_disk_image(disk_image, root):
+    # Keep DMG IDs separate from historical PKG ("installer") submissions.
+    notarize_submission(disk_image, disk_image, root, "dmg")
+    run("codesign", "--verify", "--strict", "--verbose=2", disk_image,
+        phase="dmg: verify signature after stapling")
+    run("hdiutil", "verify", disk_image, timeout=300, phase="dmg: verify final disk image")
+    run("spctl", "--assess", "--type", "open", "--context", "context:primary-signature",
+        "--verbose=2", disk_image, phase="dmg: Gatekeeper assessment")
 
 
 def require_output(path):
@@ -665,25 +663,25 @@ def require_output(path):
         raise RuntimeError(f"Package tool did not create a nonempty output: {path.name}")
 
 
-def sign_package(archive, installer):
+def sign_package(archive, disk_image):
     global _signing_deadline
     check_config()
     archive = archive.resolve(strict=True)
-    installer = installer.resolve(strict=True)
-    if archive.suffix != ".zip" or installer.suffix != ".pkg":
-        raise RuntimeError("Signing requires a ZIP archive and a PKG installer.")
+    disk_image = disk_image.resolve(strict=True)
+    if archive.suffix != ".zip" or disk_image.suffix != ".dmg":
+        raise RuntimeError("Signing requires a ZIP archive and a DMG disk image.")
     require_output(archive)
-    require_output(installer)
+    require_output(disk_image)
     root = signing_dir()
     # Refuse to reuse leftover credentials from another invocation.
     root.mkdir(mode=0o700)
     temporary_zip = archive.with_suffix(".signed.zip")
-    temporary_pkg = installer.with_suffix(".signed.pkg")
+    temporary_dmg = disk_image.with_suffix(".signed.dmg")
     _signing_deadline = time.monotonic() + SIGNING_TIMEOUT
     try:
         temporary_zip.unlink(missing_ok=True)
-        temporary_pkg.unlink(missing_ok=True)
-        keychain, identity, installer_identity = import_identities(root)
+        temporary_dmg.unlink(missing_ok=True)
+        keychain, identity = import_identities(root)
         extracted = root / "unpacked"
         run("ditto", "-x", "-k", archive, extracted, timeout=300, phase="Extract unsigned package")
         package = extracted / "die_mac_portable"
@@ -708,25 +706,36 @@ def sign_package(archive, installer):
                        if not name.startswith(("APPLE_", "DYLD_", "QT_", "QML"))}
         run(final_app / "Contents/MacOS/diec", "--version", env=runtime_env,
             timeout=60, phase="final ZIP: run signed diec --version")
-        # Rebuild from the signed and stapled app: signing the original PKG
-        # would leave its application payload unsigned.
-        run("productbuild", "--component", app, "/Applications", "--sign",
-            installer_identity, "--keychain", keychain, "--timestamp", temporary_pkg,
-            timeout=900, phase="installer: build signed PKG", diagnose_after=(60, 300, 840))
-        require_output(temporary_pkg)
-        run("pkgutil", "--check-signature", temporary_pkg, phase="installer: verify signature before submission")
-        notarize_installer(temporary_pkg, root)
+        # Rebuild from the verified signed/stapled app. Use a separate staging
+        # folder so credentials and notarization files cannot enter the image.
+        dmg_contents = root / "dmg-contents"
+        dmg_contents.mkdir()
+        dmg_contents.chmod(0o755)
+        run("ditto", final_app, dmg_contents / final_app.name,
+            timeout=300, phase="dmg: stage signed and stapled app")
+        (dmg_contents / "Applications").symlink_to("/Applications")
+        run("hdiutil", "create", "-volname", "Detect It Easy", "-fs", "HFS+",
+            "-srcfolder", dmg_contents, "-format", "UDZO", "-ov", temporary_dmg,
+            timeout=900, phase="dmg: create compressed disk image", diagnose_after=(60, 300, 840))
+        require_output(temporary_dmg)
+        run("hdiutil", "verify", temporary_dmg, timeout=300, phase="dmg: verify disk image before signing")
+        run("codesign", "--force", "--sign", identity, "--keychain", keychain,
+            "--timestamp", "--identifier", "com.horsicq.die.dmg", temporary_dmg,
+            phase="dmg: sign disk image")
+        run("codesign", "--verify", "--strict", "--verbose=2", temporary_dmg,
+            phase="dmg: verify signature before submission")
+        notarize_disk_image(temporary_dmg, root)
         # Replace unsigned outputs only after both pass every check.
         temporary_zip.replace(archive)
-        temporary_pkg.replace(installer)
-        print("Signed, notarized, and stapled ZIP and PKG verified.", flush=True)
+        temporary_dmg.replace(disk_image)
+        print("Signed, notarized, and stapled ZIP and DMG verified.", flush=True)
     finally:
         # Cleanup gets its own short command limits even after our total budget
         # expires. GitHub's always() cleanup step is a second line of defense.
         _signing_deadline = None
         try:
             temporary_zip.unlink(missing_ok=True)
-            temporary_pkg.unlink(missing_ok=True)
+            temporary_dmg.unlink(missing_ok=True)
         finally:
             cleanup()
 
@@ -740,7 +749,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("action", choices=("check", "sign", "cleanup"))
     parser.add_argument("archive", nargs="?", type=Path)
-    parser.add_argument("installer", nargs="?", type=Path)
+    parser.add_argument("disk_image", nargs="?", type=Path)
     parser.add_argument("--allow-unsigned", action="store_true",
                         help="let check disable signing when no signing credentials are configured")
     args = parser.parse_args()
@@ -753,10 +762,10 @@ def main():
             report_config(check_config(allow_unsigned=args.allow_unsigned))
         elif args.action == "cleanup":
             cleanup()
-        elif args.archive is None or args.installer is None:
-            parser.error("sign requires the ZIP and PKG paths")
+        elif args.archive is None or args.disk_image is None:
+            parser.error("sign requires the ZIP and DMG paths")
         else:
-            sign_package(args.archive, args.installer)
+            sign_package(args.archive, args.disk_image)
     except (RuntimeError, OSError, ValueError, KeyError) as error:
         print(f"::error::{error}", file=sys.stderr)
         return 1

@@ -73,9 +73,11 @@ def describe_asset(name):
     if "termux" in lower:
         return 70, f"Command-line version for Termux on Android{suffix}"
     if lower.startswith("die_mac") or "_mac_portable" in lower or re.fullmatch(
-        r"die_[0-9.]+_mac_(?:x86_64|arm64)_qt[56]\.pkg", lower
+        r"die_[0-9.]+_mac_(?:x86_64|arm64)_qt[56]\.(?:dmg|pkg)", lower
     ):
-        kind = "Installer" if lower.endswith(".pkg") else "Portable version"
+        kind = "Disk image" if lower.endswith(".dmg") else (
+            "Installer" if lower.endswith(".pkg") else "Portable version"
+        )
         qt = "Qt 6" if "qt6" in lower else "Qt 5" if "qt5" in lower else ""
         details = ", ".join(value for value in (arch, qt) if value)
         details = f" ({details})" if details else ""

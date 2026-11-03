@@ -59,7 +59,7 @@ class CommandTestCase(unittest.TestCase):
 
 class StaplerRetryTests(CommandTestCase):
     def invoke(self, responses, *, action="staple", kind="app"):
-        target = self.root / ("die.pkg" if kind == "installer" else "die.app")
+        target = self.root / ("die.dmg" if kind == "dmg" else "die.app")
         results = [subprocess.CompletedProcess([], value, "CloudKit response", "")
                    if isinstance(value, int) else value for value in responses]
         stack, output = self.captured()
@@ -72,8 +72,8 @@ class StaplerRetryTests(CommandTestCase):
                 error = caught
         return run, sleep, output.getvalue(), error
 
-    def test_cloudkit_exit_68_recovers_for_app_and_installer_stapling(self):
-        for kind in ("app", "installer"):
+    def test_cloudkit_exit_68_recovers_for_app_and_dmg_stapling(self):
+        for kind in ("app", "dmg"):
             with self.subTest(kind=kind):
                 run, sleep, output, error = self.invoke([68, 0], kind=kind)
                 self.assertIsNone(error)
@@ -121,6 +121,35 @@ class StaplerRetryTests(CommandTestCase):
 
 
 class SubprocessTests(CommandTestCase):
+    def test_distribution_files_are_readable_but_credential_files_stay_private(self):
+        commands = (
+            (("codesign",), 0o644),
+            (("ditto",), 0o644),
+            (("hdiutil", "create"), 0o644),
+            (("xcrun", "stapler", "staple"), 0o644),
+            (("security", "import"), 0o600),
+            (("xcrun", "notarytool", "log"), 0o600),
+        )
+        for index, (command, expected) in enumerate(commands):
+            with self.subTest(command=command):
+                target = self.root / f"tool-output-{index}"
+                private = self.root / f"private-state-{index}"
+                self.executable(command[0], "import pathlib, sys\n"
+                                "target = pathlib.Path(sys.argv[-1])\n"
+                                "target.mkdir()\n"
+                                "(target / 'resource').write_text('test')\n")
+                previous_umask = os.umask(0o077)
+                try:
+                    stack, _ = self.captured()
+                    with stack:
+                        sign_macos.run(*command, target)
+                    private.write_text("private state")
+                finally:
+                    os.umask(previous_umask)
+                self.assertEqual((target / "resource").stat().st_mode & 0o777, expected)
+                self.assertEqual(target.stat().st_mode & 0o777, 0o755 if expected == 0o644 else 0o700)
+                self.assertEqual(private.stat().st_mode & 0o777, 0o600)
+
     def test_stapler_stdout_and_stderr_are_retained_and_secrets_are_redacted(self):
         self.executable("xcrun", "import os, sys\n"
                         "print('CloudKit ticket lookup failed')\n"

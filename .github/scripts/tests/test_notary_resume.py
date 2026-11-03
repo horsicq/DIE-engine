@@ -111,8 +111,8 @@ class NotaryResumeTests(unittest.TestCase):
             return subprocess.CompletedProcess(args, code, "", "private-notary-password")
         return subprocess.CompletedProcess(args, 0, "", "")
 
-    def notarize(self):
-        return sign_macos.notarize_submission(self.submission, self.target, self.root, "app")
+    def notarize(self, kind="app"):
+        return sign_macos.notarize_submission(self.submission, self.target, self.root, kind)
 
     def restored_state(self, state, *, kind="app", digest=None):
         digest = digest or hashlib.sha256(self.submission.read_bytes()).hexdigest()
@@ -209,6 +209,27 @@ class NotaryResumeTests(unittest.TestCase):
         self.notarize()
         self.assertEqual(len(self.commands("submit")), 1)
         self.assertEqual(self.state()["id"], SUBMISSION_ID)
+
+    def test_dmg_never_reuses_app_or_legacy_installer_id_for_same_hash(self):
+        state = self.accepted_state()
+        state["id"] = OTHER_ID
+        self.restored_state(state, kind="app")
+        self.restored_state(state, kind="installer")
+        self.diagnostics = self.root / "die-apple-notarization/dmg"
+        self.state_file = self.diagnostics / "submission.json"
+        self.notarize("dmg")
+        self.assertEqual(len(self.commands("submit")), 1)
+        self.assertEqual(self.state()["id"], SUBMISSION_ID)
+
+    def test_restored_dmg_matching_hash_reuses_id_without_upload(self):
+        self.restored_state(self.accepted_state(), kind="dmg")
+        self.diagnostics = self.root / "die-apple-notarization/dmg"
+        self.state_file = self.diagnostics / "submission.json"
+        self.notarize("dmg")
+        self.assertFalse(self.commands("submit"))
+        self.assertEqual(self.state()["id"], SUBMISSION_ID)
+        self.assertEqual(len(self.commands("info")), 1)
+        self.assertEqual(len(self.stapler_calls()), 2)
 
     def test_restored_ambiguous_upload_blocks_duplicate_after_ci_rerun(self):
         state = {"sha256": hashlib.sha256(self.submission.read_bytes()).hexdigest(),
