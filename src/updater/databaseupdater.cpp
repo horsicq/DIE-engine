@@ -312,7 +312,10 @@ ReleaseUrl releaseUrl(const QUrl &url)
     if (url.host().compare("github.com", Qt::CaseInsensitive) != 0 && (parts.size() < 3 || parts[2] != "releases")) return result;
     if (parts.size() > 2 && parts[2] != "releases") return result;
     result.owner = parts[0]; result.repo = parts[1];
-    QUrl base = url; base.setPath({}); base.setQuery({}); base.setFragment({});
+    QUrl base = url;
+    base.setPath(QString());
+    base.setQuery(QString());
+    base.setFragment(QString());
     result.base = base.toString(QUrl::FullyEncoded);
     if (parts.size() <= 3 || (parts.size() == 4 && parts[3] == "latest")) result.latest = true;
     else if (parts.size() == 5 && parts[3] == "tag") result.tag = parts[4];
