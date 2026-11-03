@@ -394,6 +394,8 @@ class PackagePairTests(SigningTestCase):
             kind = "zip" if source.name == "die_mac_portable" else "submission"
             self.write_output(target, kind, b"signed ZIP")
         elif args[0] == "productbuild":
+            self.assertEqual(kwargs["timeout"], 900)
+            self.assertEqual(kwargs["diagnose_after"], (60, 300, 840))
             app = Path(args[args.index("--component") + 1])
             self.assertEqual(app, self.signed_app)
             self.assertTrue((app / "signed-marker").is_file())
@@ -404,6 +406,8 @@ class PackagePairTests(SigningTestCase):
             self.assertIn("--timestamp", args)
             self.write_output(Path(args[-1]), "pkg", b"signed PKG")
         elif args[:3] == ("xcrun", "notarytool", "submit"):
+            self.assertEqual(kwargs["timeout"], 35 * 60)
+            self.assertNotIn("diagnose_after", kwargs)
             # Neither original may be replaced before the second submission succeeds.
             self.assertEqual(self.archive.read_bytes(), b"original ZIP")
             self.assertEqual(self.installer.read_bytes(), b"original PKG")

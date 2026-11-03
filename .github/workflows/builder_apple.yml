@@ -227,7 +227,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: die-macos-notarization-${{ matrix.arch }}-qt${{ matrix.qt_major }}
-          path: ${{ runner.temp }}/die-apple-notarization/**/*.json
+          path: |
+            ${{ runner.temp }}/die-apple-notarization/**/*.json
+            ${{ runner.temp }}/die-apple-notarization/**/*.txt
           if-no-files-found: ignore
 
       - name: Upload workflow artifact

@@ -4,6 +4,7 @@
 import argparse
 import base64
 import binascii
+from datetime import datetime, timezone
 import json
 import os
 from pathlib import Path
@@ -15,6 +16,7 @@ import shutil
 import signal
 import subprocess
 import sys
+import tempfile
 import time
 
 
@@ -50,6 +52,10 @@ class CommandTimeout(RuntimeError):
 
 
 class SigningTimeout(RuntimeError):
+    pass
+
+
+class SigningInterrupted(RuntimeError):
     pass
 
 
@@ -101,22 +107,79 @@ def stop_process(process):
         return "", ""
 
 
-def run(*args, check=True, env=None, timeout=120, phase=None):
+def capture_process_diagnostics(process, directory, *, timeout):
+    """Sample one signing process, without collecting arguments or environment."""
+    directory.mkdir(parents=True, exist_ok=True)
+    deadline = time.monotonic() + timeout
+    report = {"pid": process.pid, "status": "partial", "tools": {}}
+    report_path = directory / "process.json"
+    report_path.write_text(json.dumps(report, indent=2))
+    diagnostic_env = {name: value for name, value in os.environ.items()
+                      if not name.startswith("APPLE_")}
+
+    def collect(name, args, raw_file=None):
+        available = deadline - time.monotonic()
+        if available <= 0:
+            report["tools"][name] = {"status": "skipped", "reason": "Diagnostic time budget exhausted."}
+            return
+        try:
+            result = run(*args, check=False, env=diagnostic_env, timeout=min(15, available),
+                         phase=f"installer diagnostics: {name}")
+        except (SigningInterrupted, SigningTimeout):
+            raise
+        except (RuntimeError, OSError) as error:
+            report["tools"][name] = {"status": "failed", "error": redacted(str(error))}
+            print(f"::warning::Could not collect {name} process diagnostics.", flush=True)
+        else:
+            report["tools"][name] = {"status": "succeeded" if result.returncode == 0 else "failed",
+                                      "returncode": result.returncode}
+            output_name = f"{name}-output.txt" if raw_file is not None else f"{name}.txt"
+            (directory / output_name).write_text(redacted(result.stdout) + redacted(result.stderr))
+            if result.returncode:
+                print(f"::warning::{name} process diagnostics exited with code {result.returncode}.", flush=True)
+        finally:
+            # Raw stack reports stay outside the uploaded artifact tree until
+            # redacted. Preserve a partial report even if the sampler times out.
+            if raw_file is not None and raw_file.is_file():
+                (directory / f"{name}.txt").write_text(redacted(raw_file.read_text(errors="replace")))
+            report_path.write_text(json.dumps(report, indent=2))
+
+    # start_new_session makes the target PID its process group ID. `comm`
+    # deliberately excludes command arguments, which may contain credentials.
+    collect("ps", ("/bin/ps", "-g", str(process.pid), "-x", "-o",
+                   "pid=,ppid=,pgid=,stat=,etime=,time=,comm="))
+    if sys.platform == "darwin" and process.poll() is None:
+        # Unlike a whole-system spindump, sample targets only our productbuild
+        # process. Permission failures are diagnostic results, not signing failures.
+        with tempfile.TemporaryDirectory(prefix="die-process-sample-", dir=os.environ["RUNNER_TEMP"]) as scratch:
+            raw_file = Path(scratch) / "sample.txt"
+            collect("sample", ("/usr/bin/sample", str(process.pid), "5", "10", "-mayDie", "-file", str(raw_file)), raw_file)
+    else:
+        report["tools"]["sample"] = {"status": "skipped", "reason": "Requires a running macOS process."}
+    if all(tool["status"] == "succeeded" for tool in report["tools"].values()):
+        report["status"] = "captured"
+    report_path.write_text(json.dumps(report, indent=2))
+
+
+def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=()):
     # Never echo commands: security/notarytool arguments contain credentials.
     label = phase or command_label(args)
     timeout = remaining_timeout(timeout)
     started = time.monotonic()
+    deadline = started + timeout
     print(f"Starting {label} (timeout {timeout:.0f}s)...", flush=True)
     diagnostics = Path(os.environ["RUNNER_TEMP"]) / "die-apple-notarization" / "commands"
     diagnostics.mkdir(parents=True, exist_ok=True)
     record_path = diagnostics / f"{time.time_ns()}.json"
-    record = {"phase": label, "status": "started", "timeout_seconds": timeout}
+    record = {"phase": label, "status": "started", "timeout_seconds": timeout,
+              "started_at": datetime.now(timezone.utc).isoformat()}
     record_path.write_text(json.dumps(record, indent=2))
     safe_output = (Path(str(args[0])).name in ("codesign", "ditto", "spctl", "productbuild", "pkgutil", "diec")
                    or args[:2] == ("xcrun", "stapler"))
 
     def finish(status, stdout="", stderr="", returncode=None):
-        record.update(status=status, elapsed_seconds=round(time.monotonic() - started, 2), returncode=returncode)
+        record.update(status=status, elapsed_seconds=round(time.monotonic() - started, 2),
+                      returncode=returncode, finished_at=datetime.now(timezone.utc).isoformat())
         if safe_output:
             record.update(stdout=redacted(stdout), stderr=redacted(stderr))
             if status != "succeeded" or args[:2] == ("xcrun", "stapler"):
@@ -134,7 +197,37 @@ def run(*args, check=True, env=None, timeout=120, phase=None):
         finish("failed")
         raise RuntimeError(f"Could not start {label}.") from None
     try:
-        stdout, stderr = process.communicate(timeout=timeout)
+        # Sampling time counts against the original command deadline; it must
+        # never restart or extend the 15-minute PKG limit or total signing budget.
+        completed = False
+        checkpoints = [point for point in sorted(set(diagnose_after)) if 0 < point < timeout]
+        for point in checkpoints:
+            until_checkpoint = max(0, started + point - time.monotonic())
+            try:
+                stdout, stderr = process.communicate(timeout=until_checkpoint)
+                completed = True
+                break
+            except subprocess.TimeoutExpired:
+                if process.poll() is not None:
+                    continue
+                available = deadline - time.monotonic()
+                if available <= 0:
+                    break
+                sample_dir = diagnostics.parent / "processes" / record_path.stem / f"after-{point:g}s"
+                print(f"{label} is still running after {time.monotonic() - started:.0f}s; collecting process diagnostics.", flush=True)
+                record.setdefault("process_diagnostics", []).append(str(sample_dir.relative_to(diagnostics.parent)))
+                record_path.write_text(json.dumps(record, indent=2))
+                try:
+                    capture_process_diagnostics(process, sample_dir, timeout=min(20, available))
+                except (SigningInterrupted, SigningTimeout):
+                    raise
+                except (RuntimeError, OSError) as error:
+                    # A failed profiler must not cancel otherwise valid signing.
+                    print(f"::warning::Process diagnostics unavailable: {redacted(str(error))}", flush=True)
+        # A checkpoint may consume the remaining command budget. Always obtain
+        # the final result (or timeout) rather than treating a sample as completion.
+        if not completed:
+            stdout, stderr = process.communicate(timeout=max(0, deadline - time.monotonic()))
     except subprocess.TimeoutExpired as error:
         stdout, stderr = stop_process(process)
         finish("timed_out", stdout or error.stdout, stderr or error.stderr, process.returncode)
@@ -464,7 +557,7 @@ def sign_package(archive, installer):
         # would leave its application payload unsigned.
         run("productbuild", "--component", app, "/Applications", "--sign",
             installer_identity, "--keychain", keychain, "--timestamp", temporary_pkg,
-            timeout=300, phase="installer: build signed PKG")
+            timeout=900, phase="installer: build signed PKG", diagnose_after=(60, 300, 840))
         require_output(temporary_pkg)
         run("pkgutil", "--check-signature", temporary_pkg, phase="installer: verify signature before submission")
         notarize_installer(temporary_pkg, root)
@@ -484,7 +577,7 @@ def sign_package(archive, installer):
 
 
 def interrupted(signum, frame):
-    raise RuntimeError("Signing was interrupted; removing temporary credentials.")
+    raise SigningInterrupted("Signing was interrupted; removing temporary credentials.")
 
 
 def main():
