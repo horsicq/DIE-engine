@@ -10,7 +10,7 @@ import shutil
 import subprocess
 import tempfile
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "sign_macos.py"
@@ -457,6 +457,24 @@ class PackagePairTests(SigningTestCase):
                              Path(call[-1]).suffix == ".pkg" for call in self.calls))
         self.assert_cleaned()
 
+    def test_stapler_timeouts_preserve_outputs_and_cleanup_runs_outside_deadline(self):
+        fake_run = self.fake_run
+
+        def timeout_after_acceptance(*args, **kwargs):
+            if args[:3] == ("xcrun", "stapler", "validate"):
+                raise sign_macos.CommandTimeout("simulated stapler timeout")
+            if args[:2] == ("security", "delete-keychain"):
+                self.assertIsNone(sign_macos._signing_deadline)
+                self.assertLessEqual(kwargs["timeout"], 60)
+            return fake_run(*args, **kwargs)
+
+        with patch.object(self, "fake_run", side_effect=timeout_after_acceptance), \
+                patch.object(sign_macos.time, "sleep"), self.assertRaises(RuntimeError):
+            self.invoke_signing()
+        self.assertEqual(self.archive.read_bytes(), b"original ZIP")
+        self.assertEqual(self.installer.read_bytes(), b"original PKG")
+        self.assert_cleaned()
+
     def test_missing_or_empty_generated_output_preserves_both_originals(self):
         for kind in ("zip", "pkg"):
             for failure in ("missing", "empty"):
@@ -490,8 +508,9 @@ class CredentialHandlingTests(SigningTestCase):
         for command in (("security", "import", "--password", "fake-command-secret"),
                         ("xcrun", "notarytool", "submit", "--password", "fake-command-secret")):
             output = io.StringIO()
-            result = subprocess.CompletedProcess(command, 1, "fake-stdout-secret", "fake-stderr-secret")
-            with self.subTest(tool=command[0]), patch.object(sign_macos.subprocess, "run", return_value=result), \
+            process = Mock(returncode=1)
+            process.communicate.return_value = ("fake-stdout-secret", "fake-stderr-secret")
+            with self.subTest(tool=command[0]), patch.object(sign_macos.subprocess, "Popen", return_value=process), \
                     contextlib.redirect_stdout(output), contextlib.redirect_stderr(output), \
                     self.assertRaises(RuntimeError) as error:
                 sign_macos.run(*command)

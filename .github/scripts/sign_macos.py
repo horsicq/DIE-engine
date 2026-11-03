@@ -15,6 +15,7 @@ import shutil
 import signal
 import subprocess
 import sys
+import time
 
 
 CERTIFICATE_FIELDS = (
@@ -40,16 +41,135 @@ MACH_O_MAGIC = {
     b"\xca\xfe\xba\xbe", b"\xbe\xba\xfe\xca",
     b"\xca\xfe\xba\xbf", b"\xbf\xba\xfe\xca",
 }
+SIGNING_TIMEOUT = 70 * 60  # Leave five minutes for cleanup before the CI step limit.
+_signing_deadline = None
 
 
-def run(*args, check=True, env=None):
+class CommandTimeout(RuntimeError):
+    pass
+
+
+class SigningTimeout(RuntimeError):
+    pass
+
+
+def remaining_timeout(timeout):
+    if _signing_deadline is None:
+        return timeout
+    remaining = _signing_deadline - time.monotonic()
+    if remaining <= 0:
+        raise SigningTimeout("Signing exceeded its 70-minute budget; removing temporary credentials.")
+    return min(timeout, remaining)
+
+
+def redacted(text):
+    if isinstance(text, bytes):
+        text = text.decode("utf-8", errors="replace")
+    text = text or ""
+    values = {os.environ.get(name, "").strip() for name in CORE_CREDENTIAL_FIELDS}
+    for value in sorted(values - {""}, key=len, reverse=True):
+        text = text.replace(value, "[REDACTED]")
+    return text
+
+
+def command_label(args):
+    program = Path(str(args[0])).name
+    if program == "xcrun" and len(args) >= 3 and args[1] in ("stapler", "notarytool"):
+        return " ".join(args[1:3])
+    if program == "security" and len(args) >= 2:
+        return "security " + args[1]
+    return program
+
+
+def stop_process(process):
+    # Apple tools can launch helpers. Stop the whole group before retrying or
+    # removing its keychain, including when GitHub cancels the signing step.
+    try:
+        os.killpg(process.pid, signal.SIGKILL)
+    except ProcessLookupError:
+        pass
+    try:
+        return process.communicate(timeout=5)
+    except subprocess.TimeoutExpired:
+        # A daemon may have inherited a pipe without remaining in our group.
+        process.stdout.close()
+        process.stderr.close()
+        try:
+            process.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            raise RuntimeError("Could not stop a signing subprocess within five seconds.") from None
+        return "", ""
+
+
+def run(*args, check=True, env=None, timeout=120, phase=None):
     # Never echo commands: security/notarytool arguments contain credentials.
-    result = subprocess.run([str(arg) for arg in args], text=True, capture_output=True, env=env)
+    label = phase or command_label(args)
+    timeout = remaining_timeout(timeout)
+    started = time.monotonic()
+    print(f"Starting {label} (timeout {timeout:.0f}s)...", flush=True)
+    diagnostics = Path(os.environ["RUNNER_TEMP"]) / "die-apple-notarization" / "commands"
+    diagnostics.mkdir(parents=True, exist_ok=True)
+    record_path = diagnostics / f"{time.time_ns()}.json"
+    record = {"phase": label, "status": "started", "timeout_seconds": timeout}
+    record_path.write_text(json.dumps(record, indent=2))
+    safe_output = (Path(str(args[0])).name in ("codesign", "ditto", "spctl", "productbuild", "pkgutil", "diec")
+                   or args[:2] == ("xcrun", "stapler"))
+
+    def finish(status, stdout="", stderr="", returncode=None):
+        record.update(status=status, elapsed_seconds=round(time.monotonic() - started, 2), returncode=returncode)
+        if safe_output:
+            record.update(stdout=redacted(stdout), stderr=redacted(stderr))
+            if status != "succeeded" or args[:2] == ("xcrun", "stapler"):
+                for output in (record["stdout"], record["stderr"]):
+                    for line in output.splitlines():
+                        print("  " + line, file=sys.stderr, flush=True)
+        record_path.write_text(json.dumps(record, indent=2))
+        print(f"Finished {label}: {status} ({record['elapsed_seconds']:.1f}s).", flush=True)
+
+    try:
+        process = subprocess.Popen([str(arg) for arg in args], text=True,
+                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                   env=env, start_new_session=True)
+    except OSError:
+        finish("failed")
+        raise RuntimeError(f"Could not start {label}.") from None
+    try:
+        stdout, stderr = process.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired as error:
+        stdout, stderr = stop_process(process)
+        finish("timed_out", stdout or error.stdout, stderr or error.stderr, process.returncode)
+        raise CommandTimeout(f"{label} timed out after {timeout:.0f}s.") from None
+    except BaseException:
+        stdout, stderr = stop_process(process)
+        finish("interrupted", stdout, stderr, process.returncode)
+        raise
+    result = subprocess.CompletedProcess(args, process.returncode, stdout, stderr)
+    finish("succeeded" if result.returncode == 0 else "failed", stdout, stderr, result.returncode)
     if check and result.returncode:
-        if args[0] in ("codesign", "ditto", "spctl", "productbuild", "pkgutil") or args[:2] == ("xcrun", "stapler"):
-            print(result.stderr, file=sys.stderr)
-        raise RuntimeError(f"{Path(args[0]).name} failed (exit {result.returncode}).")
+        raise RuntimeError(f"{label} failed (exit {result.returncode}).")
     return result
+
+
+def stapler(action, target, *, kind):
+    # Retry ticket-service/network failures, never invalid or revoked tickets.
+    # Validation still has to succeed for both the app and the installer.
+    for attempt in range(1, 4):
+        phase = f"{kind}: stapler {action}, attempt {attempt}/3"
+        try:
+            result = run("xcrun", "stapler", action, target, check=False, timeout=120, phase=phase)
+        except CommandTimeout as error:
+            failure = str(error)
+        else:
+            if result.returncode == 0:
+                return
+            failure = f"{phase} failed (exit {result.returncode})."
+            if result.returncode not in (68, 75):
+                raise RuntimeError(failure)
+        if attempt == 3:
+            raise RuntimeError(failure + " All stapler attempts failed; see the notarization diagnostics.")
+        delay = remaining_timeout(15 * attempt)
+        print(f"::warning::{failure} Retrying in {delay:.0f}s.", flush=True)
+        time.sleep(delay)
 
 
 def has_fields(names):
@@ -120,13 +240,15 @@ def cleanup():
         if saved.exists():
             originals = json.loads(saved.read_text())
             try:
-                run("security", "list-keychains", "-d", "user", "-s", *originals)
+                run("security", "list-keychains", "-d", "user", "-s", *originals, timeout=30,
+                    phase="Restore original keychain search list")
             except RuntimeError as error:
                 errors.append(str(error))
         keychain = root / "signing.keychain-db"
         if keychain.exists():
             try:
-                run("security", "delete-keychain", keychain)
+                run("security", "delete-keychain", keychain, timeout=30,
+                    phase="Delete temporary signing keychain")
             except RuntimeError as error:
                 errors.append(str(error))
     finally:
@@ -238,7 +360,8 @@ def notarize_submission(submission, target, root, kind):
     auth = notary_auth(root)
     print(f"Submitting signed {kind} to Apple notarization...", flush=True)
     result = run("xcrun", "notarytool", "submit", submission, *auth,
-                 "--wait", "--timeout", "30m", "--output-format", "json", check=False)
+                 "--wait", "--timeout", "30m", "--output-format", "json", check=False,
+                 timeout=35 * 60, phase=f"{kind}: upload and await Apple notarization")
     try:
         response = json.loads(result.stdout)
         if not isinstance(response, dict):
@@ -250,31 +373,43 @@ def notarize_submission(submission, target, root, kind):
     submission_id = response.get("id", "")
     valid_id = isinstance(submission_id, str) and re.fullmatch(
         r"[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}", submission_id)
-    if valid_id:
-        # The log is useful for accepted submissions with warnings, too.
-        log = run("xcrun", "notarytool", "log", submission_id, *auth,
-                  diagnostics / "notarization-log.json", check=False)
-        if log.returncode:
-            print("::warning::Apple's notarization log was not available.")
+    status = response.get("status")
+    if valid_id and status in ("Accepted", "Invalid", "Rejected"):
+        # Logs exist only for completed submissions. A diagnostic download must
+        # not prevent an accepted app from being stapled if Apple's log API stalls.
+        try:
+            log = run("xcrun", "notarytool", "log", submission_id, *auth,
+                      diagnostics / "notarization-log.json", check=False,
+                      timeout=60, phase=f"{kind}: retrieve notarization log")
+        except CommandTimeout:
+            print("::warning::Apple's notarization log download timed out.", flush=True)
+        else:
+            if log.returncode:
+                print("::warning::Apple's notarization log was not available.", flush=True)
     if result.returncode or not valid_id or response.get("status") != "Accepted":
         raise RuntimeError("Apple did not accept this submission. "
                            "See the notarization diagnostic artifact.")
-    run("xcrun", "stapler", "staple", target)
-    run("xcrun", "stapler", "validate", target)
+    print(f"Apple accepted {kind} notarization; attaching and validating the ticket.", flush=True)
+    stapler("staple", target, kind=kind)
+    stapler("validate", target, kind=kind)
 
 
 def notarize(app, root):
     submission = root / "submission.zip"
-    run("ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", app, submission)
+    run("ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", app, submission,
+        timeout=300, phase="app: create notarization ZIP")
     notarize_submission(submission, app, root, "app")
-    run("codesign", "--verify", "--deep", "--strict", "--verbose=2", app)
-    run("spctl", "--assess", "--type", "execute", "--verbose=2", app)
+    run("codesign", "--verify", "--deep", "--strict", "--verbose=2", app,
+        phase="app: verify signature after stapling")
+    run("spctl", "--assess", "--type", "execute", "--verbose=2", app,
+        phase="app: Gatekeeper assessment")
 
 
 def notarize_installer(installer, root):
     notarize_submission(installer, installer, root, "installer")
-    run("pkgutil", "--check-signature", installer)
-    run("spctl", "--assess", "--type", "install", "--verbose=2", installer)
+    run("pkgutil", "--check-signature", installer, phase="installer: verify signature after stapling")
+    run("spctl", "--assess", "--type", "install", "--verbose=2", installer,
+        phase="installer: Gatekeeper assessment")
 
 
 def require_output(path):
@@ -283,6 +418,7 @@ def require_output(path):
 
 
 def sign_package(archive, installer):
+    global _signing_deadline
     check_config()
     archive = archive.resolve(strict=True)
     installer = installer.resolve(strict=True)
@@ -295,45 +431,56 @@ def sign_package(archive, installer):
     root.mkdir(mode=0o700)
     temporary_zip = archive.with_suffix(".signed.zip")
     temporary_pkg = installer.with_suffix(".signed.pkg")
+    _signing_deadline = time.monotonic() + SIGNING_TIMEOUT
     try:
         temporary_zip.unlink(missing_ok=True)
         temporary_pkg.unlink(missing_ok=True)
         keychain, identity, installer_identity = import_identities(root)
         extracted = root / "unpacked"
-        run("ditto", "-x", "-k", archive, extracted)
+        run("ditto", "-x", "-k", archive, extracted, timeout=300, phase="Extract unsigned package")
         package = extracted / "die_mac_portable"
         app = app_in(package)
         sign_app(app, root, keychain, identity)
         notarize(app, root)
-        run("ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", package, temporary_zip)
+        run("ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", package, temporary_zip,
+            timeout=300, phase="Repack signed and stapled app")
         require_output(temporary_zip)
         # Validate the actual redistributable bytes after repacking the ticket.
         verified = root / "verified"
-        run("ditto", "-x", "-k", temporary_zip, verified)
+        run("ditto", "-x", "-k", temporary_zip, verified, timeout=300, phase="Extract final ZIP for verification")
         final_app = app_in(verified / "die_mac_portable")
-        run("codesign", "--verify", "--deep", "--strict", "--verbose=2", final_app)
-        run("xcrun", "stapler", "validate", final_app)
-        run("spctl", "--assess", "--type", "execute", "--verbose=2", final_app)
+        run("codesign", "--verify", "--deep", "--strict", "--verbose=2", final_app,
+            phase="final ZIP: verify app signature")
+        stapler("validate", final_app, kind="final ZIP app")
+        run("spctl", "--assess", "--type", "execute", "--verbose=2", final_app,
+            phase="final ZIP: Gatekeeper assessment")
         # Run the signed CLI without Qt paths from the build environment or
         # signing credentials; this checks loading under the hardened runtime.
         runtime_env = {name: value for name, value in os.environ.items()
                        if not name.startswith(("APPLE_", "DYLD_", "QT_", "QML"))}
-        run(final_app / "Contents/MacOS/diec", "--version", env=runtime_env)
+        run(final_app / "Contents/MacOS/diec", "--version", env=runtime_env,
+            timeout=60, phase="final ZIP: run signed diec --version")
         # Rebuild from the signed and stapled app: signing the original PKG
         # would leave its application payload unsigned.
         run("productbuild", "--component", app, "/Applications", "--sign",
-            installer_identity, "--keychain", keychain, "--timestamp", temporary_pkg)
+            installer_identity, "--keychain", keychain, "--timestamp", temporary_pkg,
+            timeout=300, phase="installer: build signed PKG")
         require_output(temporary_pkg)
-        run("pkgutil", "--check-signature", temporary_pkg)
+        run("pkgutil", "--check-signature", temporary_pkg, phase="installer: verify signature before submission")
         notarize_installer(temporary_pkg, root)
         # Replace unsigned outputs only after both pass every check.
         temporary_zip.replace(archive)
         temporary_pkg.replace(installer)
         print("Signed, notarized, and stapled ZIP and PKG verified.", flush=True)
     finally:
-        temporary_zip.unlink(missing_ok=True)
-        temporary_pkg.unlink(missing_ok=True)
-        cleanup()
+        # Cleanup gets its own short command limits even after our total budget
+        # expires. GitHub's always() cleanup step is a second line of defense.
+        _signing_deadline = None
+        try:
+            temporary_zip.unlink(missing_ok=True)
+            temporary_pkg.unlink(missing_ok=True)
+        finally:
+            cleanup()
 
 
 def interrupted(signum, frame):

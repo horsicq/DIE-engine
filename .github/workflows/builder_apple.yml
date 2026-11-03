@@ -179,6 +179,15 @@ jobs:
           printf 'path=%s\n' "$archive" >> "$GITHUB_OUTPUT"
           printf 'installer_path=%s\n' "$installer" >> "$GITHUB_OUTPUT"
 
+      # The hosted Intel runner's HTTP/3 path to Apple's ticket service is
+      # unreliable: https://github.com/actions/runner-images/issues/14924.
+      # Keep the workaround in its own PF anchor and release it after signing.
+      - name: Use TCP for Apple ticket retrieval on Intel
+        id: stapler_network
+        if: matrix.arch == 'x86_64' && steps.signing_config.outputs.enabled == 'true'
+        timeout-minutes: 2
+        run: python3 .github/scripts/stapler_network.py enable
+
       # PRs and standalone runs without signing credentials produce unsigned
       # artifacts. Every package uploaded to a release must
       # have a Developer ID signature and a stapled Apple notarization ticket.
@@ -205,7 +214,13 @@ jobs:
 
       - name: Remove temporary signing credentials
         if: always() && steps.signing_config.outputs.enabled == 'true'
+        timeout-minutes: 3
         run: python3 .github/scripts/sign_macos.py cleanup
+
+      - name: Restore Apple ticket retrieval network settings
+        if: always() && matrix.arch == 'x86_64' && steps.signing_config.outputs.enabled == 'true'
+        timeout-minutes: 2
+        run: python3 .github/scripts/stapler_network.py cleanup
 
       - name: Upload notarization diagnostics
         if: always() && steps.signing_config.outputs.enabled == 'true'
