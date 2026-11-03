@@ -32,7 +32,9 @@ for db_extra_dir in "$X_SOURCE_PATH"/dep/Detect-It-Easy/db_extra/*/; do
     fi
 done
 cp -Rf $X_SOURCE_PATH/dep/XYara/yara_rules/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
-cp -Rf $X_SOURCE_PATH/dep/XPEID/peid/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+if [ "${X_WITH_PEID:-OFF}" = "ON" ]; then
+    cp -Rf $X_SOURCE_PATH/dep/XPEID/peid/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+fi
 
 mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/die/signatures
 cp -f $X_SOURCE_PATH/dep/signatures/crypto.db $X_SOURCE_PATH/release/appDir/usr/lib/die/signatures/

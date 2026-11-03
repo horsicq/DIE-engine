@@ -30,7 +30,9 @@ cp -f "$X_SOURCE_PATH/dep/signatures/crypto.db"                           "$X_PR
 cp -Rf "$X_SOURCE_PATH/dep/XInfoDB/info/"                                 "$X_PREFIX/lib/die/"
 cp -Rf "$X_SOURCE_PATH/dep/Detect-It-Easy/db/"                            "$X_PREFIX/lib/die/"
 cp -Rf "$X_SOURCE_PATH/dep/XYara/yara_rules/"                             "$X_PREFIX/lib/die/"
-cp -Rf "$X_SOURCE_PATH/dep/XPEID/peid/"                                  "$X_PREFIX/lib/die/"
+if [ "${X_WITH_PEID:-OFF}" = "ON" ]; then
+    cp -Rf "$X_SOURCE_PATH/dep/XPEID/peid/"                              "$X_PREFIX/lib/die/"
+fi
 for db_extra_dir in "$X_SOURCE_PATH"/dep/Detect-It-Easy/db_extra/*/; do
     if [ -d "$db_extra_dir" ]; then
         cp -Rf "$db_extra_dir" "$X_PREFIX/lib/die/db/" || exit $?

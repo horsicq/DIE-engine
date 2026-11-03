@@ -6,6 +6,7 @@ export X_RELEASE_VERSION=$(cat "release_version.txt")
 BUILD_DIR=$(mktemp -d)
 STAGE_DIR=$(mktemp -d)
 RELEASE_DIR="$X_SOURCE_PATH/release"
+X_WITH_PEID=${X_WITH_PEID:-OFF}
 
 cleanup() { rm -rf "$BUILD_DIR" "$STAGE_DIR"; }
 trap cleanup EXIT
@@ -17,7 +18,7 @@ rm -rf "$PACKAGE_DIR"
 mkdir -p "$PACKAGE_DIR/base/platforms" "$PACKAGE_DIR/base/sqldrivers"
 
 QT_PREFIX_PATH="${1:-}"
-CMAKE_ARGS=(-S "$X_SOURCE_PATH" -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE=Release)
+CMAKE_ARGS=(-S "$X_SOURCE_PATH" -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE=Release -DWITH_PEID="$X_WITH_PEID")
 [ -n "$QT_PREFIX_PATH" ] && CMAKE_ARGS+=(-DCMAKE_PREFIX_PATH="$QT_PREFIX_PATH")
 
 echo "Configuring..."

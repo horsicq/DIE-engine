@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.18)
 project(DetectItEasy)
 
+include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/peid_option.cmake)
+
 # CMake 3.31 normalizes install() DESTINATION paths under CMP0177. On Windows the
 # runtime data root (X_RESOURCES) is ".", so the _mylibs data installs reach
 # install() as "./db" and warn until the policy is set. Normalized destinations

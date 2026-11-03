@@ -5,6 +5,7 @@ export X_RELEASE_VERSION=$(cat "release_version.txt")
 BUILD_DIR=$(mktemp -d)
 WORK_DIR=$(mktemp -d)
 RELEASE_DIR="$X_SOURCE_PATH/release"
+X_WITH_PEID=${X_WITH_PEID:-OFF}
 
 cleanup() { rm -rf "$BUILD_DIR" "$WORK_DIR"; }
 trap cleanup EXIT
@@ -12,7 +13,7 @@ trap cleanup EXIT
 mkdir -p "$RELEASE_DIR"
 
 QT_PREFIX_PATH="${1:-}"
-CMAKE_ARGS=(-S "$X_SOURCE_PATH" -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE=Release)
+CMAKE_ARGS=(-S "$X_SOURCE_PATH" -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE=Release -DWITH_PEID="$X_WITH_PEID")
 [ -n "$QT_PREFIX_PATH" ] && CMAKE_ARGS+=(-DCMAKE_PREFIX_PATH="$QT_PREFIX_PATH")
 
 echo "Configuring..."

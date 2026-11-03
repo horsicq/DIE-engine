@@ -6,6 +6,15 @@
 # DIE-engine
 GUI & console sources for Detect It Easy(DiE): https://github.com/horsicq/Detect-It-Easy/
 
+## Optional PEiD engine
+
+The PEiD scan engine is disabled by default. Enable it for a CMake build with
+`-DWITH_PEID=ON`; this defines `USE_PEID`, compiles the XPEID/peid_widget
+sources, exposes the PEiD controls, and installs the `peid` database directory.
+Packaging scripts use the matching `X_WITH_PEID=ON` environment switch and
+forward it to CMake. With the default `OFF`, PEiD code, controls, help entries,
+and package files are omitted.
+
 ## Updating the signature database
 
 `die-update` checks and installs the database published in the

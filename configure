@@ -9,6 +9,7 @@
 PREFIX=/usr
 QT_PREFIX_PATH=
 BUILD_DIR=build
+X_WITH_PEID=${X_WITH_PEID:-OFF}
 
 for arg in "$@"; do
     case "$arg" in
@@ -27,6 +28,7 @@ done
 set -- -S . -B "$BUILD_DIR" \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX="$PREFIX" \
+    -DWITH_PEID="$X_WITH_PEID" \
     -DCMAKE_RUNTIME_OUTPUT_DIRECTORY="$(pwd)/build/release"
 if [ -n "$QT_PREFIX_PATH" ]; then
     set -- "$@" -DCMAKE_PREFIX_PATH="$QT_PREFIX_PATH"

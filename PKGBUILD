@@ -33,6 +33,7 @@ source=('git+https://github.com/horsicq/DIE-engine.git')
 sha512sums=('SKIP')
 
 _prefix="==> "
+X_WITH_PEID=${X_WITH_PEID:-OFF}
 
 prepare() {
   cd "$srcdir/$_srcname"
@@ -46,6 +47,7 @@ build() {
   cmake \
     -B build \
     -DCMAKE_BUILD_TYPE=Release \
+    -DWITH_PEID="$X_WITH_PEID" \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_RUNTIME_OUTPUT_DIRECTORY="$(pwd)/build/release" \
     -DCMAKE_C_FLAGS_RELEASE="${CFLAGS} -DNDEBUG" \
@@ -59,7 +61,8 @@ package() {
 
   echo "${_prefix}Creating the package base"
   install -d "$pkgdir"/{opt/"${pkgname}",usr/bin,usr/share/icons}
-  install -d "$pkgdir/opt/${pkgname}"/{lang,qss,info,db,signatures,images,yara_rules,peid}
+  install -d "$pkgdir/opt/${pkgname}"/{lang,qss,info,db,signatures,images,yara_rules}
+  [ "$X_WITH_PEID" = "ON" ] && install -d "$pkgdir/opt/${pkgname}/peid"
 
   echo "${_prefix}Copying the package binaries"
   install -Dm 755 build/release/die -t "$pkgdir"/opt/"${pkgname}"
@@ -80,7 +83,7 @@ package() {
     cp -r "$extra_dir" -t "$pkgdir"/opt/"${pkgname}"/db/
   done
   cp -r dep/XYara/yara_rules/* -t "$pkgdir"/opt/"${pkgname}"/yara_rules/
-  cp -r dep/XPEID/peid/* -t "$pkgdir"/opt/"${pkgname}"/peid/
+  [ "$X_WITH_PEID" = "ON" ] && cp -r dep/XPEID/peid/* -t "$pkgdir"/opt/"${pkgname}"/peid/
   install -Dm 644 dep/signatures/crypto.db -t "$pkgdir"/opt/"${pkgname}"/signatures
   cp -r images/* -t "$pkgdir"/opt/"${pkgname}"/images/
 
@@ -105,7 +108,10 @@ package() {
 
   echo "${_prefix}Applying directory layout fix"
   install -d "$pkgdir/usr/lib/die/"
-  for dir in db images info lang qss signatures yara_rules peid; do
+  for dir in db images info lang qss signatures yara_rules; do
     ln -s "/opt/${pkgname}/$dir" "$pkgdir/usr/lib/die/$dir"
   done
+  if [ "$X_WITH_PEID" = "ON" ]; then
+    ln -s "/opt/${pkgname}/peid" "$pkgdir/usr/lib/die/peid"
+  fi
 }

@@ -4,6 +4,7 @@ set -euo pipefail
 X_SOURCE_PATH=$PWD
 X_BUILD_NAME=die_mac_portable
 X_RELEASE_VERSION=$(cat "release_version.txt")
+X_WITH_PEID=${X_WITH_PEID:-OFF}
 
 BUILD_DIR=$(mktemp -d)
 RELEASE_DIR="$X_SOURCE_PATH/release"
@@ -23,6 +24,7 @@ CMAKE_ARGS=(
     -S "$X_SOURCE_PATH"
     -B "$BUILD_DIR"
     -DCMAKE_BUILD_TYPE=Release
+    -DWITH_PEID="$X_WITH_PEID"
     -DCMAKE_PREFIX_PATH="$QT_PREFIX_PATH"
     -DCMAKE_OSX_ARCHITECTURES="${CMAKE_OSX_ARCHITECTURES:-x86_64}"
 )

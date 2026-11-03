@@ -1,6 +1,9 @@
+rem %~dp0 ends in "\": strip it, or "%X_SOURCE_PATH%" ends in \" and escapes the closing quote.
+if "%X_SOURCE_PATH:~-1%"=="\" set "X_SOURCE_PATH=%X_SOURCE_PATH:~0,-1%"
 set "X_BUILD_DIR=%TEMP%\die_cmake_%X_BUILD_PREFIX%"
 set "X_INSTALL_DIR=%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%"
 set "X_BUILD_RESULT=0"
+if not defined X_WITH_PEID set "X_WITH_PEID=OFF"
 
 if exist "%X_INSTALL_DIR%" rmdir /s /q "%X_INSTALL_DIR%"
 if exist "%X_BUILD_DIR%"   rmdir /s /q "%X_BUILD_DIR%"
@@ -8,6 +11,7 @@ if exist "%X_BUILD_DIR%"   rmdir /s /q "%X_BUILD_DIR%"
 cmake -S "%X_SOURCE_PATH%" -B "%X_BUILD_DIR%" ^
     -G "NMake Makefiles" ^
     -DCMAKE_BUILD_TYPE=Release ^
+    -DWITH_PEID=%X_WITH_PEID% ^
     -DCMAKE_PREFIX_PATH="%QT_PREFIX_PATH%"
 if errorlevel 1 (set "X_BUILD_RESULT=1" & goto :exit)
 
