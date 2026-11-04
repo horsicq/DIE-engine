@@ -96,9 +96,9 @@ QString userDataPath()
         struct stat state;
         if (home.isEmpty() || ::stat(QFile::encodeName(home).constData(), &state) || state.st_uid != 0) return {};
 #ifdef Q_OS_MAC
-        return QDir(home).filePath("Library/Application Support/NTInfo/cdie");
+        return QDir(home).filePath("Library/Application Support/NTInfo/die");
 #else
-        return QDir(home).filePath(".local/share/NTInfo/cdie");
+        return QDir(home).filePath(".local/share/NTInfo/die");
 #endif
     }
 #endif
@@ -557,7 +557,7 @@ bool defaultReadOnly(const QString &path)
 {
     QString user = userDataPath();
     if (!user.isEmpty() && within(canonical(path), canonical(user))) return false;
-    if (!qgetenv("DIE_READONLY_INSTALL").isEmpty() || !qgetenv("CDIE_READONLY_INSTALL").isEmpty() || !qgetenv("APPIMAGE").isEmpty()) return true;
+    if (!qgetenv("DIE_READONLY_INSTALL").isEmpty() || !qgetenv("APPIMAGE").isEmpty()) return true;
 #if defined(DIE_SYSTEM_INSTALL) && DIE_SYSTEM_INSTALL
     return true;
 #elif defined(Q_OS_MAC)

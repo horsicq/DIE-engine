@@ -118,7 +118,7 @@ bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QSt
         }
 
         fprintf(stderr, "%s\n",
-                qPrintable(tr("%1 was removed: cdie uses only the main (-D) and custom (-C) databases").arg(sOption)));
+                qPrintable(tr("%1 was removed: diec uses only the main (-D) and custom (-C) databases").arg(sOption)));
         *pnResult = XOptions::CR_INVALIDPARAMETER;
         return true;
     }
@@ -154,8 +154,8 @@ bool DIEConsole::processEngineModes(const QCommandLineParser *pParser, const QSt
     }
 
     if (pParser->isSet(m_clCreateTar)) {
-        // Packs the main database (-D, default $data/db) like cdie --createtar;
-        // the archive then works as -D/-C for both diec and cdie.
+        // Pack the main database (-D, default $data/db) into a TAR archive
+        // that can also be used as a main (-D) or custom (-C) database.
         QString sDatabasePath = XOptions::convertPathName(pScanOptions->sMainDatabasePath);
         QString sTarPath = pParser->value(m_clCreateTar);
 

@@ -27,7 +27,7 @@
 
 QString DieUpdater::getProgramPath()
 {
-    QString sResult = QString::fromLocal8Bit(qgetenv("CDIE_UPDATER"));
+    QString sResult = QString::fromLocal8Bit(qgetenv("DIE_UPDATER"));
 
     if (sResult.isEmpty()) {
         sResult = QCoreApplication::applicationDirPath() + QDir::separator() + QString("die-update");
@@ -96,7 +96,7 @@ qint32 DieUpdater::run(bool bCheck, const QString &sDatabase, bool bJson, QStrin
 
 QString DieUpdater::getUserDataPath()
 {
-    QString sOverride = QString::fromLocal8Bit(qgetenv("CDIE_USER_DATA_DIR"));
+    QString sOverride = QString::fromLocal8Bit(qgetenv("DIE_USER_DATA_DIR"));
 
     if (!sOverride.isEmpty()) {
         return QDir::cleanPath(sOverride);

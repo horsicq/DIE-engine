@@ -114,7 +114,7 @@ QString decodeName(const QByteArray &name, bool utf8)
 
 bool signatureName(const QString &path)
 {
-    // Match CDIE db_load: readable files in these directories are counted,
+    // Count readable files in the supported signature directories,
     // without parsing or executing their JavaScript. Nested arbitrary folders
     // and metadata are not signature directories.
     static const QSet<QString> directories = {
@@ -440,7 +440,7 @@ private:
             if (!localRecord(&member, rawName, zip64, offset, &end, &unsafeExtra)) return false;
             ranges.append(Range{start, end});
             // Ignore every other top-level directory, including malformed
-            // traversal names in db_extra/db_custom, just as CDIE does.
+            // traversal names in db_extra/db_custom.
             if (member.name.section('/', 0, 0) != "db") continue;
             quint32 attributes = u32(header, 38);
             quint16 type = quint16(attributes >> 16) & 0170000;

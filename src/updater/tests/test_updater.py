@@ -2,7 +2,7 @@
 """Offline integration tests for the standalone Qt die-update executable.
 
 Uses only Python's standard library, an ephemeral loopback HTTP server, and
-temporary databases. No CDIE checkout, downloaded fixtures, or internet access
+temporary databases. No additional source checkout, downloaded fixtures, or internet access
 is needed. Copyright (c) 2026 hors<horsicq@gmail.com>. SPDX-License-Identifier: MIT
 """
 
@@ -168,26 +168,28 @@ class UpdaterTests(unittest.TestCase):
         self.addCleanup(self.server.close)
         self.env = {
             name: value for name, value in os.environ.items()
-            if not name.upper().startswith("CDIE_")
+            if not name.upper().startswith("DIE_")
             and name.upper() not in ("HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "NO_PROXY")
         }
-        self.env.update(CDIE_USER_DATA_DIR=str(self.root / "user-data"),
+        self.env.update(DIE_USER_DATA_DIR=str(self.root / "user-data"),
                         NO_PROXY="127.0.0.1,localhost", no_proxy="127.0.0.1,localhost")
 
-    def command_line(self, *arguments, settings=False):
-        args = [str(UPDATER), "--noproxy", "--nouserfolder", "--timeout", "3000"]
+    def command_line(self, *arguments, settings=False, user_fallback=False):
+        args = [str(UPDATER), "--noproxy", "--timeout", "3000"]
+        if not user_fallback:
+            args.append("--nouserfolder")
         if not settings:
             args.append("--nosettings")
         args.extend(str(argument) for argument in arguments)
         return args
 
-    def command(self, *arguments, settings=False):
-        return subprocess.run(self.command_line(*arguments, settings=settings),
+    def command(self, *arguments, settings=False, user_fallback=False):
+        return subprocess.run(self.command_line(*arguments, settings=settings, user_fallback=user_fallback),
                               cwd=self.root, env=self.env, capture_output=True,
                               text=True, encoding="utf-8", timeout=15)
 
-    def update(self, *arguments, expect=OK, settings=False):
-        result = self.command("--json", *arguments, settings=settings)
+    def update(self, *arguments, expect=OK, settings=False, user_fallback=False):
+        result = self.command("--json", *arguments, settings=settings, user_fallback=user_fallback)
         context = "exit=%s\nstdout=%s\nstderr=%s" % (result.returncode, result.stdout, result.stderr)
         self.assertEqual(result.returncode, expect, context)
         try:
@@ -399,6 +401,57 @@ class UpdaterTests(unittest.TestCase):
         self.update("--settings", ini, settings=True)
         self.assert_installed(release_tree(1))
         self.assertEqual(ini.read_bytes(), original)
+
+    @unittest.skipIf(hasattr(os, "geteuid") and os.geteuid() == 0,
+                     "Root ignores environment overrides for user database folders")
+    def test_user_data_override_selects_default_database(self):
+        self.db = Path(self.env["DIE_USER_DATA_DIR"]) / "db"
+        self.db.mkdir(parents=True)
+        tree = release_tree(1)
+        url = self.server.plain(make_zip(tree))
+        report = self.update("--url", url)
+        self.assertEqual(Path(report["database"]), self.db)
+        self.assert_installed(tree)
+
+    @unittest.skipIf(hasattr(os, "geteuid") and os.geteuid() == 0,
+                     "Root ignores environment overrides for user database folders")
+    def test_read_only_install_updates_user_override_and_preserves_bundled_database(self):
+        bundled = self.root / "db"
+        bundled.mkdir()
+        (bundled / "original.sg").write_text("original signature\n")
+        before = snapshot(bundled)
+        self.db = Path(self.env["DIE_USER_DATA_DIR"]) / "db"
+        self.env["DIE_READONLY_INSTALL"] = "1"
+        tree = release_tree(1)
+        url = self.server.plain(make_zip(tree))
+        report = self.update("--url", url, user_fallback=True)
+        self.assertTrue(report["userFolder"])
+        self.assertEqual(Path(report["database"]), self.db)
+        self.assert_installed(tree)
+        self.assertEqual(snapshot(bundled), before)
+
+    def test_default_user_data_directory_belongs_to_die(self):
+        self.env.pop("DIE_USER_DATA_DIR")
+        home = self.root / "home"
+        home.mkdir()
+        self.env["HOME"] = str(home)
+        if os.name == "nt":
+            base = self.root / "local-app-data"
+            self.env["LOCALAPPDATA"] = str(base)
+        elif sys.platform == "darwin":
+            base = home / "Library/Application Support"
+        elif hasattr(os, "geteuid") and os.geteuid() == 0:
+            base = home / ".local/share"
+        else:
+            base = self.root / "xdg-data"
+            self.env["XDG_DATA_HOME"] = str(base)
+        self.db = base / "NTInfo/die/db"
+        self.db.mkdir(parents=True)
+        tree = release_tree(1)
+        url = self.server.plain(make_zip(tree))
+        report = self.update("--url", url)
+        self.assertEqual(Path(report["database"]), self.db)
+        self.assert_installed(tree)
 
     def test_command_line_overrides_settings(self):
         ignored = self.root / "ignored" / "db"
