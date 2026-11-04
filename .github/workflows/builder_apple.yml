@@ -85,12 +85,12 @@ jobs:
           - runner: macos-15-intel
             arch: x86_64
             qt_major: 6
-            qt_version: '6.8.3'
+            qt_version: '6.12.0'
             qt_modules: qt5compat
           - runner: macos-15
             arch: arm64
             qt_major: 6
-            qt_version: '6.8.3'
+            qt_version: '6.12.0'
             qt_modules: qt5compat
     env:
       CMAKE_OSX_ARCHITECTURES: ${{ matrix.arch }}
