@@ -104,20 +104,20 @@ QString DieUpdater::getUserDataPath()
 
 #ifdef Q_OS_WIN
     QString sBase = QString::fromLocal8Bit(qgetenv("LOCALAPPDATA"));
-    return sBase.isEmpty() ? QString() : QDir::cleanPath(sBase + QString("/NTInfo/cdie"));
+    return sBase.isEmpty() ? QString() : QDir::cleanPath(sBase + QString("/NTInfo/die"));
 #elif defined(Q_OS_MAC)
     QString sBase = QString::fromLocal8Bit(qgetenv("HOME"));
-    return sBase.isEmpty() ? QString() : QDir::cleanPath(sBase + QString("/Library/Application Support/NTInfo/cdie"));
+    return sBase.isEmpty() ? QString() : QDir::cleanPath(sBase + QString("/Library/Application Support/NTInfo/die"));
 #else
     QString sBase = QString::fromLocal8Bit(qgetenv("XDG_DATA_HOME"));
     if (!sBase.startsWith(QChar('/'))) {
         sBase.clear();
     }
     if (!sBase.isEmpty()) {
-        return QDir::cleanPath(sBase + QString("/NTInfo/cdie"));
+        return QDir::cleanPath(sBase + QString("/NTInfo/die"));
     }
     sBase = QString::fromLocal8Bit(qgetenv("HOME"));
-    return sBase.isEmpty() ? QString() : QDir::cleanPath(sBase + QString("/.local/share/NTInfo/cdie"));
+    return sBase.isEmpty() ? QString() : QDir::cleanPath(sBase + QString("/.local/share/NTInfo/die"));
 #endif
 }
 

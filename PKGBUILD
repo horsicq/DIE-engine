@@ -83,6 +83,7 @@ package() {
     cp -r "$extra_dir" -t "$pkgdir"/opt/"${pkgname}"/db/
   done
   cp -r dep/XYara/yara_rules/* -t "$pkgdir"/opt/"${pkgname}"/yara_rules/
+  [ "$X_WITH_PEID" = "ON" ] || rm -f "$pkgdir/opt/${pkgname}/yara_rules/peid.yar"
   [ "$X_WITH_PEID" = "ON" ] && cp -r dep/XPEID/peid/* -t "$pkgdir"/opt/"${pkgname}"/peid/
   install -Dm 644 dep/signatures/crypto.db -t "$pkgdir"/opt/"${pkgname}"/signatures
   cp -r images/* -t "$pkgdir"/opt/"${pkgname}"/images/

@@ -77,6 +77,9 @@ private slots:
     void fullScreenSlot();
     void updateDatabaseFinished(int nExitCode, QProcess::ExitStatus exitStatus);
     void updateDatabaseError(QProcess::ProcessError error);
+    void cancelDatabaseUpdate();
+    void databaseScanStarted();
+    void databaseScanFinished();
 
     QString getCurrentFileName();
     void adjustView();
@@ -92,6 +95,9 @@ private slots:
 public slots:
     void _process(const QString &sName);
 
+signals:
+    void databaseUpdateCompleted(bool bSuccess, bool bReloaded);
+
 protected:
     void closeEvent(QCloseEvent *pEvent) override;
     void dragEnterEvent(QDragEnterEvent *event) override;
@@ -106,5 +112,7 @@ private:
     QShortcut *shortCuts[__SC_SIZE];
     QProcess *m_pUpdateProcess;
     QProgressDialog *m_pUpdateProgress;
+    bool m_bUpdateCancelled;
+    bool m_bScanRunning;
 };
 #endif  // GUIMAINWINDOW_H

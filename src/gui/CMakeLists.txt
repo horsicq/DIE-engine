@@ -189,8 +189,14 @@ if(UNIX AND NOT APPLE)
         DESTINATION "${X_RESOURCES}" OPTIONAL)
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/Detect-It-Easy/db"
         DESTINATION "${X_RESOURCES}" OPTIONAL)
-    install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XYara/yara_rules"
-        DESTINATION "${X_RESOURCES}" OPTIONAL)
+    if(WITH_PEID)
+        install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XYara/yara_rules"
+            DESTINATION "${X_RESOURCES}" OPTIONAL)
+    else()
+        install(DIRECTORY "${CMAKE_SOURCE_DIR}/dep/XYara/yara_rules"
+            DESTINATION "${X_RESOURCES}" OPTIONAL
+            PATTERN "peid.yar" EXCLUDE)
+    endif()
     install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../images"
         DESTINATION "${X_RESOURCES}" OPTIONAL)
 else()

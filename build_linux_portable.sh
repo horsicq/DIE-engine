@@ -61,6 +61,7 @@ fi
 [ ! -d "$PACKAGE_DIR/base/info" ]       && cp -Rf "$X_SOURCE_PATH/dep/XInfoDB/info/"              "$PACKAGE_DIR/base/info/"
 [ ! -d "$PACKAGE_DIR/base/db" ]         && cp -Rf "$X_SOURCE_PATH/dep/Detect-It-Easy/db/"         "$PACKAGE_DIR/base/db/"
 [ ! -d "$PACKAGE_DIR/base/yara_rules" ] && cp -Rf "$X_SOURCE_PATH/dep/XYara/yara_rules/"          "$PACKAGE_DIR/base/yara_rules/"
+[ "$X_WITH_PEID" = "ON" ] || rm -f "$PACKAGE_DIR/base/yara_rules/peid.yar"
 [ ! -d "$PACKAGE_DIR/base/images" ]     && cp -Rf "$X_SOURCE_PATH/images/"                    "$PACKAGE_DIR/base/images/"
 if [ -f "$X_SOURCE_PATH/dep/signatures/crypto.db" ]; then
     mkdir -p "$PACKAGE_DIR/base/signatures"

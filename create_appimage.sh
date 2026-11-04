@@ -32,6 +32,7 @@ for db_extra_dir in "$X_SOURCE_PATH"/dep/Detect-It-Easy/db_extra/*/; do
     fi
 done
 cp -Rf $X_SOURCE_PATH/dep/XYara/yara_rules/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
+[ "${X_WITH_PEID:-OFF}" = "ON" ] || rm -f $X_SOURCE_PATH/release/appDir/usr/lib/die/yara_rules/peid.yar
 if [ "${X_WITH_PEID:-OFF}" = "ON" ]; then
     cp -Rf $X_SOURCE_PATH/dep/XPEID/peid/ $X_SOURCE_PATH/release/appDir/usr/lib/die/
 fi

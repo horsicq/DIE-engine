@@ -20,10 +20,15 @@
  */
 #include "guimainwindow.h"
 
+#include <QDialog>
+#include <QDialogButtonBox>
 #include <QFileInfo>
+#include <QGuiApplication>
+#include <QLabel>
 #include <QMessageBox>
 #include <QMimeData>
 #include <QProgressDialog>
+#include <QVBoxLayout>
 
 #include "dieupdater.h"
 #include "ui_guimainwindow.h"
@@ -42,8 +47,33 @@ static void _applyUserDatabase(XOptions *pOptions)
     }
 }
 
+static void _showUpdateMessage(QWidget *pParent, QMessageBox::Icon icon, const QString &sTitle, const QString &sText)
+{
+    if (QGuiApplication::platformName() == QString("offscreen")) {
+        QDialog dialog(pParent);
+        QVBoxLayout layout(&dialog);
+        QLabel label(sText, &dialog);
+        QDialogButtonBox buttons(QDialogButtonBox::Ok, &dialog);
+        dialog.setWindowTitle(sTitle);
+        dialog.setProperty("dieUpdateDialogText", sText);
+        label.setWordWrap(true);
+        layout.addWidget(&label);
+        layout.addWidget(&buttons);
+        QObject::connect(&buttons, SIGNAL(accepted()), &dialog, SLOT(accept()));
+        dialog.exec();
+        return;
+    }
+    QMessageBox messageBox(icon, sTitle, sText, QMessageBox::Ok, pParent);
+    messageBox.exec();
+}
+
 GuiMainWindow::GuiMainWindow(QWidget *pParent)
-    : QMainWindow(pParent), ui(new Ui::GuiMainWindow), m_pUpdateProcess(nullptr), m_pUpdateProgress(nullptr)
+    : QMainWindow(pParent),
+      ui(new Ui::GuiMainWindow),
+      m_pUpdateProcess(nullptr),
+      m_pUpdateProgress(nullptr),
+      m_bUpdateCancelled(false),
+      m_bScanRunning(false)
 {
     ui->setupUi(this);
 
@@ -76,6 +106,9 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent)
     ui->lineEditFileName->setToolTip(tr("File name"));
     ui->lineEditFileName->setClearButtonEnabled(true);
     ui->checkBoxAdvanced->setToolTip(tr("Advanced"));
+
+    connect(ui->widgetFormats, SIGNAL(scanStarted()), this, SLOT(databaseScanStarted()));
+    connect(ui->widgetFormats, SIGNAL(scanFinished()), this, SLOT(databaseScanFinished()));
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 
@@ -253,36 +286,43 @@ void GuiMainWindow::on_toolButtonDemangle_clicked()
 
 void GuiMainWindow::on_toolButtonUpdateDatabase_clicked()
 {
-    if (m_pUpdateProcess) {
+    if (m_pUpdateProcess || m_bScanRunning || !ui->toolButtonUpdateDatabase->isEnabled()) {
         return;
     }
 
     QString sProgram = DieUpdater::getProgramPath();
     if (!QFileInfo(sProgram).isFile()) {
-        QMessageBox::critical(this, tr("Update database"), tr("Cannot find the database updater: %1").arg(sProgram));
+        _showUpdateMessage(this, QMessageBox::Critical, tr("Update database"),
+                           tr("Cannot find the database updater: %1").arg(sProgram));
         if (qApp->property("dieUpdateSmoke").toBool()) {
             qApp->exit(DieUpdater::CANNOT_RUN);
         }
         return;
     }
 
-    m_pUpdateProgress = new QProgressDialog(tr("Updating the signature database..."), QString(), 0, 0, this);
+    m_pUpdateProgress = new QProgressDialog(tr("Updating the signature database..."), tr("Cancel"), 0, 0, this);
     m_pUpdateProgress->setWindowTitle(tr("Update database"));
-    m_pUpdateProgress->setCancelButton(nullptr);
     m_pUpdateProgress->setMinimumDuration(0);
     m_pUpdateProgress->setWindowModality(Qt::WindowModal);
-    m_pUpdateProgress->show();
+    if (QGuiApplication::platformName() != QString("offscreen")) {
+        m_pUpdateProgress->show();
+    }
 
     ui->toolButtonUpdateDatabase->setEnabled(false);
+    m_bUpdateCancelled = false;
     m_pUpdateProcess = new QProcess(this);
     m_pUpdateProcess->setProcessChannelMode(QProcess::MergedChannels);
     connect(m_pUpdateProcess, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(updateDatabaseFinished(int,QProcess::ExitStatus)));
     connect(m_pUpdateProcess, SIGNAL(errorOccurred(QProcess::ProcessError)), this, SLOT(updateDatabaseError(QProcess::ProcessError)));
+    connect(m_pUpdateProgress, SIGNAL(canceled()), this, SLOT(cancelDatabaseUpdate()));
     m_pUpdateProcess->start(sProgram, DieUpdater::getArguments(false, QString(), false));
 }
 
 void GuiMainWindow::updateDatabaseFinished(int nExitCode, QProcess::ExitStatus exitStatus)
 {
+    if (!m_pUpdateProcess) {
+        return;
+    }
     QString sOutput;
     if (m_pUpdateProcess) {
         sOutput = QString::fromUtf8(m_pUpdateProcess->readAll());
@@ -294,14 +334,17 @@ void GuiMainWindow::updateDatabaseFinished(int nExitCode, QProcess::ExitStatus e
         m_pUpdateProgress->deleteLater();
         m_pUpdateProgress = nullptr;
     }
-    ui->toolButtonUpdateDatabase->setEnabled(true);
+    ui->toolButtonUpdateDatabase->setEnabled(!m_bScanRunning);
 
-    bool bSuccess = (exitStatus == QProcess::NormalExit) && (nExitCode == 0);
+    bool bSuccess = !m_bUpdateCancelled && (exitStatus == QProcess::NormalExit) && (nExitCode == 0);
+    bool bReloaded = false;
     if (bSuccess) {
         _applyUserDatabase(&g_xOptions);
         ui->widgetFormats->adjustView();
         ui->widgetFormats->reloadData(true);
+        bReloaded = true;
     }
+    emit databaseUpdateCompleted(bSuccess, bReloaded);
 
     sOutput.replace(QChar('\r'), QChar('\n'));
     sOutput = sOutput.trimmed();
@@ -310,11 +353,13 @@ void GuiMainWindow::updateDatabaseFinished(int nExitCode, QProcess::ExitStatus e
     }
 
     if (qApp->property("dieUpdateSmoke").toBool()) {
-        qApp->exit(bSuccess ? 0 : nExitCode);
+        qApp->exit(m_bUpdateCancelled ? 6 : (bSuccess ? 0 : nExitCode));
+    } else if (m_bUpdateCancelled) {
+        return;
     } else if (bSuccess) {
-        QMessageBox::information(this, tr("Update database"), sOutput);
+        _showUpdateMessage(this, QMessageBox::Information, tr("Update database"), sOutput);
     } else {
-        QMessageBox::critical(this, tr("Update database"), sOutput);
+        _showUpdateMessage(this, QMessageBox::Critical, tr("Update database"), sOutput);
     }
 }
 
@@ -332,13 +377,38 @@ void GuiMainWindow::updateDatabaseError(QProcess::ProcessError error)
         m_pUpdateProgress->deleteLater();
         m_pUpdateProgress = nullptr;
     }
-    ui->toolButtonUpdateDatabase->setEnabled(true);
+    ui->toolButtonUpdateDatabase->setEnabled(!m_bScanRunning);
+    emit databaseUpdateCompleted(false, false);
 
     if (qApp->property("dieUpdateSmoke").toBool()) {
         qApp->exit(DieUpdater::CANNOT_RUN);
     } else {
-        QMessageBox::critical(this, tr("Update database"), sError);
+        _showUpdateMessage(this, QMessageBox::Critical, tr("Update database"), sError);
     }
+}
+
+void GuiMainWindow::cancelDatabaseUpdate()
+{
+    if (!m_pUpdateProcess || m_pUpdateProcess->state() == QProcess::NotRunning) {
+        return;
+    }
+    m_bUpdateCancelled = true;
+    if (m_pUpdateProgress) {
+        m_pUpdateProgress->setCancelButton(nullptr);
+    }
+    m_pUpdateProcess->terminate();
+}
+
+void GuiMainWindow::databaseScanStarted()
+{
+    m_bScanRunning = true;
+    ui->toolButtonUpdateDatabase->setEnabled(false);
+}
+
+void GuiMainWindow::databaseScanFinished()
+{
+    m_bScanRunning = false;
+    ui->toolButtonUpdateDatabase->setEnabled(m_pUpdateProcess == nullptr);
 }
 
 QString GuiMainWindow::getCurrentFileName()
@@ -395,7 +465,7 @@ void GuiMainWindow::setAdvanced(bool bState)
 
 void GuiMainWindow::errorMessageSlot(const QString &sText)
 {
-    QMessageBox::critical(this, tr("Error"), sText);
+    _showUpdateMessage(this, QMessageBox::Critical, tr("Error"), sText);
 }
 
 void GuiMainWindow::_process(const QString &sName)

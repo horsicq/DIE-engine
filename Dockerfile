@@ -1,6 +1,8 @@
 # Stage 1: Build the engine
 FROM alpine:latest AS builder
 
+ARG X_WITH_PEID=OFF
+
 # Install build dependencies
 RUN apk add --no-cache \
     build-base \
@@ -25,6 +27,7 @@ RUN sed -i 's/QString sResult = qApp->property/sResult = qApp->property/g' dep/X
 # Build the engine (binaries land in build/release like before)
 RUN cmake -B build \
         -DCMAKE_BUILD_TYPE=Release \
+        -DWITH_PEID="$X_WITH_PEID" \
         -DCMAKE_CXX_FLAGS="-DQT_NO_DEBUG_OUTPUT" \
         -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/build/build/release && \
     cmake --build build -j$(nproc)
@@ -46,6 +49,7 @@ RUN ldd build/release/diec | grep "=> /" | awk '{print $3}' | xargs -I {} cp -v 
 WORKDIR /build-context
 COPY . .
 RUN cp -r db db_custom yara_rules /dist/share/die/ && \
+    { [ "$X_WITH_PEID" = "ON" ] || rm -f /dist/share/die/yara_rules/peid.yar; } && \
     { [ -d db_extra ] && cp -r db_extra/*/ /dist/share/die/db/ || true; } && \
     cp -r DIE-engine_src/dep/XInfoDB/info /dist/share/die/info && \
     mkdir -p /dist/share/die/signatures && \

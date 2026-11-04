@@ -30,6 +30,7 @@ for /D %%D in ("%X_SOURCE_PATH%\Detect-It-Easy\db_extra\*") do xcopy "%%D" "%X_I
 xcopy "%X_SOURCE_PATH%\XStyles\qss"              "%X_INSTALL_DIR%\qss\"         /E /I /Y
 xcopy "%X_SOURCE_PATH%\XInfoDB\info"             "%X_INSTALL_DIR%\info\"        /E /I /Y
 xcopy "%X_SOURCE_PATH%\XYara\yara_rules"         "%X_INSTALL_DIR%\yara_rules\"  /E /I /Y
+if /I not "%X_WITH_PEID%"=="ON" if exist "%X_INSTALL_DIR%\yara_rules\peid.yar" del /Q "%X_INSTALL_DIR%\yara_rules\peid.yar"
 xcopy "%X_SOURCE_PATH%\images"                   "%X_INSTALL_DIR%\images\"      /E /I /Y
 if exist "%X_SOURCE_PATH%\signatures\crypto.db" (
     mkdir "%X_INSTALL_DIR%\signatures" 2>nul
@@ -46,6 +47,7 @@ if exist %SEVENZIP_PATH% (
     if exist "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip" ^
         del /f /q "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip"
     %SEVENZIP_PATH% a -tzip "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip" "%X_INSTALL_DIR%\*"
+    if /I not "%X_WITH_PEID%"=="ON" %SEVENZIP_PATH% d "%X_SOURCE_PATH%\release\%X_BUILD_NAME%_%X_BUILD_PREFIX%_%X_RELEASE_VERSION%.zip" "*peid*" -r
 )
 
 :exit

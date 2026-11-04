@@ -60,6 +60,7 @@ for extra_dir in "$X_SOURCE_PATH/dep/Detect-It-Easy/db_extra"/*/; do
     cp -Rf "$extra_dir" "$RESOURCES/db/"
 done
 cp -Rf "$X_SOURCE_PATH/dep/XYara/yara_rules"        "$RESOURCES/"
+[ "$X_WITH_PEID" = "ON" ] || rm -f "$RESOURCES/yara_rules/peid.yar"
 cp -Rf "$X_SOURCE_PATH/images"                  "$RESOURCES/"
 [ -f "$X_SOURCE_PATH/dep/signatures/crypto.db" ]   && cp -f "$X_SOURCE_PATH/dep/signatures/crypto.db" "$RESOURCES/signatures/"
 
