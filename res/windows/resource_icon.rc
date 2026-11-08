@@ -4,8 +4,8 @@ IDI_ICON1	ICON	DISCARDABLE	"F:/ownCloud/prepare/qt5/die_source/src/../icons/main
 
 CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "windows.manifest.xml"
 VS_VERSION_INFO VERSIONINFO
-	FILEVERSION 4,0,0,0
-	PRODUCTVERSION 4,0,0,0
+	FILEVERSION 4,1,0,0
+	PRODUCTVERSION 4,1,0,0
 	FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
 	FILEFLAGS VS_FF_DEBUG
@@ -22,11 +22,11 @@ VS_VERSION_INFO VERSIONINFO
 			BEGIN
 				VALUE "CompanyName", "ntinfo\0"
 				VALUE "FileDescription", "Detect It Easy is a program for determining file types\0"
-				VALUE "FileVersion", "4.0.0.0\0"
+				VALUE "FileVersion", "4.1.0.0\0"
 				VALUE "LegalCopyright", "horsicq@gmail.com\0"
 				VALUE "OriginalFilename", "die.exe\0"
 				VALUE "ProductName", "DetectItEasy\0"
-				VALUE "ProductVersion", "4.0.0.0\0"
+				VALUE "ProductVersion", "4.1.0.0\0"
 			END
 		END
 		BLOCK "VarFileInfo"

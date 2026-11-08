@@ -49,7 +49,7 @@ def describe_asset(name):
                 "kalilinux": "Kali Linux",
                 "parrotos": "Parrot OS",
                 "linux": "Linux (DEB)",
-            }.get(platform.lower(), platform.replace("_", " "))
+            }.get(platform.lower(), table_text(platform.replace("_", " ")))
             return 20, f"Installer for {host}{suffix}"
         return 20, f"Installer for Linux (DEB){suffix}"
     if lower.endswith(".tar.gz") and "_portable_ubuntu_" in lower:

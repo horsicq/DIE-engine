@@ -495,7 +495,7 @@ class PackagePairTests(SigningTestCase):
             "dmg: stage signed and stapled app",
             "dmg: create compressed disk image",
             "dmg: verify disk image before signing",
-            "dmg: sign disk image",
+            "dmg: sign disk image, attempt 1/3",
             "dmg: verify signature before submission",
             "dmg: stapler staple, attempt 1/3",
             "dmg: stapler validate, attempt 1/3",

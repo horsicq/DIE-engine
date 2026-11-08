@@ -48,6 +48,7 @@ NOTARY_POLL_INTERVAL = 15
 NOTARY_REQUEST_TIMEOUT = 60
 NOTARY_STATUS_FAILURES = 5
 NOTARY_LOG_ATTEMPTS = 3
+NOTARY_OUTPUT_INTERVAL = 5
 _signing_deadline = None
 
 
@@ -170,7 +171,7 @@ def capture_process_diagnostics(process, directory, *, timeout):
     report_path.write_text(json.dumps(report, indent=2))
 
 
-def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=()):
+def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=(), on_output=None):
     # Never echo commands: security/notarytool arguments contain credentials.
     label = phase or command_label(args)
     timeout = remaining_timeout(timeout)
@@ -203,6 +204,24 @@ def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=())
         record_path.write_text(json.dumps(record, indent=2))
         print(f"Finished {label}: {status} ({record['elapsed_seconds']:.1f}s).", flush=True)
 
+    def communicate(wait):
+        if on_output is None:
+            return process.communicate(timeout=wait)
+        until = time.monotonic() + wait
+        while True:
+            available = max(0, until - time.monotonic())
+            try:
+                stdout, stderr = process.communicate(timeout=min(NOTARY_OUTPUT_INTERVAL, available))
+            except subprocess.TimeoutExpired as error:
+                # communicate preserves cumulative output between calls. Normal
+                # notarytool output exposes the ID before its upload completes.
+                on_output(error.stdout or "", error.stderr or "")
+                if time.monotonic() >= until:
+                    raise
+            else:
+                on_output(stdout, stderr)
+                return stdout, stderr
+
     try:
         process = subprocess.Popen([str(arg) for arg in args], text=True,
                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE,
@@ -219,7 +238,7 @@ def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=())
         for point in checkpoints:
             until_checkpoint = max(0, started + point - time.monotonic())
             try:
-                stdout, stderr = process.communicate(timeout=until_checkpoint)
+                stdout, stderr = communicate(until_checkpoint)
                 completed = True
                 break
             except subprocess.TimeoutExpired:
@@ -242,7 +261,7 @@ def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=())
         # A checkpoint may consume the remaining command budget. Always obtain
         # the final result (or timeout) rather than treating a sample as completion.
         if not completed:
-            stdout, stderr = process.communicate(timeout=max(0, deadline - time.monotonic()))
+            stdout, stderr = communicate(max(0, deadline - time.monotonic()))
     except subprocess.TimeoutExpired as error:
         stdout, stderr = stop_process(process)
         finish("timed_out", stdout or error.stdout, stderr or error.stderr, process.returncode)
@@ -250,7 +269,11 @@ def run(*args, check=True, env=None, timeout=120, phase=None, diagnose_after=())
                              stdout=stdout or error.stdout, stderr=stderr or error.stderr) from None
     except BaseException:
         stdout, stderr = stop_process(process)
-        finish("interrupted", stdout, stderr, process.returncode)
+        try:
+            if on_output is not None:
+                on_output(stdout, stderr)
+        finally:
+            finish("interrupted", stdout, stderr, process.returncode)
         raise
     result = subprocess.CompletedProcess(args, process.returncode, stdout, stderr)
     finish("succeeded" if result.returncode == 0 else "failed", stdout, stderr, result.returncode)
@@ -416,6 +439,25 @@ def app_in(package):
     return apps[0]
 
 
+def sign_with_timestamp(*args, phase):
+    # A temporary timestamp-service failure is safe to retry with the same
+    # --force signing command. Never omit the timestamp or retry other errors.
+    for attempt in range(1, 4):
+        label = f"{phase}, attempt {attempt}/3"
+        result = run("codesign", *args, check=False, timeout=120, phase=label)
+        if result.returncode == 0:
+            return
+        failure = f"{label} failed (exit {result.returncode})."
+        if "The timestamp service is not available." not in (result.stdout + result.stderr):
+            raise RuntimeError(failure)
+        if attempt == 3:
+            raise RuntimeError(failure + " Apple timestamp service remained unavailable after all attempts.")
+        delay = remaining_timeout(15 * attempt)
+        print(f"::warning::Apple timestamp service is unavailable for {phase}; "
+              f"retrying with the required timestamp in {delay:.0f}s.", flush=True)
+        time.sleep(delay)
+
+
 def sign_app(app, root, keychain, identity):
     arch = os.environ["CMAKE_OSX_ARCHITECTURES"]
     if arch not in ("x86_64", "arm64"):
@@ -444,12 +486,12 @@ def sign_app(app, root, keychain, identity):
             with path.open("rb") as source:
                 is_macho = source.read(4) in MACH_O_MAGIC
             if is_macho:
-                run(*command, path)
+                sign_with_timestamp(*command[1:], path, phase=f"app: sign {path.relative_to(app)}")
         elif path.suffix == ".framework":
-            run(*command, path)
-    run(*command, "--identifier", info["CFBundleIdentifier"] + ".diec",
-        "--entitlements", entitlements_file, diec)
-    run(*command, "--entitlements", entitlements_file, app)
+            sign_with_timestamp(*command[1:], path, phase=f"app: sign {path.relative_to(app)}")
+    sign_with_timestamp(*command[1:], "--identifier", info["CFBundleIdentifier"] + ".diec",
+                        "--entitlements", entitlements_file, diec, phase="app: sign diec")
+    sign_with_timestamp(*command[1:], "--entitlements", entitlements_file, app, phase="app: sign bundle")
     run("codesign", "--verify", "--deep", "--strict", "--verbose=2", app)
     run("codesign", "--verify", "--strict", "--verbose=2", diec)
 
@@ -465,6 +507,44 @@ def notary_json(output):
 def valid_submission_id(value):
     return isinstance(value, str) and re.fullmatch(
         r"[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}", value) is not None
+
+
+def submission_id_from_output(stdout, stderr=""):
+    ids = set()
+    uuid = r"([0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})"
+    for output in (stdout, stderr):
+        if isinstance(output, bytes):
+            output = output.decode("utf-8", errors="replace")
+        output = output or ""
+        # Retain support for saved JSON responses and differing tool versions.
+        identifier = notary_json(output).get("id")
+        if valid_submission_id(identifier):
+            ids.add(identifier.lower())
+        for pattern in (
+            r"(?im)^\s*(?:Submission ID received|Successfully uploaded file\.?)\s*\n\s*id:\s*" + uuid + r"\s*$",
+            r"(?im)^\s*Submission ID:\s*" + uuid + r"\s*$",
+        ):
+            ids.update(match.lower() for match in re.findall(pattern, output))
+    if len(ids) > 1:
+        raise RuntimeError("Apple returned conflicting notarization submission IDs; refusing to choose one.")
+    return next(iter(ids), None)
+
+
+def sanitize_notary_output(output):
+    text = redacted(output)
+    # Tool errors can contain escaped credentials or temporary signed S3 URLs,
+    # neither of which should be copied into a downloadable diagnostic artifact.
+    for field in CORE_CREDENTIAL_FIELDS:
+        value = os.environ.get(field, "").strip()
+        if value:
+            text = text.replace(json.dumps(value)[1:-1], "[REDACTED]")
+    text = re.sub(r"-----BEGIN [^-]*PRIVATE KEY-----.*?(?:-----END [^-]*PRIVATE KEY-----|$)",
+                  "[PRIVATE KEY REDACTED]", text, flags=re.DOTALL)
+    text = re.sub(r"(?:https?|s3):(?:\\?/){2}[^\s<>\"']+", "[URL REDACTED]", text, flags=re.IGNORECASE)
+    text = re.sub(r"(?i)([\"']?\b(?:password|token|secret|signature|credential|authorization|x-amz-[a-z-]+)"
+                  r"[\"']?\s*[:=]\s*)(?:\"(?:\\.|[^\"\\])*\"|'(?:\\.|[^'\\])*'|[^\r\n,;}]+)",
+                  r"\1[REDACTED]", text)
+    return text if len(text) <= 16 * 1024 else text[:16 * 1024 - 12] + "\n[truncated]"
 
 
 def write_notary_json(path, value):
@@ -519,28 +599,46 @@ def prepare_notary_submission(submission, auth, diagnostics, kind):
     state = {"sha256": digest, "upload_state": "uncertain",
              "upload_started_at": datetime.now(timezone.utc).isoformat()}
     write_notary_json(state_file, state)
+
+    def capture_upload(stdout, stderr, *, save_output=False):
+        if save_output:
+            write_notary_json(diagnostics / "upload-output.json", {
+                "stdout": sanitize_notary_output(stdout), "stderr": sanitize_notary_output(stderr),
+            })
+        try:
+            identifier = submission_id_from_output(stdout, stderr)
+            if identifier and state.get("id") not in (None, identifier):
+                raise RuntimeError("Apple returned conflicting notarization submission IDs; refusing to choose one.")
+        except RuntimeError:
+            state.pop("id", None)
+            state["upload_state"] = "uncertain"
+            write_notary_json(state_file, state)
+            raise
+        if identifier and "id" not in state:
+            state["id"] = identifier
+            # An allocated ID is not evidence of a completed/accepted upload.
+            write_notary_json(state_file, state)
+            print(f"Saved {kind} notarization submission ID {identifier} during upload.", flush=True)
+
     print(f"Uploading signed {kind} to Apple notarization once...", flush=True)
     try:
         result = run("xcrun", "notarytool", "submit", submission, *auth,
-                     "--no-wait", "--output-format", "json", check=False,
-                     timeout=35 * 60, phase=f"{kind}: upload notarization submission")
-        response = notary_json(result.stdout)
+                     "--no-wait", "--output-format", "normal", "--no-s3-acceleration", check=False,
+                     timeout=35 * 60, phase=f"{kind}: upload notarization submission", on_output=capture_upload)
+        capture_upload(result.stdout, result.stderr, save_output=True)
         state["upload_returncode"] = result.returncode
     except CommandTimeout as error:
-        response = notary_json(error.stdout)
+        capture_upload(error.stdout, error.stderr, save_output=True)
         state["upload_timed_out"] = True
-    submission_id = response.get("id")
-    if valid_submission_id(submission_id):
-        state["id"] = submission_id.lower()
-        if state.get("upload_returncode") == 0:
-            state["upload_state"] = "submitted"
+    if valid_submission_id(state.get("id")) and state.get("upload_returncode") == 0:
+        state["upload_state"] = "submitted"
     # Persist the ID before any status query, even if submit ended with an error.
     # Such an ID is useful for recovery but is not proof of a completed upload.
     write_notary_json(state_file, state)
     if not valid_submission_id(state.get("id")):
         raise RuntimeError(f"The {kind} upload ended without a usable submission ID; "
                            "Apple may have received it. Automatic resubmission is disabled. "
-                           "See submission.json in the notarization diagnostics.")
+                           "See submission.json and upload-output.json in the notarization diagnostics.")
     print(f"Saved {kind} notarization submission ID {state['id']}.", flush=True)
     return state
 
@@ -719,9 +817,9 @@ def sign_package(archive, disk_image):
             timeout=900, phase="dmg: create compressed disk image", diagnose_after=(60, 300, 840))
         require_output(temporary_dmg)
         run("hdiutil", "verify", temporary_dmg, timeout=300, phase="dmg: verify disk image before signing")
-        run("codesign", "--force", "--sign", identity, "--keychain", keychain,
-            "--timestamp", "--identifier", "com.horsicq.die.dmg", temporary_dmg,
-            phase="dmg: sign disk image")
+        sign_with_timestamp("--force", "--sign", identity, "--keychain", keychain,
+                            "--timestamp", "--identifier", "com.horsicq.die.dmg", temporary_dmg,
+                            phase="dmg: sign disk image")
         run("codesign", "--verify", "--strict", "--verbose=2", temporary_dmg,
             phase="dmg: verify signature before submission")
         notarize_disk_image(temporary_dmg, root)
