@@ -22,6 +22,9 @@
 #include <QCommandLineParser>
 #include <QCoreApplication>
 #include <QDate>
+#include <QDir>
+#include <QFile>
+#include <QFileInfo>
 
 #include "../global.h"
 #include "die_script.h"
@@ -324,6 +327,36 @@ XOptions::CR DIEConsole::showFileStruct(const QString &sFileName, XScanEngine::S
     return printFileInfo(sFileName, pScanOptions->sStruct, pScanOptions);
 }
 
+#ifdef Q_OS_WIN
+static QByteArray resolveSymlinkedArgument(const QByteArray &baArgument)
+{
+    // XBinary::findFiles skips paths whose canonical form differs from their
+    // absolute form, so a target reached through a directory symlink would be
+    // dropped without output. Resolve the path supplied on the command line
+    // before the scan engine sees it.
+    const QString sArgument = QFile::decodeName(baArgument);
+
+    if (sArgument.isEmpty() || sArgument.startsWith(QLatin1Char('-'))) {
+        return baArgument;
+    }
+
+    const QFileInfo fileInfo(sArgument);
+
+    if (!fileInfo.exists()) {
+        return baArgument;
+    }
+
+    const QString sCanonicalPath = fileInfo.canonicalFilePath();
+    const QString sAbsolutePath = QDir::cleanPath(fileInfo.absoluteFilePath());
+
+    if (sCanonicalPath.isEmpty() || (sCanonicalPath.compare(sAbsolutePath, Qt::CaseInsensitive) == 0)) {
+        return baArgument;
+    }
+
+    return QFile::encodeName(sCanonicalPath);
+}
+#endif
+
 int main(int argc, char *argv[])
 {
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
@@ -331,7 +364,24 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
+#ifdef Q_OS_WIN
+    QList<QByteArray> listArgumentStorage;
+    QVector<char *> listArguments;
+    listArgumentStorage.reserve(argc);
+    listArguments.reserve(argc + 1);
+
+    for (int i = 0; i < argc; i++) {
+        const QByteArray baArgument = (i == 0) ? QByteArray(argv[i]) : resolveSymlinkedArgument(QByteArray(argv[i]));
+        listArgumentStorage.append(baArgument);
+        listArguments.append(listArgumentStorage.last().data());
+    }
+
+    listArguments.append(nullptr);
+
+    QCoreApplication app(argc, listArguments.data());
+#else
     QCoreApplication app(argc, argv);
+#endif
 
     app.setProperty("dataPathAlt0", "/opt/detect-it-easy");
 
