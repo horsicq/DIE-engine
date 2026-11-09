@@ -9,7 +9,7 @@ if exist "%X_INSTALL_DIR%" rmdir /s /q "%X_INSTALL_DIR%"
 if exist "%X_BUILD_DIR%"   rmdir /s /q "%X_BUILD_DIR%"
 
 cmake -S "%X_SOURCE_PATH%" -B "%X_BUILD_DIR%" ^
-    -G "NMake Makefiles" ^
+    -G "Ninja" ^
     -DCMAKE_BUILD_TYPE=Release ^
     -DWITH_PEID=%X_WITH_PEID% ^
     -DCMAKE_PREFIX_PATH="%QT_PREFIX_PATH%"
