@@ -70,7 +70,7 @@ set(DIE_TRANSLATION_HELPER "${CMAKE_SOURCE_DIR}/dep/build_tools/cmake/deploy_tra
 if(EXISTS "${DIE_TRANSLATION_HELPER}")
     include("${DIE_TRANSLATION_HELPER}")
 
-    set(DIE_TRANSLATION_DIR "${CMAKE_CURRENT_LIST_DIR}/gui/translation")
+    set(DIE_TRANSLATION_DIR "${CMAKE_CURRENT_LIST_DIR}/../translations")
     set(DIE_TS_FILES
         "${DIE_TRANSLATION_DIR}/die_ar.ts"
         "${DIE_TRANSLATION_DIR}/die_bn.ts"
@@ -88,12 +88,11 @@ if(EXISTS "${DIE_TRANSLATION_HELPER}")
         "${DIE_TRANSLATION_DIR}/die_pt_BR.ts"
         "${DIE_TRANSLATION_DIR}/die_pt_PT.ts"
         "${DIE_TRANSLATION_DIR}/die_ru.ts"
+        "${DIE_TRANSLATION_DIR}/die_sq.ts"
         "${DIE_TRANSLATION_DIR}/die_sv.ts"
         "${DIE_TRANSLATION_DIR}/die_tr.ts"
         "${DIE_TRANSLATION_DIR}/die_uk.ts"
         "${DIE_TRANSLATION_DIR}/die_vi.ts"
-        # Albanian is maintained in the newer locale-specific catalog.
-        "${CMAKE_CURRENT_LIST_DIR}/../translations/die_sq.ts"
         "${DIE_TRANSLATION_DIR}/die_zh.ts"
         "${DIE_TRANSLATION_DIR}/die_zh_TW.ts"
     )
