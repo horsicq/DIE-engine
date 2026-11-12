@@ -65,6 +65,7 @@
       </description>
     </release>
     <release version="3.20" date="2026-04-20">
+      <url>https://raw.githubusercontent.com/horsicq/Detect-It-Easy/refs/heads/master/changelog.txt</url>
       <description>
         <ul>
           <li>Build instructions for openSuse, Fedora, Arch Linux, WSL</li>
@@ -81,6 +82,7 @@
       </description>
     </release>
     <release version="3.10" date="2024-11-03">
+      <url>https://raw.githubusercontent.com/horsicq/Detect-It-Easy/refs/heads/master/changelog.txt</url>
       <description>
         <ul>
           <li>Bundle for Ubuntu 24.04 and 24.10</li>
