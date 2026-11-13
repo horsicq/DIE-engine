@@ -57,16 +57,17 @@ if not exist "%X_INSTALL_DIR%\platforms\qwindows.dll" (
 )
 
 echo [*] Copying DIE Assets (DBs, QSS, Yara, etc.)...
-xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db"        "%X_INSTALL_DIR%\db\"          /E /I /Y >nul
-xcopy "%X_SOURCE_PATH%\Detect-It-Easy\db_extra"  "%X_INSTALL_DIR%\db_extra\"    /E /I /Y >nul
-xcopy "%X_SOURCE_PATH%\XStyles\qss"              "%X_INSTALL_DIR%\qss\"         /E /I /Y >nul
-xcopy "%X_SOURCE_PATH%\XInfoDB\info"             "%X_INSTALL_DIR%\info\"        /E /I /Y >nul
-xcopy "%X_SOURCE_PATH%\XYara\yara_rules"         "%X_INSTALL_DIR%\yara_rules\"  /E /I /Y >nul
+xcopy "%X_SOURCE_PATH%\dep\Detect-It-Easy\db"        "%X_INSTALL_DIR%\db\"          /E /I /Y >nul
+xcopy "%X_SOURCE_PATH%\dep\Detect-It-Easy\db_extra"  "%X_INSTALL_DIR%\db_extra\"    /E /I /Y >nul
+xcopy "%X_SOURCE_PATH%\dep\XStyles\qss"              "%X_INSTALL_DIR%\qss\"         /E /I /Y >nul
+xcopy "%X_SOURCE_PATH%\dep\XInfoDB\info"             "%X_INSTALL_DIR%\info\"        /E /I /Y >nul
+xcopy "%X_SOURCE_PATH%\dep\XYara\yara_rules"         "%X_INSTALL_DIR%\yara_rules\"  /E /I /Y >nul
 xcopy "%X_SOURCE_PATH%\images"                   "%X_INSTALL_DIR%\images\"      /E /I /Y >nul
+if not exist "%X_INSTALL_DIR%\qss\*.qss" ( echo [ERROR] qss themes not found & exit /b 1 )
 
-if exist "%X_SOURCE_PATH%\signatures\crypto.db" (
+if exist "%X_SOURCE_PATH%\dep\signatures\crypto.db" (
     mkdir "%X_INSTALL_DIR%\signatures" 2>nul
-    copy  "%X_SOURCE_PATH%\signatures\crypto.db" "%X_INSTALL_DIR%\signatures\" >nul
+    copy  "%X_SOURCE_PATH%\dep\signatures\crypto.db" "%X_INSTALL_DIR%\signatures\" >nul
 )
 
 echo [*] Creating Release ZIP...
