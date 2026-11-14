@@ -1495,3 +1495,82 @@ jobs:
           prerelease: true
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
+
+build-debian-arm64:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Bootstrap Tools & QEMU
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mmdebstrap debian-archive-keyring qemu-user-static binfmt-support
+
+      - name: Bootstrap arm64 Environment
+        run: |
+          sudo mmdebstrap \
+            --architectures=arm64 \
+            --variant=buildd \
+            --include="ca-certificates,git,qtbase5-dev,qtscript5-dev,qttools5-dev,qttools5-dev-tools,libqt5svg5-dev,libqt5opengl5-dev,qtchooser,build-essential,cmake" \
+            unstable /tmp/arm64-chroot
+
+      - name: Build DIE-engine inside arm64 chroot
+        run: |
+          sudo mkdir -p /tmp/arm64-chroot/workspace
+          sudo cp -a ${{ github.workspace }}/. /tmp/arm64-chroot/workspace/
+          
+          sudo mount -t proc proc /tmp/arm64-chroot/proc
+          sudo mount -t sysfs sys /tmp/arm64-chroot/sys
+          sudo mount -o bind /dev /tmp/arm64-chroot/dev
+          
+          sudo chroot /tmp/arm64-chroot /bin/bash -ex -c '
+            cd /workspace
+            git clone --recursive https://github.com/horsicq/DIE-engine.git
+            cd DIE-engine
+            chmod a+x build_dpkg.sh
+            ./build_dpkg.sh
+          '
+          
+          sudo umount /tmp/arm64-chroot/dev
+          sudo umount /tmp/arm64-chroot/sys
+          sudo umount /tmp/arm64-chroot/proc
+
+      - name: Collect packages
+        run: |
+          mkdir -p "${{ env.RELEASE_PATH }}"
+          sudo find /tmp/arm64-chroot/workspace/DIE-engine -type f -name "*.deb" -exec cp {} "${{ env.RELEASE_PATH }}/" \;
+          sudo chown -R $USER:$USER "${{ env.RELEASE_PATH }}"
+
+      - name: Verify package architecture
+        run: |
+          shopt -s nullglob
+          packages=("${{ env.RELEASE_PATH }}"/*.deb)
+
+          if [ ${#packages[@]} -eq 0 ]; then
+            echo "No .deb package was produced."
+            exit 1
+          fi
+
+          for package in "${packages[@]}"; do
+            echo "Package: $package"
+            ARCH=$(dpkg-deb -f "$package" Architecture)
+            echo "Architecture: $ARCH"
+
+            if [ "$ARCH" != "arm64" ]; then
+              echo "ERROR: Package is not arm64!"
+              exit 1
+            fi
+          done
+
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v2
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ env.RELEASE_PATH }}/*.deb
