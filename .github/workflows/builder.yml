@@ -1496,7 +1496,7 @@ jobs:
           files: |
             ${{ env.RELEASE_PATH }}/*.deb
 
-build-debian-arm64:
+  build-debian-arm64:
     runs-on: ubuntu-24.04
 
     steps:
