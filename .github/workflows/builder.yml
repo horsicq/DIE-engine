@@ -1416,3 +1416,82 @@ jobs:
           target_commitish: ${{ github.sha }}
           fail_on_unmatched_files: true
           files: output_termux/DetectItEasy_Termux_CLI_aarch64.tar.gz
+
+  build-debian-amd64:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Bootstrap Tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mmdebstrap debian-archive-keyring
+
+      - name: Bootstrap amd64 Environment
+        run: |
+          sudo mmdebstrap \
+            --architectures=amd64 \
+            --variant=buildd \
+            --include="ca-certificates,git,qtbase5-dev,qtscript5-dev,qttools5-dev,qttools5-dev-tools,libqt5svg5-dev,libqt5opengl5-dev,qtchooser,build-essential,cmake" \
+            unstable /tmp/amd64-chroot
+
+      - name: Build DIE-engine inside amd64 chroot
+        run: |
+          sudo mkdir -p /tmp/amd64-chroot/workspace
+          sudo cp -a ${{ github.workspace }}/. /tmp/amd64-chroot/workspace/
+          
+          sudo mount -t proc proc /tmp/amd64-chroot/proc
+          sudo mount -t sysfs sys /tmp/amd64-chroot/sys
+          sudo mount -o bind /dev /tmp/amd64-chroot/dev
+          
+          sudo chroot /tmp/amd64-chroot /bin/bash -ex -c '
+            cd /workspace
+            git clone --recursive https://github.com/horsicq/DIE-engine.git
+            cd DIE-engine
+            chmod a+x build_dpkg.sh
+            ./build_dpkg.sh
+          '
+          
+          sudo umount /tmp/amd64-chroot/dev
+          sudo umount /tmp/amd64-chroot/sys
+          sudo umount /tmp/amd64-chroot/proc
+
+      - name: Collect packages
+        run: |
+          mkdir -p "${{ env.RELEASE_PATH }}"
+          sudo find /tmp/amd64-chroot/workspace/DIE-engine -type f -name "*.deb" -exec cp {} "${{ env.RELEASE_PATH }}/" \;
+          sudo chown -R $USER:$USER "${{ env.RELEASE_PATH }}"
+
+      - name: Verify package architecture
+        run: |
+          shopt -s nullglob
+          packages=("${{ env.RELEASE_PATH }}"/*.deb)
+
+          if [ ${#packages[@]} -eq 0 ]; then
+            echo "No .deb package was produced."
+            exit 1
+          fi
+
+          for package in "${packages[@]}"; do
+            echo "Package: $package"
+            ARCH=$(dpkg-deb -f "$package" Architecture)
+            echo "Architecture: $ARCH"
+
+            if [ "$ARCH" != "amd64" ]; then
+              echo "ERROR: Package is not amd64!"
+              exit 1
+            fi
+          done
+
+      - name: Upload Release as Download
+        if: github.event_name != 'pull_request'
+        uses: softprops/action-gh-release@v2
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: Beta
+          draft: false
+          prerelease: true
+          files: |
+            ${{ env.RELEASE_PATH }}/*.deb
