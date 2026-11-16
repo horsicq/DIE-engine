@@ -32,6 +32,11 @@ file(STRINGS "${CMAKE_CURRENT_LIST_DIR}/../release_version.txt" X_PROJECT_VERSIO
 project(DetectItEasy VERSION ${X_PROJECT_VERSION} LANGUAGES C CXX)
 option(USE_DIE "Enable Detect It Easy integration" ON)
 
+# --- Windows 7 Compatibility (sysinfo-dll fix) ---
+if(WIN32)
+    add_compile_definitions(_WIN32_WINNT=0x0601 WINVER=0x0601 NTDDI_VERSION=0x06010000)
+endif()
+
 # --- Project identity variables ---
 set(X_COMPANYNAME    "ntinfo")
 set(X_PROJECTNAME    "DetectItEasy")
