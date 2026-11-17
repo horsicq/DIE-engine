@@ -56,7 +56,9 @@ project(DetectItEasy VERSION ${X_PROJECT_VERSION} LANGUAGES C CXX)
 option(USE_DIE "Enable Detect It Easy integration" ON)
 
 # --- Windows 7 Compatibility (sysinfo-dll fix) ---
-if(WIN32)
+# MSVC 2013 + Qt 5.6.3 remains the supported XP packaging path; keep its
+# existing SDK defaults instead of raising that target to Windows 7.
+if(WIN32 AND NOT (MSVC AND MSVC_VERSION EQUAL 1800))
     add_compile_definitions(_WIN32_WINNT=0x0601 WINVER=0x0601 NTDDI_VERSION=0x06010000)
 endif()
 
