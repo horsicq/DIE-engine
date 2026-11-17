@@ -7,30 +7,44 @@ ARG X_WITH_PEID=OFF
 RUN apk add --no-cache \
     build-base \
     cmake \
+    ninja \
     qt5-qtbase-dev \
     qt5-qtscript-dev \
-    qt5-qttools-dev \
-    qt5-qtsvg-dev \
     pkgconfig \
     git \
-    make \
     bash
+
+WORKDIR /ctx
+COPY . .
+
+# Copy the engine source (supports DIE-engine root or Detect-It-Easy parent with DIE-engine_src/)
+RUN if [ -d /ctx/DIE-engine_src ]; then \
+        ln -s /ctx/DIE-engine_src /build; \
+    else \
+        ln -s /ctx /build; \
+    fi && \
+    cd /build && \
+    if [ ! -f dep/XArchive/CMakeLists.txt ] && [ -d .git ]; then \
+        git submodule update --init --depth 1 --recursive || git submodule update --init --recursive; \
+    fi
 
 WORKDIR /build
 
-# Copy the engine source
-COPY DIE-engine_src .
-
-# Fix the variable shadowing bug
-RUN sed -i 's/QString sResult = qApp->property/sResult = qApp->property/g' dep/XOptions/xoptions.cpp
+# Guard against musl <limits.h> PAGE_SIZE macro collision until dep/XArchive includes horsicq/XArchive#11
+RUN grep -q '#undef PAGE_SIZE' dep/XArchive/Algos/xztcdecoder.h || \
+    sed -i 's/^class XZTCDecoder {/#ifdef PAGE_SIZE\n#undef PAGE_SIZE\n#endif\n\nclass XZTCDecoder {/' dep/XArchive/Algos/xztcdecoder.h
 
 # Build the engine (binaries land in build/release like before)
-RUN cmake -B build \
+RUN cmake -B build -G Ninja \
         -DCMAKE_BUILD_TYPE=Release \
         -DWITH_PEID="$X_WITH_PEID" \
-        -DCMAKE_CXX_FLAGS="-DQT_NO_DEBUG_OUTPUT" \
+        -DDIE_BUILD_GUI=OFF \
+        -DDIE_BUILD_LITE=OFF \
+        -DDIE_BUILD_UPDATER=OFF \
+        -DDIE_BUILD_TRANSLATIONS=OFF \
+        -DCMAKE_CXX_FLAGS="-DQT_NO_DEBUG_OUTPUT -DQT_NO_GUI" \
         -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/build/build/release && \
-    cmake --build build -j$(nproc)
+    cmake --build build --target diec -j"$(nproc)"
 
 # Strip symbols
 RUN strip build/release/diec
@@ -43,17 +57,22 @@ RUN cp build/release/diec /dist/bin/
 
 # Use ldd to find all dependencies and copy them to /dist/lib
 # We handle both /usr/lib and /lib paths
-RUN ldd build/release/diec | grep "=> /" | awk '{print $3}' | xargs -I {} cp -v {} /dist/lib/
+RUN ldd build/release/diec | grep "=> /" | awk '{print $3}' | grep -v "ld-musl" | sort -u | xargs -I {} cp -Lv {} /dist/lib/
 
-# Copy the database and rules from this repo (context)
-WORKDIR /build-context
-COPY . .
-RUN cp -r db db_custom yara_rules /dist/share/die/ && \
-    { [ "$X_WITH_PEID" = "ON" ] || rm -f /dist/share/die/yara_rules/peid.yar; } && \
-    { [ -d db_extra ] && cp -r db_extra/*/ /dist/share/die/db/ || true; } && \
-    cp -r DIE-engine_src/dep/XInfoDB/info /dist/share/die/info && \
+# Copy the database and rules from this repo (context) or dep/Detect-It-Easy submodule
+RUN DB_SRC="/build/dep/Detect-It-Easy"; \
+    if [ -d /ctx/db ]; then DB_SRC="/ctx"; fi && \
+    cp -r "$DB_SRC/db" "$DB_SRC/db_custom" "$DB_SRC/yara_rules" /dist/share/die/ && \
+    if [ "$X_WITH_PEID" = "ON" ] && [ -d "$DB_SRC/peid_rules" ]; then \
+        cp -r "$DB_SRC/peid_rules" /dist/share/die/peid_rules && \
+        ln -s /usr/share/die/peid_rules /dist/opt/detect-it-easy/peid_rules && \
+        ln -s /usr/share/die/peid_rules/PE /dist/opt/detect-it-easy/peid; \
+    else \
+        rm -f /dist/share/die/yara_rules/peid.yar; \
+    fi && \
+    cp -r /build/dep/XInfoDB/info /dist/share/die/info && \
     mkdir -p /dist/share/die/signatures && \
-    cp DIE-engine_src/dep/signatures/crypto.db /dist/share/die/signatures/
+    cp /build/dep/signatures/crypto.db /dist/share/die/signatures/
 
 # Create symlinks in the dist directory
 RUN ln -s /usr/share/die/db /dist/opt/detect-it-easy/db && \
@@ -75,7 +94,7 @@ COPY --from=builder /dist/opt/detect-it-easy/ /opt/detect-it-easy/
 ENV DIE_DB_PATH=/usr/share/die/db
 
 # Verify
-RUN diec --showdatabase
+RUN diec --version && diec --showdatabase
 
 ENTRYPOINT ["/usr/bin/diec"]
 CMD ["--help"]
