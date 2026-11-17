@@ -30,10 +30,6 @@ RUN if [ -d /ctx/DIE-engine_src ]; then \
 
 WORKDIR /build
 
-# Guard against musl <limits.h> PAGE_SIZE macro collision until dep/XArchive includes horsicq/XArchive#11
-RUN grep -q '#undef PAGE_SIZE' dep/XArchive/Algos/xztcdecoder.h || \
-    sed -i 's/^class XZTCDecoder {/#ifdef PAGE_SIZE\n#undef PAGE_SIZE\n#endif\n\nclass XZTCDecoder {/' dep/XArchive/Algos/xztcdecoder.h
-
 # Build the engine (binaries land in build/release like before)
 RUN cmake -B build -G Ninja \
         -DCMAKE_BUILD_TYPE=Release \
