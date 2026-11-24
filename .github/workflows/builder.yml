@@ -1253,15 +1253,12 @@ jobs:
   build-parrotos:
     runs-on: ubuntu-latest
     container:
-      image: parrotsec/core:rolling
+      # The legacy rolling tag still contains Parrot 4.11 and outdated trust data.
+      image: parrotsec/core:latest
     steps:
       - name: Install dependencies
         run: |
-          echo "deb [trusted=yes] https://deb.parrot.sh/parrot parrot main contrib non-free" > /etc/apt/sources.list.d/parrot.list
-          apt-get update -y
-          apt-get install -y parrot-archive-keyring || true
-          
-          apt-get update -y
+          apt-get update -o APT::Update::Error-Mode=any
           apt-get install -y git qtbase5-dev qtscript5-dev qttools5-dev qttools5-dev-tools libqt5svg5-dev build-essential cmake
 
       - name: Checkout Repository
